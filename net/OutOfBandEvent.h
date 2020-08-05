@@ -5,13 +5,13 @@
 
 #endif /* DOXYGEN_SHOULD_SKIP_THIS */
 
-#include "ManagedDescriptor.h"
+#include "Event.h"
 
-class OutOfBandEvent : public ManagedDescriptor {
+class OutOfBandEvent : public Event {
 public:
     ~OutOfBandEvent() override = default;
 
-    virtual void exceptionEvent() = 0;
+    virtual void outOfBandEvent() = 0;
 
     void enable() override;
     void disable() override;

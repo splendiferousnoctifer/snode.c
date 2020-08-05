@@ -9,7 +9,7 @@
 #endif /* DOXYGEN_SHOULD_SKIP_THIS */
 
 #include "File.h"
-#include "ReaderEvent.h"
+#include "ReadEvent.h"
 
 class FileReader
     : public ReadEvent
@@ -26,7 +26,7 @@ public:
     void readEvent() override;
 
 private:
-    void unmanaged() override;
+    void unobserved() override;
 
     std::function<void(char* data, int len)> junkRead;
 

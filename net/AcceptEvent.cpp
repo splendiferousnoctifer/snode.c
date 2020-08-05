@@ -1,12 +1,12 @@
 #include "AcceptEvent.h"
 
-#include "ManagedServer.h" // for ManagedExceptions
-#include "Multiplexer.h"
+#include "AcceptEventDispatcher.h" // for ManagedExceptions
+#include "EventLoop.h"
 
 void AcceptEvent::enable() {
-    Multiplexer::instance().getManagedServer().start(this);
+    EventLoop::instance().getAcceptEventDispatcher().enable(this);
 }
 
 void AcceptEvent::disable() {
-    Multiplexer::instance().getManagedServer().stop(this);
+    EventLoop::instance().getAcceptEventDispatcher().disable(this);
 }

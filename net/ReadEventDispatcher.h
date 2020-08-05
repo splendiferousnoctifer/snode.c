@@ -7,14 +7,15 @@
 
 #endif /* DOXYGEN_SHOULD_SKIP_THIS */
 
-#include "Manager.h"
-#include "ReaderEvent.h"
+#include "EventDispatcher.h"
+#include "ReadEvent.h"
 
 // IWYU pragma: no_forward_declare Reader
 
-class ManagedReader : public Manager<ReadEvent> {
+class ReadEventDispatcher : public EventDispatcher<ReadEvent> {
 public:
-    using Manager<ReadEvent>::Manager;
+    using EventDispatcher<ReadEvent>::EventDispatcher;
+
     int dispatch(const fd_set& fdSet, int count) override;
 };
 

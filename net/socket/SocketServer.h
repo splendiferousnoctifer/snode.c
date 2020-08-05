@@ -11,7 +11,7 @@
 
 #include "AcceptEvent.h"
 #include "Logger.h"
-#include "ReaderEvent.h"
+#include "ReadEvent.h"
 #include "Socket.h"
 
 template <typename SocketConnectionImpl>
@@ -147,7 +147,7 @@ private:
         }
     }
 
-    void unmanaged() override {
+    void unobserved() override {
         if (isDynamic) {
             delete this;
         }

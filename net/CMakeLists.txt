@@ -5,22 +5,24 @@ find_package(OpenSSL REQUIRED)
 add_library(net SHARED
     Descriptor.cpp
     Descriptor.h
-    ManagedExceptions.cpp
-    ManagedExceptions.h
-    ManagedReader.cpp
-    ManagedReader.h
-    ManagedServer.cpp
-    ManagedServer.h
-    ManagedTimer.cpp
-    ManagedTimer.h
-    ManagedWriter.cpp
-    ManagedWriter.h
-    Multiplexer.cpp
-    Multiplexer.h
+    OutOfBandEventDispatcher.cpp
+    OutOfBandEventDispatcher.h
+    ReadEventDispatcher.cpp
+    ReadEventDispatcher.h
+    AcceptEventDispatcher.cpp
+    AcceptEventDispatcher.h
+    TimerEventDispatcher.cpp
+    TimerEventDispatcher.h
+    WriteEventDispatcher.cpp
+    WriteEventDispatcher.h
+    EventDispatcher.h
+    Event.h
+    EventLoop.cpp
+    EventLoop.h
     OutOfBandEvent.cpp
     OutOfBandEvent.h
-    ReaderEvent.cpp
-    ReaderEvent.h
+    ReadEvent.cpp
+    ReadEvent.h
     AcceptEvent.cpp
     AcceptEvent.h
     WriteEvent.cpp

@@ -41,7 +41,7 @@ void FileReader::disable() {
     }
 }
 
-void FileReader::unmanaged() {
+void FileReader::unobserved() {
     delete this;
 }
 

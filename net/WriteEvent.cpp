@@ -1,12 +1,12 @@
 #include "WriteEvent.h"
 
-#include "ManagedWriter.h" // for ManagedExceptions
-#include "Multiplexer.h"
+#include "EventLoop.h"
+#include "WriteEventDispatcher.h" // for ManagedExceptions
 
 void WriteEvent::enable() {
-    Multiplexer::instance().getManagedWriter().start(this);
+    EventLoop::instance().getWriteEventDispatcher().enable(this);
 }
 
 void WriteEvent::disable() {
-    Multiplexer::instance().getManagedWriter().stop(this);
+    EventLoop::instance().getWriteEventDispatcher().disable(this);
 }

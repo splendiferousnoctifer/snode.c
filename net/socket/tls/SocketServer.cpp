@@ -97,7 +97,7 @@ namespace tls {
                           }
                       }
 
-                      void unmanaged() override {
+                      void unobserved() override {
                           delete this;
                       }
 

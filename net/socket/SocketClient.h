@@ -10,7 +10,7 @@
 #endif /* DOXYGEN_SHOULD_SKIP_THIS */
 
 #include "Logger.h"
-#include "ReaderEvent.h"
+#include "ReadEvent.h"
 #include "Socket.h"
 #include "WriteEvent.h"
 #include "timer/SingleshotTimer.h"
@@ -119,7 +119,7 @@ public:
                                     }
                                 }
 
-                                void unmanaged() override {
+                                void unobserved() override {
                                     delete this;
                                 }
 

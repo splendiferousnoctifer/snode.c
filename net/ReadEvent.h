@@ -5,9 +5,9 @@
 
 #endif /* DOXYGEN_SHOULD_SKIP_THIS */
 
-#include "ManagedDescriptor.h"
+#include "Event.h"
 
-class ReadEvent : public ManagedDescriptor {
+class ReadEvent : public Event {
 public:
     ~ReadEvent() override = default;
 

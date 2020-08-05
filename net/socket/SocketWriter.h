@@ -28,7 +28,7 @@ public:
     }
 
     ~SocketWriter() override {
-        if (isManaged()) {
+        if (WriteEvent::isEnabled()) {
             WriteEvent::disable();
         }
     }

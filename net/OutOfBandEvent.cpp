@@ -1,12 +1,12 @@
 #include "OutOfBandEvent.h"
 
-#include "ManagedExceptions.h" // for ManagedExceptions
-#include "Multiplexer.h"
+#include "EventLoop.h"
+#include "OutOfBandEventDispatcher.h" // for ManagedExceptions
 
 void OutOfBandEvent::enable() {
-    Multiplexer::instance().getManagedExceptions().start(this);
+    EventLoop::instance().getOutOfBandEventDispatcher().enable(this);
 }
 
 void OutOfBandEvent::disable() {
-    Multiplexer::instance().getManagedExceptions().stop(this);
+    EventLoop::instance().getOutOfBandEventDispatcher().disable(this);
 }

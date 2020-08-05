@@ -10,7 +10,7 @@
 
 #endif /* DOXYGEN_SHOULD_SKIP_THIS */
 
-#include "ReaderEvent.h"
+#include "ReadEvent.h"
 
 #define MAX_READ_JUNKSIZE 16384
 
@@ -27,7 +27,7 @@ public:
     }
 
     ~SocketReader() override {
-        if (isManaged()) {
+        if (ReadEvent::isEnabled()) {
             ReadEvent::disable();
         }
     }
