@@ -3,6 +3,7 @@
 
 #ifndef DOXYGEN_SHOULD_SKIP_THIS
 
+#include <list>
 #include <sys/select.h> // for fd_set
 
 #endif /* DOXYGEN_SHOULD_SKIP_THIS */
@@ -18,8 +19,8 @@ private:
     EventLoop();
 
 public:
-    static EventLoop& instance() {
-        return eventLoop;
+    static EventLoop* currentLoop() {
+        return currentEventLoop;
     }
 
     ReadEventDispatcher& getReadEventDispatcher() {
@@ -51,7 +52,8 @@ private:
 
     inline void tick();
 
-    static EventLoop eventLoop;
+    static std::list<EventLoop*> eventLoops;
+    static EventLoop* currentEventLoop;
 
     fd_set readfds{0};
     fd_set writefds{0};
@@ -63,8 +65,8 @@ private:
     OutOfBandEventDispatcher outOfBandEventDispatcher;
     TimerEventDispatcher timerEventDispatcher;
 
-    static bool running;
-    static bool stopped;
+    bool running = false;
+    bool stopped = true;
     static bool initialized;
 };
 

@@ -4,9 +4,9 @@
 #include "WriteEventDispatcher.h" // for ManagedExceptions
 
 void WriteEvent::enable() {
-    EventLoop::instance().getWriteEventDispatcher().enable(this);
+    EventLoop::currentLoop()->getWriteEventDispatcher().enable(this);
 }
 
 void WriteEvent::disable() {
-    EventLoop::instance().getWriteEventDispatcher().disable(this);
+    EventLoop::currentLoop()->getWriteEventDispatcher().disable(this);
 }

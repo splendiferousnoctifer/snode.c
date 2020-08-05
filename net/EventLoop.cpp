@@ -13,10 +13,9 @@
 #include "EventLoop.h"
 #include "Logger.h"
 
-EventLoop EventLoop::eventLoop;
+std::list<EventLoop*> EventLoop::eventLoops;
+EventLoop* EventLoop::currentEventLoop;
 
-bool EventLoop::running = false;
-bool EventLoop::stopped = true;
 bool EventLoop::initialized = false;
 
 EventLoop::EventLoop()
@@ -77,7 +76,7 @@ void EventLoop::init(int argc, char* argv[]) {
 
     Logger::init(argc, argv);
 
-    EventLoop::initialized = true;
+    initialized = true;
 }
 
 void EventLoop::start() {
@@ -86,38 +85,42 @@ void EventLoop::start() {
         exit(1);
     }
 
-    stopped = false;
+    currentEventLoop = new EventLoop();
+    
+    currentEventLoop->stopped = false;
 
-    if (!running) {
-        running = true;
+    if (!currentEventLoop->running) {
+        currentEventLoop->running = true;
 
-        while (!stopped) {
-            eventLoop.tick();
+        while (!currentEventLoop->stopped) {
+            currentEventLoop->tick();
         };
 
-        running = false;
+        currentEventLoop->running = false;
 
-        eventLoop.readEventDispatcher.observeEnabledEvents();
-        eventLoop.writeEventDispatcher.observeEnabledEvents();
-        eventLoop.outOfBandEventDispatcher.observeEnabledEvents();
-        eventLoop.acceptEventDispatcher.observeEnabledEvents();
+        currentEventLoop->readEventDispatcher.observeEnabledEvents();
+        currentEventLoop->writeEventDispatcher.observeEnabledEvents();
+        currentEventLoop->outOfBandEventDispatcher.observeEnabledEvents();
+        currentEventLoop->acceptEventDispatcher.observeEnabledEvents();
 
-        eventLoop.readEventDispatcher.unobserveDisabledEvents();
-        eventLoop.writeEventDispatcher.unobserveDisabledEvents();
-        eventLoop.outOfBandEventDispatcher.unobserveDisabledEvents();
-        eventLoop.acceptEventDispatcher.unobserveDisabledEvents();
+        currentEventLoop->readEventDispatcher.unobserveDisabledEvents();
+        currentEventLoop->writeEventDispatcher.unobserveDisabledEvents();
+        currentEventLoop->outOfBandEventDispatcher.unobserveDisabledEvents();
+        currentEventLoop->acceptEventDispatcher.unobserveDisabledEvents();
 
-        eventLoop.readEventDispatcher.unobserveObservedEvents();
-        eventLoop.writeEventDispatcher.unobserveObservedEvents();
-        eventLoop.outOfBandEventDispatcher.unobserveObservedEvents();
-        eventLoop.acceptEventDispatcher.unobserveObservedEvents();
+        currentEventLoop->readEventDispatcher.unobserveObservedEvents();
+        currentEventLoop->writeEventDispatcher.unobserveObservedEvents();
+        currentEventLoop->outOfBandEventDispatcher.unobserveObservedEvents();
+        currentEventLoop->acceptEventDispatcher.unobserveObservedEvents();
 
-        eventLoop.timerEventDispatcher.getNextTimeout();
+        currentEventLoop->timerEventDispatcher.getNextTimeout();
     }
+    
+    delete currentEventLoop;
 }
 
 void EventLoop::stop() {
-    stopped = true;
+    currentEventLoop->stopped = true;
 }
 
 void EventLoop::stoponsig([[maybe_unused]] int sig) {

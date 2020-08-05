@@ -20,7 +20,7 @@ SingleshotTimer& Timer::singleshotTimer(const std::function<void(const void* arg
                                         const void* arg) {
     SingleshotTimer* st = new SingleshotTimer(dispatcher, timeout, arg);
 
-    EventLoop::instance().getTimerEventDispatcher().add(st);
+    EventLoop::currentLoop()->getTimerEventDispatcher().add(st);
 
     return *st;
 }
@@ -29,7 +29,7 @@ IntervalTimer& Timer::continousTimer(const std::function<void(const void* arg, c
                                      const struct timeval& timeout, const void* arg) {
     IntervalTimer* ct = new IntervalTimer(dispatcher, timeout, arg);
 
-    EventLoop::instance().getTimerEventDispatcher().add(ct);
+    EventLoop::currentLoop()->getTimerEventDispatcher().add(ct);
 
     return *ct;
 }
@@ -38,13 +38,13 @@ IntervalTimer& Timer::continousTimer(const std::function<void(const void* arg)>&
                                      const void* arg) {
     IntervalTimer* ct = new IntervalTimer(dispatcher, timeout, arg);
 
-    EventLoop::instance().getTimerEventDispatcher().add(ct);
+    EventLoop::currentLoop()->getTimerEventDispatcher().add(ct);
 
     return *ct;
 }
 
 void Timer::cancel() {
-    EventLoop::instance().getTimerEventDispatcher().remove(this);
+    EventLoop::currentLoop()->getTimerEventDispatcher().remove(this);
 }
 
 void Timer::update() {

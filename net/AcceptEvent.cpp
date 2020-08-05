@@ -4,9 +4,9 @@
 #include "EventLoop.h"
 
 void AcceptEvent::enable() {
-    EventLoop::instance().getAcceptEventDispatcher().enable(this);
+    EventLoop::currentLoop()->getAcceptEventDispatcher().enable(this);
 }
 
 void AcceptEvent::disable() {
-    EventLoop::instance().getAcceptEventDispatcher().disable(this);
+    EventLoop::currentLoop()->getAcceptEventDispatcher().disable(this);
 }
