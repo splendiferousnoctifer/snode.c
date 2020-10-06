@@ -123,6 +123,7 @@ var hierarchy =
       [ "http::tls::Server", "classhttp_1_1tls_1_1_server.html", null ]
     ] ],
     [ "http::ServerContext", "classhttp_1_1_server_context.html", null ],
+    [ "http::ServerRequest", "classhttp_1_1_server_request.html", null ],
     [ "http::ServerResponse", "classhttp_1_1_server_response.html", null ],
     [ "utils::SingleAttributeInjector", "classutils_1_1_single_attribute_injector.html", null ],
     [ "net::socket::tcp::SocketClient< SocketConnectionT >", "classnet_1_1socket_1_1tcp_1_1_socket_client.html", null ],

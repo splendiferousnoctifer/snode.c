@@ -85,7 +85,7 @@ $(document).ready(function(){initNavTree('class_logger.html',''); initResizable(
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
 <a href="class_logger-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Logger Class Reference</div>  </div>
@@ -96,7 +96,7 @@ $(document).ready(function(){initNavTree('class_logger.html',''); initResizable(
 <div class="dynheader">
 Collaboration diagram for Logger:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_logger__coll__graph.svg" width="126" height="147"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_logger__coll__graph.svg" width="188" height="162"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -121,17 +121,19 @@ Public Member Functions</h2></td></tr>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a9a1cee6606317c7baa7d06fe86916f72"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_logger.html#a9a1cee6606317c7baa7d06fe86916f72">init</a> (int argc, char *argv[])</td></tr>
 <tr class="separator:a9a1cee6606317c7baa7d06fe86916f72"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4099b1ab1b90f7f041e8edec6b8debf2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_logger.html#a4099b1ab1b90f7f041e8edec6b8debf2">setLevel</a> (int <a class="el" href="class_logger.html#acde3832ae742d0f064d2577c643714ca">level</a>)</td></tr>
+<tr class="memitem:a4099b1ab1b90f7f041e8edec6b8debf2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_logger.html#a4099b1ab1b90f7f041e8edec6b8debf2">setLevel</a> (int level)</td></tr>
 <tr class="separator:a4099b1ab1b90f7f041e8edec6b8debf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b3ada27bc0dfb2ed660db9d620bc670"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_logger.html#a3b3ada27bc0dfb2ed660db9d620bc670">logToFile</a> (bool yes)</td></tr>
-<tr class="separator:a3b3ada27bc0dfb2ed660db9d620bc670"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2af10960de62ed8be60e6456f8d4c4bf"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_logger.html#a2af10960de62ed8be60e6456f8d4c4bf">logToStdOut</a> (bool yes)</td></tr>
-<tr class="separator:a2af10960de62ed8be60e6456f8d4c4bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54b7bf213561e73cfe1c63cd31c1a074"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_logger.html#a54b7bf213561e73cfe1c63cd31c1a074">logToFile</a> (bool yes=true)</td></tr>
+<tr class="separator:a54b7bf213561e73cfe1c63cd31c1a074"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b3fd86c598269c226cf76f391bcc1df"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_logger.html#a2b3fd86c598269c226cf76f391bcc1df">logToStdOut</a> (bool yes=true)</td></tr>
+<tr class="separator:a2b3fd86c598269c226cf76f391bcc1df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a969163c7aff5b8409d8dfb8175dd2b85"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_logger.html#a969163c7aff5b8409d8dfb8175dd2b85">setCustomFormatSpec</a> (const char *format, const el::FormatSpecifierValueResolver &amp;resolver)</td></tr>
+<tr class="separator:a969163c7aff5b8409d8dfb8175dd2b85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:acde3832ae742d0f064d2577c643714ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_logger.html#ad766a24576ea8b27ad9d5649cef46d8f">Level</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_logger.html#acde3832ae742d0f064d2577c643714ca">level</a> {<a class="el" href="class_logger.html#ad766a24576ea8b27ad9d5649cef46d8fa61a9b6fc1e9babc448984b8a34ca2ed2">INFO</a>}</td></tr>
-<tr class="separator:acde3832ae742d0f064d2577c643714ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-attribs"></a>
+Static Protected Attributes</h2></td></tr>
+<tr class="memitem:aab3f8f567382428dd7e467c5d6835832"><td class="memItemLeft" align="right" valign="top">static el::Configurations&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_logger.html#aab3f8f567382428dd7e467c5d6835832">conf</a></td></tr>
+<tr class="separator:aab3f8f567382428dd7e467c5d6835832"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -222,26 +224,26 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_logger_8cpp_source.html#l00041">41</a> of file <a class="el" href="_logger_8cpp_source.html">Logger.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                                        {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    START_EASYLOGGINGPP(argc, argv);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    std::string dir = weakly_canonical(std::filesystem::path(argv[0])).parent_path();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    el::Helpers::installCustomFormatSpecifier(el::CustomFormatSpecifier(<span class="stringliteral">&quot;%tick&quot;</span>, <a class="code" href="_logger_8cpp.html#aa28d3c19ad62ea5c21a37c9bc4b129da">getTickCounter</a>));</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    el::Loggers::reconfigureAllLoggers(el::Configurations(dir + <span class="stringliteral">&quot;/.logger.conf&quot;</span>));</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="class_logger.html#a4099b1ab1b90f7f041e8edec6b8debf2">setLevel</a>(2);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="_logger_8cpp_source.html#l00032">32</a> of file <a class="el" href="_logger_8cpp_source.html">Logger.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                                        {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    START_EASYLOGGINGPP(argc, argv);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    std::string dir = weakly_canonical(std::filesystem::path(argv[0])).parent_path();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="class_logger.html#aab3f8f567382428dd7e467c5d6835832">conf</a> = el::Configurations(el::Configurations(dir + <span class="stringliteral">&quot;/.logger.conf&quot;</span>));</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    el::Loggers::reconfigureAllLoggers(<a class="code" href="class_logger.html#aab3f8f567382428dd7e467c5d6835832">conf</a>);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="class_logger.html#a4099b1ab1b90f7f041e8edec6b8debf2">setLevel</a>(2);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_logger_8cpp_source.html#l00031">getTickCounter()</a>, and <a class="el" href="_logger_8cpp_source.html#l00053">setLevel()</a>.</p>
+<p class="reference">References <a class="el" href="_logger_8h_source.html#l00046">conf</a>, and <a class="el" href="_logger_8cpp_source.html#l00048">setLevel()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_event_loop_8cpp_source.html#l00121">net::EventLoop::init()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_logger_a9a1cee6606317c7baa7d06fe86916f72_cgraph.svg" width="479" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_logger_a9a1cee6606317c7baa7d06fe86916f72_cgraph.svg" width="264" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -251,8 +253,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a3b3ada27bc0dfb2ed660db9d620bc670"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b3ada27bc0dfb2ed660db9d620bc670">&#9670;&nbsp;</a></span>logToFile()</h2>
+<a id="a54b7bf213561e73cfe1c63cd31c1a074"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54b7bf213561e73cfe1c63cd31c1a074">&#9670;&nbsp;</a></span>logToFile()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -264,7 +266,7 @@ Here is the caller graph for this function:</div>
           <td class="memname">void Logger::logToFile </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>yes</em></td><td>)</td>
+          <td class="paramname"><em>yes</em> = <code>true</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -275,26 +277,23 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_logger_8cpp_source.html#l00086">86</a> of file <a class="el" href="_logger_8cpp_source.html">Logger.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                               {</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    el::Configurations defaultConf;</div>
+<p class="definition">Definition at line <a class="el" href="_logger_8cpp_source.html#l00082">82</a> of file <a class="el" href="_logger_8cpp_source.html">Logger.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                               {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">if</span> (yes) {</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <a class="code" href="class_logger.html#aab3f8f567382428dd7e467c5d6835832">conf</a>.set(el::Level::Global, el::ConfigurationType::ToFile, <span class="stringliteral">&quot;true&quot;</span>);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <a class="code" href="class_logger.html#aab3f8f567382428dd7e467c5d6835832">conf</a>.set(el::Level::Global, el::ConfigurationType::ToFile, <span class="stringliteral">&quot;false&quot;</span>);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">bool</span> verboseEnabled = el::Loggers::getLogger(<span class="stringliteral">&quot;default&quot;</span>)-&gt;typedConfigurations()-&gt;enabled(el::Level::Verbose);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    defaultConf.set(el::Level::Verbose, el::ConfigurationType::Enabled, verboseEnabled ? <span class="stringliteral">&quot;true&quot;</span> : <span class="stringliteral">&quot;false&quot;</span>);</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">if</span> (yes) {</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        defaultConf.set(el::Level::Global, el::ConfigurationType::ToFile, <span class="stringliteral">&quot;true&quot;</span>);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        defaultConf.set(el::Level::Global, el::ConfigurationType::ToFile, <span class="stringliteral">&quot;false&quot;</span>);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    }</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    el::Loggers::reconfigureLogger(<span class="stringliteral">&quot;default&quot;</span>, defaultConf);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;}</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    el::Loggers::reconfigureLogger(<span class="stringliteral">&quot;default&quot;</span>, <a class="code" href="class_logger.html#aab3f8f567382428dd7e467c5d6835832">conf</a>);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}</div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="_logger_8h_source.html#l00046">conf</a>.</p>
+
 </div>
 </div>
-<a id="a2af10960de62ed8be60e6456f8d4c4bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2af10960de62ed8be60e6456f8d4c4bf">&#9670;&nbsp;</a></span>logToStdOut()</h2>
+<a id="a2b3fd86c598269c226cf76f391bcc1df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b3fd86c598269c226cf76f391bcc1df">&#9670;&nbsp;</a></span>logToStdOut()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -306,7 +305,7 @@ Here is the caller graph for this function:</div>
           <td class="memname">void Logger::logToStdOut </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>yes</em></td><td>)</td>
+          <td class="paramname"><em>yes</em> = <code>true</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -317,22 +316,67 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_logger_8cpp_source.html#l00101">101</a> of file <a class="el" href="_logger_8cpp_source.html">Logger.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                                 {</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    el::Configurations defaultConf;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">bool</span> verboseEnabled = el::Loggers::getLogger(<span class="stringliteral">&quot;default&quot;</span>)-&gt;typedConfigurations()-&gt;enabled(el::Level::Verbose);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    defaultConf.set(el::Level::Verbose, el::ConfigurationType::Enabled, verboseEnabled ? <span class="stringliteral">&quot;true&quot;</span> : <span class="stringliteral">&quot;false&quot;</span>);</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordflow">if</span> (yes) {</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        defaultConf.set(el::Level::Global, el::ConfigurationType::ToStandardOutput, <span class="stringliteral">&quot;true&quot;</span>);</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        defaultConf.set(el::Level::Global, el::ConfigurationType::ToStandardOutput, <span class="stringliteral">&quot;false&quot;</span>);</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    }</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    el::Loggers::reconfigureLogger(<span class="stringliteral">&quot;default&quot;</span>, defaultConf);</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="_logger_8cpp_source.html#l00092">92</a> of file <a class="el" href="_logger_8cpp_source.html">Logger.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                                 {</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">if</span> (yes) {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <a class="code" href="class_logger.html#aab3f8f567382428dd7e467c5d6835832">conf</a>.set(el::Level::Global, el::ConfigurationType::ToStandardOutput, <span class="stringliteral">&quot;true&quot;</span>);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <a class="code" href="class_logger.html#aab3f8f567382428dd7e467c5d6835832">conf</a>.set(el::Level::Global, el::ConfigurationType::ToStandardOutput, <span class="stringliteral">&quot;false&quot;</span>);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    el::Loggers::reconfigureLogger(<span class="stringliteral">&quot;default&quot;</span>, <a class="code" href="class_logger.html#aab3f8f567382428dd7e467c5d6835832">conf</a>);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="_logger_8h_source.html#l00046">conf</a>.</p>
+
+</div>
+</div>
+<a id="a969163c7aff5b8409d8dfb8175dd2b85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a969163c7aff5b8409d8dfb8175dd2b85">&#9670;&nbsp;</a></span>setCustomFormatSpec()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Logger::setCustomFormatSpec </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const el::FormatSpecifierValueResolver &amp;&#160;</td>
+          <td class="paramname"><em>resolver</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_logger_8cpp_source.html#l00044">44</a> of file <a class="el" href="_logger_8cpp_source.html">Logger.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                                                                                                   {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    el::Helpers::installCustomFormatSpecifier(el::CustomFormatSpecifier(format, resolver));</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
+</div><!-- fragment -->
+<p class="reference">Referenced by <a class="el" href="_event_loop_8cpp_source.html#l00121">net::EventLoop::init()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_logger_a969163c7aff5b8409d8dfb8175dd2b85_icgraph.svg" width="596" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
 </div>
 </div>
 <a id="a4099b1ab1b90f7f041e8edec6b8debf2"></a>
@@ -359,43 +403,44 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_logger_8cpp_source.html#l00053">53</a> of file <a class="el" href="_logger_8cpp_source.html">Logger.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                               {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    el::Configurations defaultConf;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    defaultConf.setGlobally(el::ConfigurationType::Enabled, <span class="stringliteral">&quot;false&quot;</span>);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">bool</span> verboseEnabled = el::Loggers::getLogger(<span class="stringliteral">&quot;default&quot;</span>)-&gt;typedConfigurations()-&gt;enabled(el::Level::Verbose);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    defaultConf.set(el::Level::Verbose, el::ConfigurationType::Enabled, verboseEnabled ? <span class="stringliteral">&quot;true&quot;</span> : <span class="stringliteral">&quot;false&quot;</span>);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">switch</span> (<a class="code" href="class_logger.html#acde3832ae742d0f064d2577c643714ca">level</a>) {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">case</span> 6:</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            defaultConf.set(el::Level::Trace, el::ConfigurationType::Enabled, <span class="stringliteral">&quot;true&quot;</span>);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            [[fallthrough]];</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">case</span> 5:</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            defaultConf.set(el::Level::Debug, el::ConfigurationType::Enabled, <span class="stringliteral">&quot;true&quot;</span>);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            [[fallthrough]];</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordflow">case</span> 4:</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            defaultConf.set(el::Level::Info, el::ConfigurationType::Enabled, <span class="stringliteral">&quot;true&quot;</span>);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            [[fallthrough]];</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keywordflow">case</span> 3:</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            defaultConf.set(el::Level::Warning, el::ConfigurationType::Enabled, <span class="stringliteral">&quot;true&quot;</span>);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            [[fallthrough]];</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">case</span> 2:</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            defaultConf.set(el::Level::Error, el::ConfigurationType::Enabled, <span class="stringliteral">&quot;true&quot;</span>);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            [[fallthrough]];</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">case</span> 1:</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            defaultConf.set(el::Level::Fatal, el::ConfigurationType::Enabled, <span class="stringliteral">&quot;true&quot;</span>);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            [[fallthrough]];</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordflow">case</span> 0:</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordflow">default</span>:;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    };</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    el::Loggers::reconfigureLogger(<span class="stringliteral">&quot;default&quot;</span>, defaultConf);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="_logger_8cpp_source.html#l00048">48</a> of file <a class="el" href="_logger_8cpp_source.html">Logger.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                               {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="class_logger.html#aab3f8f567382428dd7e467c5d6835832">conf</a>.set(el::Level::Trace, el::ConfigurationType::Enabled, <span class="stringliteral">&quot;false&quot;</span>);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="class_logger.html#aab3f8f567382428dd7e467c5d6835832">conf</a>.set(el::Level::Debug, el::ConfigurationType::Enabled, <span class="stringliteral">&quot;false&quot;</span>);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="class_logger.html#aab3f8f567382428dd7e467c5d6835832">conf</a>.set(el::Level::Info, el::ConfigurationType::Enabled, <span class="stringliteral">&quot;false&quot;</span>);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="class_logger.html#aab3f8f567382428dd7e467c5d6835832">conf</a>.set(el::Level::Warning, el::ConfigurationType::Enabled, <span class="stringliteral">&quot;false&quot;</span>);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="class_logger.html#aab3f8f567382428dd7e467c5d6835832">conf</a>.set(el::Level::Error, el::ConfigurationType::Enabled, <span class="stringliteral">&quot;false&quot;</span>);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="class_logger.html#aab3f8f567382428dd7e467c5d6835832">conf</a>.set(el::Level::Fatal, el::ConfigurationType::Enabled, <span class="stringliteral">&quot;false&quot;</span>);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">switch</span> (level) {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordflow">case</span> 6:</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <a class="code" href="class_logger.html#aab3f8f567382428dd7e467c5d6835832">conf</a>.set(el::Level::Trace, el::ConfigurationType::Enabled, <span class="stringliteral">&quot;true&quot;</span>);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            [[fallthrough]];</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">case</span> 5:</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <a class="code" href="class_logger.html#aab3f8f567382428dd7e467c5d6835832">conf</a>.set(el::Level::Debug, el::ConfigurationType::Enabled, <span class="stringliteral">&quot;true&quot;</span>);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            [[fallthrough]];</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">case</span> 4:</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <a class="code" href="class_logger.html#aab3f8f567382428dd7e467c5d6835832">conf</a>.set(el::Level::Info, el::ConfigurationType::Enabled, <span class="stringliteral">&quot;true&quot;</span>);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            [[fallthrough]];</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">case</span> 3:</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <a class="code" href="class_logger.html#aab3f8f567382428dd7e467c5d6835832">conf</a>.set(el::Level::Warning, el::ConfigurationType::Enabled, <span class="stringliteral">&quot;true&quot;</span>);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            [[fallthrough]];</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordflow">case</span> 2:</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <a class="code" href="class_logger.html#aab3f8f567382428dd7e467c5d6835832">conf</a>.set(el::Level::Error, el::ConfigurationType::Enabled, <span class="stringliteral">&quot;true&quot;</span>);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            [[fallthrough]];</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordflow">case</span> 1:</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <a class="code" href="class_logger.html#aab3f8f567382428dd7e467c5d6835832">conf</a>.set(el::Level::Fatal, el::ConfigurationType::Enabled, <span class="stringliteral">&quot;true&quot;</span>);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            [[fallthrough]];</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordflow">case</span> 0:</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">default</span>:;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    };</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    el::Loggers::reconfigureLogger(<span class="stringliteral">&quot;default&quot;</span>, <a class="code" href="class_logger.html#aab3f8f567382428dd7e467c5d6835832">conf</a>);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_logger_8h_source.html#l00044">level</a>.</p>
+<p class="reference">References <a class="el" href="_logger_8h_source.html#l00046">conf</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_logger_8cpp_source.html#l00041">init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_logger_8cpp_source.html#l00032">init()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -405,8 +450,8 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="acde3832ae742d0f064d2577c643714ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acde3832ae742d0f064d2577c643714ca">&#9670;&nbsp;</a></span>level</h2>
+<a id="aab3f8f567382428dd7e467c5d6835832"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab3f8f567382428dd7e467c5d6835832">&#9670;&nbsp;</a></span>conf</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -415,19 +460,19 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_logger.html#ad766a24576ea8b27ad9d5649cef46d8f">Level</a> Logger::level {<a class="el" href="class_logger.html#ad766a24576ea8b27ad9d5649cef46d8fa61a9b6fc1e9babc448984b8a34ca2ed2">INFO</a>}</td>
+          <td class="memname">INITIALIZE_EASYLOGGINGPP el::Configurations Logger::conf</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_logger_8h_source.html#l00044">44</a> of file <a class="el" href="_logger_8h_source.html">Logger.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_logger_8h_source.html#l00046">46</a> of file <a class="el" href="_logger_8h_source.html">Logger.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_logger_8cpp_source.html#l00053">setLevel()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_logger_8cpp_source.html#l00032">init()</a>, <a class="el" href="_logger_8cpp_source.html#l00082">logToFile()</a>, <a class="el" href="_logger_8cpp_source.html#l00092">logToStdOut()</a>, and <a class="el" href="_logger_8cpp_source.html#l00048">setLevel()</a>.</p>
 
 </div>
 </div>
@@ -439,12 +484,11 @@ Here is the caller graph for this function:</div>
 </div><!-- doc-content -->
 <div class="ttc" id="aclass_logger_html_ad766a24576ea8b27ad9d5649cef46d8faedbd8d8bf2c8855ff226770a5c6adf0c"><div class="ttname"><a href="class_logger.html#ad766a24576ea8b27ad9d5649cef46d8faedbd8d8bf2c8855ff226770a5c6adf0c">Logger::FATAL</a></div><div class="ttdeci">@ FATAL</div><div class="ttdef"><b>Definition:</b> <a href="_logger_8h_source.html#l00030">Logger.h:30</a></div></div>
 <div class="ttc" id="aclass_logger_html_ad766a24576ea8b27ad9d5649cef46d8fa3ce1bbeb15a3d8e29e4c5e75492a781b"><div class="ttname"><a href="class_logger.html#ad766a24576ea8b27ad9d5649cef46d8fa3ce1bbeb15a3d8e29e4c5e75492a781b">Logger::ERROR</a></div><div class="ttdeci">@ ERROR</div><div class="ttdef"><b>Definition:</b> <a href="_logger_8h_source.html#l00030">Logger.h:30</a></div></div>
-<div class="ttc" id="aclass_logger_html_acde3832ae742d0f064d2577c643714ca"><div class="ttname"><a href="class_logger.html#acde3832ae742d0f064d2577c643714ca">Logger::level</a></div><div class="ttdeci">Level level</div><div class="ttdef"><b>Definition:</b> <a href="_logger_8h_source.html#l00044">Logger.h:44</a></div></div>
 <div class="ttc" id="aclass_logger_html_ad766a24576ea8b27ad9d5649cef46d8fa61a9b6fc1e9babc448984b8a34ca2ed2"><div class="ttname"><a href="class_logger.html#ad766a24576ea8b27ad9d5649cef46d8fa61a9b6fc1e9babc448984b8a34ca2ed2">Logger::INFO</a></div><div class="ttdeci">@ INFO</div><div class="ttdef"><b>Definition:</b> <a href="_logger_8h_source.html#l00030">Logger.h:30</a></div></div>
 <div class="ttc" id="aclass_logger_html_ad766a24576ea8b27ad9d5649cef46d8fabdc8d840ac4b73e1bd3212184af8f85e"><div class="ttname"><a href="class_logger.html#ad766a24576ea8b27ad9d5649cef46d8fabdc8d840ac4b73e1bd3212184af8f85e">Logger::DEBUG</a></div><div class="ttdeci">@ DEBUG</div><div class="ttdef"><b>Definition:</b> <a href="_logger_8h_source.html#l00030">Logger.h:30</a></div></div>
-<div class="ttc" id="a_logger_8cpp_html_aa28d3c19ad62ea5c21a37c9bc4b129da"><div class="ttname"><a href="_logger_8cpp.html#aa28d3c19ad62ea5c21a37c9bc4b129da">getTickCounter</a></div><div class="ttdeci">INITIALIZE_EASYLOGGINGPP std::string getTickCounter([[maybe_unused]] const el::LogMessage *logMessage)</div><div class="ttdef"><b>Definition:</b> <a href="_logger_8cpp_source.html#l00031">Logger.cpp:31</a></div></div>
 <div class="ttc" id="aclass_logger_html_ad766a24576ea8b27ad9d5649cef46d8fafb1bf96f41b282521d9438106ea11bca"><div class="ttname"><a href="class_logger.html#ad766a24576ea8b27ad9d5649cef46d8fafb1bf96f41b282521d9438106ea11bca">Logger::WARNING</a></div><div class="ttdeci">@ WARNING</div><div class="ttdef"><b>Definition:</b> <a href="_logger_8h_source.html#l00030">Logger.h:30</a></div></div>
-<div class="ttc" id="aclass_logger_html_a4099b1ab1b90f7f041e8edec6b8debf2"><div class="ttname"><a href="class_logger.html#a4099b1ab1b90f7f041e8edec6b8debf2">Logger::setLevel</a></div><div class="ttdeci">static void setLevel(int level)</div><div class="ttdef"><b>Definition:</b> <a href="_logger_8cpp_source.html#l00053">Logger.cpp:53</a></div></div>
+<div class="ttc" id="aclass_logger_html_a4099b1ab1b90f7f041e8edec6b8debf2"><div class="ttname"><a href="class_logger.html#a4099b1ab1b90f7f041e8edec6b8debf2">Logger::setLevel</a></div><div class="ttdeci">static void setLevel(int level)</div><div class="ttdef"><b>Definition:</b> <a href="_logger_8cpp_source.html#l00048">Logger.cpp:48</a></div></div>
+<div class="ttc" id="aclass_logger_html_aab3f8f567382428dd7e467c5d6835832"><div class="ttname"><a href="class_logger.html#aab3f8f567382428dd7e467c5d6835832">Logger::conf</a></div><div class="ttdeci">static el::Configurations conf</div><div class="ttdef"><b>Definition:</b> <a href="_logger_8h_source.html#l00046">Logger.h:46</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

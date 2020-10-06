@@ -45,6 +45,10 @@ var dir_de5b03c9e251d763a573c2ccd217de59 =
     [ "ServerContext.h", "_server_context_8h.html", [
       [ "ServerContext", "classhttp_1_1_server_context.html", "classhttp_1_1_server_context" ]
     ] ],
+    [ "ServerRequest.cpp", "_server_request_8cpp.html", null ],
+    [ "ServerRequest.h", "_server_request_8h.html", [
+      [ "ServerRequest", "classhttp_1_1_server_request.html", "classhttp_1_1_server_request" ]
+    ] ],
     [ "ServerResponse.cpp", "_server_response_8cpp.html", null ],
     [ "ServerResponse.h", "_server_response_8h.html", [
       [ "ServerResponse", "classhttp_1_1_server_response.html", "classhttp_1_1_server_response" ]

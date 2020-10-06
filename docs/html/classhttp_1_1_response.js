@@ -5,7 +5,6 @@ var classhttp_1_1_response =
     [ "append", "classhttp_1_1_response.html#a55fdc5f163eda970b52e7f28051e15a2", null ],
     [ "clearCookie", "classhttp_1_1_response.html#adf31f183f55d005a83e38950fb4a184f", null ],
     [ "cookie", "classhttp_1_1_response.html#a141e411058860a90cb0a0867fbb7ff7d", null ],
-    [ "disable", "classhttp_1_1_response.html#a33ef82d6ee9f5b28b0dc757d604a451a", null ],
     [ "end", "classhttp_1_1_response.html#ad0b5aa3b88a9d72caf26d077d1572b2e", null ],
     [ "enqueue", "classhttp_1_1_response.html#ab7c7ed32b83ebc98a71f3b0749060caf", null ],
     [ "enqueue", "classhttp_1_1_response.html#a1f26c5c4abb75f9efc5057c3da36defa", null ],

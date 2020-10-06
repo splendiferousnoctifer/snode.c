@@ -7,6 +7,7 @@ var classhttp_1_1_client_context =
     [ "setRequest", "classhttp_1_1_client_context.html#a97e091a9a9c269bdf56a41ef09d4c69a", null ],
     [ "parser", "classhttp_1_1_client_context.html#ab6337ff4dcb262e82557af222aabc2b9", null ],
     [ "request", "classhttp_1_1_client_context.html#a25f9ba82f5ff95bdbf99493acb166b01", null ],
+    [ "serverRequest", "classhttp_1_1_client_context.html#af9699e49288a7257990e4fe3f48c9295", null ],
     [ "serverResponse", "classhttp_1_1_client_context.html#a795dc8019fd7288a01703b96a59af7ab", null ],
     [ "socketConnection", "classhttp_1_1_client_context.html#a20695654543eab3d02ca5168b1ec5da2", null ]
 ];

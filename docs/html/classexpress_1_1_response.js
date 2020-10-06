@@ -2,7 +2,7 @@ var classexpress_1_1_response =
 [
     [ "Response", "classexpress_1_1_response.html#ae9b92f1b7c5209abfc1d84e1a4a26339", null ],
     [ "Response", "classexpress_1_1_response.html#a8e88c3d9c5763e7be7316a1449de7edd", null ],
-    [ "disable", "classexpress_1_1_response.html#a4e41e17d34868d66082e7939f454f2c3", null ],
+    [ "~Response", "classexpress_1_1_response.html#a107171f45aec0e72804cf7af985e0c1c", null ],
     [ "download", "classexpress_1_1_response.html#ab1b03d46bb6c9f9be8668e4178820c80", null ],
     [ "download", "classexpress_1_1_response.html#a56235dfd5a60da2d4fb9e6bf484ae968", null ],
     [ "redirect", "classexpress_1_1_response.html#aff18a7e9ded125d650d408eaa31151da", null ],

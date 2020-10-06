@@ -1,7 +1,7 @@
 var classnet_1_1socket_1_1tcp_1_1_socket_listener =
 [
     [ "SocketConnection", "classnet_1_1socket_1_1tcp_1_1_socket_listener.html#adfc192bc624d3f664e9b77997f471ee1", null ],
-    [ "SocketListener", "classnet_1_1socket_1_1tcp_1_1_socket_listener.html#a8c7ef9e1a8ad0385ad474daa18b75b26", null ],
+    [ "SocketListener", "classnet_1_1socket_1_1tcp_1_1_socket_listener.html#a7fbda455f5bf41b2418c4ea51a005165", null ],
     [ "SocketListener", "classnet_1_1socket_1_1tcp_1_1_socket_listener.html#ab2c77e1013fd97923e098f44f1c9f81f", null ],
     [ "SocketListener", "classnet_1_1socket_1_1tcp_1_1_socket_listener.html#acef430685b13b419c2d8a710f3b04a7d", null ],
     [ "~SocketListener", "classnet_1_1socket_1_1tcp_1_1_socket_listener.html#a4af02406ed4d00d1090ebb2f32c67dab", null ],
@@ -16,6 +16,8 @@ var classnet_1_1socket_1_1tcp_1_1_socket_listener =
     [ "isDynamic", "classnet_1_1socket_1_1tcp_1_1_socket_listener.html#abc09c72cda85b90cbe7e2e92abaee166", null ],
     [ "lastAllocAddress", "classnet_1_1socket_1_1tcp_1_1_socket_listener.html#a5d67eacee730b0cd742aca509c95196b", null ],
     [ "onConnect", "classnet_1_1socket_1_1tcp_1_1_socket_listener.html#aba61976e2f55f9ac36ec27952f51fe1c", null ],
+    [ "onConstruct", "classnet_1_1socket_1_1tcp_1_1_socket_listener.html#affec03628a97c30f08a6d9e73f33d56f", null ],
+    [ "onDestruct", "classnet_1_1socket_1_1tcp_1_1_socket_listener.html#acd4de23e226a1b52439d094c70756840", null ],
     [ "onDisconnect", "classnet_1_1socket_1_1tcp_1_1_socket_listener.html#a1474862d0c64451eed7fb841a32b3750", null ],
     [ "onRead", "classnet_1_1socket_1_1tcp_1_1_socket_listener.html#a6b5af41835a012e25fa1c1d76d8dd506", null ],
     [ "onReadError", "classnet_1_1socket_1_1tcp_1_1_socket_listener.html#abc89bd10b4c901cad4c5c001bdd0f565", null ],

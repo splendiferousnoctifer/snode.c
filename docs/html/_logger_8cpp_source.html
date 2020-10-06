@@ -110,105 +110,90 @@ $(document).ready(function(){initNavTree('_logger_8cpp_source.html',''); initRes
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* DOXYGEN_SHOULD_SKIP_THIS */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;../net/EventLoop.h&quot;</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_logger_8h.html">Logger.h</a>&quot;</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;INITIALIZE_EASYLOGGINGPP</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="_logger_8cpp.html#aa28d3c19ad62ea5c21a37c9bc4b129da">   31</a></span>&#160;std::string <a class="code" href="_logger_8cpp.html#aa28d3c19ad62ea5c21a37c9bc4b129da">getTickCounter</a>([[maybe_unused]] <span class="keyword">const</span> el::LogMessage* logMessage) {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    std::string tick = std::to_string(<a class="code" href="classnet_1_1_event_loop.html#a6d8bfd6fa03bb6bf423035ab190657ef">net::EventLoop::instance</a>().<a class="code" href="_logger_8cpp.html#aa28d3c19ad62ea5c21a37c9bc4b129da">getTickCounter</a>());</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">if</span> (tick.length() &lt; 10) {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        tick.insert(0, 10 - tick.length(), <span class="charliteral">&#39;0&#39;</span>);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">return</span> tick;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_logger_8h.html">Logger.h</a>&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;INITIALIZE_EASYLOGGINGPP</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;el::Configurations <a class="code" href="class_logger.html#aab3f8f567382428dd7e467c5d6835832">Logger::conf</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_logger.html#a9a1cee6606317c7baa7d06fe86916f72">   32</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_logger.html#a9a1cee6606317c7baa7d06fe86916f72">Logger::init</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span>* argv[]) {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    START_EASYLOGGINGPP(argc, argv);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    std::string dir = weakly_canonical(std::filesystem::path(argv[0])).parent_path();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="class_logger.html#aab3f8f567382428dd7e467c5d6835832">conf</a> = el::Configurations(el::Configurations(dir + <span class="stringliteral">&quot;/.logger.conf&quot;</span>));</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    el::Loggers::reconfigureAllLoggers(<a class="code" href="class_logger.html#aab3f8f567382428dd7e467c5d6835832">conf</a>);</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_logger.html#a9a1cee6606317c7baa7d06fe86916f72">   41</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_logger.html#a9a1cee6606317c7baa7d06fe86916f72">Logger::init</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span>* argv[]) {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    START_EASYLOGGINGPP(argc, argv);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="class_logger.html#a4099b1ab1b90f7f041e8edec6b8debf2">setLevel</a>(2);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    std::string dir = weakly_canonical(std::filesystem::path(argv[0])).parent_path();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    el::Helpers::installCustomFormatSpecifier(el::CustomFormatSpecifier(<span class="stringliteral">&quot;%tick&quot;</span>, <a class="code" href="_logger_8cpp.html#aa28d3c19ad62ea5c21a37c9bc4b129da">getTickCounter</a>));</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_logger.html#a969163c7aff5b8409d8dfb8175dd2b85">   44</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_logger.html#a969163c7aff5b8409d8dfb8175dd2b85">Logger::setCustomFormatSpec</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* format, <span class="keyword">const</span> el::FormatSpecifierValueResolver&amp; resolver) {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    el::Helpers::installCustomFormatSpecifier(el::CustomFormatSpecifier(format, resolver));</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    el::Loggers::reconfigureAllLoggers(el::Configurations(dir + <span class="stringliteral">&quot;/.logger.conf&quot;</span>));</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="class_logger.html#a4099b1ab1b90f7f041e8edec6b8debf2">setLevel</a>(2);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_logger.html#a4099b1ab1b90f7f041e8edec6b8debf2">   53</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_logger.html#a4099b1ab1b90f7f041e8edec6b8debf2">Logger::setLevel</a>(<span class="keywordtype">int</span> level) {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    el::Configurations defaultConf;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    defaultConf.setGlobally(el::ConfigurationType::Enabled, <span class="stringliteral">&quot;false&quot;</span>);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">bool</span> verboseEnabled = el::Loggers::getLogger(<span class="stringliteral">&quot;default&quot;</span>)-&gt;typedConfigurations()-&gt;enabled(el::Level::Verbose);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    defaultConf.set(el::Level::Verbose, el::ConfigurationType::Enabled, verboseEnabled ? <span class="stringliteral">&quot;true&quot;</span> : <span class="stringliteral">&quot;false&quot;</span>);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">switch</span> (<a class="code" href="class_logger.html#acde3832ae742d0f064d2577c643714ca">level</a>) {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">case</span> 6:</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            defaultConf.set(el::Level::Trace, el::ConfigurationType::Enabled, <span class="stringliteral">&quot;true&quot;</span>);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            [[fallthrough]];</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">case</span> 5:</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            defaultConf.set(el::Level::Debug, el::ConfigurationType::Enabled, <span class="stringliteral">&quot;true&quot;</span>);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            [[fallthrough]];</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordflow">case</span> 4:</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            defaultConf.set(el::Level::Info, el::ConfigurationType::Enabled, <span class="stringliteral">&quot;true&quot;</span>);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            [[fallthrough]];</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keywordflow">case</span> 3:</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            defaultConf.set(el::Level::Warning, el::ConfigurationType::Enabled, <span class="stringliteral">&quot;true&quot;</span>);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            [[fallthrough]];</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">case</span> 2:</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            defaultConf.set(el::Level::Error, el::ConfigurationType::Enabled, <span class="stringliteral">&quot;true&quot;</span>);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            [[fallthrough]];</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">case</span> 1:</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            defaultConf.set(el::Level::Fatal, el::ConfigurationType::Enabled, <span class="stringliteral">&quot;true&quot;</span>);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            [[fallthrough]];</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordflow">case</span> 0:</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordflow">default</span>:;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    };</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    el::Loggers::reconfigureLogger(<span class="stringliteral">&quot;default&quot;</span>, defaultConf);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="class_logger.html#a3b3ada27bc0dfb2ed660db9d620bc670">   86</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_logger.html#a3b3ada27bc0dfb2ed660db9d620bc670">Logger::logToFile</a>(<span class="keywordtype">bool</span> yes) {</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    el::Configurations defaultConf;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_logger.html#a4099b1ab1b90f7f041e8edec6b8debf2">   48</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_logger.html#a4099b1ab1b90f7f041e8edec6b8debf2">Logger::setLevel</a>(<span class="keywordtype">int</span> level) {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="class_logger.html#aab3f8f567382428dd7e467c5d6835832">conf</a>.set(el::Level::Trace, el::ConfigurationType::Enabled, <span class="stringliteral">&quot;false&quot;</span>);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="class_logger.html#aab3f8f567382428dd7e467c5d6835832">conf</a>.set(el::Level::Debug, el::ConfigurationType::Enabled, <span class="stringliteral">&quot;false&quot;</span>);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="class_logger.html#aab3f8f567382428dd7e467c5d6835832">conf</a>.set(el::Level::Info, el::ConfigurationType::Enabled, <span class="stringliteral">&quot;false&quot;</span>);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="class_logger.html#aab3f8f567382428dd7e467c5d6835832">conf</a>.set(el::Level::Warning, el::ConfigurationType::Enabled, <span class="stringliteral">&quot;false&quot;</span>);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="class_logger.html#aab3f8f567382428dd7e467c5d6835832">conf</a>.set(el::Level::Error, el::ConfigurationType::Enabled, <span class="stringliteral">&quot;false&quot;</span>);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="class_logger.html#aab3f8f567382428dd7e467c5d6835832">conf</a>.set(el::Level::Fatal, el::ConfigurationType::Enabled, <span class="stringliteral">&quot;false&quot;</span>);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">switch</span> (level) {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordflow">case</span> 6:</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <a class="code" href="class_logger.html#aab3f8f567382428dd7e467c5d6835832">conf</a>.set(el::Level::Trace, el::ConfigurationType::Enabled, <span class="stringliteral">&quot;true&quot;</span>);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            [[fallthrough]];</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">case</span> 5:</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <a class="code" href="class_logger.html#aab3f8f567382428dd7e467c5d6835832">conf</a>.set(el::Level::Debug, el::ConfigurationType::Enabled, <span class="stringliteral">&quot;true&quot;</span>);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            [[fallthrough]];</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">case</span> 4:</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <a class="code" href="class_logger.html#aab3f8f567382428dd7e467c5d6835832">conf</a>.set(el::Level::Info, el::ConfigurationType::Enabled, <span class="stringliteral">&quot;true&quot;</span>);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            [[fallthrough]];</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">case</span> 3:</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <a class="code" href="class_logger.html#aab3f8f567382428dd7e467c5d6835832">conf</a>.set(el::Level::Warning, el::ConfigurationType::Enabled, <span class="stringliteral">&quot;true&quot;</span>);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            [[fallthrough]];</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordflow">case</span> 2:</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <a class="code" href="class_logger.html#aab3f8f567382428dd7e467c5d6835832">conf</a>.set(el::Level::Error, el::ConfigurationType::Enabled, <span class="stringliteral">&quot;true&quot;</span>);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            [[fallthrough]];</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordflow">case</span> 1:</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <a class="code" href="class_logger.html#aab3f8f567382428dd7e467c5d6835832">conf</a>.set(el::Level::Fatal, el::ConfigurationType::Enabled, <span class="stringliteral">&quot;true&quot;</span>);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            [[fallthrough]];</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordflow">case</span> 0:</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">default</span>:;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    };</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    el::Loggers::reconfigureLogger(<span class="stringliteral">&quot;default&quot;</span>, <a class="code" href="class_logger.html#aab3f8f567382428dd7e467c5d6835832">conf</a>);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="class_logger.html#a54b7bf213561e73cfe1c63cd31c1a074">   82</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_logger.html#a54b7bf213561e73cfe1c63cd31c1a074">Logger::logToFile</a>(<span class="keywordtype">bool</span> yes) {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">if</span> (yes) {</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <a class="code" href="class_logger.html#aab3f8f567382428dd7e467c5d6835832">conf</a>.set(el::Level::Global, el::ConfigurationType::ToFile, <span class="stringliteral">&quot;true&quot;</span>);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <a class="code" href="class_logger.html#aab3f8f567382428dd7e467c5d6835832">conf</a>.set(el::Level::Global, el::ConfigurationType::ToFile, <span class="stringliteral">&quot;false&quot;</span>);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">bool</span> verboseEnabled = el::Loggers::getLogger(<span class="stringliteral">&quot;default&quot;</span>)-&gt;typedConfigurations()-&gt;enabled(el::Level::Verbose);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    defaultConf.set(el::Level::Verbose, el::ConfigurationType::Enabled, verboseEnabled ? <span class="stringliteral">&quot;true&quot;</span> : <span class="stringliteral">&quot;false&quot;</span>);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    el::Loggers::reconfigureLogger(<span class="stringliteral">&quot;default&quot;</span>, <a class="code" href="class_logger.html#aab3f8f567382428dd7e467c5d6835832">conf</a>);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">if</span> (yes) {</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        defaultConf.set(el::Level::Global, el::ConfigurationType::ToFile, <span class="stringliteral">&quot;true&quot;</span>);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        defaultConf.set(el::Level::Global, el::ConfigurationType::ToFile, <span class="stringliteral">&quot;false&quot;</span>);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    }</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    el::Loggers::reconfigureLogger(<span class="stringliteral">&quot;default&quot;</span>, defaultConf);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;}</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
-<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="class_logger.html#a2af10960de62ed8be60e6456f8d4c4bf">  101</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_logger.html#a2af10960de62ed8be60e6456f8d4c4bf">Logger::logToStdOut</a>(<span class="keywordtype">bool</span> yes) {</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    el::Configurations defaultConf;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">bool</span> verboseEnabled = el::Loggers::getLogger(<span class="stringliteral">&quot;default&quot;</span>)-&gt;typedConfigurations()-&gt;enabled(el::Level::Verbose);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    defaultConf.set(el::Level::Verbose, el::ConfigurationType::Enabled, verboseEnabled ? <span class="stringliteral">&quot;true&quot;</span> : <span class="stringliteral">&quot;false&quot;</span>);</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordflow">if</span> (yes) {</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        defaultConf.set(el::Level::Global, el::ConfigurationType::ToStandardOutput, <span class="stringliteral">&quot;true&quot;</span>);</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        defaultConf.set(el::Level::Global, el::ConfigurationType::ToStandardOutput, <span class="stringliteral">&quot;false&quot;</span>);</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    }</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    el::Loggers::reconfigureLogger(<span class="stringliteral">&quot;default&quot;</span>, defaultConf);</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;}</div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="class_logger.html#a2b3fd86c598269c226cf76f391bcc1df">   92</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_logger.html#a2b3fd86c598269c226cf76f391bcc1df">Logger::logToStdOut</a>(<span class="keywordtype">bool</span> yes) {</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">if</span> (yes) {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <a class="code" href="class_logger.html#aab3f8f567382428dd7e467c5d6835832">conf</a>.set(el::Level::Global, el::ConfigurationType::ToStandardOutput, <span class="stringliteral">&quot;true&quot;</span>);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <a class="code" href="class_logger.html#aab3f8f567382428dd7e467c5d6835832">conf</a>.set(el::Level::Global, el::ConfigurationType::ToStandardOutput, <span class="stringliteral">&quot;false&quot;</span>);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    el::Loggers::reconfigureLogger(<span class="stringliteral">&quot;default&quot;</span>, <a class="code" href="class_logger.html#aab3f8f567382428dd7e467c5d6835832">conf</a>);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_logger_html_acde3832ae742d0f064d2577c643714ca"><div class="ttname"><a href="class_logger.html#acde3832ae742d0f064d2577c643714ca">Logger::level</a></div><div class="ttdeci">Level level</div><div class="ttdef"><b>Definition:</b> <a href="_logger_8h_source.html#l00044">Logger.h:44</a></div></div>
-<div class="ttc" id="aclass_logger_html_a2af10960de62ed8be60e6456f8d4c4bf"><div class="ttname"><a href="class_logger.html#a2af10960de62ed8be60e6456f8d4c4bf">Logger::logToStdOut</a></div><div class="ttdeci">static void logToStdOut(bool yes)</div><div class="ttdef"><b>Definition:</b> <a href="_logger_8cpp_source.html#l00101">Logger.cpp:101</a></div></div>
+<div class="ttc" id="aclass_logger_html_a969163c7aff5b8409d8dfb8175dd2b85"><div class="ttname"><a href="class_logger.html#a969163c7aff5b8409d8dfb8175dd2b85">Logger::setCustomFormatSpec</a></div><div class="ttdeci">static void setCustomFormatSpec(const char *format, const el::FormatSpecifierValueResolver &amp;resolver)</div><div class="ttdef"><b>Definition:</b> <a href="_logger_8cpp_source.html#l00044">Logger.cpp:44</a></div></div>
 <div class="ttc" id="a_logger_8h_html"><div class="ttname"><a href="_logger_8h.html">Logger.h</a></div></div>
-<div class="ttc" id="aclassnet_1_1_event_loop_html_a6d8bfd6fa03bb6bf423035ab190657ef"><div class="ttname"><a href="classnet_1_1_event_loop.html#a6d8bfd6fa03bb6bf423035ab190657ef">net::EventLoop::instance</a></div><div class="ttdeci">static EventLoop &amp; instance()</div><div class="ttdef"><b>Definition:</b> <a href="_event_loop_8h_source.html#l00043">EventLoop.h:43</a></div></div>
-<div class="ttc" id="a_logger_8cpp_html_aa28d3c19ad62ea5c21a37c9bc4b129da"><div class="ttname"><a href="_logger_8cpp.html#aa28d3c19ad62ea5c21a37c9bc4b129da">getTickCounter</a></div><div class="ttdeci">INITIALIZE_EASYLOGGINGPP std::string getTickCounter([[maybe_unused]] const el::LogMessage *logMessage)</div><div class="ttdef"><b>Definition:</b> <a href="_logger_8cpp_source.html#l00031">Logger.cpp:31</a></div></div>
-<div class="ttc" id="aclass_logger_html_a3b3ada27bc0dfb2ed660db9d620bc670"><div class="ttname"><a href="class_logger.html#a3b3ada27bc0dfb2ed660db9d620bc670">Logger::logToFile</a></div><div class="ttdeci">static void logToFile(bool yes)</div><div class="ttdef"><b>Definition:</b> <a href="_logger_8cpp_source.html#l00086">Logger.cpp:86</a></div></div>
-<div class="ttc" id="aclass_logger_html_a4099b1ab1b90f7f041e8edec6b8debf2"><div class="ttname"><a href="class_logger.html#a4099b1ab1b90f7f041e8edec6b8debf2">Logger::setLevel</a></div><div class="ttdeci">static void setLevel(int level)</div><div class="ttdef"><b>Definition:</b> <a href="_logger_8cpp_source.html#l00053">Logger.cpp:53</a></div></div>
-<div class="ttc" id="aclass_logger_html_a9a1cee6606317c7baa7d06fe86916f72"><div class="ttname"><a href="class_logger.html#a9a1cee6606317c7baa7d06fe86916f72">Logger::init</a></div><div class="ttdeci">static void init(int argc, char *argv[])</div><div class="ttdef"><b>Definition:</b> <a href="_logger_8cpp_source.html#l00041">Logger.cpp:41</a></div></div>
+<div class="ttc" id="aclass_logger_html_a2b3fd86c598269c226cf76f391bcc1df"><div class="ttname"><a href="class_logger.html#a2b3fd86c598269c226cf76f391bcc1df">Logger::logToStdOut</a></div><div class="ttdeci">static void logToStdOut(bool yes=true)</div><div class="ttdef"><b>Definition:</b> <a href="_logger_8cpp_source.html#l00092">Logger.cpp:92</a></div></div>
+<div class="ttc" id="aclass_logger_html_a54b7bf213561e73cfe1c63cd31c1a074"><div class="ttname"><a href="class_logger.html#a54b7bf213561e73cfe1c63cd31c1a074">Logger::logToFile</a></div><div class="ttdeci">static void logToFile(bool yes=true)</div><div class="ttdef"><b>Definition:</b> <a href="_logger_8cpp_source.html#l00082">Logger.cpp:82</a></div></div>
+<div class="ttc" id="aclass_logger_html_a4099b1ab1b90f7f041e8edec6b8debf2"><div class="ttname"><a href="class_logger.html#a4099b1ab1b90f7f041e8edec6b8debf2">Logger::setLevel</a></div><div class="ttdeci">static void setLevel(int level)</div><div class="ttdef"><b>Definition:</b> <a href="_logger_8cpp_source.html#l00048">Logger.cpp:48</a></div></div>
+<div class="ttc" id="aclass_logger_html_a9a1cee6606317c7baa7d06fe86916f72"><div class="ttname"><a href="class_logger.html#a9a1cee6606317c7baa7d06fe86916f72">Logger::init</a></div><div class="ttdeci">static void init(int argc, char *argv[])</div><div class="ttdef"><b>Definition:</b> <a href="_logger_8cpp_source.html#l00032">Logger.cpp:32</a></div></div>
+<div class="ttc" id="aclass_logger_html_aab3f8f567382428dd7e467c5d6835832"><div class="ttname"><a href="class_logger.html#aab3f8f567382428dd7e467c5d6835832">Logger::conf</a></div><div class="ttdeci">static el::Configurations conf</div><div class="ttdef"><b>Definition:</b> <a href="_logger_8h_source.html#l00046">Logger.h:46</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

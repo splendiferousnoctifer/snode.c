@@ -155,24 +155,26 @@
 <g id="node6" class="node">
 <title>Node6</title>
 <g id="a_node6"><a xlink:href="classnet_1_1socket_1_1tcp_1_1tls_1_1_socket.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="209.5,-305 209.5,-406 310.5,-406 310.5,-305 209.5,-305"/>
-<text text-anchor="start" x="217.5" y="-394" font-family="Helvetica,sans-Serif" font-size="10.00">net::socket::tcp::tls</text>
-<text text-anchor="middle" x="260" y="-383" font-family="Helvetica,sans-Serif" font-size="10.00">::Socket</text>
-<polyline fill="none" stroke="black" points="209.5,-376 310.5,-376 "/>
-<text text-anchor="start" x="217.5" y="-364" font-family="Helvetica,sans-Serif" font-size="10.00"># ssl</text>
-<text text-anchor="start" x="217.5" y="-353" font-family="Helvetica,sans-Serif" font-size="10.00"># ctx</text>
-<polyline fill="none" stroke="black" points="209.5,-346 310.5,-346 "/>
-<text text-anchor="start" x="217.5" y="-334" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~Socket()</text>
+<polygon fill="white" stroke="black" points="209.5,-294 209.5,-417 310.5,-417 310.5,-294 209.5,-294"/>
+<text text-anchor="start" x="217.5" y="-405" font-family="Helvetica,sans-Serif" font-size="10.00">net::socket::tcp::tls</text>
+<text text-anchor="middle" x="260" y="-394" font-family="Helvetica,sans-Serif" font-size="10.00">::Socket</text>
+<polyline fill="none" stroke="black" points="209.5,-387 310.5,-387 "/>
+<text text-anchor="start" x="217.5" y="-375" font-family="Helvetica,sans-Serif" font-size="10.00"># ssl</text>
+<text text-anchor="start" x="217.5" y="-364" font-family="Helvetica,sans-Serif" font-size="10.00"># ctx</text>
+<polyline fill="none" stroke="black" points="209.5,-357 310.5,-357 "/>
+<text text-anchor="start" x="217.5" y="-345" font-family="Helvetica,sans-Serif" font-size="10.00">+ setSSL_CTX()</text>
+<text text-anchor="start" x="217.5" y="-334" font-family="Helvetica,sans-Serif" font-size="10.00">+ clearSSL_CTX()</text>
 <text text-anchor="start" x="217.5" y="-323" font-family="Helvetica,sans-Serif" font-size="10.00">+ startSSL()</text>
-<text text-anchor="start" x="217.5" y="-312" font-family="Helvetica,sans-Serif" font-size="10.00">+ getSSL()</text>
+<text text-anchor="start" x="217.5" y="-312" font-family="Helvetica,sans-Serif" font-size="10.00">+ stopSSL()</text>
+<text text-anchor="start" x="217.5" y="-301" font-family="Helvetica,sans-Serif" font-size="10.00">+ getSSL()</text>
 </a>
 </g>
 </g>
 <!-- Node6&#45;&gt;Node2 -->
 <g id="edge5" class="edge">
 <title>Node6&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M224.42,-296.27C213.54,-278.48 201.51,-258.79 190.34,-240.52"/>
-<polygon fill="none" stroke="midnightblue" points="221.45,-298.13 229.65,-304.84 227.42,-294.48 221.45,-298.13"/>
+<path fill="none" stroke="midnightblue" d="M217.47,-284.9C208.61,-270.4 199.3,-255.17 190.51,-240.79"/>
+<polygon fill="none" stroke="midnightblue" points="214.71,-287.1 222.91,-293.81 220.68,-283.45 214.71,-287.1"/>
 </g>
 <!-- Node7 -->
 <g id="node7" class="node">
@@ -197,7 +199,7 @@
 <!-- Node7&#45;&gt;Node6 -->
 <g id="edge6" class="edge">
 <title>Node7&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M268.81,-450.06C267.41,-435.18 265.97,-419.95 264.68,-406.21"/>
+<path fill="none" stroke="midnightblue" d="M268.82,-450.22C267.78,-439.18 266.72,-427.94 265.72,-417.26"/>
 <polygon fill="none" stroke="midnightblue" points="265.35,-450.66 269.77,-460.29 272.32,-450 265.35,-450.66"/>
 </g>
 <!-- Node8 -->
