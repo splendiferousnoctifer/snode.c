@@ -7,7 +7,8 @@ var class_logger =
       [ "ERROR", "class_logger.html#ad766a24576ea8b27ad9d5649cef46d8fa3ce1bbeb15a3d8e29e4c5e75492a781b", null ],
       [ "FATAL", "class_logger.html#ad766a24576ea8b27ad9d5649cef46d8faedbd8d8bf2c8855ff226770a5c6adf0c", null ]
     ] ],
-    [ "~Logger", "class_logger.html#a68cafca721107a954d85043a553dd217", null ],
+    [ "Logger", "class_logger.html#aefffc02e0c6c0ab09ec1f77fe35f6439", null ],
+    [ "~Logger", "class_logger.html#ad0eb4e365ecab1497d9275d4373e433b", null ],
     [ "init", "class_logger.html#a9a1cee6606317c7baa7d06fe86916f72", null ],
     [ "logToFile", "class_logger.html#a54b7bf213561e73cfe1c63cd31c1a074", null ],
     [ "logToStdOut", "class_logger.html#a2b3fd86c598269c226cf76f391bcc1df", null ],

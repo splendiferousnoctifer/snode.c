@@ -44,6 +44,7 @@ var NAVTREE =
       [ "Extract Server and Client Information (host name, IP, port, SSL/TLS information)", "index.html#autotoc_md15", null ],
       [ "Using Regular Expressions in Routes", "index.html#autotoc_md16", null ]
     ] ],
+    [ "GitHub", "^https://github.com/VolkerChristian/snode.c", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -74,18 +75,17 @@ var NAVTREE =
         [ "Functions", "globals_func.html", null ],
         [ "Macros", "globals_defs.html", null ]
       ] ]
-    ] ],
-    [ "GitHub", "^https://github.com/VolkerChristian/snode.c", null ]
+    ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
 "_accept_event_dispatcher_8cpp.html",
-"classexpress_1_1_dispatcher.html#a89a9c2c542ff67ba024cbdf11b7a6765",
-"classhttp_1_1_request_parser.html#aa7e39ced2391bf7c4b9292e5405672b1",
-"classnet_1_1socket_1_1bad__hostname.html",
-"functions_eval.html"
+"classexpress_1_1_dispatcher.html#a5173478a6d9ab11aa191ebc98d3e4f07",
+"classhttp_1_1_request_parser.html#aa686866681b1dd42da709ea513df3806",
+"classnet_1_1socket_1_1_inet_address.html#ae30a979366e3b9c44e7e6c59df0b0629",
+"functions_enum.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

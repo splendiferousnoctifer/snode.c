@@ -24,6 +24,7 @@
 */
 var menudata={children:[
 {text:"Main Page",url:"index.html"},
+{text:"GitHub",url:"https://github.com/VolkerChristian/snode.c"},
 {text:"Namespaces",url:"namespaces.html",children:[
 {text:"Namespace List",url:"namespaces.html"},
 {text:"Namespace Members",url:"namespacemembers.html",children:[
@@ -129,5 +130,4 @@ var menudata={children:[
 {text:"File Members",url:"globals.html",children:[
 {text:"All",url:"globals.html"},
 {text:"Functions",url:"globals_func.html"},
-{text:"Macros",url:"globals_defs.html"}]}]},
-{text:"GitHub",url:"https://github.com/VolkerChristian/snode.c"}]}
+{text:"Macros",url:"globals_defs.html"}]}]}]}

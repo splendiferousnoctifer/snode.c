@@ -5,7 +5,7 @@ var searchData=
   ['_7eeventreceiver_492',['~EventReceiver',['../classnet_1_1_event_receiver.html#ac0c41c1048d0e80e22531a02bfde634a',1,'net::EventReceiver']]],
   ['_7einetaddress_493',['~InetAddress',['../classnet_1_1socket_1_1_inet_address.html#aac98d9ba879752ac1054a26cfa84fb47',1,'net::socket::InetAddress']]],
   ['_7eintervaltimer_494',['~IntervalTimer',['../classnet_1_1timer_1_1_interval_timer.html#a8b9595429195b42c015f0acc294b017d',1,'net::timer::IntervalTimer']]],
-  ['_7elogger_495',['~Logger',['../class_logger.html#a68cafca721107a954d85043a553dd217',1,'Logger']]],
+  ['_7elogger_495',['~Logger',['../class_logger.html#ad0eb4e365ecab1497d9275d4373e433b',1,'Logger']]],
   ['_7emimetypes_496',['~MimeTypes',['../class_mime_types.html#a21520cd7ef6ea473aa0d784c0a5a5820',1,'MimeTypes']]],
   ['_7eparser_497',['~Parser',['../classhttp_1_1_parser.html#aebd500c3f73e98f1da1fe82630382572',1,'http::Parser']]],
   ['_7erequest_498',['~Request',['../classhttp_1_1_request.html#a4c2c0b9e89103c30e9b974c9288db3e5',1,'http::Request']]],

@@ -7,7 +7,7 @@ var searchData=
   ['timer_448',['Timer',['../classnet_1_1timer_1_1_timer.html',1,'net::timer::Timer'],['../classnet_1_1timer_1_1_timer.html#ab63bd86695b2a111bf7c87348806601a',1,'net::timer::Timer::Timer(const struct timeval &amp;timeout, const void *arg)'],['../classnet_1_1timer_1_1_timer.html#a1f43762415fc087f105e514acf31572a',1,'net::timer::Timer::Timer(const Timer &amp;)=delete']]],
   ['timer_2ecpp_449',['Timer.cpp',['../_timer_8cpp.html',1,'']]],
   ['timer_2eh_450',['Timer.h',['../_timer_8h.html',1,'']]],
-  ['timereventdispatcher_451',['TimerEventDispatcher',['../classnet_1_1_timer_event_dispatcher.html',1,'net::TimerEventDispatcher'],['../classnet_1_1_timer_event_dispatcher.html#a0341ccd9d63c8f25fb587054bed77b5f',1,'net::TimerEventDispatcher::TimerEventDispatcher()'],['../classnet_1_1_event_loop.html#ab2853b9eec71f452eb6ef0f1e5d2247a',1,'net::EventLoop::timerEventDispatcher()']]],
+  ['timereventdispatcher_451',['TimerEventDispatcher',['../classnet_1_1_timer_event_dispatcher.html',1,'net::TimerEventDispatcher'],['../classnet_1_1_event_loop.html#ab2853b9eec71f452eb6ef0f1e5d2247a',1,'net::EventLoop::timerEventDispatcher()'],['../classnet_1_1_timer_event_dispatcher.html#a0341ccd9d63c8f25fb587054bed77b5f',1,'net::TimerEventDispatcher::TimerEventDispatcher()']]],
   ['timereventdispatcher_2ecpp_452',['TimerEventDispatcher.cpp',['../_timer_event_dispatcher_8cpp.html',1,'']]],
   ['timereventdispatcher_2eh_453',['TimerEventDispatcher.h',['../_timer_event_dispatcher_8h.html',1,'']]],
   ['timerlist_454',['timerList',['../classnet_1_1_timer_event_dispatcher.html#a411a92f459e727f4d5df6f847a42f970',1,'net::TimerEventDispatcher']]],
