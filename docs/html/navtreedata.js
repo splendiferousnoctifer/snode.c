@@ -74,7 +74,8 @@ var NAVTREE =
         [ "Functions", "globals_func.html", null ],
         [ "Macros", "globals_defs.html", null ]
       ] ]
-    ] ]
+    ] ],
+    [ "GitHub", "^https://github.com/VolkerChristian/snode.c", null ]
   ] ]
 ];
 
