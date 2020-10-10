@@ -6,7 +6,6 @@ var classnet_1_1_event_loop =
     [ "getOutOfBandEventDispatcher", "classnet_1_1_event_loop.html#adadaec4603719a5b6946abef06c5fa67", null ],
     [ "getReadEventDispatcher", "classnet_1_1_event_loop.html#a6243040d545517b64ebdc4318487895d", null ],
     [ "getTickCounter", "classnet_1_1_event_loop.html#a81ac233351625c5bd8ed1943d3f9daea", null ],
-    [ "getTickCounterAsString", "classnet_1_1_event_loop.html#a67e1a11192cafa69c2dcb19fe8ca7e2a", null ],
     [ "getTimerEventDispatcher", "classnet_1_1_event_loop.html#aeb3848618bd0e968aa6713d8c72bbd0f", null ],
     [ "getWriteEventDispatcher", "classnet_1_1_event_loop.html#a550268fc6314611ba522bec4b80bf60a", null ],
     [ "init", "classnet_1_1_event_loop.html#a333d383210a35e2c31140e5705c92412", null ],

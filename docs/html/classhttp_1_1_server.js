@@ -1,6 +1,7 @@
 var classhttp_1_1_server =
 [
-    [ "SocketConnection", "classhttp_1_1_server.html#aac8f3c46eb9f533fee47246ba410d5ae", null ],
+    [ "SocketConnection", "classhttp_1_1_server.html#ab4daa893099037959b0d48151d44f392", null ],
+    [ "SocketListener", "classhttp_1_1_server.html#a0f5704708d13d094ee5eba8e15393af6", null ],
     [ "SocketServer", "classhttp_1_1_server.html#abf5d9587b72077956b016248f66da9b0", null ],
     [ "Server", "classhttp_1_1_server.html#a48be9b59a105acef5d15b3d4bcdc7dcb", null ],
     [ "listen", "classhttp_1_1_server.html#afd3168b76837c4ee28844a9e8ff5f666", null ],

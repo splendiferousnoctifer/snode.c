@@ -91,8 +91,6 @@ $(document).ready(function(){initNavTree('namespacenet_1_1socket_1_1tcp_1_1legac
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1tcp_1_1legacy_1_1_socket.html">Socket</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1tcp_1_1legacy_1_1_socket_client.html">SocketClient</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1tcp_1_1legacy_1_1_socket_listener.html">SocketListener</a></td></tr>
@@ -106,23 +104,26 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:aeca9dceeb72706d2b26aa949723d0d2c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenet_1_1socket_1_1tcp_1_1legacy.html#aeca9dceeb72706d2b26aa949723d0d2c">SocketConnection</a> = <a class="el" href="classnet_1_1socket_1_1tcp_1_1_socket_connection.html">socket::tcp::SocketConnection</a>&lt; <a class="el" href="classnet_1_1socket_1_1tcp_1_1legacy_1_1_socket_reader.html">legacy::SocketReader</a>, <a class="el" href="classnet_1_1socket_1_1tcp_1_1legacy_1_1_socket_writer.html">legacy::SocketWriter</a> &gt;</td></tr>
-<tr class="separator:aeca9dceeb72706d2b26aa949723d0d2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc1372d6f638947b9b065f691ee534be"><td class="memTemplParams" colspan="2">template&lt;typename SocketT &gt; </td></tr>
+<tr class="memitem:afc1372d6f638947b9b065f691ee534be"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacenet_1_1socket_1_1tcp_1_1legacy.html#afc1372d6f638947b9b065f691ee534be">SocketConnection</a> = <a class="el" href="classnet_1_1socket_1_1tcp_1_1_socket_connection.html">socket::tcp::SocketConnection</a>&lt; <a class="el" href="classnet_1_1socket_1_1tcp_1_1legacy_1_1_socket_reader.html">legacy::SocketReader</a>&lt; SocketT &gt;, <a class="el" href="classnet_1_1socket_1_1tcp_1_1legacy_1_1_socket_writer.html">legacy::SocketWriter</a>&lt; SocketT &gt; &gt;</td></tr>
+<tr class="separator:afc1372d6f638947b9b065f691ee534be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="aeca9dceeb72706d2b26aa949723d0d2c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeca9dceeb72706d2b26aa949723d0d2c">&#9670;&nbsp;</a></span>SocketConnection</h2>
+<a id="afc1372d6f638947b9b065f691ee534be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc1372d6f638947b9b065f691ee534be">&#9670;&nbsp;</a></span>SocketConnection</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename SocketT &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespacenet_1_1socket_1_1tcp_1_1legacy.html#aeca9dceeb72706d2b26aa949723d0d2c">net::socket::tcp::legacy::SocketConnection</a> = typedef <a class="el" href="classnet_1_1socket_1_1tcp_1_1_socket_connection.html">socket::tcp::SocketConnection</a>&lt;<a class="el" href="classnet_1_1socket_1_1tcp_1_1legacy_1_1_socket_reader.html">legacy::SocketReader</a>, <a class="el" href="classnet_1_1socket_1_1tcp_1_1legacy_1_1_socket_writer.html">legacy::SocketWriter</a>&gt;</td>
+          <td class="memname">using <a class="el" href="namespacenet_1_1socket_1_1tcp_1_1legacy.html#afc1372d6f638947b9b065f691ee534be">net::socket::tcp::legacy::SocketConnection</a> = typedef <a class="el" href="classnet_1_1socket_1_1tcp_1_1_socket_connection.html">socket::tcp::SocketConnection</a>&lt;<a class="el" href="classnet_1_1socket_1_1tcp_1_1legacy_1_1_socket_reader.html">legacy::SocketReader</a>&lt;SocketT&gt;, <a class="el" href="classnet_1_1socket_1_1tcp_1_1legacy_1_1_socket_writer.html">legacy::SocketWriter</a>&lt;SocketT&gt; &gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="legacy_2_socket_connection_8h_source.html#l00032">32</a> of file <a class="el" href="legacy_2_socket_connection_8h_source.html">SocketConnection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="legacy_2_socket_connection_8h_source.html#l00033">33</a> of file <a class="el" href="legacy_2_socket_connection_8h_source.html">SocketConnection.h</a>.</p>
 
 </div>
 </div>

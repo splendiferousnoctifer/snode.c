@@ -2,7 +2,6 @@ var namespacenet_1_1socket_1_1tcp =
 [
     [ "legacy", "namespacenet_1_1socket_1_1tcp_1_1legacy.html", "namespacenet_1_1socket_1_1tcp_1_1legacy" ],
     [ "tls", "namespacenet_1_1socket_1_1tcp_1_1tls.html", "namespacenet_1_1socket_1_1tcp_1_1tls" ],
-    [ "Socket", "classnet_1_1socket_1_1tcp_1_1_socket.html", "classnet_1_1socket_1_1tcp_1_1_socket" ],
     [ "SocketClient", "classnet_1_1socket_1_1tcp_1_1_socket_client.html", "classnet_1_1socket_1_1tcp_1_1_socket_client" ],
     [ "SocketConnection", "classnet_1_1socket_1_1tcp_1_1_socket_connection.html", "classnet_1_1socket_1_1tcp_1_1_socket_connection" ],
     [ "SocketConnectionBase", "classnet_1_1socket_1_1tcp_1_1_socket_connection_base.html", "classnet_1_1socket_1_1tcp_1_1_socket_connection_base" ],
