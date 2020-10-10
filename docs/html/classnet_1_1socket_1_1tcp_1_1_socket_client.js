@@ -4,7 +4,7 @@ var classnet_1_1socket_1_1tcp_1_1_socket_client =
     [ "SocketClient", "classnet_1_1socket_1_1tcp_1_1_socket_client.html#a6128a36b7639a7a80a52d8031fca6f79", null ],
     [ "SocketClient", "classnet_1_1socket_1_1tcp_1_1_socket_client.html#a0ba4d564d01589f006b8c9c863386fd2", null ],
     [ "~SocketClient", "classnet_1_1socket_1_1tcp_1_1_socket_client.html#ace016691d65d4278da81ebef0b698bf8", null ],
-    [ "connect", "classnet_1_1socket_1_1tcp_1_1_socket_client.html#a6876b877836632e71f827f347dcc12ea", null ],
+    [ "connect", "classnet_1_1socket_1_1tcp_1_1_socket_client.html#aaff6cfc641dcaff048b743faeb573b0c", null ],
     [ "operator delete", "classnet_1_1socket_1_1tcp_1_1_socket_client.html#a1544e9ff53fe1ac0c3329bd68e7edd79", null ],
     [ "operator new", "classnet_1_1socket_1_1tcp_1_1_socket_client.html#aa9a74e55c38778a3e14390050750300d", null ],
     [ "isDynamic", "classnet_1_1socket_1_1tcp_1_1_socket_client.html#a04960cded60d15c3479015b03a6cf9fa", null ],

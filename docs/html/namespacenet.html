@@ -137,6 +137,8 @@ Functions</h2></td></tr>
 <tr class="memitem:ad1de93e09913a9ce136d99696c7ee3e1"><td class="memTemplParams" colspan="2">template&lt;typename EventReceiverT &gt; </td></tr>
 <tr class="memitem:ad1de93e09913a9ce136d99696c7ee3e1"><td class="memTemplItemLeft" align="right" valign="top">static bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacenet.html#ad1de93e09913a9ce136d99696c7ee3e1">contains</a> (std::list&lt; EventReceiverT * &gt; &amp;eventReceivers, EventReceiverT *&amp;eventReceiver)</td></tr>
 <tr class="separator:ad1de93e09913a9ce136d99696c7ee3e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fbef2ddfd827d222bad07e28676c27a"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenet.html#a1fbef2ddfd827d222bad07e28676c27a">getTickCounterAsString</a> ([[maybe_unused]] const el::LogMessage *logMessage)</td></tr>
+<tr class="separator:a1fbef2ddfd827d222bad07e28676c27a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ad1de93e09913a9ce136d99696c7ee3e1"></a>
@@ -187,6 +189,57 @@ template&lt;typename EventReceiverT &gt; </div>
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="namespacenet_ad1de93e09913a9ce136d99696c7ee3e1_icgraph.svg" width="319" height="147"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a1fbef2ddfd827d222bad07e28676c27a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fbef2ddfd827d222bad07e28676c27a">&#9670;&nbsp;</a></span>getTickCounterAsString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::string net::getTickCounterAsString </td>
+          <td>(</td>
+          <td class="paramtype">[[maybe_unused] ] const el::LogMessage *&#160;</td>
+          <td class="paramname"><em>logMessage</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_event_loop_8cpp_source.html#l00042">42</a> of file <a class="el" href="_event_loop_8cpp_source.html">EventLoop.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                                                                                             {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        std::string tick = std::to_string(EventLoop::instance().getTickCounter());</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">if</span> (tick.length() &lt; 10) {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            tick.insert(0, 10 - tick.length(), <span class="charliteral">&#39;0&#39;</span>);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">return</span> tick;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="_event_loop_8h_source.html#l00043">net::EventLoop::instance()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="_event_loop_8cpp_source.html#l00132">net::EventLoop::init()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacenet_a1fbef2ddfd827d222bad07e28676c27a_cgraph.svg" width="412" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacenet_a1fbef2ddfd827d222bad07e28676c27a_icgraph.svg" width="579" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
