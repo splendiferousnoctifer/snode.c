@@ -85,7 +85,7 @@ var NAVTREEINDEX =
 "classexpress_1_1_request.html#a7194fef6a755397f1b5636462feee8ed",
 "classhttp_1_1_response.html#a1f26c5c4abb75f9efc5057c3da36defa",
 "classnet_1_1_write_event_receiver.html",
-"classnet_1_1timer_1_1_interval_timer.html#a2e230fb2901d4707c642414945b506de",
+"classnet_1_1socket_1_1stream_1_1tls_1_1_socket_writer.html#a575092baf77eee53e0f52525230d01d8",
 "legacy_2_web_app_8h.html"
 ];
 

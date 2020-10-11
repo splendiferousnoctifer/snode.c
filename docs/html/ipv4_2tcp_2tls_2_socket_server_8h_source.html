@@ -115,14 +115,18 @@ $(document).ready(function(){initNavTree('ipv4_2tcp_2tls_2_socket_server_8h_sour
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacenet_1_1socket_1_1ipv4_1_1tcp_1_1tls.html">net::socket::ipv4::tcp::tls</a> {</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="namespacenet_1_1socket_1_1ipv4_1_1tcp_1_1tls.html#aaf4bb00cf8e62992b5072d93d6d869c1">   31</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_server.html">SocketServer</a> = <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_server.html">net::socket::stream::tls::SocketServer&lt;net::socket::ipv4::tcp::tls::Socket&gt;</a>;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#endif // NET_SOCKET_IPV4_TCP_TLS_SOCKETSERVER_H</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classnet_1_1socket_1_1ipv4_1_1tcp_1_1tls_1_1_socket_server.html">   31</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classnet_1_1socket_1_1ipv4_1_1tcp_1_1tls_1_1_socket_server.html">SocketServer</a> : <span class="keyword">public</span> <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_server.html">net::socket::stream::tls::SocketServer</a>&lt;net::socket::ipv4::tcp::tls::Socket&gt; {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keyword">using</span> <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_server.html">net::socket::stream::tls::SocketServer&lt;net::socket::ipv4::tcp::tls::Socket&gt;::SocketServer</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    };</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;} <span class="comment">// namespace net::socket::ipv4::tcp::tls</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#endif // NET_SOCKET_IPV4_TCP_TLS_SOCKETSERVER_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="asock__stream_2tls_2_socket_server_8h_html"><div class="ttname"><a href="sock__stream_2tls_2_socket_server_8h.html">SocketServer.h</a></div></div>
+<div class="ttc" id="aclassnet_1_1socket_1_1ipv4_1_1tcp_1_1tls_1_1_socket_server_html"><div class="ttname"><a href="classnet_1_1socket_1_1ipv4_1_1tcp_1_1tls_1_1_socket_server.html">net::socket::ipv4::tcp::tls::SocketServer</a></div><div class="ttdef"><b>Definition:</b> <a href="ipv4_2tcp_2tls_2_socket_server_8h_source.html#l00031">SocketServer.h:31</a></div></div>
 <div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1tls_1_1_socket_server_html"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_server.html">net::socket::stream::tls::SocketServer</a></div><div class="ttdef"><b>Definition:</b> <a href="sock__stream_2tls_2_socket_server_8h_source.html#l00032">SocketServer.h:32</a></div></div>
 <div class="ttc" id="anamespacenet_1_1socket_1_1ipv4_1_1tcp_1_1tls_html"><div class="ttname"><a href="namespacenet_1_1socket_1_1ipv4_1_1tcp_1_1tls.html">net::socket::ipv4::tcp::tls</a></div><div class="ttdef"><b>Definition:</b> <a href="ipv4_2tcp_2tls_2_socket_8cpp_source.html#l00029">Socket.cpp:29</a></div></div>
 <div class="ttc" id="a_socket_8h_html"><div class="ttname"><a href="_socket_8h.html">Socket.h</a></div></div>
