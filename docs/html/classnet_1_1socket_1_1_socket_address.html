@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('classnet_1_1socket_1_1_socket_address.
 <div class="dynheader">
 Inheritance diagram for net::socket::SocketAddress&lt; SockAddrT &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1_socket_address__inherit__graph.svg" width="239" height="604"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1_socket_address__inherit__graph.svg" width="423" height="590"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <div class="dynheader">
 Collaboration diagram for net::socket::SocketAddress&lt; SockAddrT &gt;:</div>
@@ -117,8 +117,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:ade117b9571a4036380a96a5da166d345"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnet_1_1socket_1_1_socket_address.html#a35e84e2561e779a9dd8c392e3005a53e">SockAddr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1_socket_address.html#ade117b9571a4036380a96a5da166d345">addr</a> {}</td></tr>
-<tr class="separator:ade117b9571a4036380a96a5da166d345"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc7af4ac6825de6a7862c541caca20d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnet_1_1socket_1_1_socket_address.html#a35e84e2561e779a9dd8c392e3005a53e">SockAddr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">sockAddr</a> {}</td></tr>
+<tr class="separator:afc7af4ac6825de6a7862c541caca20d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename SockAddrT&gt;<br />
@@ -173,16 +173,9 @@ template&lt;typename SockAddrT &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="_socket_address_8h_source.html#l00037">37</a> of file <a class="el" href="_socket_address_8h_source.html">SocketAddress.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                                                   {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span>struct sockaddr&amp;<span class="keyword">&gt;</span>(<a class="code" href="classnet_1_1socket_1_1_socket_address.html#ade117b9571a4036380a96a5da166d345">addr</a>);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span>struct sockaddr&amp;<span class="keyword">&gt;</span>(<a class="code" href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">sockAddr</a>);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        }</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="_socket_address_8h_source.html#l00041">net::socket::SocketAddress&lt; struct sockaddr_in &gt;::getSockAddrLen()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1_socket_address_aa59d59d3190a5a6897715c518193d7c1_icgraph.svg" width="427" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
 </div>
 </div>
 <a id="add263c25a393dccfd9a275bf54dd5339"></a>
@@ -212,14 +205,14 @@ template&lt;typename SockAddrT &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="_socket_address_8h_source.html#l00041">41</a> of file <a class="el" href="_socket_address_8h_source.html">SocketAddress.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                                         {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">sizeof</span>(<a class="code" href="classnet_1_1socket_1_1_socket_address.html#aa59d59d3190a5a6897715c518193d7c1">getSockAddr</a>());</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">sizeof</span>(<a class="code" href="classnet_1_1socket_1_1_socket_address.html#a35e84e2561e779a9dd8c392e3005a53e">SockAddr</a>);</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        }</div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="ade117b9571a4036380a96a5da166d345"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade117b9571a4036380a96a5da166d345">&#9670;&nbsp;</a></span>addr</h2>
+<a id="afc7af4ac6825de6a7862c541caca20d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc7af4ac6825de6a7862c541caca20d6">&#9670;&nbsp;</a></span>sockAddr</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -230,7 +223,7 @@ template&lt;typename SockAddrT &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classnet_1_1socket_1_1_socket_address.html#a35e84e2561e779a9dd8c392e3005a53e">SockAddr</a> <a class="el" href="classnet_1_1socket_1_1_socket_address.html">net::socket::SocketAddress</a>&lt; SockAddrT &gt;::addr {}</td>
+          <td class="memname"><a class="el" href="classnet_1_1socket_1_1_socket_address.html#a35e84e2561e779a9dd8c392e3005a53e">SockAddr</a> <a class="el" href="classnet_1_1socket_1_1_socket_address.html">net::socket::SocketAddress</a>&lt; SockAddrT &gt;::sockAddr {}</td>
         </tr>
       </table>
   </td>
@@ -242,7 +235,7 @@ template&lt;typename SockAddrT &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="_socket_address_8h_source.html#l00046">46</a> of file <a class="el" href="_socket_address_8h_source.html">SocketAddress.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_socket_address_8h_source.html#l00037">net::socket::SocketAddress&lt; struct sockaddr_in &gt;::getSockAddr()</a>, <a class="el" href="_inet_address_8cpp_source.html#l00073">net::socket::ipv4::InetAddress::InetAddress()</a>, and <a class="el" href="_inet_address_8cpp_source.html#l00077">net::socket::ipv4::InetAddress::operator=()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_socket_address_8h_source.html#l00037">net::socket::SocketAddress&lt; struct sockaddr_in6 &gt;::getSockAddr()</a>, <a class="el" href="ipv4_2_inet_address_8cpp_source.html#l00073">net::socket::ipv4::InetAddress::InetAddress()</a>, <a class="el" href="ipv6_2_inet_address_8cpp_source.html#l00101">net::socket::ipv6::InetAddress::InetAddress()</a>, <a class="el" href="ipv4_2_inet_address_8cpp_source.html#l00077">net::socket::ipv4::InetAddress::operator=()</a>, and <a class="el" href="ipv6_2_inet_address_8cpp_source.html#l00105">net::socket::ipv6::InetAddress::operator=()</a>.</p>
 
 </div>
 </div>
@@ -251,8 +244,8 @@ template&lt;typename SockAddrT &gt; </div>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassnet_1_1socket_1_1_socket_address_html_aa59d59d3190a5a6897715c518193d7c1"><div class="ttname"><a href="classnet_1_1socket_1_1_socket_address.html#aa59d59d3190a5a6897715c518193d7c1">net::socket::SocketAddress::getSockAddr</a></div><div class="ttdeci">const struct sockaddr &amp; getSockAddr() const</div><div class="ttdef"><b>Definition:</b> <a href="_socket_address_8h_source.html#l00037">SocketAddress.h:37</a></div></div>
-<div class="ttc" id="aclassnet_1_1socket_1_1_socket_address_html_ade117b9571a4036380a96a5da166d345"><div class="ttname"><a href="classnet_1_1socket_1_1_socket_address.html#ade117b9571a4036380a96a5da166d345">net::socket::SocketAddress::addr</a></div><div class="ttdeci">SockAddr addr</div><div class="ttdef"><b>Definition:</b> <a href="_socket_address_8h_source.html#l00046">SocketAddress.h:46</a></div></div>
+<div class="ttc" id="aclassnet_1_1socket_1_1_socket_address_html_a35e84e2561e779a9dd8c392e3005a53e"><div class="ttname"><a href="classnet_1_1socket_1_1_socket_address.html#a35e84e2561e779a9dd8c392e3005a53e">net::socket::SocketAddress::SockAddr</a></div><div class="ttdeci">SockAddrT SockAddr</div><div class="ttdef"><b>Definition:</b> <a href="_socket_address_8h_source.html#l00035">SocketAddress.h:35</a></div></div>
+<div class="ttc" id="aclassnet_1_1socket_1_1_socket_address_html_afc7af4ac6825de6a7862c541caca20d6"><div class="ttname"><a href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">net::socket::SocketAddress::sockAddr</a></div><div class="ttdeci">SockAddr sockAddr</div><div class="ttdef"><b>Definition:</b> <a href="_socket_address_8h_source.html#l00046">SocketAddress.h:46</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

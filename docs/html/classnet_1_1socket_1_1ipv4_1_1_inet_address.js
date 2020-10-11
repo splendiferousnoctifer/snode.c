@@ -6,7 +6,6 @@ var classnet_1_1socket_1_1ipv4_1_1_inet_address =
     [ "InetAddress", "classnet_1_1socket_1_1ipv4_1_1_inet_address.html#ab117035ec6bea80842f51d781fc537a7", null ],
     [ "InetAddress", "classnet_1_1socket_1_1ipv4_1_1_inet_address.html#a29d7d9f32b73040df0e8ef28c93fbf33", null ],
     [ "InetAddress", "classnet_1_1socket_1_1ipv4_1_1_inet_address.html#aa5d46e1dbee2ede170360759ca2c1b7e", null ],
-    [ "~InetAddress", "classnet_1_1socket_1_1ipv4_1_1_inet_address.html#a19897464a466b36a1bc81fd919b4a8d5", null ],
     [ "getSockAddrIn", "classnet_1_1socket_1_1ipv4_1_1_inet_address.html#ab7d4ab5da9fb83cacf51a334dfbd544d", null ],
     [ "host", "classnet_1_1socket_1_1ipv4_1_1_inet_address.html#af1c7dad343d707bb43ef61ddf6046bbf", null ],
     [ "ip", "classnet_1_1socket_1_1ipv4_1_1_inet_address.html#abe7efa8e0656e3cbee993500b83bd078", null ],

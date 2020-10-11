@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.20"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>snode.c: net/socket/tcp/tls/SocketReader.h Source File</title>
+<title>snode.c: net/socket/sock_stream/tls/SocketReader.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -113,39 +113,39 @@ $(document).ready(function(){initNavTree('tls_2_socket_reader_8h_source.html',''
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* DOXYGEN_SHOULD_SKIP_THIS */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_socket_reader_8h.html">socket/tcp/SocketReader.h</a>&quot;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_socket_reader_8h.html">socket/sock_stream/SocketReader.h</a>&quot;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">// IWYU pragma: no_forward_declare tls::Socket</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacenet_1_1socket_1_1tcp_1_1tls.html">net::socket::tcp::tls</a> {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacenet_1_1socket_1_1stream_1_1tls.html">net::socket::stream::tls</a> {</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> SocketT&gt;</div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classnet_1_1socket_1_1tcp_1_1tls_1_1_socket_reader.html">   36</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classnet_1_1socket_1_1tcp_1_1tls_1_1_socket_reader.html">SocketReader</a> : <span class="keyword">public</span> <a class="code" href="classnet_1_1socket_1_1tcp_1_1_socket_reader.html">socket::tcp::SocketReader</a>&lt;SocketT&gt; {</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_reader.html">   36</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_reader.html">SocketReader</a> : <span class="keyword">public</span> <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_reader.html">socket::stream::SocketReader</a>&lt;SocketT&gt; {</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classnet_1_1socket_1_1tcp_1_1tls_1_1_socket_reader.html#a1656b1150cffeabab5f2927427ba84b1">   38</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="classnet_1_1socket_1_1tcp_1_1_socket_reader.html#a3554f3385e6c204c66ef7dd2aef6a04f">Socket</a> = SocketT;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_reader.html#a8626ff98a572438f282b832afb46c6f2">   38</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#a5bde1a17c3f7be38cdbbb29fd724d321">Socket</a> = SocketT;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keyword">using</span> <a class="code" href="classnet_1_1socket_1_1tcp_1_1_socket_reader.html">socket::tcp::SocketReader&lt;Socket&gt;::SocketReader</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keyword">using</span> <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_reader.html">socket::stream::SocketReader&lt;Socket&gt;::SocketReader</a>;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classnet_1_1socket_1_1tcp_1_1tls_1_1_socket_reader.html#aca86c8cdb46a78b2210619fd9259f245">   42</a></span>&#160;        ssize_t <a class="code" href="classnet_1_1socket_1_1tcp_1_1tls_1_1_socket_reader.html#aca86c8cdb46a78b2210619fd9259f245">read</a>(<span class="keywordtype">char</span>* junk, <span class="keywordtype">size_t</span> junkLen)<span class="keyword"> override </span>{</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_reader.html#a2d1afe1a95aa96b9a3c442ce601af849">   42</a></span>&#160;        ssize_t <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_reader.html#a2d1afe1a95aa96b9a3c442ce601af849">read</a>(<span class="keywordtype">char</span>* junk, <span class="keywordtype">size_t</span> junkLen)<span class="keyword"> override </span>{</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            return ::SSL_read(Socket::ssl, junk, junkLen);</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        }</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    };</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}; <span class="comment">// namespace net::socket::tcp::tls</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}; <span class="comment">// namespace net::socket::stream::tls</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif // TLS_SOCKETREADER_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassnet_1_1socket_1_1tcp_1_1_socket_reader_html"><div class="ttname"><a href="classnet_1_1socket_1_1tcp_1_1_socket_reader.html">net::socket::tcp::SocketReader</a></div><div class="ttdef"><b>Definition:</b> <a href="_socket_reader_8h_source.html#l00040">SocketReader.h:42</a></div></div>
 <div class="ttc" id="a_socket_reader_8h_html"><div class="ttname"><a href="_socket_reader_8h.html">SocketReader.h</a></div></div>
-<div class="ttc" id="aclassnet_1_1socket_1_1tcp_1_1tls_1_1_socket_reader_html_aca86c8cdb46a78b2210619fd9259f245"><div class="ttname"><a href="classnet_1_1socket_1_1tcp_1_1tls_1_1_socket_reader.html#aca86c8cdb46a78b2210619fd9259f245">net::socket::tcp::tls::SocketReader::read</a></div><div class="ttdeci">ssize_t read(char *junk, size_t junkLen) override</div><div class="ttdef"><b>Definition:</b> <a href="tls_2_socket_reader_8h_source.html#l00042">SocketReader.h:42</a></div></div>
-<div class="ttc" id="aclassnet_1_1socket_1_1tcp_1_1tls_1_1_socket_reader_html"><div class="ttname"><a href="classnet_1_1socket_1_1tcp_1_1tls_1_1_socket_reader.html">net::socket::tcp::tls::SocketReader</a></div><div class="ttdef"><b>Definition:</b> <a href="tls_2_socket_reader_8h_source.html#l00036">SocketReader.h:36</a></div></div>
-<div class="ttc" id="aclassnet_1_1socket_1_1tcp_1_1_socket_reader_html_a3554f3385e6c204c66ef7dd2aef6a04f"><div class="ttname"><a href="classnet_1_1socket_1_1tcp_1_1_socket_reader.html#a3554f3385e6c204c66ef7dd2aef6a04f">net::socket::tcp::SocketReader::Socket</a></div><div class="ttdeci">SocketT Socket</div><div class="ttdef"><b>Definition:</b> <a href="_socket_reader_8h_source.html#l00044">SocketReader.h:44</a></div></div>
-<div class="ttc" id="anamespacenet_1_1socket_1_1tcp_1_1tls_html"><div class="ttname"><a href="namespacenet_1_1socket_1_1tcp_1_1tls.html">net::socket::tcp::tls</a></div><div class="ttdef"><b>Definition:</b> <a href="tcp_2tls_2_socket_client_8h_source.html#l00039">SocketClient.h:39</a></div></div>
+<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1tls_1_1_socket_reader_html"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_reader.html">net::socket::stream::tls::SocketReader</a></div><div class="ttdef"><b>Definition:</b> <a href="tls_2_socket_reader_8h_source.html#l00036">SocketReader.h:36</a></div></div>
+<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_reader_html_a5bde1a17c3f7be38cdbbb29fd724d321"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#a5bde1a17c3f7be38cdbbb29fd724d321">net::socket::stream::SocketReader::Socket</a></div><div class="ttdeci">SocketT Socket</div><div class="ttdef"><b>Definition:</b> <a href="_socket_reader_8h_source.html#l00044">SocketReader.h:44</a></div></div>
+<div class="ttc" id="anamespacenet_1_1socket_1_1stream_1_1tls_html"><div class="ttname"><a href="namespacenet_1_1socket_1_1stream_1_1tls.html">net::socket::stream::tls</a></div><div class="ttdef"><b>Definition:</b> <a href="sock__stream_2tls_2_socket_client_8h_source.html#l00039">SocketClient.h:39</a></div></div>
+<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_reader_html"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_reader.html">net::socket::stream::SocketReader</a></div><div class="ttdef"><b>Definition:</b> <a href="_socket_reader_8h_source.html#l00040">SocketReader.h:42</a></div></div>
+<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1tls_1_1_socket_reader_html_a2d1afe1a95aa96b9a3c442ce601af849"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_reader.html#a2d1afe1a95aa96b9a3c442ce601af849">net::socket::stream::tls::SocketReader::read</a></div><div class="ttdeci">ssize_t read(char *junk, size_t junkLen) override</div><div class="ttdef"><b>Definition:</b> <a href="tls_2_socket_reader_8h_source.html#l00042">SocketReader.h:42</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_427baa8a9a5be237f298d4545d0d1ce2.html">net</a></li><li class="navelem"><a class="el" href="dir_382ef741074736e441d51c2128e55f50.html">socket</a></li><li class="navelem"><a class="el" href="dir_4050ed09118d8f5ab7d9fb0eea8676a9.html">tcp</a></li><li class="navelem"><a class="el" href="dir_a408cbd3397cea6fee1adf332cf20216.html">tls</a></li><li class="navelem"><a class="el" href="tls_2_socket_reader_8h.html">SocketReader.h</a></li>
+    <li class="navelem"><a class="el" href="dir_427baa8a9a5be237f298d4545d0d1ce2.html">net</a></li><li class="navelem"><a class="el" href="dir_382ef741074736e441d51c2128e55f50.html">socket</a></li><li class="navelem"><a class="el" href="dir_4e49b6db755c33e528e6506037917578.html">sock_stream</a></li><li class="navelem"><a class="el" href="dir_f13806b4b6162fb0e9078dad1716eaa3.html">tls</a></li><li class="navelem"><a class="el" href="tls_2_socket_reader_8h.html">SocketReader.h</a></li>
     <li class="footer">Generated by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>

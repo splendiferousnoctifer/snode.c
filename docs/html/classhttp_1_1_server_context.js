@@ -1,6 +1,6 @@
 var classhttp_1_1_server_context =
 [
-    [ "SocketConnection", "classhttp_1_1_server_context.html#a4c1013d12ea116445d3f49c55d133b80", null ],
+    [ "SocketConnection", "classhttp_1_1_server_context.html#a6836a2c7a4852e158064778d54550ec5", null ],
     [ "ServerContext", "classhttp_1_1_server_context.html#a56fd463c91654eec1b8bd362c0f25546", null ],
     [ "~ServerContext", "classhttp_1_1_server_context.html#aca6ae06d634e59b673286c0910c292d5", null ],
     [ "onReadError", "classhttp_1_1_server_context.html#a890e2e79823da2aa64ba11ae4a6360ff", null ],

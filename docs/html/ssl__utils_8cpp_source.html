@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.20"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>snode.c: net/socket/tcp/tls/ssl_utils.cpp Source File</title>
+<title>snode.c: net/socket/sock_stream/tls/ssl_utils.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -118,11 +118,11 @@ $(document).ready(function(){initNavTree('ssl__utils_8cpp_source.html',''); init
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ssl__utils_8h.html">ssl_utils.h</a>&quot;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacenet_1_1socket_1_1tcp_1_1tls.html">net::socket::tcp::tls</a> {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacenet_1_1socket_1_1stream_1_1tls.html">net::socket::stream::tls</a> {</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
 <div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="ssl__utils_8cpp.html#a0c3fa47eefc13655f03571ce3cf71b69">   36</a></span>&#160;<span class="preprocessor">#define SSL_VERIFY_FLAGS SSL_VERIFY_PEER | SSL_VERIFY_CLIENT_ONCE</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="namespacenet_1_1socket_1_1tcp_1_1tls.html#a843148e27169606df482769540596f25">   38</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="namespacenet_1_1socket_1_1tcp_1_1tls.html#a843148e27169606df482769540596f25">password_callback</a>(<span class="keywordtype">char</span>* buf, <span class="keywordtype">int</span> size, <span class="keywordtype">int</span>, <span class="keywordtype">void</span>* u) {</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="namespacenet_1_1socket_1_1stream_1_1tls.html#a606b72ecd09ae6baa4e53fd8f980dc27">   38</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="namespacenet_1_1socket_1_1stream_1_1tls.html#a606b72ecd09ae6baa4e53fd8f980dc27">password_callback</a>(<span class="keywordtype">char</span>* buf, <span class="keywordtype">int</span> size, <span class="keywordtype">int</span>, <span class="keywordtype">void</span>* u) {</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        strncpy(buf, <span class="keyword">static_cast&lt;</span><span class="keywordtype">char</span>*<span class="keyword">&gt;</span>(u), size);</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        buf[size - 1] = <span class="charliteral">&#39;\0&#39;</span>;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
@@ -132,7 +132,7 @@ $(document).ready(function(){initNavTree('ssl__utils_8cpp_source.html',''); init
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        return ::strlen(buf);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="namespacenet_1_1socket_1_1tcp_1_1tls.html#acf029d776fc59df1276887c93b3b275c">   48</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code" href="namespacenet_1_1socket_1_1tcp_1_1tls.html#acf029d776fc59df1276887c93b3b275c">ssl_init_ctx</a>(SSL_CTX* ctx, <span class="keyword">const</span> std::map&lt;std::string, std::any&gt;&amp; options, <span class="keywordtype">bool</span> server) {</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="namespacenet_1_1socket_1_1stream_1_1tls.html#aa510369dc6e94905b6f3b0c0b5003839">   48</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code" href="namespacenet_1_1socket_1_1stream_1_1tls.html#aa510369dc6e94905b6f3b0c0b5003839">ssl_init_ctx</a>(SSL_CTX* ctx, <span class="keyword">const</span> std::map&lt;std::string, std::any&gt;&amp; options, <span class="keywordtype">bool</span> server) {</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> sslErr = 0;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        std::string certChain = <span class="stringliteral">&quot;&quot;</span>;</div>
@@ -179,7 +179,7 @@ $(document).ready(function(){initNavTree('ssl__utils_8cpp_source.html',''); init
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                        sslErr = ERR_peek_error();</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!keyPEM.empty()) {</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                        <span class="keywordflow">if</span> (!password.empty()) {</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                            SSL_CTX_set_default_passwd_cb(ctx, <a class="code" href="namespacenet_1_1socket_1_1tcp_1_1tls.html#a843148e27169606df482769540596f25">password_callback</a>);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                            SSL_CTX_set_default_passwd_cb(ctx, <a class="code" href="namespacenet_1_1socket_1_1stream_1_1tls.html#a606b72ecd09ae6baa4e53fd8f980dc27">password_callback</a>);</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                            SSL_CTX_set_default_passwd_cb_userdata(ctx, ::strdup(password.c_str()));</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                        }</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                        <span class="keywordflow">if</span> (SSL_CTX_use_PrivateKey_file(ctx, keyPEM.c_str(), SSL_FILETYPE_PEM) &lt;= 0) {</div>
@@ -197,18 +197,18 @@ $(document).ready(function(){initNavTree('ssl__utils_8cpp_source.html',''); init
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keywordflow">return</span> sslErr;</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    };</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;} <span class="comment">// namespace net::socket::tcp::tls</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;} <span class="comment">// namespace net::socket::stream::tls</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespacenet_1_1socket_1_1tcp_1_1tls_html_acf029d776fc59df1276887c93b3b275c"><div class="ttname"><a href="namespacenet_1_1socket_1_1tcp_1_1tls.html#acf029d776fc59df1276887c93b3b275c">net::socket::tcp::tls::ssl_init_ctx</a></div><div class="ttdeci">unsigned long ssl_init_ctx(SSL_CTX *ctx, const std::map&lt; std::string, std::any &gt; &amp;options, bool server)</div><div class="ttdef"><b>Definition:</b> <a href="ssl__utils_8cpp_source.html#l00048">ssl_utils.cpp:48</a></div></div>
+<div class="ttc" id="anamespacenet_1_1socket_1_1stream_1_1tls_html_a606b72ecd09ae6baa4e53fd8f980dc27"><div class="ttname"><a href="namespacenet_1_1socket_1_1stream_1_1tls.html#a606b72ecd09ae6baa4e53fd8f980dc27">net::socket::stream::tls::password_callback</a></div><div class="ttdeci">static int password_callback(char *buf, int size, int, void *u)</div><div class="ttdef"><b>Definition:</b> <a href="ssl__utils_8cpp_source.html#l00038">ssl_utils.cpp:38</a></div></div>
 <div class="ttc" id="assl__utils_8cpp_html_a0c3fa47eefc13655f03571ce3cf71b69"><div class="ttname"><a href="ssl__utils_8cpp.html#a0c3fa47eefc13655f03571ce3cf71b69">SSL_VERIFY_FLAGS</a></div><div class="ttdeci">#define SSL_VERIFY_FLAGS</div><div class="ttdef"><b>Definition:</b> <a href="ssl__utils_8cpp_source.html#l00036">ssl_utils.cpp:36</a></div></div>
-<div class="ttc" id="anamespacenet_1_1socket_1_1tcp_1_1tls_html_a843148e27169606df482769540596f25"><div class="ttname"><a href="namespacenet_1_1socket_1_1tcp_1_1tls.html#a843148e27169606df482769540596f25">net::socket::tcp::tls::password_callback</a></div><div class="ttdeci">static int password_callback(char *buf, int size, int, void *u)</div><div class="ttdef"><b>Definition:</b> <a href="ssl__utils_8cpp_source.html#l00038">ssl_utils.cpp:38</a></div></div>
+<div class="ttc" id="anamespacenet_1_1socket_1_1stream_1_1tls_html_aa510369dc6e94905b6f3b0c0b5003839"><div class="ttname"><a href="namespacenet_1_1socket_1_1stream_1_1tls.html#aa510369dc6e94905b6f3b0c0b5003839">net::socket::stream::tls::ssl_init_ctx</a></div><div class="ttdeci">unsigned long ssl_init_ctx(SSL_CTX *ctx, const std::map&lt; std::string, std::any &gt; &amp;options, bool server)</div><div class="ttdef"><b>Definition:</b> <a href="ssl__utils_8cpp_source.html#l00048">ssl_utils.cpp:48</a></div></div>
+<div class="ttc" id="anamespacenet_1_1socket_1_1stream_1_1tls_html"><div class="ttname"><a href="namespacenet_1_1socket_1_1stream_1_1tls.html">net::socket::stream::tls</a></div><div class="ttdef"><b>Definition:</b> <a href="sock__stream_2tls_2_socket_client_8h_source.html#l00039">SocketClient.h:39</a></div></div>
 <div class="ttc" id="assl__utils_8h_html"><div class="ttname"><a href="ssl__utils_8h.html">ssl_utils.h</a></div></div>
-<div class="ttc" id="anamespacenet_1_1socket_1_1tcp_1_1tls_html"><div class="ttname"><a href="namespacenet_1_1socket_1_1tcp_1_1tls.html">net::socket::tcp::tls</a></div><div class="ttdef"><b>Definition:</b> <a href="tcp_2tls_2_socket_client_8h_source.html#l00039">SocketClient.h:39</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_427baa8a9a5be237f298d4545d0d1ce2.html">net</a></li><li class="navelem"><a class="el" href="dir_382ef741074736e441d51c2128e55f50.html">socket</a></li><li class="navelem"><a class="el" href="dir_4050ed09118d8f5ab7d9fb0eea8676a9.html">tcp</a></li><li class="navelem"><a class="el" href="dir_a408cbd3397cea6fee1adf332cf20216.html">tls</a></li><li class="navelem"><a class="el" href="ssl__utils_8cpp.html">ssl_utils.cpp</a></li>
+    <li class="navelem"><a class="el" href="dir_427baa8a9a5be237f298d4545d0d1ce2.html">net</a></li><li class="navelem"><a class="el" href="dir_382ef741074736e441d51c2128e55f50.html">socket</a></li><li class="navelem"><a class="el" href="dir_4e49b6db755c33e528e6506037917578.html">sock_stream</a></li><li class="navelem"><a class="el" href="dir_f13806b4b6162fb0e9078dad1716eaa3.html">tls</a></li><li class="navelem"><a class="el" href="ssl__utils_8cpp.html">ssl_utils.cpp</a></li>
     <li class="footer">Generated by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
