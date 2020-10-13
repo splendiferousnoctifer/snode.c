@@ -93,7 +93,8 @@ $(document).ready(function(){initNavTree('classnet_1_1socket_1_1ipv6_1_1tcp_1_1_
 <div class="dynheader">
 Inheritance diagram for net::socket::ipv6::tcp::Socket:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1ipv6_1_1tcp_1_1_socket__inherit__graph.svg" width="318" height="1122"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1ipv6_1_1tcp_1_1_socket__inherit__graph.svg" width="242" height="907"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <div class="dynheader">
 Collaboration diagram for net::socket::ipv6::tcp::Socket:</div>
@@ -254,7 +255,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="ipv6_2tcp_2_socket_8cpp_source.html#l00030">30</a> of file <a class="el" href="ipv6_2tcp_2_socket_8cpp_source.html">Socket.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                                                                             {</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classnet_1_1_descriptor.html#ae74a867d53babc909e138b86595fdfd8">fd</a> = ::socket(AF_INET6, SOCK_STREAM | flags, 0);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classnet_1_1_descriptor.html#ae74a867d53babc909e138b86595fdfd8">fd</a> = ::socket(PF_INET6, SOCK_STREAM | flags, 0);</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classnet_1_1_descriptor.html#ae74a867d53babc909e138b86595fdfd8">fd</a> &gt;= 0) {</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <a class="code" href="classnet_1_1socket_1_1ipv6_1_1tcp_1_1_socket.html#af7ffe931a027ab3a4b9aa337ab110229">open</a>(<a class="code" href="classnet_1_1_descriptor.html#ae74a867d53babc909e138b86595fdfd8">fd</a>);</div>

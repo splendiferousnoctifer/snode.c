@@ -3,7 +3,9 @@ var dir_203d4b2d8d50c7c45bdc9ca31aa6209d =
     [ "SocketClient.h", "sock__stream_2legacy_2_socket_client_8h.html", [
       [ "SocketClient", "classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_client.html", "classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_client" ]
     ] ],
-    [ "SocketConnection.h", "legacy_2_socket_connection_8h.html", "legacy_2_socket_connection_8h" ],
+    [ "SocketConnection.h", "legacy_2_socket_connection_8h.html", [
+      [ "SocketConnection", "classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_connection.html", "classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_connection" ]
+    ] ],
     [ "SocketListener.h", "legacy_2_socket_listener_8h.html", [
       [ "SocketListener", "classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_listener.html", "classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_listener" ]
     ] ],

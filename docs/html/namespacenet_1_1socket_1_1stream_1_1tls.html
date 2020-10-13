@@ -83,7 +83,6 @@ $(document).ready(function(){initNavTree('namespacenet_1_1socket_1_1stream_1_1tl
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">net::socket::stream::tls Namespace Reference</div>  </div>
@@ -94,6 +93,8 @@ $(document).ready(function(){initNavTree('namespacenet_1_1socket_1_1stream_1_1tl
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_client.html">SocketClient</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html">SocketConnection</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_listener.html">SocketListener</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_reader.html">SocketReader</a></td></tr>
@@ -103,12 +104,6 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_writer.html">SocketWriter</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:ac3f10fe3b0f343b64779c15c0f280838"><td class="memTemplParams" colspan="2">template&lt;typename SocketT &gt; </td></tr>
-<tr class="memitem:ac3f10fe3b0f343b64779c15c0f280838"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacenet_1_1socket_1_1stream_1_1tls.html#ac3f10fe3b0f343b64779c15c0f280838">SocketConnection</a> = <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html">socket::stream::SocketConnection</a>&lt; <a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_reader.html">tls::SocketReader</a>&lt; SocketT &gt;, <a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_writer.html">tls::SocketWriter</a>&lt; SocketT &gt; &gt;</td></tr>
-<tr class="separator:ac3f10fe3b0f343b64779c15c0f280838"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a606b72ecd09ae6baa4e53fd8f980dc27"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenet_1_1socket_1_1stream_1_1tls.html#a606b72ecd09ae6baa4e53fd8f980dc27">password_callback</a> (char *buf, int size, int, void *u)</td></tr>
@@ -116,25 +111,6 @@ Functions</h2></td></tr>
 <tr class="memitem:aa510369dc6e94905b6f3b0c0b5003839"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenet_1_1socket_1_1stream_1_1tls.html#aa510369dc6e94905b6f3b0c0b5003839">ssl_init_ctx</a> (SSL_CTX *ctx, const std::map&lt; std::string, std::any &gt; &amp;options, bool server)</td></tr>
 <tr class="separator:aa510369dc6e94905b6f3b0c0b5003839"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Typedef Documentation</h2>
-<a id="ac3f10fe3b0f343b64779c15c0f280838"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3f10fe3b0f343b64779c15c0f280838">&#9670;&nbsp;</a></span>SocketConnection</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename SocketT &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="namespacenet_1_1socket_1_1stream_1_1tls.html#ac3f10fe3b0f343b64779c15c0f280838">net::socket::stream::tls::SocketConnection</a> = typedef <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html">socket::stream::SocketConnection</a>&lt;<a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_reader.html">tls::SocketReader</a>&lt;SocketT&gt;, <a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_writer.html">tls::SocketWriter</a>&lt;SocketT&gt; &gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="tls_2_socket_connection_8h_source.html#l00033">33</a> of file <a class="el" href="tls_2_socket_connection_8h_source.html">SocketConnection.h</a>.</p>
-
-</div>
-</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a606b72ecd09ae6baa4e53fd8f980dc27"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a606b72ecd09ae6baa4e53fd8f980dc27">&#9670;&nbsp;</a></span>password_callback()</h2>

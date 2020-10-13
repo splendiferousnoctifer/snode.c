@@ -19,7 +19,7 @@ var searchData=
   ['getsockaddrin_138',['getSockAddrIn',['../classnet_1_1socket_1_1ipv4_1_1_inet_address.html#ab7d4ab5da9fb83cacf51a334dfbd544d',1,'net::socket::ipv4::InetAddress']]],
   ['getsockaddrin6_139',['getSockAddrIn6',['../classnet_1_1socket_1_1ipv6_1_1_inet_address.html#a28d3511f1aff053157c8d6c214113851',1,'net::socket::ipv6::InetAddress']]],
   ['getsockaddrlen_140',['getSockAddrLen',['../classnet_1_1socket_1_1_socket_address.html#add263c25a393dccfd9a275bf54dd5339',1,'net::socket::SocketAddress']]],
-  ['getssl_141',['getSSL',['../classnet_1_1socket_1_1ipv4_1_1tcp_1_1tls_1_1_socket.html#a6cadc2726bac86dff4d81998bdd2c330',1,'net::socket::ipv4::tcp::tls::Socket::getSSL()'],['../classnet_1_1socket_1_1ipv6_1_1tcp_1_1tls_1_1_socket.html#a2582d6820eb41301d61ab6ad55c39920',1,'net::socket::ipv6::tcp::tls::Socket::getSSL()']]],
+  ['getssl_141',['getSSL',['../classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a44c0fad781b21d13c6fec9e5d4b77a54',1,'net::socket::stream::tls::SocketConnection']]],
   ['gettickcounter_142',['getTickCounter',['../classnet_1_1_event_loop.html#a81ac233351625c5bd8ed1943d3f9daea',1,'net::EventLoop']]],
   ['gettickcounterasstring_143',['getTickCounterAsString',['../namespacenet.html#a1fbef2ddfd827d222bad07e28676c27a',1,'net']]],
   ['gettimeout_144',['getTimeout',['../classnet_1_1_event_dispatcher.html#af862cc215ba704ed0cb755801c03ebe9',1,'net::EventDispatcher::getTimeout()'],['../classnet_1_1_event_receiver.html#ad9886053cab6351e48335c463958f81a',1,'net::EventReceiver::getTimeout()']]],

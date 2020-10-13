@@ -362,7 +362,7 @@ Extract Server and Client Information (host name, IP, port, SSL/TLS information)
 <div class="line">        }</div>
 <div class="line">    });</div>
 <div class="line"> </div>
-<div class="line">    legacyApp.<a class="code" href="classexpress_1_1_web_app_t.html#aaa96e1a29656a95ae9a78b4c81a6c6ba">onConnect</a>([](<a class="code" href="namespacenet_1_1socket_1_1stream_1_1legacy.html#abbfd04370d22fa73e31ef7a10ed47f76">net::socket::legacy::SocketConnection</a>* socketConnection) {</div>
+<div class="line">    legacyApp.<a class="code" href="classexpress_1_1_web_app_t.html#aaa96e1a29656a95ae9a78b4c81a6c6ba">onConnect</a>([](net::socket::legacy::SocketConnection* socketConnection) {</div>
 <div class="line">        VLOG(0) &lt;&lt; <span class="stringliteral">&quot;OnConnect:&quot;</span>;</div>
 <div class="line">        VLOG(0) &lt;&lt; <span class="stringliteral">&quot;\tClient: &quot;</span> + socketConnection-&gt;getRemoteAddress().host()</div>
 <div class="line">                          + <span class="stringliteral">&quot;(&quot;</span> + socketConnection-&gt;getRemoteAddress().ip() + <span class="stringliteral">&quot;):&quot;</span></div>
@@ -372,7 +372,7 @@ Extract Server and Client Information (host name, IP, port, SSL/TLS information)
 <div class="line">                 + std::to_string(socketConnection-&gt;getLocalAddress().port());</div>
 <div class="line">    });</div>
 <div class="line"> </div>
-<div class="line">    legacyApp.<a class="code" href="classexpress_1_1_web_app_t.html#adc848f02d1e9d961262676ab0d97f3f1">onDisconnect</a>([](<a class="code" href="namespacenet_1_1socket_1_1stream_1_1legacy.html#abbfd04370d22fa73e31ef7a10ed47f76">net::socket::legacy::SocketConnection</a>* socketConnection) {</div>
+<div class="line">    legacyApp.<a class="code" href="classexpress_1_1_web_app_t.html#adc848f02d1e9d961262676ab0d97f3f1">onDisconnect</a>([](net::socket::legacy::SocketConnection* socketConnection) {</div>
 <div class="line">        VLOG(0) &lt;&lt; <span class="stringliteral">&quot;OnDisconnect:&quot;</span>;</div>
 <div class="line">        VLOG(0) &lt;&lt; <span class="stringliteral">&quot;\tClient: &quot;</span> + socketConnection-&gt;getRemoteAddress().host()</div>
 <div class="line">                          + <span class="stringliteral">&quot;(&quot;</span> + socketConnection-&gt;getRemoteAddress().ip() + <span class="stringliteral">&quot;):&quot;</span></div>
@@ -394,7 +394,7 @@ Extract Server and Client Information (host name, IP, port, SSL/TLS information)
 <div class="line">        }</div>
 <div class="line">    });</div>
 <div class="line"> </div>
-<div class="line">    tlsApp.onConnect([](<a class="code" href="namespacenet_1_1socket_1_1stream_1_1legacy.html#abbfd04370d22fa73e31ef7a10ed47f76">net::socket::tls::SocketConnection</a>* socketConnection) {</div>
+<div class="line">    tlsApp.onConnect([](net::socket::tls::SocketConnection* socketConnection) {</div>
 <div class="line">        VLOG(0) &lt;&lt; <span class="stringliteral">&quot;OnConnect:&quot;</span>;</div>
 <div class="line">        VLOG(0) &lt;&lt; <span class="stringliteral">&quot;\tServer: &quot;</span> + socketConnection-&gt;getLocalAddress().host()</div>
 <div class="line">                          + <span class="stringliteral">&quot;(&quot;</span> + socketConnection-&gt;getLocalAddress().ip() + <span class="stringliteral">&quot;):&quot;</span></div>
@@ -444,7 +444,7 @@ Extract Server and Client Information (host name, IP, port, SSL/TLS information)
 <div class="line">        }</div>
 <div class="line">    });</div>
 <div class="line"> </div>
-<div class="line">    tlsApp.onDisconnect([](<a class="code" href="namespacenet_1_1socket_1_1stream_1_1legacy.html#abbfd04370d22fa73e31ef7a10ed47f76">net::socket::tls::SocketConnection</a>* socketConnection) {</div>
+<div class="line">    tlsApp.onDisconnect([](net::socket::tls::SocketConnection* socketConnection) {</div>
 <div class="line">        VLOG(0) &lt;&lt; <span class="stringliteral">&quot;OnDisconnect:&quot;</span>;</div>
 <div class="line">        VLOG(0) &lt;&lt; <span class="stringliteral">&quot;\tServer: &quot;</span> + socketConnection-&gt;getLocalAddress().host()</div>
 <div class="line">                          + <span class="stringliteral">&quot;(&quot;</span> + socketConnection-&gt;getLocalAddress().ip() + <span class="stringliteral">&quot;):&quot;</span></div>
@@ -528,7 +528,6 @@ Using Regular Expressions in Routes</h2>
 </div><!-- fragment --> </div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespacenet_1_1socket_1_1stream_1_1legacy_html_abbfd04370d22fa73e31ef7a10ed47f76"><div class="ttname"><a href="namespacenet_1_1socket_1_1stream_1_1legacy.html#abbfd04370d22fa73e31ef7a10ed47f76">net::socket::stream::legacy::SocketConnection</a></div><div class="ttdeci">socket::stream::SocketConnection&lt; legacy::SocketReader&lt; SocketT &gt;, legacy::SocketWriter&lt; SocketT &gt; &gt; SocketConnection</div><div class="ttdef"><b>Definition:</b> <a href="legacy_2_socket_connection_8h_source.html#l00033">SocketConnection.h:33</a></div></div>
 <div class="ttc" id="aclassexpress_1_1_router_html_a096a94b197b9f6824278f8d633c71109"><div class="ttname"><a href="classexpress_1_1_router.html#a096a94b197b9f6824278f8d633c71109">express::Router::post</a></div><div class="ttdeci">Router &amp; post(const std::string &amp;path, const std::function&lt; void(Request &amp;req, Response &amp;res)&gt; &amp;dispatcher)</div><div class="ttdef"><b>Definition:</b> <a href="_router_8cpp_source.html#l00333">Router.cpp:333</a></div></div>
 <div class="ttc" id="aclassexpress_1_1_router_html_a68e544f1d65086d9fdba0b9a76583e38"><div class="ttname"><a href="classexpress_1_1_router.html#a68e544f1d65086d9fdba0b9a76583e38">express::Router::get</a></div><div class="ttdeci">Router &amp; get(const std::string &amp;path, const std::function&lt; void(Request &amp;req, Response &amp;res)&gt; &amp;dispatcher)</div><div class="ttdef"><b>Definition:</b> <a href="_router_8cpp_source.html#l00331">Router.cpp:331</a></div></div>
 <div class="ttc" id="a_router_8h_html_a8b7131df91fe7a961e2cdadcedb55232"><div class="ttname"><a href="_router_8h.html#a8b7131df91fe7a961e2cdadcedb55232">APPLICATION</a></div><div class="ttdeci">#define APPLICATION(req, res)</div><div class="ttdef"><b>Definition:</b> <a href="_router_8h_source.html#l00039">Router.h:39</a></div></div>

@@ -50,8 +50,7 @@ var NAVTREE =
       [ "Namespace Members", "namespacemembers.html", [
         [ "All", "namespacemembers.html", null ],
         [ "Functions", "namespacemembers_func.html", null ],
-        [ "Variables", "namespacemembers_vars.html", null ],
-        [ "Typedefs", "namespacemembers_type.html", null ]
+        [ "Variables", "namespacemembers_vars.html", null ]
       ] ]
     ] ],
     [ "Classes", "annotated.html", [
@@ -85,8 +84,8 @@ var NAVTREEINDEX =
 "classexpress_1_1_request.html#a7194fef6a755397f1b5636462feee8ed",
 "classhttp_1_1_response.html#a1f26c5c4abb75f9efc5057c3da36defa",
 "classnet_1_1_write_event_receiver.html",
-"classnet_1_1socket_1_1stream_1_1tls_1_1_socket_writer.html#a575092baf77eee53e0f52525230d01d8",
-"legacy_2_web_app_8h.html"
+"classnet_1_1timer_1_1_interval_timer.html#aab200195cf6c7c7d32b08abdfdf5b26b",
+"namespacenet_1_1socket.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
