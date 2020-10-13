@@ -94,14 +94,12 @@ $(document).ready(function(){initNavTree('classnet_1_1socket_1_1stream_1_1legacy
 <div class="dynheader">
 Inheritance diagram for net::socket::stream::legacy::SocketConnection&lt; SocketT &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_connection__inherit__graph.svg" width="906" height="1859"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_connection__inherit__graph.svg" width="906" height="1859"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <div class="dynheader">
 Collaboration diagram for net::socket::stream::legacy::SocketConnection&lt; SocketT &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_connection__coll__graph.svg" width="939" height="1872"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_connection__coll__graph.svg" width="939" height="1872"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -350,7 +348,7 @@ template&lt;typename SocketT &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="legacy_2_socket_connection_8h_source.html#l00038">38</a> of file <a class="el" href="legacy_2_socket_connection_8h_source.html">SocketConnection.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            : stream::SocketConnection&lt;legacy::SocketReader&lt;Socket&gt;, legacy::SocketWriter&lt;Socket&gt;&gt;<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a9e3f608ed38cda580e192a33c1837e95">::SocketConnection</a>(</div>
+<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            : <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a9e3f608ed38cda580e192a33c1837e95">SocketConnectionSuper::SocketConnection</a>(</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                  []([[maybe_unused]] <a class="code" href="classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_connection.html#a4eddc60d128788ac59efa890ce84f470">SocketConnectionSuper</a>* socketConnection) -&gt; <span class="keywordtype">void</span> {</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                  },</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                  [<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a8c45c4dc05f5cb0d6b8abe0559190ca7">onDestruct</a>](<a class="code" href="classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_connection.html#a4eddc60d128788ac59efa890ce84f470">SocketConnectionSuper</a>* socketConnection) -&gt; <span class="keywordtype">void</span> {</div>
@@ -379,7 +377,7 @@ template&lt;typename SocketT &gt; </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_reader_html_abbd9aeb4ce71eb7aca64c33459d3ade6"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#abbd9aeb4ce71eb7aca64c33459d3ade6">net::socket::stream::SocketReader::onRead</a></div><div class="ttdeci">std::function&lt; void(const char *junk, ssize_t junkLen)&gt; onRead</div><div class="ttdef"><b>Definition:</b> <a href="_socket_reader_8h_source.html#l00080">SocketReader.h:80</a></div></div>
-<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_connection_html_a9e3f608ed38cda580e192a33c1837e95"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a9e3f608ed38cda580e192a33c1837e95">net::socket::stream::SocketConnection&lt; legacy::SocketReader&lt; SocketT &gt;, legacy::SocketWriter&lt; SocketT &gt; &gt;::SocketConnection</a></div><div class="ttdeci">SocketConnection()=delete</div></div>
+<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_connection_html_a9e3f608ed38cda580e192a33c1837e95"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a9e3f608ed38cda580e192a33c1837e95">net::socket::stream::SocketConnection::SocketConnection</a></div><div class="ttdeci">SocketConnection()=delete</div></div>
 <div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_connection_html_a8c45c4dc05f5cb0d6b8abe0559190ca7"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a8c45c4dc05f5cb0d6b8abe0559190ca7">net::socket::stream::SocketConnection&lt; legacy::SocketReader&lt; SocketT &gt;, legacy::SocketWriter&lt; SocketT &gt; &gt;::onDestruct</a></div><div class="ttdeci">std::function&lt; void(SocketConnection *socketConnection)&gt; onDestruct</div><div class="ttdef"><b>Definition:</b> <a href="_socket_connection_8h_source.html#l00115">SocketConnection.h:115</a></div></div>
 <div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_connection_html_a01b6dfef64ee75717b638b6e4e3d152f"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a01b6dfef64ee75717b638b6e4e3d152f">net::socket::stream::SocketConnection&lt; legacy::SocketReader&lt; SocketT &gt;, legacy::SocketWriter&lt; SocketT &gt; &gt;::onDisconnect</a></div><div class="ttdeci">std::function&lt; void(SocketConnection *socketConnection)&gt; onDisconnect</div><div class="ttdef"><b>Definition:</b> <a href="_socket_connection_8h_source.html#l00116">SocketConnection.h:116</a></div></div>
 <div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1legacy_1_1_socket_connection_html_a4eddc60d128788ac59efa890ce84f470"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_connection.html#a4eddc60d128788ac59efa890ce84f470">net::socket::stream::legacy::SocketConnection::SocketConnectionSuper</a></div><div class="ttdeci">stream::SocketConnection&lt; legacy::SocketReader&lt; Socket &gt;, legacy::SocketWriter&lt; Socket &gt; &gt; SocketConnectionSuper</div><div class="ttdef"><b>Definition:</b> <a href="legacy_2_socket_connection_8h_source.html#l00036">SocketConnection.h:36</a></div></div>

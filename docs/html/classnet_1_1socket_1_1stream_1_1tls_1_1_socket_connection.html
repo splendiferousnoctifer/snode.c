@@ -95,14 +95,12 @@ $(document).ready(function(){initNavTree('classnet_1_1socket_1_1stream_1_1tls_1_
 <div class="dynheader">
 Inheritance diagram for net::socket::stream::tls::SocketConnection&lt; SocketT &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection__inherit__graph.svg" width="906" height="1932"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection__inherit__graph.svg" width="906" height="1932"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <div class="dynheader">
 Collaboration diagram for net::socket::stream::tls::SocketConnection&lt; SocketT &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection__coll__graph.svg" width="939" height="1946"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection__coll__graph.svg" width="939" height="1946"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -374,7 +372,7 @@ template&lt;typename SocketT &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="tls_2_socket_connection_8h_source.html#l00038">38</a> of file <a class="el" href="tls_2_socket_connection_8h_source.html">SocketConnection.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            : stream::SocketConnection&lt;tls::SocketReader&lt;Socket&gt;, tls::SocketWriter&lt;Socket&gt;&gt;<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a9e3f608ed38cda580e192a33c1837e95">::SocketConnection</a>(</div>
+<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            : <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a9e3f608ed38cda580e192a33c1837e95">SocketConnectionSuper::SocketConnection</a>(</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                  []([[maybe_unused]] <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a968d2db642808a38d9268fa8e533cdde">SocketConnectionSuper</a>* socketConnection) -&gt; <span class="keywordtype">void</span> {</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                  },</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                  [<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a8c45c4dc05f5cb0d6b8abe0559190ca7">onDestruct</a>](<a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a968d2db642808a38d9268fa8e533cdde">SocketConnectionSuper</a>* socketConnection) -&gt; <span class="keywordtype">void</span> {</div>
@@ -509,8 +507,7 @@ template&lt;typename SocketT &gt; </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection_a082cd1b854df4ea83c5fb1623e0ccf32_icgraph.svg" width="356" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection_a082cd1b854df4ea83c5fb1623e0ccf32_icgraph.svg" width="356" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -549,8 +546,8 @@ template&lt;typename SocketT &gt; </div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a734d21572bb69afea8a8c3d8b9af6d69">ssl</a> != <span class="keyword">nullptr</span>) {</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                    ret = SSL_set_fd(<a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a734d21572bb69afea8a8c3d8b9af6d69">ssl</a>, <a class="code" href="classnet_1_1_descriptor.html#a70ccc1e4f6af5cda015bd319f9a90096">Socket::getFd</a>());</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                    <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_reader.html#a772a3826a50633705c006e12fe4edf7b">tls::SocketReader&lt;Socket&gt;::ssl</a> = <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a734d21572bb69afea8a8c3d8b9af6d69">ssl</a>;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                    <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_writer.html#a5fadfa37915bfd92be5f826f3c7f9534">tls::SocketWriter&lt;Socket&gt;::ssl</a> = <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a734d21572bb69afea8a8c3d8b9af6d69">ssl</a>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                    <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_reader.html#a772a3826a50633705c006e12fe4edf7b">SocketReader&lt;Socket&gt;::ssl</a> = <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a734d21572bb69afea8a8c3d8b9af6d69">ssl</a>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                    <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_writer.html#a5fadfa37915bfd92be5f826f3c7f9534">SocketWriter&lt;Socket&gt;::ssl</a> = <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a734d21572bb69afea8a8c3d8b9af6d69">ssl</a>;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                }</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            }</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
@@ -561,8 +558,7 @@ template&lt;typename SocketT &gt; </div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection_a71a5ef199ebd3658bfbd0125fbcc39ad_cgraph.svg" width="367" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection_a71a5ef199ebd3658bfbd0125fbcc39ad_cgraph.svg" width="367" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -607,8 +603,7 @@ template&lt;typename SocketT &gt; </div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection_a3f6885984be884225ca9fc53ea652ac2_cgraph.svg" width="392" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection_a3f6885984be884225ca9fc53ea652ac2_cgraph.svg" width="392" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -676,7 +671,7 @@ template&lt;typename SocketT &gt; </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_reader_html_abbd9aeb4ce71eb7aca64c33459d3ade6"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#abbd9aeb4ce71eb7aca64c33459d3ade6">net::socket::stream::SocketReader::onRead</a></div><div class="ttdeci">std::function&lt; void(const char *junk, ssize_t junkLen)&gt; onRead</div><div class="ttdef"><b>Definition:</b> <a href="_socket_reader_8h_source.html#l00080">SocketReader.h:80</a></div></div>
-<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_connection_html_a9e3f608ed38cda580e192a33c1837e95"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a9e3f608ed38cda580e192a33c1837e95">net::socket::stream::SocketConnection&lt; tls::SocketReader&lt; SocketT &gt;, tls::SocketWriter&lt; SocketT &gt; &gt;::SocketConnection</a></div><div class="ttdeci">SocketConnection()=delete</div></div>
+<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_connection_html_a9e3f608ed38cda580e192a33c1837e95"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a9e3f608ed38cda580e192a33c1837e95">net::socket::stream::SocketConnection::SocketConnection</a></div><div class="ttdeci">SocketConnection()=delete</div></div>
 <div class="ttc" id="aclassnet_1_1_descriptor_html_aeeddb2a18267a5ee82cde77817095787"><div class="ttname"><a href="classnet_1_1_descriptor.html#aeeddb2a18267a5ee82cde77817095787">net::Descriptor::dontClose</a></div><div class="ttdeci">bool dontClose() const</div><div class="ttdef"><b>Definition:</b> <a href="_descriptor_8cpp_source.html#l00044">Descriptor.cpp:44</a></div></div>
 <div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1tls_1_1_socket_writer_html_a5fadfa37915bfd92be5f826f3c7f9534"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_writer.html#a5fadfa37915bfd92be5f826f3c7f9534">net::socket::stream::tls::SocketWriter::ssl</a></div><div class="ttdeci">SSL * ssl</div><div class="ttdef"><b>Definition:</b> <a href="tls_2_socket_writer_8h_source.html#l00048">SocketWriter.h:48</a></div></div>
 <div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection_html_a968d2db642808a38d9268fa8e533cdde"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a968d2db642808a38d9268fa8e533cdde">net::socket::stream::tls::SocketConnection::SocketConnectionSuper</a></div><div class="ttdeci">stream::SocketConnection&lt; tls::SocketReader&lt; Socket &gt;, tls::SocketWriter&lt; Socket &gt; &gt; SocketConnectionSuper</div><div class="ttdef"><b>Definition:</b> <a href="tls_2_socket_connection_8h_source.html#l00036">SocketConnection.h:36</a></div></div>
