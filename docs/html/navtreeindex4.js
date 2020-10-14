@@ -1,7 +1,5 @@
 var NAVTREEINDEX4 =
 {
-"classnet_1_1timer_1_1_interval_timer.html#aab200195cf6c7c7d32b08abdfdf5b26b":[9,0,2,1,0,5],
-"classnet_1_1timer_1_1_singleshot_timer.html":[9,0,2,1,1],
 "classnet_1_1timer_1_1_singleshot_timer.html#a192c1519df08a1e9b11127d67a55cad3":[9,0,2,1,1,1],
 "classnet_1_1timer_1_1_singleshot_timer.html#a963f5a4fdbcea1ae2ca56ba7984a5fbc":[9,0,2,1,1,4],
 "classnet_1_1timer_1_1_singleshot_timer.html#a9677ab72af238560395a4c12ceb700df":[9,0,2,1,1,2],
@@ -77,8 +75,8 @@ var NAVTREEINDEX4 =
 "express_2_response_8h.html":[10,0,0,6],
 "express_2_response_8h_source.html":[10,0,0,6],
 "files.html":[10,0],
-"functions.html":[9,3,0,0],
 "functions.html":[9,3,0],
+"functions.html":[9,3,0,0],
 "functions_a.html":[9,3,0,1],
 "functions_b.html":[9,3,0,2],
 "functions_c.html":[9,3,0,3],
@@ -87,8 +85,8 @@ var NAVTREEINDEX4 =
 "functions_enum.html":[9,3,4],
 "functions_eval.html":[9,3,5],
 "functions_f.html":[9,3,0,6],
-"functions_func.html":[9,3,1],
 "functions_func.html":[9,3,1,0],
+"functions_func.html":[9,3,1],
 "functions_func_b.html":[9,3,1,1],
 "functions_func_c.html":[9,3,1,2],
 "functions_func_d.html":[9,3,1,3],
@@ -232,8 +230,8 @@ var NAVTREEINDEX4 =
 "legacy_2_web_app_8h_source.html":[10,0,0,0,0],
 "namespaceexpress.html":[9,0,0],
 "namespaceexpress.html":[8,0,0],
-"namespaceexpress_1_1legacy.html":[8,0,0,0],
 "namespaceexpress_1_1legacy.html":[9,0,0,0],
+"namespaceexpress_1_1legacy.html":[8,0,0,0],
 "namespaceexpress_1_1middleware.html":[8,0,0,1],
 "namespaceexpress_1_1middleware.html":[9,0,0,1],
 "namespaceexpress_1_1tls.html":[8,0,0,2],
@@ -249,5 +247,7 @@ var NAVTREEINDEX4 =
 "namespacemembers_func.html":[8,1,1],
 "namespacemembers_vars.html":[8,1,2],
 "namespacenet.html":[8,0,3],
-"namespacenet.html":[9,0,2]
+"namespacenet.html":[9,0,2],
+"namespacenet_1_1socket.html":[9,0,2,0],
+"namespacenet_1_1socket.html":[8,0,3,0]
 };

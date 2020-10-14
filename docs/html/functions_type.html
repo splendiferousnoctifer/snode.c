@@ -112,7 +112,6 @@ $(document).ready(function(){initNavTree('functions_type.html',''); initResizabl
 , <a class="el" href="classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_reader.html#a2476c0944b88742ab029d8c2d22117cb">net::socket::stream::legacy::SocketReader&lt; SocketT &gt;</a>
 , <a class="el" href="classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_server.html#a074292b968a1bf9ab36e8752269d7829">net::socket::stream::legacy::SocketServer&lt; SocketT &gt;</a>
 , <a class="el" href="classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_writer.html#a3e86160580164915169a569f63005bbe">net::socket::stream::legacy::SocketWriter&lt; SocketT &gt;</a>
-, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#ab8499d5f0515fed52ad1c59938d76d51">net::socket::stream::SocketConnection&lt; SocketReaderT, SocketWriterT &gt;</a>
 , <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_listener.html#ae8e6acadb6b7e2db8b10d005ceb51b34">net::socket::stream::SocketListener&lt; SocketConnectionT &gt;</a>
 , <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#a5bde1a17c3f7be38cdbbb29fd724d321">net::socket::stream::SocketReader&lt; SocketT &gt;</a>
 , <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#a6e2d8d3030e20005e5fe72fa314de206">net::socket::stream::SocketWriter&lt; SocketT &gt;</a>
@@ -125,6 +124,7 @@ $(document).ready(function(){initNavTree('functions_type.html',''); initResizabl
 </li>
 <li>SocketAddress
 : <a class="el" href="classnet_1_1socket_1_1_socket.html#a3b2caea9c0c485cc6377efb6625afd8c">net::socket::Socket&lt; SocketAddressT &gt;</a>
+, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a7d2cb9c2abcfbccba0613536d76b6353">net::socket::stream::SocketConnection&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt;</a>
 </li>
 <li>SocketClient
 : <a class="el" href="classhttp_1_1_client.html#a8635f7f9b04ea2592248a270b7076530">http::Client&lt; SocketClientT &gt;</a>
@@ -158,8 +158,8 @@ $(document).ready(function(){initNavTree('functions_type.html',''); initResizabl
 , <a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_server.html#a5967207aabdacd5c88ef1d4a7a203a7f">net::socket::stream::tls::SocketServer&lt; SocketT &gt;</a>
 </li>
 <li>SocketConnectionSuper
-: <a class="el" href="classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_connection.html#a4eddc60d128788ac59efa890ce84f470">net::socket::stream::legacy::SocketConnection&lt; SocketT &gt;</a>
-, <a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a968d2db642808a38d9268fa8e533cdde">net::socket::stream::tls::SocketConnection&lt; SocketT &gt;</a>
+: <a class="el" href="classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_connection.html#a2b6030031c5edc8992d6197b2452e978">net::socket::stream::legacy::SocketConnection&lt; SocketT &gt;</a>
+, <a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a04f54e7e43a0e6526a66246d2f91b9a6">net::socket::stream::tls::SocketConnection&lt; SocketT &gt;</a>
 </li>
 <li>SocketListener
 : <a class="el" href="classhttp_1_1legacy_1_1_server6.html#ab96d3b49994c468e34ef271b3d7c8819">http::legacy::Server6</a>
@@ -170,7 +170,7 @@ $(document).ready(function(){initNavTree('functions_type.html',''); initResizabl
 , <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_server.html#a1b4b50c99cbd3df6a1b7d07ecad46cbd">net::socket::stream::SocketServer&lt; SocketListenerT &gt;</a>
 </li>
 <li>SocketReader
-: <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#ab372914517ca15bf33706891fb68bb0b">net::socket::stream::SocketConnection&lt; SocketReaderT, SocketWriterT &gt;</a>
+: <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#aed399d23f23a8b7e04dd38d9b5a2dd95">net::socket::stream::SocketConnection&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt;</a>
 </li>
 <li>SocketServer
 : <a class="el" href="classexpress_1_1_web_app_t.html#af6d27cea97ba0493c2f66cb99404a5a4">express::WebAppT&lt; ServerT &gt;</a>
@@ -181,7 +181,7 @@ $(document).ready(function(){initNavTree('functions_type.html',''); initResizabl
 , <a class="el" href="classhttp_1_1tls_1_1_server.html#a4af5df55ab0f5757d790e6969a71069b">http::tls::Server</a>
 </li>
 <li>SocketWriter
-: <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a4842b1553d87fbfd0a947f4ab2fd247b">net::socket::stream::SocketConnection&lt; SocketReaderT, SocketWriterT &gt;</a>
+: <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#afdc000b132afa51d35b98657a00beb43">net::socket::stream::SocketConnection&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->

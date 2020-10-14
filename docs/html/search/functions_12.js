@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['unobserved_959',['unobserved',['../classnet_1_1_event_receiver.html#ad40f8b29dc71258c520f51f10e35848f',1,'net::EventReceiver::unobserved()'],['../class_file_reader.html#ae7160f3031c239ca6ee355cd47bd3857',1,'FileReader::unobserved()'],['../classnet_1_1socket_1_1stream_1_1_socket_connection.html#a423963b2c058060ab96a133103fda664',1,'net::socket::stream::SocketConnection::unobserved()'],['../classnet_1_1socket_1_1stream_1_1_socket_listener.html#a225db45497676ab410f5057ab4ac39a6',1,'net::socket::stream::SocketListener::unobserved()']]],
+  ['unobserved_959',['unobserved',['../classnet_1_1_event_receiver.html#ad40f8b29dc71258c520f51f10e35848f',1,'net::EventReceiver::unobserved()'],['../class_file_reader.html#ae7160f3031c239ca6ee355cd47bd3857',1,'FileReader::unobserved()'],['../classnet_1_1socket_1_1stream_1_1_socket_connection.html#a48a54fe1e3e0e8bbe52adfd79a7e602f',1,'net::socket::stream::SocketConnection::unobserved()'],['../classnet_1_1socket_1_1stream_1_1_socket_listener.html#a225db45497676ab410f5057ab4ac39a6',1,'net::socket::stream::SocketListener::unobserved()']]],
   ['unobservedisabledevents_960',['unobserveDisabledEvents',['../classnet_1_1_event_dispatcher.html#a0cac2e5483bd4542ad11211d36db4adc',1,'net::EventDispatcher']]],
   ['update_961',['update',['../classnet_1_1timer_1_1_timer.html#a82bef3d9c333f0b302c1f7d69dc0d28e',1,'net::timer::Timer']]],
   ['url_5fdecode_962',['url_decode',['../namespacehttputils.html#a818b4991d32a494fb64a2f7cf1b25087',1,'httputils']]],

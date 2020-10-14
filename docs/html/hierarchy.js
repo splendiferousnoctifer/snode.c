@@ -76,12 +76,12 @@ var hierarchy =
           [ "FileReader", "class_file_reader.html", null ],
           [ "net::socket::stream::SocketReader< SocketT >", "classnet_1_1socket_1_1stream_1_1_socket_reader.html", [
             [ "net::socket::stream::legacy::SocketReader< SocketT >", "classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_reader.html", [
-              [ "net::socket::stream::SocketConnection< legacy::SocketReader< SocketT >, legacy::SocketWriter< SocketT > >", "classnet_1_1socket_1_1stream_1_1_socket_connection.html", [
+              [ "net::socket::stream::SocketConnection< legacy::SocketReader< SocketT >, legacy::SocketWriter< SocketT >, SocketT::SocketAddress >", "classnet_1_1socket_1_1stream_1_1_socket_connection.html", [
                 [ "net::socket::stream::legacy::SocketConnection< SocketT >", "classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_connection.html", null ]
               ] ]
             ] ],
             [ "net::socket::stream::tls::SocketReader< SocketT >", "classnet_1_1socket_1_1stream_1_1tls_1_1_socket_reader.html", [
-              [ "net::socket::stream::SocketConnection< tls::SocketReader< SocketT >, tls::SocketWriter< SocketT > >", "classnet_1_1socket_1_1stream_1_1_socket_connection.html", [
+              [ "net::socket::stream::SocketConnection< tls::SocketReader< SocketT >, tls::SocketWriter< SocketT >, SocketT::SocketAddress >", "classnet_1_1socket_1_1stream_1_1_socket_connection.html", [
                 [ "net::socket::stream::tls::SocketConnection< SocketT >", "classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html", null ]
               ] ]
             ] ]
@@ -90,10 +90,10 @@ var hierarchy =
         [ "net::WriteEventReceiver", "classnet_1_1_write_event_receiver.html", [
           [ "net::socket::stream::SocketWriter< SocketT >", "classnet_1_1socket_1_1stream_1_1_socket_writer.html", [
             [ "net::socket::stream::legacy::SocketWriter< SocketT >", "classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_writer.html", [
-              [ "net::socket::stream::SocketConnection< legacy::SocketReader< SocketT >, legacy::SocketWriter< SocketT > >", "classnet_1_1socket_1_1stream_1_1_socket_connection.html", null ]
+              [ "net::socket::stream::SocketConnection< legacy::SocketReader< SocketT >, legacy::SocketWriter< SocketT >, SocketT::SocketAddress >", "classnet_1_1socket_1_1stream_1_1_socket_connection.html", null ]
             ] ],
             [ "net::socket::stream::tls::SocketWriter< SocketT >", "classnet_1_1socket_1_1stream_1_1tls_1_1_socket_writer.html", [
-              [ "net::socket::stream::SocketConnection< tls::SocketReader< SocketT >, tls::SocketWriter< SocketT > >", "classnet_1_1socket_1_1stream_1_1_socket_connection.html", null ]
+              [ "net::socket::stream::SocketConnection< tls::SocketReader< SocketT >, tls::SocketWriter< SocketT >, SocketT::SocketAddress >", "classnet_1_1socket_1_1stream_1_1_socket_connection.html", null ]
             ] ]
           ] ]
         ] ]
@@ -182,12 +182,12 @@ var hierarchy =
       ] ]
     ] ],
     [ "net::socket::stream::SocketConnectionBase", "classnet_1_1socket_1_1stream_1_1_socket_connection_base.html", [
-      [ "net::socket::stream::SocketConnection< SocketReaderT, SocketWriterT >", "classnet_1_1socket_1_1stream_1_1_socket_connection.html", null ],
-      [ "net::socket::stream::SocketConnection< legacy::SocketReader< SocketT >, legacy::SocketWriter< SocketT > >", "classnet_1_1socket_1_1stream_1_1_socket_connection.html", null ],
-      [ "net::socket::stream::SocketConnection< tls::SocketReader< SocketT >, tls::SocketWriter< SocketT > >", "classnet_1_1socket_1_1stream_1_1_socket_connection.html", null ]
+      [ "net::socket::stream::SocketConnection< SocketReaderT, SocketWriterT, SocketAddressT >", "classnet_1_1socket_1_1stream_1_1_socket_connection.html", null ],
+      [ "net::socket::stream::SocketConnection< legacy::SocketReader< SocketT >, legacy::SocketWriter< SocketT >, SocketT::SocketAddress >", "classnet_1_1socket_1_1stream_1_1_socket_connection.html", null ],
+      [ "net::socket::stream::SocketConnection< tls::SocketReader< SocketT >, tls::SocketWriter< SocketT >, SocketT::SocketAddress >", "classnet_1_1socket_1_1stream_1_1_socket_connection.html", null ]
     ] ],
     [ "SocketReaderT", null, [
-      [ "net::socket::stream::SocketConnection< SocketReaderT, SocketWriterT >", "classnet_1_1socket_1_1stream_1_1_socket_connection.html", null ]
+      [ "net::socket::stream::SocketConnection< SocketReaderT, SocketWriterT, SocketAddressT >", "classnet_1_1socket_1_1stream_1_1_socket_connection.html", null ]
     ] ],
     [ "net::socket::stream::SocketServer< SocketListenerT >", "classnet_1_1socket_1_1stream_1_1_socket_server.html", null ],
     [ "net::socket::stream::SocketServer< legacy::SocketListener< net::socket::ipv4::tcp::Socket > >", "classnet_1_1socket_1_1stream_1_1_socket_server.html", [
@@ -221,7 +221,7 @@ var hierarchy =
       [ "net::socket::stream::SocketWriter< SocketT >", "classnet_1_1socket_1_1stream_1_1_socket_writer.html", null ]
     ] ],
     [ "SocketWriterT", null, [
-      [ "net::socket::stream::SocketConnection< SocketReaderT, SocketWriterT >", "classnet_1_1socket_1_1stream_1_1_socket_connection.html", null ]
+      [ "net::socket::stream::SocketConnection< SocketReaderT, SocketWriterT, SocketAddressT >", "classnet_1_1socket_1_1stream_1_1_socket_connection.html", null ]
     ] ],
     [ "StatusCode", "class_status_code.html", null ],
     [ "net::EventReceiver::TIMEOUT", "classnet_1_1_event_receiver_1_1_t_i_m_e_o_u_t.html", null ],

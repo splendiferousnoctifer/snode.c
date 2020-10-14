@@ -121,7 +121,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a223629dd98eb1de0a0b9a431754e1d8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d3dcd283cd6c23d08fdf884aa314899"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_listener.html#a6d3dcd283cd6c23d08fdf884aa314899">~SocketListener</a> () override</td></tr>
 <tr class="separator:a6d3dcd283cd6c23d08fdf884aa314899"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7bc92f7baca1069ab60a4eeaaecb6d4f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_listener.html#a7bc92f7baca1069ab60a4eeaaecb6d4f">listen</a> (const typename SocketConnection::Socket::SocketAddress &amp;localAddress, int backlog, const std::function&lt; void(int err)&gt; &amp;onError) override</td></tr>
+<tr class="memitem:a7bc92f7baca1069ab60a4eeaaecb6d4f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_listener.html#a7bc92f7baca1069ab60a4eeaaecb6d4f">listen</a> (const typename <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a7d2cb9c2abcfbccba0613536d76b6353">SocketConnection::Socket::SocketAddress</a> &amp;localAddress, int backlog, const std::function&lt; void(int err)&gt; &amp;onError) override</td></tr>
 <tr class="separator:a7bc92f7baca1069ab60a4eeaaecb6d4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classnet_1_1socket_1_1stream_1_1_socket_listener"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classnet_1_1socket_1_1stream_1_1_socket_listener')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_listener.html">net::socket::stream::SocketListener&lt; net::socket::stream::tls::SocketConnection&lt; SocketT &gt; &gt;</a></td></tr>
 <tr class="memitem:a95deb8aa4f0c4af2aa5b5f7d41ba1f72 inherit pub_methods_classnet_1_1socket_1_1stream_1_1_socket_listener"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_listener.html#a95deb8aa4f0c4af2aa5b5f7d41ba1f72">operator new</a> (size_t size)</td></tr>
@@ -431,7 +431,7 @@ template&lt;typename SocketT &gt; </div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_listener.html#a6ba8e99eb395b4605b9be85b273899ea">sslErr</a> = <a class="code" href="namespacenet_1_1socket_1_1stream_1_1tls.html#aa510369dc6e94905b6f3b0c0b5003839">ssl_init_ctx</a>(<a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_listener.html#a7e110d3d7115e0e099014a89420bac22">ctx</a>, <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_listener.html#a9ce884ac01ecd6e84a33927293b50572">options</a>, <span class="keyword">true</span>);</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="tls_2_socket_listener_8h_source.html#l00191">net::socket::stream::tls::SocketListener&lt; SocketT &gt;::ctx</a>, <a class="el" href="_socket_listener_8h_source.html#l00171">net::socket::stream::SocketListener&lt; net::socket::stream::tls::SocketConnection&lt; SocketT &gt; &gt;::onConstruct</a>, and <a class="el" href="tls_2_socket_connection_8h_source.html#l00065">net::socket::stream::tls::SocketConnection&lt; SocketT &gt;::setSSL_CTX()</a>.</p>
+<p class="reference">References <a class="el" href="tls_2_socket_listener_8h_source.html#l00191">net::socket::stream::tls::SocketListener&lt; SocketT &gt;::ctx</a>, <a class="el" href="_socket_listener_8h_source.html#l00171">net::socket::stream::SocketListener&lt; net::socket::stream::tls::SocketConnection&lt; SocketT &gt; &gt;::onConstruct</a>, and <a class="el" href="tls_2_socket_connection_8h_source.html#l00067">net::socket::stream::tls::SocketConnection&lt; SocketT &gt;::setSSL_CTX()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -493,7 +493,7 @@ template&lt;typename SocketT &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_listener.html">net::socket::stream::tls::SocketListener</a>&lt; SocketT &gt;::listen </td>
           <td>(</td>
-          <td class="paramtype">const typename SocketConnection::Socket::SocketAddress &amp;&#160;</td>
+          <td class="paramtype">const typename <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a7d2cb9c2abcfbccba0613536d76b6353">SocketConnection::Socket::SocketAddress</a> &amp;&#160;</td>
           <td class="paramname"><em>localAddress</em>, </td>
         </tr>
         <tr>
@@ -534,7 +534,7 @@ template&lt;typename SocketT &gt; </div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="_socket_listener_8h_source.html#l00083">net::socket::stream::SocketListener&lt; SocketConnectionT &gt;::listen()</a>, and <a class="el" href="tls_2_socket_listener_8h_source.html#l00192">net::socket::stream::tls::SocketListener&lt; SocketT &gt;::sslErr</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sock__stream_2_socket_server_8h_source.html#l00068">net::socket::stream::SocketServer&lt; tls::SocketListener&lt; SocketT &gt; &gt;::listen()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sock__stream_2_socket_server_8h_source.html#l00065">net::socket::stream::SocketServer&lt; tls::SocketListener&lt; SocketT &gt; &gt;::listen()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">

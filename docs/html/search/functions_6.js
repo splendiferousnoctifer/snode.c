@@ -13,7 +13,7 @@ var searchData=
   ['getoptions_807',['getOptions',['../classhttp_1_1_cookie_options.html#ac9d91143bd9111cf0b31fc352634b4a6',1,'http::CookieOptions']]],
   ['getoutofbandeventdispatcher_808',['getOutOfBandEventDispatcher',['../classnet_1_1_event_loop.html#adadaec4603719a5b6946abef06c5fa67',1,'net::EventLoop']]],
   ['getreadeventdispatcher_809',['getReadEventDispatcher',['../classnet_1_1_event_loop.html#a6243040d545517b64ebdc4318487895d',1,'net::EventLoop']]],
-  ['getremoteaddress_810',['getRemoteAddress',['../classnet_1_1socket_1_1stream_1_1_socket_connection.html#ac8ca297ef2e049a27592403cc9cee66c',1,'net::socket::stream::SocketConnection']]],
+  ['getremoteaddress_810',['getRemoteAddress',['../classnet_1_1socket_1_1stream_1_1_socket_connection.html#a5ae0ae94f3b4f7d2d6a4600458f5697e',1,'net::socket::stream::SocketConnection']]],
   ['getrequest_811',['getRequest',['../classhttp_1_1_client_context.html#a6150c26ff9edb3a51b85ecca408af9e5',1,'http::ClientContext::getRequest()'],['../classhttp_1_1_server_request.html#a240dadf4804903d5756822b33cacda0e',1,'http::ServerRequest::getRequest()']]],
   ['getsockaddr_812',['getSockAddr',['../classnet_1_1socket_1_1_socket_address.html#aa59d59d3190a5a6897715c518193d7c1',1,'net::socket::SocketAddress']]],
   ['getsockaddrin_813',['getSockAddrIn',['../classnet_1_1socket_1_1ipv4_1_1_inet_address.html#ab7d4ab5da9fb83cacf51a334dfbd544d',1,'net::socket::ipv4::InetAddress']]],
