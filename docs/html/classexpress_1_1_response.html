@@ -302,16 +302,16 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="express_2_response_8cpp_source.html#l00090">90</a> of file <a class="el" href="express_2_response_8cpp_source.html">Response.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                                                                                            {</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        std::string name = file;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keywordflow">if</span> (name[0] == <span class="charliteral">&#39;/&#39;</span>) {</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            name.erase(0, 1);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        }</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <a class="code" href="classexpress_1_1_response.html#ab1b03d46bb6c9f9be8668e4178820c80">download</a>(file, name, onError);</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="express_2_response_8cpp_source.html#l00088">88</a> of file <a class="el" href="express_2_response_8cpp_source.html">Response.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                                                                                            {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        std::string name = file;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keywordflow">if</span> (name[0] == <span class="charliteral">&#39;/&#39;</span>) {</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            name.erase(0, 1);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        }</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <a class="code" href="classexpress_1_1_response.html#ab1b03d46bb6c9f9be8668e4178820c80">download</a>(file, name, onError);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -347,11 +347,11 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="express_2_response_8cpp_source.html#l00100">100</a> of file <a class="el" href="express_2_response_8cpp_source.html">Response.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                                                                                                                   {</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <a class="code" href="classhttp_1_1_response.html#af217518e66fa92dbe559c1eacf124d4a">set</a>({{<span class="stringliteral">&quot;Content-Disposition&quot;</span>, <span class="stringliteral">&quot;attachment; filename=\&quot;&quot;</span> + name + <span class="stringliteral">&quot;\&quot;&quot;</span>}});</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <a class="code" href="classexpress_1_1_response.html#a060caebb6cbe59211beb8c1f3a1cc048">sendFile</a>(file, onError);</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="express_2_response_8cpp_source.html#l00098">98</a> of file <a class="el" href="express_2_response_8cpp_source.html">Response.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                                                                                                                   {</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <a class="code" href="classhttp_1_1_response.html#af217518e66fa92dbe559c1eacf124d4a">set</a>({{<span class="stringliteral">&quot;Content-Disposition&quot;</span>, <span class="stringliteral">&quot;attachment; filename=\&quot;&quot;</span> + name + <span class="stringliteral">&quot;\&quot;&quot;</span>}});</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <a class="code" href="classexpress_1_1_response.html#a060caebb6cbe59211beb8c1f3a1cc048">sendFile</a>(file, onError);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    }</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="express_2_response_8cpp_source.html#l00045">sendFile()</a>, and <a class="el" href="http_2_response_8cpp_source.html#l00088">http::Response::set()</a>.</p>
 <div class="dynheader">
@@ -378,10 +378,10 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="express_2_response_8cpp_source.html#l00105">105</a> of file <a class="el" href="express_2_response_8cpp_source.html">Response.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                                                 {</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <a class="code" href="classexpress_1_1_response.html#aff18a7e9ded125d650d408eaa31151da">redirect</a>(302, name);</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="express_2_response_8cpp_source.html#l00103">103</a> of file <a class="el" href="express_2_response_8cpp_source.html">Response.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                                                 {</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <a class="code" href="classexpress_1_1_response.html#aff18a7e9ded125d650d408eaa31151da">redirect</a>(302, name);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -411,11 +411,11 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="express_2_response_8cpp_source.html#l00109">109</a> of file <a class="el" href="express_2_response_8cpp_source.html">Response.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                                                             {</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        this-&gt;<a class="code" href="classhttp_1_1_response.html#a37d8fcef190c86c0a91de82eb150bbf0">status</a>(<a class="code" href="classhttp_1_1_response.html#a37d8fcef190c86c0a91de82eb150bbf0">status</a>).<a class="code" href="classhttp_1_1_response.html#af217518e66fa92dbe559c1eacf124d4a">set</a>({{<span class="stringliteral">&quot;Location&quot;</span>, name}});</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <a class="code" href="classhttp_1_1_response.html#ad0b5aa3b88a9d72caf26d077d1572b2e">end</a>();</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="express_2_response_8cpp_source.html#l00107">107</a> of file <a class="el" href="express_2_response_8cpp_source.html">Response.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                                                             {</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        this-&gt;<a class="code" href="classhttp_1_1_response.html#a37d8fcef190c86c0a91de82eb150bbf0">status</a>(<a class="code" href="classhttp_1_1_response.html#a37d8fcef190c86c0a91de82eb150bbf0">status</a>).<a class="code" href="classhttp_1_1_response.html#af217518e66fa92dbe559c1eacf124d4a">set</a>({{<span class="stringliteral">&quot;Location&quot;</span>, name}});</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <a class="code" href="classhttp_1_1_response.html#ad0b5aa3b88a9d72caf26d077d1572b2e">end</a>();</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    }</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="http_2_response_8cpp_source.html#l00170">http::Response::end()</a>, <a class="el" href="http_2_response_8cpp_source.html#l00088">http::Response::set()</a>, and <a class="el" href="http_2_response_8cpp_source.html#l00062">http::Response::status()</a>.</p>
 <div class="dynheader">
@@ -481,26 +481,24 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                <a class="code" href="classhttp_1_1_response.html#a0dbe7d4b4540e0611df4ac22b23a631c">responseStatus</a> = 403;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                errno = EACCES;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                <a class="code" href="classhttp_1_1_response.html#ac7241c008584b4ab099ce257d5fefa59">serverContext</a>-&gt;<a class="code" href="classhttp_1_1_server_context.html#aa3a20bdb1e4aab00435199eefd061b58">terminateConnection</a>();</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                <span class="keywordflow">if</span> (onError) {</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                    onError(EACCES);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                }</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                <a class="code" href="classhttp_1_1_response.html#ad0b5aa3b88a9d72caf26d077d1572b2e">end</a>();</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            }</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <a class="code" href="classhttp_1_1_response.html#a0dbe7d4b4540e0611df4ac22b23a631c">responseStatus</a> = 404;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            errno = ENOENT;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <a class="code" href="classhttp_1_1_response.html#ac7241c008584b4ab099ce257d5fefa59">serverContext</a>-&gt;<a class="code" href="classhttp_1_1_server_context.html#aa3a20bdb1e4aab00435199eefd061b58">terminateConnection</a>();</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            <span class="keywordflow">if</span> (onError) {</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                onError(ENOENT);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            }</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <a class="code" href="classhttp_1_1_response.html#ad0b5aa3b88a9d72caf26d077d1572b2e">end</a>();</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        }</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                <span class="keywordflow">if</span> (onError) {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                    onError(EACCES);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                <a class="code" href="classhttp_1_1_response.html#ad0b5aa3b88a9d72caf26d077d1572b2e">end</a>();</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <a class="code" href="classhttp_1_1_response.html#a0dbe7d4b4540e0611df4ac22b23a631c">responseStatus</a> = 404;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            errno = ENOENT;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <span class="keywordflow">if</span> (onError) {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                onError(ENOENT);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            <a class="code" href="classhttp_1_1_response.html#ad0b5aa3b88a9d72caf26d077d1572b2e">end</a>();</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    }</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="_mime_types_8cpp_source.html#l00232">MimeTypes::contentType()</a>, <a class="el" href="http_2_response_8cpp_source.html#l00170">http::Response::end()</a>, <a class="el" href="http_2_response_8cpp_source.html#l00038">http::Response::enqueue()</a>, <a class="el" href="http__utils_8cpp_source.html#l00134">httputils::file_mod_http_date()</a>, <a class="el" href="express_2_response_8h_source.html#l00050">fileReader</a>, <a class="el" href="http_2_response_8h_source.html#l00075">http::Response::headers</a>, <a class="el" href="_file_reader_8cpp_source.html#l00039">FileReader::read()</a>, <a class="el" href="http_2_response_8h_source.html#l00064">http::Response::responseStatus</a>, <a class="el" href="http_2_response_8h_source.html#l00058">http::Response::serverContext</a>, and <a class="el" href="_server_context_8cpp_source.html#l00124">http::ServerContext::terminateConnection()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="express_2_response_8cpp_source.html#l00100">download()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="express_2_response_8cpp_source.html#l00098">download()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -530,10 +528,10 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="express_2_response_8cpp_source.html#l00114">114</a> of file <a class="el" href="express_2_response_8cpp_source.html">Response.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                                        {</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        this-&gt;<a class="code" href="classhttp_1_1_response.html#a37d8fcef190c86c0a91de82eb150bbf0">status</a>(<a class="code" href="classhttp_1_1_response.html#a37d8fcef190c86c0a91de82eb150bbf0">status</a>).<a class="code" href="classhttp_1_1_response.html#aa3dad1589568fbc2ca2b00715b846c33">send</a>(<a class="code" href="class_status_code.html#a22c4b7005f5d2de069af37a191b97fa0">StatusCode::reason</a>(<a class="code" href="classhttp_1_1_response.html#a37d8fcef190c86c0a91de82eb150bbf0">status</a>));</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="express_2_response_8cpp_source.html#l00112">112</a> of file <a class="el" href="express_2_response_8cpp_source.html">Response.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                                        {</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        this-&gt;<a class="code" href="classhttp_1_1_response.html#a37d8fcef190c86c0a91de82eb150bbf0">status</a>(<a class="code" href="classhttp_1_1_response.html#a37d8fcef190c86c0a91de82eb150bbf0">status</a>).<a class="code" href="classhttp_1_1_response.html#aa3dad1589568fbc2ca2b00715b846c33">send</a>(<a class="code" href="class_status_code.html#a22c4b7005f5d2de069af37a191b97fa0">StatusCode::reason</a>(<a class="code" href="classhttp_1_1_response.html#a37d8fcef190c86c0a91de82eb150bbf0">status</a>));</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    }</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="_status_codes_8h_source.html#l00031">StatusCode::reason()</a>, <a class="el" href="http_2_response_8cpp_source.html#l00128">http::Response::send()</a>, and <a class="el" href="http_2_response_8cpp_source.html#l00062">http::Response::status()</a>.</p>
 <div class="dynheader">
@@ -588,9 +586,9 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="aclasshttp_1_1_response_html_a0dbe7d4b4540e0611df4ac22b23a631c"><div class="ttname"><a href="classhttp_1_1_response.html#a0dbe7d4b4540e0611df4ac22b23a631c">http::Response::responseStatus</a></div><div class="ttdeci">int responseStatus</div><div class="ttdef"><b>Definition:</b> <a href="http_2_response_8h_source.html#l00064">Response.h:64</a></div></div>
 <div class="ttc" id="anamespacehttputils_html_a4a2597267a4c6fae315ab7b85273ea61"><div class="ttname"><a href="namespacehttputils.html#a4a2597267a4c6fae315ab7b85273ea61">httputils::file_mod_http_date</a></div><div class="ttdeci">std::string file_mod_http_date(const std::string &amp;filePath)</div><div class="ttdef"><b>Definition:</b> <a href="http__utils_8cpp_source.html#l00134">http_utils.cpp:134</a></div></div>
 <div class="ttc" id="aclasshttp_1_1_response_html"><div class="ttname"><a href="classhttp_1_1_response.html">http::Response</a></div><div class="ttdef"><b>Definition:</b> <a href="http_2_response_8h_source.html#l00038">Response.h:38</a></div></div>
-<div class="ttc" id="aclassexpress_1_1_response_html_ab1b03d46bb6c9f9be8668e4178820c80"><div class="ttname"><a href="classexpress_1_1_response.html#ab1b03d46bb6c9f9be8668e4178820c80">express::Response::download</a></div><div class="ttdeci">void download(const std::string &amp;file, const std::function&lt; void(int err)&gt; &amp;onError=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="express_2_response_8cpp_source.html#l00090">Response.cpp:90</a></div></div>
+<div class="ttc" id="aclassexpress_1_1_response_html_ab1b03d46bb6c9f9be8668e4178820c80"><div class="ttname"><a href="classexpress_1_1_response.html#ab1b03d46bb6c9f9be8668e4178820c80">express::Response::download</a></div><div class="ttdeci">void download(const std::string &amp;file, const std::function&lt; void(int err)&gt; &amp;onError=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="express_2_response_8cpp_source.html#l00088">Response.cpp:88</a></div></div>
 <div class="ttc" id="aclassexpress_1_1_response_html_af97492b5ff2ff2d667e5e6d39646ac4c"><div class="ttname"><a href="classexpress_1_1_response.html#af97492b5ff2ff2d667e5e6d39646ac4c">express::Response::fileReader</a></div><div class="ttdeci">FileReader * fileReader</div><div class="ttdef"><b>Definition:</b> <a href="express_2_response_8h_source.html#l00050">Response.h:50</a></div></div>
-<div class="ttc" id="aclassexpress_1_1_response_html_aff18a7e9ded125d650d408eaa31151da"><div class="ttname"><a href="classexpress_1_1_response.html#aff18a7e9ded125d650d408eaa31151da">express::Response::redirect</a></div><div class="ttdeci">void redirect(const std::string &amp;name)</div><div class="ttdef"><b>Definition:</b> <a href="express_2_response_8cpp_source.html#l00105">Response.cpp:105</a></div></div>
+<div class="ttc" id="aclassexpress_1_1_response_html_aff18a7e9ded125d650d408eaa31151da"><div class="ttname"><a href="classexpress_1_1_response.html#aff18a7e9ded125d650d408eaa31151da">express::Response::redirect</a></div><div class="ttdeci">void redirect(const std::string &amp;name)</div><div class="ttdef"><b>Definition:</b> <a href="express_2_response_8cpp_source.html#l00103">Response.cpp:103</a></div></div>
 <div class="ttc" id="aclasshttp_1_1_response_html_afcfab9e82406afb1d8097cec6d2c2d83"><div class="ttname"><a href="classhttp_1_1_response.html#afcfab9e82406afb1d8097cec6d2c2d83">http::Response::headers</a></div><div class="ttdeci">std::map&lt; std::string, std::string &gt; headers</div><div class="ttdef"><b>Definition:</b> <a href="http_2_response_8h_source.html#l00075">Response.h:75</a></div></div>
 <div class="ttc" id="aclass_mime_types_html_ad1da91efb5342e3334df442fa7f98ecf"><div class="ttname"><a href="class_mime_types.html#ad1da91efb5342e3334df442fa7f98ecf">MimeTypes::contentType</a></div><div class="ttdeci">static std::string contentType(const std::string &amp;file)</div><div class="ttdef"><b>Definition:</b> <a href="_mime_types_8cpp_source.html#l00232">MimeTypes.cpp:232</a></div></div>
 <div class="ttc" id="aclass_file_reader_html_a33d14353d5c28d329ad133aba94518a7"><div class="ttname"><a href="class_file_reader.html#a33d14353d5c28d329ad133aba94518a7">FileReader::disable</a></div><div class="ttdeci">void disable() override</div><div class="ttdef"><b>Definition:</b> <a href="_file_reader_8cpp_source.html#l00055">FileReader.cpp:55</a></div></div>

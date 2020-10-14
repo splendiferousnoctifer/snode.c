@@ -95,8 +95,7 @@ $(document).ready(function(){initNavTree('classnet_1_1socket_1_1stream_1_1tls_1_
 <div class="dynheader">
 Inheritance diagram for net::socket::stream::tls::SocketReader&lt; SocketT &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_reader__inherit__graph.svg" width="290" height="1603"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_reader__inherit__graph.svg" width="290" height="1603"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <div class="dynheader">
 Collaboration diagram for net::socket::stream::tls::SocketReader&lt; SocketT &gt;:</div>
@@ -168,7 +167,7 @@ Additional Inherited Members</h2></td></tr>
 class net::socket::stream::tls::SocketReader&lt; SocketT &gt;</h3>
 
 
-<p class="definition">Definition at line <a class="el" href="tls_2_socket_reader_8h_source.html#l00036">36</a> of file <a class="el" href="tls_2_socket_reader_8h_source.html">SocketReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tls_2_socket_reader_8h_source.html#l00038">38</a> of file <a class="el" href="tls_2_socket_reader_8h_source.html">SocketReader.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a8626ff98a572438f282b832afb46c6f2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8626ff98a572438f282b832afb46c6f2">&#9670;&nbsp;</a></span>Socket</h2>
@@ -192,7 +191,7 @@ template&lt;typename SocketT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tls_2_socket_reader_8h_source.html#l00038">38</a> of file <a class="el" href="tls_2_socket_reader_8h_source.html">SocketReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tls_2_socket_reader_8h_source.html#l00040">40</a> of file <a class="el" href="tls_2_socket_reader_8h_source.html">SocketReader.h</a>.</p>
 
 </div>
 </div>
@@ -235,12 +234,32 @@ template&lt;typename SocketT &gt; </div>
 
 <p>Implements <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#acdc832ddd01ce292850943500431eb98">net::socket::stream::SocketReader&lt; SocketT &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="tls_2_socket_reader_8h_source.html#l00042">42</a> of file <a class="el" href="tls_2_socket_reader_8h_source.html">SocketReader.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                                                          {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            return ::SSL_read(<a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_reader.html#a772a3826a50633705c006e12fe4edf7b">ssl</a>, junk, junkLen);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        }</div>
+<p class="definition">Definition at line <a class="el" href="tls_2_socket_reader_8h_source.html#l00044">44</a> of file <a class="el" href="tls_2_socket_reader_8h_source.html">SocketReader.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                                                          {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <span class="keywordtype">int</span> ret = ::SSL_read(<a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_reader.html#a772a3826a50633705c006e12fe4edf7b">ssl</a>, junk, junkLen);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <span class="keywordflow">if</span> (ret &lt;= 0) {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                <span class="keywordflow">switch</span> (SSL_get_error(<a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_reader.html#a772a3826a50633705c006e12fe4edf7b">ssl</a>, ret)) {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                    <span class="keywordflow">case</span> SSL_ERROR_WANT_WRITE:</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                    <span class="keywordflow">case</span> SSL_ERROR_WANT_READ:</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                        errno = EAGAIN;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                        ret = 0;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                        [[fallthrough]];</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                    <span class="keywordflow">case</span> SSL_ERROR_NONE:</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                    <span class="keywordflow">case</span> SSL_ERROR_ZERO_RETURN:</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                    <span class="keywordflow">case</span> SSL_ERROR_SYSCALL:</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                        ret = 0;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                    <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                        ret = -ERR_peek_error();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <span class="keywordflow">return</span> ret;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="tls_2_socket_reader_8h_source.html#l00047">net::socket::stream::tls::SocketReader&lt; SocketT &gt;::ssl</a>.</p>
+<p class="reference">References <a class="el" href="tls_2_socket_reader_8h_source.html#l00069">net::socket::stream::tls::SocketReader&lt; SocketT &gt;::ssl</a>.</p>
 
 </div>
 </div>
@@ -267,9 +286,9 @@ template&lt;typename SocketT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tls_2_socket_reader_8h_source.html#l00047">47</a> of file <a class="el" href="tls_2_socket_reader_8h_source.html">SocketReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tls_2_socket_reader_8h_source.html#l00069">69</a> of file <a class="el" href="tls_2_socket_reader_8h_source.html">SocketReader.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="tls_2_socket_reader_8h_source.html#l00042">net::socket::stream::tls::SocketReader&lt; SocketT &gt;::read()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="tls_2_socket_reader_8h_source.html#l00044">net::socket::stream::tls::SocketReader&lt; SocketT &gt;::read()</a>.</p>
 
 </div>
 </div>
@@ -278,7 +297,7 @@ template&lt;typename SocketT &gt; </div>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1tls_1_1_socket_reader_html_a772a3826a50633705c006e12fe4edf7b"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_reader.html#a772a3826a50633705c006e12fe4edf7b">net::socket::stream::tls::SocketReader::ssl</a></div><div class="ttdeci">SSL * ssl</div><div class="ttdef"><b>Definition:</b> <a href="tls_2_socket_reader_8h_source.html#l00047">SocketReader.h:47</a></div></div>
+<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1tls_1_1_socket_reader_html_a772a3826a50633705c006e12fe4edf7b"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_reader.html#a772a3826a50633705c006e12fe4edf7b">net::socket::stream::tls::SocketReader::ssl</a></div><div class="ttdeci">SSL * ssl</div><div class="ttdef"><b>Definition:</b> <a href="tls_2_socket_reader_8h_source.html#l00069">SocketReader.h:69</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

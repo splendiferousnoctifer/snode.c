@@ -96,8 +96,7 @@ $(document).ready(function(){initNavTree('classnet_1_1socket_1_1stream_1_1_socke
 <div class="dynheader">
 Inheritance diagram for net::socket::stream::SocketReader&lt; SocketT &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_reader__inherit__graph.svg" width="544" height="1603"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_reader__inherit__graph.svg" width="544" height="1603"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <div class="dynheader">
 Collaboration diagram for net::socket::stream::SocketReader&lt; SocketT &gt;:</div>
@@ -390,7 +389,7 @@ template&lt;typename SocketT &gt; </div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#abbd9aeb4ce71eb7aca64c33459d3ade6">onRead</a>(junk, ret);</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (errno != EAGAIN &amp;&amp; errno != EWOULDBLOCK &amp;&amp; errno != EINTR) {</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                <a class="code" href="classnet_1_1_read_event_receiver.html#a1aa12164e4a0363f8a61acdceb44cd0c">ReadEventReceiver::disable</a>();</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#aae435ace40fd15998d46c67176fd342c">onError</a>(ret == 0 ? 0 : errno);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#aae435ace40fd15998d46c67176fd342c">onError</a>(ret &lt; 0 ? ret : errno);</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            }</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        }</div>
 </div><!-- fragment -->

@@ -96,8 +96,7 @@ $(document).ready(function(){initNavTree('classnet_1_1socket_1_1stream_1_1_socke
 <div class="dynheader">
 Inheritance diagram for net::socket::stream::SocketWriter&lt; SocketT &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_writer__inherit__graph.svg" width="544" height="1618"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_writer__inherit__graph.svg" width="544" height="1618"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <div class="dynheader">
 Collaboration diagram for net::socket::stream::SocketWriter&lt; SocketT &gt;:</div>
@@ -347,8 +346,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_writer_aa7bdaa904aa90968afb56bbb4f671a6d_icgraph.svg" width="468" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_writer_aa7bdaa904aa90968afb56bbb4f671a6d_icgraph.svg" width="468" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -433,7 +431,7 @@ template&lt;typename SocketT &gt; </div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            ssize_t ret = <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#a36007a912778fb4b49f06101fb19cddb">write</a>(<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#a33c28980a21e4e1289611714634ab3d8">writeBuffer</a>.data(), (<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#a33c28980a21e4e1289611714634ab3d8">writeBuffer</a>.size() &lt; <a class="code" href="_socket_writer_8h.html#acc9332e979f894b29288e59adeb83e81">MAX_SEND_JUNKSIZE</a>) ? <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#a33c28980a21e4e1289611714634ab3d8">writeBuffer</a>.size() : <a class="code" href="_socket_writer_8h.html#acc9332e979f894b29288e59adeb83e81">MAX_SEND_JUNKSIZE</a>);</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keywordflow">if</span> (ret &gt;= 0) {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keywordflow">if</span> (ret &gt; 0) {</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#a33c28980a21e4e1289611714634ab3d8">writeBuffer</a>.erase(<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#a33c28980a21e4e1289611714634ab3d8">writeBuffer</a>.begin(), <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#a33c28980a21e4e1289611714634ab3d8">writeBuffer</a>.begin() + ret);</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#a33c28980a21e4e1289611714634ab3d8">writeBuffer</a>.empty()) {</div>
@@ -441,7 +439,7 @@ template&lt;typename SocketT &gt; </div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                }</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (errno != EAGAIN &amp;&amp; errno != EWOULDBLOCK &amp;&amp; errno != EINTR) {</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                <a class="code" href="classnet_1_1_write_event_receiver.html#a5fde8579d923d80afbd015935d1fdea9">WriteEventReceiver::disable</a>();</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#ad86a1fb6bd14c3d6918c96e23f4848bc">onError</a>(errno);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#ad86a1fb6bd14c3d6918c96e23f4848bc">onError</a>(ret &lt; 0 ? ret : errno);</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            }</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        }</div>
 </div><!-- fragment -->
