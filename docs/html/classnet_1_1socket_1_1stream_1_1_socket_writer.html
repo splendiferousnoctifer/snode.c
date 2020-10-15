@@ -96,12 +96,14 @@ $(document).ready(function(){initNavTree('classnet_1_1socket_1_1stream_1_1_socke
 <div class="dynheader">
 Inheritance diagram for net::socket::stream::SocketWriter&lt; SocketT &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_writer__inherit__graph.svg" width="544" height="1618"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_writer__inherit__graph.svg" width="544" height="1618"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <div class="dynheader">
 Collaboration diagram for net::socket::stream::SocketWriter&lt; SocketT &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_writer__coll__graph.svg" width="270" height="846"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_writer__coll__graph.svg" width="270" height="846"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -165,6 +167,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_classnet_1_1_observation_counter"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classnet_1_1_observation_counter')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classnet_1_1_observation_counter.html">net::ObservationCounter</a></td></tr>
 <tr class="memitem:ad61e0034c4fdbd88f1eae230e1417e0b inherit pro_attribs_classnet_1_1_observation_counter"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_observation_counter.html#ad61e0034c4fdbd88f1eae230e1417e0b">observationCounter</a> = 0</td></tr>
 <tr class="separator:ad61e0034c4fdbd88f1eae230e1417e0b inherit pro_attribs_classnet_1_1_observation_counter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68a1c1d35efbae0a002d3a67e16baa42 inherit pro_attribs_classnet_1_1_observation_counter"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_observation_counter.html#a68a1c1d35efbae0a002d3a67e16baa42">lastTriggered</a> = 0</td></tr>
+<tr class="separator:a68a1c1d35efbae0a002d3a67e16baa42 inherit pro_attribs_classnet_1_1_observation_counter"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename SocketT&gt;<br />
@@ -283,7 +287,7 @@ template&lt;typename SocketT &gt; </div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            }</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_write_event_receiver_8cpp_source.html#l00039">net::WriteEventReceiver::disable()</a>, and <a class="el" href="_event_receiver_8h_source.html#l00069">net::EventReceiver::isEnabled()</a>.</p>
+<p class="reference">References <a class="el" href="_write_event_receiver_8cpp_source.html#l00039">net::WriteEventReceiver::disable()</a>, and <a class="el" href="_event_receiver_8h_source.html#l00070">net::EventReceiver::isEnabled()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -523,7 +527,7 @@ template&lt;typename SocketT &gt; </div>
 </div><!-- doc-content -->
 <div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_writer_html_a33c28980a21e4e1289611714634ab3d8"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#a33c28980a21e4e1289611714634ab3d8">net::socket::stream::SocketWriter::writeBuffer</a></div><div class="ttdeci">std::vector&lt; char &gt; writeBuffer</div><div class="ttdef"><b>Definition:</b> <a href="_socket_writer_8h_source.html#l00087">SocketWriter.h:87</a></div></div>
 <div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_writer_html_a36007a912778fb4b49f06101fb19cddb"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#a36007a912778fb4b49f06101fb19cddb">net::socket::stream::SocketWriter::write</a></div><div class="ttdeci">virtual ssize_t write(const char *junk, size_t junkSize)=0</div></div>
-<div class="ttc" id="aclassnet_1_1_event_receiver_html_ac4e3a75a2849d0d8b1fc4ba2b754c8e3"><div class="ttname"><a href="classnet_1_1_event_receiver.html#ac4e3a75a2849d0d8b1fc4ba2b754c8e3">net::EventReceiver::isEnabled</a></div><div class="ttdeci">bool isEnabled() const</div><div class="ttdef"><b>Definition:</b> <a href="_event_receiver_8h_source.html#l00069">EventReceiver.h:69</a></div></div>
+<div class="ttc" id="aclassnet_1_1_event_receiver_html_ac4e3a75a2849d0d8b1fc4ba2b754c8e3"><div class="ttname"><a href="classnet_1_1_event_receiver.html#ac4e3a75a2849d0d8b1fc4ba2b754c8e3">net::EventReceiver::isEnabled</a></div><div class="ttdeci">bool isEnabled() const</div><div class="ttdef"><b>Definition:</b> <a href="_event_receiver_8h_source.html#l00070">EventReceiver.h:70</a></div></div>
 <div class="ttc" id="aclassnet_1_1_write_event_receiver_html_a5fde8579d923d80afbd015935d1fdea9"><div class="ttname"><a href="classnet_1_1_write_event_receiver.html#a5fde8579d923d80afbd015935d1fdea9">net::WriteEventReceiver::disable</a></div><div class="ttdeci">void disable() override</div><div class="ttdef"><b>Definition:</b> <a href="_write_event_receiver_8cpp_source.html#l00039">WriteEventReceiver.cpp:39</a></div></div>
 <div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_writer_html_ad86a1fb6bd14c3d6918c96e23f4848bc"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#ad86a1fb6bd14c3d6918c96e23f4848bc">net::socket::stream::SocketWriter::onError</a></div><div class="ttdeci">std::function&lt; void(int errnum)&gt; onError</div><div class="ttdef"><b>Definition:</b> <a href="_socket_writer_8h_source.html#l00085">SocketWriter.h:85</a></div></div>
 <div class="ttc" id="a_socket_writer_8h_html_acc9332e979f894b29288e59adeb83e81"><div class="ttname"><a href="_socket_writer_8h.html#acc9332e979f894b29288e59adeb83e81">MAX_SEND_JUNKSIZE</a></div><div class="ttdeci">#define MAX_SEND_JUNKSIZE</div><div class="ttdef"><b>Definition:</b> <a href="_socket_writer_8h_source.html#l00035">SocketWriter.h:35</a></div></div>

@@ -30,12 +30,11 @@
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:href="classnet_1_1_event_receiver.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="11.5,-138.5 11.5,-360.5 112.5,-360.5 112.5,-138.5 11.5,-138.5"/>
-<text text-anchor="middle" x="62" y="-348.5" font-family="Helvetica,sans-Serif" font-size="10.00">net::EventReceiver</text>
-<polyline fill="none" stroke="black" points="11.5,-341.5 112.5,-341.5 "/>
-<text text-anchor="start" x="19.5" y="-329.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; _enabled</text>
-<text text-anchor="start" x="19.5" y="-318.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; maxInactivity</text>
-<text text-anchor="start" x="19.5" y="-307.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; lastTriggered</text>
+<polygon fill="white" stroke="black" points="11.5,-138.5 11.5,-349.5 112.5,-349.5 112.5,-138.5 11.5,-138.5"/>
+<text text-anchor="middle" x="62" y="-337.5" font-family="Helvetica,sans-Serif" font-size="10.00">net::EventReceiver</text>
+<polyline fill="none" stroke="black" points="11.5,-330.5 112.5,-330.5 "/>
+<text text-anchor="start" x="19.5" y="-318.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; _enabled</text>
+<text text-anchor="start" x="19.5" y="-307.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; maxInactivity</text>
 <polyline fill="none" stroke="black" points="11.5,-300.5 112.5,-300.5 "/>
 <text text-anchor="start" x="19.5" y="-288.5" font-family="Helvetica,sans-Serif" font-size="10.00"># EventReceiver()</text>
 <text text-anchor="start" x="19.5" y="-277.5" font-family="Helvetica,sans-Serif" font-size="10.00"># EventReceiver()</text>
@@ -57,27 +56,28 @@
 <!-- Node2&#45;&gt;Node1 -->
 <g id="edge1" class="edge">
 <title>Node2&#45;&gt;Node1</title>
-<path fill="none" stroke="midnightblue" d="M62,-128.34C62,-119.09 62,-110.11 62,-101.76"/>
-<polygon fill="none" stroke="midnightblue" points="58.5,-128.47 62,-138.47 65.5,-128.47 58.5,-128.47"/>
+<path fill="none" stroke="midnightblue" d="M62,-128.23C62,-119.05 62,-110.12 62,-101.79"/>
+<polygon fill="none" stroke="midnightblue" points="58.5,-128.28 62,-138.28 65.5,-128.28 58.5,-128.28"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
 <g id="a_node3"><a xlink:href="classnet_1_1_observation_counter.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="0.5,-397.5 0.5,-454.5 123.5,-454.5 123.5,-397.5 0.5,-397.5"/>
+<polygon fill="white" stroke="black" points="0.5,-386.5 0.5,-454.5 123.5,-454.5 123.5,-386.5 0.5,-386.5"/>
 <text text-anchor="middle" x="62" y="-442.5" font-family="Helvetica,sans-Serif" font-size="10.00">net::ObservationCounter</text>
 <polyline fill="none" stroke="black" points="0.5,-435.5 123.5,-435.5 "/>
 <text text-anchor="start" x="8.5" y="-423.5" font-family="Helvetica,sans-Serif" font-size="10.00"># observationCounter</text>
-<polyline fill="none" stroke="black" points="0.5,-416.5 123.5,-416.5 "/>
-<text text-anchor="start" x="8.5" y="-404.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ isObserved()</text>
+<text text-anchor="start" x="8.5" y="-412.5" font-family="Helvetica,sans-Serif" font-size="10.00"># lastTriggered</text>
+<polyline fill="none" stroke="black" points="0.5,-405.5 123.5,-405.5 "/>
+<text text-anchor="start" x="8.5" y="-393.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ isObserved()</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node2 -->
 <g id="edge2" class="edge">
 <title>Node3&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M62,-387.2C62,-379.08 62,-370.1 62,-360.75"/>
-<polygon fill="none" stroke="midnightblue" points="58.5,-387.35 62,-397.35 65.5,-387.35 58.5,-387.35"/>
+<path fill="none" stroke="midnightblue" d="M62,-376.22C62,-367.96 62,-358.99 62,-349.75"/>
+<polygon fill="none" stroke="midnightblue" points="58.5,-376.27 62,-386.27 65.5,-376.27 58.5,-376.27"/>
 </g>
 </g>
 </svg>

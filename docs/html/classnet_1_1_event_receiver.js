@@ -17,6 +17,5 @@ var classnet_1_1_event_receiver =
     [ "unobserved", "classnet_1_1_event_receiver.html#ad40f8b29dc71258c520f51f10e35848f", null ],
     [ "EventDispatcher", "classnet_1_1_event_receiver.html#a50a7ad72f4990726439a9d699f781248", null ],
     [ "_enabled", "classnet_1_1_event_receiver.html#a699e7d98a42eabe4782c9a4a55c7a46f", null ],
-    [ "lastTriggered", "classnet_1_1_event_receiver.html#a85cfd5d3d219ce35be35da82512eaa3a", null ],
     [ "maxInactivity", "classnet_1_1_event_receiver.html#aee08394aa7d16c170907f861cca701cf", null ]
 ];
