@@ -4,6 +4,8 @@ var namespacenet =
     [ "timer", "namespacenet_1_1timer.html", "namespacenet_1_1timer" ],
     [ "AcceptEventDispatcher", "classnet_1_1_accept_event_dispatcher.html", "classnet_1_1_accept_event_dispatcher" ],
     [ "AcceptEventReceiver", "classnet_1_1_accept_event_receiver.html", "classnet_1_1_accept_event_receiver" ],
+    [ "ConnectEventDispatcher", "classnet_1_1_connect_event_dispatcher.html", "classnet_1_1_connect_event_dispatcher" ],
+    [ "ConnectEventReceiver", "classnet_1_1_connect_event_receiver.html", "classnet_1_1_connect_event_receiver" ],
     [ "Descriptor", "classnet_1_1_descriptor.html", "classnet_1_1_descriptor" ],
     [ "EventDispatcher", "classnet_1_1_event_dispatcher.html", "classnet_1_1_event_dispatcher" ],
     [ "EventLoop", "classnet_1_1_event_loop.html", "classnet_1_1_event_loop" ],

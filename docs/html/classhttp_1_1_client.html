@@ -82,10 +82,10 @@ $(document).ready(function(){initNavTree('classhttp_1_1_client.html',''); initRe
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
-<a href="#pri-types">Private Types</a> &#124;
 <a href="classhttp_1_1_client-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">http::Client&lt; SocketClientT &gt; Class Template Reference</div>  </div>
@@ -104,6 +104,13 @@ Collaboration diagram for http::Client&lt; SocketClientT &gt;:</div>
 <div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1_client__coll__graph.svg" width="204" height="147"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a8635f7f9b04ea2592248a270b7076530"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_client.html#a8635f7f9b04ea2592248a270b7076530">SocketClient</a> = SocketClientT</td></tr>
+<tr class="separator:a8635f7f9b04ea2592248a270b7076530"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1de7977aa4301885c86b1548023539dd"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_client.html#a1de7977aa4301885c86b1548023539dd">SocketConnection</a> = typename SocketClient::SocketConnection</td></tr>
+<tr class="separator:a1de7977aa4301885c86b1548023539dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a6dbdf4fbbd7706402ea33a985bde40fa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_client.html#a6dbdf4fbbd7706402ea33a985bde40fa">Client</a> (const std::function&lt; void(<a class="el" href="classhttp_1_1_client.html#a1de7977aa4301885c86b1548023539dd">SocketConnection</a> *)&gt; &amp;onConnect, const std::function&lt; void(<a class="el" href="classhttp_1_1_server_request.html">ServerRequest</a> &amp;)&gt; onRequestBegin, const std::function&lt; void(<a class="el" href="classhttp_1_1_server_response.html">ServerResponse</a> &amp;)&gt; onResponseReady, const std::function&lt; void(int, const std::string &amp;)&gt; onResponseError, const std::function&lt; void(<a class="el" href="classhttp_1_1_client.html#a1de7977aa4301885c86b1548023539dd">SocketConnection</a> *)&gt; onDisconnect, const std::map&lt; std::string, std::any &gt; &amp;options={{}})</td></tr>
@@ -124,13 +131,6 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a904c94b09e841dc1ac26786211dbfaac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35923d10aea0a7dd1d124dd14f1240d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classhttp_1_1_client.html#a8635f7f9b04ea2592248a270b7076530">SocketClient</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_client.html#a35923d10aea0a7dd1d124dd14f1240d4">socketClient</a></td></tr>
 <tr class="separator:a35923d10aea0a7dd1d124dd14f1240d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
-Private Types</h2></td></tr>
-<tr class="memitem:a8635f7f9b04ea2592248a270b7076530"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_client.html#a8635f7f9b04ea2592248a270b7076530">SocketClient</a> = SocketClientT</td></tr>
-<tr class="separator:a8635f7f9b04ea2592248a270b7076530"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1de7977aa4301885c86b1548023539dd"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_client.html#a1de7977aa4301885c86b1548023539dd">SocketConnection</a> = typename SocketClient::SocketConnection</td></tr>
-<tr class="separator:a1de7977aa4301885c86b1548023539dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename SocketClientT&gt;<br />
@@ -146,22 +146,14 @@ class http::Client&lt; SocketClientT &gt;</h3>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SocketClientT &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">using <a class="el" href="classhttp_1_1_client.html">http::Client</a>&lt; SocketClientT &gt;::<a class="el" href="classhttp_1_1_client.html#a8635f7f9b04ea2592248a270b7076530">SocketClient</a> =  SocketClientT</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_client_8h_source.html#l00039">39</a> of file <a class="el" href="_client_8h_source.html">Client.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_client_8h_source.html#l00040">40</a> of file <a class="el" href="_client_8h_source.html">Client.h</a>.</p>
 
 </div>
 </div>
@@ -172,22 +164,14 @@ template&lt;typename SocketClientT &gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SocketClientT &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">using <a class="el" href="classhttp_1_1_client.html">http::Client</a>&lt; SocketClientT &gt;::<a class="el" href="classhttp_1_1_client.html#a1de7977aa4301885c86b1548023539dd">SocketConnection</a> =  typename SocketClient::SocketConnection</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_client_8h_source.html#l00040">40</a> of file <a class="el" href="_client_8h_source.html">Client.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_client_8h_source.html#l00041">41</a> of file <a class="el" href="_client_8h_source.html">Client.h</a>.</p>
 
 </div>
 </div>
@@ -565,7 +549,7 @@ template&lt;typename SocketClientT &gt; </div>
 <div class="ttc" id="aclasshttp_1_1_client_context_html_af9699e49288a7257990e4fe3f48c9295"><div class="ttname"><a href="classhttp_1_1_client_context.html#af9699e49288a7257990e4fe3f48c9295">http::ClientContext::serverRequest</a></div><div class="ttdeci">ServerRequest serverRequest</div><div class="ttdef"><b>Definition:</b> <a href="_client_context_8h_source.html#l00059">ClientContext.h:59</a></div></div>
 <div class="ttc" id="aclasshttp_1_1_client_context_html_a97e091a9a9c269bdf56a41ef09d4c69a"><div class="ttname"><a href="classhttp_1_1_client_context.html#a97e091a9a9c269bdf56a41ef09d4c69a">http::ClientContext::setRequest</a></div><div class="ttdeci">void setRequest(const std::string &amp;request)</div><div class="ttdef"><b>Definition:</b> <a href="_client_context_8cpp_source.html#l00063">ClientContext.cpp:63</a></div></div>
 <div class="ttc" id="aclasshttp_1_1_client_context_html"><div class="ttname"><a href="classhttp_1_1_client_context.html">http::ClientContext</a></div><div class="ttdef"><b>Definition:</b> <a href="_client_context_8h_source.html#l00040">ClientContext.h:40</a></div></div>
-<div class="ttc" id="aclasshttp_1_1_client_html_a1de7977aa4301885c86b1548023539dd"><div class="ttname"><a href="classhttp_1_1_client.html#a1de7977aa4301885c86b1548023539dd">http::Client::SocketConnection</a></div><div class="ttdeci">typename SocketClient::SocketConnection SocketConnection</div><div class="ttdef"><b>Definition:</b> <a href="_client_8h_source.html#l00040">Client.h:40</a></div></div>
+<div class="ttc" id="aclasshttp_1_1_client_html_a1de7977aa4301885c86b1548023539dd"><div class="ttname"><a href="classhttp_1_1_client.html#a1de7977aa4301885c86b1548023539dd">http::Client::SocketConnection</a></div><div class="ttdeci">typename SocketClient::SocketConnection SocketConnection</div><div class="ttdef"><b>Definition:</b> <a href="_client_8h_source.html#l00041">Client.h:41</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

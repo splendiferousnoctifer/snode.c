@@ -2,6 +2,7 @@ var classnet_1_1_event_loop =
 [
     [ "EventLoop", "classnet_1_1_event_loop.html#a48a2c8c1c74186727ad350274ab500e9", null ],
     [ "getAcceptEventDispatcher", "classnet_1_1_event_loop.html#af0b7c67361c334c4bcf10eab9bf65ea9", null ],
+    [ "getConnectEventDispatcher", "classnet_1_1_event_loop.html#ad6ebdbaaace0cf645b30b15ba3696073", null ],
     [ "getEventCounter", "classnet_1_1_event_loop.html#a95ec74ddb27a690eac66cda5999c0e97", null ],
     [ "getOutOfBandEventDispatcher", "classnet_1_1_event_loop.html#adadaec4603719a5b6946abef06c5fa67", null ],
     [ "getReadEventDispatcher", "classnet_1_1_event_loop.html#a6243040d545517b64ebdc4318487895d", null ],
@@ -15,6 +16,7 @@ var classnet_1_1_event_loop =
     [ "stoponsig", "classnet_1_1_event_loop.html#a14629599569baeed2b94108a82ec9a9c", null ],
     [ "tick", "classnet_1_1_event_loop.html#af391b0a968b89c98ae4c9c78449cd0d6", null ],
     [ "acceptEventDispatcher", "classnet_1_1_event_loop.html#a5ef2ebde0e1f69928b6ae4785a87d43c", null ],
+    [ "connectEventDispatcher", "classnet_1_1_event_loop.html#afc30dfee928b99cd61f89462fbd4e817", null ],
     [ "eventLoop", "classnet_1_1_event_loop.html#aecfae844f26d3db70ec3447efa6d3675", null ],
     [ "exceptfds", "classnet_1_1_event_loop.html#a00bc1cb9bafeba1aa578246abd0ab45d", null ],
     [ "initialized", "classnet_1_1_event_loop.html#add4999140ab9571d4f3d8fa17fae337b", null ],
