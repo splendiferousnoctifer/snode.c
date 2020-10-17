@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['servercontext_1163',['ServerContext',['../classhttp_1_1_request.html#af09d0507509ded240571d60d064dfff6',1,'http::Request::ServerContext()'],['../classhttp_1_1_response.html#af09d0507509ded240571d60d064dfff6',1,'http::Response::ServerContext()']]],
-  ['staticmiddleware_1164',['StaticMiddleware',['../classexpress_1_1middleware_1_1_static_middleware.html#addc0289150f3ca6e5e1a69aac325fbc7',1,'express::middleware::StaticMiddleware']]]
+  ['readeventdispatcher_1208',['ReadEventDispatcher',['../classnet_1_1_read_event_receiver.html#a460ee3ec553fea9ee58c058ba6201733',1,'net::ReadEventReceiver']]],
+  ['router_1209',['Router',['../classexpress_1_1_router_dispatcher.html#ad1fd3424328f664cd049fe429e0e3dc6',1,'express::RouterDispatcher']]]
 ];

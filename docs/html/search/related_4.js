@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['operator_26_1158',['operator&amp;',['../classnet_1_1_descriptor.html#a1ce28627f2d7b7d54846cb73dcd0aa38',1,'net::Descriptor::operator&amp;()'],['../classhttp_1_1_parser.html#a1585b2d50f55f49611187d326591f03c',1,'http::Parser::operator&amp;()']]],
-  ['operator_7c_1159',['operator|',['../classnet_1_1_descriptor.html#a6dc096af1a75c82c1ff16ca8b4122a3b',1,'net::Descriptor::operator|()'],['../classhttp_1_1_parser.html#a504270bcd1736c62e66e80918151d611',1,'http::Parser::operator|()']]],
-  ['outofbandeventdispatcher_1160',['OutOfBandEventDispatcher',['../classnet_1_1_out_of_band_event_receiver.html#a8e26b9bf572d11121db1a666ae19665e',1,'net::OutOfBandEventReceiver']]]
+  ['socketclient_1202',['SocketClient',['../classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connector.html#a838656e1ec643bcc0a5968d9886b4fdb',1,'net::socket::stream::tls::SocketConnector']]],
+  ['socketserver_1203',['SocketServer',['../classnet_1_1socket_1_1stream_1_1tls_1_1_socket_listener.html#a93b39dad5874c6b1827b474f10ccb119',1,'net::socket::stream::tls::SocketListener']]],
+  ['timereventdispatcher_1204',['TimerEventDispatcher',['../classnet_1_1timer_1_1_timer.html#a7ec099528d0f7f72cf8e8a0017634fa7',1,'net::timer::Timer']]]
 ];

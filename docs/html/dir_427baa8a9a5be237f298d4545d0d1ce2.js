@@ -11,6 +11,14 @@ var dir_427baa8a9a5be237f298d4545d0d1ce2 =
     [ "AcceptEventReceiver.h", "_accept_event_receiver_8h.html", [
       [ "AcceptEventReceiver", "classnet_1_1_accept_event_receiver.html", "classnet_1_1_accept_event_receiver" ]
     ] ],
+    [ "ConnectEventDispatcher.cpp", "_connect_event_dispatcher_8cpp.html", null ],
+    [ "ConnectEventDispatcher.h", "_connect_event_dispatcher_8h.html", [
+      [ "ConnectEventDispatcher", "classnet_1_1_connect_event_dispatcher.html", "classnet_1_1_connect_event_dispatcher" ]
+    ] ],
+    [ "ConnectEventReceiver.cpp", "_connect_event_receiver_8cpp.html", null ],
+    [ "ConnectEventReceiver.h", "_connect_event_receiver_8h.html", [
+      [ "ConnectEventReceiver", "classnet_1_1_connect_event_receiver.html", "classnet_1_1_connect_event_receiver" ]
+    ] ],
     [ "Descriptor.cpp", "_descriptor_8cpp.html", "_descriptor_8cpp" ],
     [ "Descriptor.h", "_descriptor_8h.html", [
       [ "Descriptor", "classnet_1_1_descriptor.html", "classnet_1_1_descriptor" ]

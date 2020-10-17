@@ -60,7 +60,7 @@ var NAVTREE =
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", "functions_func" ],
-        [ "Variables", "functions_vars.html", null ],
+        [ "Variables", "functions_vars.html", "functions_vars" ],
         [ "Typedefs", "functions_type.html", null ],
         [ "Enumerations", "functions_enum.html", null ],
         [ "Enumerator", "functions_eval.html", null ],
@@ -81,11 +81,11 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_accept_event_dispatcher_8cpp.html",
-"classexpress_1_1_request.html#a7194fef6a755397f1b5636462feee8ed",
-"classhttp_1_1_response.html#a1f26c5c4abb75f9efc5057c3da36defa",
-"classnet_1_1_write_event_receiver.html",
-"classnet_1_1timer_1_1_singleshot_timer.html#a192c1519df08a1e9b11127d67a55cad3",
-"namespacenet_1_1socket_1_1ipv4.html"
+"classexpress_1_1_dispatcher.html#ad3978900687d5ebf169d01094b59cb9c",
+"classhttp_1_1_request_parser.html#aa7e39ced2391bf7c4b9292e5405672b1",
+"classnet_1_1_read_event_receiver.html#a12e2960f92057d5a26db5f572c36c65d",
+"classnet_1_1socket_1_1stream_1_1tls_1_1_socket_client.html",
+"ipv4_2_inet_address_8cpp.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

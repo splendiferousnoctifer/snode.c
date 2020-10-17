@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['jsonmiddleware_1156',['JsonMiddleware',['../classexpress_1_1middleware_1_1_json_middleware.html#aa21e61839acf47a03ac9aec271a7d5cb',1,'express::middleware::JsonMiddleware']]]
+  ['eventdispatcher_1199',['EventDispatcher',['../classnet_1_1_event_receiver.html#a50a7ad72f4990726439a9d699f781248',1,'net::EventReceiver']]],
+  ['eventloop_1200',['EventLoop',['../classnet_1_1_event_dispatcher.html#aca25e36665670fcb6909dd8ab04b1d05',1,'net::EventDispatcher']]]
 ];

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['ssl_5fverify_5fflags_1179',['SSL_VERIFY_FLAGS',['../ssl__utils_8cpp.html#a0c3fa47eefc13655f03571ce3cf71b69',1,'ssl_utils.cpp']]]
+  ['tlsaccept_5ftimeout_1229',['TLSACCEPT_TIMEOUT',['../tls_2_socket_listener_8h.html#a388ea40f5de8869369e3e7c291bc1273',1,'SocketListener.h']]],
+  ['tlsconnect_5ftimeout_1230',['TLSCONNECT_TIMEOUT',['../tls_2_socket_connector_8h.html#addaf717e96da8a10a5916819f5e39080',1,'SocketConnector.h']]]
 ];
