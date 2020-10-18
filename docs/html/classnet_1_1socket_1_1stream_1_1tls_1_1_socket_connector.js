@@ -1,5 +1,6 @@
 var classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connector =
 [
+    [ "Socket", "classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connector.html#aa8ab3d68d92537e005f97e6d97c21172", null ],
     [ "SocketConnection", "classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connector.html#af03153ce0168f5040a0be7f64d7bdc79", null ],
     [ "SocketConnector", "classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connector.html#a03d3cd1d7ad33216ae0c58d3f88d8339", null ],
     [ "~SocketConnector", "classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connector.html#a747532947bb596e5c400bb04903d6eee", null ],

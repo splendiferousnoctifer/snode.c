@@ -115,6 +115,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_event_receiver.html">EventReceiver</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_fd_set.html">FdSet</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_observation_counter.html">ObservationCounter</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_out_of_band_event_dispatcher.html">OutOfBandEventDispatcher</a></td></tr>
@@ -181,14 +183,14 @@ template&lt;typename EventReceiverT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_event_dispatcher_8h_source.html#l00040">40</a> of file <a class="el" href="_event_dispatcher_8h_source.html">EventDispatcher.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                                                                                                   {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keyword">typename</span> std::list&lt;EventReceiverT*&gt;::iterator it = std::find(eventReceivers.begin(), eventReceivers.end(), eventReceiver);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">return</span> it != eventReceivers.end();</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="_event_dispatcher_8h_source.html#l00042">42</a> of file <a class="el" href="_event_dispatcher_8h_source.html">EventDispatcher.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                                                                                                   {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keyword">typename</span> std::list&lt;EventReceiverT*&gt;::iterator it = std::find(eventReceivers.begin(), eventReceivers.end(), eventReceiver);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">return</span> it != eventReceivers.end();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="_event_dispatcher_8h_source.html#l00071">net::EventDispatcher&lt; ReadEventReceiver &gt;::disable()</a>, and <a class="el" href="_event_dispatcher_8h_source.html#l00060">net::EventDispatcher&lt; ReadEventReceiver &gt;::enable()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_event_dispatcher_8h_source.html#l00073">net::EventDispatcher&lt; ReadEventReceiver &gt;::disable()</a>, and <a class="el" href="_event_dispatcher_8h_source.html#l00062">net::EventDispatcher&lt; ReadEventReceiver &gt;::enable()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -234,7 +236,7 @@ Here is the caller graph for this function:</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="_event_loop_8h_source.html#l00044">net::EventLoop::instance()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_event_loop_8cpp_source.html#l00142">net::EventLoop::init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_event_loop_8cpp_source.html#l00124">net::EventLoop::init()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">

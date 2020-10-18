@@ -10,6 +10,7 @@ var namespacenet =
     [ "EventDispatcher", "classnet_1_1_event_dispatcher.html", "classnet_1_1_event_dispatcher" ],
     [ "EventLoop", "classnet_1_1_event_loop.html", "classnet_1_1_event_loop" ],
     [ "EventReceiver", "classnet_1_1_event_receiver.html", "classnet_1_1_event_receiver" ],
+    [ "FdSet", "classnet_1_1_fd_set.html", "classnet_1_1_fd_set" ],
     [ "ObservationCounter", "classnet_1_1_observation_counter.html", "classnet_1_1_observation_counter" ],
     [ "OutOfBandEventDispatcher", "classnet_1_1_out_of_band_event_dispatcher.html", "classnet_1_1_out_of_band_event_dispatcher" ],
     [ "OutOfBandEventReceiver", "classnet_1_1_out_of_band_event_receiver.html", "classnet_1_1_out_of_band_event_receiver" ],

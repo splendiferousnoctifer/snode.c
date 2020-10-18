@@ -95,12 +95,14 @@ $(document).ready(function(){initNavTree('classnet_1_1_connect_event_receiver.ht
 <div class="dynheader">
 Inheritance diagram for net::ConnectEventReceiver:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_connect_event_receiver__inherit__graph.svg" width="543" height="1820"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_connect_event_receiver__inherit__graph.svg" width="543" height="1806"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <div class="dynheader">
 Collaboration diagram for net::ConnectEventReceiver:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_connect_event_receiver__coll__graph.svg" width="194" height="618"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_connect_event_receiver__coll__graph.svg" width="194" height="603"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -145,8 +147,6 @@ Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_classnet_1_1_observation_counter"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classnet_1_1_observation_counter')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classnet_1_1_observation_counter.html">net::ObservationCounter</a></td></tr>
 <tr class="memitem:ad61e0034c4fdbd88f1eae230e1417e0b inherit pro_attribs_classnet_1_1_observation_counter"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_observation_counter.html#ad61e0034c4fdbd88f1eae230e1417e0b">observationCounter</a> = 0</td></tr>
 <tr class="separator:ad61e0034c4fdbd88f1eae230e1417e0b inherit pro_attribs_classnet_1_1_observation_counter"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68a1c1d35efbae0a002d3a67e16baa42 inherit pro_attribs_classnet_1_1_observation_counter"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_observation_counter.html#a68a1c1d35efbae0a002d3a67e16baa42">lastTriggered</a> = 0</td></tr>
-<tr class="separator:a68a1c1d35efbae0a002d3a67e16baa42 inherit pro_attribs_classnet_1_1_observation_counter"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -176,7 +176,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_connect_event_receiver_8cpp_source.html#l00026">26</a> of file <a class="el" href="_connect_event_receiver_8cpp_source.html">ConnectEventReceiver.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        : <a class="code" href="classnet_1_1_event_receiver.html#a86efc248072a03be0078fb53c535a68f">EventReceiver</a>(<a class="code" href="classnet_1_1_event_loop.html#a6d8bfd6fa03bb6bf423035ab190657ef">EventLoop::instance</a>().getConnectEventDispatcher().<a class="code" href="classnet_1_1_event_receiver.html#ad9886053cab6351e48335c463958f81a">getTimeout</a>()) {</div>
+<div class="fragment"><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        : <a class="code" href="classnet_1_1_event_receiver.html#a86efc248072a03be0078fb53c535a68f">EventReceiver</a>(<a class="code" href="classnet_1_1_event_loop.html#a6d8bfd6fa03bb6bf423035ab190657ef">EventLoop::instance</a>().getConnectEventDispatcher().<a class="code" href="classnet_1_1_event_receiver.html#a42477f416cc319660c15318f674f7cda">getTimeout</a>()) {</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
@@ -246,9 +246,9 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <a class="code" href="classnet_1_1_event_loop.html#a6d8bfd6fa03bb6bf423035ab190657ef">EventLoop::instance</a>().<a class="code" href="classnet_1_1_event_loop.html#ad6ebdbaaace0cf645b30b15ba3696073">getConnectEventDispatcher</a>().<a class="code" href="classnet_1_1_event_dispatcher.html#abd32d58ecc56297e92c6008fa94e7569">disable</a>(<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_event_dispatcher_8h_source.html#l00071">net::EventDispatcher&lt; EventReceiverT &gt;::disable()</a>, <a class="el" href="_event_loop_8h_source.html#l00061">net::EventLoop::getConnectEventDispatcher()</a>, and <a class="el" href="_event_loop_8h_source.html#l00044">net::EventLoop::instance()</a>.</p>
+<p class="reference">References <a class="el" href="_event_dispatcher_8h_source.html#l00073">net::EventDispatcher&lt; EventReceiverT &gt;::disable()</a>, <a class="el" href="_event_loop_8h_source.html#l00061">net::EventLoop::getConnectEventDispatcher()</a>, and <a class="el" href="_event_loop_8h_source.html#l00044">net::EventLoop::instance()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_socket_connector_8h_source.html#l00134">net::socket::stream::SocketConnector&lt; net::socket::stream::tls::SocketConnection&lt; SocketT &gt; &gt;::connectEvent()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_socket_connector_8h_source.html#l00133">net::socket::stream::SocketConnector&lt; net::socket::stream::tls::SocketConnection&lt; SocketT &gt; &gt;::connectEvent()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -294,13 +294,14 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <a class="code" href="classnet_1_1_connect_event_receiver.html#a1d153fa642fdf38654551b5d985846e3">setTimeout</a>(timeout);</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_event_dispatcher_8h_source.html#l00060">net::EventDispatcher&lt; EventReceiverT &gt;::enable()</a>, <a class="el" href="_event_loop_8h_source.html#l00061">net::EventLoop::getConnectEventDispatcher()</a>, <a class="el" href="_event_loop_8h_source.html#l00044">net::EventLoop::instance()</a>, and <a class="el" href="_connect_event_receiver_8cpp_source.html#l00030">setTimeout()</a>.</p>
+<p class="reference">References <a class="el" href="_event_dispatcher_8h_source.html#l00062">net::EventDispatcher&lt; EventReceiverT &gt;::enable()</a>, <a class="el" href="_event_loop_8h_source.html#l00061">net::EventLoop::getConnectEventDispatcher()</a>, <a class="el" href="_event_loop_8h_source.html#l00044">net::EventLoop::instance()</a>, and <a class="el" href="_connect_event_receiver_8cpp_source.html#l00030">setTimeout()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_socket_connector_8h_source.html#l00088">net::socket::stream::SocketConnector&lt; net::socket::stream::tls::SocketConnection&lt; SocketT &gt; &gt;::connect()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_socket_connector_8h_source.html#l00087">net::socket::stream::SocketConnector&lt; net::socket::stream::tls::SocketConnection&lt; SocketT &gt; &gt;::connect()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_connect_event_receiver_ae998f0efd7c6a8a9e61b27e8ed1b0451_cgraph.svg" width="642" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_connect_event_receiver_ae998f0efd7c6a8a9e61b27e8ed1b0451_cgraph.svg" width="824" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -328,7 +329,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="_connect_event_receiver_8cpp_source.html#l00030">30</a> of file <a class="el" href="_connect_event_receiver_8cpp_source.html">ConnectEventReceiver.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                                                      {</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <a class="code" href="classnet_1_1_event_receiver.html#a26d6a5c5cdd5300540a937c17f91fdcd">EventReceiver::setTimeout</a>(timeout, <a class="code" href="classnet_1_1_event_loop.html#a6d8bfd6fa03bb6bf423035ab190657ef">EventLoop::instance</a>().getConnectEventDispatcher().<a class="code" href="classnet_1_1_event_receiver.html#ad9886053cab6351e48335c463958f81a">getTimeout</a>());</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <a class="code" href="classnet_1_1_event_receiver.html#a26d6a5c5cdd5300540a937c17f91fdcd">EventReceiver::setTimeout</a>(timeout, <a class="code" href="classnet_1_1_event_loop.html#a6d8bfd6fa03bb6bf423035ab190657ef">EventLoop::instance</a>().getConnectEventDispatcher().<a class="code" href="classnet_1_1_event_receiver.html#a42477f416cc319660c15318f674f7cda">getTimeout</a>());</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="_event_receiver_8h_source.html#l00089">net::EventReceiver::getTimeout()</a>, <a class="el" href="_event_loop_8h_source.html#l00044">net::EventLoop::instance()</a>, and <a class="el" href="_event_receiver_8h_source.html#l00060">net::EventReceiver::setTimeout()</a>.</p>
@@ -337,7 +338,8 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_connect_event_receiver_a1d153fa642fdf38654551b5d985846e3_cgraph.svg" width="408" height="170"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_connect_event_receiver_a1d153fa642fdf38654551b5d985846e3_cgraph.svg" width="591" height="170"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -378,14 +380,14 @@ Here is the caller graph for this function:</div>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassnet_1_1_event_receiver_html_ad9886053cab6351e48335c463958f81a"><div class="ttname"><a href="classnet_1_1_event_receiver.html#ad9886053cab6351e48335c463958f81a">net::EventReceiver::getTimeout</a></div><div class="ttdeci">long getTimeout() const</div><div class="ttdef"><b>Definition:</b> <a href="_event_receiver_8h_source.html#l00089">EventReceiver.h:89</a></div></div>
 <div class="ttc" id="aclassnet_1_1_connect_event_receiver_html_a1d153fa642fdf38654551b5d985846e3"><div class="ttname"><a href="classnet_1_1_connect_event_receiver.html#a1d153fa642fdf38654551b5d985846e3">net::ConnectEventReceiver::setTimeout</a></div><div class="ttdeci">void setTimeout(long timeout=TIMEOUT::DEFAULT)</div><div class="ttdef"><b>Definition:</b> <a href="_connect_event_receiver_8cpp_source.html#l00030">ConnectEventReceiver.cpp:30</a></div></div>
 <div class="ttc" id="aclassnet_1_1_event_receiver_html_a26d6a5c5cdd5300540a937c17f91fdcd"><div class="ttname"><a href="classnet_1_1_event_receiver.html#a26d6a5c5cdd5300540a937c17f91fdcd">net::EventReceiver::setTimeout</a></div><div class="ttdeci">void setTimeout(long timeout, long defaultTimeout)</div><div class="ttdef"><b>Definition:</b> <a href="_event_receiver_8h_source.html#l00060">EventReceiver.h:60</a></div></div>
 <div class="ttc" id="aclassnet_1_1_event_receiver_html_a86efc248072a03be0078fb53c535a68f"><div class="ttname"><a href="classnet_1_1_event_receiver.html#a86efc248072a03be0078fb53c535a68f">net::EventReceiver::EventReceiver</a></div><div class="ttdeci">EventReceiver(long timeout)</div><div class="ttdef"><b>Definition:</b> <a href="_event_receiver_8h_source.html#l00051">EventReceiver.h:51</a></div></div>
 <div class="ttc" id="aclassnet_1_1_event_loop_html_a6d8bfd6fa03bb6bf423035ab190657ef"><div class="ttname"><a href="classnet_1_1_event_loop.html#a6d8bfd6fa03bb6bf423035ab190657ef">net::EventLoop::instance</a></div><div class="ttdeci">static EventLoop &amp; instance()</div><div class="ttdef"><b>Definition:</b> <a href="_event_loop_8h_source.html#l00044">EventLoop.h:44</a></div></div>
-<div class="ttc" id="aclassnet_1_1_event_dispatcher_html_abd32d58ecc56297e92c6008fa94e7569"><div class="ttname"><a href="classnet_1_1_event_dispatcher.html#abd32d58ecc56297e92c6008fa94e7569">net::EventDispatcher::disable</a></div><div class="ttdeci">void disable(EventReceiver *eventReceiver)</div><div class="ttdef"><b>Definition:</b> <a href="_event_dispatcher_8h_source.html#l00071">EventDispatcher.h:71</a></div></div>
+<div class="ttc" id="aclassnet_1_1_event_dispatcher_html_abd32d58ecc56297e92c6008fa94e7569"><div class="ttname"><a href="classnet_1_1_event_dispatcher.html#abd32d58ecc56297e92c6008fa94e7569">net::EventDispatcher::disable</a></div><div class="ttdeci">void disable(EventReceiver *eventReceiver)</div><div class="ttdef"><b>Definition:</b> <a href="_event_dispatcher_8h_source.html#l00073">EventDispatcher.h:73</a></div></div>
 <div class="ttc" id="aclassnet_1_1_event_loop_html_ad6ebdbaaace0cf645b30b15ba3696073"><div class="ttname"><a href="classnet_1_1_event_loop.html#ad6ebdbaaace0cf645b30b15ba3696073">net::EventLoop::getConnectEventDispatcher</a></div><div class="ttdeci">ConnectEventDispatcher &amp; getConnectEventDispatcher()</div><div class="ttdef"><b>Definition:</b> <a href="_event_loop_8h_source.html#l00061">EventLoop.h:61</a></div></div>
-<div class="ttc" id="aclassnet_1_1_event_dispatcher_html_aa1cf5744a83745726edc733e58c4ae7f"><div class="ttname"><a href="classnet_1_1_event_dispatcher.html#aa1cf5744a83745726edc733e58c4ae7f">net::EventDispatcher::enable</a></div><div class="ttdeci">void enable(EventReceiver *eventReceiver)</div><div class="ttdef"><b>Definition:</b> <a href="_event_dispatcher_8h_source.html#l00060">EventDispatcher.h:60</a></div></div>
+<div class="ttc" id="aclassnet_1_1_event_receiver_html_a42477f416cc319660c15318f674f7cda"><div class="ttname"><a href="classnet_1_1_event_receiver.html#a42477f416cc319660c15318f674f7cda">net::EventReceiver::getTimeout</a></div><div class="ttdeci">struct timeval getTimeout() const</div><div class="ttdef"><b>Definition:</b> <a href="_event_receiver_8h_source.html#l00081">EventReceiver.h:89</a></div></div>
+<div class="ttc" id="aclassnet_1_1_event_dispatcher_html_aa1cf5744a83745726edc733e58c4ae7f"><div class="ttname"><a href="classnet_1_1_event_dispatcher.html#aa1cf5744a83745726edc733e58c4ae7f">net::EventDispatcher::enable</a></div><div class="ttdeci">void enable(EventReceiver *eventReceiver)</div><div class="ttdef"><b>Definition:</b> <a href="_event_dispatcher_8h_source.html#l00062">EventDispatcher.h:62</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

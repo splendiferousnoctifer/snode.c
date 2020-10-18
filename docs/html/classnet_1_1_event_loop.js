@@ -18,17 +18,17 @@ var classnet_1_1_event_loop =
     [ "acceptEventDispatcher", "classnet_1_1_event_loop.html#a5ef2ebde0e1f69928b6ae4785a87d43c", null ],
     [ "connectEventDispatcher", "classnet_1_1_event_loop.html#afc30dfee928b99cd61f89462fbd4e817", null ],
     [ "eventLoop", "classnet_1_1_event_loop.html#aecfae844f26d3db70ec3447efa6d3675", null ],
-    [ "exceptfds", "classnet_1_1_event_loop.html#a00bc1cb9bafeba1aa578246abd0ab45d", null ],
+    [ "exceptFdSet", "classnet_1_1_event_loop.html#a7667220fe50b841eacecbfa316955191", null ],
     [ "initialized", "classnet_1_1_event_loop.html#add4999140ab9571d4f3d8fa17fae337b", null ],
     [ "nextInactivityTimeout", "classnet_1_1_event_loop.html#abbc28c3fb12439bcc3d7f1912c25825e", null ],
     [ "outOfBandEventDispatcher", "classnet_1_1_event_loop.html#a8fa901e7952a542a4bc294753c53f157", null ],
     [ "readEventDispatcher", "classnet_1_1_event_loop.html#a19f3bdea6a1579478cc09fc62a1b56c9", null ],
-    [ "readfds", "classnet_1_1_event_loop.html#a489f9558ef00c5e608aabea78f3b9829", null ],
+    [ "readFdSet", "classnet_1_1_event_loop.html#a004125e276ed45d7ed282e21fa67fe1d", null ],
     [ "running", "classnet_1_1_event_loop.html#a80f4c144cd8f1b83607565c8545ad49a", null ],
     [ "stopped", "classnet_1_1_event_loop.html#aa717630721460d6d4fd291c464c083d8", null ],
     [ "stopsig", "classnet_1_1_event_loop.html#a4863138ce127827123afe7d3f23b9eb5", null ],
     [ "tickCounter", "classnet_1_1_event_loop.html#af48b60ae6f67a03e642007423391a8a9", null ],
     [ "timerEventDispatcher", "classnet_1_1_event_loop.html#ab2853b9eec71f452eb6ef0f1e5d2247a", null ],
     [ "writeEventDispatcher", "classnet_1_1_event_loop.html#a4268d5e54fadeb0a0b3558c7746b41c8", null ],
-    [ "writefds", "classnet_1_1_event_loop.html#a8d972cec0077498b1100c11749cf744d", null ]
+    [ "writeFdSet", "classnet_1_1_event_loop.html#ae9b679ca37d7c505624ab006c26d15f7", null ]
 ];

@@ -105,8 +105,10 @@ Collaboration diagram for http::legacy::Client:</div>
 Public Types</h2></td></tr>
 <tr class="memitem:ad08f75be5f7be484dd312288542a28d3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1legacy_1_1_client.html#ad08f75be5f7be484dd312288542a28d3">SocketClient</a> = <a class="el" href="classnet_1_1socket_1_1ipv4_1_1tcp_1_1legacy_1_1_socket_client.html">net::socket::ipv4::tcp::legacy::SocketClient</a></td></tr>
 <tr class="separator:ad08f75be5f7be484dd312288542a28d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05a2a7e8edc55a1a53d20794208984d6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1legacy_1_1_client.html#a05a2a7e8edc55a1a53d20794208984d6">SocketConnection</a> = typename <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_client.html#af8b9110fc3a0b90ac0a8dd154c91b2f7">SocketClient::SocketConnection</a></td></tr>
-<tr class="separator:a05a2a7e8edc55a1a53d20794208984d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a8ae1d1085ca282bf6c2d22d6f73caf"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1legacy_1_1_client.html#a0a8ae1d1085ca282bf6c2d22d6f73caf">SocketConnector</a> = typename <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_client.html#aacead9dda032b40462f5db939f259093">SocketClient::SocketConnector</a></td></tr>
+<tr class="separator:a0a8ae1d1085ca282bf6c2d22d6f73caf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a823672af9e5d8d09ed61a6c30490302e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1legacy_1_1_client.html#a823672af9e5d8d09ed61a6c30490302e">SocketConnection</a> = typename SocketConnector::SocketConnection</td></tr>
+<tr class="separator:a823672af9e5d8d09ed61a6c30490302e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13cb0db24bf5d43fcf8a606e7659f5e8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1legacy_1_1_client.html#a13cb0db24bf5d43fcf8a606e7659f5e8">Socket</a> = typename SocketConnection::Socket</td></tr>
 <tr class="separator:a13cb0db24bf5d43fcf8a606e7659f5e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_classhttp_1_1_client"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classhttp_1_1_client')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classhttp_1_1_client.html">http::Client&lt; net::socket::ipv4::tcp::legacy::SocketClient &gt;</a></td></tr>
@@ -156,7 +158,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="legacy_2_client_8h_source.html#l00036">36</a> of file <a class="el" href="legacy_2_client_8h_source.html">Client.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="legacy_2_client_8h_source.html#l00037">37</a> of file <a class="el" href="legacy_2_client_8h_source.html">Client.h</a>.</p>
 
 </div>
 </div>
@@ -176,14 +178,30 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a05a2a7e8edc55a1a53d20794208984d6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a05a2a7e8edc55a1a53d20794208984d6">&#9670;&nbsp;</a></span>SocketConnection</h2>
+<a id="a823672af9e5d8d09ed61a6c30490302e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a823672af9e5d8d09ed61a6c30490302e">&#9670;&nbsp;</a></span>SocketConnection</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classhttp_1_1legacy_1_1_client.html#a05a2a7e8edc55a1a53d20794208984d6">http::legacy::Client::SocketConnection</a> =  typename <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_client.html#af8b9110fc3a0b90ac0a8dd154c91b2f7">SocketClient::SocketConnection</a></td>
+          <td class="memname">using <a class="el" href="classhttp_1_1legacy_1_1_client.html#a823672af9e5d8d09ed61a6c30490302e">http::legacy::Client::SocketConnection</a> =  typename SocketConnector::SocketConnection</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="legacy_2_client_8h_source.html#l00036">36</a> of file <a class="el" href="legacy_2_client_8h_source.html">Client.h</a>.</p>
+
+</div>
+</div>
+<a id="a0a8ae1d1085ca282bf6c2d22d6f73caf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a8ae1d1085ca282bf6c2d22d6f73caf">&#9670;&nbsp;</a></span>SocketConnector</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classhttp_1_1legacy_1_1_client.html#a0a8ae1d1085ca282bf6c2d22d6f73caf">http::legacy::Client::SocketConnector</a> =  typename <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_client.html#aacead9dda032b40462f5db939f259093">SocketClient::SocketConnector</a></td>
         </tr>
       </table>
 </div><div class="memdoc">

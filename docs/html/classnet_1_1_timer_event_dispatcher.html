@@ -177,10 +177,10 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_timer_event_dispatcher_8cpp_source.html#l00095">95</a> of file <a class="el" href="_timer_event_dispatcher_8cpp_source.html">TimerEventDispatcher.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                                                    {</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <a class="code" href="classnet_1_1_timer_event_dispatcher.html#ad2758353fe482e16752fecc1fdcd2df4">addedList</a>.push_back(timer);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="_timer_event_dispatcher_8cpp_source.html#l00093">93</a> of file <a class="el" href="_timer_event_dispatcher_8cpp_source.html">TimerEventDispatcher.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                                                    {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <a class="code" href="classnet_1_1_timer_event_dispatcher.html#ad2758353fe482e16752fecc1fdcd2df4">addedList</a>.push_back(timer);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    }</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="_timer_event_dispatcher_8h_source.html#l00050">addedList</a>.</p>
 
@@ -208,18 +208,18 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_timer_event_dispatcher_8cpp_source.html#l00103">103</a> of file <a class="el" href="_timer_event_dispatcher_8cpp_source.html">TimerEventDispatcher.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                                         {</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <a class="code" href="classnet_1_1_timer_event_dispatcher.html#abe13976ac74b218783f77a80f051baeb">getNextTimeout</a>();</div>
+<p class="definition">Definition at line <a class="el" href="_timer_event_dispatcher_8cpp_source.html#l00101">101</a> of file <a class="el" href="_timer_event_dispatcher_8cpp_source.html">TimerEventDispatcher.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                                         {</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <a class="code" href="classnet_1_1_timer_event_dispatcher.html#abe13976ac74b218783f77a80f051baeb">getNextTimeout</a>();</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        std::copy(<a class="code" href="classnet_1_1_timer_event_dispatcher.html#a411a92f459e727f4d5df6f847a42f970">timerList</a>.begin(), <a class="code" href="classnet_1_1_timer_event_dispatcher.html#a411a92f459e727f4d5df6f847a42f970">timerList</a>.end(), std::back_inserter(<a class="code" href="classnet_1_1_timer_event_dispatcher.html#a48c9095767f9a9b21e3e202761e92cb3">removedList</a>));</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        std::copy(<a class="code" href="classnet_1_1_timer_event_dispatcher.html#a411a92f459e727f4d5df6f847a42f970">timerList</a>.begin(), <a class="code" href="classnet_1_1_timer_event_dispatcher.html#a411a92f459e727f4d5df6f847a42f970">timerList</a>.end(), std::back_inserter(<a class="code" href="classnet_1_1_timer_event_dispatcher.html#a48c9095767f9a9b21e3e202761e92cb3">removedList</a>));</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <a class="code" href="classnet_1_1_timer_event_dispatcher.html#abe13976ac74b218783f77a80f051baeb">getNextTimeout</a>();</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    }</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <a class="code" href="classnet_1_1_timer_event_dispatcher.html#abe13976ac74b218783f77a80f051baeb">getNextTimeout</a>();</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_timer_event_dispatcher_8cpp_source.html#l00031">getNextTimeout()</a>, <a class="el" href="_timer_event_dispatcher_8h_source.html#l00051">removedList</a>, and <a class="el" href="_timer_event_dispatcher_8h_source.html#l00049">timerList</a>.</p>
+<p class="reference">References <a class="el" href="_timer_event_dispatcher_8cpp_source.html#l00032">getNextTimeout()</a>, <a class="el" href="_timer_event_dispatcher_8h_source.html#l00051">removedList</a>, and <a class="el" href="_timer_event_dispatcher_8h_source.html#l00049">timerList</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_event_loop_8cpp_source.html#l00157">net::EventLoop::start()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_event_loop_8cpp_source.html#l00139">net::EventLoop::start()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -248,21 +248,21 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_timer_event_dispatcher_8cpp_source.html#l00076">76</a> of file <a class="el" href="_timer_event_dispatcher_8cpp_source.html">TimerEventDispatcher.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                                        {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keyword">struct </span>timeval currentTime {</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            0, 0</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        };</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        gettimeofday(&amp;currentTime, <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordflow">for</span> (timer::Timer* timer : <a class="code" href="classnet_1_1_timer_event_dispatcher.html#a411a92f459e727f4d5df6f847a42f970">timerList</a>) {</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            <span class="keywordflow">if</span> (timer-&gt;timeout() &lt;= currentTime) {</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                <a class="code" href="classnet_1_1_timer_event_dispatcher.html#a917b451532196df793e952abc70a5cc8">timerListDirty</a> = timer-&gt;dispatch();</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            }</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        }</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="_timer_event_dispatcher_8cpp_source.html#l00074">74</a> of file <a class="el" href="_timer_event_dispatcher_8cpp_source.html">TimerEventDispatcher.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                                        {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keyword">struct </span>timeval currentTime {</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            0, 0</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        };</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        gettimeofday(&amp;currentTime, <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordflow">for</span> (timer::Timer* timer : <a class="code" href="classnet_1_1_timer_event_dispatcher.html#a411a92f459e727f4d5df6f847a42f970">timerList</a>) {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <span class="keywordflow">if</span> (timer-&gt;timeout() &lt;= currentTime) {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                <a class="code" href="classnet_1_1_timer_event_dispatcher.html#a917b451532196df793e952abc70a5cc8">timerListDirty</a> = timer-&gt;dispatch();</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        }</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="_timer_event_dispatcher_8h_source.html#l00049">timerList</a>, and <a class="el" href="_timer_event_dispatcher_8h_source.html#l00060">timerListDirty</a>.</p>
 
@@ -290,10 +290,10 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_timer_event_dispatcher_8cpp_source.html#l00099">99</a> of file <a class="el" href="_timer_event_dispatcher_8cpp_source.html">TimerEventDispatcher.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                                     {</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classnet_1_1_timer_event_dispatcher.html#a411a92f459e727f4d5df6f847a42f970">timerList</a>.empty();</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="_timer_event_dispatcher_8cpp_source.html#l00097">97</a> of file <a class="el" href="_timer_event_dispatcher_8cpp_source.html">TimerEventDispatcher.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                                     {</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classnet_1_1_timer_event_dispatcher.html#a411a92f459e727f4d5df6f847a42f970">timerList</a>.empty();</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    }</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="_timer_event_dispatcher_8h_source.html#l00049">timerList</a>.</p>
 
@@ -322,52 +322,49 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_timer_event_dispatcher_8cpp_source.html#l00001">1</a> of file <a class="el" href="_timer_event_dispatcher_8cpp_source.html">TimerEventDispatcher.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                                                        {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keyword">struct </span>timeval tv {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            0, 0</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        };</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        tv.tv_sec = 20L;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        tv.tv_usec = 0L;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordflow">for</span> (timer::Timer* timer : <a class="code" href="classnet_1_1_timer_event_dispatcher.html#ad2758353fe482e16752fecc1fdcd2df4">addedList</a>) {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <a class="code" href="classnet_1_1_timer_event_dispatcher.html#a411a92f459e727f4d5df6f847a42f970">timerList</a>.push_back(timer);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <a class="code" href="classnet_1_1_timer_event_dispatcher.html#a917b451532196df793e952abc70a5cc8">timerListDirty</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        }</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <a class="code" href="classnet_1_1_timer_event_dispatcher.html#ad2758353fe482e16752fecc1fdcd2df4">addedList</a>.clear();</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">for</span> (timer::Timer* timer : <a class="code" href="classnet_1_1_timer_event_dispatcher.html#a48c9095767f9a9b21e3e202761e92cb3">removedList</a>) {</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <a class="code" href="classnet_1_1_timer_event_dispatcher.html#a411a92f459e727f4d5df6f847a42f970">timerList</a>.remove(timer);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            timer-&gt;destroy();</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <a class="code" href="classnet_1_1_timer_event_dispatcher.html#a917b451532196df793e952abc70a5cc8">timerListDirty</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        }</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <a class="code" href="classnet_1_1_timer_event_dispatcher.html#a48c9095767f9a9b21e3e202761e92cb3">removedList</a>.clear();</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="classnet_1_1_timer_event_dispatcher.html#a411a92f459e727f4d5df6f847a42f970">timerList</a>.empty()) {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="classnet_1_1_timer_event_dispatcher.html#a917b451532196df793e952abc70a5cc8">timerListDirty</a>) {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                <a class="code" href="classnet_1_1_timer_event_dispatcher.html#a411a92f459e727f4d5df6f847a42f970">timerList</a>.sort(timernode_lt());</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                <a class="code" href="classnet_1_1_timer_event_dispatcher.html#a917b451532196df793e952abc70a5cc8">timerListDirty</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            }</div>
+<div class="fragment"><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                                                        {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keyword">struct </span>timeval tv {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            LONG_MAX, 0</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        };</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordflow">for</span> (timer::Timer* timer : <a class="code" href="classnet_1_1_timer_event_dispatcher.html#ad2758353fe482e16752fecc1fdcd2df4">addedList</a>) {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <a class="code" href="classnet_1_1_timer_event_dispatcher.html#a411a92f459e727f4d5df6f847a42f970">timerList</a>.push_back(timer);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <a class="code" href="classnet_1_1_timer_event_dispatcher.html#a917b451532196df793e952abc70a5cc8">timerListDirty</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <a class="code" href="classnet_1_1_timer_event_dispatcher.html#ad2758353fe482e16752fecc1fdcd2df4">addedList</a>.clear();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">for</span> (timer::Timer* timer : <a class="code" href="classnet_1_1_timer_event_dispatcher.html#a48c9095767f9a9b21e3e202761e92cb3">removedList</a>) {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <a class="code" href="classnet_1_1_timer_event_dispatcher.html#a411a92f459e727f4d5df6f847a42f970">timerList</a>.remove(timer);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            timer-&gt;destroy();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <a class="code" href="classnet_1_1_timer_event_dispatcher.html#a917b451532196df793e952abc70a5cc8">timerListDirty</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="classnet_1_1_timer_event_dispatcher.html#a48c9095767f9a9b21e3e202761e92cb3">removedList</a>.clear();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="classnet_1_1_timer_event_dispatcher.html#a411a92f459e727f4d5df6f847a42f970">timerList</a>.empty()) {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="classnet_1_1_timer_event_dispatcher.html#a917b451532196df793e952abc70a5cc8">timerListDirty</a>) {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                <a class="code" href="classnet_1_1_timer_event_dispatcher.html#a411a92f459e727f4d5df6f847a42f970">timerList</a>.sort(timernode_lt());</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                <a class="code" href="classnet_1_1_timer_event_dispatcher.html#a917b451532196df793e952abc70a5cc8">timerListDirty</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            tv = (*(<a class="code" href="classnet_1_1_timer_event_dispatcher.html#a411a92f459e727f4d5df6f847a42f970">timerList</a>.begin()))-&gt;timeout();</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            tv = (*(<a class="code" href="classnet_1_1_timer_event_dispatcher.html#a411a92f459e727f4d5df6f847a42f970">timerList</a>.begin()))-&gt;timeout();</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <span class="keyword">struct </span>timeval currentTime {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                0, 0</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            };</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            gettimeofday(&amp;currentTime, <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <span class="keywordflow">if</span> (tv &lt; currentTime) {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                tv.tv_sec = 0;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                tv.tv_usec = 0;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                tv = tv - currentTime;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            }</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        }</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">return</span> tv;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="keyword">struct </span>timeval currentTime {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                0, 0</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            };</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            gettimeofday(&amp;currentTime, <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <span class="keywordflow">if</span> (tv &lt; currentTime) {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                tv.tv_sec = 0;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                tv.tv_usec = 0;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                tv = tv - currentTime;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordflow">return</span> tv;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="_timer_event_dispatcher_8cpp_source.html#l00103">cancelAll()</a>, and <a class="el" href="_event_loop_8cpp_source.html#l00068">net::EventLoop::tick()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_timer_event_dispatcher_8cpp_source.html#l00101">cancelAll()</a>, and <a class="el" href="_event_loop_8cpp_source.html#l00068">net::EventLoop::tick()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -392,10 +389,10 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_timer_event_dispatcher_8cpp_source.html#l00091">91</a> of file <a class="el" href="_timer_event_dispatcher_8cpp_source.html">TimerEventDispatcher.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                                                       {</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <a class="code" href="classnet_1_1_timer_event_dispatcher.html#a48c9095767f9a9b21e3e202761e92cb3">removedList</a>.push_back(timer);</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="_timer_event_dispatcher_8cpp_source.html#l00089">89</a> of file <a class="el" href="_timer_event_dispatcher_8cpp_source.html">TimerEventDispatcher.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                                                       {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <a class="code" href="classnet_1_1_timer_event_dispatcher.html#a48c9095767f9a9b21e3e202761e92cb3">removedList</a>.push_back(timer);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    }</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="_timer_event_dispatcher_8h_source.html#l00051">removedList</a>.</p>
 
@@ -431,7 +428,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="_timer_event_dispatcher_8h_source.html#l00050">50</a> of file <a class="el" href="_timer_event_dispatcher_8h_source.html">TimerEventDispatcher.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_timer_event_dispatcher_8cpp_source.html#l00095">add()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_timer_event_dispatcher_8cpp_source.html#l00093">add()</a>.</p>
 
 </div>
 </div>
@@ -457,7 +454,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="_timer_event_dispatcher_8h_source.html#l00051">51</a> of file <a class="el" href="_timer_event_dispatcher_8h_source.html">TimerEventDispatcher.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_timer_event_dispatcher_8cpp_source.html#l00103">cancelAll()</a>, and <a class="el" href="_timer_event_dispatcher_8cpp_source.html#l00091">remove()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_timer_event_dispatcher_8cpp_source.html#l00101">cancelAll()</a>, and <a class="el" href="_timer_event_dispatcher_8cpp_source.html#l00089">remove()</a>.</p>
 
 </div>
 </div>
@@ -483,7 +480,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="_timer_event_dispatcher_8h_source.html#l00049">49</a> of file <a class="el" href="_timer_event_dispatcher_8h_source.html">TimerEventDispatcher.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_timer_event_dispatcher_8cpp_source.html#l00103">cancelAll()</a>, <a class="el" href="_timer_event_dispatcher_8cpp_source.html#l00076">dispatch()</a>, and <a class="el" href="_timer_event_dispatcher_8cpp_source.html#l00099">empty()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_timer_event_dispatcher_8cpp_source.html#l00101">cancelAll()</a>, <a class="el" href="_timer_event_dispatcher_8cpp_source.html#l00074">dispatch()</a>, and <a class="el" href="_timer_event_dispatcher_8cpp_source.html#l00097">empty()</a>.</p>
 
 </div>
 </div>
@@ -509,7 +506,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="_timer_event_dispatcher_8h_source.html#l00060">60</a> of file <a class="el" href="_timer_event_dispatcher_8h_source.html">TimerEventDispatcher.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_timer_event_dispatcher_8cpp_source.html#l00076">dispatch()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_timer_event_dispatcher_8cpp_source.html#l00074">dispatch()</a>.</p>
 
 </div>
 </div>
@@ -522,7 +519,7 @@ Here is the caller graph for this function:</div>
 <div class="ttc" id="aclassnet_1_1_timer_event_dispatcher_html_a48c9095767f9a9b21e3e202761e92cb3"><div class="ttname"><a href="classnet_1_1_timer_event_dispatcher.html#a48c9095767f9a9b21e3e202761e92cb3">net::TimerEventDispatcher::removedList</a></div><div class="ttdeci">std::list&lt; timer::Timer * &gt; removedList</div><div class="ttdef"><b>Definition:</b> <a href="_timer_event_dispatcher_8h_source.html#l00051">TimerEventDispatcher.h:51</a></div></div>
 <div class="ttc" id="aclassnet_1_1_timer_event_dispatcher_html_a917b451532196df793e952abc70a5cc8"><div class="ttname"><a href="classnet_1_1_timer_event_dispatcher.html#a917b451532196df793e952abc70a5cc8">net::TimerEventDispatcher::timerListDirty</a></div><div class="ttdeci">bool timerListDirty</div><div class="ttdef"><b>Definition:</b> <a href="_timer_event_dispatcher_8h_source.html#l00060">TimerEventDispatcher.h:60</a></div></div>
 <div class="ttc" id="aclassnet_1_1_timer_event_dispatcher_html_a411a92f459e727f4d5df6f847a42f970"><div class="ttname"><a href="classnet_1_1_timer_event_dispatcher.html#a411a92f459e727f4d5df6f847a42f970">net::TimerEventDispatcher::timerList</a></div><div class="ttdeci">std::list&lt; timer::Timer * &gt; timerList</div><div class="ttdef"><b>Definition:</b> <a href="_timer_event_dispatcher_8h_source.html#l00049">TimerEventDispatcher.h:49</a></div></div>
-<div class="ttc" id="aclassnet_1_1_timer_event_dispatcher_html_abe13976ac74b218783f77a80f051baeb"><div class="ttname"><a href="classnet_1_1_timer_event_dispatcher.html#abe13976ac74b218783f77a80f051baeb">net::TimerEventDispatcher::getNextTimeout</a></div><div class="ttdeci">struct timeval getNextTimeout()</div><div class="ttdef"><b>Definition:</b> <a href="_timer_event_dispatcher_8cpp_source.html#l00001">TimerEventDispatcher.cpp:31</a></div></div>
+<div class="ttc" id="aclassnet_1_1_timer_event_dispatcher_html_abe13976ac74b218783f77a80f051baeb"><div class="ttname"><a href="classnet_1_1_timer_event_dispatcher.html#abe13976ac74b218783f77a80f051baeb">net::TimerEventDispatcher::getNextTimeout</a></div><div class="ttdeci">struct timeval getNextTimeout()</div><div class="ttdef"><b>Definition:</b> <a href="_timer_event_dispatcher_8cpp_source.html#l00001">TimerEventDispatcher.cpp:32</a></div></div>
 <div class="ttc" id="aclassnet_1_1_timer_event_dispatcher_html_ad2758353fe482e16752fecc1fdcd2df4"><div class="ttname"><a href="classnet_1_1_timer_event_dispatcher.html#ad2758353fe482e16752fecc1fdcd2df4">net::TimerEventDispatcher::addedList</a></div><div class="ttdeci">std::list&lt; timer::Timer * &gt; addedList</div><div class="ttdef"><b>Definition:</b> <a href="_timer_event_dispatcher_8h_source.html#l00050">TimerEventDispatcher.h:50</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

@@ -30,8 +30,13 @@ var dir_427baa8a9a5be237f298d4545d0d1ce2 =
     ] ],
     [ "EventReceiver.h", "_event_receiver_8h.html", [
       [ "ObservationCounter", "classnet_1_1_observation_counter.html", "classnet_1_1_observation_counter" ],
+      [ "lastTriggered", "structnet_1_1_observation_counter_1_1last_triggered.html", null ],
       [ "EventReceiver", "classnet_1_1_event_receiver.html", "classnet_1_1_event_receiver" ],
       [ "TIMEOUT", "classnet_1_1_event_receiver_1_1_t_i_m_e_o_u_t.html", "classnet_1_1_event_receiver_1_1_t_i_m_e_o_u_t" ]
+    ] ],
+    [ "FdSet.cpp", "_fd_set_8cpp.html", null ],
+    [ "FdSet.h", "_fd_set_8h.html", [
+      [ "FdSet", "classnet_1_1_fd_set.html", "classnet_1_1_fd_set" ]
     ] ],
     [ "OutOfBandEventDispatcher.cpp", "_out_of_band_event_dispatcher_8cpp.html", null ],
     [ "OutOfBandEventDispatcher.h", "_out_of_band_event_dispatcher_8h.html", [

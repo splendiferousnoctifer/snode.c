@@ -55,6 +55,8 @@ var hierarchy =
       [ "net::socket::ipv4::bad_hostname", "classnet_1_1socket_1_1ipv4_1_1bad__hostname.html", null ],
       [ "net::socket::ipv6::bad_hostname", "classnet_1_1socket_1_1ipv6_1_1bad__hostname.html", null ]
     ] ],
+    [ "net::FdSet", "classnet_1_1_fd_set.html", null ],
+    [ "net::ObservationCounter::lastTriggered", "structnet_1_1_observation_counter_1_1last_triggered.html", null ],
     [ "Logger", "class_logger.html", null ],
     [ "MimeTypes", "class_mime_types.html", null ],
     [ "express::MountPoint", "structexpress_1_1_mount_point.html", null ],
