@@ -7,6 +7,7 @@ var classnet_1_1socket_1_1stream_1_1_socket_listener =
     [ "SocketListener", "classnet_1_1socket_1_1stream_1_1_socket_listener.html#a1f519df84b02e46f932481f4c2674500", null ],
     [ "~SocketListener", "classnet_1_1socket_1_1stream_1_1_socket_listener.html#a4e7b0daaf93e830babe89de3227446e8", null ],
     [ "acceptEvent", "classnet_1_1socket_1_1stream_1_1_socket_listener.html#a3b30d5f8724c141508ce914c25a9ae7f", null ],
+    [ "destruct", "classnet_1_1socket_1_1stream_1_1_socket_listener.html#aa49e2120be428c40170df2777137e653", null ],
     [ "end", "classnet_1_1socket_1_1stream_1_1_socket_listener.html#a1f2d699a1d63343e7f2ef2cdd434da00", null ],
     [ "listen", "classnet_1_1socket_1_1stream_1_1_socket_listener.html#a65a56ae174b82842b81b1e7c2f1a5a34", null ],
     [ "operator delete", "classnet_1_1socket_1_1stream_1_1_socket_listener.html#a3c1c051163a241190e906c60ab07cf81", null ],

@@ -91,7 +91,8 @@ $(document).ready(function(){initNavTree('functions_vars_o.html',''); initResiza
 : <a class="el" href="classnet_1_1_event_dispatcher.html#a43ddc99952845dfad365ff4abac19bd6">net::EventDispatcher&lt; EventReceiverT &gt;</a>
 </li>
 <li>onConnect
-: <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_client.html#a0f7619a855b6ac8f7d3d714bbd462e84">net::socket::stream::SocketClient&lt; SocketConnectorT &gt;</a>
+: <a class="el" href="classhttp_1_1_client.html#a5c134036d400bf29013fca3ec240fbf9">http::Client&lt; SocketClientT &gt;</a>
+, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_client.html#a0f7619a855b6ac8f7d3d714bbd462e84">net::socket::stream::SocketClient&lt; SocketConnectorT &gt;</a>
 , <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connector.html#ac78917308b840c2279d5f7df38569394">net::socket::stream::SocketConnector&lt; SocketConnectionT &gt;</a>
 , <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_listener.html#ae41cc41f75501bf4065fd855a8560407">net::socket::stream::SocketListener&lt; SocketConnectionT &gt;</a>
 , <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_server.html#aa528f659efd67bc132c13bfca5fb7b26">net::socket::stream::SocketServer&lt; SocketListenerT &gt;</a>
@@ -114,7 +115,8 @@ $(document).ready(function(){initNavTree('functions_vars_o.html',''); initResiza
 , <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_server.html#a819ddd823a211c18ac11ef912089bd5c">net::socket::stream::SocketServer&lt; SocketListenerT &gt;</a>
 </li>
 <li>onDisconnect
-: <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_client.html#a4bc70c20693ff8c4cdcfbf300dada6a1">net::socket::stream::SocketClient&lt; SocketConnectorT &gt;</a>
+: <a class="el" href="classhttp_1_1_client.html#a091e1e25724d4b01a434eaced1296b13">http::Client&lt; SocketClientT &gt;</a>
+, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_client.html#a4bc70c20693ff8c4cdcfbf300dada6a1">net::socket::stream::SocketClient&lt; SocketConnectorT &gt;</a>
 , <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a35a637431e60798d5def662db6f4bc1d">net::socket::stream::SocketConnection&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt;</a>
 , <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connector.html#ab889b281c6b9367c2b3087736acef9ff">net::socket::stream::SocketConnector&lt; SocketConnectionT &gt;</a>
 , <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_listener.html#a6121da49fdc212d63df1bbfc967b1af1">net::socket::stream::SocketListener&lt; SocketConnectionT &gt;</a>
@@ -152,11 +154,20 @@ $(document).ready(function(){initNavTree('functions_vars_o.html',''); initResiza
 <li>onRequest
 : <a class="el" href="classhttp_1_1_request_parser.html#a72fc9130f04ace8363104efc32cc89e3">http::RequestParser</a>
 </li>
+<li>onRequestBegin
+: <a class="el" href="classhttp_1_1_client.html#ad8d5cc574273ed8e5fe64b89b9490de0">http::Client&lt; SocketClientT &gt;</a>
+</li>
 <li>onRequestCompleted
 : <a class="el" href="classhttp_1_1_server_context.html#aa447acf43827be22a940531d77724306">http::ServerContext</a>
 </li>
 <li>onResponse
 : <a class="el" href="classhttp_1_1_response_parser.html#ad1f987712c02eb6f35c23baefab5da75">http::ResponseParser</a>
+</li>
+<li>onResponseError
+: <a class="el" href="classhttp_1_1_client.html#aaa1b107f57e8cb6a3ebe31341ad141a7">http::Client&lt; SocketClientT &gt;</a>
+</li>
+<li>onResponseReady
+: <a class="el" href="classhttp_1_1_client.html#ab20342166f471f75c54b76c389895d2d">http::Client&lt; SocketClientT &gt;</a>
 </li>
 <li>onWriteError
 : <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_client.html#aebf00dd81ebba3e81a0be7c5f669dc42">net::socket::stream::SocketClient&lt; SocketConnectorT &gt;</a>
@@ -165,7 +176,8 @@ $(document).ready(function(){initNavTree('functions_vars_o.html',''); initResiza
 , <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_server.html#a64f176b6db7495b0e372c096cf3b8294">net::socket::stream::SocketServer&lt; SocketListenerT &gt;</a>
 </li>
 <li>options
-: <a class="el" href="classhttp_1_1_cookie_options.html#acc000ae0ca296963a5b1987a776e700b">http::CookieOptions</a>
+: <a class="el" href="classhttp_1_1_client.html#a8f0998c4a1a3ae18cf9cb4a0684ee8c7">http::Client&lt; SocketClientT &gt;</a>
+, <a class="el" href="classhttp_1_1_cookie_options.html#acc000ae0ca296963a5b1987a776e700b">http::CookieOptions</a>
 , <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_client.html#ae0b98c023465299bb35e6919c8c7942f">net::socket::stream::SocketClient&lt; SocketConnectorT &gt;</a>
 , <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connector.html#aea2f65eb38518d6a372e119b27d11859">net::socket::stream::SocketConnector&lt; SocketConnectionT &gt;</a>
 , <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_listener.html#a9ce884ac01ecd6e84a33927293b50572">net::socket::stream::SocketListener&lt; SocketConnectionT &gt;</a>

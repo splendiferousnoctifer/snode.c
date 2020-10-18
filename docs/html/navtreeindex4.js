@@ -1,5 +1,10 @@
 var NAVTREEINDEX4 =
 {
+"classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_reader.html":[9,0,2,0,2,0,4],
+"classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_reader.html#ad7ed4b3c1c8bb78dfb7f96d7c667278e":[9,0,2,0,2,0,4,0],
+"classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_server.html":[9,0,2,0,2,0,5],
+"classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_writer.html":[9,0,2,0,2,0,6],
+"classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_writer.html#a65605d7705e47ebda1a1858a8bca18c7":[9,0,2,0,2,0,6,0],
 "classnet_1_1socket_1_1stream_1_1tls_1_1_socket_client.html":[9,0,2,0,2,1,0],
 "classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html":[9,0,2,0,2,1,1],
 "classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a04f54e7e43a0e6526a66246d2f91b9a6":[9,0,2,0,2,1,1,1],
@@ -120,8 +125,8 @@ var NAVTREEINDEX4 =
 "express_2_response_8h.html":[10,0,0,6],
 "express_2_response_8h_source.html":[10,0,0,6],
 "files.html":[10,0],
-"functions.html":[9,3,0,0],
 "functions.html":[9,3,0],
+"functions.html":[9,3,0,0],
 "functions_a.html":[9,3,0,1],
 "functions_b.html":[9,3,0,2],
 "functions_c.html":[9,3,0,3],
@@ -130,8 +135,8 @@ var NAVTREEINDEX4 =
 "functions_enum.html":[9,3,4],
 "functions_eval.html":[9,3,5],
 "functions_f.html":[9,3,0,6],
-"functions_func.html":[9,3,1],
 "functions_func.html":[9,3,1,0],
+"functions_func.html":[9,3,1],
 "functions_func_b.html":[9,3,1,1],
 "functions_func_c.html":[9,3,1,2],
 "functions_func_d.html":[9,3,1,3],
@@ -244,10 +249,5 @@ var NAVTREEINDEX4 =
 "index.html#autotoc_md16":[6,3],
 "index.html#autotoc_md2":[1],
 "index.html#autotoc_md3":[2],
-"index.html#autotoc_md4":[2,0],
-"index.html#autotoc_md5":[2,1],
-"index.html#autotoc_md6":[2,1,0],
-"index.html#autotoc_md7":[2,1,1],
-"index.html#autotoc_md8":[2,1,2],
-"index.html#autotoc_md9":[3]
+"index.html#autotoc_md4":[2,0]
 };
