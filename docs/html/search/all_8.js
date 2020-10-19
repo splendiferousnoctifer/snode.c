@@ -6,7 +6,7 @@ var searchData=
   ['header_167',['HEADER',['../classhttp_1_1_parser.html#ab58d2b97db1c5bad0e2abfdba95514d2a7ad4905b4543ab4a1637dd23c50e36ce',1,'http::Parser::HEADER()'],['../classhttp_1_1_request.html#a517a253faa56139a38c0c933d9a501e0',1,'http::Request::header()']]],
   ['headers_168',['headers',['../classhttp_1_1_parser.html#ac7ac73a6a2d20c0e02161aa8e300b72c',1,'http::Parser::headers()'],['../classhttp_1_1_request.html#afaa160d26e3bc222692241eabbc43f44',1,'http::Request::headers()'],['../classhttp_1_1_response.html#afcfab9e82406afb1d8097cec6d2c2d83',1,'http::Response::headers()'],['../classhttp_1_1_server_response.html#a600fb3d58bbb12fb2fd3abbc1dbf3fcf',1,'http::ServerResponse::headers()']]],
   ['headerssent_169',['headersSent',['../classhttp_1_1_response.html#a42aa6f3b67d1359896a72616a8477401',1,'http::Response']]],
-  ['host_170',['host',['../classnet_1_1socket_1_1ipv4_1_1_inet_address.html#af1c7dad343d707bb43ef61ddf6046bbf',1,'net::socket::ipv4::InetAddress::host()'],['../classnet_1_1socket_1_1ipv6_1_1_inet_address.html#a46cb6ca242331b8dfcbcc33158b74414',1,'net::socket::ipv6::InetAddress::host()']]],
+  ['host_170',['host',['../classnet_1_1socket_1_1ip_1_1address_1_1ipv4_1_1_inet_address.html#a7f0103c89ee9d457ac88307942807d99',1,'net::socket::ip::address::ipv4::InetAddress::host()'],['../classnet_1_1socket_1_1ip_1_1address_1_1ipv6_1_1_inet_address.html#add7e2ce78c2ec0510034793b842a5a16',1,'net::socket::ip::address::ipv6::InetAddress::host()']]],
   ['http_171',['http',['../namespacehttp.html',1,'']]],
   ['http_5futils_2ecpp_172',['http_utils.cpp',['../http__utils_8cpp.html',1,'']]],
   ['http_5futils_2eh_173',['http_utils.h',['../http__utils_8h.html',1,'']]],

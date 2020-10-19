@@ -112,12 +112,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aca6ae06d634e59b673286c0910c292d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2224f606f69d875daac6d328b35ac50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_server_context.html#ae2224f606f69d875daac6d328b35ac50">receiveRequestData</a> (const char *junk, size_t junkLen)</td></tr>
 <tr class="separator:ae2224f606f69d875daac6d328b35ac50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a890e2e79823da2aa64ba11ae4a6360ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_server_context.html#a890e2e79823da2aa64ba11ae4a6360ff">onReadError</a> (int errnum)</td></tr>
-<tr class="separator:a890e2e79823da2aa64ba11ae4a6360ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd3eae33edf1a349fb5bb5ce15ee2a38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_server_context.html#afd3eae33edf1a349fb5bb5ce15ee2a38">onReadError</a> (int errnum) const</td></tr>
+<tr class="separator:afd3eae33edf1a349fb5bb5ce15ee2a38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8a806ab5b70b22e6be8764a32462049"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_server_context.html#ab8a806ab5b70b22e6be8764a32462049">sendResponseData</a> (const char *buf, size_t len)</td></tr>
 <tr class="separator:ab8a806ab5b70b22e6be8764a32462049"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9cae470b0464b8c342bd9c6d7d37a8aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_server_context.html#a9cae470b0464b8c342bd9c6d7d37a8aa">onWriteError</a> (int errnum)</td></tr>
-<tr class="separator:a9cae470b0464b8c342bd9c6d7d37a8aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e6e393614d8ad7081427dbf33ae1280"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_server_context.html#a9e6e393614d8ad7081427dbf33ae1280">onWriteError</a> (int errnum) const</td></tr>
+<tr class="separator:a9e6e393614d8ad7081427dbf33ae1280"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a9548722c09daceab14607ace200e60"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_server_context.html#a6a9548722c09daceab14607ace200e60">responseCompleted</a> ()</td></tr>
 <tr class="separator:a6a9548722c09daceab14607ace200e60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3a20bdb1e4aab00435199eefd061b58"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_server_context.html#aa3a20bdb1e4aab00435199eefd061b58">terminateConnection</a> ()</td></tr>
@@ -272,8 +272,8 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a890e2e79823da2aa64ba11ae4a6360ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a890e2e79823da2aa64ba11ae4a6360ff">&#9670;&nbsp;</a></span>onReadError()</h2>
+<a id="afd3eae33edf1a349fb5bb5ce15ee2a38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd3eae33edf1a349fb5bb5ce15ee2a38">&#9670;&nbsp;</a></span>onReadError()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -283,13 +283,13 @@ Private Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>errnum</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_server_context_8cpp_source.html#l00094">94</a> of file <a class="el" href="_server_context_8cpp_source.html">ServerContext.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                                              {</div>
+<div class="fragment"><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                                                    {</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keywordflow">if</span> (errnum != 0 &amp;&amp; errnum != ECONNRESET) {</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            PLOG(ERROR) &lt;&lt; <span class="stringliteral">&quot;Connection: read&quot;</span>;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        }</div>
@@ -297,8 +297,8 @@ Private Attributes</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a9cae470b0464b8c342bd9c6d7d37a8aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9cae470b0464b8c342bd9c6d7d37a8aa">&#9670;&nbsp;</a></span>onWriteError()</h2>
+<a id="a9e6e393614d8ad7081427dbf33ae1280"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e6e393614d8ad7081427dbf33ae1280">&#9670;&nbsp;</a></span>onWriteError()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -308,13 +308,13 @@ Private Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>errnum</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_server_context_8cpp_source.html#l00104">104</a> of file <a class="el" href="_server_context_8cpp_source.html">ServerContext.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                                               {</div>
+<div class="fragment"><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                                                     {</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="keywordflow">if</span> (errnum != 0 &amp;&amp; errnum != ECONNRESET) {</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            PLOG(ERROR) &lt;&lt; <span class="stringliteral">&quot;Connection write&quot;</span>;</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        }</div>

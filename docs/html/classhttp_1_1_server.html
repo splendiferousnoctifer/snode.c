@@ -95,7 +95,8 @@ $(document).ready(function(){initNavTree('classhttp_1_1_server.html',''); initRe
 <div class="dynheader">
 Inheritance diagram for http::Server&lt; SocketServerT &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1_server__inherit__graph.svg" width="804" height="458"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1_server__inherit__graph.svg" width="815" height="472"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <div class="dynheader">
 Collaboration diagram for http::Server&lt; SocketServerT &gt;:</div>
@@ -114,10 +115,10 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a48be9b59a105acef5d15b3d4bcdc7dcb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_server.html#a48be9b59a105acef5d15b3d4bcdc7dcb">Server</a> (const std::function&lt; void(<a class="el" href="classhttp_1_1_server.html#a961d02542a5863e5f47d65aaa84374ce">SocketConnection</a> *)&gt; &amp;onConnect, const std::function&lt; void(<a class="el" href="classhttp_1_1_request.html">Request</a> &amp;req, <a class="el" href="classhttp_1_1_response.html">Response</a> &amp;res)&gt; &amp;onRequestReady, const std::function&lt; void(<a class="el" href="classhttp_1_1_request.html">Request</a> &amp;req, <a class="el" href="classhttp_1_1_response.html">Response</a> &amp;res)&gt; &amp;onRequestCompleted, const std::function&lt; void(<a class="el" href="classhttp_1_1_server.html#a961d02542a5863e5f47d65aaa84374ce">SocketConnection</a> *)&gt; &amp;onDisconnect, const std::map&lt; std::string, std::any &gt; &amp;options={{}})</td></tr>
 <tr class="separator:a48be9b59a105acef5d15b3d4bcdc7dcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c1280b53477ae20501d698458e0c186"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_server.html#a5c1280b53477ae20501d698458e0c186">listen</a> (unsigned short port, const std::function&lt; void(int err)&gt; &amp;onError)</td></tr>
-<tr class="separator:a5c1280b53477ae20501d698458e0c186"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd3168b76837c4ee28844a9e8ff5f666"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_server.html#afd3168b76837c4ee28844a9e8ff5f666">listen</a> (const std::string host, unsigned short port, const std::function&lt; void(int err)&gt; &amp;onError)</td></tr>
-<tr class="separator:afd3168b76837c4ee28844a9e8ff5f666"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a363131f2cbdd795803d29b16506796"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_server.html#a8a363131f2cbdd795803d29b16506796">listen</a> (unsigned short port, const std::function&lt; void(int err)&gt; &amp;onError) const</td></tr>
+<tr class="separator:a8a363131f2cbdd795803d29b16506796"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8644d807777a7feb2d3e13a29d5d44fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_server.html#a8644d807777a7feb2d3e13a29d5d44fe">listen</a> (const std::string host, unsigned short port, const std::function&lt; void(int err)&gt; &amp;onError) const</td></tr>
+<tr class="separator:a8644d807777a7feb2d3e13a29d5d44fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -261,8 +262,8 @@ template&lt;typename SocketServerT &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="afd3168b76837c4ee28844a9e8ff5f666"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd3168b76837c4ee28844a9e8ff5f666">&#9670;&nbsp;</a></span>listen() <span class="overload">[1/2]</span></h2>
+<a id="a8644d807777a7feb2d3e13a29d5d44fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8644d807777a7feb2d3e13a29d5d44fe">&#9670;&nbsp;</a></span>listen() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -293,7 +294,7 @@ template&lt;typename SocketServerT &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
@@ -304,7 +305,7 @@ template&lt;typename SocketServerT &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_server_8h_source.html#l00074">74</a> of file <a class="el" href="_server_8h_source.html">Server.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                                                                                                          {</div>
+<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                                                                                                                {</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            errno = 0;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <a class="code" href="classhttp_1_1_server.html#a742d251a269ca95c2ce53cdef1ad669f">socketServer</a>.listen(host, port, 5, onError);</div>
@@ -312,8 +313,8 @@ template&lt;typename SocketServerT &gt; </div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a5c1280b53477ae20501d698458e0c186"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5c1280b53477ae20501d698458e0c186">&#9670;&nbsp;</a></span>listen() <span class="overload">[2/2]</span></h2>
+<a id="a8a363131f2cbdd795803d29b16506796"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a363131f2cbdd795803d29b16506796">&#9670;&nbsp;</a></span>listen() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -338,7 +339,7 @@ template&lt;typename SocketServerT &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
@@ -349,7 +350,7 @@ template&lt;typename SocketServerT &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_server_8h_source.html#l00068">68</a> of file <a class="el" href="_server_8h_source.html">Server.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                                                                                    {</div>
+<div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                                                                                          {</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            errno = 0;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <a class="code" href="classhttp_1_1_server.html#a742d251a269ca95c2ce53cdef1ad669f">socketServer</a>.listen(port, 5, onError);</div>
@@ -382,7 +383,7 @@ template&lt;typename SocketServerT &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="_server_8h_source.html#l00081">81</a> of file <a class="el" href="_server_8h_source.html">Server.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_server_8h_source.html#l00068">http::Server&lt; net::socket::ipv4::tcp::tls::SocketServer &gt;::listen()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_server_8h_source.html#l00068">http::Server&lt; net::socket::ip::tcp::ipv6::tls::SocketServer &gt;::listen()</a>.</p>
 
 </div>
 </div>
