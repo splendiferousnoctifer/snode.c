@@ -332,14 +332,14 @@ template&lt;typename EventReceiverT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_event_dispatcher_8h_source.html#l00160">160</a> of file <a class="el" href="_event_dispatcher_8h_source.html">EventDispatcher.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                                     {</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; [fd, eventReceivers] : <a class="code" href="classnet_1_1_event_dispatcher.html#a43ddc99952845dfad365ff4abac19bd6">observedEventReceiver</a>) {</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                <span class="keywordflow">for</span> (<a class="code" href="classnet_1_1_event_dispatcher.html#ae0f93576fe0d5f85cce969f1c48f631a">EventReceiver</a>* eventReceiver : eventReceivers) {</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                    <a class="code" href="classnet_1_1_event_dispatcher.html#a09111589530debb69774c4b1e79e4117">disabledEventReceiver</a>.push_back(eventReceiver);</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                }</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;            }</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        }</div>
+<p class="definition">Definition at line <a class="el" href="_event_dispatcher_8h_source.html#l00161">161</a> of file <a class="el" href="_event_dispatcher_8h_source.html">EventDispatcher.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                                     {</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; [fd, eventReceivers] : <a class="code" href="classnet_1_1_event_dispatcher.html#a43ddc99952845dfad365ff4abac19bd6">observedEventReceiver</a>) {</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                <span class="keywordflow">for</span> (<a class="code" href="classnet_1_1_event_dispatcher.html#ae0f93576fe0d5f85cce969f1c48f631a">EventReceiver</a>* eventReceiver : eventReceivers) {</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                    <a class="code" href="classnet_1_1_event_dispatcher.html#a09111589530debb69774c4b1e79e4117">disabledEventReceiver</a>.push_back(eventReceiver);</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                }</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;            }</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        }</div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="_event_loop_8cpp_source.html#l00142">net::EventLoop::start()</a>.</p>
 <div class="dynheader">
@@ -393,15 +393,16 @@ template&lt;typename EventReceiverT &gt; </div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                    <span class="keyword">struct </span>timeval inactivity = currentTime - eventReceiver-&gt;getLastTriggered();</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                    <span class="keywordflow">if</span> (inactivity &gt;= <a class="code" href="classnet_1_1_event_dispatcher.html#a3918210c2910461a6df692f53e5692b7">maxInactivity</a>) {</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                        eventReceiver-&gt;disable();</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;                        nextInactivityTimeout = std::min(<a class="code" href="classnet_1_1_event_dispatcher.html#a3918210c2910461a6df692f53e5692b7">maxInactivity</a> - inactivity, nextInactivityTimeout);</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;                    }</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;                }</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;            }</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;            <span class="keywordflow">return</span> nextInactivityTimeout;</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        }</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                        eventReceiver-&gt;timeoutEvent();</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                        eventReceiver-&gt;disable();</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;                    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;                        nextInactivityTimeout = std::min(<a class="code" href="classnet_1_1_event_dispatcher.html#a3918210c2910461a6df692f53e5692b7">maxInactivity</a> - inactivity, nextInactivityTimeout);</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;                    }</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;                }</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;            }</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160; </div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;            <span class="keywordflow">return</span> nextInactivityTimeout;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        }</div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="_event_loop_8cpp_source.html#l00067">net::EventLoop::tick()</a>.</p>
 <div class="dynheader">
@@ -709,21 +710,21 @@ template&lt;typename EventReceiverT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_event_dispatcher_8h_source.html#l00145">145</a> of file <a class="el" href="_event_dispatcher_8h_source.html">EventDispatcher.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;                                       {</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            <span class="keywordflow">for</span> (<a class="code" href="classnet_1_1_event_dispatcher.html#ae0f93576fe0d5f85cce969f1c48f631a">EventReceiver</a>* eventReceiver : <a class="code" href="classnet_1_1_event_dispatcher.html#a09111589530debb69774c4b1e79e4117">disabledEventReceiver</a>) {</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;                <span class="keywordtype">int</span> fd = <span class="keyword">dynamic_cast&lt;</span>Descriptor*<span class="keyword">&gt;</span>(eventReceiver)-&gt;getFd();</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                <a class="code" href="classnet_1_1_event_dispatcher.html#a43ddc99952845dfad365ff4abac19bd6">observedEventReceiver</a>[fd].remove(eventReceiver);</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="classnet_1_1_event_dispatcher.html#a43ddc99952845dfad365ff4abac19bd6">observedEventReceiver</a>[fd].empty()) {</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                    <a class="code" href="classnet_1_1_event_dispatcher.html#a43ddc99952845dfad365ff4abac19bd6">observedEventReceiver</a>.erase(fd);</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                    <a class="code" href="classnet_1_1_event_dispatcher.html#ac170fb86c4f7766b114b73e8df167949">fdSet</a>.<a class="code" href="classnet_1_1_fd_set.html#a45aaf9fddc2f079e4e83eb0e2bb4103d">clr</a>(fd);</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                    <a class="code" href="classnet_1_1_event_dispatcher.html#a43ddc99952845dfad365ff4abac19bd6">observedEventReceiver</a>[fd].front()-&gt;setLastTriggered({time(<span class="keyword">nullptr</span>), 0});</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                }</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                eventReceiver-&gt;disabled();</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;            }</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            <a class="code" href="classnet_1_1_event_dispatcher.html#a09111589530debb69774c4b1e79e4117">disabledEventReceiver</a>.clear();</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        }</div>
+<p class="definition">Definition at line <a class="el" href="_event_dispatcher_8h_source.html#l00146">146</a> of file <a class="el" href="_event_dispatcher_8h_source.html">EventDispatcher.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                                       {</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            <span class="keywordflow">for</span> (<a class="code" href="classnet_1_1_event_dispatcher.html#ae0f93576fe0d5f85cce969f1c48f631a">EventReceiver</a>* eventReceiver : <a class="code" href="classnet_1_1_event_dispatcher.html#a09111589530debb69774c4b1e79e4117">disabledEventReceiver</a>) {</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                <span class="keywordtype">int</span> fd = <span class="keyword">dynamic_cast&lt;</span>Descriptor*<span class="keyword">&gt;</span>(eventReceiver)-&gt;getFd();</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;                <a class="code" href="classnet_1_1_event_dispatcher.html#a43ddc99952845dfad365ff4abac19bd6">observedEventReceiver</a>[fd].remove(eventReceiver);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="classnet_1_1_event_dispatcher.html#a43ddc99952845dfad365ff4abac19bd6">observedEventReceiver</a>[fd].empty()) {</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                    <a class="code" href="classnet_1_1_event_dispatcher.html#a43ddc99952845dfad365ff4abac19bd6">observedEventReceiver</a>.erase(fd);</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                    <a class="code" href="classnet_1_1_event_dispatcher.html#ac170fb86c4f7766b114b73e8df167949">fdSet</a>.<a class="code" href="classnet_1_1_fd_set.html#a45aaf9fddc2f079e4e83eb0e2bb4103d">clr</a>(fd);</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                    <a class="code" href="classnet_1_1_event_dispatcher.html#a43ddc99952845dfad365ff4abac19bd6">observedEventReceiver</a>[fd].front()-&gt;setLastTriggered({time(<span class="keyword">nullptr</span>), 0});</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                }</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                eventReceiver-&gt;disabled();</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            }</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            <a class="code" href="classnet_1_1_event_dispatcher.html#a09111589530debb69774c4b1e79e4117">disabledEventReceiver</a>.clear();</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        }</div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="_event_loop_8cpp_source.html#l00142">net::EventLoop::start()</a>, and <a class="el" href="_event_loop_8cpp_source.html#l00067">net::EventLoop::tick()</a>.</p>
 <div class="dynheader">
@@ -757,7 +758,7 @@ template&lt;typename EventReceiverT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_event_dispatcher_8h_source.html#l00181">181</a> of file <a class="el" href="_event_dispatcher_8h_source.html">EventDispatcher.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_event_dispatcher_8h_source.html#l00182">182</a> of file <a class="el" href="_event_dispatcher_8h_source.html">EventDispatcher.h</a>.</p>
 
 </div>
 </div>
@@ -784,9 +785,9 @@ template&lt;typename EventReceiverT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_event_dispatcher_8h_source.html#l00173">173</a> of file <a class="el" href="_event_dispatcher_8h_source.html">EventDispatcher.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_event_dispatcher_8h_source.html#l00174">174</a> of file <a class="el" href="_event_dispatcher_8h_source.html">EventDispatcher.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_event_dispatcher_8h_source.html#l00073">net::EventDispatcher&lt; ReadEventReceiver &gt;::disable()</a>, <a class="el" href="_event_dispatcher_8h_source.html#l00160">net::EventDispatcher&lt; ReadEventReceiver &gt;::disableObservedEvents()</a>, <a class="el" href="_event_dispatcher_8h_source.html#l00062">net::EventDispatcher&lt; ReadEventReceiver &gt;::enable()</a>, and <a class="el" href="_event_dispatcher_8h_source.html#l00145">net::EventDispatcher&lt; ReadEventReceiver &gt;::unobserveDisabledEvents()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_event_dispatcher_8h_source.html#l00073">net::EventDispatcher&lt; ReadEventReceiver &gt;::disable()</a>, <a class="el" href="_event_dispatcher_8h_source.html#l00161">net::EventDispatcher&lt; ReadEventReceiver &gt;::disableObservedEvents()</a>, <a class="el" href="_event_dispatcher_8h_source.html#l00062">net::EventDispatcher&lt; ReadEventReceiver &gt;::enable()</a>, and <a class="el" href="_event_dispatcher_8h_source.html#l00146">net::EventDispatcher&lt; ReadEventReceiver &gt;::unobserveDisabledEvents()</a>.</p>
 
 </div>
 </div>
@@ -812,7 +813,7 @@ template&lt;typename EventReceiverT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_event_dispatcher_8h_source.html#l00172">172</a> of file <a class="el" href="_event_dispatcher_8h_source.html">EventDispatcher.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_event_dispatcher_8h_source.html#l00173">173</a> of file <a class="el" href="_event_dispatcher_8h_source.html">EventDispatcher.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_event_dispatcher_8h_source.html#l00073">net::EventDispatcher&lt; ReadEventReceiver &gt;::disable()</a>, and <a class="el" href="_event_dispatcher_8h_source.html#l00062">net::EventDispatcher&lt; ReadEventReceiver &gt;::enable()</a>.</p>
 
@@ -840,7 +841,7 @@ template&lt;typename EventReceiverT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_event_dispatcher_8h_source.html#l00179">179</a> of file <a class="el" href="_event_dispatcher_8h_source.html">EventDispatcher.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_event_dispatcher_8h_source.html#l00180">180</a> of file <a class="el" href="_event_dispatcher_8h_source.html">EventDispatcher.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_event_dispatcher_8h_source.html#l00088">net::EventDispatcher&lt; ReadEventReceiver &gt;::getEventCounter()</a>.</p>
 
@@ -868,9 +869,9 @@ template&lt;typename EventReceiverT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_event_dispatcher_8h_source.html#l00175">175</a> of file <a class="el" href="_event_dispatcher_8h_source.html">EventDispatcher.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_event_dispatcher_8h_source.html#l00176">176</a> of file <a class="el" href="_event_dispatcher_8h_source.html">EventDispatcher.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_event_dispatcher_8h_source.html#l00145">net::EventDispatcher&lt; ReadEventReceiver &gt;::unobserveDisabledEvents()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_event_dispatcher_8h_source.html#l00146">net::EventDispatcher&lt; ReadEventReceiver &gt;::unobserveDisabledEvents()</a>.</p>
 
 </div>
 </div>
@@ -896,7 +897,7 @@ template&lt;typename EventReceiverT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_event_dispatcher_8h_source.html#l00177">177</a> of file <a class="el" href="_event_dispatcher_8h_source.html">EventDispatcher.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_event_dispatcher_8h_source.html#l00178">178</a> of file <a class="el" href="_event_dispatcher_8h_source.html">EventDispatcher.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_event_dispatcher_8h_source.html#l00084">net::EventDispatcher&lt; ReadEventReceiver &gt;::getTimeout()</a>.</p>
 
@@ -924,9 +925,9 @@ template&lt;typename EventReceiverT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_event_dispatcher_8h_source.html#l00170">170</a> of file <a class="el" href="_event_dispatcher_8h_source.html">EventDispatcher.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_event_dispatcher_8h_source.html#l00171">171</a> of file <a class="el" href="_event_dispatcher_8h_source.html">EventDispatcher.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_event_dispatcher_8h_source.html#l00160">net::EventDispatcher&lt; ReadEventReceiver &gt;::disableObservedEvents()</a>, <a class="el" href="_event_dispatcher_8h_source.html#l00103">net::EventDispatcher&lt; ReadEventReceiver &gt;::observeEnabledEvents()</a>, and <a class="el" href="_event_dispatcher_8h_source.html#l00145">net::EventDispatcher&lt; ReadEventReceiver &gt;::unobserveDisabledEvents()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_event_dispatcher_8h_source.html#l00161">net::EventDispatcher&lt; ReadEventReceiver &gt;::disableObservedEvents()</a>, <a class="el" href="_event_dispatcher_8h_source.html#l00103">net::EventDispatcher&lt; ReadEventReceiver &gt;::observeEnabledEvents()</a>, and <a class="el" href="_event_dispatcher_8h_source.html#l00146">net::EventDispatcher&lt; ReadEventReceiver &gt;::unobserveDisabledEvents()</a>.</p>
 
 </div>
 </div>
@@ -937,17 +938,17 @@ template&lt;typename EventReceiverT &gt; </div>
 </div><!-- doc-content -->
 <div class="ttc" id="aclassnet_1_1_event_dispatcher_html_a02e63d9bda6db98985dd0453fea998eb"><div class="ttname"><a href="classnet_1_1_event_dispatcher.html#a02e63d9bda6db98985dd0453fea998eb">net::EventDispatcher::dispatchEventTo</a></div><div class="ttdeci">virtual void dispatchEventTo(EventReceiver *)=0</div></div>
 <div class="ttc" id="anamespacenet_html_ad1de93e09913a9ce136d99696c7ee3e1"><div class="ttname"><a href="namespacenet.html#ad1de93e09913a9ce136d99696c7ee3e1">net::contains</a></div><div class="ttdeci">static bool contains(std::list&lt; EventReceiverT * &gt; &amp;eventReceivers, EventReceiverT *&amp;eventReceiver)</div><div class="ttdef"><b>Definition:</b> <a href="_event_dispatcher_8h_source.html#l00042">EventDispatcher.h:42</a></div></div>
-<div class="ttc" id="aclassnet_1_1_event_dispatcher_html_a09111589530debb69774c4b1e79e4117"><div class="ttname"><a href="classnet_1_1_event_dispatcher.html#a09111589530debb69774c4b1e79e4117">net::EventDispatcher::disabledEventReceiver</a></div><div class="ttdeci">std::list&lt; EventReceiver * &gt; disabledEventReceiver</div><div class="ttdef"><b>Definition:</b> <a href="_event_dispatcher_8h_source.html#l00173">EventDispatcher.h:173</a></div></div>
+<div class="ttc" id="aclassnet_1_1_event_dispatcher_html_a09111589530debb69774c4b1e79e4117"><div class="ttname"><a href="classnet_1_1_event_dispatcher.html#a09111589530debb69774c4b1e79e4117">net::EventDispatcher::disabledEventReceiver</a></div><div class="ttdeci">std::list&lt; EventReceiver * &gt; disabledEventReceiver</div><div class="ttdef"><b>Definition:</b> <a href="_event_dispatcher_8h_source.html#l00174">EventDispatcher.h:174</a></div></div>
 <div class="ttc" id="aclassnet_1_1_event_dispatcher_html_ae0f93576fe0d5f85cce969f1c48f631a"><div class="ttname"><a href="classnet_1_1_event_dispatcher.html#ae0f93576fe0d5f85cce969f1c48f631a">net::EventDispatcher::EventReceiver</a></div><div class="ttdeci">EventReceiverT EventReceiver</div><div class="ttdef"><b>Definition:</b> <a href="_event_dispatcher_8h_source.html#l00051">EventDispatcher.h:51</a></div></div>
 <div class="ttc" id="aclassnet_1_1_fd_set_html_a8da4102a551232e403beea61a468c7e5"><div class="ttname"><a href="classnet_1_1_fd_set.html#a8da4102a551232e403beea61a468c7e5">net::FdSet::prepare</a></div><div class="ttdeci">void prepare()</div><div class="ttdef"><b>Definition:</b> <a href="_fd_set_8cpp_source.html#l00052">FdSet.cpp:52</a></div></div>
-<div class="ttc" id="aclassnet_1_1_event_dispatcher_html_a3378afd544321774c68ac892871d6540"><div class="ttname"><a href="classnet_1_1_event_dispatcher.html#a3378afd544321774c68ac892871d6540">net::EventDispatcher::eventCounter</a></div><div class="ttdeci">unsigned long eventCounter</div><div class="ttdef"><b>Definition:</b> <a href="_event_dispatcher_8h_source.html#l00179">EventDispatcher.h:179</a></div></div>
+<div class="ttc" id="aclassnet_1_1_event_dispatcher_html_a3378afd544321774c68ac892871d6540"><div class="ttname"><a href="classnet_1_1_event_dispatcher.html#a3378afd544321774c68ac892871d6540">net::EventDispatcher::eventCounter</a></div><div class="ttdeci">unsigned long eventCounter</div><div class="ttdef"><b>Definition:</b> <a href="_event_dispatcher_8h_source.html#l00180">EventDispatcher.h:180</a></div></div>
 <div class="ttc" id="aclassnet_1_1_fd_set_html_a602dbf99def6560bcc7a6bcb8384d549"><div class="ttname"><a href="classnet_1_1_fd_set.html#a602dbf99def6560bcc7a6bcb8384d549">net::FdSet::set</a></div><div class="ttdeci">void set(int fd)</div><div class="ttdef"><b>Definition:</b> <a href="_fd_set_8cpp_source.html#l00031">FdSet.cpp:31</a></div></div>
 <div class="ttc" id="aclassnet_1_1_fd_set_html_a69db6f08582ae98956e1476b996657e1"><div class="ttname"><a href="classnet_1_1_fd_set.html#a69db6f08582ae98956e1476b996657e1">net::FdSet::isSet</a></div><div class="ttdeci">int isSet(int fd) const</div><div class="ttdef"><b>Definition:</b> <a href="_fd_set_8cpp_source.html#l00039">FdSet.cpp:39</a></div></div>
 <div class="ttc" id="aclassnet_1_1_fd_set_html_a45aaf9fddc2f079e4e83eb0e2bb4103d"><div class="ttname"><a href="classnet_1_1_fd_set.html#a45aaf9fddc2f079e4e83eb0e2bb4103d">net::FdSet::clr</a></div><div class="ttdeci">void clr(int fd)</div><div class="ttdef"><b>Definition:</b> <a href="_fd_set_8cpp_source.html#l00035">FdSet.cpp:35</a></div></div>
-<div class="ttc" id="aclassnet_1_1_event_dispatcher_html_ac170fb86c4f7766b114b73e8df167949"><div class="ttname"><a href="classnet_1_1_event_dispatcher.html#ac170fb86c4f7766b114b73e8df167949">net::EventDispatcher::fdSet</a></div><div class="ttdeci">FdSet &amp; fdSet</div><div class="ttdef"><b>Definition:</b> <a href="_event_dispatcher_8h_source.html#l00175">EventDispatcher.h:175</a></div></div>
-<div class="ttc" id="aclassnet_1_1_event_dispatcher_html_a43ddc99952845dfad365ff4abac19bd6"><div class="ttname"><a href="classnet_1_1_event_dispatcher.html#a43ddc99952845dfad365ff4abac19bd6">net::EventDispatcher::observedEventReceiver</a></div><div class="ttdeci">std::map&lt; int, std::list&lt; EventReceiver * &gt; &gt; observedEventReceiver</div><div class="ttdef"><b>Definition:</b> <a href="_event_dispatcher_8h_source.html#l00170">EventDispatcher.h:170</a></div></div>
-<div class="ttc" id="aclassnet_1_1_event_dispatcher_html_a3918210c2910461a6df692f53e5692b7"><div class="ttname"><a href="classnet_1_1_event_dispatcher.html#a3918210c2910461a6df692f53e5692b7">net::EventDispatcher::maxInactivity</a></div><div class="ttdeci">long maxInactivity</div><div class="ttdef"><b>Definition:</b> <a href="_event_dispatcher_8h_source.html#l00177">EventDispatcher.h:177</a></div></div>
-<div class="ttc" id="aclassnet_1_1_event_dispatcher_html_a7aca325e535b47b63f8058d1ea0b1724"><div class="ttname"><a href="classnet_1_1_event_dispatcher.html#a7aca325e535b47b63f8058d1ea0b1724">net::EventDispatcher::enabledEventReceiver</a></div><div class="ttdeci">std::list&lt; EventReceiver * &gt; enabledEventReceiver</div><div class="ttdef"><b>Definition:</b> <a href="_event_dispatcher_8h_source.html#l00172">EventDispatcher.h:172</a></div></div>
+<div class="ttc" id="aclassnet_1_1_event_dispatcher_html_ac170fb86c4f7766b114b73e8df167949"><div class="ttname"><a href="classnet_1_1_event_dispatcher.html#ac170fb86c4f7766b114b73e8df167949">net::EventDispatcher::fdSet</a></div><div class="ttdeci">FdSet &amp; fdSet</div><div class="ttdef"><b>Definition:</b> <a href="_event_dispatcher_8h_source.html#l00176">EventDispatcher.h:176</a></div></div>
+<div class="ttc" id="aclassnet_1_1_event_dispatcher_html_a43ddc99952845dfad365ff4abac19bd6"><div class="ttname"><a href="classnet_1_1_event_dispatcher.html#a43ddc99952845dfad365ff4abac19bd6">net::EventDispatcher::observedEventReceiver</a></div><div class="ttdeci">std::map&lt; int, std::list&lt; EventReceiver * &gt; &gt; observedEventReceiver</div><div class="ttdef"><b>Definition:</b> <a href="_event_dispatcher_8h_source.html#l00171">EventDispatcher.h:171</a></div></div>
+<div class="ttc" id="aclassnet_1_1_event_dispatcher_html_a3918210c2910461a6df692f53e5692b7"><div class="ttname"><a href="classnet_1_1_event_dispatcher.html#a3918210c2910461a6df692f53e5692b7">net::EventDispatcher::maxInactivity</a></div><div class="ttdeci">long maxInactivity</div><div class="ttdef"><b>Definition:</b> <a href="_event_dispatcher_8h_source.html#l00178">EventDispatcher.h:178</a></div></div>
+<div class="ttc" id="aclassnet_1_1_event_dispatcher_html_a7aca325e535b47b63f8058d1ea0b1724"><div class="ttname"><a href="classnet_1_1_event_dispatcher.html#a7aca325e535b47b63f8058d1ea0b1724">net::EventDispatcher::enabledEventReceiver</a></div><div class="ttdeci">std::list&lt; EventReceiver * &gt; enabledEventReceiver</div><div class="ttdef"><b>Definition:</b> <a href="_event_dispatcher_8h_source.html#l00173">EventDispatcher.h:173</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

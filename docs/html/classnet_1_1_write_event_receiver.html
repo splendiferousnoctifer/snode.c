@@ -95,12 +95,14 @@ $(document).ready(function(){initNavTree('classnet_1_1_write_event_receiver.html
 <div class="dynheader">
 Inheritance diagram for net::WriteEventReceiver:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_write_event_receiver__inherit__graph.svg" width="544" height="1662"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_write_event_receiver__inherit__graph.svg" width="544" height="1618"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <div class="dynheader">
 Collaboration diagram for net::WriteEventReceiver:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_write_event_receiver__coll__graph.svg" width="175" height="603"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_write_event_receiver__coll__graph.svg" width="175" height="618"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -134,6 +136,8 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a26d6a5c5cdd5300540a937c17f91fdcd inherit pro_methods_classnet_1_1_event_receiver"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4e3a75a2849d0d8b1fc4ba2b754c8e3 inherit pro_methods_classnet_1_1_event_receiver"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_event_receiver.html#ac4e3a75a2849d0d8b1fc4ba2b754c8e3">isEnabled</a> () const</td></tr>
 <tr class="separator:ac4e3a75a2849d0d8b1fc4ba2b754c8e3 inherit pro_methods_classnet_1_1_event_receiver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2ab7401b75de7a958967f9e54c922ed inherit pro_methods_classnet_1_1_event_receiver"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_event_receiver.html#aa2ab7401b75de7a958967f9e54c922ed">timeoutEvent</a> ()</td></tr>
+<tr class="separator:aa2ab7401b75de7a958967f9e54c922ed inherit pro_methods_classnet_1_1_event_receiver"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -212,7 +216,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="_event_dispatcher_8h_source.html#l00073">net::EventDispatcher&lt; EventReceiverT &gt;::disable()</a>, <a class="el" href="_event_loop_8h_source.html#l00065">net::EventLoop::getWriteEventDispatcher()</a>, and <a class="el" href="_event_loop_8h_source.html#l00044">net::EventLoop::instance()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_socket_connection_8h_source.html#l00098">net::socket::stream::SocketConnection&lt; legacy::SocketReader&lt; SocketT &gt;, legacy::SocketWriter&lt; SocketT &gt;, SocketT::SocketAddress &gt;::end()</a>, <a class="el" href="tls_2_socket_reader_8h_source.html#l00043">net::socket::stream::tls::SocketReader&lt; SocketT &gt;::read()</a>, <a class="el" href="tls_2_socket_writer_8h_source.html#l00042">net::socket::stream::tls::SocketWriter&lt; SocketT &gt;::write()</a>, <a class="el" href="_socket_writer_8h_source.html#l00059">net::socket::stream::SocketWriter&lt; SocketT &gt;::writeEvent()</a>, and <a class="el" href="_socket_writer_8h_source.html#l00053">net::socket::stream::SocketWriter&lt; SocketT &gt;::~SocketWriter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_socket_connection_8h_source.html#l00098">net::socket::stream::SocketConnection&lt; legacy::SocketReader&lt; SocketT &gt;, legacy::SocketWriter&lt; SocketT &gt;, SocketT::SocketAddress &gt;::end()</a>, <a class="el" href="tls_2_socket_reader_8h_source.html#l00045">net::socket::stream::tls::SocketReader&lt; SocketT &gt;::read()</a>, <a class="el" href="tls_2_socket_writer_8h_source.html#l00045">net::socket::stream::tls::SocketWriter&lt; SocketT &gt;::write()</a>, <a class="el" href="_socket_writer_8h_source.html#l00059">net::socket::stream::SocketWriter&lt; SocketT &gt;::writeEvent()</a>, and <a class="el" href="_socket_writer_8h_source.html#l00053">net::socket::stream::SocketWriter&lt; SocketT &gt;::~SocketWriter()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -260,7 +264,7 @@ Here is the caller graph for this function:</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="_event_dispatcher_8h_source.html#l00062">net::EventDispatcher&lt; EventReceiverT &gt;::enable()</a>, <a class="el" href="_event_loop_8h_source.html#l00065">net::EventLoop::getWriteEventDispatcher()</a>, <a class="el" href="_event_loop_8h_source.html#l00044">net::EventLoop::instance()</a>, and <a class="el" href="_write_event_receiver_8cpp_source.html#l00030">setTimeout()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_socket_writer_8h_source.html#l00076">net::socket::stream::SocketWriter&lt; SocketT &gt;::enqueue()</a>, <a class="el" href="tls_2_socket_reader_8h_source.html#l00043">net::socket::stream::tls::SocketReader&lt; SocketT &gt;::read()</a>, and <a class="el" href="tls_2_socket_writer_8h_source.html#l00042">net::socket::stream::tls::SocketWriter&lt; SocketT &gt;::write()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_socket_writer_8h_source.html#l00076">net::socket::stream::SocketWriter&lt; SocketT &gt;::enqueue()</a>, <a class="el" href="tls_2_socket_reader_8h_source.html#l00045">net::socket::stream::tls::SocketReader&lt; SocketT &gt;::read()</a>, and <a class="el" href="tls_2_socket_writer_8h_source.html#l00045">net::socket::stream::tls::SocketWriter&lt; SocketT &gt;::write()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -295,9 +299,9 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <a class="code" href="classnet_1_1_event_receiver.html#a26d6a5c5cdd5300540a937c17f91fdcd">EventReceiver::setTimeout</a>(timeout, <a class="code" href="classnet_1_1_event_loop.html#a6d8bfd6fa03bb6bf423035ab190657ef">EventLoop::instance</a>().getWriteEventDispatcher().<a class="code" href="classnet_1_1_event_receiver.html#a42477f416cc319660c15318f674f7cda">getTimeout</a>());</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_event_receiver_8h_source.html#l00089">net::EventReceiver::getTimeout()</a>, <a class="el" href="_event_loop_8h_source.html#l00044">net::EventLoop::instance()</a>, and <a class="el" href="_event_receiver_8h_source.html#l00060">net::EventReceiver::setTimeout()</a>.</p>
+<p class="reference">References <a class="el" href="_event_receiver_8h_source.html#l00092">net::EventReceiver::getTimeout()</a>, <a class="el" href="_event_loop_8h_source.html#l00044">net::EventLoop::instance()</a>, and <a class="el" href="_event_receiver_8h_source.html#l00060">net::EventReceiver::setTimeout()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_write_event_receiver_8cpp_source.html#l00034">enable()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_write_event_receiver_8cpp_source.html#l00034">enable()</a>, <a class="el" href="tls_2_socket_reader_8h_source.html#l00045">net::socket::stream::tls::SocketReader&lt; SocketT &gt;::read()</a>, and <a class="el" href="tls_2_socket_writer_8h_source.html#l00045">net::socket::stream::tls::SocketWriter&lt; SocketT &gt;::write()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -306,7 +310,8 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_write_event_receiver_ae87f05383b78fdd0047b691efc3c4e5c_icgraph.svg" width="898" height="228"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_write_event_receiver_ae87f05383b78fdd0047b691efc3c4e5c_icgraph.svg" width="898" height="199"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
@@ -382,7 +387,7 @@ Here is the caller graph for this function:</div>
 <div class="ttc" id="aclassnet_1_1_event_loop_html_a6d8bfd6fa03bb6bf423035ab190657ef"><div class="ttname"><a href="classnet_1_1_event_loop.html#a6d8bfd6fa03bb6bf423035ab190657ef">net::EventLoop::instance</a></div><div class="ttdeci">static EventLoop &amp; instance()</div><div class="ttdef"><b>Definition:</b> <a href="_event_loop_8h_source.html#l00044">EventLoop.h:44</a></div></div>
 <div class="ttc" id="aclassnet_1_1_write_event_receiver_html_ae87f05383b78fdd0047b691efc3c4e5c"><div class="ttname"><a href="classnet_1_1_write_event_receiver.html#ae87f05383b78fdd0047b691efc3c4e5c">net::WriteEventReceiver::setTimeout</a></div><div class="ttdeci">void setTimeout(long timeout=TIMEOUT::DEFAULT)</div><div class="ttdef"><b>Definition:</b> <a href="_write_event_receiver_8cpp_source.html#l00030">WriteEventReceiver.cpp:30</a></div></div>
 <div class="ttc" id="aclassnet_1_1_event_dispatcher_html_abd32d58ecc56297e92c6008fa94e7569"><div class="ttname"><a href="classnet_1_1_event_dispatcher.html#abd32d58ecc56297e92c6008fa94e7569">net::EventDispatcher::disable</a></div><div class="ttdeci">void disable(EventReceiver *eventReceiver)</div><div class="ttdef"><b>Definition:</b> <a href="_event_dispatcher_8h_source.html#l00073">EventDispatcher.h:73</a></div></div>
-<div class="ttc" id="aclassnet_1_1_event_receiver_html_a42477f416cc319660c15318f674f7cda"><div class="ttname"><a href="classnet_1_1_event_receiver.html#a42477f416cc319660c15318f674f7cda">net::EventReceiver::getTimeout</a></div><div class="ttdeci">struct timeval getTimeout() const</div><div class="ttdef"><b>Definition:</b> <a href="_event_receiver_8h_source.html#l00081">EventReceiver.h:89</a></div></div>
+<div class="ttc" id="aclassnet_1_1_event_receiver_html_a42477f416cc319660c15318f674f7cda"><div class="ttname"><a href="classnet_1_1_event_receiver.html#a42477f416cc319660c15318f674f7cda">net::EventReceiver::getTimeout</a></div><div class="ttdeci">struct timeval getTimeout() const</div><div class="ttdef"><b>Definition:</b> <a href="_event_receiver_8h_source.html#l00084">EventReceiver.h:92</a></div></div>
 <div class="ttc" id="aclassnet_1_1_event_dispatcher_html_aa1cf5744a83745726edc733e58c4ae7f"><div class="ttname"><a href="classnet_1_1_event_dispatcher.html#aa1cf5744a83745726edc733e58c4ae7f">net::EventDispatcher::enable</a></div><div class="ttdeci">void enable(EventReceiver *eventReceiver)</div><div class="ttdef"><b>Definition:</b> <a href="_event_dispatcher_8h_source.html#l00062">EventDispatcher.h:62</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

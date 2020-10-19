@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['tlsaccept_5ftimeout_1276',['TLSACCEPT_TIMEOUT',['../tls_2_socket_listener_8h.html#a388ea40f5de8869369e3e7c291bc1273',1,'SocketListener.h']]],
-  ['tlsconnect_5ftimeout_1277',['TLSCONNECT_TIMEOUT',['../tls_2_socket_connector_8h.html#addaf717e96da8a10a5916819f5e39080',1,'SocketConnector.h']]]
+  ['tlshandshake_5ftimeout_1271',['TLSHANDSHAKE_TIMEOUT',['../tls_2_socket_connector_8h.html#afcaf84902bf13f4d3c4ed4ddbc7896ba',1,'TLSHANDSHAKE_TIMEOUT():&#160;SocketConnector.h'],['../tls_2_socket_listener_8h.html#afcaf84902bf13f4d3c4ed4ddbc7896ba',1,'TLSHANDSHAKE_TIMEOUT():&#160;SocketListener.h'],['../tls_2_socket_reader_8h.html#afcaf84902bf13f4d3c4ed4ddbc7896ba',1,'TLSHANDSHAKE_TIMEOUT():&#160;SocketReader.h'],['../tls_2_socket_writer_8h.html#afcaf84902bf13f4d3c4ed4ddbc7896ba',1,'TLSHANDSHAKE_TIMEOUT():&#160;SocketWriter.h']]]
 ];

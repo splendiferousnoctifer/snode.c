@@ -106,6 +106,8 @@ Collaboration diagram for net::socket::ip::tcp::SocketServer&lt; SocketServerSup
 Public Types</h2></td></tr>
 <tr class="memitem:accbdec9a276ae3574ad8ba6c5e7bf20b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1ip_1_1tcp_1_1_socket_server.html#accbdec9a276ae3574ad8ba6c5e7bf20b">SocketConnection</a> = typename SocketServerSuper::SocketConnection</td></tr>
 <tr class="separator:accbdec9a276ae3574ad8ba6c5e7bf20b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dc8d44a29d38af26a8c363474c81325"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1ip_1_1tcp_1_1_socket_server.html#a0dc8d44a29d38af26a8c363474c81325">Socket</a> = typename SocketConnection::Socket</td></tr>
+<tr class="separator:a0dc8d44a29d38af26a8c363474c81325"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -121,6 +123,24 @@ class net::socket::ip::tcp::SocketServer&lt; SocketServerSuper &gt;</h3>
 
 <p class="definition">Definition at line <a class="el" href="ip_2tcp_2_socket_server_8h_source.html#l00032">32</a> of file <a class="el" href="ip_2tcp_2_socket_server_8h_source.html">SocketServer.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a0dc8d44a29d38af26a8c363474c81325"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0dc8d44a29d38af26a8c363474c81325">&#9670;&nbsp;</a></span>Socket</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename SocketServerSuper &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classnet_1_1socket_1_1ip_1_1tcp_1_1_socket_server.html">net::socket::ip::tcp::SocketServer</a>&lt; SocketServerSuper &gt;::<a class="el" href="classnet_1_1socket_1_1ip_1_1tcp_1_1_socket_server.html#a0dc8d44a29d38af26a8c363474c81325">Socket</a> =  typename SocketConnection::Socket</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ip_2tcp_2_socket_server_8h_source.html#l00037">37</a> of file <a class="el" href="ip_2tcp_2_socket_server_8h_source.html">SocketServer.h</a>.</p>
+
+</div>
+</div>
 <a id="accbdec9a276ae3574ad8ba6c5e7bf20b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#accbdec9a276ae3574ad8ba6c5e7bf20b">&#9670;&nbsp;</a></span>SocketConnection</h2>
 
@@ -188,10 +208,10 @@ template&lt;typename SocketServerSuper &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ip_2tcp_2_socket_server_8h_source.html#l00042">42</a> of file <a class="el" href="ip_2tcp_2_socket_server_8h_source.html">SocketServer.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                                                                                                                                {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            SocketServerSuper::listen(<span class="keyword">typename</span> SocketConnection::Socket::SocketAddress(ipOrHostname, port), backlog, onError);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        }</div>
+<p class="definition">Definition at line <a class="el" href="ip_2tcp_2_socket_server_8h_source.html#l00043">43</a> of file <a class="el" href="ip_2tcp_2_socket_server_8h_source.html">SocketServer.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                                                                                                                                {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            SocketServerSuper::listen(<span class="keyword">typename</span> <a class="code" href="classnet_1_1socket_1_1_socket.html#a3b2caea9c0c485cc6377efb6625afd8c">Socket::SocketAddress</a>(ipOrHostname, port), backlog, onError);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -237,10 +257,10 @@ template&lt;typename SocketServerSuper &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ip_2tcp_2_socket_server_8h_source.html#l00038">38</a> of file <a class="el" href="ip_2tcp_2_socket_server_8h_source.html">SocketServer.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                                                                                                       {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            SocketServerSuper::listen(<span class="keyword">typename</span> SocketConnection::Socket::SocketAddress(port), backlog, onError);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        }</div>
+<p class="definition">Definition at line <a class="el" href="ip_2tcp_2_socket_server_8h_source.html#l00039">39</a> of file <a class="el" href="ip_2tcp_2_socket_server_8h_source.html">SocketServer.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                                                                                                       {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            SocketServerSuper::listen(<span class="keyword">typename</span> <a class="code" href="classnet_1_1socket_1_1_socket.html#a3b2caea9c0c485cc6377efb6625afd8c">Socket::SocketAddress</a>(port), backlog, onError);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -249,6 +269,7 @@ template&lt;typename SocketServerSuper &gt; </div>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclassnet_1_1socket_1_1_socket_html_a3b2caea9c0c485cc6377efb6625afd8c"><div class="ttname"><a href="classnet_1_1socket_1_1_socket.html#a3b2caea9c0c485cc6377efb6625afd8c">net::socket::Socket::SocketAddress</a></div><div class="ttdeci">SocketAddressT SocketAddress</div><div class="ttdef"><b>Definition:</b> <a href="_socket_8h_source.html#l00038">Socket.h:38</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
