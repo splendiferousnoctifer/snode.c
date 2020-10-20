@@ -59,6 +59,9 @@ var dir_427baa8a9a5be237f298d4545d0d1ce2 =
       [ "TimerEventDispatcher", "classnet_1_1_timer_event_dispatcher.html", "classnet_1_1_timer_event_dispatcher" ],
       [ "timernode_lt", "classnet_1_1_timer_event_dispatcher_1_1timernode__lt.html", "classnet_1_1_timer_event_dispatcher_1_1timernode__lt" ]
     ] ],
+    [ "TimerEventReceiver.h", "_timer_event_receiver_8h.html", [
+      [ "TimerEventReceiver", "classnet_1_1_timer_event_receiver.html", "classnet_1_1_timer_event_receiver" ]
+    ] ],
     [ "WriteEventDispatcher.cpp", "_write_event_dispatcher_8cpp.html", null ],
     [ "WriteEventDispatcher.h", "_write_event_dispatcher_8h.html", [
       [ "WriteEventDispatcher", "classnet_1_1_write_event_dispatcher.html", "classnet_1_1_write_event_dispatcher" ]

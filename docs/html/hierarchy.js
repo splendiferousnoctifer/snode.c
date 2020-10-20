@@ -22,6 +22,7 @@ var hierarchy =
         [ "FileReader", "class_file_reader.html", null ]
       ] ],
       [ "net::socket::Socket< SocketAddressT >", "classnet_1_1socket_1_1_socket.html", null ],
+      [ "net::socket::stream::tls::TLSHandshake", "classnet_1_1socket_1_1stream_1_1tls_1_1_t_l_s_handshake.html", null ],
       [ "net::socket::Socket< net::socket::ip::address::ipv4::InetAddress >", "classnet_1_1socket_1_1_socket.html", [
         [ "net::socket::ip::tcp::ipv4::Socket", "classnet_1_1socket_1_1ip_1_1tcp_1_1ipv4_1_1_socket.html", null ]
       ] ],
@@ -101,6 +102,7 @@ var hierarchy =
               ] ]
             ] ]
           ] ],
+          [ "net::socket::stream::tls::TLSHandshake", "classnet_1_1socket_1_1stream_1_1tls_1_1_t_l_s_handshake.html", null ],
           [ "net::socket::stream::SocketConnector< net::socket::stream::legacy::SocketConnection< SocketT > >", "classnet_1_1socket_1_1stream_1_1_socket_connector.html", null ],
           [ "net::socket::stream::SocketConnector< net::socket::stream::tls::SocketConnection< SocketT > >", "classnet_1_1socket_1_1stream_1_1_socket_connector.html", null ]
         ] ],
@@ -112,7 +114,8 @@ var hierarchy =
             [ "net::socket::stream::tls::SocketWriter< SocketT >", "classnet_1_1socket_1_1stream_1_1tls_1_1_socket_writer.html", [
               [ "net::socket::stream::SocketConnection< tls::SocketReader< SocketT >, tls::SocketWriter< SocketT >, SocketT::SocketAddress >", "classnet_1_1socket_1_1stream_1_1_socket_connection.html", null ]
             ] ]
-          ] ]
+          ] ],
+          [ "net::socket::stream::tls::TLSHandshake", "classnet_1_1socket_1_1stream_1_1tls_1_1_t_l_s_handshake.html", null ]
         ] ]
       ] ]
     ] ],
@@ -268,10 +271,12 @@ var hierarchy =
     ] ],
     [ "StatusCode", "class_status_code.html", null ],
     [ "net::EventReceiver::TIMEOUT", "classnet_1_1_event_receiver_1_1_t_i_m_e_o_u_t.html", null ],
-    [ "net::timer::Timer", "classnet_1_1timer_1_1_timer.html", [
-      [ "net::timer::IntervalTimer", "classnet_1_1timer_1_1_interval_timer.html", null ],
-      [ "net::timer::SingleshotTimer", "classnet_1_1timer_1_1_singleshot_timer.html", null ]
-    ] ],
     [ "net::TimerEventDispatcher", "classnet_1_1_timer_event_dispatcher.html", null ],
+    [ "net::TimerEventReceiver", "classnet_1_1_timer_event_receiver.html", [
+      [ "net::timer::Timer", "classnet_1_1timer_1_1_timer.html", [
+        [ "net::timer::IntervalTimer", "classnet_1_1timer_1_1_interval_timer.html", null ],
+        [ "net::timer::SingleshotTimer", "classnet_1_1timer_1_1_singleshot_timer.html", null ]
+      ] ]
+    ] ],
     [ "net::TimerEventDispatcher::timernode_lt", "classnet_1_1_timer_event_dispatcher_1_1timernode__lt.html", null ]
 ];

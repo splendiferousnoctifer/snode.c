@@ -17,6 +17,7 @@ var namespacenet =
     [ "ReadEventDispatcher", "classnet_1_1_read_event_dispatcher.html", "classnet_1_1_read_event_dispatcher" ],
     [ "ReadEventReceiver", "classnet_1_1_read_event_receiver.html", "classnet_1_1_read_event_receiver" ],
     [ "TimerEventDispatcher", "classnet_1_1_timer_event_dispatcher.html", "classnet_1_1_timer_event_dispatcher" ],
+    [ "TimerEventReceiver", "classnet_1_1_timer_event_receiver.html", "classnet_1_1_timer_event_receiver" ],
     [ "WriteEventDispatcher", "classnet_1_1_write_event_dispatcher.html", "classnet_1_1_write_event_dispatcher" ],
     [ "WriteEventReceiver", "classnet_1_1_write_event_receiver.html", "classnet_1_1_write_event_receiver" ]
 ];
