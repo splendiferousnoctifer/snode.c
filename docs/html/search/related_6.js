@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['readeventdispatcher_1281',['ReadEventDispatcher',['../classnet_1_1_read_event_receiver.html#a460ee3ec553fea9ee58c058ba6201733',1,'net::ReadEventReceiver']]],
-  ['router_1282',['Router',['../classexpress_1_1_router_dispatcher.html#ad1fd3424328f664cd049fe429e0e3dc6',1,'express::RouterDispatcher']]]
+  ['timereventdispatcher_1269',['TimerEventDispatcher',['../classnet_1_1_timer_event_receiver.html#a5e7cb29615e5bc917068c11eb454a627',1,'net::TimerEventReceiver']]]
 ];

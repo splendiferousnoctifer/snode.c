@@ -6,6 +6,7 @@ var classnet_1_1_event_receiver =
     [ "~EventReceiver", "classnet_1_1_event_receiver.html#ac0c41c1048d0e80e22531a02bfde634a", null ],
     [ "disable", "classnet_1_1_event_receiver.html#a22b180ce0c64bc7bdf861959933bc2e8", null ],
     [ "disabled", "classnet_1_1_event_receiver.html#a26548a33372081c52eff4df128fa573f", null ],
+    [ "dispatchEvent", "classnet_1_1_event_receiver.html#aaf058f604dcfb8519aa2851f1f733d8d", null ],
     [ "enable", "classnet_1_1_event_receiver.html#a716276e455f79c0ccd5659655e57d256", null ],
     [ "enabled", "classnet_1_1_event_receiver.html#adac554d5c7fbe4c68b843046869a7190", null ],
     [ "getLastTriggered", "classnet_1_1_event_receiver.html#a4fa86461f4ef15e7424393d80b66df63", null ],

@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['operator_26_1278',['operator&amp;',['../classnet_1_1_descriptor.html#a1ce28627f2d7b7d54846cb73dcd0aa38',1,'net::Descriptor::operator&amp;()'],['../classhttp_1_1_parser.html#a1585b2d50f55f49611187d326591f03c',1,'http::Parser::operator&amp;()']]],
-  ['operator_7c_1279',['operator|',['../classnet_1_1_descriptor.html#a6dc096af1a75c82c1ff16ca8b4122a3b',1,'net::Descriptor::operator|()'],['../classhttp_1_1_parser.html#a504270bcd1736c62e66e80918151d611',1,'http::Parser::operator|()']]],
-  ['outofbandeventdispatcher_1280',['OutOfBandEventDispatcher',['../classnet_1_1_out_of_band_event_receiver.html#a8e26b9bf572d11121db1a666ae19665e',1,'net::OutOfBandEventReceiver']]]
+  ['servercontext_1265',['ServerContext',['../classhttp_1_1_request.html#af09d0507509ded240571d60d064dfff6',1,'http::Request::ServerContext()'],['../classhttp_1_1_response.html#af09d0507509ded240571d60d064dfff6',1,'http::Response::ServerContext()']]],
+  ['socketclient_1266',['SocketClient',['../classnet_1_1socket_1_1stream_1_1_socket_connector.html#a5e98ccf62e06aa2048fa6805580e816b',1,'net::socket::stream::SocketConnector']]],
+  ['socketserver_1267',['SocketServer',['../classnet_1_1socket_1_1stream_1_1_socket_listener.html#a3746407fdcc13e996f643c0c9ea7bee5',1,'net::socket::stream::SocketListener']]],
+  ['staticmiddleware_1268',['StaticMiddleware',['../classexpress_1_1middleware_1_1_static_middleware.html#addc0289150f3ca6e5e1a69aac325fbc7',1,'express::middleware::StaticMiddleware']]]
 ];

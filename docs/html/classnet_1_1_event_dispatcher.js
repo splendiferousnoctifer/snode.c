@@ -7,7 +7,6 @@ var classnet_1_1_event_dispatcher =
     [ "disable", "classnet_1_1_event_dispatcher.html#abd32d58ecc56297e92c6008fa94e7569", null ],
     [ "disableObservedEvents", "classnet_1_1_event_dispatcher.html#a812464af844b3b035841d1ba09e99b5a", null ],
     [ "dispatchActiveEvents", "classnet_1_1_event_dispatcher.html#a9d2fcb38151d02a100c03998f24f631d", null ],
-    [ "dispatchEventTo", "classnet_1_1_event_dispatcher.html#a02e63d9bda6db98985dd0453fea998eb", null ],
     [ "enable", "classnet_1_1_event_dispatcher.html#aa1cf5744a83745726edc733e58c4ae7f", null ],
     [ "getEventCounter", "classnet_1_1_event_dispatcher.html#ac65de46607fe106e0a8e58b9e6cfeb2f", null ],
     [ "getMaxFd", "classnet_1_1_event_dispatcher.html#a8b03cb6eff65de1d1e2101b2fa15ba3c", null ],

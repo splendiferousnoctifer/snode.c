@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['connecteventdispatcher_1271',['ConnectEventDispatcher',['../classnet_1_1_connect_event_receiver.html#a1edb44fb76e49d092ed03941d52217ff',1,'net::ConnectEventReceiver']]]
+  ['jsonmiddleware_1258',['JsonMiddleware',['../classexpress_1_1middleware_1_1_json_middleware.html#aa21e61839acf47a03ac9aec271a7d5cb',1,'express::middleware::JsonMiddleware']]]
 ];

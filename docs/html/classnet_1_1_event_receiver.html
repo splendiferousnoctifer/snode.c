@@ -97,12 +97,14 @@ $(document).ready(function(){initNavTree('classnet_1_1_event_receiver.html','');
 <div class="dynheader">
 Inheritance diagram for net::EventReceiver:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_event_receiver__inherit__graph.svg" width="1706" height="2358"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_event_receiver__inherit__graph.svg" width="1706" height="2387"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <div class="dynheader">
 Collaboration diagram for net::EventReceiver:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_event_receiver__coll__graph.svg" width="175" height="522"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_event_receiver__coll__graph.svg" width="175" height="536"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -126,11 +128,13 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:ac4e3a75a2849d0d8b1fc4ba2b754c8e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afdfa280e579e56b9acadb54465c65528"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_event_receiver.html#afdfa280e579e56b9acadb54465c65528">isSuspended</a> () const</td></tr>
 <tr class="separator:afdfa280e579e56b9acadb54465c65528"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2ab7401b75de7a958967f9e54c922ed"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_event_receiver.html#aa2ab7401b75de7a958967f9e54c922ed">timeoutEvent</a> ()</td></tr>
-<tr class="separator:aa2ab7401b75de7a958967f9e54c922ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
+<tr class="memitem:aaf058f604dcfb8519aa2851f1f733d8d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_event_receiver.html#aaf058f604dcfb8519aa2851f1f733d8d">dispatchEvent</a> ()=0</td></tr>
+<tr class="separator:aaf058f604dcfb8519aa2851f1f733d8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2ab7401b75de7a958967f9e54c922ed"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_event_receiver.html#aa2ab7401b75de7a958967f9e54c922ed">timeoutEvent</a> ()</td></tr>
+<tr class="separator:aa2ab7401b75de7a958967f9e54c922ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adac554d5c7fbe4c68b843046869a7190"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_event_receiver.html#adac554d5c7fbe4c68b843046869a7190">enabled</a> ()</td></tr>
 <tr class="separator:adac554d5c7fbe4c68b843046869a7190"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26548a33372081c52eff4df128fa573f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_event_receiver.html#a26548a33372081c52eff4df128fa573f">disabled</a> ()</td></tr>
@@ -316,16 +320,16 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_event_receiver_8h_source.html#l00088">88</a> of file <a class="el" href="_event_receiver_8h_source.html">EventReceiver.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                        {</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <a class="code" href="classnet_1_1_observation_counter.html#ad61e0034c4fdbd88f1eae230e1417e0b">ObservationCounter::observationCounter</a>--;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <a class="code" href="classnet_1_1_event_receiver.html#a699e7d98a42eabe4782c9a4a55c7a46f">_enabled</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="classnet_1_1_observation_counter.html#ad61e0034c4fdbd88f1eae230e1417e0b">observationCounter</a> == 0) {</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                <a class="code" href="classnet_1_1_event_receiver.html#ad40f8b29dc71258c520f51f10e35848f">unobserved</a>();</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            }</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        }</div>
+<p class="definition">Definition at line <a class="el" href="_event_receiver_8h_source.html#l00090">90</a> of file <a class="el" href="_event_receiver_8h_source.html">EventReceiver.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                        {</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <a class="code" href="classnet_1_1_observation_counter.html#ad61e0034c4fdbd88f1eae230e1417e0b">ObservationCounter::observationCounter</a>--;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            <a class="code" href="classnet_1_1_event_receiver.html#a699e7d98a42eabe4782c9a4a55c7a46f">_enabled</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="classnet_1_1_observation_counter.html#ad61e0034c4fdbd88f1eae230e1417e0b">observationCounter</a> == 0) {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                <a class="code" href="classnet_1_1_event_receiver.html#ad40f8b29dc71258c520f51f10e35848f">unobserved</a>();</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            }</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_event_receiver_8h_source.html#l00124">_enabled</a>, <a class="el" href="_event_receiver_8h_source.html#l00038">net::ObservationCounter::observationCounter</a>, and <a class="el" href="classnet_1_1_event_receiver.html#ad40f8b29dc71258c520f51f10e35848f">unobserved()</a>.</p>
+<p class="reference">References <a class="el" href="_event_receiver_8h_source.html#l00127">_enabled</a>, <a class="el" href="_event_receiver_8h_source.html#l00038">net::ObservationCounter::observationCounter</a>, and <a class="el" href="classnet_1_1_event_receiver.html#ad40f8b29dc71258c520f51f10e35848f">unobserved()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_event_dispatcher_8h_source.html#l00073">net::EventDispatcher&lt; ReadEventReceiver &gt;::disable()</a>.</p>
 <div class="dynheader">
@@ -338,6 +342,33 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_event_receiver_a26548a33372081c52eff4df128fa573f_icgraph.svg" width="356" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
+
+</div>
+</div>
+<a id="aaf058f604dcfb8519aa2851f1f733d8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf058f604dcfb8519aa2851f1f733d8d">&#9670;&nbsp;</a></span>dispatchEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void net::EventReceiver::dispatchEvent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classnet_1_1_write_event_receiver.html#aa4c91e162531d71256bceede585e665c">net::WriteEventReceiver</a>, <a class="el" href="classnet_1_1_read_event_receiver.html#a3d64ac80039fe59df3ad695d8e411b4f">net::ReadEventReceiver</a>, <a class="el" href="classnet_1_1_out_of_band_event_receiver.html#ae4ed8caa4b873e86fc6e75ef2ab00eac">net::OutOfBandEventReceiver</a>, <a class="el" href="classnet_1_1_connect_event_receiver.html#a225e561000775279037c8a848ebdeb1b">net::ConnectEventReceiver</a>, and <a class="el" href="classnet_1_1_accept_event_receiver.html#a5e28da4bf2561257081ad311d061129f">net::AcceptEventReceiver</a>.</p>
 
 </div>
 </div>
@@ -392,14 +423,14 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_event_receiver_8h_source.html#l00082">82</a> of file <a class="el" href="_event_receiver_8h_source.html">EventReceiver.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                       {</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            <a class="code" href="classnet_1_1_observation_counter.html#ad61e0034c4fdbd88f1eae230e1417e0b">ObservationCounter::observationCounter</a>++;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            <a class="code" href="classnet_1_1_event_receiver.html#a699e7d98a42eabe4782c9a4a55c7a46f">_enabled</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            lastTriggered = {time(<span class="keyword">nullptr</span>), 0};</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        }</div>
+<p class="definition">Definition at line <a class="el" href="_event_receiver_8h_source.html#l00084">84</a> of file <a class="el" href="_event_receiver_8h_source.html">EventReceiver.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                       {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <a class="code" href="classnet_1_1_observation_counter.html#ad61e0034c4fdbd88f1eae230e1417e0b">ObservationCounter::observationCounter</a>++;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <a class="code" href="classnet_1_1_event_receiver.html#a699e7d98a42eabe4782c9a4a55c7a46f">_enabled</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            lastTriggered = {time(<span class="keyword">nullptr</span>), 0};</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_event_receiver_8h_source.html#l00124">_enabled</a>, and <a class="el" href="_event_receiver_8h_source.html#l00038">net::ObservationCounter::observationCounter</a>.</p>
+<p class="reference">References <a class="el" href="_event_receiver_8h_source.html#l00127">_enabled</a>, and <a class="el" href="_event_receiver_8h_source.html#l00038">net::ObservationCounter::observationCounter</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_event_dispatcher_8h_source.html#l00062">net::EventDispatcher&lt; ReadEventReceiver &gt;::enable()</a>.</p>
 <div class="dynheader">
@@ -433,10 +464,10 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_event_receiver_8h_source.html#l00100">100</a> of file <a class="el" href="_event_receiver_8h_source.html">EventReceiver.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                                          {</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            <span class="keywordflow">return</span> lastTriggered;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        }</div>
+<p class="definition">Definition at line <a class="el" href="_event_receiver_8h_source.html#l00102">102</a> of file <a class="el" href="_event_receiver_8h_source.html">EventReceiver.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                                          {</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            <span class="keywordflow">return</span> lastTriggered;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -463,10 +494,10 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_event_receiver_8h_source.html#l00100">100</a> of file <a class="el" href="_event_receiver_8h_source.html">EventReceiver.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                                          {</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <span class="keywordflow">return</span> {<a class="code" href="classnet_1_1_event_receiver.html#aee08394aa7d16c170907f861cca701cf">maxInactivity</a>, 0};</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        }</div>
+<p class="definition">Definition at line <a class="el" href="_event_receiver_8h_source.html#l00102">102</a> of file <a class="el" href="_event_receiver_8h_source.html">EventReceiver.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                                          {</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            <span class="keywordflow">return</span> {<a class="code" href="classnet_1_1_event_receiver.html#aee08394aa7d16c170907f861cca701cf">maxInactivity</a>, 0};</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        }</div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="_accept_event_receiver_8cpp_source.html#l00030">net::AcceptEventReceiver::setTimeout()</a>, <a class="el" href="_connect_event_receiver_8cpp_source.html#l00030">net::ConnectEventReceiver::setTimeout()</a>, <a class="el" href="_out_of_band_event_receiver_8cpp_source.html#l00030">net::OutOfBandEventReceiver::setTimeout()</a>, <a class="el" href="_read_event_receiver_8cpp_source.html#l00030">net::ReadEventReceiver::setTimeout()</a>, and <a class="el" href="_write_event_receiver_8cpp_source.html#l00030">net::WriteEventReceiver::setTimeout()</a>.</p>
 <div class="dynheader">
@@ -505,13 +536,14 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classnet_1_1_event_receiver.html#a699e7d98a42eabe4782c9a4a55c7a46f">_enabled</a>;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_event_receiver_8h_source.html#l00124">_enabled</a>.</p>
+<p class="reference">References <a class="el" href="_event_receiver_8h_source.html#l00127">_enabled</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_event_dispatcher_8h_source.html#l00073">net::EventDispatcher&lt; ReadEventReceiver &gt;::disable()</a>, <a class="el" href="_event_dispatcher_8h_source.html#l00062">net::EventDispatcher&lt; ReadEventReceiver &gt;::enable()</a>, <a class="el" href="_socket_reader_8h_source.html#l00054">net::socket::stream::SocketReader&lt; SocketT &gt;::~SocketReader()</a>, and <a class="el" href="_socket_writer_8h_source.html#l00053">net::socket::stream::SocketWriter&lt; SocketT &gt;::~SocketWriter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_event_dispatcher_8h_source.html#l00073">net::EventDispatcher&lt; ReadEventReceiver &gt;::disable()</a>, and <a class="el" href="_event_dispatcher_8h_source.html#l00062">net::EventDispatcher&lt; ReadEventReceiver &gt;::enable()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_event_receiver_ac4e3a75a2849d0d8b1fc4ba2b754c8e3_icgraph.svg" width="406" height="279"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_event_receiver_ac4e3a75a2849d0d8b1fc4ba2b754c8e3_icgraph.svg" width="356" height="147"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
@@ -544,7 +576,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classnet_1_1_event_receiver.html#a4b9f9ab3374644e31328a3109435eb61">_suspended</a>;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_event_receiver_8h_source.html#l00125">_suspended</a>.</p>
+<p class="reference">References <a class="el" href="_event_receiver_8h_source.html#l00128">_suspended</a>.</p>
 
 </div>
 </div>
@@ -624,14 +656,15 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_event_receiver_8h_source.html#l00100">100</a> of file <a class="el" href="_event_receiver_8h_source.html">EventReceiver.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                       {</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <a class="code" href="classnet_1_1_event_receiver.html#a4b9f9ab3374644e31328a3109435eb61">_suspended</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        }</div>
+<p class="definition">Definition at line <a class="el" href="_event_receiver_8h_source.html#l00102">102</a> of file <a class="el" href="_event_receiver_8h_source.html">EventReceiver.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                       {</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <a class="code" href="classnet_1_1_event_receiver.html#a4b9f9ab3374644e31328a3109435eb61">_suspended</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            lastTriggered = {time(<span class="keyword">nullptr</span>), 0};</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_event_receiver_8h_source.html#l00125">_suspended</a>.</p>
+<p class="reference">References <a class="el" href="_event_receiver_8h_source.html#l00128">_suspended</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_event_dispatcher_8h_source.html#l00092">net::EventDispatcher&lt; ReadEventReceiver &gt;::resume()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_event_dispatcher_8h_source.html#l00093">net::EventDispatcher&lt; ReadEventReceiver &gt;::resume()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -664,18 +697,11 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_event_receiver_8h_source.html#l00112">112</a> of file <a class="el" href="_event_receiver_8h_source.html">EventReceiver.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                                                             {</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            lastTriggered = _lastTriggered;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        }</div>
+<p class="definition">Definition at line <a class="el" href="_event_receiver_8h_source.html#l00115">115</a> of file <a class="el" href="_event_receiver_8h_source.html">EventReceiver.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                                                             {</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            lastTriggered = _lastTriggered;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        }</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="_event_dispatcher_8h_source.html#l00092">net::EventDispatcher&lt; ReadEventReceiver &gt;::resume()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_event_receiver_a0fd3d5440f3ec518e61ad9e5ef5e886b_icgraph.svg" width="356" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
 </div>
 </div>
 <a id="a26d6a5c5cdd5300540a937c17f91fdcd"></a>
@@ -723,7 +749,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            }</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_event_receiver_8h_source.html#l00047">net::EventReceiver::TIMEOUT::DEFAULT</a>, <a class="el" href="_event_receiver_8h_source.html#l00046">net::EventReceiver::TIMEOUT::IGNORE</a>, and <a class="el" href="_event_receiver_8h_source.html#l00127">maxInactivity</a>.</p>
+<p class="reference">References <a class="el" href="_event_receiver_8h_source.html#l00047">net::EventReceiver::TIMEOUT::DEFAULT</a>, <a class="el" href="_event_receiver_8h_source.html#l00046">net::EventReceiver::TIMEOUT::IGNORE</a>, and <a class="el" href="_event_receiver_8h_source.html#l00130">maxInactivity</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_accept_event_receiver_8cpp_source.html#l00030">net::AcceptEventReceiver::setTimeout()</a>, <a class="el" href="_connect_event_receiver_8cpp_source.html#l00030">net::ConnectEventReceiver::setTimeout()</a>, <a class="el" href="_out_of_band_event_receiver_8cpp_source.html#l00030">net::OutOfBandEventReceiver::setTimeout()</a>, <a class="el" href="_read_event_receiver_8cpp_source.html#l00030">net::ReadEventReceiver::setTimeout()</a>, and <a class="el" href="_write_event_receiver_8cpp_source.html#l00030">net::WriteEventReceiver::setTimeout()</a>.</p>
 <div class="dynheader">
@@ -784,12 +810,12 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_event_receiver_8h_source.html#l00096">96</a> of file <a class="el" href="_event_receiver_8h_source.html">EventReceiver.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                         {</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <a class="code" href="classnet_1_1_event_receiver.html#a4b9f9ab3374644e31328a3109435eb61">_suspended</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        }</div>
+<p class="definition">Definition at line <a class="el" href="_event_receiver_8h_source.html#l00098">98</a> of file <a class="el" href="_event_receiver_8h_source.html">EventReceiver.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                         {</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            <a class="code" href="classnet_1_1_event_receiver.html#a4b9f9ab3374644e31328a3109435eb61">_suspended</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_event_receiver_8h_source.html#l00125">_suspended</a>.</p>
+<p class="reference">References <a class="el" href="_event_receiver_8h_source.html#l00128">_suspended</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_event_dispatcher_8h_source.html#l00084">net::EventDispatcher&lt; ReadEventReceiver &gt;::suspend()</a>.</p>
 <div class="dynheader">
@@ -818,16 +844,16 @@ Here is the caller graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Reimplemented in <a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_t_l_s_handshake.html#a51f8b3260758a52e66e4b3aa74e424d7">net::socket::stream::tls::TLSHandshake</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_event_receiver_8h_source.html#l00078">78</a> of file <a class="el" href="_event_receiver_8h_source.html">EventReceiver.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                                    {</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        }</div>
+<p class="definition">Definition at line <a class="el" href="_event_receiver_8h_source.html#l00081">81</a> of file <a class="el" href="_event_receiver_8h_source.html">EventReceiver.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                                    {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -856,7 +882,7 @@ Here is the caller graph for this function:</div>
 
 <p>Implemented in <a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_t_l_s_handshake.html#a438981dfb21546a87939e451ee90bade">net::socket::stream::tls::TLSHandshake</a>, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_listener.html#a225db45497676ab410f5057ab4ac39a6">net::socket::stream::SocketListener&lt; SocketConnectionT &gt;</a>, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_listener.html#a225db45497676ab410f5057ab4ac39a6">net::socket::stream::SocketListener&lt; net::socket::stream::legacy::SocketConnection&lt; SocketT &gt; &gt;</a>, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_listener.html#a225db45497676ab410f5057ab4ac39a6">net::socket::stream::SocketListener&lt; net::socket::stream::tls::SocketConnection&lt; SocketT &gt; &gt;</a>, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connector.html#a59fb708fca9e64601f99df3a58332108">net::socket::stream::SocketConnector&lt; SocketConnectionT &gt;</a>, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connector.html#a59fb708fca9e64601f99df3a58332108">net::socket::stream::SocketConnector&lt; net::socket::stream::legacy::SocketConnection&lt; SocketT &gt; &gt;</a>, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connector.html#a59fb708fca9e64601f99df3a58332108">net::socket::stream::SocketConnector&lt; net::socket::stream::tls::SocketConnection&lt; SocketT &gt; &gt;</a>, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a48a54fe1e3e0e8bbe52adfd79a7e602f">net::socket::stream::SocketConnection&lt; tls::SocketReader&lt; SocketT &gt;, tls::SocketWriter&lt; SocketT &gt;, SocketT::SocketAddress &gt;</a>, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a48a54fe1e3e0e8bbe52adfd79a7e602f">net::socket::stream::SocketConnection&lt; legacy::SocketReader&lt; SocketT &gt;, legacy::SocketWriter&lt; SocketT &gt;, SocketT::SocketAddress &gt;</a>, and <a class="el" href="class_file_reader.html#ae7160f3031c239ca6ee355cd47bd3857">FileReader</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_event_receiver_8h_source.html#l00088">disabled()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_event_receiver_8h_source.html#l00090">disabled()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -888,7 +914,7 @@ template&lt;typename EventReceiver &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_event_receiver_8h_source.html#l00130">130</a> of file <a class="el" href="_event_receiver_8h_source.html">EventReceiver.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_event_receiver_8h_source.html#l00133">133</a> of file <a class="el" href="_event_receiver_8h_source.html">EventReceiver.h</a>.</p>
 
 </div>
 </div>
@@ -913,9 +939,9 @@ template&lt;typename EventReceiver &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_event_receiver_8h_source.html#l00124">124</a> of file <a class="el" href="_event_receiver_8h_source.html">EventReceiver.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_event_receiver_8h_source.html#l00127">127</a> of file <a class="el" href="_event_receiver_8h_source.html">EventReceiver.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_event_receiver_8h_source.html#l00088">disabled()</a>, <a class="el" href="_event_receiver_8h_source.html#l00082">enabled()</a>, and <a class="el" href="_event_receiver_8h_source.html#l00070">isEnabled()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_event_receiver_8h_source.html#l00090">disabled()</a>, <a class="el" href="_event_receiver_8h_source.html#l00084">enabled()</a>, and <a class="el" href="_event_receiver_8h_source.html#l00070">isEnabled()</a>.</p>
 
 </div>
 </div>
@@ -939,9 +965,9 @@ template&lt;typename EventReceiver &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_event_receiver_8h_source.html#l00125">125</a> of file <a class="el" href="_event_receiver_8h_source.html">EventReceiver.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_event_receiver_8h_source.html#l00128">128</a> of file <a class="el" href="_event_receiver_8h_source.html">EventReceiver.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_event_receiver_8h_source.html#l00074">isSuspended()</a>, <a class="el" href="_event_receiver_8h_source.html#l00100">resumed()</a>, and <a class="el" href="_event_receiver_8h_source.html#l00096">suspended()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_event_receiver_8h_source.html#l00074">isSuspended()</a>, <a class="el" href="_event_receiver_8h_source.html#l00102">resumed()</a>, and <a class="el" href="_event_receiver_8h_source.html#l00098">suspended()</a>.</p>
 
 </div>
 </div>
@@ -965,7 +991,7 @@ template&lt;typename EventReceiver &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_event_receiver_8h_source.html#l00127">127</a> of file <a class="el" href="_event_receiver_8h_source.html">EventReceiver.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_event_receiver_8h_source.html#l00130">130</a> of file <a class="el" href="_event_receiver_8h_source.html">EventReceiver.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_event_receiver_8h_source.html#l00060">setTimeout()</a>.</p>
 
@@ -977,12 +1003,12 @@ template&lt;typename EventReceiver &gt; </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassnet_1_1_event_receiver_html_ad40f8b29dc71258c520f51f10e35848f"><div class="ttname"><a href="classnet_1_1_event_receiver.html#ad40f8b29dc71258c520f51f10e35848f">net::EventReceiver::unobserved</a></div><div class="ttdeci">virtual void unobserved()=0</div></div>
-<div class="ttc" id="aclassnet_1_1_event_receiver_html_a4b9f9ab3374644e31328a3109435eb61"><div class="ttname"><a href="classnet_1_1_event_receiver.html#a4b9f9ab3374644e31328a3109435eb61">net::EventReceiver::_suspended</a></div><div class="ttdeci">bool _suspended</div><div class="ttdef"><b>Definition:</b> <a href="_event_receiver_8h_source.html#l00125">EventReceiver.h:125</a></div></div>
+<div class="ttc" id="aclassnet_1_1_event_receiver_html_a4b9f9ab3374644e31328a3109435eb61"><div class="ttname"><a href="classnet_1_1_event_receiver.html#a4b9f9ab3374644e31328a3109435eb61">net::EventReceiver::_suspended</a></div><div class="ttdeci">bool _suspended</div><div class="ttdef"><b>Definition:</b> <a href="_event_receiver_8h_source.html#l00128">EventReceiver.h:128</a></div></div>
 <div class="ttc" id="aclassnet_1_1_observation_counter_html_ad61e0034c4fdbd88f1eae230e1417e0b"><div class="ttname"><a href="classnet_1_1_observation_counter.html#ad61e0034c4fdbd88f1eae230e1417e0b">net::ObservationCounter::observationCounter</a></div><div class="ttdeci">int observationCounter</div><div class="ttdef"><b>Definition:</b> <a href="_event_receiver_8h_source.html#l00038">EventReceiver.h:38</a></div></div>
 <div class="ttc" id="aclassnet_1_1_event_receiver_1_1_t_i_m_e_o_u_t_html_a0515fea41c35635cdf8ab0c34d0db759"><div class="ttname"><a href="classnet_1_1_event_receiver_1_1_t_i_m_e_o_u_t.html#a0515fea41c35635cdf8ab0c34d0db759">net::EventReceiver::TIMEOUT::IGNORE</a></div><div class="ttdeci">static const long IGNORE</div><div class="ttdef"><b>Definition:</b> <a href="_event_receiver_8h_source.html#l00046">EventReceiver.h:46</a></div></div>
-<div class="ttc" id="aclassnet_1_1_event_receiver_html_a699e7d98a42eabe4782c9a4a55c7a46f"><div class="ttname"><a href="classnet_1_1_event_receiver.html#a699e7d98a42eabe4782c9a4a55c7a46f">net::EventReceiver::_enabled</a></div><div class="ttdeci">bool _enabled</div><div class="ttdef"><b>Definition:</b> <a href="_event_receiver_8h_source.html#l00124">EventReceiver.h:124</a></div></div>
+<div class="ttc" id="aclassnet_1_1_event_receiver_html_a699e7d98a42eabe4782c9a4a55c7a46f"><div class="ttname"><a href="classnet_1_1_event_receiver.html#a699e7d98a42eabe4782c9a4a55c7a46f">net::EventReceiver::_enabled</a></div><div class="ttdeci">bool _enabled</div><div class="ttdef"><b>Definition:</b> <a href="_event_receiver_8h_source.html#l00127">EventReceiver.h:127</a></div></div>
 <div class="ttc" id="aclassnet_1_1_event_receiver_1_1_t_i_m_e_o_u_t_html_a6a676e7caeb941f9559f8592f752d75d"><div class="ttname"><a href="classnet_1_1_event_receiver_1_1_t_i_m_e_o_u_t.html#a6a676e7caeb941f9559f8592f752d75d">net::EventReceiver::TIMEOUT::DEFAULT</a></div><div class="ttdeci">static const long DEFAULT</div><div class="ttdef"><b>Definition:</b> <a href="_event_receiver_8h_source.html#l00047">EventReceiver.h:47</a></div></div>
-<div class="ttc" id="aclassnet_1_1_event_receiver_html_aee08394aa7d16c170907f861cca701cf"><div class="ttname"><a href="classnet_1_1_event_receiver.html#aee08394aa7d16c170907f861cca701cf">net::EventReceiver::maxInactivity</a></div><div class="ttdeci">long maxInactivity</div><div class="ttdef"><b>Definition:</b> <a href="_event_receiver_8h_source.html#l00127">EventReceiver.h:127</a></div></div>
+<div class="ttc" id="aclassnet_1_1_event_receiver_html_aee08394aa7d16c170907f861cca701cf"><div class="ttname"><a href="classnet_1_1_event_receiver.html#aee08394aa7d16c170907f861cca701cf">net::EventReceiver::maxInactivity</a></div><div class="ttdeci">long maxInactivity</div><div class="ttdef"><b>Definition:</b> <a href="_event_receiver_8h_source.html#l00130">EventReceiver.h:130</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

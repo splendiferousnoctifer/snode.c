@@ -82,7 +82,6 @@ $(document).ready(function(){initNavTree('classnet_1_1_out_of_band_event_dispatc
 
 <div class="header">
   <div class="summary">
-<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="classnet_1_1_out_of_band_event_dispatcher-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">net::OutOfBandEventDispatcher Class Reference</div>  </div>
@@ -93,19 +92,16 @@ $(document).ready(function(){initNavTree('classnet_1_1_out_of_band_event_dispatc
 <div class="dynheader">
 Inheritance diagram for net::OutOfBandEventDispatcher:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_out_of_band_event_dispatcher__inherit__graph.svg" width="296" height="971"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_out_of_band_event_dispatcher__inherit__graph.svg" width="296" height="942"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <div class="dynheader">
 Collaboration diagram for net::OutOfBandEventDispatcher:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_out_of_band_event_dispatcher__coll__graph.svg" width="366" height="1184"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_out_of_band_event_dispatcher__coll__graph.svg" width="366" height="1155"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:aab7149ae863a04ed287920332a8f3845"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_out_of_band_event_dispatcher.html#aab7149ae863a04ed287920332a8f3845">dispatchEventTo</a> (<a class="el" href="classnet_1_1_out_of_band_event_receiver.html">OutOfBandEventReceiver</a> *) override</td></tr>
-<tr class="separator:aab7149ae863a04ed287920332a8f3845"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_classnet_1_1_event_dispatcher"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classnet_1_1_event_dispatcher')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classnet_1_1_event_dispatcher.html">net::EventDispatcher&lt; OutOfBandEventReceiver &gt;</a></td></tr>
@@ -134,50 +130,8 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="_out_of_band_event_dispatcher_8h_source.html#l00033">33</a> of file <a class="el" href="_out_of_band_event_dispatcher_8h_source.html">OutOfBandEventDispatcher.h</a>.</p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="aab7149ae863a04ed287920332a8f3845"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aab7149ae863a04ed287920332a8f3845">&#9670;&nbsp;</a></span>dispatchEventTo()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void net::OutOfBandEventDispatcher::dispatchEventTo </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classnet_1_1_out_of_band_event_receiver.html">OutOfBandEventReceiver</a> *&#160;</td>
-          <td class="paramname"><em>eventReceiver</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implements <a class="el" href="classnet_1_1_event_dispatcher.html#a02e63d9bda6db98985dd0453fea998eb">net::EventDispatcher&lt; OutOfBandEventReceiver &gt;</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="_out_of_band_event_dispatcher_8cpp_source.html#l00027">27</a> of file <a class="el" href="_out_of_band_event_dispatcher_8cpp_source.html">OutOfBandEventDispatcher.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                                                                                        {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        eventReceiver-&gt;outOfBandEvent();</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    }</div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="classnet_1_1_out_of_band_event_receiver.html#a23e28fd54c07c6f3b7541258a4afcf8d">net::OutOfBandEventReceiver::outOfBandEvent()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_out_of_band_event_dispatcher_aab7149ae863a04ed287920332a8f3845_cgraph.svg" width="468" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>net/<a class="el" href="_out_of_band_event_dispatcher_8h_source.html">OutOfBandEventDispatcher.h</a></li>
-<li>net/<a class="el" href="_out_of_band_event_dispatcher_8cpp_source.html">OutOfBandEventDispatcher.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
