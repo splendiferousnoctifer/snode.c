@@ -82,8 +82,9 @@ $(document).ready(function(){initNavTree('classnet_1_1socket_1_1stream_1_1_socke
 
 <div class="header">
   <div class="summary">
-<a href="#pro-types">Protected Types</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classnet_1_1socket_1_1stream_1_1_socket_writer-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -105,8 +106,8 @@ Collaboration diagram for net::socket::stream::SocketWriter&lt; SocketT &gt;:</d
 </div>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
-Protected Types</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
 <tr class="memitem:a6e2d8d3030e20005e5fe72fa314de206"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#a6e2d8d3030e20005e5fe72fa314de206">Socket</a> = SocketT</td></tr>
 <tr class="separator:a6e2d8d3030e20005e5fe72fa314de206"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -116,12 +117,8 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a7e241f91ccc2e05f921bc52d75df9acb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5f82275ec4736b67289a2f3cf41f135"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#ac5f82275ec4736b67289a2f3cf41f135">SocketWriter</a> (const std::function&lt; void(int errnum)&gt; &amp;<a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#ad86a1fb6bd14c3d6918c96e23f4848bc">onError</a>)</td></tr>
 <tr class="separator:ac5f82275ec4736b67289a2f3cf41f135"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5212806acd0460108b81ad5fc14807d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#aa5212806acd0460108b81ad5fc14807d">writeEvent</a> () override</td></tr>
-<tr class="separator:aa5212806acd0460108b81ad5fc14807d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7bdaa904aa90968afb56bbb4f671a6d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#aa7bdaa904aa90968afb56bbb4f671a6d">enqueue</a> (const char *junk, size_t junkLen)</td></tr>
 <tr class="separator:aa7bdaa904aa90968afb56bbb4f671a6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36007a912778fb4b49f06101fb19cddb"><td class="memItemLeft" align="right" valign="top">virtual ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#a36007a912778fb4b49f06101fb19cddb">write</a> (const char *junk, size_t junkSize)=0</td></tr>
-<tr class="separator:a36007a912778fb4b49f06101fb19cddb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classnet_1_1_write_event_receiver"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classnet_1_1_write_event_receiver')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classnet_1_1_write_event_receiver.html">net::WriteEventReceiver</a></td></tr>
 <tr class="memitem:a03bc94791386967040b00690ecd1da6c inherit pro_methods_classnet_1_1_write_event_receiver"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_write_event_receiver.html#a03bc94791386967040b00690ecd1da6c">WriteEventReceiver</a> ()</td></tr>
 <tr class="separator:a03bc94791386967040b00690ecd1da6c inherit pro_methods_classnet_1_1_write_event_receiver"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -142,6 +139,13 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:ac4e3a75a2849d0d8b1fc4ba2b754c8e3 inherit pro_methods_classnet_1_1_event_receiver"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afdfa280e579e56b9acadb54465c65528 inherit pro_methods_classnet_1_1_event_receiver"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_event_receiver.html#afdfa280e579e56b9acadb54465c65528">isSuspended</a> () const</td></tr>
 <tr class="separator:afdfa280e579e56b9acadb54465c65528 inherit pro_methods_classnet_1_1_event_receiver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a36007a912778fb4b49f06101fb19cddb"><td class="memItemLeft" align="right" valign="top">virtual ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#a36007a912778fb4b49f06101fb19cddb">write</a> (const char *junk, size_t junkSize)=0</td></tr>
+<tr class="separator:a36007a912778fb4b49f06101fb19cddb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5212806acd0460108b81ad5fc14807d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#aa5212806acd0460108b81ad5fc14807d">writeEvent</a> () override</td></tr>
+<tr class="separator:aa5212806acd0460108b81ad5fc14807d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -184,19 +188,11 @@ class net::socket::stream::SocketWriter&lt; SocketT &gt;</h3>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SocketT &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">using <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_writer.html">net::socket::stream::SocketWriter</a>&lt; SocketT &gt;::<a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#a6e2d8d3030e20005e5fe72fa314de206">Socket</a> =  SocketT</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_socket_writer_8h_source.html#l00045">45</a> of file <a class="el" href="_socket_writer_8h_source.html">SocketWriter.h</a>.</p>
@@ -257,9 +253,9 @@ template&lt;typename SocketT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_socket_writer_8h_source.html#l00049">49</a> of file <a class="el" href="_socket_writer_8h_source.html">SocketWriter.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            : <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#ad86a1fb6bd14c3d6918c96e23f4848bc">onError</a>(<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#ad86a1fb6bd14c3d6918c96e23f4848bc">onError</a>) {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        }</div>
+<p class="definition">Definition at line <a class="el" href="_socket_writer_8h_source.html#l00050">50</a> of file <a class="el" href="_socket_writer_8h_source.html">SocketWriter.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            : <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#ad86a1fb6bd14c3d6918c96e23f4848bc">onError</a>(<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#ad86a1fb6bd14c3d6918c96e23f4848bc">onError</a>) {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -300,13 +296,13 @@ template&lt;typename SocketT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_socket_writer_8h_source.html#l00070">70</a> of file <a class="el" href="_socket_writer_8h_source.html">SocketWriter.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                                                       {</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#a33c28980a21e4e1289611714634ab3d8">writeBuffer</a>.insert(<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#a33c28980a21e4e1289611714634ab3d8">writeBuffer</a>.end(), junk, junk + junkLen);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            <a class="code" href="classnet_1_1_write_event_receiver.html#a5ca2e9b06ac5eef0a80e65520fb109ad">WriteEventReceiver::enable</a>();</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        }</div>
+<p class="definition">Definition at line <a class="el" href="_socket_writer_8h_source.html#l00054">54</a> of file <a class="el" href="_socket_writer_8h_source.html">SocketWriter.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                                                       {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#a33c28980a21e4e1289611714634ab3d8">writeBuffer</a>.insert(<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#a33c28980a21e4e1289611714634ab3d8">writeBuffer</a>.end(), junk, junk + junkLen);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <a class="code" href="classnet_1_1_write_event_receiver.html#a5ca2e9b06ac5eef0a80e65520fb109ad">WriteEventReceiver::enable</a>();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_write_event_receiver_8cpp_source.html#l00034">net::WriteEventReceiver::enable()</a>, and <a class="el" href="_socket_writer_8h_source.html#l00080">net::socket::stream::SocketWriter&lt; SocketT &gt;::writeBuffer</a>.</p>
+<p class="reference">References <a class="el" href="_write_event_receiver_8cpp_source.html#l00034">net::WriteEventReceiver::enable()</a>, and <a class="el" href="_socket_writer_8h_source.html#l00081">net::socket::stream::SocketWriter&lt; SocketT &gt;::writeBuffer</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_socket_connection_8h_source.html#l00090">net::socket::stream::SocketConnection&lt; legacy::SocketReader&lt; SocketT &gt;, legacy::SocketWriter&lt; SocketT &gt;, SocketT::SocketAddress &gt;::enqueue()</a>.</p>
 <div class="dynheader">
@@ -353,14 +349,14 @@ template&lt;typename SocketT &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Implemented in <a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_writer.html#a575092baf77eee53e0f52525230d01d8">net::socket::stream::tls::SocketWriter&lt; SocketT &gt;</a>, and <a class="el" href="classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_writer.html#a65605d7705e47ebda1a1858a8bca18c7">net::socket::stream::legacy::SocketWriter&lt; SocketT &gt;</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_socket_writer_8h_source.html#l00053">net::socket::stream::SocketWriter&lt; SocketT &gt;::writeEvent()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_socket_writer_8h_source.html#l00062">net::socket::stream::SocketWriter&lt; SocketT &gt;::writeEvent()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -389,32 +385,32 @@ template&lt;typename SocketT &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="classnet_1_1_write_event_receiver.html#a3728ffeb9d054daaa82a2363d07c9143">net::WriteEventReceiver</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_socket_writer_8h_source.html#l00053">53</a> of file <a class="el" href="_socket_writer_8h_source.html">SocketWriter.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                                   {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            errno = 0;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            ssize_t ret = <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#a36007a912778fb4b49f06101fb19cddb">write</a>(<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#a33c28980a21e4e1289611714634ab3d8">writeBuffer</a>.data(), (<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#a33c28980a21e4e1289611714634ab3d8">writeBuffer</a>.size() &lt; <a class="code" href="_socket_writer_8h.html#acc9332e979f894b29288e59adeb83e81">MAX_SEND_JUNKSIZE</a>) ? <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#a33c28980a21e4e1289611714634ab3d8">writeBuffer</a>.size() : <a class="code" href="_socket_writer_8h.html#acc9332e979f894b29288e59adeb83e81">MAX_SEND_JUNKSIZE</a>);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="keywordflow">if</span> (ret &gt; 0) {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#a33c28980a21e4e1289611714634ab3d8">writeBuffer</a>.erase(<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#a33c28980a21e4e1289611714634ab3d8">writeBuffer</a>.begin(), <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#a33c28980a21e4e1289611714634ab3d8">writeBuffer</a>.begin() + ret);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#a33c28980a21e4e1289611714634ab3d8">writeBuffer</a>.empty()) {</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                    <a class="code" href="classnet_1_1_write_event_receiver.html#a5fde8579d923d80afbd015935d1fdea9">WriteEventReceiver::disable</a>();</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                }</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (errno != EAGAIN &amp;&amp; errno != EWOULDBLOCK &amp;&amp; errno != EINTR) {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                <a class="code" href="classnet_1_1_write_event_receiver.html#a5fde8579d923d80afbd015935d1fdea9">WriteEventReceiver::disable</a>();</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#ad86a1fb6bd14c3d6918c96e23f4848bc">onError</a>(ret &lt; 0 ? ret : errno);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            }</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        }</div>
+<p class="definition">Definition at line <a class="el" href="_socket_writer_8h_source.html#l00062">62</a> of file <a class="el" href="_socket_writer_8h_source.html">SocketWriter.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                                   {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            errno = 0;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            ssize_t ret = <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#a36007a912778fb4b49f06101fb19cddb">write</a>(<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#a33c28980a21e4e1289611714634ab3d8">writeBuffer</a>.data(), (<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#a33c28980a21e4e1289611714634ab3d8">writeBuffer</a>.size() &lt; <a class="code" href="_socket_writer_8h.html#acc9332e979f894b29288e59adeb83e81">MAX_SEND_JUNKSIZE</a>) ? <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#a33c28980a21e4e1289611714634ab3d8">writeBuffer</a>.size() : <a class="code" href="_socket_writer_8h.html#acc9332e979f894b29288e59adeb83e81">MAX_SEND_JUNKSIZE</a>);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <span class="keywordflow">if</span> (ret &gt; 0) {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#a33c28980a21e4e1289611714634ab3d8">writeBuffer</a>.erase(<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#a33c28980a21e4e1289611714634ab3d8">writeBuffer</a>.begin(), <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#a33c28980a21e4e1289611714634ab3d8">writeBuffer</a>.begin() + ret);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#a33c28980a21e4e1289611714634ab3d8">writeBuffer</a>.empty()) {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                    <a class="code" href="classnet_1_1_write_event_receiver.html#a5fde8579d923d80afbd015935d1fdea9">WriteEventReceiver::disable</a>();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (errno != EAGAIN &amp;&amp; errno != EWOULDBLOCK &amp;&amp; errno != EINTR) {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                <a class="code" href="classnet_1_1_write_event_receiver.html#a5fde8579d923d80afbd015935d1fdea9">WriteEventReceiver::disable</a>();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#ad86a1fb6bd14c3d6918c96e23f4848bc">onError</a>(ret &lt; 0 ? ret : errno);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_write_event_receiver_8cpp_source.html#l00039">net::WriteEventReceiver::disable()</a>, <a class="el" href="_socket_writer_8h_source.html#l00035">MAX_SEND_JUNKSIZE</a>, <a class="el" href="_socket_writer_8h_source.html#l00078">net::socket::stream::SocketWriter&lt; SocketT &gt;::onError</a>, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#a36007a912778fb4b49f06101fb19cddb">net::socket::stream::SocketWriter&lt; SocketT &gt;::write()</a>, and <a class="el" href="_socket_writer_8h_source.html#l00080">net::socket::stream::SocketWriter&lt; SocketT &gt;::writeBuffer</a>.</p>
+<p class="reference">References <a class="el" href="_write_event_receiver_8cpp_source.html#l00039">net::WriteEventReceiver::disable()</a>, <a class="el" href="_socket_writer_8h_source.html#l00035">MAX_SEND_JUNKSIZE</a>, <a class="el" href="_socket_writer_8h_source.html#l00079">net::socket::stream::SocketWriter&lt; SocketT &gt;::onError</a>, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#a36007a912778fb4b49f06101fb19cddb">net::socket::stream::SocketWriter&lt; SocketT &gt;::write()</a>, and <a class="el" href="_socket_writer_8h_source.html#l00081">net::socket::stream::SocketWriter&lt; SocketT &gt;::writeBuffer</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -446,9 +442,9 @@ template&lt;typename SocketT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_socket_writer_8h_source.html#l00078">78</a> of file <a class="el" href="_socket_writer_8h_source.html">SocketWriter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_socket_writer_8h_source.html#l00079">79</a> of file <a class="el" href="_socket_writer_8h_source.html">SocketWriter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_socket_writer_8h_source.html#l00053">net::socket::stream::SocketWriter&lt; SocketT &gt;::writeEvent()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_socket_writer_8h_source.html#l00062">net::socket::stream::SocketWriter&lt; SocketT &gt;::writeEvent()</a>.</p>
 
 </div>
 </div>
@@ -474,9 +470,9 @@ template&lt;typename SocketT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_socket_writer_8h_source.html#l00080">80</a> of file <a class="el" href="_socket_writer_8h_source.html">SocketWriter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_socket_writer_8h_source.html#l00081">81</a> of file <a class="el" href="_socket_writer_8h_source.html">SocketWriter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_socket_writer_8h_source.html#l00070">net::socket::stream::SocketWriter&lt; SocketT &gt;::enqueue()</a>, and <a class="el" href="_socket_writer_8h_source.html#l00053">net::socket::stream::SocketWriter&lt; SocketT &gt;::writeEvent()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_socket_writer_8h_source.html#l00054">net::socket::stream::SocketWriter&lt; SocketT &gt;::enqueue()</a>, and <a class="el" href="_socket_writer_8h_source.html#l00062">net::socket::stream::SocketWriter&lt; SocketT &gt;::writeEvent()</a>.</p>
 
 </div>
 </div>
@@ -485,10 +481,10 @@ template&lt;typename SocketT &gt; </div>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_writer_html_a33c28980a21e4e1289611714634ab3d8"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#a33c28980a21e4e1289611714634ab3d8">net::socket::stream::SocketWriter::writeBuffer</a></div><div class="ttdeci">std::vector&lt; char &gt; writeBuffer</div><div class="ttdef"><b>Definition:</b> <a href="_socket_writer_8h_source.html#l00080">SocketWriter.h:80</a></div></div>
+<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_writer_html_a33c28980a21e4e1289611714634ab3d8"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#a33c28980a21e4e1289611714634ab3d8">net::socket::stream::SocketWriter::writeBuffer</a></div><div class="ttdeci">std::vector&lt; char &gt; writeBuffer</div><div class="ttdef"><b>Definition:</b> <a href="_socket_writer_8h_source.html#l00081">SocketWriter.h:81</a></div></div>
 <div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_writer_html_a36007a912778fb4b49f06101fb19cddb"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#a36007a912778fb4b49f06101fb19cddb">net::socket::stream::SocketWriter::write</a></div><div class="ttdeci">virtual ssize_t write(const char *junk, size_t junkSize)=0</div></div>
 <div class="ttc" id="aclassnet_1_1_write_event_receiver_html_a5fde8579d923d80afbd015935d1fdea9"><div class="ttname"><a href="classnet_1_1_write_event_receiver.html#a5fde8579d923d80afbd015935d1fdea9">net::WriteEventReceiver::disable</a></div><div class="ttdeci">void disable() override</div><div class="ttdef"><b>Definition:</b> <a href="_write_event_receiver_8cpp_source.html#l00039">WriteEventReceiver.cpp:39</a></div></div>
-<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_writer_html_ad86a1fb6bd14c3d6918c96e23f4848bc"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#ad86a1fb6bd14c3d6918c96e23f4848bc">net::socket::stream::SocketWriter::onError</a></div><div class="ttdeci">std::function&lt; void(int errnum)&gt; onError</div><div class="ttdef"><b>Definition:</b> <a href="_socket_writer_8h_source.html#l00078">SocketWriter.h:78</a></div></div>
+<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_writer_html_ad86a1fb6bd14c3d6918c96e23f4848bc"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#ad86a1fb6bd14c3d6918c96e23f4848bc">net::socket::stream::SocketWriter::onError</a></div><div class="ttdeci">std::function&lt; void(int errnum)&gt; onError</div><div class="ttdef"><b>Definition:</b> <a href="_socket_writer_8h_source.html#l00079">SocketWriter.h:79</a></div></div>
 <div class="ttc" id="a_socket_writer_8h_html_acc9332e979f894b29288e59adeb83e81"><div class="ttname"><a href="_socket_writer_8h.html#acc9332e979f894b29288e59adeb83e81">MAX_SEND_JUNKSIZE</a></div><div class="ttdeci">#define MAX_SEND_JUNKSIZE</div><div class="ttdef"><b>Definition:</b> <a href="_socket_writer_8h_source.html#l00035">SocketWriter.h:35</a></div></div>
 <div class="ttc" id="aclassnet_1_1_write_event_receiver_html_a5ca2e9b06ac5eef0a80e65520fb109ad"><div class="ttname"><a href="classnet_1_1_write_event_receiver.html#a5ca2e9b06ac5eef0a80e65520fb109ad">net::WriteEventReceiver::enable</a></div><div class="ttdeci">void enable(long timeout=TIMEOUT::IGNORE) override</div><div class="ttdef"><b>Definition:</b> <a href="_write_event_receiver_8cpp_source.html#l00034">WriteEventReceiver.cpp:34</a></div></div>
 <!-- start footer part -->

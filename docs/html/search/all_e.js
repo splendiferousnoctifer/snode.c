@@ -10,11 +10,9 @@ var searchData=
   ['none_244',['none',['../classnet_1_1_descriptor.html#a1ecc493b50b4c5ed5cfa3a8746e51f35a334c4a4c42fdb79d7ebc3e73b517e6f8',1,'net::Descriptor::none()'],['../classnet_1_1_descriptor.html#af6405511b4a57ba26f76c83d8c15e4fb',1,'net::Descriptor::none()']]],
   ['nullstr_245',['nullstr',['../classhttp_1_1_request.html#aae3aee3b863d7f602f3252f9ece042fb',1,'http::Request']]],
   ['socket_246',['socket',['../namespacenet_1_1socket.html',1,'net']]],
-  ['socketclient_247',['SocketClient',['../classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connector.html#a838656e1ec643bcc0a5968d9886b4fdb',1,'net::socket::stream::tls::SocketConnector']]],
-  ['socketserver_248',['SocketServer',['../classnet_1_1socket_1_1stream_1_1tls_1_1_socket_listener.html#a93b39dad5874c6b1827b474f10ccb119',1,'net::socket::stream::tls::SocketListener']]],
-  ['stream_249',['stream',['../namespacenet_1_1socket_1_1stream.html',1,'net::socket']]],
-  ['tcp_250',['tcp',['../namespacenet_1_1socket_1_1ip_1_1tcp.html',1,'net::socket::ip']]],
-  ['timer_251',['timer',['../namespacenet_1_1timer.html',1,'net']]],
-  ['timereventdispatcher_252',['TimerEventDispatcher',['../classnet_1_1timer_1_1_timer.html#a7ec099528d0f7f72cf8e8a0017634fa7',1,'net::timer::Timer']]],
-  ['tls_253',['tls',['../namespacenet_1_1socket_1_1ip_1_1tcp_1_1ipv4_1_1tls.html',1,'net::socket::ip::tcp::ipv4::tls'],['../namespacenet_1_1socket_1_1ip_1_1tcp_1_1ipv6_1_1tls.html',1,'net::socket::ip::tcp::ipv6::tls'],['../namespacenet_1_1socket_1_1stream_1_1tls.html',1,'net::socket::stream::tls']]]
+  ['stream_247',['stream',['../namespacenet_1_1socket_1_1stream.html',1,'net::socket']]],
+  ['tcp_248',['tcp',['../namespacenet_1_1socket_1_1ip_1_1tcp.html',1,'net::socket::ip']]],
+  ['timer_249',['timer',['../namespacenet_1_1timer.html',1,'net']]],
+  ['timereventdispatcher_250',['TimerEventDispatcher',['../classnet_1_1timer_1_1_timer.html#a7ec099528d0f7f72cf8e8a0017634fa7',1,'net::timer::Timer']]],
+  ['tls_251',['tls',['../namespacenet_1_1socket_1_1ip_1_1tcp_1_1ipv4_1_1tls.html',1,'net::socket::ip::tcp::ipv4::tls'],['../namespacenet_1_1socket_1_1ip_1_1tcp_1_1ipv6_1_1tls.html',1,'net::socket::ip::tcp::ipv6::tls'],['../namespacenet_1_1socket_1_1stream_1_1tls.html',1,'net::socket::stream::tls']]]
 ];

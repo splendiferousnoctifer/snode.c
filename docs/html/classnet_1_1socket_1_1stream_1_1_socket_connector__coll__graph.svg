@@ -17,14 +17,14 @@
 <text text-anchor="start" x="124" y="-298.5" font-family="Helvetica,sans-Serif" font-size="10.00">net::socket::stream</text>
 <text text-anchor="middle" x="217.5" y="-287.5" font-family="Helvetica,sans-Serif" font-size="10.00">::SocketConnector&lt; SocketConnectionT &gt;</text>
 <polyline fill="none" stroke="black" points="116,-280.5 319,-280.5 "/>
-<text text-anchor="start" x="124" y="-268.5" font-family="Helvetica,sans-Serif" font-size="10.00"># onConstruct</text>
-<text text-anchor="start" x="124" y="-257.5" font-family="Helvetica,sans-Serif" font-size="10.00"># onDestruct</text>
-<text text-anchor="start" x="124" y="-246.5" font-family="Helvetica,sans-Serif" font-size="10.00"># onConnect</text>
-<text text-anchor="start" x="124" y="-235.5" font-family="Helvetica,sans-Serif" font-size="10.00"># onDisconnect</text>
-<text text-anchor="start" x="124" y="-224.5" font-family="Helvetica,sans-Serif" font-size="10.00"># onRead</text>
-<text text-anchor="start" x="124" y="-213.5" font-family="Helvetica,sans-Serif" font-size="10.00"># onReadError</text>
-<text text-anchor="start" x="124" y="-202.5" font-family="Helvetica,sans-Serif" font-size="10.00"># onWriteError</text>
-<text text-anchor="start" x="124" y="-191.5" font-family="Helvetica,sans-Serif" font-size="10.00"># onError</text>
+<text text-anchor="start" x="124" y="-268.5" font-family="Helvetica,sans-Serif" font-size="10.00"># onError</text>
+<text text-anchor="start" x="124" y="-257.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onConstruct</text>
+<text text-anchor="start" x="124" y="-246.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onDestruct</text>
+<text text-anchor="start" x="124" y="-235.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onConnect</text>
+<text text-anchor="start" x="124" y="-224.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onDisconnect</text>
+<text text-anchor="start" x="124" y="-213.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onRead</text>
+<text text-anchor="start" x="124" y="-202.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onReadError</text>
+<text text-anchor="start" x="124" y="-191.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onWriteError</text>
 <text text-anchor="start" x="124" y="-180.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; socketConnection</text>
 <text text-anchor="start" x="124" y="-169.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; options</text>
 <text text-anchor="start" x="124" y="-158.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; isDynamic</text>
@@ -38,10 +38,10 @@
 <text text-anchor="start" x="124" y="-73.5" font-family="Helvetica,sans-Serif" font-size="10.00"># operator=()</text>
 <text text-anchor="start" x="124" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00"># ~SocketConnector()</text>
 <text text-anchor="start" x="124" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00"># connect()</text>
-<text text-anchor="start" x="124" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00"># connectEvent()</text>
-<text text-anchor="start" x="124" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00"># readEvent()</text>
-<text text-anchor="start" x="124" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00"># unobserved()</text>
-<text text-anchor="start" x="124" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00"># destruct()</text>
+<text text-anchor="start" x="124" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; connectEvent()</text>
+<text text-anchor="start" x="124" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; readEvent()</text>
+<text text-anchor="start" x="124" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; unobserved()</text>
+<text text-anchor="start" x="124" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; destruct()</text>
 </a>
 </g>
 </g>

@@ -23,10 +23,10 @@ var hierarchy =
       ] ],
       [ "net::socket::Socket< SocketAddressT >", "classnet_1_1socket_1_1_socket.html", null ],
       [ "net::socket::stream::tls::TLSHandshake", "classnet_1_1socket_1_1stream_1_1tls_1_1_t_l_s_handshake.html", null ],
-      [ "net::socket::Socket< net::socket::ip::address::ipv4::InetAddress >", "classnet_1_1socket_1_1_socket.html", [
+      [ "net::socket::Socket< address::ipv4::InetAddress >", "classnet_1_1socket_1_1_socket.html", [
         [ "net::socket::ip::tcp::ipv4::Socket", "classnet_1_1socket_1_1ip_1_1tcp_1_1ipv4_1_1_socket.html", null ]
       ] ],
-      [ "net::socket::Socket< net::socket::ip::address::ipv6::InetAddress >", "classnet_1_1socket_1_1_socket.html", [
+      [ "net::socket::Socket< address::ipv6::InetAddress >", "classnet_1_1socket_1_1_socket.html", [
         [ "net::socket::ip::tcp::ipv6::Socket", "classnet_1_1socket_1_1ip_1_1tcp_1_1ipv6_1_1_socket.html", null ]
       ] ]
     ] ],
@@ -70,19 +70,19 @@ var hierarchy =
       [ "net::EventReceiver", "classnet_1_1_event_receiver.html", [
         [ "net::AcceptEventReceiver", "classnet_1_1_accept_event_receiver.html", [
           [ "net::socket::stream::SocketListener< SocketConnectionT >", "classnet_1_1socket_1_1stream_1_1_socket_listener.html", null ],
-          [ "net::socket::stream::SocketListener< net::socket::stream::legacy::SocketConnection< SocketT > >", "classnet_1_1socket_1_1stream_1_1_socket_listener.html", [
+          [ "net::socket::stream::SocketListener< stream::legacy::SocketConnection< SocketT > >", "classnet_1_1socket_1_1stream_1_1_socket_listener.html", [
             [ "net::socket::stream::legacy::SocketListener< SocketT >", "classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_listener.html", null ]
           ] ],
-          [ "net::socket::stream::SocketListener< net::socket::stream::tls::SocketConnection< SocketT > >", "classnet_1_1socket_1_1stream_1_1_socket_listener.html", [
+          [ "net::socket::stream::SocketListener< stream::tls::SocketConnection< SocketT > >", "classnet_1_1socket_1_1stream_1_1_socket_listener.html", [
             [ "net::socket::stream::tls::SocketListener< SocketT >", "classnet_1_1socket_1_1stream_1_1tls_1_1_socket_listener.html", null ]
           ] ]
         ] ],
         [ "net::ConnectEventReceiver", "classnet_1_1_connect_event_receiver.html", [
           [ "net::socket::stream::SocketConnector< SocketConnectionT >", "classnet_1_1socket_1_1stream_1_1_socket_connector.html", null ],
-          [ "net::socket::stream::SocketConnector< net::socket::stream::legacy::SocketConnection< SocketT > >", "classnet_1_1socket_1_1stream_1_1_socket_connector.html", [
+          [ "net::socket::stream::SocketConnector< stream::legacy::SocketConnection< SocketT > >", "classnet_1_1socket_1_1stream_1_1_socket_connector.html", [
             [ "net::socket::stream::legacy::SocketConnector< SocketT >", "classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_connector.html", null ]
           ] ],
-          [ "net::socket::stream::SocketConnector< net::socket::stream::tls::SocketConnection< SocketT > >", "classnet_1_1socket_1_1stream_1_1_socket_connector.html", [
+          [ "net::socket::stream::SocketConnector< stream::tls::SocketConnection< SocketT > >", "classnet_1_1socket_1_1stream_1_1_socket_connector.html", [
             [ "net::socket::stream::tls::SocketConnector< SocketT >", "classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connector.html", null ]
           ] ]
         ] ],
@@ -103,8 +103,8 @@ var hierarchy =
             ] ]
           ] ],
           [ "net::socket::stream::tls::TLSHandshake", "classnet_1_1socket_1_1stream_1_1tls_1_1_t_l_s_handshake.html", null ],
-          [ "net::socket::stream::SocketConnector< net::socket::stream::legacy::SocketConnection< SocketT > >", "classnet_1_1socket_1_1stream_1_1_socket_connector.html", null ],
-          [ "net::socket::stream::SocketConnector< net::socket::stream::tls::SocketConnection< SocketT > >", "classnet_1_1socket_1_1stream_1_1_socket_connector.html", null ]
+          [ "net::socket::stream::SocketConnector< stream::legacy::SocketConnection< SocketT > >", "classnet_1_1socket_1_1stream_1_1_socket_connector.html", null ],
+          [ "net::socket::stream::SocketConnector< stream::tls::SocketConnection< SocketT > >", "classnet_1_1socket_1_1stream_1_1_socket_connector.html", null ]
         ] ],
         [ "net::WriteEventReceiver", "classnet_1_1_write_event_receiver.html", [
           [ "net::socket::stream::SocketWriter< SocketT >", "classnet_1_1socket_1_1stream_1_1_socket_writer.html", [
@@ -166,10 +166,10 @@ var hierarchy =
     [ "Socket", null, [
       [ "net::socket::stream::SocketConnector< SocketConnectionT >", "classnet_1_1socket_1_1stream_1_1_socket_connector.html", null ],
       [ "net::socket::stream::SocketListener< SocketConnectionT >", "classnet_1_1socket_1_1stream_1_1_socket_listener.html", null ],
-      [ "net::socket::stream::SocketConnector< net::socket::stream::legacy::SocketConnection< SocketT > >", "classnet_1_1socket_1_1stream_1_1_socket_connector.html", null ],
-      [ "net::socket::stream::SocketConnector< net::socket::stream::tls::SocketConnection< SocketT > >", "classnet_1_1socket_1_1stream_1_1_socket_connector.html", null ],
-      [ "net::socket::stream::SocketListener< net::socket::stream::legacy::SocketConnection< SocketT > >", "classnet_1_1socket_1_1stream_1_1_socket_listener.html", null ],
-      [ "net::socket::stream::SocketListener< net::socket::stream::tls::SocketConnection< SocketT > >", "classnet_1_1socket_1_1stream_1_1_socket_listener.html", null ]
+      [ "net::socket::stream::SocketConnector< stream::legacy::SocketConnection< SocketT > >", "classnet_1_1socket_1_1stream_1_1_socket_connector.html", null ],
+      [ "net::socket::stream::SocketConnector< stream::tls::SocketConnection< SocketT > >", "classnet_1_1socket_1_1stream_1_1_socket_connector.html", null ],
+      [ "net::socket::stream::SocketListener< stream::legacy::SocketConnection< SocketT > >", "classnet_1_1socket_1_1stream_1_1_socket_listener.html", null ],
+      [ "net::socket::stream::SocketListener< stream::tls::SocketConnection< SocketT > >", "classnet_1_1socket_1_1stream_1_1_socket_listener.html", null ]
     ] ],
     [ "net::socket::SocketAddress< SockAddrT >", "classnet_1_1socket_1_1_socket_address.html", null ],
     [ "net::socket::SocketAddress< struct sockaddr_in >", "classnet_1_1socket_1_1_socket_address.html", [
@@ -179,16 +179,16 @@ var hierarchy =
       [ "net::socket::ip::address::ipv6::InetAddress", "classnet_1_1socket_1_1ip_1_1address_1_1ipv6_1_1_inet_address.html", null ]
     ] ],
     [ "net::socket::stream::SocketClient< SocketConnectorT >", "classnet_1_1socket_1_1stream_1_1_socket_client.html", null ],
-    [ "net::socket::stream::SocketClient< legacy::SocketConnector< net::socket::ip::tcp::ipv4::Socket > >", "classnet_1_1socket_1_1stream_1_1_socket_client.html", [
-      [ "net::socket::stream::legacy::SocketClient< net::socket::ip::tcp::ipv4::Socket >", "classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_client.html", [
-        [ "net::socket::ip::tcp::SocketClient< net::socket::stream::legacy::SocketClient< net::socket::ip::tcp::ipv4::Socket > >", "classnet_1_1socket_1_1ip_1_1tcp_1_1_socket_client.html", [
+    [ "net::socket::stream::SocketClient< legacy::SocketConnector< ipv4::Socket > >", "classnet_1_1socket_1_1stream_1_1_socket_client.html", [
+      [ "net::socket::stream::legacy::SocketClient< ipv4::Socket >", "classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_client.html", [
+        [ "net::socket::ip::tcp::SocketClient< stream::legacy::SocketClient< ipv4::Socket > >", "classnet_1_1socket_1_1ip_1_1tcp_1_1_socket_client.html", [
           [ "net::socket::ip::tcp::ipv4::legacy::SocketClient", "classnet_1_1socket_1_1ip_1_1tcp_1_1ipv4_1_1legacy_1_1_socket_client.html", null ]
         ] ]
       ] ]
     ] ],
-    [ "net::socket::stream::SocketClient< legacy::SocketConnector< net::socket::ip::tcp::ipv6::Socket > >", "classnet_1_1socket_1_1stream_1_1_socket_client.html", [
-      [ "net::socket::stream::legacy::SocketClient< net::socket::ip::tcp::ipv6::Socket >", "classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_client.html", [
-        [ "net::socket::ip::tcp::SocketClient< net::socket::stream::legacy::SocketClient< net::socket::ip::tcp::ipv6::Socket > >", "classnet_1_1socket_1_1ip_1_1tcp_1_1_socket_client.html", [
+    [ "net::socket::stream::SocketClient< legacy::SocketConnector< ipv6::Socket > >", "classnet_1_1socket_1_1stream_1_1_socket_client.html", [
+      [ "net::socket::stream::legacy::SocketClient< ipv6::Socket >", "classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_client.html", [
+        [ "net::socket::ip::tcp::SocketClient< stream::legacy::SocketClient< ipv6::Socket > >", "classnet_1_1socket_1_1ip_1_1tcp_1_1_socket_client.html", [
           [ "net::socket::ip::tcp::ipv6::legacy::SocketClient", "classnet_1_1socket_1_1ip_1_1tcp_1_1ipv6_1_1legacy_1_1_socket_client.html", null ]
         ] ]
       ] ]
@@ -196,16 +196,16 @@ var hierarchy =
     [ "net::socket::stream::SocketClient< legacy::SocketConnector< SocketT > >", "classnet_1_1socket_1_1stream_1_1_socket_client.html", [
       [ "net::socket::stream::legacy::SocketClient< SocketT >", "classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_client.html", null ]
     ] ],
-    [ "net::socket::stream::SocketClient< tls::SocketConnector< net::socket::ip::tcp::ipv4::Socket > >", "classnet_1_1socket_1_1stream_1_1_socket_client.html", [
-      [ "net::socket::stream::tls::SocketClient< net::socket::ip::tcp::ipv4::Socket >", "classnet_1_1socket_1_1stream_1_1tls_1_1_socket_client.html", [
-        [ "net::socket::ip::tcp::SocketClient< net::socket::stream::tls::SocketClient< net::socket::ip::tcp::ipv4::Socket > >", "classnet_1_1socket_1_1ip_1_1tcp_1_1_socket_client.html", [
+    [ "net::socket::stream::SocketClient< tls::SocketConnector< ipv4::Socket > >", "classnet_1_1socket_1_1stream_1_1_socket_client.html", [
+      [ "net::socket::stream::tls::SocketClient< ipv4::Socket >", "classnet_1_1socket_1_1stream_1_1tls_1_1_socket_client.html", [
+        [ "net::socket::ip::tcp::SocketClient< stream::tls::SocketClient< ipv4::Socket > >", "classnet_1_1socket_1_1ip_1_1tcp_1_1_socket_client.html", [
           [ "net::socket::ip::tcp::ipv4::tls::SocketClient", "classnet_1_1socket_1_1ip_1_1tcp_1_1ipv4_1_1tls_1_1_socket_client.html", null ]
         ] ]
       ] ]
     ] ],
-    [ "net::socket::stream::SocketClient< tls::SocketConnector< net::socket::ip::tcp::ipv6::Socket > >", "classnet_1_1socket_1_1stream_1_1_socket_client.html", [
-      [ "net::socket::stream::tls::SocketClient< net::socket::ip::tcp::ipv6::Socket >", "classnet_1_1socket_1_1stream_1_1tls_1_1_socket_client.html", [
-        [ "net::socket::ip::tcp::SocketClient< net::socket::stream::tls::SocketClient< net::socket::ip::tcp::ipv6::Socket > >", "classnet_1_1socket_1_1ip_1_1tcp_1_1_socket_client.html", [
+    [ "net::socket::stream::SocketClient< tls::SocketConnector< ipv6::Socket > >", "classnet_1_1socket_1_1stream_1_1_socket_client.html", [
+      [ "net::socket::stream::tls::SocketClient< ipv6::Socket >", "classnet_1_1socket_1_1stream_1_1tls_1_1_socket_client.html", [
+        [ "net::socket::ip::tcp::SocketClient< stream::tls::SocketClient< ipv6::Socket > >", "classnet_1_1socket_1_1ip_1_1tcp_1_1_socket_client.html", [
           [ "net::socket::ip::tcp::ipv6::tls::SocketClient", "classnet_1_1socket_1_1ip_1_1tcp_1_1ipv6_1_1tls_1_1_socket_client.html", null ]
         ] ]
       ] ]
@@ -225,16 +225,16 @@ var hierarchy =
       [ "net::socket::stream::SocketConnection< SocketReaderT, SocketWriterT, SocketAddressT >", "classnet_1_1socket_1_1stream_1_1_socket_connection.html", null ]
     ] ],
     [ "net::socket::stream::SocketServer< SocketListenerT >", "classnet_1_1socket_1_1stream_1_1_socket_server.html", null ],
-    [ "net::socket::stream::SocketServer< legacy::SocketListener< net::socket::ip::tcp::ipv4::Socket > >", "classnet_1_1socket_1_1stream_1_1_socket_server.html", [
-      [ "net::socket::stream::legacy::SocketServer< net::socket::ip::tcp::ipv4::Socket >", "classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_server.html", [
-        [ "net::socket::ip::tcp::SocketServer< net::socket::stream::legacy::SocketServer< net::socket::ip::tcp::ipv4::Socket > >", "classnet_1_1socket_1_1ip_1_1tcp_1_1_socket_server.html", [
+    [ "net::socket::stream::SocketServer< legacy::SocketListener< ipv4::Socket > >", "classnet_1_1socket_1_1stream_1_1_socket_server.html", [
+      [ "net::socket::stream::legacy::SocketServer< ipv4::Socket >", "classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_server.html", [
+        [ "net::socket::ip::tcp::SocketServer< stream::legacy::SocketServer< ipv4::Socket > >", "classnet_1_1socket_1_1ip_1_1tcp_1_1_socket_server.html", [
           [ "net::socket::ip::tcp::ipv4::legacy::SocketServer", "classnet_1_1socket_1_1ip_1_1tcp_1_1ipv4_1_1legacy_1_1_socket_server.html", null ]
         ] ]
       ] ]
     ] ],
-    [ "net::socket::stream::SocketServer< legacy::SocketListener< net::socket::ip::tcp::ipv6::Socket > >", "classnet_1_1socket_1_1stream_1_1_socket_server.html", [
-      [ "net::socket::stream::legacy::SocketServer< net::socket::ip::tcp::ipv6::Socket >", "classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_server.html", [
-        [ "net::socket::ip::tcp::SocketServer< net::socket::stream::legacy::SocketServer< net::socket::ip::tcp::ipv6::Socket > >", "classnet_1_1socket_1_1ip_1_1tcp_1_1_socket_server.html", [
+    [ "net::socket::stream::SocketServer< legacy::SocketListener< ipv6::Socket > >", "classnet_1_1socket_1_1stream_1_1_socket_server.html", [
+      [ "net::socket::stream::legacy::SocketServer< ipv6::Socket >", "classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_server.html", [
+        [ "net::socket::ip::tcp::SocketServer< stream::legacy::SocketServer< ipv6::Socket > >", "classnet_1_1socket_1_1ip_1_1tcp_1_1_socket_server.html", [
           [ "net::socket::ip::tcp::ipv6::legacy::SocketServer", "classnet_1_1socket_1_1ip_1_1tcp_1_1ipv6_1_1legacy_1_1_socket_server.html", null ]
         ] ]
       ] ]
@@ -242,16 +242,16 @@ var hierarchy =
     [ "net::socket::stream::SocketServer< legacy::SocketListener< SocketT > >", "classnet_1_1socket_1_1stream_1_1_socket_server.html", [
       [ "net::socket::stream::legacy::SocketServer< SocketT >", "classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_server.html", null ]
     ] ],
-    [ "net::socket::stream::SocketServer< tls::SocketListener< net::socket::ip::tcp::ipv4::Socket > >", "classnet_1_1socket_1_1stream_1_1_socket_server.html", [
-      [ "net::socket::stream::tls::SocketServer< net::socket::ip::tcp::ipv4::Socket >", "classnet_1_1socket_1_1stream_1_1tls_1_1_socket_server.html", [
-        [ "net::socket::ip::tcp::SocketServer< net::socket::stream::tls::SocketServer< net::socket::ip::tcp::ipv4::Socket > >", "classnet_1_1socket_1_1ip_1_1tcp_1_1_socket_server.html", [
+    [ "net::socket::stream::SocketServer< tls::SocketListener< ipv4::Socket > >", "classnet_1_1socket_1_1stream_1_1_socket_server.html", [
+      [ "net::socket::stream::tls::SocketServer< ipv4::Socket >", "classnet_1_1socket_1_1stream_1_1tls_1_1_socket_server.html", [
+        [ "net::socket::ip::tcp::SocketServer< stream::tls::SocketServer< ipv4::Socket > >", "classnet_1_1socket_1_1ip_1_1tcp_1_1_socket_server.html", [
           [ "net::socket::ip::tcp::ipv4::tls::SocketServer", "classnet_1_1socket_1_1ip_1_1tcp_1_1ipv4_1_1tls_1_1_socket_server.html", null ]
         ] ]
       ] ]
     ] ],
-    [ "net::socket::stream::SocketServer< tls::SocketListener< net::socket::ip::tcp::ipv6::Socket > >", "classnet_1_1socket_1_1stream_1_1_socket_server.html", [
-      [ "net::socket::stream::tls::SocketServer< net::socket::ip::tcp::ipv6::Socket >", "classnet_1_1socket_1_1stream_1_1tls_1_1_socket_server.html", [
-        [ "net::socket::ip::tcp::SocketServer< net::socket::stream::tls::SocketServer< net::socket::ip::tcp::ipv6::Socket > >", "classnet_1_1socket_1_1ip_1_1tcp_1_1_socket_server.html", [
+    [ "net::socket::stream::SocketServer< tls::SocketListener< ipv6::Socket > >", "classnet_1_1socket_1_1stream_1_1_socket_server.html", [
+      [ "net::socket::stream::tls::SocketServer< ipv6::Socket >", "classnet_1_1socket_1_1stream_1_1tls_1_1_socket_server.html", [
+        [ "net::socket::ip::tcp::SocketServer< stream::tls::SocketServer< ipv6::Socket > >", "classnet_1_1socket_1_1ip_1_1tcp_1_1_socket_server.html", [
           [ "net::socket::ip::tcp::ipv6::tls::SocketServer", "classnet_1_1socket_1_1ip_1_1tcp_1_1ipv6_1_1tls_1_1_socket_server.html", null ]
         ] ]
       ] ]

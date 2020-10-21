@@ -109,6 +109,10 @@ Public Types</h2></td></tr>
 <tr class="separator:a8635f7f9b04ea2592248a270b7076530"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1de7977aa4301885c86b1548023539dd"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_client.html#a1de7977aa4301885c86b1548023539dd">SocketConnection</a> = typename SocketClient::SocketConnection</td></tr>
 <tr class="separator:a1de7977aa4301885c86b1548023539dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa0f94ed7f4f9725806e1b2711a9d55d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_client.html#aaa0f94ed7f4f9725806e1b2711a9d55d">Socket</a> = typename SocketConnection::Socket</td></tr>
+<tr class="separator:aaa0f94ed7f4f9725806e1b2711a9d55d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac30b106f14ae15351b0ef4119455b675"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_client.html#ac30b106f14ae15351b0ef4119455b675">SocketAddress</a> = typename Socket::SocketAddress</td></tr>
+<tr class="separator:ac30b106f14ae15351b0ef4119455b675"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -116,10 +120,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a49caca9dfd584abd9587d530181ac352"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a3b0af0a0da5b174052d39a6d8c6adf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_client.html#a1a3b0af0a0da5b174052d39a6d8c6adf">get</a> (const std::map&lt; std::string, std::any &gt; &amp;<a class="el" href="classhttp_1_1_client.html#a8f0998c4a1a3ae18cf9cb4a0684ee8c7">options</a>, const std::function&lt; void(int err)&gt; &amp;onError, const typename SocketConnection::Socket::SocketAddress &amp;localHost=typename SocketConnection::Socket::SocketAddress()) const</td></tr>
 <tr class="separator:a1a3b0af0a0da5b174052d39a6d8c6adf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ad5b0f149fc01be068535696709f333"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_client.html#a2ad5b0f149fc01be068535696709f333">post</a> (const std::map&lt; std::string, std::any &gt; &amp;<a class="el" href="classhttp_1_1_client.html#a8f0998c4a1a3ae18cf9cb4a0684ee8c7">options</a>, const std::function&lt; void(int err)&gt; &amp;onError, const typename SocketConnection::Socket::SocketAddress &amp;localHost=typename SocketConnection::Socket::SocketAddress()) const</td></tr>
-<tr class="separator:a2ad5b0f149fc01be068535696709f333"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02f7dccc16754e0faad9c5e3ea1ce379"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_client.html#a02f7dccc16754e0faad9c5e3ea1ce379">connect</a> (const std::string &amp;request, const std::map&lt; std::string, std::any &gt; &amp;<a class="el" href="classhttp_1_1_client.html#a8f0998c4a1a3ae18cf9cb4a0684ee8c7">options</a>, const std::function&lt; void(int err)&gt; &amp;onError, const typename SocketConnection::Socket::SocketAddress &amp;localHost=typename SocketConnection::Socket::SocketAddress()) const</td></tr>
-<tr class="separator:a02f7dccc16754e0faad9c5e3ea1ce379"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0004712fe88e72026add67978bbb9e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_client.html#ab0004712fe88e72026add67978bbb9e2">post</a> (const std::map&lt; std::string, std::any &gt; &amp;<a class="el" href="classhttp_1_1_client.html#a8f0998c4a1a3ae18cf9cb4a0684ee8c7">options</a>, const std::function&lt; void(int err)&gt; &amp;onError, const <a class="el" href="classhttp_1_1_client.html#ac30b106f14ae15351b0ef4119455b675">SocketAddress</a> &amp;localHost=<a class="el" href="classhttp_1_1_client.html#ac30b106f14ae15351b0ef4119455b675">SocketAddress</a>()) const</td></tr>
+<tr class="separator:ab0004712fe88e72026add67978bbb9e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec110786d18d5ceef4723377dae865a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_client.html#aec110786d18d5ceef4723377dae865a4">connect</a> (const std::string &amp;request, const std::map&lt; std::string, std::any &gt; &amp;<a class="el" href="classhttp_1_1_client.html#a8f0998c4a1a3ae18cf9cb4a0684ee8c7">options</a>, const std::function&lt; void(int err)&gt; &amp;onError, const <a class="el" href="classhttp_1_1_client.html#ac30b106f14ae15351b0ef4119455b675">SocketAddress</a> &amp;localHost=<a class="el" href="classhttp_1_1_client.html#ac30b106f14ae15351b0ef4119455b675">SocketAddress</a>()) const</td></tr>
+<tr class="separator:aec110786d18d5ceef4723377dae865a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -143,6 +147,42 @@ class http::Client&lt; SocketClientT &gt;</h3>
 
 <p class="definition">Definition at line <a class="el" href="_client_8h_source.html#l00038">38</a> of file <a class="el" href="_client_8h_source.html">Client.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="aaa0f94ed7f4f9725806e1b2711a9d55d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa0f94ed7f4f9725806e1b2711a9d55d">&#9670;&nbsp;</a></span>Socket</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename SocketClientT &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classhttp_1_1_client.html">http::Client</a>&lt; SocketClientT &gt;::<a class="el" href="classhttp_1_1_client.html#aaa0f94ed7f4f9725806e1b2711a9d55d">Socket</a> =  typename SocketConnection::Socket</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_client_8h_source.html#l00042">42</a> of file <a class="el" href="_client_8h_source.html">Client.h</a>.</p>
+
+</div>
+</div>
+<a id="ac30b106f14ae15351b0ef4119455b675"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac30b106f14ae15351b0ef4119455b675">&#9670;&nbsp;</a></span>SocketAddress</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename SocketClientT &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classhttp_1_1_client.html">http::Client</a>&lt; SocketClientT &gt;::<a class="el" href="classhttp_1_1_client.html#ac30b106f14ae15351b0ef4119455b675">SocketAddress</a> =  typename Socket::SocketAddress</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_client_8h_source.html#l00043">43</a> of file <a class="el" href="_client_8h_source.html">Client.h</a>.</p>
+
+</div>
+</div>
 <a id="a8635f7f9b04ea2592248a270b7076530"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8635f7f9b04ea2592248a270b7076530">&#9670;&nbsp;</a></span>SocketClient</h2>
 
@@ -240,21 +280,21 @@ template&lt;typename SocketClientT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_client_8h_source.html#l00043">43</a> of file <a class="el" href="_client_8h_source.html">Client.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                                                          {{}})</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            : <a class="code" href="classhttp_1_1_client.html#a5c134036d400bf29013fca3ec240fbf9">onConnect</a>(<a class="code" href="classhttp_1_1_client.html#a5c134036d400bf29013fca3ec240fbf9">onConnect</a>)</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            , <a class="code" href="classhttp_1_1_client.html#ad8d5cc574273ed8e5fe64b89b9490de0">onRequestBegin</a>(<a class="code" href="classhttp_1_1_client.html#ad8d5cc574273ed8e5fe64b89b9490de0">onRequestBegin</a>)</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            , <a class="code" href="classhttp_1_1_client.html#ab20342166f471f75c54b76c389895d2d">onResponseReady</a>(<a class="code" href="classhttp_1_1_client.html#ab20342166f471f75c54b76c389895d2d">onResponseReady</a>)</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            , <a class="code" href="classhttp_1_1_client.html#aaa1b107f57e8cb6a3ebe31341ad141a7">onResponseError</a>(<a class="code" href="classhttp_1_1_client.html#aaa1b107f57e8cb6a3ebe31341ad141a7">onResponseError</a>)</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            , <a class="code" href="classhttp_1_1_client.html#a091e1e25724d4b01a434eaced1296b13">onDisconnect</a>(<a class="code" href="classhttp_1_1_client.html#a091e1e25724d4b01a434eaced1296b13">onDisconnect</a>)</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            , <a class="code" href="classhttp_1_1_client.html#a8f0998c4a1a3ae18cf9cb4a0684ee8c7">options</a>(<a class="code" href="classhttp_1_1_client.html#a8f0998c4a1a3ae18cf9cb4a0684ee8c7">options</a>) {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        }</div>
+<p class="definition">Definition at line <a class="el" href="_client_8h_source.html#l00045">45</a> of file <a class="el" href="_client_8h_source.html">Client.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                                                          {{}})</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            : <a class="code" href="classhttp_1_1_client.html#a5c134036d400bf29013fca3ec240fbf9">onConnect</a>(<a class="code" href="classhttp_1_1_client.html#a5c134036d400bf29013fca3ec240fbf9">onConnect</a>)</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            , <a class="code" href="classhttp_1_1_client.html#ad8d5cc574273ed8e5fe64b89b9490de0">onRequestBegin</a>(<a class="code" href="classhttp_1_1_client.html#ad8d5cc574273ed8e5fe64b89b9490de0">onRequestBegin</a>)</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            , <a class="code" href="classhttp_1_1_client.html#ab20342166f471f75c54b76c389895d2d">onResponseReady</a>(<a class="code" href="classhttp_1_1_client.html#ab20342166f471f75c54b76c389895d2d">onResponseReady</a>)</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            , <a class="code" href="classhttp_1_1_client.html#aaa1b107f57e8cb6a3ebe31341ad141a7">onResponseError</a>(<a class="code" href="classhttp_1_1_client.html#aaa1b107f57e8cb6a3ebe31341ad141a7">onResponseError</a>)</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            , <a class="code" href="classhttp_1_1_client.html#a091e1e25724d4b01a434eaced1296b13">onDisconnect</a>(<a class="code" href="classhttp_1_1_client.html#a091e1e25724d4b01a434eaced1296b13">onDisconnect</a>)</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            , <a class="code" href="classhttp_1_1_client.html#a8f0998c4a1a3ae18cf9cb4a0684ee8c7">options</a>(<a class="code" href="classhttp_1_1_client.html#a8f0998c4a1a3ae18cf9cb4a0684ee8c7">options</a>) {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        }</div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a02f7dccc16754e0faad9c5e3ea1ce379"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a02f7dccc16754e0faad9c5e3ea1ce379">&#9670;&nbsp;</a></span>connect()</h2>
+<a id="aec110786d18d5ceef4723377dae865a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec110786d18d5ceef4723377dae865a4">&#9670;&nbsp;</a></span>connect()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -285,8 +325,8 @@ template&lt;typename SocketClientT &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const typename SocketConnection::Socket::SocketAddress &amp;&#160;</td>
-          <td class="paramname"><em>localHost</em> = <code>typename&#160;SocketConnection::Socket::SocketAddress()</code>&#160;</td>
+          <td class="paramtype">const <a class="el" href="classhttp_1_1_client.html#ac30b106f14ae15351b0ef4119455b675">SocketAddress</a> &amp;&#160;</td>
+          <td class="paramname"><em>localHost</em> = <code><a class="el" href="classhttp_1_1_client.html#ac30b106f14ae15351b0ef4119455b675">SocketAddress</a>()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -301,8 +341,8 @@ template&lt;typename SocketClientT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_client_8h_source.html#l00106">106</a> of file <a class="el" href="_client_8h_source.html">Client.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                                                                                                                                  {</div>
+<p class="definition">Definition at line <a class="el" href="_client_8h_source.html#l00107">107</a> of file <a class="el" href="_client_8h_source.html">Client.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                                                                             {</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            errno = 0;</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            <a class="code" href="classhttp_1_1_client.html#a8635f7f9b04ea2592248a270b7076530">SocketClient</a> socketClient(</div>
@@ -356,11 +396,12 @@ template&lt;typename SocketClientT &gt; </div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            socketClient.connect(<a class="code" href="classhttp_1_1_client.html#a8f0998c4a1a3ae18cf9cb4a0684ee8c7">options</a>, onError, localHost);</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        }</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="_client_8h_source.html#l00058">http::Client&lt; net::socket::ip::tcp::ipv4::legacy::SocketClient &gt;::get()</a>, and <a class="el" href="_client_8h_source.html#l00079">http::Client&lt; net::socket::ip::tcp::ipv4::legacy::SocketClient &gt;::post()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_client_8h_source.html#l00060">http::Client&lt; net::socket::ip::tcp::ipv4::legacy::SocketClient &gt;::get()</a>, and <a class="el" href="_client_8h_source.html#l00080">http::Client&lt; net::socket::ip::tcp::ipv4::legacy::SocketClient &gt;::post()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1_client_a02f7dccc16754e0faad9c5e3ea1ce379_icgraph.svg" width="350" height="176"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1_client_aec110786d18d5ceef4723377dae865a4_icgraph.svg" width="350" height="176"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
@@ -407,29 +448,29 @@ template&lt;typename SocketClientT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_client_8h_source.html#l00058">58</a> of file <a class="el" href="_client_8h_source.html">Client.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                                                                                                                                  {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            std::string path = <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            std::string host = <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; [name, value] : <a class="code" href="classhttp_1_1_client.html#a8f0998c4a1a3ae18cf9cb4a0684ee8c7">options</a>) {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                <span class="keywordflow">if</span> (name == <span class="stringliteral">&quot;path&quot;</span>) {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                    path = std::any_cast&lt;const char*&gt;(value);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                }</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                <span class="keywordflow">if</span> (name == <span class="stringliteral">&quot;host&quot;</span>) {</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                    host = std::any_cast&lt;const char*&gt;(value);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                }</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            }</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            std::string request = <span class="stringliteral">&quot;GET &quot;</span> + path + <span class="stringliteral">&quot; HTTP/1.1\r\nHost: &quot;</span> + host + <span class="stringliteral">&quot;\r\n\r\n&quot;</span>;</div>
+<p class="definition">Definition at line <a class="el" href="_client_8h_source.html#l00060">60</a> of file <a class="el" href="_client_8h_source.html">Client.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                                                                                                                                  {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            std::string path = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            std::string host = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; [name, value] : <a class="code" href="classhttp_1_1_client.html#a8f0998c4a1a3ae18cf9cb4a0684ee8c7">options</a>) {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                <span class="keywordflow">if</span> (name == <span class="stringliteral">&quot;path&quot;</span>) {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                    path = std::any_cast&lt;const char*&gt;(value);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                <span class="keywordflow">if</span> (name == <span class="stringliteral">&quot;host&quot;</span>) {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                    host = std::any_cast&lt;const char*&gt;(value);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            }</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <a class="code" href="classhttp_1_1_client.html#a02f7dccc16754e0faad9c5e3ea1ce379">connect</a>(request, <a class="code" href="classhttp_1_1_client.html#a8f0998c4a1a3ae18cf9cb4a0684ee8c7">options</a>, onError, localHost);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            std::string request = <span class="stringliteral">&quot;GET &quot;</span> + path + <span class="stringliteral">&quot; HTTP/1.1\r\nHost: &quot;</span> + host + <span class="stringliteral">&quot;\r\n\r\n&quot;</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <a class="code" href="classhttp_1_1_client.html#aec110786d18d5ceef4723377dae865a4">connect</a>(request, <a class="code" href="classhttp_1_1_client.html#a8f0998c4a1a3ae18cf9cb4a0684ee8c7">options</a>, onError, localHost);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        }</div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a2ad5b0f149fc01be068535696709f333"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ad5b0f149fc01be068535696709f333">&#9670;&nbsp;</a></span>post()</h2>
+<a id="ab0004712fe88e72026add67978bbb9e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0004712fe88e72026add67978bbb9e2">&#9670;&nbsp;</a></span>post()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -454,8 +495,8 @@ template&lt;typename SocketClientT &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const typename SocketConnection::Socket::SocketAddress &amp;&#160;</td>
-          <td class="paramname"><em>localHost</em> = <code>typename&#160;SocketConnection::Socket::SocketAddress()</code>&#160;</td>
+          <td class="paramtype">const <a class="el" href="classhttp_1_1_client.html#ac30b106f14ae15351b0ef4119455b675">SocketAddress</a> &amp;&#160;</td>
+          <td class="paramname"><em>localHost</em> = <code><a class="el" href="classhttp_1_1_client.html#ac30b106f14ae15351b0ef4119455b675">SocketAddress</a>()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -470,31 +511,31 @@ template&lt;typename SocketClientT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_client_8h_source.html#l00079">79</a> of file <a class="el" href="_client_8h_source.html">Client.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                                                                                                                                   {</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            std::string path = <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            std::string host = <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            std::string body = <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <span class="keywordtype">int</span> contentLength = 0;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; [name, value] : <a class="code" href="classhttp_1_1_client.html#a8f0998c4a1a3ae18cf9cb4a0684ee8c7">options</a>) {</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                <span class="keywordflow">if</span> (name == <span class="stringliteral">&quot;path&quot;</span>) {</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                    path = std::any_cast&lt;const char*&gt;(value);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                }</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                <span class="keywordflow">if</span> (name == <span class="stringliteral">&quot;host&quot;</span>) {</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                    host = std::any_cast&lt;const char*&gt;(value);</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                }</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                <span class="keywordflow">if</span> (name == <span class="stringliteral">&quot;body&quot;</span>) {</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                    body = std::any_cast&lt;const char*&gt;(value);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                    contentLength = body.length();</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                }</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            }</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            std::string request =</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                <span class="stringliteral">&quot;POST &quot;</span> + path + <span class="stringliteral">&quot; HTTP/1.1\r\nHost: &quot;</span> + host + <span class="stringliteral">&quot;\r\nContent-Length: &quot;</span> + std::to_string(contentLength) + <span class="stringliteral">&quot;\r\n\r\n&quot;</span> + body;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <a class="code" href="classhttp_1_1_client.html#a02f7dccc16754e0faad9c5e3ea1ce379">connect</a>(request, <a class="code" href="classhttp_1_1_client.html#a8f0998c4a1a3ae18cf9cb4a0684ee8c7">options</a>, onError, localHost);</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        }</div>
+<p class="definition">Definition at line <a class="el" href="_client_8h_source.html#l00080">80</a> of file <a class="el" href="_client_8h_source.html">Client.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                                                                          {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            std::string path = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            std::string host = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            std::string body = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keywordtype">int</span> contentLength = 0;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; [name, value] : <a class="code" href="classhttp_1_1_client.html#a8f0998c4a1a3ae18cf9cb4a0684ee8c7">options</a>) {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                <span class="keywordflow">if</span> (name == <span class="stringliteral">&quot;path&quot;</span>) {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                    path = std::any_cast&lt;const char*&gt;(value);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                <span class="keywordflow">if</span> (name == <span class="stringliteral">&quot;host&quot;</span>) {</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                    host = std::any_cast&lt;const char*&gt;(value);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                }</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                <span class="keywordflow">if</span> (name == <span class="stringliteral">&quot;body&quot;</span>) {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                    body = std::any_cast&lt;const char*&gt;(value);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                    contentLength = body.length();</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                }</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            }</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            std::string request =</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                <span class="stringliteral">&quot;POST &quot;</span> + path + <span class="stringliteral">&quot; HTTP/1.1\r\nHost: &quot;</span> + host + <span class="stringliteral">&quot;\r\nContent-Length: &quot;</span> + std::to_string(contentLength) + <span class="stringliteral">&quot;\r\n\r\n&quot;</span> + body;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <a class="code" href="classhttp_1_1_client.html#aec110786d18d5ceef4723377dae865a4">connect</a>(request, <a class="code" href="classhttp_1_1_client.html#a8f0998c4a1a3ae18cf9cb4a0684ee8c7">options</a>, onError, localHost);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -515,7 +556,7 @@ template&lt;typename SocketClientT &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="_client_8h_source.html#l00164">164</a> of file <a class="el" href="_client_8h_source.html">Client.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_client_8h_source.html#l00106">http::Client&lt; net::socket::ip::tcp::ipv4::legacy::SocketClient &gt;::connect()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_client_8h_source.html#l00107">http::Client&lt; net::socket::ip::tcp::ipv4::legacy::SocketClient &gt;::connect()</a>.</p>
 
 </div>
 </div>
@@ -535,7 +576,7 @@ template&lt;typename SocketClientT &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="_client_8h_source.html#l00168">168</a> of file <a class="el" href="_client_8h_source.html">Client.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_client_8h_source.html#l00106">http::Client&lt; net::socket::ip::tcp::ipv4::legacy::SocketClient &gt;::connect()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_client_8h_source.html#l00107">http::Client&lt; net::socket::ip::tcp::ipv4::legacy::SocketClient &gt;::connect()</a>.</p>
 
 </div>
 </div>
@@ -555,7 +596,7 @@ template&lt;typename SocketClientT &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="_client_8h_source.html#l00165">165</a> of file <a class="el" href="_client_8h_source.html">Client.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_client_8h_source.html#l00106">http::Client&lt; net::socket::ip::tcp::ipv4::legacy::SocketClient &gt;::connect()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_client_8h_source.html#l00107">http::Client&lt; net::socket::ip::tcp::ipv4::legacy::SocketClient &gt;::connect()</a>.</p>
 
 </div>
 </div>
@@ -575,7 +616,7 @@ template&lt;typename SocketClientT &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="_client_8h_source.html#l00167">167</a> of file <a class="el" href="_client_8h_source.html">Client.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_client_8h_source.html#l00106">http::Client&lt; net::socket::ip::tcp::ipv4::legacy::SocketClient &gt;::connect()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_client_8h_source.html#l00107">http::Client&lt; net::socket::ip::tcp::ipv4::legacy::SocketClient &gt;::connect()</a>.</p>
 
 </div>
 </div>
@@ -595,7 +636,7 @@ template&lt;typename SocketClientT &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="_client_8h_source.html#l00166">166</a> of file <a class="el" href="_client_8h_source.html">Client.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_client_8h_source.html#l00106">http::Client&lt; net::socket::ip::tcp::ipv4::legacy::SocketClient &gt;::connect()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_client_8h_source.html#l00107">http::Client&lt; net::socket::ip::tcp::ipv4::legacy::SocketClient &gt;::connect()</a>.</p>
 
 </div>
 </div>
@@ -615,7 +656,7 @@ template&lt;typename SocketClientT &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="_client_8h_source.html#l00169">169</a> of file <a class="el" href="_client_8h_source.html">Client.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_client_8h_source.html#l00106">http::Client&lt; net::socket::ip::tcp::ipv4::legacy::SocketClient &gt;::connect()</a>, <a class="el" href="_client_8h_source.html#l00058">http::Client&lt; net::socket::ip::tcp::ipv4::legacy::SocketClient &gt;::get()</a>, and <a class="el" href="_client_8h_source.html#l00079">http::Client&lt; net::socket::ip::tcp::ipv4::legacy::SocketClient &gt;::post()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_client_8h_source.html#l00107">http::Client&lt; net::socket::ip::tcp::ipv4::legacy::SocketClient &gt;::connect()</a>, <a class="el" href="_client_8h_source.html#l00060">http::Client&lt; net::socket::ip::tcp::ipv4::legacy::SocketClient &gt;::get()</a>, and <a class="el" href="_client_8h_source.html#l00080">http::Client&lt; net::socket::ip::tcp::ipv4::legacy::SocketClient &gt;::post()</a>.</p>
 
 </div>
 </div>
@@ -627,11 +668,11 @@ template&lt;typename SocketClientT &gt; </div>
 <div class="ttc" id="aclasshttp_1_1_client_html_a5c134036d400bf29013fca3ec240fbf9"><div class="ttname"><a href="classhttp_1_1_client.html#a5c134036d400bf29013fca3ec240fbf9">http::Client::onConnect</a></div><div class="ttdeci">std::function&lt; void(SocketConnection *)&gt; onConnect</div><div class="ttdef"><b>Definition:</b> <a href="_client_8h_source.html#l00164">Client.h:164</a></div></div>
 <div class="ttc" id="aclasshttp_1_1_client_context_html_ab13ab6b9d9ac757b92b005ede6147b3a"><div class="ttname"><a href="classhttp_1_1_client_context.html#ab13ab6b9d9ac757b92b005ede6147b3a">http::ClientContext::receiveResponseData</a></div><div class="ttdeci">void receiveResponseData(const char *junk, size_t junkLen)</div><div class="ttdef"><b>Definition:</b> <a href="_client_context_8cpp_source.html#l00059">ClientContext.cpp:59</a></div></div>
 <div class="ttc" id="aclasshttp_1_1_client_context_html_a6150c26ff9edb3a51b85ecca408af9e5"><div class="ttname"><a href="classhttp_1_1_client_context.html#a6150c26ff9edb3a51b85ecca408af9e5">http::ClientContext::getRequest</a></div><div class="ttdeci">const std::string &amp; getRequest()</div><div class="ttdef"><b>Definition:</b> <a href="_client_context_8cpp_source.html#l00067">ClientContext.cpp:67</a></div></div>
+<div class="ttc" id="aclasshttp_1_1_client_html_aec110786d18d5ceef4723377dae865a4"><div class="ttname"><a href="classhttp_1_1_client.html#aec110786d18d5ceef4723377dae865a4">http::Client::connect</a></div><div class="ttdeci">void connect(const std::string &amp;request, const std::map&lt; std::string, std::any &gt; &amp;options, const std::function&lt; void(int err)&gt; &amp;onError, const SocketAddress &amp;localHost=SocketAddress()) const</div><div class="ttdef"><b>Definition:</b> <a href="_client_8h_source.html#l00107">Client.h:107</a></div></div>
 <div class="ttc" id="aclasshttp_1_1_client_html_aaa1b107f57e8cb6a3ebe31341ad141a7"><div class="ttname"><a href="classhttp_1_1_client.html#aaa1b107f57e8cb6a3ebe31341ad141a7">http::Client::onResponseError</a></div><div class="ttdeci">std::function&lt; void(int, const std::string &amp;)&gt; onResponseError</div><div class="ttdef"><b>Definition:</b> <a href="_client_8h_source.html#l00167">Client.h:167</a></div></div>
 <div class="ttc" id="aclasshttp_1_1_client_html_a8635f7f9b04ea2592248a270b7076530"><div class="ttname"><a href="classhttp_1_1_client.html#a8635f7f9b04ea2592248a270b7076530">http::Client::SocketClient</a></div><div class="ttdeci">SocketClientT SocketClient</div><div class="ttdef"><b>Definition:</b> <a href="_client_8h_source.html#l00040">Client.h:40</a></div></div>
 <div class="ttc" id="aclasshttp_1_1_client_html_ab20342166f471f75c54b76c389895d2d"><div class="ttname"><a href="classhttp_1_1_client.html#ab20342166f471f75c54b76c389895d2d">http::Client::onResponseReady</a></div><div class="ttdeci">std::function&lt; void(ServerResponse &amp;)&gt; onResponseReady</div><div class="ttdef"><b>Definition:</b> <a href="_client_8h_source.html#l00166">Client.h:166</a></div></div>
 <div class="ttc" id="aclasshttp_1_1_client_html_a8f0998c4a1a3ae18cf9cb4a0684ee8c7"><div class="ttname"><a href="classhttp_1_1_client.html#a8f0998c4a1a3ae18cf9cb4a0684ee8c7">http::Client::options</a></div><div class="ttdeci">std::map&lt; std::string, std::any &gt; options</div><div class="ttdef"><b>Definition:</b> <a href="_client_8h_source.html#l00169">Client.h:169</a></div></div>
-<div class="ttc" id="aclasshttp_1_1_client_html_a02f7dccc16754e0faad9c5e3ea1ce379"><div class="ttname"><a href="classhttp_1_1_client.html#a02f7dccc16754e0faad9c5e3ea1ce379">http::Client::connect</a></div><div class="ttdeci">void connect(const std::string &amp;request, const std::map&lt; std::string, std::any &gt; &amp;options, const std::function&lt; void(int err)&gt; &amp;onError, const typename SocketConnection::Socket::SocketAddress &amp;localHost=typename SocketConnection::Socket::SocketAddress()) const</div><div class="ttdef"><b>Definition:</b> <a href="_client_8h_source.html#l00106">Client.h:106</a></div></div>
 <div class="ttc" id="aclasshttp_1_1_client_context_html_af9699e49288a7257990e4fe3f48c9295"><div class="ttname"><a href="classhttp_1_1_client_context.html#af9699e49288a7257990e4fe3f48c9295">http::ClientContext::serverRequest</a></div><div class="ttdeci">ServerRequest serverRequest</div><div class="ttdef"><b>Definition:</b> <a href="_client_context_8h_source.html#l00059">ClientContext.h:59</a></div></div>
 <div class="ttc" id="aclasshttp_1_1_client_context_html_a97e091a9a9c269bdf56a41ef09d4c69a"><div class="ttname"><a href="classhttp_1_1_client_context.html#a97e091a9a9c269bdf56a41ef09d4c69a">http::ClientContext::setRequest</a></div><div class="ttdeci">void setRequest(const std::string &amp;request)</div><div class="ttdef"><b>Definition:</b> <a href="_client_context_8cpp_source.html#l00063">ClientContext.cpp:63</a></div></div>
 <div class="ttc" id="aclasshttp_1_1_client_context_html"><div class="ttname"><a href="classhttp_1_1_client_context.html">http::ClientContext</a></div><div class="ttdef"><b>Definition:</b> <a href="_client_context_8h_source.html#l00040">ClientContext.h:40</a></div></div>
