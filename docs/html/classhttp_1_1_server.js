@@ -1,9 +1,11 @@
 var classhttp_1_1_server =
 [
-    [ "SocketConnection", "classhttp_1_1_server.html#a961d02542a5863e5f47d65aaa84374ce", null ],
-    [ "SocketServer", "classhttp_1_1_server.html#abf5d9587b72077956b016248f66da9b0", null ],
-    [ "Server", "classhttp_1_1_server.html#a48be9b59a105acef5d15b3d4bcdc7dcb", null ],
-    [ "listen", "classhttp_1_1_server.html#a8644d807777a7feb2d3e13a29d5d44fe", null ],
-    [ "listen", "classhttp_1_1_server.html#a8a363131f2cbdd795803d29b16506796", null ],
-    [ "socketServer", "classhttp_1_1_server.html#a742d251a269ca95c2ce53cdef1ad669f", null ]
+    [ "Request", "classhttp_1_1_server.html#a32b84f9e9d2f3d021468defcc44cf40d", null ],
+    [ "Response", "classhttp_1_1_server.html#a83ce37731faf0fcc7509c96423aea06b", null ],
+    [ "SocketConnection", "classhttp_1_1_server.html#ac1c55d73fb26aac10cda5c35b5667267", null ],
+    [ "SocketServer", "classhttp_1_1_server.html#a9a61aabff47e50fcb83d6c033549e45a", null ],
+    [ "Server", "classhttp_1_1_server.html#a374798851e8f1df07de488e1621b2bc0", null ],
+    [ "listen", "classhttp_1_1_server.html#a7014f96f254e3774a1c7d24dd6bbface", null ],
+    [ "listen", "classhttp_1_1_server.html#a77f8f9ea76a22a62aae8a15e4173fa19", null ],
+    [ "socketServer", "classhttp_1_1_server.html#a9c8d03477f123be7b567a477faf9bf6c", null ]
 ];

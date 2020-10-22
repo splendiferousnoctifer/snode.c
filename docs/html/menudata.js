@@ -125,6 +125,7 @@ var menudata={children:[
 {text:"w",url:"functions_vars_w.html#index_w"}]},
 {text:"Typedefs",url:"functions_type.html",children:[
 {text:"e",url:"functions_type.html#index_e"},
+{text:"r",url:"functions_type.html#index_r"},
 {text:"s",url:"functions_type.html#index_s"}]},
 {text:"Enumerations",url:"functions_enum.html"},
 {text:"Enumerator",url:"functions_eval.html"},

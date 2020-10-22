@@ -1,8 +1,8 @@
 var classhttp_1_1tls_1_1_server =
 [
-    [ "Socket", "classhttp_1_1tls_1_1_server.html#ae8a879582f0ddc6b3c7b174594f3dc59", null ],
-    [ "SocketAddress", "classhttp_1_1tls_1_1_server.html#a5457f2996a67b3661636df1df03014af", null ],
-    [ "SocketConnection", "classhttp_1_1tls_1_1_server.html#a6170840d3bafd3ec0da7cc57db01d929", null ],
-    [ "SocketListener", "classhttp_1_1tls_1_1_server.html#a31eee504956edadc5a97c4a751dbbee5", null ],
-    [ "SocketServer", "classhttp_1_1tls_1_1_server.html#ad6d52028c396843e3e915fe3557f1cad", null ]
+    [ "Socket", "classhttp_1_1tls_1_1_server.html#ab8f3a58e4e03d80beb4c15d99dc60670", null ],
+    [ "SocketAddress", "classhttp_1_1tls_1_1_server.html#a1677687a8991d8de2dc35f124b168b32", null ],
+    [ "SocketConnection", "classhttp_1_1tls_1_1_server.html#a3a2d00d0cd96a90f9a924a36b15d8dfc", null ],
+    [ "SocketListener", "classhttp_1_1tls_1_1_server.html#a909a382353cc7f0320db0e377a6c8382", null ],
+    [ "SocketServer", "classhttp_1_1tls_1_1_server.html#a804dd8c618e0b75f085c0cd6a220f968", null ]
 ];

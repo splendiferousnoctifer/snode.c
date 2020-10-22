@@ -132,34 +132,48 @@ var hierarchy =
       [ "express::middleware::StaticMiddleware", "classexpress_1_1middleware_1_1_static_middleware.html", null ],
       [ "express::WebApp", "classexpress_1_1_web_app.html", [
         [ "express::WebAppT< ServerT >", "classexpress_1_1_web_app_t.html", null ],
-        [ "express::WebAppT< http::legacy::Server >", "classexpress_1_1_web_app_t.html", [
-          [ "express::legacy::WebApp", "classexpress_1_1legacy_1_1_web_app.html", null ]
-        ] ],
-        [ "express::WebAppT< http::legacy::Server6 >", "classexpress_1_1_web_app_t.html", [
+        [ "express::WebAppT< http::legacy::Server6< express::Request, express::Response > >", "classexpress_1_1_web_app_t.html", [
           [ "express::legacy::WebApp6", "classexpress_1_1legacy_1_1_web_app6.html", null ]
         ] ],
-        [ "express::WebAppT< http::tls::Server >", "classexpress_1_1_web_app_t.html", [
-          [ "express::tls::WebApp", "classexpress_1_1tls_1_1_web_app.html", null ]
+        [ "express::WebAppT< http::legacy::Server< express::Request, express::Response > >", "classexpress_1_1_web_app_t.html", [
+          [ "express::legacy::WebApp", "classexpress_1_1legacy_1_1_web_app.html", null ]
         ] ],
-        [ "express::WebAppT< http::tls::Server6 >", "classexpress_1_1_web_app_t.html", [
+        [ "express::WebAppT< http::tls::Server6< express::Request, express::Response > >", "classexpress_1_1_web_app_t.html", [
           [ "express::tls::WebApp6", "classexpress_1_1tls_1_1_web_app6.html", null ]
+        ] ],
+        [ "express::WebAppT< http::tls::Server< express::Request, express::Response > >", "classexpress_1_1_web_app_t.html", [
+          [ "express::tls::WebApp", "classexpress_1_1tls_1_1_web_app.html", null ]
         ] ]
       ] ]
     ] ],
-    [ "http::Server< SocketServerT >", "classhttp_1_1_server.html", null ],
-    [ "http::Server< net::socket::ip::tcp ::ipv6::legacy::SocketServer >", "classhttp_1_1_server.html", [
-      [ "http::legacy::Server6", "classhttp_1_1legacy_1_1_server6.html", null ]
+    [ "http::Server< SocketServerT, RequestT, ResponseT >", "classhttp_1_1_server.html", null ],
+    [ "http::Server< net::socket::ip::tcp ::ipv6::legacy::SocketServer, express::Request, express::Response >", "classhttp_1_1_server.html", [
+      [ "http::legacy::Server6< express::Request, express::Response >", "classhttp_1_1legacy_1_1_server6.html", null ]
     ] ],
-    [ "http::Server< net::socket::ip::tcp::ipv4::legacy::SocketServer >", "classhttp_1_1_server.html", [
-      [ "http::legacy::Server", "classhttp_1_1legacy_1_1_server.html", null ]
+    [ "http::Server< net::socket::ip::tcp ::ipv6::legacy::SocketServer, http::Request, http::Response >", "classhttp_1_1_server.html", [
+      [ "http::legacy::Server6< Request, Response >", "classhttp_1_1legacy_1_1_server6.html", null ]
     ] ],
-    [ "http::Server< net::socket::ip::tcp::ipv4::tls::SocketServer >", "classhttp_1_1_server.html", [
-      [ "http::tls::Server", "classhttp_1_1tls_1_1_server.html", null ]
+    [ "http::Server< net::socket::ip::tcp::ipv4::legacy::SocketServer, express::Request, express::Response >", "classhttp_1_1_server.html", [
+      [ "http::legacy::Server< express::Request, express::Response >", "classhttp_1_1legacy_1_1_server.html", null ]
     ] ],
-    [ "http::Server< net::socket::ip::tcp::ipv6::tls::SocketServer >", "classhttp_1_1_server.html", [
-      [ "http::tls::Server6", "classhttp_1_1tls_1_1_server6.html", null ]
+    [ "http::Server< net::socket::ip::tcp::ipv4::legacy::SocketServer, http::Request, http::Response >", "classhttp_1_1_server.html", [
+      [ "http::legacy::Server< Request, Response >", "classhttp_1_1legacy_1_1_server.html", null ]
     ] ],
-    [ "http::ServerContext", "classhttp_1_1_server_context.html", null ],
+    [ "http::Server< net::socket::ip::tcp::ipv4::tls::SocketServer, express::Request, express::Response >", "classhttp_1_1_server.html", [
+      [ "http::tls::Server< express::Request, express::Response >", "classhttp_1_1tls_1_1_server.html", null ]
+    ] ],
+    [ "http::Server< net::socket::ip::tcp::ipv4::tls::SocketServer, http::Request, http::Response >", "classhttp_1_1_server.html", [
+      [ "http::tls::Server< Request, Response >", "classhttp_1_1tls_1_1_server.html", null ]
+    ] ],
+    [ "http::Server< net::socket::ip::tcp::ipv6::tls::SocketServer, express::Request, express::Response >", "classhttp_1_1_server.html", [
+      [ "http::tls::Server6< express::Request, express::Response >", "classhttp_1_1tls_1_1_server6.html", null ]
+    ] ],
+    [ "http::Server< net::socket::ip::tcp::ipv6::tls::SocketServer, http::Request, http::Response >", "classhttp_1_1_server.html", [
+      [ "http::tls::Server6< Request, Response >", "classhttp_1_1tls_1_1_server6.html", null ]
+    ] ],
+    [ "http::ServerContextBase", "classhttp_1_1_server_context_base.html", [
+      [ "http::ServerContext< RequestT, ResponseT >", "classhttp_1_1_server_context.html", null ]
+    ] ],
     [ "http::ServerRequest", "classhttp_1_1_server_request.html", null ],
     [ "http::ServerResponse", "classhttp_1_1_server_response.html", null ],
     [ "utils::SingleAttributeInjector", "classutils_1_1_single_attribute_injector.html", null ],

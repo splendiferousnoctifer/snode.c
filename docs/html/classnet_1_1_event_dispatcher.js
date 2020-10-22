@@ -3,7 +3,6 @@ var classnet_1_1_event_dispatcher =
     [ "EventReceiver", "classnet_1_1_event_dispatcher.html#ae0f93576fe0d5f85cce969f1c48f631a", null ],
     [ "EventDispatcher", "classnet_1_1_event_dispatcher.html#aa27d26230f5061c6299aab27ad92b608", null ],
     [ "EventDispatcher", "classnet_1_1_event_dispatcher.html#a49175b82bf40ee8951bd7b17ebbf8709", null ],
-    [ "allSuspended1", "classnet_1_1_event_dispatcher.html#abe4f9e4f383c6f9f1a8aa93089fce81a", null ],
     [ "disable", "classnet_1_1_event_dispatcher.html#abd32d58ecc56297e92c6008fa94e7569", null ],
     [ "disableObservedEvents", "classnet_1_1_event_dispatcher.html#a812464af844b3b035841d1ba09e99b5a", null ],
     [ "dispatchActiveEvents", "classnet_1_1_event_dispatcher.html#a9d2fcb38151d02a100c03998f24f631d", null ],
@@ -15,6 +14,7 @@ var classnet_1_1_event_dispatcher =
     [ "operator=", "classnet_1_1_event_dispatcher.html#a61a378f6ccd9fed935babe271c43dcb9", null ],
     [ "resume", "classnet_1_1_event_dispatcher.html#ac82a624ac45a2b6dff4dc7da58851f6c", null ],
     [ "suspend", "classnet_1_1_event_dispatcher.html#aa86cb9f739d48a4e689e8b8fffd15d58", null ],
+    [ "unobserveDisabledEventReceiver", "classnet_1_1_event_dispatcher.html#a0630ab60a41364e53c4dc2316db81e23", null ],
     [ "unobserveDisabledEvents", "classnet_1_1_event_dispatcher.html#a0cac2e5483bd4542ad11211d36db4adc", null ],
     [ "EventLoop", "classnet_1_1_event_dispatcher.html#aca25e36665670fcb6909dd8ab04b1d05", null ],
     [ "disabledEventReceiver", "classnet_1_1_event_dispatcher.html#a09111589530debb69774c4b1e79e4117", null ],
@@ -22,5 +22,6 @@ var classnet_1_1_event_dispatcher =
     [ "eventCounter", "classnet_1_1_event_dispatcher.html#a3378afd544321774c68ac892871d6540", null ],
     [ "fdSet", "classnet_1_1_event_dispatcher.html#ac170fb86c4f7766b114b73e8df167949", null ],
     [ "maxInactivity", "classnet_1_1_event_dispatcher.html#a3918210c2910461a6df692f53e5692b7", null ],
-    [ "observedEventReceiver", "classnet_1_1_event_dispatcher.html#a43ddc99952845dfad365ff4abac19bd6", null ]
+    [ "observedEventReceiver", "classnet_1_1_event_dispatcher.html#a43ddc99952845dfad365ff4abac19bd6", null ],
+    [ "unobservedEventReceiver", "classnet_1_1_event_dispatcher.html#aff816a144fa1de073b9576465290e4d6", null ]
 ];

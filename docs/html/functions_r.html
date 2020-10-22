@@ -121,7 +121,8 @@ $(document).ready(function(){initNavTree('functions_r.html',''); initResizable()
 , <a class="el" href="class_status_code.html#a22c4b7005f5d2de069af37a191b97fa0">StatusCode</a>
 </li>
 <li>receiveRequestData()
-: <a class="el" href="classhttp_1_1_server_context.html#ae2224f606f69d875daac6d328b35ac50">http::ServerContext</a>
+: <a class="el" href="classhttp_1_1_server_context.html#a3722d6b1d7d28e039a8e5de10f37f111">http::ServerContext&lt; RequestT, ResponseT &gt;</a>
+, <a class="el" href="classhttp_1_1_server_context_base.html#a5cc8f6f88841389ef6dcae19881efa13">http::ServerContextBase</a>
 </li>
 <li>receiveResponseData()
 : <a class="el" href="classhttp_1_1_client_context.html#ab13ab6b9d9ac757b92b005ede6147b3a">http::ClientContext</a>
@@ -145,26 +146,33 @@ $(document).ready(function(){initNavTree('functions_r.html',''); initResizable()
 : <a class="el" href="classexpress_1_1_router.html#a9b16a979e026a77a79dc2193da4cce7d">express::Router</a>
 </li>
 <li>Request()
-: <a class="el" href="classexpress_1_1_request.html#a7194fef6a755397f1b5636462feee8ed">express::Request</a>
+: <a class="el" href="classexpress_1_1_request.html#a8bbacc2ff2390af8ce6cd28986aa8908">express::Request</a>
 </li>
 <li>request
 : <a class="el" href="classhttp_1_1_client_context.html#a25f9ba82f5ff95bdbf99493acb166b01">http::ClientContext</a>
 </li>
 <li>Request()
 : <a class="el" href="classhttp_1_1_request.html#a7fbdafc5732496bafcfa02a9c5e803b8">http::Request</a>
+, <a class="el" href="classhttp_1_1_server.html#a32b84f9e9d2f3d021468defcc44cf40d">http::Server&lt; SocketServerT, RequestT, ResponseT &gt;</a>
 </li>
 <li>request
-: <a class="el" href="classhttp_1_1_server_context.html#a0ea815b708dc85581208f705a9925a45">http::ServerContext</a>
-, <a class="el" href="classhttp_1_1_server_request.html#ad07e64b1b70eb26ec37a0e14e5b43077">http::ServerRequest</a>
+: <a class="el" href="classhttp_1_1_server_context.html#a379e459825fa26e143e4c218a73b3cf9">http::ServerContext&lt; RequestT, ResponseT &gt;</a>
+</li>
+<li>Request
+: <a class="el" href="classhttp_1_1_server_context.html#a918989928f5f32b5e4113a771facf6ad">http::ServerContext&lt; RequestT, ResponseT &gt;</a>
+</li>
+<li>request
+: <a class="el" href="classhttp_1_1_server_request.html#ad07e64b1b70eb26ec37a0e14e5b43077">http::ServerRequest</a>
 </li>
 <li>requestInProgress
-: <a class="el" href="classhttp_1_1_server_context.html#af53b4640f9e03ce6aa2e13de2d0ff270">http::ServerContext</a>
+: <a class="el" href="classhttp_1_1_server_context.html#aca1f8cd9ecb697b26e00275fafc22f91">http::ServerContext&lt; RequestT, ResponseT &gt;</a>
 </li>
 <li>RequestParser()
 : <a class="el" href="classhttp_1_1_request_parser.html#aeeb75ddfce41e51954eaf2b2ba5bc36b">http::RequestParser</a>
 </li>
 <li>reset()
-: <a class="el" href="classhttp_1_1_parser.html#a1f2cb6f31093e582dae0c723e411b8dc">http::Parser</a>
+: <a class="el" href="classexpress_1_1_response.html#a0444e43ad05632b3eb6df2bded19ae91">express::Response</a>
+, <a class="el" href="classhttp_1_1_parser.html#a1f2cb6f31093e582dae0c723e411b8dc">http::Parser</a>
 , <a class="el" href="classhttp_1_1_request.html#a7047a3f15c3618a5f69bf2ef6cb619e4">http::Request</a>
 , <a class="el" href="classhttp_1_1_request_parser.html#a95e7cd0b181e5422f504ec0e5a82e02b">http::RequestParser</a>
 , <a class="el" href="classhttp_1_1_response.html#ac5f1738b8ba36fa0611b53d38a9fa697">http::Response</a>
@@ -172,14 +180,17 @@ $(document).ready(function(){initNavTree('functions_r.html',''); initResizable()
 , <a class="el" href="classutils_1_1_multible_attribute_injector.html#ae85e61abfbd563bcae2e2791b2cb838c">utils::MultibleAttributeInjector</a>
 </li>
 <li>Response()
-: <a class="el" href="classexpress_1_1_response.html#ae9b92f1b7c5209abfc1d84e1a4a26339">express::Response</a>
-, <a class="el" href="classhttp_1_1_response.html#aceb3469e7ebcf223ac0dd8a74e40ea59">http::Response</a>
+: <a class="el" href="classexpress_1_1_response.html#adfcdadb55b618070c216fdce62d03b7d">express::Response</a>
+, <a class="el" href="classhttp_1_1_response.html#a8340da63afa8efee5ded91acd40cc98f">http::Response</a>
+, <a class="el" href="classhttp_1_1_server.html#a83ce37731faf0fcc7509c96423aea06b">http::Server&lt; SocketServerT, RequestT, ResponseT &gt;</a>
+, <a class="el" href="classhttp_1_1_server_context.html#ae095be489d14465880564d7a3a2abd99">http::ServerContext&lt; RequestT, ResponseT &gt;</a>
 </li>
 <li>response
-: <a class="el" href="classhttp_1_1_server_context.html#a3cbe8794f6c11be88896602bd9352cdb">http::ServerContext</a>
+: <a class="el" href="classhttp_1_1_server_context.html#a16ac15bace7106be46891c3989b4e691">http::ServerContext&lt; RequestT, ResponseT &gt;</a>
 </li>
 <li>responseCompleted()
-: <a class="el" href="classhttp_1_1_server_context.html#a6a9548722c09daceab14607ace200e60">http::ServerContext</a>
+: <a class="el" href="classhttp_1_1_server_context.html#a26c9f59ed4d5572f06dbe7bd94f1ef95">http::ServerContext&lt; RequestT, ResponseT &gt;</a>
+, <a class="el" href="classhttp_1_1_server_context_base.html#a5643afc5f2a6dd754b8504c585bfe32a">http::ServerContextBase</a>
 </li>
 <li>responseMap
 : <a class="el" href="classexpress_1_1_router.html#ac0e310eeab90efb9b431ff966ff8d1e6">express::Router</a>
@@ -212,7 +223,7 @@ $(document).ready(function(){initNavTree('functions_r.html',''); initResizable()
 : <a class="el" href="classexpress_1_1_route.html#a30c668d4925a37ea99233e373c44e6e4">express::Route</a>
 </li>
 <li>Router()
-: <a class="el" href="classexpress_1_1_router.html#ae7ad7fb1a5d240f338865485e7b04070">express::Router</a>
+: <a class="el" href="classexpress_1_1_router.html#ac67b3e4528d6ef4d33cf8aad34270042">express::Router</a>
 , <a class="el" href="classexpress_1_1_router_dispatcher.html#ad1fd3424328f664cd049fe429e0e3dc6">express::RouterDispatcher</a>
 </li>
 <li>routerDispatcher

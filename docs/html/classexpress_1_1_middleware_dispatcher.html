@@ -123,7 +123,7 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_router_8cpp_source.html#l00185">185</a> of file <a class="el" href="_router_8cpp_source.html">Router.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_router_8cpp_source.html#l00187">187</a> of file <a class="el" href="_router_8cpp_source.html">Router.cpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="acf15c6cd4c160463d975e3c1c42ddc0c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acf15c6cd4c160463d975e3c1c42ddc0c">&#9670;&nbsp;</a></span>MiddlewareDispatcher()</h2>
@@ -149,9 +149,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_router_8cpp_source.html#l00187">187</a> of file <a class="el" href="_router_8cpp_source.html">Router.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;            : <a class="code" href="classexpress_1_1_middleware_dispatcher.html#acd508d20a13155cac9cb4da92b3098b5">dispatcher</a>(<a class="code" href="classexpress_1_1_middleware_dispatcher.html#acd508d20a13155cac9cb4da92b3098b5">dispatcher</a>) {</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        }</div>
+<p class="definition">Definition at line <a class="el" href="_router_8cpp_source.html#l00189">189</a> of file <a class="el" href="_router_8cpp_source.html">Router.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;            : <a class="code" href="classexpress_1_1_middleware_dispatcher.html#acd508d20a13155cac9cb4da92b3098b5">dispatcher</a>(<a class="code" href="classexpress_1_1_middleware_dispatcher.html#acd508d20a13155cac9cb4da92b3098b5">dispatcher</a>) {</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -204,29 +204,29 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classexpress_1_1_dispatcher.html#aa2a764d7876eb84f80aa0160fcb141bc">express::Dispatcher</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_router_8cpp_source.html#l00234">234</a> of file <a class="el" href="_router_8cpp_source.html">Router.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;                                                                                                                                    {</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        <span class="keywordtype">bool</span> next = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        std::string cpath = <a class="code" href="namespaceexpress.html#a8939ba82ab85b3acc2b653682ae5d386">path_concat</a>(parentPath, mountPoint.path);</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160; </div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        <span class="comment">// TODO: Fix regex-match</span></div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        <span class="keywordflow">if</span> ((req.path.rfind(cpath, 0) == 0 &amp;&amp; mountPoint.method == <span class="stringliteral">&quot;use&quot;</span>) ||</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;            ((cpath == req.path || <a class="code" href="namespaceexpress.html#ae91cec6d3397bfa7a125cf5ff0d190ff">checkForUrlMatch</a>(cpath, req.url)) &amp;&amp; (req.method == mountPoint.method || mountPoint.method == <span class="stringliteral">&quot;all&quot;</span>))) {</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;            next = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160; </div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="namespaceexpress.html#a4f1a16c9a7b214fa7c8e2b690431ee17">hasResult</a>(cpath)) {</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                <a class="code" href="namespaceexpress.html#a42db573d15d12fb0f7caf164fbaac1b9">setParams</a>(cpath, req);</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;            }</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160; </div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;            <a class="code" href="classexpress_1_1_middleware_dispatcher.html#acd508d20a13155cac9cb4da92b3098b5">dispatcher</a>(req, res, [&amp;next]() -&gt; <span class="keywordtype">void</span> {</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                next = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;            });</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        }</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160; </div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        <span class="keywordflow">return</span> next;</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="_router_8cpp_source.html#l00236">236</a> of file <a class="el" href="_router_8cpp_source.html">Router.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;                                                                                                                                    {</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        <span class="keywordtype">bool</span> next = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        std::string cpath = <a class="code" href="namespaceexpress.html#a8939ba82ab85b3acc2b653682ae5d386">path_concat</a>(parentPath, mountPoint.path);</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160; </div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        <span class="comment">// TODO: Fix regex-match</span></div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        <span class="keywordflow">if</span> ((req.path.rfind(cpath, 0) == 0 &amp;&amp; mountPoint.method == <span class="stringliteral">&quot;use&quot;</span>) ||</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;            ((cpath == req.path || <a class="code" href="namespaceexpress.html#ae91cec6d3397bfa7a125cf5ff0d190ff">checkForUrlMatch</a>(cpath, req.url)) &amp;&amp; (req.method == mountPoint.method || mountPoint.method == <span class="stringliteral">&quot;all&quot;</span>))) {</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;            next = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160; </div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="namespaceexpress.html#a4f1a16c9a7b214fa7c8e2b690431ee17">hasResult</a>(cpath)) {</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;                <a class="code" href="namespaceexpress.html#a42db573d15d12fb0f7caf164fbaac1b9">setParams</a>(cpath, req);</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;            }</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160; </div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;            <a class="code" href="classexpress_1_1_middleware_dispatcher.html#acd508d20a13155cac9cb4da92b3098b5">dispatcher</a>(req, res, [&amp;next]() -&gt; <span class="keywordtype">void</span> {</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;                next = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;            });</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        }</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160; </div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        <span class="keywordflow">return</span> next;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_router_8cpp_source.html#l00120">express::checkForUrlMatch()</a>, <a class="el" href="_router_8cpp_source.html#l00196">dispatcher</a>, <a class="el" href="_router_8cpp_source.html#l00065">express::hasResult()</a>, <a class="el" href="_router_8h_source.html#l00058">express::MountPoint::method</a>, <a class="el" href="http_2_request_8h_source.html#l00046">http::Request::method</a>, <a class="el" href="express_2_request_8h_source.html#l00042">express::Request::path</a>, <a class="el" href="_router_8h_source.html#l00059">express::MountPoint::path</a>, <a class="el" href="_router_8cpp_source.html#l00036">express::path_concat()</a>, <a class="el" href="_router_8cpp_source.html#l00094">express::setParams()</a>, and <a class="el" href="http_2_request_8h_source.html#l00047">http::Request::url</a>.</p>
+<p class="reference">References <a class="el" href="_router_8cpp_source.html#l00122">express::checkForUrlMatch()</a>, <a class="el" href="_router_8cpp_source.html#l00198">dispatcher</a>, <a class="el" href="_router_8cpp_source.html#l00067">express::hasResult()</a>, <a class="el" href="_router_8h_source.html#l00058">express::MountPoint::method</a>, <a class="el" href="http_2_request_8h_source.html#l00046">http::Request::method</a>, <a class="el" href="express_2_request_8h_source.html#l00040">express::Request::path</a>, <a class="el" href="_router_8h_source.html#l00059">express::MountPoint::path</a>, <a class="el" href="_router_8cpp_source.html#l00038">express::path_concat()</a>, <a class="el" href="_router_8cpp_source.html#l00096">express::setParams()</a>, and <a class="el" href="http_2_request_8h_source.html#l00047">http::Request::url</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -256,9 +256,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_router_8cpp_source.html#l00196">196</a> of file <a class="el" href="_router_8cpp_source.html">Router.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_router_8cpp_source.html#l00198">198</a> of file <a class="el" href="_router_8cpp_source.html">Router.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_router_8cpp_source.html#l00234">dispatch()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_router_8cpp_source.html#l00236">dispatch()</a>.</p>
 
 </div>
 </div>
@@ -267,11 +267,11 @@ Here is the call graph for this function:</div>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespaceexpress_html_a42db573d15d12fb0f7caf164fbaac1b9"><div class="ttname"><a href="namespaceexpress.html#a42db573d15d12fb0f7caf164fbaac1b9">express::setParams</a></div><div class="ttdeci">static void setParams(const std::string &amp;cpath, Request &amp;req)</div><div class="ttdef"><b>Definition:</b> <a href="_router_8cpp_source.html#l00094">Router.cpp:94</a></div></div>
-<div class="ttc" id="aclassexpress_1_1_middleware_dispatcher_html_acd508d20a13155cac9cb4da92b3098b5"><div class="ttname"><a href="classexpress_1_1_middleware_dispatcher.html#acd508d20a13155cac9cb4da92b3098b5">express::MiddlewareDispatcher::dispatcher</a></div><div class="ttdeci">const std::function&lt; void(Request &amp;req, Response &amp;res, std::function&lt; void(void)&gt;)&gt; dispatcher</div><div class="ttdef"><b>Definition:</b> <a href="_router_8cpp_source.html#l00196">Router.cpp:196</a></div></div>
-<div class="ttc" id="anamespaceexpress_html_a8939ba82ab85b3acc2b653682ae5d386"><div class="ttname"><a href="namespaceexpress.html#a8939ba82ab85b3acc2b653682ae5d386">express::path_concat</a></div><div class="ttdeci">static const std::string path_concat(const std::vector&lt; std::string &gt; &amp;stringvec)</div><div class="ttdef"><b>Definition:</b> <a href="_router_8cpp_source.html#l00036">Router.cpp:36</a></div></div>
-<div class="ttc" id="anamespaceexpress_html_a4f1a16c9a7b214fa7c8e2b690431ee17"><div class="ttname"><a href="namespaceexpress.html#a4f1a16c9a7b214fa7c8e2b690431ee17">express::hasResult</a></div><div class="ttdeci">static bool hasResult(const std::string &amp;cpath)</div><div class="ttdef"><b>Definition:</b> <a href="_router_8cpp_source.html#l00065">Router.cpp:65</a></div></div>
-<div class="ttc" id="anamespaceexpress_html_ae91cec6d3397bfa7a125cf5ff0d190ff"><div class="ttname"><a href="namespaceexpress.html#ae91cec6d3397bfa7a125cf5ff0d190ff">express::checkForUrlMatch</a></div><div class="ttdeci">static bool checkForUrlMatch(const std::string &amp;cpath, const std::string &amp;reqpath)</div><div class="ttdef"><b>Definition:</b> <a href="_router_8cpp_source.html#l00120">Router.cpp:120</a></div></div>
+<div class="ttc" id="anamespaceexpress_html_a42db573d15d12fb0f7caf164fbaac1b9"><div class="ttname"><a href="namespaceexpress.html#a42db573d15d12fb0f7caf164fbaac1b9">express::setParams</a></div><div class="ttdeci">static void setParams(const std::string &amp;cpath, Request &amp;req)</div><div class="ttdef"><b>Definition:</b> <a href="_router_8cpp_source.html#l00096">Router.cpp:96</a></div></div>
+<div class="ttc" id="aclassexpress_1_1_middleware_dispatcher_html_acd508d20a13155cac9cb4da92b3098b5"><div class="ttname"><a href="classexpress_1_1_middleware_dispatcher.html#acd508d20a13155cac9cb4da92b3098b5">express::MiddlewareDispatcher::dispatcher</a></div><div class="ttdeci">const std::function&lt; void(Request &amp;req, Response &amp;res, std::function&lt; void(void)&gt;)&gt; dispatcher</div><div class="ttdef"><b>Definition:</b> <a href="_router_8cpp_source.html#l00198">Router.cpp:198</a></div></div>
+<div class="ttc" id="anamespaceexpress_html_a8939ba82ab85b3acc2b653682ae5d386"><div class="ttname"><a href="namespaceexpress.html#a8939ba82ab85b3acc2b653682ae5d386">express::path_concat</a></div><div class="ttdeci">static const std::string path_concat(const std::vector&lt; std::string &gt; &amp;stringvec)</div><div class="ttdef"><b>Definition:</b> <a href="_router_8cpp_source.html#l00038">Router.cpp:38</a></div></div>
+<div class="ttc" id="anamespaceexpress_html_a4f1a16c9a7b214fa7c8e2b690431ee17"><div class="ttname"><a href="namespaceexpress.html#a4f1a16c9a7b214fa7c8e2b690431ee17">express::hasResult</a></div><div class="ttdeci">static bool hasResult(const std::string &amp;cpath)</div><div class="ttdef"><b>Definition:</b> <a href="_router_8cpp_source.html#l00067">Router.cpp:67</a></div></div>
+<div class="ttc" id="anamespaceexpress_html_ae91cec6d3397bfa7a125cf5ff0d190ff"><div class="ttname"><a href="namespaceexpress.html#ae91cec6d3397bfa7a125cf5ff0d190ff">express::checkForUrlMatch</a></div><div class="ttdeci">static bool checkForUrlMatch(const std::string &amp;cpath, const std::string &amp;reqpath)</div><div class="ttdef"><b>Definition:</b> <a href="_router_8cpp_source.html#l00122">Router.cpp:122</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

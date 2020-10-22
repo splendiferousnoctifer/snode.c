@@ -12,6 +12,7 @@ var namespacehttp =
     [ "ResponseParser", "classhttp_1_1_response_parser.html", "classhttp_1_1_response_parser" ],
     [ "Server", "classhttp_1_1_server.html", "classhttp_1_1_server" ],
     [ "ServerContext", "classhttp_1_1_server_context.html", "classhttp_1_1_server_context" ],
+    [ "ServerContextBase", "classhttp_1_1_server_context_base.html", "classhttp_1_1_server_context_base" ],
     [ "ServerRequest", "classhttp_1_1_server_request.html", "classhttp_1_1_server_request" ],
     [ "ServerResponse", "classhttp_1_1_server_response.html", "classhttp_1_1_server_response" ]
 ];

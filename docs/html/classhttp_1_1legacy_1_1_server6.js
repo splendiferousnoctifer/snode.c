@@ -1,8 +1,8 @@
 var classhttp_1_1legacy_1_1_server6 =
 [
-    [ "Socket", "classhttp_1_1legacy_1_1_server6.html#a0343b1589281fd1238bd47e710f450be", null ],
-    [ "SocketAddress", "classhttp_1_1legacy_1_1_server6.html#a6bf16d3002d30c0e4e03cdfd73fc5a4d", null ],
-    [ "SocketConnection", "classhttp_1_1legacy_1_1_server6.html#a2ef4872f480d3e1c007e1f7cc364d29a", null ],
-    [ "SocketListener", "classhttp_1_1legacy_1_1_server6.html#ab96d3b49994c468e34ef271b3d7c8819", null ],
-    [ "SocketServer", "classhttp_1_1legacy_1_1_server6.html#a0dcc5a7b2e17f63bf4b045b5ead1919b", null ]
+    [ "Socket", "classhttp_1_1legacy_1_1_server6.html#a218e92d05f8b445cd10fa40c462bfc8c", null ],
+    [ "SocketAddress", "classhttp_1_1legacy_1_1_server6.html#a1bb2bd67b29fa3a8574ce67fa0c20254", null ],
+    [ "SocketConnection", "classhttp_1_1legacy_1_1_server6.html#a78e90607861d787ec1d91c6171f5a210", null ],
+    [ "SocketListener", "classhttp_1_1legacy_1_1_server6.html#a021b04ff3621655ca00c3d4ff5a2d238", null ],
+    [ "SocketServer", "classhttp_1_1legacy_1_1_server6.html#a1b5cb0101a3208cee97ecd4240ea2c16", null ]
 ];

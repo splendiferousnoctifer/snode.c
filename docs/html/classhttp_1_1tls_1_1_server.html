@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.20"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>snode.c: http::tls::Server Class Reference</title>
+<title>snode.c: http::tls::Server&lt; Request, Response &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -85,81 +85,76 @@ $(document).ready(function(){initNavTree('classhttp_1_1tls_1_1_server.html','');
 <a href="#pub-types">Public Types</a> &#124;
 <a href="classhttp_1_1tls_1_1_server-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">http::tls::Server Class Reference</div>  </div>
+<div class="title">http::tls::Server&lt; Request, Response &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="tls_2_server_8h_source.html">Server.h</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for http::tls::Server:</div>
+Inheritance diagram for http::tls::Server&lt; Request, Response &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1tls_1_1_server__inherit__graph.svg" width="284" height="458"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1tls_1_1_server__inherit__graph.svg" width="299" height="700"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <div class="dynheader">
-Collaboration diagram for http::tls::Server:</div>
+Collaboration diagram for http::tls::Server&lt; Request, Response &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1tls_1_1_server__coll__graph.svg" width="623" height="1896"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1tls_1_1_server__coll__graph.svg" width="639" height="1955"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ad6d52028c396843e3e915fe3557f1cad"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1tls_1_1_server.html#ad6d52028c396843e3e915fe3557f1cad">SocketServer</a> = <a class="el" href="classnet_1_1socket_1_1ip_1_1tcp_1_1ipv4_1_1tls_1_1_socket_server.html">net::socket::ip::tcp::ipv4::tls::SocketServer</a></td></tr>
-<tr class="separator:ad6d52028c396843e3e915fe3557f1cad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31eee504956edadc5a97c4a751dbbee5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1tls_1_1_server.html#a31eee504956edadc5a97c4a751dbbee5">SocketListener</a> = typename <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_server.html#a1b4b50c99cbd3df6a1b7d07ecad46cbd">SocketServer::SocketListener</a></td></tr>
-<tr class="separator:a31eee504956edadc5a97c4a751dbbee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6170840d3bafd3ec0da7cc57db01d929"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1tls_1_1_server.html#a6170840d3bafd3ec0da7cc57db01d929">SocketConnection</a> = typename SocketListener::SocketConnection</td></tr>
-<tr class="separator:a6170840d3bafd3ec0da7cc57db01d929"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8a879582f0ddc6b3c7b174594f3dc59"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1tls_1_1_server.html#ae8a879582f0ddc6b3c7b174594f3dc59">Socket</a> = typename SocketConnection::Socket</td></tr>
-<tr class="separator:ae8a879582f0ddc6b3c7b174594f3dc59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5457f2996a67b3661636df1df03014af"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1tls_1_1_server.html#a5457f2996a67b3661636df1df03014af">SocketAddress</a> = typename Socket::SocketAddress</td></tr>
-<tr class="separator:a5457f2996a67b3661636df1df03014af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_types_classhttp_1_1_server"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classhttp_1_1_server')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classhttp_1_1_server.html">http::Server&lt; net::socket::ip::tcp::ipv4::tls::SocketServer &gt;</a></td></tr>
-<tr class="memitem:abf5d9587b72077956b016248f66da9b0 inherit pub_types_classhttp_1_1_server"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_server.html#abf5d9587b72077956b016248f66da9b0">SocketServer</a> = <a class="el" href="classnet_1_1socket_1_1ip_1_1tcp_1_1ipv4_1_1tls_1_1_socket_server.html">net::socket::ip::tcp::ipv4::tls::SocketServer</a></td></tr>
-<tr class="separator:abf5d9587b72077956b016248f66da9b0 inherit pub_types_classhttp_1_1_server"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a961d02542a5863e5f47d65aaa84374ce inherit pub_types_classhttp_1_1_server"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_server.html#a961d02542a5863e5f47d65aaa84374ce">SocketConnection</a> = typename <a class="el" href="classnet_1_1socket_1_1ip_1_1tcp_1_1_socket_server.html#accbdec9a276ae3574ad8ba6c5e7bf20b">SocketServer::SocketConnection</a></td></tr>
-<tr class="separator:a961d02542a5863e5f47d65aaa84374ce inherit pub_types_classhttp_1_1_server"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a804dd8c618e0b75f085c0cd6a220f968"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1tls_1_1_server.html#a804dd8c618e0b75f085c0cd6a220f968">SocketServer</a> = <a class="el" href="classnet_1_1socket_1_1ip_1_1tcp_1_1ipv4_1_1tls_1_1_socket_server.html">net::socket::ip::tcp::ipv4::tls::SocketServer</a></td></tr>
+<tr class="separator:a804dd8c618e0b75f085c0cd6a220f968"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a909a382353cc7f0320db0e377a6c8382"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1tls_1_1_server.html#a909a382353cc7f0320db0e377a6c8382">SocketListener</a> = typename <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_server.html#a1b4b50c99cbd3df6a1b7d07ecad46cbd">SocketServer::SocketListener</a></td></tr>
+<tr class="separator:a909a382353cc7f0320db0e377a6c8382"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a2d00d0cd96a90f9a924a36b15d8dfc"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1tls_1_1_server.html#a3a2d00d0cd96a90f9a924a36b15d8dfc">SocketConnection</a> = typename SocketListener::SocketConnection</td></tr>
+<tr class="separator:a3a2d00d0cd96a90f9a924a36b15d8dfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8f3a58e4e03d80beb4c15d99dc60670"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1tls_1_1_server.html#ab8f3a58e4e03d80beb4c15d99dc60670">Socket</a> = typename SocketConnection::Socket</td></tr>
+<tr class="separator:ab8f3a58e4e03d80beb4c15d99dc60670"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1677687a8991d8de2dc35f124b168b32"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1tls_1_1_server.html#a1677687a8991d8de2dc35f124b168b32">SocketAddress</a> = typename Socket::SocketAddress</td></tr>
+<tr class="separator:a1677687a8991d8de2dc35f124b168b32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_classhttp_1_1_server"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classhttp_1_1_server')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classhttp_1_1_server.html">http::Server&lt; net::socket::ip::tcp::ipv4::tls::SocketServer, http::Request, http::Response &gt;</a></td></tr>
+<tr class="memitem:a9a61aabff47e50fcb83d6c033549e45a inherit pub_types_classhttp_1_1_server"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_server.html#a9a61aabff47e50fcb83d6c033549e45a">SocketServer</a> = <a class="el" href="classnet_1_1socket_1_1ip_1_1tcp_1_1ipv4_1_1tls_1_1_socket_server.html">net::socket::ip::tcp::ipv4::tls::SocketServer</a></td></tr>
+<tr class="separator:a9a61aabff47e50fcb83d6c033549e45a inherit pub_types_classhttp_1_1_server"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1c55d73fb26aac10cda5c35b5667267 inherit pub_types_classhttp_1_1_server"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_server.html#ac1c55d73fb26aac10cda5c35b5667267">SocketConnection</a> = typename <a class="el" href="classnet_1_1socket_1_1ip_1_1tcp_1_1_socket_server.html#accbdec9a276ae3574ad8ba6c5e7bf20b">SocketServer::SocketConnection</a></td></tr>
+<tr class="separator:ac1c55d73fb26aac10cda5c35b5667267 inherit pub_types_classhttp_1_1_server"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32b84f9e9d2f3d021468defcc44cf40d inherit pub_types_classhttp_1_1_server"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_server.html#a32b84f9e9d2f3d021468defcc44cf40d">Request</a> = <a class="el" href="classhttp_1_1_request.html">http::Request</a></td></tr>
+<tr class="separator:a32b84f9e9d2f3d021468defcc44cf40d inherit pub_types_classhttp_1_1_server"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83ce37731faf0fcc7509c96423aea06b inherit pub_types_classhttp_1_1_server"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_server.html#a83ce37731faf0fcc7509c96423aea06b">Response</a> = <a class="el" href="classhttp_1_1_response.html">http::Response</a></td></tr>
+<tr class="separator:a83ce37731faf0fcc7509c96423aea06b inherit pub_types_classhttp_1_1_server"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_methods_classhttp_1_1_server"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classhttp_1_1_server')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classhttp_1_1_server.html">http::Server&lt; net::socket::ip::tcp::ipv4::tls::SocketServer &gt;</a></td></tr>
-<tr class="memitem:a48be9b59a105acef5d15b3d4bcdc7dcb inherit pub_methods_classhttp_1_1_server"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_server.html#a48be9b59a105acef5d15b3d4bcdc7dcb">Server</a> (const std::function&lt; void(<a class="el" href="classhttp_1_1_server.html#a961d02542a5863e5f47d65aaa84374ce">SocketConnection</a> *)&gt; &amp;onConnect, const std::function&lt; void(<a class="el" href="classhttp_1_1_request.html">Request</a> &amp;req, <a class="el" href="classhttp_1_1_response.html">Response</a> &amp;res)&gt; &amp;onRequestReady, const std::function&lt; void(<a class="el" href="classhttp_1_1_request.html">Request</a> &amp;req, <a class="el" href="classhttp_1_1_response.html">Response</a> &amp;res)&gt; &amp;onRequestCompleted, const std::function&lt; void(<a class="el" href="classhttp_1_1_server.html#a961d02542a5863e5f47d65aaa84374ce">SocketConnection</a> *)&gt; &amp;onDisconnect, const std::map&lt; std::string, std::any &gt; &amp;options={{}})</td></tr>
-<tr class="separator:a48be9b59a105acef5d15b3d4bcdc7dcb inherit pub_methods_classhttp_1_1_server"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a363131f2cbdd795803d29b16506796 inherit pub_methods_classhttp_1_1_server"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_server.html#a8a363131f2cbdd795803d29b16506796">listen</a> (unsigned short port, const std::function&lt; void(int err)&gt; &amp;onError) const</td></tr>
-<tr class="separator:a8a363131f2cbdd795803d29b16506796 inherit pub_methods_classhttp_1_1_server"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8644d807777a7feb2d3e13a29d5d44fe inherit pub_methods_classhttp_1_1_server"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_server.html#a8644d807777a7feb2d3e13a29d5d44fe">listen</a> (const std::string host, unsigned short port, const std::function&lt; void(int err)&gt; &amp;onError) const</td></tr>
-<tr class="separator:a8644d807777a7feb2d3e13a29d5d44fe inherit pub_methods_classhttp_1_1_server"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_attribs_classhttp_1_1_server"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classhttp_1_1_server')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classhttp_1_1_server.html">http::Server&lt; net::socket::ip::tcp::ipv4::tls::SocketServer &gt;</a></td></tr>
-<tr class="memitem:a742d251a269ca95c2ce53cdef1ad669f inherit pro_attribs_classhttp_1_1_server"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classhttp_1_1_server.html#abf5d9587b72077956b016248f66da9b0">SocketServer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_server.html#a742d251a269ca95c2ce53cdef1ad669f">socketServer</a></td></tr>
-<tr class="separator:a742d251a269ca95c2ce53cdef1ad669f inherit pro_attribs_classhttp_1_1_server"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classhttp_1_1_server"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classhttp_1_1_server')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classhttp_1_1_server.html">http::Server&lt; net::socket::ip::tcp::ipv4::tls::SocketServer, http::Request, http::Response &gt;</a></td></tr>
+<tr class="memitem:a374798851e8f1df07de488e1621b2bc0 inherit pub_methods_classhttp_1_1_server"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_server.html#a374798851e8f1df07de488e1621b2bc0">Server</a> (const std::function&lt; void(<a class="el" href="classhttp_1_1_server.html#ac1c55d73fb26aac10cda5c35b5667267">SocketConnection</a> *)&gt; &amp;onConnect, const std::function&lt; void(<a class="el" href="classhttp_1_1_server.html#a32b84f9e9d2f3d021468defcc44cf40d">Request</a> &amp;req, <a class="el" href="classhttp_1_1_server.html#a83ce37731faf0fcc7509c96423aea06b">Response</a> &amp;res)&gt; &amp;onRequestReady, const std::function&lt; void(<a class="el" href="classhttp_1_1_server.html#a32b84f9e9d2f3d021468defcc44cf40d">Request</a> &amp;req, <a class="el" href="classhttp_1_1_server.html#a83ce37731faf0fcc7509c96423aea06b">Response</a> &amp;res)&gt; &amp;onRequestCompleted, const std::function&lt; void(<a class="el" href="classhttp_1_1_server.html#ac1c55d73fb26aac10cda5c35b5667267">SocketConnection</a> *)&gt; &amp;onDisconnect, const std::map&lt; std::string, std::any &gt; &amp;options={{}})</td></tr>
+<tr class="separator:a374798851e8f1df07de488e1621b2bc0 inherit pub_methods_classhttp_1_1_server"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77f8f9ea76a22a62aae8a15e4173fa19 inherit pub_methods_classhttp_1_1_server"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_server.html#a77f8f9ea76a22a62aae8a15e4173fa19">listen</a> (unsigned short port, const std::function&lt; void(int err)&gt; &amp;onError) const</td></tr>
+<tr class="separator:a77f8f9ea76a22a62aae8a15e4173fa19 inherit pub_methods_classhttp_1_1_server"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7014f96f254e3774a1c7d24dd6bbface inherit pub_methods_classhttp_1_1_server"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_server.html#a7014f96f254e3774a1c7d24dd6bbface">listen</a> (const std::string host, unsigned short port, const std::function&lt; void(int err)&gt; &amp;onError) const</td></tr>
+<tr class="separator:a7014f96f254e3774a1c7d24dd6bbface inherit pub_methods_classhttp_1_1_server"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classhttp_1_1_server"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classhttp_1_1_server')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classhttp_1_1_server.html">http::Server&lt; net::socket::ip::tcp::ipv4::tls::SocketServer, http::Request, http::Response &gt;</a></td></tr>
+<tr class="memitem:a9c8d03477f123be7b567a477faf9bf6c inherit pro_attribs_classhttp_1_1_server"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classhttp_1_1_server.html#a9a61aabff47e50fcb83d6c033549e45a">SocketServer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_server.html#a9c8d03477f123be7b567a477faf9bf6c">socketServer</a></td></tr>
+<tr class="separator:a9c8d03477f123be7b567a477faf9bf6c inherit pro_attribs_classhttp_1_1_server"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="tls_2_server_8h_source.html#l00032">32</a> of file <a class="el" href="tls_2_server_8h_source.html">Server.h</a>.</p>
+<div class="textblock"><h3>template&lt;typename Request = http::Request, typename Response = http::Response&gt;<br />
+class http::tls::Server&lt; Request, Response &gt;</h3>
+
+
+<p class="definition">Definition at line <a class="el" href="tls_2_server_8h_source.html#l00033">33</a> of file <a class="el" href="tls_2_server_8h_source.html">Server.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="ae8a879582f0ddc6b3c7b174594f3dc59"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae8a879582f0ddc6b3c7b174594f3dc59">&#9670;&nbsp;</a></span>Socket</h2>
+<a id="ab8f3a58e4e03d80beb4c15d99dc60670"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8f3a58e4e03d80beb4c15d99dc60670">&#9670;&nbsp;</a></span>Socket</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename Request  = http::Request, typename Response  = http::Response&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classhttp_1_1tls_1_1_server.html#ae8a879582f0ddc6b3c7b174594f3dc59">http::tls::Server::Socket</a> =  typename SocketConnection::Socket</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="tls_2_server_8h_source.html#l00037">37</a> of file <a class="el" href="tls_2_server_8h_source.html">Server.h</a>.</p>
-
-</div>
-</div>
-<a id="a5457f2996a67b3661636df1df03014af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5457f2996a67b3661636df1df03014af">&#9670;&nbsp;</a></span>SocketAddress</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="classhttp_1_1tls_1_1_server.html#a5457f2996a67b3661636df1df03014af">http::tls::Server::SocketAddress</a> =  typename Socket::SocketAddress</td>
+          <td class="memname">using <a class="el" href="classhttp_1_1tls_1_1_server.html">http::tls::Server</a>&lt; <a class="el" href="classhttp_1_1_server.html#a32b84f9e9d2f3d021468defcc44cf40d">Request</a>, <a class="el" href="classhttp_1_1_server.html#a83ce37731faf0fcc7509c96423aea06b">Response</a> &gt;::<a class="el" href="classhttp_1_1tls_1_1_server.html#ab8f3a58e4e03d80beb4c15d99dc60670">Socket</a> =  typename SocketConnection::Socket</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -168,14 +163,52 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a6170840d3bafd3ec0da7cc57db01d929"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6170840d3bafd3ec0da7cc57db01d929">&#9670;&nbsp;</a></span>SocketConnection</h2>
+<a id="a1677687a8991d8de2dc35f124b168b32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1677687a8991d8de2dc35f124b168b32">&#9670;&nbsp;</a></span>SocketAddress</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename Request  = http::Request, typename Response  = http::Response&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classhttp_1_1tls_1_1_server.html#a6170840d3bafd3ec0da7cc57db01d929">http::tls::Server::SocketConnection</a> =  typename SocketListener::SocketConnection</td>
+          <td class="memname">using <a class="el" href="classhttp_1_1tls_1_1_server.html">http::tls::Server</a>&lt; <a class="el" href="classhttp_1_1_server.html#a32b84f9e9d2f3d021468defcc44cf40d">Request</a>, <a class="el" href="classhttp_1_1_server.html#a83ce37731faf0fcc7509c96423aea06b">Response</a> &gt;::<a class="el" href="classhttp_1_1tls_1_1_server.html#a1677687a8991d8de2dc35f124b168b32">SocketAddress</a> =  typename Socket::SocketAddress</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="tls_2_server_8h_source.html#l00039">39</a> of file <a class="el" href="tls_2_server_8h_source.html">Server.h</a>.</p>
+
+</div>
+</div>
+<a id="a3a2d00d0cd96a90f9a924a36b15d8dfc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a2d00d0cd96a90f9a924a36b15d8dfc">&#9670;&nbsp;</a></span>SocketConnection</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Request  = http::Request, typename Response  = http::Response&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classhttp_1_1tls_1_1_server.html">http::tls::Server</a>&lt; <a class="el" href="classhttp_1_1_server.html#a32b84f9e9d2f3d021468defcc44cf40d">Request</a>, <a class="el" href="classhttp_1_1_server.html#a83ce37731faf0fcc7509c96423aea06b">Response</a> &gt;::<a class="el" href="classhttp_1_1tls_1_1_server.html#a3a2d00d0cd96a90f9a924a36b15d8dfc">SocketConnection</a> =  typename SocketListener::SocketConnection</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="tls_2_server_8h_source.html#l00037">37</a> of file <a class="el" href="tls_2_server_8h_source.html">Server.h</a>.</p>
+
+</div>
+</div>
+<a id="a909a382353cc7f0320db0e377a6c8382"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a909a382353cc7f0320db0e377a6c8382">&#9670;&nbsp;</a></span>SocketListener</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Request  = http::Request, typename Response  = http::Response&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classhttp_1_1tls_1_1_server.html">http::tls::Server</a>&lt; <a class="el" href="classhttp_1_1_server.html#a32b84f9e9d2f3d021468defcc44cf40d">Request</a>, <a class="el" href="classhttp_1_1_server.html#a83ce37731faf0fcc7509c96423aea06b">Response</a> &gt;::<a class="el" href="classhttp_1_1tls_1_1_server.html#a909a382353cc7f0320db0e377a6c8382">SocketListener</a> =  typename <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_server.html#a1b4b50c99cbd3df6a1b7d07ecad46cbd">SocketServer::SocketListener</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -184,35 +217,21 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a31eee504956edadc5a97c4a751dbbee5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a31eee504956edadc5a97c4a751dbbee5">&#9670;&nbsp;</a></span>SocketListener</h2>
+<a id="a804dd8c618e0b75f085c0cd6a220f968"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a804dd8c618e0b75f085c0cd6a220f968">&#9670;&nbsp;</a></span>SocketServer</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename Request  = http::Request, typename Response  = http::Response&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classhttp_1_1tls_1_1_server.html#a31eee504956edadc5a97c4a751dbbee5">http::tls::Server::SocketListener</a> =  typename <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_server.html#a1b4b50c99cbd3df6a1b7d07ecad46cbd">SocketServer::SocketListener</a></td>
+          <td class="memname">using <a class="el" href="classhttp_1_1tls_1_1_server.html">http::tls::Server</a>&lt; <a class="el" href="classhttp_1_1_server.html#a32b84f9e9d2f3d021468defcc44cf40d">Request</a>, <a class="el" href="classhttp_1_1_server.html#a83ce37731faf0fcc7509c96423aea06b">Response</a> &gt;::<a class="el" href="classhttp_1_1tls_1_1_server.html#a804dd8c618e0b75f085c0cd6a220f968">SocketServer</a> =  <a class="el" href="classnet_1_1socket_1_1ip_1_1tcp_1_1ipv4_1_1tls_1_1_socket_server.html">net::socket::ip::tcp::ipv4::tls::SocketServer</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="tls_2_server_8h_source.html#l00035">35</a> of file <a class="el" href="tls_2_server_8h_source.html">Server.h</a>.</p>
-
-</div>
-</div>
-<a id="ad6d52028c396843e3e915fe3557f1cad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad6d52028c396843e3e915fe3557f1cad">&#9670;&nbsp;</a></span>SocketServer</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="classhttp_1_1tls_1_1_server.html#ad6d52028c396843e3e915fe3557f1cad">http::tls::Server::SocketServer</a> =  <a class="el" href="classnet_1_1socket_1_1ip_1_1tcp_1_1ipv4_1_1tls_1_1_socket_server.html">net::socket::ip::tcp::ipv4::tls::SocketServer</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="tls_2_server_8h_source.html#l00034">34</a> of file <a class="el" href="tls_2_server_8h_source.html">Server.h</a>.</p>
 
 </div>
 </div>

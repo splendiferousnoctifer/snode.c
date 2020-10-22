@@ -94,7 +94,8 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 : <a class="el" href="classhttp_1_1_response.html#ab97ab9c5d7ec9f18c116aa727851c834">http::Response</a>
 </li>
 <li>sendResponseData()
-: <a class="el" href="classhttp_1_1_server_context.html#ab8a806ab5b70b22e6be8764a32462049">http::ServerContext</a>
+: <a class="el" href="classhttp_1_1_server_context.html#ab7385f5ee5977d452007d656d55f756f">http::ServerContext&lt; RequestT, ResponseT &gt;</a>
+, <a class="el" href="classhttp_1_1_server_context_base.html#a90944df90ce9e7962b18dbc6408a1724">http::ServerContextBase</a>
 </li>
 <li>sendStatus()
 : <a class="el" href="classexpress_1_1_response.html#a9049ec68cf5f6cb6d04c403267158d09">express::Response</a>
@@ -104,10 +105,10 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 , <a class="el" href="classnet_1_1socket_1_1ip_1_1address_1_1ipv6_1_1_inet_address.html#a10f3e74e9c3ec17adcbc3aadd22e17c8">net::socket::ip::address::ipv6::InetAddress</a>
 </li>
 <li>Server()
-: <a class="el" href="classhttp_1_1_server.html#a48be9b59a105acef5d15b3d4bcdc7dcb">http::Server&lt; SocketServerT &gt;</a>
+: <a class="el" href="classhttp_1_1_server.html#a374798851e8f1df07de488e1621b2bc0">http::Server&lt; SocketServerT, RequestT, ResponseT &gt;</a>
 </li>
 <li>ServerContext()
-: <a class="el" href="classhttp_1_1_server_context.html#a56fd463c91654eec1b8bd362c0f25546">http::ServerContext</a>
+: <a class="el" href="classhttp_1_1_server_context.html#aaab904344f18f65ee587d41f30829866">http::ServerContext&lt; RequestT, ResponseT &gt;</a>
 </li>
 <li>ServerResponse()
 : <a class="el" href="classhttp_1_1_server_response.html#abb670267dd81246e9ab30677705cc092">http::ServerResponse</a>
@@ -118,7 +119,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 </li>
 <li>setAttribute()
 : <a class="el" href="classutils_1_1_multible_attribute_injector.html#ae15173abed119d76869746e5b6fba707">utils::MultibleAttributeInjector</a>
-, <a class="el" href="classutils_1_1_single_attribute_injector.html#a6ab8e6c5069845a23e35f9e33fb0ea4f">utils::SingleAttributeInjector</a>
+, <a class="el" href="classutils_1_1_single_attribute_injector.html#a5f621a05e84bd9406fe961c071df502c">utils::SingleAttributeInjector</a>
 </li>
 <li>setBindAddress()
 : <a class="el" href="classnet_1_1socket_1_1_socket.html#a589d4bf4a657cbc01ed46d33613a3429">net::socket::Socket&lt; SocketAddressT &gt;</a>
@@ -179,7 +180,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 : <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#af4cf2e7cba730d5eafd50597446e622a">net::socket::stream::SocketConnectionBase</a>
 </li>
 <li>SocketConnector()
-: <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connector.html#ac32f58512b28aaf2b7ad829c1b89f893">net::socket::stream::SocketConnector&lt; SocketConnectionT &gt;</a>
+: <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connector.html#aba282a7885d755b5eb61bec16ae7ce04">net::socket::stream::SocketConnector&lt; SocketConnectionT &gt;</a>
 , <a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connector.html#a03d3cd1d7ad33216ae0c58d3f88d8339">net::socket::stream::tls::SocketConnector&lt; SocketT &gt;</a>
 </li>
 <li>SocketListener()
@@ -190,7 +191,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 : <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#a09cdfbf63471ff96a723fc6e09ab95a8">net::socket::stream::SocketReader&lt; SocketT &gt;</a>
 </li>
 <li>SocketServer()
-: <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_server.html#afef842429abe6236085394d9b51f2af2">net::socket::stream::SocketServer&lt; SocketListenerT &gt;</a>
+: <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_server.html#ac0576dc9dc6a453f9534f334e71e026e">net::socket::stream::SocketServer&lt; SocketListenerT &gt;</a>
 </li>
 <li>SocketWriter()
 : <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#a7e241f91ccc2e05f921bc52d75df9acb">net::socket::stream::SocketWriter&lt; SocketT &gt;</a>
@@ -206,7 +207,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 : <a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a7ef6031f0b6f3dc25efa7f844bab63b9">net::socket::stream::tls::SocketConnection&lt; SocketT &gt;</a>
 </li>
 <li>StaticMiddleware()
-: <a class="el" href="classexpress_1_1middleware_1_1_static_middleware.html#af712793a6f6d600b813fc4a6d3fbe41d">express::middleware::StaticMiddleware</a>
+: <a class="el" href="classexpress_1_1middleware_1_1_static_middleware.html#a573c60de5962113fc441e2494b87f79f">express::middleware::StaticMiddleware</a>
 </li>
 <li>status()
 : <a class="el" href="classhttp_1_1_response.html#a37d8fcef190c86c0a91de82eb150bbf0">http::Response</a>

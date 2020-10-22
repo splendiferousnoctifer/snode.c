@@ -116,7 +116,7 @@ $(document).ready(function(){initNavTree('http_2_request_8h_source.html',''); in
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacehttp.html">http</a> {</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">class </span>ServerContext;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">class </span>ServerContextBase;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
 <div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classhttp_1_1_request.html">   34</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classhttp_1_1_request.html">Request</a> : <span class="keyword">public</span> <a class="code" href="classutils_1_1_multible_attribute_injector.html">utils::MultibleAttributeInjector</a> {</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">protected</span>:</div>
@@ -147,12 +147,13 @@ $(document).ready(function(){initNavTree('http_2_request_8h_source.html',''); in
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
 <div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classhttp_1_1_request.html#aae3aee3b863d7f602f3252f9ece042fb">   61</a></span>&#160;        std::string <a class="code" href="classhttp_1_1_request.html#aae3aee3b863d7f602f3252f9ece042fb">nullstr</a> = <span class="stringliteral">&quot;&quot;</span>;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="classhttp_1_1_request.html#af09d0507509ded240571d60d064dfff6">   63</a></span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classhttp_1_1_server_context.html">ServerContext</a>;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    };</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;} <span class="comment">// namespace http</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#endif // REQUEST_H</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Request, <span class="keyword">typename</span> Response&gt;</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classhttp_1_1_request.html#a58803afb783dacd8a75fdc9f6bcb0a3b">   64</a></span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classhttp_1_1_server_context.html">ServerContext</a>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    };</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;} <span class="comment">// namespace http</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#endif // REQUEST_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclasshttp_1_1_request_html_a7fbdafc5732496bafcfa02a9c5e803b8"><div class="ttname"><a href="classhttp_1_1_request.html#a7fbdafc5732496bafcfa02a9c5e803b8">http::Request::Request</a></div><div class="ttdeci">Request()=default</div></div>
@@ -167,7 +168,7 @@ $(document).ready(function(){initNavTree('http_2_request_8h_source.html',''); in
 <div class="ttc" id="aclasshttp_1_1_request_html_a3c8d9f58a3c19c58c8524b196f44c689"><div class="ttname"><a href="classhttp_1_1_request.html#a3c8d9f58a3c19c58c8524b196f44c689">http::Request::queries</a></div><div class="ttdeci">const std::map&lt; std::string, std::string &gt; * queries</div><div class="ttdef"><b>Definition:</b> <a href="http_2_request_8h_source.html#l00057">Request.h:57</a></div></div>
 <div class="ttc" id="aclasshttp_1_1_request_html"><div class="ttname"><a href="classhttp_1_1_request.html">http::Request</a></div><div class="ttdef"><b>Definition:</b> <a href="http_2_request_8h_source.html#l00034">Request.h:34</a></div></div>
 <div class="ttc" id="aclasshttp_1_1_request_html_a0fbecf984056aca2a820b7663b811302"><div class="ttname"><a href="classhttp_1_1_request.html#a0fbecf984056aca2a820b7663b811302">http::Request::body</a></div><div class="ttdeci">char * body</div><div class="ttdef"><b>Definition:</b> <a href="http_2_request_8h_source.html#l00049">Request.h:49</a></div></div>
-<div class="ttc" id="aclasshttp_1_1_server_context_html"><div class="ttname"><a href="classhttp_1_1_server_context.html">http::ServerContext</a></div><div class="ttdef"><b>Definition:</b> <a href="_server_context_8h_source.html#l00036">ServerContext.h:36</a></div></div>
+<div class="ttc" id="aclasshttp_1_1_server_context_html"><div class="ttname"><a href="classhttp_1_1_server_context.html">http::ServerContext</a></div><div class="ttdef"><b>Definition:</b> <a href="_server_context_8h_source.html#l00054">ServerContext.h:54</a></div></div>
 <div class="ttc" id="anamespacehttp_html"><div class="ttname"><a href="namespacehttp.html">http</a></div><div class="ttdef"><b>Definition:</b> <a href="_client_8h_source.html#l00035">Client.h:35</a></div></div>
 <div class="ttc" id="aclasshttp_1_1_request_html_a30e5ca8074f0f64e12658e41a105af6b"><div class="ttname"><a href="classhttp_1_1_request.html#a30e5ca8074f0f64e12658e41a105af6b">http::Request::keepAlive</a></div><div class="ttdeci">bool keepAlive</div><div class="ttdef"><b>Definition:</b> <a href="http_2_request_8h_source.html#l00052">Request.h:52</a></div></div>
 <div class="ttc" id="aclasshttp_1_1_request_html_a63e7086a7432966fe347e719d734f15d"><div class="ttname"><a href="classhttp_1_1_request.html#a63e7086a7432966fe347e719d734f15d">http::Request::cookie</a></div><div class="ttdeci">const std::string &amp; cookie(const std::string &amp;key) const</div><div class="ttdef"><b>Definition:</b> <a href="http_2_request_8cpp_source.html#l00048">Request.cpp:48</a></div></div>
