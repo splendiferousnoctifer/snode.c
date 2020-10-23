@@ -316,26 +316,27 @@
 <g id="node8" class="node">
 <title>Node8</title>
 <g id="a_node8"><a xlink:href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="478.12,-624 478.12,-747 597.12,-747 597.12,-624 478.12,-624"/>
-<text text-anchor="start" x="486.12" y="-735" font-family="Helvetica,sans-Serif" font-size="10.00">net::socket::stream</text>
-<text text-anchor="start" x="486.12" y="-724" font-family="Helvetica,sans-Serif" font-size="10.00">::tls::SocketConnection</text>
-<text text-anchor="middle" x="537.62" y="-713" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; SocketT &gt;</text>
-<polyline fill="none" stroke="black" points="478.12,-706 597.12,-706 "/>
-<text text-anchor="start" x="486.12" y="-694" font-family="Helvetica,sans-Serif" font-size="10.00"># ssl</text>
-<text text-anchor="start" x="486.12" y="-683" font-family="Helvetica,sans-Serif" font-size="10.00"># sslErr</text>
-<polyline fill="none" stroke="black" points="478.12,-676 597.12,-676 "/>
-<text text-anchor="start" x="486.12" y="-664" font-family="Helvetica,sans-Serif" font-size="10.00">+ SocketConnection()</text>
-<text text-anchor="start" x="486.12" y="-653" font-family="Helvetica,sans-Serif" font-size="10.00">+ startSSL()</text>
-<text text-anchor="start" x="486.12" y="-642" font-family="Helvetica,sans-Serif" font-size="10.00">+ stopSSL()</text>
-<text text-anchor="start" x="486.12" y="-631" font-family="Helvetica,sans-Serif" font-size="10.00">+ getSSL()</text>
+<polygon fill="white" stroke="black" points="478.12,-618.5 478.12,-752.5 597.12,-752.5 597.12,-618.5 478.12,-618.5"/>
+<text text-anchor="start" x="486.12" y="-740.5" font-family="Helvetica,sans-Serif" font-size="10.00">net::socket::stream</text>
+<text text-anchor="start" x="486.12" y="-729.5" font-family="Helvetica,sans-Serif" font-size="10.00">::tls::SocketConnection</text>
+<text text-anchor="middle" x="537.62" y="-718.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; SocketT &gt;</text>
+<polyline fill="none" stroke="black" points="478.12,-711.5 597.12,-711.5 "/>
+<text text-anchor="start" x="486.12" y="-699.5" font-family="Helvetica,sans-Serif" font-size="10.00"># ssl</text>
+<text text-anchor="start" x="486.12" y="-688.5" font-family="Helvetica,sans-Serif" font-size="10.00"># sslErr</text>
+<polyline fill="none" stroke="black" points="478.12,-681.5 597.12,-681.5 "/>
+<text text-anchor="start" x="486.12" y="-669.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ SocketConnection()</text>
+<text text-anchor="start" x="486.12" y="-658.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ startSSL()</text>
+<text text-anchor="start" x="486.12" y="-647.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ stopSSL()</text>
+<text text-anchor="start" x="486.12" y="-636.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getSSL()</text>
+<text text-anchor="start" x="486.12" y="-625.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setSSLError()</text>
 </a>
 </g>
 </g>
 <!-- Node8&#45;&gt;Node2 -->
 <g id="edge8" class="edge">
 <title>Node8&#45;&gt;Node2</title>
-<path fill="none" stroke="#404040" d="M494.62,-623.82C455.36,-568.43 396.44,-485.29 349.31,-418.79"/>
-<polygon fill="none" stroke="#404040" points="349.09,-418.47 342.35,-415.89 342.15,-408.68 348.88,-411.27 349.09,-418.47"/>
+<path fill="none" stroke="#404040" d="M490.73,-618.33C451.56,-563.07 394.96,-483.2 349.37,-418.88"/>
+<polygon fill="none" stroke="#404040" points="349.09,-418.49 342.36,-415.9 342.16,-408.7 348.89,-411.28 349.09,-418.49"/>
 <text text-anchor="middle" x="456.12" y="-498.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#45;socketConnection</text>
 </g>
 <!-- Node9 -->
@@ -375,7 +376,7 @@
 <!-- Node9&#45;&gt;Node8 -->
 <g id="edge9" class="edge">
 <title>Node9&#45;&gt;Node8</title>
-<path fill="none" stroke="midnightblue" d="M612.8,-868.98C595.01,-825.81 576.68,-781.3 562.57,-747.05"/>
+<path fill="none" stroke="midnightblue" d="M612.89,-869.2C596.03,-828.29 578.68,-786.16 564.89,-752.68"/>
 <polygon fill="none" stroke="midnightblue" points="609.65,-870.55 616.7,-878.46 616.13,-867.88 609.65,-870.55"/>
 </g>
 <!-- Node10 -->

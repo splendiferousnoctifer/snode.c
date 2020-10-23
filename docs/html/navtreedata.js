@@ -85,8 +85,8 @@ var NAVTREEINDEX =
 "classhttp_1_1_request_parser.html#a21070cc8d0d15f69dfeaf6bd767dac89",
 "classnet_1_1_event_loop.html#af0b7c67361c334c4bcf10eab9bf65ea9",
 "classnet_1_1socket_1_1stream_1_1_socket_connector.html#aba282a7885d755b5eb61bec16ae7ce04",
-"functions_func_r.html",
-"tls_2_socket_listener_8h.html"
+"functions_func_q.html",
+"tls_2_socket_connector_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
