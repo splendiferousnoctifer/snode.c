@@ -16,7 +16,7 @@ var searchData=
   ['eventdispatcher_3c_20outofbandeventreceiver_20_3e_104',['EventDispatcher&lt; OutOfBandEventReceiver &gt;',['../classnet_1_1_event_dispatcher.html',1,'net']]],
   ['eventdispatcher_3c_20readeventreceiver_20_3e_105',['EventDispatcher&lt; ReadEventReceiver &gt;',['../classnet_1_1_event_dispatcher.html',1,'net']]],
   ['eventdispatcher_3c_20writeeventreceiver_20_3e_106',['EventDispatcher&lt; WriteEventReceiver &gt;',['../classnet_1_1_event_dispatcher.html',1,'net']]],
-  ['eventloop_107',['EventLoop',['../classnet_1_1_event_loop.html',1,'net::EventLoop'],['../classnet_1_1_event_dispatcher.html#aca25e36665670fcb6909dd8ab04b1d05',1,'net::EventDispatcher::EventLoop()'],['../classnet_1_1_event_loop.html#a48a2c8c1c74186727ad350274ab500e9',1,'net::EventLoop::EventLoop()'],['../classnet_1_1_event_loop.html#aecfae844f26d3db70ec3447efa6d3675',1,'net::EventLoop::eventLoop()']]],
+  ['eventloop_107',['EventLoop',['../classnet_1_1_event_loop.html',1,'net::EventLoop'],['../classnet_1_1_event_loop.html#aecfae844f26d3db70ec3447efa6d3675',1,'net::EventLoop::eventLoop()'],['../classnet_1_1_event_dispatcher.html#aca25e36665670fcb6909dd8ab04b1d05',1,'net::EventDispatcher::EventLoop()'],['../classnet_1_1_event_loop.html#a48a2c8c1c74186727ad350274ab500e9',1,'net::EventLoop::EventLoop()']]],
   ['eventloop_2ecpp_108',['EventLoop.cpp',['../_event_loop_8cpp.html',1,'']]],
   ['eventloop_2eh_109',['EventLoop.h',['../_event_loop_8h.html',1,'']]],
   ['eventreceiver_110',['EventReceiver',['../classnet_1_1_event_receiver.html',1,'net::EventReceiver'],['../classnet_1_1_event_dispatcher.html#ae0f93576fe0d5f85cce969f1c48f631a',1,'net::EventDispatcher::EventReceiver()'],['../classnet_1_1_event_receiver.html#a86efc248072a03be0078fb53c535a68f',1,'net::EventReceiver::EventReceiver(long timeout)'],['../classnet_1_1_event_receiver.html#a6c28df1ea04b1505fd401a8e67797ffc',1,'net::EventReceiver::EventReceiver(const EventReceiver &amp;)=delete']]],
@@ -24,7 +24,8 @@ var searchData=
   ['exceptfdset_112',['exceptFdSet',['../classnet_1_1_event_loop.html#a7667220fe50b841eacecbfa316955191',1,'net::EventLoop']]],
   ['explode_113',['explode',['../namespaceexpress.html#adf22db775a32911eba390528d06fca90',1,'express']]],
   ['express_114',['express',['../namespaceexpress.html',1,'']]],
-  ['legacy_115',['legacy',['../namespaceexpress_1_1legacy.html',1,'express']]],
-  ['middleware_116',['middleware',['../namespaceexpress_1_1middleware.html',1,'express']]],
-  ['tls_117',['tls',['../namespaceexpress_1_1tls.html',1,'express']]]
+  ['extend_115',['extend',['../classhttp_1_1_request.html#a490c225eb56b7677f83e416c8a95fc69',1,'http::Request::extend()'],['../classexpress_1_1_request.html#ab105154473e4161464f06febf1b85826',1,'express::Request::extend()']]],
+  ['legacy_116',['legacy',['../namespaceexpress_1_1legacy.html',1,'express']]],
+  ['middleware_117',['middleware',['../namespaceexpress_1_1middleware.html',1,'express']]],
+  ['tls_118',['tls',['../namespaceexpress_1_1tls.html',1,'express']]]
 ];

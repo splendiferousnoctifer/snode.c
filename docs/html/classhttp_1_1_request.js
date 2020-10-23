@@ -4,6 +4,7 @@ var classhttp_1_1_request =
     [ "~Request", "classhttp_1_1_request.html#a4c2c0b9e89103c30e9b974c9288db3e5", null ],
     [ "bodyLength", "classhttp_1_1_request.html#a5ad9b6aadda6b897a0bdc69490f609bf", null ],
     [ "cookie", "classhttp_1_1_request.html#a63e7086a7432966fe347e719d734f15d", null ],
+    [ "extend", "classhttp_1_1_request.html#a490c225eb56b7677f83e416c8a95fc69", null ],
     [ "header", "classhttp_1_1_request.html#a517a253faa56139a38c0c933d9a501e0", null ],
     [ "query", "classhttp_1_1_request.html#a43f7a2516f7c29e0b3e036ca83fca165", null ],
     [ "reset", "classhttp_1_1_request.html#a7047a3f15c3618a5f69bf2ef6cb619e4", null ],
