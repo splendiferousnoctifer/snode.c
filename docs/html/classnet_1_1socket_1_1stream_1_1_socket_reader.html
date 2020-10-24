@@ -96,8 +96,7 @@ $(document).ready(function(){initNavTree('classnet_1_1socket_1_1stream_1_1_socke
 <div class="dynheader">
 Inheritance diagram for net::socket::stream::SocketReader&lt; SocketT &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_reader__inherit__graph.svg" width="544" height="1808"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_reader__inherit__graph.svg" width="544" height="1808"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <div class="dynheader">
 Collaboration diagram for net::socket::stream::SocketReader&lt; SocketT &gt;:</div>
@@ -393,16 +392,15 @@ template&lt;typename SocketT &gt; </div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#abbd9aeb4ce71eb7aca64c33459d3ade6">onRead</a>(junk, ret);</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (errno != EAGAIN &amp;&amp; errno != EWOULDBLOCK &amp;&amp; errno != EINTR) {</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                <a class="code" href="classnet_1_1_read_event_receiver.html#a1aa12164e4a0363f8a61acdceb44cd0c">ReadEventReceiver::disable</a>();</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                <a class="code" href="classnet_1_1_read_event_receiver.html#a4a0eb84c0e1e30afb8fe0c4bc2d5e57c">ReadEventReceiver::suspend</a>();</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#aae435ace40fd15998d46c67176fd342c">onError</a>(<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#a0592f7cab272b388303ecdcf0c88c732">getError</a>());</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            }</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#aae435ace40fd15998d46c67176fd342c">onError</a>(<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#a0592f7cab272b388303ecdcf0c88c732">getError</a>());</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_read_event_receiver_8cpp_source.html#l00039">net::ReadEventReceiver::disable()</a>, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#a0592f7cab272b388303ecdcf0c88c732">net::socket::stream::SocketReader&lt; SocketT &gt;::getError()</a>, <a class="el" href="_socket_reader_8h_source.html#l00034">MAX_READ_JUNKSIZE</a>, <a class="el" href="_socket_reader_8h_source.html#l00078">net::socket::stream::SocketReader&lt; SocketT &gt;::onError</a>, <a class="el" href="_socket_reader_8h_source.html#l00077">net::socket::stream::SocketReader&lt; SocketT &gt;::onRead</a>, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#acdc832ddd01ce292850943500431eb98">net::socket::stream::SocketReader&lt; SocketT &gt;::read()</a>, and <a class="el" href="_read_event_receiver_8cpp_source.html#l00043">net::ReadEventReceiver::suspend()</a>.</p>
+<p class="reference">References <a class="el" href="_read_event_receiver_8cpp_source.html#l00039">net::ReadEventReceiver::disable()</a>, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#a0592f7cab272b388303ecdcf0c88c732">net::socket::stream::SocketReader&lt; SocketT &gt;::getError()</a>, <a class="el" href="_socket_reader_8h_source.html#l00034">MAX_READ_JUNKSIZE</a>, <a class="el" href="_socket_reader_8h_source.html#l00077">net::socket::stream::SocketReader&lt; SocketT &gt;::onError</a>, <a class="el" href="_socket_reader_8h_source.html#l00076">net::socket::stream::SocketReader&lt; SocketT &gt;::onRead</a>, and <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#acdc832ddd01ce292850943500431eb98">net::socket::stream::SocketReader&lt; SocketT &gt;::read()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_reader_ab61867e53c7aeaf9c51cfaa19ddd060b_cgraph.svg" width="655" height="310"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_reader_ab61867e53c7aeaf9c51cfaa19ddd060b_cgraph.svg" width="655" height="248"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -430,7 +428,7 @@ template&lt;typename SocketT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_socket_reader_8h_source.html#l00078">78</a> of file <a class="el" href="_socket_reader_8h_source.html">SocketReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_socket_reader_8h_source.html#l00077">77</a> of file <a class="el" href="_socket_reader_8h_source.html">SocketReader.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_socket_reader_8h_source.html#l00058">net::socket::stream::SocketReader&lt; SocketT &gt;::readEvent()</a>.</p>
 
@@ -458,7 +456,7 @@ template&lt;typename SocketT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_socket_reader_8h_source.html#l00077">77</a> of file <a class="el" href="_socket_reader_8h_source.html">SocketReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_socket_reader_8h_source.html#l00076">76</a> of file <a class="el" href="_socket_reader_8h_source.html">SocketReader.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_socket_reader_8h_source.html#l00058">net::socket::stream::SocketReader&lt; SocketT &gt;::readEvent()</a>.</p>
 
@@ -469,12 +467,11 @@ template&lt;typename SocketT &gt; </div>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_reader_html_abbd9aeb4ce71eb7aca64c33459d3ade6"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#abbd9aeb4ce71eb7aca64c33459d3ade6">net::socket::stream::SocketReader::onRead</a></div><div class="ttdeci">std::function&lt; void(const char *junk, ssize_t junkLen)&gt; onRead</div><div class="ttdef"><b>Definition:</b> <a href="_socket_reader_8h_source.html#l00077">SocketReader.h:77</a></div></div>
-<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_reader_html_aae435ace40fd15998d46c67176fd342c"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#aae435ace40fd15998d46c67176fd342c">net::socket::stream::SocketReader::onError</a></div><div class="ttdeci">std::function&lt; void(int errnum)&gt; onError</div><div class="ttdef"><b>Definition:</b> <a href="_socket_reader_8h_source.html#l00078">SocketReader.h:78</a></div></div>
+<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_reader_html_abbd9aeb4ce71eb7aca64c33459d3ade6"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#abbd9aeb4ce71eb7aca64c33459d3ade6">net::socket::stream::SocketReader::onRead</a></div><div class="ttdeci">std::function&lt; void(const char *junk, ssize_t junkLen)&gt; onRead</div><div class="ttdef"><b>Definition:</b> <a href="_socket_reader_8h_source.html#l00076">SocketReader.h:76</a></div></div>
+<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_reader_html_aae435ace40fd15998d46c67176fd342c"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#aae435ace40fd15998d46c67176fd342c">net::socket::stream::SocketReader::onError</a></div><div class="ttdeci">std::function&lt; void(int errnum)&gt; onError</div><div class="ttdef"><b>Definition:</b> <a href="_socket_reader_8h_source.html#l00077">SocketReader.h:77</a></div></div>
 <div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_reader_html_acdc832ddd01ce292850943500431eb98"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#acdc832ddd01ce292850943500431eb98">net::socket::stream::SocketReader::read</a></div><div class="ttdeci">virtual ssize_t read(char *junk, size_t junkLen)=0</div></div>
 <div class="ttc" id="a_socket_reader_8h_html_ad64da5cbb2a93af7c8ac5419d7d0c5cd"><div class="ttname"><a href="_socket_reader_8h.html#ad64da5cbb2a93af7c8ac5419d7d0c5cd">MAX_READ_JUNKSIZE</a></div><div class="ttdeci">#define MAX_READ_JUNKSIZE</div><div class="ttdef"><b>Definition:</b> <a href="_socket_reader_8h_source.html#l00034">SocketReader.h:34</a></div></div>
 <div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_reader_html_a0592f7cab272b388303ecdcf0c88c732"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#a0592f7cab272b388303ecdcf0c88c732">net::socket::stream::SocketReader::getError</a></div><div class="ttdeci">virtual int getError()=0</div></div>
-<div class="ttc" id="aclassnet_1_1_read_event_receiver_html_a4a0eb84c0e1e30afb8fe0c4bc2d5e57c"><div class="ttname"><a href="classnet_1_1_read_event_receiver.html#a4a0eb84c0e1e30afb8fe0c4bc2d5e57c">net::ReadEventReceiver::suspend</a></div><div class="ttdeci">void suspend() override</div><div class="ttdef"><b>Definition:</b> <a href="_read_event_receiver_8cpp_source.html#l00043">ReadEventReceiver.cpp:43</a></div></div>
 <div class="ttc" id="aclassnet_1_1_read_event_receiver_html_a1aa12164e4a0363f8a61acdceb44cd0c"><div class="ttname"><a href="classnet_1_1_read_event_receiver.html#a1aa12164e4a0363f8a61acdceb44cd0c">net::ReadEventReceiver::disable</a></div><div class="ttdeci">void disable() override</div><div class="ttdef"><b>Definition:</b> <a href="_read_event_receiver_8cpp_source.html#l00039">ReadEventReceiver.cpp:39</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

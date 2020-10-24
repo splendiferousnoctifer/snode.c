@@ -394,9 +394,10 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">if</span> (ret &gt; 0) {</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <a class="code" href="class_file_reader.html#acf21f21f7c0ece5d2e6578d8296234ba">junkRead</a>(junk, ret);</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <a class="code" href="class_file_reader.html#a16d4a3020574b75aa6b14468dcf901a3">onError</a>(ret == 0 ? 0 : errno);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        ReadEventReceiver::disable();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <a class="code" href="class_file_reader.html#a16d4a3020574b75aa6b14468dcf901a3">onError</a>(ret == 0 ? 0 : errno);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="_descriptor_8cpp_source.html#l00040">net::Descriptor::getFd()</a>, <a class="el" href="_file_reader_8h_source.html#l00050">junkRead</a>, <a class="el" href="_file_reader_8cpp_source.html#l00027">MFREADSIZE</a>, <a class="el" href="_file_reader_8h_source.html#l00052">onError</a>, and <a class="el" href="_file_reader_8cpp_source.html#l00043">read()</a>.</p>
 <div class="dynheader">
@@ -432,10 +433,10 @@ Here is the call graph for this function:</div>
 
 <p>Implements <a class="el" href="classnet_1_1_event_receiver.html#ad40f8b29dc71258c520f51f10e35848f">net::EventReceiver</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_file_reader_8cpp_source.html#l00072">72</a> of file <a class="el" href="_file_reader_8cpp_source.html">FileReader.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                            {</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keyword">delete</span> <span class="keyword">this</span>;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="_file_reader_8cpp_source.html#l00073">73</a> of file <a class="el" href="_file_reader_8cpp_source.html">FileReader.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                            {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">delete</span> <span class="keyword">this</span>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
