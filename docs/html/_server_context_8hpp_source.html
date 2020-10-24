@@ -186,7 +186,7 @@ $(document).ready(function(){initNavTree('_server_context_8hpp_source.html','');
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Request, <span class="keyword">typename</span> Response&gt;</div>
 <div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="classhttp_1_1_server_context.html#a34507c1fd1946d4c50ede87f06b1bc03">  100</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classhttp_1_1_server_context.html#a34507c1fd1946d4c50ede87f06b1bc03">ServerContext&lt;Request, Response&gt;::onReadError</a>(<span class="keywordtype">int</span> errnum) {</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keywordflow">if</span> (errnum != 0 &amp;&amp; errnum != ECONNRESET) {</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            PLOG(ERROR) &lt;&lt; <span class="stringliteral">&quot;Connection: read&quot;</span>;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            PLOG(ERROR) &lt;&lt; <span class="stringliteral">&quot;Connection read: &quot;</span> &lt;&lt; errnum;</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            responseCompleted();</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        }</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    }</div>
@@ -199,7 +199,7 @@ $(document).ready(function(){initNavTree('_server_context_8hpp_source.html','');
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Request, <span class="keyword">typename</span> Response&gt;</div>
 <div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="classhttp_1_1_server_context.html#a1648f3eae5c44d2e500015fcd374a01f">  113</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classhttp_1_1_server_context.html#a1648f3eae5c44d2e500015fcd374a01f">ServerContext&lt;Request, Response&gt;::onWriteError</a>(<span class="keywordtype">int</span> errnum) {</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <span class="keywordflow">if</span> (errnum != 0 &amp;&amp; errnum != ECONNRESET) {</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            PLOG(ERROR) &lt;&lt; <span class="stringliteral">&quot;Connection write&quot;</span>;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            PLOG(ERROR) &lt;&lt; <span class="stringliteral">&quot;Connection write: &quot;</span> &lt;&lt; errnum;</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            responseCompleted();</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        }</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    }</div>

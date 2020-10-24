@@ -142,56 +142,10 @@ Functions</h2></td></tr>
 <tr class="separator:a6947906a1f8f6b7186b7b2d2161e057d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b06e2a2e48ef646621d00f55805c4a8"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="classnet_1_1_descriptor.html#a1ecc493b50b4c5ed5cfa3a8746e51f35">Descriptor::FLAGS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenet.html#a6b06e2a2e48ef646621d00f55805c4a8">operator&amp;</a> (const enum <a class="el" href="classnet_1_1_descriptor.html#a1ecc493b50b4c5ed5cfa3a8746e51f35">Descriptor::FLAGS</a> &amp;f1, const enum <a class="el" href="classnet_1_1_descriptor.html#a1ecc493b50b4c5ed5cfa3a8746e51f35">Descriptor::FLAGS</a> &amp;f2)</td></tr>
 <tr class="separator:a6b06e2a2e48ef646621d00f55805c4a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1de93e09913a9ce136d99696c7ee3e1"><td class="memTemplParams" colspan="2">template&lt;typename EventReceiverT &gt; </td></tr>
-<tr class="memitem:ad1de93e09913a9ce136d99696c7ee3e1"><td class="memTemplItemLeft" align="right" valign="top">static bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacenet.html#ad1de93e09913a9ce136d99696c7ee3e1">contains</a> (std::list&lt; EventReceiverT * &gt; &amp;eventReceivers, EventReceiverT *&amp;eventReceiver)</td></tr>
-<tr class="separator:ad1de93e09913a9ce136d99696c7ee3e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1fbef2ddfd827d222bad07e28676c27a"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenet.html#a1fbef2ddfd827d222bad07e28676c27a">getTickCounterAsString</a> ([[maybe_unused]] const el::LogMessage *logMessage)</td></tr>
 <tr class="separator:a1fbef2ddfd827d222bad07e28676c27a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ad1de93e09913a9ce136d99696c7ee3e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad1de93e09913a9ce136d99696c7ee3e1">&#9670;&nbsp;</a></span>contains()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename EventReceiverT &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static bool net::contains </td>
-          <td>(</td>
-          <td class="paramtype">std::list&lt; EventReceiverT * &gt; &amp;&#160;</td>
-          <td class="paramname"><em>eventReceivers</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">EventReceiverT *&amp;&#160;</td>
-          <td class="paramname"><em>eventReceiver</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_event_dispatcher_8h_source.html#l00043">43</a> of file <a class="el" href="_event_dispatcher_8h_source.html">EventDispatcher.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                                                                                                   {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordflow">return</span> std::find(eventReceivers.begin(), eventReceivers.end(), eventReceiver) != eventReceivers.end();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
-</div><!-- fragment -->
-</div>
-</div>
 <a id="a1fbef2ddfd827d222bad07e28676c27a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1fbef2ddfd827d222bad07e28676c27a">&#9670;&nbsp;</a></span>getTickCounterAsString()</h2>
 

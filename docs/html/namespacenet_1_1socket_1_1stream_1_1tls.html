@@ -116,6 +116,8 @@ Functions</h2></td></tr>
 <tr class="separator:aa510369dc6e94905b6f3b0c0b5003839"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8269fee0934def60c31476602718cef3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenet_1_1socket_1_1stream_1_1tls.html#a8269fee0934def60c31476602718cef3">ssl_log_error</a> (const std::string &amp;message)</td></tr>
 <tr class="separator:a8269fee0934def60c31476602718cef3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f99ab1ce84106de8264b2da5001dbed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenet_1_1socket_1_1stream_1_1tls.html#a1f99ab1ce84106de8264b2da5001dbed">ssl_log_warning</a> (const std::string &amp;message)</td></tr>
+<tr class="separator:a1f99ab1ce84106de8264b2da5001dbed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a606b72ecd09ae6baa4e53fd8f980dc27"></a>
@@ -321,6 +323,41 @@ Here is the call graph for this function:</div>
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="namespacenet_1_1socket_1_1stream_1_1tls_a8269fee0934def60c31476602718cef3_icgraph.svg" width="362" height="134"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a1f99ab1ce84106de8264b2da5001dbed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f99ab1ce84106de8264b2da5001dbed">&#9670;&nbsp;</a></span>ssl_log_warning()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void net::socket::stream::tls::ssl_log_warning </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>message</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ssl__utils_8cpp_source.html#l00121">121</a> of file <a class="el" href="ssl__utils_8cpp_source.html">ssl_utils.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                                                   {</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        PLOG(WARNING) &lt;&lt; message;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <span class="keywordtype">long</span> e;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="keywordflow">while</span> ((e = ERR_get_error()) != 0) {</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;            LOG(WARNING) &lt;&lt; <span class="stringliteral">&quot;|-- with SSL &quot;</span> &lt;&lt; ERR_error_string(e, <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        }</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    }</div>
+</div><!-- fragment -->
+<p class="reference">Referenced by <a class="el" href="tls_2_socket_reader_8h_source.html#l00045">net::socket::stream::tls::SocketReader&lt; SocketT &gt;::read()</a>, and <a class="el" href="tls_2_socket_writer_8h_source.html#l00045">net::socket::stream::tls::SocketWriter&lt; SocketT &gt;::write()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacenet_1_1socket_1_1stream_1_1tls_a1f99ab1ce84106de8264b2da5001dbed_icgraph.svg" width="372" height="134"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>

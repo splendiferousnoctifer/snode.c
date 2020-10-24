@@ -356,7 +356,7 @@ template&lt;typename Request , typename Response &gt; </div>
 <p class="definition">Definition at line <a class="el" href="_server_context_8hpp_source.html#l00100">100</a> of file <a class="el" href="_server_context_8hpp_source.html">ServerContext.hpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                                                                 {</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keywordflow">if</span> (errnum != 0 &amp;&amp; errnum != ECONNRESET) {</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            PLOG(ERROR) &lt;&lt; <span class="stringliteral">&quot;Connection: read&quot;</span>;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            PLOG(ERROR) &lt;&lt; <span class="stringliteral">&quot;Connection read: &quot;</span> &lt;&lt; errnum;</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <a class="code" href="classhttp_1_1_server_context.html#a26c9f59ed4d5572f06dbe7bd94f1ef95">responseCompleted</a>();</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        }</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    }</div>
@@ -394,7 +394,7 @@ template&lt;typename Request , typename Response &gt; </div>
 <p class="definition">Definition at line <a class="el" href="_server_context_8hpp_source.html#l00113">113</a> of file <a class="el" href="_server_context_8hpp_source.html">ServerContext.hpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                                                                  {</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <span class="keywordflow">if</span> (errnum != 0 &amp;&amp; errnum != ECONNRESET) {</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            PLOG(ERROR) &lt;&lt; <span class="stringliteral">&quot;Connection write&quot;</span>;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            PLOG(ERROR) &lt;&lt; <span class="stringliteral">&quot;Connection write: &quot;</span> &lt;&lt; errnum;</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            <a class="code" href="classhttp_1_1_server_context.html#a26c9f59ed4d5572f06dbe7bd94f1ef95">responseCompleted</a>();</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        }</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    }</div>

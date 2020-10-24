@@ -205,11 +205,19 @@ $(document).ready(function(){initNavTree('ssl__utils_8cpp_source.html',''); init
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            LOG(ERROR) &lt;&lt; <span class="stringliteral">&quot;|-- with SSL &quot;</span> &lt;&lt; ERR_error_string(e, <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        }</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    }</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;} <span class="comment">// namespace net::socket::stream::tls</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="namespacenet_1_1socket_1_1stream_1_1tls.html#a1f99ab1ce84106de8264b2da5001dbed">  121</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="namespacenet_1_1socket_1_1stream_1_1tls.html#a1f99ab1ce84106de8264b2da5001dbed">ssl_log_warning</a>(<span class="keyword">const</span> std::string&amp; message) {</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        PLOG(WARNING) &lt;&lt; message;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <span class="keywordtype">long</span> e;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="keywordflow">while</span> ((e = ERR_get_error()) != 0) {</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;            LOG(WARNING) &lt;&lt; <span class="stringliteral">&quot;|-- with SSL &quot;</span> &lt;&lt; ERR_error_string(e, <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        }</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    }</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;} <span class="comment">// namespace net::socket::stream::tls</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="a_logger_8h_html"><div class="ttname"><a href="_logger_8h.html">Logger.h</a></div></div>
+<div class="ttc" id="anamespacenet_1_1socket_1_1stream_1_1tls_html_a1f99ab1ce84106de8264b2da5001dbed"><div class="ttname"><a href="namespacenet_1_1socket_1_1stream_1_1tls.html#a1f99ab1ce84106de8264b2da5001dbed">net::socket::stream::tls::ssl_log_warning</a></div><div class="ttdeci">void ssl_log_warning(const std::string &amp;message)</div><div class="ttdef"><b>Definition:</b> <a href="ssl__utils_8cpp_source.html#l00121">ssl_utils.cpp:121</a></div></div>
 <div class="ttc" id="anamespacenet_1_1socket_1_1stream_1_1tls_html_a606b72ecd09ae6baa4e53fd8f980dc27"><div class="ttname"><a href="namespacenet_1_1socket_1_1stream_1_1tls.html#a606b72ecd09ae6baa4e53fd8f980dc27">net::socket::stream::tls::password_callback</a></div><div class="ttdeci">static int password_callback(char *buf, int size, int, void *u)</div><div class="ttdef"><b>Definition:</b> <a href="ssl__utils_8cpp_source.html#l00039">ssl_utils.cpp:39</a></div></div>
 <div class="ttc" id="assl__utils_8cpp_html_a0c3fa47eefc13655f03571ce3cf71b69"><div class="ttname"><a href="ssl__utils_8cpp.html#a0c3fa47eefc13655f03571ce3cf71b69">SSL_VERIFY_FLAGS</a></div><div class="ttdeci">#define SSL_VERIFY_FLAGS</div><div class="ttdef"><b>Definition:</b> <a href="ssl__utils_8cpp_source.html#l00037">ssl_utils.cpp:37</a></div></div>
 <div class="ttc" id="anamespacenet_1_1socket_1_1stream_1_1tls_html_aa510369dc6e94905b6f3b0c0b5003839"><div class="ttname"><a href="namespacenet_1_1socket_1_1stream_1_1tls.html#aa510369dc6e94905b6f3b0c0b5003839">net::socket::stream::tls::ssl_init_ctx</a></div><div class="ttdeci">unsigned long ssl_init_ctx(SSL_CTX *ctx, const std::map&lt; std::string, std::any &gt; &amp;options, bool server)</div><div class="ttdef"><b>Definition:</b> <a href="ssl__utils_8cpp_source.html#l00049">ssl_utils.cpp:49</a></div></div>
