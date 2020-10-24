@@ -98,8 +98,7 @@ $(document).ready(function(){initNavTree('classnet_1_1_event_loop.html',''); ini
 <div class="dynheader">
 Collaboration diagram for net::EventLoop:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_event_loop__coll__graph.svg" width="1663" height="1764"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_event_loop__coll__graph.svg" width="1663" height="1764"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -656,7 +655,7 @@ Here is the caller graph for this function:</div>
 <p class="definition">Definition at line <a class="el" href="_event_loop_8cpp_source.html#l00148">148</a> of file <a class="el" href="_event_loop_8cpp_source.html">EventLoop.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                         {</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="classnet_1_1_event_loop.html#add4999140ab9571d4f3d8fa17fae337b">initialized</a>) {</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            PLOG(ERROR) &lt;&lt; <span class="stringliteral">&quot;snode.c not initialized. Use Multiplexer::init(argc, argv) before Multiplexer::start().&quot;</span>;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            PLOG(ERROR) &lt;&lt; <span class="stringliteral">&quot;snode.c not initialized. Use EventLoop::init(argc, argv) before EventLoop::start().&quot;</span>;</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            exit(1);</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        }</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>

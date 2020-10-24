@@ -234,7 +234,7 @@ $(document).ready(function(){initNavTree('_event_loop_8cpp_source.html',''); ini
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
 <div class="line"><a name="l00148"></a><span class="lineno"><a class="line" href="classnet_1_1_event_loop.html#a7465cce1b49c9ebbb1b2676643ca676d">  148</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classnet_1_1_event_loop.html#a7465cce1b49c9ebbb1b2676643ca676d">EventLoop::start</a>() {</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="classnet_1_1_event_loop.html#add4999140ab9571d4f3d8fa17fae337b">initialized</a>) {</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            PLOG(ERROR) &lt;&lt; <span class="stringliteral">&quot;snode.c not initialized. Use Multiplexer::init(argc, argv) before Multiplexer::start().&quot;</span>;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            PLOG(ERROR) &lt;&lt; <span class="stringliteral">&quot;snode.c not initialized. Use EventLoop::init(argc, argv) before EventLoop::start().&quot;</span>;</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            exit(1);</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        }</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
