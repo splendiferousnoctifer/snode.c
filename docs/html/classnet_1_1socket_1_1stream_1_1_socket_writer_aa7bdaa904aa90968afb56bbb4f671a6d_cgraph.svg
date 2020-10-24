@@ -13,16 +13,16 @@
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title=" ">
-<polygon fill="#bfbfbf" stroke="black" points="0,-115.5 0,-145.5 122,-145.5 122,-115.5 0,-115.5"/>
-<text text-anchor="start" x="8" y="-133.5" font-family="Helvetica,sans-Serif" font-size="10.00">net::socket::stream</text>
-<text text-anchor="middle" x="61" y="-122.5" font-family="Helvetica,sans-Serif" font-size="10.00">::SocketWriter::enqueue</text>
+<polygon fill="#bfbfbf" stroke="black" points="0,-93.5 0,-123.5 122,-123.5 122,-93.5 0,-93.5"/>
+<text text-anchor="start" x="8" y="-111.5" font-family="Helvetica,sans-Serif" font-size="10.00">net::socket::stream</text>
+<text text-anchor="middle" x="61" y="-100.5" font-family="Helvetica,sans-Serif" font-size="10.00">::SocketWriter::enqueue</text>
 </a>
 </g>
 </g>
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="classnet_1_1_write_event_receiver.html#a5ca2e9b06ac5eef0a80e65520fb109ad" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="classnet_1_1_write_event_receiver.html#a817b5da7ef377a0ceb397410c8b39286" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="158,-115.5 158,-145.5 281,-145.5 281,-115.5 158,-115.5"/>
 <text text-anchor="start" x="166" y="-133.5" font-family="Helvetica,sans-Serif" font-size="10.00">net::WriteEventReceiver</text>
 <text text-anchor="middle" x="219.5" y="-122.5" font-family="Helvetica,sans-Serif" font-size="10.00">::enable</text>
@@ -32,13 +32,28 @@
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M122.06,-130.5C130.49,-130.5 139.21,-130.5 147.81,-130.5"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="147.83,-134 157.83,-130.5 147.82,-127 147.83,-134"/>
+<path fill="none" stroke="midnightblue" d="M122.06,-116.94C130.49,-118.13 139.21,-119.35 147.81,-120.56"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="147.44,-124.04 157.83,-121.97 148.41,-117.11 147.44,-124.04"/>
+</g>
+<!-- Node9 -->
+<g id="node9" class="node">
+<title>Node9</title>
+<g id="a_node9"><a xlink:href="classnet_1_1_descriptor.html#a70ccc1e4f6af5cda015bd319f9a90096" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="black" points="163.5,-77 163.5,-96 275.5,-96 275.5,-77 163.5,-77"/>
+<text text-anchor="middle" x="219.5" y="-84" font-family="Helvetica,sans-Serif" font-size="10.00">net::Descriptor::getFd</text>
+</a>
+</g>
+</g>
+<!-- Node1&#45;&gt;Node9 -->
+<g id="edge9" class="edge">
+<title>Node1&#45;&gt;Node9</title>
+<path fill="none" stroke="midnightblue" d="M122.06,-100.06C132.27,-98.62 142.93,-97.12 153.27,-95.67"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="154.06,-99.09 163.48,-94.24 153.09,-92.16 154.06,-99.09"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="classnet_1_1_event_dispatcher.html#aa1cf5744a83745726edc733e58c4ae7f" target="_top" xlink:title=" ">
+<g id="a_node3"><a xlink:href="classnet_1_1_event_dispatcher.html#a5c2415b2b4c371fe2d668c60ed0bbabb" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="325,-186.5 325,-216.5 434,-216.5 434,-186.5 325,-186.5"/>
 <text text-anchor="start" x="333" y="-204.5" font-family="Helvetica,sans-Serif" font-size="10.00">net::EventDispatcher</text>
 <text text-anchor="middle" x="379.5" y="-193.5" font-family="Helvetica,sans-Serif" font-size="10.00">::enable</text>
@@ -95,8 +110,8 @@
 <!-- Node2&#45;&gt;Node6 -->
 <g id="edge5" class="edge">
 <title>Node2&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M256.75,-115.36C279.43,-105.88 308.84,-93.6 333.07,-83.48"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="334.54,-86.66 342.42,-79.57 331.84,-80.2 334.54,-86.66"/>
+<path fill="none" stroke="midnightblue" d="M256.99,-115.47C264.91,-112.19 273.24,-108.74 281,-105.5 298.14,-98.35 316.96,-90.45 333.45,-83.51"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="335.01,-86.65 342.86,-79.55 332.29,-80.2 335.01,-86.65"/>
 </g>
 <!-- Node6&#45;&gt;Node5 -->
 <g id="edge7" class="edge">
