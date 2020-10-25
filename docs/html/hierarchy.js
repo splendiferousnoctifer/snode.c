@@ -57,6 +57,9 @@ var hierarchy =
     ] ],
     [ "net::FdSet", "classnet_1_1_fd_set.html", null ],
     [ "net::ObservationCounter::lastTriggered", "structnet_1_1_observation_counter_1_1last_triggered.html", null ],
+    [ "list", null, [
+      [ "net::EventDispatcher< EventReceiverT >::EventReceiverList", "classnet_1_1_event_dispatcher_1_1_event_receiver_list.html", null ]
+    ] ],
     [ "Logger", "class_logger.html", null ],
     [ "MimeTypes", "class_mime_types.html", null ],
     [ "express::MountPoint", "structexpress_1_1_mount_point.html", null ],
