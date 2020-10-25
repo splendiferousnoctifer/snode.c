@@ -22,7 +22,6 @@ var hierarchy =
         [ "FileReader", "class_file_reader.html", null ]
       ] ],
       [ "net::socket::Socket< SocketAddressT >", "classnet_1_1socket_1_1_socket.html", null ],
-      [ "net::socket::stream::tls::TLSHandshake", "classnet_1_1socket_1_1stream_1_1tls_1_1_t_l_s_handshake.html", null ],
       [ "net::socket::Socket< address::ipv4::InetAddress >", "classnet_1_1socket_1_1_socket.html", [
         [ "net::socket::ip::tcp::ipv4::Socket", "classnet_1_1socket_1_1ip_1_1tcp_1_1ipv4_1_1_socket.html", null ]
       ] ],
@@ -52,7 +51,6 @@ var hierarchy =
       [ "net::WriteEventDispatcher", "classnet_1_1_write_event_dispatcher.html", null ]
     ] ],
     [ "net::EventLoop", "classnet_1_1_event_loop.html", null ],
-    [ "net::EventDispatcher< EventReceiverT >::EventReceiverFdPair", "structnet_1_1_event_dispatcher_1_1_event_receiver_fd_pair.html", null ],
     [ "exception", null, [
       [ "net::socket::ip::address::ipv4::bad_hostname", "classnet_1_1socket_1_1ip_1_1address_1_1ipv4_1_1bad__hostname.html", null ],
       [ "net::socket::ip::address::ipv6::bad_hostname", "classnet_1_1socket_1_1ip_1_1address_1_1ipv6_1_1bad__hostname.html", null ]

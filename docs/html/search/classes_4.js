@@ -7,6 +7,5 @@ var searchData=
   ['eventdispatcher_3c_20readeventreceiver_20_3e_623',['EventDispatcher&lt; ReadEventReceiver &gt;',['../classnet_1_1_event_dispatcher.html',1,'net']]],
   ['eventdispatcher_3c_20writeeventreceiver_20_3e_624',['EventDispatcher&lt; WriteEventReceiver &gt;',['../classnet_1_1_event_dispatcher.html',1,'net']]],
   ['eventloop_625',['EventLoop',['../classnet_1_1_event_loop.html',1,'net']]],
-  ['eventreceiver_626',['EventReceiver',['../classnet_1_1_event_receiver.html',1,'net']]],
-  ['eventreceiverfdpair_627',['EventReceiverFdPair',['../structnet_1_1_event_dispatcher_1_1_event_receiver_fd_pair.html',1,'net::EventDispatcher']]]
+  ['eventreceiver_626',['EventReceiver',['../classnet_1_1_event_receiver.html',1,'net']]]
 ];

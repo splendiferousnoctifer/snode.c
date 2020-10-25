@@ -152,7 +152,7 @@ $(document).ready(function(){initNavTree('_file_reader_8cpp_source.html',''); in
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">if</span> (ret &gt; 0) {</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <a class="code" href="class_file_reader.html#acf21f21f7c0ece5d2e6578d8296234ba">junkRead</a>(junk, ret);</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        ReadEventReceiver::disable(<a class="code" href="classnet_1_1_descriptor.html#a70ccc1e4f6af5cda015bd319f9a90096">getFd</a>());</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        ReadEventReceiver::disable();</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <a class="code" href="class_file_reader.html#a16d4a3020574b75aa6b14468dcf901a3">onError</a>(ret == 0 ? 0 : errno);</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>

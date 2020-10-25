@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"classnet_1_1socket_1_1stream_1_1_socket_connector.html#ab889b281c6b9367c2b3087736acef9ff":[9,0,2,0,1,5,21],
 "classnet_1_1socket_1_1stream_1_1_socket_connector.html#aba282a7885d755b5eb61bec16ae7ce04":[9,0,2,0,1,5,5],
 "classnet_1_1socket_1_1stream_1_1_socket_connector.html#abe0c3ce7d028ba9ffc69efc9b7c49a46":[9,0,2,0,1,5,17],
 "classnet_1_1socket_1_1stream_1_1_socket_connector.html#abee2b1ed76101cdb161fae474fc84134":[9,0,2,0,1,5,25],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "functions_func_i.html":[9,3,1,8],
 "functions_func_j.html":[9,3,1,9],
 "functions_func_l.html":[9,3,1,10],
-"functions_func_m.html":[9,3,1,11],
-"functions_func_o.html":[9,3,1,12]
+"functions_func_m.html":[9,3,1,11]
 };

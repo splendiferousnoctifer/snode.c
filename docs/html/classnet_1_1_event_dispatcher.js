@@ -1,10 +1,9 @@
 var classnet_1_1_event_dispatcher =
 [
-    [ "EventReceiverFdPair", "structnet_1_1_event_dispatcher_1_1_event_receiver_fd_pair.html", "structnet_1_1_event_dispatcher_1_1_event_receiver_fd_pair" ],
     [ "EventReceiver", "classnet_1_1_event_dispatcher.html#ae0f93576fe0d5f85cce969f1c48f631a", null ],
     [ "EventDispatcher", "classnet_1_1_event_dispatcher.html#aa27d26230f5061c6299aab27ad92b608", null ],
     [ "EventDispatcher", "classnet_1_1_event_dispatcher.html#a49175b82bf40ee8951bd7b17ebbf8709", null ],
-    [ "contains", "classnet_1_1_event_dispatcher.html#a58dde1cf96cbd47914d74a4db9a3031c", null ],
+    [ "contains", "classnet_1_1_event_dispatcher.html#a7193e3e0aa3aeb36822c29ecc286c468", null ],
     [ "disable", "classnet_1_1_event_dispatcher.html#aa2899ea52c172f61cb5cda8f2b16d878", null ],
     [ "disableObservedEvents", "classnet_1_1_event_dispatcher.html#a812464af844b3b035841d1ba09e99b5a", null ],
     [ "dispatchActiveEvents", "classnet_1_1_event_dispatcher.html#a9d2fcb38151d02a100c03998f24f631d", null ],
@@ -19,8 +18,8 @@ var classnet_1_1_event_dispatcher =
     [ "unobserveDisabledEventReceiver", "classnet_1_1_event_dispatcher.html#a0630ab60a41364e53c4dc2316db81e23", null ],
     [ "unobserveDisabledEvents", "classnet_1_1_event_dispatcher.html#a0cac2e5483bd4542ad11211d36db4adc", null ],
     [ "EventLoop", "classnet_1_1_event_dispatcher.html#aca25e36665670fcb6909dd8ab04b1d05", null ],
-    [ "disabledEventReceiver", "classnet_1_1_event_dispatcher.html#a7b49dc4134c6b38dee8bc8c0f10c9db3", null ],
-    [ "enabledEventReceiver", "classnet_1_1_event_dispatcher.html#a45f78419bd285f5cd1580a7c2ac3e09f", null ],
+    [ "disabledEventReceiver", "classnet_1_1_event_dispatcher.html#a3e417a2c75d9870d3c40762e57c6901c", null ],
+    [ "enabledEventReceiver", "classnet_1_1_event_dispatcher.html#a874ff182ca0834ce3b3503c19e549037", null ],
     [ "eventCounter", "classnet_1_1_event_dispatcher.html#a3378afd544321774c68ac892871d6540", null ],
     [ "fdSet", "classnet_1_1_event_dispatcher.html#ac170fb86c4f7766b114b73e8df167949", null ],
     [ "maxInactivity", "classnet_1_1_event_dispatcher.html#a3918210c2910461a6df692f53e5692b7", null ],

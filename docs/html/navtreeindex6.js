@@ -1,9 +1,5 @@
 var NAVTREEINDEX6 =
 {
-"structnet_1_1timer_1_1_timer_1_1absolute_timeout.html":[9,0,2,1,2,0],
-"tls_2_client_8h.html":[10,0,1,1,0],
-"tls_2_client_8h_source.html":[10,0,1,1,0],
-"tls_2_server_8h.html":[10,0,1,1,1],
 "tls_2_server_8h_source.html":[10,0,1,1,1],
 "tls_2_socket_connection_8h.html":[10,0,3,1,1,1,1],
 "tls_2_socket_connection_8h_source.html":[10,0,3,1,1,1,1],

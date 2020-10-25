@@ -1,10 +1,10 @@
 var searchData=
 [
   ['warning_558',['WARNING',['../class_logger.html#ad766a24576ea8b27ad9d5649cef46d8fafb1bf96f41b282521d9438106ea11bca',1,'Logger']]],
-  ['webapp_559',['WebApp',['../classexpress_1_1legacy_1_1_web_app.html',1,'express::legacy::WebApp'],['../classexpress_1_1tls_1_1_web_app.html',1,'express::tls::WebApp'],['../classexpress_1_1_web_app.html',1,'express::WebApp'],['../classexpress_1_1_web_app.html#a2274f8bfe947af8f59eb28b1b298555b',1,'express::WebApp::WebApp()'],['../classexpress_1_1_web_app.html#ab9ca336adfe5dc11fbd121cb9165b472',1,'express::WebApp::WebApp(const Router &amp;router)']]],
+  ['webapp_559',['WebApp',['../classexpress_1_1legacy_1_1_web_app.html',1,'express::legacy::WebApp'],['../classexpress_1_1_web_app.html',1,'express::WebApp'],['../classexpress_1_1tls_1_1_web_app.html',1,'express::tls::WebApp'],['../classexpress_1_1_web_app.html#a2274f8bfe947af8f59eb28b1b298555b',1,'express::WebApp::WebApp()'],['../classexpress_1_1_web_app.html#ab9ca336adfe5dc11fbd121cb9165b472',1,'express::WebApp::WebApp(const Router &amp;router)']]],
   ['webapp_2ecpp_560',['WebApp.cpp',['../_web_app_8cpp.html',1,'']]],
   ['webapp_2eh_561',['WebApp.h',['../legacy_2_web_app_8h.html',1,'(Global Namespace)'],['../tls_2_web_app_8h.html',1,'(Global Namespace)'],['../_web_app_8h.html',1,'(Global Namespace)']]],
-  ['webapp6_562',['WebApp6',['../classexpress_1_1legacy_1_1_web_app6.html',1,'express::legacy::WebApp6'],['../classexpress_1_1tls_1_1_web_app6.html',1,'express::tls::WebApp6']]],
+  ['webapp6_562',['WebApp6',['../classexpress_1_1tls_1_1_web_app6.html',1,'express::tls::WebApp6'],['../classexpress_1_1legacy_1_1_web_app6.html',1,'express::legacy::WebApp6']]],
   ['webappt_563',['WebAppT',['../classexpress_1_1_web_app_t.html',1,'express::WebAppT&lt; ServerT &gt;'],['../classexpress_1_1_web_app_t.html#a19444bd5fc3f320283e3531ab9b15fab',1,'express::WebAppT::WebAppT(const std::map&lt; std::string, std::any &gt; &amp;options={{}})'],['../classexpress_1_1_web_app_t.html#a8bd3ddc2173bbc21e8c15e8ba9a03b0f',1,'express::WebAppT::WebAppT(const Router &amp;router, const std::map&lt; std::string, std::any &gt; &amp;options={{}})']]],
   ['webappt_2eh_564',['WebAppT.h',['../_web_app_t_8h.html',1,'']]],
   ['webappt_3c_20http_3a_3alegacy_3a_3aserver6_3c_20express_3a_3arequest_2c_20express_3a_3aresponse_20_3e_20_3e_565',['WebAppT&lt; http::legacy::Server6&lt; express::Request, express::Response &gt; &gt;',['../classexpress_1_1_web_app_t.html',1,'express']]],
