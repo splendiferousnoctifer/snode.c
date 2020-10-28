@@ -24,5 +24,5 @@ var classnet_1_1_event_dispatcher =
     [ "fdSet", "classnet_1_1_event_dispatcher.html#ac170fb86c4f7766b114b73e8df167949", null ],
     [ "maxInactivity", "classnet_1_1_event_dispatcher.html#a3918210c2910461a6df692f53e5692b7", null ],
     [ "observedEventReceiver", "classnet_1_1_event_dispatcher.html#a075affb605d9e8c787eba2c8b6491087", null ],
-    [ "unobservedEventReceiver", "classnet_1_1_event_dispatcher.html#aff816a144fa1de073b9576465290e4d6", null ]
+    [ "unobservedEventReceiver", "classnet_1_1_event_dispatcher.html#ae283e18491baec035cb788ce1a8adee0", null ]
 ];

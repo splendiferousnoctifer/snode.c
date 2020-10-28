@@ -13,6 +13,7 @@ var class_logger =
     [ "logToFile", "class_logger.html#a54b7bf213561e73cfe1c63cd31c1a074", null ],
     [ "logToStdOut", "class_logger.html#a2b3fd86c598269c226cf76f391bcc1df", null ],
     [ "setCustomFormatSpec", "class_logger.html#a969163c7aff5b8409d8dfb8175dd2b85", null ],
-    [ "setLevel", "class_logger.html#a4099b1ab1b90f7f041e8edec6b8debf2", null ],
+    [ "setLogLevel", "class_logger.html#a76737728e58470cc99536839d6fbd631", null ],
+    [ "setVerboseLevel", "class_logger.html#af9c8cc9075c67ba5e14b3f7711dfe13c", null ],
     [ "conf", "class_logger.html#aab3f8f567382428dd7e467c5d6835832", null ]
 ];

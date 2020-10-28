@@ -3,7 +3,7 @@ var classnet_1_1socket_1_1stream_1_1tls_1_1_t_l_s_handshake =
     [ "TLSHandshake", "classnet_1_1socket_1_1stream_1_1tls_1_1_t_l_s_handshake.html#ad0daae6842f143fcf3d1a7c6d667a160", null ],
     [ "doHandshake", "classnet_1_1socket_1_1stream_1_1tls_1_1_t_l_s_handshake.html#a2c4876e61d8860846d4caa2195e46231", null ],
     [ "readEvent", "classnet_1_1socket_1_1stream_1_1tls_1_1_t_l_s_handshake.html#a35bcd6ef7b0b5581fcc7cb56873edb30", null ],
-    [ "timeoutEvent", "classnet_1_1socket_1_1stream_1_1tls_1_1_t_l_s_handshake.html#a51f8b3260758a52e66e4b3aa74e424d7", null ],
+    [ "timeout", "classnet_1_1socket_1_1stream_1_1tls_1_1_t_l_s_handshake.html#a628b85b77d3318410d1f242586ae8971", null ],
     [ "unobserved", "classnet_1_1socket_1_1stream_1_1tls_1_1_t_l_s_handshake.html#a438981dfb21546a87939e451ee90bade", null ],
     [ "writeEvent", "classnet_1_1socket_1_1stream_1_1tls_1_1_t_l_s_handshake.html#a4f9fdbda5c8978a21a402013f153cbca", null ],
     [ "fd", "classnet_1_1socket_1_1stream_1_1tls_1_1_t_l_s_handshake.html#a4f5fc203f93d821b0469896538b53f28", null ],

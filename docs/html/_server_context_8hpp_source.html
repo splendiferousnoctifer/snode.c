@@ -128,16 +128,16 @@ $(document).ready(function(){initNavTree('_server_context_8hpp_source.html','');
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                     const std::string&amp; url,</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                     const std::string&amp; httpVersion,</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                     const std::map&lt;std::string, std::string&gt;&amp; queries) -&gt; void {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                  VLOG(1) &lt;&lt; <span class="stringliteral">&quot;++ Request: &quot;</span> &lt;&lt; method &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; url &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; httpVersion;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                  VLOG(3) &lt;&lt; <span class="stringliteral">&quot;++ Request: &quot;</span> &lt;&lt; method &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; url &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; httpVersion;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                  <a class="code" href="classhttp_1_1_server_context.html#a379e459825fa26e143e4c218a73b3cf9">request</a>.method = method;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                  <a class="code" href="classhttp_1_1_server_context.html#a379e459825fa26e143e4c218a73b3cf9">request</a>.url = url;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                  <a class="code" href="classhttp_1_1_server_context.html#a379e459825fa26e143e4c218a73b3cf9">request</a>.queries = &amp;queries;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                  <a class="code" href="classhttp_1_1_server_context.html#a379e459825fa26e143e4c218a73b3cf9">request</a>.httpVersion = httpVersion;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;              },</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;              [<span class="keyword">this</span>](<span class="keyword">const</span> std::map&lt;std::string, std::string&gt;&amp; header, <span class="keyword">const</span> std::map&lt;std::string, std::string&gt;&amp; cookies) -&gt; <span class="keywordtype">void</span> {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                  VLOG(1) &lt;&lt; <span class="stringliteral">&quot;++ Header:&quot;</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                  VLOG(3) &lt;&lt; <span class="stringliteral">&quot;++ Header:&quot;</span>;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                  request.headers = &amp;header;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                  VLOG(1) &lt;&lt; <span class="stringliteral">&quot;++ Cookies&quot;</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                  VLOG(3) &lt;&lt; <span class="stringliteral">&quot;++ Cookies&quot;</span>;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                  request.cookies = &amp;cookies;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                  <span class="keywordflow">for</span> (<span class="keyword">auto</span> [field, value] : header) {</div>
@@ -147,18 +147,18 @@ $(document).ready(function(){initNavTree('_server_context_8hpp_source.html','');
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                  }</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;              },</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;              [<span class="keyword">this</span>](<span class="keywordtype">char</span>* content, <span class="keywordtype">size_t</span> contentLength) -&gt; <span class="keywordtype">void</span> {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                  VLOG(1) &lt;&lt; <span class="stringliteral">&quot;++ Content: &quot;</span> &lt;&lt; contentLength;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                  VLOG(3) &lt;&lt; <span class="stringliteral">&quot;++ Content: &quot;</span> &lt;&lt; contentLength;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                  request.body = content;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                  request.contentLength = contentLength;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;              },</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;              [<span class="keyword">this</span>, onRequestReady]() -&gt; <span class="keywordtype">void</span> {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                  VLOG(1) &lt;&lt; <span class="stringliteral">&quot;++ Parsed ++&quot;</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                  VLOG(3) &lt;&lt; <span class="stringliteral">&quot;++ Parsed ++&quot;</span>;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                  requestInProgress = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                  request.extend();</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                  onRequestReady(request, response);</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;              },</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;              [<span class="keyword">this</span>](<span class="keywordtype">int</span> status, <span class="keyword">const</span> std::string&amp; reason) -&gt; <span class="keywordtype">void</span> {</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                  VLOG(1) &lt;&lt; <span class="stringliteral">&quot;++ Error: &quot;</span> &lt;&lt; status &lt;&lt; <span class="stringliteral">&quot; : &quot;</span> &lt;&lt; reason;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                  VLOG(3) &lt;&lt; <span class="stringliteral">&quot;++ Error: &quot;</span> &lt;&lt; status &lt;&lt; <span class="stringliteral">&quot; : &quot;</span> &lt;&lt; reason;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                  response.status(status).send(reason);</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                  terminateConnection();</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;              }) {</div>

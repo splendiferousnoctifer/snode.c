@@ -19,7 +19,7 @@ var classnet_1_1_event_receiver =
     [ "setTimeout", "classnet_1_1_event_receiver.html#a26d6a5c5cdd5300540a937c17f91fdcd", null ],
     [ "suspend", "classnet_1_1_event_receiver.html#a2a8acfe460a6e04d55d3f99abf916724", null ],
     [ "suspended", "classnet_1_1_event_receiver.html#a2736c19a5be98adb814b4d2b10d93e6a", null ],
-    [ "timeoutEvent", "classnet_1_1_event_receiver.html#aa2ab7401b75de7a958967f9e54c922ed", null ],
+    [ "timeout", "classnet_1_1_event_receiver.html#ad2da553049435ab5f08b0fe24b5bd210", null ],
     [ "triggered", "classnet_1_1_event_receiver.html#a7e1dff618e6224cf8804d69105bbcae3", null ],
     [ "unobserved", "classnet_1_1_event_receiver.html#ad40f8b29dc71258c520f51f10e35848f", null ],
     [ "EventDispatcher", "classnet_1_1_event_receiver.html#a50a7ad72f4990726439a9d699f781248", null ],

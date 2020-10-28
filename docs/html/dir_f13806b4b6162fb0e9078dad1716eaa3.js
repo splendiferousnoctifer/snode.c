@@ -23,6 +23,8 @@ var dir_f13806b4b6162fb0e9078dad1716eaa3 =
     ] ],
     [ "ssl_utils.cpp", "ssl__utils_8cpp.html", "ssl__utils_8cpp" ],
     [ "ssl_utils.h", "ssl__utils_8h.html", "ssl__utils_8h" ],
-    [ "TLSHandshake.cpp", "_t_l_s_handshake_8cpp.html", null ],
-    [ "TLSHandshake.h", "_t_l_s_handshake_8h.html", "_t_l_s_handshake_8h" ]
+    [ "TLSHandshake.cpp", "_t_l_s_handshake_8cpp.html", "_t_l_s_handshake_8cpp" ],
+    [ "TLSHandshake.h", "_t_l_s_handshake_8h.html", [
+      [ "TLSHandshake", "classnet_1_1socket_1_1stream_1_1tls_1_1_t_l_s_handshake.html", "classnet_1_1socket_1_1stream_1_1tls_1_1_t_l_s_handshake" ]
+    ] ]
 ];

@@ -137,7 +137,7 @@ $(document).ready(function(){initNavTree('_static_middleware_8cpp_source.html','
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        });</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <a class="code" href="classexpress_1_1_router.html#a577166187fa9864c2f5d4b3f1d745b47">use</a>([<span class="keyword">this</span>] <a class="code" href="_router_8h.html#a8b7131df91fe7a961e2cdadcedb55232">APPLICATION</a>(req, res) {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            VLOG(0) &lt;&lt; <span class="stringliteral">&quot;GET &quot;</span> + req.url + <span class="stringliteral">&quot; -&gt; &quot;</span> + this-&gt;root + req.url;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            VLOG(1) &lt;&lt; <span class="stringliteral">&quot;GET &quot;</span> + req.url + <span class="stringliteral">&quot; -&gt; &quot;</span> + this-&gt;root + req.url;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            res.sendFile(this-&gt;root + req.url, [&amp;req](<span class="keywordtype">int</span> ret) -&gt; <span class="keywordtype">void</span> {</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                if (ret != 0) {</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                    PLOG(ERROR) &lt;&lt; req.url;</div>
