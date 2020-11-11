@@ -9,14 +9,14 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 128)">
 <title>Graphical Class Hierarchy</title>
 <polygon fill="white" stroke="transparent" points="-4,4 -4,-128 597,-128 597,4 -4,4"/>
-<!-- Node36 -->
+<!-- Node39 -->
 <g id="node1" class="node">
-<title>Node36</title>
+<title>Node39</title>
 <g id="a_node1"><a xlink:href="classnet_1_1socket_1_1stream_1_1_socket_server.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="0,-71.5 0,-123.5 119,-123.5 119,-71.5 0,-71.5"/>
 <text text-anchor="start" x="8" y="-111.5" font-family="Helvetica,sans-Serif" font-size="10.00">net::socket::stream</text>
 <text text-anchor="start" x="8" y="-100.5" font-family="Helvetica,sans-Serif" font-size="10.00">::SocketServer&lt; legacy</text>
-<text text-anchor="start" x="8" y="-89.5" font-family="Helvetica,sans-Serif" font-size="10.00">::SocketListener&lt; ipv6</text>
+<text text-anchor="start" x="8" y="-89.5" font-family="Helvetica,sans-Serif" font-size="10.00">::SocketListener&lt; ipv4</text>
 <text text-anchor="middle" x="59.5" y="-78.5" font-family="Helvetica,sans-Serif" font-size="10.00">::Socket &gt; &gt;</text>
 </a>
 </g>
@@ -28,13 +28,13 @@
 <polygon fill="white" stroke="black" points="155,-41 155,-82 256,-82 256,-41 155,-41"/>
 <text text-anchor="start" x="163" y="-70" font-family="Helvetica,sans-Serif" font-size="10.00">net::socket::stream</text>
 <text text-anchor="start" x="163" y="-59" font-family="Helvetica,sans-Serif" font-size="10.00">::tls::SocketServer</text>
-<text text-anchor="middle" x="205.5" y="-48" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; ipv6::Socket &gt;</text>
+<text text-anchor="middle" x="205.5" y="-48" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; ipv4::Socket &gt;</text>
 </a>
 </g>
 </g>
-<!-- Node36&#45;&gt;Node1 -->
+<!-- Node39&#45;&gt;Node1 -->
 <g id="edge1" class="edge">
-<title>Node36&#45;&gt;Node1</title>
+<title>Node39&#45;&gt;Node1</title>
 <path fill="none" stroke="midnightblue" d="M128.86,-80.41C137.59,-78.23 146.39,-76.03 154.74,-73.94"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="127.92,-77.04 119.07,-82.86 129.62,-83.83 127.92,-77.04"/>
 </g>
@@ -45,7 +45,7 @@
 <polygon fill="white" stroke="black" points="292,-71.5 292,-123.5 417,-123.5 417,-71.5 292,-71.5"/>
 <text text-anchor="start" x="300" y="-111.5" font-family="Helvetica,sans-Serif" font-size="10.00">net::socket::ip::tcp</text>
 <text text-anchor="start" x="300" y="-100.5" font-family="Helvetica,sans-Serif" font-size="10.00">::SocketServer&lt; stream</text>
-<text text-anchor="start" x="300" y="-89.5" font-family="Helvetica,sans-Serif" font-size="10.00">::tls::SocketServer&lt; ipv6</text>
+<text text-anchor="start" x="300" y="-89.5" font-family="Helvetica,sans-Serif" font-size="10.00">::tls::SocketServer&lt; ipv4</text>
 <text text-anchor="middle" x="354.5" y="-78.5" font-family="Helvetica,sans-Serif" font-size="10.00">::Socket &gt; &gt;</text>
 </a>
 </g>
@@ -64,7 +64,7 @@
 <text text-anchor="start" x="302" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">net::socket::ip::tcp</text>
 <text text-anchor="start" x="302" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">::SocketServer&lt; stream</text>
 <text text-anchor="start" x="302" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">::legacy::SocketServer</text>
-<text text-anchor="middle" x="354.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; ipv6::Socket &gt; &gt;</text>
+<text text-anchor="middle" x="354.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; ipv4::Socket &gt; &gt;</text>
 </a>
 </g>
 </g>
@@ -77,10 +77,10 @@
 <!-- Node3 -->
 <g id="node4" class="node">
 <title>Node3</title>
-<g id="a_node4"><a xlink:href="classnet_1_1socket_1_1ip_1_1tcp_1_1ipv6_1_1tls_1_1_socket_server.html" target="_top" xlink:title=" ">
+<g id="a_node4"><a xlink:href="classnet_1_1socket_1_1ip_1_1tcp_1_1ipv4_1_1tls_1_1_socket_server.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="462,-82.5 462,-112.5 584,-112.5 584,-82.5 462,-82.5"/>
 <text text-anchor="start" x="470" y="-100.5" font-family="Helvetica,sans-Serif" font-size="10.00">net::socket::ip::tcp</text>
-<text text-anchor="middle" x="523" y="-89.5" font-family="Helvetica,sans-Serif" font-size="10.00">::ipv6::tls::SocketServer</text>
+<text text-anchor="middle" x="523" y="-89.5" font-family="Helvetica,sans-Serif" font-size="10.00">::ipv4::tls::SocketServer</text>
 </a>
 </g>
 </g>
@@ -93,10 +93,10 @@
 <!-- Node5 -->
 <g id="node6" class="node">
 <title>Node5</title>
-<g id="a_node6"><a xlink:href="classnet_1_1socket_1_1ip_1_1tcp_1_1ipv6_1_1legacy_1_1_socket_server.html" target="_top" xlink:title=" ">
+<g id="a_node6"><a xlink:href="classnet_1_1socket_1_1ip_1_1tcp_1_1ipv4_1_1legacy_1_1_socket_server.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="453,-11.5 453,-41.5 593,-41.5 593,-11.5 453,-11.5"/>
 <text text-anchor="start" x="461" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">net::socket::ip::tcp</text>
-<text text-anchor="middle" x="523" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">::ipv6::legacy::SocketServer</text>
+<text text-anchor="middle" x="523" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">::ipv4::legacy::SocketServer</text>
 </a>
 </g>
 </g>
@@ -113,7 +113,7 @@
 <polygon fill="white" stroke="black" points="2,-0.5 2,-52.5 117,-52.5 117,-0.5 2,-0.5"/>
 <text text-anchor="start" x="10" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">net::socket::stream</text>
 <text text-anchor="start" x="10" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">::SocketServer&lt; tls</text>
-<text text-anchor="start" x="10" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">::SocketListener&lt; ipv6</text>
+<text text-anchor="start" x="10" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">::SocketListener&lt; ipv4</text>
 <text text-anchor="middle" x="59.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">::Socket &gt; &gt;</text>
 </a>
 </g>

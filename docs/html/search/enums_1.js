@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['httpcompliance_1276',['HTTPCompliance',['../classhttp_1_1_parser.html#afa2d48828a1e14d3d42c1c8c81f2ab29',1,'http::Parser']]]
+  ['flags_1316',['FLAGS',['../classnet_1_1_descriptor.html#a1ecc493b50b4c5ed5cfa3a8746e51f35',1,'net::Descriptor']]]
 ];

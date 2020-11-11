@@ -6,7 +6,7 @@ var classhttp_1_1_client =
     [ "SocketConnection", "classhttp_1_1_client.html#a1de7977aa4301885c86b1548023539dd", null ],
     [ "Client", "classhttp_1_1_client.html#a49caca9dfd584abd9587d530181ac352", null ],
     [ "connect", "classhttp_1_1_client.html#aec110786d18d5ceef4723377dae865a4", null ],
-    [ "get", "classhttp_1_1_client.html#a1a3b0af0a0da5b174052d39a6d8c6adf", null ],
+    [ "get", "classhttp_1_1_client.html#abda7ab88f2d48e61e299e9232c48d046", null ],
     [ "post", "classhttp_1_1_client.html#ab0004712fe88e72026add67978bbb9e2", null ],
     [ "onConnect", "classhttp_1_1_client.html#a5c134036d400bf29013fca3ec240fbf9", null ],
     [ "onDisconnect", "classhttp_1_1_client.html#a091e1e25724d4b01a434eaced1296b13", null ],

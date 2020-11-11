@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['parserstate_1278',['ParserState',['../classhttp_1_1_parser.html#ab58d2b97db1c5bad0e2abfdba95514d2',1,'http::Parser']]]
+  ['level_1318',['Level',['../class_logger.html#ad766a24576ea8b27ad9d5649cef46d8f',1,'Logger']]]
 ];

@@ -9,6 +9,7 @@ var dir_de5b03c9e251d763a573c2ccd217de59 =
     [ "ClientContext.h", "_client_context_8h.html", [
       [ "ClientContext", "classhttp_1_1_client_context.html", "classhttp_1_1_client_context" ]
     ] ],
+    [ "ConnectionState.h", "_connection_state_8h.html", "_connection_state_8h" ],
     [ "CookieOptions.h", "_cookie_options_8h.html", [
       [ "CookieOptions", "classhttp_1_1_cookie_options.html", "classhttp_1_1_cookie_options" ]
     ] ],
@@ -43,7 +44,8 @@ var dir_de5b03c9e251d763a573c2ccd217de59 =
     ] ],
     [ "ServerContext.h", "_server_context_8h.html", [
       [ "ServerContextBase", "classhttp_1_1_server_context_base.html", "classhttp_1_1_server_context_base" ],
-      [ "ServerContext", "classhttp_1_1_server_context.html", "classhttp_1_1_server_context" ]
+      [ "ServerContext", "classhttp_1_1_server_context.html", "classhttp_1_1_server_context" ],
+      [ "RequestContext", "structhttp_1_1_server_context_1_1_request_context.html", "structhttp_1_1_server_context_1_1_request_context" ]
     ] ],
     [ "ServerContext.hpp", "_server_context_8hpp.html", null ],
     [ "ServerRequest.cpp", "_server_request_8cpp.html", null ],

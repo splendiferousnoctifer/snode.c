@@ -125,6 +125,7 @@ var hierarchy =
       [ "http::RequestParser", "classhttp_1_1_request_parser.html", null ],
       [ "http::ResponseParser", "classhttp_1_1_response_parser.html", null ]
     ] ],
+    [ "http::ServerContext< RequestT, ResponseT >::RequestContext", "structhttp_1_1_server_context_1_1_request_context.html", null ],
     [ "http::Response", "classhttp_1_1_response.html", [
       [ "express::Response", "classexpress_1_1_response.html", null ]
     ] ],

@@ -13,6 +13,7 @@ var classhttp_1_1_parser =
       [ "RFC7541", "classhttp_1_1_parser.html#afa2d48828a1e14d3d42c1c8c81f2ab29a8cd2e975a5e7b4ee1c69a705c68907da", null ]
     ] ],
     [ "ParserState", "classhttp_1_1_parser.html#ab58d2b97db1c5bad0e2abfdba95514d2", [
+      [ "BEGIN", "classhttp_1_1_parser.html#ab58d2b97db1c5bad0e2abfdba95514d2a19aad9f2fe3ce0023298ab83f7e75775", null ],
       [ "FIRSTLINE", "classhttp_1_1_parser.html#ab58d2b97db1c5bad0e2abfdba95514d2a75c6b2428da2036422b35ca9b1f1f8c4", null ],
       [ "HEADER", "classhttp_1_1_parser.html#ab58d2b97db1c5bad0e2abfdba95514d2a7ad4905b4543ab4a1637dd23c50e36ce", null ],
       [ "BODY", "classhttp_1_1_parser.html#ab58d2b97db1c5bad0e2abfdba95514d2a786329b34bbe53ab40a54a19cd597f2d", null ],
@@ -20,6 +21,7 @@ var classhttp_1_1_parser =
     ] ],
     [ "Parser", "classhttp_1_1_parser.html#a7efa53f8bcdb9fe5256a2207da3275a1", null ],
     [ "~Parser", "classhttp_1_1_parser.html#aebd500c3f73e98f1da1fe82630382572", null ],
+    [ "beginRequest", "classhttp_1_1_parser.html#ae613c725011ae6d5d4cd63a6565fe57c", null ],
     [ "parse", "classhttp_1_1_parser.html#aa77051c269a3a1bc71a6a9bc57668975", null ],
     [ "parseContent", "classhttp_1_1_parser.html#a43c36a04607c20120a94d5a3ea5de711", null ],
     [ "parseHeader", "classhttp_1_1_parser.html#a7c276db60d5fc720d27d8a4b8a761f99", null ],

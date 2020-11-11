@@ -1,6 +1,7 @@
 var classhttp_1_1_request_parser =
 [
-    [ "RequestParser", "classhttp_1_1_request_parser.html#aeeb75ddfce41e51954eaf2b2ba5bc36b", null ],
+    [ "RequestParser", "classhttp_1_1_request_parser.html#ac9fd3635cdfb86c86a2c18ba007ab84d", null ],
+    [ "beginRequest", "classhttp_1_1_request_parser.html#a378fa46a29abb949419112a193ce7103", null ],
     [ "methodSupported", "classhttp_1_1_request_parser.html#ac04055ec522a798a3b7c75c7bb25d4bb", null ],
     [ "parseContent", "classhttp_1_1_request_parser.html#afd00f0a48204cdbaa3837f8a6032e314", null ],
     [ "parseHeader", "classhttp_1_1_request_parser.html#a950b97ad2766af83ac1cf7e5529f4f68", null ],
@@ -17,7 +18,8 @@ var classhttp_1_1_request_parser =
     [ "onError", "classhttp_1_1_request_parser.html#a8503ea5b0f41e8f584bf15c6b0bb10cb", null ],
     [ "onHeader", "classhttp_1_1_request_parser.html#aa686866681b1dd42da709ea513df3806", null ],
     [ "onParsed", "classhttp_1_1_request_parser.html#a21070cc8d0d15f69dfeaf6bd767dac89", null ],
-    [ "onRequest", "classhttp_1_1_request_parser.html#a72fc9130f04ace8363104efc32cc89e3", null ],
+    [ "onRequest", "classhttp_1_1_request_parser.html#afd476373d3e3b4c247334e549d8dd0ed", null ],
+    [ "onStart", "classhttp_1_1_request_parser.html#a720d064ddcc306ef4cb6744fb27699c0", null ],
     [ "queries", "classhttp_1_1_request_parser.html#aab9bbbdd5243aafdd32e64ac2c2ae954", null ],
     [ "supportedMethods", "classhttp_1_1_request_parser.html#ab1555040346e0e10e7aaf61b91cdacad", null ],
     [ "url", "classhttp_1_1_request_parser.html#aa7e39ced2391bf7c4b9292e5405672b1", null ]

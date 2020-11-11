@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['keepalive_207',['keepAlive',['../classhttp_1_1_request.html#a30e5ca8074f0f64e12658e41a105af6b',1,'http::Request::keepAlive()'],['../classhttp_1_1_response.html#aeec7047aab922c40aee99da04decdc0e',1,'http::Response::keepAlive()']]]
+  ['keep_218',['Keep',['../_connection_state_8h.html#acdd867d72142510ce53521a63a062f9babb4da6bbdfe13f46af77da7e8a939727',1,'ConnectionState.h']]]
 ];

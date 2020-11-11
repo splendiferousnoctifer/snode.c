@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['tickcounter_1250',['tickCounter',['../classnet_1_1_event_loop.html#af48b60ae6f67a03e642007423391a8a9',1,'net::EventLoop']]],
-  ['timereventdispatcher_1251',['timerEventDispatcher',['../classnet_1_1_event_loop.html#ab2853b9eec71f452eb6ef0f1e5d2247a',1,'net::EventLoop']]],
-  ['timerlist_1252',['timerList',['../classnet_1_1_timer_event_dispatcher.html#a1f7146af29121b8732a3d5e536065c79',1,'net::TimerEventDispatcher']]],
-  ['timerlistdirty_1253',['timerListDirty',['../classnet_1_1_timer_event_dispatcher.html#a917b451532196df793e952abc70a5cc8',1,'net::TimerEventDispatcher']]]
+  ['unobservedeventreceiver_1294',['unobservedEventReceiver',['../classnet_1_1_event_dispatcher.html#ae283e18491baec035cb788ce1a8adee0',1,'net::EventDispatcher']]],
+  ['url_1295',['url',['../classhttp_1_1_request.html#ae8683fd115dd46032f0d4e87e1d86837',1,'http::Request::url()'],['../classhttp_1_1_request_parser.html#aa7e39ced2391bf7c4b9292e5405672b1',1,'http::RequestParser::url()']]]
 ];

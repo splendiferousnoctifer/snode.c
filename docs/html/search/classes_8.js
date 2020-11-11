@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['lasttriggered_639',['lastTriggered',['../structnet_1_1_observation_counter_1_1last_triggered.html',1,'net::ObservationCounter']]],
-  ['logger_640',['Logger',['../class_logger.html',1,'']]]
+  ['lasttriggered_659',['lastTriggered',['../structnet_1_1_observation_counter_1_1last_triggered.html',1,'net::ObservationCounter']]],
+  ['logger_660',['Logger',['../class_logger.html',1,'']]]
 ];

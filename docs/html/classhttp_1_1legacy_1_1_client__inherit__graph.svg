@@ -31,17 +31,17 @@
 <text text-anchor="start" x="19.5" y="-239.5" font-family="Helvetica,sans-Serif" font-size="10.00">socket::ip::tcp::ipv4</text>
 <text text-anchor="middle" x="72.5" y="-228.5" font-family="Helvetica,sans-Serif" font-size="10.00">::legacy::SocketClient &gt;</text>
 <polyline fill="none" stroke="black" points="11.5,-221.5 133.5,-221.5 "/>
-<text text-anchor="start" x="19.5" y="-209.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ onConnect</text>
-<text text-anchor="start" x="19.5" y="-198.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ onRequestBegin</text>
-<text text-anchor="start" x="19.5" y="-187.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ onResponseReady</text>
-<text text-anchor="start" x="19.5" y="-176.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ onResponseError</text>
-<text text-anchor="start" x="19.5" y="-165.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ onDisconnect</text>
-<text text-anchor="start" x="19.5" y="-154.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ options</text>
+<text text-anchor="start" x="19.5" y="-209.5" font-family="Helvetica,sans-Serif" font-size="10.00"># onConnect</text>
+<text text-anchor="start" x="19.5" y="-198.5" font-family="Helvetica,sans-Serif" font-size="10.00"># onRequestBegin</text>
+<text text-anchor="start" x="19.5" y="-187.5" font-family="Helvetica,sans-Serif" font-size="10.00"># onResponseReady</text>
+<text text-anchor="start" x="19.5" y="-176.5" font-family="Helvetica,sans-Serif" font-size="10.00"># onResponseError</text>
+<text text-anchor="start" x="19.5" y="-165.5" font-family="Helvetica,sans-Serif" font-size="10.00"># onDisconnect</text>
+<text text-anchor="start" x="19.5" y="-154.5" font-family="Helvetica,sans-Serif" font-size="10.00"># options</text>
 <polyline fill="none" stroke="black" points="11.5,-147.5 133.5,-147.5 "/>
 <text text-anchor="start" x="19.5" y="-135.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Client()</text>
-<text text-anchor="start" x="19.5" y="-124.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ get()</text>
-<text text-anchor="start" x="19.5" y="-113.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ post()</text>
-<text text-anchor="start" x="19.5" y="-102.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ connect()</text>
+<text text-anchor="start" x="19.5" y="-124.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ connect()</text>
+<text text-anchor="start" x="19.5" y="-113.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ get()</text>
+<text text-anchor="start" x="19.5" y="-102.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ post()</text>
 </a>
 </g>
 </g>
@@ -58,17 +58,17 @@
 <polygon fill="white" stroke="black" points="0,-321.5 0,-466.5 145,-466.5 145,-321.5 0,-321.5"/>
 <text text-anchor="middle" x="72.5" y="-454.5" font-family="Helvetica,sans-Serif" font-size="10.00">http::Client&lt; SocketClientT &gt;</text>
 <polyline fill="none" stroke="black" points="0,-447.5 145,-447.5 "/>
-<text text-anchor="start" x="8" y="-435.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ onConnect</text>
-<text text-anchor="start" x="8" y="-424.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ onRequestBegin</text>
-<text text-anchor="start" x="8" y="-413.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ onResponseReady</text>
-<text text-anchor="start" x="8" y="-402.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ onResponseError</text>
-<text text-anchor="start" x="8" y="-391.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ onDisconnect</text>
-<text text-anchor="start" x="8" y="-380.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ options</text>
+<text text-anchor="start" x="8" y="-435.5" font-family="Helvetica,sans-Serif" font-size="10.00"># onConnect</text>
+<text text-anchor="start" x="8" y="-424.5" font-family="Helvetica,sans-Serif" font-size="10.00"># onRequestBegin</text>
+<text text-anchor="start" x="8" y="-413.5" font-family="Helvetica,sans-Serif" font-size="10.00"># onResponseReady</text>
+<text text-anchor="start" x="8" y="-402.5" font-family="Helvetica,sans-Serif" font-size="10.00"># onResponseError</text>
+<text text-anchor="start" x="8" y="-391.5" font-family="Helvetica,sans-Serif" font-size="10.00"># onDisconnect</text>
+<text text-anchor="start" x="8" y="-380.5" font-family="Helvetica,sans-Serif" font-size="10.00"># options</text>
 <polyline fill="none" stroke="black" points="0,-373.5 145,-373.5 "/>
 <text text-anchor="start" x="8" y="-361.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Client()</text>
-<text text-anchor="start" x="8" y="-350.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ get()</text>
-<text text-anchor="start" x="8" y="-339.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ post()</text>
-<text text-anchor="start" x="8" y="-328.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ connect()</text>
+<text text-anchor="start" x="8" y="-350.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ connect()</text>
+<text text-anchor="start" x="8" y="-339.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ get()</text>
+<text text-anchor="start" x="8" y="-328.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ post()</text>
 </a>
 </g>
 </g>

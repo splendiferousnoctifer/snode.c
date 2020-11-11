@@ -97,7 +97,8 @@ $(document).ready(function(){initNavTree('classhttp_1_1_client_context.html','')
 <div class="dynheader">
 Collaboration diagram for http::ClientContext:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1_client_context__coll__graph.svg" width="707" height="896"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1_client_context__coll__graph.svg" width="707" height="940"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -191,30 +192,30 @@ Private Attributes</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="_client_context_8cpp_source.html#l00032">32</a> of file <a class="el" href="_client_context_8cpp_source.html">ClientContext.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        : <a class="code" href="classhttp_1_1_client_context.html#a20695654543eab3d02ca5168b1ec5da2">socketConnection</a>(<a class="code" href="classhttp_1_1_client_context.html#a20695654543eab3d02ca5168b1ec5da2">socketConnection</a>)</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        , <a class="code" href="classhttp_1_1_client_context.html#ab6337ff4dcb262e82557af222aabc2b9">parser</a>(</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;              [<span class="keyword">this</span>](<span class="keyword">const</span> std::string&amp; httpVersion, <span class="keyword">const</span> std::string&amp; statusCode, <span class="keyword">const</span> std::string&amp; reason) -&gt; <span class="keywordtype">void</span> {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                  <a class="code" href="classhttp_1_1_client_context.html#a795dc8019fd7288a01703b96a59af7ab">serverResponse</a>.<a class="code" href="classhttp_1_1_server_response.html#a3a521b530fb09921e0a1cf303175dbbb">httpVersion</a> = httpVersion;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                  <a class="code" href="classhttp_1_1_client_context.html#a795dc8019fd7288a01703b96a59af7ab">serverResponse</a>.<a class="code" href="classhttp_1_1_server_response.html#acce8cfb6d83ee29825496bec7a5c3841">statusCode</a> = statusCode;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                  <a class="code" href="classhttp_1_1_client_context.html#a795dc8019fd7288a01703b96a59af7ab">serverResponse</a>.<a class="code" href="classhttp_1_1_server_response.html#af52d726521e18bc703a0e329ec7e05f8">reason</a> = reason;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;              },</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;              [<span class="keyword">this</span>](<span class="keyword">const</span> std::map&lt;std::string, std::string&gt;&amp; headers, <span class="keyword">const</span> std::map&lt;std::string, http::CookieOptions&gt;&amp; cookies) -&gt; <span class="keywordtype">void</span> {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                  <a class="code" href="classhttp_1_1_client_context.html#a795dc8019fd7288a01703b96a59af7ab">serverResponse</a>.<a class="code" href="classhttp_1_1_server_response.html#a600fb3d58bbb12fb2fd3abbc1dbf3fcf">headers</a> = &amp;headers;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                  <a class="code" href="classhttp_1_1_client_context.html#a795dc8019fd7288a01703b96a59af7ab">serverResponse</a>.<a class="code" href="classhttp_1_1_server_response.html#a37af2330df5f3504e0befdbe5309026b">cookies</a> = &amp;cookies;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;              },</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;              [<span class="keyword">this</span>](<span class="keywordtype">char</span>* content, <span class="keywordtype">size_t</span> contentLength) -&gt; <span class="keywordtype">void</span> {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                  <a class="code" href="classhttp_1_1_client_context.html#a795dc8019fd7288a01703b96a59af7ab">serverResponse</a>.<a class="code" href="classhttp_1_1_server_response.html#aaad8eacb0322958a4d8bee67af01ca91">body</a> = content;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                  <a class="code" href="classhttp_1_1_client_context.html#a795dc8019fd7288a01703b96a59af7ab">serverResponse</a>.<a class="code" href="classhttp_1_1_server_response.html#aef503f58dc517760001452c1d8e8aa35">contentLength</a> = contentLength;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;              },</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;              [<span class="keyword">this</span>, onResponse](<a class="code" href="classhttp_1_1_response_parser.html">http::ResponseParser</a>&amp; <a class="code" href="classhttp_1_1_client_context.html#ab6337ff4dcb262e82557af222aabc2b9">parser</a>) -&gt; <span class="keywordtype">void</span> {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                  onResponse(<a class="code" href="classhttp_1_1_client_context.html#a795dc8019fd7288a01703b96a59af7ab">serverResponse</a>);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                  <a class="code" href="classhttp_1_1_client_context.html#ab6337ff4dcb262e82557af222aabc2b9">parser</a>.<a class="code" href="classhttp_1_1_response_parser.html#a0416caca24b527d82df5fb6629cf0229">reset</a>();</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;              },</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;              [onError](<span class="keywordtype">int</span> status, <span class="keyword">const</span> std::string&amp; reason) -&gt; <span class="keywordtype">void</span> {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                  onError(status, reason);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;              }) {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;              [](<span class="keywordtype">void</span>) -&gt; <span class="keywordtype">void</span> {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;              },</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;              [<span class="keyword">this</span>](<span class="keyword">const</span> std::string&amp; httpVersion, <span class="keyword">const</span> std::string&amp; statusCode, <span class="keyword">const</span> std::string&amp; reason) -&gt; <span class="keywordtype">void</span> {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                  <a class="code" href="classhttp_1_1_client_context.html#a795dc8019fd7288a01703b96a59af7ab">serverResponse</a>.<a class="code" href="classhttp_1_1_server_response.html#a3a521b530fb09921e0a1cf303175dbbb">httpVersion</a> = httpVersion;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                  <a class="code" href="classhttp_1_1_client_context.html#a795dc8019fd7288a01703b96a59af7ab">serverResponse</a>.<a class="code" href="classhttp_1_1_server_response.html#acce8cfb6d83ee29825496bec7a5c3841">statusCode</a> = statusCode;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                  <a class="code" href="classhttp_1_1_client_context.html#a795dc8019fd7288a01703b96a59af7ab">serverResponse</a>.<a class="code" href="classhttp_1_1_server_response.html#af52d726521e18bc703a0e329ec7e05f8">reason</a> = reason;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;              },</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;              [<span class="keyword">this</span>](<span class="keyword">const</span> std::map&lt;std::string, std::string&gt;&amp; headers, <span class="keyword">const</span> std::map&lt;std::string, http::CookieOptions&gt;&amp; cookies) -&gt; <span class="keywordtype">void</span> {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                  <a class="code" href="classhttp_1_1_client_context.html#a795dc8019fd7288a01703b96a59af7ab">serverResponse</a>.<a class="code" href="classhttp_1_1_server_response.html#a600fb3d58bbb12fb2fd3abbc1dbf3fcf">headers</a> = &amp;headers;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                  <a class="code" href="classhttp_1_1_client_context.html#a795dc8019fd7288a01703b96a59af7ab">serverResponse</a>.<a class="code" href="classhttp_1_1_server_response.html#a37af2330df5f3504e0befdbe5309026b">cookies</a> = &amp;cookies;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;              },</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;              [<span class="keyword">this</span>](<span class="keywordtype">char</span>* content, <span class="keywordtype">size_t</span> contentLength) -&gt; <span class="keywordtype">void</span> {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                  <a class="code" href="classhttp_1_1_client_context.html#a795dc8019fd7288a01703b96a59af7ab">serverResponse</a>.<a class="code" href="classhttp_1_1_server_response.html#aaad8eacb0322958a4d8bee67af01ca91">body</a> = content;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                  <a class="code" href="classhttp_1_1_client_context.html#a795dc8019fd7288a01703b96a59af7ab">serverResponse</a>.<a class="code" href="classhttp_1_1_server_response.html#aef503f58dc517760001452c1d8e8aa35">contentLength</a> = contentLength;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;              },</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;              [<span class="keyword">this</span>, onResponse](<a class="code" href="classhttp_1_1_response_parser.html">http::ResponseParser</a>&amp; <a class="code" href="classhttp_1_1_client_context.html#ab6337ff4dcb262e82557af222aabc2b9">parser</a>) -&gt; <span class="keywordtype">void</span> {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                  onResponse(<a class="code" href="classhttp_1_1_client_context.html#a795dc8019fd7288a01703b96a59af7ab">serverResponse</a>);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                  <a class="code" href="classhttp_1_1_client_context.html#ab6337ff4dcb262e82557af222aabc2b9">parser</a>.<a class="code" href="classhttp_1_1_response_parser.html#a0416caca24b527d82df5fb6629cf0229">reset</a>();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;              },</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;              [onError](<span class="keywordtype">int</span> status, <span class="keyword">const</span> std::string&amp; reason) -&gt; <span class="keywordtype">void</span> {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                  onError(status, reason);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;              }) {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_server_response_8h_source.html#l00039">http::ServerResponse::httpVersion</a>, <a class="el" href="_server_response_8h_source.html#l00041">http::ServerResponse::reason</a>, <a class="el" href="_client_context_8h_source.html#l00060">serverResponse</a>, and <a class="el" href="_server_response_8h_source.html#l00040">http::ServerResponse::statusCode</a>.</p>
-
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -233,14 +234,14 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_client_context_8cpp_source.html#l00067">67</a> of file <a class="el" href="_client_context_8cpp_source.html">ClientContext.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                                               {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classhttp_1_1_client_context.html#a25f9ba82f5ff95bdbf99493acb166b01">request</a>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="_client_context_8cpp_source.html#l00069">69</a> of file <a class="el" href="_client_context_8cpp_source.html">ClientContext.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                                               {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classhttp_1_1_client_context.html#a25f9ba82f5ff95bdbf99493acb166b01">request</a>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="_client_context_8h_source.html#l00056">request</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_client_8h_source.html#l00107">http::Client&lt; net::socket::ip::tcp::ipv4::legacy::SocketClient &gt;::connect()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_client_8h_source.html#l00059">http::Client&lt; net::socket::ip::tcp::ipv4::legacy::SocketClient &gt;::connect()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -275,18 +276,19 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_client_context_8cpp_source.html#l00059">59</a> of file <a class="el" href="_client_context_8cpp_source.html">ClientContext.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                                                                            {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <a class="code" href="classhttp_1_1_client_context.html#ab6337ff4dcb262e82557af222aabc2b9">parser</a>.<a class="code" href="classhttp_1_1_parser.html#aa77051c269a3a1bc71a6a9bc57668975">parse</a>(junk, junkLen);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="_client_context_8cpp_source.html#l00061">61</a> of file <a class="el" href="_client_context_8cpp_source.html">ClientContext.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                                                                            {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <a class="code" href="classhttp_1_1_client_context.html#ab6337ff4dcb262e82557af222aabc2b9">parser</a>.<a class="code" href="classhttp_1_1_parser.html#aa77051c269a3a1bc71a6a9bc57668975">parse</a>(junk, junkLen);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="_parser_8cpp_source.html#l00045">http::Parser::parse()</a>, and <a class="el" href="_client_context_8h_source.html#l00063">parser</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_client_8h_source.html#l00107">http::Client&lt; net::socket::ip::tcp::ipv4::legacy::SocketClient &gt;::connect()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_client_8h_source.html#l00059">http::Client&lt; net::socket::ip::tcp::ipv4::legacy::SocketClient &gt;::connect()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1_client_context_ab13ab6b9d9ac757b92b005ede6147b3a_cgraph.svg" width="1038" height="240"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1_client_context_ab13ab6b9d9ac757b92b005ede6147b3a_cgraph.svg" width="1038" height="278"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -312,14 +314,14 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_client_context_8cpp_source.html#l00063">63</a> of file <a class="el" href="_client_context_8cpp_source.html">ClientContext.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                                                           {</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        this-&gt;<a class="code" href="classhttp_1_1_client_context.html#a25f9ba82f5ff95bdbf99493acb166b01">request</a> = <a class="code" href="classhttp_1_1_client_context.html#a25f9ba82f5ff95bdbf99493acb166b01">request</a>;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="_client_context_8cpp_source.html#l00065">65</a> of file <a class="el" href="_client_context_8cpp_source.html">ClientContext.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                                                           {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        this-&gt;<a class="code" href="classhttp_1_1_client_context.html#a25f9ba82f5ff95bdbf99493acb166b01">request</a> = <a class="code" href="classhttp_1_1_client_context.html#a25f9ba82f5ff95bdbf99493acb166b01">request</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="_client_context_8h_source.html#l00056">request</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_client_8h_source.html#l00107">http::Client&lt; net::socket::ip::tcp::ipv4::legacy::SocketClient &gt;::connect()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_client_8h_source.html#l00059">http::Client&lt; net::socket::ip::tcp::ipv4::legacy::SocketClient &gt;::connect()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -351,7 +353,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="_client_context_8h_source.html#l00063">63</a> of file <a class="el" href="_client_context_8h_source.html">ClientContext.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_client_context_8cpp_source.html#l00059">receiveResponseData()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_client_context_8cpp_source.html#l00061">receiveResponseData()</a>.</p>
 
 </div>
 </div>
@@ -377,7 +379,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="_client_context_8h_source.html#l00056">56</a> of file <a class="el" href="_client_context_8h_source.html">ClientContext.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_client_context_8cpp_source.html#l00067">getRequest()</a>, and <a class="el" href="_client_context_8cpp_source.html#l00063">setRequest()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_client_context_8cpp_source.html#l00069">getRequest()</a>, and <a class="el" href="_client_context_8cpp_source.html#l00065">setRequest()</a>.</p>
 
 </div>
 </div>
@@ -395,7 +397,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="_client_context_8h_source.html#l00059">59</a> of file <a class="el" href="_client_context_8h_source.html">ClientContext.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_client_8h_source.html#l00107">http::Client&lt; net::socket::ip::tcp::ipv4::legacy::SocketClient &gt;::connect()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_client_8h_source.html#l00059">http::Client&lt; net::socket::ip::tcp::ipv4::legacy::SocketClient &gt;::connect()</a>.</p>
 
 </div>
 </div>
@@ -412,8 +414,6 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_client_context_8h_source.html#l00060">60</a> of file <a class="el" href="_client_context_8h_source.html">ClientContext.h</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="_client_context_8cpp_source.html#l00032">ClientContext()</a>.</p>
 
 </div>
 </div>
@@ -456,7 +456,7 @@ Here is the caller graph for this function:</div>
 <div class="ttc" id="aclasshttp_1_1_server_response_html_aaad8eacb0322958a4d8bee67af01ca91"><div class="ttname"><a href="classhttp_1_1_server_response.html#aaad8eacb0322958a4d8bee67af01ca91">http::ServerResponse::body</a></div><div class="ttdeci">char * body</div><div class="ttdef"><b>Definition:</b> <a href="_server_response_8h_source.html#l00042">ServerResponse.h:42</a></div></div>
 <div class="ttc" id="aclasshttp_1_1_client_context_html_a20695654543eab3d02ca5168b1ec5da2"><div class="ttname"><a href="classhttp_1_1_client_context.html#a20695654543eab3d02ca5168b1ec5da2">http::ClientContext::socketConnection</a></div><div class="ttdeci">SocketConnection * socketConnection</div><div class="ttdef"><b>Definition:</b> <a href="_client_context_8h_source.html#l00054">ClientContext.h:54</a></div></div>
 <div class="ttc" id="aclasshttp_1_1_server_response_html_aef503f58dc517760001452c1d8e8aa35"><div class="ttname"><a href="classhttp_1_1_server_response.html#aef503f58dc517760001452c1d8e8aa35">http::ServerResponse::contentLength</a></div><div class="ttdeci">int contentLength</div><div class="ttdef"><b>Definition:</b> <a href="_server_response_8h_source.html#l00043">ServerResponse.h:43</a></div></div>
-<div class="ttc" id="aclasshttp_1_1_response_parser_html_a0416caca24b527d82df5fb6629cf0229"><div class="ttname"><a href="classhttp_1_1_response_parser.html#a0416caca24b527d82df5fb6629cf0229">http::ResponseParser::reset</a></div><div class="ttdeci">void reset() override</div><div class="ttdef"><b>Definition:</b> <a href="_response_parser_8cpp_source.html#l00044">ResponseParser.cpp:44</a></div></div>
+<div class="ttc" id="aclasshttp_1_1_response_parser_html_a0416caca24b527d82df5fb6629cf0229"><div class="ttname"><a href="classhttp_1_1_response_parser.html#a0416caca24b527d82df5fb6629cf0229">http::ResponseParser::reset</a></div><div class="ttdeci">void reset() override</div><div class="ttdef"><b>Definition:</b> <a href="_response_parser_8cpp_source.html#l00046">ResponseParser.cpp:46</a></div></div>
 <div class="ttc" id="aclasshttp_1_1_response_parser_html"><div class="ttname"><a href="classhttp_1_1_response_parser.html">http::ResponseParser</a></div><div class="ttdef"><b>Definition:</b> <a href="_response_parser_8h_source.html#l00036">ResponseParser.h:36</a></div></div>
 <div class="ttc" id="aclasshttp_1_1_server_response_html_a3a521b530fb09921e0a1cf303175dbbb"><div class="ttname"><a href="classhttp_1_1_server_response.html#a3a521b530fb09921e0a1cf303175dbbb">http::ServerResponse::httpVersion</a></div><div class="ttdeci">std::string httpVersion</div><div class="ttdef"><b>Definition:</b> <a href="_server_response_8h_source.html#l00039">ServerResponse.h:39</a></div></div>
 <div class="ttc" id="aclasshttp_1_1_server_response_html_af52d726521e18bc703a0e329ec7e05f8"><div class="ttname"><a href="classhttp_1_1_server_response.html#af52d726521e18bc703a0e329ec7e05f8">http::ServerResponse::reason</a></div><div class="ttdeci">std::string reason</div><div class="ttdef"><b>Definition:</b> <a href="_server_response_8h_source.html#l00041">ServerResponse.h:41</a></div></div>

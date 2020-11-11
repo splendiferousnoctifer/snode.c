@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['unobservedeventreceiver_1254',['unobservedEventReceiver',['../classnet_1_1_event_dispatcher.html#ae283e18491baec035cb788ce1a8adee0',1,'net::EventDispatcher']]],
-  ['url_1255',['url',['../classhttp_1_1_request.html#ae8683fd115dd46032f0d4e87e1d86837',1,'http::Request::url()'],['../classhttp_1_1_request_parser.html#aa7e39ced2391bf7c4b9292e5405672b1',1,'http::RequestParser::url()']]]
+  ['value_1296',['value',['../classhttp_1_1_cookie_options.html#a9eae9219c59f0140dc52d246f3d40edc',1,'http::CookieOptions']]]
 ];

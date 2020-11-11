@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['info_1286',['INFO',['../class_logger.html#ad766a24576ea8b27ad9d5649cef46d8fa61a9b6fc1e9babc448984b8a34ca2ed2',1,'Logger']]]
+  ['header_1329',['HEADER',['../classhttp_1_1_parser.html#ab58d2b97db1c5bad0e2abfdba95514d2a7ad4905b4543ab4a1637dd23c50e36ce',1,'http::Parser']]]
 ];
