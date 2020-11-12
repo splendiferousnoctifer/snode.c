@@ -123,8 +123,8 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:ac04055ec522a798a3b7c75c7bb25d4bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a378fa46a29abb949419112a193ce7103"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_request_parser.html#a378fa46a29abb949419112a193ce7103">beginRequest</a> () override</td></tr>
 <tr class="separator:a378fa46a29abb949419112a193ce7103"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3156d517bee614360d27df7de767654b"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="classhttp_1_1_parser.html#ab58d2b97db1c5bad0e2abfdba95514d2">Parser::ParserState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_request_parser.html#a3156d517bee614360d27df7de767654b">parseStartLine</a> (std::string &amp;<a class="el" href="classhttp_1_1_parser.html#a2e1c8ce9216203e3823b1e62f422f858">line</a>) override</td></tr>
-<tr class="separator:a3156d517bee614360d27df7de767654b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b83b48286d347a10b2b1a543dec7f19"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="classhttp_1_1_parser.html#ab58d2b97db1c5bad0e2abfdba95514d2">Parser::ParserState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_request_parser.html#a2b83b48286d347a10b2b1a543dec7f19">parseStartLine</a> (const std::string &amp;<a class="el" href="classhttp_1_1_parser.html#a2e1c8ce9216203e3823b1e62f422f858">line</a>) override</td></tr>
+<tr class="separator:a2b83b48286d347a10b2b1a543dec7f19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a950b97ad2766af83ac1cf7e5529f4f68"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="classhttp_1_1_parser.html#ab58d2b97db1c5bad0e2abfdba95514d2">Parser::ParserState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_request_parser.html#a950b97ad2766af83ac1cf7e5529f4f68">parseHeader</a> () override</td></tr>
 <tr class="separator:a950b97ad2766af83ac1cf7e5529f4f68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd00f0a48204cdbaa3837f8a6032e314"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="classhttp_1_1_parser.html#ab58d2b97db1c5bad0e2abfdba95514d2">Parser::ParserState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_request_parser.html#afd00f0a48204cdbaa3837f8a6032e314">parseContent</a> (char *<a class="el" href="classhttp_1_1_parser.html#a1898296511bbab14c3635445de370ca6">content</a>, size_t size) override</td></tr>
@@ -464,8 +464,8 @@ Here is the call graph for this function:</div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a3156d517bee614360d27df7de767654b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3156d517bee614360d27df7de767654b">&#9670;&nbsp;</a></span>parseStartLine()</h2>
+<a id="a2b83b48286d347a10b2b1a543dec7f19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b83b48286d347a10b2b1a543dec7f19">&#9670;&nbsp;</a></span>parseStartLine()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -476,7 +476,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">enum <a class="el" href="classhttp_1_1_parser.html#ab58d2b97db1c5bad0e2abfdba95514d2">Parser::ParserState</a> http::RequestParser::parseStartLine </td>
           <td>(</td>
-          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>line</em></td><td>)</td>
           <td></td>
         </tr>
@@ -488,10 +488,10 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classhttp_1_1_parser.html#a6366b76446870cf090cd2faf8f2a5a83">http::Parser</a>.</p>
+<p>Implements <a class="el" href="classhttp_1_1_parser.html#ace4562d0ef6c64bd7d2d4ccf5b61fd2c">http::Parser</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_request_parser_8cpp_source.html#l00061">61</a> of file <a class="el" href="_request_parser_8cpp_source.html">RequestParser.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                                                                        {</div>
+<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                                                                              {</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keyword">enum</span> <a class="code" href="classhttp_1_1_parser.html#ab58d2b97db1c5bad0e2abfdba95514d2">Parser::ParserState</a> <a class="code" href="classhttp_1_1_parser.html#ad5613d8ddc598712a4eeb85f0d860bf9">parserState</a> = <a class="code" href="classhttp_1_1_parser.html#ab58d2b97db1c5bad0e2abfdba95514d2a7ad4905b4543ab4a1637dd23c50e36ce">Parser::ParserState::HEADER</a>;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="classhttp_1_1_parser.html#a2e1c8ce9216203e3823b1e62f422f858">line</a>.empty()) {</div>

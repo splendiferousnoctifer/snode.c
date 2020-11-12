@@ -106,12 +106,12 @@ Collaboration diagram for net::socket::ip::address::ipv4::bad_hostname:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a8dda7362bd155d77ea36ec43fec21e0a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1ip_1_1address_1_1ipv4_1_1bad__hostname.html#a8dda7362bd155d77ea36ec43fec21e0a">bad_hostname</a> (const std::string &amp;hostName)</td></tr>
 <tr class="separator:a8dda7362bd155d77ea36ec43fec21e0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a921687fb1368ccf09336510e172c8b47"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1ip_1_1address_1_1ipv4_1_1bad__hostname.html#a921687fb1368ccf09336510e172c8b47">what</a> () const noexcept override</td></tr>
-<tr class="separator:a921687fb1368ccf09336510e172c8b47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9236db5e38d71f82f3baab13c0b75145"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1ip_1_1address_1_1ipv4_1_1bad__hostname.html#a9236db5e38d71f82f3baab13c0b75145">what</a> () const noexcept override</td></tr>
+<tr class="separator:a9236db5e38d71f82f3baab13c0b75145"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-attribs"></a>
 Static Protected Attributes</h2></td></tr>
-<tr class="memitem:a607dcad45723cde012390e5c8272a877"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1ip_1_1address_1_1ipv4_1_1bad__hostname.html#a607dcad45723cde012390e5c8272a877">message</a> = &quot;&quot;</td></tr>
+<tr class="memitem:a607dcad45723cde012390e5c8272a877"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1ip_1_1address_1_1ipv4_1_1bad__hostname.html#a607dcad45723cde012390e5c8272a877">message</a></td></tr>
 <tr class="separator:a607dcad45723cde012390e5c8272a877"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -152,8 +152,8 @@ Static Protected Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a921687fb1368ccf09336510e172c8b47"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a921687fb1368ccf09336510e172c8b47">&#9670;&nbsp;</a></span>what()</h2>
+<a id="a9236db5e38d71f82f3baab13c0b75145"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9236db5e38d71f82f3baab13c0b75145">&#9670;&nbsp;</a></span>what()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -162,7 +162,7 @@ Static Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual const char* net::socket::ip::address::ipv4::bad_hostname::what </td>
+          <td class="memname">const char* net::socket::ip::address::ipv4::bad_hostname::what </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -170,13 +170,13 @@ Static Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="ipv4_2_inet_address_8h_source.html#l00042">42</a> of file <a class="el" href="ipv4_2_inet_address_8h_source.html">InetAddress.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                                                           {</div>
+<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                                                   {</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classnet_1_1socket_1_1ip_1_1address_1_1ipv4_1_1bad__hostname.html#a607dcad45723cde012390e5c8272a877">bad_hostname::message</a>.c_str();</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        }</div>
 </div><!-- fragment -->
@@ -195,7 +195,7 @@ Static Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string net::socket::ip::address::ipv4::bad_hostname::message = &quot;&quot;</td>
+          <td class="memname">std::string net::socket::ip::address::ipv4::bad_hostname::message</td>
         </tr>
       </table>
   </td>

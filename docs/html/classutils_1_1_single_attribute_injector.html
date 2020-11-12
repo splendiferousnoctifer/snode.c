@@ -99,12 +99,12 @@ Collaboration diagram for utils::SingleAttributeInjector:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5f621a05e84bd9406fe961c071df502c"><td class="memTemplParams" colspan="2">template&lt;InjectableAttribute Attribute&gt; </td></tr>
-<tr class="memitem:a5f621a05e84bd9406fe961c071df502c"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classutils_1_1_single_attribute_injector.html#a5f621a05e84bd9406fe961c071df502c">setAttribute</a> (Attribute &amp;<a class="el" href="classutils_1_1_single_attribute_injector.html#a6483f3e54ffbb659dd10882261e99901">attribute</a>, bool overwrite=false) const</td></tr>
-<tr class="separator:a5f621a05e84bd9406fe961c071df502c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ab8e6c5069845a23e35f9e33fb0ea4f"><td class="memTemplParams" colspan="2">template&lt;InjectableAttribute Attribute&gt; </td></tr>
-<tr class="memitem:a6ab8e6c5069845a23e35f9e33fb0ea4f"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classutils_1_1_single_attribute_injector.html#a6ab8e6c5069845a23e35f9e33fb0ea4f">setAttribute</a> (Attribute &amp;&amp;<a class="el" href="classutils_1_1_single_attribute_injector.html#a6483f3e54ffbb659dd10882261e99901">attribute</a>, bool overwrite=false) const</td></tr>
-<tr class="separator:a6ab8e6c5069845a23e35f9e33fb0ea4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46b65b72ba89bde71ba3ddc889446587"><td class="memTemplParams" colspan="2">template&lt;InjectableAttribute Attribute&gt; </td></tr>
+<tr class="memitem:a46b65b72ba89bde71ba3ddc889446587"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classutils_1_1_single_attribute_injector.html#a46b65b72ba89bde71ba3ddc889446587">setAttribute</a> (const Attribute &amp;<a class="el" href="classutils_1_1_single_attribute_injector.html#a6483f3e54ffbb659dd10882261e99901">attribute</a>, bool overwrite=false) const</td></tr>
+<tr class="separator:a46b65b72ba89bde71ba3ddc889446587"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23c5c71bd510b5b4a2486368482a8176"><td class="memTemplParams" colspan="2">template&lt;InjectableAttribute Attribute&gt; </td></tr>
+<tr class="memitem:a23c5c71bd510b5b4a2486368482a8176"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classutils_1_1_single_attribute_injector.html#a23c5c71bd510b5b4a2486368482a8176">setAttribute</a> (const Attribute &amp;&amp;<a class="el" href="classutils_1_1_single_attribute_injector.html#a6483f3e54ffbb659dd10882261e99901">attribute</a>, bool overwrite=false) const</td></tr>
+<tr class="separator:a23c5c71bd510b5b4a2486368482a8176"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7cf4bed6cc9db6da894beb008cfee34a"><td class="memTemplParams" colspan="2">template&lt;InjectableAttribute Attribute&gt; </td></tr>
 <tr class="memitem:a7cf4bed6cc9db6da894beb008cfee34a"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classutils_1_1_single_attribute_injector.html#a7cf4bed6cc9db6da894beb008cfee34a">getAttribute</a> (const std::function&lt; void(Attribute &amp;<a class="el" href="classutils_1_1_single_attribute_injector.html#a6483f3e54ffbb659dd10882261e99901">attribute</a>)&gt; &amp;onFound) const</td></tr>
 <tr class="separator:a7cf4bed6cc9db6da894beb008cfee34a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -220,8 +220,8 @@ template&lt;InjectableAttribute Attribute&gt; </div>
 
 </div>
 </div>
-<a id="a6ab8e6c5069845a23e35f9e33fb0ea4f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ab8e6c5069845a23e35f9e33fb0ea4f">&#9670;&nbsp;</a></span>setAttribute() <span class="overload">[1/2]</span></h2>
+<a id="a23c5c71bd510b5b4a2486368482a8176"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23c5c71bd510b5b4a2486368482a8176">&#9670;&nbsp;</a></span>setAttribute() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -234,7 +234,7 @@ template&lt;InjectableAttribute Attribute&gt; </div>
         <tr>
           <td class="memname">constexpr bool utils::SingleAttributeInjector::setAttribute </td>
           <td>(</td>
-          <td class="paramtype">Attribute &amp;&amp;&#160;</td>
+          <td class="paramtype">const Attribute &amp;&amp;&#160;</td>
           <td class="paramname"><em>attribute</em>, </td>
         </tr>
         <tr>
@@ -257,7 +257,7 @@ template&lt;InjectableAttribute Attribute&gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_attribute_injector_8h_source.html#l00093">93</a> of file <a class="el" href="_attribute_injector_8h_source.html">AttributeInjector.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                                                                                         {</div>
+<div class="fragment"><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                                                                                               {</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="keywordtype">bool</span> inserted = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <span class="keywordflow">if</span> (!this-&gt;<a class="code" href="classutils_1_1_single_attribute_injector.html#a6483f3e54ffbb659dd10882261e99901">attribute</a> || overwrite) {</div>
@@ -273,8 +273,8 @@ template&lt;InjectableAttribute Attribute&gt; </div>
 
 </div>
 </div>
-<a id="a5f621a05e84bd9406fe961c071df502c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f621a05e84bd9406fe961c071df502c">&#9670;&nbsp;</a></span>setAttribute() <span class="overload">[2/2]</span></h2>
+<a id="a46b65b72ba89bde71ba3ddc889446587"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46b65b72ba89bde71ba3ddc889446587">&#9670;&nbsp;</a></span>setAttribute() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -287,7 +287,7 @@ template&lt;InjectableAttribute Attribute&gt; </div>
         <tr>
           <td class="memname">constexpr bool utils::SingleAttributeInjector::setAttribute </td>
           <td>(</td>
-          <td class="paramtype">Attribute &amp;&#160;</td>
+          <td class="paramtype">const Attribute &amp;&#160;</td>
           <td class="paramname"><em>attribute</em>, </td>
         </tr>
         <tr>
@@ -310,7 +310,7 @@ template&lt;InjectableAttribute Attribute&gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_attribute_injector_8h_source.html#l00080">80</a> of file <a class="el" href="_attribute_injector_8h_source.html">AttributeInjector.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                                                                                        {</div>
+<div class="fragment"><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                                                                                              {</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <span class="keywordtype">bool</span> inserted = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            <span class="keywordflow">if</span> (!this-&gt;<a class="code" href="classutils_1_1_single_attribute_injector.html#a6483f3e54ffbb659dd10882261e99901">attribute</a> || overwrite) {</div>
@@ -328,7 +328,7 @@ template&lt;InjectableAttribute Attribute&gt; </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classutils_1_1_single_attribute_injector_a5f621a05e84bd9406fe961c071df502c_icgraph.svg" width="408" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classutils_1_1_single_attribute_injector_a46b65b72ba89bde71ba3ddc889446587_icgraph.svg" width="408" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
