@@ -262,7 +262,8 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_file_reader_af795e347158c081e975b994b1d45bae0_icgraph.svg" width="724" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_file_reader_af795e347158c081e975b994b1d45bae0_icgraph.svg" width="724" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
@@ -334,7 +335,8 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_file_reader_a999160194e3e2882fd6172bed06607b8_icgraph.svg" width="520" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_file_reader_a999160194e3e2882fd6172bed06607b8_icgraph.svg" width="520" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
@@ -371,11 +373,11 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">int</span> ret = <a class="code" href="class_file_reader.html#a999160194e3e2882fd6172bed06607b8">::read</a>(<a class="code" href="classnet_1_1_descriptor.html#a70ccc1e4f6af5cda015bd319f9a90096">getFd</a>(), junk, <a class="code" href="_file_reader_8cpp.html#a536343537987c482dd72874c30604924">MFREADSIZE</a>);</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">if</span> (ret &gt; 0) {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">if</span> (ret &gt;= 0) {</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <a class="code" href="class_file_reader.html#acf21f21f7c0ece5d2e6578d8296234ba">junkRead</a>(junk, ret);</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        ReadEventReceiver::disable();</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <a class="code" href="class_file_reader.html#a16d4a3020574b75aa6b14468dcf901a3">onError</a>(ret == 0 ? 0 : errno);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <a class="code" href="class_file_reader.html#a16d4a3020574b75aa6b14468dcf901a3">onError</a>(errno);</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    }</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
 </div><!-- fragment -->

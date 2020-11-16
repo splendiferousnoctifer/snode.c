@@ -22,6 +22,9 @@ var hierarchy =
         [ "FileReader", "class_file_reader.html", null ]
       ] ],
       [ "net::socket::Socket< SocketAddressT >", "classnet_1_1socket_1_1_socket.html", null ],
+      [ "net::socket::Socket< address::BtAddress >", "classnet_1_1socket_1_1_socket.html", [
+        [ "net::socket::bluetooth::rfcomm::Socket", "classnet_1_1socket_1_1bluetooth_1_1rfcomm_1_1_socket.html", null ]
+      ] ],
       [ "net::socket::Socket< address::ipv4::InetAddress >", "classnet_1_1socket_1_1_socket.html", [
         [ "net::socket::ip::tcp::ipv4::Socket", "classnet_1_1socket_1_1ip_1_1tcp_1_1ipv4_1_1_socket.html", null ]
       ] ],
@@ -195,6 +198,9 @@ var hierarchy =
     [ "net::socket::SocketAddress< struct sockaddr_in6 >", "classnet_1_1socket_1_1_socket_address.html", [
       [ "net::socket::ip::address::ipv6::InetAddress", "classnet_1_1socket_1_1ip_1_1address_1_1ipv6_1_1_inet_address.html", null ]
     ] ],
+    [ "net::socket::SocketAddress< struct sockaddr_rc >", "classnet_1_1socket_1_1_socket_address.html", [
+      [ "net::socket::bluetooth::address::BtAddress", "classnet_1_1socket_1_1bluetooth_1_1address_1_1_bt_address.html", null ]
+    ] ],
     [ "net::socket::stream::SocketClient< SocketConnectorT >", "classnet_1_1socket_1_1stream_1_1_socket_client.html", null ],
     [ "net::socket::stream::SocketClient< legacy::SocketConnector< ipv4::Socket > >", "classnet_1_1socket_1_1stream_1_1_socket_client.html", [
       [ "net::socket::stream::legacy::SocketClient< ipv4::Socket >", "classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_client.html", [
@@ -207,6 +213,13 @@ var hierarchy =
       [ "net::socket::stream::legacy::SocketClient< ipv6::Socket >", "classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_client.html", [
         [ "net::socket::ip::tcp::SocketClient< stream::legacy::SocketClient< ipv6::Socket > >", "classnet_1_1socket_1_1ip_1_1tcp_1_1_socket_client.html", [
           [ "net::socket::ip::tcp::ipv6::legacy::SocketClient", "classnet_1_1socket_1_1ip_1_1tcp_1_1ipv6_1_1legacy_1_1_socket_client.html", null ]
+        ] ]
+      ] ]
+    ] ],
+    [ "net::socket::stream::SocketClient< legacy::SocketConnector< rfcomm::Socket > >", "classnet_1_1socket_1_1stream_1_1_socket_client.html", [
+      [ "net::socket::stream::legacy::SocketClient< rfcomm::Socket >", "classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_client.html", [
+        [ "net::socket::bluetooth::rfcomm::SocketClient< stream::legacy::SocketClient< rfcomm::Socket > >", "classnet_1_1socket_1_1bluetooth_1_1rfcomm_1_1_socket_client.html", [
+          [ "net::socket::bluetooth::rfcomm::legacy::SocketClient", "classnet_1_1socket_1_1bluetooth_1_1rfcomm_1_1legacy_1_1_socket_client.html", null ]
         ] ]
       ] ]
     ] ],
@@ -227,10 +240,18 @@ var hierarchy =
         ] ]
       ] ]
     ] ],
+    [ "net::socket::stream::SocketClient< tls::SocketConnector< rfcomm::Socket > >", "classnet_1_1socket_1_1stream_1_1_socket_client.html", [
+      [ "net::socket::stream::tls::SocketClient< rfcomm::Socket >", "classnet_1_1socket_1_1stream_1_1tls_1_1_socket_client.html", [
+        [ "net::socket::bluetooth::rfcomm::SocketClient< stream::tls::SocketClient< rfcomm::Socket > >", "classnet_1_1socket_1_1bluetooth_1_1rfcomm_1_1_socket_client.html", [
+          [ "net::socket::bluetooth::rfcomm::tls::SocketClient", "classnet_1_1socket_1_1bluetooth_1_1rfcomm_1_1tls_1_1_socket_client.html", null ]
+        ] ]
+      ] ]
+    ] ],
     [ "net::socket::stream::SocketClient< tls::SocketConnector< SocketT > >", "classnet_1_1socket_1_1stream_1_1_socket_client.html", [
       [ "net::socket::stream::tls::SocketClient< SocketT >", "classnet_1_1socket_1_1stream_1_1tls_1_1_socket_client.html", null ]
     ] ],
     [ "SocketClientSuper", null, [
+      [ "net::socket::bluetooth::rfcomm::SocketClient< SocketClientSuper >", "classnet_1_1socket_1_1bluetooth_1_1rfcomm_1_1_socket_client.html", null ],
       [ "net::socket::ip::tcp::SocketClient< SocketClientSuper >", "classnet_1_1socket_1_1ip_1_1tcp_1_1_socket_client.html", null ]
     ] ],
     [ "net::socket::stream::SocketConnectionBase", "classnet_1_1socket_1_1stream_1_1_socket_connection_base.html", [
@@ -256,6 +277,13 @@ var hierarchy =
         ] ]
       ] ]
     ] ],
+    [ "net::socket::stream::SocketServer< legacy::SocketListener< rfcomm::Socket > >", "classnet_1_1socket_1_1stream_1_1_socket_server.html", [
+      [ "net::socket::stream::legacy::SocketServer< rfcomm::Socket >", "classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_server.html", [
+        [ "net::socket::bluetooth::rfcomm::SocketServer< stream::legacy::SocketServer< rfcomm::Socket > >", "classnet_1_1socket_1_1bluetooth_1_1rfcomm_1_1_socket_server.html", [
+          [ "net::socket::bluetooth::rfcomm::legacy::SocketServer", "classnet_1_1socket_1_1bluetooth_1_1rfcomm_1_1legacy_1_1_socket_server.html", null ]
+        ] ]
+      ] ]
+    ] ],
     [ "net::socket::stream::SocketServer< legacy::SocketListener< SocketT > >", "classnet_1_1socket_1_1stream_1_1_socket_server.html", [
       [ "net::socket::stream::legacy::SocketServer< SocketT >", "classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_server.html", null ]
     ] ],
@@ -273,10 +301,18 @@ var hierarchy =
         ] ]
       ] ]
     ] ],
+    [ "net::socket::stream::SocketServer< tls::SocketListener< rfcomm::Socket > >", "classnet_1_1socket_1_1stream_1_1_socket_server.html", [
+      [ "net::socket::stream::tls::SocketServer< rfcomm::Socket >", "classnet_1_1socket_1_1stream_1_1tls_1_1_socket_server.html", [
+        [ "net::socket::bluetooth::rfcomm::SocketServer< stream::tls::SocketServer< rfcomm::Socket > >", "classnet_1_1socket_1_1bluetooth_1_1rfcomm_1_1_socket_server.html", [
+          [ "net::socket::bluetooth::rfcomm::tls::SocketServer", "classnet_1_1socket_1_1bluetooth_1_1rfcomm_1_1tls_1_1_socket_server.html", null ]
+        ] ]
+      ] ]
+    ] ],
     [ "net::socket::stream::SocketServer< tls::SocketListener< SocketT > >", "classnet_1_1socket_1_1stream_1_1_socket_server.html", [
       [ "net::socket::stream::tls::SocketServer< SocketT >", "classnet_1_1socket_1_1stream_1_1tls_1_1_socket_server.html", null ]
     ] ],
     [ "SocketServerSuper", null, [
+      [ "net::socket::bluetooth::rfcomm::SocketServer< SocketServerSuper >", "classnet_1_1socket_1_1bluetooth_1_1rfcomm_1_1_socket_server.html", null ],
       [ "net::socket::ip::tcp::SocketServer< SocketServerSuper >", "classnet_1_1socket_1_1ip_1_1tcp_1_1_socket_server.html", null ]
     ] ],
     [ "SocketT", null, [
