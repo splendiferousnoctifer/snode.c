@@ -190,7 +190,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="ipv4_2_inet_address_8cpp_source.html#l00073">73</a> of file <a class="el" href="ipv4_2_inet_address_8cpp_source.html">InetAddress.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                                                   {</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        memcpy(&amp;<a class="code" href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">sockAddr</a>, &amp;ina.sockAddr, <span class="keyword">sizeof</span>(<span class="keyword">struct</span> sockaddr_in));</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        memcpy(&amp;<a class="code" href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">sockAddr</a>, &amp;ina.sockAddr, <span class="keyword">sizeof</span>(<a class="code" href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">sockAddr</a>));</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    }</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="_socket_address_8h_source.html#l00045">net::socket::SocketAddress&lt; struct sockaddr_in &gt;::sockAddr</a>, and <a class="el" href="_socket_address_8h_source.html#l00045">net::socket::SocketAddress&lt; SockAddrT &gt;::sockAddr</a>.</p>
@@ -243,9 +243,6 @@ Additional Inherited Members</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">net::socket::ip::address::ipv4::InetAddress::InetAddress </td>
@@ -265,11 +262,6 @@ Additional Inherited Members</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="ipv4_2_inet_address_8cpp_source.html#l00039">39</a> of file <a class="el" href="ipv4_2_inet_address_8cpp_source.html">InetAddress.cpp</a>.</p>
@@ -346,7 +338,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="ipv4_2_inet_address_8cpp_source.html#l00069">69</a> of file <a class="el" href="ipv4_2_inet_address_8cpp_source.html">InetAddress.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                                                           {</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        memcpy(&amp;this-&gt;<a class="code" href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">sockAddr</a>, &amp;addr, <span class="keyword">sizeof</span>(<span class="keyword">struct</span> sockaddr_in));</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        memcpy(&amp;this-&gt;<a class="code" href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">sockAddr</a>, &amp;addr, <span class="keyword">sizeof</span>(<a class="code" href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">sockAddr</a>));</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="_socket_address_8h_source.html#l00045">net::socket::SocketAddress&lt; struct sockaddr_in &gt;::sockAddr</a>.</p>
@@ -451,7 +443,7 @@ Here is the call graph for this function:</div>
 <p class="definition">Definition at line <a class="el" href="ipv4_2_inet_address_8cpp_source.html#l00077">77</a> of file <a class="el" href="ipv4_2_inet_address_8cpp_source.html">InetAddress.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                                                              {</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordflow">if</span> (<span class="keyword">this</span> != &amp;ina) {</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            memcpy(&amp;<a class="code" href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">sockAddr</a>, &amp;ina.sockAddr, <span class="keyword">sizeof</span>(<span class="keyword">struct</span> sockaddr_in));</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            memcpy(&amp;<a class="code" href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">sockAddr</a>, &amp;ina.sockAddr, <span class="keyword">sizeof</span>(<a class="code" href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">sockAddr</a>));</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        }</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
