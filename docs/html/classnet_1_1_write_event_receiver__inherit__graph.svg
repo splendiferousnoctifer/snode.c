@@ -33,26 +33,28 @@
 <g id="node4" class="node">
 <title>Node4</title>
 <g id="a_node4"><a xlink:href="classnet_1_1socket_1_1stream_1_1_socket_writer.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="134,-640 134,-774 268,-774 268,-640 134,-640"/>
-<text text-anchor="start" x="142" y="-762" font-family="Helvetica,sans-Serif" font-size="10.00">net::socket::stream</text>
-<text text-anchor="middle" x="201" y="-751" font-family="Helvetica,sans-Serif" font-size="10.00">::SocketWriter&lt; SocketT &gt;</text>
-<polyline fill="none" stroke="black" points="134,-744 268,-744 "/>
-<text text-anchor="start" x="142" y="-732" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onError</text>
-<text text-anchor="start" x="142" y="-721" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; writeBuffer</text>
+<polygon fill="white" stroke="black" points="134,-629 134,-785 268,-785 268,-629 134,-629"/>
+<text text-anchor="start" x="142" y="-773" font-family="Helvetica,sans-Serif" font-size="10.00">net::socket::stream</text>
+<text text-anchor="middle" x="201" y="-762" font-family="Helvetica,sans-Serif" font-size="10.00">::SocketWriter&lt; SocketT &gt;</text>
+<polyline fill="none" stroke="black" points="134,-755 268,-755 "/>
+<text text-anchor="start" x="142" y="-743" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onError</text>
+<text text-anchor="start" x="142" y="-732" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; writeBuffer</text>
+<text text-anchor="start" x="142" y="-721" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; markShutdown</text>
 <polyline fill="none" stroke="black" points="134,-714 268,-714 "/>
 <text text-anchor="start" x="142" y="-702" font-family="Helvetica,sans-Serif" font-size="10.00"># SocketWriter()</text>
 <text text-anchor="start" x="142" y="-691" font-family="Helvetica,sans-Serif" font-size="10.00"># SocketWriter()</text>
 <text text-anchor="start" x="142" y="-680" font-family="Helvetica,sans-Serif" font-size="10.00"># enqueue()</text>
-<text text-anchor="start" x="142" y="-669" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; write()</text>
-<text text-anchor="start" x="142" y="-658" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; writeEvent()</text>
-<text text-anchor="start" x="142" y="-647" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; getError()</text>
+<text text-anchor="start" x="142" y="-669" font-family="Helvetica,sans-Serif" font-size="10.00"># shutdown()</text>
+<text text-anchor="start" x="142" y="-658" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; write()</text>
+<text text-anchor="start" x="142" y="-647" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; writeEvent()</text>
+<text text-anchor="start" x="142" y="-636" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; getError()</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node4 -->
 <g id="edge3" class="edge">
 <title>Node1&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M241.88,-817.89C236.48,-803.4 230.88,-788.33 225.61,-774.16"/>
+<path fill="none" stroke="midnightblue" d="M241.89,-817.94C237.88,-807.16 233.75,-796.05 229.73,-785.24"/>
 <polygon fill="none" stroke="midnightblue" points="238.61,-819.16 245.38,-827.32 245.18,-816.72 238.61,-819.16"/>
 </g>
 <!-- Node11 -->
@@ -164,8 +166,8 @@
 <!-- Node4&#45;&gt;Node5 -->
 <g id="edge4" class="edge">
 <title>Node4&#45;&gt;Node5</title>
-<path fill="none" stroke="midnightblue" d="M173.08,-629.91C166.94,-613.16 160.64,-595.98 155.15,-581.01"/>
-<polygon fill="none" stroke="midnightblue" points="169.94,-631.51 176.67,-639.69 176.52,-629.1 169.94,-631.51"/>
+<path fill="none" stroke="midnightblue" d="M169.19,-619.3C164.35,-606.09 159.53,-592.95 155.21,-581.18"/>
+<polygon fill="none" stroke="midnightblue" points="165.99,-620.74 172.72,-628.92 172.56,-618.32 165.99,-620.74"/>
 </g>
 <!-- Node8 -->
 <g id="node8" class="node">
@@ -187,8 +189,8 @@
 <!-- Node4&#45;&gt;Node8 -->
 <g id="edge7" class="edge">
 <title>Node4&#45;&gt;Node8</title>
-<path fill="none" stroke="midnightblue" d="M238.53,-630.5C245.91,-615.64 253.49,-600.4 260.32,-586.65"/>
-<polygon fill="none" stroke="midnightblue" points="235.27,-629.18 233.96,-639.69 241.54,-632.29 235.27,-629.18"/>
+<path fill="none" stroke="midnightblue" d="M243.81,-619.86C249.43,-608.56 255.03,-597.3 260.21,-586.88"/>
+<polygon fill="none" stroke="midnightblue" points="240.63,-618.41 239.31,-628.92 246.9,-621.52 240.63,-618.41"/>
 </g>
 <!-- Node6 -->
 <g id="node6" class="node">

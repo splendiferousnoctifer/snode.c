@@ -83,7 +83,6 @@ $(document).ready(function(){initNavTree('classnet_1_1socket_1_1bluetooth_1_1rfc
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
-<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classnet_1_1socket_1_1bluetooth_1_1rfcomm_1_1_socket_client-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">net::socket::bluetooth::rfcomm::SocketClient&lt; SocketClientSuper &gt; Class Template Reference</div>  </div>
@@ -110,11 +109,6 @@ Public Types</h2></td></tr>
 <tr class="separator:a1e064166af182a41b5a30f0b2a285d48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae48fb481a8042cfad91812e6f9d9b43b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1bluetooth_1_1rfcomm_1_1_socket_client.html#ae48fb481a8042cfad91812e6f9d9b43b">SocketAddress</a> = typename <a class="el" href="classnet_1_1socket_1_1_socket.html#a3b2caea9c0c485cc6377efb6625afd8c">Socket::SocketAddress</a></td></tr>
 <tr class="separator:ae48fb481a8042cfad91812e6f9d9b43b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a743dcfe37e9fcb9757bce055940b3871"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1bluetooth_1_1rfcomm_1_1_socket_client.html#a743dcfe37e9fcb9757bce055940b3871">connect</a> (const std::map&lt; std::string, std::any &gt; &amp;options, const std::function&lt; void(int err)&gt; &amp;onError, const <a class="el" href="classnet_1_1socket_1_1bluetooth_1_1rfcomm_1_1_socket_client.html#ae48fb481a8042cfad91812e6f9d9b43b">SocketAddress</a> &amp;bindAddress=<a class="el" href="classnet_1_1socket_1_1bluetooth_1_1rfcomm_1_1_socket_client.html#ae48fb481a8042cfad91812e6f9d9b43b">SocketAddress</a>()) const</td></tr>
-<tr class="separator:a743dcfe37e9fcb9757bce055940b3871"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename SocketClientSuper&gt;<br />
@@ -177,74 +171,11 @@ template&lt;typename SocketClientSuper &gt; </div>
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a743dcfe37e9fcb9757bce055940b3871"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a743dcfe37e9fcb9757bce055940b3871">&#9670;&nbsp;</a></span>connect()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename SocketClientSuper &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void <a class="el" href="classnet_1_1socket_1_1bluetooth_1_1rfcomm_1_1_socket_client.html">net::socket::bluetooth::rfcomm::SocketClient</a>&lt; SocketClientSuper &gt;::connect </td>
-          <td>(</td>
-          <td class="paramtype">const std::map&lt; std::string, std::any &gt; &amp;&#160;</td>
-          <td class="paramname"><em>options</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::function&lt; void(int err)&gt; &amp;&#160;</td>
-          <td class="paramname"><em>onError</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classnet_1_1socket_1_1bluetooth_1_1rfcomm_1_1_socket_client.html#ae48fb481a8042cfad91812e6f9d9b43b">SocketAddress</a> &amp;&#160;</td>
-          <td class="paramname"><em>bindAddress</em> = <code><a class="el" href="classnet_1_1socket_1_1bluetooth_1_1rfcomm_1_1_socket_client.html#ae48fb481a8042cfad91812e6f9d9b43b">SocketAddress</a>()</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="bluetooth_2rfcomm_2_socket_client_8h_source.html#l00042">42</a> of file <a class="el" href="bluetooth_2rfcomm_2_socket_client_8h_source.html">SocketClient.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                                                                                       {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            std::string btAddress = <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            uint8_t channel = 0;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; [name, value] : options) {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                <span class="keywordflow">if</span> (name == <span class="stringliteral">&quot;address&quot;</span>) {</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                    btAddress = std::any_cast&lt;const char*&gt;(value);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (name == <span class="stringliteral">&quot;channel&quot;</span>) {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                    channel = std::any_cast&lt;int&gt;(value);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                }</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            }</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            <a class="code" href="classnet_1_1socket_1_1bluetooth_1_1rfcomm_1_1_socket_client.html#ae48fb481a8042cfad91812e6f9d9b43b">SocketAddress</a> remoteAddress(btAddress, channel);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            SocketClientSuper::connect(remoteAddress, onError, bindAddress);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        }</div>
-</div><!-- fragment -->
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>net/socket/bluetooth/rfcomm/<a class="el" href="bluetooth_2rfcomm_2_socket_client_8h_source.html">SocketClient.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassnet_1_1socket_1_1bluetooth_1_1rfcomm_1_1_socket_client_html_ae48fb481a8042cfad91812e6f9d9b43b"><div class="ttname"><a href="classnet_1_1socket_1_1bluetooth_1_1rfcomm_1_1_socket_client.html#ae48fb481a8042cfad91812e6f9d9b43b">net::socket::bluetooth::rfcomm::SocketClient::SocketAddress</a></div><div class="ttdeci">typename Socket::SocketAddress SocketAddress</div><div class="ttdef"><b>Definition:</b> <a href="bluetooth_2rfcomm_2_socket_client_8h_source.html#l00040">SocketClient.h:40</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
