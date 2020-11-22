@@ -84,6 +84,7 @@ $(document).ready(function(){initNavTree('classnet_1_1stream_1_1_read_stream.htm
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classnet_1_1stream_1_1_read_stream-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">net::stream::ReadStream Class Reference</div>  </div>
@@ -94,13 +95,13 @@ $(document).ready(function(){initNavTree('classnet_1_1stream_1_1_read_stream.htm
 <div class="dynheader">
 Inheritance diagram for net::stream::ReadStream:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1stream_1_1_read_stream__inherit__graph.svg" width="544" height="1978"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1stream_1_1_read_stream__inherit__graph.svg" width="544" height="1220"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div class="dynheader">
 Collaboration diagram for net::stream::ReadStream:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1stream_1_1_read_stream__coll__graph.svg" width="180" height="963"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1stream_1_1_read_stream__coll__graph.svg" width="180" height="206"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
@@ -116,61 +117,26 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a527c54919d6a2adfbe5a22f4e0a24bab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9def504c9f48833288fa075564c8b24a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1stream_1_1_read_stream.html#a9def504c9f48833288fa075564c8b24a">dispatch</a> (const char *junk, size_t junkLen)</td></tr>
 <tr class="separator:a9def504c9f48833288fa075564c8b24a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classnet_1_1_read_event_receiver"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classnet_1_1_read_event_receiver')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classnet_1_1_read_event_receiver.html">net::ReadEventReceiver</a></td></tr>
-<tr class="memitem:aea825386993599725315eb7fb0719aa4 inherit pub_methods_classnet_1_1_read_event_receiver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_read_event_receiver.html#aea825386993599725315eb7fb0719aa4">setTimeout</a> (long <a class="el" href="classnet_1_1_event_receiver.html#ad2da553049435ab5f08b0fe24b5bd210">timeout</a>=<a class="el" href="classnet_1_1_event_receiver_1_1_t_i_m_e_o_u_t.html#a6a676e7caeb941f9559f8592f752d75d">TIMEOUT::DEFAULT</a>)</td></tr>
-<tr class="separator:aea825386993599725315eb7fb0719aa4 inherit pub_methods_classnet_1_1_read_event_receiver"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76e7c2bb8c733ec5651f5dc7efd9d140 inherit pub_methods_classnet_1_1_read_event_receiver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_read_event_receiver.html#a76e7c2bb8c733ec5651f5dc7efd9d140">enable</a> (int <a class="el" href="classnet_1_1_event_receiver.html#ad3dde836bf115fe2f456c20573b8dbc3">fd</a>, long <a class="el" href="classnet_1_1_event_receiver.html#ad2da553049435ab5f08b0fe24b5bd210">timeout</a>=<a class="el" href="classnet_1_1_event_receiver_1_1_t_i_m_e_o_u_t.html#a0515fea41c35635cdf8ab0c34d0db759">TIMEOUT::IGNORE</a>) override</td></tr>
-<tr class="separator:a76e7c2bb8c733ec5651f5dc7efd9d140 inherit pub_methods_classnet_1_1_read_event_receiver"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1aa12164e4a0363f8a61acdceb44cd0c inherit pub_methods_classnet_1_1_read_event_receiver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_read_event_receiver.html#a1aa12164e4a0363f8a61acdceb44cd0c">disable</a> () override</td></tr>
-<tr class="separator:a1aa12164e4a0363f8a61acdceb44cd0c inherit pub_methods_classnet_1_1_read_event_receiver"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a0eb84c0e1e30afb8fe0c4bc2d5e57c inherit pub_methods_classnet_1_1_read_event_receiver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_read_event_receiver.html#a4a0eb84c0e1e30afb8fe0c4bc2d5e57c">suspend</a> () override</td></tr>
-<tr class="separator:a4a0eb84c0e1e30afb8fe0c4bc2d5e57c inherit pub_methods_classnet_1_1_read_event_receiver"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adcedf098e91620409d7c8e9863c9ffce inherit pub_methods_classnet_1_1_read_event_receiver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_read_event_receiver.html#adcedf098e91620409d7c8e9863c9ffce">resume</a> () override</td></tr>
-<tr class="separator:adcedf098e91620409d7c8e9863c9ffce inherit pub_methods_classnet_1_1_read_event_receiver"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classnet_1_1_event_receiver"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classnet_1_1_event_receiver')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classnet_1_1_event_receiver.html">net::EventReceiver</a></td></tr>
-<tr class="memitem:a6c28df1ea04b1505fd401a8e67797ffc inherit pub_methods_classnet_1_1_event_receiver"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_event_receiver.html#a6c28df1ea04b1505fd401a8e67797ffc">EventReceiver</a> (const <a class="el" href="classnet_1_1_event_receiver.html">EventReceiver</a> &amp;)=delete</td></tr>
-<tr class="separator:a6c28df1ea04b1505fd401a8e67797ffc inherit pub_methods_classnet_1_1_event_receiver"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afbd1f41ce93f1a088d0e0a2ad43c631b inherit pub_methods_classnet_1_1_event_receiver"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnet_1_1_event_receiver.html">EventReceiver</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_event_receiver.html#afbd1f41ce93f1a088d0e0a2ad43c631b">operator=</a> (const <a class="el" href="classnet_1_1_event_receiver.html">EventReceiver</a> &amp;)=delete</td></tr>
-<tr class="separator:afbd1f41ce93f1a088d0e0a2ad43c631b inherit pub_methods_classnet_1_1_event_receiver"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classnet_1_1_observation_counter"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classnet_1_1_observation_counter')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classnet_1_1_observation_counter.html">net::ObservationCounter</a></td></tr>
-<tr class="memitem:a0c8d5420e8d247783dc36568aa5ffc0e inherit pub_methods_classnet_1_1_observation_counter"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_observation_counter.html#a0c8d5420e8d247783dc36568aa5ffc0e">isObserved</a> ()</td></tr>
-<tr class="separator:a0c8d5420e8d247783dc36568aa5ffc0e inherit pub_methods_classnet_1_1_observation_counter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c2029dc1f47369747b5358096ba39d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1stream_1_1_read_stream.html#a0c2029dc1f47369747b5358096ba39d4">dispatchEOF</a> ()</td></tr>
+<tr class="separator:a0c2029dc1f47369747b5358096ba39d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a089a852ad8dffa822085620d5589baf7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1stream_1_1_read_stream.html#a089a852ad8dffa822085620d5589baf7">dispatchError</a> (int errnum)</td></tr>
+<tr class="separator:a089a852ad8dffa822085620d5589baf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a416c5271d5af180b05d4ffbc372fef45"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="classnet_1_1stream_1_1_write_stream.html">WriteStream</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1stream_1_1_read_stream.html#a416c5271d5af180b05d4ffbc372fef45">writeStreams</a></td></tr>
 <tr class="separator:a416c5271d5af180b05d4ffbc372fef45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_attribs_classnet_1_1_event_receiver"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classnet_1_1_event_receiver')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classnet_1_1_event_receiver.html">net::EventReceiver</a></td></tr>
-<tr class="memitem:ad3dde836bf115fe2f456c20573b8dbc3 inherit pro_attribs_classnet_1_1_event_receiver"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_event_receiver.html#ad3dde836bf115fe2f456c20573b8dbc3">fd</a> = -1</td></tr>
-<tr class="separator:ad3dde836bf115fe2f456c20573b8dbc3 inherit pro_attribs_classnet_1_1_event_receiver"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_attribs_classnet_1_1_observation_counter"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classnet_1_1_observation_counter')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classnet_1_1_observation_counter.html">net::ObservationCounter</a></td></tr>
-<tr class="memitem:ad61e0034c4fdbd88f1eae230e1417e0b inherit pro_attribs_classnet_1_1_observation_counter"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_observation_counter.html#ad61e0034c4fdbd88f1eae230e1417e0b">observationCounter</a> = 0</td></tr>
-<tr class="separator:ad61e0034c4fdbd88f1eae230e1417e0b inherit pro_attribs_classnet_1_1_observation_counter"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pro_methods_classnet_1_1_read_event_receiver"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classnet_1_1_read_event_receiver')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classnet_1_1_read_event_receiver.html">net::ReadEventReceiver</a></td></tr>
-<tr class="memitem:a1064d18a475863c79aac85dbdf82bac6 inherit pro_methods_classnet_1_1_read_event_receiver"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_read_event_receiver.html#a1064d18a475863c79aac85dbdf82bac6">ReadEventReceiver</a> ()</td></tr>
-<tr class="separator:a1064d18a475863c79aac85dbdf82bac6 inherit pro_methods_classnet_1_1_read_event_receiver"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd4cdc73c7534719700aa6997a507a8a inherit pro_methods_classnet_1_1_read_event_receiver"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_read_event_receiver.html#acd4cdc73c7534719700aa6997a507a8a">readEvent</a> ()=0</td></tr>
-<tr class="separator:acd4cdc73c7534719700aa6997a507a8a inherit pro_methods_classnet_1_1_read_event_receiver"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d64ac80039fe59df3ad695d8e411b4f inherit pro_methods_classnet_1_1_read_event_receiver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_read_event_receiver.html#a3d64ac80039fe59df3ad695d8e411b4f">dispatchEvent</a> () override</td></tr>
-<tr class="separator:a3d64ac80039fe59df3ad695d8e411b4f inherit pro_methods_classnet_1_1_read_event_receiver"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_classnet_1_1_event_receiver"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classnet_1_1_event_receiver')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classnet_1_1_event_receiver.html">net::EventReceiver</a></td></tr>
-<tr class="memitem:a86efc248072a03be0078fb53c535a68f inherit pro_methods_classnet_1_1_event_receiver"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_event_receiver.html#a86efc248072a03be0078fb53c535a68f">EventReceiver</a> (long <a class="el" href="classnet_1_1_event_receiver.html#ad2da553049435ab5f08b0fe24b5bd210">timeout</a>)</td></tr>
-<tr class="separator:a86efc248072a03be0078fb53c535a68f inherit pro_methods_classnet_1_1_event_receiver"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0c41c1048d0e80e22531a02bfde634a inherit pro_methods_classnet_1_1_event_receiver"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_event_receiver.html#ac0c41c1048d0e80e22531a02bfde634a">~EventReceiver</a> ()=default</td></tr>
-<tr class="separator:ac0c41c1048d0e80e22531a02bfde634a inherit pro_methods_classnet_1_1_event_receiver"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26d6a5c5cdd5300540a937c17f91fdcd inherit pro_methods_classnet_1_1_event_receiver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_event_receiver.html#a26d6a5c5cdd5300540a937c17f91fdcd">setTimeout</a> (long <a class="el" href="classnet_1_1_event_receiver.html#ad2da553049435ab5f08b0fe24b5bd210">timeout</a>, long defaultTimeout)</td></tr>
-<tr class="separator:a26d6a5c5cdd5300540a937c17f91fdcd inherit pro_methods_classnet_1_1_event_receiver"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4e3a75a2849d0d8b1fc4ba2b754c8e3 inherit pro_methods_classnet_1_1_event_receiver"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_event_receiver.html#ac4e3a75a2849d0d8b1fc4ba2b754c8e3">isEnabled</a> () const</td></tr>
-<tr class="separator:ac4e3a75a2849d0d8b1fc4ba2b754c8e3 inherit pro_methods_classnet_1_1_event_receiver"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afdfa280e579e56b9acadb54465c65528 inherit pro_methods_classnet_1_1_event_receiver"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_event_receiver.html#afdfa280e579e56b9acadb54465c65528">isSuspended</a> () const</td></tr>
-<tr class="separator:afdfa280e579e56b9acadb54465c65528 inherit pro_methods_classnet_1_1_event_receiver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a66dc314266521ebf31a66d68f142a314"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="classnet_1_1stream_1_1_write_stream.html">WriteStream</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1stream_1_1_read_stream.html#a66dc314266521ebf31a66d68f142a314">unPipedStreams</a></td></tr>
+<tr class="separator:a66dc314266521ebf31a66d68f142a314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27049d7feac33a083eaacb392c03d56e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1stream_1_1_read_stream.html#a27049d7feac33a083eaacb392c03d56e">dispatching</a> = false</td></tr>
+<tr class="separator:a27049d7feac33a083eaacb392c03d56e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_read_stream_8h_source.html#l00012">12</a> of file <a class="el" href="_read_stream_8h_source.html">ReadStream.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_read_stream_8h_source.html#l00033">33</a> of file <a class="el" href="_read_stream_8h_source.html">ReadStream.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ace9ae40c6f5f0fa5b3911bf74f1a9483"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ace9ae40c6f5f0fa5b3911bf74f1a9483">&#9670;&nbsp;</a></span>ReadStream()</h2>
@@ -187,9 +153,9 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_read_stream_8cpp_source.html#l00007">7</a> of file <a class="el" href="_read_stream_8cpp_source.html">ReadStream.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;                           {</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="_read_stream_8cpp_source.html#l00025">25</a> of file <a class="el" href="_read_stream_8cpp_source.html">ReadStream.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                           {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -216,14 +182,14 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_read_stream_8cpp_source.html#l00010">10</a> of file <a class="el" href="_read_stream_8cpp_source.html">ReadStream.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;                            {</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        <span class="keywordflow">for</span> (WriteStream* writeStream : <a class="code" href="classnet_1_1stream_1_1_read_stream.html#a416c5271d5af180b05d4ffbc372fef45">writeStreams</a>) {</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;            writeStream-&gt;unSourceStream(*<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        }</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="_read_stream_8cpp_source.html#l00028">28</a> of file <a class="el" href="_read_stream_8cpp_source.html">ReadStream.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                            {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordflow">for</span> (WriteStream* writeStream : <a class="code" href="classnet_1_1stream_1_1_read_stream.html#a416c5271d5af180b05d4ffbc372fef45">writeStreams</a>) {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            writeStream-&gt;unSourceStream(*<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        }</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_read_stream_8h_source.html#l00024">writeStreams</a>.</p>
+<p class="reference">References <a class="el" href="_read_stream_8h_source.html#l00047">writeStreams</a>.</p>
 
 </div>
 </div>
@@ -254,14 +220,91 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_read_stream_8cpp_source.html#l00026">26</a> of file <a class="el" href="_read_stream_8cpp_source.html">ReadStream.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                                                              {</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordflow">for</span> (WriteStream* writeStream : <a class="code" href="classnet_1_1stream_1_1_read_stream.html#a416c5271d5af180b05d4ffbc372fef45">writeStreams</a>) {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            writeStream-&gt;enqueue(junk, junkLen);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        }</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="_read_stream_8cpp_source.html#l00047">47</a> of file <a class="el" href="_read_stream_8cpp_source.html">ReadStream.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                                                              {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="classnet_1_1stream_1_1_read_stream.html#a27049d7feac33a083eaacb392c03d56e">dispatching</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">for</span> (WriteStream* writeStream : <a class="code" href="classnet_1_1stream_1_1_read_stream.html#a416c5271d5af180b05d4ffbc372fef45">writeStreams</a>) {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            writeStream-&gt;pipe(*<span class="keyword">this</span>, junk, junkLen);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <a class="code" href="classnet_1_1stream_1_1_read_stream.html#a27049d7feac33a083eaacb392c03d56e">dispatching</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classnet_1_1stream_1_1_read_stream.html#a66dc314266521ebf31a66d68f142a314">unPipedStreams</a>.size() &gt; 0) {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <span class="keywordflow">for</span> (WriteStream* writeStream : <a class="code" href="classnet_1_1stream_1_1_read_stream.html#a66dc314266521ebf31a66d68f142a314">unPipedStreams</a>) {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                <a class="code" href="classnet_1_1stream_1_1_read_stream.html#a416c5271d5af180b05d4ffbc372fef45">writeStreams</a>.remove(writeStream);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <a class="code" href="classnet_1_1stream_1_1_read_stream.html#a66dc314266521ebf31a66d68f142a314">unPipedStreams</a>.clear();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_read_stream_8h_source.html#l00024">writeStreams</a>.</p>
+<p class="reference">References <a class="el" href="_read_stream_8h_source.html#l00052">dispatching</a>, <a class="el" href="_read_stream_8h_source.html#l00050">unPipedStreams</a>, and <a class="el" href="_read_stream_8h_source.html#l00047">writeStreams</a>.</p>
+
+</div>
+</div>
+<a id="a0c2029dc1f47369747b5358096ba39d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c2029dc1f47369747b5358096ba39d4">&#9670;&nbsp;</a></span>dispatchEOF()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void net::stream::ReadStream::dispatchEOF </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_read_stream_8cpp_source.html#l00075">75</a> of file <a class="el" href="_read_stream_8cpp_source.html">ReadStream.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                                 {</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <a class="code" href="classnet_1_1stream_1_1_read_stream.html#a27049d7feac33a083eaacb392c03d56e">dispatching</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordflow">for</span> (WriteStream* writeStream : <a class="code" href="classnet_1_1stream_1_1_read_stream.html#a416c5271d5af180b05d4ffbc372fef45">writeStreams</a>) {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            writeStream-&gt;pipeEOF(*<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <a class="code" href="classnet_1_1stream_1_1_read_stream.html#a27049d7feac33a083eaacb392c03d56e">dispatching</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classnet_1_1stream_1_1_read_stream.html#a66dc314266521ebf31a66d68f142a314">unPipedStreams</a>.size() &gt; 0) {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <span class="keywordflow">for</span> (WriteStream* writeStream : <a class="code" href="classnet_1_1stream_1_1_read_stream.html#a66dc314266521ebf31a66d68f142a314">unPipedStreams</a>) {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                <a class="code" href="classnet_1_1stream_1_1_read_stream.html#a416c5271d5af180b05d4ffbc372fef45">writeStreams</a>.remove(writeStream);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <a class="code" href="classnet_1_1stream_1_1_read_stream.html#a66dc314266521ebf31a66d68f142a314">unPipedStreams</a>.clear();</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        }</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="_read_stream_8h_source.html#l00052">dispatching</a>, <a class="el" href="_read_stream_8h_source.html#l00050">unPipedStreams</a>, and <a class="el" href="_read_stream_8h_source.html#l00047">writeStreams</a>.</p>
+
+</div>
+</div>
+<a id="a089a852ad8dffa822085620d5589baf7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a089a852ad8dffa822085620d5589baf7">&#9670;&nbsp;</a></span>dispatchError()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void net::stream::ReadStream::dispatchError </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>errnum</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_read_stream_8cpp_source.html#l00061">61</a> of file <a class="el" href="_read_stream_8cpp_source.html">ReadStream.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                                             {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <a class="code" href="classnet_1_1stream_1_1_read_stream.html#a27049d7feac33a083eaacb392c03d56e">dispatching</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">for</span> (WriteStream* writeStream : <a class="code" href="classnet_1_1stream_1_1_read_stream.html#a416c5271d5af180b05d4ffbc372fef45">writeStreams</a>) {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            writeStream-&gt;pipeError(*<span class="keyword">this</span>, errnum);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <a class="code" href="classnet_1_1stream_1_1_read_stream.html#a27049d7feac33a083eaacb392c03d56e">dispatching</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classnet_1_1stream_1_1_read_stream.html#a66dc314266521ebf31a66d68f142a314">unPipedStreams</a>.size() &gt; 0) {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <span class="keywordflow">for</span> (WriteStream* writeStream : <a class="code" href="classnet_1_1stream_1_1_read_stream.html#a66dc314266521ebf31a66d68f142a314">unPipedStreams</a>) {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                <a class="code" href="classnet_1_1stream_1_1_read_stream.html#a416c5271d5af180b05d4ffbc372fef45">writeStreams</a>.remove(writeStream);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <a class="code" href="classnet_1_1stream_1_1_read_stream.html#a66dc314266521ebf31a66d68f142a314">unPipedStreams</a>.clear();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="_read_stream_8h_source.html#l00052">dispatching</a>, <a class="el" href="_read_stream_8h_source.html#l00050">unPipedStreams</a>, and <a class="el" href="_read_stream_8h_source.html#l00047">writeStreams</a>.</p>
 
 </div>
 </div>
@@ -281,18 +324,17 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_read_stream_8cpp_source.html#l00016">16</a> of file <a class="el" href="_read_stream_8cpp_source.html">ReadStream.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                                                  {</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <a class="code" href="classnet_1_1stream_1_1_read_stream.html#a416c5271d5af180b05d4ffbc372fef45">writeStreams</a>.push_back(&amp;writeStream);</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        writeStream.sourceStream(*<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="_read_stream_8cpp_source.html#l00034">34</a> of file <a class="el" href="_read_stream_8cpp_source.html">ReadStream.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                                                  {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <a class="code" href="classnet_1_1stream_1_1_read_stream.html#a416c5271d5af180b05d4ffbc372fef45">writeStreams</a>.push_back(&amp;writeStream);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        writeStream.sourceStream(*<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_write_stream_8cpp_source.html#l00016">net::stream::WriteStream::sourceStream()</a>, and <a class="el" href="_read_stream_8h_source.html#l00024">writeStreams</a>.</p>
+<p class="reference">References <a class="el" href="_write_stream_8cpp_source.html#l00034">net::stream::WriteStream::sourceStream()</a>, and <a class="el" href="_read_stream_8h_source.html#l00047">writeStreams</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1stream_1_1_read_stream_a6c52dbe13a287228b66c327705556922_cgraph.svg" width="396" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1stream_1_1_read_stream_a6c52dbe13a287228b66c327705556922_cgraph.svg" width="396" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -313,23 +355,72 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_read_stream_8cpp_source.html#l00021">21</a> of file <a class="el" href="_read_stream_8cpp_source.html">ReadStream.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                                                    {</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <a class="code" href="classnet_1_1stream_1_1_read_stream.html#a416c5271d5af180b05d4ffbc372fef45">writeStreams</a>.remove(&amp;writeStream);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        writeStream.unSourceStream(*<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="_read_stream_8cpp_source.html#l00039">39</a> of file <a class="el" href="_read_stream_8cpp_source.html">ReadStream.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                                                    {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classnet_1_1stream_1_1_read_stream.html#a27049d7feac33a083eaacb392c03d56e">dispatching</a>) {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <a class="code" href="classnet_1_1stream_1_1_read_stream.html#a66dc314266521ebf31a66d68f142a314">unPipedStreams</a>.push_back(&amp;writeStream);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <a class="code" href="classnet_1_1stream_1_1_read_stream.html#a416c5271d5af180b05d4ffbc372fef45">writeStreams</a>.remove(&amp;writeStream);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_write_stream_8cpp_source.html#l00020">net::stream::WriteStream::unSourceStream()</a>, and <a class="el" href="_read_stream_8h_source.html#l00024">writeStreams</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1stream_1_1_read_stream_a527c54919d6a2adfbe5a22f4e0a24bab_cgraph.svg" width="396" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
+<p class="reference">References <a class="el" href="_read_stream_8h_source.html#l00052">dispatching</a>, <a class="el" href="_read_stream_8h_source.html#l00050">unPipedStreams</a>, and <a class="el" href="_read_stream_8h_source.html#l00047">writeStreams</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a27049d7feac33a083eaacb392c03d56e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27049d7feac33a083eaacb392c03d56e">&#9670;&nbsp;</a></span>dispatching</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool net::stream::ReadStream::dispatching = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_read_stream_8h_source.html#l00052">52</a> of file <a class="el" href="_read_stream_8h_source.html">ReadStream.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="_read_stream_8cpp_source.html#l00047">dispatch()</a>, <a class="el" href="_read_stream_8cpp_source.html#l00075">dispatchEOF()</a>, <a class="el" href="_read_stream_8cpp_source.html#l00061">dispatchError()</a>, and <a class="el" href="_read_stream_8cpp_source.html#l00039">unPipe()</a>.</p>
+
+</div>
+</div>
+<a id="a66dc314266521ebf31a66d68f142a314"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66dc314266521ebf31a66d68f142a314">&#9670;&nbsp;</a></span>unPipedStreams</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::list&lt;<a class="el" href="classnet_1_1stream_1_1_write_stream.html">WriteStream</a>*&gt; net::stream::ReadStream::unPipedStreams</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_read_stream_8h_source.html#l00050">50</a> of file <a class="el" href="_read_stream_8h_source.html">ReadStream.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="_read_stream_8cpp_source.html#l00047">dispatch()</a>, <a class="el" href="_read_stream_8cpp_source.html#l00075">dispatchEOF()</a>, <a class="el" href="_read_stream_8cpp_source.html#l00061">dispatchError()</a>, and <a class="el" href="_read_stream_8cpp_source.html#l00039">unPipe()</a>.</p>
+
+</div>
+</div>
 <a id="a416c5271d5af180b05d4ffbc372fef45"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a416c5271d5af180b05d4ffbc372fef45">&#9670;&nbsp;</a></span>writeStreams</h2>
 
@@ -350,9 +441,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_read_stream_8h_source.html#l00024">24</a> of file <a class="el" href="_read_stream_8h_source.html">ReadStream.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_read_stream_8h_source.html#l00047">47</a> of file <a class="el" href="_read_stream_8h_source.html">ReadStream.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_read_stream_8cpp_source.html#l00026">dispatch()</a>, <a class="el" href="_read_stream_8cpp_source.html#l00016">pipe()</a>, <a class="el" href="_read_stream_8cpp_source.html#l00021">unPipe()</a>, and <a class="el" href="_read_stream_8cpp_source.html#l00010">~ReadStream()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_read_stream_8cpp_source.html#l00047">dispatch()</a>, <a class="el" href="_read_stream_8cpp_source.html#l00075">dispatchEOF()</a>, <a class="el" href="_read_stream_8cpp_source.html#l00061">dispatchError()</a>, <a class="el" href="_read_stream_8cpp_source.html#l00034">pipe()</a>, <a class="el" href="_read_stream_8cpp_source.html#l00039">unPipe()</a>, and <a class="el" href="_read_stream_8cpp_source.html#l00028">~ReadStream()</a>.</p>
 
 </div>
 </div>
@@ -362,7 +453,9 @@ Here is the call graph for this function:</div>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassnet_1_1stream_1_1_read_stream_html_a416c5271d5af180b05d4ffbc372fef45"><div class="ttname"><a href="classnet_1_1stream_1_1_read_stream.html#a416c5271d5af180b05d4ffbc372fef45">net::stream::ReadStream::writeStreams</a></div><div class="ttdeci">std::list&lt; WriteStream * &gt; writeStreams</div><div class="ttdef"><b>Definition:</b> <a href="_read_stream_8h_source.html#l00024">ReadStream.h:24</a></div></div>
+<div class="ttc" id="aclassnet_1_1stream_1_1_read_stream_html_a27049d7feac33a083eaacb392c03d56e"><div class="ttname"><a href="classnet_1_1stream_1_1_read_stream.html#a27049d7feac33a083eaacb392c03d56e">net::stream::ReadStream::dispatching</a></div><div class="ttdeci">bool dispatching</div><div class="ttdef"><b>Definition:</b> <a href="_read_stream_8h_source.html#l00052">ReadStream.h:52</a></div></div>
+<div class="ttc" id="aclassnet_1_1stream_1_1_read_stream_html_a66dc314266521ebf31a66d68f142a314"><div class="ttname"><a href="classnet_1_1stream_1_1_read_stream.html#a66dc314266521ebf31a66d68f142a314">net::stream::ReadStream::unPipedStreams</a></div><div class="ttdeci">std::list&lt; WriteStream * &gt; unPipedStreams</div><div class="ttdef"><b>Definition:</b> <a href="_read_stream_8h_source.html#l00050">ReadStream.h:50</a></div></div>
+<div class="ttc" id="aclassnet_1_1stream_1_1_read_stream_html_a416c5271d5af180b05d4ffbc372fef45"><div class="ttname"><a href="classnet_1_1stream_1_1_read_stream.html#a416c5271d5af180b05d4ffbc372fef45">net::stream::ReadStream::writeStreams</a></div><div class="ttdeci">std::list&lt; WriteStream * &gt; writeStreams</div><div class="ttdef"><b>Definition:</b> <a href="_read_stream_8h_source.html#l00047">ReadStream.h:47</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

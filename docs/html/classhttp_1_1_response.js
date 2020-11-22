@@ -1,7 +1,6 @@
 var classhttp_1_1_response =
 [
     [ "Response", "classhttp_1_1_response.html#a8340da63afa8efee5ded91acd40cc98f", null ],
-    [ "~Response", "classhttp_1_1_response.html#a9b3133e988e993de29248eff6f44942a", null ],
     [ "append", "classhttp_1_1_response.html#a55fdc5f163eda970b52e7f28051e15a2", null ],
     [ "clearCookie", "classhttp_1_1_response.html#adf31f183f55d005a83e38950fb4a184f", null ],
     [ "cookie", "classhttp_1_1_response.html#a141e411058860a90cb0a0867fbb7ff7d", null ],
