@@ -2,6 +2,7 @@ var dir_427baa8a9a5be237f298d4545d0d1ce2 =
 [
     [ "file", "dir_7d98aef28b7b074dbe99ec845754fe0d.html", "dir_7d98aef28b7b074dbe99ec845754fe0d" ],
     [ "socket", "dir_382ef741074736e441d51c2128e55f50.html", "dir_382ef741074736e441d51c2128e55f50" ],
+    [ "streams", "dir_b728fc0be7f24c277dd70410bbd2e0b5.html", "dir_b728fc0be7f24c277dd70410bbd2e0b5" ],
     [ "timer", "dir_6e2b60c0f0423aa4bcbcd1a4697f31d0.html", "dir_6e2b60c0f0423aa4bcbcd1a4697f31d0" ],
     [ "AcceptEventDispatcher.h", "_accept_event_dispatcher_8h.html", [
       [ "AcceptEventDispatcher", "classnet_1_1_accept_event_dispatcher.html", null ]

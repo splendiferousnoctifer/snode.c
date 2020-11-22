@@ -1,6 +1,7 @@
 var namespacenet =
 [
     [ "socket", "namespacenet_1_1socket.html", "namespacenet_1_1socket" ],
+    [ "stream", "namespacenet_1_1stream.html", "namespacenet_1_1stream" ],
     [ "timer", "namespacenet_1_1timer.html", "namespacenet_1_1timer" ],
     [ "AcceptEventDispatcher", "classnet_1_1_accept_event_dispatcher.html", null ],
     [ "AcceptEventReceiver", "classnet_1_1_accept_event_receiver.html", "classnet_1_1_accept_event_receiver" ],

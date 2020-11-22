@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('classnet_1_1_event_dispatcher.html',''
 <div class="dynheader">
 Inheritance diagram for net::EventDispatcher&lt; EventReceiverT &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_event_dispatcher__inherit__graph.svg" width="1280" height="971"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_event_dispatcher__inherit__graph.svg" width="1068" height="971"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <div class="dynheader">
 Collaboration diagram for net::EventDispatcher&lt; EventReceiverT &gt;:</div>
@@ -147,8 +147,8 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:a9d2fcb38151d02a100c03998f24f631d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0cac2e5483bd4542ad11211d36db4adc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_event_dispatcher.html#a0cac2e5483bd4542ad11211d36db4adc">unobserveDisabledEvents</a> ()</td></tr>
 <tr class="separator:a0cac2e5483bd4542ad11211d36db4adc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0630ab60a41364e53c4dc2316db81e23"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_event_dispatcher.html#a0630ab60a41364e53c4dc2316db81e23">unobserveDisabledEventReceiver</a> ()</td></tr>
-<tr class="separator:a0630ab60a41364e53c4dc2316db81e23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8653e6e6a1180c222a1c9a8949c445e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_event_dispatcher.html#a8653e6e6a1180c222a1c9a8949c445e6">releaseUnobservedEvents</a> ()</td></tr>
+<tr class="separator:a8653e6e6a1180c222a1c9a8949c445e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a812464af844b3b035841d1ba09e99b5a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_event_dispatcher.html#a812464af844b3b035841d1ba09e99b5a">disableObservedEvents</a> ()</td></tr>
 <tr class="separator:a812464af844b3b035841d1ba09e99b5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -330,7 +330,8 @@ template&lt;typename EventReceiverT &gt; </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_event_dispatcher_aa2899ea52c172f61cb5cda8f2b16d878_icgraph.svg" width="688" height="819"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_event_dispatcher_aa2899ea52c172f61cb5cda8f2b16d878_icgraph.svg" width="750" height="819"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
@@ -499,7 +500,8 @@ template&lt;typename EventReceiverT &gt; </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_event_dispatcher_a5c2415b2b4c371fe2d668c60ed0bbabb_icgraph.svg" width="1164" height="579"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_event_dispatcher_a5c2415b2b4c371fe2d668c60ed0bbabb_icgraph.svg" width="1156" height="579"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
@@ -704,6 +706,48 @@ template&lt;typename EventReceiverT &gt; </div>
 
 </div>
 </div>
+<a id="a8653e6e6a1180c222a1c9a8949c445e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8653e6e6a1180c222a1c9a8949c445e6">&#9670;&nbsp;</a></span>releaseUnobservedEvents()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename EventReceiverT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classnet_1_1_event_dispatcher.html">net::EventDispatcher</a>&lt; EventReceiverT &gt;::releaseUnobservedEvents </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_event_dispatcher_8h_source.html#l00215">215</a> of file <a class="el" href="_event_dispatcher_8h_source.html">EventDispatcher.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;                                       {</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;            <span class="keywordflow">for</span> (<a class="code" href="classnet_1_1_event_dispatcher.html#ae0f93576fe0d5f85cce969f1c48f631a">EventReceiver</a>* eventReceiver : <a class="code" href="classnet_1_1_event_dispatcher.html#ae283e18491baec035cb788ce1a8adee0">unobservedEventReceiver</a>) {</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;                eventReceiver-&gt;unobserved();</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;            }</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;            <a class="code" href="classnet_1_1_event_dispatcher.html#ae283e18491baec035cb788ce1a8adee0">unobservedEventReceiver</a>.clear();</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        }</div>
+</div><!-- fragment -->
+<p class="reference">Referenced by <a class="el" href="_event_loop_8cpp_source.html#l00149">net::EventLoop::start()</a>, and <a class="el" href="_event_loop_8cpp_source.html#l00068">net::EventLoop::tick()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_event_dispatcher_a8653e6e6a1180c222a1c9a8949c445e6_icgraph.svg" width="779" height="71"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
 <a id="a20c9b58d2e38fe35bebf605ddf166515"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a20c9b58d2e38fe35bebf605ddf166515">&#9670;&nbsp;</a></span>resume()</h2>
 
@@ -814,48 +858,6 @@ template&lt;typename EventReceiverT &gt; </div>
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_event_dispatcher_a32601551de78e7ead3692490018ea6a3_icgraph.svg" width="619" height="368"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
-</div>
-</div>
-<a id="a0630ab60a41364e53c4dc2316db81e23"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0630ab60a41364e53c4dc2316db81e23">&#9670;&nbsp;</a></span>unobserveDisabledEventReceiver()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename EventReceiverT &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classnet_1_1_event_dispatcher.html">net::EventDispatcher</a>&lt; EventReceiverT &gt;::unobserveDisabledEventReceiver </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_event_dispatcher_8h_source.html#l00215">215</a> of file <a class="el" href="_event_dispatcher_8h_source.html">EventDispatcher.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;                                              {</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;            <span class="keywordflow">for</span> (<a class="code" href="classnet_1_1_event_dispatcher.html#ae0f93576fe0d5f85cce969f1c48f631a">EventReceiver</a>* eventReceiver : <a class="code" href="classnet_1_1_event_dispatcher.html#ae283e18491baec035cb788ce1a8adee0">unobservedEventReceiver</a>) {</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;                eventReceiver-&gt;unobserved();</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;            }</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;            <a class="code" href="classnet_1_1_event_dispatcher.html#ae283e18491baec035cb788ce1a8adee0">unobservedEventReceiver</a>.clear();</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        }</div>
-</div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="_event_loop_8cpp_source.html#l00149">net::EventLoop::start()</a>, and <a class="el" href="_event_loop_8cpp_source.html#l00068">net::EventLoop::tick()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_event_dispatcher_a0630ab60a41364e53c4dc2316db81e23_icgraph.svg" width="823" height="71"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -1138,7 +1140,7 @@ template&lt;typename EventReceiverT &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="_event_dispatcher_8h_source.html#l00233">233</a> of file <a class="el" href="_event_dispatcher_8h_source.html">EventDispatcher.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_event_dispatcher_8h_source.html#l00086">net::EventDispatcher&lt; ReadEventReceiver &gt;::disable()</a>, <a class="el" href="_event_dispatcher_8h_source.html#l00069">net::EventDispatcher&lt; ReadEventReceiver &gt;::enable()</a>, <a class="el" href="_event_dispatcher_8h_source.html#l00215">net::EventDispatcher&lt; ReadEventReceiver &gt;::unobserveDisabledEventReceiver()</a>, and <a class="el" href="_event_dispatcher_8h_source.html#l00192">net::EventDispatcher&lt; ReadEventReceiver &gt;::unobserveDisabledEvents()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_event_dispatcher_8h_source.html#l00086">net::EventDispatcher&lt; ReadEventReceiver &gt;::disable()</a>, <a class="el" href="_event_dispatcher_8h_source.html#l00069">net::EventDispatcher&lt; ReadEventReceiver &gt;::enable()</a>, <a class="el" href="_event_dispatcher_8h_source.html#l00215">net::EventDispatcher&lt; ReadEventReceiver &gt;::releaseUnobservedEvents()</a>, and <a class="el" href="_event_dispatcher_8h_source.html#l00192">net::EventDispatcher&lt; ReadEventReceiver &gt;::unobserveDisabledEvents()</a>.</p>
 
 </div>
 </div>
