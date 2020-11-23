@@ -13,7 +13,7 @@
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title=" ">
-<polygon fill="#bfbfbf" stroke="black" points="0.5,-204.5 0.5,-503.5 125.5,-503.5 125.5,-204.5 0.5,-204.5"/>
+<polygon fill="#bfbfbf" stroke="black" points="0.5,-171.5 0.5,-503.5 125.5,-503.5 125.5,-171.5 0.5,-171.5"/>
 <text text-anchor="middle" x="63" y="-491.5" font-family="Helvetica,sans-Serif" font-size="10.00">http::Response</text>
 <polyline fill="none" stroke="black" points="0.5,-484.5 125.5,-484.5 "/>
 <text text-anchor="start" x="8.5" y="-472.5" font-family="Helvetica,sans-Serif" font-size="10.00"># serverContext</text>
@@ -40,7 +40,10 @@
 <text text-anchor="start" x="8.5" y="-244.5" font-family="Helvetica,sans-Serif" font-size="10.00"># enqueue()</text>
 <text text-anchor="start" x="8.5" y="-233.5" font-family="Helvetica,sans-Serif" font-size="10.00"># enqueue()</text>
 <text text-anchor="start" x="8.5" y="-222.5" font-family="Helvetica,sans-Serif" font-size="10.00"># sendHeader()</text>
-<text text-anchor="start" x="8.5" y="-211.5" font-family="Helvetica,sans-Serif" font-size="10.00"># reset()</text>
+<text text-anchor="start" x="8.5" y="-211.5" font-family="Helvetica,sans-Serif" font-size="10.00"># pipe()</text>
+<text text-anchor="start" x="8.5" y="-200.5" font-family="Helvetica,sans-Serif" font-size="10.00"># pipeEOF()</text>
+<text text-anchor="start" x="8.5" y="-189.5" font-family="Helvetica,sans-Serif" font-size="10.00"># pipeError()</text>
+<text text-anchor="start" x="8.5" y="-178.5" font-family="Helvetica,sans-Serif" font-size="10.00"># reset()</text>
 </a>
 </g>
 </g>
@@ -48,30 +51,27 @@
 <g id="node3" class="node">
 <title>Node3</title>
 <g id="a_node3"><a xlink:href="classexpress_1_1_response.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="12.5,-0.5 12.5,-167.5 113.5,-167.5 113.5,-0.5 12.5,-0.5"/>
-<text text-anchor="middle" x="63" y="-155.5" font-family="Helvetica,sans-Serif" font-size="10.00">express::Response</text>
-<polyline fill="none" stroke="black" points="12.5,-148.5 113.5,-148.5 "/>
-<text text-anchor="middle" x="63" y="-136.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="black" points="12.5,-129.5 113.5,-129.5 "/>
-<text text-anchor="start" x="20.5" y="-117.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Response()</text>
-<text text-anchor="start" x="20.5" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ sendFile()</text>
-<text text-anchor="start" x="20.5" y="-95.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ download()</text>
-<text text-anchor="start" x="20.5" y="-84.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ download()</text>
-<text text-anchor="start" x="20.5" y="-73.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ redirect()</text>
-<text text-anchor="start" x="20.5" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ redirect()</text>
-<text text-anchor="start" x="20.5" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ sendStatus()</text>
-<text text-anchor="start" x="20.5" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ reset()</text>
-<text text-anchor="start" x="20.5" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00"># pipe()</text>
-<text text-anchor="start" x="20.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00"># pipeEOF()</text>
-<text text-anchor="start" x="20.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00"># pipeError()</text>
+<polygon fill="white" stroke="black" points="12.5,-0.5 12.5,-134.5 113.5,-134.5 113.5,-0.5 12.5,-0.5"/>
+<text text-anchor="middle" x="63" y="-122.5" font-family="Helvetica,sans-Serif" font-size="10.00">express::Response</text>
+<polyline fill="none" stroke="black" points="12.5,-115.5 113.5,-115.5 "/>
+<text text-anchor="middle" x="63" y="-103.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="black" points="12.5,-96.5 113.5,-96.5 "/>
+<text text-anchor="start" x="20.5" y="-84.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Response()</text>
+<text text-anchor="start" x="20.5" y="-73.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ sendFile()</text>
+<text text-anchor="start" x="20.5" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ download()</text>
+<text text-anchor="start" x="20.5" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ download()</text>
+<text text-anchor="start" x="20.5" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ redirect()</text>
+<text text-anchor="start" x="20.5" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ redirect()</text>
+<text text-anchor="start" x="20.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ sendStatus()</text>
+<text text-anchor="start" x="20.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ reset()</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node1&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M63,-194.24C63,-185.21 63,-176.33 63,-167.78"/>
-<polygon fill="none" stroke="midnightblue" points="59.5,-194.5 63,-204.5 66.5,-194.5 59.5,-194.5"/>
+<path fill="none" stroke="midnightblue" d="M63,-161.23C63,-152 63,-143.06 63,-134.61"/>
+<polygon fill="none" stroke="midnightblue" points="59.5,-161.35 63,-171.35 66.5,-161.35 59.5,-161.35"/>
 </g>
 <!-- Node2 -->
 <g id="node2" class="node">
@@ -95,8 +95,8 @@
 <!-- Node2&#45;&gt;Node1 -->
 <g id="edge1" class="edge">
 <title>Node2&#45;&gt;Node1</title>
-<path fill="none" stroke="midnightblue" d="M63,-530.09C63,-521.64 63,-512.78 63,-503.73"/>
-<polygon fill="none" stroke="midnightblue" points="59.5,-530.19 63,-540.19 66.5,-530.19 59.5,-530.19"/>
+<path fill="none" stroke="midnightblue" d="M63,-530.29C63,-521.78 63,-512.83 63,-503.64"/>
+<polygon fill="none" stroke="midnightblue" points="59.5,-530.45 63,-540.45 66.5,-530.45 59.5,-530.45"/>
 </g>
 </g>
 </svg>

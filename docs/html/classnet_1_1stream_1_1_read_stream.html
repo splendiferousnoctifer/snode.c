@@ -95,14 +95,12 @@ $(document).ready(function(){initNavTree('classnet_1_1stream_1_1_read_stream.htm
 <div class="dynheader">
 Inheritance diagram for net::stream::ReadStream:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1stream_1_1_read_stream__inherit__graph.svg" width="544" height="1220"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1stream_1_1_read_stream__inherit__graph.svg" width="180" height="375"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <div class="dynheader">
 Collaboration diagram for net::stream::ReadStream:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1stream_1_1_read_stream__coll__graph.svg" width="180" height="206"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1stream_1_1_read_stream__coll__graph.svg" width="180" height="206"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -227,13 +225,11 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            writeStream-&gt;pipe(*<span class="keyword">this</span>, junk, junkLen);</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        }</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <a class="code" href="classnet_1_1stream_1_1_read_stream.html#a27049d7feac33a083eaacb392c03d56e">dispatching</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classnet_1_1stream_1_1_read_stream.html#a66dc314266521ebf31a66d68f142a314">unPipedStreams</a>.size() &gt; 0) {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <span class="keywordflow">for</span> (WriteStream* writeStream : <a class="code" href="classnet_1_1stream_1_1_read_stream.html#a66dc314266521ebf31a66d68f142a314">unPipedStreams</a>) {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                <a class="code" href="classnet_1_1stream_1_1_read_stream.html#a416c5271d5af180b05d4ffbc372fef45">writeStreams</a>.remove(writeStream);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            }</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <a class="code" href="classnet_1_1stream_1_1_read_stream.html#a66dc314266521ebf31a66d68f142a314">unPipedStreams</a>.clear();</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        }</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">for</span> (WriteStream* writeStream : <a class="code" href="classnet_1_1stream_1_1_read_stream.html#a66dc314266521ebf31a66d68f142a314">unPipedStreams</a>) {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <a class="code" href="classnet_1_1stream_1_1_read_stream.html#a416c5271d5af180b05d4ffbc372fef45">writeStreams</a>.remove(writeStream);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <a class="code" href="classnet_1_1stream_1_1_read_stream.html#a66dc314266521ebf31a66d68f142a314">unPipedStreams</a>.clear();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="_read_stream_8h_source.html#l00052">dispatching</a>, <a class="el" href="_read_stream_8h_source.html#l00050">unPipedStreams</a>, and <a class="el" href="_read_stream_8h_source.html#l00047">writeStreams</a>.</p>
 
@@ -254,20 +250,18 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_read_stream_8cpp_source.html#l00075">75</a> of file <a class="el" href="_read_stream_8cpp_source.html">ReadStream.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                                 {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <a class="code" href="classnet_1_1stream_1_1_read_stream.html#a27049d7feac33a083eaacb392c03d56e">dispatching</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordflow">for</span> (WriteStream* writeStream : <a class="code" href="classnet_1_1stream_1_1_read_stream.html#a416c5271d5af180b05d4ffbc372fef45">writeStreams</a>) {</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            writeStream-&gt;pipeEOF(*<span class="keyword">this</span>);</div>
+<p class="definition">Definition at line <a class="el" href="_read_stream_8cpp_source.html#l00071">71</a> of file <a class="el" href="_read_stream_8cpp_source.html">ReadStream.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                                 {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <a class="code" href="classnet_1_1stream_1_1_read_stream.html#a27049d7feac33a083eaacb392c03d56e">dispatching</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">for</span> (WriteStream* writeStream : <a class="code" href="classnet_1_1stream_1_1_read_stream.html#a416c5271d5af180b05d4ffbc372fef45">writeStreams</a>) {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            writeStream-&gt;pipeEOF(*<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <a class="code" href="classnet_1_1stream_1_1_read_stream.html#a27049d7feac33a083eaacb392c03d56e">dispatching</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordflow">for</span> (WriteStream* writeStream : <a class="code" href="classnet_1_1stream_1_1_read_stream.html#a66dc314266521ebf31a66d68f142a314">unPipedStreams</a>) {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <a class="code" href="classnet_1_1stream_1_1_read_stream.html#a416c5271d5af180b05d4ffbc372fef45">writeStreams</a>.remove(writeStream);</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        }</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <a class="code" href="classnet_1_1stream_1_1_read_stream.html#a27049d7feac33a083eaacb392c03d56e">dispatching</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classnet_1_1stream_1_1_read_stream.html#a66dc314266521ebf31a66d68f142a314">unPipedStreams</a>.size() &gt; 0) {</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <span class="keywordflow">for</span> (WriteStream* writeStream : <a class="code" href="classnet_1_1stream_1_1_read_stream.html#a66dc314266521ebf31a66d68f142a314">unPipedStreams</a>) {</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                <a class="code" href="classnet_1_1stream_1_1_read_stream.html#a416c5271d5af180b05d4ffbc372fef45">writeStreams</a>.remove(writeStream);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            }</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <a class="code" href="classnet_1_1stream_1_1_read_stream.html#a66dc314266521ebf31a66d68f142a314">unPipedStreams</a>.clear();</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        }</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <a class="code" href="classnet_1_1stream_1_1_read_stream.html#a66dc314266521ebf31a66d68f142a314">unPipedStreams</a>.clear();</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="_read_stream_8h_source.html#l00052">dispatching</a>, <a class="el" href="_read_stream_8h_source.html#l00050">unPipedStreams</a>, and <a class="el" href="_read_stream_8h_source.html#l00047">writeStreams</a>.</p>
 
@@ -289,20 +283,18 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_read_stream_8cpp_source.html#l00061">61</a> of file <a class="el" href="_read_stream_8cpp_source.html">ReadStream.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                                             {</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <a class="code" href="classnet_1_1stream_1_1_read_stream.html#a27049d7feac33a083eaacb392c03d56e">dispatching</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">for</span> (WriteStream* writeStream : <a class="code" href="classnet_1_1stream_1_1_read_stream.html#a416c5271d5af180b05d4ffbc372fef45">writeStreams</a>) {</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            writeStream-&gt;pipeError(*<span class="keyword">this</span>, errnum);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        }</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <a class="code" href="classnet_1_1stream_1_1_read_stream.html#a27049d7feac33a083eaacb392c03d56e">dispatching</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classnet_1_1stream_1_1_read_stream.html#a66dc314266521ebf31a66d68f142a314">unPipedStreams</a>.size() &gt; 0) {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <span class="keywordflow">for</span> (WriteStream* writeStream : <a class="code" href="classnet_1_1stream_1_1_read_stream.html#a66dc314266521ebf31a66d68f142a314">unPipedStreams</a>) {</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                <a class="code" href="classnet_1_1stream_1_1_read_stream.html#a416c5271d5af180b05d4ffbc372fef45">writeStreams</a>.remove(writeStream);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            }</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <a class="code" href="classnet_1_1stream_1_1_read_stream.html#a66dc314266521ebf31a66d68f142a314">unPipedStreams</a>.clear();</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        }</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="_read_stream_8cpp_source.html#l00059">59</a> of file <a class="el" href="_read_stream_8cpp_source.html">ReadStream.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                                             {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <a class="code" href="classnet_1_1stream_1_1_read_stream.html#a27049d7feac33a083eaacb392c03d56e">dispatching</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">for</span> (WriteStream* writeStream : <a class="code" href="classnet_1_1stream_1_1_read_stream.html#a416c5271d5af180b05d4ffbc372fef45">writeStreams</a>) {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            writeStream-&gt;pipeError(*<span class="keyword">this</span>, errnum);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <a class="code" href="classnet_1_1stream_1_1_read_stream.html#a27049d7feac33a083eaacb392c03d56e">dispatching</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordflow">for</span> (WriteStream* writeStream : <a class="code" href="classnet_1_1stream_1_1_read_stream.html#a66dc314266521ebf31a66d68f142a314">unPipedStreams</a>) {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <a class="code" href="classnet_1_1stream_1_1_read_stream.html#a416c5271d5af180b05d4ffbc372fef45">writeStreams</a>.remove(writeStream);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <a class="code" href="classnet_1_1stream_1_1_read_stream.html#a66dc314266521ebf31a66d68f142a314">unPipedStreams</a>.clear();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="_read_stream_8h_source.html#l00052">dispatching</a>, <a class="el" href="_read_stream_8h_source.html#l00050">unPipedStreams</a>, and <a class="el" href="_read_stream_8h_source.html#l00047">writeStreams</a>.</p>
 
@@ -391,7 +383,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="_read_stream_8h_source.html#l00052">52</a> of file <a class="el" href="_read_stream_8h_source.html">ReadStream.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_read_stream_8cpp_source.html#l00047">dispatch()</a>, <a class="el" href="_read_stream_8cpp_source.html#l00075">dispatchEOF()</a>, <a class="el" href="_read_stream_8cpp_source.html#l00061">dispatchError()</a>, and <a class="el" href="_read_stream_8cpp_source.html#l00039">unPipe()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_read_stream_8cpp_source.html#l00047">dispatch()</a>, <a class="el" href="_read_stream_8cpp_source.html#l00071">dispatchEOF()</a>, <a class="el" href="_read_stream_8cpp_source.html#l00059">dispatchError()</a>, and <a class="el" href="_read_stream_8cpp_source.html#l00039">unPipe()</a>.</p>
 
 </div>
 </div>
@@ -417,7 +409,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="_read_stream_8h_source.html#l00050">50</a> of file <a class="el" href="_read_stream_8h_source.html">ReadStream.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_read_stream_8cpp_source.html#l00047">dispatch()</a>, <a class="el" href="_read_stream_8cpp_source.html#l00075">dispatchEOF()</a>, <a class="el" href="_read_stream_8cpp_source.html#l00061">dispatchError()</a>, and <a class="el" href="_read_stream_8cpp_source.html#l00039">unPipe()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_read_stream_8cpp_source.html#l00047">dispatch()</a>, <a class="el" href="_read_stream_8cpp_source.html#l00071">dispatchEOF()</a>, <a class="el" href="_read_stream_8cpp_source.html#l00059">dispatchError()</a>, and <a class="el" href="_read_stream_8cpp_source.html#l00039">unPipe()</a>.</p>
 
 </div>
 </div>
@@ -443,7 +435,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="_read_stream_8h_source.html#l00047">47</a> of file <a class="el" href="_read_stream_8h_source.html">ReadStream.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_read_stream_8cpp_source.html#l00047">dispatch()</a>, <a class="el" href="_read_stream_8cpp_source.html#l00075">dispatchEOF()</a>, <a class="el" href="_read_stream_8cpp_source.html#l00061">dispatchError()</a>, <a class="el" href="_read_stream_8cpp_source.html#l00034">pipe()</a>, <a class="el" href="_read_stream_8cpp_source.html#l00039">unPipe()</a>, and <a class="el" href="_read_stream_8cpp_source.html#l00028">~ReadStream()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_read_stream_8cpp_source.html#l00047">dispatch()</a>, <a class="el" href="_read_stream_8cpp_source.html#l00071">dispatchEOF()</a>, <a class="el" href="_read_stream_8cpp_source.html#l00059">dispatchError()</a>, <a class="el" href="_read_stream_8cpp_source.html#l00034">pipe()</a>, <a class="el" href="_read_stream_8cpp_source.html#l00039">unPipe()</a>, and <a class="el" href="_read_stream_8cpp_source.html#l00028">~ReadStream()</a>.</p>
 
 </div>
 </div>

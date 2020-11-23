@@ -132,8 +132,7 @@ var hierarchy =
       [ "http::ResponseParser", "classhttp_1_1_response_parser.html", null ]
     ] ],
     [ "net::stream::ReadStream", "classnet_1_1stream_1_1_read_stream.html", [
-      [ "FileReader", "class_file_reader.html", null ],
-      [ "net::socket::stream::SocketReader< SocketT >", "classnet_1_1socket_1_1stream_1_1_socket_reader.html", null ]
+      [ "FileReader", "class_file_reader.html", null ]
     ] ],
     [ "http::ServerContext< RequestT, ResponseT >::RequestContext", "structhttp_1_1_server_context_1_1_request_context.html", null ],
     [ "express::Route", "classexpress_1_1_route.html", null ],
@@ -352,7 +351,6 @@ var hierarchy =
     [ "net::stream::WriteStream", "classnet_1_1stream_1_1_write_stream.html", [
       [ "http::Response", "classhttp_1_1_response.html", [
         [ "express::Response", "classexpress_1_1_response.html", null ]
-      ] ],
-      [ "net::socket::stream::SocketWriter< SocketT >", "classnet_1_1socket_1_1stream_1_1_socket_writer.html", null ]
+      ] ]
     ] ]
 ];
