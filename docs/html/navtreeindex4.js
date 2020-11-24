@@ -168,8 +168,8 @@ var NAVTREEINDEX4 =
 "classnet_1_1socket_1_1stream_1_1_socket_writer.html#a5f00bdf49b2913b580bcde09606a4089":[9,0,2,0,2,9,5],
 "classnet_1_1socket_1_1stream_1_1_socket_writer.html#a6e2d8d3030e20005e5fe72fa314de206":[9,0,2,0,2,9,0],
 "classnet_1_1socket_1_1stream_1_1_socket_writer.html#a7e241f91ccc2e05f921bc52d75df9acb":[9,0,2,0,2,9,1],
-"classnet_1_1socket_1_1stream_1_1_socket_writer.html#a99c0139e99467f5434e377bb7346826d":[9,0,2,0,2,9,3],
 "classnet_1_1socket_1_1stream_1_1_socket_writer.html#aa5212806acd0460108b81ad5fc14807d":[9,0,2,0,2,9,7],
+"classnet_1_1socket_1_1stream_1_1_socket_writer.html#aa7bdaa904aa90968afb56bbb4f671a6d":[9,0,2,0,2,9,3],
 "classnet_1_1socket_1_1stream_1_1_socket_writer.html#ac3836491ea90f8043d69bbf99a96b8e3":[9,0,2,0,2,9,4],
 "classnet_1_1socket_1_1stream_1_1_socket_writer.html#ac5f82275ec4736b67289a2f3cf41f135":[9,0,2,0,2,9,2],
 "classnet_1_1socket_1_1stream_1_1_socket_writer.html#ad86a1fb6bd14c3d6918c96e23f4848bc":[9,0,2,0,2,9,9],
@@ -245,9 +245,9 @@ var NAVTREEINDEX4 =
 "classnet_1_1socket_1_1stream_1_1tls_1_1_t_l_s_handshake.html#ad0daae6842f143fcf3d1a7c6d667a160":[9,0,2,0,2,1,7,0],
 "classnet_1_1socket_1_1stream_1_1tls_1_1_t_l_s_handshake.html#ad311e321b6f640aaf65deb1c5e86ebe5":[9,0,2,0,2,1,7,9],
 "classnet_1_1stream_1_1_read_stream.html":[9,0,2,1,0],
-"classnet_1_1stream_1_1_read_stream.html#a416c5271d5af180b05d4ffbc372fef45":[9,0,2,1,0,5],
-"classnet_1_1stream_1_1_read_stream.html#a527c54919d6a2adfbe5a22f4e0a24bab":[9,0,2,1,0,4],
-"classnet_1_1stream_1_1_read_stream.html#a6c52dbe13a287228b66c327705556922":[9,0,2,1,0,3],
-"classnet_1_1stream_1_1_read_stream.html#a9666aef19ab8f96a0e16b4ddcc148306":[9,0,2,1,0,1],
-"classnet_1_1stream_1_1_read_stream.html#a9def504c9f48833288fa075564c8b24a":[9,0,2,1,0,2]
+"classnet_1_1stream_1_1_read_stream.html#a089a852ad8dffa822085620d5589baf7":[9,0,2,1,0,4],
+"classnet_1_1stream_1_1_read_stream.html#a0c2029dc1f47369747b5358096ba39d4":[9,0,2,1,0,3],
+"classnet_1_1stream_1_1_read_stream.html#a27049d7feac33a083eaacb392c03d56e":[9,0,2,1,0,7],
+"classnet_1_1stream_1_1_read_stream.html#a416c5271d5af180b05d4ffbc372fef45":[9,0,2,1,0,9],
+"classnet_1_1stream_1_1_read_stream.html#a527c54919d6a2adfbe5a22f4e0a24bab":[9,0,2,1,0,6]
 };

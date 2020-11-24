@@ -129,54 +129,56 @@ $(document).ready(function(){initNavTree('_static_middleware_8cpp_source.html','
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                }</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                next();</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                res.set(<span class="stringliteral">&quot;Connection&quot;</span>, <span class="stringliteral">&quot;Close&quot;</span>);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                res.sendStatus(400);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            }</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        });</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        use([] <a class="code" href="_router_8h.html#ac5313b926a3bc0fb106bffb31e93dc71">MIDDLEWARE</a>(req, res, next) {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <span class="keywordflow">if</span> (req.url == <span class="stringliteral">&quot;/&quot;</span>) {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                res.redirect(308, <span class="stringliteral">&quot;/index.html&quot;</span>);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                next();</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            }</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        });</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        use([<span class="keyword">this</span>] <a class="code" href="_router_8h.html#a8b7131df91fe7a961e2cdadcedb55232">APPLICATION</a>(req, res) {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            VLOG(1) &lt;&lt; <span class="stringliteral">&quot;GET &quot;</span> + req.url + <span class="stringliteral">&quot; -&gt; &quot;</span> + this-&gt;root + req.url;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            res.sendFile(this-&gt;root + req.url, [&amp;req](<span class="keywordtype">int</span> ret) -&gt; <span class="keywordtype">void</span> {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                if (ret != 0) {</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                    PLOG(ERROR) &lt;&lt; req.url;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                }</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            });</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        });</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    }</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">// Keep all created static middlewares alive</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="namespaceexpress_1_1middleware.html#ab66a27bd7e10c9d1973df712d6bb5374">   69</a></span>&#160;    <span class="keyword">static</span> std::map&lt;const std::string, std::shared_ptr&lt;class StaticMiddleware&gt;&gt; <a class="code" href="namespaceexpress_1_1middleware.html#ab66a27bd7e10c9d1973df712d6bb5374">staticMiddlewares</a>;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classexpress_1_1middleware_1_1_static_middleware.html#aa3ca26a3de323ef1ef9a2a4acaedeb35">   71</a></span>&#160;    <span class="keyword">const</span> <span class="keyword">class </span><a class="code" href="classexpress_1_1middleware_1_1_static_middleware.html">StaticMiddleware</a>&amp; StaticMiddleware::instance(<span class="keyword">const</span> std::string&amp; root) {</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="namespaceexpress_1_1middleware.html#ab66a27bd7e10c9d1973df712d6bb5374">staticMiddlewares</a>.contains(root)) {</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <a class="code" href="namespaceexpress_1_1middleware.html#ab66a27bd7e10c9d1973df712d6bb5374">staticMiddlewares</a>[root] = std::shared_ptr&lt;StaticMiddleware&gt;(<span class="keyword">new</span> <a class="code" href="namespaceexpress_1_1middleware.html#a2f678c652111750e41cdc2d1956906f4">StaticMiddleware</a>(root));</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        }</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">return</span> *<a class="code" href="namespaceexpress_1_1middleware.html#ab66a27bd7e10c9d1973df712d6bb5374">staticMiddlewares</a>[root];</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    }</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="comment">// &quot;Constructor&quot; of StaticMiddleware</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="namespaceexpress_1_1middleware.html#a2f678c652111750e41cdc2d1956906f4">   80</a></span>&#160;    <span class="keyword">const</span> <span class="keyword">class </span><a class="code" href="classexpress_1_1middleware_1_1_static_middleware.html">StaticMiddleware</a>&amp; <a class="code" href="namespaceexpress_1_1middleware.html#a2f678c652111750e41cdc2d1956906f4">StaticMiddleware</a>(<span class="keyword">const</span> std::string&amp; root) {</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordflow">return</span> StaticMiddleware::instance(root);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;} <span class="comment">// namespace express::middleware</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                LOG(DEBUG) &lt;&lt; <span class="stringliteral">&quot;Wrong method &quot;</span> &lt;&lt; req.method;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                res.set(<span class="stringliteral">&quot;Connection&quot;</span>, <span class="stringliteral">&quot;Close&quot;</span>);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                res.sendStatus(400);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        });</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        use([] <a class="code" href="_router_8h.html#ac5313b926a3bc0fb106bffb31e93dc71">MIDDLEWARE</a>(req, res, next) {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <span class="keywordflow">if</span> (req.url == <span class="stringliteral">&quot;/&quot;</span>) {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                LOG(INFO) &lt;&lt; <span class="stringliteral">&quot;REDIRECT &quot;</span> + req.url + <span class="stringliteral">&quot; -&gt; &quot;</span> + <span class="stringliteral">&quot;/index.html&quot;</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                res.redirect(308, <span class="stringliteral">&quot;/index.html&quot;</span>);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                next();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        });</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        use([<span class="keyword">this</span>] <a class="code" href="_router_8h.html#a8b7131df91fe7a961e2cdadcedb55232">APPLICATION</a>(req, res) {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            LOG(INFO) &lt;&lt; <span class="stringliteral">&quot;GET &quot;</span> + req.url + <span class="stringliteral">&quot; -&gt; &quot;</span> + this-&gt;root + req.url;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            res.sendFile(this-&gt;root + req.url, [&amp;req](<span class="keywordtype">int</span> ret) -&gt; <span class="keywordtype">void</span> {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                if (ret != 0) {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                    PLOG(ERROR) &lt;&lt; req.url;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            });</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        });</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">// Keep all created static middlewares alive</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="namespaceexpress_1_1middleware.html#ab66a27bd7e10c9d1973df712d6bb5374">   71</a></span>&#160;    <span class="keyword">static</span> std::map&lt;const std::string, std::shared_ptr&lt;class StaticMiddleware&gt;&gt; <a class="code" href="namespaceexpress_1_1middleware.html#ab66a27bd7e10c9d1973df712d6bb5374">staticMiddlewares</a>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="classexpress_1_1middleware_1_1_static_middleware.html#aa3ca26a3de323ef1ef9a2a4acaedeb35">   73</a></span>&#160;    <span class="keyword">const</span> <span class="keyword">class </span><a class="code" href="classexpress_1_1middleware_1_1_static_middleware.html">StaticMiddleware</a>&amp; StaticMiddleware::instance(<span class="keyword">const</span> std::string&amp; root) {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="namespaceexpress_1_1middleware.html#ab66a27bd7e10c9d1973df712d6bb5374">staticMiddlewares</a>.contains(root)) {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <a class="code" href="namespaceexpress_1_1middleware.html#ab66a27bd7e10c9d1973df712d6bb5374">staticMiddlewares</a>[root] = std::shared_ptr&lt;StaticMiddleware&gt;(<span class="keyword">new</span> <a class="code" href="namespaceexpress_1_1middleware.html#a2f678c652111750e41cdc2d1956906f4">StaticMiddleware</a>(root));</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordflow">return</span> *<a class="code" href="namespaceexpress_1_1middleware.html#ab66a27bd7e10c9d1973df712d6bb5374">staticMiddlewares</a>[root];</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="comment">// &quot;Constructor&quot; of StaticMiddleware</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="namespaceexpress_1_1middleware.html#a2f678c652111750e41cdc2d1956906f4">   82</a></span>&#160;    <span class="keyword">const</span> <span class="keyword">class </span><a class="code" href="classexpress_1_1middleware_1_1_static_middleware.html">StaticMiddleware</a>&amp; <a class="code" href="namespaceexpress_1_1middleware.html#a2f678c652111750e41cdc2d1956906f4">StaticMiddleware</a>(<span class="keyword">const</span> std::string&amp; root) {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordflow">return</span> StaticMiddleware::instance(root);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;} <span class="comment">// namespace express::middleware</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespaceexpress_1_1middleware_html_a2f678c652111750e41cdc2d1956906f4"><div class="ttname"><a href="namespaceexpress_1_1middleware.html#a2f678c652111750e41cdc2d1956906f4">express::middleware::StaticMiddleware</a></div><div class="ttdeci">const class StaticMiddleware &amp; StaticMiddleware(const std::string &amp;root)</div><div class="ttdef"><b>Definition:</b> <a href="_static_middleware_8cpp_source.html#l00080">StaticMiddleware.cpp:80</a></div></div>
+<div class="ttc" id="anamespaceexpress_1_1middleware_html_a2f678c652111750e41cdc2d1956906f4"><div class="ttname"><a href="namespaceexpress_1_1middleware.html#a2f678c652111750e41cdc2d1956906f4">express::middleware::StaticMiddleware</a></div><div class="ttdeci">const class StaticMiddleware &amp; StaticMiddleware(const std::string &amp;root)</div><div class="ttdef"><b>Definition:</b> <a href="_static_middleware_8cpp_source.html#l00082">StaticMiddleware.cpp:82</a></div></div>
 <div class="ttc" id="a_router_8h_html_a8b7131df91fe7a961e2cdadcedb55232"><div class="ttname"><a href="_router_8h.html#a8b7131df91fe7a961e2cdadcedb55232">APPLICATION</a></div><div class="ttdeci">#define APPLICATION(req, res)</div><div class="ttdef"><b>Definition:</b> <a href="_router_8h_source.html#l00039">Router.h:39</a></div></div>
 <div class="ttc" id="a_router_8h_html_ac5313b926a3bc0fb106bffb31e93dc71"><div class="ttname"><a href="_router_8h.html#ac5313b926a3bc0fb106bffb31e93dc71">MIDDLEWARE</a></div><div class="ttdeci">#define MIDDLEWARE(req, res, next)</div><div class="ttdef"><b>Definition:</b> <a href="_router_8h_source.html#l00034">Router.h:34</a></div></div>
 <div class="ttc" id="a_logger_8h_html"><div class="ttname"><a href="_logger_8h.html">Logger.h</a></div></div>
 <div class="ttc" id="aclassexpress_1_1middleware_1_1_static_middleware_html"><div class="ttname"><a href="classexpress_1_1middleware_1_1_static_middleware.html">express::middleware::StaticMiddleware</a></div><div class="ttdef"><b>Definition:</b> <a href="_static_middleware_8h_source.html#l00029">StaticMiddleware.h:29</a></div></div>
-<div class="ttc" id="anamespaceexpress_1_1middleware_html_ab66a27bd7e10c9d1973df712d6bb5374"><div class="ttname"><a href="namespaceexpress_1_1middleware.html#ab66a27bd7e10c9d1973df712d6bb5374">express::middleware::staticMiddlewares</a></div><div class="ttdeci">static std::map&lt; const std::string, std::shared_ptr&lt; class StaticMiddleware &gt; &gt; staticMiddlewares</div><div class="ttdef"><b>Definition:</b> <a href="_static_middleware_8cpp_source.html#l00069">StaticMiddleware.cpp:69</a></div></div>
+<div class="ttc" id="anamespaceexpress_1_1middleware_html_ab66a27bd7e10c9d1973df712d6bb5374"><div class="ttname"><a href="namespaceexpress_1_1middleware.html#ab66a27bd7e10c9d1973df712d6bb5374">express::middleware::staticMiddlewares</a></div><div class="ttdeci">static std::map&lt; const std::string, std::shared_ptr&lt; class StaticMiddleware &gt; &gt; staticMiddlewares</div><div class="ttdef"><b>Definition:</b> <a href="_static_middleware_8cpp_source.html#l00071">StaticMiddleware.cpp:71</a></div></div>
 <div class="ttc" id="aclassexpress_1_1middleware_1_1_static_middleware_html_af712793a6f6d600b813fc4a6d3fbe41d"><div class="ttname"><a href="classexpress_1_1middleware_1_1_static_middleware.html#af712793a6f6d600b813fc4a6d3fbe41d">express::middleware::StaticMiddleware::StaticMiddleware</a></div><div class="ttdeci">StaticMiddleware(const std::string &amp;root)</div><div class="ttdef"><b>Definition:</b> <a href="_static_middleware_8cpp_source.html#l00032">StaticMiddleware.cpp:32</a></div></div>
 <div class="ttc" id="aclassexpress_1_1_router_html_a577166187fa9864c2f5d4b3f1d745b47"><div class="ttname"><a href="classexpress_1_1_router.html#a577166187fa9864c2f5d4b3f1d745b47">express::Router::use</a></div><div class="ttdeci">Router &amp; use(const std::string &amp;path, const std::function&lt; void(Request &amp;req, Response &amp;res)&gt; &amp;dispatcher)</div><div class="ttdef"><b>Definition:</b> <a href="_router_8cpp_source.html#l00323">Router.cpp:323</a></div></div>
 <div class="ttc" id="anamespaceexpress_1_1middleware_html"><div class="ttname"><a href="namespaceexpress_1_1middleware.html">express::middleware</a></div><div class="ttdef"><b>Definition:</b> <a href="_json_middleware_8cpp_source.html#l00031">JsonMiddleware.cpp:31</a></div></div>

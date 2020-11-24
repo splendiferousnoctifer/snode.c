@@ -7,6 +7,5 @@ var classexpress_1_1_response =
     [ "redirect", "classexpress_1_1_response.html#a99b449a1fd984b6e263c8eb0fec03009", null ],
     [ "reset", "classexpress_1_1_response.html#a0444e43ad05632b3eb6df2bded19ae91", null ],
     [ "sendFile", "classexpress_1_1_response.html#aa7a3b9c880c1af5b11e832f84eeda58c", null ],
-    [ "sendStatus", "classexpress_1_1_response.html#a9049ec68cf5f6cb6d04c403267158d09", null ],
-    [ "fileReader", "classexpress_1_1_response.html#af97492b5ff2ff2d667e5e6d39646ac4c", null ]
+    [ "sendStatus", "classexpress_1_1_response.html#a9049ec68cf5f6cb6d04c403267158d09", null ]
 ];

@@ -28,17 +28,21 @@
 
 #include "File.h"
 #include "ReadEventReceiver.h"
+#include "streams/ReadStream.h"
+
+namespace net::stream {
+    class WriteStream;
+}
 
 class FileReader
     : public net::ReadEventReceiver
+    , public net::stream::ReadStream
     , virtual public File {
 protected:
-    FileReader(int fd, const std::function<void(char* junk, int junkLen)>& junkRead, const std::function<void(int err)>& onError);
+    FileReader(int fd, net::stream::WriteStream& writeStream);
 
 public:
-    static FileReader* read(const std::string& path,
-                            const std::function<void(char* junk, int junkLen)>& junkRead,
-                            const std::function<void(int err)>& onError);
+    static FileReader* pipe(const std::string& path, net::stream::WriteStream& writeStream, const std::function<void(int err)>& onError);
 
     void readEvent() override;
 
@@ -46,8 +50,6 @@ private:
     void unobserved() override;
 
     std::function<void(char* data, int len)> junkRead;
-
-    std::function<void(int errnum)> onError;
 };
 
 #endif // FILEREADER_H
