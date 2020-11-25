@@ -121,8 +121,8 @@ Public Member Functions</h2></td></tr>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:ac04055ec522a798a3b7c75c7bb25d4bb"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_request_parser.html#ac04055ec522a798a3b7c75c7bb25d4bb">methodSupported</a> (const std::string &amp;<a class="el" href="classhttp_1_1_request_parser.html#a344d7ab6d5357a8d198849fc7762295e">method</a>)</td></tr>
 <tr class="separator:ac04055ec522a798a3b7c75c7bb25d4bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a378fa46a29abb949419112a193ce7103"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_request_parser.html#a378fa46a29abb949419112a193ce7103">beginRequest</a> () override</td></tr>
-<tr class="separator:a378fa46a29abb949419112a193ce7103"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44966834339a5cc3be1d8d664fb1a676"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_request_parser.html#a44966834339a5cc3be1d8d664fb1a676">begin</a> () override</td></tr>
+<tr class="separator:a44966834339a5cc3be1d8d664fb1a676"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b83b48286d347a10b2b1a543dec7f19"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="classhttp_1_1_parser.html#ab58d2b97db1c5bad0e2abfdba95514d2">Parser::ParserState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_request_parser.html#a2b83b48286d347a10b2b1a543dec7f19">parseStartLine</a> (const std::string &amp;<a class="el" href="classhttp_1_1_parser.html#a2e1c8ce9216203e3823b1e62f422f858">line</a>) override</td></tr>
 <tr class="separator:a2b83b48286d347a10b2b1a543dec7f19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a950b97ad2766af83ac1cf7e5529f4f68"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="classhttp_1_1_parser.html#ab58d2b97db1c5bad0e2abfdba95514d2">Parser::ParserState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_request_parser.html#a950b97ad2766af83ac1cf7e5529f4f68">parseHeader</a> () override</td></tr>
@@ -283,8 +283,8 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a378fa46a29abb949419112a193ce7103"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a378fa46a29abb949419112a193ce7103">&#9670;&nbsp;</a></span>beginRequest()</h2>
+<a id="a44966834339a5cc3be1d8d664fb1a676"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44966834339a5cc3be1d8d664fb1a676">&#9670;&nbsp;</a></span>begin()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -293,7 +293,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void http::RequestParser::beginRequest </td>
+          <td class="memname">void http::RequestParser::begin </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -306,10 +306,10 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classhttp_1_1_parser.html#ae613c725011ae6d5d4cd63a6565fe57c">http::Parser</a>.</p>
+<p>Implements <a class="el" href="classhttp_1_1_parser.html#a089f501d309ffbcfb527e4bee38d90ea">http::Parser</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_request_parser_8cpp_source.html#l00061">61</a> of file <a class="el" href="_request_parser_8cpp_source.html">RequestParser.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                                     {</div>
+<div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                              {</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <a class="code" href="classhttp_1_1_request_parser.html#a720d064ddcc306ef4cb6744fb27699c0">onStart</a>();</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
 </div><!-- fragment -->

@@ -1,7 +1,7 @@
 var classhttp_1_1_request_parser =
 [
     [ "RequestParser", "classhttp_1_1_request_parser.html#ac9fd3635cdfb86c86a2c18ba007ab84d", null ],
-    [ "beginRequest", "classhttp_1_1_request_parser.html#a378fa46a29abb949419112a193ce7103", null ],
+    [ "begin", "classhttp_1_1_request_parser.html#a44966834339a5cc3be1d8d664fb1a676", null ],
     [ "methodSupported", "classhttp_1_1_request_parser.html#ac04055ec522a798a3b7c75c7bb25d4bb", null ],
     [ "parseContent", "classhttp_1_1_request_parser.html#afd00f0a48204cdbaa3837f8a6032e314", null ],
     [ "parseHeader", "classhttp_1_1_request_parser.html#a950b97ad2766af83ac1cf7e5529f4f68", null ],

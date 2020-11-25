@@ -300,14 +300,14 @@ template&lt;typename Request , typename Response &gt; </div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                      } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (field == <span class="stringliteral">&quot;connection&quot;</span> &amp;&amp; value == <span class="stringliteral">&quot;keep-alive&quot;</span>) {</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                          request.connectionState = <a class="code" href="_connection_state_8h.html#acdd867d72142510ce53521a63a062f9babb4da6bbdfe13f46af77da7e8a939727">ConnectionState::Keep</a>;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                      }</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                      VLOG(4) &lt;&lt; <span class="stringliteral">&quot;     &quot;</span> &lt;&lt; field &lt;&lt; <span class="stringliteral">&quot;: &quot;</span> &lt;&lt; value;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                      VLOG(3) &lt;&lt; <span class="stringliteral">&quot;     &quot;</span> &lt;&lt; field &lt;&lt; <span class="stringliteral">&quot;: &quot;</span> &lt;&lt; value;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                  }</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                  VLOG(3) &lt;&lt; <span class="stringliteral">&quot;++ Cookies&quot;</span>;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                  request.cookies = &amp;cookies;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                  <span class="keywordflow">for</span> (<span class="keyword">auto</span> [cookie, value] : cookies) {</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                      VLOG(4) &lt;&lt; <span class="stringliteral">&quot;     &quot;</span> &lt;&lt; cookie &lt;&lt; <span class="stringliteral">&quot;: &quot;</span> &lt;&lt; value;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                      VLOG(3) &lt;&lt; <span class="stringliteral">&quot;     &quot;</span> &lt;&lt; cookie &lt;&lt; <span class="stringliteral">&quot;: &quot;</span> &lt;&lt; value;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                  }</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;              },</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;              [<span class="keyword">this</span>](<span class="keywordtype">char</span>* content, <span class="keywordtype">size_t</span> contentLength) -&gt; <span class="keywordtype">void</span> {</div>

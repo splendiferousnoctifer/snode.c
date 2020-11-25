@@ -107,8 +107,8 @@ Collaboration diagram for http::ResponseParser:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a236bb27ac19526d11d0b8c41392ca429"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_response_parser.html#a236bb27ac19526d11d0b8c41392ca429">ResponseParser</a> (const std::function&lt; void(void)&gt; &amp;<a class="el" href="classhttp_1_1_response_parser.html#a13f81685705ce0de232c53489c10dc5f">onStart</a>, const std::function&lt; void(const std::string &amp;, const std::string &amp;, const std::string &amp;)&gt; &amp;<a class="el" href="classhttp_1_1_response_parser.html#ad1f987712c02eb6f35c23baefab5da75">onResponse</a>, const std::function&lt; void(const std::map&lt; std::string, std::string &gt; &amp;, const std::map&lt; std::string, <a class="el" href="classhttp_1_1_cookie_options.html">CookieOptions</a> &gt; &amp;)&gt; &amp;<a class="el" href="classhttp_1_1_response_parser.html#ae900f663e8ae76e10dca0ff4da249607">onHeader</a>, const std::function&lt; void(char *, size_t)&gt; &amp;<a class="el" href="classhttp_1_1_response_parser.html#a538cfeb776894593d08033f3f1c4e4cb">onContent</a>, const std::function&lt; void(<a class="el" href="classhttp_1_1_response_parser.html">ResponseParser</a> &amp;)&gt; &amp;<a class="el" href="classhttp_1_1_response_parser.html#a8407bd21d66a3e3e71339a20351b22a2">onParsed</a>, const std::function&lt; void(int status, const std::string &amp;<a class="el" href="classhttp_1_1_response_parser.html#a74469022dfd38b2c259b2aee063435a4">reason</a>)&gt; &amp;<a class="el" href="classhttp_1_1_response_parser.html#a6403bc4b7d3922b9e1bb4ea51793e962">onError</a>)</td></tr>
 <tr class="separator:a236bb27ac19526d11d0b8c41392ca429"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd76bcf6f31714ee66d5152a90322b31"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_response_parser.html#abd76bcf6f31714ee66d5152a90322b31">beginRequest</a> () override</td></tr>
-<tr class="separator:abd76bcf6f31714ee66d5152a90322b31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad448442ea88037cce3e59eb93599b462"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_response_parser.html#ad448442ea88037cce3e59eb93599b462">begin</a> () override</td></tr>
+<tr class="separator:ad448442ea88037cce3e59eb93599b462"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76107a5671c70a85df2a3d74cea122af"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="classhttp_1_1_parser.html#ab58d2b97db1c5bad0e2abfdba95514d2">Parser::ParserState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_response_parser.html#a76107a5671c70a85df2a3d74cea122af">parseStartLine</a> (const std::string &amp;<a class="el" href="classhttp_1_1_parser.html#a2e1c8ce9216203e3823b1e62f422f858">line</a>) override</td></tr>
 <tr class="separator:a76107a5671c70a85df2a3d74cea122af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abda6e1f533aff580134b810ad003b627"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="classhttp_1_1_parser.html#ab58d2b97db1c5bad0e2abfdba95514d2">Parser::ParserState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_response_parser.html#abda6e1f533aff580134b810ad003b627">parseHeader</a> () override</td></tr>
@@ -265,8 +265,8 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="abd76bcf6f31714ee66d5152a90322b31"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd76bcf6f31714ee66d5152a90322b31">&#9670;&nbsp;</a></span>beginRequest()</h2>
+<a id="ad448442ea88037cce3e59eb93599b462"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad448442ea88037cce3e59eb93599b462">&#9670;&nbsp;</a></span>begin()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -275,7 +275,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void http::ResponseParser::beginRequest </td>
+          <td class="memname">void http::ResponseParser::begin </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -288,10 +288,10 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classhttp_1_1_parser.html#ae613c725011ae6d5d4cd63a6565fe57c">http::Parser</a>.</p>
+<p>Implements <a class="el" href="classhttp_1_1_parser.html#a089f501d309ffbcfb527e4bee38d90ea">http::Parser</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_response_parser_8cpp_source.html#l00054">54</a> of file <a class="el" href="_response_parser_8cpp_source.html">ResponseParser.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                                      {</div>
+<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                               {</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <a class="code" href="classhttp_1_1_response_parser.html#a13f81685705ce0de232c53489c10dc5f">onStart</a>();</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
 </div><!-- fragment -->

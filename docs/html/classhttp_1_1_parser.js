@@ -21,7 +21,7 @@ var classhttp_1_1_parser =
     ] ],
     [ "Parser", "classhttp_1_1_parser.html#a7efa53f8bcdb9fe5256a2207da3275a1", null ],
     [ "~Parser", "classhttp_1_1_parser.html#aebd500c3f73e98f1da1fe82630382572", null ],
-    [ "beginRequest", "classhttp_1_1_parser.html#ae613c725011ae6d5d4cd63a6565fe57c", null ],
+    [ "begin", "classhttp_1_1_parser.html#a089f501d309ffbcfb527e4bee38d90ea", null ],
     [ "parse", "classhttp_1_1_parser.html#aa77051c269a3a1bc71a6a9bc57668975", null ],
     [ "parseContent", "classhttp_1_1_parser.html#a43c36a04607c20120a94d5a3ea5de711", null ],
     [ "parseHeader", "classhttp_1_1_parser.html#a7c276db60d5fc720d27d8a4b8a761f99", null ],
