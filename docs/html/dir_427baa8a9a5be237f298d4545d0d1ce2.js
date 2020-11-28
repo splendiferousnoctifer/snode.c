@@ -26,6 +26,7 @@ var dir_427baa8a9a5be237f298d4545d0d1ce2 =
       [ "EventDispatcher", "classnet_1_1_event_dispatcher.html", "classnet_1_1_event_dispatcher" ],
       [ "EventReceiverList", "classnet_1_1_event_dispatcher_1_1_event_receiver_list.html", "classnet_1_1_event_dispatcher_1_1_event_receiver_list" ]
     ] ],
+    [ "EventDispatcher.hpp", "_event_dispatcher_8hpp.html", null ],
     [ "EventLoop.cpp", "_event_loop_8cpp.html", "_event_loop_8cpp" ],
     [ "EventLoop.h", "_event_loop_8h.html", [
       [ "EventLoop", "classnet_1_1_event_loop.html", "classnet_1_1_event_loop" ]

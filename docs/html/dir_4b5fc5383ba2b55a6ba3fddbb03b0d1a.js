@@ -5,11 +5,5 @@ var dir_4b5fc5383ba2b55a6ba3fddbb03b0d1a =
     [ "Socket.cpp", "bluetooth_2rfcomm_2_socket_8cpp.html", null ],
     [ "Socket.h", "bluetooth_2rfcomm_2_socket_8h.html", [
       [ "Socket", "classnet_1_1socket_1_1bluetooth_1_1rfcomm_1_1_socket.html", "classnet_1_1socket_1_1bluetooth_1_1rfcomm_1_1_socket" ]
-    ] ],
-    [ "SocketClient.h", "bluetooth_2rfcomm_2_socket_client_8h.html", [
-      [ "SocketClient", "classnet_1_1socket_1_1bluetooth_1_1rfcomm_1_1_socket_client.html", "classnet_1_1socket_1_1bluetooth_1_1rfcomm_1_1_socket_client" ]
-    ] ],
-    [ "SocketServer.h", "bluetooth_2rfcomm_2_socket_server_8h.html", [
-      [ "SocketServer", "classnet_1_1socket_1_1bluetooth_1_1rfcomm_1_1_socket_server.html", "classnet_1_1socket_1_1bluetooth_1_1rfcomm_1_1_socket_server" ]
     ] ]
 ];

@@ -169,6 +169,9 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 <li>setSSLError()
 : <a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#ab2d1ac395884dd5197ddef41699b06c9">net::socket::stream::tls::SocketConnection&lt; SocketT &gt;</a>
 </li>
+<li>setStdHeaders()
+: <a class="el" href="classexpress_1_1middleware_1_1_static_middleware.html#a8d0bb2e3697f72a1937818e7cd3869ea">express::middleware::StaticMiddleware</a>
+</li>
 <li>setTimeout()
 : <a class="el" href="classnet_1_1_accept_event_receiver.html#a90d906c330f05b859bc4204899393813">net::AcceptEventReceiver</a>
 , <a class="el" href="classnet_1_1_connect_event_receiver.html#a1d153fa642fdf38654551b5d985846e3">net::ConnectEventReceiver</a>
@@ -205,22 +208,10 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 , <a class="el" href="classhttp_1_1_client.html#aaa0f94ed7f4f9725806e1b2711a9d55d">http::Client&lt; SocketClientT &gt;</a>
 , <a class="el" href="classhttp_1_1legacy_1_1_client6.html#a8c8d48162441f68f7b802132da36dd22">http::legacy::Client6</a>
 , <a class="el" href="classhttp_1_1legacy_1_1_client.html#a13cb0db24bf5d43fcf8a606e7659f5e8">http::legacy::Client</a>
-, <a class="el" href="classhttp_1_1legacy_1_1_server6.html#a218e92d05f8b445cd10fa40c462bfc8c">http::legacy::Server6&lt; Request, Response &gt;</a>
-, <a class="el" href="classhttp_1_1legacy_1_1_server.html#aeacbca3b9a8d491b7007766d1f265d36">http::legacy::Server&lt; Request, Response &gt;</a>
-, <a class="el" href="classhttp_1_1tls_1_1_client6.html#afa5a069df189bd53f5e11b45090c1710">http::tls::Client6</a>
-, <a class="el" href="classhttp_1_1tls_1_1_client.html#ae3086d0d2d40affed62d9fc50a9679d3">http::tls::Client</a>
-, <a class="el" href="classhttp_1_1tls_1_1_server6.html#ad2e4b76326fabd76e0676485d9bc96d8">http::tls::Server6&lt; Request, Response &gt;</a>
-, <a class="el" href="classhttp_1_1tls_1_1_server.html#ab8f3a58e4e03d80beb4c15d99dc60670">http::tls::Server&lt; Request, Response &gt;</a>
 , <a class="el" href="classnet_1_1socket_1_1bluetooth_1_1l2cap_1_1_socket.html#a01a4dee749d134c3fcef087edd812fd2">net::socket::bluetooth::l2cap::Socket</a>
-, <a class="el" href="classnet_1_1socket_1_1bluetooth_1_1l2cap_1_1_socket_client.html#a2a99a8e89bdc21780823a5847b6a51fe">net::socket::bluetooth::l2cap::SocketClient</a>
-, <a class="el" href="classnet_1_1socket_1_1bluetooth_1_1l2cap_1_1_socket_server.html#a4116be541a30af7697300337526c94df">net::socket::bluetooth::l2cap::SocketServer</a>
 , <a class="el" href="classnet_1_1socket_1_1bluetooth_1_1rfcomm_1_1_socket.html#a009d289969394bdde0124badedd2a07c">net::socket::bluetooth::rfcomm::Socket</a>
-, <a class="el" href="classnet_1_1socket_1_1bluetooth_1_1rfcomm_1_1_socket_client.html#a1e064166af182a41b5a30f0b2a285d48">net::socket::bluetooth::rfcomm::SocketClient&lt; SocketClientSuper &gt;</a>
-, <a class="el" href="classnet_1_1socket_1_1bluetooth_1_1rfcomm_1_1_socket_server.html#abe5cd4b1f301e0b6738d5ab4c2920129">net::socket::bluetooth::rfcomm::SocketServer&lt; SocketServerSuper &gt;</a>
 , <a class="el" href="classnet_1_1socket_1_1ip_1_1tcp_1_1ipv4_1_1_socket.html#a0fcd6d64bd445c152d73fd536eb85478">net::socket::ip::tcp::ipv4::Socket</a>
 , <a class="el" href="classnet_1_1socket_1_1ip_1_1tcp_1_1ipv6_1_1_socket.html#a84966f2d36f4be18873e27d1492ed08d">net::socket::ip::tcp::ipv6::Socket</a>
-, <a class="el" href="classnet_1_1socket_1_1ip_1_1tcp_1_1_socket_client.html#abaf2ea046101b513cc08d0639527780a">net::socket::ip::tcp::SocketClient&lt; SocketClientSuper &gt;</a>
-, <a class="el" href="classnet_1_1socket_1_1ip_1_1tcp_1_1_socket_server.html#a0dc8d44a29d38af26a8c363474c81325">net::socket::ip::tcp::SocketServer&lt; SocketServerSuper &gt;</a>
 , <a class="el" href="classnet_1_1socket_1_1_socket.html#a2e3e6fec1d4a4638a8dca568c6121c00">net::socket::Socket&lt; SocketAddressT &gt;</a>
 , <a class="el" href="classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_connection.html#a2c90b58d18f7f1bf137900e49e2c059c">net::socket::stream::legacy::SocketConnection&lt; SocketT &gt;</a>
 , <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connector.html#a32ee3b80780d52b4f95af81b1d0cd07e">net::socket::stream::SocketConnector&lt; SocketConnectionT &gt;</a>
@@ -236,19 +227,7 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 , <a class="el" href="classhttp_1_1_client.html#ac30b106f14ae15351b0ef4119455b675">http::Client&lt; SocketClientT &gt;</a>
 , <a class="el" href="classhttp_1_1legacy_1_1_client6.html#a5e1873f0f30ed586ba5b24c6a6c613dc">http::legacy::Client6</a>
 , <a class="el" href="classhttp_1_1legacy_1_1_client.html#a9d19e4671825f0b905b27e5de476082d">http::legacy::Client</a>
-, <a class="el" href="classhttp_1_1legacy_1_1_server6.html#a1bb2bd67b29fa3a8574ce67fa0c20254">http::legacy::Server6&lt; Request, Response &gt;</a>
-, <a class="el" href="classhttp_1_1legacy_1_1_server.html#a33124170452c56ce21f1415bb8054bc3">http::legacy::Server&lt; Request, Response &gt;</a>
 , <a class="el" href="classhttp_1_1_server.html#aaa9adcb242bc51ceed84101085a74d1f">http::Server&lt; SocketServerT, RequestT, ResponseT &gt;</a>
-, <a class="el" href="classhttp_1_1tls_1_1_client6.html#ab930d50f15f3cc0609448054f65783da">http::tls::Client6</a>
-, <a class="el" href="classhttp_1_1tls_1_1_client.html#a2fdb4ade16bc3ce5997cb45341856c58">http::tls::Client</a>
-, <a class="el" href="classhttp_1_1tls_1_1_server6.html#afe847ce42b68875eb6483cccc165c311">http::tls::Server6&lt; Request, Response &gt;</a>
-, <a class="el" href="classhttp_1_1tls_1_1_server.html#a1677687a8991d8de2dc35f124b168b32">http::tls::Server&lt; Request, Response &gt;</a>
-, <a class="el" href="classnet_1_1socket_1_1bluetooth_1_1l2cap_1_1_socket_client.html#a5b5911499a0cafc93052e672bad2697a">net::socket::bluetooth::l2cap::SocketClient</a>
-, <a class="el" href="classnet_1_1socket_1_1bluetooth_1_1l2cap_1_1_socket_server.html#a9c4b58a3e81487856c3861a0f8adc197">net::socket::bluetooth::l2cap::SocketServer</a>
-, <a class="el" href="classnet_1_1socket_1_1bluetooth_1_1rfcomm_1_1_socket_client.html#ae48fb481a8042cfad91812e6f9d9b43b">net::socket::bluetooth::rfcomm::SocketClient&lt; SocketClientSuper &gt;</a>
-, <a class="el" href="classnet_1_1socket_1_1bluetooth_1_1rfcomm_1_1_socket_server.html#ac1c56fde6a85ee2d1b5ab1e675bf1dac">net::socket::bluetooth::rfcomm::SocketServer&lt; SocketServerSuper &gt;</a>
-, <a class="el" href="classnet_1_1socket_1_1ip_1_1tcp_1_1_socket_client.html#aeea4cd9699061a68f1ee2017b3c46bd6">net::socket::ip::tcp::SocketClient&lt; SocketClientSuper &gt;</a>
-, <a class="el" href="classnet_1_1socket_1_1ip_1_1tcp_1_1_socket_server.html#a35b042af44434537dc863ad83f82414d">net::socket::ip::tcp::SocketServer&lt; SocketServerSuper &gt;</a>
 , <a class="el" href="classnet_1_1socket_1_1_socket.html#a3b2caea9c0c485cc6377efb6625afd8c">net::socket::Socket&lt; SocketAddressT &gt;</a>
 , <a class="el" href="classnet_1_1socket_1_1_socket_address.html#a3944a2a996badd0b4d51bc6e55d5a16e">net::socket::SocketAddress&lt; SockAddrT &gt;</a>
 , <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_client.html#a2526aff9f087175583162f01c8d3a0b6">net::socket::stream::SocketClient&lt; SocketConnectorT &gt;</a>
@@ -262,51 +241,37 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 : <a class="el" href="classhttp_1_1_client.html#a8635f7f9b04ea2592248a270b7076530">http::Client&lt; SocketClientT &gt;</a>
 , <a class="el" href="classhttp_1_1legacy_1_1_client6.html#ad7123d55e5d3f4aec30244e48bbb7987">http::legacy::Client6</a>
 , <a class="el" href="classhttp_1_1legacy_1_1_client.html#a9aaeb2d8e61380d53cbdb95ce2a0e51b">http::legacy::Client</a>
-, <a class="el" href="classhttp_1_1tls_1_1_client6.html#a6e77bf8d46c3296e75a5a26296b1f72b">http::tls::Client6</a>
-, <a class="el" href="classhttp_1_1tls_1_1_client.html#a05bddf055470ec700a1e1c2bc2bc3ee2">http::tls::Client</a>
 , <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_client.html#a20f6bbb40b5ed9ea6fe7c41e16c7db50">net::socket::stream::SocketClient&lt; SocketConnectorT &gt;</a>
 , <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connector.html#a5e98ccf62e06aa2048fa6805580e816b">net::socket::stream::SocketConnector&lt; SocketConnectionT &gt;</a>
 </li>
 <li>SocketConnection
 : <a class="el" href="classexpress_1_1_web_app_t.html#a4cd9d21f6db40a34af80fd2066462504">express::WebAppT&lt; ServerT &gt;</a>
 , <a class="el" href="classhttp_1_1_client.html#a1de7977aa4301885c86b1548023539dd">http::Client&lt; SocketClientT &gt;</a>
-, <a class="el" href="classhttp_1_1_client_context.html#a3d0b89cce9f1dd791d2a97119b9d6751">http::ClientContext</a>
 </li>
 <li>socketConnection
 : <a class="el" href="classhttp_1_1_client_context.html#a20695654543eab3d02ca5168b1ec5da2">http::ClientContext</a>
 </li>
 <li>SocketConnection
-: <a class="el" href="classhttp_1_1legacy_1_1_client6.html#afff9f6460993551cb1f856e92c81e2ff">http::legacy::Client6</a>
+: <a class="el" href="classhttp_1_1_client_context.html#a3d0b89cce9f1dd791d2a97119b9d6751">http::ClientContext</a>
+, <a class="el" href="classhttp_1_1legacy_1_1_client6.html#afff9f6460993551cb1f856e92c81e2ff">http::legacy::Client6</a>
 , <a class="el" href="classhttp_1_1legacy_1_1_client.html#a823672af9e5d8d09ed61a6c30490302e">http::legacy::Client</a>
-, <a class="el" href="classhttp_1_1legacy_1_1_server6.html#a78e90607861d787ec1d91c6171f5a210">http::legacy::Server6&lt; Request, Response &gt;</a>
-, <a class="el" href="classhttp_1_1legacy_1_1_server.html#aab54c3ac41ef5ac39467b4f91b5afc9e">http::legacy::Server&lt; Request, Response &gt;</a>
 , <a class="el" href="classhttp_1_1_server.html#ac1c55d73fb26aac10cda5c35b5667267">http::Server&lt; SocketServerT, RequestT, ResponseT &gt;</a>
-, <a class="el" href="classhttp_1_1_server_context.html#aee43c00885bea68386f56d606634f04b">http::ServerContext&lt; RequestT, ResponseT &gt;</a>
 </li>
 <li>socketConnection
 : <a class="el" href="classhttp_1_1_server_context.html#a6e80afb3e70b67fe22ce73de4aeed139">http::ServerContext&lt; RequestT, ResponseT &gt;</a>
 </li>
 <li>SocketConnection
-: <a class="el" href="classhttp_1_1tls_1_1_client6.html#a4c165095c8a2361ffba841218b5b478b">http::tls::Client6</a>
-, <a class="el" href="classhttp_1_1tls_1_1_client.html#ad450e9b9fb71954de136d6e72d2ece61">http::tls::Client</a>
-, <a class="el" href="classhttp_1_1tls_1_1_server6.html#ab7b3bdf08480a37eea0d866544637ce4">http::tls::Server6&lt; Request, Response &gt;</a>
-, <a class="el" href="classhttp_1_1tls_1_1_server.html#a3a2d00d0cd96a90f9a924a36b15d8dfc">http::tls::Server&lt; Request, Response &gt;</a>
-, <a class="el" href="classnet_1_1socket_1_1bluetooth_1_1l2cap_1_1_socket_client.html#a3a741a4b44c793feecceb79d95ada5ec">net::socket::bluetooth::l2cap::SocketClient</a>
-, <a class="el" href="classnet_1_1socket_1_1bluetooth_1_1l2cap_1_1_socket_server.html#a1479b132a35cf014ab0ea3529486fa62">net::socket::bluetooth::l2cap::SocketServer</a>
-, <a class="el" href="classnet_1_1socket_1_1bluetooth_1_1rfcomm_1_1_socket_client.html#a0497bdb7adf8b148fbabbb2912116a57">net::socket::bluetooth::rfcomm::SocketClient&lt; SocketClientSuper &gt;</a>
-, <a class="el" href="classnet_1_1socket_1_1bluetooth_1_1rfcomm_1_1_socket_server.html#a26a945eea45ffbab9280fcd6ac75e19c">net::socket::bluetooth::rfcomm::SocketServer&lt; SocketServerSuper &gt;</a>
-, <a class="el" href="classnet_1_1socket_1_1ip_1_1tcp_1_1_socket_client.html#a325c16ec9368f56fe23b4365af3fd152">net::socket::ip::tcp::SocketClient&lt; SocketClientSuper &gt;</a>
-, <a class="el" href="classnet_1_1socket_1_1ip_1_1tcp_1_1_socket_server.html#accbdec9a276ae3574ad8ba6c5e7bf20b">net::socket::ip::tcp::SocketServer&lt; SocketServerSuper &gt;</a>
+: <a class="el" href="classhttp_1_1_server_context.html#aee43c00885bea68386f56d606634f04b">http::ServerContext&lt; RequestT, ResponseT &gt;</a>
 , <a class="el" href="classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_connection.html#a35c805bb8ccd10a77358ca79e69ab320">net::socket::stream::legacy::SocketConnection&lt; SocketT &gt;</a>
 , <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_client.html#af8b9110fc3a0b90ac0a8dd154c91b2f7">net::socket::stream::SocketClient&lt; SocketConnectorT &gt;</a>
 , <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#ac93df56c8e5bb1a12ed8c81f8e92e7b4">net::socket::stream::SocketConnection&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt;</a>
-, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connector.html#ad9434edd6019d5943165ad7554950bf5">net::socket::stream::SocketConnector&lt; SocketConnectionT &gt;</a>
 </li>
 <li>socketConnection
 : <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connector.html#a2f7badf236b8700f8edd47e9db5e5012">net::socket::stream::SocketConnector&lt; SocketConnectionT &gt;</a>
 </li>
 <li>SocketConnection
-: <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_listener.html#a5baa0ff61844dbfd635ff3863893d8aa">net::socket::stream::SocketListener&lt; SocketConnectionT &gt;</a>
+: <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connector.html#ad9434edd6019d5943165ad7554950bf5">net::socket::stream::SocketConnector&lt; SocketConnectionT &gt;</a>
+, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_listener.html#a5baa0ff61844dbfd635ff3863893d8aa">net::socket::stream::SocketListener&lt; SocketConnectionT &gt;</a>
 , <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_server.html#a5e32ea06ad042e0551da6ce3b03d4c4c">net::socket::stream::SocketServer&lt; SocketListenerT &gt;</a>
 , <a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a6dae99e216b02132222cae06ad4ebd63">net::socket::stream::tls::SocketConnection&lt; SocketT &gt;</a>
 , <a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connector.html#a8e2989ba969a73e72145505ff7d094ed">net::socket::stream::tls::SocketConnector&lt; SocketT &gt;</a>
@@ -322,19 +287,13 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 <li>SocketConnector
 : <a class="el" href="classhttp_1_1legacy_1_1_client6.html#a34f23fbb69ed17d6b2c9bbf3ad4b009d">http::legacy::Client6</a>
 , <a class="el" href="classhttp_1_1legacy_1_1_client.html#a0a8ae1d1085ca282bf6c2d22d6f73caf">http::legacy::Client</a>
-, <a class="el" href="classhttp_1_1tls_1_1_client6.html#a6531473a8f28cc42cb1b944b2ec7611b">http::tls::Client6</a>
-, <a class="el" href="classhttp_1_1tls_1_1_client.html#a8118b2120a61a17c5e6a6a16bd89464c">http::tls::Client</a>
 , <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_client.html#aacead9dda032b40462f5db939f259093">net::socket::stream::SocketClient&lt; SocketConnectorT &gt;</a>
-, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connector.html#a4889dc79984ee88795bea52e7dc4b775">net::socket::stream::SocketConnector&lt; SocketConnectionT &gt;</a>
+, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connector.html#aba282a7885d755b5eb61bec16ae7ce04">net::socket::stream::SocketConnector&lt; SocketConnectionT &gt;</a>
 , <a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a93358fd8285cbad5c49755553f9c5c49">net::socket::stream::tls::SocketConnection&lt; SocketT &gt;</a>
 , <a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connector.html#a03d3cd1d7ad33216ae0c58d3f88d8339">net::socket::stream::tls::SocketConnector&lt; SocketT &gt;</a>
 </li>
-<li>SocketListener
-: <a class="el" href="classhttp_1_1legacy_1_1_server6.html#a021b04ff3621655ca00c3d4ff5a2d238">http::legacy::Server6&lt; Request, Response &gt;</a>
-, <a class="el" href="classhttp_1_1legacy_1_1_server.html#a35d9a03efcecb6ba431986f9c4a39cf1">http::legacy::Server&lt; Request, Response &gt;</a>
-, <a class="el" href="classhttp_1_1tls_1_1_server6.html#a6f267bc8f697f0b403d69c2821332075">http::tls::Server6&lt; Request, Response &gt;</a>
-, <a class="el" href="classhttp_1_1tls_1_1_server.html#a909a382353cc7f0320db0e377a6c8382">http::tls::Server&lt; Request, Response &gt;</a>
-, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_listener.html#a912ab159c8caafc122cf9f00fce1560d">net::socket::stream::SocketListener&lt; SocketConnectionT &gt;</a>
+<li>SocketListener()
+: <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_listener.html#aa8414b1cb30713be40f8ec8178f8f568">net::socket::stream::SocketListener&lt; SocketConnectionT &gt;</a>
 , <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_server.html#a1b4b50c99cbd3df6a1b7d07ecad46cbd">net::socket::stream::SocketServer&lt; SocketListenerT &gt;</a>
 , <a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#aefe9edd9b3bb19b0f76ad9deef97ea70">net::socket::stream::tls::SocketConnection&lt; SocketT &gt;</a>
 , <a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_listener.html#a223629dd98eb1de0a0b9a431754e1d8f">net::socket::stream::tls::SocketListener&lt; SocketT &gt;</a>
@@ -345,22 +304,18 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 </li>
 <li>SocketServer
 : <a class="el" href="classexpress_1_1_web_app_t.html#af6d27cea97ba0493c2f66cb99404a5a4">express::WebAppT&lt; ServerT &gt;</a>
-, <a class="el" href="classhttp_1_1legacy_1_1_server6.html#a1b5cb0101a3208cee97ecd4240ea2c16">http::legacy::Server6&lt; Request, Response &gt;</a>
-, <a class="el" href="classhttp_1_1legacy_1_1_server.html#a243d2e4b67bb5a549077c96dacf6f4fb">http::legacy::Server&lt; Request, Response &gt;</a>
 </li>
 <li>socketServer
 : <a class="el" href="classhttp_1_1_server.html#a9c8d03477f123be7b567a477faf9bf6c">http::Server&lt; SocketServerT, RequestT, ResponseT &gt;</a>
 </li>
 <li>SocketServer
 : <a class="el" href="classhttp_1_1_server.html#a9a61aabff47e50fcb83d6c033549e45a">http::Server&lt; SocketServerT, RequestT, ResponseT &gt;</a>
-, <a class="el" href="classhttp_1_1tls_1_1_server6.html#a2fc9afb06c55cbab08993c09046c988c">http::tls::Server6&lt; Request, Response &gt;</a>
-, <a class="el" href="classhttp_1_1tls_1_1_server.html#a804dd8c618e0b75f085c0cd6a220f968">http::tls::Server&lt; Request, Response &gt;</a>
 , <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_listener.html#a3746407fdcc13e996f643c0c9ea7bee5">net::socket::stream::SocketListener&lt; SocketConnectionT &gt;</a>
 , <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_server.html#ac0576dc9dc6a453f9534f334e71e026e">net::socket::stream::SocketServer&lt; SocketListenerT &gt;</a>
 </li>
 <li>SocketWriter
 : <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#afdc000b132afa51d35b98657a00beb43">net::socket::stream::SocketConnection&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt;</a>
-, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#a7e241f91ccc2e05f921bc52d75df9acb">net::socket::stream::SocketWriter&lt; SocketT &gt;</a>
+, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#ac5f82275ec4736b67289a2f3cf41f135">net::socket::stream::SocketWriter&lt; SocketT &gt;</a>
 </li>
 <li>sourceStream()
 : <a class="el" href="classnet_1_1stream_1_1_write_stream.html#a7c34d2200cf374f082627c85b0caafd2">net::stream::WriteStream</a>
@@ -391,8 +346,8 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 <li>startSSL()
 : <a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a7ef6031f0b6f3dc25efa7f844bab63b9">net::socket::stream::tls::SocketConnection&lt; SocketT &gt;</a>
 </li>
-<li>StaticMiddleware
-: <a class="el" href="classexpress_1_1middleware_1_1_static_middleware.html#addc0289150f3ca6e5e1a69aac325fbc7">express::middleware::StaticMiddleware</a>
+<li>StaticMiddleware()
+: <a class="el" href="classexpress_1_1middleware_1_1_static_middleware.html#a573c60de5962113fc441e2494b87f79f">express::middleware::StaticMiddleware</a>
 </li>
 <li>status()
 : <a class="el" href="classhttp_1_1_response.html#a37d8fcef190c86c0a91de82eb150bbf0">http::Response</a>
@@ -402,6 +357,12 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 : <a class="el" href="classhttp_1_1_response_parser.html#a8d9d4d2dd608a830cede515e84a00541">http::ResponseParser</a>
 , <a class="el" href="classhttp_1_1_server_response.html#acce8cfb6d83ee29825496bec7a5c3841">http::ServerResponse</a>
 , <a class="el" href="class_status_code.html#a192a75203e32b01f4fc62df96ca42096">StatusCode</a>
+</li>
+<li>stdCookies
+: <a class="el" href="classexpress_1_1middleware_1_1_static_middleware.html#a7141e3444c55910c26b97e7c4da3abfc">express::middleware::StaticMiddleware</a>
+</li>
+<li>stdHeaders
+: <a class="el" href="classexpress_1_1middleware_1_1_static_middleware.html#a8ce62963e4bb98b3999d8748c9b97b51">express::middleware::StaticMiddleware</a>
 </li>
 <li>stop()
 : <a class="el" href="classexpress_1_1_web_app.html#a2c6cf792698b5d850ecfa9edc91e2c19">express::WebApp</a>
@@ -431,7 +392,7 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 <li>suspend()
 : <a class="el" href="classnet_1_1_accept_event_receiver.html#a2e545a73a02c79c8dda3a4745d464053">net::AcceptEventReceiver</a>
 , <a class="el" href="classnet_1_1_connect_event_receiver.html#a5c171075e7a3c573c56a32dc59049514">net::ConnectEventReceiver</a>
-, <a class="el" href="classnet_1_1_event_dispatcher.html#a32601551de78e7ead3692490018ea6a3">net::EventDispatcher&lt; EventReceiverT &gt;</a>
+, <a class="el" href="classnet_1_1_event_dispatcher.html#a78c8a722e40c2863d7dad98e5f7ac593">net::EventDispatcher&lt; EventReceiverT &gt;</a>
 , <a class="el" href="classnet_1_1_event_receiver.html#a2a8acfe460a6e04d55d3f99abf916724">net::EventReceiver</a>
 , <a class="el" href="classnet_1_1_out_of_band_event_receiver.html#a66690b3d00869f6bd760714f8ab2034b">net::OutOfBandEventReceiver</a>
 , <a class="el" href="classnet_1_1_read_event_receiver.html#a4a0eb84c0e1e30afb8fe0c4bc2d5e57c">net::ReadEventReceiver</a>

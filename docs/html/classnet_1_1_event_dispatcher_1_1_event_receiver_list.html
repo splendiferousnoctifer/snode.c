@@ -101,58 +101,44 @@ Collaboration diagram for net::EventDispatcher&lt; EventReceiverT &gt;::EventRec
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0022460c31eae86899cf85743c22479d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_event_dispatcher_1_1_event_receiver_list.html#a0022460c31eae86899cf85743c22479d">contains</a> (<a class="el" href="classnet_1_1_event_dispatcher.html#ae0f93576fe0d5f85cce969f1c48f631a">EventReceiver</a> *eventReceiver)</td></tr>
-<tr class="separator:a0022460c31eae86899cf85743c22479d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75ed398777c839b1fd342a5c8b7131ca"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_event_dispatcher_1_1_event_receiver_list.html#a75ed398777c839b1fd342a5c8b7131ca">contains</a> (<a class="el" href="classnet_1_1_event_dispatcher.html#ae0f93576fe0d5f85cce969f1c48f631a">EventReceiver</a> *eventReceiver)</td></tr>
+<tr class="separator:a75ed398777c839b1fd342a5c8b7131ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename EventReceiverT&gt;<br />
 class net::EventDispatcher&lt; EventReceiverT &gt;::EventReceiverList</h3>
 
 
-<p class="definition">Definition at line <a class="el" href="_event_dispatcher_8h_source.html#l00048">48</a> of file <a class="el" href="_event_dispatcher_8h_source.html">EventDispatcher.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_event_dispatcher_8h_source.html#l00047">47</a> of file <a class="el" href="_event_dispatcher_8h_source.html">EventDispatcher.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a0022460c31eae86899cf85743c22479d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0022460c31eae86899cf85743c22479d">&#9670;&nbsp;</a></span>contains()</h2>
+<a id="a75ed398777c839b1fd342a5c8b7131ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75ed398777c839b1fd342a5c8b7131ca">&#9670;&nbsp;</a></span>contains()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename EventReceiverT &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
+template&lt;typename EventReceiver &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classnet_1_1_event_dispatcher.html">net::EventDispatcher</a>&lt; EventReceiverT &gt;::EventReceiverList::contains </td>
+          <td class="memname">bool <a class="el" href="classnet_1_1_event_dispatcher.html">net::EventDispatcher</a>&lt; <a class="el" href="classnet_1_1_event_dispatcher.html#ae0f93576fe0d5f85cce969f1c48f631a">EventReceiver</a> &gt;::EventReceiverList::contains </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classnet_1_1_event_dispatcher.html#ae0f93576fe0d5f85cce969f1c48f631a">EventReceiver</a> *&#160;</td>
           <td class="paramname"><em>eventReceiver</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_event_dispatcher_8h_source.html#l00054">54</a> of file <a class="el" href="_event_dispatcher_8h_source.html">EventDispatcher.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                                                        {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                <span class="keywordflow">return</span> std::find(begin(), end(), eventReceiver) != end();</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            }</div>
+<p class="definition">Definition at line <a class="el" href="_event_dispatcher_8hpp_source.html#l00033">33</a> of file <a class="el" href="_event_dispatcher_8hpp_source.html">EventDispatcher.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                                                                                               {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordflow">return</span> std::find(begin(), end(), eventReceiver) != end();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="_event_dispatcher_8h_source.html#l00069">net::EventDispatcher&lt; ReadEventReceiver &gt;::enable()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_event_dispatcher_1_1_event_receiver_list_a0022460c31eae86899cf85743c22479d_icgraph.svg" width="367" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>net/<a class="el" href="_event_dispatcher_8h_source.html">EventDispatcher.h</a></li>
+<li>net/<a class="el" href="_event_dispatcher_8hpp_source.html">EventDispatcher.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
