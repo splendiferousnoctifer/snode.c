@@ -8,6 +8,5 @@ var classnet_1_1socket_1_1stream_1_1tls_1_1_socket_listener =
     [ "listen", "classnet_1_1socket_1_1stream_1_1tls_1_1_socket_listener.html#a2c1b563facf56f8e46f2cc5b747359dc", null ],
     [ "stream::SocketServer", "classnet_1_1socket_1_1stream_1_1tls_1_1_socket_listener.html#ac663b3d40795fab69a4b9b78e3fef636", null ],
     [ "ctx", "classnet_1_1socket_1_1stream_1_1tls_1_1_socket_listener.html#a7e110d3d7115e0e099014a89420bac22", null ],
-    [ "sslErr", "classnet_1_1socket_1_1stream_1_1tls_1_1_socket_listener.html#a6ba8e99eb395b4605b9be85b273899ea", null ],
     [ "sslSessionCtxId", "classnet_1_1socket_1_1stream_1_1tls_1_1_socket_listener.html#a50b7f221e0a3281a566bf39845b6e432", null ]
 ];

@@ -7,6 +7,5 @@ var classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connector =
     [ "~SocketConnector", "classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connector.html#a747532947bb596e5c400bb04903d6eee", null ],
     [ "connect", "classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connector.html#a73c13a17ff114506bf6ad3f757ea0fea", null ],
     [ "stream::SocketClient", "classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connector.html#a0f8944a974058bc4a84d0a2330979f3d", null ],
-    [ "ctx", "classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connector.html#ad7515655b28bef79c5034bbd92f9d6b7", null ],
-    [ "sslErr", "classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connector.html#a4eb6b5f89779d9cf29eef8904a827dff", null ]
+    [ "ctx", "classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connector.html#ad7515655b28bef79c5034bbd92f9d6b7", null ]
 ];

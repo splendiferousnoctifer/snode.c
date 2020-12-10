@@ -98,14 +98,12 @@ $(document).ready(function(){initNavTree('classnet_1_1_event_dispatcher.html',''
 <div class="dynheader">
 Inheritance diagram for net::EventDispatcher&lt; EventReceiverT &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_event_dispatcher__inherit__graph.svg" width="1068" height="971"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_event_dispatcher__inherit__graph.svg" width="1068" height="971"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <div class="dynheader">
 Collaboration diagram for net::EventDispatcher&lt; EventReceiverT &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_event_dispatcher__coll__graph.svg" width="382" height="736"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_event_dispatcher__coll__graph.svg" width="382" height="736"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -305,7 +303,7 @@ template&lt;typename EventReceiver &gt; </div>
 <p class="definition">Definition at line <a class="el" href="_event_dispatcher_8hpp_source.html#l00062">62</a> of file <a class="el" href="_event_dispatcher_8hpp_source.html">EventDispatcher.hpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                                                                                     {</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classnet_1_1_event_dispatcher.html#aa7f8d012b1341dfb826a84c423ccd310">enabledEventReceiver</a>[fd].contains(eventReceiver)) {</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="comment">// same tick</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="comment">// same tick as enable</span></div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <a class="code" href="classnet_1_1_event_dispatcher.html#aa7f8d012b1341dfb826a84c423ccd310">enabledEventReceiver</a>[fd].remove(eventReceiver);</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            eventReceiver-&gt;disabled();</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <span class="keywordflow">if</span> (eventReceiver-&gt;observationCounter == 0) {</div>
@@ -313,7 +311,7 @@ template&lt;typename EventReceiver &gt; </div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            }</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (eventReceiver-&gt;isEnabled() &amp;&amp;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                   (!<a class="code" href="classnet_1_1_event_dispatcher.html#a839607a4de447521a73713e55d9cc7ef">disabledEventReceiver</a>.contains(fd) || !<a class="code" href="classnet_1_1_event_dispatcher.html#a839607a4de447521a73713e55d9cc7ef">disabledEventReceiver</a>[fd].contains(eventReceiver))) {</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            <span class="comment">// normal</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            <span class="comment">// next tick as enable</span></div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <a class="code" href="classnet_1_1_event_dispatcher.html#a839607a4de447521a73713e55d9cc7ef">disabledEventReceiver</a>[fd].push_back(eventReceiver);</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            LOG(WARNING) &lt;&lt; <span class="stringliteral">&quot;EventReceiver double disable&quot;</span>;</div>
@@ -324,8 +322,7 @@ template&lt;typename EventReceiver &gt; </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_event_dispatcher_aa281bb5265bd2c138a6bd296b403a339_icgraph.svg" width="688" height="819"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_event_dispatcher_aa281bb5265bd2c138a6bd296b403a339_icgraph.svg" width="688" height="819"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -365,8 +362,7 @@ template&lt;typename EventReceiver &gt; </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_event_dispatcher_ace9d7692ed2a4be2a5b3367a8307d1c3_icgraph.svg" width="578" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_event_dispatcher_ace9d7692ed2a4be2a5b3367a8307d1c3_icgraph.svg" width="578" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -429,8 +425,7 @@ template&lt;typename EventReceiver &gt; </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_event_dispatcher_aad8e8c809b35aedf32ae1de4fac53d4c_icgraph.svg" width="754" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_event_dispatcher_aad8e8c809b35aedf32ae1de4fac53d4c_icgraph.svg" width="754" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -466,11 +461,11 @@ template&lt;typename EventReceiver &gt; </div>
 <p class="definition">Definition at line <a class="el" href="_event_dispatcher_8hpp_source.html#l00044">44</a> of file <a class="el" href="_event_dispatcher_8hpp_source.html">EventDispatcher.hpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                                                                                    {</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classnet_1_1_event_dispatcher.html#a839607a4de447521a73713e55d9cc7ef">disabledEventReceiver</a>[fd].contains(eventReceiver)) {</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <span class="comment">// same tick</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <span class="comment">// same tick as disable</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <a class="code" href="classnet_1_1_event_dispatcher.html#a839607a4de447521a73713e55d9cc7ef">disabledEventReceiver</a>[fd].remove(eventReceiver);</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!eventReceiver-&gt;isEnabled() &amp;&amp;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                   (!<a class="code" href="classnet_1_1_event_dispatcher.html#aa7f8d012b1341dfb826a84c423ccd310">enabledEventReceiver</a>.contains(fd) || !<a class="code" href="classnet_1_1_event_dispatcher.html#aa7f8d012b1341dfb826a84c423ccd310">enabledEventReceiver</a>[fd].contains(eventReceiver))) {</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <span class="comment">// normal</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <span class="comment">// next tick as disable</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <a class="code" href="classnet_1_1_event_dispatcher.html#aa7f8d012b1341dfb826a84c423ccd310">enabledEventReceiver</a>[fd].push_back(eventReceiver);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            eventReceiver-&gt;enabled(fd);</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="classnet_1_1_event_dispatcher.html#ae283e18491baec035cb788ce1a8adee0">unobservedEventReceiver</a>.<a class="code" href="classnet_1_1_event_dispatcher_1_1_event_receiver_list.html#a75ed398777c839b1fd342a5c8b7131ca">contains</a>(eventReceiver)) {</div>
@@ -485,8 +480,7 @@ template&lt;typename EventReceiver &gt; </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_event_dispatcher_a43d8ab9b3682e02451d2bd1c1e202e74_icgraph.svg" width="1164" height="579"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_event_dispatcher_a43d8ab9b3682e02451d2bd1c1e202e74_icgraph.svg" width="1164" height="579"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -514,8 +508,7 @@ template&lt;typename EventReceiver &gt; </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_event_dispatcher_a313e2bce2cde61387505ff0179bfc4aa_icgraph.svg" width="375" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_event_dispatcher_a313e2bce2cde61387505ff0179bfc4aa_icgraph.svg" width="375" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -557,8 +550,7 @@ template&lt;typename EventReceiver &gt; </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_event_dispatcher_a74ee95f80fce893da73e4b6a84973d14_icgraph.svg" width="742" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_event_dispatcher_a74ee95f80fce893da73e4b6a84973d14_icgraph.svg" width="742" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -632,8 +624,7 @@ template&lt;typename EventReceiver &gt; </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_event_dispatcher_aa685133da28574e7eb3a4154016cca48_icgraph.svg" width="760" height="71"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_event_dispatcher_aa685133da28574e7eb3a4154016cca48_icgraph.svg" width="760" height="71"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -700,8 +691,7 @@ template&lt;typename EventReceiver &gt; </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_event_dispatcher_abef8c717b6fbd04a49fad0833136d03c_icgraph.svg" width="779" height="71"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_event_dispatcher_abef8c717b6fbd04a49fad0833136d03c_icgraph.svg" width="779" height="71"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -750,8 +740,7 @@ template&lt;typename EventReceiver &gt; </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_event_dispatcher_ab52ecbca6414f47e247c32b2f567e85f_icgraph.svg" width="619" height="327"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_event_dispatcher_ab52ecbca6414f47e247c32b2f567e85f_icgraph.svg" width="619" height="327"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -800,8 +789,7 @@ template&lt;typename EventReceiver &gt; </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_event_dispatcher_a78c8a722e40c2863d7dad98e5f7ac593_icgraph.svg" width="619" height="368"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_event_dispatcher_a78c8a722e40c2863d7dad98e5f7ac593_icgraph.svg" width="619" height="368"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -856,8 +844,7 @@ template&lt;typename EventReceiver &gt; </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_event_dispatcher_a9256d9f447a4c0051c71d0b835c5fb5b_icgraph.svg" width="779" height="71"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_event_dispatcher_a9256d9f447a4c0051c71d0b835c5fb5b_icgraph.svg" width="779" height="71"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
