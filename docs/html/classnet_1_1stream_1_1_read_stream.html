@@ -95,7 +95,8 @@ $(document).ready(function(){initNavTree('classnet_1_1stream_1_1_read_stream.htm
 <div class="dynheader">
 Inheritance diagram for net::stream::ReadStream:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1stream_1_1_read_stream__inherit__graph.svg" width="180" height="375"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1stream_1_1_read_stream__inherit__graph.svg" width="180" height="375"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <div class="dynheader">
 Collaboration diagram for net::stream::ReadStream:</div>
@@ -113,8 +114,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6c52dbe13a287228b66c327705556922"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a527c54919d6a2adfbe5a22f4e0a24bab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1stream_1_1_read_stream.html#a527c54919d6a2adfbe5a22f4e0a24bab">unPipe</a> (<a class="el" href="classnet_1_1stream_1_1_write_stream.html">WriteStream</a> &amp;writeStream)</td></tr>
 <tr class="separator:a527c54919d6a2adfbe5a22f4e0a24bab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9def504c9f48833288fa075564c8b24a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1stream_1_1_read_stream.html#a9def504c9f48833288fa075564c8b24a">dispatch</a> (const char *junk, size_t junkLen)</td></tr>
-<tr class="separator:a9def504c9f48833288fa075564c8b24a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0dfa540c04265b472c66fc8d3d91091"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1stream_1_1_read_stream.html#ad0dfa540c04265b472c66fc8d3d91091">dispatch</a> (const char *junk, std::size_t junkLen)</td></tr>
+<tr class="separator:ad0dfa540c04265b472c66fc8d3d91091"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c2029dc1f47369747b5358096ba39d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1stream_1_1_read_stream.html#a0c2029dc1f47369747b5358096ba39d4">dispatchEOF</a> ()</td></tr>
 <tr class="separator:a0c2029dc1f47369747b5358096ba39d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a089a852ad8dffa822085620d5589baf7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1stream_1_1_read_stream.html#a089a852ad8dffa822085620d5589baf7">dispatchError</a> (int errnum)</td></tr>
@@ -192,8 +193,8 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a9def504c9f48833288fa075564c8b24a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9def504c9f48833288fa075564c8b24a">&#9670;&nbsp;</a></span>dispatch()</h2>
+<a id="ad0dfa540c04265b472c66fc8d3d91091"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0dfa540c04265b472c66fc8d3d91091">&#9670;&nbsp;</a></span>dispatch()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -207,7 +208,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
+          <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>junkLen</em>&#160;</td>
         </tr>
         <tr>
@@ -219,7 +220,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_read_stream_8cpp_source.html#l00047">47</a> of file <a class="el" href="_read_stream_8cpp_source.html">ReadStream.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                                                              {</div>
+<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                                                                 {</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="classnet_1_1stream_1_1_read_stream.html#a27049d7feac33a083eaacb392c03d56e">dispatching</a> = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">for</span> (WriteStream* writeStream : <a class="code" href="classnet_1_1stream_1_1_read_stream.html#a416c5271d5af180b05d4ffbc372fef45">writeStreams</a>) {</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            writeStream-&gt;pipe(*<span class="keyword">this</span>, junk, junkLen);</div>

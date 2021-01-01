@@ -7,7 +7,7 @@ var classnet_1_1socket_1_1stream_1_1_socket_connection =
     [ "SocketConnection", "classnet_1_1socket_1_1stream_1_1_socket_connection.html#af6450d3ada0f7cd92867a0c01132bda0", null ],
     [ "~SocketConnection", "classnet_1_1socket_1_1stream_1_1_socket_connection.html#a315f29446b399f5b6ce5d15e70f81a1e", null ],
     [ "close", "classnet_1_1socket_1_1stream_1_1_socket_connection.html#ad80107c21f19c407619fc28425db1d40", null ],
-    [ "enqueue", "classnet_1_1socket_1_1stream_1_1_socket_connection.html#ab5931a0a52e2fbcdec5d8c3fba61eb2a", null ],
+    [ "enqueue", "classnet_1_1socket_1_1stream_1_1_socket_connection.html#a321fd72fbdb5a439d2d59a0b534c4954", null ],
     [ "enqueue", "classnet_1_1socket_1_1stream_1_1_socket_connection.html#a85fd378da0de453a913d513845910faf", null ],
     [ "getLocalAddress", "classnet_1_1socket_1_1stream_1_1_socket_connection.html#a41452e8427040717cfcb6aa940088c47", null ],
     [ "getRemoteAddress", "classnet_1_1socket_1_1stream_1_1_socket_connection.html#a5ae0ae94f3b4f7d2d6a4600458f5697e", null ],

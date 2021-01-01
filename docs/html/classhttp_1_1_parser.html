@@ -114,8 +114,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7efa53f8bcdb9fe5256a2207da3275a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebd500c3f73e98f1da1fe82630382572"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_parser.html#aebd500c3f73e98f1da1fe82630382572">~Parser</a> ()=default</td></tr>
 <tr class="separator:aebd500c3f73e98f1da1fe82630382572"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa77051c269a3a1bc71a6a9bc57668975"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_parser.html#aa77051c269a3a1bc71a6a9bc57668975">parse</a> (const char *buf, size_t count)</td></tr>
-<tr class="separator:aa77051c269a3a1bc71a6a9bc57668975"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d73c443fd008805607dc2e791761ef3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_parser.html#a6d73c443fd008805607dc2e791761ef3">parse</a> (const char *buf, std::size_t count)</td></tr>
+<tr class="separator:a6d73c443fd008805607dc2e791761ef3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
 Protected Types</h2></td></tr>
@@ -156,8 +156,8 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:ace4562d0ef6c64bd7d2d4ccf5b61fd2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c276db60d5fc720d27d8a4b8a761f99"><td class="memItemLeft" align="right" valign="top">virtual enum <a class="el" href="classhttp_1_1_parser.html#ab58d2b97db1c5bad0e2abfdba95514d2">ParserState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_parser.html#a7c276db60d5fc720d27d8a4b8a761f99">parseHeader</a> ()=0</td></tr>
 <tr class="separator:a7c276db60d5fc720d27d8a4b8a761f99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43c36a04607c20120a94d5a3ea5de711"><td class="memItemLeft" align="right" valign="top">virtual enum <a class="el" href="classhttp_1_1_parser.html#ab58d2b97db1c5bad0e2abfdba95514d2">ParserState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_parser.html#a43c36a04607c20120a94d5a3ea5de711">parseContent</a> (char *<a class="el" href="classhttp_1_1_parser.html#a1898296511bbab14c3635445de370ca6">content</a>, size_t size)=0</td></tr>
-<tr class="separator:a43c36a04607c20120a94d5a3ea5de711"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbc4ac4b5573e34e8636f60ca9840b39"><td class="memItemLeft" align="right" valign="top">virtual enum <a class="el" href="classhttp_1_1_parser.html#ab58d2b97db1c5bad0e2abfdba95514d2">ParserState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_parser.html#abbc4ac4b5573e34e8636f60ca9840b39">parseContent</a> (char *<a class="el" href="classhttp_1_1_parser.html#a1898296511bbab14c3635445de370ca6">content</a>, std::size_t size)=0</td></tr>
+<tr class="separator:abbc4ac4b5573e34e8636f60ca9840b39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf70f6b3a137f1622da23995bc2cd915"><td class="memItemLeft" align="right" valign="top">virtual enum <a class="el" href="classhttp_1_1_parser.html#ab58d2b97db1c5bad0e2abfdba95514d2">ParserState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_parser.html#adf70f6b3a137f1622da23995bc2cd915">parsingError</a> (int code, const std::string &amp;reason)=0</td></tr>
 <tr class="separator:adf70f6b3a137f1622da23995bc2cd915"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -169,8 +169,8 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:ad5613d8ddc598712a4eeb85f0d860bf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1898296511bbab14c3635445de370ca6"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_parser.html#a1898296511bbab14c3635445de370ca6">content</a> = nullptr</td></tr>
 <tr class="separator:a1898296511bbab14c3635445de370ca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a450b7a410bc0eecbf3a8d7448e72f47d"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_parser.html#a450b7a410bc0eecbf3a8d7448e72f47d">contentLength</a> = 0</td></tr>
-<tr class="separator:a450b7a410bc0eecbf3a8d7448e72f47d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e1bc3f15d31ca4bd6e63bf509d92714"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_parser.html#a4e1bc3f15d31ca4bd6e63bf509d92714">contentLength</a> = 0</td></tr>
+<tr class="separator:a4e1bc3f15d31ca4bd6e63bf509d92714"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7ac73a6a2d20c0e02161aa8e300b72c"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_parser.html#ac7ac73a6a2d20c0e02161aa8e300b72c">headers</a></td></tr>
 <tr class="separator:ac7ac73a6a2d20c0e02161aa8e300b72c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -181,14 +181,14 @@ Static Protected Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a0ac6f4f4a32f643f82774088a1a521e9"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_parser.html#a0ac6f4f4a32f643f82774088a1a521e9">readStartLine</a> (const char *buf, size_t count)</td></tr>
-<tr class="separator:a0ac6f4f4a32f643f82774088a1a521e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a026d4c8a1763a8b9cad55f6f50d12729"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_parser.html#a026d4c8a1763a8b9cad55f6f50d12729">readHeaderLine</a> (const char *buf, size_t count)</td></tr>
-<tr class="separator:a026d4c8a1763a8b9cad55f6f50d12729"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fcb268c550e7013116e6ff5d6fec549"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_parser.html#a1fcb268c550e7013116e6ff5d6fec549">readStartLine</a> (const char *buf, std::size_t count)</td></tr>
+<tr class="separator:a1fcb268c550e7013116e6ff5d6fec549"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a968f187e1881657460ac3d291d262eff"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_parser.html#a968f187e1881657460ac3d291d262eff">readHeaderLine</a> (const char *buf, std::size_t count)</td></tr>
+<tr class="separator:a968f187e1881657460ac3d291d262eff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa062ab2857aea892676cac516b520a52"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_parser.html#aa062ab2857aea892676cac516b520a52">splitHeaderLine</a> (const std::string &amp;<a class="el" href="classhttp_1_1_parser.html#a2e1c8ce9216203e3823b1e62f422f858">line</a>)</td></tr>
 <tr class="separator:aa062ab2857aea892676cac516b520a52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af007e62fe88b4f65e5bbbd9e356059a5"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_parser.html#af007e62fe88b4f65e5bbbd9e356059a5">readContent</a> (const char *buf, size_t count)</td></tr>
-<tr class="separator:af007e62fe88b4f65e5bbbd9e356059a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ede8aca58ed7333918294de225e66a8"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_parser.html#a3ede8aca58ed7333918294de225e66a8">readContent</a> (const char *buf, std::size_t count)</td></tr>
+<tr class="separator:a3ede8aca58ed7333918294de225e66a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -196,8 +196,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a63d5169b65097fc2be4cfb66f1b5eea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e1c8ce9216203e3823b1e62f422f858"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_parser.html#a2e1c8ce9216203e3823b1e62f422f858">line</a></td></tr>
 <tr class="separator:a2e1c8ce9216203e3823b1e62f422f858"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f2ba24cfe459c9c5cb948d8468b3bd3"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_parser.html#a7f2ba24cfe459c9c5cb948d8468b3bd3">contentRead</a> = 0</td></tr>
-<tr class="separator:a7f2ba24cfe459c9c5cb948d8468b3bd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a4c585c8396e1a27960ff9a5b402d8f"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_parser.html#a4a4c585c8396e1a27960ff9a5b402d8f">contentRead</a> = 0</td></tr>
+<tr class="separator:a4a4c585c8396e1a27960ff9a5b402d8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -376,13 +376,14 @@ Friends</h2></td></tr>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1_parser_a089f501d309ffbcfb527e4bee38d90ea_icgraph.svg" width="724" height="82"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1_parser_a089f501d309ffbcfb527e4bee38d90ea_icgraph.svg" width="724" height="82"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
 </div>
-<a id="aa77051c269a3a1bc71a6a9bc57668975"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa77051c269a3a1bc71a6a9bc57668975">&#9670;&nbsp;</a></span>parse()</h2>
+<a id="a6d73c443fd008805607dc2e791761ef3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d73c443fd008805607dc2e791761ef3">&#9670;&nbsp;</a></span>parse()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -396,7 +397,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
+          <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>count</em>&#160;</td>
         </tr>
         <tr>
@@ -408,8 +409,8 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_parser_8cpp_source.html#l00045">45</a> of file <a class="el" href="_parser_8cpp_source.html">Parser.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                                                    {</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordtype">size_t</span> consumed = 0;</div>
+<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                                                       {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        std::size_t consumed = 0;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordflow">while</span> (consumed &lt; count &amp;&amp; <a class="code" href="classhttp_1_1_parser.html#ad5613d8ddc598712a4eeb85f0d860bf9">parserState</a> != <a class="code" href="classhttp_1_1_parser.html#ab58d2b97db1c5bad0e2abfdba95514d2abb1ca97ec761fc37101737ba0aa2e7c5">ParserState::ERROR</a>) {</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <span class="keywordflow">switch</span> (<a class="code" href="classhttp_1_1_parser.html#ad5613d8ddc598712a4eeb85f0d860bf9">parserState</a>) {</div>
@@ -418,13 +419,13 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                    <a class="code" href="classhttp_1_1_parser.html#a089f501d309ffbcfb527e4bee38d90ea">begin</a>();</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                    [[fallthrough]];</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="classhttp_1_1_parser.html#ab58d2b97db1c5bad0e2abfdba95514d2a75c6b2428da2036422b35ca9b1f1f8c4">ParserState::FIRSTLINE</a>:</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                    consumed += <a class="code" href="classhttp_1_1_parser.html#a0ac6f4f4a32f643f82774088a1a521e9">readStartLine</a>(buf + consumed, count - consumed);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                    consumed += <a class="code" href="classhttp_1_1_parser.html#a1fcb268c550e7013116e6ff5d6fec549">readStartLine</a>(buf + consumed, count - consumed);</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                    <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="classhttp_1_1_parser.html#ab58d2b97db1c5bad0e2abfdba95514d2a7ad4905b4543ab4a1637dd23c50e36ce">ParserState::HEADER</a>:</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                    consumed += <a class="code" href="classhttp_1_1_parser.html#a026d4c8a1763a8b9cad55f6f50d12729">readHeaderLine</a>(buf + consumed, count - consumed);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                    consumed += <a class="code" href="classhttp_1_1_parser.html#a968f187e1881657460ac3d291d262eff">readHeaderLine</a>(buf + consumed, count - consumed);</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                    <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="classhttp_1_1_parser.html#ab58d2b97db1c5bad0e2abfdba95514d2a786329b34bbe53ab40a54a19cd597f2d">ParserState::BODY</a>:</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                    consumed += <a class="code" href="classhttp_1_1_parser.html#af007e62fe88b4f65e5bbbd9e356059a5">readContent</a>(buf + consumed, count - consumed);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                    consumed += <a class="code" href="classhttp_1_1_parser.html#a3ede8aca58ed7333918294de225e66a8">readContent</a>(buf + consumed, count - consumed);</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                    <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="classhttp_1_1_parser.html#ab58d2b97db1c5bad0e2abfdba95514d2abb1ca97ec761fc37101737ba0aa2e7c5">ParserState::ERROR</a>:</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                    <span class="keywordflow">break</span>;</div>
@@ -438,18 +439,20 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1_parser_aa77051c269a3a1bc71a6a9bc57668975_cgraph.svg" width="831" height="278"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1_parser_a6d73c443fd008805607dc2e791761ef3_cgraph.svg" width="831" height="278"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1_parser_aa77051c269a3a1bc71a6a9bc57668975_icgraph.svg" width="547" height="82"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1_parser_a6d73c443fd008805607dc2e791761ef3_icgraph.svg" width="547" height="82"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
 </div>
-<a id="a43c36a04607c20120a94d5a3ea5de711"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a43c36a04607c20120a94d5a3ea5de711">&#9670;&nbsp;</a></span>parseContent()</h2>
+<a id="abbc4ac4b5573e34e8636f60ca9840b39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbc4ac4b5573e34e8636f60ca9840b39">&#9670;&nbsp;</a></span>parseContent()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -466,7 +469,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
+          <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>size</em>&#160;</td>
         </tr>
         <tr>
@@ -482,13 +485,14 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classhttp_1_1_response_parser.html#af13aa7ace28cbc7062936280e054e32b">http::ResponseParser</a>, and <a class="el" href="classhttp_1_1_request_parser.html#afd00f0a48204cdbaa3837f8a6032e314">http::RequestParser</a>.</p>
+<p>Implemented in <a class="el" href="classhttp_1_1_response_parser.html#ad54023fd92f84dd6c36408a02f417ec6">http::ResponseParser</a>, and <a class="el" href="classhttp_1_1_request_parser.html#a9b2a4597fdfde6e01d519bb5d2c30dae">http::RequestParser</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_parser_8cpp_source.html#l00188">http::operator|()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1_parser_a43c36a04607c20120a94d5a3ea5de711_icgraph.svg" width="338" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1_parser_abbc4ac4b5573e34e8636f60ca9840b39_icgraph.svg" width="338" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
@@ -522,7 +526,8 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1_parser_a7c276db60d5fc720d27d8a4b8a761f99_icgraph.svg" width="1004" height="82"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1_parser_a7c276db60d5fc720d27d8a4b8a761f99_icgraph.svg" width="1004" height="82"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
@@ -557,7 +562,8 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1_parser_ace4562d0ef6c64bd7d2d4ccf5b61fd2c_icgraph.svg" width="1000" height="82"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1_parser_ace4562d0ef6c64bd7d2d4ccf5b61fd2c_icgraph.svg" width="1000" height="82"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
@@ -602,13 +608,14 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1_parser_adf70f6b3a137f1622da23995bc2cd915_icgraph.svg" width="1236" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1_parser_adf70f6b3a137f1622da23995bc2cd915_icgraph.svg" width="1236" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
 </div>
-<a id="af007e62fe88b4f65e5bbbd9e356059a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af007e62fe88b4f65e5bbbd9e356059a5">&#9670;&nbsp;</a></span>readContent()</h2>
+<a id="a3ede8aca58ed7333918294de225e66a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ede8aca58ed7333918294de225e66a8">&#9670;&nbsp;</a></span>readContent()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -617,7 +624,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">size_t http::Parser::readContent </td>
+          <td class="memname">std::size_t http::Parser::readContent </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>buf</em>, </td>
@@ -625,7 +632,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
+          <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>count</em>&#160;</td>
         </tr>
         <tr>
@@ -642,21 +649,21 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_parser_8cpp_source.html#l00160">160</a> of file <a class="el" href="_parser_8cpp_source.html">Parser.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                                                            {</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classhttp_1_1_parser.html#a7f2ba24cfe459c9c5cb948d8468b3bd3">contentRead</a> == 0) {</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            <a class="code" href="classhttp_1_1_parser.html#a1898296511bbab14c3635445de370ca6">content</a> = <span class="keyword">new</span> <span class="keywordtype">char</span>[<a class="code" href="classhttp_1_1_parser.html#a450b7a410bc0eecbf3a8d7448e72f47d">contentLength</a>];</div>
+<div class="fragment"><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                                                                  {</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classhttp_1_1_parser.html#a4a4c585c8396e1a27960ff9a5b402d8f">contentRead</a> == 0) {</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            <a class="code" href="classhttp_1_1_parser.html#a1898296511bbab14c3635445de370ca6">content</a> = <span class="keyword">new</span> <span class="keywordtype">char</span>[<a class="code" href="classhttp_1_1_parser.html#a4e1bc3f15d31ca4bd6e63bf509d92714">contentLength</a>];</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        }</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; </div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classhttp_1_1_parser.html#a7f2ba24cfe459c9c5cb948d8468b3bd3">contentRead</a> + count &lt;= <a class="code" href="classhttp_1_1_parser.html#a450b7a410bc0eecbf3a8d7448e72f47d">contentLength</a>) {</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;            memcpy(<a class="code" href="classhttp_1_1_parser.html#a1898296511bbab14c3635445de370ca6">content</a> + <a class="code" href="classhttp_1_1_parser.html#a7f2ba24cfe459c9c5cb948d8468b3bd3">contentRead</a>, buf, count); <span class="comment">// NOLINT(clang-analyzer-core.NonNullParamChecker)</span></div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classhttp_1_1_parser.html#a4a4c585c8396e1a27960ff9a5b402d8f">contentRead</a> + count &lt;= <a class="code" href="classhttp_1_1_parser.html#a4e1bc3f15d31ca4bd6e63bf509d92714">contentLength</a>) {</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;            memcpy(<a class="code" href="classhttp_1_1_parser.html#a1898296511bbab14c3635445de370ca6">content</a> + <a class="code" href="classhttp_1_1_parser.html#a4a4c585c8396e1a27960ff9a5b402d8f">contentRead</a>, buf, count); <span class="comment">// NOLINT(clang-analyzer-core.NonNullParamChecker)</span></div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;            <a class="code" href="classhttp_1_1_parser.html#a7f2ba24cfe459c9c5cb948d8468b3bd3">contentRead</a> += count;</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="classhttp_1_1_parser.html#a7f2ba24cfe459c9c5cb948d8468b3bd3">contentRead</a> == <a class="code" href="classhttp_1_1_parser.html#a450b7a410bc0eecbf3a8d7448e72f47d">contentLength</a>) {</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                <a class="code" href="classhttp_1_1_parser.html#ad5613d8ddc598712a4eeb85f0d860bf9">parserState</a> = <a class="code" href="classhttp_1_1_parser.html#a43c36a04607c20120a94d5a3ea5de711">parseContent</a>(<a class="code" href="classhttp_1_1_parser.html#a1898296511bbab14c3635445de370ca6">content</a>, <a class="code" href="classhttp_1_1_parser.html#a450b7a410bc0eecbf3a8d7448e72f47d">contentLength</a>);</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;            <a class="code" href="classhttp_1_1_parser.html#a4a4c585c8396e1a27960ff9a5b402d8f">contentRead</a> += count;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="classhttp_1_1_parser.html#a4a4c585c8396e1a27960ff9a5b402d8f">contentRead</a> == <a class="code" href="classhttp_1_1_parser.html#a4e1bc3f15d31ca4bd6e63bf509d92714">contentLength</a>) {</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                <a class="code" href="classhttp_1_1_parser.html#ad5613d8ddc598712a4eeb85f0d860bf9">parserState</a> = <a class="code" href="classhttp_1_1_parser.html#abbc4ac4b5573e34e8636f60ca9840b39">parseContent</a>(<a class="code" href="classhttp_1_1_parser.html#a1898296511bbab14c3635445de370ca6">content</a>, <a class="code" href="classhttp_1_1_parser.html#a4e1bc3f15d31ca4bd6e63bf509d92714">contentLength</a>);</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160; </div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                <span class="keyword">delete</span>[] <a class="code" href="classhttp_1_1_parser.html#a1898296511bbab14c3635445de370ca6">content</a>;</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;                <a class="code" href="classhttp_1_1_parser.html#a1898296511bbab14c3635445de370ca6">content</a> = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                <a class="code" href="classhttp_1_1_parser.html#a7f2ba24cfe459c9c5cb948d8468b3bd3">contentRead</a> = 0;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                <a class="code" href="classhttp_1_1_parser.html#a4a4c585c8396e1a27960ff9a5b402d8f">contentRead</a> = 0;</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            }</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;            <a class="code" href="classhttp_1_1_parser.html#ad5613d8ddc598712a4eeb85f0d860bf9">parserState</a> = <a class="code" href="classhttp_1_1_parser.html#adf70f6b3a137f1622da23995bc2cd915">parsingError</a>(400, <span class="stringliteral">&quot;Content to long&quot;</span>);</div>
@@ -674,13 +681,14 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1_parser_af007e62fe88b4f65e5bbbd9e356059a5_icgraph.svg" width="764" height="82"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1_parser_a3ede8aca58ed7333918294de225e66a8_icgraph.svg" width="764" height="82"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
 </div>
-<a id="a026d4c8a1763a8b9cad55f6f50d12729"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a026d4c8a1763a8b9cad55f6f50d12729">&#9670;&nbsp;</a></span>readHeaderLine()</h2>
+<a id="a968f187e1881657460ac3d291d262eff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a968f187e1881657460ac3d291d262eff">&#9670;&nbsp;</a></span>readHeaderLine()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -689,7 +697,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">size_t http::Parser::readHeaderLine </td>
+          <td class="memname">std::size_t http::Parser::readHeaderLine </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>buf</em>, </td>
@@ -697,7 +705,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
+          <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>count</em>&#160;</td>
         </tr>
         <tr>
@@ -714,8 +722,8 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_parser_8cpp_source.html#l00088">88</a> of file <a class="el" href="_parser_8cpp_source.html">Parser.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                                                               {</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordtype">size_t</span> consumed = 0;</div>
+<div class="fragment"><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                                                                     {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        std::size_t consumed = 0;</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keywordflow">while</span> (consumed &lt; count &amp;&amp; <a class="code" href="classhttp_1_1_parser.html#ad5613d8ddc598712a4eeb85f0d860bf9">parserState</a> == <a class="code" href="classhttp_1_1_parser.html#ab58d2b97db1c5bad0e2abfdba95514d2a7ad4905b4543ab4a1637dd23c50e36ce">ParserState::HEADER</a>) {</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            <span class="keywordtype">char</span> ch = buf[consumed];</div>
@@ -764,18 +772,20 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1_parser_a026d4c8a1763a8b9cad55f6f50d12729_cgraph.svg" width="652" height="240"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1_parser_a968f187e1881657460ac3d291d262eff_cgraph.svg" width="652" height="240"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1_parser_a026d4c8a1763a8b9cad55f6f50d12729_icgraph.svg" width="784" height="82"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1_parser_a968f187e1881657460ac3d291d262eff_icgraph.svg" width="784" height="82"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
 </div>
-<a id="a0ac6f4f4a32f643f82774088a1a521e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0ac6f4f4a32f643f82774088a1a521e9">&#9670;&nbsp;</a></span>readStartLine()</h2>
+<a id="a1fcb268c550e7013116e6ff5d6fec549"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fcb268c550e7013116e6ff5d6fec549">&#9670;&nbsp;</a></span>readStartLine()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -784,7 +794,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">size_t http::Parser::readStartLine </td>
+          <td class="memname">std::size_t http::Parser::readStartLine </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>buf</em>, </td>
@@ -792,7 +802,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
+          <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>count</em>&#160;</td>
         </tr>
         <tr>
@@ -809,8 +819,8 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_parser_8cpp_source.html#l00069">69</a> of file <a class="el" href="_parser_8cpp_source.html">Parser.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                                                              {</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keywordtype">size_t</span> consumed = 0;</div>
+<div class="fragment"><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                                                                    {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        std::size_t consumed = 0;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordflow">while</span> (consumed &lt; count &amp;&amp; <a class="code" href="classhttp_1_1_parser.html#ad5613d8ddc598712a4eeb85f0d860bf9">parserState</a> == <a class="code" href="classhttp_1_1_parser.html#ab58d2b97db1c5bad0e2abfdba95514d2a75c6b2428da2036422b35ca9b1f1f8c4">ParserState::FIRSTLINE</a>) {</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <span class="keywordtype">char</span> ch = buf[consumed++];</div>
@@ -834,12 +844,14 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1_parser_a0ac6f4f4a32f643f82774088a1a521e9_cgraph.svg" width="416" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1_parser_a1fcb268c550e7013116e6ff5d6fec549_cgraph.svg" width="416" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1_parser_a0ac6f4f4a32f643f82774088a1a521e9_icgraph.svg" width="770" height="82"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1_parser_a1fcb268c550e7013116e6ff5d6fec549_icgraph.svg" width="770" height="82"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
@@ -873,7 +885,7 @@ Here is the caller graph for this function:</div>
 <div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                       {</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <a class="code" href="classhttp_1_1_parser.html#ad5613d8ddc598712a4eeb85f0d860bf9">parserState</a> = <a class="code" href="classhttp_1_1_parser.html#ab58d2b97db1c5bad0e2abfdba95514d2a19aad9f2fe3ce0023298ab83f7e75775">ParserState::BEGIN</a>;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="classhttp_1_1_parser.html#ac7ac73a6a2d20c0e02161aa8e300b72c">headers</a>.clear();</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <a class="code" href="classhttp_1_1_parser.html#a450b7a410bc0eecbf3a8d7448e72f47d">contentLength</a> = 0;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <a class="code" href="classhttp_1_1_parser.html#a4e1bc3f15d31ca4bd6e63bf509d92714">contentLength</a> = 0;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classhttp_1_1_parser.html#a1898296511bbab14c3635445de370ca6">content</a> != <span class="keyword">nullptr</span>) {</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <span class="keyword">delete</span>[] <a class="code" href="classhttp_1_1_parser.html#a1898296511bbab14c3635445de370ca6">content</a>;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <a class="code" href="classhttp_1_1_parser.html#a1898296511bbab14c3635445de370ca6">content</a> = <span class="keyword">nullptr</span>;</div>
@@ -886,7 +898,8 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1_parser_a1f2cb6f31093e582dae0c723e411b8dc_icgraph.svg" width="522" height="150"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1_parser_a1f2cb6f31093e582dae0c723e411b8dc_icgraph.svg" width="522" height="150"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
@@ -955,7 +968,8 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1_parser_aa062ab2857aea892676cac516b520a52_icgraph.svg" width="1020" height="82"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1_parser_aa062ab2857aea892676cac516b520a52_icgraph.svg" width="1020" height="82"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
@@ -1070,8 +1084,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a450b7a410bc0eecbf3a8d7448e72f47d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a450b7a410bc0eecbf3a8d7448e72f47d">&#9670;&nbsp;</a></span>contentLength</h2>
+<a id="a4e1bc3f15d31ca4bd6e63bf509d92714"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e1bc3f15d31ca4bd6e63bf509d92714">&#9670;&nbsp;</a></span>contentLength</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1080,7 +1094,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">size_t http::Parser::contentLength = 0</td>
+          <td class="memname">std::size_t http::Parser::contentLength = 0</td>
         </tr>
       </table>
   </td>
@@ -1096,8 +1110,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a7f2ba24cfe459c9c5cb948d8468b3bd3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f2ba24cfe459c9c5cb948d8468b3bd3">&#9670;&nbsp;</a></span>contentRead</h2>
+<a id="a4a4c585c8396e1a27960ff9a5b402d8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a4c585c8396e1a27960ff9a5b402d8f">&#9670;&nbsp;</a></span>contentRead</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1106,7 +1120,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">size_t http::Parser::contentRead = 0</td>
+          <td class="memname">std::size_t http::Parser::contentRead = 0</td>
         </tr>
       </table>
   </td>
@@ -1279,27 +1293,27 @@ Here is the caller graph for this function:</div>
 <div class="ttc" id="anamespacehttputils_html_aaa1e55d83548ea4ebf224d695f73c874"><div class="ttname"><a href="namespacehttputils.html#aaa1e55d83548ea4ebf224d695f73c874">httputils::str_trimm</a></div><div class="ttdeci">std::string &amp; str_trimm(std::string &amp;text)</div><div class="ttdef"><b>Definition:</b> <a href="http__utils_8cpp_source.html#l00061">http_utils.cpp:61</a></div></div>
 <div class="ttc" id="anamespacehttputils_html_a4dd60a8e2472042c70e00dec22ebf927"><div class="ttname"><a href="namespacehttputils.html#a4dd60a8e2472042c70e00dec22ebf927">httputils::to_lower</a></div><div class="ttdeci">std::string::iterator to_lower(std::string &amp;string)</div><div class="ttdef"><b>Definition:</b> <a href="http__utils_8cpp_source.html#l00145">http_utils.cpp:145</a></div></div>
 <div class="ttc" id="aclasshttp_1_1_parser_html_ac7ac73a6a2d20c0e02161aa8e300b72c"><div class="ttname"><a href="classhttp_1_1_parser.html#ac7ac73a6a2d20c0e02161aa8e300b72c">http::Parser::headers</a></div><div class="ttdeci">std::map&lt; std::string, std::string &gt; headers</div><div class="ttdef"><b>Definition:</b> <a href="_parser_8h_source.html#l00072">Parser.h:72</a></div></div>
-<div class="ttc" id="aclasshttp_1_1_parser_html_a026d4c8a1763a8b9cad55f6f50d12729"><div class="ttname"><a href="classhttp_1_1_parser.html#a026d4c8a1763a8b9cad55f6f50d12729">http::Parser::readHeaderLine</a></div><div class="ttdeci">size_t readHeaderLine(const char *buf, size_t count)</div><div class="ttdef"><b>Definition:</b> <a href="_parser_8cpp_source.html#l00088">Parser.cpp:88</a></div></div>
+<div class="ttc" id="aclasshttp_1_1_parser_html_a4e1bc3f15d31ca4bd6e63bf509d92714"><div class="ttname"><a href="classhttp_1_1_parser.html#a4e1bc3f15d31ca4bd6e63bf509d92714">http::Parser::contentLength</a></div><div class="ttdeci">std::size_t contentLength</div><div class="ttdef"><b>Definition:</b> <a href="_parser_8h_source.html#l00071">Parser.h:71</a></div></div>
+<div class="ttc" id="aclasshttp_1_1_parser_html_a3ede8aca58ed7333918294de225e66a8"><div class="ttname"><a href="classhttp_1_1_parser.html#a3ede8aca58ed7333918294de225e66a8">http::Parser::readContent</a></div><div class="ttdeci">std::size_t readContent(const char *buf, std::size_t count)</div><div class="ttdef"><b>Definition:</b> <a href="_parser_8cpp_source.html#l00160">Parser.cpp:160</a></div></div>
+<div class="ttc" id="aclasshttp_1_1_parser_html_abbc4ac4b5573e34e8636f60ca9840b39"><div class="ttname"><a href="classhttp_1_1_parser.html#abbc4ac4b5573e34e8636f60ca9840b39">http::Parser::parseContent</a></div><div class="ttdeci">virtual enum ParserState parseContent(char *content, std::size_t size)=0</div></div>
 <div class="ttc" id="aclasshttp_1_1_parser_html_afa2d48828a1e14d3d42c1c8c81f2ab29"><div class="ttname"><a href="classhttp_1_1_parser.html#afa2d48828a1e14d3d42c1c8c81f2ab29">http::Parser::HTTPCompliance</a></div><div class="ttdeci">HTTPCompliance</div><div class="ttdef"><b>Definition:</b> <a href="_parser_8h_source.html#l00035">Parser.h:35</a></div></div>
 <div class="ttc" id="aclasshttp_1_1_parser_html_ab58d2b97db1c5bad0e2abfdba95514d2a7ad4905b4543ab4a1637dd23c50e36ce"><div class="ttname"><a href="classhttp_1_1_parser.html#ab58d2b97db1c5bad0e2abfdba95514d2a7ad4905b4543ab4a1637dd23c50e36ce">http::Parser::ParserState::HEADER</a></div><div class="ttdeci">@ HEADER</div></div>
 <div class="ttc" id="aclasshttp_1_1_parser_html_a1898296511bbab14c3635445de370ca6"><div class="ttname"><a href="classhttp_1_1_parser.html#a1898296511bbab14c3635445de370ca6">http::Parser::content</a></div><div class="ttdeci">char * content</div><div class="ttdef"><b>Definition:</b> <a href="_parser_8h_source.html#l00070">Parser.h:70</a></div></div>
 <div class="ttc" id="aclasshttp_1_1_parser_html_ab58d2b97db1c5bad0e2abfdba95514d2abb1ca97ec761fc37101737ba0aa2e7c5"><div class="ttname"><a href="classhttp_1_1_parser.html#ab58d2b97db1c5bad0e2abfdba95514d2abb1ca97ec761fc37101737ba0aa2e7c5">http::Parser::ParserState::ERROR</a></div><div class="ttdeci">@ ERROR</div></div>
-<div class="ttc" id="aclasshttp_1_1_parser_html_a0ac6f4f4a32f643f82774088a1a521e9"><div class="ttname"><a href="classhttp_1_1_parser.html#a0ac6f4f4a32f643f82774088a1a521e9">http::Parser::readStartLine</a></div><div class="ttdeci">size_t readStartLine(const char *buf, size_t count)</div><div class="ttdef"><b>Definition:</b> <a href="_parser_8cpp_source.html#l00069">Parser.cpp:69</a></div></div>
+<div class="ttc" id="aclasshttp_1_1_parser_html_a4a4c585c8396e1a27960ff9a5b402d8f"><div class="ttname"><a href="classhttp_1_1_parser.html#a4a4c585c8396e1a27960ff9a5b402d8f">http::Parser::contentRead</a></div><div class="ttdeci">std::size_t contentRead</div><div class="ttdef"><b>Definition:</b> <a href="_parser_8h_source.html#l00085">Parser.h:85</a></div></div>
+<div class="ttc" id="aclasshttp_1_1_parser_html_a1fcb268c550e7013116e6ff5d6fec549"><div class="ttname"><a href="classhttp_1_1_parser.html#a1fcb268c550e7013116e6ff5d6fec549">http::Parser::readStartLine</a></div><div class="ttdeci">std::size_t readStartLine(const char *buf, std::size_t count)</div><div class="ttdef"><b>Definition:</b> <a href="_parser_8cpp_source.html#l00069">Parser.cpp:69</a></div></div>
+<div class="ttc" id="aclasshttp_1_1_parser_html_a968f187e1881657460ac3d291d262eff"><div class="ttname"><a href="classhttp_1_1_parser.html#a968f187e1881657460ac3d291d262eff">http::Parser::readHeaderLine</a></div><div class="ttdeci">std::size_t readHeaderLine(const char *buf, std::size_t count)</div><div class="ttdef"><b>Definition:</b> <a href="_parser_8cpp_source.html#l00088">Parser.cpp:88</a></div></div>
 <div class="ttc" id="aclasshttp_1_1_parser_html_a7c276db60d5fc720d27d8a4b8a761f99"><div class="ttname"><a href="classhttp_1_1_parser.html#a7c276db60d5fc720d27d8a4b8a761f99">http::Parser::parseHeader</a></div><div class="ttdeci">virtual enum ParserState parseHeader()=0</div></div>
 <div class="ttc" id="aclasshttp_1_1_parser_html_a089f501d309ffbcfb527e4bee38d90ea"><div class="ttname"><a href="classhttp_1_1_parser.html#a089f501d309ffbcfb527e4bee38d90ea">http::Parser::begin</a></div><div class="ttdeci">virtual void begin()=0</div></div>
 <div class="ttc" id="aclasshttp_1_1_parser_html_ad5613d8ddc598712a4eeb85f0d860bf9"><div class="ttname"><a href="classhttp_1_1_parser.html#ad5613d8ddc598712a4eeb85f0d860bf9">http::Parser::parserState</a></div><div class="ttdeci">enum http::Parser::ParserState parserState</div></div>
-<div class="ttc" id="aclasshttp_1_1_parser_html_a450b7a410bc0eecbf3a8d7448e72f47d"><div class="ttname"><a href="classhttp_1_1_parser.html#a450b7a410bc0eecbf3a8d7448e72f47d">http::Parser::contentLength</a></div><div class="ttdeci">size_t contentLength</div><div class="ttdef"><b>Definition:</b> <a href="_parser_8h_source.html#l00071">Parser.h:71</a></div></div>
 <div class="ttc" id="aclasshttp_1_1_parser_html_ab58d2b97db1c5bad0e2abfdba95514d2a786329b34bbe53ab40a54a19cd597f2d"><div class="ttname"><a href="classhttp_1_1_parser.html#ab58d2b97db1c5bad0e2abfdba95514d2a786329b34bbe53ab40a54a19cd597f2d">http::Parser::ParserState::BODY</a></div><div class="ttdeci">@ BODY</div></div>
 <div class="ttc" id="aclasshttp_1_1_parser_html_afa2d48828a1e14d3d42c1c8c81f2ab29a9faec2eb39f01265737eee2a7d50118f"><div class="ttname"><a href="classhttp_1_1_parser.html#afa2d48828a1e14d3d42c1c8c81f2ab29a9faec2eb39f01265737eee2a7d50118f">http::Parser::HTTPCompliance::RFC7230</a></div><div class="ttdeci">@ RFC7230</div></div>
-<div class="ttc" id="aclasshttp_1_1_parser_html_a43c36a04607c20120a94d5a3ea5de711"><div class="ttname"><a href="classhttp_1_1_parser.html#a43c36a04607c20120a94d5a3ea5de711">http::Parser::parseContent</a></div><div class="ttdeci">virtual enum ParserState parseContent(char *content, size_t size)=0</div></div>
 <div class="ttc" id="aclasshttp_1_1_parser_html_ab58d2b97db1c5bad0e2abfdba95514d2a19aad9f2fe3ce0023298ab83f7e75775"><div class="ttname"><a href="classhttp_1_1_parser.html#ab58d2b97db1c5bad0e2abfdba95514d2a19aad9f2fe3ce0023298ab83f7e75775">http::Parser::ParserState::BEGIN</a></div><div class="ttdeci">@ BEGIN</div></div>
 <div class="ttc" id="aclasshttp_1_1_parser_html_a63d5169b65097fc2be4cfb66f1b5eea4"><div class="ttname"><a href="classhttp_1_1_parser.html#a63d5169b65097fc2be4cfb66f1b5eea4">http::Parser::EOL</a></div><div class="ttdeci">bool EOL</div><div class="ttdef"><b>Definition:</b> <a href="_parser_8h_source.html#l00081">Parser.h:81</a></div></div>
 <div class="ttc" id="aclasshttp_1_1_parser_html_aa062ab2857aea892676cac516b520a52"><div class="ttname"><a href="classhttp_1_1_parser.html#aa062ab2857aea892676cac516b520a52">http::Parser::splitHeaderLine</a></div><div class="ttdeci">void splitHeaderLine(const std::string &amp;line)</div><div class="ttdef"><b>Definition:</b> <a href="_parser_8cpp_source.html#l00132">Parser.cpp:132</a></div></div>
-<div class="ttc" id="aclasshttp_1_1_parser_html_af007e62fe88b4f65e5bbbd9e356059a5"><div class="ttname"><a href="classhttp_1_1_parser.html#af007e62fe88b4f65e5bbbd9e356059a5">http::Parser::readContent</a></div><div class="ttdeci">size_t readContent(const char *buf, size_t count)</div><div class="ttdef"><b>Definition:</b> <a href="_parser_8cpp_source.html#l00160">Parser.cpp:160</a></div></div>
 <div class="ttc" id="aclasshttp_1_1_parser_html_ace4562d0ef6c64bd7d2d4ccf5b61fd2c"><div class="ttname"><a href="classhttp_1_1_parser.html#ace4562d0ef6c64bd7d2d4ccf5b61fd2c">http::Parser::parseStartLine</a></div><div class="ttdeci">virtual enum ParserState parseStartLine(const std::string &amp;line)=0</div></div>
 <div class="ttc" id="aclasshttp_1_1_parser_html_adf70f6b3a137f1622da23995bc2cd915"><div class="ttname"><a href="classhttp_1_1_parser.html#adf70f6b3a137f1622da23995bc2cd915">http::Parser::parsingError</a></div><div class="ttdeci">virtual enum ParserState parsingError(int code, const std::string &amp;reason)=0</div></div>
 <div class="ttc" id="aclasshttp_1_1_parser_html_ab58d2b97db1c5bad0e2abfdba95514d2a75c6b2428da2036422b35ca9b1f1f8c4"><div class="ttname"><a href="classhttp_1_1_parser.html#ab58d2b97db1c5bad0e2abfdba95514d2a75c6b2428da2036422b35ca9b1f1f8c4">http::Parser::ParserState::FIRSTLINE</a></div><div class="ttdeci">@ FIRSTLINE</div></div>
-<div class="ttc" id="aclasshttp_1_1_parser_html_a7f2ba24cfe459c9c5cb948d8468b3bd3"><div class="ttname"><a href="classhttp_1_1_parser.html#a7f2ba24cfe459c9c5cb948d8468b3bd3">http::Parser::contentRead</a></div><div class="ttdeci">size_t contentRead</div><div class="ttdef"><b>Definition:</b> <a href="_parser_8h_source.html#l00085">Parser.h:85</a></div></div>
 <div class="ttc" id="anamespacehttputils_html_a9e46abe5c20380871f3884c9176a424d"><div class="ttname"><a href="namespacehttputils.html#a9e46abe5c20380871f3884c9176a424d">httputils::str_split</a></div><div class="ttdeci">std::pair&lt; std::string, std::string &gt; str_split(const std::string &amp;base, char c_middle)</div><div class="ttdef"><b>Definition:</b> <a href="http__utils_8cpp_source.html#l00068">http_utils.cpp:68</a></div></div>
 <div class="ttc" id="aclasshttp_1_1_parser_html_a2e1c8ce9216203e3823b1e62f422f858"><div class="ttname"><a href="classhttp_1_1_parser.html#a2e1c8ce9216203e3823b1e62f422f858">http::Parser::line</a></div><div class="ttdeci">std::string line</div><div class="ttdef"><b>Definition:</b> <a href="_parser_8h_source.html#l00084">Parser.h:84</a></div></div>
 <!-- start footer part -->

@@ -17,6 +17,5 @@ var searchData=
   ['httpversion_196',['httpVersion',['../classhttp_1_1_request.html#ad9e34b12852917cd51a168124cc39fb5',1,'http::Request::httpVersion()'],['../classhttp_1_1_request_parser.html#a5f82bf5a4fb1418dc1a5286dd67de4bf',1,'http::RequestParser::httpVersion()'],['../classhttp_1_1_response_parser.html#a38d8efd2196260753121732b164e9997',1,'http::ResponseParser::httpVersion()'],['../classhttp_1_1_server_response.html#a3a521b530fb09921e0a1cf303175dbbb',1,'http::ServerResponse::httpVersion()']]],
   ['httpversionregex_197',['httpVersionRegex',['../classhttp_1_1_parser.html#ac31c39b700ade3000efd3dbba81a20a7',1,'http::Parser']]],
   ['legacy_198',['legacy',['../namespacehttp_1_1legacy.html',1,'http']]],
-  ['servercontext_199',['ServerContext',['../classexpress_1_1_request.html#a1d8b1915a6c00113180a91b01d19e44a',1,'express::Request']]],
-  ['tls_200',['tls',['../namespacehttp_1_1tls.html',1,'http']]]
+  ['tls_199',['tls',['../namespacehttp_1_1tls.html',1,'http']]]
 ];

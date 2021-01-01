@@ -105,10 +105,10 @@ Collaboration diagram for http::ServerContextBase:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a6044d09b7b74e5065b3d26f88e3bb2b7"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_server_context_base.html#a6044d09b7b74e5065b3d26f88e3bb2b7">~ServerContextBase</a> ()=default</td></tr>
 <tr class="separator:a6044d09b7b74e5065b3d26f88e3bb2b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5cc8f6f88841389ef6dcae19881efa13"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_server_context_base.html#a5cc8f6f88841389ef6dcae19881efa13">receiveRequestData</a> (const char *junk, size_t junkLen)=0</td></tr>
-<tr class="separator:a5cc8f6f88841389ef6dcae19881efa13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90944df90ce9e7962b18dbc6408a1724"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_server_context_base.html#a90944df90ce9e7962b18dbc6408a1724">sendResponseData</a> (const char *buf, size_t len)=0</td></tr>
-<tr class="separator:a90944df90ce9e7962b18dbc6408a1724"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af856ddf118849fc8f45bc42b49ccc43f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_server_context_base.html#af856ddf118849fc8f45bc42b49ccc43f">receiveRequestData</a> (const char *junk, std::size_t junkLen)=0</td></tr>
+<tr class="separator:af856ddf118849fc8f45bc42b49ccc43f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79644b1d7ead2a15fe9815a180e36d82"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_server_context_base.html#a79644b1d7ead2a15fe9815a180e36d82">sendResponseData</a> (const char *buf, std::size_t len)=0</td></tr>
+<tr class="separator:a79644b1d7ead2a15fe9815a180e36d82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5643afc5f2a6dd754b8504c585bfe32a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_server_context_base.html#a5643afc5f2a6dd754b8504c585bfe32a">responseCompleted</a> ()=0</td></tr>
 <tr class="separator:a5643afc5f2a6dd754b8504c585bfe32a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac12ac4a9b781ac3b3bbbf9f171a4638"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_server_context_base.html#aac12ac4a9b781ac3b3bbbf9f171a4638">terminateConnection</a> ()=0</td></tr>
@@ -204,8 +204,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a5cc8f6f88841389ef6dcae19881efa13"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5cc8f6f88841389ef6dcae19881efa13">&#9670;&nbsp;</a></span>receiveRequestData()</h2>
+<a id="af856ddf118849fc8f45bc42b49ccc43f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af856ddf118849fc8f45bc42b49ccc43f">&#9670;&nbsp;</a></span>receiveRequestData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -222,7 +222,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
+          <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>junkLen</em>&#160;</td>
         </tr>
         <tr>
@@ -238,7 +238,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classhttp_1_1_server_context.html#a3722d6b1d7d28e039a8e5de10f37f111">http::ServerContext&lt; RequestT, ResponseT &gt;</a>.</p>
+<p>Implemented in <a class="el" href="classhttp_1_1_server_context.html#a3593b46cdbd2ec91f4a389bb4cf33e92">http::ServerContext&lt; RequestT, ResponseT &gt;</a>.</p>
 
 </div>
 </div>
@@ -271,13 +271,14 @@ Public Member Functions</h2></td></tr>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1_server_context_base_a5643afc5f2a6dd754b8504c585bfe32a_icgraph.svg" width="1207" height="326"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1_server_context_base_a5643afc5f2a6dd754b8504c585bfe32a_icgraph.svg" width="1207" height="326"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
 </div>
-<a id="a90944df90ce9e7962b18dbc6408a1724"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a90944df90ce9e7962b18dbc6408a1724">&#9670;&nbsp;</a></span>sendResponseData()</h2>
+<a id="a79644b1d7ead2a15fe9815a180e36d82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79644b1d7ead2a15fe9815a180e36d82">&#9670;&nbsp;</a></span>sendResponseData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -294,7 +295,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
+          <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>len</em>&#160;</td>
         </tr>
         <tr>
@@ -310,13 +311,14 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classhttp_1_1_server_context.html#ab7385f5ee5977d452007d656d55f756f">http::ServerContext&lt; RequestT, ResponseT &gt;</a>.</p>
+<p>Implemented in <a class="el" href="classhttp_1_1_server_context.html#a047ddd114728c05155832c7a1d35681b">http::ServerContext&lt; RequestT, ResponseT &gt;</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="http_2_response_8cpp_source.html#l00039">http::Response::enqueue()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1_server_context_base_a90944df90ce9e7962b18dbc6408a1724_icgraph.svg" width="1207" height="326"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1_server_context_base_a79644b1d7ead2a15fe9815a180e36d82_icgraph.svg" width="1207" height="326"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
@@ -350,7 +352,8 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1_server_context_base_aac12ac4a9b781ac3b3bbbf9f171a4638_icgraph.svg" width="1210" height="396"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1_server_context_base_aac12ac4a9b781ac3b3bbbf9f171a4638_icgraph.svg" width="1210" height="396"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>

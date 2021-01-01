@@ -142,77 +142,73 @@ $(document).ready(function(){initNavTree('http_2_request_8h_source.html',''); in
 <div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classhttp_1_1_request.html#a24c4e4ca0c74c1752a76960193b544aa">   55</a></span>&#160;        <a class="code" href="_connection_state_8h.html#acdd867d72142510ce53521a63a062f9b">ConnectionState</a> <a class="code" href="classhttp_1_1_request.html#a24c4e4ca0c74c1752a76960193b544aa">connectionState</a> = <a class="code" href="_connection_state_8h.html#acdd867d72142510ce53521a63a062f9ba79935518a3889663d8688b6b01fff051">ConnectionState::Default</a>;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classhttp_1_1_request.html#a490c225eb56b7677f83e416c8a95fc69">   58</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classhttp_1_1_request.html#a490c225eb56b7677f83e416c8a95fc69">extend</a>() {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        }</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classhttp_1_1_request.html#a7047a3f15c3618a5f69bf2ef6cb619e4">reset</a>();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="classhttp_1_1_request.html#a3c8d9f58a3c19c58c8524b196f44c689">   63</a></span>&#160;        <span class="keyword">const</span> std::map&lt;std::string, std::string&gt;* <a class="code" href="classhttp_1_1_request.html#a3c8d9f58a3c19c58c8524b196f44c689">queries</a> = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classhttp_1_1_request.html#afaa160d26e3bc222692241eabbc43f44">   64</a></span>&#160;        <span class="keyword">const</span> std::map&lt;std::string, std::string&gt;* <a class="code" href="classhttp_1_1_request.html#afaa160d26e3bc222692241eabbc43f44">headers</a> = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classhttp_1_1_request.html#a94ec8e5ede40b276cc687d42097d9976">   65</a></span>&#160;        <span class="keyword">const</span> std::map&lt;std::string, std::string&gt;* <a class="code" href="classhttp_1_1_request.html#a94ec8e5ede40b276cc687d42097d9976">cookies</a> = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classhttp_1_1_request.html#aae3aee3b863d7f602f3252f9ece042fb">   67</a></span>&#160;        std::string <a class="code" href="classhttp_1_1_request.html#aae3aee3b863d7f602f3252f9ece042fb">nullstr</a> = <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Request, <span class="keyword">typename</span> Response&gt;</div>
-<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="classhttp_1_1_request.html#a58803afb783dacd8a75fdc9f6bcb0a3b">   70</a></span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classhttp_1_1_server_context.html">ServerContext</a>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    };</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;} <span class="comment">// namespace http</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif // REQUEST_H</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">/* https://de.wikipedia.org/wiki/Liste_der_HTTP-Headerfelder</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment">Valid request header fields</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">===========================</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">X-                              https://tools.ietf.org/html/rfc6648</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">Accept</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment">Accept-Charset</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment">Accept-Encoding</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment">Accept-Language</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment">Authorization</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment">Cache-Control</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment">Connection</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">Cookie</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment">Content-Length</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment">Content-MD5</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment">Content-Type</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment">Date</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment">Expect</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment">Forwarded</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment">From</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment">Host</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment">If-Match</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment">If-Modified-Since</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment">If-None-Match</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment">If-Range</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment">If-Unmodified-Since</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="comment">Max-Forwards</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="comment">Pragma</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="comment">Proxy-Authorization</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="comment">Range</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="comment">Referer</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="comment">TE</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment">Transfer-Encoding</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment">Upgrade</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment">User-Agent</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="comment">Via</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="comment">Warning</span></div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment">Non standard request header fields</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="comment">==================================</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="comment">X-Requested-With</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="comment">X-Do-Not-Track</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="comment">DNT</span></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="comment">X-Forwarded-For</span></div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="comment">X-Forwarded-Proto</span></div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classhttp_1_1_request.html#a7047a3f15c3618a5f69bf2ef6cb619e4">reset</a>();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="classhttp_1_1_request.html#a3c8d9f58a3c19c58c8524b196f44c689">   60</a></span>&#160;        <span class="keyword">const</span> std::map&lt;std::string, std::string&gt;* <a class="code" href="classhttp_1_1_request.html#a3c8d9f58a3c19c58c8524b196f44c689">queries</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classhttp_1_1_request.html#afaa160d26e3bc222692241eabbc43f44">   61</a></span>&#160;        <span class="keyword">const</span> std::map&lt;std::string, std::string&gt;* <a class="code" href="classhttp_1_1_request.html#afaa160d26e3bc222692241eabbc43f44">headers</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classhttp_1_1_request.html#a94ec8e5ede40b276cc687d42097d9976">   62</a></span>&#160;        <span class="keyword">const</span> std::map&lt;std::string, std::string&gt;* <a class="code" href="classhttp_1_1_request.html#a94ec8e5ede40b276cc687d42097d9976">cookies</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classhttp_1_1_request.html#aae3aee3b863d7f602f3252f9ece042fb">   64</a></span>&#160;        std::string <a class="code" href="classhttp_1_1_request.html#aae3aee3b863d7f602f3252f9ece042fb">nullstr</a> = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Request, <span class="keyword">typename</span> Response&gt;</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classhttp_1_1_request.html#a58803afb783dacd8a75fdc9f6bcb0a3b">   67</a></span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classhttp_1_1_server_context.html">ServerContext</a>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    };</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;} <span class="comment">// namespace http</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#endif // REQUEST_H</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">/* https://de.wikipedia.org/wiki/Liste_der_HTTP-Headerfelder</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">Valid request header fields</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">===========================</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">X-                              https://tools.ietf.org/html/rfc6648</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment">Accept</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">Accept-Charset</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">Accept-Encoding</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">Accept-Language</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment">Authorization</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment">Cache-Control</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment">Connection</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment">Cookie</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment">Content-Length</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment">Content-MD5</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">Content-Type</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment">Date</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment">Expect</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment">Forwarded</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment">From</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment">Host</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment">If-Match</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment">If-Modified-Since</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment">If-None-Match</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment">If-Range</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment">If-Unmodified-Since</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment">Max-Forwards</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment">Pragma</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment">Proxy-Authorization</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="comment">Range</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="comment">Referer</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="comment">TE</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="comment">Transfer-Encoding</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="comment">Upgrade</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="comment">User-Agent</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment">Via</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment">Warning</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="comment">Non standard request header fields</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="comment">==================================</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="comment">X-Requested-With</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment">X-Do-Not-Track</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="comment">DNT</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="comment">X-Forwarded-For</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="comment">X-Forwarded-Proto</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="comment">*/</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclasshttp_1_1_request_html_a7fbdafc5732496bafcfa02a9c5e803b8"><div class="ttname"><a href="classhttp_1_1_request.html#a7fbdafc5732496bafcfa02a9c5e803b8">http::Request::Request</a></div><div class="ttdeci">Request()=default</div></div>
 <div class="ttc" id="aclasshttp_1_1_request_html_a4c2c0b9e89103c30e9b974c9288db3e5"><div class="ttname"><a href="classhttp_1_1_request.html#a4c2c0b9e89103c30e9b974c9288db3e5">http::Request::~Request</a></div><div class="ttdeci">virtual ~Request()=default</div></div>
 <div class="ttc" id="a_connection_state_8h_html_acdd867d72142510ce53521a63a062f9b"><div class="ttname"><a href="_connection_state_8h.html#acdd867d72142510ce53521a63a062f9b">ConnectionState</a></div><div class="ttdeci">ConnectionState</div><div class="ttdef"><b>Definition:</b> <a href="_connection_state_8h_source.html#l00022">ConnectionState.h:22</a></div></div>
-<div class="ttc" id="aclasshttp_1_1_request_html_a490c225eb56b7677f83e416c8a95fc69"><div class="ttname"><a href="classhttp_1_1_request.html#a490c225eb56b7677f83e416c8a95fc69">http::Request::extend</a></div><div class="ttdeci">virtual void extend()</div><div class="ttdef"><b>Definition:</b> <a href="http_2_request_8h_source.html#l00058">Request.h:58</a></div></div>
 <div class="ttc" id="aclasshttp_1_1_request_html_a29958b8b0bb172870c2a260fafaa1c2c"><div class="ttname"><a href="classhttp_1_1_request.html#a29958b8b0bb172870c2a260fafaa1c2c">http::Request::httpMajor</a></div><div class="ttdeci">int httpMajor</div><div class="ttdef"><b>Definition:</b> <a href="http_2_request_8h_source.html#l00050">Request.h:50</a></div></div>
 <div class="ttc" id="aclasshttp_1_1_request_html_a5ad9b6aadda6b897a0bdc69490f609bf"><div class="ttname"><a href="classhttp_1_1_request.html#a5ad9b6aadda6b897a0bdc69490f609bf">http::Request::bodyLength</a></div><div class="ttdeci">int bodyLength() const</div><div class="ttdef"><b>Definition:</b> <a href="http_2_request_8cpp_source.html#l00058">Request.cpp:58</a></div></div>
 <div class="ttc" id="aclasshttp_1_1_request_html_a7047a3f15c3618a5f69bf2ef6cb619e4"><div class="ttname"><a href="classhttp_1_1_request.html#a7047a3f15c3618a5f69bf2ef6cb619e4">http::Request::reset</a></div><div class="ttdeci">virtual void reset()</div><div class="ttdef"><b>Definition:</b> <a href="http_2_request_8cpp_source.html#l00072">Request.cpp:72</a></div></div>
@@ -221,7 +217,7 @@ $(document).ready(function(){initNavTree('http_2_request_8h_source.html',''); in
 <div class="ttc" id="a_attribute_injector_8h_html"><div class="ttname"><a href="_attribute_injector_8h.html">AttributeInjector.h</a></div></div>
 <div class="ttc" id="aclassutils_1_1_multible_attribute_injector_html"><div class="ttname"><a href="classutils_1_1_multible_attribute_injector.html">utils::MultibleAttributeInjector</a></div><div class="ttdef"><b>Definition:</b> <a href="_attribute_injector_8h_source.html#l00131">AttributeInjector.h:131</a></div></div>
 <div class="ttc" id="aclasshttp_1_1_request_html_a6eb5eb79c5138cf245c8647ee39ca199"><div class="ttname"><a href="classhttp_1_1_request.html#a6eb5eb79c5138cf245c8647ee39ca199">http::Request::contentLength</a></div><div class="ttdeci">int contentLength</div><div class="ttdef"><b>Definition:</b> <a href="http_2_request_8h_source.html#l00053">Request.h:53</a></div></div>
-<div class="ttc" id="aclasshttp_1_1_request_html_a3c8d9f58a3c19c58c8524b196f44c689"><div class="ttname"><a href="classhttp_1_1_request.html#a3c8d9f58a3c19c58c8524b196f44c689">http::Request::queries</a></div><div class="ttdeci">const std::map&lt; std::string, std::string &gt; * queries</div><div class="ttdef"><b>Definition:</b> <a href="http_2_request_8h_source.html#l00063">Request.h:63</a></div></div>
+<div class="ttc" id="aclasshttp_1_1_request_html_a3c8d9f58a3c19c58c8524b196f44c689"><div class="ttname"><a href="classhttp_1_1_request.html#a3c8d9f58a3c19c58c8524b196f44c689">http::Request::queries</a></div><div class="ttdeci">const std::map&lt; std::string, std::string &gt; * queries</div><div class="ttdef"><b>Definition:</b> <a href="http_2_request_8h_source.html#l00060">Request.h:60</a></div></div>
 <div class="ttc" id="aclasshttp_1_1_request_html"><div class="ttname"><a href="classhttp_1_1_request.html">http::Request</a></div><div class="ttdef"><b>Definition:</b> <a href="http_2_request_8h_source.html#l00035">Request.h:35</a></div></div>
 <div class="ttc" id="aclasshttp_1_1_request_html_a0fbecf984056aca2a820b7663b811302"><div class="ttname"><a href="classhttp_1_1_request.html#a0fbecf984056aca2a820b7663b811302">http::Request::body</a></div><div class="ttdeci">char * body</div><div class="ttdef"><b>Definition:</b> <a href="http_2_request_8h_source.html#l00052">Request.h:52</a></div></div>
 <div class="ttc" id="aclasshttp_1_1_server_context_html"><div class="ttname"><a href="classhttp_1_1_server_context.html">http::ServerContext</a></div><div class="ttdef"><b>Definition:</b> <a href="_server_context_8h_source.html#l00052">ServerContext.h:52</a></div></div>
@@ -231,12 +227,12 @@ $(document).ready(function(){initNavTree('http_2_request_8h_source.html',''); in
 <div class="ttc" id="aclasshttp_1_1_request_html_a4a89f9e0633e738054b262be10f46306"><div class="ttname"><a href="classhttp_1_1_request.html#a4a89f9e0633e738054b262be10f46306">http::Request::httpMinor</a></div><div class="ttdeci">int httpMinor</div><div class="ttdef"><b>Definition:</b> <a href="http_2_request_8h_source.html#l00051">Request.h:51</a></div></div>
 <div class="ttc" id="aclasshttp_1_1_request_html_ad9e34b12852917cd51a168124cc39fb5"><div class="ttname"><a href="classhttp_1_1_request.html#ad9e34b12852917cd51a168124cc39fb5">http::Request::httpVersion</a></div><div class="ttdeci">std::string httpVersion</div><div class="ttdef"><b>Definition:</b> <a href="http_2_request_8h_source.html#l00049">Request.h:49</a></div></div>
 <div class="ttc" id="aclasshttp_1_1_request_html_a517a253faa56139a38c0c933d9a501e0"><div class="ttname"><a href="classhttp_1_1_request.html#a517a253faa56139a38c0c933d9a501e0">http::Request::header</a></div><div class="ttdeci">const std::string &amp; header(const std::string &amp;key, int i=0) const</div><div class="ttdef"><b>Definition:</b> <a href="http_2_request_8cpp_source.html#l00029">Request.cpp:29</a></div></div>
-<div class="ttc" id="aclasshttp_1_1_request_html_aae3aee3b863d7f602f3252f9ece042fb"><div class="ttname"><a href="classhttp_1_1_request.html#aae3aee3b863d7f602f3252f9ece042fb">http::Request::nullstr</a></div><div class="ttdeci">std::string nullstr</div><div class="ttdef"><b>Definition:</b> <a href="http_2_request_8h_source.html#l00067">Request.h:67</a></div></div>
+<div class="ttc" id="aclasshttp_1_1_request_html_aae3aee3b863d7f602f3252f9ece042fb"><div class="ttname"><a href="classhttp_1_1_request.html#aae3aee3b863d7f602f3252f9ece042fb">http::Request::nullstr</a></div><div class="ttdeci">std::string nullstr</div><div class="ttdef"><b>Definition:</b> <a href="http_2_request_8h_source.html#l00064">Request.h:64</a></div></div>
 <div class="ttc" id="a_connection_state_8h_html"><div class="ttname"><a href="_connection_state_8h.html">ConnectionState.h</a></div></div>
-<div class="ttc" id="aclasshttp_1_1_request_html_a94ec8e5ede40b276cc687d42097d9976"><div class="ttname"><a href="classhttp_1_1_request.html#a94ec8e5ede40b276cc687d42097d9976">http::Request::cookies</a></div><div class="ttdeci">const std::map&lt; std::string, std::string &gt; * cookies</div><div class="ttdef"><b>Definition:</b> <a href="http_2_request_8h_source.html#l00065">Request.h:65</a></div></div>
+<div class="ttc" id="aclasshttp_1_1_request_html_a94ec8e5ede40b276cc687d42097d9976"><div class="ttname"><a href="classhttp_1_1_request.html#a94ec8e5ede40b276cc687d42097d9976">http::Request::cookies</a></div><div class="ttdeci">const std::map&lt; std::string, std::string &gt; * cookies</div><div class="ttdef"><b>Definition:</b> <a href="http_2_request_8h_source.html#l00062">Request.h:62</a></div></div>
 <div class="ttc" id="aclasshttp_1_1_request_html_a24c4e4ca0c74c1752a76960193b544aa"><div class="ttname"><a href="classhttp_1_1_request.html#a24c4e4ca0c74c1752a76960193b544aa">http::Request::connectionState</a></div><div class="ttdeci">ConnectionState connectionState</div><div class="ttdef"><b>Definition:</b> <a href="http_2_request_8h_source.html#l00055">Request.h:55</a></div></div>
 <div class="ttc" id="aclasshttp_1_1_request_html_a3fd12a8aa6470588721a543292264fb8"><div class="ttname"><a href="classhttp_1_1_request.html#a3fd12a8aa6470588721a543292264fb8">http::Request::method</a></div><div class="ttdeci">std::string method</div><div class="ttdef"><b>Definition:</b> <a href="http_2_request_8h_source.html#l00047">Request.h:47</a></div></div>
-<div class="ttc" id="aclasshttp_1_1_request_html_afaa160d26e3bc222692241eabbc43f44"><div class="ttname"><a href="classhttp_1_1_request.html#afaa160d26e3bc222692241eabbc43f44">http::Request::headers</a></div><div class="ttdeci">const std::map&lt; std::string, std::string &gt; * headers</div><div class="ttdef"><b>Definition:</b> <a href="http_2_request_8h_source.html#l00064">Request.h:64</a></div></div>
+<div class="ttc" id="aclasshttp_1_1_request_html_afaa160d26e3bc222692241eabbc43f44"><div class="ttname"><a href="classhttp_1_1_request.html#afaa160d26e3bc222692241eabbc43f44">http::Request::headers</a></div><div class="ttdeci">const std::map&lt; std::string, std::string &gt; * headers</div><div class="ttdef"><b>Definition:</b> <a href="http_2_request_8h_source.html#l00061">Request.h:61</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

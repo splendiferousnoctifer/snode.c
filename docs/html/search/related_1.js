@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['servercontext_1445',['ServerContext',['../classexpress_1_1_request.html#a1d8b1915a6c00113180a91b01d19e44a',1,'express::Request']]]
+  ['jsonmiddleware_1441',['JsonMiddleware',['../classexpress_1_1middleware_1_1_json_middleware.html#aa21e61839acf47a03ac9aec271a7d5cb',1,'express::middleware::JsonMiddleware']]]
 ];

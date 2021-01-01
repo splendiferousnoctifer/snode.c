@@ -103,8 +103,8 @@ Collaboration diagram for net::socket::stream::legacy::SocketReader&lt; SocketT 
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:ad7ed4b3c1c8bb78dfb7f96d7c667278e"><td class="memItemLeft" align="right" valign="top">ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_reader.html#ad7ed4b3c1c8bb78dfb7f96d7c667278e">read</a> (char *junk, size_t junkLen) override</td></tr>
-<tr class="separator:ad7ed4b3c1c8bb78dfb7f96d7c667278e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcb15b397075b393c085cffcc348398b"><td class="memItemLeft" align="right" valign="top">ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_reader.html#adcb15b397075b393c085cffcc348398b">read</a> (char *junk, std::size_t junkLen) override</td></tr>
+<tr class="separator:adcb15b397075b393c085cffcc348398b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bca7c7203c1133ffb95d97a66cc5411"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_reader.html#a4bca7c7203c1133ffb95d97a66cc5411">getError</a> () override</td></tr>
 <tr class="separator:a4bca7c7203c1133ffb95d97a66cc5411"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -203,8 +203,8 @@ template&lt;typename SocketT &gt; </div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="ad7ed4b3c1c8bb78dfb7f96d7c667278e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad7ed4b3c1c8bb78dfb7f96d7c667278e">&#9670;&nbsp;</a></span>read()</h2>
+<a id="adcb15b397075b393c085cffcc348398b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcb15b397075b393c085cffcc348398b">&#9670;&nbsp;</a></span>read()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -223,7 +223,7 @@ template&lt;typename SocketT &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
+          <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>junkLen</em>&#160;</td>
         </tr>
         <tr>
@@ -239,10 +239,10 @@ template&lt;typename SocketT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#acdc832ddd01ce292850943500431eb98">net::socket::stream::SocketReader&lt; SocketT &gt;</a>.</p>
+<p>Implements <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#a796e5ff1a91d6343f778bf68ab039a7b">net::socket::stream::SocketReader&lt; SocketT &gt;</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="legacy_2_socket_reader_8h_source.html#l00039">39</a> of file <a class="el" href="legacy_2_socket_reader_8h_source.html">SocketReader.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                                                          {</div>
+<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                                                             {</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            return ::recv(this-&gt;getFd(), junk, junkLen, 0);</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        }</div>
 </div><!-- fragment -->
