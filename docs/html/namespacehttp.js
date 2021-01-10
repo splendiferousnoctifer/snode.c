@@ -11,8 +11,10 @@ var namespacehttp =
     [ "Response", "classhttp_1_1_response.html", "classhttp_1_1_response" ],
     [ "ResponseParser", "classhttp_1_1_response_parser.html", "classhttp_1_1_response_parser" ],
     [ "Server", "classhttp_1_1_server.html", "classhttp_1_1_server" ],
-    [ "ServerContext", "classhttp_1_1_server_context.html", "classhttp_1_1_server_context" ],
     [ "ServerContextBase", "classhttp_1_1_server_context_base.html", "classhttp_1_1_server_context_base" ],
+    [ "ServerContext", "classhttp_1_1_server_context.html", "classhttp_1_1_server_context" ],
     [ "ServerRequest", "classhttp_1_1_server_request.html", "classhttp_1_1_server_request" ],
-    [ "ServerResponse", "classhttp_1_1_server_response.html", "classhttp_1_1_server_response" ]
+    [ "ServerResponse", "classhttp_1_1_server_response.html", "classhttp_1_1_server_response" ],
+    [ "operator&", "namespacehttp.html#a511acb0fbf71f096e49f753620d9ba16", null ],
+    [ "operator|", "namespacehttp.html#a43cc5f17acaefbf5780305e24734ac46", null ]
 ];

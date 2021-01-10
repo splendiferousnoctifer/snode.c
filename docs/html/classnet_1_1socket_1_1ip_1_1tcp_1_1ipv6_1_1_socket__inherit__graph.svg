@@ -13,16 +13,13 @@
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title=" ">
-<polygon fill="#bfbfbf" stroke="black" points="27,-0.5 27,-101.5 125,-101.5 125,-0.5 27,-0.5"/>
-<text text-anchor="start" x="35" y="-89.5" font-family="Helvetica,sans-Serif" font-size="10.00">net::socket::ip::tcp</text>
-<text text-anchor="middle" x="76" y="-78.5" font-family="Helvetica,sans-Serif" font-size="10.00">::ipv6::Socket</text>
-<polyline fill="none" stroke="black" points="27,-71.5 125,-71.5 "/>
-<text text-anchor="middle" x="76" y="-59.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="black" points="27,-52.5 125,-52.5 "/>
-<text text-anchor="start" x="35" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Socket()</text>
-<text text-anchor="start" x="35" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Socket()</text>
-<text text-anchor="start" x="35" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator=()</text>
-<text text-anchor="start" x="35" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ open()</text>
+<polygon fill="#bfbfbf" stroke="black" points="27,-0.5 27,-68.5 125,-68.5 125,-0.5 27,-0.5"/>
+<text text-anchor="start" x="35" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">net::socket::ip::tcp</text>
+<text text-anchor="middle" x="76" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">::ipv6::Socket</text>
+<polyline fill="none" stroke="black" points="27,-38.5 125,-38.5 "/>
+<text text-anchor="middle" x="76" y="-26.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="black" points="27,-19.5 125,-19.5 "/>
+<text text-anchor="start" x="35" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00"># create()</text>
 </a>
 </g>
 </g>
@@ -30,35 +27,36 @@
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:href="classnet_1_1socket_1_1_socket.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="0,-139.5 0,-295.5 152,-295.5 152,-139.5 0,-139.5"/>
-<text text-anchor="start" x="8" y="-283.5" font-family="Helvetica,sans-Serif" font-size="10.00">net::socket::Socket</text>
-<text text-anchor="middle" x="76" y="-272.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; address::ipv6::InetAddress &gt;</text>
-<polyline fill="none" stroke="black" points="0,-265.5 152,-265.5 "/>
-<text text-anchor="start" x="8" y="-253.5" font-family="Helvetica,sans-Serif" font-size="10.00"># bindAddress</text>
-<polyline fill="none" stroke="black" points="0,-246.5 152,-246.5 "/>
-<text text-anchor="start" x="8" y="-234.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ shutdown()</text>
-<text text-anchor="start" x="8" y="-223.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Socket()</text>
-<text text-anchor="start" x="8" y="-212.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Socket()</text>
-<text text-anchor="start" x="8" y="-201.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator=()</text>
-<text text-anchor="start" x="8" y="-190.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~Socket()</text>
-<text text-anchor="start" x="8" y="-179.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ open()</text>
-<text text-anchor="start" x="8" y="-168.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ bind()</text>
-<text text-anchor="start" x="8" y="-157.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getBindAddress()</text>
-<text text-anchor="start" x="8" y="-146.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setBindAddress()</text>
+<polygon fill="white" stroke="black" points="0,-106.5 0,-273.5 152,-273.5 152,-106.5 0,-106.5"/>
+<text text-anchor="start" x="8" y="-261.5" font-family="Helvetica,sans-Serif" font-size="10.00">net::socket::Socket</text>
+<text text-anchor="middle" x="76" y="-250.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; address::ipv6::InetAddress &gt;</text>
+<polyline fill="none" stroke="black" points="0,-243.5 152,-243.5 "/>
+<text text-anchor="start" x="8" y="-231.5" font-family="Helvetica,sans-Serif" font-size="10.00"># bindAddress</text>
+<polyline fill="none" stroke="black" points="0,-224.5 152,-224.5 "/>
+<text text-anchor="start" x="8" y="-212.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ shutdown()</text>
+<text text-anchor="start" x="8" y="-201.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Socket()</text>
+<text text-anchor="start" x="8" y="-190.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Socket()</text>
+<text text-anchor="start" x="8" y="-179.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator=()</text>
+<text text-anchor="start" x="8" y="-168.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~Socket()</text>
+<text text-anchor="start" x="8" y="-157.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ open()</text>
+<text text-anchor="start" x="8" y="-146.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ bind()</text>
+<text text-anchor="start" x="8" y="-135.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getBindAddress()</text>
+<text text-anchor="start" x="8" y="-124.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setBindAddress()</text>
+<text text-anchor="start" x="8" y="-113.5" font-family="Helvetica,sans-Serif" font-size="10.00"># create()</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node1 -->
 <g id="edge1" class="edge">
 <title>Node2&#45;&gt;Node1</title>
-<path fill="none" stroke="midnightblue" d="M76,-128.96C76,-119.66 76,-110.46 76,-101.82"/>
-<polygon fill="none" stroke="midnightblue" points="72.5,-129.07 76,-139.07 79.5,-129.07 72.5,-129.07"/>
+<path fill="none" stroke="midnightblue" d="M76,-96.17C76,-86.44 76,-77.07 76,-68.72"/>
+<polygon fill="none" stroke="midnightblue" points="72.5,-96.41 76,-106.41 79.5,-96.41 72.5,-96.41"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
 <g id="a_node3"><a xlink:href="classnet_1_1_descriptor.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="30.5,-537.5 30.5,-671.5 113.5,-671.5 113.5,-537.5 30.5,-537.5"/>
+<polygon fill="white" stroke="black" points="30.5,-526.5 30.5,-671.5 113.5,-671.5 113.5,-526.5 30.5,-526.5"/>
 <text text-anchor="middle" x="72" y="-659.5" font-family="Helvetica,sans-Serif" font-size="10.00">net::Descriptor</text>
 <polyline fill="none" stroke="black" points="30.5,-652.5 113.5,-652.5 "/>
 <text text-anchor="start" x="38.5" y="-640.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ none</text>
@@ -67,53 +65,55 @@
 <text text-anchor="start" x="38.5" y="-610.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Descriptor()</text>
 <text text-anchor="start" x="38.5" y="-599.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator=()</text>
 <text text-anchor="start" x="38.5" y="-588.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~Descriptor()</text>
-<text text-anchor="start" x="38.5" y="-577.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ open()</text>
+<text text-anchor="start" x="38.5" y="-577.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ attach()</text>
 <text text-anchor="start" x="38.5" y="-566.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getFd()</text>
 <text text-anchor="start" x="38.5" y="-555.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ dontClose()</text>
-<text text-anchor="start" x="38.5" y="-544.5" font-family="Helvetica,sans-Serif" font-size="10.00"># Descriptor()</text>
+<text text-anchor="start" x="38.5" y="-544.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ dontClose()</text>
+<text text-anchor="start" x="38.5" y="-533.5" font-family="Helvetica,sans-Serif" font-size="10.00"># Descriptor()</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node2 -->
 <g id="edge2" class="edge">
 <title>Node3&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M72.79,-527.24C73.49,-460.19 74.5,-363.07 75.2,-295.73"/>
-<polygon fill="none" stroke="midnightblue" points="69.29,-527.28 72.69,-537.32 76.29,-527.35 69.29,-527.28"/>
+<path fill="none" stroke="midnightblue" d="M72.81,-516C73.5,-445.52 74.49,-344.35 75.19,-273.67"/>
+<polygon fill="none" stroke="midnightblue" points="69.3,-516.14 72.71,-526.17 76.3,-516.21 69.3,-516.14"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
 <g id="a_node4"><a xlink:href="classnet_1_1socket_1_1_socket.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="88.5,-343.5 88.5,-499.5 195.5,-499.5 195.5,-343.5 88.5,-343.5"/>
-<text text-anchor="start" x="96.5" y="-487.5" font-family="Helvetica,sans-Serif" font-size="10.00">net::socket::Socket</text>
-<text text-anchor="middle" x="142" y="-476.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; SocketAddressT &gt;</text>
-<polyline fill="none" stroke="black" points="88.5,-469.5 195.5,-469.5 "/>
-<text text-anchor="start" x="96.5" y="-457.5" font-family="Helvetica,sans-Serif" font-size="10.00"># bindAddress</text>
-<polyline fill="none" stroke="black" points="88.5,-450.5 195.5,-450.5 "/>
-<text text-anchor="start" x="96.5" y="-438.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Socket()</text>
+<polygon fill="white" stroke="black" points="88.5,-321.5 88.5,-488.5 195.5,-488.5 195.5,-321.5 88.5,-321.5"/>
+<text text-anchor="start" x="96.5" y="-476.5" font-family="Helvetica,sans-Serif" font-size="10.00">net::socket::Socket</text>
+<text text-anchor="middle" x="142" y="-465.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; SocketAddressT &gt;</text>
+<polyline fill="none" stroke="black" points="88.5,-458.5 195.5,-458.5 "/>
+<text text-anchor="start" x="96.5" y="-446.5" font-family="Helvetica,sans-Serif" font-size="10.00"># bindAddress</text>
+<polyline fill="none" stroke="black" points="88.5,-439.5 195.5,-439.5 "/>
 <text text-anchor="start" x="96.5" y="-427.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Socket()</text>
-<text text-anchor="start" x="96.5" y="-416.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator=()</text>
-<text text-anchor="start" x="96.5" y="-405.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~Socket()</text>
-<text text-anchor="start" x="96.5" y="-394.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ open()</text>
-<text text-anchor="start" x="96.5" y="-383.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ bind()</text>
-<text text-anchor="start" x="96.5" y="-372.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ shutdown()</text>
-<text text-anchor="start" x="96.5" y="-361.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getBindAddress()</text>
-<text text-anchor="start" x="96.5" y="-350.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setBindAddress()</text>
+<text text-anchor="start" x="96.5" y="-416.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Socket()</text>
+<text text-anchor="start" x="96.5" y="-405.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator=()</text>
+<text text-anchor="start" x="96.5" y="-394.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~Socket()</text>
+<text text-anchor="start" x="96.5" y="-383.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ open()</text>
+<text text-anchor="start" x="96.5" y="-372.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ bind()</text>
+<text text-anchor="start" x="96.5" y="-361.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ shutdown()</text>
+<text text-anchor="start" x="96.5" y="-350.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getBindAddress()</text>
+<text text-anchor="start" x="96.5" y="-339.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setBindAddress()</text>
+<text text-anchor="start" x="96.5" y="-328.5" font-family="Helvetica,sans-Serif" font-size="10.00"># create()</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node4 -->
 <g id="edge4" class="edge">
 <title>Node3&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M101.27,-527.82C104.85,-518.56 108.52,-509.08 112.11,-499.79"/>
-<polygon fill="none" stroke="midnightblue" points="97.91,-526.8 97.57,-537.39 104.44,-529.32 97.91,-526.8"/>
+<path fill="none" stroke="midnightblue" d="M101.65,-516.66C105.03,-507.4 108.48,-497.95 111.86,-488.67"/>
+<polygon fill="none" stroke="midnightblue" points="98.3,-515.64 98.16,-526.23 104.88,-518.04 98.3,-515.64"/>
 </g>
 <!-- Node4&#45;&gt;Node2 -->
 <g id="edge3" class="edge">
 <title>Node4&#45;&gt;Node2</title>
-<path fill="none" stroke="orange" d="M113.63,-333.68C109.51,-321.05 105.28,-308.11 101.22,-295.69"/>
-<polygon fill="orange" stroke="orange" points="110.33,-334.85 116.77,-343.27 116.99,-332.68 110.33,-334.85"/>
-<text text-anchor="middle" x="178.5" y="-317" font-family="Helvetica,sans-Serif" font-size="10.00"> &lt; address::ipv6::InetAddress &gt;</text>
+<path fill="none" stroke="orange" d="M113.41,-311.72C109.48,-299.04 105.47,-286.1 101.6,-273.61"/>
+<polygon fill="orange" stroke="orange" points="110.09,-312.83 116.39,-321.34 116.77,-310.76 110.09,-312.83"/>
+<text text-anchor="middle" x="178.5" y="-295" font-family="Helvetica,sans-Serif" font-size="10.00"> &lt; address::ipv6::InetAddress &gt;</text>
 </g>
 </g>
 </svg>

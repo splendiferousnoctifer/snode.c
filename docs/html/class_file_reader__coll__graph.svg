@@ -41,7 +41,7 @@
 <text text-anchor="start" x="8" y="-173" font-family="Helvetica,sans-Serif" font-size="10.00">+ resume()</text>
 <text text-anchor="start" x="8" y="-162" font-family="Helvetica,sans-Serif" font-size="10.00"># ReadEventReceiver()</text>
 <text text-anchor="start" x="8" y="-151" font-family="Helvetica,sans-Serif" font-size="10.00"># readEvent()</text>
-<text text-anchor="start" x="8" y="-140" font-family="Helvetica,sans-Serif" font-size="10.00"># dispatchEvent()</text>
+<text text-anchor="start" x="8" y="-140" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; dispatchEvent()</text>
 </a>
 </g>
 </g>
@@ -162,27 +162,28 @@
 <g id="node7" class="node">
 <title>Node7</title>
 <g id="a_node7"><a xlink:href="classnet_1_1_descriptor.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="262.5,-397.5 262.5,-531.5 345.5,-531.5 345.5,-397.5 262.5,-397.5"/>
-<text text-anchor="middle" x="304" y="-519.5" font-family="Helvetica,sans-Serif" font-size="10.00">net::Descriptor</text>
-<polyline fill="none" stroke="black" points="262.5,-512.5 345.5,-512.5 "/>
-<text text-anchor="start" x="270.5" y="-500.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ none</text>
-<text text-anchor="start" x="270.5" y="-489.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; fd</text>
-<polyline fill="none" stroke="black" points="262.5,-482.5 345.5,-482.5 "/>
-<text text-anchor="start" x="270.5" y="-470.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Descriptor()</text>
-<text text-anchor="start" x="270.5" y="-459.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator=()</text>
-<text text-anchor="start" x="270.5" y="-448.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~Descriptor()</text>
-<text text-anchor="start" x="270.5" y="-437.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ open()</text>
-<text text-anchor="start" x="270.5" y="-426.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getFd()</text>
-<text text-anchor="start" x="270.5" y="-415.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ dontClose()</text>
-<text text-anchor="start" x="270.5" y="-404.5" font-family="Helvetica,sans-Serif" font-size="10.00"># Descriptor()</text>
+<polygon fill="white" stroke="black" points="262.5,-392 262.5,-537 345.5,-537 345.5,-392 262.5,-392"/>
+<text text-anchor="middle" x="304" y="-525" font-family="Helvetica,sans-Serif" font-size="10.00">net::Descriptor</text>
+<polyline fill="none" stroke="black" points="262.5,-518 345.5,-518 "/>
+<text text-anchor="start" x="270.5" y="-506" font-family="Helvetica,sans-Serif" font-size="10.00">+ none</text>
+<text text-anchor="start" x="270.5" y="-495" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; fd</text>
+<polyline fill="none" stroke="black" points="262.5,-488 345.5,-488 "/>
+<text text-anchor="start" x="270.5" y="-476" font-family="Helvetica,sans-Serif" font-size="10.00">+ Descriptor()</text>
+<text text-anchor="start" x="270.5" y="-465" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator=()</text>
+<text text-anchor="start" x="270.5" y="-454" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~Descriptor()</text>
+<text text-anchor="start" x="270.5" y="-443" font-family="Helvetica,sans-Serif" font-size="10.00">+ attach()</text>
+<text text-anchor="start" x="270.5" y="-432" font-family="Helvetica,sans-Serif" font-size="10.00">+ getFd()</text>
+<text text-anchor="start" x="270.5" y="-421" font-family="Helvetica,sans-Serif" font-size="10.00">+ dontClose()</text>
+<text text-anchor="start" x="270.5" y="-410" font-family="Helvetica,sans-Serif" font-size="10.00">+ dontClose()</text>
+<text text-anchor="start" x="270.5" y="-399" font-family="Helvetica,sans-Serif" font-size="10.00"># Descriptor()</text>
 </a>
 </g>
 </g>
 <!-- Node7&#45;&gt;Node6 -->
 <g id="edge6" class="edge">
 <title>Node7&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M304,-387.18C304,-334.02 304,-266.19 304,-228.83"/>
-<polygon fill="none" stroke="midnightblue" points="300.5,-387.26 304,-397.26 307.5,-387.26 300.5,-387.26"/>
+<path fill="none" stroke="midnightblue" d="M304,-381.48C304,-329.15 304,-264.61 304,-228.61"/>
+<polygon fill="none" stroke="midnightblue" points="300.5,-381.77 304,-391.77 307.5,-381.77 300.5,-381.77"/>
 </g>
 </g>
 </svg>

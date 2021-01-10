@@ -7,6 +7,5 @@ var classnet_1_1_connect_event_receiver =
     [ "enable", "classnet_1_1_connect_event_receiver.html#a37a99b2eb306852e82b51161f82231d7", null ],
     [ "resume", "classnet_1_1_connect_event_receiver.html#aec4b72af2352c99cfad03271d3315cd7", null ],
     [ "setTimeout", "classnet_1_1_connect_event_receiver.html#a1d153fa642fdf38654551b5d985846e3", null ],
-    [ "suspend", "classnet_1_1_connect_event_receiver.html#a5c171075e7a3c573c56a32dc59049514", null ],
-    [ "EventDispatcher", "classnet_1_1_connect_event_receiver.html#a50a7ad72f4990726439a9d699f781248", null ]
+    [ "suspend", "classnet_1_1_connect_event_receiver.html#a5c171075e7a3c573c56a32dc59049514", null ]
 ];
