@@ -19,17 +19,17 @@ var dir_427baa8a9a5be237f298d4545d0d1ce2 =
     [ "DescriptorEventDispatcher.cpp", "_descriptor_event_dispatcher_8cpp.html", "_descriptor_event_dispatcher_8cpp" ],
     [ "DescriptorEventDispatcher.h", "_descriptor_event_dispatcher_8h.html", [
       [ "DescriptorEventDispatcher", "classnet_1_1_descriptor_event_dispatcher.html", "classnet_1_1_descriptor_event_dispatcher" ],
-      [ "EventReceiverList", "classnet_1_1_descriptor_event_dispatcher_1_1_event_receiver_list.html", "classnet_1_1_descriptor_event_dispatcher_1_1_event_receiver_list" ]
+      [ "DescriptorEventReceiverList", "classnet_1_1_descriptor_event_dispatcher_1_1_descriptor_event_receiver_list.html", "classnet_1_1_descriptor_event_dispatcher_1_1_descriptor_event_receiver_list" ]
+    ] ],
+    [ "DescriptorEventReceiver.h", "_descriptor_event_receiver_8h.html", [
+      [ "ObservationCounter", "classnet_1_1_observation_counter.html", "classnet_1_1_observation_counter" ],
+      [ "lastTriggered", "structnet_1_1_observation_counter_1_1last_triggered.html", null ],
+      [ "DescriptorEventReceiver", "classnet_1_1_descriptor_event_receiver.html", "classnet_1_1_descriptor_event_receiver" ],
+      [ "TIMEOUT", "classnet_1_1_descriptor_event_receiver_1_1_t_i_m_e_o_u_t.html", "classnet_1_1_descriptor_event_receiver_1_1_t_i_m_e_o_u_t" ]
     ] ],
     [ "EventLoop.cpp", "_event_loop_8cpp.html", "_event_loop_8cpp" ],
     [ "EventLoop.h", "_event_loop_8h.html", [
       [ "EventLoop", "classnet_1_1_event_loop.html", "classnet_1_1_event_loop" ]
-    ] ],
-    [ "EventReceiver.h", "_event_receiver_8h.html", [
-      [ "ObservationCounter", "classnet_1_1_observation_counter.html", "classnet_1_1_observation_counter" ],
-      [ "lastTriggered", "structnet_1_1_observation_counter_1_1last_triggered.html", null ],
-      [ "EventReceiver", "classnet_1_1_event_receiver.html", "classnet_1_1_event_receiver" ],
-      [ "TIMEOUT", "classnet_1_1_event_receiver_1_1_t_i_m_e_o_u_t.html", "classnet_1_1_event_receiver_1_1_t_i_m_e_o_u_t" ]
     ] ],
     [ "FdSet.cpp", "_fd_set_8cpp.html", null ],
     [ "FdSet.h", "_fd_set_8h.html", [

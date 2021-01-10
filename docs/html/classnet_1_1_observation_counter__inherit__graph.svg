@@ -25,36 +25,36 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="classnet_1_1_event_receiver.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="725,-1277.5 725,-1587.5 826,-1587.5 826,-1277.5 725,-1277.5"/>
-<text text-anchor="middle" x="775.5" y="-1575.5" font-family="Helvetica,sans-Serif" font-size="10.00">net::EventReceiver</text>
-<polyline fill="none" stroke="black" points="725,-1568.5 826,-1568.5 "/>
-<text text-anchor="start" x="733" y="-1556.5" font-family="Helvetica,sans-Serif" font-size="10.00"># fd</text>
-<text text-anchor="start" x="733" y="-1545.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; _enabled</text>
-<text text-anchor="start" x="733" y="-1534.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; _suspended</text>
-<text text-anchor="start" x="733" y="-1523.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; maxInactivity</text>
-<polyline fill="none" stroke="black" points="725,-1516.5 826,-1516.5 "/>
-<text text-anchor="start" x="733" y="-1504.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ EventReceiver()</text>
-<text text-anchor="start" x="733" y="-1493.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator=()</text>
-<text text-anchor="start" x="733" y="-1482.5" font-family="Helvetica,sans-Serif" font-size="10.00"># EventReceiver()</text>
-<text text-anchor="start" x="733" y="-1471.5" font-family="Helvetica,sans-Serif" font-size="10.00"># ~EventReceiver()</text>
-<text text-anchor="start" x="733" y="-1460.5" font-family="Helvetica,sans-Serif" font-size="10.00"># setTimeout()</text>
-<text text-anchor="start" x="733" y="-1449.5" font-family="Helvetica,sans-Serif" font-size="10.00"># isEnabled()</text>
-<text text-anchor="start" x="733" y="-1438.5" font-family="Helvetica,sans-Serif" font-size="10.00"># isSuspended()</text>
-<text text-anchor="start" x="733" y="-1427.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; dispatchEvent()</text>
-<text text-anchor="start" x="733" y="-1416.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; timeout()</text>
-<text text-anchor="start" x="733" y="-1405.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; enabled()</text>
-<text text-anchor="start" x="733" y="-1394.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; disabled()</text>
-<text text-anchor="start" x="733" y="-1383.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; suspended()</text>
-<text text-anchor="start" x="733" y="-1372.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; resumed()</text>
-<text text-anchor="start" x="733" y="-1361.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; getTimeout()</text>
-<text text-anchor="start" x="733" y="-1350.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; getLastTriggered()</text>
-<text text-anchor="start" x="733" y="-1339.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; triggered()</text>
-<text text-anchor="start" x="733" y="-1328.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; enable()</text>
-<text text-anchor="start" x="733" y="-1317.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; disable()</text>
-<text text-anchor="start" x="733" y="-1306.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; suspend()</text>
-<text text-anchor="start" x="733" y="-1295.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; resume()</text>
-<text text-anchor="start" x="733" y="-1284.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; unobserved()</text>
+<g id="a_node2"><a xlink:href="classnet_1_1_descriptor_event_receiver.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="black" points="702.5,-1277.5 702.5,-1587.5 848.5,-1587.5 848.5,-1277.5 702.5,-1277.5"/>
+<text text-anchor="middle" x="775.5" y="-1575.5" font-family="Helvetica,sans-Serif" font-size="10.00">net::DescriptorEventReceiver</text>
+<polyline fill="none" stroke="black" points="702.5,-1568.5 848.5,-1568.5 "/>
+<text text-anchor="start" x="710.5" y="-1556.5" font-family="Helvetica,sans-Serif" font-size="10.00"># fd</text>
+<text text-anchor="start" x="710.5" y="-1545.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; _enabled</text>
+<text text-anchor="start" x="710.5" y="-1534.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; _suspended</text>
+<text text-anchor="start" x="710.5" y="-1523.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; maxInactivity</text>
+<polyline fill="none" stroke="black" points="702.5,-1516.5 848.5,-1516.5 "/>
+<text text-anchor="start" x="710.5" y="-1504.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ DescriptorEventReceiver()</text>
+<text text-anchor="start" x="710.5" y="-1493.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator=()</text>
+<text text-anchor="start" x="710.5" y="-1482.5" font-family="Helvetica,sans-Serif" font-size="10.00"># DescriptorEventReceiver()</text>
+<text text-anchor="start" x="710.5" y="-1471.5" font-family="Helvetica,sans-Serif" font-size="10.00"># ~DescriptorEventReceiver()</text>
+<text text-anchor="start" x="710.5" y="-1460.5" font-family="Helvetica,sans-Serif" font-size="10.00"># setTimeout()</text>
+<text text-anchor="start" x="710.5" y="-1449.5" font-family="Helvetica,sans-Serif" font-size="10.00"># isEnabled()</text>
+<text text-anchor="start" x="710.5" y="-1438.5" font-family="Helvetica,sans-Serif" font-size="10.00"># isSuspended()</text>
+<text text-anchor="start" x="710.5" y="-1427.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; dispatchEvent()</text>
+<text text-anchor="start" x="710.5" y="-1416.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; timeout()</text>
+<text text-anchor="start" x="710.5" y="-1405.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; enabled()</text>
+<text text-anchor="start" x="710.5" y="-1394.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; disabled()</text>
+<text text-anchor="start" x="710.5" y="-1383.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; suspended()</text>
+<text text-anchor="start" x="710.5" y="-1372.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; resumed()</text>
+<text text-anchor="start" x="710.5" y="-1361.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; getTimeout()</text>
+<text text-anchor="start" x="710.5" y="-1350.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; getLastTriggered()</text>
+<text text-anchor="start" x="710.5" y="-1339.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; triggered()</text>
+<text text-anchor="start" x="710.5" y="-1328.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; enable()</text>
+<text text-anchor="start" x="710.5" y="-1317.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; disable()</text>
+<text text-anchor="start" x="710.5" y="-1306.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; suspend()</text>
+<text text-anchor="start" x="710.5" y="-1295.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; resume()</text>
+<text text-anchor="start" x="710.5" y="-1284.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; unobserved()</text>
 </a>
 </g>
 </g>
@@ -87,8 +87,8 @@
 <!-- Node2&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node2&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M716.04,-1393.72C641.16,-1346.13 512.93,-1264.64 435.21,-1215.26"/>
-<polygon fill="none" stroke="midnightblue" points="714.58,-1396.94 724.9,-1399.35 718.34,-1391.03 714.58,-1396.94"/>
+<path fill="none" stroke="midnightblue" d="M693.81,-1379.59C617.73,-1331.24 505.73,-1260.07 435.25,-1215.28"/>
+<polygon fill="none" stroke="midnightblue" points="692.13,-1382.67 702.45,-1385.08 695.88,-1376.76 692.13,-1382.67"/>
 </g>
 <!-- Node9 -->
 <g id="node9" class="node">
@@ -113,8 +113,8 @@
 <!-- Node2&#45;&gt;Node9 -->
 <g id="edge10" class="edge">
 <title>Node2&#45;&gt;Node9</title>
-<path fill="none" stroke="midnightblue" d="M718.88,-1350.8C693.77,-1315 664.59,-1273.41 640.81,-1239.51"/>
-<polygon fill="none" stroke="midnightblue" points="716.23,-1353.11 724.84,-1359.29 721.96,-1349.09 716.23,-1353.11"/>
+<path fill="none" stroke="midnightblue" d="M696.55,-1318.96C677.61,-1291.97 657.99,-1263.99 641.07,-1239.87"/>
+<polygon fill="none" stroke="midnightblue" points="693.79,-1321.13 702.4,-1327.31 699.52,-1317.11 693.79,-1321.13"/>
 </g>
 <!-- Node15 -->
 <g id="node15" class="node">
@@ -165,8 +165,8 @@
 <!-- Node2&#45;&gt;Node16 -->
 <g id="edge19" class="edge">
 <title>Node2&#45;&gt;Node16</title>
-<path fill="none" stroke="midnightblue" d="M831.47,-1343.45C853.06,-1309.49 877.33,-1271.3 897.39,-1239.74"/>
-<polygon fill="none" stroke="midnightblue" points="828.45,-1341.67 826.04,-1351.99 834.36,-1345.42 828.45,-1341.67"/>
+<path fill="none" stroke="midnightblue" d="M854.13,-1307.79C869.11,-1284.23 884.24,-1260.43 897.51,-1239.55"/>
+<polygon fill="none" stroke="midnightblue" points="851.04,-1306.14 848.63,-1316.46 856.95,-1309.9 851.04,-1306.14"/>
 </g>
 <!-- Node26 -->
 <g id="node26" class="node">
@@ -191,8 +191,8 @@
 <!-- Node2&#45;&gt;Node26 -->
 <g id="edge29" class="edge">
 <title>Node2&#45;&gt;Node26</title>
-<path fill="none" stroke="midnightblue" d="M834.34,-1384.32C882.1,-1345.84 951.04,-1289.88 1010.5,-1240 1015.51,-1235.8 1020.67,-1231.42 1025.85,-1227.01"/>
-<polygon fill="none" stroke="midnightblue" points="831.86,-1381.83 826.27,-1390.82 836.25,-1387.28 831.86,-1381.83"/>
+<path fill="none" stroke="midnightblue" d="M856.77,-1366.22C902.25,-1329.46 959.82,-1282.52 1010.5,-1240 1015.51,-1235.8 1020.67,-1231.42 1025.85,-1227.01"/>
+<polygon fill="none" stroke="midnightblue" points="854.3,-1363.72 848.72,-1372.73 858.7,-1369.16 854.3,-1363.72"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">

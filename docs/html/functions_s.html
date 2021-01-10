@@ -175,7 +175,7 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 <li>setTimeout()
 : <a class="el" href="classnet_1_1_accept_event_receiver.html#a90d906c330f05b859bc4204899393813">net::AcceptEventReceiver</a>
 , <a class="el" href="classnet_1_1_connect_event_receiver.html#a1d153fa642fdf38654551b5d985846e3">net::ConnectEventReceiver</a>
-, <a class="el" href="classnet_1_1_event_receiver.html#a26d6a5c5cdd5300540a937c17f91fdcd">net::EventReceiver</a>
+, <a class="el" href="classnet_1_1_descriptor_event_receiver.html#aaacb9788549456a2c4b510913d938044">net::DescriptorEventReceiver</a>
 , <a class="el" href="classnet_1_1_out_of_band_event_receiver.html#a6172e7309754c364312a23889c894ef7">net::OutOfBandEventReceiver</a>
 , <a class="el" href="classnet_1_1_read_event_receiver.html#aea825386993599725315eb7fb0719aa4">net::ReadEventReceiver</a>
 , <a class="el" href="classnet_1_1_write_event_receiver.html#ae87f05383b78fdd0047b691efc3c4e5c">net::WriteEventReceiver</a>
@@ -194,11 +194,11 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 <li>singleshotTimer()
 : <a class="el" href="classnet_1_1timer_1_1_timer.html#a31ab90fa1d4e9b25b9b67d9637c636ac">net::timer::Timer</a>
 </li>
-<li>sockAddr
-: <a class="el" href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">net::socket::SocketAddress&lt; SockAddrT &gt;</a>
-</li>
 <li>SockAddr
 : <a class="el" href="classnet_1_1socket_1_1_socket_address.html#a35e84e2561e779a9dd8c392e3005a53e">net::socket::SocketAddress&lt; SockAddrT &gt;</a>
+</li>
+<li>sockAddr
+: <a class="el" href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">net::socket::SocketAddress&lt; SockAddrT &gt;</a>
 </li>
 <li>Socket
 : <a class="el" href="classexpress_1_1_web_app_t.html#ae88d0f48c5c42297645b938b27e0a441">express::WebAppT&lt; ServerT &gt;</a>
@@ -297,17 +297,17 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 </li>
 <li>SocketServer
 : <a class="el" href="classexpress_1_1_web_app_t.html#af6d27cea97ba0493c2f66cb99404a5a4">express::WebAppT&lt; ServerT &gt;</a>
+, <a class="el" href="classhttp_1_1_server.html#a9a61aabff47e50fcb83d6c033549e45a">http::Server&lt; SocketServerT, RequestT, ResponseT &gt;</a>
 </li>
 <li>socketServer
 : <a class="el" href="classhttp_1_1_server.html#a9c8d03477f123be7b567a477faf9bf6c">http::Server&lt; SocketServerT, RequestT, ResponseT &gt;</a>
 </li>
-<li>SocketServer
-: <a class="el" href="classhttp_1_1_server.html#a9a61aabff47e50fcb83d6c033549e45a">http::Server&lt; SocketServerT, RequestT, ResponseT &gt;</a>
-, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_server.html#ac0576dc9dc6a453f9534f334e71e026e">net::socket::stream::SocketServer&lt; SocketListenerT &gt;</a>
+<li>SocketServer()
+: <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_server.html#a1a9f357f3f950476b39f98b5a7e5d0ed">net::socket::stream::SocketServer&lt; SocketListenerT &gt;</a>
 </li>
 <li>SocketWriter
 : <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#afdc000b132afa51d35b98657a00beb43">net::socket::stream::SocketConnection&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt;</a>
-, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#a7e241f91ccc2e05f921bc52d75df9acb">net::socket::stream::SocketWriter&lt; SocketT &gt;</a>
+, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#ac5f82275ec4736b67289a2f3cf41f135">net::socket::stream::SocketWriter&lt; SocketT &gt;</a>
 </li>
 <li>sourceStream()
 : <a class="el" href="classnet_1_1stream_1_1_write_stream.html#a7c34d2200cf374f082627c85b0caafd2">net::stream::WriteStream</a>
@@ -336,8 +336,8 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 <li>startSSL()
 : <a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a7ef6031f0b6f3dc25efa7f844bab63b9">net::socket::stream::tls::SocketConnection&lt; SocketT &gt;</a>
 </li>
-<li>StaticMiddleware
-: <a class="el" href="classexpress_1_1middleware_1_1_static_middleware.html#a920364dc3456ca37fc1c6c5d458323ed">express::middleware::StaticMiddleware</a>
+<li>StaticMiddleware()
+: <a class="el" href="classexpress_1_1middleware_1_1_static_middleware.html#af712793a6f6d600b813fc4a6d3fbe41d">express::middleware::StaticMiddleware</a>
 </li>
 <li>status()
 : <a class="el" href="classhttp_1_1_response.html#a37d8fcef190c86c0a91de82eb150bbf0">http::Response</a>
@@ -376,14 +376,14 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 <li>suspend()
 : <a class="el" href="classnet_1_1_accept_event_receiver.html#a2e545a73a02c79c8dda3a4745d464053">net::AcceptEventReceiver</a>
 , <a class="el" href="classnet_1_1_connect_event_receiver.html#a5c171075e7a3c573c56a32dc59049514">net::ConnectEventReceiver</a>
-, <a class="el" href="classnet_1_1_descriptor_event_dispatcher.html#a897868ebf1ad0403adb59b9271782134">net::DescriptorEventDispatcher</a>
-, <a class="el" href="classnet_1_1_event_receiver.html#a2a8acfe460a6e04d55d3f99abf916724">net::EventReceiver</a>
+, <a class="el" href="classnet_1_1_descriptor_event_dispatcher.html#a9eca4cac3e192e4ace05ec7b3c697298">net::DescriptorEventDispatcher</a>
+, <a class="el" href="classnet_1_1_descriptor_event_receiver.html#a6f01399c86874fe55d271101763fec77">net::DescriptorEventReceiver</a>
 , <a class="el" href="classnet_1_1_out_of_band_event_receiver.html#a66690b3d00869f6bd760714f8ab2034b">net::OutOfBandEventReceiver</a>
 , <a class="el" href="classnet_1_1_read_event_receiver.html#a4a0eb84c0e1e30afb8fe0c4bc2d5e57c">net::ReadEventReceiver</a>
 , <a class="el" href="classnet_1_1_write_event_receiver.html#af791858dbdf22f63a0792a4baa1daf72">net::WriteEventReceiver</a>
 </li>
 <li>suspended()
-: <a class="el" href="classnet_1_1_event_receiver.html#a2736c19a5be98adb814b4d2b10d93e6a">net::EventReceiver</a>
+: <a class="el" href="classnet_1_1_descriptor_event_receiver.html#ac6ed4bd7322cd45e14634a1d0d58eebc">net::DescriptorEventReceiver</a>
 </li>
 </ul>
 </div><!-- contents -->

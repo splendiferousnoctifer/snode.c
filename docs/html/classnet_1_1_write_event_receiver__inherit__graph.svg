@@ -89,36 +89,36 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="classnet_1_1_event_receiver.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="209.5,-965.5 209.5,-1275.5 310.5,-1275.5 310.5,-965.5 209.5,-965.5"/>
-<text text-anchor="middle" x="260" y="-1263.5" font-family="Helvetica,sans-Serif" font-size="10.00">net::EventReceiver</text>
-<polyline fill="none" stroke="black" points="209.5,-1256.5 310.5,-1256.5 "/>
-<text text-anchor="start" x="217.5" y="-1244.5" font-family="Helvetica,sans-Serif" font-size="10.00"># fd</text>
-<text text-anchor="start" x="217.5" y="-1233.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; _enabled</text>
-<text text-anchor="start" x="217.5" y="-1222.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; _suspended</text>
-<text text-anchor="start" x="217.5" y="-1211.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; maxInactivity</text>
-<polyline fill="none" stroke="black" points="209.5,-1204.5 310.5,-1204.5 "/>
-<text text-anchor="start" x="217.5" y="-1192.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ EventReceiver()</text>
-<text text-anchor="start" x="217.5" y="-1181.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator=()</text>
-<text text-anchor="start" x="217.5" y="-1170.5" font-family="Helvetica,sans-Serif" font-size="10.00"># EventReceiver()</text>
-<text text-anchor="start" x="217.5" y="-1159.5" font-family="Helvetica,sans-Serif" font-size="10.00"># ~EventReceiver()</text>
-<text text-anchor="start" x="217.5" y="-1148.5" font-family="Helvetica,sans-Serif" font-size="10.00"># setTimeout()</text>
-<text text-anchor="start" x="217.5" y="-1137.5" font-family="Helvetica,sans-Serif" font-size="10.00"># isEnabled()</text>
-<text text-anchor="start" x="217.5" y="-1126.5" font-family="Helvetica,sans-Serif" font-size="10.00"># isSuspended()</text>
-<text text-anchor="start" x="217.5" y="-1115.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; dispatchEvent()</text>
-<text text-anchor="start" x="217.5" y="-1104.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; timeout()</text>
-<text text-anchor="start" x="217.5" y="-1093.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; enabled()</text>
-<text text-anchor="start" x="217.5" y="-1082.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; disabled()</text>
-<text text-anchor="start" x="217.5" y="-1071.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; suspended()</text>
-<text text-anchor="start" x="217.5" y="-1060.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; resumed()</text>
-<text text-anchor="start" x="217.5" y="-1049.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; getTimeout()</text>
-<text text-anchor="start" x="217.5" y="-1038.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; getLastTriggered()</text>
-<text text-anchor="start" x="217.5" y="-1027.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; triggered()</text>
-<text text-anchor="start" x="217.5" y="-1016.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; enable()</text>
-<text text-anchor="start" x="217.5" y="-1005.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; disable()</text>
-<text text-anchor="start" x="217.5" y="-994.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; suspend()</text>
-<text text-anchor="start" x="217.5" y="-983.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; resume()</text>
-<text text-anchor="start" x="217.5" y="-972.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; unobserved()</text>
+<g id="a_node2"><a xlink:href="classnet_1_1_descriptor_event_receiver.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="black" points="187,-965.5 187,-1275.5 333,-1275.5 333,-965.5 187,-965.5"/>
+<text text-anchor="middle" x="260" y="-1263.5" font-family="Helvetica,sans-Serif" font-size="10.00">net::DescriptorEventReceiver</text>
+<polyline fill="none" stroke="black" points="187,-1256.5 333,-1256.5 "/>
+<text text-anchor="start" x="195" y="-1244.5" font-family="Helvetica,sans-Serif" font-size="10.00"># fd</text>
+<text text-anchor="start" x="195" y="-1233.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; _enabled</text>
+<text text-anchor="start" x="195" y="-1222.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; _suspended</text>
+<text text-anchor="start" x="195" y="-1211.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; maxInactivity</text>
+<polyline fill="none" stroke="black" points="187,-1204.5 333,-1204.5 "/>
+<text text-anchor="start" x="195" y="-1192.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ DescriptorEventReceiver()</text>
+<text text-anchor="start" x="195" y="-1181.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator=()</text>
+<text text-anchor="start" x="195" y="-1170.5" font-family="Helvetica,sans-Serif" font-size="10.00"># DescriptorEventReceiver()</text>
+<text text-anchor="start" x="195" y="-1159.5" font-family="Helvetica,sans-Serif" font-size="10.00"># ~DescriptorEventReceiver()</text>
+<text text-anchor="start" x="195" y="-1148.5" font-family="Helvetica,sans-Serif" font-size="10.00"># setTimeout()</text>
+<text text-anchor="start" x="195" y="-1137.5" font-family="Helvetica,sans-Serif" font-size="10.00"># isEnabled()</text>
+<text text-anchor="start" x="195" y="-1126.5" font-family="Helvetica,sans-Serif" font-size="10.00"># isSuspended()</text>
+<text text-anchor="start" x="195" y="-1115.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; dispatchEvent()</text>
+<text text-anchor="start" x="195" y="-1104.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; timeout()</text>
+<text text-anchor="start" x="195" y="-1093.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; enabled()</text>
+<text text-anchor="start" x="195" y="-1082.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; disabled()</text>
+<text text-anchor="start" x="195" y="-1071.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; suspended()</text>
+<text text-anchor="start" x="195" y="-1060.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; resumed()</text>
+<text text-anchor="start" x="195" y="-1049.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; getTimeout()</text>
+<text text-anchor="start" x="195" y="-1038.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; getLastTriggered()</text>
+<text text-anchor="start" x="195" y="-1027.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; triggered()</text>
+<text text-anchor="start" x="195" y="-1016.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; enable()</text>
+<text text-anchor="start" x="195" y="-1005.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; disable()</text>
+<text text-anchor="start" x="195" y="-994.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; suspend()</text>
+<text text-anchor="start" x="195" y="-983.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; resume()</text>
+<text text-anchor="start" x="195" y="-972.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; unobserved()</text>
 </a>
 </g>
 </g>

@@ -49,7 +49,7 @@ var hierarchy =
     [ "net::FdSet", "classnet_1_1_fd_set.html", null ],
     [ "net::ObservationCounter::lastTriggered", "structnet_1_1_observation_counter_1_1last_triggered.html", null ],
     [ "std::list", null, [
-      [ "net::DescriptorEventDispatcher::EventReceiverList", "classnet_1_1_descriptor_event_dispatcher_1_1_event_receiver_list.html", null ]
+      [ "net::DescriptorEventDispatcher::DescriptorEventReceiverList", "classnet_1_1_descriptor_event_dispatcher_1_1_descriptor_event_receiver_list.html", null ]
     ] ],
     [ "Logger", "class_logger.html", null ],
     [ "MimeTypes", "class_mime_types.html", null ],
@@ -60,7 +60,7 @@ var hierarchy =
       ] ]
     ] ],
     [ "net::ObservationCounter", "classnet_1_1_observation_counter.html", [
-      [ "net::EventReceiver", "classnet_1_1_event_receiver.html", [
+      [ "net::DescriptorEventReceiver", "classnet_1_1_descriptor_event_receiver.html", [
         [ "net::AcceptEventReceiver", "classnet_1_1_accept_event_receiver.html", [
           [ "net::socket::stream::SocketListener< stream::legacy::SocketConnection< SocketT > >", "classnet_1_1socket_1_1stream_1_1_socket_listener.html", [
             [ "net::socket::stream::legacy::SocketListener< SocketT >", "classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_listener.html", null ]
@@ -241,7 +241,7 @@ var hierarchy =
       [ "net::socket::stream::SocketConnection< SocketReaderT, SocketWriterT, SocketAddressT >", "classnet_1_1socket_1_1stream_1_1_socket_connection.html", null ]
     ] ],
     [ "StatusCode", "class_status_code.html", null ],
-    [ "net::EventReceiver::TIMEOUT", "classnet_1_1_event_receiver_1_1_t_i_m_e_o_u_t.html", null ],
+    [ "net::DescriptorEventReceiver::TIMEOUT", "classnet_1_1_descriptor_event_receiver_1_1_t_i_m_e_o_u_t.html", null ],
     [ "net::TimerEventDispatcher", "classnet_1_1_timer_event_dispatcher.html", null ],
     [ "net::TimerEventReceiver", "classnet_1_1_timer_event_receiver.html", [
       [ "net::timer::Timer", "classnet_1_1timer_1_1_timer.html", [

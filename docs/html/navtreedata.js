@@ -86,7 +86,7 @@ var NAVTREEINDEX =
 "_accept_event_receiver_8cpp.html",
 "class_logger.html#a2b3fd86c598269c226cf76f391bcc1df",
 "classhttp_1_1_parser.html#ab58d2b97db1c5bad0e2abfdba95514d2abb1ca97ec761fc37101737ba0aa2e7c5",
-"classnet_1_1_event_loop.html#a646d9ecc4e95c7ac9f32228ce00169d4",
+"classnet_1_1_descriptor_event_receiver.html#a3779cf957dbd8a5fb5d1362056472ebe",
 "classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#a9cd7cb8c2ffa3f428bb648a817c9540a",
 "dir_a27b06846bb6dbe20f4945fcf9503c1c.html",
 "namespacemembers_func.html"

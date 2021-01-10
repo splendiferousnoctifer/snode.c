@@ -85,7 +85,7 @@ var NAVTREEINDEX6 =
 "structhttp_1_1_server_context_1_1_request_context.html#ac46f57f9d6e2fa942f49781e9e7b6571":[9,0,1,12,0,5],
 "structhttp_1_1_server_context_1_1_request_context.html#acd127683da7890b56a9cae71536a2a58":[9,0,1,12,0,3],
 "structhttp_1_1_server_context_1_1_request_context.html#ae02baca6ce652505733cc7711311b1ec":[9,0,1,12,0,1],
-"structnet_1_1_observation_counter_1_1last_triggered.html":[9,0,2,8,0],
+"structnet_1_1_observation_counter_1_1last_triggered.html":[9,0,2,7,0],
 "structnet_1_1timer_1_1_timer_1_1absolute_timeout.html":[9,0,2,2,2,0],
 "tls_2_client_8h.html":[10,0,1,1,0],
 "tls_2_client_8h_source.html":[10,0,1,1,0],
