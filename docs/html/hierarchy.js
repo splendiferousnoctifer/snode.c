@@ -47,7 +47,6 @@ var hierarchy =
       [ "net::socket::ip::address::ipv6::bad_hostname", "classnet_1_1socket_1_1ip_1_1address_1_1ipv6_1_1bad__hostname.html", null ]
     ] ],
     [ "net::FdSet", "classnet_1_1_fd_set.html", null ],
-    [ "net::ObservationCounter::lastTriggered", "structnet_1_1_observation_counter_1_1last_triggered.html", null ],
     [ "std::list", null, [
       [ "net::DescriptorEventDispatcher::DescriptorEventReceiverList", "classnet_1_1_descriptor_event_dispatcher_1_1_descriptor_event_receiver_list.html", null ]
     ] ],

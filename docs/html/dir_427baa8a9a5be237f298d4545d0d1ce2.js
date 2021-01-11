@@ -5,13 +5,9 @@ var dir_427baa8a9a5be237f298d4545d0d1ce2 =
     [ "streams", "dir_b728fc0be7f24c277dd70410bbd2e0b5.html", "dir_b728fc0be7f24c277dd70410bbd2e0b5" ],
     [ "timer", "dir_6e2b60c0f0423aa4bcbcd1a4697f31d0.html", "dir_6e2b60c0f0423aa4bcbcd1a4697f31d0" ],
     [ "AcceptEventReceiver.cpp", "_accept_event_receiver_8cpp.html", "_accept_event_receiver_8cpp" ],
-    [ "AcceptEventReceiver.h", "_accept_event_receiver_8h.html", [
-      [ "AcceptEventReceiver", "classnet_1_1_accept_event_receiver.html", "classnet_1_1_accept_event_receiver" ]
-    ] ],
-    [ "ConnectEventReceiver.cpp", "_connect_event_receiver_8cpp.html", "_connect_event_receiver_8cpp" ],
-    [ "ConnectEventReceiver.h", "_connect_event_receiver_8h.html", [
-      [ "ConnectEventReceiver", "classnet_1_1_connect_event_receiver.html", "classnet_1_1_connect_event_receiver" ]
-    ] ],
+    [ "AcceptEventReceiver.h", "_accept_event_receiver_8h.html", "_accept_event_receiver_8h" ],
+    [ "ConnectEventReceiver.cpp", "_connect_event_receiver_8cpp.html", null ],
+    [ "ConnectEventReceiver.h", "_connect_event_receiver_8h.html", "_connect_event_receiver_8h" ],
     [ "Descriptor.cpp", "_descriptor_8cpp.html", "_descriptor_8cpp" ],
     [ "Descriptor.h", "_descriptor_8h.html", [
       [ "Descriptor", "classnet_1_1_descriptor.html", "classnet_1_1_descriptor" ]
@@ -23,7 +19,6 @@ var dir_427baa8a9a5be237f298d4545d0d1ce2 =
     ] ],
     [ "DescriptorEventReceiver.h", "_descriptor_event_receiver_8h.html", [
       [ "ObservationCounter", "classnet_1_1_observation_counter.html", "classnet_1_1_observation_counter" ],
-      [ "lastTriggered", "structnet_1_1_observation_counter_1_1last_triggered.html", null ],
       [ "DescriptorEventReceiver", "classnet_1_1_descriptor_event_receiver.html", "classnet_1_1_descriptor_event_receiver" ],
       [ "TIMEOUT", "classnet_1_1_descriptor_event_receiver_1_1_t_i_m_e_o_u_t.html", "classnet_1_1_descriptor_event_receiver_1_1_t_i_m_e_o_u_t" ]
     ] ],
@@ -36,13 +31,9 @@ var dir_427baa8a9a5be237f298d4545d0d1ce2 =
       [ "FdSet", "classnet_1_1_fd_set.html", "classnet_1_1_fd_set" ]
     ] ],
     [ "OutOfBandEventReceiver.cpp", "_out_of_band_event_receiver_8cpp.html", null ],
-    [ "OutOfBandEventReceiver.h", "_out_of_band_event_receiver_8h.html", [
-      [ "OutOfBandEventReceiver", "classnet_1_1_out_of_band_event_receiver.html", "classnet_1_1_out_of_band_event_receiver" ]
-    ] ],
+    [ "OutOfBandEventReceiver.h", "_out_of_band_event_receiver_8h.html", "_out_of_band_event_receiver_8h" ],
     [ "ReadEventReceiver.cpp", "_read_event_receiver_8cpp.html", null ],
-    [ "ReadEventReceiver.h", "_read_event_receiver_8h.html", [
-      [ "ReadEventReceiver", "classnet_1_1_read_event_receiver.html", "classnet_1_1_read_event_receiver" ]
-    ] ],
+    [ "ReadEventReceiver.h", "_read_event_receiver_8h.html", "_read_event_receiver_8h" ],
     [ "TimerEventDispatcher.cpp", "_timer_event_dispatcher_8cpp.html", null ],
     [ "TimerEventDispatcher.h", "_timer_event_dispatcher_8h.html", [
       [ "TimerEventDispatcher", "classnet_1_1_timer_event_dispatcher.html", "classnet_1_1_timer_event_dispatcher" ],
@@ -52,7 +43,5 @@ var dir_427baa8a9a5be237f298d4545d0d1ce2 =
       [ "TimerEventReceiver", "classnet_1_1_timer_event_receiver.html", "classnet_1_1_timer_event_receiver" ]
     ] ],
     [ "WriteEventReceiver.cpp", "_write_event_receiver_8cpp.html", null ],
-    [ "WriteEventReceiver.h", "_write_event_receiver_8h.html", [
-      [ "WriteEventReceiver", "classnet_1_1_write_event_receiver.html", "classnet_1_1_write_event_receiver" ]
-    ] ]
+    [ "WriteEventReceiver.h", "_write_event_receiver_8h.html", "_write_event_receiver_8h" ]
 ];
