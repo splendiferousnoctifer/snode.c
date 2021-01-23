@@ -86,6 +86,8 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 <h3><a id="index_s"></a>- s -</h3><ul>
 <li>send()
 : <a class="el" href="classhttp_1_1_response.html#a5c65ba78dce3a916b735475afe57d1b4">http::Response</a>
+, <a class="el" href="classnet_1_1stream_1_1_pipe_source.html#a7ee7bd9951740fd33fa2333deb87cff0">net::stream::PipeSource</a>
+, <a class="el" href="classnet_1_1stream_1_1_source.html#a5bfdccf8217b2f8dfe46ca66e0fcaf11">net::stream::Source</a>
 </li>
 <li>sendFile()
 : <a class="el" href="classexpress_1_1_response.html#aa7a3b9c880c1af5b11e832f84eeda58c">express::Response</a>
@@ -136,6 +138,16 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 <li>setLogLevel()
 : <a class="el" href="class_logger.html#a76737728e58470cc99536839d6fbd631">Logger</a>
 </li>
+<li>setOnData()
+: <a class="el" href="classnet_1_1stream_1_1_pipe_sink.html#a826ee23027ee75dba18ad081fe59df93">net::stream::PipeSink</a>
+</li>
+<li>setOnEof()
+: <a class="el" href="classnet_1_1stream_1_1_pipe_sink.html#ab81e3b6504be37cd2da9312dd9b80356">net::stream::PipeSink</a>
+</li>
+<li>setOnError()
+: <a class="el" href="classnet_1_1stream_1_1_pipe_sink.html#a016f3e5e94b4c2b27844b98573920962">net::stream::PipeSink</a>
+, <a class="el" href="classnet_1_1stream_1_1_pipe_source.html#a92cb3a8cf0d57c29f60620bc3f78890b">net::stream::PipeSource</a>
+</li>
 <li>setOption()
 : <a class="el" href="classhttp_1_1_cookie_options.html#ac3caf56ad87ac130772922b0bb25fbc5">http::CookieOptions</a>
 </li>
@@ -153,12 +165,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 : <a class="el" href="classexpress_1_1middleware_1_1_static_middleware.html#a8d0bb2e3697f72a1937818e7cd3869ea">express::middleware::StaticMiddleware</a>
 </li>
 <li>setTimeout()
-: <a class="el" href="classnet_1_1_accept_event_receiver.html#a90d906c330f05b859bc4204899393813">net::AcceptEventReceiver</a>
-, <a class="el" href="classnet_1_1_connect_event_receiver.html#a1d153fa642fdf38654551b5d985846e3">net::ConnectEventReceiver</a>
-, <a class="el" href="classnet_1_1_descriptor_event_receiver.html#a37e2da7a9720c6b120cc2a41e117539d">net::DescriptorEventReceiver</a>
-, <a class="el" href="classnet_1_1_out_of_band_event_receiver.html#a6172e7309754c364312a23889c894ef7">net::OutOfBandEventReceiver</a>
-, <a class="el" href="classnet_1_1_read_event_receiver.html#aea825386993599725315eb7fb0719aa4">net::ReadEventReceiver</a>
-, <a class="el" href="classnet_1_1_write_event_receiver.html#ae87f05383b78fdd0047b691efc3c4e5c">net::WriteEventReceiver</a>
+: <a class="el" href="classnet_1_1_descriptor_event_receiver.html#a37e2da7a9720c6b120cc2a41e117539d">net::DescriptorEventReceiver</a>
 </li>
 <li>setVerboseLevel()
 : <a class="el" href="class_logger.html#af9c8cc9075c67ba5e14b3f7711dfe13c">Logger</a>
@@ -173,6 +180,9 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 </li>
 <li>singleshotTimer()
 : <a class="el" href="classnet_1_1timer_1_1_timer.html#a31ab90fa1d4e9b25b9b67d9637c636ac">net::timer::Timer</a>
+</li>
+<li>Sink()
+: <a class="el" href="classnet_1_1stream_1_1_sink.html#a57885328b1177461700073283813472b">net::stream::Sink</a>
 </li>
 <li>Socket()
 : <a class="el" href="classnet_1_1socket_1_1_socket.html#a2e3e6fec1d4a4638a8dca568c6121c00">net::socket::Socket&lt; SocketAddressT &gt;</a>
@@ -192,7 +202,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 : <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#af4cf2e7cba730d5eafd50597446e622a">net::socket::stream::SocketConnectionBase</a>
 </li>
 <li>SocketConnector()
-: <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connector.html#a3a3396e68c5a2d63b5693cc1018ecd61">net::socket::stream::SocketConnector&lt; SocketConnectionT &gt;</a>
+: <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connector.html#a4889dc79984ee88795bea52e7dc4b775">net::socket::stream::SocketConnector&lt; SocketConnectionT &gt;</a>
 , <a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connector.html#a5fdcb49edf7159bed9269618d54716ee">net::socket::stream::tls::SocketConnector&lt; SocketT &gt;</a>
 </li>
 <li>SocketListener()
@@ -203,13 +213,13 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 : <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#a4c55325fbd2d5f9691029dde67de6606">net::socket::stream::SocketReader&lt; SocketT &gt;</a>
 </li>
 <li>SocketServer()
-: <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_server.html#a1a9f357f3f950476b39f98b5a7e5d0ed">net::socket::stream::SocketServer&lt; SocketListenerT &gt;</a>
+: <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_server.html#ac0576dc9dc6a453f9534f334e71e026e">net::socket::stream::SocketServer&lt; SocketListenerT &gt;</a>
 </li>
 <li>SocketWriter()
 : <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#a7e241f91ccc2e05f921bc52d75df9acb">net::socket::stream::SocketWriter&lt; SocketT &gt;</a>
 </li>
-<li>sourceStream()
-: <a class="el" href="classnet_1_1stream_1_1_write_stream.html#a7c34d2200cf374f082627c85b0caafd2">net::stream::WriteStream</a>
+<li>Source()
+: <a class="el" href="classnet_1_1stream_1_1_source.html#a16a4c77410464fcd8a31229d4beee2e2">net::stream::Source</a>
 </li>
 <li>splitHeaderLine()
 : <a class="el" href="classhttp_1_1_parser.html#aa062ab2857aea892676cac516b520a52">http::Parser</a>

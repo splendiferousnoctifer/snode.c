@@ -6,6 +6,5 @@ var classnet_1_1_read_event_receiver =
     [ "enable", "classnet_1_1_read_event_receiver.html#a5bd543f1a4fad51b303439d376e9632d", null ],
     [ "readEvent", "classnet_1_1_read_event_receiver.html#acd4cdc73c7534719700aa6997a507a8a", null ],
     [ "resume", "classnet_1_1_read_event_receiver.html#adcedf098e91620409d7c8e9863c9ffce", null ],
-    [ "setTimeout", "classnet_1_1_read_event_receiver.html#aea825386993599725315eb7fb0719aa4", null ],
     [ "suspend", "classnet_1_1_read_event_receiver.html#a4a0eb84c0e1e30afb8fe0c4bc2d5e57c", null ]
 ];
