@@ -11,6 +11,5 @@ var searchData=
   ['logger_240',['Logger',['../class_logger.html#aefffc02e0c6c0ab09ec1f77fe35f6439',1,'Logger::Logger()'],['../class_logger.html',1,'Logger']]],
   ['logger_2ecpp_241',['Logger.cpp',['../_logger_8cpp.html',1,'']]],
   ['logger_2eh_242',['Logger.h',['../_logger_8h.html',1,'']]],
-  ['logtofile_243',['logToFile',['../class_logger.html#a54b7bf213561e73cfe1c63cd31c1a074',1,'Logger']]],
-  ['logtostdout_244',['logToStdOut',['../class_logger.html#a2b3fd86c598269c226cf76f391bcc1df',1,'Logger']]]
+  ['logtofile_243',['logToFile',['../class_logger.html#a38683ec9e5a73fe04ff5677f183d92c9',1,'Logger']]]
 ];

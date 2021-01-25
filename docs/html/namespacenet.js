@@ -13,6 +13,7 @@ var namespacenet =
     [ "FdSet", "classnet_1_1_fd_set.html", "classnet_1_1_fd_set" ],
     [ "OutOfBandEventReceiver", "classnet_1_1_out_of_band_event_receiver.html", "classnet_1_1_out_of_band_event_receiver" ],
     [ "ReadEventReceiver", "classnet_1_1_read_event_receiver.html", "classnet_1_1_read_event_receiver" ],
+    [ "SNodeC", "classnet_1_1_s_node_c.html", "classnet_1_1_s_node_c" ],
     [ "TimerEventDispatcher", "classnet_1_1_timer_event_dispatcher.html", "classnet_1_1_timer_event_dispatcher" ],
     [ "TimerEventReceiver", "classnet_1_1_timer_event_receiver.html", "classnet_1_1_timer_event_receiver" ],
     [ "WriteEventReceiver", "classnet_1_1_write_event_receiver.html", "classnet_1_1_write_event_receiver" ],

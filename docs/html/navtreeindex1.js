@@ -1,5 +1,10 @@
 var NAVTREEINDEX1 =
 {
+"bluetooth_2l2cap_2_socket_client_8h.html":[10,0,3,1,0,1,2],
+"bluetooth_2l2cap_2_socket_client_8h_source.html":[10,0,3,1,0,1,2],
+"bluetooth_2l2cap_2_socket_server_8h.html":[10,0,3,1,0,1,3],
+"bluetooth_2l2cap_2_socket_server_8h_source.html":[10,0,3,1,0,1,3],
+"bluetooth_2rfcomm_2_socket_8cpp.html":[10,0,3,1,0,2,2],
 "bluetooth_2rfcomm_2_socket_8cpp_source.html":[10,0,3,1,0,2,2],
 "bluetooth_2rfcomm_2_socket_8h.html":[10,0,3,1,0,2,3],
 "bluetooth_2rfcomm_2_socket_8h_source.html":[10,0,3,1,0,2,3],
@@ -18,8 +23,8 @@ var NAVTREEINDEX1 =
 "class_file_reader.html#ae4a55ccb7e3e43d18b6cd7eca9de34cf":[9,0,5,1],
 "class_file_reader.html#ae7160f3031c239ca6ee355cd47bd3857":[9,0,5,3],
 "class_logger.html":[9,0,6],
-"class_logger.html#a2b3fd86c598269c226cf76f391bcc1df":[9,0,6,5],
-"class_logger.html#a54b7bf213561e73cfe1c63cd31c1a074":[9,0,6,4],
+"class_logger.html#a34e2ffbd9c13aaeff1365ea1eaea7745":[9,0,6,5],
+"class_logger.html#a38683ec9e5a73fe04ff5677f183d92c9":[9,0,6,4],
 "class_logger.html#a76737728e58470cc99536839d6fbd631":[9,0,6,7],
 "class_logger.html#a969163c7aff5b8409d8dfb8175dd2b85":[9,0,6,6],
 "class_logger.html#a9a1cee6606317c7baa7d06fe86916f72":[9,0,6,3],
@@ -244,10 +249,5 @@ var NAVTREEINDEX1 =
 "classhttp_1_1_cookie_options.html#ac28b2249ea5a74521bf71254c4358290":[9,0,1,4,3],
 "classhttp_1_1_cookie_options.html#ac3caf56ad87ac130772922b0bb25fbc5":[9,0,1,4,4],
 "classhttp_1_1_cookie_options.html#ac9d91143bd9111cf0b31fc352634b4a6":[9,0,1,4,2],
-"classhttp_1_1_cookie_options.html#acc000ae0ca296963a5b1987a776e700b":[9,0,1,4,5],
-"classhttp_1_1_parser.html":[9,0,1,5],
-"classhttp_1_1_parser.html#a089f501d309ffbcfb527e4bee38d90ea":[9,0,1,5,4],
-"classhttp_1_1_parser.html#a1585b2d50f55f49611187d326591f03c":[9,0,1,5,15],
-"classhttp_1_1_parser.html#a1898296511bbab14c3635445de370ca6":[9,0,1,5,17],
-"classhttp_1_1_parser.html#a1f2cb6f31093e582dae0c723e411b8dc":[9,0,1,5,13]
+"classhttp_1_1_cookie_options.html#acc000ae0ca296963a5b1987a776e700b":[9,0,1,4,5]
 };

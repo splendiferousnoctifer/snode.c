@@ -162,6 +162,7 @@ var hierarchy =
         [ "express::Response", "classexpress_1_1_response.html", null ]
       ] ]
     ] ],
+    [ "net::SNodeC", "classnet_1_1_s_node_c.html", null ],
     [ "SocketConnectionT::Socket", null, [
       [ "net::socket::stream::SocketConnector< stream::legacy::SocketConnection< SocketT > >", "classnet_1_1socket_1_1stream_1_1_socket_connector.html", null ],
       [ "net::socket::stream::SocketConnector< stream::tls::SocketConnection< SocketT > >", "classnet_1_1socket_1_1stream_1_1_socket_connector.html", null ],
