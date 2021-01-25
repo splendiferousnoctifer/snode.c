@@ -1,10 +1,9 @@
 var searchData=
 [
-  ['fatal_141',['FATAL',['../class_logger.html#ad766a24576ea8b27ad9d5649cef46d8faedbd8d8bf2c8855ff226770a5c6adf0c',1,'Logger']]],
-  ['fd_142',['fd',['../classnet_1_1socket_1_1stream_1_1tls_1_1_t_l_s_handshake.html#a4f5fc203f93d821b0469896538b53f28',1,'net::socket::stream::tls::TLSHandshake::fd()'],['../classnet_1_1_descriptor_event_receiver.html#a19a67ae95f215b4025310a10772003e5',1,'net::DescriptorEventReceiver::fd()'],['../classnet_1_1_descriptor.html#ae74a867d53babc909e138b86595fdfd8',1,'net::Descriptor::fd()']]],
-  ['fdset_143',['FdSet',['../classnet_1_1_fd_set.html#a24b0725b2124a9b37d1ecc805aa6dc67',1,'net::FdSet']]],
+  ['fatal_142',['FATAL',['../class_logger.html#ad766a24576ea8b27ad9d5649cef46d8faedbd8d8bf2c8855ff226770a5c6adf0c',1,'Logger']]],
+  ['fd_143',['fd',['../classnet_1_1socket_1_1stream_1_1tls_1_1_t_l_s_handshake.html#a4f5fc203f93d821b0469896538b53f28',1,'net::socket::stream::tls::TLSHandshake::fd()'],['../classnet_1_1_descriptor_event_receiver.html#a19a67ae95f215b4025310a10772003e5',1,'net::DescriptorEventReceiver::fd()'],['../classnet_1_1_descriptor.html#ae74a867d53babc909e138b86595fdfd8',1,'net::Descriptor::fd()']]],
   ['fdset_144',['fdSet',['../classnet_1_1_descriptor_event_dispatcher.html#a5eaf0005ea78b57e354a398d304e8b47',1,'net::DescriptorEventDispatcher']]],
-  ['fdset_145',['FdSet',['../classnet_1_1_fd_set.html',1,'net']]],
+  ['fdset_145',['FdSet',['../classnet_1_1_fd_set.html#a24b0725b2124a9b37d1ecc805aa6dc67',1,'net::FdSet::FdSet()'],['../classnet_1_1_fd_set.html',1,'net::FdSet']]],
   ['fdset_2ecpp_146',['FdSet.cpp',['../_fd_set_8cpp.html',1,'']]],
   ['fdset_2eh_147',['FdSet.h',['../_fd_set_8h.html',1,'']]],
   ['file_148',['File',['../class_file.html',1,'']]],

@@ -16,6 +16,7 @@ var classnet_1_1_event_loop =
     [ "stop", "classnet_1_1_event_loop.html#a9e6b6ee96dc68dd5ed0bfb28b2b29f6d", null ],
     [ "stoponsig", "classnet_1_1_event_loop.html#a14629599569baeed2b94108a82ec9a9c", null ],
     [ "tick", "classnet_1_1_event_loop.html#af391b0a968b89c98ae4c9c78449cd0d6", null ],
+    [ "SNodeC", "classnet_1_1_event_loop.html#ab84101a4341e7fdedf48702c35067cd4", null ],
     [ "eventLoop", "classnet_1_1_event_loop.html#aecfae844f26d3db70ec3447efa6d3675", null ],
     [ "exceptFdSet", "classnet_1_1_event_loop.html#a7667220fe50b841eacecbfa316955191", null ],
     [ "initialized", "classnet_1_1_event_loop.html#add4999140ab9571d4f3d8fa17fae337b", null ],

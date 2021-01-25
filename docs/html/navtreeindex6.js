@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"legacy_2_socket_reader_8h.html":[10,0,3,1,2,0,4],
 "legacy_2_socket_reader_8h_source.html":[10,0,3,1,2,0,4],
 "legacy_2_socket_writer_8h.html":[10,0,3,1,2,0,6],
 "legacy_2_socket_writer_8h_source.html":[10,0,3,1,2,0,6],

@@ -85,11 +85,11 @@ var NAVTREEINDEX =
 [
 "_accept_event_receiver_8cpp.html",
 "bluetooth_2l2cap_2_socket_client_8h.html",
-"classhttp_1_1_parser.html",
-"classnet_1_1_descriptor_event_dispatcher_1_1_descriptor_event_receiver_list.html#ab0128e4373c28e76fe9db7b286e50e38",
-"classnet_1_1socket_1_1stream_1_1_socket_connection.html#a85fd378da0de453a913d513845910faf",
-"classnet_1_1timer_1_1_timer.html#ae6fe55d757972df01126c19baed3f838",
-"legacy_2_socket_reader_8h_source.html"
+"classhttp_1_1_parser.html#a089f501d309ffbcfb527e4bee38d90ea",
+"classnet_1_1_descriptor_event_receiver.html#a017657007b65ec9d2983682e300249c0",
+"classnet_1_1socket_1_1stream_1_1_socket_connection.html#a7d2cb9c2abcfbccba0613536d76b6353",
+"classnet_1_1timer_1_1_timer.html#ae5321e41c1449780244ab6945015a82f",
+"legacy_2_socket_reader_8h.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

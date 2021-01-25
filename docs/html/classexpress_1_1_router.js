@@ -8,7 +8,6 @@ var classexpress_1_1_router =
     [ "all", "classexpress_1_1_router.html#a5d517f5f35dc45e2b0c9a531c34b16c4", null ],
     [ "all", "classexpress_1_1_router.html#afd42b2540487ce62f5c1ad1623459d61", null ],
     [ "all", "classexpress_1_1_router.html#a17eeedcd87ce05b8c28f0e398bb4d46d", null ],
-    [ "completed", "classexpress_1_1_router.html#a17dcef80302862cceff4830b1ca12947", null ],
     [ "connect", "classexpress_1_1_router.html#acebe2944a930e5f4787c51bc4590d5cf", null ],
     [ "connect", "classexpress_1_1_router.html#a3c38230e511d1be4a5318ef81f4f5ef2", null ],
     [ "connect", "classexpress_1_1_router.html#abfff939bd105b61481b14b5899f46d31", null ],
