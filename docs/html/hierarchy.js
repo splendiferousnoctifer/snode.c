@@ -80,7 +80,7 @@ var hierarchy =
           ] ],
           [ "net::socket::stream::SocketConnector< SocketConnectionT >", "classnet_1_1socket_1_1stream_1_1_socket_connector.html", null ]
         ] ],
-        [ "net::OutOfBandEventReceiver", "classnet_1_1_out_of_band_event_receiver.html", null ],
+        [ "net::ExceptionalConditionEventReceiver", "classnet_1_1_exceptional_condition_event_receiver.html", null ],
         [ "net::ReadEventReceiver", "classnet_1_1_read_event_receiver.html", [
           [ "FileReader", "class_file_reader.html", null ],
           [ "net::socket::stream::SocketReader< SocketT >", "classnet_1_1socket_1_1stream_1_1_socket_reader.html", [

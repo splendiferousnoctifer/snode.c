@@ -26,12 +26,12 @@ var dir_427baa8a9a5be237f298d4545d0d1ce2 =
     [ "EventLoop.h", "_event_loop_8h.html", [
       [ "EventLoop", "classnet_1_1_event_loop.html", "classnet_1_1_event_loop" ]
     ] ],
+    [ "ExceptionalConditionEventReceiver.cpp", "_exceptional_condition_event_receiver_8cpp.html", null ],
+    [ "ExceptionalConditionEventReceiver.h", "_exceptional_condition_event_receiver_8h.html", "_exceptional_condition_event_receiver_8h" ],
     [ "FdSet.cpp", "_fd_set_8cpp.html", null ],
     [ "FdSet.h", "_fd_set_8h.html", [
       [ "FdSet", "classnet_1_1_fd_set.html", "classnet_1_1_fd_set" ]
     ] ],
-    [ "OutOfBandEventReceiver.cpp", "_out_of_band_event_receiver_8cpp.html", null ],
-    [ "OutOfBandEventReceiver.h", "_out_of_band_event_receiver_8h.html", "_out_of_band_event_receiver_8h" ],
     [ "ReadEventReceiver.cpp", "_read_event_receiver_8cpp.html", null ],
     [ "ReadEventReceiver.h", "_read_event_receiver_8h.html", "_read_event_receiver_8h" ],
     [ "SNodeC.cpp", "_s_node_c_8cpp.html", null ],
