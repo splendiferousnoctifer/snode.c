@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['bindaddress_1259',['bindAddress',['../classnet_1_1socket_1_1_socket.html#a8093ad086bca61e225342420f9858242',1,'net::socket::Socket']]],
-  ['body_1260',['body',['../classhttp_1_1_request.html#a0fbecf984056aca2a820b7663b811302',1,'http::Request::body()'],['../classhttp_1_1_server_response.html#aaad8eacb0322958a4d8bee67af01ca91',1,'http::ServerResponse::body()']]]
+  ['bindaddress_1255',['bindAddress',['../classnet_1_1socket_1_1_socket.html#a8093ad086bca61e225342420f9858242',1,'net::socket::Socket']]],
+  ['body_1256',['body',['../classhttp_1_1client_1_1_response.html#a34ee26d2868e7192b776be6255c6d5a5',1,'http::client::Response::body()'],['../classhttp_1_1server_1_1_request.html#ac5e4f68dec16957e9dc6d6da482efd11',1,'http::server::Request::body()']]]
 ];

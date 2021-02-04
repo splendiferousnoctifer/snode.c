@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>snode.c: http/tls/Server.h Source File</title>
+<title>snode.c: http/server/tls/Server.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -110,39 +110,40 @@ $(document).ready(function(){initNavTree('tls_2_server_8h_source.html',''); init
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* DOXYGEN_SHOULD_SKIP_THIS */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;../Server.h&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_server_8h.html">server/Server.h</a>&quot;</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ip_2tcp_2ipv4_2tls_2_socket_server_8h.html">socket/ip/tcp/ipv4/tls/SocketServer.h</a>&quot;</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ip_2tcp_2ipv6_2tls_2_socket_server_8h.html">socket/ip/tcp/ipv6/tls/SocketServer.h</a>&quot;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacehttp_1_1tls.html">http::tls</a> {</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="namespacehttp_1_1server_1_1tls.html">   30</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacehttp_1_1server_1_1tls.html">http::server::tls</a> {</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Request = http::Request, <span class="keyword">typename</span> Response = http::Response&gt;</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classhttp_1_1tls_1_1_server.html">   33</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classhttp_1_1tls_1_1_server.html">Server</a> : <span class="keyword">public</span> <a class="code" href="classhttp_1_1_server.html">http::Server</a>&lt;net::socket::ip::tcp::ipv4::tls::SocketServer, Request, Response&gt; {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Request = http::server::Request, <span class="keyword">typename</span> Response = http::server::Response&gt;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classhttp_1_1server_1_1tls_1_1_server.html">   33</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classhttp_1_1server_1_1tls_1_1_server.html">Server</a> : <span class="keyword">public</span> <a class="code" href="classhttp_1_1server_1_1_server.html">http::server::Server</a>&lt;net::socket::ip::tcp::ipv4::tls::SocketServer, Request, Response&gt; {</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keyword">using</span> <a class="code" href="classhttp_1_1_server.html">http::Server&lt;net::socket::ip::tcp::ipv4::tls::SocketServer, Request, Response&gt;::Server</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keyword">using</span> <a class="code" href="classhttp_1_1server_1_1_server.html">http::server::Server&lt;net::socket::ip::tcp::ipv4::tls::SocketServer, Request, Response&gt;::Server</a>;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    };</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Request = http::Request, <span class="keyword">typename</span> Response = http::Response&gt;</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classhttp_1_1tls_1_1_server6.html">   39</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classhttp_1_1tls_1_1_server6.html">Server6</a> : <span class="keyword">public</span> <a class="code" href="classhttp_1_1_server.html">http::Server</a>&lt;net::socket::ip::tcp::ipv6::tls::SocketServer, Request, Response&gt; {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Request = http::server::Request, <span class="keyword">typename</span> Response = http::server::Response&gt;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classhttp_1_1server_1_1tls_1_1_server6.html">   39</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classhttp_1_1server_1_1tls_1_1_server6.html">Server6</a> : <span class="keyword">public</span> <a class="code" href="classhttp_1_1server_1_1_server.html">http::server::Server</a>&lt;net::socket::ip::tcp::ipv6::tls::SocketServer, Request, Response&gt; {</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keyword">using</span> <a class="code" href="classhttp_1_1_server.html">http::Server&lt;net::socket::ip::tcp::ipv6::tls::SocketServer, Request, Response&gt;::Server</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keyword">using</span> <a class="code" href="classhttp_1_1server_1_1_server.html">http::server::Server&lt;net::socket::ip::tcp::ipv6::tls::SocketServer, Request, Response&gt;::Server</a>;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    };</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;} <span class="comment">// namespace http::tls</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;} <span class="comment">// namespace http::server::tls</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TLS_SERVER_H</span></div>
-<div class="ttc" id="aclasshttp_1_1_server_html"><div class="ttname"><a href="classhttp_1_1_server.html">http::Server</a></div><div class="ttdef"><b>Definition:</b> <a href="_server_8h_source.html#l00020">Server.h:20</a></div></div>
-<div class="ttc" id="aclasshttp_1_1tls_1_1_server6_html"><div class="ttname"><a href="classhttp_1_1tls_1_1_server6.html">http::tls::Server6</a></div><div class="ttdef"><b>Definition:</b> <a href="tls_2_server_8h_source.html#l00039">Server.h:39</a></div></div>
-<div class="ttc" id="aclasshttp_1_1tls_1_1_server_html"><div class="ttname"><a href="classhttp_1_1tls_1_1_server.html">http::tls::Server</a></div><div class="ttdef"><b>Definition:</b> <a href="tls_2_server_8h_source.html#l00033">Server.h:33</a></div></div>
+<div class="ttc" id="a_server_8h_html"><div class="ttname"><a href="_server_8h.html">Server.h</a></div></div>
+<div class="ttc" id="aclasshttp_1_1server_1_1_server_html"><div class="ttname"><a href="classhttp_1_1server_1_1_server.html">http::server::Server</a></div><div class="ttdef"><b>Definition:</b> <a href="_server_8h_source.html#l00020">Server.h:20</a></div></div>
+<div class="ttc" id="aclasshttp_1_1server_1_1tls_1_1_server6_html"><div class="ttname"><a href="classhttp_1_1server_1_1tls_1_1_server6.html">http::server::tls::Server6</a></div><div class="ttdef"><b>Definition:</b> <a href="tls_2_server_8h_source.html#l00039">Server.h:39</a></div></div>
+<div class="ttc" id="aclasshttp_1_1server_1_1tls_1_1_server_html"><div class="ttname"><a href="classhttp_1_1server_1_1tls_1_1_server.html">http::server::tls::Server</a></div><div class="ttdef"><b>Definition:</b> <a href="tls_2_server_8h_source.html#l00033">Server.h:33</a></div></div>
 <div class="ttc" id="aip_2tcp_2ipv4_2tls_2_socket_server_8h_html"><div class="ttname"><a href="ip_2tcp_2ipv4_2tls_2_socket_server_8h.html">SocketServer.h</a></div></div>
 <div class="ttc" id="aip_2tcp_2ipv6_2tls_2_socket_server_8h_html"><div class="ttname"><a href="ip_2tcp_2ipv6_2tls_2_socket_server_8h.html">SocketServer.h</a></div></div>
-<div class="ttc" id="anamespacehttp_1_1tls_html"><div class="ttname"><a href="namespacehttp_1_1tls.html">http::tls</a></div><div class="ttdef"><b>Definition:</b> <a href="tls_2_client_8h_source.html#l00030">Client.h:30</a></div></div>
+<div class="ttc" id="anamespacehttp_1_1server_1_1tls_html"><div class="ttname"><a href="namespacehttp_1_1server_1_1tls.html">http::server::tls</a></div><div class="ttdef"><b>Definition:</b> <a href="tls_2_server_8h_source.html#l00030">Server.h:30</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de5b03c9e251d763a573c2ccd217de59.html">http</a></li><li class="navelem"><a class="el" href="dir_dfe1f76f8d374cc1ecd369e5932a85e8.html">tls</a></li><li class="navelem"><a class="el" href="tls_2_server_8h.html">Server.h</a></li>
+    <li class="navelem"><a class="el" href="dir_de5b03c9e251d763a573c2ccd217de59.html">http</a></li><li class="navelem"><a class="el" href="dir_74bfeacd8d402542764eb32e15040ba6.html">server</a></li><li class="navelem"><a class="el" href="dir_4cdce38228354fe5f24035a51d792f5b.html">tls</a></li><li class="navelem"><a class="el" href="tls_2_server_8h.html">Server.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

@@ -26,31 +26,39 @@ var annotated_dup =
       [ "WebAppT", "classexpress_1_1_web_app_t.html", "classexpress_1_1_web_app_t" ]
     ] ],
     [ "http", "namespacehttp.html", [
-      [ "legacy", "namespacehttp_1_1legacy.html", [
-        [ "Client", "classhttp_1_1legacy_1_1_client.html", null ],
-        [ "Client6", "classhttp_1_1legacy_1_1_client6.html", null ],
-        [ "Server", "classhttp_1_1legacy_1_1_server.html", null ],
-        [ "Server6", "classhttp_1_1legacy_1_1_server6.html", null ]
+      [ "client", "namespacehttp_1_1client.html", [
+        [ "legacy", "namespacehttp_1_1client_1_1legacy.html", [
+          [ "Client", "classhttp_1_1client_1_1legacy_1_1_client.html", null ],
+          [ "Client6", "classhttp_1_1client_1_1legacy_1_1_client6.html", null ]
+        ] ],
+        [ "tls", "namespacehttp_1_1client_1_1tls.html", [
+          [ "Client", "classhttp_1_1client_1_1tls_1_1_client.html", null ],
+          [ "Client6", "classhttp_1_1client_1_1tls_1_1_client6.html", null ]
+        ] ],
+        [ "Client", "classhttp_1_1client_1_1_client.html", "classhttp_1_1client_1_1_client" ],
+        [ "ClientContext", "classhttp_1_1client_1_1_client_context.html", "classhttp_1_1client_1_1_client_context" ],
+        [ "Request", "classhttp_1_1client_1_1_request.html", "classhttp_1_1client_1_1_request" ],
+        [ "Response", "classhttp_1_1client_1_1_response.html", "classhttp_1_1client_1_1_response" ],
+        [ "ResponseParser", "classhttp_1_1client_1_1_response_parser.html", "classhttp_1_1client_1_1_response_parser" ]
       ] ],
-      [ "tls", "namespacehttp_1_1tls.html", [
-        [ "Client", "classhttp_1_1tls_1_1_client.html", null ],
-        [ "Client6", "classhttp_1_1tls_1_1_client6.html", null ],
-        [ "Server", "classhttp_1_1tls_1_1_server.html", null ],
-        [ "Server6", "classhttp_1_1tls_1_1_server6.html", null ]
+      [ "server", "namespacehttp_1_1server.html", [
+        [ "legacy", "namespacehttp_1_1server_1_1legacy.html", [
+          [ "Server", "classhttp_1_1server_1_1legacy_1_1_server.html", null ],
+          [ "Server6", "classhttp_1_1server_1_1legacy_1_1_server6.html", null ]
+        ] ],
+        [ "tls", "namespacehttp_1_1server_1_1tls.html", [
+          [ "Server", "classhttp_1_1server_1_1tls_1_1_server.html", null ],
+          [ "Server6", "classhttp_1_1server_1_1tls_1_1_server6.html", null ]
+        ] ],
+        [ "Request", "classhttp_1_1server_1_1_request.html", "classhttp_1_1server_1_1_request" ],
+        [ "RequestParser", "classhttp_1_1server_1_1_request_parser.html", "classhttp_1_1server_1_1_request_parser" ],
+        [ "Response", "classhttp_1_1server_1_1_response.html", "classhttp_1_1server_1_1_response" ],
+        [ "Server", "classhttp_1_1server_1_1_server.html", "classhttp_1_1server_1_1_server" ],
+        [ "ServerContextBase", "classhttp_1_1server_1_1_server_context_base.html", "classhttp_1_1server_1_1_server_context_base" ],
+        [ "ServerContext", "classhttp_1_1server_1_1_server_context.html", "classhttp_1_1server_1_1_server_context" ]
       ] ],
-      [ "Client", "classhttp_1_1_client.html", "classhttp_1_1_client" ],
-      [ "ClientContext", "classhttp_1_1_client_context.html", "classhttp_1_1_client_context" ],
       [ "CookieOptions", "classhttp_1_1_cookie_options.html", "classhttp_1_1_cookie_options" ],
-      [ "Parser", "classhttp_1_1_parser.html", "classhttp_1_1_parser" ],
-      [ "Request", "classhttp_1_1_request.html", "classhttp_1_1_request" ],
-      [ "RequestParser", "classhttp_1_1_request_parser.html", "classhttp_1_1_request_parser" ],
-      [ "Response", "classhttp_1_1_response.html", "classhttp_1_1_response" ],
-      [ "ResponseParser", "classhttp_1_1_response_parser.html", "classhttp_1_1_response_parser" ],
-      [ "Server", "classhttp_1_1_server.html", "classhttp_1_1_server" ],
-      [ "ServerContextBase", "classhttp_1_1_server_context_base.html", "classhttp_1_1_server_context_base" ],
-      [ "ServerContext", "classhttp_1_1_server_context.html", "classhttp_1_1_server_context" ],
-      [ "ServerRequest", "classhttp_1_1_server_request.html", "classhttp_1_1_server_request" ],
-      [ "ServerResponse", "classhttp_1_1_server_response.html", "classhttp_1_1_server_response" ]
+      [ "Parser", "classhttp_1_1_parser.html", "classhttp_1_1_parser" ]
     ] ],
     [ "net", "namespacenet.html", [
       [ "socket", "namespacenet_1_1socket.html", [

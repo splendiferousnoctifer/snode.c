@@ -70,7 +70,7 @@ var classexpress_1_1_router =
     [ "use", "classexpress_1_1_router.html#abedb0dd9a0e1e6d91c3427c676ad1d51", null ],
     [ "use", "classexpress_1_1_router.html#a577166187fa9864c2f5d4b3f1d745b47", null ],
     [ "use", "classexpress_1_1_router.html#af2753badf644d514b3766abef04a7bef", null ],
-    [ "reqestMap", "classexpress_1_1_router.html#a9b16a979e026a77a79dc2193da4cce7d", null ],
-    [ "responseMap", "classexpress_1_1_router.html#ac0e310eeab90efb9b431ff966ff8d1e6", null ],
+    [ "reqestMap", "classexpress_1_1_router.html#a3c4979cfea00bb2fb2f5d3dadebb916b", null ],
+    [ "responseMap", "classexpress_1_1_router.html#a006f31caeabfc27bf2ca389328e714df", null ],
     [ "routerDispatcher", "classexpress_1_1_router.html#aa3c8a0794fc3e3882654f4a81bed6cb2", null ]
 ];

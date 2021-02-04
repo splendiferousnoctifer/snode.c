@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['descriptoreventdispatcher_1448',['DescriptorEventDispatcher',['../classnet_1_1_descriptor_event_receiver.html#ad17bca9cfb4e895e38e4fe6cee41f44f',1,'net::DescriptorEventReceiver']]]
+  ['clientcontext_1442',['ClientContext',['../classhttp_1_1client_1_1_request.html#adf703640bc2bb6db62ee885a1c9ca4e9',1,'http::client::Request::ClientContext()'],['../classhttp_1_1client_1_1_response.html#adf703640bc2bb6db62ee885a1c9ca4e9',1,'http::client::Response::ClientContext()']]]
 ];

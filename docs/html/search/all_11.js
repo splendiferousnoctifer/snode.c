@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['queries_374',['queries',['../classhttp_1_1_request.html#a3c8d9f58a3c19c58c8524b196f44c689',1,'http::Request::queries()'],['../classhttp_1_1_request_parser.html#aab9bbbdd5243aafdd32e64ac2c2ae954',1,'http::RequestParser::queries()']]],
-  ['query_375',['query',['../classhttp_1_1_request.html#a43f7a2516f7c29e0b3e036ca83fca165',1,'http::Request']]],
-  ['quiet_376',['quiet',['../class_logger.html#a34e2ffbd9c13aaeff1365ea1eaea7745',1,'Logger']]]
+  ['queries_378',['queries',['../classhttp_1_1client_1_1_request.html#a13650ccaaf920e15c773cb45e433e944',1,'http::client::Request::queries()'],['../classhttp_1_1server_1_1_request.html#a0fcb0cfc8038d9483eb9cf08e98e9618',1,'http::server::Request::queries()'],['../classhttp_1_1server_1_1_request_parser.html#ae9b0ac2e7fe03844c9d463a5fa3c01bc',1,'http::server::RequestParser::queries()']]],
+  ['query_379',['query',['../classhttp_1_1server_1_1_request.html#a6d7ee176e3e606031ec9b50089f23f04',1,'http::server::Request']]],
+  ['quiet_380',['quiet',['../class_logger.html#a34e2ffbd9c13aaeff1365ea1eaea7745',1,'Logger']]]
 ];

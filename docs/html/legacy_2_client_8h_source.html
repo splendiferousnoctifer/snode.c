@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>snode.c: http/legacy/Client.h Source File</title>
+<title>snode.c: http/client/legacy/Client.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -110,37 +110,38 @@ $(document).ready(function(){initNavTree('legacy_2_client_8h_source.html',''); i
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* DOXYGEN_SHOULD_SKIP_THIS */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;../Client.h&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_client_8h.html">client/Client.h</a>&quot;</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ip_2tcp_2ipv4_2legacy_2_socket_client_8h.html">socket/ip/tcp/ipv4/legacy/SocketClient.h</a>&quot;</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ip_2tcp_2ipv6_2legacy_2_socket_client_8h.html">socket/ip/tcp/ipv6/legacy/SocketClient.h</a>&quot;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="namespacehttp_1_1legacy.html">   30</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacehttp_1_1legacy.html">http::legacy</a> {</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="namespacehttp_1_1client_1_1legacy.html">   30</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacehttp_1_1client_1_1legacy.html">http::client::legacy</a> {</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classhttp_1_1legacy_1_1_client.html">   32</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classhttp_1_1legacy_1_1_client.html">Client</a> : <span class="keyword">public</span> <a class="code" href="classhttp_1_1_client.html">http::Client</a>&lt;net::socket::ip::tcp::ipv4::legacy::SocketClient&gt; {</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classhttp_1_1client_1_1legacy_1_1_client.html">   32</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classhttp_1_1client_1_1legacy_1_1_client.html">Client</a> : <span class="keyword">public</span> <a class="code" href="classhttp_1_1client_1_1_client.html">http::client::Client</a>&lt;net::socket::ip::tcp::ipv4::legacy::SocketClient&gt; {</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keyword">using</span> <a class="code" href="classhttp_1_1_client.html">http::Client&lt;net::socket::ip::tcp::ipv4::legacy::SocketClient&gt;::Client</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keyword">using</span> <a class="code" href="classhttp_1_1client_1_1_client.html">http::client::Client&lt;net::socket::ip::tcp::ipv4::legacy::SocketClient&gt;::Client</a>;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    };</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classhttp_1_1legacy_1_1_client6.html">   37</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classhttp_1_1legacy_1_1_client6.html">Client6</a> : <span class="keyword">public</span> <a class="code" href="classhttp_1_1_client.html">http::Client</a>&lt;net::socket::ip::tcp::ipv6::legacy::SocketClient&gt; {</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classhttp_1_1client_1_1legacy_1_1_client6.html">   37</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classhttp_1_1client_1_1legacy_1_1_client6.html">Client6</a> : <span class="keyword">public</span> <a class="code" href="classhttp_1_1client_1_1_client.html">http::client::Client</a>&lt;net::socket::ip::tcp::ipv6::legacy::SocketClient&gt; {</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keyword">using</span> <a class="code" href="classhttp_1_1_client.html">http::Client&lt;net::socket::ip::tcp::ipv6::legacy::SocketClient&gt;::Client</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keyword">using</span> <a class="code" href="classhttp_1_1client_1_1_client.html">http::client::Client&lt;net::socket::ip::tcp::ipv6::legacy::SocketClient&gt;::Client</a>;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    };</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;} <span class="comment">// namespace http::legacy</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;} <span class="comment">// namespace http::client::legacy</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// LEGACY_CLIENT_H</span></div>
-<div class="ttc" id="aclasshttp_1_1_client_html"><div class="ttname"><a href="classhttp_1_1_client.html">http::Client</a></div><div class="ttdef"><b>Definition:</b> <a href="_client_8h_source.html#l00039">Client.h:39</a></div></div>
-<div class="ttc" id="aclasshttp_1_1legacy_1_1_client6_html"><div class="ttname"><a href="classhttp_1_1legacy_1_1_client6.html">http::legacy::Client6</a></div><div class="ttdef"><b>Definition:</b> <a href="legacy_2_client_8h_source.html#l00037">Client.h:37</a></div></div>
-<div class="ttc" id="aclasshttp_1_1legacy_1_1_client_html"><div class="ttname"><a href="classhttp_1_1legacy_1_1_client.html">http::legacy::Client</a></div><div class="ttdef"><b>Definition:</b> <a href="legacy_2_client_8h_source.html#l00032">Client.h:32</a></div></div>
+<div class="ttc" id="a_client_8h_html"><div class="ttname"><a href="_client_8h.html">Client.h</a></div></div>
+<div class="ttc" id="aclasshttp_1_1client_1_1_client_html"><div class="ttname"><a href="classhttp_1_1client_1_1_client.html">http::client::Client</a></div><div class="ttdef"><b>Definition:</b> <a href="_client_8h_source.html#l00039">Client.h:39</a></div></div>
+<div class="ttc" id="aclasshttp_1_1client_1_1legacy_1_1_client6_html"><div class="ttname"><a href="classhttp_1_1client_1_1legacy_1_1_client6.html">http::client::legacy::Client6</a></div><div class="ttdef"><b>Definition:</b> <a href="legacy_2_client_8h_source.html#l00037">Client.h:37</a></div></div>
+<div class="ttc" id="aclasshttp_1_1client_1_1legacy_1_1_client_html"><div class="ttname"><a href="classhttp_1_1client_1_1legacy_1_1_client.html">http::client::legacy::Client</a></div><div class="ttdef"><b>Definition:</b> <a href="legacy_2_client_8h_source.html#l00032">Client.h:32</a></div></div>
 <div class="ttc" id="aip_2tcp_2ipv4_2legacy_2_socket_client_8h_html"><div class="ttname"><a href="ip_2tcp_2ipv4_2legacy_2_socket_client_8h.html">SocketClient.h</a></div></div>
 <div class="ttc" id="aip_2tcp_2ipv6_2legacy_2_socket_client_8h_html"><div class="ttname"><a href="ip_2tcp_2ipv6_2legacy_2_socket_client_8h.html">SocketClient.h</a></div></div>
-<div class="ttc" id="anamespacehttp_1_1legacy_html"><div class="ttname"><a href="namespacehttp_1_1legacy.html">http::legacy</a></div><div class="ttdef"><b>Definition:</b> <a href="legacy_2_client_8h_source.html#l00030">Client.h:30</a></div></div>
+<div class="ttc" id="anamespacehttp_1_1client_1_1legacy_html"><div class="ttname"><a href="namespacehttp_1_1client_1_1legacy.html">http::client::legacy</a></div><div class="ttdef"><b>Definition:</b> <a href="legacy_2_client_8h_source.html#l00030">Client.h:30</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de5b03c9e251d763a573c2ccd217de59.html">http</a></li><li class="navelem"><a class="el" href="dir_42461103a7fab8c1aaf39abf5cbc723d.html">legacy</a></li><li class="navelem"><a class="el" href="legacy_2_client_8h.html">Client.h</a></li>
+    <li class="navelem"><a class="el" href="dir_de5b03c9e251d763a573c2ccd217de59.html">http</a></li><li class="navelem"><a class="el" href="dir_a4a3df24389e21fcdd752e1806bb8b97.html">client</a></li><li class="navelem"><a class="el" href="dir_ce08931bd98237f5691232a8be303caf.html">legacy</a></li><li class="navelem"><a class="el" href="legacy_2_client_8h.html">Client.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

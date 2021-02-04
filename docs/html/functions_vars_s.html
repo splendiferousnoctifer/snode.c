@@ -85,19 +85,14 @@ $(document).ready(function(){initNavTree('functions_vars_s.html',''); initResiza
 
 <h3><a id="index_s"></a>- s -</h3><ul>
 <li>sendHeaderInProgress
-: <a class="el" href="classhttp_1_1_response.html#a91a7a3e94f09ec60d02fb400e065014c">http::Response</a>
+: <a class="el" href="classhttp_1_1client_1_1_request.html#a2ddbbc7f5e4322af80e4a82c43a30caf">http::client::Request</a>
+, <a class="el" href="classhttp_1_1server_1_1_response.html#a34817bbde36d83fb3ba51956a02ed4e8">http::server::Response</a>
 </li>
 <li>server
 : <a class="el" href="classexpress_1_1_web_app_t.html#a43f343623b01c698256e2c0eb4e3226f">express::WebAppT&lt; ServerT &gt;</a>
 </li>
 <li>serverContext
-: <a class="el" href="classhttp_1_1_response.html#ad1b3cc85d3e1485a333810133d39d8a9">http::Response</a>
-</li>
-<li>serverRequest
-: <a class="el" href="classhttp_1_1_client_context.html#af9699e49288a7257990e4fe3f48c9295">http::ClientContext</a>
-</li>
-<li>serverResponse
-: <a class="el" href="classhttp_1_1_client_context.html#a795dc8019fd7288a01703b96a59af7ab">http::ClientContext</a>
+: <a class="el" href="classhttp_1_1server_1_1_response.html#abef8d56ac9ffd2189f40e817fb128248">http::server::Response</a>
 </li>
 <li>sink
 : <a class="el" href="classnet_1_1stream_1_1_source.html#a0e5b38f9b58a604e6d23a61c8d1929fb">net::stream::Source</a>
@@ -105,13 +100,16 @@ $(document).ready(function(){initNavTree('functions_vars_s.html',''); initResiza
 <li>sockAddr
 : <a class="el" href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">net::socket::SocketAddress&lt; SockAddrT &gt;</a>
 </li>
+<li>socketClient
+: <a class="el" href="classhttp_1_1client_1_1_client.html#a284c624f4c18d22267e5fe3e0a4f203c">http::client::Client&lt; SocketClientT &gt;</a>
+</li>
 <li>socketConnection
-: <a class="el" href="classhttp_1_1_client_context.html#a20695654543eab3d02ca5168b1ec5da2">http::ClientContext</a>
-, <a class="el" href="classhttp_1_1_server_context.html#a6e80afb3e70b67fe22ce73de4aeed139">http::ServerContext&lt; RequestT, ResponseT &gt;</a>
+: <a class="el" href="classhttp_1_1client_1_1_client_context.html#ab50c096fffff4f7b272379dd5a487806">http::client::ClientContext</a>
+, <a class="el" href="classhttp_1_1server_1_1_server_context.html#a84e37b6508108c7a63a5e32d33a91e78">http::server::ServerContext&lt; RequestT, ResponseT &gt;</a>
 , <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connector.html#a2f7badf236b8700f8edd47e9db5e5012">net::socket::stream::SocketConnector&lt; SocketConnectionT &gt;</a>
 </li>
 <li>socketServer
-: <a class="el" href="classhttp_1_1_server.html#a9c8d03477f123be7b567a477faf9bf6c">http::Server&lt; SocketServerT, RequestT, ResponseT &gt;</a>
+: <a class="el" href="classhttp_1_1server_1_1_server.html#ad3f945d64af80c944f29dd4c5e4f154f">http::server::Server&lt; SocketServerT, RequestT, ResponseT &gt;</a>
 </li>
 <li>source
 : <a class="el" href="classnet_1_1stream_1_1_sink.html#a4125cb3a6098fa118b161c67f375cba0">net::stream::Sink</a>
@@ -131,11 +129,11 @@ $(document).ready(function(){initNavTree('functions_vars_s.html',''); initResiza
 : <a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_listener.html#a50b7f221e0a3281a566bf39845b6e432">net::socket::stream::tls::SocketListener&lt; SocketT &gt;</a>
 </li>
 <li>status
-: <a class="el" href="structhttp_1_1_server_context_1_1_request_context.html#ac46f57f9d6e2fa942f49781e9e7b6571">http::ServerContext&lt; RequestT, ResponseT &gt;::RequestContext</a>
+: <a class="el" href="structhttp_1_1server_1_1_server_context_1_1_request_context.html#aa178fc425ef99bd7b52807a4d5153ff0">http::server::ServerContext&lt; RequestT, ResponseT &gt;::RequestContext</a>
 </li>
 <li>statusCode
-: <a class="el" href="classhttp_1_1_response_parser.html#a8d9d4d2dd608a830cede515e84a00541">http::ResponseParser</a>
-, <a class="el" href="classhttp_1_1_server_response.html#acce8cfb6d83ee29825496bec7a5c3841">http::ServerResponse</a>
+: <a class="el" href="classhttp_1_1client_1_1_response.html#abfd4ec2472698c194abeb13fafa4d65e">http::client::Response</a>
+, <a class="el" href="classhttp_1_1client_1_1_response_parser.html#a87506b993d18e0926a1845bb052e77f4">http::client::ResponseParser</a>
 , <a class="el" href="class_status_code.html#a192a75203e32b01f4fc62df96ca42096">StatusCode</a>
 </li>
 <li>stdCookies
@@ -151,7 +149,7 @@ $(document).ready(function(){initNavTree('functions_vars_s.html',''); initResiza
 : <a class="el" href="classnet_1_1_event_loop.html#a4863138ce127827123afe7d3f23b9eb5">net::EventLoop</a>
 </li>
 <li>supportedMethods
-: <a class="el" href="classhttp_1_1_request_parser.html#ab1555040346e0e10e7aaf61b91cdacad">http::RequestParser</a>
+: <a class="el" href="classhttp_1_1server_1_1_request_parser.html#a60c1548057036cfc07fdf442aab215fd">http::server::RequestParser</a>
 </li>
 </ul>
 </div><!-- contents -->

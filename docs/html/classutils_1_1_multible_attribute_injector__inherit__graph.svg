@@ -32,30 +32,30 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="classhttp_1_1_request.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="7.5,-127.5 7.5,-371.5 103.5,-371.5 103.5,-127.5 7.5,-127.5"/>
-<text text-anchor="middle" x="55.5" y="-359.5" font-family="Helvetica,sans-Serif" font-size="10.00">http::Request</text>
-<polyline fill="none" stroke="black" points="7.5,-352.5 103.5,-352.5 "/>
-<text text-anchor="start" x="15.5" y="-340.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ method</text>
-<text text-anchor="start" x="15.5" y="-329.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ url</text>
-<text text-anchor="start" x="15.5" y="-318.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ httpVersion</text>
-<text text-anchor="start" x="15.5" y="-307.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ httpMajor</text>
-<text text-anchor="start" x="15.5" y="-296.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ httpMinor</text>
-<text text-anchor="start" x="15.5" y="-285.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ body</text>
-<text text-anchor="start" x="15.5" y="-274.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ contentLength</text>
-<text text-anchor="start" x="15.5" y="-263.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ connectionState</text>
-<text text-anchor="start" x="15.5" y="-252.5" font-family="Helvetica,sans-Serif" font-size="10.00"># queries</text>
-<text text-anchor="start" x="15.5" y="-241.5" font-family="Helvetica,sans-Serif" font-size="10.00"># headers</text>
-<text text-anchor="start" x="15.5" y="-230.5" font-family="Helvetica,sans-Serif" font-size="10.00"># cookies</text>
-<text text-anchor="start" x="15.5" y="-219.5" font-family="Helvetica,sans-Serif" font-size="10.00"># nullstr</text>
-<polyline fill="none" stroke="black" points="7.5,-212.5 103.5,-212.5 "/>
-<text text-anchor="start" x="15.5" y="-200.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ header()</text>
-<text text-anchor="start" x="15.5" y="-189.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ cookie()</text>
-<text text-anchor="start" x="15.5" y="-178.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ query()</text>
-<text text-anchor="start" x="15.5" y="-167.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ bodyLength()</text>
-<text text-anchor="start" x="15.5" y="-156.5" font-family="Helvetica,sans-Serif" font-size="10.00"># Request()</text>
-<text text-anchor="start" x="15.5" y="-145.5" font-family="Helvetica,sans-Serif" font-size="10.00"># ~Request()</text>
-<text text-anchor="start" x="15.5" y="-134.5" font-family="Helvetica,sans-Serif" font-size="10.00"># reset()</text>
+<g id="a_node2"><a xlink:href="classhttp_1_1server_1_1_request.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="black" points="1,-127.5 1,-371.5 110,-371.5 110,-127.5 1,-127.5"/>
+<text text-anchor="middle" x="55.5" y="-359.5" font-family="Helvetica,sans-Serif" font-size="10.00">http::server::Request</text>
+<polyline fill="none" stroke="black" points="1,-352.5 110,-352.5 "/>
+<text text-anchor="start" x="9" y="-340.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ method</text>
+<text text-anchor="start" x="9" y="-329.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ url</text>
+<text text-anchor="start" x="9" y="-318.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ httpVersion</text>
+<text text-anchor="start" x="9" y="-307.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ httpMajor</text>
+<text text-anchor="start" x="9" y="-296.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ httpMinor</text>
+<text text-anchor="start" x="9" y="-285.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ body</text>
+<text text-anchor="start" x="9" y="-274.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ contentLength</text>
+<text text-anchor="start" x="9" y="-263.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ connectionState</text>
+<text text-anchor="start" x="9" y="-252.5" font-family="Helvetica,sans-Serif" font-size="10.00"># queries</text>
+<text text-anchor="start" x="9" y="-241.5" font-family="Helvetica,sans-Serif" font-size="10.00"># headers</text>
+<text text-anchor="start" x="9" y="-230.5" font-family="Helvetica,sans-Serif" font-size="10.00"># cookies</text>
+<text text-anchor="start" x="9" y="-219.5" font-family="Helvetica,sans-Serif" font-size="10.00"># nullstr</text>
+<polyline fill="none" stroke="black" points="1,-212.5 110,-212.5 "/>
+<text text-anchor="start" x="9" y="-200.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ header()</text>
+<text text-anchor="start" x="9" y="-189.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ cookie()</text>
+<text text-anchor="start" x="9" y="-178.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ query()</text>
+<text text-anchor="start" x="9" y="-167.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ bodyLength()</text>
+<text text-anchor="start" x="9" y="-156.5" font-family="Helvetica,sans-Serif" font-size="10.00"># Request()</text>
+<text text-anchor="start" x="9" y="-145.5" font-family="Helvetica,sans-Serif" font-size="10.00"># ~Request()</text>
+<text text-anchor="start" x="9" y="-134.5" font-family="Helvetica,sans-Serif" font-size="10.00"># reset()</text>
 </a>
 </g>
 </g>

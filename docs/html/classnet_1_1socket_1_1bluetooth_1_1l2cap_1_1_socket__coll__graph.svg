@@ -37,11 +37,11 @@
 <text text-anchor="start" x="8" y="-201.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Socket()</text>
 <text text-anchor="start" x="8" y="-190.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Socket()</text>
 <text text-anchor="start" x="8" y="-179.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator=()</text>
-<text text-anchor="start" x="8" y="-168.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~Socket()</text>
-<text text-anchor="start" x="8" y="-157.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ open()</text>
-<text text-anchor="start" x="8" y="-146.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ bind()</text>
-<text text-anchor="start" x="8" y="-135.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getBindAddress()</text>
-<text text-anchor="start" x="8" y="-124.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setBindAddress()</text>
+<text text-anchor="start" x="8" y="-168.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ open()</text>
+<text text-anchor="start" x="8" y="-157.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ bind()</text>
+<text text-anchor="start" x="8" y="-146.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getBindAddress()</text>
+<text text-anchor="start" x="8" y="-135.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setBindAddress()</text>
+<text text-anchor="start" x="8" y="-124.5" font-family="Helvetica,sans-Serif" font-size="10.00"># ~Socket()</text>
 <text text-anchor="start" x="8" y="-113.5" font-family="Helvetica,sans-Serif" font-size="10.00"># create()</text>
 </a>
 </g>
@@ -56,20 +56,20 @@
 <g id="node3" class="node">
 <title>Node3</title>
 <g id="a_node3"><a xlink:href="classnet_1_1_descriptor.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="24.5,-526.5 24.5,-671.5 107.5,-671.5 107.5,-526.5 24.5,-526.5"/>
+<polygon fill="white" stroke="black" points="25,-526.5 25,-671.5 107,-671.5 107,-526.5 25,-526.5"/>
 <text text-anchor="middle" x="66" y="-659.5" font-family="Helvetica,sans-Serif" font-size="10.00">net::Descriptor</text>
-<polyline fill="none" stroke="black" points="24.5,-652.5 107.5,-652.5 "/>
-<text text-anchor="start" x="32.5" y="-640.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ none</text>
-<text text-anchor="start" x="32.5" y="-629.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; fd</text>
-<polyline fill="none" stroke="black" points="24.5,-622.5 107.5,-622.5 "/>
-<text text-anchor="start" x="32.5" y="-610.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Descriptor()</text>
-<text text-anchor="start" x="32.5" y="-599.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator=()</text>
-<text text-anchor="start" x="32.5" y="-588.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~Descriptor()</text>
-<text text-anchor="start" x="32.5" y="-577.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ attach()</text>
-<text text-anchor="start" x="32.5" y="-566.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getFd()</text>
-<text text-anchor="start" x="32.5" y="-555.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ dontClose()</text>
-<text text-anchor="start" x="32.5" y="-544.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ dontClose()</text>
-<text text-anchor="start" x="32.5" y="-533.5" font-family="Helvetica,sans-Serif" font-size="10.00"># Descriptor()</text>
+<polyline fill="none" stroke="black" points="25,-652.5 107,-652.5 "/>
+<text text-anchor="start" x="33" y="-640.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ none</text>
+<text text-anchor="start" x="33" y="-629.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; fd</text>
+<polyline fill="none" stroke="black" points="25,-622.5 107,-622.5 "/>
+<text text-anchor="start" x="33" y="-610.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Descriptor()</text>
+<text text-anchor="start" x="33" y="-599.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator=()</text>
+<text text-anchor="start" x="33" y="-588.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ attach()</text>
+<text text-anchor="start" x="33" y="-577.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getFd()</text>
+<text text-anchor="start" x="33" y="-566.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ dontClose()</text>
+<text text-anchor="start" x="33" y="-555.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ dontClose()</text>
+<text text-anchor="start" x="33" y="-544.5" font-family="Helvetica,sans-Serif" font-size="10.00"># Descriptor()</text>
+<text text-anchor="start" x="33" y="-533.5" font-family="Helvetica,sans-Serif" font-size="10.00"># ~Descriptor()</text>
 </a>
 </g>
 </g>
@@ -92,12 +92,12 @@
 <text text-anchor="start" x="90.5" y="-427.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Socket()</text>
 <text text-anchor="start" x="90.5" y="-416.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Socket()</text>
 <text text-anchor="start" x="90.5" y="-405.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator=()</text>
-<text text-anchor="start" x="90.5" y="-394.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~Socket()</text>
-<text text-anchor="start" x="90.5" y="-383.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ open()</text>
-<text text-anchor="start" x="90.5" y="-372.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ bind()</text>
-<text text-anchor="start" x="90.5" y="-361.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ shutdown()</text>
-<text text-anchor="start" x="90.5" y="-350.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getBindAddress()</text>
-<text text-anchor="start" x="90.5" y="-339.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setBindAddress()</text>
+<text text-anchor="start" x="90.5" y="-394.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ open()</text>
+<text text-anchor="start" x="90.5" y="-383.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ bind()</text>
+<text text-anchor="start" x="90.5" y="-372.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ shutdown()</text>
+<text text-anchor="start" x="90.5" y="-361.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getBindAddress()</text>
+<text text-anchor="start" x="90.5" y="-350.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setBindAddress()</text>
+<text text-anchor="start" x="90.5" y="-339.5" font-family="Helvetica,sans-Serif" font-size="10.00"># ~Socket()</text>
 <text text-anchor="start" x="90.5" y="-328.5" font-family="Helvetica,sans-Serif" font-size="10.00"># create()</text>
 </a>
 </g>

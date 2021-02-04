@@ -85,7 +85,8 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 
 <h3><a id="index_s"></a>- s -</h3><ul>
 <li>send()
-: <a class="el" href="classhttp_1_1_response.html#a5c65ba78dce3a916b735475afe57d1b4">http::Response</a>
+: <a class="el" href="classhttp_1_1client_1_1_request.html#a40ec52db88f3bcbd486ddc2a6aa51451">http::client::Request</a>
+, <a class="el" href="classhttp_1_1server_1_1_response.html#a45ff2e3acdbbb099646c83fd3b063fec">http::server::Response</a>
 , <a class="el" href="classnet_1_1stream_1_1_pipe_source.html#a7ee7bd9951740fd33fa2333deb87cff0">net::stream::PipeSource</a>
 , <a class="el" href="classnet_1_1stream_1_1_source.html#a5bfdccf8217b2f8dfe46ca66e0fcaf11">net::stream::Source</a>
 </li>
@@ -93,11 +94,15 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 : <a class="el" href="classexpress_1_1_response.html#aa7a3b9c880c1af5b11e832f84eeda58c">express::Response</a>
 </li>
 <li>sendHeader()
-: <a class="el" href="classhttp_1_1_response.html#ab97ab9c5d7ec9f18c116aa727851c834">http::Response</a>
+: <a class="el" href="classhttp_1_1client_1_1_request.html#a3ab299ee42e5bfee1a27c1bfad9d3c16">http::client::Request</a>
+, <a class="el" href="classhttp_1_1server_1_1_response.html#a7f5f47752f963e945421d8e65ae05b87">http::server::Response</a>
+</li>
+<li>sendRequestData()
+: <a class="el" href="classhttp_1_1client_1_1_client_context.html#a285e5eae77d6f58597274fe36f5b37d6">http::client::ClientContext</a>
 </li>
 <li>sendResponseData()
-: <a class="el" href="classhttp_1_1_server_context.html#a047ddd114728c05155832c7a1d35681b">http::ServerContext&lt; RequestT, ResponseT &gt;</a>
-, <a class="el" href="classhttp_1_1_server_context_base.html#a79644b1d7ead2a15fe9815a180e36d82">http::ServerContextBase</a>
+: <a class="el" href="classhttp_1_1server_1_1_server_context.html#a06a2798980e99dd7443ac2c56df2590d">http::server::ServerContext&lt; RequestT, ResponseT &gt;</a>
+, <a class="el" href="classhttp_1_1server_1_1_server_context_base.html#a8ed90a09a2dd6c4144eb60622cfbc8ee">http::server::ServerContextBase</a>
 </li>
 <li>sendStatus()
 : <a class="el" href="classexpress_1_1_response.html#a9049ec68cf5f6cb6d04c403267158d09">express::Response</a>
@@ -107,16 +112,14 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 , <a class="el" href="classnet_1_1socket_1_1ip_1_1address_1_1ipv6_1_1_inet_address.html#a10f3e74e9c3ec17adcbc3aadd22e17c8">net::socket::ip::address::ipv6::InetAddress</a>
 </li>
 <li>Server()
-: <a class="el" href="classhttp_1_1_server.html#a354564c02cd53e06e07b77538174a2c0">http::Server&lt; SocketServerT, RequestT, ResponseT &gt;</a>
+: <a class="el" href="classhttp_1_1server_1_1_server.html#ac62a7220c8ac1cf32f03e83b65de8612">http::server::Server&lt; SocketServerT, RequestT, ResponseT &gt;</a>
 </li>
 <li>ServerContext()
-: <a class="el" href="classhttp_1_1_server_context.html#adc50eaabdbf282acd0d165660d88fcf7">http::ServerContext&lt; RequestT, ResponseT &gt;</a>
-</li>
-<li>ServerResponse()
-: <a class="el" href="classhttp_1_1_server_response.html#abb670267dd81246e9ab30677705cc092">http::ServerResponse</a>
+: <a class="el" href="classhttp_1_1server_1_1_server_context.html#a4004478e6769b7b55232fa05003b4221">http::server::ServerContext&lt; RequestT, ResponseT &gt;</a>
 </li>
 <li>set()
-: <a class="el" href="classhttp_1_1_response.html#af217518e66fa92dbe559c1eacf124d4a">http::Response</a>
+: <a class="el" href="classhttp_1_1client_1_1_request.html#a6f47245db5201204b185ebaadf0cec46">http::client::Request</a>
+, <a class="el" href="classhttp_1_1server_1_1_response.html#aaf528651bc72e8c96f6003d2e8967cf2">http::server::Response</a>
 , <a class="el" href="classnet_1_1_fd_set.html#a602dbf99def6560bcc7a6bcb8384d549">net::FdSet</a>
 </li>
 <li>setAttribute()
@@ -131,6 +134,9 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 </li>
 <li>setCustomFormatSpec()
 : <a class="el" href="class_logger.html#a969163c7aff5b8409d8dfb8175dd2b85">Logger</a>
+</li>
+<li>setHost()
+: <a class="el" href="classhttp_1_1client_1_1_request.html#a1d6cf5bd45497a1ae47b05b124fc97ba">http::client::Request</a>
 </li>
 <li>setLocalAddress()
 : <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a6180b22c46d92998d893fa501440683c">net::socket::stream::SocketConnection&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt;</a>
@@ -153,10 +159,6 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 </li>
 <li>setRemoteAddress()
 : <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a73479a6af147e8d4fc828d7e7b050ae2">net::socket::stream::SocketConnection&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt;</a>
-</li>
-<li>setRequest()
-: <a class="el" href="classhttp_1_1_client_context.html#a97e091a9a9c269bdf56a41ef09d4c69a">http::ClientContext</a>
-, <a class="el" href="classhttp_1_1_server_request.html#a9353a81e21bc7f8c25fdb5088d73385d">http::ServerRequest</a>
 </li>
 <li>setSSLError()
 : <a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#ab2d1ac395884dd5197ddef41699b06c9">net::socket::stream::tls::SocketConnection&lt; SocketT &gt;</a>
@@ -191,7 +193,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 : <a class="el" href="classnet_1_1socket_1_1_socket.html#a71a2ba0a70e0da24ae43dc52437874b5">net::socket::Socket&lt; SocketAddressT &gt;</a>
 </li>
 <li>SocketAddress()
-: <a class="el" href="classnet_1_1socket_1_1_socket_address.html#a3944a2a996badd0b4d51bc6e55d5a16e">net::socket::SocketAddress&lt; SockAddrT &gt;</a>
+: <a class="el" href="classnet_1_1socket_1_1_socket_address.html#a34b7b89dbbdb3bc0bd110d23a1fe259c">net::socket::SocketAddress&lt; SockAddrT &gt;</a>
 </li>
 <li>SocketClient()
 : <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_client.html#a2b7d2feb40461315d7eac54e766d4145">net::socket::stream::SocketClient&lt; SocketConnectorT &gt;</a>
@@ -205,7 +207,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 : <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#af4cf2e7cba730d5eafd50597446e622a">net::socket::stream::SocketConnectionBase</a>
 </li>
 <li>SocketConnector()
-: <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connector.html#aba282a7885d755b5eb61bec16ae7ce04">net::socket::stream::SocketConnector&lt; SocketConnectionT &gt;</a>
+: <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connector.html#a3a3396e68c5a2d63b5693cc1018ecd61">net::socket::stream::SocketConnector&lt; SocketConnectionT &gt;</a>
 , <a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connector.html#a5fdcb49edf7159bed9269618d54716ee">net::socket::stream::tls::SocketConnector&lt; SocketT &gt;</a>
 </li>
 <li>SocketListener()
@@ -216,7 +218,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 : <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#a4c55325fbd2d5f9691029dde67de6606">net::socket::stream::SocketReader&lt; SocketT &gt;</a>
 </li>
 <li>SocketServer()
-: <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_server.html#a1a9f357f3f950476b39f98b5a7e5d0ed">net::socket::stream::SocketServer&lt; SocketListenerT &gt;</a>
+: <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_server.html#ac0576dc9dc6a453f9534f334e71e026e">net::socket::stream::SocketServer&lt; SocketListenerT &gt;</a>
 </li>
 <li>SocketWriter()
 : <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#a7e241f91ccc2e05f921bc52d75df9acb">net::socket::stream::SocketWriter&lt; SocketT &gt;</a>
@@ -239,7 +241,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 : <a class="el" href="classexpress_1_1middleware_1_1_static_middleware.html#af712793a6f6d600b813fc4a6d3fbe41d">express::middleware::StaticMiddleware</a>
 </li>
 <li>status()
-: <a class="el" href="classhttp_1_1_response.html#a37d8fcef190c86c0a91de82eb150bbf0">http::Response</a>
+: <a class="el" href="classhttp_1_1server_1_1_response.html#a099609859acedb8b45f58b6b2a72203f">http::server::Response</a>
 </li>
 <li>stop()
 : <a class="el" href="classexpress_1_1_web_app.html#a2c6cf792698b5d850ecfa9edc91e2c19">express::WebApp</a>

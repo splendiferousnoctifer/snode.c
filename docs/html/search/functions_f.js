@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['query_1107',['query',['../classhttp_1_1_request.html#a43f7a2516f7c29e0b3e036ca83fca165',1,'http::Request']]],
-  ['quiet_1108',['quiet',['../class_logger.html#a34e2ffbd9c13aaeff1365ea1eaea7745',1,'Logger']]]
+  ['query_1102',['query',['../classhttp_1_1server_1_1_request.html#a6d7ee176e3e606031ec9b50089f23f04',1,'http::server::Request']]],
+  ['quiet_1103',['quiet',['../class_logger.html#a34e2ffbd9c13aaeff1365ea1eaea7745',1,'Logger']]]
 ];
