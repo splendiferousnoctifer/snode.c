@@ -5,10 +5,11 @@ var dir_a4a3df24389e21fcdd752e1806bb8b97 =
     [ "Client.h", "_client_8h.html", [
       [ "Client", "classhttp_1_1client_1_1_client.html", "classhttp_1_1client_1_1_client" ]
     ] ],
-    [ "ClientContext.cpp", "_client_context_8cpp.html", null ],
     [ "ClientContext.h", "_client_context_8h.html", [
+      [ "ClientContextBase", "classhttp_1_1client_1_1_client_context_base.html", "classhttp_1_1client_1_1_client_context_base" ],
       [ "ClientContext", "classhttp_1_1client_1_1_client_context.html", "classhttp_1_1client_1_1_client_context" ]
     ] ],
+    [ "ClientContext.hpp", "_client_context_8hpp.html", null ],
     [ "Request.cpp", "http_2client_2_request_8cpp.html", null ],
     [ "Request.h", "http_2client_2_request_8h.html", [
       [ "Request", "classhttp_1_1client_1_1_request.html", "classhttp_1_1client_1_1_request" ]

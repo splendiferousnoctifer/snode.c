@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>snode.c: http::client::ClientContext Class Reference</title>
+<title>snode.c: http::client::ClientContext&lt; RequestT, ResponseT &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -88,89 +88,147 @@ $(document).ready(function(){initNavTree('classhttp_1_1client_1_1_client_context
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classhttp_1_1client_1_1_client_context-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">http::client::ClientContext Class Reference</div>  </div>
+<div class="title">http::client::ClientContext&lt; RequestT, ResponseT &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="_client_context_8h_source.html">ClientContext.h</a>&gt;</code></p>
 <div class="dynheader">
-Collaboration diagram for http::client::ClientContext:</div>
+Inheritance diagram for http::client::ClientContext&lt; RequestT, ResponseT &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1client_1_1_client_context__coll__graph.svg" width="615" height="1564"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1client_1_1_client_context__inherit__graph.svg" width="212" height="434"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div class="dynheader">
+Collaboration diagram for http::client::ClientContext&lt; RequestT, ResponseT &gt;:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1client_1_1_client_context__coll__graph.svg" width="636" height="1014"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:aef8c8f1c0d5d458138ebf6843cf8cc12"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1client_1_1_client_context.html#aef8c8f1c0d5d458138ebf6843cf8cc12">SocketConnection</a> = <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html">net::socket::stream::SocketConnectionBase</a></td></tr>
-<tr class="separator:aef8c8f1c0d5d458138ebf6843cf8cc12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79c443a2c304a5665aa5d4ed59e5d747"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1client_1_1_client_context.html#a79c443a2c304a5665aa5d4ed59e5d747">SocketConnection</a> = <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html">net::socket::stream::SocketConnectionBase</a></td></tr>
+<tr class="separator:a79c443a2c304a5665aa5d4ed59e5d747"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1c01c320adadb59783dace145182b71"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1client_1_1_client_context.html#ac1c01c320adadb59783dace145182b71">Request</a> = RequestT</td></tr>
+<tr class="separator:ac1c01c320adadb59783dace145182b71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f3957e63179e19b512e5c9a2a739d91"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1client_1_1_client_context.html#a9f3957e63179e19b512e5c9a2a739d91">Response</a> = ResponseT</td></tr>
+<tr class="separator:a9f3957e63179e19b512e5c9a2a739d91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a512789fda169952d0a51da9c7c987964"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1client_1_1_client_context.html#a512789fda169952d0a51da9c7c987964">ClientContext</a> (<a class="el" href="classhttp_1_1client_1_1_client_context.html#aef8c8f1c0d5d458138ebf6843cf8cc12">SocketConnection</a> *<a class="el" href="classhttp_1_1client_1_1_client_context.html#ab50c096fffff4f7b272379dd5a487806">socketConnection</a>, const std::function&lt; void(<a class="el" href="classhttp_1_1client_1_1_response.html">Response</a> &amp;)&gt; &amp;onResponse, const std::function&lt; void(int status, const std::string &amp;reason)&gt; &amp;onError)</td></tr>
-<tr class="separator:a512789fda169952d0a51da9c7c987964"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a781d8433feafcbfefaecc62ba9c87c29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1client_1_1_client_context.html#a781d8433feafcbfefaecc62ba9c87c29">receiveResponseData</a> (const char *junk, std::size_t junkLen)</td></tr>
-<tr class="separator:a781d8433feafcbfefaecc62ba9c87c29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a285e5eae77d6f58597274fe36f5b37d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1client_1_1_client_context.html#a285e5eae77d6f58597274fe36f5b37d6">sendRequestData</a> (const char *buf, std::size_t len)</td></tr>
-<tr class="separator:a285e5eae77d6f58597274fe36f5b37d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7d522cd3b91aca98d883158d12c3b40"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classhttp_1_1client_1_1_request.html">Request</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1client_1_1_client_context.html#aa7d522cd3b91aca98d883158d12c3b40">getRequest</a> ()</td></tr>
-<tr class="separator:aa7d522cd3b91aca98d883158d12c3b40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3cd2d562d7fd8e6dccee25d0c8aedbff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1client_1_1_client_context.html#a3cd2d562d7fd8e6dccee25d0c8aedbff">terminateConnection</a> ()</td></tr>
-<tr class="separator:a3cd2d562d7fd8e6dccee25d0c8aedbff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7bd2cdb16d44e06401d2b7070ffeab2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1client_1_1_client_context.html#aa7bd2cdb16d44e06401d2b7070ffeab2">requestCompleted</a> ()</td></tr>
-<tr class="separator:aa7bd2cdb16d44e06401d2b7070ffeab2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5fcc50bbe2d00ce73f99fcec4d13545"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1client_1_1_client_context.html#ad5fcc50bbe2d00ce73f99fcec4d13545">ClientContext</a> (<a class="el" href="classhttp_1_1client_1_1_client_context.html#a79c443a2c304a5665aa5d4ed59e5d747">SocketConnection</a> *<a class="el" href="classhttp_1_1client_1_1_client_context.html#a4251681fcb444f8d115d531334d32381">socketConnection</a>, const std::function&lt; void(<a class="el" href="classhttp_1_1client_1_1_client_context.html#a9f3957e63179e19b512e5c9a2a739d91">Response</a> &amp;)&gt; &amp;onResponse, const std::function&lt; void(int status, const std::string &amp;reason)&gt; &amp;onError)</td></tr>
+<tr class="separator:ad5fcc50bbe2d00ce73f99fcec4d13545"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab656a72e24e31e49c5991a294bb7ec8e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1client_1_1_client_context.html#ab656a72e24e31e49c5991a294bb7ec8e">~ClientContext</a> () override=default</td></tr>
+<tr class="separator:ab656a72e24e31e49c5991a294bb7ec8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfc3f3046027f4d5fbed34feb7fc287f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1client_1_1_client_context.html#adfc3f3046027f4d5fbed34feb7fc287f">receiveResponseData</a> (const char *junk, std::size_t junkLen) override</td></tr>
+<tr class="separator:adfc3f3046027f4d5fbed34feb7fc287f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63d951a7dc09749c568860365dd0725f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1client_1_1_client_context.html#a63d951a7dc09749c568860365dd0725f">sendRequestData</a> (const char *junk, std::size_t junkLen) override</td></tr>
+<tr class="separator:a63d951a7dc09749c568860365dd0725f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52691f7a402e07e7777278cc5996cd21"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classhttp_1_1client_1_1_client_context.html#ac1c01c320adadb59783dace145182b71">Request</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1client_1_1_client_context.html#a52691f7a402e07e7777278cc5996cd21">getRequest</a> () override</td></tr>
+<tr class="separator:a52691f7a402e07e7777278cc5996cd21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6777b3431e7d19287916124832489ffc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1client_1_1_client_context.html#a6777b3431e7d19287916124832489ffc">terminateConnection</a> () override</td></tr>
+<tr class="separator:a6777b3431e7d19287916124832489ffc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50090d453826e5497a015fd61026fb03"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1client_1_1_client_context.html#a50090d453826e5497a015fd61026fb03">requestCompleted</a> () override</td></tr>
+<tr class="separator:a50090d453826e5497a015fd61026fb03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classhttp_1_1client_1_1_client_context_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classhttp_1_1client_1_1_client_context_base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classhttp_1_1client_1_1_client_context_base.html">http::client::ClientContextBase</a></td></tr>
+<tr class="memitem:a5c55fc0a99299db297bad443ee848d50 inherit pub_methods_classhttp_1_1client_1_1_client_context_base"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1client_1_1_client_context_base.html#a5c55fc0a99299db297bad443ee848d50">~ClientContextBase</a> ()=default</td></tr>
+<tr class="separator:a5c55fc0a99299db297bad443ee848d50 inherit pub_methods_classhttp_1_1client_1_1_client_context_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:ab50c096fffff4f7b272379dd5a487806"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classhttp_1_1client_1_1_client_context.html#aef8c8f1c0d5d458138ebf6843cf8cc12">SocketConnection</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1client_1_1_client_context.html#ab50c096fffff4f7b272379dd5a487806">socketConnection</a></td></tr>
-<tr class="separator:ab50c096fffff4f7b272379dd5a487806"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae14b3fa6d5771bae2e2430c49ad32d0e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classhttp_1_1client_1_1_request.html">Request</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1client_1_1_client_context.html#ae14b3fa6d5771bae2e2430c49ad32d0e">request</a></td></tr>
-<tr class="separator:ae14b3fa6d5771bae2e2430c49ad32d0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79545c646c9d2829b05fa98768bfdc10"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classhttp_1_1client_1_1_response.html">Response</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1client_1_1_client_context.html#a79545c646c9d2829b05fa98768bfdc10">response</a></td></tr>
-<tr class="separator:a79545c646c9d2829b05fa98768bfdc10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4251681fcb444f8d115d531334d32381"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classhttp_1_1client_1_1_client_context.html#a79c443a2c304a5665aa5d4ed59e5d747">SocketConnection</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1client_1_1_client_context.html#a4251681fcb444f8d115d531334d32381">socketConnection</a></td></tr>
+<tr class="separator:a4251681fcb444f8d115d531334d32381"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1d9f17dec409c6798eab816c6aeb47e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classhttp_1_1client_1_1_client_context.html#ac1c01c320adadb59783dace145182b71">Request</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1client_1_1_client_context.html#ab1d9f17dec409c6798eab816c6aeb47e">request</a></td></tr>
+<tr class="separator:ab1d9f17dec409c6798eab816c6aeb47e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a721f03595976a7bd5e4aaa8b8bbc02a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classhttp_1_1client_1_1_client_context.html#a9f3957e63179e19b512e5c9a2a739d91">Response</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1client_1_1_client_context.html#a721f03595976a7bd5e4aaa8b8bbc02a2">response</a></td></tr>
+<tr class="separator:a721f03595976a7bd5e4aaa8b8bbc02a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a08651262ccbff30b2822ae80b342575d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classhttp_1_1client_1_1_response_parser.html">ResponseParser</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1client_1_1_client_context.html#a08651262ccbff30b2822ae80b342575d">parser</a></td></tr>
-<tr class="separator:a08651262ccbff30b2822ae80b342575d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d1b93a3fc4e82a78275913378a03490"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classhttp_1_1client_1_1_response_parser.html">ResponseParser</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1client_1_1_client_context.html#a1d1b93a3fc4e82a78275913378a03490">parser</a></td></tr>
+<tr class="separator:a1d1b93a3fc4e82a78275913378a03490"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_client_context_8h_source.html#l00040">40</a> of file <a class="el" href="_client_context_8h_source.html">ClientContext.h</a>.</p>
+<div class="textblock"><h3>template&lt;typename RequestT, typename ResponseT&gt;<br />
+class http::client::ClientContext&lt; RequestT, ResponseT &gt;</h3>
+
+
+<p class="definition">Definition at line <a class="el" href="_client_context_8h_source.html#l00054">54</a> of file <a class="el" href="_client_context_8h_source.html">ClientContext.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="aef8c8f1c0d5d458138ebf6843cf8cc12"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef8c8f1c0d5d458138ebf6843cf8cc12">&#9670;&nbsp;</a></span>SocketConnection</h2>
+<a id="ac1c01c320adadb59783dace145182b71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1c01c320adadb59783dace145182b71">&#9670;&nbsp;</a></span>Request</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename RequestT , typename ResponseT &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classhttp_1_1client_1_1_client_context.html#aef8c8f1c0d5d458138ebf6843cf8cc12">http::client::ClientContext::SocketConnection</a> =  <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html">net::socket::stream::SocketConnectionBase</a></td>
+          <td class="memname">using <a class="el" href="classhttp_1_1client_1_1_client_context.html">http::client::ClientContext</a>&lt; RequestT, ResponseT &gt;::<a class="el" href="classhttp_1_1client_1_1_client_context.html#ac1c01c320adadb59783dace145182b71">Request</a> =  RequestT</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_client_context_8h_source.html#l00042">42</a> of file <a class="el" href="_client_context_8h_source.html">ClientContext.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_client_context_8h_source.html#l00057">57</a> of file <a class="el" href="_client_context_8h_source.html">ClientContext.h</a>.</p>
+
+</div>
+</div>
+<a id="a9f3957e63179e19b512e5c9a2a739d91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f3957e63179e19b512e5c9a2a739d91">&#9670;&nbsp;</a></span>Response</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename RequestT , typename ResponseT &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classhttp_1_1client_1_1_client_context.html">http::client::ClientContext</a>&lt; RequestT, ResponseT &gt;::<a class="el" href="classhttp_1_1client_1_1_client_context.html#a9f3957e63179e19b512e5c9a2a739d91">Response</a> =  ResponseT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_client_context_8h_source.html#l00058">58</a> of file <a class="el" href="_client_context_8h_source.html">ClientContext.h</a>.</p>
+
+</div>
+</div>
+<a id="a79c443a2c304a5665aa5d4ed59e5d747"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79c443a2c304a5665aa5d4ed59e5d747">&#9670;&nbsp;</a></span>SocketConnection</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename RequestT , typename ResponseT &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classhttp_1_1client_1_1_client_context.html">http::client::ClientContext</a>&lt; RequestT, ResponseT &gt;::<a class="el" href="classhttp_1_1client_1_1_client_context.html#a79c443a2c304a5665aa5d4ed59e5d747">SocketConnection</a> =  <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html">net::socket::stream::SocketConnectionBase</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_client_context_8h_source.html#l00056">56</a> of file <a class="el" href="_client_context_8h_source.html">ClientContext.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a512789fda169952d0a51da9c7c987964"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a512789fda169952d0a51da9c7c987964">&#9670;&nbsp;</a></span>ClientContext()</h2>
+<a id="ad5fcc50bbe2d00ce73f99fcec4d13545"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5fcc50bbe2d00ce73f99fcec4d13545">&#9670;&nbsp;</a></span>ClientContext()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename Request , typename Response &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">http::client::ClientContext::ClientContext </td>
+          <td class="memname"><a class="el" href="classhttp_1_1client_1_1_client_context.html">http::client::ClientContext</a>&lt; <a class="el" href="classhttp_1_1client_1_1_client_context.html#ac1c01c320adadb59783dace145182b71">Request</a>, <a class="el" href="classhttp_1_1client_1_1_client_context.html#a9f3957e63179e19b512e5c9a2a739d91">Response</a> &gt;::<a class="el" href="classhttp_1_1client_1_1_client_context.html">ClientContext</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classhttp_1_1client_1_1_client_context.html#aef8c8f1c0d5d458138ebf6843cf8cc12">SocketConnection</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="classhttp_1_1client_1_1_client_context.html#a79c443a2c304a5665aa5d4ed59e5d747">SocketConnection</a> *&#160;</td>
           <td class="paramname"><em>socketConnection</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::function&lt; void(<a class="el" href="classhttp_1_1client_1_1_response.html">Response</a> &amp;)&gt; &amp;&#160;</td>
+          <td class="paramtype">const std::function&lt; void(<a class="el" href="classhttp_1_1client_1_1_client_context.html#a9f3957e63179e19b512e5c9a2a739d91">Response</a> &amp;)&gt; &amp;&#160;</td>
           <td class="paramname"><em>onResponse</em>, </td>
         </tr>
         <tr>
@@ -187,84 +245,116 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_client_context_8cpp_source.html#l00032">32</a> of file <a class="el" href="_client_context_8cpp_source.html">ClientContext.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        : <a class="code" href="classhttp_1_1client_1_1_client_context.html#ab50c096fffff4f7b272379dd5a487806">socketConnection</a>(<a class="code" href="classhttp_1_1client_1_1_client_context.html#ab50c096fffff4f7b272379dd5a487806">socketConnection</a>)</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        , <a class="code" href="classhttp_1_1client_1_1_client_context.html#ae14b3fa6d5771bae2e2430c49ad32d0e">request</a>(<span class="keyword">this</span>)</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        , <a class="code" href="classhttp_1_1client_1_1_client_context.html#a08651262ccbff30b2822ae80b342575d">parser</a>(</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;              [](<span class="keywordtype">void</span>) -&gt; <span class="keywordtype">void</span> {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;              },</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;              [<span class="keyword">this</span>](<span class="keyword">const</span> std::string&amp; httpVersion, <span class="keyword">const</span> std::string&amp; statusCode, <span class="keyword">const</span> std::string&amp; reason) -&gt; <span class="keywordtype">void</span> {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                  <a class="code" href="classhttp_1_1client_1_1_client_context.html#a79545c646c9d2829b05fa98768bfdc10">response</a>.<a class="code" href="classhttp_1_1client_1_1_response.html#ac6ef63b67d0c8381b696635ff266ce50">httpVersion</a> = httpVersion;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                  <a class="code" href="classhttp_1_1client_1_1_client_context.html#a79545c646c9d2829b05fa98768bfdc10">response</a>.<a class="code" href="classhttp_1_1client_1_1_response.html#abfd4ec2472698c194abeb13fafa4d65e">statusCode</a> = statusCode;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                  <a class="code" href="classhttp_1_1client_1_1_client_context.html#a79545c646c9d2829b05fa98768bfdc10">response</a>.<a class="code" href="classhttp_1_1client_1_1_response.html#a5d4ea539b1e1985fbf0d7dede6ce854c">reason</a> = reason;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;              },</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;              [<span class="keyword">this</span>](<span class="keyword">const</span> std::map&lt;std::string, std::string&gt;&amp; headers, <span class="keyword">const</span> std::map&lt;std::string, http::CookieOptions&gt;&amp; cookies) -&gt; <span class="keywordtype">void</span> {</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                  <a class="code" href="classhttp_1_1client_1_1_client_context.html#a79545c646c9d2829b05fa98768bfdc10">response</a>.<a class="code" href="classhttp_1_1client_1_1_response.html#abe80f52483cdf31a5f75bedcd270d174">headers</a> = &amp;headers;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                  <a class="code" href="classhttp_1_1client_1_1_client_context.html#a79545c646c9d2829b05fa98768bfdc10">response</a>.<a class="code" href="classhttp_1_1client_1_1_response.html#a5191c6a4095da87ea42a405ba70f3394">cookies</a> = &amp;cookies;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;              },</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;              [<span class="keyword">this</span>](<span class="keywordtype">char</span>* content, std::size_t contentLength) -&gt; <span class="keywordtype">void</span> {</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                  <a class="code" href="classhttp_1_1client_1_1_client_context.html#a79545c646c9d2829b05fa98768bfdc10">response</a>.<a class="code" href="classhttp_1_1client_1_1_response.html#a34ee26d2868e7192b776be6255c6d5a5">body</a> = content;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                  <a class="code" href="classhttp_1_1client_1_1_client_context.html#a79545c646c9d2829b05fa98768bfdc10">response</a>.<a class="code" href="classhttp_1_1client_1_1_response.html#ae412ee39ba6aa757cbfd030bca4f0ef7">contentLength</a> = contentLength;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;              },</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;              [<span class="keyword">this</span>, onResponse](<a class="code" href="classhttp_1_1client_1_1_response_parser.html">http::client::ResponseParser</a>&amp; <a class="code" href="classhttp_1_1client_1_1_client_context.html#a08651262ccbff30b2822ae80b342575d">parser</a>) -&gt; <span class="keywordtype">void</span> {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                  onResponse(<a class="code" href="classhttp_1_1client_1_1_client_context.html#a79545c646c9d2829b05fa98768bfdc10">response</a>);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                  <a class="code" href="classhttp_1_1client_1_1_client_context.html#a08651262ccbff30b2822ae80b342575d">parser</a>.<a class="code" href="classhttp_1_1client_1_1_response_parser.html#a9c0699e3e5d506b764f9969614023006">reset</a>();</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                  <a class="code" href="classhttp_1_1client_1_1_client_context.html#ae14b3fa6d5771bae2e2430c49ad32d0e">request</a>.<a class="code" href="classhttp_1_1client_1_1_request.html#a089b2d2048f5b538e3f47b04fbabe6f7">reset</a>();</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                  <a class="code" href="classhttp_1_1client_1_1_client_context.html#a79545c646c9d2829b05fa98768bfdc10">response</a>.<a class="code" href="classhttp_1_1client_1_1_response.html#a4e8295a3714c9ee626dd35da1a78f25c">reset</a>();</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;              },</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;              [onError](<span class="keywordtype">int</span> status, <span class="keyword">const</span> std::string&amp; reason) -&gt; <span class="keywordtype">void</span> {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                  onError(status, reason);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;              }) {</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
-<div class="ttc" id="aclasshttp_1_1client_1_1_client_context_html_a08651262ccbff30b2822ae80b342575d"><div class="ttname"><a href="classhttp_1_1client_1_1_client_context.html#a08651262ccbff30b2822ae80b342575d">http::client::ClientContext::parser</a></div><div class="ttdeci">ResponseParser parser</div><div class="ttdef"><b>Definition:</b> <a href="_client_context_8h_source.html#l00064">ClientContext.h:64</a></div></div>
-<div class="ttc" id="aclasshttp_1_1client_1_1_client_context_html_a79545c646c9d2829b05fa98768bfdc10"><div class="ttname"><a href="classhttp_1_1client_1_1_client_context.html#a79545c646c9d2829b05fa98768bfdc10">http::client::ClientContext::response</a></div><div class="ttdeci">Response response</div><div class="ttdef"><b>Definition:</b> <a href="_client_context_8h_source.html#l00061">ClientContext.h:61</a></div></div>
-<div class="ttc" id="aclasshttp_1_1client_1_1_client_context_html_ab50c096fffff4f7b272379dd5a487806"><div class="ttname"><a href="classhttp_1_1client_1_1_client_context.html#ab50c096fffff4f7b272379dd5a487806">http::client::ClientContext::socketConnection</a></div><div class="ttdeci">SocketConnection * socketConnection</div><div class="ttdef"><b>Definition:</b> <a href="_client_context_8h_source.html#l00058">ClientContext.h:58</a></div></div>
-<div class="ttc" id="aclasshttp_1_1client_1_1_client_context_html_ae14b3fa6d5771bae2e2430c49ad32d0e"><div class="ttname"><a href="classhttp_1_1client_1_1_client_context.html#ae14b3fa6d5771bae2e2430c49ad32d0e">http::client::ClientContext::request</a></div><div class="ttdeci">Request request</div><div class="ttdef"><b>Definition:</b> <a href="_client_context_8h_source.html#l00060">ClientContext.h:60</a></div></div>
-<div class="ttc" id="aclasshttp_1_1client_1_1_request_html_a089b2d2048f5b538e3f47b04fbabe6f7"><div class="ttname"><a href="classhttp_1_1client_1_1_request.html#a089b2d2048f5b538e3f47b04fbabe6f7">http::client::Request::reset</a></div><div class="ttdeci">virtual void reset()</div><div class="ttdef"><b>Definition:</b> <a href="http_2client_2_request_8cpp_source.html#l00100">Request.cpp:100</a></div></div>
-<div class="ttc" id="aclasshttp_1_1client_1_1_response_html_a34ee26d2868e7192b776be6255c6d5a5"><div class="ttname"><a href="classhttp_1_1client_1_1_response.html#a34ee26d2868e7192b776be6255c6d5a5">http::client::Response::body</a></div><div class="ttdeci">char * body</div><div class="ttdef"><b>Definition:</b> <a href="http_2client_2_response_8h_source.html#l00046">Response.h:46</a></div></div>
-<div class="ttc" id="aclasshttp_1_1client_1_1_response_html_a4e8295a3714c9ee626dd35da1a78f25c"><div class="ttname"><a href="classhttp_1_1client_1_1_response.html#a4e8295a3714c9ee626dd35da1a78f25c">http::client::Response::reset</a></div><div class="ttdeci">void reset()</div><div class="ttdef"><b>Definition:</b> <a href="http_2client_2_response_8cpp_source.html#l00023">Response.cpp:23</a></div></div>
-<div class="ttc" id="aclasshttp_1_1client_1_1_response_html_a5191c6a4095da87ea42a405ba70f3394"><div class="ttname"><a href="classhttp_1_1client_1_1_response.html#a5191c6a4095da87ea42a405ba70f3394">http::client::Response::cookies</a></div><div class="ttdeci">const std::map&lt; std::string, CookieOptions &gt; * cookies</div><div class="ttdef"><b>Definition:</b> <a href="http_2client_2_response_8h_source.html#l00049">Response.h:49</a></div></div>
-<div class="ttc" id="aclasshttp_1_1client_1_1_response_html_a5d4ea539b1e1985fbf0d7dede6ce854c"><div class="ttname"><a href="classhttp_1_1client_1_1_response.html#a5d4ea539b1e1985fbf0d7dede6ce854c">http::client::Response::reason</a></div><div class="ttdeci">std::string reason</div><div class="ttdef"><b>Definition:</b> <a href="http_2client_2_response_8h_source.html#l00045">Response.h:45</a></div></div>
-<div class="ttc" id="aclasshttp_1_1client_1_1_response_html_abe80f52483cdf31a5f75bedcd270d174"><div class="ttname"><a href="classhttp_1_1client_1_1_response.html#abe80f52483cdf31a5f75bedcd270d174">http::client::Response::headers</a></div><div class="ttdeci">const std::map&lt; std::string, std::string &gt; * headers</div><div class="ttdef"><b>Definition:</b> <a href="http_2client_2_response_8h_source.html#l00048">Response.h:48</a></div></div>
-<div class="ttc" id="aclasshttp_1_1client_1_1_response_html_abfd4ec2472698c194abeb13fafa4d65e"><div class="ttname"><a href="classhttp_1_1client_1_1_response.html#abfd4ec2472698c194abeb13fafa4d65e">http::client::Response::statusCode</a></div><div class="ttdeci">std::string statusCode</div><div class="ttdef"><b>Definition:</b> <a href="http_2client_2_response_8h_source.html#l00044">Response.h:44</a></div></div>
-<div class="ttc" id="aclasshttp_1_1client_1_1_response_html_ac6ef63b67d0c8381b696635ff266ce50"><div class="ttname"><a href="classhttp_1_1client_1_1_response.html#ac6ef63b67d0c8381b696635ff266ce50">http::client::Response::httpVersion</a></div><div class="ttdeci">std::string httpVersion</div><div class="ttdef"><b>Definition:</b> <a href="http_2client_2_response_8h_source.html#l00043">Response.h:43</a></div></div>
-<div class="ttc" id="aclasshttp_1_1client_1_1_response_html_ae412ee39ba6aa757cbfd030bca4f0ef7"><div class="ttname"><a href="classhttp_1_1client_1_1_response.html#ae412ee39ba6aa757cbfd030bca4f0ef7">http::client::Response::contentLength</a></div><div class="ttdeci">int contentLength</div><div class="ttdef"><b>Definition:</b> <a href="http_2client_2_response_8h_source.html#l00047">Response.h:47</a></div></div>
+<p class="definition">Definition at line <a class="el" href="_client_context_8hpp_source.html#l00033">33</a> of file <a class="el" href="_client_context_8hpp_source.html">ClientContext.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        : <a class="code" href="classhttp_1_1client_1_1_client_context.html#a4251681fcb444f8d115d531334d32381">socketConnection</a>(<a class="code" href="classhttp_1_1client_1_1_client_context.html#a4251681fcb444f8d115d531334d32381">socketConnection</a>)</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        , <a class="code" href="classhttp_1_1client_1_1_client_context.html#ab1d9f17dec409c6798eab816c6aeb47e">request</a>(<span class="keyword">this</span>)</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        , <a class="code" href="classhttp_1_1client_1_1_client_context.html#a1d1b93a3fc4e82a78275913378a03490">parser</a>(</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;              [](<span class="keywordtype">void</span>) -&gt; <span class="keywordtype">void</span> {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;              },</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;              [<span class="keyword">this</span>](<span class="keyword">const</span> std::string&amp; httpVersion, <span class="keyword">const</span> std::string&amp; statusCode, <span class="keyword">const</span> std::string&amp; reason) -&gt; <span class="keywordtype">void</span> {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                  <a class="code" href="classhttp_1_1client_1_1_client_context.html#a721f03595976a7bd5e4aaa8b8bbc02a2">response</a>.httpVersion = httpVersion;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                  <a class="code" href="classhttp_1_1client_1_1_client_context.html#a721f03595976a7bd5e4aaa8b8bbc02a2">response</a>.statusCode = statusCode;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                  <a class="code" href="classhttp_1_1client_1_1_client_context.html#a721f03595976a7bd5e4aaa8b8bbc02a2">response</a>.reason = reason;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;              },</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;              [<span class="keyword">this</span>](<span class="keyword">const</span> std::map&lt;std::string, std::string&gt;&amp; headers, <span class="keyword">const</span> std::map&lt;std::string, http::CookieOptions&gt;&amp; cookies) -&gt; <span class="keywordtype">void</span> {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                  <a class="code" href="classhttp_1_1client_1_1_client_context.html#a721f03595976a7bd5e4aaa8b8bbc02a2">response</a>.headers = &amp;headers;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                  <a class="code" href="classhttp_1_1client_1_1_client_context.html#a721f03595976a7bd5e4aaa8b8bbc02a2">response</a>.cookies = &amp;cookies;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;              },</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;              [<span class="keyword">this</span>](<span class="keywordtype">char</span>* content, std::size_t contentLength) -&gt; <span class="keywordtype">void</span> {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                  <a class="code" href="classhttp_1_1client_1_1_client_context.html#a721f03595976a7bd5e4aaa8b8bbc02a2">response</a>.body = content;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                  <a class="code" href="classhttp_1_1client_1_1_client_context.html#a721f03595976a7bd5e4aaa8b8bbc02a2">response</a>.contentLength = contentLength;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;              },</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;              [<span class="keyword">this</span>, onResponse](<a class="code" href="classhttp_1_1client_1_1_response_parser.html">http::client::ResponseParser</a>&amp; <a class="code" href="classhttp_1_1client_1_1_client_context.html#a1d1b93a3fc4e82a78275913378a03490">parser</a>) -&gt; <span class="keywordtype">void</span> {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                  onResponse(<a class="code" href="classhttp_1_1client_1_1_client_context.html#a721f03595976a7bd5e4aaa8b8bbc02a2">response</a>);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                  <a class="code" href="classhttp_1_1client_1_1_client_context.html#a1d1b93a3fc4e82a78275913378a03490">parser</a>.<a class="code" href="classhttp_1_1client_1_1_response_parser.html#a9c0699e3e5d506b764f9969614023006">reset</a>();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                  <a class="code" href="classhttp_1_1client_1_1_client_context.html#ab1d9f17dec409c6798eab816c6aeb47e">request</a>.reset();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                  <a class="code" href="classhttp_1_1client_1_1_client_context.html#a721f03595976a7bd5e4aaa8b8bbc02a2">response</a>.reset();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;              },</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;              [onError](<span class="keywordtype">int</span> status, <span class="keyword">const</span> std::string&amp; reason) -&gt; <span class="keywordtype">void</span> {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                  onError(status, reason);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;              }) {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
+<div class="ttc" id="aclasshttp_1_1client_1_1_client_context_html_a1d1b93a3fc4e82a78275913378a03490"><div class="ttname"><a href="classhttp_1_1client_1_1_client_context.html#a1d1b93a3fc4e82a78275913378a03490">http::client::ClientContext::parser</a></div><div class="ttdeci">ResponseParser parser</div><div class="ttdef"><b>Definition:</b> <a href="_client_context_8h_source.html#l00082">ClientContext.h:82</a></div></div>
+<div class="ttc" id="aclasshttp_1_1client_1_1_client_context_html_a4251681fcb444f8d115d531334d32381"><div class="ttname"><a href="classhttp_1_1client_1_1_client_context.html#a4251681fcb444f8d115d531334d32381">http::client::ClientContext::socketConnection</a></div><div class="ttdeci">SocketConnection * socketConnection</div><div class="ttdef"><b>Definition:</b> <a href="_client_context_8h_source.html#l00076">ClientContext.h:76</a></div></div>
+<div class="ttc" id="aclasshttp_1_1client_1_1_client_context_html_a721f03595976a7bd5e4aaa8b8bbc02a2"><div class="ttname"><a href="classhttp_1_1client_1_1_client_context.html#a721f03595976a7bd5e4aaa8b8bbc02a2">http::client::ClientContext::response</a></div><div class="ttdeci">Response response</div><div class="ttdef"><b>Definition:</b> <a href="_client_context_8h_source.html#l00079">ClientContext.h:79</a></div></div>
+<div class="ttc" id="aclasshttp_1_1client_1_1_client_context_html_ab1d9f17dec409c6798eab816c6aeb47e"><div class="ttname"><a href="classhttp_1_1client_1_1_client_context.html#ab1d9f17dec409c6798eab816c6aeb47e">http::client::ClientContext::request</a></div><div class="ttdeci">Request request</div><div class="ttdef"><b>Definition:</b> <a href="_client_context_8h_source.html#l00078">ClientContext.h:78</a></div></div>
 <div class="ttc" id="aclasshttp_1_1client_1_1_response_parser_html"><div class="ttname"><a href="classhttp_1_1client_1_1_response_parser.html">http::client::ResponseParser</a></div><div class="ttdef"><b>Definition:</b> <a href="_response_parser_8h_source.html#l00036">ResponseParser.h:36</a></div></div>
 <div class="ttc" id="aclasshttp_1_1client_1_1_response_parser_html_a9c0699e3e5d506b764f9969614023006"><div class="ttname"><a href="classhttp_1_1client_1_1_response_parser.html#a9c0699e3e5d506b764f9969614023006">http::client::ResponseParser::reset</a></div><div class="ttdeci">void reset() override</div><div class="ttdef"><b>Definition:</b> <a href="_response_parser_8cpp_source.html#l00046">ResponseParser.cpp:46</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="aa7d522cd3b91aca98d883158d12c3b40"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa7d522cd3b91aca98d883158d12c3b40">&#9670;&nbsp;</a></span>getRequest()</h2>
+<a id="ab656a72e24e31e49c5991a294bb7ec8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab656a72e24e31e49c5991a294bb7ec8e">&#9670;&nbsp;</a></span>~ClientContext()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename RequestT , typename ResponseT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classhttp_1_1client_1_1_request.html">Request</a> &amp; http::client::ClientContext::getRequest </td>
+          <td class="memname"><a class="el" href="classhttp_1_1client_1_1_client_context.html">http::client::ClientContext</a>&lt; RequestT, ResponseT &gt;::~<a class="el" href="classhttp_1_1client_1_1_client_context.html">ClientContext</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_client_context_8cpp_source.html#l00075">75</a> of file <a class="el" href="_client_context_8cpp_source.html">ClientContext.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                                       {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classhttp_1_1client_1_1_client_context.html#ae14b3fa6d5771bae2e2430c49ad32d0e">request</a>;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    }</div>
-</div><!-- fragment -->
 </div>
 </div>
-<a id="a781d8433feafcbfefaecc62ba9c87c29"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a781d8433feafcbfefaecc62ba9c87c29">&#9670;&nbsp;</a></span>receiveResponseData()</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a52691f7a402e07e7777278cc5996cd21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52691f7a402e07e7777278cc5996cd21">&#9670;&nbsp;</a></span>getRequest()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename Request , typename Response &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void http::client::ClientContext::receiveResponseData </td>
+          <td class="memname"><a class="el" href="classhttp_1_1client_1_1_client_context.html#ac1c01c320adadb59783dace145182b71">Request</a> &amp; <a class="el" href="classhttp_1_1client_1_1_client_context.html">http::client::ClientContext</a>&lt; <a class="el" href="classhttp_1_1client_1_1_client_context.html#ac1c01c320adadb59783dace145182b71">Request</a>, <a class="el" href="classhttp_1_1client_1_1_client_context.html#a9f3957e63179e19b512e5c9a2a739d91">Response</a> &gt;::getRequest</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classhttp_1_1client_1_1_client_context_base.html#acccb8f30262dc482e8a2e7037aaa5366">http::client::ClientContextBase</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_client_context_8hpp_source.html#l00080">80</a> of file <a class="el" href="_client_context_8hpp_source.html">ClientContext.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                                                          {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classhttp_1_1client_1_1_client_context.html#ab1d9f17dec409c6798eab816c6aeb47e">request</a>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="adfc3f3046027f4d5fbed34feb7fc287f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfc3f3046027f4d5fbed34feb7fc287f">&#9670;&nbsp;</a></span>receiveResponseData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Request , typename Response &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classhttp_1_1client_1_1_client_context.html">http::client::ClientContext</a>&lt; <a class="el" href="classhttp_1_1client_1_1_client_context.html#ac1c01c320adadb59783dace145182b71">Request</a>, <a class="el" href="classhttp_1_1client_1_1_client_context.html#a9f3957e63179e19b512e5c9a2a739d91">Response</a> &gt;::receiveResponseData </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>junk</em>, </td>
@@ -281,62 +371,75 @@ Private Attributes</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_client_context_8cpp_source.html#l00067">67</a> of file <a class="el" href="_client_context_8cpp_source.html">ClientContext.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                                                                               {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <a class="code" href="classhttp_1_1client_1_1_client_context.html#a08651262ccbff30b2822ae80b342575d">parser</a>.<a class="code" href="classhttp_1_1_parser.html#a6d73c443fd008805607dc2e791761ef3">parse</a>(junk, junkLen);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
-<div class="ttc" id="aclasshttp_1_1_parser_html_a6d73c443fd008805607dc2e791761ef3"><div class="ttname"><a href="classhttp_1_1_parser.html#a6d73c443fd008805607dc2e791761ef3">http::Parser::parse</a></div><div class="ttdeci">void parse(const char *buf, std::size_t count)</div><div class="ttdef"><b>Definition:</b> <a href="_parser_8cpp_source.html#l00045">Parser.cpp:45</a></div></div>
+<p>Implements <a class="el" href="classhttp_1_1client_1_1_client_context_base.html#a3c7d3ae6401775fb96798647823af838">http::client::ClientContextBase</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_client_context_8hpp_source.html#l00070">70</a> of file <a class="el" href="_client_context_8hpp_source.html">ClientContext.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                                                                                                  {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <a class="code" href="classhttp_1_1client_1_1_client_context.html#a1d1b93a3fc4e82a78275913378a03490">parser</a>.<a class="code" href="classhttp_1_1_parser.html#a6760de05b1ab39fcebbb769418cd9660">parse</a>(junk, junkLen);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    }</div>
+<div class="ttc" id="aclasshttp_1_1_parser_html_a6760de05b1ab39fcebbb769418cd9660"><div class="ttname"><a href="classhttp_1_1_parser.html#a6760de05b1ab39fcebbb769418cd9660">http::Parser::parse</a></div><div class="ttdeci">void parse(const char *junk, std::size_t junkLen)</div><div class="ttdef"><b>Definition:</b> <a href="_parser_8cpp_source.html#l00045">Parser.cpp:45</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="aa7bd2cdb16d44e06401d2b7070ffeab2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa7bd2cdb16d44e06401d2b7070ffeab2">&#9670;&nbsp;</a></span>requestCompleted()</h2>
+<a id="a50090d453826e5497a015fd61026fb03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50090d453826e5497a015fd61026fb03">&#9670;&nbsp;</a></span>requestCompleted()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename Request , typename Response &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void http::client::ClientContext::requestCompleted </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname">void <a class="el" href="classhttp_1_1client_1_1_client_context.html">http::client::ClientContext</a>&lt; <a class="el" href="classhttp_1_1client_1_1_client_context.html#ac1c01c320adadb59783dace145182b71">Request</a>, <a class="el" href="classhttp_1_1client_1_1_client_context.html#a9f3957e63179e19b512e5c9a2a739d91">Response</a> &gt;::requestCompleted</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_client_context_8cpp_source.html#l00064">64</a> of file <a class="el" href="_client_context_8cpp_source.html">ClientContext.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                                         {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    }</div>
-</div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="http_2client_2_request_8cpp_source.html#l00117">http::client::Request::enqueue()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1client_1_1_client_context_aa7bd2cdb16d44e06401d2b7070ffeab2_icgraph.svg" width="775" height="248"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
+<p>Implements <a class="el" href="classhttp_1_1client_1_1_client_context_base.html#ad5703a012580f933443b30856dbfca37">http::client::ClientContextBase</a>.</p>
 
+<p class="definition">Definition at line <a class="el" href="_client_context_8hpp_source.html#l00066">66</a> of file <a class="el" href="_client_context_8hpp_source.html">ClientContext.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                                                            {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
-<a id="a285e5eae77d6f58597274fe36f5b37d6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a285e5eae77d6f58597274fe36f5b37d6">&#9670;&nbsp;</a></span>sendRequestData()</h2>
+<a id="a63d951a7dc09749c568860365dd0725f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63d951a7dc09749c568860365dd0725f">&#9670;&nbsp;</a></span>sendRequestData()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename Request , typename Response &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void http::client::ClientContext::sendRequestData </td>
+          <td class="memname">void <a class="el" href="classhttp_1_1client_1_1_client_context.html">http::client::ClientContext</a>&lt; <a class="el" href="classhttp_1_1client_1_1_client_context.html#ac1c01c320adadb59783dace145182b71">Request</a>, <a class="el" href="classhttp_1_1client_1_1_client_context.html#a9f3957e63179e19b512e5c9a2a739d91">Response</a> &gt;::sendRequestData </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>buf</em>, </td>
+          <td class="paramname"><em>junk</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>len</em>&#160;</td>
+          <td class="paramname"><em>junkLen</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -344,83 +447,85 @@ Here is the caller graph for this function:</div>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_client_context_8cpp_source.html#l00071">71</a> of file <a class="el" href="_client_context_8cpp_source.html">ClientContext.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                                                                      {</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <a class="code" href="classhttp_1_1client_1_1_client_context.html#ab50c096fffff4f7b272379dd5a487806">socketConnection</a>-&gt;<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#a27dceffb6e668af5ab183a1edbe8b3c6">enqueue</a>(buf, len);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div>
+<p>Implements <a class="el" href="classhttp_1_1client_1_1_client_context_base.html#aa988e3ea701106a9242a9d25b0d08ea4">http::client::ClientContextBase</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_client_context_8hpp_source.html#l00075">75</a> of file <a class="el" href="_client_context_8hpp_source.html">ClientContext.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                                                                                              {</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <a class="code" href="classhttp_1_1client_1_1_client_context.html#a4251681fcb444f8d115d531334d32381">socketConnection</a>-&gt;<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#a27dceffb6e668af5ab183a1edbe8b3c6">enqueue</a>(junk, junkLen);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    }</div>
 <div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_connection_base_html_a27dceffb6e668af5ab183a1edbe8b3c6"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#a27dceffb6e668af5ab183a1edbe8b3c6">net::socket::stream::SocketConnectionBase::enqueue</a></div><div class="ttdeci">virtual void enqueue(const char *junk, std::size_t junkLen)=0</div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#a27dceffb6e668af5ab183a1edbe8b3c6">net::socket::stream::SocketConnectionBase::enqueue()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="http_2client_2_request_8cpp_source.html#l00117">http::client::Request::enqueue()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1client_1_1_client_context_a285e5eae77d6f58597274fe36f5b37d6_cgraph.svg" width="396" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1client_1_1_client_context_a285e5eae77d6f58597274fe36f5b37d6_icgraph.svg" width="775" height="248"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1client_1_1_client_context_a63d951a7dc09749c568860365dd0725f_cgraph.svg" width="396" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
-<a id="a3cd2d562d7fd8e6dccee25d0c8aedbff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3cd2d562d7fd8e6dccee25d0c8aedbff">&#9670;&nbsp;</a></span>terminateConnection()</h2>
+<a id="a6777b3431e7d19287916124832489ffc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6777b3431e7d19287916124832489ffc">&#9670;&nbsp;</a></span>terminateConnection()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename Request , typename Response &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void http::client::ClientContext::terminateConnection </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname">void <a class="el" href="classhttp_1_1client_1_1_client_context.html">http::client::ClientContext</a>&lt; <a class="el" href="classhttp_1_1client_1_1_client_context.html#ac1c01c320adadb59783dace145182b71">Request</a>, <a class="el" href="classhttp_1_1client_1_1_client_context.html#a9f3957e63179e19b512e5c9a2a739d91">Response</a> &gt;::terminateConnection</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_client_context_8cpp_source.html#l00080">80</a> of file <a class="el" href="_client_context_8cpp_source.html">ClientContext.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                                            {</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <a class="code" href="classhttp_1_1client_1_1_client_context.html#ab50c096fffff4f7b272379dd5a487806">socketConnection</a>-&gt;<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#ab08d539e59c0a7c284d97414ac065c03">close</a>();</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div>
+<p>Implements <a class="el" href="classhttp_1_1client_1_1_client_context_base.html#a5745c1d647d29619a76c30b2168c49d2">http::client::ClientContextBase</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_client_context_8hpp_source.html#l00085">85</a> of file <a class="el" href="_client_context_8hpp_source.html">ClientContext.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                                                               {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <a class="code" href="classhttp_1_1client_1_1_client_context.html#a4251681fcb444f8d115d531334d32381">socketConnection</a>-&gt;<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#ab08d539e59c0a7c284d97414ac065c03">close</a>();</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div>
 <div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_connection_base_html_ab08d539e59c0a7c284d97414ac065c03"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#ab08d539e59c0a7c284d97414ac065c03">net::socket::stream::SocketConnectionBase::close</a></div><div class="ttdeci">virtual void close(bool instantly=false)=0</div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#ab08d539e59c0a7c284d97414ac065c03">net::socket::stream::SocketConnectionBase::close()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="http_2client_2_request_8cpp_source.html#l00117">http::client::Request::enqueue()</a>, and <a class="el" href="http_2client_2_request_8cpp_source.html#l00205">http::client::Request::error()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1client_1_1_client_context_a3cd2d562d7fd8e6dccee25d0c8aedbff_cgraph.svg" width="396" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1client_1_1_client_context_a3cd2d562d7fd8e6dccee25d0c8aedbff_icgraph.svg" width="775" height="248"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1client_1_1_client_context_a6777b3431e7d19287916124832489ffc_cgraph.svg" width="396" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a08651262ccbff30b2822ae80b342575d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a08651262ccbff30b2822ae80b342575d">&#9670;&nbsp;</a></span>parser</h2>
+<a id="a1d1b93a3fc4e82a78275913378a03490"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d1b93a3fc4e82a78275913378a03490">&#9670;&nbsp;</a></span>parser</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename RequestT , typename ResponseT &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classhttp_1_1client_1_1_response_parser.html">ResponseParser</a> http::client::ClientContext::parser</td>
+          <td class="memname"><a class="el" href="classhttp_1_1client_1_1_response_parser.html">ResponseParser</a> <a class="el" href="classhttp_1_1client_1_1_client_context.html">http::client::ClientContext</a>&lt; RequestT, ResponseT &gt;::parser</td>
         </tr>
       </table>
   </td>
@@ -430,21 +535,23 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_client_context_8h_source.html#l00064">64</a> of file <a class="el" href="_client_context_8h_source.html">ClientContext.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_client_context_8h_source.html#l00082">82</a> of file <a class="el" href="_client_context_8h_source.html">ClientContext.h</a>.</p>
 
 </div>
 </div>
-<a id="ae14b3fa6d5771bae2e2430c49ad32d0e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae14b3fa6d5771bae2e2430c49ad32d0e">&#9670;&nbsp;</a></span>request</h2>
+<a id="ab1d9f17dec409c6798eab816c6aeb47e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1d9f17dec409c6798eab816c6aeb47e">&#9670;&nbsp;</a></span>request</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename RequestT , typename ResponseT &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classhttp_1_1client_1_1_request.html">Request</a> http::client::ClientContext::request</td>
+          <td class="memname"><a class="el" href="classhttp_1_1client_1_1_client_context.html#ac1c01c320adadb59783dace145182b71">Request</a> <a class="el" href="classhttp_1_1client_1_1_client_context.html">http::client::ClientContext</a>&lt; RequestT, ResponseT &gt;::request</td>
         </tr>
       </table>
   </td>
@@ -454,21 +561,23 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_client_context_8h_source.html#l00060">60</a> of file <a class="el" href="_client_context_8h_source.html">ClientContext.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_client_context_8h_source.html#l00078">78</a> of file <a class="el" href="_client_context_8h_source.html">ClientContext.h</a>.</p>
 
 </div>
 </div>
-<a id="a79545c646c9d2829b05fa98768bfdc10"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a79545c646c9d2829b05fa98768bfdc10">&#9670;&nbsp;</a></span>response</h2>
+<a id="a721f03595976a7bd5e4aaa8b8bbc02a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a721f03595976a7bd5e4aaa8b8bbc02a2">&#9670;&nbsp;</a></span>response</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename RequestT , typename ResponseT &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classhttp_1_1client_1_1_response.html">Response</a> http::client::ClientContext::response</td>
+          <td class="memname"><a class="el" href="classhttp_1_1client_1_1_client_context.html#a9f3957e63179e19b512e5c9a2a739d91">Response</a> <a class="el" href="classhttp_1_1client_1_1_client_context.html">http::client::ClientContext</a>&lt; RequestT, ResponseT &gt;::response</td>
         </tr>
       </table>
   </td>
@@ -478,21 +587,23 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_client_context_8h_source.html#l00061">61</a> of file <a class="el" href="_client_context_8h_source.html">ClientContext.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_client_context_8h_source.html#l00079">79</a> of file <a class="el" href="_client_context_8h_source.html">ClientContext.h</a>.</p>
 
 </div>
 </div>
-<a id="ab50c096fffff4f7b272379dd5a487806"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab50c096fffff4f7b272379dd5a487806">&#9670;&nbsp;</a></span>socketConnection</h2>
+<a id="a4251681fcb444f8d115d531334d32381"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4251681fcb444f8d115d531334d32381">&#9670;&nbsp;</a></span>socketConnection</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename RequestT , typename ResponseT &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classhttp_1_1client_1_1_client_context.html#aef8c8f1c0d5d458138ebf6843cf8cc12">SocketConnection</a>* http::client::ClientContext::socketConnection</td>
+          <td class="memname"><a class="el" href="classhttp_1_1client_1_1_client_context.html#a79c443a2c304a5665aa5d4ed59e5d747">SocketConnection</a>* <a class="el" href="classhttp_1_1client_1_1_client_context.html">http::client::ClientContext</a>&lt; RequestT, ResponseT &gt;::socketConnection</td>
         </tr>
       </table>
   </td>
@@ -502,13 +613,13 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_client_context_8h_source.html#l00058">58</a> of file <a class="el" href="_client_context_8h_source.html">ClientContext.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_client_context_8h_source.html#l00076">76</a> of file <a class="el" href="_client_context_8h_source.html">ClientContext.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>http/client/<a class="el" href="_client_context_8h_source.html">ClientContext.h</a></li>
-<li>http/client/<a class="el" href="_client_context_8cpp_source.html">ClientContext.cpp</a></li>
+<li>http/client/<a class="el" href="_client_context_8hpp_source.html">ClientContext.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

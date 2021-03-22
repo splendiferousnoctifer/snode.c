@@ -1,10 +1,11 @@
 var classhttp_1_1client_1_1_client =
 [
-    [ "Socket", "classhttp_1_1client_1_1_client.html#a1241ca57f25d54b1ec2c139fac194ed9", null ],
-    [ "SocketAddress", "classhttp_1_1client_1_1_client.html#a5c720862b214b5eedd610d51cdd79059", null ],
-    [ "SocketClient", "classhttp_1_1client_1_1_client.html#a71fe8b5ef2b9d75ec5df60807c33cbb2", null ],
-    [ "SocketConnection", "classhttp_1_1client_1_1_client.html#abc6429954ef9294e3353e44ce77265fb", null ],
-    [ "Client", "classhttp_1_1client_1_1_client.html#a70c9aae9f2e47a2addb47185f9089db8", null ],
-    [ "connect", "classhttp_1_1client_1_1_client.html#a5b3d414a6497add13448b69ed89fb6bc", null ],
-    [ "socketClient", "classhttp_1_1client_1_1_client.html#a284c624f4c18d22267e5fe3e0a4f203c", null ]
+    [ "Request", "classhttp_1_1client_1_1_client.html#ae0dc8365fdcb57ab7647c281c84e57ab", null ],
+    [ "Response", "classhttp_1_1client_1_1_client.html#a2e7f21f3a55b46fc513f1a44452752bc", null ],
+    [ "SocketAddress", "classhttp_1_1client_1_1_client.html#a293b5fa608f93df47d963e23583b53d7", null ],
+    [ "SocketClient", "classhttp_1_1client_1_1_client.html#abdcb38c6336f394afcfb2ab5e2292558", null ],
+    [ "SocketConnection", "classhttp_1_1client_1_1_client.html#a58f0674cdbb0b699fc50b12dda00b470", null ],
+    [ "Client", "classhttp_1_1client_1_1_client.html#a9a254c3f53658ba03f8dfd916e6bf024", null ],
+    [ "connect", "classhttp_1_1client_1_1_client.html#a30b79fe8fc9126983a82d417328862bd", null ],
+    [ "socketClient", "classhttp_1_1client_1_1_client.html#ac51371d92b8e69dab9f22d3d6a60d9db", null ]
 ];

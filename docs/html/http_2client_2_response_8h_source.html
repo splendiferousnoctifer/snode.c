@@ -103,8 +103,8 @@ $(document).ready(function(){initNavTree('http_2client_2_response_8h_source.html
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * along with this program. If not, see &lt;http://www.gnu.org/licenses/&gt;.</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#ifndef SERVERRESPONSE_H</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#define SERVERRESPONSE_H</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#ifndef HTTP_CLIENT_RESPONSE_H</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#define HTTP_CLIENT_RESPONSE_H</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#ifndef DOXYGEN_SHOULD_SKIP_THIS</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
@@ -135,15 +135,16 @@ $(document).ready(function(){initNavTree('http_2client_2_response_8h_source.html
 <div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classhttp_1_1client_1_1_response.html#abe80f52483cdf31a5f75bedcd270d174">   48</a></span>&#160;            <span class="keyword">const</span> std::map&lt;std::string, std::string&gt;* <a class="code" href="classhttp_1_1client_1_1_response.html#abe80f52483cdf31a5f75bedcd270d174">headers</a> = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classhttp_1_1client_1_1_response.html#a5191c6a4095da87ea42a405ba70f3394">   49</a></span>&#160;            <span class="keyword">const</span> std::map&lt;std::string, CookieOptions&gt;* <a class="code" href="classhttp_1_1client_1_1_response.html#a5191c6a4095da87ea42a405ba70f3394">cookies</a> = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classhttp_1_1client_1_1_response.html#adf703640bc2bb6db62ee885a1c9ca4e9">   51</a></span>&#160;            <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classhttp_1_1client_1_1_client_context.html">ClientContext</a>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        };</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    } <span class="comment">// namespace client</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;} <span class="comment">// namespace http</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// SERVERRESPONSE_H</span></div>
-<div class="ttc" id="aclasshttp_1_1client_1_1_client_context_html"><div class="ttname"><a href="classhttp_1_1client_1_1_client_context.html">http::client::ClientContext</a></div><div class="ttdef"><b>Definition:</b> <a href="_client_context_8h_source.html#l00040">ClientContext.h:40</a></div></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Request, <span class="keyword">typename</span> Response&gt;</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classhttp_1_1client_1_1_response.html#afedf4d3df7efe896ca80fef22e608acb">   52</a></span>&#160;            <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classhttp_1_1client_1_1_client_context.html">ClientContext</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        };</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    } <span class="comment">// namespace client</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;} <span class="comment">// namespace http</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// HTTP_CLIENT_RESPONSE_H</span></div>
+<div class="ttc" id="aclasshttp_1_1client_1_1_client_context_html"><div class="ttname"><a href="classhttp_1_1client_1_1_client_context.html">http::client::ClientContext</a></div><div class="ttdef"><b>Definition:</b> <a href="_client_context_8h_source.html#l00054">ClientContext.h:54</a></div></div>
 <div class="ttc" id="aclasshttp_1_1client_1_1_response_html"><div class="ttname"><a href="classhttp_1_1client_1_1_response.html">http::client::Response</a></div><div class="ttdef"><b>Definition:</b> <a href="http_2client_2_response_8h_source.html#l00035">Response.h:35</a></div></div>
 <div class="ttc" id="aclasshttp_1_1client_1_1_response_html_a34ee26d2868e7192b776be6255c6d5a5"><div class="ttname"><a href="classhttp_1_1client_1_1_response.html#a34ee26d2868e7192b776be6255c6d5a5">http::client::Response::body</a></div><div class="ttdeci">char * body</div><div class="ttdef"><b>Definition:</b> <a href="http_2client_2_response_8h_source.html#l00046">Response.h:46</a></div></div>
 <div class="ttc" id="aclasshttp_1_1client_1_1_response_html_a4e8295a3714c9ee626dd35da1a78f25c"><div class="ttname"><a href="classhttp_1_1client_1_1_response.html#a4e8295a3714c9ee626dd35da1a78f25c">http::client::Response::reset</a></div><div class="ttdeci">void reset()</div><div class="ttdef"><b>Definition:</b> <a href="http_2client_2_response_8cpp_source.html#l00023">Response.cpp:23</a></div></div>

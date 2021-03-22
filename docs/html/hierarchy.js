@@ -2,20 +2,22 @@ var hierarchy =
 [
     [ "net::timer::Timer::absoluteTimeout", "structnet_1_1timer_1_1_timer_1_1absolute_timeout.html", null ],
     [ "utils::AttributeProxy< Attribute >", "classutils_1_1_attribute_proxy.html", null ],
-    [ "http::client::Client< SocketClientT >", "classhttp_1_1client_1_1_client.html", null ],
-    [ "http::client::Client< net::socket::ip::tcp::ipv4::legacy::SocketClient >", "classhttp_1_1client_1_1_client.html", [
-      [ "http::client::legacy::Client", "classhttp_1_1client_1_1legacy_1_1_client.html", null ]
+    [ "http::client::Client< SocketClientT, RequestT, ResponseT >", "classhttp_1_1client_1_1_client.html", null ],
+    [ "http::client::Client< net::socket::ip::tcp::ipv4::legacy::SocketClient, http::client::Request, http::client::Response >", "classhttp_1_1client_1_1_client.html", [
+      [ "http::client::legacy::Client< Request, Response >", "classhttp_1_1client_1_1legacy_1_1_client.html", null ]
     ] ],
-    [ "http::client::Client< net::socket::ip::tcp::ipv4::tls::SocketClient >", "classhttp_1_1client_1_1_client.html", [
-      [ "http::client::tls::Client", "classhttp_1_1client_1_1tls_1_1_client.html", null ]
+    [ "http::client::Client< net::socket::ip::tcp::ipv4::tls::SocketClient, http::client::Request, http::client::Response >", "classhttp_1_1client_1_1_client.html", [
+      [ "http::client::tls::Client< Request, Response >", "classhttp_1_1client_1_1tls_1_1_client.html", null ]
     ] ],
-    [ "http::client::Client< net::socket::ip::tcp::ipv6::legacy::SocketClient >", "classhttp_1_1client_1_1_client.html", [
-      [ "http::client::legacy::Client6", "classhttp_1_1client_1_1legacy_1_1_client6.html", null ]
+    [ "http::client::Client< net::socket::ip::tcp::ipv6::legacy::SocketClient, http::client::Request, http::client::Response >", "classhttp_1_1client_1_1_client.html", [
+      [ "http::client::legacy::Client6< Request, Response >", "classhttp_1_1client_1_1legacy_1_1_client6.html", null ]
     ] ],
-    [ "http::client::Client< net::socket::ip::tcp::ipv6::tls::SocketClient >", "classhttp_1_1client_1_1_client.html", [
-      [ "http::client::tls::Client6", "classhttp_1_1client_1_1tls_1_1_client6.html", null ]
+    [ "http::client::Client< net::socket::ip::tcp::ipv6::tls::SocketClient, http::client::Request, http::client::Response >", "classhttp_1_1client_1_1_client.html", [
+      [ "http::client::tls::Client6< Request, Response >", "classhttp_1_1client_1_1tls_1_1_client6.html", null ]
     ] ],
-    [ "http::client::ClientContext", "classhttp_1_1client_1_1_client_context.html", null ],
+    [ "http::client::ClientContextBase", "classhttp_1_1client_1_1_client_context_base.html", [
+      [ "http::client::ClientContext< RequestT, ResponseT >", "classhttp_1_1client_1_1_client_context.html", null ]
+    ] ],
     [ "http::CookieOptions", "classhttp_1_1_cookie_options.html", null ],
     [ "net::Descriptor", "classnet_1_1_descriptor.html", [
       [ "net::socket::Socket< address::L2CapAddress >", "classnet_1_1socket_1_1_socket.html", [

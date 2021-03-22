@@ -9,5 +9,6 @@ var http__utils_8h =
     [ "str_trimm", "http__utils_8h.html#aaa1e55d83548ea4ebf224d695f73c874", null ],
     [ "to_http_date", "http__utils_8h.html#a01539c1af68e4d072d3507ae44c0b02a", null ],
     [ "to_lower", "http__utils_8h.html#a4dd60a8e2472042c70e00dec22ebf927", null ],
-    [ "url_decode", "http__utils_8h.html#a818b4991d32a494fb64a2f7cf1b25087", null ]
+    [ "url_decode", "http__utils_8h.html#a818b4991d32a494fb64a2f7cf1b25087", null ],
+    [ "url_encode", "http__utils_8h.html#a386473920285bded181a38ffac8fe833", null ]
 ];

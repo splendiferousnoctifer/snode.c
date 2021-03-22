@@ -11,10 +11,10 @@ var NAVTREEINDEX0 =
 "_attribute_injector_8h_source.html":[10,0,4,0],
 "_client_8h.html":[10,0,1,0,2],
 "_client_8h_source.html":[10,0,1,0,2],
-"_client_context_8cpp.html":[10,0,1,0,3],
-"_client_context_8cpp_source.html":[10,0,1,0,3],
-"_client_context_8h.html":[10,0,1,0,4],
-"_client_context_8h_source.html":[10,0,1,0,4],
+"_client_context_8h.html":[10,0,1,0,3],
+"_client_context_8h_source.html":[10,0,1,0,3],
+"_client_context_8hpp.html":[10,0,1,0,4],
+"_client_context_8hpp_source.html":[10,0,1,0,4],
 "_connect_event_receiver_8cpp.html":[10,0,3,6],
 "_connect_event_receiver_8cpp_source.html":[10,0,3,6],
 "_connect_event_receiver_8h.html":[10,0,3,7],
@@ -146,7 +146,6 @@ var NAVTREEINDEX0 =
 "_s_node_c_8cpp.html":[10,0,3,21],
 "_s_node_c_8cpp_source.html":[10,0,3,21],
 "_s_node_c_8h.html":[10,0,3,22],
-"_s_node_c_8h.html#a2114c6ba07ad2e377395424299d45c07":[10,0,3,22,1],
 "_s_node_c_8h_source.html":[10,0,3,22],
 "_server_8h.html":[10,0,1,1,8],
 "_server_8h_source.html":[10,0,1,1,8],
@@ -249,5 +248,6 @@ var NAVTREEINDEX0 =
 "bluetooth_2rfcomm_2_socket_8cpp.html":[10,0,3,1,0,2,2],
 "bluetooth_2rfcomm_2_socket_8cpp_source.html":[10,0,3,1,0,2,2],
 "bluetooth_2rfcomm_2_socket_8h.html":[10,0,3,1,0,2,3],
-"bluetooth_2rfcomm_2_socket_8h_source.html":[10,0,3,1,0,2,3]
+"bluetooth_2rfcomm_2_socket_8h_source.html":[10,0,3,1,0,2,3],
+"bluetooth_2rfcomm_2legacy_2_socket_client_8h.html":[10,0,3,1,0,2,0,0]
 };

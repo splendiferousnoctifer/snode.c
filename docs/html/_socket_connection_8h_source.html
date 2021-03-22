@@ -103,8 +103,8 @@ $(document).ready(function(){initNavTree('_socket_connection_8h_source.html','')
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * along with this program. If not, see &lt;http://www.gnu.org/licenses/&gt;.</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#ifndef NET_SOCKET_stream_SOCKETCONNECTION_H</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#define NET_SOCKET_stream_SOCKETCONNECTION_H</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#ifndef NET_SOCKET_STREAM_SOCKETCONNECTION_H</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#define NET_SOCKET_STREAM_SOCKETCONNECTION_H</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#ifndef DOXYGEN_SHOULD_SKIP_THIS</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
@@ -168,7 +168,7 @@ $(document).ready(function(){initNavTree('_socket_connection_8h_source.html','')
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        }</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
 <div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a85fd378da0de453a913d513845910faf">   83</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a85fd378da0de453a913d513845910faf">enqueue</a>(<span class="keyword">const</span> std::string&amp; data)<span class="keyword"> override </span>{</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            enqueue(data.c_str(), data.size());</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            enqueue(data.data(), data.size());</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        }</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
 <div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#ad80107c21f19c407619fc28425db1d40">   87</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#ad80107c21f19c407619fc28425db1d40">close</a>(<span class="keywordtype">bool</span> instantly = <span class="keyword">false</span>) final {</div>
@@ -204,7 +204,7 @@ $(document).ready(function(){initNavTree('_socket_connection_8h_source.html','')
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;} <span class="comment">// namespace net::socket::stream</span></div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// NET_SOCKET_stream_SOCKETCONNECTION_H</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// NET_SOCKET_STREAM_SOCKETCONNECTION_H</span></div>
 <div class="ttc" id="a_socket_connection_base_8h_html"><div class="ttname"><a href="_socket_connection_base_8h.html">SocketConnectionBase.h</a></div></div>
 <div class="ttc" id="aclassnet_1_1_read_event_receiver_html_a1aa12164e4a0363f8a61acdceb44cd0c"><div class="ttname"><a href="classnet_1_1_read_event_receiver.html#a1aa12164e4a0363f8a61acdceb44cd0c">net::ReadEventReceiver::disable</a></div><div class="ttdeci">void disable() override</div><div class="ttdef"><b>Definition:</b> <a href="_read_event_receiver_8cpp_source.html#l00038">ReadEventReceiver.cpp:38</a></div></div>
 <div class="ttc" id="aclassnet_1_1_write_event_receiver_html_a5fde8579d923d80afbd015935d1fdea9"><div class="ttname"><a href="classnet_1_1_write_event_receiver.html#a5fde8579d923d80afbd015935d1fdea9">net::WriteEventReceiver::disable</a></div><div class="ttdeci">void disable() override</div><div class="ttdef"><b>Definition:</b> <a href="_write_event_receiver_8cpp_source.html#l00038">WriteEventReceiver.cpp:38</a></div></div>
