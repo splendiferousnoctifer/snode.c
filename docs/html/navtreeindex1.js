@@ -1,5 +1,7 @@
 var NAVTREEINDEX1 =
 {
+"bluetooth_2rfcomm_2_socket_8h_source.html":[10,0,3,1,0,2,3],
+"bluetooth_2rfcomm_2legacy_2_socket_client_8h.html":[10,0,3,1,0,2,0,0],
 "bluetooth_2rfcomm_2legacy_2_socket_client_8h_source.html":[10,0,3,1,0,2,0,0],
 "bluetooth_2rfcomm_2legacy_2_socket_server_8h.html":[10,0,3,1,0,2,0,1],
 "bluetooth_2rfcomm_2legacy_2_socket_server_8h_source.html":[10,0,3,1,0,2,0,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX1 =
 "classhttp_1_1_parser.html#aebd500c3f73e98f1da1fe82630382572":[9,0,1,3,3],
 "classhttp_1_1_parser.html#afa2d48828a1e14d3d42c1c8c81f2ab29":[9,0,1,3,0],
 "classhttp_1_1_parser.html#afa2d48828a1e14d3d42c1c8c81f2ab29a3825685c74d694534ba8beedcda60ece":[9,0,1,3,0,0],
-"classhttp_1_1_parser.html#afa2d48828a1e14d3d42c1c8c81f2ab29a487e4ce237a818f9418dfaa9cf27eee2":[9,0,1,3,0,7],
-"classhttp_1_1_parser.html#afa2d48828a1e14d3d42c1c8c81f2ab29a8cd2e975a5e7b4ee1c69a705c68907da":[9,0,1,3,0,9],
-"classhttp_1_1_parser.html#afa2d48828a1e14d3d42c1c8c81f2ab29a8d79c77541316cc76c791596f52ba87c":[9,0,1,3,0,1]
+"classhttp_1_1_parser.html#afa2d48828a1e14d3d42c1c8c81f2ab29a487e4ce237a818f9418dfaa9cf27eee2":[9,0,1,3,0,7]
 };

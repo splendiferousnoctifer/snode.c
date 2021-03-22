@@ -268,9 +268,9 @@ Friends</h2></td></tr>
 <div class="ttc" id="aclassnet_1_1_descriptor_event_dispatcher_html_a83f841b5def68585e686baffc2f093d5"><div class="ttname"><a href="classnet_1_1_descriptor_event_dispatcher.html#a83f841b5def68585e686baffc2f093d5">net::DescriptorEventDispatcher::enabledEventReceiver</a></div><div class="ttdeci">std::map&lt; int, DescriptorEventReceiverList &gt; enabledEventReceiver</div><div class="ttdef"><b>Definition:</b> <a href="_descriptor_event_dispatcher_8h_source.html#l00070">DescriptorEventDispatcher.h:70</a></div></div>
 <div class="ttc" id="aclassnet_1_1_descriptor_event_dispatcher_html_aea0eecae78f98d3ec2276c04b26a849d"><div class="ttname"><a href="classnet_1_1_descriptor_event_dispatcher.html#aea0eecae78f98d3ec2276c04b26a849d">net::DescriptorEventDispatcher::disabledEventReceiver</a></div><div class="ttdeci">std::map&lt; int, DescriptorEventReceiverList &gt; disabledEventReceiver</div><div class="ttdef"><b>Definition:</b> <a href="_descriptor_event_dispatcher_8h_source.html#l00072">DescriptorEventDispatcher.h:72</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_descriptor_event_receiver_8h_source.html#l00096">net::DescriptorEventReceiver::disabled()</a>, <a class="el" href="_descriptor_event_dispatcher_8h_source.html#l00072">disabledEventReceiver</a>, <a class="el" href="_descriptor_event_dispatcher_8h_source.html#l00070">enabledEventReceiver</a>, <a class="el" href="_descriptor_event_receiver_8h_source.html#l00073">net::DescriptorEventReceiver::isEnabled()</a>, <a class="el" href="_descriptor_event_receiver_8h_source.html#l00038">net::ObservationCounter::observationCounter</a>, and <a class="el" href="_descriptor_event_dispatcher_8h_source.html#l00073">unobservedEventReceiver</a>.</p>
+<p class="reference">References <a class="el" href="_descriptor_event_receiver_8cpp_source.html#l00057">net::DescriptorEventReceiver::disabled()</a>, <a class="el" href="_descriptor_event_dispatcher_8h_source.html#l00072">disabledEventReceiver</a>, <a class="el" href="_descriptor_event_dispatcher_8h_source.html#l00070">enabledEventReceiver</a>, <a class="el" href="_descriptor_event_receiver_8cpp_source.html#l00063">net::DescriptorEventReceiver::isEnabled()</a>, <a class="el" href="_descriptor_event_receiver_8h_source.html#l00040">net::ObservationCounter::observationCounter</a>, and <a class="el" href="_descriptor_event_dispatcher_8h_source.html#l00073">unobservedEventReceiver</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_accept_event_receiver_8cpp_source.html#l00045">net::AcceptEventReceiver::disable()</a>, <a class="el" href="_connect_event_receiver_8cpp_source.html#l00038">net::ConnectEventReceiver::disable()</a>, <a class="el" href="_exceptional_condition_event_receiver_8cpp_source.html#l00038">net::ExceptionalConditionEventReceiver::disable()</a>, <a class="el" href="_read_event_receiver_8cpp_source.html#l00038">net::ReadEventReceiver::disable()</a>, and <a class="el" href="_write_event_receiver_8cpp_source.html#l00038">net::WriteEventReceiver::disable()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_descriptor_event_receiver_8cpp_source.html#l00039">net::DescriptorEventReceiver::disable()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -279,7 +279,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_descriptor_event_dispatcher_a0f682135c09bd279cd315a0bdf885473_icgraph.svg" width="684" height="900"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_descriptor_event_dispatcher_a0f682135c09bd279cd315a0bdf885473_icgraph.svg" width="696" height="902"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -369,7 +369,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                <span class="keyword">struct </span>timeval inactivity = currentTime - eventReceiver-&gt;getLastTriggered();</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                <span class="keywordflow">if</span> (inactivity &gt;= maxInactivity) {</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                    eventReceiver-&gt;timeout();</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                    eventReceiver-&gt;timeoutEvent();</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                    eventReceiver-&gt;disable();</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                    nextInactivityTimeout = std::min(maxInactivity - inactivity, nextInactivityTimeout);</div>
@@ -428,7 +428,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                   (!<a class="code" href="classnet_1_1_descriptor_event_dispatcher.html#a83f841b5def68585e686baffc2f093d5">enabledEventReceiver</a>.contains(fd) || !<a class="code" href="classnet_1_1_descriptor_event_dispatcher.html#a83f841b5def68585e686baffc2f093d5">enabledEventReceiver</a>[fd].contains(eventReceiver))) {</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <span class="comment">// next tick as disable</span></div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <a class="code" href="classnet_1_1_descriptor_event_dispatcher.html#a83f841b5def68585e686baffc2f093d5">enabledEventReceiver</a>[fd].push_back(eventReceiver);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            eventReceiver-&gt;enabled(fd);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            eventReceiver-&gt;enabled();</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="classnet_1_1_descriptor_event_dispatcher.html#a6b56c2405cc0033ced91e1b47fc26649">unobservedEventReceiver</a>.<a class="code" href="classnet_1_1_descriptor_event_dispatcher_1_1_descriptor_event_receiver_list.html#ab0128e4373c28e76fe9db7b286e50e38">contains</a>(eventReceiver)) {</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                <a class="code" href="classnet_1_1_descriptor_event_dispatcher.html#a6b56c2405cc0033ced91e1b47fc26649">unobservedEventReceiver</a>.remove(eventReceiver);</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            }</div>
@@ -438,9 +438,9 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    }</div>
 <div class="ttc" id="aclassnet_1_1_descriptor_event_dispatcher_1_1_descriptor_event_receiver_list_html_ab0128e4373c28e76fe9db7b286e50e38"><div class="ttname"><a href="classnet_1_1_descriptor_event_dispatcher_1_1_descriptor_event_receiver_list.html#ab0128e4373c28e76fe9db7b286e50e38">net::DescriptorEventDispatcher::DescriptorEventReceiverList::contains</a></div><div class="ttdeci">bool contains(DescriptorEventReceiver *descriptorEventReceiver) const</div><div class="ttdef"><b>Definition:</b> <a href="_descriptor_event_dispatcher_8cpp_source.html#l00042">DescriptorEventDispatcher.cpp:42</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_descriptor_event_dispatcher_8cpp_source.html#l00042">net::DescriptorEventDispatcher::DescriptorEventReceiverList::contains()</a>, <a class="el" href="_descriptor_event_dispatcher_8h_source.html#l00072">disabledEventReceiver</a>, <a class="el" href="_descriptor_event_receiver_8h_source.html#l00089">net::DescriptorEventReceiver::enabled()</a>, <a class="el" href="_descriptor_event_dispatcher_8h_source.html#l00070">enabledEventReceiver</a>, <a class="el" href="_descriptor_event_receiver_8h_source.html#l00073">net::DescriptorEventReceiver::isEnabled()</a>, and <a class="el" href="_descriptor_event_dispatcher_8h_source.html#l00073">unobservedEventReceiver</a>.</p>
+<p class="reference">References <a class="el" href="_descriptor_event_dispatcher_8cpp_source.html#l00042">net::DescriptorEventDispatcher::DescriptorEventReceiverList::contains()</a>, <a class="el" href="_descriptor_event_dispatcher_8h_source.html#l00072">disabledEventReceiver</a>, <a class="el" href="_descriptor_event_receiver_8cpp_source.html#l00051">net::DescriptorEventReceiver::enabled()</a>, <a class="el" href="_descriptor_event_dispatcher_8h_source.html#l00070">enabledEventReceiver</a>, <a class="el" href="_descriptor_event_receiver_8cpp_source.html#l00063">net::DescriptorEventReceiver::isEnabled()</a>, and <a class="el" href="_descriptor_event_dispatcher_8h_source.html#l00073">unobservedEventReceiver</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_accept_event_receiver_8cpp_source.html#l00041">net::AcceptEventReceiver::enable()</a>, <a class="el" href="_connect_event_receiver_8cpp_source.html#l00034">net::ConnectEventReceiver::enable()</a>, <a class="el" href="_exceptional_condition_event_receiver_8cpp_source.html#l00034">net::ExceptionalConditionEventReceiver::enable()</a>, <a class="el" href="_read_event_receiver_8cpp_source.html#l00034">net::ReadEventReceiver::enable()</a>, and <a class="el" href="_write_event_receiver_8cpp_source.html#l00034">net::WriteEventReceiver::enable()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_descriptor_event_receiver_8cpp_source.html#l00034">net::DescriptorEventReceiver::enable()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -449,7 +449,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_descriptor_event_dispatcher_a73814f761935ca747c521b3ce46c2689_icgraph.svg" width="1098" height="574"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_descriptor_event_dispatcher_a73814f761935ca747c521b3ce46c2689_icgraph.svg" width="1110" height="616"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -689,9 +689,9 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        }</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_descriptor_event_dispatcher_8h_source.html#l00075">fdSet</a>, <a class="el" href="_descriptor_event_receiver_8h_source.html#l00077">net::DescriptorEventReceiver::isSuspended()</a>, <a class="el" href="_descriptor_event_dispatcher_8h_source.html#l00071">observedEventReceiver</a>, <a class="el" href="_descriptor_event_receiver_8h_source.html#l00106">net::DescriptorEventReceiver::resumed()</a>, and <a class="el" href="_fd_set_8cpp_source.html#l00031">net::FdSet::set()</a>.</p>
+<p class="reference">References <a class="el" href="_descriptor_event_dispatcher_8h_source.html#l00075">fdSet</a>, <a class="el" href="_descriptor_event_receiver_8cpp_source.html#l00076">net::DescriptorEventReceiver::isSuspended()</a>, <a class="el" href="_descriptor_event_dispatcher_8h_source.html#l00071">observedEventReceiver</a>, <a class="el" href="_descriptor_event_receiver_8cpp_source.html#l00071">net::DescriptorEventReceiver::resumed()</a>, and <a class="el" href="_fd_set_8cpp_source.html#l00031">net::FdSet::set()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_accept_event_receiver_8cpp_source.html#l00053">net::AcceptEventReceiver::resume()</a>, <a class="el" href="_connect_event_receiver_8cpp_source.html#l00046">net::ConnectEventReceiver::resume()</a>, <a class="el" href="_exceptional_condition_event_receiver_8cpp_source.html#l00046">net::ExceptionalConditionEventReceiver::resume()</a>, <a class="el" href="_read_event_receiver_8cpp_source.html#l00046">net::ReadEventReceiver::resume()</a>, and <a class="el" href="_write_event_receiver_8cpp_source.html#l00046">net::WriteEventReceiver::resume()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_descriptor_event_receiver_8cpp_source.html#l00047">net::DescriptorEventReceiver::resume()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -700,7 +700,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_descriptor_event_dispatcher_a2f3bda27d3e9b040956e69f7b07054e5_icgraph.svg" width="874" height="395"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_descriptor_event_dispatcher_a2f3bda27d3e9b040956e69f7b07054e5_icgraph.svg" width="886" height="199"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -743,9 +743,9 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        }</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_fd_set_8cpp_source.html#l00035">net::FdSet::clr()</a>, <a class="el" href="_descriptor_event_dispatcher_8h_source.html#l00075">fdSet</a>, <a class="el" href="_descriptor_event_receiver_8h_source.html#l00077">net::DescriptorEventReceiver::isSuspended()</a>, <a class="el" href="_descriptor_event_dispatcher_8h_source.html#l00071">observedEventReceiver</a>, and <a class="el" href="_descriptor_event_receiver_8h_source.html#l00102">net::DescriptorEventReceiver::suspended()</a>.</p>
+<p class="reference">References <a class="el" href="_fd_set_8cpp_source.html#l00035">net::FdSet::clr()</a>, <a class="el" href="_descriptor_event_dispatcher_8h_source.html#l00075">fdSet</a>, <a class="el" href="_descriptor_event_receiver_8cpp_source.html#l00076">net::DescriptorEventReceiver::isSuspended()</a>, <a class="el" href="_descriptor_event_dispatcher_8h_source.html#l00071">observedEventReceiver</a>, and <a class="el" href="_descriptor_event_receiver_8cpp_source.html#l00067">net::DescriptorEventReceiver::suspended()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_accept_event_receiver_8cpp_source.html#l00049">net::AcceptEventReceiver::suspend()</a>, <a class="el" href="_connect_event_receiver_8cpp_source.html#l00042">net::ConnectEventReceiver::suspend()</a>, <a class="el" href="_exceptional_condition_event_receiver_8cpp_source.html#l00042">net::ExceptionalConditionEventReceiver::suspend()</a>, <a class="el" href="_read_event_receiver_8cpp_source.html#l00042">net::ReadEventReceiver::suspend()</a>, and <a class="el" href="_write_event_receiver_8cpp_source.html#l00042">net::WriteEventReceiver::suspend()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_descriptor_event_receiver_8cpp_source.html#l00043">net::DescriptorEventReceiver::suspend()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -754,7 +754,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_descriptor_event_dispatcher_a9eca4cac3e192e4ace05ec7b3c697298_icgraph.svg" width="684" height="534"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_descriptor_event_dispatcher_a9eca4cac3e192e4ace05ec7b3c697298_icgraph.svg" width="696" height="462"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>

@@ -108,8 +108,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:ae1f96e9a7d191f337759f64415105c5e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1stream_1_1_pipe.html#ae1f96e9a7d191f337759f64415105c5e">pipefd</a> [2]</td></tr>
-<tr class="separator:ae1f96e9a7d191f337759f64415105c5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c781e2a4c777a7f026b4b3598ec3c1e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1stream_1_1_pipe.html#a5c781e2a4c777a7f026b4b3598ec3c1e">pipeFd</a> [2]</td></tr>
+<tr class="separator:a5c781e2a4c777a7f026b4b3598ec3c1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -143,17 +143,17 @@ Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_pipe_8cpp_source.html#l00033">33</a> of file <a class="el" href="_pipe_8cpp_source.html">Pipe.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                                                          {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordtype">int</span> ret = pipe2(<a class="code" href="classnet_1_1stream_1_1_pipe.html#ae1f96e9a7d191f337759f64415105c5e">pipefd</a>, O_NONBLOCK);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordtype">int</span> ret = pipe2(<a class="code" href="classnet_1_1stream_1_1_pipe.html#a5c781e2a4c777a7f026b4b3598ec3c1e">pipeFd</a>, O_NONBLOCK);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordflow">if</span> (ret == 0) {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            onSuccess(*(<span class="keyword">new</span> PipeSource(<a class="code" href="classnet_1_1stream_1_1_pipe.html#ae1f96e9a7d191f337759f64415105c5e">pipefd</a>[1])), *(<span class="keyword">new</span> PipeSink(<a class="code" href="classnet_1_1stream_1_1_pipe.html#ae1f96e9a7d191f337759f64415105c5e">pipefd</a>[0])));</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            onSuccess(*(<span class="keyword">new</span> PipeSource(<a class="code" href="classnet_1_1stream_1_1_pipe.html#a5c781e2a4c777a7f026b4b3598ec3c1e">pipeFd</a>[1])), *(<span class="keyword">new</span> PipeSink(<a class="code" href="classnet_1_1stream_1_1_pipe.html#a5c781e2a4c777a7f026b4b3598ec3c1e">pipeFd</a>[0])));</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            onError(errno);</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        }</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }</div>
-<div class="ttc" id="aclassnet_1_1stream_1_1_pipe_html_ae1f96e9a7d191f337759f64415105c5e"><div class="ttname"><a href="classnet_1_1stream_1_1_pipe.html#ae1f96e9a7d191f337759f64415105c5e">net::stream::Pipe::pipefd</a></div><div class="ttdeci">int pipefd[2]</div><div class="ttdef"><b>Definition:</b> <a href="_pipe_8h_source.html#l00041">Pipe.h:41</a></div></div>
+<div class="ttc" id="aclassnet_1_1stream_1_1_pipe_html_a5c781e2a4c777a7f026b4b3598ec3c1e"><div class="ttname"><a href="classnet_1_1stream_1_1_pipe.html#a5c781e2a4c777a7f026b4b3598ec3c1e">net::stream::Pipe::pipeFd</a></div><div class="ttdeci">int pipeFd[2]</div><div class="ttdef"><b>Definition:</b> <a href="_pipe_8h_source.html#l00041">Pipe.h:41</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_pipe_8h_source.html#l00041">pipefd</a>.</p>
+<p class="reference">References <a class="el" href="_pipe_8h_source.html#l00041">pipeFd</a>.</p>
 
 </div>
 </div>
@@ -211,8 +211,8 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="ae1f96e9a7d191f337759f64415105c5e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae1f96e9a7d191f337759f64415105c5e">&#9670;&nbsp;</a></span>pipefd</h2>
+<a id="a5c781e2a4c777a7f026b4b3598ec3c1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c781e2a4c777a7f026b4b3598ec3c1e">&#9670;&nbsp;</a></span>pipeFd</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -221,7 +221,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int net::stream::Pipe::pipefd[2]</td>
+          <td class="memname">int net::stream::Pipe::pipeFd[2]</td>
         </tr>
       </table>
   </td>
