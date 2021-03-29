@@ -1,5 +1,7 @@
 var NAVTREEINDEX6 =
 {
+"ip_2tcp_2ipv6_2_socket_8h_source.html":[10,0,3,1,1,1,1,3],
+"ip_2tcp_2ipv6_2legacy_2_socket_client_8h.html":[10,0,3,1,1,1,1,0,0],
 "ip_2tcp_2ipv6_2legacy_2_socket_client_8h_source.html":[10,0,3,1,1,1,1,0,0],
 "ip_2tcp_2ipv6_2legacy_2_socket_server_8h.html":[10,0,3,1,1,1,1,0,1],
 "ip_2tcp_2ipv6_2legacy_2_socket_server_8h_source.html":[10,0,3,1,1,1,1,0,1],

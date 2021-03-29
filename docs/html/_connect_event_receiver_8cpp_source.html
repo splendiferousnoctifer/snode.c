@@ -103,31 +103,35 @@ $(document).ready(function(){initNavTree('_connect_event_receiver_8cpp_source.ht
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * along with this program. If not, see &lt;http://www.gnu.org/licenses/&gt;.</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_connect_event_receiver_8h.html">ConnectEventReceiver.h</a>&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#ifndef DOXYGEN_SHOULD_SKIP_THIS</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_descriptor_event_dispatcher_8h.html">DescriptorEventDispatcher.h</a>&quot;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_event_loop_8h.html">EventLoop.h</a>&quot;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacenet.html">net</a> {</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classnet_1_1_connect_event_receiver.html#aeeac0ba275d533c59b81f66749fdad2d">   26</a></span>&#160;    <a class="code" href="classnet_1_1_connect_event_receiver.html#aeeac0ba275d533c59b81f66749fdad2d">ConnectEventReceiver::ConnectEventReceiver</a>(<span class="keywordtype">long</span> timeout)</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        : <a class="code" href="classnet_1_1_descriptor_event_receiver.html">DescriptorEventReceiver</a>(<a class="code" href="classnet_1_1_event_loop.html">EventLoop</a>::instance().getWriteEventDispatcher(), timeout) {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    }</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* DOXYGEN_SHOULD_SKIP_THIS */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_connect_event_receiver_8h.html">ConnectEventReceiver.h</a>&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_descriptor_event_dispatcher_8h.html">DescriptorEventDispatcher.h</a>&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_event_loop_8h.html">EventLoop.h</a>&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacenet.html">net</a> {</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classnet_1_1_connect_event_receiver.html#a225e561000775279037c8a848ebdeb1b">   30</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classnet_1_1_connect_event_receiver.html#a225e561000775279037c8a848ebdeb1b">ConnectEventReceiver::dispatchEvent</a>() {</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <a class="code" href="classnet_1_1_connect_event_receiver.html#a0694f73a2b253a7ad7d45a51297aae10">connectEvent</a>();</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classnet_1_1_connect_event_receiver.html#aeeac0ba275d533c59b81f66749fdad2d">   30</a></span>&#160;    <a class="code" href="classnet_1_1_connect_event_receiver.html#aeeac0ba275d533c59b81f66749fdad2d">ConnectEventReceiver::ConnectEventReceiver</a>(<span class="keywordtype">long</span> timeout)</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        : <a class="code" href="classnet_1_1_descriptor_event_receiver.html">DescriptorEventReceiver</a>(<a class="code" href="classnet_1_1_event_loop.html">EventLoop</a>::instance().getWriteEventDispatcher(), timeout) {</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;} <span class="comment">// namespace net</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classnet_1_1_connect_event_receiver.html#a225e561000775279037c8a848ebdeb1b">   34</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classnet_1_1_connect_event_receiver.html#a225e561000775279037c8a848ebdeb1b">ConnectEventReceiver::dispatchEvent</a>() {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <a class="code" href="classnet_1_1_connect_event_receiver.html#a0694f73a2b253a7ad7d45a51297aae10">connectEvent</a>();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;} <span class="comment">// namespace net</span></div>
 <div class="ttc" id="a_connect_event_receiver_8h_html"><div class="ttname"><a href="_connect_event_receiver_8h.html">ConnectEventReceiver.h</a></div></div>
 <div class="ttc" id="a_descriptor_event_dispatcher_8h_html"><div class="ttname"><a href="_descriptor_event_dispatcher_8h.html">DescriptorEventDispatcher.h</a></div></div>
 <div class="ttc" id="a_event_loop_8h_html"><div class="ttname"><a href="_event_loop_8h.html">EventLoop.h</a></div></div>
 <div class="ttc" id="aclassnet_1_1_connect_event_receiver_html_a0694f73a2b253a7ad7d45a51297aae10"><div class="ttname"><a href="classnet_1_1_connect_event_receiver.html#a0694f73a2b253a7ad7d45a51297aae10">net::ConnectEventReceiver::connectEvent</a></div><div class="ttdeci">virtual void connectEvent()=0</div></div>
-<div class="ttc" id="aclassnet_1_1_connect_event_receiver_html_a225e561000775279037c8a848ebdeb1b"><div class="ttname"><a href="classnet_1_1_connect_event_receiver.html#a225e561000775279037c8a848ebdeb1b">net::ConnectEventReceiver::dispatchEvent</a></div><div class="ttdeci">void dispatchEvent() override</div><div class="ttdef"><b>Definition:</b> <a href="_connect_event_receiver_8cpp_source.html#l00030">ConnectEventReceiver.cpp:30</a></div></div>
-<div class="ttc" id="aclassnet_1_1_connect_event_receiver_html_aeeac0ba275d533c59b81f66749fdad2d"><div class="ttname"><a href="classnet_1_1_connect_event_receiver.html#aeeac0ba275d533c59b81f66749fdad2d">net::ConnectEventReceiver::ConnectEventReceiver</a></div><div class="ttdeci">ConnectEventReceiver(long timeout=10)</div><div class="ttdef"><b>Definition:</b> <a href="_connect_event_receiver_8cpp_source.html#l00026">ConnectEventReceiver.cpp:26</a></div></div>
+<div class="ttc" id="aclassnet_1_1_connect_event_receiver_html_a225e561000775279037c8a848ebdeb1b"><div class="ttname"><a href="classnet_1_1_connect_event_receiver.html#a225e561000775279037c8a848ebdeb1b">net::ConnectEventReceiver::dispatchEvent</a></div><div class="ttdeci">void dispatchEvent() override</div><div class="ttdef"><b>Definition:</b> <a href="_connect_event_receiver_8cpp_source.html#l00034">ConnectEventReceiver.cpp:34</a></div></div>
+<div class="ttc" id="aclassnet_1_1_connect_event_receiver_html_aeeac0ba275d533c59b81f66749fdad2d"><div class="ttname"><a href="classnet_1_1_connect_event_receiver.html#aeeac0ba275d533c59b81f66749fdad2d">net::ConnectEventReceiver::ConnectEventReceiver</a></div><div class="ttdeci">ConnectEventReceiver(long timeout=10)</div><div class="ttdef"><b>Definition:</b> <a href="_connect_event_receiver_8cpp_source.html#l00030">ConnectEventReceiver.cpp:30</a></div></div>
 <div class="ttc" id="aclassnet_1_1_descriptor_event_receiver_html"><div class="ttname"><a href="classnet_1_1_descriptor_event_receiver.html">net::DescriptorEventReceiver</a></div><div class="ttdef"><b>Definition:</b> <a href="_descriptor_event_receiver_8h_source.html#l00044">DescriptorEventReceiver.h:44</a></div></div>
 <div class="ttc" id="aclassnet_1_1_event_loop_html"><div class="ttname"><a href="classnet_1_1_event_loop.html">net::EventLoop</a></div><div class="ttdef"><b>Definition:</b> <a href="_event_loop_8h_source.html#l00036">EventLoop.h:36</a></div></div>
-<div class="ttc" id="anamespacenet_html"><div class="ttname"><a href="namespacenet.html">net</a></div><div class="ttdef"><b>Definition:</b> <a href="_accept_event_receiver_8cpp_source.html#l00031">AcceptEventReceiver.cpp:31</a></div></div>
+<div class="ttc" id="anamespacenet_html"><div class="ttname"><a href="namespacenet.html">net</a></div><div class="ttdef"><b>Definition:</b> <a href="_accept_event_receiver_8cpp_source.html#l00030">AcceptEventReceiver.cpp:30</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
