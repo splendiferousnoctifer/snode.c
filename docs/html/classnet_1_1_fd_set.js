@@ -4,7 +4,6 @@ var classnet_1_1_fd_set =
     [ "clr", "classnet_1_1_fd_set.html#ad16f1e07bc68aa16c271a858d7510b95", null ],
     [ "get", "classnet_1_1_fd_set.html#a6522cb79575ddf3dc7fde777d767594f", null ],
     [ "isSet", "classnet_1_1_fd_set.html#a69db6f08582ae98956e1476b996657e1", null ],
-    [ "prepare", "classnet_1_1_fd_set.html#a8da4102a551232e403beea61a468c7e5", null ],
     [ "set", "classnet_1_1_fd_set.html#a602dbf99def6560bcc7a6bcb8384d549", null ],
     [ "zero", "classnet_1_1_fd_set.html#ae2aef28ff986512ef8e4da1639fa88f7", null ],
     [ "active", "classnet_1_1_fd_set.html#a9420442889a6f1c415527e05e9326775", null ],

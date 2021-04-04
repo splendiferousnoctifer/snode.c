@@ -1,8 +1,5 @@
 var NAVTREEINDEX5 =
 {
-"classnet_1_1timer_1_1_timer.html#a12ca45629bac9f5bd66eab5220853e1a":[9,0,2,2,2,9],
-"classnet_1_1timer_1_1_timer.html#a1f43762415fc087f105e514acf31572a":[9,0,2,2,2,3],
-"classnet_1_1timer_1_1_timer.html#a21387e33a3533272808a34ac180828ae":[9,0,2,2,2,7],
 "classnet_1_1timer_1_1_timer.html#a21d73f3fe7bf9b554d0f6cbd36e66d42":[9,0,2,2,2,2],
 "classnet_1_1timer_1_1_timer.html#a31ab90fa1d4e9b25b9b67d9637c636ac":[9,0,2,2,2,10],
 "classnet_1_1timer_1_1_timer.html#a45b8e964fe48339b1b557c0aeeff2fe0":[9,0,2,2,2,8],
@@ -92,8 +89,8 @@ var NAVTREEINDEX5 =
 "functions_enum.html":[9,3,4],
 "functions_eval.html":[9,3,5],
 "functions_f.html":[9,3,0,6],
-"functions_func.html":[9,3,1],
 "functions_func.html":[9,3,1,0],
+"functions_func.html":[9,3,1],
 "functions_func_b.html":[9,3,1,1],
 "functions_func_c.html":[9,3,1,2],
 "functions_func_d.html":[9,3,1,3],
@@ -132,8 +129,8 @@ var NAVTREEINDEX5 =
 "functions_type.html":[9,3,3],
 "functions_u.html":[9,3,0,20],
 "functions_v.html":[9,3,0,21],
-"functions_vars.html":[9,3,2],
 "functions_vars.html":[9,3,2,0],
+"functions_vars.html":[9,3,2],
 "functions_vars_a.html":[9,3,2,1],
 "functions_vars_b.html":[9,3,2,2],
 "functions_vars_c.html":[9,3,2,3],
@@ -249,5 +246,8 @@ var NAVTREEINDEX5 =
 "ip_2tcp_2ipv4_2tls_2_socket_server_8h_source.html":[10,0,3,1,1,1,0,1,1],
 "ip_2tcp_2ipv6_2_socket_8cpp.html":[10,0,3,1,1,1,1,2],
 "ip_2tcp_2ipv6_2_socket_8cpp_source.html":[10,0,3,1,1,1,1,2],
-"ip_2tcp_2ipv6_2_socket_8h.html":[10,0,3,1,1,1,1,3]
+"ip_2tcp_2ipv6_2_socket_8h.html":[10,0,3,1,1,1,1,3],
+"ip_2tcp_2ipv6_2_socket_8h_source.html":[10,0,3,1,1,1,1,3],
+"ip_2tcp_2ipv6_2legacy_2_socket_client_8h.html":[10,0,3,1,1,1,1,0,0],
+"ip_2tcp_2ipv6_2legacy_2_socket_client_8h_source.html":[10,0,3,1,1,1,1,0,0]
 };
