@@ -172,10 +172,10 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_mime_types_8cpp_source.html#l00228">228</a> of file <a class="el" href="_mime_types_8cpp_source.html">MimeTypes.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                      {</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    magic_close(<a class="code" href="class_mime_types.html#ac713a51eb121e626104d76aa0b06e8cf">MimeTypes::magic</a>);</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="_mime_types_8cpp_source.html#l00229">229</a> of file <a class="el" href="_mime_types_8cpp_source.html">MimeTypes.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                      {</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    magic_close(<a class="code" href="class_mime_types.html#ac713a51eb121e626104d76aa0b06e8cf">MimeTypes::magic</a>);</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;}</div>
 <div class="ttc" id="aclass_mime_types_html_ac713a51eb121e626104d76aa0b06e8cf"><div class="ttname"><a href="class_mime_types.html#ac713a51eb121e626104d76aa0b06e8cf">MimeTypes::magic</a></div><div class="ttdeci">static magic_t magic</div><div class="ttdef"><b>Definition:</b> <a href="_mime_types_8h_source.html#l00042">MimeTypes.h:42</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="_mime_types_8h_source.html#l00042">magic</a>.</p>
@@ -205,16 +205,16 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_mime_types_8cpp_source.html#l00218">218</a> of file <a class="el" href="_mime_types_8cpp_source.html">MimeTypes.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;                     {</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <a class="code" href="class_mime_types.html#ac713a51eb121e626104d76aa0b06e8cf">MimeTypes::magic</a> = magic_open(MAGIC_MIME);</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160; </div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <span class="keywordflow">if</span> (magic_load(<a class="code" href="class_mime_types.html#ac713a51eb121e626104d76aa0b06e8cf">magic</a>, <span class="keyword">nullptr</span>) != 0) {</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        LOG(WARNING) &lt;&lt; <span class="stringliteral">&quot;cannot load magic database - &quot;</span> + std::string(magic_error(<a class="code" href="class_mime_types.html#ac713a51eb121e626104d76aa0b06e8cf">magic</a>));</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        magic_close(<a class="code" href="class_mime_types.html#ac713a51eb121e626104d76aa0b06e8cf">magic</a>);</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        <a class="code" href="class_mime_types.html#ac713a51eb121e626104d76aa0b06e8cf">magic</a> = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    }</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="_mime_types_8cpp_source.html#l00219">219</a> of file <a class="el" href="_mime_types_8cpp_source.html">MimeTypes.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;                     {</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <a class="code" href="class_mime_types.html#ac713a51eb121e626104d76aa0b06e8cf">MimeTypes::magic</a> = magic_open(MAGIC_MIME);</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160; </div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <span class="keywordflow">if</span> (magic_load(<a class="code" href="class_mime_types.html#ac713a51eb121e626104d76aa0b06e8cf">magic</a>, <span class="keyword">nullptr</span>) != 0) {</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        LOG(WARNING) &lt;&lt; <span class="stringliteral">&quot;cannot load magic database - &quot;</span> + std::string(magic_error(<a class="code" href="class_mime_types.html#ac713a51eb121e626104d76aa0b06e8cf">magic</a>));</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        magic_close(<a class="code" href="class_mime_types.html#ac713a51eb121e626104d76aa0b06e8cf">magic</a>);</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        <a class="code" href="class_mime_types.html#ac713a51eb121e626104d76aa0b06e8cf">magic</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    }</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="_mime_types_8h_source.html#l00042">magic</a>.</p>
 
@@ -245,25 +245,25 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_mime_types_8cpp_source.html#l00232">232</a> of file <a class="el" href="_mime_types_8cpp_source.html">MimeTypes.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                                                      {</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    std::map&lt;std::string, std::string&gt;::iterator it = <a class="code" href="class_mime_types.html#a8c0a142ec1ead6906818f80470f74c5f">mimeType</a>.find(std::filesystem::path(file).extension());</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160; </div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    std::string type;</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160; </div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    <span class="keywordflow">if</span> (it != <a class="code" href="class_mime_types.html#a8c0a142ec1ead6906818f80470f74c5f">mimeType</a>.end()) {</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        type = it-&gt;second;</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="class_mime_types.html#ac713a51eb121e626104d76aa0b06e8cf">magic</a> != <span class="keyword">nullptr</span>) {</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        type = magic_file(<a class="code" href="class_mime_types.html#ac713a51eb121e626104d76aa0b06e8cf">MimeTypes::magic</a>, file.c_str());</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    }</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160; </div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    <span class="keywordflow">return</span> type;</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="_mime_types_8cpp_source.html#l00233">233</a> of file <a class="el" href="_mime_types_8cpp_source.html">MimeTypes.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;                                                      {</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    std::map&lt;std::string, std::string&gt;::iterator it = <a class="code" href="class_mime_types.html#a8c0a142ec1ead6906818f80470f74c5f">mimeType</a>.find(std::filesystem::path(file).extension());</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160; </div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    std::string type;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160; </div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    <span class="keywordflow">if</span> (it != <a class="code" href="class_mime_types.html#a8c0a142ec1ead6906818f80470f74c5f">mimeType</a>.end()) {</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        type = it-&gt;second;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="class_mime_types.html#ac713a51eb121e626104d76aa0b06e8cf">magic</a> != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        type = magic_file(<a class="code" href="class_mime_types.html#ac713a51eb121e626104d76aa0b06e8cf">MimeTypes::magic</a>, file.c_str());</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    }</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160; </div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <span class="keywordflow">return</span> type;</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;}</div>
 <div class="ttc" id="aclass_mime_types_html_a8c0a142ec1ead6906818f80470f74c5f"><div class="ttname"><a href="class_mime_types.html#a8c0a142ec1ead6906818f80470f74c5f">MimeTypes::mimeType</a></div><div class="ttdeci">static std::map&lt; std::string, std::string &gt; mimeType</div><div class="ttdef"><b>Definition:</b> <a href="_mime_types_8h_source.html#l00046">MimeTypes.h:46</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="_mime_types_8h_source.html#l00042">magic</a>, and <a class="el" href="_mime_types_8h_source.html#l00046">mimeType</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="express_2_response_8cpp_source.html#l00038">express::Response::sendFile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="express_2_response_8cpp_source.html#l00039">express::Response::sendFile()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -321,7 +321,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="_mime_types_8h_source.html#l00042">42</a> of file <a class="el" href="_mime_types_8h_source.html">MimeTypes.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_mime_types_8cpp_source.html#l00232">contentType()</a>, <a class="el" href="_mime_types_8cpp_source.html#l00218">MimeTypes()</a>, and <a class="el" href="_mime_types_8cpp_source.html#l00228">~MimeTypes()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_mime_types_8cpp_source.html#l00233">contentType()</a>, <a class="el" href="_mime_types_8cpp_source.html#l00219">MimeTypes()</a>, and <a class="el" href="_mime_types_8cpp_source.html#l00229">~MimeTypes()</a>.</p>
 
 </div>
 </div>
@@ -347,7 +347,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="_mime_types_8h_source.html#l00046">46</a> of file <a class="el" href="_mime_types_8h_source.html">MimeTypes.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_mime_types_8cpp_source.html#l00232">contentType()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_mime_types_8cpp_source.html#l00233">contentType()</a>.</p>
 
 </div>
 </div>

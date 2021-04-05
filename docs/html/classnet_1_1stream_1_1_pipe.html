@@ -141,16 +141,16 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_pipe_8cpp_source.html#l00033">33</a> of file <a class="el" href="_pipe_8cpp_source.html">Pipe.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                                                          {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordtype">int</span> ret = pipe2(<a class="code" href="classnet_1_1stream_1_1_pipe.html#a5c781e2a4c777a7f026b4b3598ec3c1e">pipeFd</a>, O_NONBLOCK);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordflow">if</span> (ret == 0) {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            onSuccess(*(<span class="keyword">new</span> PipeSource(<a class="code" href="classnet_1_1stream_1_1_pipe.html#a5c781e2a4c777a7f026b4b3598ec3c1e">pipeFd</a>[1])), *(<span class="keyword">new</span> PipeSink(<a class="code" href="classnet_1_1stream_1_1_pipe.html#a5c781e2a4c777a7f026b4b3598ec3c1e">pipeFd</a>[0])));</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            onError(errno);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        }</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="_pipe_8cpp_source.html#l00034">34</a> of file <a class="el" href="_pipe_8cpp_source.html">Pipe.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                                                          {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordtype">int</span> ret = pipe2(<a class="code" href="classnet_1_1stream_1_1_pipe.html#a5c781e2a4c777a7f026b4b3598ec3c1e">pipeFd</a>, O_NONBLOCK);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordflow">if</span> (ret == 0) {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            onSuccess(*(<span class="keyword">new</span> PipeSource(<a class="code" href="classnet_1_1stream_1_1_pipe.html#a5c781e2a4c777a7f026b4b3598ec3c1e">pipeFd</a>[1])), *(<span class="keyword">new</span> PipeSink(<a class="code" href="classnet_1_1stream_1_1_pipe.html#a5c781e2a4c777a7f026b4b3598ec3c1e">pipeFd</a>[0])));</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            onError(errno);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
 <div class="ttc" id="aclassnet_1_1stream_1_1_pipe_html_a5c781e2a4c777a7f026b4b3598ec3c1e"><div class="ttname"><a href="classnet_1_1stream_1_1_pipe.html#a5c781e2a4c777a7f026b4b3598ec3c1e">net::stream::Pipe::pipeFd</a></div><div class="ttdeci">int pipeFd[2]</div><div class="ttdef"><b>Definition:</b> <a href="_pipe_8h_source.html#l00041">Pipe.h:41</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="_pipe_8h_source.html#l00041">pipeFd</a>.</p>
@@ -233,7 +233,7 @@ Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_pipe_8h_source.html#l00041">41</a> of file <a class="el" href="_pipe_8h_source.html">Pipe.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_pipe_8cpp_source.html#l00033">Pipe()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_pipe_8cpp_source.html#l00034">Pipe()</a>.</p>
 
 </div>
 </div>

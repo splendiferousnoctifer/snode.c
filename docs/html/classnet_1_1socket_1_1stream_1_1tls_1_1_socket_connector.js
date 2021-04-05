@@ -6,6 +6,5 @@ var classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connector =
     [ "SocketConnector", "classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connector.html#a5fdcb49edf7159bed9269618d54716ee", null ],
     [ "~SocketConnector", "classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connector.html#a747532947bb596e5c400bb04903d6eee", null ],
     [ "connect", "classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connector.html#af2d0a57c6c375da33966155082c5ecaa", null ],
-    [ "connectEvent", "classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connector.html#ae4e8b3624806b65ed81eff15ed36e0b2", null ],
     [ "ctx", "classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connector.html#ad7515655b28bef79c5034bbd92f9d6b7", null ]
 ];
