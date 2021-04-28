@@ -94,13 +94,16 @@ $(document).ready(function(){initNavTree('class_status_code.html',''); initResiz
 <div class="dynheader">
 Collaboration diagram for StatusCode:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_status_code__coll__graph.svg" width="108" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_status_code__coll__graph.svg" width="108" height="103"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a22c4b7005f5d2de069af37a191b97fa0"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_status_code.html#a22c4b7005f5d2de069af37a191b97fa0">reason</a> (int status)</td></tr>
-<tr class="separator:a22c4b7005f5d2de069af37a191b97fa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c0a74bc683dca68ad14fcf0a032df29"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_status_code.html#a2c0a74bc683dca68ad14fcf0a032df29">reason</a> (int status)</td></tr>
+<tr class="separator:a2c0a74bc683dca68ad14fcf0a032df29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa4b60d670754ca67188ea76031efd7c"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_status_code.html#afa4b60d670754ca67188ea76031efd7c">contains</a> (int status)</td></tr>
+<tr class="separator:afa4b60d670754ca67188ea76031efd7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
@@ -111,8 +114,8 @@ Static Private Attributes</h2></td></tr>
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="_status_codes_8h_source.html#l00029">29</a> of file <a class="el" href="_status_codes_8h_source.html">StatusCodes.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a22c4b7005f5d2de069af37a191b97fa0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a22c4b7005f5d2de069af37a191b97fa0">&#9670;&nbsp;</a></span>reason()</h2>
+<a id="afa4b60d670754ca67188ea76031efd7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa4b60d670754ca67188ea76031efd7c">&#9670;&nbsp;</a></span>contains()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -121,7 +124,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static std::string StatusCode::reason </td>
+          <td class="memname">bool StatusCode::contains </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>status</em></td><td>)</td>
@@ -130,24 +133,79 @@ Static Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_status_codes_8h_source.html#l00031">31</a> of file <a class="el" href="_status_codes_8h_source.html">StatusCodes.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                                        {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_status_code.html#a192a75203e32b01f4fc62df96ca42096">statusCode</a>[status];</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="_status_codes_8cpp_source.html#l00099">99</a> of file <a class="el" href="_status_codes_8cpp_source.html">StatusCodes.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                                    {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_status_code.html#a192a75203e32b01f4fc62df96ca42096">statusCode</a>.contains(status);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;}</div>
 <div class="ttc" id="aclass_status_code_html_a192a75203e32b01f4fc62df96ca42096"><div class="ttname"><a href="class_status_code.html#a192a75203e32b01f4fc62df96ca42096">StatusCode::statusCode</a></div><div class="ttdeci">static std::map&lt; int, std::string &gt; statusCode</div><div class="ttdef"><b>Definition:</b> <a href="_status_codes_8h_source.html#l00036">StatusCodes.h:36</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="_status_codes_8h_source.html#l00036">statusCode</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="http_2server_2_response_8cpp_source.html#l00147">http::server::Response::sendHeader()</a>, and <a class="el" href="express_2_response_8cpp_source.html#l00093">express::Response::sendStatus()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_status_codes_8cpp_source.html#l00089">reason()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_status_code_a22c4b7005f5d2de069af37a191b97fa0_icgraph.svg" width="1371" height="246"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_status_code_afa4b60d670754ca67188ea76031efd7c_icgraph.svg" width="1567" height="246"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a2c0a74bc683dca68ad14fcf0a032df29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c0a74bc683dca68ad14fcf0a032df29">&#9670;&nbsp;</a></span>reason()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string StatusCode::reason </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>status</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_status_codes_8cpp_source.html#l00089">89</a> of file <a class="el" href="_status_codes_8cpp_source.html">StatusCodes.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                                       {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    std::string reasonPhrase = <span class="stringliteral">&quot;unknown status code&quot;</span>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="class_status_code.html#afa4b60d670754ca67188ea76031efd7c">StatusCode::contains</a>(status)) {</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        reasonPhrase = <a class="code" href="class_status_code.html#a192a75203e32b01f4fc62df96ca42096">statusCode</a>[status];</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    }</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordflow">return</span> reasonPhrase;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div>
+<div class="ttc" id="aclass_status_code_html_afa4b60d670754ca67188ea76031efd7c"><div class="ttname"><a href="class_status_code.html#afa4b60d670754ca67188ea76031efd7c">StatusCode::contains</a></div><div class="ttdeci">static bool contains(int status)</div><div class="ttdef"><b>Definition:</b> <a href="_status_codes_8cpp_source.html#l00099">StatusCodes.cpp:99</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="_status_codes_8cpp_source.html#l00099">contains()</a>, and <a class="el" href="_status_codes_8h_source.html#l00036">statusCode</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="http_2server_2_response_8cpp_source.html#l00143">http::server::Response::sendHeader()</a>, and <a class="el" href="express_2_response_8cpp_source.html#l00093">express::Response::sendStatus()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_status_code_a2c0a74bc683dca68ad14fcf0a032df29_cgraph.svg" width="346" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_status_code_a2c0a74bc683dca68ad14fcf0a032df29_icgraph.svg" width="1371" height="246"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
@@ -175,7 +233,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="_status_codes_8h_source.html#l00036">36</a> of file <a class="el" href="_status_codes_8h_source.html">StatusCodes.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_status_codes_8h_source.html#l00031">reason()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_status_codes_8cpp_source.html#l00099">contains()</a>, and <a class="el" href="_status_codes_8cpp_source.html#l00089">reason()</a>.</p>
 
 </div>
 </div>

@@ -172,8 +172,24 @@ $(document).ready(function(){initNavTree('_status_codes_8cpp_source.html',''); i
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                                                     {508, <span class="stringliteral">&quot;Loop Detected&quot;</span>},</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                                                     {510, <span class="stringliteral">&quot;Not Extended&quot;</span>},</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                                                     {511, <span class="stringliteral">&quot;Network Authentication Required&quot;</span>}};</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="class_status_code.html#a2c0a74bc683dca68ad14fcf0a032df29">   89</a></span>&#160;std::string <a class="code" href="class_status_code.html#a2c0a74bc683dca68ad14fcf0a032df29">StatusCode::reason</a>(<span class="keywordtype">int</span> status) {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    std::string reasonPhrase = <span class="stringliteral">&quot;unknown status code&quot;</span>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="class_status_code.html#afa4b60d670754ca67188ea76031efd7c">StatusCode::contains</a>(status)) {</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        reasonPhrase = <a class="code" href="class_status_code.html#a192a75203e32b01f4fc62df96ca42096">statusCode</a>[status];</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    }</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordflow">return</span> reasonPhrase;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="class_status_code.html#afa4b60d670754ca67188ea76031efd7c">   99</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_status_code.html#afa4b60d670754ca67188ea76031efd7c">StatusCode::contains</a>(<span class="keywordtype">int</span> status) {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_status_code.html#a192a75203e32b01f4fc62df96ca42096">statusCode</a>.contains(status);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;}</div>
 <div class="ttc" id="a_status_codes_8h_html"><div class="ttname"><a href="_status_codes_8h.html">StatusCodes.h</a></div></div>
 <div class="ttc" id="aclass_status_code_html_a192a75203e32b01f4fc62df96ca42096"><div class="ttname"><a href="class_status_code.html#a192a75203e32b01f4fc62df96ca42096">StatusCode::statusCode</a></div><div class="ttdeci">static std::map&lt; int, std::string &gt; statusCode</div><div class="ttdef"><b>Definition:</b> <a href="_status_codes_8h_source.html#l00036">StatusCodes.h:36</a></div></div>
+<div class="ttc" id="aclass_status_code_html_a2c0a74bc683dca68ad14fcf0a032df29"><div class="ttname"><a href="class_status_code.html#a2c0a74bc683dca68ad14fcf0a032df29">StatusCode::reason</a></div><div class="ttdeci">static std::string reason(int status)</div><div class="ttdef"><b>Definition:</b> <a href="_status_codes_8cpp_source.html#l00089">StatusCodes.cpp:89</a></div></div>
+<div class="ttc" id="aclass_status_code_html_afa4b60d670754ca67188ea76031efd7c"><div class="ttname"><a href="class_status_code.html#afa4b60d670754ca67188ea76031efd7c">StatusCode::contains</a></div><div class="ttdeci">static bool contains(int status)</div><div class="ttdef"><b>Definition:</b> <a href="_status_codes_8cpp_source.html#l00099">StatusCodes.cpp:99</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

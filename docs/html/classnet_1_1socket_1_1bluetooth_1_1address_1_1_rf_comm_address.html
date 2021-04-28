@@ -93,18 +93,18 @@ $(document).ready(function(){initNavTree('classnet_1_1socket_1_1bluetooth_1_1add
 <div class="dynheader">
 Inheritance diagram for net::socket::bluetooth::address::RfCommAddress:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1bluetooth_1_1address_1_1_rf_comm_address__inherit__graph.svg" width="242" height="692"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1bluetooth_1_1address_1_1_rf_comm_address__inherit__graph.svg" width="242" height="678"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <div class="dynheader">
 Collaboration diagram for net::socket::bluetooth::address::RfCommAddress:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1bluetooth_1_1address_1_1_rf_comm_address__coll__graph.svg" width="242" height="692"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1bluetooth_1_1address_1_1_rf_comm_address__coll__graph.svg" width="242" height="678"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad3ee0b3b2db91750573bfa9b27b01a55"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1bluetooth_1_1address_1_1_rf_comm_address.html#ad3ee0b3b2db91750573bfa9b27b01a55">RfCommAddress</a> ()</td></tr>
-<tr class="separator:ad3ee0b3b2db91750573bfa9b27b01a55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4479a15e1e9f3904f4273f1d5da7fff1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1bluetooth_1_1address_1_1_rf_comm_address.html#a4479a15e1e9f3904f4273f1d5da7fff1">RfCommAddress</a> (const std::string &amp;btAddress)</td></tr>
 <tr class="separator:a4479a15e1e9f3904f4273f1d5da7fff1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6341a0378255b90b6348dbd18b0da8d4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1bluetooth_1_1address_1_1_rf_comm_address.html#a6341a0378255b90b6348dbd18b0da8d4">RfCommAddress</a> (const std::string &amp;btAddress, uint8_t <a class="el" href="classnet_1_1socket_1_1bluetooth_1_1address_1_1_rf_comm_address.html#ace1f6b89fc99010e4b19bf00c117dd3c">channel</a>)</td></tr>
@@ -146,35 +146,8 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="_rf_comm_address_8h_source.html#l00036">36</a> of file <a class="el" href="_rf_comm_address_8h_source.html">RfCommAddress.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ad3ee0b3b2db91750573bfa9b27b01a55"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad3ee0b3b2db91750573bfa9b27b01a55">&#9670;&nbsp;</a></span>RfCommAddress() <span class="overload">[1/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">net::socket::bluetooth::address::RfCommAddress::RfCommAddress </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_rf_comm_address_8cpp_source.html#l00029">29</a> of file <a class="el" href="_rf_comm_address_8cpp_source.html">RfCommAddress.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                                 {</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <a class="code" href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">sockAddr</a>.rc_family = AF_BLUETOOTH;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <a class="code" href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">sockAddr</a>.rc_bdaddr = {{0, 0, 0, 0, 0, 0}};</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <a class="code" href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">sockAddr</a>.rc_channel = (uint8_t) 0;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }</div>
-<div class="ttc" id="aclassnet_1_1socket_1_1_socket_address_html_afc7af4ac6825de6a7862c541caca20d6"><div class="ttname"><a href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">net::socket::SocketAddress&lt; struct sockaddr_rc &gt;::sockAddr</a></div><div class="ttdeci">SockAddr sockAddr</div><div class="ttdef"><b>Definition:</b> <a href="_socket_address_8h_source.html#l00074">SocketAddress.h:74</a></div></div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="_socket_address_8h_source.html#l00074">net::socket::SocketAddress&lt; struct sockaddr_rc &gt;::sockAddr</a>.</p>
-
-</div>
-</div>
 <a id="a4479a15e1e9f3904f4273f1d5da7fff1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4479a15e1e9f3904f4273f1d5da7fff1">&#9670;&nbsp;</a></span>RfCommAddress() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4479a15e1e9f3904f4273f1d5da7fff1">&#9670;&nbsp;</a></span>RfCommAddress() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -197,19 +170,20 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_rf_comm_address_8cpp_source.html#l00035">35</a> of file <a class="el" href="_rf_comm_address_8cpp_source.html">RfCommAddress.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                                                           {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <a class="code" href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">sockAddr</a>.rc_family = AF_BLUETOOTH;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        str2ba(btAddress.c_str(), &amp;<a class="code" href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">sockAddr</a>.rc_bdaddr);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <a class="code" href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">sockAddr</a>.rc_channel = (uint8_t) 0;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="_rf_comm_address_8cpp_source.html#l00029">29</a> of file <a class="el" href="_rf_comm_address_8cpp_source.html">RfCommAddress.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                                                           {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <a class="code" href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">sockAddr</a>.rc_family = AF_BLUETOOTH;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        str2ba(btAddress.c_str(), &amp;<a class="code" href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">sockAddr</a>.rc_bdaddr);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <a class="code" href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">sockAddr</a>.rc_channel = (uint8_t) 0;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }</div>
+<div class="ttc" id="aclassnet_1_1socket_1_1_socket_address_html_afc7af4ac6825de6a7862c541caca20d6"><div class="ttname"><a href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">net::socket::SocketAddress&lt; struct sockaddr_rc &gt;::sockAddr</a></div><div class="ttdeci">SockAddr sockAddr</div><div class="ttdef"><b>Definition:</b> <a href="_socket_address_8h_source.html#l00074">SocketAddress.h:74</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="_socket_address_8h_source.html#l00074">net::socket::SocketAddress&lt; struct sockaddr_rc &gt;::sockAddr</a>.</p>
 
 </div>
 </div>
 <a id="a6341a0378255b90b6348dbd18b0da8d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6341a0378255b90b6348dbd18b0da8d4">&#9670;&nbsp;</a></span>RfCommAddress() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6341a0378255b90b6348dbd18b0da8d4">&#9670;&nbsp;</a></span>RfCommAddress() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -234,15 +208,15 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_rf_comm_address_8cpp_source.html#l00047">47</a> of file <a class="el" href="_rf_comm_address_8cpp_source.html">RfCommAddress.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                                                                            {</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">sockAddr</a>.rc_family = AF_BLUETOOTH;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        str2ba(btAddress.c_str(), &amp;<a class="code" href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">sockAddr</a>.rc_bdaddr);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <a class="code" href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">sockAddr</a>.rc_channel = <a class="code" href="classnet_1_1socket_1_1bluetooth_1_1address_1_1_rf_comm_address.html#ace1f6b89fc99010e4b19bf00c117dd3c">channel</a>;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }</div>
-<div class="ttc" id="aclassnet_1_1socket_1_1bluetooth_1_1address_1_1_rf_comm_address_html_ace1f6b89fc99010e4b19bf00c117dd3c"><div class="ttname"><a href="classnet_1_1socket_1_1bluetooth_1_1address_1_1_rf_comm_address.html#ace1f6b89fc99010e4b19bf00c117dd3c">net::socket::bluetooth::address::RfCommAddress::channel</a></div><div class="ttdeci">uint8_t channel() const</div><div class="ttdef"><b>Definition:</b> <a href="_rf_comm_address_8cpp_source.html#l00053">RfCommAddress.cpp:53</a></div></div>
+<p class="definition">Definition at line <a class="el" href="_rf_comm_address_8cpp_source.html#l00041">41</a> of file <a class="el" href="_rf_comm_address_8cpp_source.html">RfCommAddress.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                                                                            {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="code" href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">sockAddr</a>.rc_family = AF_BLUETOOTH;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        str2ba(btAddress.c_str(), &amp;<a class="code" href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">sockAddr</a>.rc_bdaddr);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <a class="code" href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">sockAddr</a>.rc_channel = <a class="code" href="classnet_1_1socket_1_1bluetooth_1_1address_1_1_rf_comm_address.html#ace1f6b89fc99010e4b19bf00c117dd3c">channel</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
+<div class="ttc" id="aclassnet_1_1socket_1_1bluetooth_1_1address_1_1_rf_comm_address_html_ace1f6b89fc99010e4b19bf00c117dd3c"><div class="ttname"><a href="classnet_1_1socket_1_1bluetooth_1_1address_1_1_rf_comm_address.html#ace1f6b89fc99010e4b19bf00c117dd3c">net::socket::bluetooth::address::RfCommAddress::channel</a></div><div class="ttdeci">uint8_t channel() const</div><div class="ttdef"><b>Definition:</b> <a href="_rf_comm_address_8cpp_source.html#l00047">RfCommAddress.cpp:47</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_rf_comm_address_8cpp_source.html#l00053">channel()</a>, and <a class="el" href="_socket_address_8h_source.html#l00074">net::socket::SocketAddress&lt; struct sockaddr_rc &gt;::sockAddr</a>.</p>
+<p class="reference">References <a class="el" href="_rf_comm_address_8cpp_source.html#l00047">channel()</a>, and <a class="el" href="_socket_address_8h_source.html#l00074">net::socket::SocketAddress&lt; struct sockaddr_rc &gt;::sockAddr</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -252,7 +226,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a318d93392b30ce171c48f0cfe9bb8b85"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a318d93392b30ce171c48f0cfe9bb8b85">&#9670;&nbsp;</a></span>RfCommAddress() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a318d93392b30ce171c48f0cfe9bb8b85">&#9670;&nbsp;</a></span>RfCommAddress() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -275,14 +249,14 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_rf_comm_address_8cpp_source.html#l00041">41</a> of file <a class="el" href="_rf_comm_address_8cpp_source.html">RfCommAddress.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                                                {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="code" href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">sockAddr</a>.rc_family = AF_BLUETOOTH;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <a class="code" href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">sockAddr</a>.rc_bdaddr = {{0, 0, 0, 0, 0, 0}};</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <a class="code" href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">sockAddr</a>.rc_channel = <a class="code" href="classnet_1_1socket_1_1bluetooth_1_1address_1_1_rf_comm_address.html#ace1f6b89fc99010e4b19bf00c117dd3c">channel</a>;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="_rf_comm_address_8cpp_source.html#l00035">35</a> of file <a class="el" href="_rf_comm_address_8cpp_source.html">RfCommAddress.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                                                {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <a class="code" href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">sockAddr</a>.rc_family = AF_BLUETOOTH;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">sockAddr</a>.rc_bdaddr = {{0, 0, 0, 0, 0, 0}};</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <a class="code" href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">sockAddr</a>.rc_channel = <a class="code" href="classnet_1_1socket_1_1bluetooth_1_1address_1_1_rf_comm_address.html#ace1f6b89fc99010e4b19bf00c117dd3c">channel</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_rf_comm_address_8cpp_source.html#l00053">channel()</a>, and <a class="el" href="_socket_address_8h_source.html#l00074">net::socket::SocketAddress&lt; struct sockaddr_rc &gt;::sockAddr</a>.</p>
+<p class="reference">References <a class="el" href="_rf_comm_address_8cpp_source.html#l00047">channel()</a>, and <a class="el" href="_socket_address_8h_source.html#l00074">net::socket::SocketAddress&lt; struct sockaddr_rc &gt;::sockAddr</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -307,18 +281,18 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_rf_comm_address_8cpp_source.html#l00057">57</a> of file <a class="el" href="_rf_comm_address_8cpp_source.html">RfCommAddress.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                                           {</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordtype">char</span> <a class="code" href="classnet_1_1socket_1_1bluetooth_1_1address_1_1_rf_comm_address.html#a2f48a874e3cc6aa7a8d34946020a3db3">address</a>[256];</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        ba2str(&amp;<a class="code" href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">sockAddr</a>.rc_bdaddr, <a class="code" href="classnet_1_1socket_1_1bluetooth_1_1address_1_1_rf_comm_address.html#a2f48a874e3cc6aa7a8d34946020a3db3">address</a>);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classnet_1_1socket_1_1bluetooth_1_1address_1_1_rf_comm_address.html#a2f48a874e3cc6aa7a8d34946020a3db3">address</a>;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
-<div class="ttc" id="aclassnet_1_1socket_1_1bluetooth_1_1address_1_1_rf_comm_address_html_a2f48a874e3cc6aa7a8d34946020a3db3"><div class="ttname"><a href="classnet_1_1socket_1_1bluetooth_1_1address_1_1_rf_comm_address.html#a2f48a874e3cc6aa7a8d34946020a3db3">net::socket::bluetooth::address::RfCommAddress::address</a></div><div class="ttdeci">std::string address() const</div><div class="ttdef"><b>Definition:</b> <a href="_rf_comm_address_8cpp_source.html#l00057">RfCommAddress.cpp:57</a></div></div>
+<p class="definition">Definition at line <a class="el" href="_rf_comm_address_8cpp_source.html#l00051">51</a> of file <a class="el" href="_rf_comm_address_8cpp_source.html">RfCommAddress.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                                           {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordtype">char</span> <a class="code" href="classnet_1_1socket_1_1bluetooth_1_1address_1_1_rf_comm_address.html#a2f48a874e3cc6aa7a8d34946020a3db3">address</a>[256];</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        ba2str(&amp;<a class="code" href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">sockAddr</a>.rc_bdaddr, <a class="code" href="classnet_1_1socket_1_1bluetooth_1_1address_1_1_rf_comm_address.html#a2f48a874e3cc6aa7a8d34946020a3db3">address</a>);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classnet_1_1socket_1_1bluetooth_1_1address_1_1_rf_comm_address.html#a2f48a874e3cc6aa7a8d34946020a3db3">address</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
+<div class="ttc" id="aclassnet_1_1socket_1_1bluetooth_1_1address_1_1_rf_comm_address_html_a2f48a874e3cc6aa7a8d34946020a3db3"><div class="ttname"><a href="classnet_1_1socket_1_1bluetooth_1_1address_1_1_rf_comm_address.html#a2f48a874e3cc6aa7a8d34946020a3db3">net::socket::bluetooth::address::RfCommAddress::address</a></div><div class="ttdeci">std::string address() const</div><div class="ttdef"><b>Definition:</b> <a href="_rf_comm_address_8cpp_source.html#l00051">RfCommAddress.cpp:51</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="_socket_address_8h_source.html#l00074">net::socket::SocketAddress&lt; struct sockaddr_rc &gt;::sockAddr</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_rf_comm_address_8cpp_source.html#l00064">toString()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_rf_comm_address_8cpp_source.html#l00058">toString()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -342,14 +316,14 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_rf_comm_address_8cpp_source.html#l00053">53</a> of file <a class="el" href="_rf_comm_address_8cpp_source.html">RfCommAddress.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                                         {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">sockAddr</a>.rc_channel;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="_rf_comm_address_8cpp_source.html#l00047">47</a> of file <a class="el" href="_rf_comm_address_8cpp_source.html">RfCommAddress.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                                         {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">sockAddr</a>.rc_channel;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="_socket_address_8h_source.html#l00074">net::socket::SocketAddress&lt; struct sockaddr_rc &gt;::sockAddr</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_rf_comm_address_8cpp_source.html#l00041">RfCommAddress()</a>, and <a class="el" href="_rf_comm_address_8cpp_source.html#l00064">toString()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_rf_comm_address_8cpp_source.html#l00035">RfCommAddress()</a>, and <a class="el" href="_rf_comm_address_8cpp_source.html#l00058">toString()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -383,12 +357,12 @@ Here is the caller graph for this function:</div>
 
 <p>Implements <a class="el" href="classnet_1_1socket_1_1_socket_address.html#a073a8cd3c371f694ac409bcb7b52a951">net::socket::SocketAddress&lt; struct sockaddr_rc &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_rf_comm_address_8cpp_source.html#l00064">64</a> of file <a class="el" href="_rf_comm_address_8cpp_source.html">RfCommAddress.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                                            {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classnet_1_1socket_1_1bluetooth_1_1address_1_1_rf_comm_address.html#a2f48a874e3cc6aa7a8d34946020a3db3">address</a>() + <span class="stringliteral">&quot;(&quot;</span> + <a class="code" href="classnet_1_1socket_1_1bluetooth_1_1address_1_1_rf_comm_address.html#a2f48a874e3cc6aa7a8d34946020a3db3">address</a>() + <span class="stringliteral">&quot;):&quot;</span> + std::to_string(<a class="code" href="classnet_1_1socket_1_1bluetooth_1_1address_1_1_rf_comm_address.html#ace1f6b89fc99010e4b19bf00c117dd3c">channel</a>());</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="_rf_comm_address_8cpp_source.html#l00058">58</a> of file <a class="el" href="_rf_comm_address_8cpp_source.html">RfCommAddress.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                                            {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classnet_1_1socket_1_1bluetooth_1_1address_1_1_rf_comm_address.html#a2f48a874e3cc6aa7a8d34946020a3db3">address</a>() + <span class="stringliteral">&quot;(&quot;</span> + <a class="code" href="classnet_1_1socket_1_1bluetooth_1_1address_1_1_rf_comm_address.html#a2f48a874e3cc6aa7a8d34946020a3db3">address</a>() + <span class="stringliteral">&quot;):&quot;</span> + std::to_string(<a class="code" href="classnet_1_1socket_1_1bluetooth_1_1address_1_1_rf_comm_address.html#ace1f6b89fc99010e4b19bf00c117dd3c">channel</a>());</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_rf_comm_address_8cpp_source.html#l00057">address()</a>, and <a class="el" href="_rf_comm_address_8cpp_source.html#l00053">channel()</a>.</p>
+<p class="reference">References <a class="el" href="_rf_comm_address_8cpp_source.html#l00051">address()</a>, and <a class="el" href="_rf_comm_address_8cpp_source.html#l00047">channel()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
