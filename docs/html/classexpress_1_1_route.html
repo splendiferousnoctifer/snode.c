@@ -99,8 +99,8 @@ Collaboration diagram for express::Route:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a30c668d4925a37ea99233e373c44e6e4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexpress_1_1_route.html#a30c668d4925a37ea99233e373c44e6e4">Route</a> (<a class="el" href="classexpress_1_1_router.html">Router</a> *<a class="el" href="classexpress_1_1_route.html#a3e949e702d489432dfc167d7ea72e0a0">parent</a>, const std::string &amp;method, const std::string &amp;path, const std::shared_ptr&lt; <a class="el" href="classexpress_1_1_dispatcher.html">Dispatcher</a> &gt; &amp;<a class="el" href="classexpress_1_1_route.html#a35432e8c2edafc9174a5bebf4c388029">dispatcher</a>)</td></tr>
 <tr class="separator:a30c668d4925a37ea99233e373c44e6e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b072a21c9b1afc3b566a19ed17b4a4a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexpress_1_1_route.html#a0b072a21c9b1afc3b566a19ed17b4a4a">dispatch</a> (const std::string &amp;parentPath, <a class="el" href="classexpress_1_1_request.html">Request</a> &amp;req, <a class="el" href="classexpress_1_1_response.html">Response</a> &amp;res) const</td></tr>
-<tr class="separator:a0b072a21c9b1afc3b566a19ed17b4a4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a424c96a3dc791150068415a00713c30f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classexpress_1_1_next.html">Next</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexpress_1_1_route.html#a424c96a3dc791150068415a00713c30f">dispatch</a> (const std::string &amp;parentPath, <a class="el" href="classexpress_1_1_request.html">Request</a> &amp;req, <a class="el" href="classexpress_1_1_response.html">Response</a> &amp;res) const</td></tr>
+<tr class="separator:a424c96a3dc791150068415a00713c30f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -173,14 +173,14 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a0b072a21c9b1afc3b566a19ed17b4a4a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0b072a21c9b1afc3b566a19ed17b4a4a">&#9670;&nbsp;</a></span>dispatch()</h2>
+<a id="a424c96a3dc791150068415a00713c30f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a424c96a3dc791150068415a00713c30f">&#9670;&nbsp;</a></span>dispatch()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool express::Route::dispatch </td>
+          <td class="memname"><a class="el" href="classexpress_1_1_next.html">Next</a> express::Route::dispatch </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>parentPath</em>, </td>
@@ -205,10 +205,10 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_router_8cpp_source.html#l00212">212</a> of file <a class="el" href="_router_8cpp_source.html">Router.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;                                                                                       {</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classexpress_1_1_route.html#a35432e8c2edafc9174a5bebf4c388029">dispatcher</a>-&gt;dispatch(<a class="code" href="classexpress_1_1_route.html#a3b85feb0ad74c97e1f406818a5b8d6eb">mountPoint</a>, parentPath, req, res);</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="_router_8cpp_source.html#l00211">211</a> of file <a class="el" href="_router_8cpp_source.html">Router.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;                                                                                       {</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classexpress_1_1_route.html#a35432e8c2edafc9174a5bebf4c388029">dispatcher</a>-&gt;dispatch(<a class="code" href="classexpress_1_1_route.html#a3b85feb0ad74c97e1f406818a5b8d6eb">mountPoint</a>, parentPath, req, res);</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    }</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="_router_8cpp_source.html#l00172">dispatcher</a>, and <a class="el" href="_router_8cpp_source.html#l00171">mountPoint</a>.</p>
 
@@ -237,7 +237,7 @@ Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_router_8cpp_source.html#l00172">172</a> of file <a class="el" href="_router_8cpp_source.html">Router.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_router_8cpp_source.html#l00212">dispatch()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_router_8cpp_source.html#l00211">dispatch()</a>.</p>
 
 </div>
 </div>
@@ -263,7 +263,7 @@ Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_router_8cpp_source.html#l00171">171</a> of file <a class="el" href="_router_8cpp_source.html">Router.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_router_8cpp_source.html#l00212">dispatch()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_router_8cpp_source.html#l00211">dispatch()</a>.</p>
 
 </div>
 </div>

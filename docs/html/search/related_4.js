@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['timereventdispatcher_1448',['TimerEventDispatcher',['../classnet_1_1timer_1_1_timer.html#a7ec099528d0f7f72cf8e8a0017634fa7',1,'net::timer::Timer']]]
+  ['operator_26_1469',['operator&amp;',['../classnet_1_1_descriptor.html#a1ce28627f2d7b7d54846cb73dcd0aa38',1,'net::Descriptor::operator&amp;()'],['../classhttp_1_1_parser.html#a1585b2d50f55f49611187d326591f03c',1,'http::Parser::operator&amp;()']]],
+  ['operator_7c_1470',['operator|',['../classnet_1_1_descriptor.html#a6dc096af1a75c82c1ff16ca8b4122a3b',1,'net::Descriptor::operator|()'],['../classhttp_1_1_parser.html#a504270bcd1736c62e66e80918151d611',1,'http::Parser::operator|()']]]
 ];

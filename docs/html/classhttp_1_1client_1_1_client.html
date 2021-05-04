@@ -306,36 +306,37 @@ template&lt;typename SocketClientT , typename RequestT , typename ResponseT &gt;
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                          [&amp;socketConnection, &amp;onRequestBegin](ClientContextBase* clientContext) -&gt; <span class="keywordtype">void</span> {</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                              <a class="code" href="classhttp_1_1client_1_1_client.html#ae0dc8365fdcb57ab7647c281c84e57ab">Request</a>&amp; request = clientContext-&gt;getRequest();</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                              request.setHost(socketConnection-&gt;getRemoteAddress().host());</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                              onRequestBegin(request);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                          });</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                  },</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                  [onDisconnect](<a class="code" href="classhttp_1_1client_1_1_client.html#a58f0674cdbb0b699fc50b12dda00b470">SocketConnection</a>* socketConnection) -&gt; <span class="keywordtype">void</span> { <span class="comment">// onDisconnect</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                      onDisconnect(socketConnection);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                  },</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                  [](<a class="code" href="classhttp_1_1client_1_1_client.html#a58f0674cdbb0b699fc50b12dda00b470">SocketConnection</a>* socketConnection, <span class="keyword">const</span> <span class="keywordtype">char</span>* junk, std::size_t junkLen) -&gt; <span class="keywordtype">void</span> { <span class="comment">// onRead</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                      socketConnection-&gt;template getContext&lt;ClientContextBase*&gt;([junk, junkLen](ClientContextBase* clientContext) -&gt; <span class="keywordtype">void</span> {</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                          clientContext-&gt;receiveResponseData(junk, junkLen);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                      });</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                  },</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                  [](<a class="code" href="classhttp_1_1client_1_1_client.html#a58f0674cdbb0b699fc50b12dda00b470">SocketConnection</a>* socketConnection, <span class="keywordtype">int</span> errnum) -&gt; <span class="keywordtype">void</span> { <span class="comment">// onReadError</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                      <span class="keywordflow">if</span> (errnum != 0) {</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                          PLOG(ERROR) &lt;&lt; <span class="stringliteral">&quot;Server: &quot;</span> &lt;&lt; socketConnection-&gt;getRemoteAddress().host() &lt;&lt; <span class="stringliteral">&quot; (&quot;</span> &lt;&lt; errnum &lt;&lt; <span class="stringliteral">&quot;)&quot;</span>;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                      } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                          VLOG(0) &lt;&lt; <span class="stringliteral">&quot;Server: EOF&quot;</span>;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                      }</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                  },</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                  [](<a class="code" href="classhttp_1_1client_1_1_client.html#a58f0674cdbb0b699fc50b12dda00b470">SocketConnection</a>* socketConnection, <span class="keywordtype">int</span> errnum) -&gt; <span class="keywordtype">void</span> { <span class="comment">// onWriteError</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                      <span class="keywordflow">if</span> (errnum != 0) {</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                          PLOG(ERROR) &lt;&lt; <span class="stringliteral">&quot;Server: &quot;</span> &lt;&lt; socketConnection-&gt;getRemoteAddress().host() &lt;&lt; <span class="stringliteral">&quot; (&quot;</span> &lt;&lt; errnum &lt;&lt; <span class="stringliteral">&quot;)&quot;</span>;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                      } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                          VLOG(0) &lt;&lt; <span class="stringliteral">&quot;Server: EOF&quot;</span>;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                      }</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                  },</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                  options) {</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                              request.setHost(socketConnection-&gt;getRemoteAddress().host() + <span class="stringliteral">&quot;:&quot;</span> +</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                                              std::to_string(socketConnection-&gt;getRemoteAddress().port()));</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                              onRequestBegin(request);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                          });</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                  },</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                  [onDisconnect](<a class="code" href="classhttp_1_1client_1_1_client.html#a58f0674cdbb0b699fc50b12dda00b470">SocketConnection</a>* socketConnection) -&gt; <span class="keywordtype">void</span> { <span class="comment">// onDisconnect</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                      onDisconnect(socketConnection);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                  },</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                  [](<a class="code" href="classhttp_1_1client_1_1_client.html#a58f0674cdbb0b699fc50b12dda00b470">SocketConnection</a>* socketConnection, <span class="keyword">const</span> <span class="keywordtype">char</span>* junk, std::size_t junkLen) -&gt; <span class="keywordtype">void</span> { <span class="comment">// onRead</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                      socketConnection-&gt;template getContext&lt;ClientContextBase*&gt;([junk, junkLen](ClientContextBase* clientContext) -&gt; <span class="keywordtype">void</span> {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                          clientContext-&gt;receiveResponseData(junk, junkLen);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                      });</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                  },</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                  [](<a class="code" href="classhttp_1_1client_1_1_client.html#a58f0674cdbb0b699fc50b12dda00b470">SocketConnection</a>* socketConnection, <span class="keywordtype">int</span> errnum) -&gt; <span class="keywordtype">void</span> { <span class="comment">// onReadError</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                      <span class="keywordflow">if</span> (errnum != 0) {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                          PLOG(ERROR) &lt;&lt; <span class="stringliteral">&quot;Server: &quot;</span> &lt;&lt; socketConnection-&gt;getRemoteAddress().host() &lt;&lt; <span class="stringliteral">&quot; (&quot;</span> &lt;&lt; errnum &lt;&lt; <span class="stringliteral">&quot;)&quot;</span>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                      } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                          VLOG(0) &lt;&lt; <span class="stringliteral">&quot;Server: EOF&quot;</span>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                      }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                  },</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                  [](<a class="code" href="classhttp_1_1client_1_1_client.html#a58f0674cdbb0b699fc50b12dda00b470">SocketConnection</a>* socketConnection, <span class="keywordtype">int</span> errnum) -&gt; <span class="keywordtype">void</span> { <span class="comment">// onWriteError</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                      <span class="keywordflow">if</span> (errnum != 0) {</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                          PLOG(ERROR) &lt;&lt; <span class="stringliteral">&quot;Server: &quot;</span> &lt;&lt; socketConnection-&gt;getRemoteAddress().host() &lt;&lt; <span class="stringliteral">&quot; (&quot;</span> &lt;&lt; errnum &lt;&lt; <span class="stringliteral">&quot;)&quot;</span>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                      } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                          VLOG(0) &lt;&lt; <span class="stringliteral">&quot;Server: EOF&quot;</span>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                      }</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                  },</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                  options) {</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        }</div>
 <div class="ttc" id="aclasshttp_1_1client_1_1_client_html_a58f0674cdbb0b699fc50b12dda00b470"><div class="ttname"><a href="classhttp_1_1client_1_1_client.html#a58f0674cdbb0b699fc50b12dda00b470">http::client::Client::SocketConnection</a></div><div class="ttdeci">typename SocketClient::SocketConnection SocketConnection</div><div class="ttdef"><b>Definition:</b> <a href="_client_8h_source.html#l00042">Client.h:42</a></div></div>
-<div class="ttc" id="aclasshttp_1_1client_1_1_client_html_ac51371d92b8e69dab9f22d3d6a60d9db"><div class="ttname"><a href="classhttp_1_1client_1_1_client.html#ac51371d92b8e69dab9f22d3d6a60d9db">http::client::Client::socketClient</a></div><div class="ttdeci">SocketClient socketClient</div><div class="ttdef"><b>Definition:</b> <a href="_client_8h_source.html#l00105">Client.h:105</a></div></div>
+<div class="ttc" id="aclasshttp_1_1client_1_1_client_html_ac51371d92b8e69dab9f22d3d6a60d9db"><div class="ttname"><a href="classhttp_1_1client_1_1_client.html#ac51371d92b8e69dab9f22d3d6a60d9db">http::client::Client::socketClient</a></div><div class="ttdeci">SocketClient socketClient</div><div class="ttdef"><b>Definition:</b> <a href="_client_8h_source.html#l00106">Client.h:106</a></div></div>
 <div class="ttc" id="aclasshttp_1_1client_1_1_client_html_ae0dc8365fdcb57ab7647c281c84e57ab"><div class="ttname"><a href="classhttp_1_1client_1_1_client.html#ae0dc8365fdcb57ab7647c281c84e57ab">http::client::Client::Request</a></div><div class="ttdeci">RequestT Request</div><div class="ttdef"><b>Definition:</b> <a href="_client_8h_source.html#l00044">Client.h:44</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -383,13 +384,13 @@ template&lt;typename SocketClientT , typename RequestT , typename ResponseT &gt;
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_client_8h_source.html#l00100">100</a> of file <a class="el" href="_client_8h_source.html">Client.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                                                                                                              {</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <a class="code" href="classhttp_1_1client_1_1_client.html#ac51371d92b8e69dab9f22d3d6a60d9db">socketClient</a>.connect(<a class="code" href="classhttp_1_1client_1_1_client.html#a293b5fa608f93df47d963e23583b53d7">SocketAddress</a>(ipOrHostname, port), onError);</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        }</div>
+<p class="definition">Definition at line <a class="el" href="_client_8h_source.html#l00101">101</a> of file <a class="el" href="_client_8h_source.html">Client.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                                                                                                              {</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            <a class="code" href="classhttp_1_1client_1_1_client.html#ac51371d92b8e69dab9f22d3d6a60d9db">socketClient</a>.connect(<a class="code" href="classhttp_1_1client_1_1_client.html#a293b5fa608f93df47d963e23583b53d7">SocketAddress</a>(ipOrHostname, port), onError);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        }</div>
 <div class="ttc" id="aclasshttp_1_1client_1_1_client_html_a293b5fa608f93df47d963e23583b53d7"><div class="ttname"><a href="classhttp_1_1client_1_1_client.html#a293b5fa608f93df47d963e23583b53d7">http::client::Client::SocketAddress</a></div><div class="ttdeci">typename SocketConnection::SocketAddress SocketAddress</div><div class="ttdef"><b>Definition:</b> <a href="_client_8h_source.html#l00043">Client.h:43</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_client_8h_source.html#l00105">http::client::Client&lt; SocketClientT, RequestT, ResponseT &gt;::socketClient</a>.</p>
+<p class="reference">References <a class="el" href="_client_8h_source.html#l00106">http::client::Client&lt; SocketClientT, RequestT, ResponseT &gt;::socketClient</a>.</p>
 
 </div>
 </div>
@@ -416,9 +417,9 @@ template&lt;typename SocketClientT , typename RequestT , typename ResponseT &gt;
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_client_8h_source.html#l00105">105</a> of file <a class="el" href="_client_8h_source.html">Client.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_client_8h_source.html#l00106">106</a> of file <a class="el" href="_client_8h_source.html">Client.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_client_8h_source.html#l00100">http::client::Client&lt; SocketClientT, RequestT, ResponseT &gt;::connect()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_client_8h_source.html#l00101">http::client::Client&lt; SocketClientT, RequestT, ResponseT &gt;::connect()</a>.</p>
 
 </div>
 </div>

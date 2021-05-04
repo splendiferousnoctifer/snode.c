@@ -13,10 +13,10 @@
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title=" ">
-<polygon fill="#bfbfbf" stroke="black" points="0,-240 0,-281 115,-281 115,-240 0,-240"/>
-<text text-anchor="start" x="8" y="-269" font-family="Helvetica,sans-Serif" font-size="10.00">net::socket::stream</text>
-<text text-anchor="start" x="8" y="-258" font-family="Helvetica,sans-Serif" font-size="10.00">::tls::SocketConnector</text>
-<text text-anchor="middle" x="57.5" y="-247" font-family="Helvetica,sans-Serif" font-size="10.00">::SocketConnector</text>
+<polygon fill="#bfbfbf" stroke="black" points="0,-212 0,-253 115,-253 115,-212 0,-212"/>
+<text text-anchor="start" x="8" y="-241" font-family="Helvetica,sans-Serif" font-size="10.00">net::socket::stream</text>
+<text text-anchor="start" x="8" y="-230" font-family="Helvetica,sans-Serif" font-size="10.00">::tls::SocketConnector</text>
+<text text-anchor="middle" x="57.5" y="-219" font-family="Helvetica,sans-Serif" font-size="10.00">::SocketConnector</text>
 </a>
 </g>
 </g>
@@ -34,8 +34,24 @@
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M115.16,-260.5C123.43,-260.5 132.02,-260.5 140.5,-260.5"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="140.76,-264 150.76,-260.5 140.76,-257 140.76,-264"/>
+<path fill="none" stroke="midnightblue" d="M115.16,-243.01C123.52,-244.56 132.21,-246.17 140.78,-247.76"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="140.29,-251.23 150.76,-249.61 141.57,-244.34 140.29,-251.23"/>
+</g>
+<!-- Node26 -->
+<g id="node26" class="node">
+<title>Node26</title>
+<g id="a_node26"><a xlink:href="namespacenet_1_1socket_1_1stream_1_1tls.html#a958a4c998a0ffd5605aa23639fddf614" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="black" points="160,-190.5 160,-220.5 261,-220.5 261,-190.5 160,-190.5"/>
+<text text-anchor="start" x="168" y="-208.5" font-family="Helvetica,sans-Serif" font-size="10.00">net::socket::stream</text>
+<text text-anchor="middle" x="210.5" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00">::tls::ssl_set_sni</text>
+</a>
+</g>
+</g>
+<!-- Node1&#45;&gt;Node26 -->
+<g id="edge28" class="edge">
+<title>Node1&#45;&gt;Node26</title>
+<path fill="none" stroke="midnightblue" d="M115.16,-222.37C126.55,-220.33 138.55,-218.19 150.04,-216.13"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="150.74,-219.56 159.97,-214.36 149.51,-212.67 150.74,-219.56"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
@@ -115,8 +131,8 @@
 <!-- Node2&#45;&gt;Node18 -->
 <g id="edge19" class="edge">
 <title>Node2&#45;&gt;Node18</title>
-<path fill="none" stroke="midnightblue" d="M246,-239.78C274.79,-222.49 315.6,-197.98 344.2,-180.8"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="346.25,-183.65 353.02,-175.5 342.65,-177.65 346.25,-183.65"/>
+<path fill="none" stroke="midnightblue" d="M253.01,-239.87C258.77,-236.82 264.57,-233.64 270,-230.5 296.86,-214.96 326.36,-195.68 347.73,-181.3"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="349.75,-184.15 356.07,-175.65 345.83,-178.36 349.75,-184.15"/>
 </g>
 <!-- Node22 -->
 <g id="node22" class="node">
@@ -131,8 +147,8 @@
 <!-- Node2&#45;&gt;Node22 -->
 <g id="edge23" class="edge">
 <title>Node2&#45;&gt;Node22</title>
-<path fill="none" stroke="midnightblue" d="M226.16,-239.72C244.14,-214.6 275.96,-171.35 306,-136.5 321.65,-118.35 340.59,-98.97 355.12,-84.6"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="357.59,-87.08 362.27,-77.58 352.68,-82.09 357.59,-87.08"/>
+<path fill="none" stroke="midnightblue" d="M259.37,-239.93C263.25,-237.12 266.87,-233.98 270,-230.5 299.88,-197.2 281.91,-174.19 306,-136.5 318.58,-116.82 337,-98.01 352.06,-84.27"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="354.44,-86.84 359.59,-77.58 349.79,-81.61 354.44,-86.84"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">

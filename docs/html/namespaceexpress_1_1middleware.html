@@ -96,6 +96,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexpress_1_1middleware_1_1_static_middleware.html">StaticMiddleware</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexpress_1_1middleware_1_1_v_host.html">VHost</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -103,6 +105,8 @@ Functions</h2></td></tr>
 <tr class="separator:afb2ea8022b0dc36c49b780c741aa3952"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2fb128871e11fe983884f466d01bee94"><td class="memItemLeft" align="right" valign="top">class <a class="el" href="classexpress_1_1middleware_1_1_static_middleware.html">StaticMiddleware</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexpress_1_1middleware.html#a2fb128871e11fe983884f466d01bee94">StaticMiddleware</a> (const std::string &amp;root)</td></tr>
 <tr class="separator:a2fb128871e11fe983884f466d01bee94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafc55af11280a46aa664c858db1088e9"><td class="memItemLeft" align="right" valign="top">class <a class="el" href="classexpress_1_1middleware_1_1_v_host.html">VHost</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexpress_1_1middleware.html#aafc55af11280a46aa664c858db1088e9">VHost</a> (const std::string &amp;host)</td></tr>
+<tr class="separator:aafc55af11280a46aa664c858db1088e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -110,6 +114,8 @@ Variables</h2></td></tr>
 <tr class="separator:af9c92ea660b21ba21a78094c135a5f80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab66a27bd7e10c9d1973df712d6bb5374"><td class="memItemLeft" align="right" valign="top">static std::map&lt; const std::string, std::shared_ptr&lt; class <a class="el" href="classexpress_1_1middleware_1_1_static_middleware.html">StaticMiddleware</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexpress_1_1middleware.html#ab66a27bd7e10c9d1973df712d6bb5374">staticMiddlewares</a></td></tr>
 <tr class="separator:ab66a27bd7e10c9d1973df712d6bb5374"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a114c92b8f3d516bcd4e7973815adeb4a"><td class="memItemLeft" align="right" valign="top">static std::list&lt; std::shared_ptr&lt; class <a class="el" href="classexpress_1_1middleware_1_1_v_host.html">VHost</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexpress_1_1middleware.html#a114c92b8f3d516bcd4e7973815adeb4a">vhostMiddlewares</a></td></tr>
+<tr class="separator:a114c92b8f3d516bcd4e7973815adeb4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="afb2ea8022b0dc36c49b780c741aa3952"></a>
@@ -150,18 +156,41 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_static_middleware_8cpp_source.html#l00125">125</a> of file <a class="el" href="_static_middleware_8cpp_source.html">StaticMiddleware.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                                                                    {</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <span class="keywordflow">return</span> StaticMiddleware::instance(root);</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="_static_middleware_8cpp_source.html#l00123">123</a> of file <a class="el" href="_static_middleware_8cpp_source.html">StaticMiddleware.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                                                                    {</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="keywordflow">return</span> StaticMiddleware::instance(root);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="_static_middleware_8cpp_source.html#l00116">express::middleware::StaticMiddleware::instance()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_static_middleware_8cpp_source.html#l00114">express::middleware::StaticMiddleware::instance()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="namespaceexpress_1_1middleware_a2fb128871e11fe983884f466d01bee94_icgraph.svg" width="344" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
+</div>
+</div>
+<a id="aafc55af11280a46aa664c858db1088e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafc55af11280a46aa664c858db1088e9">&#9670;&nbsp;</a></span>VHost()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">class <a class="el" href="classexpress_1_1middleware_1_1_v_host.html">VHost</a> &amp; <a class="el" href="classexpress_1_1middleware_1_1_v_host.html">express::middleware::VHost</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>host</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_v_host_8cpp_source.html#l00056">56</a> of file <a class="el" href="_v_host_8cpp_source.html">VHost.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                                              {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordflow">return</span> VHost::instance(host);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
@@ -211,9 +240,35 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_static_middleware_8cpp_source.html#l00114">114</a> of file <a class="el" href="_static_middleware_8cpp_source.html">StaticMiddleware.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_static_middleware_8cpp_source.html#l00112">112</a> of file <a class="el" href="_static_middleware_8cpp_source.html">StaticMiddleware.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_static_middleware_8cpp_source.html#l00116">express::middleware::StaticMiddleware::instance()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_static_middleware_8cpp_source.html#l00114">express::middleware::StaticMiddleware::instance()</a>.</p>
+
+</div>
+</div>
+<a id="a114c92b8f3d516bcd4e7973815adeb4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a114c92b8f3d516bcd4e7973815adeb4a">&#9670;&nbsp;</a></span>vhostMiddlewares</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::list&lt;std::shared_ptr&lt;class <a class="el" href="classexpress_1_1middleware_1_1_v_host.html">VHost</a>&gt; &gt; express::middleware::vhostMiddlewares</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_v_host_8cpp_source.html#l00046">46</a> of file <a class="el" href="_v_host_8cpp_source.html">VHost.cpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="_v_host_8cpp_source.html#l00048">express::middleware::VHost::instance()</a>.</p>
 
 </div>
 </div>

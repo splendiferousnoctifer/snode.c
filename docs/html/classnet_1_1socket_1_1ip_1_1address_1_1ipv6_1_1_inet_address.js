@@ -1,5 +1,6 @@
 var classnet_1_1socket_1_1ip_1_1address_1_1ipv6_1_1_inet_address =
 [
+    [ "InetAddress", "classnet_1_1socket_1_1ip_1_1address_1_1ipv6_1_1_inet_address.html#a64ed0a5d4fc80a562ab9ab3878cef855", null ],
     [ "InetAddress", "classnet_1_1socket_1_1ip_1_1address_1_1ipv6_1_1_inet_address.html#aa4d2133d7b34dd87a0adc93b91cb0274", null ],
     [ "InetAddress", "classnet_1_1socket_1_1ip_1_1address_1_1ipv6_1_1_inet_address.html#a89ddcc9159909f4704411c65eb1752da", null ],
     [ "InetAddress", "classnet_1_1socket_1_1ip_1_1address_1_1ipv6_1_1_inet_address.html#aa192de5050ee977acb109a544f9c6b50", null ],

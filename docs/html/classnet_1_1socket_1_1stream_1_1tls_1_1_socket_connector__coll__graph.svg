@@ -18,7 +18,7 @@
 <text text-anchor="start" x="49.34" y="-78.5" font-family="Helvetica,sans-Serif" font-size="10.00">::tls::SocketConnector</text>
 <text text-anchor="middle" x="98.84" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; SocketT &gt;</text>
 <polyline fill="none" stroke="black" points="41.34,-60.5 156.34,-60.5 "/>
-<text text-anchor="start" x="49.34" y="-48.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; ctx</text>
+<text text-anchor="start" x="49.34" y="-48.5" font-family="Helvetica,sans-Serif" font-size="10.00"># ctx</text>
 <polyline fill="none" stroke="black" points="41.34,-41.5 156.34,-41.5 "/>
 <text text-anchor="start" x="49.34" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ SocketConnector()</text>
 <text text-anchor="start" x="49.34" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~SocketConnector()</text>
@@ -37,15 +37,15 @@
 <text text-anchor="middle" x="98.84" y="-371.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; SocketT &gt; &gt;</text>
 <polyline fill="none" stroke="black" points="30.34,-364.5 167.34,-364.5 "/>
 <text text-anchor="start" x="38.34" y="-352.5" font-family="Helvetica,sans-Serif" font-size="10.00"># onError</text>
-<text text-anchor="start" x="38.34" y="-341.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onConstruct</text>
-<text text-anchor="start" x="38.34" y="-330.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onDestruct</text>
-<text text-anchor="start" x="38.34" y="-319.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onConnect</text>
-<text text-anchor="start" x="38.34" y="-308.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onDisconnect</text>
-<text text-anchor="start" x="38.34" y="-297.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onRead</text>
-<text text-anchor="start" x="38.34" y="-286.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onReadError</text>
-<text text-anchor="start" x="38.34" y="-275.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onWriteError</text>
-<text text-anchor="start" x="38.34" y="-264.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; socketConnection</text>
-<text text-anchor="start" x="38.34" y="-253.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; options</text>
+<text text-anchor="start" x="38.34" y="-341.5" font-family="Helvetica,sans-Serif" font-size="10.00"># options</text>
+<text text-anchor="start" x="38.34" y="-330.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onConstruct</text>
+<text text-anchor="start" x="38.34" y="-319.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onDestruct</text>
+<text text-anchor="start" x="38.34" y="-308.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onConnect</text>
+<text text-anchor="start" x="38.34" y="-297.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onDisconnect</text>
+<text text-anchor="start" x="38.34" y="-286.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onRead</text>
+<text text-anchor="start" x="38.34" y="-275.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onReadError</text>
+<text text-anchor="start" x="38.34" y="-264.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onWriteError</text>
+<text text-anchor="start" x="38.34" y="-253.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; socketConnection</text>
 <polyline fill="none" stroke="black" points="30.34,-246.5 167.34,-246.5 "/>
 <text text-anchor="start" x="38.34" y="-234.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ SocketConnector()</text>
 <text text-anchor="start" x="38.34" y="-223.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ SocketConnector()</text>
@@ -95,15 +95,15 @@
 <text text-anchor="middle" x="128.84" y="-707.5" font-family="Helvetica,sans-Serif" font-size="10.00">::SocketConnector&lt; SocketConnectionT &gt;</text>
 <polyline fill="none" stroke="black" points="27.34,-700.5 230.34,-700.5 "/>
 <text text-anchor="start" x="35.34" y="-688.5" font-family="Helvetica,sans-Serif" font-size="10.00"># onError</text>
-<text text-anchor="start" x="35.34" y="-677.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onConstruct</text>
-<text text-anchor="start" x="35.34" y="-666.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onDestruct</text>
-<text text-anchor="start" x="35.34" y="-655.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onConnect</text>
-<text text-anchor="start" x="35.34" y="-644.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onDisconnect</text>
-<text text-anchor="start" x="35.34" y="-633.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onRead</text>
-<text text-anchor="start" x="35.34" y="-622.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onReadError</text>
-<text text-anchor="start" x="35.34" y="-611.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onWriteError</text>
-<text text-anchor="start" x="35.34" y="-600.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; socketConnection</text>
-<text text-anchor="start" x="35.34" y="-589.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; options</text>
+<text text-anchor="start" x="35.34" y="-677.5" font-family="Helvetica,sans-Serif" font-size="10.00"># options</text>
+<text text-anchor="start" x="35.34" y="-666.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onConstruct</text>
+<text text-anchor="start" x="35.34" y="-655.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onDestruct</text>
+<text text-anchor="start" x="35.34" y="-644.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onConnect</text>
+<text text-anchor="start" x="35.34" y="-633.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onDisconnect</text>
+<text text-anchor="start" x="35.34" y="-622.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onRead</text>
+<text text-anchor="start" x="35.34" y="-611.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onReadError</text>
+<text text-anchor="start" x="35.34" y="-600.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onWriteError</text>
+<text text-anchor="start" x="35.34" y="-589.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; socketConnection</text>
 <polyline fill="none" stroke="black" points="27.34,-582.5 230.34,-582.5 "/>
 <text text-anchor="start" x="35.34" y="-570.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ SocketConnector()</text>
 <text text-anchor="start" x="35.34" y="-559.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ SocketConnector()</text>

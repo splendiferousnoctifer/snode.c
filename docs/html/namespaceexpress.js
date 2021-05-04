@@ -10,6 +10,7 @@ var namespaceexpress =
     [ "RouterDispatcher", "classexpress_1_1_router_dispatcher.html", "classexpress_1_1_router_dispatcher" ],
     [ "MiddlewareDispatcher", "classexpress_1_1_middleware_dispatcher.html", "classexpress_1_1_middleware_dispatcher" ],
     [ "ApplicationDispatcher", "classexpress_1_1_application_dispatcher.html", "classexpress_1_1_application_dispatcher" ],
+    [ "Next", "classexpress_1_1_next.html", "classexpress_1_1_next" ],
     [ "MountPoint", "structexpress_1_1_mount_point.html", "structexpress_1_1_mount_point" ],
     [ "Router", "classexpress_1_1_router.html", "classexpress_1_1_router" ],
     [ "WebApp", "classexpress_1_1_web_app.html", "classexpress_1_1_web_app" ],

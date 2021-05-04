@@ -7,7 +7,8 @@ var annotated_dup =
       ] ],
       [ "middleware", "namespaceexpress_1_1middleware.html", [
         [ "JsonMiddleware", "classexpress_1_1middleware_1_1_json_middleware.html", "classexpress_1_1middleware_1_1_json_middleware" ],
-        [ "StaticMiddleware", "classexpress_1_1middleware_1_1_static_middleware.html", "classexpress_1_1middleware_1_1_static_middleware" ]
+        [ "StaticMiddleware", "classexpress_1_1middleware_1_1_static_middleware.html", "classexpress_1_1middleware_1_1_static_middleware" ],
+        [ "VHost", "classexpress_1_1middleware_1_1_v_host.html", "classexpress_1_1middleware_1_1_v_host" ]
       ] ],
       [ "tls", "namespaceexpress_1_1tls.html", [
         [ "WebApp", "classexpress_1_1tls_1_1_web_app.html", null ],
@@ -20,6 +21,7 @@ var annotated_dup =
       [ "RouterDispatcher", "classexpress_1_1_router_dispatcher.html", "classexpress_1_1_router_dispatcher" ],
       [ "MiddlewareDispatcher", "classexpress_1_1_middleware_dispatcher.html", "classexpress_1_1_middleware_dispatcher" ],
       [ "ApplicationDispatcher", "classexpress_1_1_application_dispatcher.html", "classexpress_1_1_application_dispatcher" ],
+      [ "Next", "classexpress_1_1_next.html", "classexpress_1_1_next" ],
       [ "MountPoint", "structexpress_1_1_mount_point.html", "structexpress_1_1_mount_point" ],
       [ "Router", "classexpress_1_1_router.html", "classexpress_1_1_router" ],
       [ "WebApp", "classexpress_1_1_web_app.html", "classexpress_1_1_web_app" ],

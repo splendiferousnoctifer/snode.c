@@ -13,7 +13,6 @@ var classnet_1_1timer_1_1_timer =
     [ "singleshotTimer", "classnet_1_1timer_1_1_timer.html#a31ab90fa1d4e9b25b9b67d9637c636ac", null ],
     [ "timeout", "classnet_1_1timer_1_1_timer.html#ad2fd8f83561240caf7f2ee59e3d1348f", null ],
     [ "update", "classnet_1_1timer_1_1_timer.html#a82bef3d9c333f0b302c1f7d69dc0d28e", null ],
-    [ "net::TimerEventDispatcher", "classnet_1_1timer_1_1_timer.html#a7ec099528d0f7f72cf8e8a0017634fa7", null ],
     [ "arg", "classnet_1_1timer_1_1_timer.html#ae5321e41c1449780244ab6945015a82f", null ],
     [ "delay", "classnet_1_1timer_1_1_timer.html#a472441b7f968a1db76f3fd7bc83692ff", null ]
 ];

@@ -1,5 +1,6 @@
 var _router_8h =
 [
+    [ "Next", "classexpress_1_1_next.html", "classexpress_1_1_next" ],
     [ "MountPoint", "structexpress_1_1_mount_point.html", "structexpress_1_1_mount_point" ],
     [ "Router", "classexpress_1_1_router.html", "classexpress_1_1_router" ],
     [ "APPLICATION", "_router_8h.html#a8b7131df91fe7a961e2cdadcedb55232", null ],

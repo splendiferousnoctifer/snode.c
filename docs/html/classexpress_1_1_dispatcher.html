@@ -109,8 +109,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad8a0ae846e70c483c3041af51d12467e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5173478a6d9ab11aa191ebc98d3e4f07"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexpress_1_1_dispatcher.html#a5173478a6d9ab11aa191ebc98d3e4f07">~Dispatcher</a> ()=default</td></tr>
 <tr class="separator:a5173478a6d9ab11aa191ebc98d3e4f07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2a764d7876eb84f80aa0160fcb141bc"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexpress_1_1_dispatcher.html#aa2a764d7876eb84f80aa0160fcb141bc">dispatch</a> (const <a class="el" href="structexpress_1_1_mount_point.html">MountPoint</a> &amp;mountPoint, const std::string &amp;parentPath, <a class="el" href="classexpress_1_1_request.html">Request</a> &amp;req, <a class="el" href="classexpress_1_1_response.html">Response</a> &amp;res) const =0</td></tr>
-<tr class="separator:aa2a764d7876eb84f80aa0160fcb141bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38d26fa22f71ea77d858f3630d52e367"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classexpress_1_1_next.html">Next</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexpress_1_1_dispatcher.html#a38d26fa22f71ea77d858f3630d52e367">dispatch</a> (const <a class="el" href="structexpress_1_1_mount_point.html">MountPoint</a> &amp;mountPoint, const std::string &amp;parentPath, <a class="el" href="classexpress_1_1_request.html">Request</a> &amp;req, <a class="el" href="classexpress_1_1_response.html">Response</a> &amp;res) const =0</td></tr>
+<tr class="separator:a38d26fa22f71ea77d858f3630d52e367"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -193,8 +193,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aa2a764d7876eb84f80aa0160fcb141bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa2a764d7876eb84f80aa0160fcb141bc">&#9670;&nbsp;</a></span>dispatch()</h2>
+<a id="a38d26fa22f71ea77d858f3630d52e367"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38d26fa22f71ea77d858f3630d52e367">&#9670;&nbsp;</a></span>dispatch()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -203,7 +203,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool express::Dispatcher::dispatch </td>
+          <td class="memname">virtual <a class="el" href="classexpress_1_1_next.html">Next</a> express::Dispatcher::dispatch </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structexpress_1_1_mount_point.html">MountPoint</a> &amp;&#160;</td>
           <td class="paramname"><em>mountPoint</em>, </td>
@@ -239,7 +239,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classexpress_1_1_application_dispatcher.html#a57805b9c9816b221a6271bea553f2d01">express::ApplicationDispatcher</a>, <a class="el" href="classexpress_1_1_middleware_dispatcher.html#ac3531175c8dd934874388b06ab15fee3">express::MiddlewareDispatcher</a>, and <a class="el" href="classexpress_1_1_router_dispatcher.html#a931228ada753f799983f6e562e1d3a46">express::RouterDispatcher</a>.</p>
+<p>Implemented in <a class="el" href="classexpress_1_1_application_dispatcher.html#a69cd0ad5c161f8268f97f0a0a8767916">express::ApplicationDispatcher</a>, <a class="el" href="classexpress_1_1_middleware_dispatcher.html#a45851fd5c2425bf9e2fb56a1e8e63d77">express::MiddlewareDispatcher</a>, and <a class="el" href="classexpress_1_1_router_dispatcher.html#ae7d8d360fab557649d638154b4d842c1">express::RouterDispatcher</a>.</p>
 
 </div>
 </div>

@@ -93,18 +93,18 @@ $(document).ready(function(){initNavTree('classnet_1_1socket_1_1bluetooth_1_1add
 <div class="dynheader">
 Inheritance diagram for net::socket::bluetooth::address::L2CapAddress:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1bluetooth_1_1address_1_1_l2_cap_address__inherit__graph.svg" width="239" height="678"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1bluetooth_1_1address_1_1_l2_cap_address__inherit__graph.svg" width="239" height="692"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <div class="dynheader">
 Collaboration diagram for net::socket::bluetooth::address::L2CapAddress:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1bluetooth_1_1address_1_1_l2_cap_address__coll__graph.svg" width="239" height="678"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1bluetooth_1_1address_1_1_l2_cap_address__coll__graph.svg" width="239" height="692"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ad6cd186a29d2e88b720a2b0ae38392f2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1bluetooth_1_1address_1_1_l2_cap_address.html#ad6cd186a29d2e88b720a2b0ae38392f2">L2CapAddress</a> ()</td></tr>
+<tr class="separator:ad6cd186a29d2e88b720a2b0ae38392f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9134075ad47e330319b2742745c69bc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1bluetooth_1_1address_1_1_l2_cap_address.html#ad9134075ad47e330319b2742745c69bc">L2CapAddress</a> (const std::string &amp;btAddress)</td></tr>
 <tr class="separator:ad9134075ad47e330319b2742745c69bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ec3972a5b213d6b9961bc1be6534b94"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1bluetooth_1_1address_1_1_l2_cap_address.html#a8ec3972a5b213d6b9961bc1be6534b94">L2CapAddress</a> (const std::string &amp;btAddress, uint16_t <a class="el" href="classnet_1_1socket_1_1bluetooth_1_1address_1_1_l2_cap_address.html#aa139b1bc7e454d003ef79df9f4ae9662">psm</a>)</td></tr>
@@ -146,8 +146,35 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="_l2_cap_address_8h_source.html#l00036">36</a> of file <a class="el" href="_l2_cap_address_8h_source.html">L2CapAddress.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ad6cd186a29d2e88b720a2b0ae38392f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6cd186a29d2e88b720a2b0ae38392f2">&#9670;&nbsp;</a></span>L2CapAddress() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">net::socket::bluetooth::address::L2CapAddress::L2CapAddress </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_l2_cap_address_8cpp_source.html#l00028">28</a> of file <a class="el" href="_l2_cap_address_8cpp_source.html">L2CapAddress.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                               {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <a class="code" href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">sockAddr</a>.l2_family = AF_BLUETOOTH;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <a class="code" href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">sockAddr</a>.l2_bdaddr = {{0, 0, 0, 0, 0, 0}};</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <a class="code" href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">sockAddr</a>.l2_psm = htobs(0);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div>
+<div class="ttc" id="aclassnet_1_1socket_1_1_socket_address_html_afc7af4ac6825de6a7862c541caca20d6"><div class="ttname"><a href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">net::socket::SocketAddress&lt; struct sockaddr_l2 &gt;::sockAddr</a></div><div class="ttdeci">SockAddr sockAddr</div><div class="ttdef"><b>Definition:</b> <a href="_socket_address_8h_source.html#l00074">SocketAddress.h:74</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="_socket_address_8h_source.html#l00074">net::socket::SocketAddress&lt; struct sockaddr_l2 &gt;::sockAddr</a>.</p>
+
+</div>
+</div>
 <a id="ad9134075ad47e330319b2742745c69bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad9134075ad47e330319b2742745c69bc">&#9670;&nbsp;</a></span>L2CapAddress() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9134075ad47e330319b2742745c69bc">&#9670;&nbsp;</a></span>L2CapAddress() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -170,20 +197,19 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_l2_cap_address_8cpp_source.html#l00028">28</a> of file <a class="el" href="_l2_cap_address_8cpp_source.html">L2CapAddress.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                                                         {</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <a class="code" href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">sockAddr</a>.l2_family = AF_BLUETOOTH;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        str2ba(btAddress.c_str(), &amp;<a class="code" href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">sockAddr</a>.l2_bdaddr);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <a class="code" href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">sockAddr</a>.l2_psm = htobs(0);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div>
-<div class="ttc" id="aclassnet_1_1socket_1_1_socket_address_html_afc7af4ac6825de6a7862c541caca20d6"><div class="ttname"><a href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">net::socket::SocketAddress&lt; struct sockaddr_l2 &gt;::sockAddr</a></div><div class="ttdeci">SockAddr sockAddr</div><div class="ttdef"><b>Definition:</b> <a href="_socket_address_8h_source.html#l00074">SocketAddress.h:74</a></div></div>
+<p class="definition">Definition at line <a class="el" href="_l2_cap_address_8cpp_source.html#l00034">34</a> of file <a class="el" href="_l2_cap_address_8cpp_source.html">L2CapAddress.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                                                         {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <a class="code" href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">sockAddr</a>.l2_family = AF_BLUETOOTH;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        str2ba(btAddress.c_str(), &amp;<a class="code" href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">sockAddr</a>.l2_bdaddr);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">sockAddr</a>.l2_psm = htobs(0);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="_socket_address_8h_source.html#l00074">net::socket::SocketAddress&lt; struct sockaddr_l2 &gt;::sockAddr</a>.</p>
 
 </div>
 </div>
 <a id="a8ec3972a5b213d6b9961bc1be6534b94"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ec3972a5b213d6b9961bc1be6534b94">&#9670;&nbsp;</a></span>L2CapAddress() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ec3972a5b213d6b9961bc1be6534b94">&#9670;&nbsp;</a></span>L2CapAddress() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -208,15 +234,15 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_l2_cap_address_8cpp_source.html#l00040">40</a> of file <a class="el" href="_l2_cap_address_8cpp_source.html">L2CapAddress.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                                                                       {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <a class="code" href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">sockAddr</a>.l2_family = AF_BLUETOOTH;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        str2ba(btAddress.c_str(), &amp;<a class="code" href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">sockAddr</a>.l2_bdaddr);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <a class="code" href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">sockAddr</a>.l2_psm = htobs(<a class="code" href="classnet_1_1socket_1_1bluetooth_1_1address_1_1_l2_cap_address.html#aa139b1bc7e454d003ef79df9f4ae9662">psm</a>);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    }</div>
-<div class="ttc" id="aclassnet_1_1socket_1_1bluetooth_1_1address_1_1_l2_cap_address_html_aa139b1bc7e454d003ef79df9f4ae9662"><div class="ttname"><a href="classnet_1_1socket_1_1bluetooth_1_1address_1_1_l2_cap_address.html#aa139b1bc7e454d003ef79df9f4ae9662">net::socket::bluetooth::address::L2CapAddress::psm</a></div><div class="ttdeci">uint16_t psm() const</div><div class="ttdef"><b>Definition:</b> <a href="_l2_cap_address_8cpp_source.html#l00046">L2CapAddress.cpp:46</a></div></div>
+<p class="definition">Definition at line <a class="el" href="_l2_cap_address_8cpp_source.html#l00046">46</a> of file <a class="el" href="_l2_cap_address_8cpp_source.html">L2CapAddress.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                                                                       {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <a class="code" href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">sockAddr</a>.l2_family = AF_BLUETOOTH;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        str2ba(btAddress.c_str(), &amp;<a class="code" href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">sockAddr</a>.l2_bdaddr);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <a class="code" href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">sockAddr</a>.l2_psm = htobs(<a class="code" href="classnet_1_1socket_1_1bluetooth_1_1address_1_1_l2_cap_address.html#aa139b1bc7e454d003ef79df9f4ae9662">psm</a>);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
+<div class="ttc" id="aclassnet_1_1socket_1_1bluetooth_1_1address_1_1_l2_cap_address_html_aa139b1bc7e454d003ef79df9f4ae9662"><div class="ttname"><a href="classnet_1_1socket_1_1bluetooth_1_1address_1_1_l2_cap_address.html#aa139b1bc7e454d003ef79df9f4ae9662">net::socket::bluetooth::address::L2CapAddress::psm</a></div><div class="ttdeci">uint16_t psm() const</div><div class="ttdef"><b>Definition:</b> <a href="_l2_cap_address_8cpp_source.html#l00052">L2CapAddress.cpp:52</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_l2_cap_address_8cpp_source.html#l00046">psm()</a>, and <a class="el" href="_socket_address_8h_source.html#l00074">net::socket::SocketAddress&lt; struct sockaddr_l2 &gt;::sockAddr</a>.</p>
+<p class="reference">References <a class="el" href="_l2_cap_address_8cpp_source.html#l00052">psm()</a>, and <a class="el" href="_socket_address_8h_source.html#l00074">net::socket::SocketAddress&lt; struct sockaddr_l2 &gt;::sockAddr</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -226,7 +252,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a992ec8b450e4af0efdf2911dbc0bb9eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a992ec8b450e4af0efdf2911dbc0bb9eb">&#9670;&nbsp;</a></span>L2CapAddress() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a992ec8b450e4af0efdf2911dbc0bb9eb">&#9670;&nbsp;</a></span>L2CapAddress() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -249,14 +275,14 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_l2_cap_address_8cpp_source.html#l00034">34</a> of file <a class="el" href="_l2_cap_address_8cpp_source.html">L2CapAddress.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                                           {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <a class="code" href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">sockAddr</a>.l2_family = AF_BLUETOOTH;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <a class="code" href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">sockAddr</a>.l2_bdaddr = {{0, 0, 0, 0, 0, 0}};</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">sockAddr</a>.l2_psm = htobs(<a class="code" href="classnet_1_1socket_1_1bluetooth_1_1address_1_1_l2_cap_address.html#aa139b1bc7e454d003ef79df9f4ae9662">psm</a>);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="_l2_cap_address_8cpp_source.html#l00040">40</a> of file <a class="el" href="_l2_cap_address_8cpp_source.html">L2CapAddress.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                                           {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <a class="code" href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">sockAddr</a>.l2_family = AF_BLUETOOTH;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="code" href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">sockAddr</a>.l2_bdaddr = {{0, 0, 0, 0, 0, 0}};</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <a class="code" href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">sockAddr</a>.l2_psm = htobs(<a class="code" href="classnet_1_1socket_1_1bluetooth_1_1address_1_1_l2_cap_address.html#aa139b1bc7e454d003ef79df9f4ae9662">psm</a>);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_l2_cap_address_8cpp_source.html#l00046">psm()</a>, and <a class="el" href="_socket_address_8h_source.html#l00074">net::socket::SocketAddress&lt; struct sockaddr_l2 &gt;::sockAddr</a>.</p>
+<p class="reference">References <a class="el" href="_l2_cap_address_8cpp_source.html#l00052">psm()</a>, and <a class="el" href="_socket_address_8h_source.html#l00074">net::socket::SocketAddress&lt; struct sockaddr_l2 &gt;::sockAddr</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -281,18 +307,18 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_l2_cap_address_8cpp_source.html#l00050">50</a> of file <a class="el" href="_l2_cap_address_8cpp_source.html">L2CapAddress.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                                          {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordtype">char</span> <a class="code" href="classnet_1_1socket_1_1bluetooth_1_1address_1_1_l2_cap_address.html#a8fd68d579b64b9c039bcda4a0ebe3e04">address</a>[256];</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        ba2str(&amp;<a class="code" href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">sockAddr</a>.l2_bdaddr, <a class="code" href="classnet_1_1socket_1_1bluetooth_1_1address_1_1_l2_cap_address.html#a8fd68d579b64b9c039bcda4a0ebe3e04">address</a>);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classnet_1_1socket_1_1bluetooth_1_1address_1_1_l2_cap_address.html#a8fd68d579b64b9c039bcda4a0ebe3e04">address</a>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
-<div class="ttc" id="aclassnet_1_1socket_1_1bluetooth_1_1address_1_1_l2_cap_address_html_a8fd68d579b64b9c039bcda4a0ebe3e04"><div class="ttname"><a href="classnet_1_1socket_1_1bluetooth_1_1address_1_1_l2_cap_address.html#a8fd68d579b64b9c039bcda4a0ebe3e04">net::socket::bluetooth::address::L2CapAddress::address</a></div><div class="ttdeci">std::string address() const</div><div class="ttdef"><b>Definition:</b> <a href="_l2_cap_address_8cpp_source.html#l00050">L2CapAddress.cpp:50</a></div></div>
+<p class="definition">Definition at line <a class="el" href="_l2_cap_address_8cpp_source.html#l00056">56</a> of file <a class="el" href="_l2_cap_address_8cpp_source.html">L2CapAddress.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                                          {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordtype">char</span> <a class="code" href="classnet_1_1socket_1_1bluetooth_1_1address_1_1_l2_cap_address.html#a8fd68d579b64b9c039bcda4a0ebe3e04">address</a>[256];</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        ba2str(&amp;<a class="code" href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">sockAddr</a>.l2_bdaddr, <a class="code" href="classnet_1_1socket_1_1bluetooth_1_1address_1_1_l2_cap_address.html#a8fd68d579b64b9c039bcda4a0ebe3e04">address</a>);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classnet_1_1socket_1_1bluetooth_1_1address_1_1_l2_cap_address.html#a8fd68d579b64b9c039bcda4a0ebe3e04">address</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
+<div class="ttc" id="aclassnet_1_1socket_1_1bluetooth_1_1address_1_1_l2_cap_address_html_a8fd68d579b64b9c039bcda4a0ebe3e04"><div class="ttname"><a href="classnet_1_1socket_1_1bluetooth_1_1address_1_1_l2_cap_address.html#a8fd68d579b64b9c039bcda4a0ebe3e04">net::socket::bluetooth::address::L2CapAddress::address</a></div><div class="ttdeci">std::string address() const</div><div class="ttdef"><b>Definition:</b> <a href="_l2_cap_address_8cpp_source.html#l00056">L2CapAddress.cpp:56</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="_socket_address_8h_source.html#l00074">net::socket::SocketAddress&lt; struct sockaddr_l2 &gt;::sockAddr</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_l2_cap_address_8cpp_source.html#l00057">toString()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_l2_cap_address_8cpp_source.html#l00063">toString()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -316,14 +342,14 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_l2_cap_address_8cpp_source.html#l00046">46</a> of file <a class="el" href="_l2_cap_address_8cpp_source.html">L2CapAddress.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                                     {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordflow">return</span> btohs(<a class="code" href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">sockAddr</a>.l2_psm);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="_l2_cap_address_8cpp_source.html#l00052">52</a> of file <a class="el" href="_l2_cap_address_8cpp_source.html">L2CapAddress.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                                     {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">return</span> btohs(<a class="code" href="classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6">sockAddr</a>.l2_psm);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="_socket_address_8h_source.html#l00074">net::socket::SocketAddress&lt; struct sockaddr_l2 &gt;::sockAddr</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_l2_cap_address_8cpp_source.html#l00034">L2CapAddress()</a>, and <a class="el" href="_l2_cap_address_8cpp_source.html#l00057">toString()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_l2_cap_address_8cpp_source.html#l00040">L2CapAddress()</a>, and <a class="el" href="_l2_cap_address_8cpp_source.html#l00063">toString()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -357,12 +383,12 @@ Here is the caller graph for this function:</div>
 
 <p>Implements <a class="el" href="classnet_1_1socket_1_1_socket_address.html#a073a8cd3c371f694ac409bcb7b52a951">net::socket::SocketAddress&lt; struct sockaddr_l2 &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_l2_cap_address_8cpp_source.html#l00057">57</a> of file <a class="el" href="_l2_cap_address_8cpp_source.html">L2CapAddress.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                                           {</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classnet_1_1socket_1_1bluetooth_1_1address_1_1_l2_cap_address.html#a8fd68d579b64b9c039bcda4a0ebe3e04">address</a>() + <span class="stringliteral">&quot;(&quot;</span> + <a class="code" href="classnet_1_1socket_1_1bluetooth_1_1address_1_1_l2_cap_address.html#a8fd68d579b64b9c039bcda4a0ebe3e04">address</a>() + <span class="stringliteral">&quot;):&quot;</span> + std::to_string(<a class="code" href="classnet_1_1socket_1_1bluetooth_1_1address_1_1_l2_cap_address.html#aa139b1bc7e454d003ef79df9f4ae9662">psm</a>());</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="_l2_cap_address_8cpp_source.html#l00063">63</a> of file <a class="el" href="_l2_cap_address_8cpp_source.html">L2CapAddress.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                                           {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classnet_1_1socket_1_1bluetooth_1_1address_1_1_l2_cap_address.html#a8fd68d579b64b9c039bcda4a0ebe3e04">address</a>() + <span class="stringliteral">&quot;(&quot;</span> + <a class="code" href="classnet_1_1socket_1_1bluetooth_1_1address_1_1_l2_cap_address.html#a8fd68d579b64b9c039bcda4a0ebe3e04">address</a>() + <span class="stringliteral">&quot;):&quot;</span> + std::to_string(<a class="code" href="classnet_1_1socket_1_1bluetooth_1_1address_1_1_l2_cap_address.html#aa139b1bc7e454d003ef79df9f4ae9662">psm</a>());</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_l2_cap_address_8cpp_source.html#l00050">address()</a>, and <a class="el" href="_l2_cap_address_8cpp_source.html#l00046">psm()</a>.</p>
+<p class="reference">References <a class="el" href="_l2_cap_address_8cpp_source.html#l00056">address()</a>, and <a class="el" href="_l2_cap_address_8cpp_source.html#l00052">psm()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">

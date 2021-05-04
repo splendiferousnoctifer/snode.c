@@ -62,6 +62,7 @@ var hierarchy =
         [ "express::Request", "classexpress_1_1_request.html", null ]
       ] ]
     ] ],
+    [ "express::Next", "classexpress_1_1_next.html", null ],
     [ "net::ObservationCounter", "classnet_1_1_observation_counter.html", [
       [ "net::DescriptorEventReceiver", "classnet_1_1_descriptor_event_receiver.html", [
         [ "net::AcceptEventReceiver", "classnet_1_1_accept_event_receiver.html", [
@@ -139,7 +140,8 @@ var hierarchy =
         [ "express::WebAppT< ServerT >", "classexpress_1_1_web_app_t.html", null ]
       ] ],
       [ "express::middleware::JsonMiddleware", "classexpress_1_1middleware_1_1_json_middleware.html", null ],
-      [ "express::middleware::StaticMiddleware", "classexpress_1_1middleware_1_1_static_middleware.html", null ]
+      [ "express::middleware::StaticMiddleware", "classexpress_1_1middleware_1_1_static_middleware.html", null ],
+      [ "express::middleware::VHost", "classexpress_1_1middleware_1_1_v_host.html", null ]
     ] ],
     [ "http::server::Server< SocketServerT, RequestT, ResponseT >", "classhttp_1_1server_1_1_server.html", null ],
     [ "http::server::Server< net::socket::ip::tcp ::ipv6::legacy::SocketServer, http::server::Request, http::server::Response >", "classhttp_1_1server_1_1_server.html", [
