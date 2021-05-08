@@ -1,8 +1,7 @@
 var _router_8cpp =
 [
-    [ "Dispatcher", "classexpress_1_1_dispatcher.html", "classexpress_1_1_dispatcher" ],
+    [ "MountPoint", "structexpress_1_1_mount_point.html", "structexpress_1_1_mount_point" ],
     [ "Route", "classexpress_1_1_route.html", "classexpress_1_1_route" ],
-    [ "RouterDispatcher", "classexpress_1_1_router_dispatcher.html", "classexpress_1_1_router_dispatcher" ],
     [ "MiddlewareDispatcher", "classexpress_1_1_middleware_dispatcher.html", "classexpress_1_1_middleware_dispatcher" ],
     [ "ApplicationDispatcher", "classexpress_1_1_application_dispatcher.html", "classexpress_1_1_application_dispatcher" ],
     [ "DEFINE_REQUESTMETHOD", "_router_8cpp.html#a0851c713e37070c233e69db1e88cd270", null ],

@@ -16,13 +16,13 @@ var annotated_dup =
       ] ],
       [ "Request", "classexpress_1_1_request.html", "classexpress_1_1_request" ],
       [ "Response", "classexpress_1_1_response.html", "classexpress_1_1_response" ],
-      [ "Dispatcher", "classexpress_1_1_dispatcher.html", "classexpress_1_1_dispatcher" ],
+      [ "MountPoint", "structexpress_1_1_mount_point.html", "structexpress_1_1_mount_point" ],
       [ "Route", "classexpress_1_1_route.html", "classexpress_1_1_route" ],
-      [ "RouterDispatcher", "classexpress_1_1_router_dispatcher.html", "classexpress_1_1_router_dispatcher" ],
       [ "MiddlewareDispatcher", "classexpress_1_1_middleware_dispatcher.html", "classexpress_1_1_middleware_dispatcher" ],
       [ "ApplicationDispatcher", "classexpress_1_1_application_dispatcher.html", "classexpress_1_1_application_dispatcher" ],
-      [ "Next", "classexpress_1_1_next.html", "classexpress_1_1_next" ],
-      [ "MountPoint", "structexpress_1_1_mount_point.html", "structexpress_1_1_mount_point" ],
+      [ "State", "classexpress_1_1_state.html", "classexpress_1_1_state" ],
+      [ "Dispatcher", "classexpress_1_1_dispatcher.html", "classexpress_1_1_dispatcher" ],
+      [ "RouterDispatcher", "classexpress_1_1_router_dispatcher.html", "classexpress_1_1_router_dispatcher" ],
       [ "Router", "classexpress_1_1_router.html", "classexpress_1_1_router" ],
       [ "WebApp", "classexpress_1_1_web_app.html", "classexpress_1_1_web_app" ],
       [ "WebAppT", "classexpress_1_1_web_app_t.html", "classexpress_1_1_web_app_t" ]
@@ -30,12 +30,12 @@ var annotated_dup =
     [ "http", "namespacehttp.html", [
       [ "client", "namespacehttp_1_1client.html", [
         [ "legacy", "namespacehttp_1_1client_1_1legacy.html", [
-          [ "Client", "classhttp_1_1client_1_1legacy_1_1_client.html", null ],
-          [ "Client6", "classhttp_1_1client_1_1legacy_1_1_client6.html", null ]
+          [ "Client", "classhttp_1_1client_1_1legacy_1_1_client.html", "classhttp_1_1client_1_1legacy_1_1_client" ],
+          [ "Client6", "classhttp_1_1client_1_1legacy_1_1_client6.html", "classhttp_1_1client_1_1legacy_1_1_client6" ]
         ] ],
         [ "tls", "namespacehttp_1_1client_1_1tls.html", [
-          [ "Client", "classhttp_1_1client_1_1tls_1_1_client.html", null ],
-          [ "Client6", "classhttp_1_1client_1_1tls_1_1_client6.html", null ]
+          [ "Client", "classhttp_1_1client_1_1tls_1_1_client.html", "classhttp_1_1client_1_1tls_1_1_client" ],
+          [ "Client6", "classhttp_1_1client_1_1tls_1_1_client6.html", "classhttp_1_1client_1_1tls_1_1_client6" ]
         ] ],
         [ "Client", "classhttp_1_1client_1_1_client.html", "classhttp_1_1client_1_1_client" ],
         [ "ClientContextBase", "classhttp_1_1client_1_1_client_context_base.html", "classhttp_1_1client_1_1_client_context_base" ],

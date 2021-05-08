@@ -14,7 +14,6 @@ var classnet_1_1socket_1_1_socket =
     [ "getBindAddress", "classnet_1_1socket_1_1_socket.html#aa1a67cea263ed7d3c9da8cb0bd683455", null ],
     [ "open", "classnet_1_1socket_1_1_socket.html#aac90834a58b6cc4329e89061a10bdffa", null ],
     [ "operator=", "classnet_1_1socket_1_1_socket.html#a14d33b7cbf05fe8befa98d5d72bd79a1", null ],
-    [ "setBindAddress", "classnet_1_1socket_1_1_socket.html#a589d4bf4a657cbc01ed46d33613a3429", null ],
     [ "shutdown", "classnet_1_1socket_1_1_socket.html#a971efd19b5f618ad9aea3f94d130bc10", null ],
     [ "bindAddress", "classnet_1_1socket_1_1_socket.html#a8093ad086bca61e225342420f9858242", null ]
 ];

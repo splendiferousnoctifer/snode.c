@@ -212,12 +212,12 @@ Very Simple HTTP/S Web-Server for static HTML-Pages</h2>
 <div class="line">    <a class="code" href="classexpress_1_1_web_app.html#a0a01439a0cc8dfc86ed14f1094826b7e">express::WebApp::init</a>(argc, argv);</div>
 <div class="line">    </div>
 <div class="line">    <a class="code" href="classexpress_1_1legacy_1_1_web_app.html">express::legacy::WebApp</a> legacyApp;</div>
-<div class="line">    legacyApp.<a class="code" href="classexpress_1_1_router.html#a577166187fa9864c2f5d4b3f1d745b47">use</a>(<a class="code" href="classexpress_1_1middleware_1_1_static_middleware.html">express::middleware::StaticMiddleware</a>(SERVERROOT));</div>
+<div class="line">    legacyApp.<a class="code" href="classexpress_1_1_router.html#a455c45005b1c03509e7116bfc1f20965">use</a>(<a class="code" href="classexpress_1_1middleware_1_1_static_middleware.html">express::middleware::StaticMiddleware</a>(SERVERROOT));</div>
 <div class="line">    </div>
 <div class="line">    <a class="code" href="classexpress_1_1tls_1_1_web_app.html">express::tls::WebApp</a> tlsApp({{<span class="stringliteral">&quot;certChain&quot;</span>, CERTF}, </div>
 <div class="line">                                 {<span class="stringliteral">&quot;keyPEM&quot;</span>, KEYF}, </div>
 <div class="line">                                 {<span class="stringliteral">&quot;password&quot;</span>, KEYFPASS}});</div>
-<div class="line">    tlsApp.<a class="code" href="classexpress_1_1_router.html#a577166187fa9864c2f5d4b3f1d745b47">use</a>(<a class="code" href="classexpress_1_1middleware_1_1_static_middleware.html">express::middleware::StaticMiddleware</a>(SERVERROOT));</div>
+<div class="line">    tlsApp.<a class="code" href="classexpress_1_1_router.html#a455c45005b1c03509e7116bfc1f20965">use</a>(<a class="code" href="classexpress_1_1middleware_1_1_static_middleware.html">express::middleware::StaticMiddleware</a>(SERVERROOT));</div>
 <div class="line">    </div>
 <div class="line">    legacyApp.<a class="code" href="classexpress_1_1_web_app_t.html#a282a201813c01eefcb85b3a3c5b74b85">listen</a>(8080, [](<span class="keywordtype">int</span> err) -&gt; <span class="keywordtype">void</span> {</div>
 <div class="line">        <span class="keywordflow">if</span> (err != 0) {</div>
@@ -238,10 +238,10 @@ Very Simple HTTP/S Web-Server for static HTML-Pages</h2>
 <div class="line">    <span class="keywordflow">return</span> <a class="code" href="classexpress_1_1_web_app.html#a85d9fab4fae0881f8484e07c58f3157a">express::WebApp::start</a>();</div>
 <div class="line">}</div>
 <div class="ttc" id="a_static_middleware_8h_html"><div class="ttname"><a href="_static_middleware_8h.html">StaticMiddleware.h</a></div></div>
-<div class="ttc" id="aclassexpress_1_1_router_html_a577166187fa9864c2f5d4b3f1d745b47"><div class="ttname"><a href="classexpress_1_1_router.html#a577166187fa9864c2f5d4b3f1d745b47">express::Router::use</a></div><div class="ttdeci">Router &amp; use(const std::string &amp;path, const std::function&lt; void(Request &amp;req, Response &amp;res)&gt; &amp;dispatcher)</div><div class="ttdef"><b>Definition:</b> <a href="_router_8cpp_source.html#l00318">Router.cpp:318</a></div></div>
+<div class="ttc" id="aclassexpress_1_1_router_html_a455c45005b1c03509e7116bfc1f20965"><div class="ttname"><a href="classexpress_1_1_router.html#a455c45005b1c03509e7116bfc1f20965">express::Router::use</a></div><div class="ttdeci">Router &amp; use(const std::string &amp;path, const std::function&lt; void(Request &amp;req, Response &amp;res)&gt; &amp;lambda)</div><div class="ttdef"><b>Definition:</b> <a href="_router_8cpp_source.html#l00332">Router.cpp:332</a></div></div>
 <div class="ttc" id="aclassexpress_1_1_web_app_html_a0a01439a0cc8dfc86ed14f1094826b7e"><div class="ttname"><a href="classexpress_1_1_web_app.html#a0a01439a0cc8dfc86ed14f1094826b7e">express::WebApp::init</a></div><div class="ttdeci">static void init(int argc, char *argv[])</div><div class="ttdef"><b>Definition:</b> <a href="_web_app_8cpp_source.html#l00035">WebApp.cpp:35</a></div></div>
 <div class="ttc" id="aclassexpress_1_1_web_app_html_a85d9fab4fae0881f8484e07c58f3157a"><div class="ttname"><a href="classexpress_1_1_web_app.html#a85d9fab4fae0881f8484e07c58f3157a">express::WebApp::start</a></div><div class="ttdeci">static int start()</div><div class="ttdef"><b>Definition:</b> <a href="_web_app_8cpp_source.html#l00040">WebApp.cpp:40</a></div></div>
-<div class="ttc" id="aclassexpress_1_1_web_app_t_html_a282a201813c01eefcb85b3a3c5b74b85"><div class="ttname"><a href="classexpress_1_1_web_app_t.html#a282a201813c01eefcb85b3a3c5b74b85">express::WebAppT::listen</a></div><div class="ttdeci">void listen(uint16_t port, const std::function&lt; void(int err)&gt; &amp;onError=nullptr) override</div><div class="ttdef"><b>Definition:</b> <a href="_web_app_t_8h_source.html#l00071">WebAppT.h:71</a></div></div>
+<div class="ttc" id="aclassexpress_1_1_web_app_t_html_a282a201813c01eefcb85b3a3c5b74b85"><div class="ttname"><a href="classexpress_1_1_web_app_t.html#a282a201813c01eefcb85b3a3c5b74b85">express::WebAppT::listen</a></div><div class="ttdeci">void listen(uint16_t port, const std::function&lt; void(int err)&gt; &amp;onError=nullptr) override</div><div class="ttdef"><b>Definition:</b> <a href="_web_app_t_8h_source.html#l00078">WebAppT.h:78</a></div></div>
 <div class="ttc" id="aclassexpress_1_1legacy_1_1_web_app_html"><div class="ttname"><a href="classexpress_1_1legacy_1_1_web_app.html">express::legacy::WebApp</a></div><div class="ttdef"><b>Definition:</b> <a href="legacy_2_web_app_8h_source.html#l00031">WebApp.h:31</a></div></div>
 <div class="ttc" id="aclassexpress_1_1middleware_1_1_static_middleware_html"><div class="ttname"><a href="classexpress_1_1middleware_1_1_static_middleware.html">express::middleware::StaticMiddleware</a></div><div class="ttdef"><b>Definition:</b> <a href="_static_middleware_8h_source.html#l00031">StaticMiddleware.h:31</a></div></div>
 <div class="ttc" id="aclassexpress_1_1tls_1_1_web_app_html"><div class="ttname"><a href="classexpress_1_1tls_1_1_web_app.html">express::tls::WebApp</a></div><div class="ttdef"><b>Definition:</b> <a href="tls_2_web_app_8h_source.html#l00031">WebApp.h:31</a></div></div>
@@ -262,7 +262,7 @@ Receive Data by HTTP-Post Request</h2>
 <div class="line">    <a class="code" href="classexpress_1_1_web_app.html#a0a01439a0cc8dfc86ed14f1094826b7e">express::WebApp::init</a>(argc, argv);</div>
 <div class="line"> </div>
 <div class="line">    <a class="code" href="classexpress_1_1legacy_1_1_web_app.html">express::legacy::WebApp</a> legacyApp;</div>
-<div class="line">    legacyApp.<a class="code" href="classexpress_1_1_router.html#a68e544f1d65086d9fdba0b9a76583e38">get</a>(<span class="stringliteral">&quot;/&quot;</span>, [] <a class="code" href="_router_8h.html#a8b7131df91fe7a961e2cdadcedb55232">APPLICATION</a>(req, res) {</div>
+<div class="line">    legacyApp.<a class="code" href="classexpress_1_1_router.html#a3e40bd7dbbaecfe055a4ec9964873e92">get</a>(<span class="stringliteral">&quot;/&quot;</span>, [] <a class="code" href="_router_8h.html#a8b7131df91fe7a961e2cdadcedb55232">APPLICATION</a>(req, res) {</div>
 <div class="line">        res.send(<span class="stringliteral">&quot;&lt;html&gt;&quot;</span></div>
 <div class="line">                 <span class="stringliteral">&quot;  &lt;head&gt;&quot;</span></div>
 <div class="line">                 <span class="stringliteral">&quot;    &lt;style&gt;&quot;</span></div>
@@ -294,7 +294,7 @@ Receive Data by HTTP-Post Request</h2>
 <div class="line">                 <span class="stringliteral">&quot;&lt;/html&gt;&quot;</span>);</div>
 <div class="line">    });</div>
 <div class="line"> </div>
-<div class="line">    legacyApp.<a class="code" href="classexpress_1_1_router.html#a096a94b197b9f6824278f8d633c71109">post</a>(<span class="stringliteral">&quot;/&quot;</span>, [] <a class="code" href="_router_8h.html#a8b7131df91fe7a961e2cdadcedb55232">APPLICATION</a>(req, res) {</div>
+<div class="line">    legacyApp.<a class="code" href="classexpress_1_1_router.html#aedb5fad844938a0dcbbd527153e9e782">post</a>(<span class="stringliteral">&quot;/&quot;</span>, [] <a class="code" href="_router_8h.html#a8b7131df91fe7a961e2cdadcedb55232">APPLICATION</a>(req, res) {</div>
 <div class="line">        VLOG(0) &lt;&lt; <span class="stringliteral">&quot;Content-Type: &quot;</span> &lt;&lt; req.header(<span class="stringliteral">&quot;Content-Type&quot;</span>);</div>
 <div class="line">        VLOG(0) &lt;&lt; <span class="stringliteral">&quot;Content-Length: &quot;</span> &lt;&lt; req.header(<span class="stringliteral">&quot;Content-Length&quot;</span>);</div>
 <div class="line">        <span class="keywordtype">char</span>* body = <span class="keyword">new</span> <span class="keywordtype">char</span>[std::stoul(req.header(<span class="stringliteral">&quot;Content-Length&quot;</span>)) + 1];</div>
@@ -316,7 +316,7 @@ Receive Data by HTTP-Post Request</h2>
 <div class="line">    <a class="code" href="classexpress_1_1tls_1_1_web_app.html">express::tls::WebApp</a> tlsWebApp({{<span class="stringliteral">&quot;certChain&quot;</span>, CERTF},</div>
 <div class="line">                                    {<span class="stringliteral">&quot;keyPEM&quot;</span>, KEYF},</div>
 <div class="line">                                    {<span class="stringliteral">&quot;password&quot;</span>, KEYFPASS}});</div>
-<div class="line">    tlsWebApp.<a class="code" href="classexpress_1_1_router.html#a577166187fa9864c2f5d4b3f1d745b47">use</a>(legacyApp);</div>
+<div class="line">    tlsWebApp.<a class="code" href="classexpress_1_1_router.html#a455c45005b1c03509e7116bfc1f20965">use</a>(legacyApp);</div>
 <div class="line"> </div>
 <div class="line">    legacyApp.<a class="code" href="classexpress_1_1_web_app_t.html#a282a201813c01eefcb85b3a3c5b74b85">listen</a>(8080, [](<span class="keywordtype">int</span> err) {</div>
 <div class="line">        <span class="keywordflow">if</span> (err != 0) {</div>
@@ -336,9 +336,9 @@ Receive Data by HTTP-Post Request</h2>
 <div class="line"> </div>
 <div class="line">    <span class="keywordflow">return</span> <a class="code" href="classexpress_1_1_web_app.html#a85d9fab4fae0881f8484e07c58f3157a">express::WebApp::start</a>();</div>
 <div class="line">}</div>
-<div class="ttc" id="a_router_8h_html_a8b7131df91fe7a961e2cdadcedb55232"><div class="ttname"><a href="_router_8h.html#a8b7131df91fe7a961e2cdadcedb55232">APPLICATION</a></div><div class="ttdeci">#define APPLICATION(req, res)</div><div class="ttdef"><b>Definition:</b> <a href="_router_8h_source.html#l00034">Router.h:34</a></div></div>
-<div class="ttc" id="aclassexpress_1_1_router_html_a096a94b197b9f6824278f8d633c71109"><div class="ttname"><a href="classexpress_1_1_router.html#a096a94b197b9f6824278f8d633c71109">express::Router::post</a></div><div class="ttdeci">Router &amp; post(const std::string &amp;path, const std::function&lt; void(Request &amp;req, Response &amp;res)&gt; &amp;dispatcher)</div><div class="ttdef"><b>Definition:</b> <a href="_router_8cpp_source.html#l00322">Router.cpp:322</a></div></div>
-<div class="ttc" id="aclassexpress_1_1_router_html_a68e544f1d65086d9fdba0b9a76583e38"><div class="ttname"><a href="classexpress_1_1_router.html#a68e544f1d65086d9fdba0b9a76583e38">express::Router::get</a></div><div class="ttdeci">Router &amp; get(const std::string &amp;path, const std::function&lt; void(Request &amp;req, Response &amp;res)&gt; &amp;dispatcher)</div><div class="ttdef"><b>Definition:</b> <a href="_router_8cpp_source.html#l00320">Router.cpp:320</a></div></div>
+<div class="ttc" id="a_router_8h_html_a8b7131df91fe7a961e2cdadcedb55232"><div class="ttname"><a href="_router_8h.html#a8b7131df91fe7a961e2cdadcedb55232">APPLICATION</a></div><div class="ttdeci">#define APPLICATION(req, res)</div><div class="ttdef"><b>Definition:</b> <a href="_router_8h_source.html#l00035">Router.h:35</a></div></div>
+<div class="ttc" id="aclassexpress_1_1_router_html_a3e40bd7dbbaecfe055a4ec9964873e92"><div class="ttname"><a href="classexpress_1_1_router.html#a3e40bd7dbbaecfe055a4ec9964873e92">express::Router::get</a></div><div class="ttdeci">Router &amp; get(const std::string &amp;path, const std::function&lt; void(Request &amp;req, Response &amp;res)&gt; &amp;lambda)</div><div class="ttdef"><b>Definition:</b> <a href="_router_8cpp_source.html#l00334">Router.cpp:334</a></div></div>
+<div class="ttc" id="aclassexpress_1_1_router_html_aedb5fad844938a0dcbbd527153e9e782"><div class="ttname"><a href="classexpress_1_1_router.html#aedb5fad844938a0dcbbd527153e9e782">express::Router::post</a></div><div class="ttdeci">Router &amp; post(const std::string &amp;path, const std::function&lt; void(Request &amp;req, Response &amp;res)&gt; &amp;lambda)</div><div class="ttdef"><b>Definition:</b> <a href="_router_8cpp_source.html#l00336">Router.cpp:336</a></div></div>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md15"></a>
 Extract Server and Client Information (host name, IP, port, SSL/TLS information)</h2>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;easylogging++.h&gt;</span></div>
@@ -377,7 +377,7 @@ Extract Server and Client Information (host name, IP, port, SSL/TLS information)
 <div class="line">        }</div>
 <div class="line">    });</div>
 <div class="line"> </div>
-<div class="line">    legacyApp.<a class="code" href="classexpress_1_1_web_app_t.html#aaa96e1a29656a95ae9a78b4c81a6c6ba">onConnect</a>([](net::socket::legacy::SocketConnection* socketConnection) {</div>
+<div class="line">    legacyApp.<a class="code" href="classexpress_1_1_web_app_t.html#a5d7d08f703f92a3edd10b60f453062d5">onConnect</a>([](net::socket::legacy::SocketConnection* socketConnection) {</div>
 <div class="line">        VLOG(0) &lt;&lt; <span class="stringliteral">&quot;OnConnect:&quot;</span>;</div>
 <div class="line">        VLOG(0) &lt;&lt; <span class="stringliteral">&quot;\tClient: &quot;</span> + socketConnection-&gt;getRemoteAddress().host()</div>
 <div class="line">                          + <span class="stringliteral">&quot;(&quot;</span> + socketConnection-&gt;getRemoteAddress().ip() + <span class="stringliteral">&quot;):&quot;</span></div>
@@ -471,8 +471,8 @@ Extract Server and Client Information (host name, IP, port, SSL/TLS information)
 <div class="line"> </div>
 <div class="line">    <span class="keywordflow">return</span> <a class="code" href="classexpress_1_1_web_app.html#a85d9fab4fae0881f8484e07c58f3157a">WebApp::start</a>();</div>
 <div class="line">}</div>
-<div class="ttc" id="aclassexpress_1_1_web_app_t_html_aaa96e1a29656a95ae9a78b4c81a6c6ba"><div class="ttname"><a href="classexpress_1_1_web_app_t.html#aaa96e1a29656a95ae9a78b4c81a6c6ba">express::WebAppT::onConnect</a></div><div class="ttdeci">void onConnect(const std::function&lt; void(SocketConnection *)&gt; &amp;onConnect)</div><div class="ttdef"><b>Definition:</b> <a href="_web_app_t_8h_source.html#l00079">WebAppT.h:79</a></div></div>
-<div class="ttc" id="aclassexpress_1_1_web_app_t_html_adc848f02d1e9d961262676ab0d97f3f1"><div class="ttname"><a href="classexpress_1_1_web_app_t.html#adc848f02d1e9d961262676ab0d97f3f1">express::WebAppT::onDisconnect</a></div><div class="ttdeci">void onDisconnect(const std::function&lt; void(SocketConnection *)&gt; &amp;onDisconnect)</div><div class="ttdef"><b>Definition:</b> <a href="_web_app_t_8h_source.html#l00083">WebAppT.h:83</a></div></div>
+<div class="ttc" id="aclassexpress_1_1_web_app_t_html_a5d7d08f703f92a3edd10b60f453062d5"><div class="ttname"><a href="classexpress_1_1_web_app_t.html#a5d7d08f703f92a3edd10b60f453062d5">express::WebAppT::onConnect</a></div><div class="ttdeci">void onConnect(const std::function&lt; void(const SocketAddress &amp;, const SocketAddress &amp;)&gt; &amp;onConnect)</div><div class="ttdef"><b>Definition:</b> <a href="_web_app_t_8h_source.html#l00086">WebAppT.h:86</a></div></div>
+<div class="ttc" id="aclassexpress_1_1_web_app_t_html_adc848f02d1e9d961262676ab0d97f3f1"><div class="ttname"><a href="classexpress_1_1_web_app_t.html#adc848f02d1e9d961262676ab0d97f3f1">express::WebAppT::onDisconnect</a></div><div class="ttdeci">void onDisconnect(const std::function&lt; void(SocketConnection *)&gt; &amp;onDisconnect)</div><div class="ttdef"><b>Definition:</b> <a href="_web_app_t_8h_source.html#l00094">WebAppT.h:94</a></div></div>
 <div class="ttc" id="anamespaceexpress_1_1middleware_html_a2fb128871e11fe983884f466d01bee94"><div class="ttname"><a href="namespaceexpress_1_1middleware.html#a2fb128871e11fe983884f466d01bee94">express::middleware::StaticMiddleware</a></div><div class="ttdeci">class StaticMiddleware &amp; StaticMiddleware(const std::string &amp;root)</div><div class="ttdef"><b>Definition:</b> <a href="_static_middleware_8cpp_source.html#l00123">StaticMiddleware.cpp:123</a></div></div>
 <div class="ttc" id="anamespaceexpress_html"><div class="ttname"><a href="namespaceexpress.html">express</a></div><div class="ttdef"><b>Definition:</b> <a href="legacy_2_web_app_8h_source.html#l00029">WebApp.h:29</a></div></div>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md16"></a>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['clientcontext_1465',['ClientContext',['../classhttp_1_1client_1_1_request.html#afedf4d3df7efe896ca80fef22e608acb',1,'http::client::Request::ClientContext()'],['../classhttp_1_1client_1_1_response.html#afedf4d3df7efe896ca80fef22e608acb',1,'http::client::Response::ClientContext()']]]
+  ['applicationdispatcher_1473',['ApplicationDispatcher',['../classexpress_1_1_router_dispatcher.html#a591796081407ac28747598c15ccaa2e8',1,'express::RouterDispatcher']]]
 ];

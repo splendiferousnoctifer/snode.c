@@ -99,9 +99,11 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexpress_1_1_next.html">express::Next</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexpress_1_1_state.html">express::State</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structexpress_1_1_mount_point.html">express::MountPoint</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexpress_1_1_dispatcher.html">express::Dispatcher</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexpress_1_1_router_dispatcher.html">express::RouterDispatcher</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexpress_1_1_router.html">express::Router</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -117,8 +119,8 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ac5313b926a3bc0fb106bffb31e93dc71"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_router_8h.html#ac5313b926a3bc0fb106bffb31e93dc71">MIDDLEWARE</a>(req,  res,  next)&#160;&#160;&#160;    ([[maybe_unused]] <a class="el" href="classexpress_1_1_request.html">express::Request</a> &amp; (req), [[maybe_unused]] <a class="el" href="classexpress_1_1_response.html">express::Response</a> &amp; (res), [[maybe_unused]] <a class="el" href="classexpress_1_1_next.html">express::Next</a> &amp; (next))</td></tr>
-<tr class="separator:ac5313b926a3bc0fb106bffb31e93dc71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fb8cad4811ee65bbc506924eed813df"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_router_8h.html#a2fb8cad4811ee65bbc506924eed813df">MIDDLEWARE</a>(req,  res,  state)&#160;&#160;&#160;    ([[maybe_unused]] <a class="el" href="classexpress_1_1_request.html">express::Request</a> &amp; (req), [[maybe_unused]] <a class="el" href="classexpress_1_1_response.html">express::Response</a> &amp; (res), [[maybe_unused]] <a class="el" href="classexpress_1_1_state.html">express::State</a> &amp; (state))</td></tr>
+<tr class="separator:a2fb8cad4811ee65bbc506924eed813df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b7131df91fe7a961e2cdadcedb55232"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_router_8h.html#a8b7131df91fe7a961e2cdadcedb55232">APPLICATION</a>(req,  res)&#160;&#160;&#160;([[maybe_unused]] <a class="el" href="classexpress_1_1_request.html">express::Request</a> &amp; (req), [[maybe_unused]] <a class="el" href="classexpress_1_1_response.html">express::Response</a> &amp; (res))</td></tr>
 <tr class="separator:a8b7131df91fe7a961e2cdadcedb55232"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4cc6e59e2a3c0470e2e7d4b3666ec847"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_router_8h.html#a4cc6e59e2a3c0470e2e7d4b3666ec847">DECLARE_REQUESTMETHOD</a>(METHOD)</td></tr>
@@ -151,7 +153,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_router_8h_source.html#l00034">34</a> of file <a class="el" href="_router_8h_source.html">Router.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_router_8h_source.html#l00035">35</a> of file <a class="el" href="_router_8h_source.html">Router.h</a>.</p>
 
 </div>
 </div>
@@ -170,20 +172,20 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    Router&amp; METHOD(<span class="keyword">const</span> std::string&amp; path, <span class="keyword">const</span> std::function&lt;<span class="keywordtype">void</span>(Request &amp; req, Response &amp; res)&gt;&amp; dispatcher);                         \</div>
-<div class="line">    Router&amp; METHOD(<span class="keyword">const</span> std::function&lt;<span class="keywordtype">void</span>(Request &amp; req, Response &amp; res)&gt;&amp; dispatcher);                                                  \</div>
+<b>Value:</b><div class="fragment"><div class="line">    Router&amp; METHOD(<span class="keyword">const</span> std::string&amp; path, <span class="keyword">const</span> std::function&lt;<span class="keywordtype">void</span>(Request &amp; req, Response &amp; res)&gt;&amp; lambda);                             \</div>
+<div class="line">    Router&amp; METHOD(<span class="keyword">const</span> std::function&lt;<span class="keywordtype">void</span>(Request &amp; req, Response &amp; res)&gt;&amp; lambda);                                                      \</div>
 <div class="line">    Router&amp; METHOD(<span class="keyword">const</span> std::string&amp; path, <span class="keyword">const</span> Router&amp; router);                                                                         \</div>
 <div class="line">    Router&amp; METHOD(<span class="keyword">const</span> Router&amp; router);                                                                                                  \</div>
-<div class="line">    Router&amp; METHOD(<span class="keyword">const</span> std::string&amp; path, <span class="keyword">const</span> std::function&lt;<span class="keywordtype">void</span>(Request &amp; req, Response &amp; res, <a class="code" href="classexpress_1_1_next.html">express::Next</a> &amp; next)&gt;&amp; dispatcher);   \</div>
-<div class="line">    Router&amp; METHOD(<span class="keyword">const</span> std::function&lt;<span class="keywordtype">void</span>(Request &amp; req, Response &amp; res, <a class="code" href="classexpress_1_1_next.html">express::Next</a> &amp; next)&gt;&amp; dispatcher);</div>
-<div class="ttc" id="aclassexpress_1_1_next_html"><div class="ttname"><a href="classexpress_1_1_next.html">express::Next</a></div><div class="ttdef"><b>Definition:</b> <a href="_router_8h_source.html#l00046">Router.h:46</a></div></div>
+<div class="line">    Router&amp; METHOD(<span class="keyword">const</span> std::string&amp; path, <span class="keyword">const</span> std::function&lt;<span class="keywordtype">void</span>(Request &amp; req, Response &amp; res, <a class="code" href="classexpress_1_1_state.html">express::State</a> &amp; state)&gt;&amp; lambda);     \</div>
+<div class="line">    Router&amp; METHOD(<span class="keyword">const</span> std::function&lt;<span class="keywordtype">void</span>(Request &amp; req, Response &amp; res, <a class="code" href="classexpress_1_1_state.html">express::State</a> &amp; state)&gt;&amp; lambda);</div>
+<div class="ttc" id="aclassexpress_1_1_state_html"><div class="ttname"><a href="classexpress_1_1_state.html">express::State</a></div><div class="ttdef"><b>Definition:</b> <a href="_router_8h_source.html#l00049">Router.h:49</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="_router_8h_source.html#l00078">78</a> of file <a class="el" href="_router_8h_source.html">Router.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_router_8h_source.html#l00126">126</a> of file <a class="el" href="_router_8h_source.html">Router.h</a>.</p>
 
 </div>
 </div>
-<a id="ac5313b926a3bc0fb106bffb31e93dc71"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac5313b926a3bc0fb106bffb31e93dc71">&#9670;&nbsp;</a></span>MIDDLEWARE</h2>
+<a id="a2fb8cad4811ee65bbc506924eed813df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fb8cad4811ee65bbc506924eed813df">&#9670;&nbsp;</a></span>MIDDLEWARE</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -204,17 +206,17 @@ Macros</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">next&#160;</td>
+          <td class="paramname">state&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;    ([[maybe_unused]] <a class="el" href="classexpress_1_1_request.html">express::Request</a> &amp; (req), [[maybe_unused]] <a class="el" href="classexpress_1_1_response.html">express::Response</a> &amp; (res), [[maybe_unused]] <a class="el" href="classexpress_1_1_next.html">express::Next</a> &amp; (next))</td>
+          <td></td><td>&#160;&#160;&#160;    ([[maybe_unused]] <a class="el" href="classexpress_1_1_request.html">express::Request</a> &amp; (req), [[maybe_unused]] <a class="el" href="classexpress_1_1_response.html">express::Response</a> &amp; (res), [[maybe_unused]] <a class="el" href="classexpress_1_1_state.html">express::State</a> &amp; (state))</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_router_8h_source.html#l00031">31</a> of file <a class="el" href="_router_8h_source.html">Router.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_router_8h_source.html#l00032">32</a> of file <a class="el" href="_router_8h_source.html">Router.h</a>.</p>
 
 </div>
 </div>

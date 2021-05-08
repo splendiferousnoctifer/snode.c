@@ -105,11 +105,9 @@ Include dependency graph for Router.cpp:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexpress_1_1_dispatcher.html">express::Dispatcher</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structexpress_1_1_mount_point.html">express::MountPoint</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexpress_1_1_route.html">express::Route</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexpress_1_1_router_dispatcher.html">express::RouterDispatcher</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexpress_1_1_middleware_dispatcher.html">express::MiddlewareDispatcher</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -179,31 +177,35 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    Router&amp; Router::METHOD(<span class="keyword">const</span> std::string&amp; path, <span class="keyword">const</span> Router&amp; router) {                                                                \</div>
-<div class="line">        routerDispatcher-&gt;routes.emplace_back(Route(<span class="keyword">this</span>, HTTP_METHOD, path, router.routerDispatcher));                                    \</div>
+<div class="line">        routerDispatcher-&gt;routes.emplace_back(Route(routerDispatcher.get(), HTTP_METHOD, path, router.routerDispatcher));                  \</div>
 <div class="line">        return *<span class="keyword">this</span>;                                                                                                                      \</div>
 <div class="line">    }                                                                                                                                      \</div>
 <div class="line">    Router&amp; Router::METHOD(<span class="keyword">const</span> Router&amp; router) {                                                                                         \</div>
-<div class="line">        routerDispatcher-&gt;routes.emplace_back(Route(<span class="keyword">this</span>, HTTP_METHOD, <span class="stringliteral">&quot;&quot;</span>, router.routerDispatcher));                                      \</div>
+<div class="line">        routerDispatcher-&gt;routes.emplace_back(Route(routerDispatcher.get(), HTTP_METHOD, <span class="stringliteral">&quot;&quot;</span>, router.routerDispatcher));                    \</div>
 <div class="line">        return *<span class="keyword">this</span>;                                                                                                                      \</div>
 <div class="line">    }                                                                                                                                      \</div>
-<div class="line">    Router&amp; Router::METHOD(<span class="keyword">const</span> std::string&amp; path, <span class="keyword">const</span> std::function&lt;<span class="keywordtype">void</span>(Request &amp; req, Response &amp; res, Next &amp; next)&gt;&amp; dispatcher) {   \</div>
-<div class="line">        routerDispatcher-&gt;routes.emplace_back(Route(<span class="keyword">this</span>, HTTP_METHOD, path, std::make_shared&lt;MiddlewareDispatcher&gt;(dispatcher)));         \</div>
+<div class="line">    Router&amp; Router::METHOD(<span class="keyword">const</span> std::string&amp; path, <span class="keyword">const</span> std::function&lt;<span class="keywordtype">void</span>(Request &amp; req, Response &amp; res, State &amp; state)&gt;&amp; lambda) {     \</div>
+<div class="line">        routerDispatcher-&gt;routes.emplace_back(                                                                                             \</div>
+<div class="line">            Route(routerDispatcher.get(), HTTP_METHOD, path, std::make_shared&lt;MiddlewareDispatcher&gt;(lambda)));                             \</div>
 <div class="line">        return *<span class="keyword">this</span>;                                                                                                                      \</div>
 <div class="line">    }                                                                                                                                      \</div>
-<div class="line">    Router&amp; Router::METHOD(<span class="keyword">const</span> std::function&lt;<span class="keywordtype">void</span>(Request &amp; req, Response &amp; res, Next &amp; next)&gt;&amp; dispatcher) {                            \</div>
-<div class="line">        routerDispatcher-&gt;routes.emplace_back(Route(<span class="keyword">this</span>, HTTP_METHOD, <span class="stringliteral">&quot;&quot;</span>, std::make_shared&lt;MiddlewareDispatcher&gt;(dispatcher)));           \</div>
+<div class="line">    Router&amp; Router::METHOD(<span class="keyword">const</span> std::function&lt;<span class="keywordtype">void</span>(Request &amp; req, Response &amp; res, State &amp; state)&gt;&amp; lambda) {                              \</div>
+<div class="line">        routerDispatcher-&gt;routes.emplace_back(                                                                                             \</div>
+<div class="line">            Route(routerDispatcher.get(), HTTP_METHOD, <span class="stringliteral">&quot;&quot;</span>, std::make_shared&lt;MiddlewareDispatcher&gt;(lambda)));                               \</div>
 <div class="line">        return *<span class="keyword">this</span>;                                                                                                                      \</div>
 <div class="line">    }                                                                                                                                      \</div>
-<div class="line">    Router&amp; Router::METHOD(<span class="keyword">const</span> std::string&amp; path, <span class="keyword">const</span> std::function&lt;<span class="keywordtype">void</span>(Request &amp; req, Response &amp; res)&gt;&amp; dispatcher) {                \</div>
-<div class="line">        routerDispatcher-&gt;routes.emplace_back(Route(<span class="keyword">this</span>, HTTP_METHOD, path, std::make_shared&lt;ApplicationDispatcher&gt;(dispatcher)));        \</div>
+<div class="line">    Router&amp; Router::METHOD(<span class="keyword">const</span> std::string&amp; path, <span class="keyword">const</span> std::function&lt;<span class="keywordtype">void</span>(Request &amp; req, Response &amp; res)&gt;&amp; lambda) {                    \</div>
+<div class="line">        routerDispatcher-&gt;routes.emplace_back(                                                                                             \</div>
+<div class="line">            Route(routerDispatcher.get(), HTTP_METHOD, path, std::make_shared&lt;ApplicationDispatcher&gt;(lambda)));                            \</div>
 <div class="line">        return *<span class="keyword">this</span>;                                                                                                                      \</div>
 <div class="line">    }                                                                                                                                      \</div>
-<div class="line">    Router&amp; Router::METHOD(<span class="keyword">const</span> std::function&lt;<span class="keywordtype">void</span>(Request &amp; req, Response &amp; res)&gt;&amp; dispatcher) {                                         \</div>
-<div class="line">        routerDispatcher-&gt;routes.emplace_back(Route(<span class="keyword">this</span>, HTTP_METHOD, <span class="stringliteral">&quot;&quot;</span>, std::make_shared&lt;ApplicationDispatcher&gt;(dispatcher)));          \</div>
+<div class="line">    Router&amp; Router::METHOD(<span class="keyword">const</span> std::function&lt;<span class="keywordtype">void</span>(Request &amp; req, Response &amp; res)&gt;&amp; lambda) {                                             \</div>
+<div class="line">        routerDispatcher-&gt;routes.emplace_back(                                                                                             \</div>
+<div class="line">            Route(routerDispatcher.get(), HTTP_METHOD, <span class="stringliteral">&quot;&quot;</span>, std::make_shared&lt;ApplicationDispatcher&gt;(lambda)));                              \</div>
 <div class="line">        return *<span class="keyword">this</span>;                                                                                                                      \</div>
 <div class="line">    }</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="_router_8cpp_source.html#l00292">292</a> of file <a class="el" href="_router_8cpp_source.html">Router.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_router_8cpp_source.html#l00302">302</a> of file <a class="el" href="_router_8cpp_source.html">Router.cpp</a>.</p>
 
 </div>
 </div>

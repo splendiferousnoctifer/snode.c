@@ -83,20 +83,26 @@ $(document).ready(function(){initNavTree('classexpress_1_1_dispatcher.html','');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="classexpress_1_1_dispatcher-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">express::Dispatcher Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_router_8h_source.html">Router.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for express::Dispatcher:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classexpress_1_1_dispatcher__inherit__graph.svg" width="646" height="287"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classexpress_1_1_dispatcher__inherit__graph.svg" width="646" height="360"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <div class="dynheader">
 Collaboration diagram for express::Dispatcher:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classexpress_1_1_dispatcher__coll__graph.svg" width="150" height="147"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classexpress_1_1_dispatcher__coll__graph.svg" width="150" height="147"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -109,12 +115,20 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad8a0ae846e70c483c3041af51d12467e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5173478a6d9ab11aa191ebc98d3e4f07"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexpress_1_1_dispatcher.html#a5173478a6d9ab11aa191ebc98d3e4f07">~Dispatcher</a> ()=default</td></tr>
 <tr class="separator:a5173478a6d9ab11aa191ebc98d3e4f07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38d26fa22f71ea77d858f3630d52e367"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classexpress_1_1_next.html">Next</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexpress_1_1_dispatcher.html#a38d26fa22f71ea77d858f3630d52e367">dispatch</a> (const <a class="el" href="structexpress_1_1_mount_point.html">MountPoint</a> &amp;mountPoint, const std::string &amp;parentPath, <a class="el" href="classexpress_1_1_request.html">Request</a> &amp;req, <a class="el" href="classexpress_1_1_response.html">Response</a> &amp;res) const =0</td></tr>
-<tr class="separator:a38d26fa22f71ea77d858f3630d52e367"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a479a48d833addb7bba51a8d102aac55b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexpress_1_1_dispatcher.html#a479a48d833addb7bba51a8d102aac55b">dispatch</a> (const <a class="el" href="classexpress_1_1_router_dispatcher.html">RouterDispatcher</a> *parentRouter, const std::string &amp;parentPath, const <a class="el" href="structexpress_1_1_mount_point.html">MountPoint</a> &amp;mountPoint, <a class="el" href="classexpress_1_1_request.html">Request</a> &amp;req, <a class="el" href="classexpress_1_1_response.html">Response</a> &amp;res) const =0</td></tr>
+<tr class="separator:a479a48d833addb7bba51a8d102aac55b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a82eb8d8152124f42f8bad8770270f4fc"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexpress_1_1_dispatcher.html#a82eb8d8152124f42f8bad8770270f4fc">Route</a></td></tr>
+<tr class="separator:a82eb8d8152124f42f8bad8770270f4fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_router_8cpp_source.html#l00147">147</a> of file <a class="el" href="_router_8cpp_source.html">Router.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_router_8h_source.html#l00066">66</a> of file <a class="el" href="_router_8h_source.html">Router.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a89a9c2c542ff67ba024cbdf11b7a6765"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a89a9c2c542ff67ba024cbdf11b7a6765">&#9670;&nbsp;</a></span>Dispatcher() <span class="overload">[1/2]</span></h2>
@@ -193,8 +207,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a38d26fa22f71ea77d858f3630d52e367"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a38d26fa22f71ea77d858f3630d52e367">&#9670;&nbsp;</a></span>dispatch()</h2>
+<a id="a479a48d833addb7bba51a8d102aac55b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a479a48d833addb7bba51a8d102aac55b">&#9670;&nbsp;</a></span>dispatch()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -203,16 +217,22 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classexpress_1_1_next.html">Next</a> express::Dispatcher::dispatch </td>
+          <td class="memname">virtual void express::Dispatcher::dispatch </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structexpress_1_1_mount_point.html">MountPoint</a> &amp;&#160;</td>
-          <td class="paramname"><em>mountPoint</em>, </td>
+          <td class="paramtype">const <a class="el" href="classexpress_1_1_router_dispatcher.html">RouterDispatcher</a> *&#160;</td>
+          <td class="paramname"><em>parentRouter</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>parentPath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structexpress_1_1_mount_point.html">MountPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>mountPoint</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -234,12 +254,12 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classexpress_1_1_application_dispatcher.html#a69cd0ad5c161f8268f97f0a0a8767916">express::ApplicationDispatcher</a>, <a class="el" href="classexpress_1_1_middleware_dispatcher.html#a45851fd5c2425bf9e2fb56a1e8e63d77">express::MiddlewareDispatcher</a>, and <a class="el" href="classexpress_1_1_router_dispatcher.html#ae7d8d360fab557649d638154b4d842c1">express::RouterDispatcher</a>.</p>
+<p>Implemented in <a class="el" href="classexpress_1_1_router_dispatcher.html#a7f379c825b87616dff52a511d00b73ad">express::RouterDispatcher</a>, <a class="el" href="classexpress_1_1_application_dispatcher.html#af8f9a29b2582532d3885098eb7cf92ef">express::ApplicationDispatcher</a>, and <a class="el" href="classexpress_1_1_middleware_dispatcher.html#a071aa9771228514a9fbd12bd57629928">express::MiddlewareDispatcher</a>.</p>
 
 </div>
 </div>
@@ -269,8 +289,33 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a id="a82eb8d8152124f42f8bad8770270f4fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82eb8d8152124f42f8bad8770270f4fc">&#9670;&nbsp;</a></span>Route</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="classexpress_1_1_route.html">Route</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_router_8h_source.html#l00082">82</a> of file <a class="el" href="_router_8h_source.html">Router.h</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>express/<a class="el" href="_router_8cpp_source.html">Router.cpp</a></li>
+<li>express/<a class="el" href="_router_8h_source.html">Router.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

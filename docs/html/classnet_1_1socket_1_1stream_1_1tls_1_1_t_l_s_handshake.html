@@ -245,13 +245,13 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                <span class="keyword">delete</span> <span class="keyword">this</span>;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_t_l_s_handshake.html#a0ad91c016e3217db03828d23a2b03ad1">onError</a>(-sslErr);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_t_l_s_handshake.html#a0ad91c016e3217db03828d23a2b03ad1">onError</a>(sslErr);</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                <span class="keyword">delete</span> <span class="keyword">this</span>;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        }</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
 <div class="ttc" id="a_t_l_s_handshake_8cpp_html_afcaf84902bf13f4d3c4ed4ddbc7896ba"><div class="ttname"><a href="_t_l_s_handshake_8cpp.html#afcaf84902bf13f4d3c4ed4ddbc7896ba">TLSHANDSHAKE_TIMEOUT</a></div><div class="ttdeci">#define TLSHANDSHAKE_TIMEOUT</div><div class="ttdef"><b>Definition:</b> <a href="_t_l_s_handshake_8cpp_source.html#l00029">TLSHandshake.cpp:29</a></div></div>
-<div class="ttc" id="aclassnet_1_1_descriptor_event_receiver_html_a60717df80503a37fd4d3e7ce8dc3777d"><div class="ttname"><a href="classnet_1_1_descriptor_event_receiver.html#a60717df80503a37fd4d3e7ce8dc3777d">net::DescriptorEventReceiver::enable</a></div><div class="ttdeci">void enable(int fd)</div><div class="ttdef"><b>Definition:</b> <a href="_descriptor_event_receiver_8cpp_source.html#l00034">DescriptorEventReceiver.cpp:34</a></div></div>
+<div class="ttc" id="aclassnet_1_1_descriptor_event_receiver_html_a60717df80503a37fd4d3e7ce8dc3777d"><div class="ttname"><a href="classnet_1_1_descriptor_event_receiver.html#a60717df80503a37fd4d3e7ce8dc3777d">net::DescriptorEventReceiver::enable</a></div><div class="ttdeci">void enable(int fd)</div><div class="ttdef"><b>Definition:</b> <a href="_descriptor_event_receiver_8cpp_source.html#l00035">DescriptorEventReceiver.cpp:35</a></div></div>
 <div class="ttc" id="aclassnet_1_1_read_event_receiver_html_ac3430850652909b88fa07718eebd31cb"><div class="ttname"><a href="classnet_1_1_read_event_receiver.html#ac3430850652909b88fa07718eebd31cb">net::ReadEventReceiver::ReadEventReceiver</a></div><div class="ttdeci">ReadEventReceiver(long timeout=60)</div><div class="ttdef"><b>Definition:</b> <a href="_read_event_receiver_8cpp_source.html#l00029">ReadEventReceiver.cpp:29</a></div></div>
 <div class="ttc" id="aclassnet_1_1_write_event_receiver_html_a52cad4b280f3ff3655c91e99f34a6845"><div class="ttname"><a href="classnet_1_1_write_event_receiver.html#a52cad4b280f3ff3655c91e99f34a6845">net::WriteEventReceiver::WriteEventReceiver</a></div><div class="ttdeci">WriteEventReceiver(long timeout=60)</div><div class="ttdef"><b>Definition:</b> <a href="_write_event_receiver_8cpp_source.html#l00029">WriteEventReceiver.cpp:29</a></div></div>
 <div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1tls_1_1_t_l_s_handshake_html_a08c8575beeb0a9fbe2a0b27a734d049c"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1tls_1_1_t_l_s_handshake.html#a08c8575beeb0a9fbe2a0b27a734d049c">net::socket::stream::tls::TLSHandshake::onSuccess</a></div><div class="ttdeci">std::function&lt; void(void)&gt; onSuccess</div><div class="ttdef"><b>Definition:</b> <a href="_t_l_s_handshake_8h_source.html#l00055">TLSHandshake.h:55</a></div></div>
@@ -260,7 +260,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1tls_1_1_t_l_s_handshake_html_a67dacd112df3d2aa243958e1264cbaee"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1tls_1_1_t_l_s_handshake.html#a67dacd112df3d2aa243958e1264cbaee">net::socket::stream::tls::TLSHandshake::ssl</a></div><div class="ttdeci">SSL * ssl</div><div class="ttdef"><b>Definition:</b> <a href="_t_l_s_handshake_8h_source.html#l00054">TLSHandshake.h:54</a></div></div>
 <div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1tls_1_1_t_l_s_handshake_html_ad311e321b6f640aaf65deb1c5e86ebe5"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1tls_1_1_t_l_s_handshake.html#ad311e321b6f640aaf65deb1c5e86ebe5">net::socket::stream::tls::TLSHandshake::onTimeout</a></div><div class="ttdeci">std::function&lt; void(void)&gt; onTimeout</div><div class="ttdef"><b>Definition:</b> <a href="_t_l_s_handshake_8h_source.html#l00056">TLSHandshake.h:56</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_descriptor_event_receiver_8cpp_source.html#l00034">net::DescriptorEventReceiver::enable()</a>, <a class="el" href="_t_l_s_handshake_8h_source.html#l00059">fd</a>, <a class="el" href="_t_l_s_handshake_8h_source.html#l00057">onError</a>, <a class="el" href="_t_l_s_handshake_8h_source.html#l00055">onSuccess</a>, and <a class="el" href="_t_l_s_handshake_8h_source.html#l00054">ssl</a>.</p>
+<p class="reference">References <a class="el" href="_descriptor_event_receiver_8cpp_source.html#l00035">net::DescriptorEventReceiver::enable()</a>, <a class="el" href="_t_l_s_handshake_8h_source.html#l00059">fd</a>, <a class="el" href="_t_l_s_handshake_8h_source.html#l00057">onError</a>, <a class="el" href="_t_l_s_handshake_8h_source.html#l00055">onSuccess</a>, and <a class="el" href="_t_l_s_handshake_8h_source.html#l00054">ssl</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_t_l_s_handshake_8cpp_source.html#l00120">doHandshake()</a>.</p>
 <div class="dynheader">
@@ -271,7 +271,8 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1tls_1_1_t_l_s_handshake_ad0daae6842f143fcf3d1a7c6d667a160_icgraph.svg" width="752" height="147"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1tls_1_1_t_l_s_handshake_ad0daae6842f143fcf3d1a7c6d667a160_icgraph.svg" width="752" height="147"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
@@ -331,7 +332,7 @@ Here is the caller graph for this function:</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="_t_l_s_handshake_8h_source.html#l00057">onError</a>, <a class="el" href="_t_l_s_handshake_8h_source.html#l00055">onSuccess</a>, <a class="el" href="_t_l_s_handshake_8h_source.html#l00056">onTimeout</a>, <a class="el" href="_t_l_s_handshake_8h_source.html#l00054">ssl</a>, and <a class="el" href="_t_l_s_handshake_8cpp_source.html#l00033">TLSHandshake()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="tls_2_socket_connection_8h_source.html#l00092">net::socket::stream::tls::SocketConnection&lt; SocketT &gt;::doSSLHandshake()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="tls_2_socket_connection_8h_source.html#l00093">net::socket::stream::tls::SocketConnection&lt; SocketT &gt;::doSSLHandshake()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -340,7 +341,8 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1tls_1_1_t_l_s_handshake_a2c4876e61d8860846d4caa2195e46231_icgraph.svg" width="562" height="147"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1tls_1_1_t_l_s_handshake_a2c4876e61d8860846d4caa2195e46231_icgraph.svg" width="562" height="147"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
@@ -388,13 +390,13 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <span class="keywordflow">default</span>:</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                <a class="code" href="classnet_1_1_descriptor_event_receiver.html#a71d48a9e0030918589d901b834e07327">ReadEventReceiver::disable</a>();</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_t_l_s_handshake.html#a0ad91c016e3217db03828d23a2b03ad1">onError</a>(-sslErr);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_t_l_s_handshake.html#a0ad91c016e3217db03828d23a2b03ad1">onError</a>(sslErr);</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        }</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    }</div>
-<div class="ttc" id="aclassnet_1_1_descriptor_event_receiver_html_a71d48a9e0030918589d901b834e07327"><div class="ttname"><a href="classnet_1_1_descriptor_event_receiver.html#a71d48a9e0030918589d901b834e07327">net::DescriptorEventReceiver::disable</a></div><div class="ttdeci">void disable()</div><div class="ttdef"><b>Definition:</b> <a href="_descriptor_event_receiver_8cpp_source.html#l00039">DescriptorEventReceiver.cpp:39</a></div></div>
+<div class="ttc" id="aclassnet_1_1_descriptor_event_receiver_html_a71d48a9e0030918589d901b834e07327"><div class="ttname"><a href="classnet_1_1_descriptor_event_receiver.html#a71d48a9e0030918589d901b834e07327">net::DescriptorEventReceiver::disable</a></div><div class="ttdeci">void disable()</div><div class="ttdef"><b>Definition:</b> <a href="_descriptor_event_receiver_8cpp_source.html#l00040">DescriptorEventReceiver.cpp:40</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_descriptor_event_receiver_8cpp_source.html#l00039">net::DescriptorEventReceiver::disable()</a>, <a class="el" href="_descriptor_event_receiver_8cpp_source.html#l00034">net::DescriptorEventReceiver::enable()</a>, <a class="el" href="_t_l_s_handshake_8h_source.html#l00059">fd</a>, <a class="el" href="_t_l_s_handshake_8h_source.html#l00057">onError</a>, <a class="el" href="_t_l_s_handshake_8h_source.html#l00055">onSuccess</a>, and <a class="el" href="_t_l_s_handshake_8h_source.html#l00054">ssl</a>.</p>
+<p class="reference">References <a class="el" href="_descriptor_event_receiver_8cpp_source.html#l00040">net::DescriptorEventReceiver::disable()</a>, <a class="el" href="_descriptor_event_receiver_8cpp_source.html#l00035">net::DescriptorEventReceiver::enable()</a>, <a class="el" href="_t_l_s_handshake_8h_source.html#l00059">fd</a>, <a class="el" href="_t_l_s_handshake_8h_source.html#l00057">onError</a>, <a class="el" href="_t_l_s_handshake_8h_source.html#l00055">onSuccess</a>, and <a class="el" href="_t_l_s_handshake_8h_source.html#l00054">ssl</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -434,9 +436,9 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <a class="code" href="classnet_1_1_descriptor_event_receiver.html#a582c1dc64913a0b118befb4c272cb460">WriteEventReceiver::suspend</a>();</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_t_l_s_handshake.html#ad311e321b6f640aaf65deb1c5e86ebe5">onTimeout</a>();</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    }</div>
-<div class="ttc" id="aclassnet_1_1_descriptor_event_receiver_html_a582c1dc64913a0b118befb4c272cb460"><div class="ttname"><a href="classnet_1_1_descriptor_event_receiver.html#a582c1dc64913a0b118befb4c272cb460">net::DescriptorEventReceiver::suspend</a></div><div class="ttdeci">void suspend()</div><div class="ttdef"><b>Definition:</b> <a href="_descriptor_event_receiver_8cpp_source.html#l00043">DescriptorEventReceiver.cpp:43</a></div></div>
+<div class="ttc" id="aclassnet_1_1_descriptor_event_receiver_html_a582c1dc64913a0b118befb4c272cb460"><div class="ttname"><a href="classnet_1_1_descriptor_event_receiver.html#a582c1dc64913a0b118befb4c272cb460">net::DescriptorEventReceiver::suspend</a></div><div class="ttdeci">void suspend()</div><div class="ttdef"><b>Definition:</b> <a href="_descriptor_event_receiver_8cpp_source.html#l00044">DescriptorEventReceiver.cpp:44</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_t_l_s_handshake_8h_source.html#l00056">onTimeout</a>, and <a class="el" href="_descriptor_event_receiver_8cpp_source.html#l00043">net::DescriptorEventReceiver::suspend()</a>.</p>
+<p class="reference">References <a class="el" href="_t_l_s_handshake_8h_source.html#l00056">onTimeout</a>, and <a class="el" href="_descriptor_event_receiver_8cpp_source.html#l00044">net::DescriptorEventReceiver::suspend()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -520,12 +522,12 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <span class="keywordflow">default</span>:</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                <a class="code" href="classnet_1_1_descriptor_event_receiver.html#a71d48a9e0030918589d901b834e07327">WriteEventReceiver::disable</a>();</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_t_l_s_handshake.html#a0ad91c016e3217db03828d23a2b03ad1">onError</a>(-sslErr);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_t_l_s_handshake.html#a0ad91c016e3217db03828d23a2b03ad1">onError</a>(sslErr);</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        }</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_descriptor_event_receiver_8cpp_source.html#l00039">net::DescriptorEventReceiver::disable()</a>, <a class="el" href="_descriptor_event_receiver_8cpp_source.html#l00034">net::DescriptorEventReceiver::enable()</a>, <a class="el" href="_t_l_s_handshake_8h_source.html#l00059">fd</a>, <a class="el" href="_t_l_s_handshake_8h_source.html#l00057">onError</a>, <a class="el" href="_t_l_s_handshake_8h_source.html#l00055">onSuccess</a>, and <a class="el" href="_t_l_s_handshake_8h_source.html#l00054">ssl</a>.</p>
+<p class="reference">References <a class="el" href="_descriptor_event_receiver_8cpp_source.html#l00040">net::DescriptorEventReceiver::disable()</a>, <a class="el" href="_descriptor_event_receiver_8cpp_source.html#l00035">net::DescriptorEventReceiver::enable()</a>, <a class="el" href="_t_l_s_handshake_8h_source.html#l00059">fd</a>, <a class="el" href="_t_l_s_handshake_8h_source.html#l00057">onError</a>, <a class="el" href="_t_l_s_handshake_8h_source.html#l00055">onSuccess</a>, and <a class="el" href="_t_l_s_handshake_8h_source.html#l00054">ssl</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">

@@ -83,6 +83,7 @@ $(document).ready(function(){initNavTree('classexpress_1_1_router_dispatcher.htm
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classexpress_1_1_router_dispatcher-members.html">List of all members</a>  </div>
@@ -90,23 +91,25 @@ $(document).ready(function(){initNavTree('classexpress_1_1_router_dispatcher.htm
 <div class="title">express::RouterDispatcher Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_router_8h_source.html">Router.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for express::RouterDispatcher:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classexpress_1_1_router_dispatcher__inherit__graph.svg" width="190" height="287"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classexpress_1_1_router_dispatcher__inherit__graph.svg" width="190" height="360"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <div class="dynheader">
 Collaboration diagram for express::RouterDispatcher:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classexpress_1_1_router_dispatcher__coll__graph.svg" width="190" height="287"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classexpress_1_1_router_dispatcher__coll__graph.svg" width="288" height="360"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a987916dc4424a3e5589db8b09ad08c75"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexpress_1_1_router_dispatcher.html#a987916dc4424a3e5589db8b09ad08c75">RouterDispatcher</a> ()=default</td></tr>
-<tr class="separator:a987916dc4424a3e5589db8b09ad08c75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7d8d360fab557649d638154b4d842c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classexpress_1_1_next.html">Next</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexpress_1_1_router_dispatcher.html#ae7d8d360fab557649d638154b4d842c1">dispatch</a> (const <a class="el" href="structexpress_1_1_mount_point.html">MountPoint</a> &amp;mountPoint, const std::string &amp;parentPath, <a class="el" href="classexpress_1_1_request.html">Request</a> &amp;req, <a class="el" href="classexpress_1_1_response.html">Response</a> &amp;res) const override</td></tr>
-<tr class="separator:ae7d8d360fab557649d638154b4d842c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22c891e3bad167739520868866fb101d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexpress_1_1_router_dispatcher.html#a22c891e3bad167739520868866fb101d">dispatch</a> (<a class="el" href="classexpress_1_1_request.html">Request</a> &amp;req, <a class="el" href="classexpress_1_1_response.html">Response</a> &amp;res) const</td></tr>
+<tr class="separator:a22c891e3bad167739520868866fb101d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classexpress_1_1_dispatcher"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classexpress_1_1_dispatcher')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classexpress_1_1_dispatcher.html">express::Dispatcher</a></td></tr>
 <tr class="memitem:a89a9c2c542ff67ba024cbdf11b7a6765 inherit pub_methods_classexpress_1_1_dispatcher"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexpress_1_1_dispatcher.html#a89a9c2c542ff67ba024cbdf11b7a6765">Dispatcher</a> ()=default</td></tr>
 <tr class="separator:a89a9c2c542ff67ba024cbdf11b7a6765 inherit pub_methods_classexpress_1_1_dispatcher"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -117,22 +120,41 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5173478a6d9ab11aa191ebc98d3e4f07 inherit pub_methods_classexpress_1_1_dispatcher"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexpress_1_1_dispatcher.html#a5173478a6d9ab11aa191ebc98d3e4f07">~Dispatcher</a> ()=default</td></tr>
 <tr class="separator:a5173478a6d9ab11aa191ebc98d3e4f07 inherit pub_methods_classexpress_1_1_dispatcher"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a7f379c825b87616dff52a511d00b73ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexpress_1_1_router_dispatcher.html#a7f379c825b87616dff52a511d00b73ad">dispatch</a> (const <a class="el" href="classexpress_1_1_router_dispatcher.html">RouterDispatcher</a> *parentRouter, const std::string &amp;parentPath, const <a class="el" href="structexpress_1_1_mount_point.html">MountPoint</a> &amp;mountPoint, <a class="el" href="classexpress_1_1_request.html">Request</a> &amp;req, <a class="el" href="classexpress_1_1_response.html">Response</a> &amp;res) const override</td></tr>
+<tr class="separator:a7f379c825b87616dff52a511d00b73ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad15fd47743900787fae26d37db51019d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexpress_1_1_router_dispatcher.html#ad15fd47743900787fae26d37db51019d">terminate</a> () const</td></tr>
+<tr class="separator:ad15fd47743900787fae26d37db51019d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b2cec7b9f9b804a76e977945fb1aa05"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classexpress_1_1_state.html">State</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexpress_1_1_router_dispatcher.html#a1b2cec7b9f9b804a76e977945fb1aa05">getState</a> () const</td></tr>
+<tr class="separator:a1b2cec7b9f9b804a76e977945fb1aa05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b1ab050fae51806d2f0d5bf4a89b5ca"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexpress_1_1_router_dispatcher.html#a5b1ab050fae51806d2f0d5bf4a89b5ca">proceed</a> () const</td></tr>
+<tr class="separator:a5b1ab050fae51806d2f0d5bf4a89b5ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a816eacb2656807eb1b8bb4d50aa41247"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexpress_1_1_router_dispatcher.html#a816eacb2656807eb1b8bb4d50aa41247">returnTo</a> (const <a class="el" href="classexpress_1_1_router_dispatcher.html">RouterDispatcher</a> *parentRouter) const</td></tr>
+<tr class="separator:a816eacb2656807eb1b8bb4d50aa41247"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:ab877547440f2a2d7953f8cae552a4fc1"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="classexpress_1_1_route.html">Route</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexpress_1_1_router_dispatcher.html#ab877547440f2a2d7953f8cae552a4fc1">routes</a></td></tr>
 <tr class="separator:ab877547440f2a2d7953f8cae552a4fc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a716ee15028f3d2c214434eeadbbe456a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classexpress_1_1_state.html">State</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexpress_1_1_router_dispatcher.html#a716ee15028f3d2c214434eeadbbe456a">state</a></td></tr>
+<tr class="separator:a716ee15028f3d2c214434eeadbbe456a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:ad1fd3424328f664cd049fe429e0e3dc6"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexpress_1_1_router_dispatcher.html#ad1fd3424328f664cd049fe429e0e3dc6">Router</a></td></tr>
 <tr class="separator:ad1fd3424328f664cd049fe429e0e3dc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a591796081407ac28747598c15ccaa2e8"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexpress_1_1_router_dispatcher.html#a591796081407ac28747598c15ccaa2e8">ApplicationDispatcher</a></td></tr>
+<tr class="separator:a591796081407ac28747598c15ccaa2e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af781a00450f59562b13c28efc99c9271"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexpress_1_1_router_dispatcher.html#af781a00450f59562b13c28efc99c9271">MiddlewareDispatcher</a></td></tr>
+<tr class="separator:af781a00450f59562b13c28efc99c9271"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_router_8cpp_source.html#l00175">175</a> of file <a class="el" href="_router_8cpp_source.html">Router.cpp</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a987916dc4424a3e5589db8b09ad08c75"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a987916dc4424a3e5589db8b09ad08c75">&#9670;&nbsp;</a></span>RouterDispatcher()</h2>
+<p class="definition">Definition at line <a class="el" href="_router_8h_source.html#l00087">87</a> of file <a class="el" href="_router_8h_source.html">Router.h</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a7f379c825b87616dff52a511d00b73ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f379c825b87616dff52a511d00b73ad">&#9670;&nbsp;</a></span>dispatch() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -141,42 +163,22 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">express::RouterDispatcher::RouterDispatcher </td>
+          <td class="memname">void express::RouterDispatcher::dispatch </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">explicit</span><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="ae7d8d360fab557649d638154b4d842c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae7d8d360fab557649d638154b4d842c1">&#9670;&nbsp;</a></span>dispatch()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classexpress_1_1_next.html">Next</a> express::RouterDispatcher::dispatch </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structexpress_1_1_mount_point.html">MountPoint</a> &amp;&#160;</td>
-          <td class="paramname"><em>mountPoint</em>, </td>
+          <td class="paramtype">const <a class="el" href="classexpress_1_1_router_dispatcher.html">RouterDispatcher</a> *&#160;</td>
+          <td class="paramname"><em>parentRouter</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>parentPath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structexpress_1_1_mount_point.html">MountPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>mountPoint</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -198,47 +200,299 @@ Friends</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classexpress_1_1_dispatcher.html#a38d26fa22f71ea77d858f3630d52e367">express::Dispatcher</a>.</p>
+<p>Implements <a class="el" href="classexpress_1_1_dispatcher.html#a479a48d833addb7bba51a8d102aac55b">express::Dispatcher</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_router_8cpp_source.html#l00215">215</a> of file <a class="el" href="_router_8cpp_source.html">Router.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;                                                                                                                                {</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        Next next;</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        std::string cpath = <a class="code" href="namespaceexpress.html#a8939ba82ab85b3acc2b653682ae5d386">path_concat</a>(parentPath, mountPoint.path);</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160; </div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        <span class="comment">// TODO: Fix regex-match</span></div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        <span class="keywordflow">if</span> ((req.path.rfind(cpath, 0) == 0 &amp;&amp;</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;             (mountPoint.method == <span class="stringliteral">&quot;use&quot;</span> || req.method == mountPoint.method || mountPoint.method == <span class="stringliteral">&quot;all&quot;</span>))) {</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;            <span class="keywordflow">for</span> (<span class="keyword">const</span> Route&amp; route : <a class="code" href="classexpress_1_1_router_dispatcher.html#ab877547440f2a2d7953f8cae552a4fc1">routes</a>) {</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                <span class="keywordflow">if</span> (next.next) {</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;                    next = route.dispatch(cpath, req, res);</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;                } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;                }</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;            }</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        }</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160; </div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        next.next |= next.nextRouter;</div>
+<p class="definition">Definition at line <a class="el" href="_router_8cpp_source.html#l00214">214</a> of file <a class="el" href="_router_8cpp_source.html">Router.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;                                                         {</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        std::string cpath = <a class="code" href="namespaceexpress.html#a8939ba82ab85b3acc2b653682ae5d386">path_concat</a>(parentPath, mountPoint.path);</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160; </div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        <span class="comment">// TODO: Fix regex-match</span></div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        <span class="keywordflow">if</span> ((req.path.rfind(cpath, 0) == 0 &amp;&amp;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;             (mountPoint.method == <span class="stringliteral">&quot;use&quot;</span> || req.method == mountPoint.method || mountPoint.method == <span class="stringliteral">&quot;all&quot;</span>))) {</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;            <span class="keywordflow">for</span> (<span class="keyword">const</span> <a class="code" href="classexpress_1_1_dispatcher.html#a82eb8d8152124f42f8bad8770270f4fc">Route</a>&amp; route : <a class="code" href="classexpress_1_1_router_dispatcher.html#ab877547440f2a2d7953f8cae552a4fc1">routes</a>) {</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;                route.dispatch(<span class="keyword">this</span>, cpath, req, res);</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160; </div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;                <span class="keywordflow">if</span> (!<a class="code" href="classexpress_1_1_router_dispatcher.html#a5b1ab050fae51806d2f0d5bf4a89b5ca">proceed</a>()) {</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                }</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;            }</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        }</div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160; </div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        <span class="keywordflow">return</span> next;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        <a class="code" href="classexpress_1_1_router_dispatcher.html#a816eacb2656807eb1b8bb4d50aa41247">returnTo</a>(parentRouter);</div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    }</div>
-<div class="ttc" id="aclassexpress_1_1_router_dispatcher_html_ab877547440f2a2d7953f8cae552a4fc1"><div class="ttname"><a href="classexpress_1_1_router_dispatcher.html#ab877547440f2a2d7953f8cae552a4fc1">express::RouterDispatcher::routes</a></div><div class="ttdeci">std::list&lt; Route &gt; routes</div><div class="ttdef"><b>Definition:</b> <a href="_router_8cpp_source.html#l00182">Router.cpp:182</a></div></div>
+<div class="ttc" id="aclassexpress_1_1_dispatcher_html_a82eb8d8152124f42f8bad8770270f4fc"><div class="ttname"><a href="classexpress_1_1_dispatcher.html#a82eb8d8152124f42f8bad8770270f4fc">express::Dispatcher::Route</a></div><div class="ttdeci">friend class Route</div><div class="ttdef"><b>Definition:</b> <a href="_router_8h_source.html#l00082">Router.h:82</a></div></div>
+<div class="ttc" id="aclassexpress_1_1_router_dispatcher_html_a5b1ab050fae51806d2f0d5bf4a89b5ca"><div class="ttname"><a href="classexpress_1_1_router_dispatcher.html#a5b1ab050fae51806d2f0d5bf4a89b5ca">express::RouterDispatcher::proceed</a></div><div class="ttdeci">bool proceed() const</div><div class="ttdef"><b>Definition:</b> <a href="_router_8h_source.html#l00106">Router.h:106</a></div></div>
+<div class="ttc" id="aclassexpress_1_1_router_dispatcher_html_a816eacb2656807eb1b8bb4d50aa41247"><div class="ttname"><a href="classexpress_1_1_router_dispatcher.html#a816eacb2656807eb1b8bb4d50aa41247">express::RouterDispatcher::returnTo</a></div><div class="ttdeci">void returnTo(const RouterDispatcher *parentRouter) const</div><div class="ttdef"><b>Definition:</b> <a href="_router_8cpp_source.html#l00240">Router.cpp:240</a></div></div>
+<div class="ttc" id="aclassexpress_1_1_router_dispatcher_html_ab877547440f2a2d7953f8cae552a4fc1"><div class="ttname"><a href="classexpress_1_1_router_dispatcher.html#ab877547440f2a2d7953f8cae552a4fc1">express::RouterDispatcher::routes</a></div><div class="ttdeci">std::list&lt; Route &gt; routes</div><div class="ttdef"><b>Definition:</b> <a href="_router_8h_source.html#l00112">Router.h:112</a></div></div>
 <div class="ttc" id="anamespaceexpress_html_a8939ba82ab85b3acc2b653682ae5d386"><div class="ttname"><a href="namespaceexpress.html#a8939ba82ab85b3acc2b653682ae5d386">express::path_concat</a></div><div class="ttdeci">static const std::string path_concat(const std::vector&lt; std::string &gt; &amp;stringvec)</div><div class="ttdef"><b>Definition:</b> <a href="_router_8cpp_source.html#l00040">Router.cpp:40</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_router_8h_source.html#l00066">express::MountPoint::method</a>, <a class="el" href="http_2server_2_request_8h_source.html#l00045">http::server::Request::method</a>, <a class="el" href="_router_8h_source.html#l00056">express::Next::next</a>, <a class="el" href="_router_8h_source.html#l00057">express::Next::nextRouter</a>, <a class="el" href="express_2_request_8h_source.html#l00038">express::Request::path</a>, <a class="el" href="_router_8h_source.html#l00067">express::MountPoint::path</a>, <a class="el" href="_router_8cpp_source.html#l00040">express::path_concat()</a>, and <a class="el" href="_router_8cpp_source.html#l00182">routes</a>.</p>
+<p class="reference">References <a class="el" href="_router_8cpp_source.html#l00153">express::MountPoint::method</a>, <a class="el" href="http_2server_2_request_8h_source.html#l00045">http::server::Request::method</a>, <a class="el" href="express_2_request_8h_source.html#l00038">express::Request::path</a>, <a class="el" href="_router_8cpp_source.html#l00154">express::MountPoint::path</a>, <a class="el" href="_router_8cpp_source.html#l00040">express::path_concat()</a>, <a class="el" href="_router_8h_source.html#l00106">proceed()</a>, <a class="el" href="_router_8cpp_source.html#l00240">returnTo()</a>, and <a class="el" href="_router_8h_source.html#l00112">routes</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classexpress_1_1_router_dispatcher_ae7d8d360fab557649d638154b4d842c1_cgraph.svg" width="384" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classexpress_1_1_router_dispatcher_a7f379c825b87616dff52a511d00b73ad_cgraph.svg" width="416" height="170"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a22c891e3bad167739520868866fb101d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22c891e3bad167739520868866fb101d">&#9670;&nbsp;</a></span>dispatch() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void express::RouterDispatcher::dispatch </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classexpress_1_1_request.html">Request</a> &amp;&#160;</td>
+          <td class="paramname"><em>req</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classexpress_1_1_response.html">Response</a> &amp;&#160;</td>
+          <td class="paramname"><em>res</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_router_8cpp_source.html#l00236">236</a> of file <a class="el" href="_router_8cpp_source.html">Router.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;                                                                     {</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        <a class="code" href="classexpress_1_1_router_dispatcher.html#a22c891e3bad167739520868866fb101d">dispatch</a>(<span class="keyword">nullptr</span>, <span class="stringliteral">&quot;/&quot;</span>, MountPoint(<span class="stringliteral">&quot;use&quot;</span>, <span class="stringliteral">&quot;/&quot;</span>), req, res);</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    }</div>
+<div class="ttc" id="aclassexpress_1_1_router_dispatcher_html_a22c891e3bad167739520868866fb101d"><div class="ttname"><a href="classexpress_1_1_router_dispatcher.html#a22c891e3bad167739520868866fb101d">express::RouterDispatcher::dispatch</a></div><div class="ttdeci">void dispatch(Request &amp;req, Response &amp;res) const</div><div class="ttdef"><b>Definition:</b> <a href="_router_8cpp_source.html#l00236">Router.cpp:236</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a1b2cec7b9f9b804a76e977945fb1aa05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b2cec7b9f9b804a76e977945fb1aa05">&#9670;&nbsp;</a></span>getState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classexpress_1_1_state.html">State</a>&amp; express::RouterDispatcher::getState </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_router_8h_source.html#l00102">102</a> of file <a class="el" href="_router_8h_source.html">Router.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                                {</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classexpress_1_1_router_dispatcher.html#a716ee15028f3d2c214434eeadbbe456a">state</a>;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        }</div>
+<div class="ttc" id="aclassexpress_1_1_router_dispatcher_html_a716ee15028f3d2c214434eeadbbe456a"><div class="ttname"><a href="classexpress_1_1_router_dispatcher.html#a716ee15028f3d2c214434eeadbbe456a">express::RouterDispatcher::state</a></div><div class="ttdeci">State state</div><div class="ttdef"><b>Definition:</b> <a href="_router_8h_source.html#l00113">Router.h:113</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="_router_8h_source.html#l00113">state</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="_router_8cpp_source.html#l00249">express::MiddlewareDispatcher::dispatch()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classexpress_1_1_router_dispatcher_a1b2cec7b9f9b804a76e977945fb1aa05_icgraph.svg" width="443" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a5b1ab050fae51806d2f0d5bf4a89b5ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b1ab050fae51806d2f0d5bf4a89b5ca">&#9670;&nbsp;</a></span>proceed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool express::RouterDispatcher::proceed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_router_8h_source.html#l00106">106</a> of file <a class="el" href="_router_8h_source.html">Router.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                             {</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classexpress_1_1_router_dispatcher.html#a716ee15028f3d2c214434eeadbbe456a">state</a>.<a class="code" href="classexpress_1_1_state.html#a9f451b83a50a338561e8106561721d98">proceed</a>;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        }</div>
+<div class="ttc" id="aclassexpress_1_1_state_html_a9f451b83a50a338561e8106561721d98"><div class="ttname"><a href="classexpress_1_1_state.html#a9f451b83a50a338561e8106561721d98">express::State::proceed</a></div><div class="ttdeci">bool proceed</div><div class="ttdef"><b>Definition:</b> <a href="_router_8h_source.html#l00060">Router.h:60</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="_router_8h_source.html#l00060">express::State::proceed</a>, and <a class="el" href="_router_8h_source.html#l00113">state</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="_router_8cpp_source.html#l00214">dispatch()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classexpress_1_1_router_dispatcher_a5b1ab050fae51806d2f0d5bf4a89b5ca_icgraph.svg" width="416" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a816eacb2656807eb1b8bb4d50aa41247"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a816eacb2656807eb1b8bb4d50aa41247">&#9670;&nbsp;</a></span>returnTo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void express::RouterDispatcher::returnTo </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classexpress_1_1_router_dispatcher.html">RouterDispatcher</a> *&#160;</td>
+          <td class="paramname"><em>parentRouter</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_router_8cpp_source.html#l00240">240</a> of file <a class="el" href="_router_8cpp_source.html">Router.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;                                                                              {</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        <span class="keywordflow">if</span> (parentRouter) {</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;            parentRouter-&gt;state.proceed = <a class="code" href="classexpress_1_1_router_dispatcher.html#a716ee15028f3d2c214434eeadbbe456a">state</a>.<a class="code" href="classexpress_1_1_state.html#a9f451b83a50a338561e8106561721d98">proceed</a> | <a class="code" href="classexpress_1_1_router_dispatcher.html#a716ee15028f3d2c214434eeadbbe456a">state</a>.<a class="code" href="classexpress_1_1_state.html#af78e8f01bdfc6f82290f47f828e756c5">parentProceed</a>;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        }</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160; </div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        <a class="code" href="classexpress_1_1_router_dispatcher.html#a716ee15028f3d2c214434eeadbbe456a">state</a>.<a class="code" href="classexpress_1_1_state.html#a9f451b83a50a338561e8106561721d98">proceed</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        <a class="code" href="classexpress_1_1_router_dispatcher.html#a716ee15028f3d2c214434eeadbbe456a">state</a>.<a class="code" href="classexpress_1_1_state.html#af78e8f01bdfc6f82290f47f828e756c5">parentProceed</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    }</div>
+<div class="ttc" id="aclassexpress_1_1_state_html_af78e8f01bdfc6f82290f47f828e756c5"><div class="ttname"><a href="classexpress_1_1_state.html#af78e8f01bdfc6f82290f47f828e756c5">express::State::parentProceed</a></div><div class="ttdeci">bool parentProceed</div><div class="ttdef"><b>Definition:</b> <a href="_router_8h_source.html#l00061">Router.h:61</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="_router_8h_source.html#l00061">express::State::parentProceed</a>, <a class="el" href="_router_8h_source.html#l00060">express::State::proceed</a>, and <a class="el" href="_router_8h_source.html#l00113">state</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="_router_8cpp_source.html#l00214">dispatch()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classexpress_1_1_router_dispatcher_a816eacb2656807eb1b8bb4d50aa41247_icgraph.svg" width="416" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="ad15fd47743900787fae26d37db51019d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad15fd47743900787fae26d37db51019d">&#9670;&nbsp;</a></span>terminate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void express::RouterDispatcher::terminate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_router_8h_source.html#l00098">98</a> of file <a class="el" href="_router_8h_source.html">Router.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                               {</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            <a class="code" href="classexpress_1_1_router_dispatcher.html#a716ee15028f3d2c214434eeadbbe456a">state</a>.<a class="code" href="classexpress_1_1_state.html#a9f451b83a50a338561e8106561721d98">proceed</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        }</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="_router_8h_source.html#l00060">express::State::proceed</a>, and <a class="el" href="_router_8h_source.html#l00113">state</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="_router_8cpp_source.html#l00249">express::MiddlewareDispatcher::dispatch()</a>, and <a class="el" href="_router_8cpp_source.html#l00269">express::ApplicationDispatcher::dispatch()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classexpress_1_1_router_dispatcher_ad15fd47743900787fae26d37db51019d_icgraph.svg" width="443" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
 </div>
 <h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a id="a591796081407ac28747598c15ccaa2e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a591796081407ac28747598c15ccaa2e8">&#9670;&nbsp;</a></span>ApplicationDispatcher</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="classexpress_1_1_application_dispatcher.html">ApplicationDispatcher</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_router_8h_source.html#l00116">116</a> of file <a class="el" href="_router_8h_source.html">Router.h</a>.</p>
+
+</div>
+</div>
+<a id="af781a00450f59562b13c28efc99c9271"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af781a00450f59562b13c28efc99c9271">&#9670;&nbsp;</a></span>MiddlewareDispatcher</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="classexpress_1_1_middleware_dispatcher.html">MiddlewareDispatcher</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_router_8h_source.html#l00117">117</a> of file <a class="el" href="_router_8h_source.html">Router.h</a>.</p>
+
+</div>
+</div>
 <a id="ad1fd3424328f664cd049fe429e0e3dc6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad1fd3424328f664cd049fe429e0e3dc6">&#9670;&nbsp;</a></span>Router</h2>
 
@@ -259,7 +513,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_router_8cpp_source.html#l00184">184</a> of file <a class="el" href="_router_8cpp_source.html">Router.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_router_8h_source.html#l00115">115</a> of file <a class="el" href="_router_8h_source.html">Router.h</a>.</p>
 
 </div>
 </div>
@@ -284,13 +538,40 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_router_8cpp_source.html#l00182">182</a> of file <a class="el" href="_router_8cpp_source.html">Router.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_router_8h_source.html#l00112">112</a> of file <a class="el" href="_router_8h_source.html">Router.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_router_8cpp_source.html#l00215">dispatch()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_router_8cpp_source.html#l00214">dispatch()</a>.</p>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<a id="a716ee15028f3d2c214434eeadbbe456a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a716ee15028f3d2c214434eeadbbe456a">&#9670;&nbsp;</a></span>state</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classexpress_1_1_state.html">State</a> express::RouterDispatcher::state</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">mutable</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_router_8h_source.html#l00113">113</a> of file <a class="el" href="_router_8h_source.html">Router.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="_router_8h_source.html#l00102">getState()</a>, <a class="el" href="_router_8h_source.html#l00106">proceed()</a>, <a class="el" href="_router_8cpp_source.html#l00240">returnTo()</a>, and <a class="el" href="_router_8h_source.html#l00098">terminate()</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>express/<a class="el" href="_router_8h_source.html">Router.h</a></li>
 <li>express/<a class="el" href="_router_8cpp_source.html">Router.cpp</a></li>
 </ul>
 </div><!-- contents -->

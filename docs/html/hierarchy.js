@@ -62,7 +62,6 @@ var hierarchy =
         [ "express::Request", "classexpress_1_1_request.html", null ]
       ] ]
     ] ],
-    [ "express::Next", "classexpress_1_1_next.html", null ],
     [ "net::ObservationCounter", "classnet_1_1_observation_counter.html", [
       [ "net::DescriptorEventReceiver", "classnet_1_1_descriptor_event_receiver.html", [
         [ "net::AcceptEventReceiver", "classnet_1_1_accept_event_receiver.html", [
@@ -254,6 +253,7 @@ var hierarchy =
     [ "net::stream::Source", "classnet_1_1stream_1_1_source.html", [
       [ "FileReader", "class_file_reader.html", null ]
     ] ],
+    [ "express::State", "classexpress_1_1_state.html", null ],
     [ "StatusCode", "class_status_code.html", null ],
     [ "net::DescriptorEventReceiver::TIMEOUT", "classnet_1_1_descriptor_event_receiver_1_1_t_i_m_e_o_u_t.html", null ],
     [ "net::TimerEventDispatcher", "classnet_1_1_timer_event_dispatcher.html", null ],
