@@ -136,12 +136,12 @@ Functions</h2></td></tr>
 <tr class="separator:a6947906a1f8f6b7186b7b2d2161e057d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b06e2a2e48ef646621d00f55805c4a8"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="classnet_1_1_descriptor.html#a1ecc493b50b4c5ed5cfa3a8746e51f35">Descriptor::FLAGS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenet.html#a6b06e2a2e48ef646621d00f55805c4a8">operator&amp;</a> (const enum <a class="el" href="classnet_1_1_descriptor.html#a1ecc493b50b4c5ed5cfa3a8746e51f35">Descriptor::FLAGS</a> &amp;f1, const enum <a class="el" href="classnet_1_1_descriptor.html#a1ecc493b50b4c5ed5cfa3a8746e51f35">Descriptor::FLAGS</a> &amp;f2)</td></tr>
 <tr class="separator:a6b06e2a2e48ef646621d00f55805c4a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1fbef2ddfd827d222bad07e28676c27a"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenet.html#a1fbef2ddfd827d222bad07e28676c27a">getTickCounterAsString</a> ([[maybe_unused]] const el::LogMessage *logMessage)</td></tr>
-<tr class="separator:a1fbef2ddfd827d222bad07e28676c27a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ae22835ece0d8a6f84abce4af38128a"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenet.html#a6ae22835ece0d8a6f84abce4af38128a">getTickCounterAsString</a> (const el::LogMessage *)</td></tr>
+<tr class="separator:a6ae22835ece0d8a6f84abce4af38128a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a1fbef2ddfd827d222bad07e28676c27a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1fbef2ddfd827d222bad07e28676c27a">&#9670;&nbsp;</a></span>getTickCounterAsString()</h2>
+<a id="a6ae22835ece0d8a6f84abce4af38128a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ae22835ece0d8a6f84abce4af38128a">&#9670;&nbsp;</a></span>getTickCounterAsString()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -152,8 +152,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">static std::string net::getTickCounterAsString </td>
           <td>(</td>
-          <td class="paramtype">[[maybe_unused] ] const el::LogMessage *&#160;</td>
-          <td class="paramname"><em>logMessage</em></td><td>)</td>
+          <td class="paramtype">const el::LogMessage *&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -165,7 +165,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_event_loop_8cpp_source.html#l00043">43</a> of file <a class="el" href="_event_loop_8cpp_source.html">EventLoop.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                                                                                             {</div>
+<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                                                                 {</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        std::string tick = std::to_string(EventLoop::instance().getTickCounter());</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordflow">if</span> (tick.length() &lt; 10) {</div>
@@ -181,12 +181,14 @@ Functions</h2></td></tr>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacenet_a1fbef2ddfd827d222bad07e28676c27a_cgraph.svg" width="412" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacenet_a6ae22835ece0d8a6f84abce4af38128a_cgraph.svg" width="412" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacenet_a1fbef2ddfd827d222bad07e28676c27a_icgraph.svg" width="750" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacenet_a6ae22835ece0d8a6f84abce4af38128a_icgraph.svg" width="750" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>

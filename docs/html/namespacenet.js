@@ -17,7 +17,7 @@ var namespacenet =
     [ "TimerEventDispatcher", "classnet_1_1_timer_event_dispatcher.html", "classnet_1_1_timer_event_dispatcher" ],
     [ "TimerEventReceiver", "classnet_1_1_timer_event_receiver.html", "classnet_1_1_timer_event_receiver" ],
     [ "WriteEventReceiver", "classnet_1_1_write_event_receiver.html", "classnet_1_1_write_event_receiver" ],
-    [ "getTickCounterAsString", "namespacenet.html#a1fbef2ddfd827d222bad07e28676c27a", null ],
+    [ "getTickCounterAsString", "namespacenet.html#a6ae22835ece0d8a6f84abce4af38128a", null ],
     [ "operator&", "namespacenet.html#a6b06e2a2e48ef646621d00f55805c4a8", null ],
     [ "operator|", "namespacenet.html#a6947906a1f8f6b7186b7b2d2161e057d", null ]
 ];

@@ -95,14 +95,12 @@ $(document).ready(function(){initNavTree('classexpress_1_1_dispatcher.html','');
 <div class="dynheader">
 Inheritance diagram for express::Dispatcher:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classexpress_1_1_dispatcher__inherit__graph.svg" width="646" height="360"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classexpress_1_1_dispatcher__inherit__graph.svg" width="646" height="360"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <div class="dynheader">
 Collaboration diagram for express::Dispatcher:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classexpress_1_1_dispatcher__coll__graph.svg" width="150" height="147"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classexpress_1_1_dispatcher__coll__graph.svg" width="150" height="147"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -118,8 +116,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a479a48d833addb7bba51a8d102aac55b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexpress_1_1_dispatcher.html#a479a48d833addb7bba51a8d102aac55b">dispatch</a> (const <a class="el" href="classexpress_1_1_router_dispatcher.html">RouterDispatcher</a> *parentRouter, const std::string &amp;parentPath, const <a class="el" href="structexpress_1_1_mount_point.html">MountPoint</a> &amp;mountPoint, <a class="el" href="classexpress_1_1_request.html">Request</a> &amp;req, <a class="el" href="classexpress_1_1_response.html">Response</a> &amp;res) const =0</td></tr>
-<tr class="separator:a479a48d833addb7bba51a8d102aac55b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2289a1e1f8c519172503e098f1bbfd3e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexpress_1_1_dispatcher.html#a2289a1e1f8c519172503e098f1bbfd3e">dispatch</a> (const <a class="el" href="classexpress_1_1_router_dispatcher.html">RouterDispatcher</a> *parentRouter, const std::string &amp;parentMountPath, const <a class="el" href="structexpress_1_1_mount_point.html">MountPoint</a> &amp;mountPoint, <a class="el" href="classexpress_1_1_request.html">Request</a> &amp;req, <a class="el" href="classexpress_1_1_response.html">Response</a> &amp;res) const =0</td></tr>
+<tr class="separator:a2289a1e1f8c519172503e098f1bbfd3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -128,7 +126,7 @@ Friends</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_router_8h_source.html#l00066">66</a> of file <a class="el" href="_router_8h_source.html">Router.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_router_8h_source.html#l00061">61</a> of file <a class="el" href="_router_8h_source.html">Router.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a89a9c2c542ff67ba024cbdf11b7a6765"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a89a9c2c542ff67ba024cbdf11b7a6765">&#9670;&nbsp;</a></span>Dispatcher() <span class="overload">[1/2]</span></h2>
@@ -207,8 +205,8 @@ Friends</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a479a48d833addb7bba51a8d102aac55b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a479a48d833addb7bba51a8d102aac55b">&#9670;&nbsp;</a></span>dispatch()</h2>
+<a id="a2289a1e1f8c519172503e098f1bbfd3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2289a1e1f8c519172503e098f1bbfd3e">&#9670;&nbsp;</a></span>dispatch()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -226,7 +224,7 @@ Friends</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>parentPath</em>, </td>
+          <td class="paramname"><em>parentMountPath</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -259,7 +257,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classexpress_1_1_router_dispatcher.html#a7f379c825b87616dff52a511d00b73ad">express::RouterDispatcher</a>, <a class="el" href="classexpress_1_1_application_dispatcher.html#af8f9a29b2582532d3885098eb7cf92ef">express::ApplicationDispatcher</a>, and <a class="el" href="classexpress_1_1_middleware_dispatcher.html#a071aa9771228514a9fbd12bd57629928">express::MiddlewareDispatcher</a>.</p>
+<p>Implemented in <a class="el" href="classexpress_1_1_router_dispatcher.html#a4e950e97d679cdcca4e3cd19e3e7d6be">express::RouterDispatcher</a>, <a class="el" href="classexpress_1_1_application_dispatcher.html#af1c5aabb7325845c5df30c906154d224">express::ApplicationDispatcher</a>, and <a class="el" href="classexpress_1_1_middleware_dispatcher.html#a161f72f9562625f573fff81b6000e57d">express::MiddlewareDispatcher</a>.</p>
 
 </div>
 </div>
@@ -310,7 +308,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_router_8h_source.html#l00082">82</a> of file <a class="el" href="_router_8h_source.html">Router.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_router_8h_source.html#l00077">77</a> of file <a class="el" href="_router_8h_source.html">Router.h</a>.</p>
 
 </div>
 </div>

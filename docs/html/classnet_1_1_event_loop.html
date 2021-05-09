@@ -512,7 +512,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <a class="code" href="class_logger.html#a9a1cee6606317c7baa7d06fe86916f72">Logger::init</a>(argc, argv);</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <a class="code" href="class_logger.html#a969163c7aff5b8409d8dfb8175dd2b85">Logger::setCustomFormatSpec</a>(<span class="stringliteral">&quot;%tick&quot;</span>, <a class="code" href="namespacenet.html#a1fbef2ddfd827d222bad07e28676c27a">net::getTickCounterAsString</a>);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <a class="code" href="class_logger.html#a969163c7aff5b8409d8dfb8175dd2b85">Logger::setCustomFormatSpec</a>(<span class="stringliteral">&quot;%tick&quot;</span>, <a class="code" href="namespacenet.html#a6ae22835ece0d8a6f84abce4af38128a">net::getTickCounterAsString</a>);</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        <a class="code" href="classnet_1_1_event_loop.html#add4999140ab9571d4f3d8fa17fae337b">EventLoop::initialized</a> = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    }</div>
@@ -520,7 +520,7 @@ Here is the caller graph for this function:</div>
 <div class="ttc" id="aclass_logger_html_a9a1cee6606317c7baa7d06fe86916f72"><div class="ttname"><a href="class_logger.html#a9a1cee6606317c7baa7d06fe86916f72">Logger::init</a></div><div class="ttdeci">static void init(int argc, char *argv[])</div><div class="ttdef"><b>Definition:</b> <a href="_logger_8cpp_source.html#l00031">Logger.cpp:31</a></div></div>
 <div class="ttc" id="aclassnet_1_1_event_loop_html_a14629599569baeed2b94108a82ec9a9c"><div class="ttname"><a href="classnet_1_1_event_loop.html#a14629599569baeed2b94108a82ec9a9c">net::EventLoop::stoponsig</a></div><div class="ttdeci">static void stoponsig(int sig)</div><div class="ttdef"><b>Definition:</b> <a href="_event_loop_8cpp_source.html#l00185">EventLoop.cpp:185</a></div></div>
 <div class="ttc" id="aclassnet_1_1_event_loop_html_add4999140ab9571d4f3d8fa17fae337b"><div class="ttname"><a href="classnet_1_1_event_loop.html#add4999140ab9571d4f3d8fa17fae337b">net::EventLoop::initialized</a></div><div class="ttdeci">static bool initialized</div><div class="ttdef"><b>Definition:</b> <a href="_event_loop_8h_source.html#l00095">EventLoop.h:95</a></div></div>
-<div class="ttc" id="anamespacenet_html_a1fbef2ddfd827d222bad07e28676c27a"><div class="ttname"><a href="namespacenet.html#a1fbef2ddfd827d222bad07e28676c27a">net::getTickCounterAsString</a></div><div class="ttdeci">static std::string getTickCounterAsString([[maybe_unused]] const el::LogMessage *logMessage)</div><div class="ttdef"><b>Definition:</b> <a href="_event_loop_8cpp_source.html#l00043">EventLoop.cpp:43</a></div></div>
+<div class="ttc" id="anamespacenet_html_a6ae22835ece0d8a6f84abce4af38128a"><div class="ttname"><a href="namespacenet.html#a6ae22835ece0d8a6f84abce4af38128a">net::getTickCounterAsString</a></div><div class="ttdeci">static std::string getTickCounterAsString(const el::LogMessage *)</div><div class="ttdef"><b>Definition:</b> <a href="_event_loop_8cpp_source.html#l00043">EventLoop.cpp:43</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="_event_loop_8cpp_source.html#l00043">net::getTickCounterAsString()</a>, <a class="el" href="_logger_8cpp_source.html#l00031">Logger::init()</a>, <a class="el" href="_event_loop_8h_source.html#l00095">initialized</a>, <a class="el" href="_logger_8cpp_source.html#l00061">Logger::setCustomFormatSpec()</a>, and <a class="el" href="_event_loop_8cpp_source.html#l00185">stoponsig()</a>.</p>
 
@@ -528,7 +528,8 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_event_loop_a333d383210a35e2c31140e5705c92412_cgraph.svg" width="612" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_event_loop_a333d383210a35e2c31140e5705c92412_cgraph.svg" width="612" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -573,7 +574,8 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_event_loop_a6d8bfd6fa03bb6bf423035ab190657ef_icgraph.svg" width="1008" height="267"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_event_loop_a6d8bfd6fa03bb6bf423035ab190657ef_icgraph.svg" width="1008" height="267"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>

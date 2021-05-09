@@ -110,10 +110,6 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespacehttp"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehttp.html">http</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacehttp_1_1server"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehttp_1_1server.html">http::server</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceexpress"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexpress.html">express</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -172,15 +168,16 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    Router&amp; METHOD(<span class="keyword">const</span> std::string&amp; path, <span class="keyword">const</span> std::function&lt;<span class="keywordtype">void</span>(Request &amp; req, Response &amp; res)&gt;&amp; lambda);                             \</div>
+<b>Value:</b><div class="fragment"><div class="line">    Router&amp; METHOD(<span class="keyword">const</span> std::string&amp; relativeMountPath, <span class="keyword">const</span> std::function&lt;<span class="keywordtype">void</span>(Request &amp; req, Response &amp; res)&gt;&amp; lambda);                \</div>
 <div class="line">    Router&amp; METHOD(<span class="keyword">const</span> std::function&lt;<span class="keywordtype">void</span>(Request &amp; req, Response &amp; res)&gt;&amp; lambda);                                                      \</div>
-<div class="line">    Router&amp; METHOD(<span class="keyword">const</span> std::string&amp; path, <span class="keyword">const</span> Router&amp; router);                                                                         \</div>
+<div class="line">    Router&amp; METHOD(<span class="keyword">const</span> std::string&amp; relativeMountPath, <span class="keyword">const</span> Router&amp; router);                                                            \</div>
 <div class="line">    Router&amp; METHOD(<span class="keyword">const</span> Router&amp; router);                                                                                                  \</div>
-<div class="line">    Router&amp; METHOD(<span class="keyword">const</span> std::string&amp; path, <span class="keyword">const</span> std::function&lt;<span class="keywordtype">void</span>(Request &amp; req, Response &amp; res, <a class="code" href="classexpress_1_1_state.html">express::State</a> &amp; state)&gt;&amp; lambda);     \</div>
+<div class="line">    Router&amp; METHOD(<span class="keyword">const</span> std::string&amp; relativeMountPath,                                                                                   \</div>
+<div class="line">                   <span class="keyword">const</span> std::function&lt;<span class="keywordtype">void</span>(Request &amp; req, Response &amp; res, <a class="code" href="classexpress_1_1_state.html">express::State</a> &amp; state)&gt;&amp; lambda);                              \</div>
 <div class="line">    Router&amp; METHOD(<span class="keyword">const</span> std::function&lt;<span class="keywordtype">void</span>(Request &amp; req, Response &amp; res, <a class="code" href="classexpress_1_1_state.html">express::State</a> &amp; state)&gt;&amp; lambda);</div>
-<div class="ttc" id="aclassexpress_1_1_state_html"><div class="ttname"><a href="classexpress_1_1_state.html">express::State</a></div><div class="ttdef"><b>Definition:</b> <a href="_router_8h_source.html#l00049">Router.h:49</a></div></div>
+<div class="ttc" id="aclassexpress_1_1_state_html"><div class="ttname"><a href="classexpress_1_1_state.html">express::State</a></div><div class="ttdef"><b>Definition:</b> <a href="_router_8h_source.html#l00044">Router.h:44</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="_router_8h_source.html#l00126">126</a> of file <a class="el" href="_router_8h_source.html">Router.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_router_8h_source.html#l00121">121</a> of file <a class="el" href="_router_8h_source.html">Router.h</a>.</p>
 
 </div>
 </div>
