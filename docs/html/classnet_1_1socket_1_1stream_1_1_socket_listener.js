@@ -3,7 +3,7 @@ var classnet_1_1socket_1_1stream_1_1_socket_listener =
     [ "Socket", "classnet_1_1socket_1_1stream_1_1_socket_listener.html#ae8e6acadb6b7e2db8b10d005ceb51b34", null ],
     [ "SocketAddress", "classnet_1_1socket_1_1stream_1_1_socket_listener.html#adcc2e0fc61ac23c245988f1b2b1f5d8e", null ],
     [ "SocketConnection", "classnet_1_1socket_1_1stream_1_1_socket_listener.html#a5baa0ff61844dbfd635ff3863893d8aa", null ],
-    [ "SocketListener", "classnet_1_1socket_1_1stream_1_1_socket_listener.html#acafd8b087fee2f4fabf65ef848661c50", null ],
+    [ "SocketListener", "classnet_1_1socket_1_1stream_1_1_socket_listener.html#a00af1c470ed43bc5ab3d0444f8d0031c", null ],
     [ "SocketListener", "classnet_1_1socket_1_1stream_1_1_socket_listener.html#a912ab159c8caafc122cf9f00fce1560d", null ],
     [ "SocketListener", "classnet_1_1socket_1_1stream_1_1_socket_listener.html#a1f519df84b02e46f932481f4c2674500", null ],
     [ "~SocketListener", "classnet_1_1socket_1_1stream_1_1_socket_listener.html#a4e7b0daaf93e830babe89de3227446e8", null ],
@@ -21,5 +21,6 @@ var classnet_1_1socket_1_1stream_1_1_socket_listener =
     [ "onRead", "classnet_1_1socket_1_1stream_1_1_socket_listener.html#a60f713a513c324d1802b91abf0c987ea", null ],
     [ "onReadError", "classnet_1_1socket_1_1stream_1_1_socket_listener.html#a8dfdb762367b96f9a594647f9aa39a5e", null ],
     [ "onWriteError", "classnet_1_1socket_1_1stream_1_1_socket_listener.html#af9040e084c63fffc5657b2d318cd967f", null ],
-    [ "options", "classnet_1_1socket_1_1stream_1_1_socket_listener.html#a9ce884ac01ecd6e84a33927293b50572", null ]
+    [ "options", "classnet_1_1socket_1_1stream_1_1_socket_listener.html#a9ce884ac01ecd6e84a33927293b50572", null ],
+    [ "socketProtocolFactory", "classnet_1_1socket_1_1stream_1_1_socket_listener.html#a1084349bfb0f975fc071d7535d85e0af", null ]
 ];

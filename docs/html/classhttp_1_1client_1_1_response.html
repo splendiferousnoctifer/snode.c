@@ -114,8 +114,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a5d4ea539b1e1985fbf0d7dede6ce854c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34ee26d2868e7192b776be6255c6d5a5"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1client_1_1_response.html#a34ee26d2868e7192b776be6255c6d5a5">body</a> = nullptr</td></tr>
 <tr class="separator:a34ee26d2868e7192b776be6255c6d5a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae412ee39ba6aa757cbfd030bca4f0ef7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1client_1_1_response.html#ae412ee39ba6aa757cbfd030bca4f0ef7">contentLength</a> = 0</td></tr>
-<tr class="separator:ae412ee39ba6aa757cbfd030bca4f0ef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6853cf44805d757fac8a633793e7d1e2"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1client_1_1_response.html#a6853cf44805d757fac8a633793e7d1e2">contentLength</a> = 0</td></tr>
+<tr class="separator:a6853cf44805d757fac8a633793e7d1e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe80f52483cdf31a5f75bedcd270d174"><td class="memItemLeft" align="right" valign="top">const std::map&lt; std::string, std::string &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1client_1_1_response.html#abe80f52483cdf31a5f75bedcd270d174">headers</a> = nullptr</td></tr>
 <tr class="separator:abe80f52483cdf31a5f75bedcd270d174"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5191c6a4095da87ea42a405ba70f3394"><td class="memItemLeft" align="right" valign="top">const std::map&lt; std::string, <a class="el" href="classhttp_1_1_cookie_options.html">CookieOptions</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1client_1_1_response.html#a5191c6a4095da87ea42a405ba70f3394">cookies</a> = nullptr</td></tr>
@@ -134,7 +134,7 @@ Friends</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="http_2client_2_response_8h_source.html#l00035">35</a> of file <a class="el" href="http_2client_2_response_8h_source.html">Response.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="http_2client_2_response_8h_source.html#l00038">38</a> of file <a class="el" href="http_2client_2_response_8h_source.html">Response.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa98fa389b8826ec478808874a359f867"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa98fa389b8826ec478808874a359f867">&#9670;&nbsp;</a></span>Response()</h2>
@@ -206,7 +206,7 @@ template&lt;typename Request , typename Response &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="http_2client_2_response_8h_source.html#l00052">52</a> of file <a class="el" href="http_2client_2_response_8h_source.html">Response.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="http_2client_2_response_8h_source.html#l00055">55</a> of file <a class="el" href="http_2client_2_response_8h_source.html">Response.h</a>.</p>
 
 </div>
 </div>
@@ -223,23 +223,23 @@ template&lt;typename Request , typename Response &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="http_2client_2_response_8h_source.html#l00046">46</a> of file <a class="el" href="http_2client_2_response_8h_source.html">Response.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="http_2client_2_response_8h_source.html#l00049">49</a> of file <a class="el" href="http_2client_2_response_8h_source.html">Response.h</a>.</p>
 
 </div>
 </div>
-<a id="ae412ee39ba6aa757cbfd030bca4f0ef7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae412ee39ba6aa757cbfd030bca4f0ef7">&#9670;&nbsp;</a></span>contentLength</h2>
+<a id="a6853cf44805d757fac8a633793e7d1e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6853cf44805d757fac8a633793e7d1e2">&#9670;&nbsp;</a></span>contentLength</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int http::client::Response::contentLength = 0</td>
+          <td class="memname">std::size_t http::client::Response::contentLength = 0</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="http_2client_2_response_8h_source.html#l00047">47</a> of file <a class="el" href="http_2client_2_response_8h_source.html">Response.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="http_2client_2_response_8h_source.html#l00050">50</a> of file <a class="el" href="http_2client_2_response_8h_source.html">Response.h</a>.</p>
 
 </div>
 </div>
@@ -255,7 +255,7 @@ template&lt;typename Request , typename Response &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="http_2client_2_response_8h_source.html#l00049">49</a> of file <a class="el" href="http_2client_2_response_8h_source.html">Response.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="http_2client_2_response_8h_source.html#l00052">52</a> of file <a class="el" href="http_2client_2_response_8h_source.html">Response.h</a>.</p>
 
 </div>
 </div>
@@ -271,7 +271,7 @@ template&lt;typename Request , typename Response &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="http_2client_2_response_8h_source.html#l00048">48</a> of file <a class="el" href="http_2client_2_response_8h_source.html">Response.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="http_2client_2_response_8h_source.html#l00051">51</a> of file <a class="el" href="http_2client_2_response_8h_source.html">Response.h</a>.</p>
 
 </div>
 </div>
@@ -287,7 +287,7 @@ template&lt;typename Request , typename Response &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="http_2client_2_response_8h_source.html#l00043">43</a> of file <a class="el" href="http_2client_2_response_8h_source.html">Response.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="http_2client_2_response_8h_source.html#l00046">46</a> of file <a class="el" href="http_2client_2_response_8h_source.html">Response.h</a>.</p>
 
 </div>
 </div>
@@ -303,7 +303,7 @@ template&lt;typename Request , typename Response &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="http_2client_2_response_8h_source.html#l00045">45</a> of file <a class="el" href="http_2client_2_response_8h_source.html">Response.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="http_2client_2_response_8h_source.html#l00048">48</a> of file <a class="el" href="http_2client_2_response_8h_source.html">Response.h</a>.</p>
 
 </div>
 </div>
@@ -319,7 +319,7 @@ template&lt;typename Request , typename Response &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="http_2client_2_response_8h_source.html#l00044">44</a> of file <a class="el" href="http_2client_2_response_8h_source.html">Response.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="http_2client_2_response_8h_source.html#l00047">47</a> of file <a class="el" href="http_2client_2_response_8h_source.html">Response.h</a>.</p>
 
 </div>
 </div>

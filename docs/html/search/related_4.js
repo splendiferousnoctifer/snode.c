@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['jsonmiddleware_1478',['JsonMiddleware',['../classexpress_1_1middleware_1_1_json_middleware.html#aa21e61839acf47a03ac9aec271a7d5cb',1,'express::middleware::JsonMiddleware']]]
+  ['httpservercontext_1615',['HTTPServerContext',['../classhttp_1_1server_1_1_request.html#a50ed3aca2d37639a48a2f39c1b9cbfa4',1,'http::server::Request::HTTPServerContext()'],['../classhttp_1_1server_1_1_response.html#a50ed3aca2d37639a48a2f39c1b9cbfa4',1,'http::server::Response::HTTPServerContext()']]]
 ];

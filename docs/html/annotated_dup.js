@@ -40,6 +40,7 @@ var annotated_dup =
         [ "Client", "classhttp_1_1client_1_1_client.html", "classhttp_1_1client_1_1_client" ],
         [ "ClientContextBase", "classhttp_1_1client_1_1_client_context_base.html", "classhttp_1_1client_1_1_client_context_base" ],
         [ "ClientContext", "classhttp_1_1client_1_1_client_context.html", "classhttp_1_1client_1_1_client_context" ],
+        [ "ClientContextFactory", "classhttp_1_1client_1_1_client_context_factory.html", "classhttp_1_1client_1_1_client_context_factory" ],
         [ "Request", "classhttp_1_1client_1_1_request.html", "classhttp_1_1client_1_1_request" ],
         [ "Response", "classhttp_1_1client_1_1_response.html", "classhttp_1_1client_1_1_response" ],
         [ "ResponseParser", "classhttp_1_1client_1_1_response_parser.html", "classhttp_1_1client_1_1_response_parser" ]
@@ -53,12 +54,19 @@ var annotated_dup =
           [ "Server", "classhttp_1_1server_1_1tls_1_1_server.html", null ],
           [ "Server6", "classhttp_1_1server_1_1tls_1_1_server6.html", null ]
         ] ],
+        [ "HTTPServerContextBase", "classhttp_1_1server_1_1_h_t_t_p_server_context_base.html", "classhttp_1_1server_1_1_h_t_t_p_server_context_base" ],
+        [ "HTTPServerContext", "classhttp_1_1server_1_1_h_t_t_p_server_context.html", "classhttp_1_1server_1_1_h_t_t_p_server_context" ],
+        [ "HTTPServerContextFactory", "classhttp_1_1server_1_1_h_t_t_p_server_context_factory.html", "classhttp_1_1server_1_1_h_t_t_p_server_context_factory" ],
         [ "Request", "classhttp_1_1server_1_1_request.html", "classhttp_1_1server_1_1_request" ],
         [ "RequestParser", "classhttp_1_1server_1_1_request_parser.html", "classhttp_1_1server_1_1_request_parser" ],
         [ "Response", "classhttp_1_1server_1_1_response.html", "classhttp_1_1server_1_1_response" ],
         [ "Server", "classhttp_1_1server_1_1_server.html", "classhttp_1_1server_1_1_server" ],
-        [ "ServerContextBase", "classhttp_1_1server_1_1_server_context_base.html", "classhttp_1_1server_1_1_server_context_base" ],
         [ "ServerContext", "classhttp_1_1server_1_1_server_context.html", "classhttp_1_1server_1_1_server_context" ]
+      ] ],
+      [ "websocket", "namespacehttp_1_1websocket.html", [
+        [ "WSServerContext", "classhttp_1_1websocket_1_1_w_s_server_context.html", "classhttp_1_1websocket_1_1_w_s_server_context" ],
+        [ "WSReceiver", "classhttp_1_1websocket_1_1_w_s_receiver.html", "classhttp_1_1websocket_1_1_w_s_receiver" ],
+        [ "WSTransmitter", "classhttp_1_1websocket_1_1_w_s_transmitter.html", "classhttp_1_1websocket_1_1_w_s_transmitter" ]
       ] ],
       [ "CookieOptions", "classhttp_1_1_cookie_options.html", "classhttp_1_1_cookie_options" ],
       [ "Parser", "classhttp_1_1_parser.html", "classhttp_1_1_parser" ]
@@ -148,6 +156,8 @@ var annotated_dup =
           [ "SocketConnectionBase", "classnet_1_1socket_1_1stream_1_1_socket_connection_base.html", "classnet_1_1socket_1_1stream_1_1_socket_connection_base" ],
           [ "SocketConnector", "classnet_1_1socket_1_1stream_1_1_socket_connector.html", "classnet_1_1socket_1_1stream_1_1_socket_connector" ],
           [ "SocketListener", "classnet_1_1socket_1_1stream_1_1_socket_listener.html", "classnet_1_1socket_1_1stream_1_1_socket_listener" ],
+          [ "SocketProtocol", "classnet_1_1socket_1_1stream_1_1_socket_protocol.html", "classnet_1_1socket_1_1stream_1_1_socket_protocol" ],
+          [ "SocketProtocolFactory", "classnet_1_1socket_1_1stream_1_1_socket_protocol_factory.html", "classnet_1_1socket_1_1stream_1_1_socket_protocol_factory" ],
           [ "SocketReader", "classnet_1_1socket_1_1stream_1_1_socket_reader.html", "classnet_1_1socket_1_1stream_1_1_socket_reader" ],
           [ "SocketServer", "classnet_1_1socket_1_1stream_1_1_socket_server.html", "classnet_1_1socket_1_1stream_1_1_socket_server" ],
           [ "SocketWriter", "classnet_1_1socket_1_1stream_1_1_socket_writer.html", "classnet_1_1socket_1_1stream_1_1_socket_writer" ]

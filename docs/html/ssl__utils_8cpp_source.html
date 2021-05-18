@@ -87,7 +87,7 @@ $(document).ready(function(){initNavTree('ssl__utils_8cpp_source.html',''); init
 <div class="contents">
 <a href="ssl__utils_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * snode.c - a slim toolkit for network communication</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright (C) 2020 Volker Christian &lt;me@vchrist.at&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright (C) 2020, 2021 Volker Christian &lt;me@vchrist.at&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * This program is free software: you can redistribute it and/or modify</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * it under the terms of the GNU Lesser General Public License as published</span></div>
@@ -132,7 +132,7 @@ $(document).ready(function(){initNavTree('ssl__utils_8cpp_source.html',''); init
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        memset(u, 0, ::strlen(<span class="keyword">static_cast&lt;</span><span class="keywordtype">char</span>*<span class="keyword">&gt;</span>(u))); <span class="comment">// garble password</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        free(u);</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        return ::strlen(buf);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(::strlen(buf));</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
 <div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="namespacenet_1_1socket_1_1stream_1_1tls.html#afa1faf40bf182cbbe793cfad48c93ce0">   51</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="namespacenet_1_1socket_1_1stream_1_1tls.html#afa1faf40bf182cbbe793cfad48c93ce0">verify_callback</a>([[maybe_unused]] <span class="keywordtype">int</span> preverify_ok, [[maybe_unused]] X509_STORE_CTX* ctx) {</div>

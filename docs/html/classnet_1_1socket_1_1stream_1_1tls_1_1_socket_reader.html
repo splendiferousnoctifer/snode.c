@@ -328,7 +328,7 @@ template&lt;typename SocketT &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="tls_2_socket_reader_8h_source.html#l00045">45</a> of file <a class="el" href="tls_2_socket_reader_8h_source.html">SocketReader.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                                                             {</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <span class="keywordtype">int</span> ret = SSL_read(<a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_reader.html#a772a3826a50633705c006e12fe4edf7b">ssl</a>, junk, junkLen);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <span class="keywordtype">int</span> ret = SSL_read(<a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_reader.html#a772a3826a50633705c006e12fe4edf7b">ssl</a>, junk, <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(junkLen));</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="keywordflow">if</span> (ret &lt;= 0) {</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_reader.html#aef9e4ee08d4b72cf4f7d0901ef4022b4">sslErr</a> = SSL_get_error(<a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_reader.html#a772a3826a50633705c006e12fe4edf7b">ssl</a>, ret);</div>

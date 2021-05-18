@@ -2,7 +2,7 @@ var classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection =
 [
     [ "Socket", "classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a445ab1c51b805504c4850a7dac3b511b", null ],
     [ "SocketAddress", "classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a1e7ed48172d5f13f11191d705907958f", null ],
-    [ "SocketConnection", "classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a3be6b913d6eb4ca069e3a0708afe23d6", null ],
+    [ "SocketConnection", "classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#ad48f4080c28c7ad4cd38bf24374c143a", null ],
     [ "doSSLHandshake", "classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#af1a4936b2d84a553285fbdf1de7dd716", null ],
     [ "getSSL", "classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a44c0fad781b21d13c6fec9e5d4b77a54", null ],
     [ "setSSLError", "classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#ab2d1ac395884dd5197ddef41699b06c9", null ],

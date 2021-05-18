@@ -1,6 +1,6 @@
 var classhttp_1_1server_1_1_response =
 [
-    [ "Response", "classhttp_1_1server_1_1_response.html#a1a19dbe0699db76df6a31901bb9bbfd1", null ],
+    [ "Response", "classhttp_1_1server_1_1_response.html#acbbdb7663e07968622bd9afd07490b0e", null ],
     [ "append", "classhttp_1_1server_1_1_response.html#a2befba6921c909137e6cf8a3ea54568b", null ],
     [ "clearCookie", "classhttp_1_1server_1_1_response.html#ae173ba02c1f75927686ad9967f9bc077", null ],
     [ "cookie", "classhttp_1_1server_1_1_response.html#a8579450e1d1732bbbec2d350b86ebef9", null ],
@@ -18,7 +18,8 @@ var classhttp_1_1server_1_1_response =
     [ "set", "classhttp_1_1server_1_1_response.html#a1a0019dc47bb70ca67fb78bd3e37384c", null ],
     [ "status", "classhttp_1_1server_1_1_response.html#a099609859acedb8b45f58b6b2a72203f", null ],
     [ "type", "classhttp_1_1server_1_1_response.html#a3b5f71ec833aba48e5b9718cd43fa57e", null ],
-    [ "ServerContext", "classhttp_1_1server_1_1_response.html#a58803afb783dacd8a75fdc9f6bcb0a3b", null ],
+    [ "upgrade", "classhttp_1_1server_1_1_response.html#a6d7615769a8cc15be6e04759918dc86d", null ],
+    [ "HTTPServerContext", "classhttp_1_1server_1_1_response.html#a50ed3aca2d37639a48a2f39c1b9cbfa4", null ],
     [ "connectionState", "classhttp_1_1server_1_1_response.html#aec694f67845835c62b63760875a429c8", null ],
     [ "contentLength", "classhttp_1_1server_1_1_response.html#a22bd28c55b230f87d3b804af9bbe12f0", null ],
     [ "contentSent", "classhttp_1_1server_1_1_response.html#a65ac86f1ea7b4b3fa16baa5187b2f936", null ],
@@ -27,5 +28,5 @@ var classhttp_1_1server_1_1_response =
     [ "headersSent", "classhttp_1_1server_1_1_response.html#af91c11b49941cdab75e823bc29b7238d", null ],
     [ "responseStatus", "classhttp_1_1server_1_1_response.html#a34fb98f7bb21951e7a4979aadd97fd07", null ],
     [ "sendHeaderInProgress", "classhttp_1_1server_1_1_response.html#a34817bbde36d83fb3ba51956a02ed4e8", null ],
-    [ "serverContext", "classhttp_1_1server_1_1_response.html#abef8d56ac9ffd2189f40e817fb128248", null ]
+    [ "serverContext", "classhttp_1_1server_1_1_response.html#ab4d6d7722b30f1d3d407fd86cc0e1625", null ]
 ];

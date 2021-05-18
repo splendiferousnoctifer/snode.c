@@ -1,10 +1,11 @@
 var searchData=
 [
-  ['client_2eh_852',['Client.h',['../_client_8h.html',1,'(Global Namespace)'],['../legacy_2_client_8h.html',1,'(Global Namespace)'],['../tls_2_client_8h.html',1,'(Global Namespace)']]],
-  ['clientcontext_2eh_853',['ClientContext.h',['../_client_context_8h.html',1,'']]],
-  ['clientcontext_2ehpp_854',['ClientContext.hpp',['../_client_context_8hpp.html',1,'']]],
-  ['connecteventreceiver_2ecpp_855',['ConnectEventReceiver.cpp',['../_connect_event_receiver_8cpp.html',1,'']]],
-  ['connecteventreceiver_2eh_856',['ConnectEventReceiver.h',['../_connect_event_receiver_8h.html',1,'']]],
-  ['connectionstate_2eh_857',['ConnectionState.h',['../_connection_state_8h.html',1,'']]],
-  ['cookieoptions_2eh_858',['CookieOptions.h',['../_cookie_options_8h.html',1,'']]]
+  ['client_2eh_928',['Client.h',['../_client_8h.html',1,'(Global Namespace)'],['../legacy_2_client_8h.html',1,'(Global Namespace)'],['../tls_2_client_8h.html',1,'(Global Namespace)']]],
+  ['clientcontext_2eh_929',['ClientContext.h',['../_client_context_8h.html',1,'']]],
+  ['clientcontext_2ehpp_930',['ClientContext.hpp',['../_client_context_8hpp.html',1,'']]],
+  ['clientcontextfactory_2eh_931',['ClientContextFactory.h',['../_client_context_factory_8h.html',1,'']]],
+  ['connecteventreceiver_2ecpp_932',['ConnectEventReceiver.cpp',['../_connect_event_receiver_8cpp.html',1,'']]],
+  ['connecteventreceiver_2eh_933',['ConnectEventReceiver.h',['../_connect_event_receiver_8h.html',1,'']]],
+  ['connectionstate_2eh_934',['ConnectionState.h',['../_connection_state_8h.html',1,'']]],
+  ['cookieoptions_2eh_935',['CookieOptions.h',['../_cookie_options_8h.html',1,'']]]
 ];

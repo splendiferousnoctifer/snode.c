@@ -17,6 +17,12 @@ var dir_c0c51ca70b1154ee90f078275a100cbc =
     [ "SocketListener.h", "_socket_listener_8h.html", [
       [ "SocketListener", "classnet_1_1socket_1_1stream_1_1_socket_listener.html", "classnet_1_1socket_1_1stream_1_1_socket_listener" ]
     ] ],
+    [ "SocketProtocol.h", "_socket_protocol_8h.html", [
+      [ "SocketProtocol", "classnet_1_1socket_1_1stream_1_1_socket_protocol.html", "classnet_1_1socket_1_1stream_1_1_socket_protocol" ]
+    ] ],
+    [ "SocketProtocolFactory.h", "_socket_protocol_factory_8h.html", [
+      [ "SocketProtocolFactory", "classnet_1_1socket_1_1stream_1_1_socket_protocol_factory.html", "classnet_1_1socket_1_1stream_1_1_socket_protocol_factory" ]
+    ] ],
     [ "SocketReader.h", "_socket_reader_8h.html", "_socket_reader_8h" ],
     [ "SocketServer.h", "stream_2_socket_server_8h.html", [
       [ "SocketServer", "classnet_1_1socket_1_1stream_1_1_socket_server.html", "classnet_1_1socket_1_1stream_1_1_socket_server" ]

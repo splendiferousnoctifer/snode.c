@@ -350,9 +350,9 @@ Friends</h2></td></tr>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            }</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        });</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <a class="code" href="classexpress_1_1_router.html#adda0b8e1030d917bacb75b570d2a16a8">use</a>([<span class="keyword">this</span>] <a class="code" href="_router_8h.html#a8b7131df91fe7a961e2cdadcedb55232">APPLICATION</a>(req, res) {</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            LOG(INFO) &lt;&lt; <span class="stringliteral">&quot;GET &quot;</span> + req.url + <span class="stringliteral">&quot; -&gt; &quot;</span> + this-&gt;<a class="code" href="classexpress_1_1middleware_1_1_static_middleware.html#a4c1b12467fbff98a6aeecb56774a779e">root</a> + req.url;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            res.sendFile(this-&gt;<a class="code" href="classexpress_1_1middleware_1_1_static_middleware.html#a4c1b12467fbff98a6aeecb56774a779e">root</a> + req.url, [&amp;req](<span class="keywordtype">int</span> ret) -&gt; <span class="keywordtype">void</span> {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <a class="code" href="classexpress_1_1_router.html#adda0b8e1030d917bacb75b570d2a16a8">use</a>([&amp;<a class="code" href="classexpress_1_1middleware_1_1_static_middleware.html#a4c1b12467fbff98a6aeecb56774a779e">root</a> = this-&gt;<a class="code" href="classexpress_1_1middleware_1_1_static_middleware.html#a4c1b12467fbff98a6aeecb56774a779e">root</a>] <a class="code" href="_router_8h.html#a8b7131df91fe7a961e2cdadcedb55232">APPLICATION</a>(req, res) {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            LOG(INFO) &lt;&lt; <span class="stringliteral">&quot;GET &quot;</span> + req.url + <span class="stringliteral">&quot; -&gt; &quot;</span> + <a class="code" href="classexpress_1_1middleware_1_1_static_middleware.html#a4c1b12467fbff98a6aeecb56774a779e">root</a> + req.url;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            res.sendFile(<a class="code" href="classexpress_1_1middleware_1_1_static_middleware.html#a4c1b12467fbff98a6aeecb56774a779e">root</a> + req.url, [&amp;req](<span class="keywordtype">int</span> ret) -&gt; <span class="keywordtype">void</span> {</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                if (ret != 0) {</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                    PLOG(ERROR) &lt;&lt; req.url;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                }</div>
@@ -373,8 +373,7 @@ Friends</h2></td></tr>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classexpress_1_1middleware_1_1_static_middleware_af712793a6f6d600b813fc4a6d3fbe41d_cgraph.svg" width="466" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classexpress_1_1middleware_1_1_static_middleware_af712793a6f6d600b813fc4a6d3fbe41d_cgraph.svg" width="466" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
