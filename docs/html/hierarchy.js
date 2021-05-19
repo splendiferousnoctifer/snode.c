@@ -216,12 +216,10 @@ var hierarchy =
       [ "http::client::ClientContextBase", "classhttp_1_1client_1_1_client_context_base.html", [
         [ "http::client::ClientContext< RequestT, ResponseT >", "classhttp_1_1client_1_1_client_context.html", null ]
       ] ],
-      [ "http::server::ServerContext", "classhttp_1_1server_1_1_server_context.html", [
-        [ "http::server::HTTPServerContextBase", "classhttp_1_1server_1_1_h_t_t_p_server_context_base.html", [
-          [ "http::server::HTTPServerContext< RequestT, ResponseT >", "classhttp_1_1server_1_1_h_t_t_p_server_context.html", null ]
-        ] ],
-        [ "http::websocket::WSServerContext", "classhttp_1_1websocket_1_1_w_s_server_context.html", null ]
-      ] ]
+      [ "http::server::HTTPServerContextBase", "classhttp_1_1server_1_1_h_t_t_p_server_context_base.html", [
+        [ "http::server::HTTPServerContext< RequestT, ResponseT >", "classhttp_1_1server_1_1_h_t_t_p_server_context.html", null ]
+      ] ],
+      [ "http::websocket::WSServerContext", "classhttp_1_1websocket_1_1_w_s_server_context.html", null ]
     ] ],
     [ "net::socket::stream::SocketProtocolFactory", "classnet_1_1socket_1_1stream_1_1_socket_protocol_factory.html", [
       [ "http::client::ClientContextFactory< RequestT, ResponseT >", "classhttp_1_1client_1_1_client_context_factory.html", null ],

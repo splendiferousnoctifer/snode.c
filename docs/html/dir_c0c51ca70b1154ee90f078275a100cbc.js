@@ -17,6 +17,7 @@ var dir_c0c51ca70b1154ee90f078275a100cbc =
     [ "SocketListener.h", "_socket_listener_8h.html", [
       [ "SocketListener", "classnet_1_1socket_1_1stream_1_1_socket_listener.html", "classnet_1_1socket_1_1stream_1_1_socket_listener" ]
     ] ],
+    [ "SocketProtocol.cpp", "_socket_protocol_8cpp.html", null ],
     [ "SocketProtocol.h", "_socket_protocol_8h.html", [
       [ "SocketProtocol", "classnet_1_1socket_1_1stream_1_1_socket_protocol.html", "classnet_1_1socket_1_1stream_1_1_socket_protocol" ]
     ] ],

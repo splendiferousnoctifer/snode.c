@@ -95,12 +95,14 @@ $(document).ready(function(){initNavTree('classhttp_1_1server_1_1_server.html','
 <div class="dynheader">
 Inheritance diagram for http::server::Server&lt; SocketServerT, RequestT, ResponseT &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1server_1_1_server__inherit__graph.svg" width="954" height="663"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1server_1_1_server__inherit__graph.svg" width="954" height="663"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <div class="dynheader">
 Collaboration diagram for http::server::Server&lt; SocketServerT, RequestT, ResponseT &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1server_1_1_server__coll__graph.svg" width="198" height="191"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1server_1_1_server__coll__graph.svg" width="198" height="191"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -305,22 +307,22 @@ template&lt;typename SocketServerT , typename RequestT , typename ResponseT &gt;
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                  []([[maybe_unused]] <a class="code" href="classhttp_1_1server_1_1_server.html#ae62e82d62e02d81646cdfdf95bfe3491">SocketConnection</a>* socketConnection,</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                     [[maybe_unused]] <span class="keyword">const</span> <span class="keywordtype">char</span>* junk,</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                     [[maybe_unused]] std::size_t junkLen) -&gt; <span class="keywordtype">void</span> { <span class="comment">// onRead</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                      <span class="comment">//                      static_cast&lt;ServerContext*&gt;(socketConnection-&gt;getSocketProtocol())-&gt;take(junk, junkLen);</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                  },</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                  [](<a class="code" href="classhttp_1_1server_1_1_server.html#ae62e82d62e02d81646cdfdf95bfe3491">SocketConnection</a>* socketConnection, <span class="keywordtype">int</span> errnum) -&gt; <span class="keywordtype">void</span> { <span class="comment">// onReadError</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                      <span class="keyword">static_cast&lt;</span>ServerContext*<span class="keyword">&gt;</span>(socketConnection-&gt;getSocketProtocol())-&gt;onReadError(errnum);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                  },</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                  [](<a class="code" href="classhttp_1_1server_1_1_server.html#ae62e82d62e02d81646cdfdf95bfe3491">SocketConnection</a>* socketConnection, <span class="keywordtype">int</span> errnum) -&gt; <span class="keywordtype">void</span> { <span class="comment">// onWriteError</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                      <span class="keyword">static_cast&lt;</span>ServerContext*<span class="keyword">&gt;</span>(socketConnection-&gt;getSocketProtocol())-&gt;onWriteError(errnum);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                  },</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                  options) {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                  },</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                  [](<a class="code" href="classhttp_1_1server_1_1_server.html#ae62e82d62e02d81646cdfdf95bfe3491">SocketConnection</a>* socketConnection, <span class="keywordtype">int</span> errnum) -&gt; <span class="keywordtype">void</span> { <span class="comment">// onReadError</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                      <span class="keyword">static_cast&lt;</span><a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html">net::socket::stream::SocketProtocol</a>*<span class="keyword">&gt;</span>(socketConnection-&gt;getSocketProtocol())-&gt;onReadError(errnum);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                  },</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                  [](<a class="code" href="classhttp_1_1server_1_1_server.html#ae62e82d62e02d81646cdfdf95bfe3491">SocketConnection</a>* socketConnection, <span class="keywordtype">int</span> errnum) -&gt; <span class="keywordtype">void</span> { <span class="comment">// onWriteError</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                      <span class="keyword">static_cast&lt;</span><a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html">net::socket::stream::SocketProtocol</a>*<span class="keyword">&gt;</span>(socketConnection-&gt;getSocketProtocol())-&gt;onWriteError(errnum);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                  },</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                  options) {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        }</div>
 <div class="ttc" id="aclasshttp_1_1server_1_1_server_html_a6e4c561f2d2aa4c8f9c51ac248a824e2"><div class="ttname"><a href="classhttp_1_1server_1_1_server.html#a6e4c561f2d2aa4c8f9c51ac248a824e2">http::server::Server::SocketAddress</a></div><div class="ttdeci">typename SocketConnection::SocketAddress SocketAddress</div><div class="ttdef"><b>Definition:</b> <a href="_server_8h_source.html#l00026">Server.h:26</a></div></div>
-<div class="ttc" id="aclasshttp_1_1server_1_1_server_html_a9f2bdbef81b8def80350b9ca43e781c8"><div class="ttname"><a href="classhttp_1_1server_1_1_server.html#a9f2bdbef81b8def80350b9ca43e781c8">http::server::Server::onConnect</a></div><div class="ttdeci">void onConnect(const std::function&lt; void(const SocketAddress &amp;, const SocketAddress &amp;)&gt; &amp;onConnect)</div><div class="ttdef"><b>Definition:</b> <a href="_server_8h_source.html#l00069">Server.h:69</a></div></div>
-<div class="ttc" id="aclasshttp_1_1server_1_1_server_html_ab905c3191ae1a150270cb367e2cc295e"><div class="ttname"><a href="classhttp_1_1server_1_1_server.html#ab905c3191ae1a150270cb367e2cc295e">http::server::Server::onDisconnect</a></div><div class="ttdeci">void onDisconnect(const std::function&lt; void(SocketConnection *)&gt; &amp;onDisconnect)</div><div class="ttdef"><b>Definition:</b> <a href="_server_8h_source.html#l00077">Server.h:77</a></div></div>
-<div class="ttc" id="aclasshttp_1_1server_1_1_server_html_acf812babf3a5df27e87920c98ada1cd6"><div class="ttname"><a href="classhttp_1_1server_1_1_server.html#acf812babf3a5df27e87920c98ada1cd6">http::server::Server::onConnected</a></div><div class="ttdeci">void onConnected(const std::function&lt; void(SocketConnection *)&gt; &amp;onConnected)</div><div class="ttdef"><b>Definition:</b> <a href="_server_8h_source.html#l00073">Server.h:73</a></div></div>
-<div class="ttc" id="aclasshttp_1_1server_1_1_server_html_ad3f945d64af80c944f29dd4c5e4f154f"><div class="ttname"><a href="classhttp_1_1server_1_1_server.html#ad3f945d64af80c944f29dd4c5e4f154f">http::server::Server::socketServer</a></div><div class="ttdeci">SocketServer socketServer</div><div class="ttdef"><b>Definition:</b> <a href="_server_8h_source.html#l00082">Server.h:82</a></div></div>
+<div class="ttc" id="aclasshttp_1_1server_1_1_server_html_a9f2bdbef81b8def80350b9ca43e781c8"><div class="ttname"><a href="classhttp_1_1server_1_1_server.html#a9f2bdbef81b8def80350b9ca43e781c8">http::server::Server::onConnect</a></div><div class="ttdeci">void onConnect(const std::function&lt; void(const SocketAddress &amp;, const SocketAddress &amp;)&gt; &amp;onConnect)</div><div class="ttdef"><b>Definition:</b> <a href="_server_8h_source.html#l00068">Server.h:68</a></div></div>
+<div class="ttc" id="aclasshttp_1_1server_1_1_server_html_ab905c3191ae1a150270cb367e2cc295e"><div class="ttname"><a href="classhttp_1_1server_1_1_server.html#ab905c3191ae1a150270cb367e2cc295e">http::server::Server::onDisconnect</a></div><div class="ttdeci">void onDisconnect(const std::function&lt; void(SocketConnection *)&gt; &amp;onDisconnect)</div><div class="ttdef"><b>Definition:</b> <a href="_server_8h_source.html#l00076">Server.h:76</a></div></div>
+<div class="ttc" id="aclasshttp_1_1server_1_1_server_html_acf812babf3a5df27e87920c98ada1cd6"><div class="ttname"><a href="classhttp_1_1server_1_1_server.html#acf812babf3a5df27e87920c98ada1cd6">http::server::Server::onConnected</a></div><div class="ttdeci">void onConnected(const std::function&lt; void(SocketConnection *)&gt; &amp;onConnected)</div><div class="ttdef"><b>Definition:</b> <a href="_server_8h_source.html#l00072">Server.h:72</a></div></div>
+<div class="ttc" id="aclasshttp_1_1server_1_1_server_html_ad3f945d64af80c944f29dd4c5e4f154f"><div class="ttname"><a href="classhttp_1_1server_1_1_server.html#ad3f945d64af80c944f29dd4c5e4f154f">http::server::Server::socketServer</a></div><div class="ttdeci">SocketServer socketServer</div><div class="ttdef"><b>Definition:</b> <a href="_server_8h_source.html#l00081">Server.h:81</a></div></div>
 <div class="ttc" id="aclasshttp_1_1server_1_1_server_html_ae62e82d62e02d81646cdfdf95bfe3491"><div class="ttname"><a href="classhttp_1_1server_1_1_server.html#ae62e82d62e02d81646cdfdf95bfe3491">http::server::Server::SocketConnection</a></div><div class="ttdeci">typename SocketServer::SocketConnection SocketConnection</div><div class="ttdef"><b>Definition:</b> <a href="_server_8h_source.html#l00025">Server.h:25</a></div></div>
+<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_protocol_html"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html">net::socket::stream::SocketProtocol</a></div><div class="ttdef"><b>Definition:</b> <a href="_socket_protocol_8h_source.html#l00032">SocketProtocol.h:32</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -367,12 +369,12 @@ template&lt;typename SocketServerT , typename RequestT , typename ResponseT &gt;
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_server_8h_source.html#l00065">65</a> of file <a class="el" href="_server_8h_source.html">Server.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                                                                                                                   {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <a class="code" href="classhttp_1_1server_1_1_server.html#ad3f945d64af80c944f29dd4c5e4f154f">socketServer</a>.listen(<a class="code" href="classhttp_1_1server_1_1_server.html#a6e4c561f2d2aa4c8f9c51ac248a824e2">SocketAddress</a>(ipOrHostname, port), 5, onError);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        }</div>
+<p class="definition">Definition at line <a class="el" href="_server_8h_source.html#l00064">64</a> of file <a class="el" href="_server_8h_source.html">Server.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                                                                                                                   {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <a class="code" href="classhttp_1_1server_1_1_server.html#ad3f945d64af80c944f29dd4c5e4f154f">socketServer</a>.listen(<a class="code" href="classhttp_1_1server_1_1_server.html#a6e4c561f2d2aa4c8f9c51ac248a824e2">SocketAddress</a>(ipOrHostname, port), 5, onError);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_server_8h_source.html#l00082">http::server::Server&lt; SocketServerT, RequestT, ResponseT &gt;::socketServer</a>.</p>
+<p class="reference">References <a class="el" href="_server_8h_source.html#l00081">http::server::Server&lt; SocketServerT, RequestT, ResponseT &gt;::socketServer</a>.</p>
 
 </div>
 </div>
@@ -412,12 +414,12 @@ template&lt;typename SocketServerT , typename RequestT , typename ResponseT &gt;
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_server_8h_source.html#l00061">61</a> of file <a class="el" href="_server_8h_source.html">Server.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                                                                                    {</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <a class="code" href="classhttp_1_1server_1_1_server.html#ad3f945d64af80c944f29dd4c5e4f154f">socketServer</a>.listen(<a class="code" href="classhttp_1_1server_1_1_server.html#a6e4c561f2d2aa4c8f9c51ac248a824e2">SocketAddress</a>(port), 5, onError);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        }</div>
+<p class="definition">Definition at line <a class="el" href="_server_8h_source.html#l00060">60</a> of file <a class="el" href="_server_8h_source.html">Server.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                                                                                    {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <a class="code" href="classhttp_1_1server_1_1_server.html#ad3f945d64af80c944f29dd4c5e4f154f">socketServer</a>.listen(<a class="code" href="classhttp_1_1server_1_1_server.html#a6e4c561f2d2aa4c8f9c51ac248a824e2">SocketAddress</a>(port), 5, onError);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_server_8h_source.html#l00082">http::server::Server&lt; SocketServerT, RequestT, ResponseT &gt;::socketServer</a>.</p>
+<p class="reference">References <a class="el" href="_server_8h_source.html#l00081">http::server::Server&lt; SocketServerT, RequestT, ResponseT &gt;::socketServer</a>.</p>
 
 </div>
 </div>
@@ -447,12 +449,12 @@ template&lt;typename SocketServerT , typename RequestT , typename ResponseT &gt;
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_server_8h_source.html#l00069">69</a> of file <a class="el" href="_server_8h_source.html">Server.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                                                                                                       {</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <a class="code" href="classhttp_1_1server_1_1_server.html#ad3f945d64af80c944f29dd4c5e4f154f">socketServer</a>.onConnect(<a class="code" href="classhttp_1_1server_1_1_server.html#a9f2bdbef81b8def80350b9ca43e781c8">onConnect</a>);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        }</div>
+<p class="definition">Definition at line <a class="el" href="_server_8h_source.html#l00068">68</a> of file <a class="el" href="_server_8h_source.html">Server.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                                                                                                       {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <a class="code" href="classhttp_1_1server_1_1_server.html#ad3f945d64af80c944f29dd4c5e4f154f">socketServer</a>.onConnect(<a class="code" href="classhttp_1_1server_1_1_server.html#a9f2bdbef81b8def80350b9ca43e781c8">onConnect</a>);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_server_8h_source.html#l00082">http::server::Server&lt; SocketServerT, RequestT, ResponseT &gt;::socketServer</a>.</p>
+<p class="reference">References <a class="el" href="_server_8h_source.html#l00081">http::server::Server&lt; SocketServerT, RequestT, ResponseT &gt;::socketServer</a>.</p>
 
 </div>
 </div>
@@ -482,12 +484,12 @@ template&lt;typename SocketServerT , typename RequestT , typename ResponseT &gt;
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_server_8h_source.html#l00073">73</a> of file <a class="el" href="_server_8h_source.html">Server.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                                                                                  {</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <a class="code" href="classhttp_1_1server_1_1_server.html#ad3f945d64af80c944f29dd4c5e4f154f">socketServer</a>.onConnected(<a class="code" href="classhttp_1_1server_1_1_server.html#acf812babf3a5df27e87920c98ada1cd6">onConnected</a>);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        }</div>
+<p class="definition">Definition at line <a class="el" href="_server_8h_source.html#l00072">72</a> of file <a class="el" href="_server_8h_source.html">Server.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                                                                                  {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <a class="code" href="classhttp_1_1server_1_1_server.html#ad3f945d64af80c944f29dd4c5e4f154f">socketServer</a>.onConnected(<a class="code" href="classhttp_1_1server_1_1_server.html#acf812babf3a5df27e87920c98ada1cd6">onConnected</a>);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_server_8h_source.html#l00082">http::server::Server&lt; SocketServerT, RequestT, ResponseT &gt;::socketServer</a>.</p>
+<p class="reference">References <a class="el" href="_server_8h_source.html#l00081">http::server::Server&lt; SocketServerT, RequestT, ResponseT &gt;::socketServer</a>.</p>
 
 </div>
 </div>
@@ -517,12 +519,12 @@ template&lt;typename SocketServerT , typename RequestT , typename ResponseT &gt;
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_server_8h_source.html#l00077">77</a> of file <a class="el" href="_server_8h_source.html">Server.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                                                                                    {</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <a class="code" href="classhttp_1_1server_1_1_server.html#ad3f945d64af80c944f29dd4c5e4f154f">socketServer</a>.onDisconnect(<a class="code" href="classhttp_1_1server_1_1_server.html#ab905c3191ae1a150270cb367e2cc295e">onDisconnect</a>);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        }</div>
+<p class="definition">Definition at line <a class="el" href="_server_8h_source.html#l00076">76</a> of file <a class="el" href="_server_8h_source.html">Server.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                                                                                    {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <a class="code" href="classhttp_1_1server_1_1_server.html#ad3f945d64af80c944f29dd4c5e4f154f">socketServer</a>.onDisconnect(<a class="code" href="classhttp_1_1server_1_1_server.html#ab905c3191ae1a150270cb367e2cc295e">onDisconnect</a>);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_server_8h_source.html#l00082">http::server::Server&lt; SocketServerT, RequestT, ResponseT &gt;::socketServer</a>.</p>
+<p class="reference">References <a class="el" href="_server_8h_source.html#l00081">http::server::Server&lt; SocketServerT, RequestT, ResponseT &gt;::socketServer</a>.</p>
 
 </div>
 </div>
@@ -549,9 +551,9 @@ template&lt;typename SocketServerT , typename RequestT , typename ResponseT &gt;
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_server_8h_source.html#l00082">82</a> of file <a class="el" href="_server_8h_source.html">Server.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_server_8h_source.html#l00081">81</a> of file <a class="el" href="_server_8h_source.html">Server.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_server_8h_source.html#l00061">http::server::Server&lt; SocketServerT, RequestT, ResponseT &gt;::listen()</a>, <a class="el" href="_server_8h_source.html#l00069">http::server::Server&lt; SocketServerT, RequestT, ResponseT &gt;::onConnect()</a>, <a class="el" href="_server_8h_source.html#l00073">http::server::Server&lt; SocketServerT, RequestT, ResponseT &gt;::onConnected()</a>, and <a class="el" href="_server_8h_source.html#l00077">http::server::Server&lt; SocketServerT, RequestT, ResponseT &gt;::onDisconnect()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_server_8h_source.html#l00060">http::server::Server&lt; SocketServerT, RequestT, ResponseT &gt;::listen()</a>, <a class="el" href="_server_8h_source.html#l00068">http::server::Server&lt; SocketServerT, RequestT, ResponseT &gt;::onConnect()</a>, <a class="el" href="_server_8h_source.html#l00072">http::server::Server&lt; SocketServerT, RequestT, ResponseT &gt;::onConnected()</a>, and <a class="el" href="_server_8h_source.html#l00076">http::server::Server&lt; SocketServerT, RequestT, ResponseT &gt;::onDisconnect()</a>.</p>
 
 </div>
 </div>

@@ -1,11 +1,5 @@
 var NAVTREEINDEX6 =
 {
-"functions_func_e.html":[9,3,1,4],
-"functions_func_f.html":[9,3,1,5],
-"functions_func_g.html":[9,3,1,6],
-"functions_func_h.html":[9,3,1,7],
-"functions_func_i.html":[9,3,1,8],
-"functions_func_j.html":[9,3,1,9],
 "functions_func_l.html":[9,3,1,10],
 "functions_func_m.html":[9,3,1,11],
 "functions_func_o.html":[9,3,1,12],
@@ -249,5 +243,11 @@ var NAVTREEINDEX6 =
 "namespacenet_1_1socket_1_1bluetooth_1_1address.html":[8,0,3,0,0,0],
 "namespacenet_1_1socket_1_1bluetooth_1_1l2cap.html":[8,0,3,0,0,1],
 "namespacenet_1_1socket_1_1bluetooth_1_1rfcomm.html":[8,0,3,0,0,2],
-"namespacenet_1_1socket_1_1bluetooth_1_1rfcomm_1_1legacy.html":[8,0,3,0,0,2,0]
+"namespacenet_1_1socket_1_1bluetooth_1_1rfcomm_1_1legacy.html":[8,0,3,0,0,2,0],
+"namespacenet_1_1socket_1_1bluetooth_1_1rfcomm_1_1tls.html":[8,0,3,0,0,2,1],
+"namespacenet_1_1socket_1_1ip.html":[8,0,3,0,1],
+"namespacenet_1_1socket_1_1ip_1_1address.html":[8,0,3,0,1,0],
+"namespacenet_1_1socket_1_1ip_1_1address_1_1ipv4.html":[8,0,3,0,1,0,0],
+"namespacenet_1_1socket_1_1ip_1_1address_1_1ipv6.html":[8,0,3,0,1,0,1],
+"namespacenet_1_1socket_1_1ip_1_1tcp.html":[8,0,3,0,1,1]
 };

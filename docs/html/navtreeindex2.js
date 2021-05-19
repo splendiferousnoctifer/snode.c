@@ -1,7 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"classexpress_1_1middleware_1_1_static_middleware.html#af8e55a4a308bc4bf7421b869cc5810a5":[9,0,0,1,1,2],
-"classexpress_1_1middleware_1_1_static_middleware.html#affa81877ef800c2c23ce51dc8f5a854b":[9,0,0,1,1,8],
 "classexpress_1_1middleware_1_1_v_host.html":[9,0,0,1,2],
 "classexpress_1_1middleware_1_1_v_host.html#a1635415d2b3f6857d8f86396af13f136":[9,0,0,1,2,3],
 "classexpress_1_1middleware_1_1_v_host.html#ab60d9df1ad85a8ee414c111135e250b1":[9,0,0,1,2,0],
@@ -189,8 +187,8 @@ var NAVTREEINDEX2 =
 "classhttp_1_1server_1_1_h_t_t_p_server_context.html#a77819a10b5f86c000b6fccf7801bb290":[9,0,1,1,3,2],
 "classhttp_1_1server_1_1_h_t_t_p_server_context.html#a976303c598c014293751536043f3c75a":[9,0,1,1,3,18],
 "classhttp_1_1server_1_1_h_t_t_p_server_context.html#aa4c60320e81b0f335062ac7c7bf21fe7":[9,0,1,1,3,7],
-"classhttp_1_1server_1_1_h_t_t_p_server_context.html#abeb46f47c10e3c86b88b260edece4d53":[9,0,1,1,3,8],
 "classhttp_1_1server_1_1_h_t_t_p_server_context.html#ac7abd3ca32953639ea58f373c74cabb4":[9,0,1,1,3,12],
+"classhttp_1_1server_1_1_h_t_t_p_server_context.html#af19aad8b7d8f401368e5aeda75196644":[9,0,1,1,3,8],
 "classhttp_1_1server_1_1_h_t_t_p_server_context.html#af7afcbfe4b07c9827b2a6b57642c6996":[9,0,1,1,3,6],
 "classhttp_1_1server_1_1_h_t_t_p_server_context.html#af85ddac0108e6a6c236d2ef044e0189a":[9,0,1,1,3,9],
 "classhttp_1_1server_1_1_h_t_t_p_server_context_base.html":[9,0,1,1,2],
@@ -249,5 +247,7 @@ var NAVTREEINDEX2 =
 "classhttp_1_1server_1_1_request_parser.html#ae9b0ac2e7fe03844c9d463a5fa3c01bc":[9,0,1,1,6,20],
 "classhttp_1_1server_1_1_request_parser.html#aebc0032d18b492a679e3c414b8049adb":[9,0,1,1,6,7],
 "classhttp_1_1server_1_1_request_parser.html#aeff3c9f141b13e6e41965334fbe908da":[9,0,1,1,6,9],
-"classhttp_1_1server_1_1_response.html":[9,0,1,1,7]
+"classhttp_1_1server_1_1_response.html":[9,0,1,1,7],
+"classhttp_1_1server_1_1_response.html#a023bb46bc7f9c3d7955e04ffc1e1e322":[9,0,1,1,7,23],
+"classhttp_1_1server_1_1_response.html#a099609859acedb8b45f58b6b2a72203f":[9,0,1,1,7,16]
 };

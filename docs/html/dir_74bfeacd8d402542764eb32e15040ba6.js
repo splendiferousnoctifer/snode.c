@@ -6,9 +6,5 @@ var dir_74bfeacd8d402542764eb32e15040ba6 =
     [ "ws", "dir_57e3e91f652b9a376accfffa0fcea265.html", "dir_57e3e91f652b9a376accfffa0fcea265" ],
     [ "Server.h", "_server_8h.html", [
       [ "Server", "classhttp_1_1server_1_1_server.html", "classhttp_1_1server_1_1_server" ]
-    ] ],
-    [ "ServerContext.cpp", "_server_context_8cpp.html", null ],
-    [ "ServerContext.h", "_server_context_8h.html", [
-      [ "ServerContext", "classhttp_1_1server_1_1_server_context.html", "classhttp_1_1server_1_1_server_context" ]
     ] ]
 ];

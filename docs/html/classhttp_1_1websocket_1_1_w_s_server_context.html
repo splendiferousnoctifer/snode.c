@@ -94,18 +94,20 @@ $(document).ready(function(){initNavTree('classhttp_1_1websocket_1_1_w_s_server_
 <div class="dynheader">
 Inheritance diagram for http::websocket::WSServerContext:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1websocket_1_1_w_s_server_context__inherit__graph.svg" width="648" height="970"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1websocket_1_1_w_s_server_context__inherit__graph.svg" width="638" height="771"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <div class="dynheader">
 Collaboration diagram for http::websocket::WSServerContext:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1websocket_1_1_w_s_server_context__coll__graph.svg" width="859" height="986"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1websocket_1_1_w_s_server_context__coll__graph.svg" width="706" height="786"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:aabf1631b114b88d21c73b7827f4c2dc9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1websocket_1_1_w_s_server_context.html#aabf1631b114b88d21c73b7827f4c2dc9">parseReceivedData</a> (const char *junk, std::size_t junklen) override</td></tr>
-<tr class="separator:aabf1631b114b88d21c73b7827f4c2dc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25d63fcfc3999ebe9cd66a919659351b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1websocket_1_1_w_s_server_context.html#a25d63fcfc3999ebe9cd66a919659351b">receiveData</a> (const char *junk, std::size_t junklen) override</td></tr>
+<tr class="separator:a25d63fcfc3999ebe9cd66a919659351b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2a5be4a80eb49452654965767b56358"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1websocket_1_1_w_s_server_context.html#ac2a5be4a80eb49452654965767b56358">onReadError</a> (int errnum) override</td></tr>
 <tr class="separator:ac2a5be4a80eb49452654965767b56358"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56d75f547444509966f40b664e8a11d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1websocket_1_1_w_s_server_context.html#a56d75f547444509966f40b664e8a11d4">onWriteError</a> (int errnum) override</td></tr>
@@ -140,17 +142,11 @@ Private Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_types_classhttp_1_1server_1_1_server_context"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classhttp_1_1server_1_1_server_context')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classhttp_1_1server_1_1_server_context.html">http::server::ServerContext</a></td></tr>
-<tr class="memitem:ae4242f6424a7f0f173d9fbe3b0bb9877 inherit pub_types_classhttp_1_1server_1_1_server_context"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1server_1_1_server_context.html#ae4242f6424a7f0f173d9fbe3b0bb9877">SocketConnection</a> = <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html">net::socket::stream::SocketConnectionBase</a></td></tr>
-<tr class="separator:ae4242f6424a7f0f173d9fbe3b0bb9877 inherit pub_types_classhttp_1_1server_1_1_server_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classhttp_1_1server_1_1_server_context"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classhttp_1_1server_1_1_server_context')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classhttp_1_1server_1_1_server_context.html">http::server::ServerContext</a></td></tr>
-<tr class="memitem:a04f4cee35b99344a244ede33c82bca99 inherit pub_methods_classhttp_1_1server_1_1_server_context"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1server_1_1_server_context.html#a04f4cee35b99344a244ede33c82bca99">~ServerContext</a> ()=default</td></tr>
-<tr class="separator:a04f4cee35b99344a244ede33c82bca99 inherit pub_methods_classhttp_1_1server_1_1_server_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aade83878f5a2d229730dcf26436219d7 inherit pub_methods_classhttp_1_1server_1_1_server_context"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1server_1_1_server_context.html#aade83878f5a2d229730dcf26436219d7">upgrade</a> (<a class="el" href="classhttp_1_1server_1_1_server_context.html">ServerContext</a> *newServerContext)</td></tr>
-<tr class="separator:aade83878f5a2d229730dcf26436219d7 inherit pub_methods_classhttp_1_1server_1_1_server_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classnet_1_1socket_1_1stream_1_1_socket_protocol"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classnet_1_1socket_1_1stream_1_1_socket_protocol')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html">net::socket::stream::SocketProtocol</a></td></tr>
 <tr class="memitem:a3d809b4033d9ddbfda43b7903e27a19f inherit pub_methods_classnet_1_1socket_1_1stream_1_1_socket_protocol"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html#a3d809b4033d9ddbfda43b7903e27a19f">~SocketProtocol</a> ()=default</td></tr>
 <tr class="separator:a3d809b4033d9ddbfda43b7903e27a19f inherit pub_methods_classnet_1_1socket_1_1stream_1_1_socket_protocol"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b9d3e21eef2569cc027b7b972b7e021 inherit pub_methods_classnet_1_1socket_1_1stream_1_1_socket_protocol"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html#a8b9d3e21eef2569cc027b7b972b7e021">switchSocketProtocol</a> (<a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html">SocketProtocol</a> *socketProtocol)</td></tr>
+<tr class="separator:a8b9d3e21eef2569cc027b7b972b7e021 inherit pub_methods_classnet_1_1socket_1_1stream_1_1_socket_protocol"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classhttp_1_1websocket_1_1_w_s_receiver"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classhttp_1_1websocket_1_1_w_s_receiver')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classhttp_1_1websocket_1_1_w_s_receiver.html">http::websocket::WSReceiver</a></td></tr>
 <tr class="memitem:a42ba0580cd663e4cb2f898155058ea89 inherit pub_methods_classhttp_1_1websocket_1_1_w_s_receiver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1websocket_1_1_w_s_receiver.html#a42ba0580cd663e4cb2f898155058ea89">receive</a> (char *junk, std::size_t junkLen)</td></tr>
 <tr class="separator:a42ba0580cd663e4cb2f898155058ea89 inherit pub_methods_classhttp_1_1websocket_1_1_w_s_receiver"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -176,10 +172,9 @@ Additional Inherited Members</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:acdd0ef2a57aa98a8394912a7587dfb68 inherit pro_types_classhttp_1_1websocket_1_1_w_s_receiver"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_classhttp_1_1server_1_1_server_context"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classhttp_1_1server_1_1_server_context')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classhttp_1_1server_1_1_server_context.html">http::server::ServerContext</a></td></tr>
-<tr class="memitem:adcecad26a8f318cffbf09327216e4365 inherit pro_methods_classhttp_1_1server_1_1_server_context"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1server_1_1_server_context.html#adcecad26a8f318cffbf09327216e4365">receiveData</a> (const char *junk, std::size_t junkLen) override</td></tr>
-<tr class="separator:adcecad26a8f318cffbf09327216e4365 inherit pro_methods_classhttp_1_1server_1_1_server_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classnet_1_1socket_1_1stream_1_1_socket_protocol"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classnet_1_1socket_1_1stream_1_1_socket_protocol')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html">net::socket::stream::SocketProtocol</a></td></tr>
+<tr class="memitem:af31f6d4a3e3271542deb72da0d654a00 inherit pro_methods_classnet_1_1socket_1_1stream_1_1_socket_protocol"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html#af31f6d4a3e3271542deb72da0d654a00">take</a> (const char *junk, std::size_t junkLen)</td></tr>
+<tr class="separator:af31f6d4a3e3271542deb72da0d654a00 inherit pro_methods_classnet_1_1socket_1_1stream_1_1_socket_protocol"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8af5447e04126e4dc1f8763f344a2f6f inherit pro_methods_classnet_1_1socket_1_1stream_1_1_socket_protocol"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html#a8af5447e04126e4dc1f8763f344a2f6f">setSocketConnection</a> (<a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html">SocketConnectionBase</a> *<a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html#aefc6cfe0cc28926967df0407c3b03729">socketConnection</a>)</td></tr>
 <tr class="separator:a8af5447e04126e4dc1f8763f344a2f6f inherit pro_methods_classnet_1_1socket_1_1stream_1_1_socket_protocol"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classhttp_1_1websocket_1_1_w_s_receiver"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classhttp_1_1websocket_1_1_w_s_receiver')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classhttp_1_1websocket_1_1_w_s_receiver.html">http::websocket::WSReceiver</a></td></tr>
@@ -202,6 +197,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_classnet_1_1socket_1_1stream_1_1_socket_protocol"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classnet_1_1socket_1_1stream_1_1_socket_protocol')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html">net::socket::stream::SocketProtocol</a></td></tr>
 <tr class="memitem:aefc6cfe0cc28926967df0407c3b03729 inherit pro_attribs_classnet_1_1socket_1_1stream_1_1_socket_protocol"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html">SocketConnectionBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html#aefc6cfe0cc28926967df0407c3b03729">socketConnection</a></td></tr>
 <tr class="separator:aefc6cfe0cc28926967df0407c3b03729 inherit pro_attribs_classnet_1_1socket_1_1stream_1_1_socket_protocol"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d1179e1dda4f9449928d769920e0c4d inherit pro_attribs_classnet_1_1socket_1_1stream_1_1_socket_protocol"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html#a5d1179e1dda4f9449928d769920e0c4d">markedForDelete</a> = false</td></tr>
+<tr class="separator:a5d1179e1dda4f9449928d769920e0c4d inherit pro_attribs_classnet_1_1socket_1_1stream_1_1_socket_protocol"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classhttp_1_1websocket_1_1_w_s_receiver"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classhttp_1_1websocket_1_1_w_s_receiver')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classhttp_1_1websocket_1_1_w_s_receiver.html">http::websocket::WSReceiver</a></td></tr>
 <tr class="memitem:a3c438f14a57901132c8b61a51d5df08a inherit pro_attribs_classhttp_1_1websocket_1_1_w_s_receiver"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="classhttp_1_1websocket_1_1_w_s_receiver.html#acdd0ef2a57aa98a8394912a7587dfb68">http::websocket::WSReceiver::ParserState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1websocket_1_1_w_s_receiver.html#a3c438f14a57901132c8b61a51d5df08a">parserState</a> = <a class="el" href="classhttp_1_1websocket_1_1_w_s_receiver.html#acdd0ef2a57aa98a8394912a7587dfb68a19aad9f2fe3ce0023298ab83f7e75775">ParserState::BEGIN</a></td></tr>
 <tr class="separator:a3c438f14a57901132c8b61a51d5df08a inherit pro_attribs_classhttp_1_1websocket_1_1_w_s_receiver"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -305,12 +302,14 @@ Additional Inherited Members</h2></td></tr>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1websocket_1_1_w_s_server_context_a36fd90bda1f6190fe7a4c6afc4d04851_cgraph.svg" width="1228" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1websocket_1_1_w_s_server_context_a36fd90bda1f6190fe7a4c6afc4d04851_cgraph.svg" width="1228" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1websocket_1_1_w_s_server_context_a36fd90bda1f6190fe7a4c6afc4d04851_icgraph.svg" width="424" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1websocket_1_1_w_s_server_context_a36fd90bda1f6190fe7a4c6afc4d04851_icgraph.svg" width="424" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
@@ -352,7 +351,8 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1websocket_1_1_w_s_server_context_ac87957ee526abe31a55a6c5885d13910_cgraph.svg" width="1459" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1websocket_1_1_w_s_server_context_ac87957ee526abe31a55a6c5885d13910_cgraph.svg" width="1459" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
@@ -398,13 +398,14 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html#aefc6cfe0cc28926967df0407c3b03729">socketConnection</a>-&gt;<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#a27dceffb6e668af5ab183a1edbe8b3c6">enqueue</a>(frame, <span class="keyword">static_cast&lt;</span>std::size_t<span class="keyword">&gt;</span>(frameLength));</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    }</div>
 <div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_connection_base_html_a27dceffb6e668af5ab183a1edbe8b3c6"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#a27dceffb6e668af5ab183a1edbe8b3c6">net::socket::stream::SocketConnectionBase::enqueue</a></div><div class="ttdeci">virtual void enqueue(const char *junk, std::size_t junkLen)=0</div></div>
-<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_protocol_html_aefc6cfe0cc28926967df0407c3b03729"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html#aefc6cfe0cc28926967df0407c3b03729">net::socket::stream::SocketProtocol::socketConnection</a></div><div class="ttdeci">SocketConnectionBase * socketConnection</div><div class="ttdef"><b>Definition:</b> <a href="_socket_protocol_8h_source.html#l00045">SocketProtocol.h:45</a></div></div>
+<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_protocol_html_aefc6cfe0cc28926967df0407c3b03729"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html#aefc6cfe0cc28926967df0407c3b03729">net::socket::stream::SocketProtocol::socketConnection</a></div><div class="ttdeci">SocketConnectionBase * socketConnection</div><div class="ttdef"><b>Definition:</b> <a href="_socket_protocol_8h_source.html#l00047">SocketProtocol.h:47</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#a27dceffb6e668af5ab183a1edbe8b3c6">net::socket::stream::SocketConnectionBase::enqueue()</a>, and <a class="el" href="_socket_protocol_8h_source.html#l00045">net::socket::stream::SocketProtocol::socketConnection</a>.</p>
+<p class="reference">References <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#a27dceffb6e668af5ab183a1edbe8b3c6">net::socket::stream::SocketConnectionBase::enqueue()</a>, and <a class="el" href="_socket_protocol_8h_source.html#l00047">net::socket::stream::SocketProtocol::socketConnection</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1websocket_1_1_w_s_server_context_a59aef08f80d447a154c456ba471a7e1f_cgraph.svg" width="408" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1websocket_1_1_w_s_server_context_a59aef08f80d447a154c456ba471a7e1f_cgraph.svg" width="408" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
@@ -518,11 +519,12 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="aclasshttp_1_1websocket_1_1_w_s_server_context_html_ac3fcdd059f5e529b8ef571f9d19ad6db"><div class="ttname"><a href="classhttp_1_1websocket_1_1_w_s_server_context.html#ac3fcdd059f5e529b8ef571f9d19ad6db">http::websocket::WSServerContext::pong</a></div><div class="ttdeci">void pong(const char *reason=nullptr, std::size_t reasonLength=0)</div><div class="ttdef"><b>Definition:</b> <a href="_w_s_server_context_8cpp_source.html#l00121">WSServerContext.cpp:121</a></div></div>
 <div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_connection_base_html_ab08d539e59c0a7c284d97414ac065c03"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#ab08d539e59c0a7c284d97414ac065c03">net::socket::stream::SocketConnectionBase::close</a></div><div class="ttdeci">virtual void close(bool instantly=false)=0</div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#ab08d539e59c0a7c284d97414ac065c03">net::socket::stream::SocketConnectionBase::close()</a>, <a class="el" href="_w_s_server_context_8cpp_source.html#l00095">close()</a>, <a class="el" href="_w_s_server_context_8h_source.html#l00054">closeReceived</a>, <a class="el" href="_w_s_server_context_8h_source.html#l00055">closeSent</a>, <a class="el" href="_w_s_transmitter_8cpp_source.html#l00037">http::websocket::WSTransmitter::message()</a>, <a class="el" href="_w_s_server_context_8h_source.html#l00057">pingReceived</a>, <a class="el" href="_w_s_server_context_8cpp_source.html#l00121">pong()</a>, <a class="el" href="_w_s_server_context_8h_source.html#l00058">pongReceived</a>, and <a class="el" href="_socket_protocol_8h_source.html#l00045">net::socket::stream::SocketProtocol::socketConnection</a>.</p>
+<p class="reference">References <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#ab08d539e59c0a7c284d97414ac065c03">net::socket::stream::SocketConnectionBase::close()</a>, <a class="el" href="_w_s_server_context_8cpp_source.html#l00095">close()</a>, <a class="el" href="_w_s_server_context_8h_source.html#l00054">closeReceived</a>, <a class="el" href="_w_s_server_context_8h_source.html#l00055">closeSent</a>, <a class="el" href="_w_s_transmitter_8cpp_source.html#l00037">http::websocket::WSTransmitter::message()</a>, <a class="el" href="_w_s_server_context_8h_source.html#l00057">pingReceived</a>, <a class="el" href="_w_s_server_context_8cpp_source.html#l00121">pong()</a>, <a class="el" href="_w_s_server_context_8h_source.html#l00058">pongReceived</a>, and <a class="el" href="_socket_protocol_8h_source.html#l00047">net::socket::stream::SocketProtocol::socketConnection</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1websocket_1_1_w_s_server_context_ab6b98657a369611978da97a43fac36c8_cgraph.svg" width="1459" height="251"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1websocket_1_1_w_s_server_context_ab6b98657a369611978da97a43fac36c8_cgraph.svg" width="1459" height="251"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
@@ -631,57 +633,6 @@ Here is the call graph for this function:</div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="aabf1631b114b88d21c73b7827f4c2dc9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aabf1631b114b88d21c73b7827f4c2dc9">&#9670;&nbsp;</a></span>parseReceivedData()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void http::websocket::WSServerContext::parseReceivedData </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>junk</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>junklen</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implements <a class="el" href="classhttp_1_1server_1_1_server_context.html#ac8488c527a760464189c528192aded90">http::server::ServerContext</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="_w_s_server_context_8cpp_source.html#l00032">32</a> of file <a class="el" href="_w_s_server_context_8cpp_source.html">WSServerContext.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                                                                               {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="code" href="classhttp_1_1websocket_1_1_w_s_receiver.html#a42ba0580cd663e4cb2f898155058ea89">WSReceiver::receive</a>(<span class="keyword">const_cast&lt;</span><span class="keywordtype">char</span>*<span class="keyword">&gt;</span>(junk), junkLen);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    }</div>
-<div class="ttc" id="aclasshttp_1_1websocket_1_1_w_s_receiver_html_a42ba0580cd663e4cb2f898155058ea89"><div class="ttname"><a href="classhttp_1_1websocket_1_1_w_s_receiver.html#a42ba0580cd663e4cb2f898155058ea89">http::websocket::WSReceiver::receive</a></div><div class="ttdeci">void receive(char *junk, std::size_t junkLen)</div><div class="ttdef"><b>Definition:</b> <a href="_w_s_receiver_8cpp_source.html#l00031">WSReceiver.cpp:31</a></div></div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="_w_s_receiver_8cpp_source.html#l00031">http::websocket::WSReceiver::receive()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1websocket_1_1_w_s_server_context_aabf1631b114b88d21c73b7827f4c2dc9_cgraph.svg" width="938" height="496"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
-</div>
-</div>
 <a id="a0e6994ceb720a31cf4823f0cf418bb03"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0e6994ceb720a31cf4823f0cf418bb03">&#9670;&nbsp;</a></span>ping()</h2>
 
@@ -725,7 +676,8 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1websocket_1_1_w_s_server_context_a0e6994ceb720a31cf4823f0cf418bb03_cgraph.svg" width="1228" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1websocket_1_1_w_s_server_context_a0e6994ceb720a31cf4823f0cf418bb03_cgraph.svg" width="1228" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
@@ -775,12 +727,66 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1websocket_1_1_w_s_server_context_ac3fcdd059f5e529b8ef571f9d19ad6db_cgraph.svg" width="1228" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1websocket_1_1_w_s_server_context_ac3fcdd059f5e529b8ef571f9d19ad6db_cgraph.svg" width="1228" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1websocket_1_1_w_s_server_context_ac3fcdd059f5e529b8ef571f9d19ad6db_icgraph.svg" width="424" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1websocket_1_1_w_s_server_context_ac3fcdd059f5e529b8ef571f9d19ad6db_icgraph.svg" width="424" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a25d63fcfc3999ebe9cd66a919659351b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25d63fcfc3999ebe9cd66a919659351b">&#9670;&nbsp;</a></span>receiveData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void http::websocket::WSServerContext::receiveData </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>junk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>junklen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html#a7e9f933fceb3b753309a38229b597fc4">net::socket::stream::SocketProtocol</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_w_s_server_context_8cpp_source.html#l00032">32</a> of file <a class="el" href="_w_s_server_context_8cpp_source.html">WSServerContext.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                                                                         {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="code" href="classhttp_1_1websocket_1_1_w_s_receiver.html#a42ba0580cd663e4cb2f898155058ea89">WSReceiver::receive</a>(<span class="keyword">const_cast&lt;</span><span class="keywordtype">char</span>*<span class="keyword">&gt;</span>(junk), junkLen);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    }</div>
+<div class="ttc" id="aclasshttp_1_1websocket_1_1_w_s_receiver_html_a42ba0580cd663e4cb2f898155058ea89"><div class="ttname"><a href="classhttp_1_1websocket_1_1_w_s_receiver.html#a42ba0580cd663e4cb2f898155058ea89">http::websocket::WSReceiver::receive</a></div><div class="ttdeci">void receive(char *junk, std::size_t junkLen)</div><div class="ttdef"><b>Definition:</b> <a href="_w_s_receiver_8cpp_source.html#l00031">WSReceiver.cpp:31</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="_w_s_receiver_8cpp_source.html#l00031">http::websocket::WSReceiver::receive()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1websocket_1_1_w_s_server_context_a25d63fcfc3999ebe9cd66a919659351b_cgraph.svg" width="930" height="496"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>

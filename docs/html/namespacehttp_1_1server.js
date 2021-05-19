@@ -8,6 +8,5 @@ var namespacehttp_1_1server =
     [ "Request", "classhttp_1_1server_1_1_request.html", "classhttp_1_1server_1_1_request" ],
     [ "RequestParser", "classhttp_1_1server_1_1_request_parser.html", "classhttp_1_1server_1_1_request_parser" ],
     [ "Response", "classhttp_1_1server_1_1_response.html", "classhttp_1_1server_1_1_response" ],
-    [ "Server", "classhttp_1_1server_1_1_server.html", "classhttp_1_1server_1_1_server" ],
-    [ "ServerContext", "classhttp_1_1server_1_1_server_context.html", "classhttp_1_1server_1_1_server_context" ]
+    [ "Server", "classhttp_1_1server_1_1_server.html", "classhttp_1_1server_1_1_server" ]
 ];

@@ -70,7 +70,7 @@
 <text text-anchor="start" x="8" y="-747" font-family="Helvetica,sans-Serif" font-size="10.00">+ enqueue()</text>
 <text text-anchor="start" x="8" y="-736" font-family="Helvetica,sans-Serif" font-size="10.00">+ enqueue()</text>
 <text text-anchor="start" x="8" y="-725" font-family="Helvetica,sans-Serif" font-size="10.00">+ close()</text>
-<text text-anchor="start" x="8" y="-714" font-family="Helvetica,sans-Serif" font-size="10.00">+ setSocketProtocol()</text>
+<text text-anchor="start" x="8" y="-714" font-family="Helvetica,sans-Serif" font-size="10.00">+ switchSocketProtocol()</text>
 <text text-anchor="start" x="8" y="-703" font-family="Helvetica,sans-Serif" font-size="10.00">+ getSocketProtocol()</text>
 <text text-anchor="start" x="8" y="-692" font-family="Helvetica,sans-Serif" font-size="10.00"># SocketConnectionBase()</text>
 <text text-anchor="start" x="8" y="-681" font-family="Helvetica,sans-Serif" font-size="10.00"># SocketConnectionBase()</text>
@@ -82,32 +82,34 @@
 <!-- Node3&#45;&gt;Node2 -->
 <g id="edge2" class="edge">
 <title>Node3&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M32.2,-642.2C7.63,-571.51 -12.4,-471.7 32,-398 81.93,-315.12 186.02,-269.66 263.83,-246.21"/>
-<polygon fill="none" stroke="midnightblue" points="29.04,-643.74 35.7,-651.98 35.63,-641.38 29.04,-643.74"/>
+<path fill="none" stroke="midnightblue" d="M31.79,-642.2C6.92,-571.51 -13.46,-471.7 31,-398 81.18,-314.81 185.85,-269.37 263.93,-246"/>
+<polygon fill="none" stroke="midnightblue" points="28.64,-643.76 35.33,-651.98 35.22,-641.38 28.64,-643.76"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
 <g id="a_node4"><a xlink:href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="41.5,-442.5 41.5,-554.5 166.5,-554.5 166.5,-442.5 41.5,-442.5"/>
-<text text-anchor="start" x="49.5" y="-542.5" font-family="Helvetica,sans-Serif" font-size="10.00">net::socket::stream</text>
-<text text-anchor="middle" x="104" y="-531.5" font-family="Helvetica,sans-Serif" font-size="10.00">::SocketProtocol</text>
-<polyline fill="none" stroke="black" points="41.5,-524.5 166.5,-524.5 "/>
-<text text-anchor="middle" x="104" y="-512.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="black" points="41.5,-505.5 166.5,-505.5 "/>
-<text text-anchor="start" x="49.5" y="-493.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~SocketProtocol()</text>
-<text text-anchor="start" x="49.5" y="-482.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ receiveData()</text>
-<text text-anchor="start" x="49.5" y="-471.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ onWriteError()</text>
-<text text-anchor="start" x="49.5" y="-460.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ onReadError()</text>
-<text text-anchor="start" x="49.5" y="-449.5" font-family="Helvetica,sans-Serif" font-size="10.00"># setSocketConnection()</text>
+<polygon fill="white" stroke="black" points="40.5,-431.5 40.5,-565.5 167.5,-565.5 167.5,-431.5 40.5,-431.5"/>
+<text text-anchor="start" x="48.5" y="-553.5" font-family="Helvetica,sans-Serif" font-size="10.00">net::socket::stream</text>
+<text text-anchor="middle" x="104" y="-542.5" font-family="Helvetica,sans-Serif" font-size="10.00">::SocketProtocol</text>
+<polyline fill="none" stroke="black" points="40.5,-535.5 167.5,-535.5 "/>
+<text text-anchor="start" x="48.5" y="-523.5" font-family="Helvetica,sans-Serif" font-size="10.00"># markedForDelete</text>
+<polyline fill="none" stroke="black" points="40.5,-516.5 167.5,-516.5 "/>
+<text text-anchor="start" x="48.5" y="-504.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~SocketProtocol()</text>
+<text text-anchor="start" x="48.5" y="-493.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ receiveData()</text>
+<text text-anchor="start" x="48.5" y="-482.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ onWriteError()</text>
+<text text-anchor="start" x="48.5" y="-471.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ onReadError()</text>
+<text text-anchor="start" x="48.5" y="-460.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ switchSocketProtocol()</text>
+<text text-anchor="start" x="48.5" y="-449.5" font-family="Helvetica,sans-Serif" font-size="10.00"># take()</text>
+<text text-anchor="start" x="48.5" y="-438.5" font-family="Helvetica,sans-Serif" font-size="10.00"># setSocketConnection()</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node4 -->
 <g id="edge4" class="edge">
 <title>Node3&#45;&gt;Node4</title>
-<path fill="none" stroke="#404040" d="M35.86,-651.73C34.03,-640.12 34.01,-628.27 37,-617 41.71,-599.22 49.82,-581.32 58.79,-565.03"/>
-<polygon fill="none" stroke="#404040" points="58.82,-564.99 58.34,-557.79 64.79,-554.58 65.27,-561.78 58.82,-564.99"/>
+<path fill="none" stroke="#404040" d="M35.86,-651.73C34.03,-640.12 34.01,-628.27 37,-617 40.64,-603.26 46.31,-589.44 52.84,-576.36"/>
+<polygon fill="none" stroke="#404040" points="52.93,-576.18 52.18,-569.01 58.5,-565.56 59.26,-572.73 52.93,-576.18"/>
 <text text-anchor="middle" x="81" y="-620" font-family="Helvetica,sans-Serif" font-size="10.00"> #socketConnection</text>
 </g>
 <!-- Node18 -->
@@ -145,7 +147,7 @@
 <!-- Node4&#45;&gt;Node3 -->
 <g id="edge3" class="edge">
 <title>Node4&#45;&gt;Node3</title>
-<path fill="none" stroke="#404040" d="M125.75,-554.61C131.93,-577.49 135.44,-604.2 129,-628 127.84,-632.27 126.46,-636.54 124.89,-640.79"/>
+<path fill="none" stroke="#404040" d="M128.43,-565.62C132.79,-585.79 134.43,-607.93 129,-628 127.84,-632.27 126.46,-636.54 124.89,-640.79"/>
 <polygon fill="none" stroke="#404040" points="124.87,-640.84 126.31,-647.9 120.34,-651.95 118.9,-644.88 124.87,-640.84"/>
 <text text-anchor="middle" x="169" y="-620" font-family="Helvetica,sans-Serif" font-size="10.00"> #socketProtocol</text>
 </g>
