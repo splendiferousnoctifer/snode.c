@@ -113,21 +113,26 @@ $(document).ready(function(){initNavTree('_status_codes_8h_source.html',''); ini
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* DOXYGEN_SHOULD_SKIP_THIS */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_status_code.html">   29</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_status_code.html">StatusCode</a> {</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">static</span> std::string <a class="code" href="class_status_code.html#a2c0a74bc683dca68ad14fcf0a032df29">reason</a>(<span class="keywordtype">int</span> status);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_status_code.html#afa4b60d670754ca67188ea76031efd7c">contains</a>(<span class="keywordtype">int</span> status);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacehttp.html">http</a> {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classhttp_1_1_status_code.html">   31</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classhttp_1_1_status_code.html">StatusCode</a> {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keyword">static</span> std::string <a class="code" href="classhttp_1_1_status_code.html#a53cdddf62b36a0fb63b6c705fe7d5229">reason</a>(<span class="keywordtype">int</span> status);</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_status_code.html#a192a75203e32b01f4fc62df96ca42096">   36</a></span>&#160;    <span class="keyword">static</span> std::map&lt;int, std::string&gt; <a class="code" href="class_status_code.html#a192a75203e32b01f4fc62df96ca42096">statusCode</a>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// HTTP_STATUSCODES_H</span></div>
-<div class="ttc" id="aclass_status_code_html"><div class="ttname"><a href="class_status_code.html">StatusCode</a></div><div class="ttdef"><b>Definition:</b> <a href="_status_codes_8h_source.html#l00029">StatusCodes.h:29</a></div></div>
-<div class="ttc" id="aclass_status_code_html_a192a75203e32b01f4fc62df96ca42096"><div class="ttname"><a href="class_status_code.html#a192a75203e32b01f4fc62df96ca42096">StatusCode::statusCode</a></div><div class="ttdeci">static std::map&lt; int, std::string &gt; statusCode</div><div class="ttdef"><b>Definition:</b> <a href="_status_codes_8h_source.html#l00036">StatusCodes.h:36</a></div></div>
-<div class="ttc" id="aclass_status_code_html_a2c0a74bc683dca68ad14fcf0a032df29"><div class="ttname"><a href="class_status_code.html#a2c0a74bc683dca68ad14fcf0a032df29">StatusCode::reason</a></div><div class="ttdeci">static std::string reason(int status)</div><div class="ttdef"><b>Definition:</b> <a href="_status_codes_8cpp_source.html#l00089">StatusCodes.cpp:89</a></div></div>
-<div class="ttc" id="aclass_status_code_html_afa4b60d670754ca67188ea76031efd7c"><div class="ttname"><a href="class_status_code.html#afa4b60d670754ca67188ea76031efd7c">StatusCode::contains</a></div><div class="ttdeci">static bool contains(int status)</div><div class="ttdef"><b>Definition:</b> <a href="_status_codes_8cpp_source.html#l00099">StatusCodes.cpp:99</a></div></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="classhttp_1_1_status_code.html#a9174887bd3fd1797d2cc09e2bccb641a">contains</a>(<span class="keywordtype">int</span> status);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classhttp_1_1_status_code.html#ac81d0613afa17d225bd4504213c13eea">   38</a></span>&#160;        <span class="keyword">static</span> std::map&lt;int, std::string&gt; <a class="code" href="classhttp_1_1_status_code.html#ac81d0613afa17d225bd4504213c13eea">statusCode</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    };</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;} <span class="comment">// namespace http</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// HTTP_STATUSCODES_H</span></div>
+<div class="ttc" id="aclasshttp_1_1_status_code_html"><div class="ttname"><a href="classhttp_1_1_status_code.html">http::StatusCode</a></div><div class="ttdef"><b>Definition:</b> <a href="_status_codes_8h_source.html#l00031">StatusCodes.h:31</a></div></div>
+<div class="ttc" id="aclasshttp_1_1_status_code_html_a53cdddf62b36a0fb63b6c705fe7d5229"><div class="ttname"><a href="classhttp_1_1_status_code.html#a53cdddf62b36a0fb63b6c705fe7d5229">http::StatusCode::reason</a></div><div class="ttdeci">static std::string reason(int status)</div><div class="ttdef"><b>Definition:</b> <a href="_status_codes_8cpp_source.html#l00091">StatusCodes.cpp:91</a></div></div>
+<div class="ttc" id="aclasshttp_1_1_status_code_html_a9174887bd3fd1797d2cc09e2bccb641a"><div class="ttname"><a href="classhttp_1_1_status_code.html#a9174887bd3fd1797d2cc09e2bccb641a">http::StatusCode::contains</a></div><div class="ttdeci">static bool contains(int status)</div><div class="ttdef"><b>Definition:</b> <a href="_status_codes_8cpp_source.html#l00101">StatusCodes.cpp:101</a></div></div>
+<div class="ttc" id="aclasshttp_1_1_status_code_html_ac81d0613afa17d225bd4504213c13eea"><div class="ttname"><a href="classhttp_1_1_status_code.html#ac81d0613afa17d225bd4504213c13eea">http::StatusCode::statusCode</a></div><div class="ttdeci">static std::map&lt; int, std::string &gt; statusCode</div><div class="ttdef"><b>Definition:</b> <a href="_status_codes_8h_source.html#l00038">StatusCodes.h:38</a></div></div>
+<div class="ttc" id="anamespacehttp_html"><div class="ttname"><a href="namespacehttp.html">http</a></div><div class="ttdef"><b>Definition:</b> <a href="_client_8h_source.html#l00037">Client.h:37</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

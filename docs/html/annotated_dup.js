@@ -68,7 +68,8 @@ var annotated_dup =
         [ "WSTransmitter", "classhttp_1_1websocket_1_1_w_s_transmitter.html", "classhttp_1_1websocket_1_1_w_s_transmitter" ]
       ] ],
       [ "CookieOptions", "classhttp_1_1_cookie_options.html", "classhttp_1_1_cookie_options" ],
-      [ "Parser", "classhttp_1_1_parser.html", "classhttp_1_1_parser" ]
+      [ "Parser", "classhttp_1_1_parser.html", "classhttp_1_1_parser" ],
+      [ "StatusCode", "classhttp_1_1_status_code.html", "classhttp_1_1_status_code" ]
     ] ],
     [ "net", "namespacenet.html", [
       [ "socket", "namespacenet_1_1socket.html", [
@@ -199,6 +200,5 @@ var annotated_dup =
     [ "File", "class_file.html", null ],
     [ "FileReader", "class_file_reader.html", "class_file_reader" ],
     [ "Logger", "class_logger.html", "class_logger" ],
-    [ "MimeTypes", "class_mime_types.html", "class_mime_types" ],
-    [ "StatusCode", "class_status_code.html", "class_status_code" ]
+    [ "MimeTypes", "class_mime_types.html", "class_mime_types" ]
 ];

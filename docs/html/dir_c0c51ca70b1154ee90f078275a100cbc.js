@@ -8,6 +8,7 @@ var dir_c0c51ca70b1154ee90f078275a100cbc =
     [ "SocketConnection.h", "_socket_connection_8h.html", [
       [ "SocketConnection", "classnet_1_1socket_1_1stream_1_1_socket_connection.html", "classnet_1_1socket_1_1stream_1_1_socket_connection" ]
     ] ],
+    [ "SocketConnectionBase.cpp", "_socket_connection_base_8cpp.html", null ],
     [ "SocketConnectionBase.h", "_socket_connection_base_8h.html", [
       [ "SocketConnectionBase", "classnet_1_1socket_1_1stream_1_1_socket_connection_base.html", "classnet_1_1socket_1_1stream_1_1_socket_connection_base" ]
     ] ],

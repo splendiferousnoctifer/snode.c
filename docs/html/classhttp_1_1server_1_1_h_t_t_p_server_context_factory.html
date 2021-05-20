@@ -85,6 +85,7 @@ $(document).ready(function(){initNavTree('classhttp_1_1server_1_1_h_t_t_p_server
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="classhttp_1_1server_1_1_h_t_t_p_server_context_factory-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">http::server::HTTPServerContextFactory&lt; RequestT, ResponseT &gt; Class Template Reference</div>  </div>
@@ -95,13 +96,13 @@ $(document).ready(function(){initNavTree('classhttp_1_1server_1_1_h_t_t_p_server
 <div class="dynheader">
 Inheritance diagram for http::server::HTTPServerContextFactory&lt; RequestT, ResponseT &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1server_1_1_h_t_t_p_server_context_factory__inherit__graph.svg" width="216" height="287"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1server_1_1_h_t_t_p_server_context_factory__inherit__graph.svg" width="216" height="302"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div class="dynheader">
 Collaboration diagram for http::server::HTTPServerContextFactory&lt; RequestT, ResponseT &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1server_1_1_h_t_t_p_server_context_factory__coll__graph.svg" width="216" height="287"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1server_1_1_h_t_t_p_server_context_factory__coll__graph.svg" width="216" height="302"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
@@ -114,10 +115,10 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a454e706ce4cb5a7c57004a408ff25caa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1server_1_1_h_t_t_p_server_context_factory.html#a454e706ce4cb5a7c57004a408ff25caa">HTTPServerContextFactory</a> (const std::function&lt; void(<a class="el" href="classhttp_1_1server_1_1_h_t_t_p_server_context_factory.html#a4e7b1ac393fc961669f188d0c710ea28">Request</a> &amp;req, <a class="el" href="classhttp_1_1server_1_1_h_t_t_p_server_context_factory.html#a185c64a22b6ed11a3074f35f1af3cb4c">Response</a> &amp;res)&gt; &amp;<a class="el" href="classhttp_1_1server_1_1_h_t_t_p_server_context_factory.html#a41cb1e8dfae61c0aa74526c4db086fce">onRequestReady</a>)</td></tr>
-<tr class="separator:a454e706ce4cb5a7c57004a408ff25caa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2dabd8f658ba1fffacfe30ba47ac2e79"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html">net::socket::stream::SocketProtocol</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1server_1_1_h_t_t_p_server_context_factory.html#a2dabd8f658ba1fffacfe30ba47ac2e79">create</a> () const override</td></tr>
-<tr class="separator:a2dabd8f658ba1fffacfe30ba47ac2e79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71c9c3ff69455d0d8cc85be55c62c0a6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1server_1_1_h_t_t_p_server_context_factory.html#a71c9c3ff69455d0d8cc85be55c62c0a6">HTTPServerContextFactory</a> ()=default</td></tr>
+<tr class="separator:a71c9c3ff69455d0d8cc85be55c62c0a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19f7f605d557d8b15a8308594355e318"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1server_1_1_h_t_t_p_server_context_factory.html#a19f7f605d557d8b15a8308594355e318">setOnRequestReady</a> (const std::function&lt; void(<a class="el" href="classhttp_1_1server_1_1_h_t_t_p_server_context_factory.html#a4e7b1ac393fc961669f188d0c710ea28">Request</a> &amp;req, <a class="el" href="classhttp_1_1server_1_1_h_t_t_p_server_context_factory.html#a185c64a22b6ed11a3074f35f1af3cb4c">Response</a> &amp;res)&gt; &amp;<a class="el" href="classhttp_1_1server_1_1_h_t_t_p_server_context_factory.html#a41cb1e8dfae61c0aa74526c4db086fce">onRequestReady</a>)</td></tr>
+<tr class="separator:a19f7f605d557d8b15a8308594355e318"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classnet_1_1socket_1_1stream_1_1_socket_protocol_factory"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classnet_1_1socket_1_1stream_1_1_socket_protocol_factory')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_protocol_factory.html">net::socket::stream::SocketProtocolFactory</a></td></tr>
 <tr class="memitem:a06de24ba5fac9af700d5ce78c8c55de6 inherit pub_methods_classnet_1_1socket_1_1stream_1_1_socket_protocol_factory"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_protocol_factory.html#a06de24ba5fac9af700d5ce78c8c55de6">~SocketProtocolFactory</a> ()=default</td></tr>
 <tr class="separator:a06de24ba5fac9af700d5ce78c8c55de6 inherit pub_methods_classnet_1_1socket_1_1stream_1_1_socket_protocol_factory"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -126,6 +127,14 @@ Public Member Functions</h2></td></tr>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a41cb1e8dfae61c0aa74526c4db086fce"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(<a class="el" href="classhttp_1_1server_1_1_h_t_t_p_server_context_factory.html#a4e7b1ac393fc961669f188d0c710ea28">Request</a> &amp;req, <a class="el" href="classhttp_1_1server_1_1_h_t_t_p_server_context_factory.html#a185c64a22b6ed11a3074f35f1af3cb4c">Response</a> &amp;res)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1server_1_1_h_t_t_p_server_context_factory.html#a41cb1e8dfae61c0aa74526c4db086fce">onRequestReady</a></td></tr>
 <tr class="separator:a41cb1e8dfae61c0aa74526c4db086fce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a2dabd8f658ba1fffacfe30ba47ac2e79"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html">net::socket::stream::SocketProtocol</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1server_1_1_h_t_t_p_server_context_factory.html#a2dabd8f658ba1fffacfe30ba47ac2e79">create</a> () const override</td></tr>
+<tr class="separator:a2dabd8f658ba1fffacfe30ba47ac2e79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename RequestT, typename ResponseT&gt;<br />
@@ -171,8 +180,8 @@ template&lt;typename RequestT , typename ResponseT &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a454e706ce4cb5a7c57004a408ff25caa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a454e706ce4cb5a7c57004a408ff25caa">&#9670;&nbsp;</a></span>HTTPServerContextFactory()</h2>
+<a id="a71c9c3ff69455d0d8cc85be55c62c0a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71c9c3ff69455d0d8cc85be55c62c0a6">&#9670;&nbsp;</a></span>HTTPServerContextFactory()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -185,23 +194,17 @@ template&lt;typename RequestT , typename ResponseT &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classhttp_1_1server_1_1_h_t_t_p_server_context_factory.html">http::server::HTTPServerContextFactory</a>&lt; RequestT, ResponseT &gt;::<a class="el" href="classhttp_1_1server_1_1_h_t_t_p_server_context_factory.html">HTTPServerContextFactory</a> </td>
           <td>(</td>
-          <td class="paramtype">const std::function&lt; void(<a class="el" href="classhttp_1_1server_1_1_h_t_t_p_server_context_factory.html#a4e7b1ac393fc961669f188d0c710ea28">Request</a> &amp;req, <a class="el" href="classhttp_1_1server_1_1_h_t_t_p_server_context_factory.html#a185c64a22b6ed11a3074f35f1af3cb4c">Response</a> &amp;res)&gt; &amp;&#160;</td>
-          <td class="paramname"><em>onRequestReady</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_h_t_t_p_server_context_factory_8h_source.html#l00038">38</a> of file <a class="el" href="_h_t_t_p_server_context_factory_8h_source.html">HTTPServerContextFactory.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            : <a class="code" href="classhttp_1_1server_1_1_h_t_t_p_server_context_factory.html#a41cb1e8dfae61c0aa74526c4db086fce">onRequestReady</a>(<a class="code" href="classhttp_1_1server_1_1_h_t_t_p_server_context_factory.html#a41cb1e8dfae61c0aa74526c4db086fce">onRequestReady</a>) {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        }</div>
-<div class="ttc" id="aclasshttp_1_1server_1_1_h_t_t_p_server_context_factory_html_a41cb1e8dfae61c0aa74526c4db086fce"><div class="ttname"><a href="classhttp_1_1server_1_1_h_t_t_p_server_context_factory.html#a41cb1e8dfae61c0aa74526c4db086fce">http::server::HTTPServerContextFactory::onRequestReady</a></div><div class="ttdeci">std::function&lt; void(Request &amp;req, Response &amp;res)&gt; onRequestReady</div><div class="ttdef"><b>Definition:</b> <a href="_h_t_t_p_server_context_factory_8h_source.html#l00047">HTTPServerContextFactory.h:47</a></div></div>
-</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -225,19 +228,55 @@ template&lt;typename RequestT , typename ResponseT &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_protocol_factory.html#a0c231280beb6d3b01453822d6d513435">net::socket::stream::SocketProtocolFactory</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_h_t_t_p_server_context_factory_8h_source.html#l00042">42</a> of file <a class="el" href="_h_t_t_p_server_context_factory_8h_source.html">HTTPServerContextFactory.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                                                               {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> HTTPServerContext&lt;Request, Response&gt;(<a class="code" href="classhttp_1_1server_1_1_h_t_t_p_server_context_factory.html#a41cb1e8dfae61c0aa74526c4db086fce">onRequestReady</a>);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        }</div>
+<p class="definition">Definition at line <a class="el" href="_h_t_t_p_server_context_factory_8h_source.html#l00041">41</a> of file <a class="el" href="_h_t_t_p_server_context_factory_8h_source.html">HTTPServerContextFactory.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                                                               {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> HTTPServerContext&lt;Request, Response&gt;(<a class="code" href="classhttp_1_1server_1_1_h_t_t_p_server_context_factory.html#a41cb1e8dfae61c0aa74526c4db086fce">onRequestReady</a>);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        }</div>
+<div class="ttc" id="aclasshttp_1_1server_1_1_h_t_t_p_server_context_factory_html_a41cb1e8dfae61c0aa74526c4db086fce"><div class="ttname"><a href="classhttp_1_1server_1_1_h_t_t_p_server_context_factory.html#a41cb1e8dfae61c0aa74526c4db086fce">http::server::HTTPServerContextFactory::onRequestReady</a></div><div class="ttdeci">std::function&lt; void(Request &amp;req, Response &amp;res)&gt; onRequestReady</div><div class="ttdef"><b>Definition:</b> <a href="_h_t_t_p_server_context_factory_8h_source.html#l00051">HTTPServerContextFactory.h:51</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_h_t_t_p_server_context_factory_8h_source.html#l00047">http::server::HTTPServerContextFactory&lt; RequestT, ResponseT &gt;::onRequestReady</a>.</p>
+<p class="reference">References <a class="el" href="_h_t_t_p_server_context_factory_8h_source.html#l00051">http::server::HTTPServerContextFactory&lt; RequestT, ResponseT &gt;::onRequestReady</a>.</p>
+
+</div>
+</div>
+<a id="a19f7f605d557d8b15a8308594355e318"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19f7f605d557d8b15a8308594355e318">&#9670;&nbsp;</a></span>setOnRequestReady()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename RequestT , typename ResponseT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classhttp_1_1server_1_1_h_t_t_p_server_context_factory.html">http::server::HTTPServerContextFactory</a>&lt; RequestT, ResponseT &gt;::setOnRequestReady </td>
+          <td>(</td>
+          <td class="paramtype">const std::function&lt; void(<a class="el" href="classhttp_1_1server_1_1_h_t_t_p_server_context_factory.html#a4e7b1ac393fc961669f188d0c710ea28">Request</a> &amp;req, <a class="el" href="classhttp_1_1server_1_1_h_t_t_p_server_context_factory.html#a185c64a22b6ed11a3074f35f1af3cb4c">Response</a> &amp;res)&gt; &amp;&#160;</td>
+          <td class="paramname"><em>onRequestReady</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_h_t_t_p_server_context_factory_8h_source.html#l00046">46</a> of file <a class="el" href="_h_t_t_p_server_context_factory_8h_source.html">HTTPServerContextFactory.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                                                                                                     {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            this-&gt;<a class="code" href="classhttp_1_1server_1_1_h_t_t_p_server_context_factory.html#a41cb1e8dfae61c0aa74526c4db086fce">onRequestReady</a> = <a class="code" href="classhttp_1_1server_1_1_h_t_t_p_server_context_factory.html#a41cb1e8dfae61c0aa74526c4db086fce">onRequestReady</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        }</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="_h_t_t_p_server_context_factory_8h_source.html#l00051">http::server::HTTPServerContextFactory&lt; RequestT, ResponseT &gt;::onRequestReady</a>.</p>
 
 </div>
 </div>
@@ -264,9 +303,9 @@ template&lt;typename RequestT , typename ResponseT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_h_t_t_p_server_context_factory_8h_source.html#l00047">47</a> of file <a class="el" href="_h_t_t_p_server_context_factory_8h_source.html">HTTPServerContextFactory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_h_t_t_p_server_context_factory_8h_source.html#l00051">51</a> of file <a class="el" href="_h_t_t_p_server_context_factory_8h_source.html">HTTPServerContextFactory.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_h_t_t_p_server_context_factory_8h_source.html#l00042">http::server::HTTPServerContextFactory&lt; RequestT, ResponseT &gt;::create()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_h_t_t_p_server_context_factory_8h_source.html#l00041">http::server::HTTPServerContextFactory&lt; RequestT, ResponseT &gt;::create()</a>, and <a class="el" href="_h_t_t_p_server_context_factory_8h_source.html#l00046">http::server::HTTPServerContextFactory&lt; RequestT, ResponseT &gt;::setOnRequestReady()</a>.</p>
 
 </div>
 </div>

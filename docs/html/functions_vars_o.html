@@ -140,17 +140,7 @@ $(document).ready(function(){initNavTree('functions_vars_o.html',''); initResiza
 , <a class="el" href="classhttp_1_1server_1_1_request_parser.html#a778f4a31560e99388ffdb12ad3c3aa17">http::server::RequestParser</a>
 </li>
 <li>onRead
-: <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_client.html#afab06bd3f30c4cea725b9139d867be20">net::socket::stream::SocketClient&lt; SocketConnectorT &gt;</a>
-, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connector.html#ab5f67b7c5e8dafc26c12e726cb418323">net::socket::stream::SocketConnector&lt; SocketConnectionT &gt;</a>
-, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_listener.html#a60f713a513c324d1802b91abf0c987ea">net::socket::stream::SocketListener&lt; SocketConnectionT &gt;</a>
-, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#aae71788aa58b1f9d83d5d954831c885e">net::socket::stream::SocketReader&lt; SocketT &gt;</a>
-, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_server.html#a5481ce84a9431d66856decd7c42d8157">net::socket::stream::SocketServer&lt; SocketListenerT &gt;</a>
-</li>
-<li>onReadError
-: <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_client.html#a7e97881322d4336187a25ada49c10756">net::socket::stream::SocketClient&lt; SocketConnectorT &gt;</a>
-, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connector.html#a2f779393aeeeb8a050814db9e853af97">net::socket::stream::SocketConnector&lt; SocketConnectionT &gt;</a>
-, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_listener.html#a8dfdb762367b96f9a594647f9aa39a5e">net::socket::stream::SocketListener&lt; SocketConnectionT &gt;</a>
-, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_server.html#a9eb94567ad21f1c0371935f37c1ce7a9">net::socket::stream::SocketServer&lt; SocketListenerT &gt;</a>
+: <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#aae71788aa58b1f9d83d5d954831c885e">net::socket::stream::SocketReader&lt; SocketT &gt;</a>
 </li>
 <li>onRequest
 : <a class="el" href="classhttp_1_1server_1_1_request_parser.html#a5b230e5ad7e5836889feafb34b25363b">http::server::RequestParser</a>
@@ -161,6 +151,7 @@ $(document).ready(function(){initNavTree('functions_vars_o.html',''); initResiza
 <li>onRequestReady
 : <a class="el" href="classhttp_1_1server_1_1_h_t_t_p_server_context.html#a354edb0974b31a8aaec1bdc96a9f1c60">http::server::HTTPServerContext&lt; RequestT, ResponseT &gt;</a>
 , <a class="el" href="classhttp_1_1server_1_1_h_t_t_p_server_context_factory.html#a41cb1e8dfae61c0aa74526c4db086fce">http::server::HTTPServerContextFactory&lt; RequestT, ResponseT &gt;</a>
+, <a class="el" href="classhttp_1_1server_1_1_server.html#a14a46d8acffb557193561f242f820f59">http::server::Server&lt; SocketServerT, RequestT, ResponseT &gt;</a>
 </li>
 <li>onResponse
 : <a class="el" href="classhttp_1_1client_1_1_client_context_factory.html#af1e0241fc44af12a1c8c8e943d9473af">http::client::ClientContextFactory&lt; RequestT, ResponseT &gt;</a>
@@ -176,12 +167,6 @@ $(document).ready(function(){initNavTree('functions_vars_o.html',''); initResiza
 <li>onTimeout
 : <a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_t_l_s_handshake.html#ad311e321b6f640aaf65deb1c5e86ebe5">net::socket::stream::tls::TLSHandshake</a>
 </li>
-<li>onWriteError
-: <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_client.html#aebf00dd81ebba3e81a0be7c5f669dc42">net::socket::stream::SocketClient&lt; SocketConnectorT &gt;</a>
-, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connector.html#abee2b1ed76101cdb161fae474fc84134">net::socket::stream::SocketConnector&lt; SocketConnectionT &gt;</a>
-, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_listener.html#af9040e084c63fffc5657b2d318cd967f">net::socket::stream::SocketListener&lt; SocketConnectionT &gt;</a>
-, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_server.html#a64f176b6db7495b0e372c096cf3b8294">net::socket::stream::SocketServer&lt; SocketListenerT &gt;</a>
-</li>
 <li>opCode
 : <a class="el" href="classhttp_1_1websocket_1_1_w_s_receiver.html#af6352da0ce1ec59bc685de553ddd3d70">http::websocket::WSReceiver</a>
 </li>
@@ -190,7 +175,7 @@ $(document).ready(function(){initNavTree('functions_vars_o.html',''); initResiza
 , <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_client.html#ae0b98c023465299bb35e6919c8c7942f">net::socket::stream::SocketClient&lt; SocketConnectorT &gt;</a>
 , <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connector.html#aea2f65eb38518d6a372e119b27d11859">net::socket::stream::SocketConnector&lt; SocketConnectionT &gt;</a>
 , <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_listener.html#a9ce884ac01ecd6e84a33927293b50572">net::socket::stream::SocketListener&lt; SocketConnectionT &gt;</a>
-, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_server.html#a5c02e74adce2789227a33b8740cc1b6f">net::socket::stream::SocketServer&lt; SocketListenerT &gt;</a>
+, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_server.html#ab536bf1e45f3ea6ebdf8c2dc4a6683d1">net::socket::stream::SocketServer&lt; SocketProtocolT, SocketListenerT &gt;</a>
 </li>
 <li>originalUrl
 : <a class="el" href="classexpress_1_1_request.html#a21d73e07910e59803aecd3da071b5f7e">express::Request</a>

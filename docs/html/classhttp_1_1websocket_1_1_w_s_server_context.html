@@ -82,6 +82,7 @@ $(document).ready(function(){initNavTree('classhttp_1_1websocket_1_1_w_s_server_
 
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classhttp_1_1websocket_1_1_w_s_server_context-members.html">List of all members</a>  </div>
@@ -94,40 +95,67 @@ $(document).ready(function(){initNavTree('classhttp_1_1websocket_1_1_w_s_server_
 <div class="dynheader">
 Inheritance diagram for http::websocket::WSServerContext:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1websocket_1_1_w_s_server_context__inherit__graph.svg" width="638" height="771"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1websocket_1_1_w_s_server_context__inherit__graph.svg" width="638" height="888"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div class="dynheader">
 Collaboration diagram for http::websocket::WSServerContext:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1websocket_1_1_w_s_server_context__coll__graph.svg" width="706" height="786"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1websocket_1_1_w_s_server_context__coll__graph.svg" width="706" height="903"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a6be43ca3bd95fbbb0408a0a89892a63c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1websocket_1_1_w_s_server_context.html#a6be43ca3bd95fbbb0408a0a89892a63c">WSServerContext</a> (const std::function&lt; void(<a class="el" href="classhttp_1_1websocket_1_1_w_s_server_context.html">WSServerContext</a> *wSServerContext, int <a class="el" href="classhttp_1_1websocket_1_1_w_s_receiver.html#af6352da0ce1ec59bc685de553ddd3d70">opCode</a>)&gt; &amp;<a class="el" href="classhttp_1_1websocket_1_1_w_s_server_context.html#a15d57a66d711c933ca83910fb0c39821">_onMessageStart</a>, const std::function&lt; void(<a class="el" href="classhttp_1_1websocket_1_1_w_s_server_context.html">WSServerContext</a> *wSServerContext, const char *junk, std::size_t junkLen)&gt; &amp;<a class="el" href="classhttp_1_1websocket_1_1_w_s_server_context.html#a38900bde00e407e8eefbafe665ba4866">_onFrameData</a>, const std::function&lt; void(<a class="el" href="classhttp_1_1websocket_1_1_w_s_server_context.html">WSServerContext</a> *wSServerContext)&gt; &amp;<a class="el" href="classhttp_1_1websocket_1_1_w_s_server_context.html#a545f5ed313b8ab4c10e0486159de6317">_onMessageEnd</a>)</td></tr>
+<tr class="separator:a6be43ca3bd95fbbb0408a0a89892a63c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefd9f663b1ae2ea2c96aecba6074f326"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1websocket_1_1_w_s_server_context.html#aefd9f663b1ae2ea2c96aecba6074f326">messageStart</a> (uint8_t <a class="el" href="classhttp_1_1websocket_1_1_w_s_receiver.html#af6352da0ce1ec59bc685de553ddd3d70">opCode</a>, const char *<a class="el" href="classhttp_1_1websocket_1_1_w_s_server_context.html#a806c619e68c565252cbdf41dc59114f9">message</a>, std::size_t messageLength, uint32_t messageKey=0) override</td></tr>
+<tr class="separator:aefd9f663b1ae2ea2c96aecba6074f326"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a114a3af5bbd81ccc2f5a6cef9ef86c5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1websocket_1_1_w_s_server_context.html#a114a3af5bbd81ccc2f5a6cef9ef86c5e">sendFrame</a> (const char *<a class="el" href="classhttp_1_1websocket_1_1_w_s_server_context.html#a806c619e68c565252cbdf41dc59114f9">message</a>, std::size_t messageLength, uint32_t messageKey=0) override</td></tr>
+<tr class="separator:a114a3af5bbd81ccc2f5a6cef9ef86c5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae34c2dce90c1464aa67247c892a8e46f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1websocket_1_1_w_s_server_context.html#ae34c2dce90c1464aa67247c892a8e46f">messageEnd</a> (const char *<a class="el" href="classhttp_1_1websocket_1_1_w_s_server_context.html#a806c619e68c565252cbdf41dc59114f9">message</a>, std::size_t messageLength, uint32_t messageKey=0) override</td></tr>
+<tr class="separator:ae34c2dce90c1464aa67247c892a8e46f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a806c619e68c565252cbdf41dc59114f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1websocket_1_1_w_s_server_context.html#a806c619e68c565252cbdf41dc59114f9">message</a> (uint8_t <a class="el" href="classhttp_1_1websocket_1_1_w_s_receiver.html#af6352da0ce1ec59bc685de553ddd3d70">opCode</a>, const char *message, std::size_t messageLength, uint32_t messageKey=0) override</td></tr>
+<tr class="separator:a806c619e68c565252cbdf41dc59114f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3cd58dfaa10c89ea52208f986a0103f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1websocket_1_1_w_s_server_context.html#ab3cd58dfaa10c89ea52208f986a0103f">sendPing</a> (const char *reason=nullptr, std::size_t reasonLength=0)</td></tr>
+<tr class="separator:ab3cd58dfaa10c89ea52208f986a0103f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classnet_1_1socket_1_1stream_1_1_socket_protocol"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classnet_1_1socket_1_1stream_1_1_socket_protocol')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html">net::socket::stream::SocketProtocol</a></td></tr>
+<tr class="memitem:a3d809b4033d9ddbfda43b7903e27a19f inherit pub_methods_classnet_1_1socket_1_1stream_1_1_socket_protocol"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html#a3d809b4033d9ddbfda43b7903e27a19f">~SocketProtocol</a> ()=default</td></tr>
+<tr class="separator:a3d809b4033d9ddbfda43b7903e27a19f inherit pub_methods_classnet_1_1socket_1_1stream_1_1_socket_protocol"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afca04597ee15a83a823302882e47ef51 inherit pub_methods_classnet_1_1socket_1_1stream_1_1_socket_protocol"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html#afca04597ee15a83a823302882e47ef51">sendToPeer</a> (const char *junk, std::size_t junkLen)</td></tr>
+<tr class="separator:afca04597ee15a83a823302882e47ef51 inherit pub_methods_classnet_1_1socket_1_1stream_1_1_socket_protocol"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a971b908521e145f30a99c546e789a38b inherit pub_methods_classnet_1_1socket_1_1stream_1_1_socket_protocol"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html#a971b908521e145f30a99c546e789a38b">sendToPeer</a> (const std::string &amp;data)</td></tr>
+<tr class="separator:a971b908521e145f30a99c546e789a38b inherit pub_methods_classnet_1_1socket_1_1stream_1_1_socket_protocol"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab617c6019d922f2475c50afcf4f08edd inherit pub_methods_classnet_1_1socket_1_1stream_1_1_socket_protocol"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html#ab617c6019d922f2475c50afcf4f08edd">close</a> ()</td></tr>
+<tr class="separator:ab617c6019d922f2475c50afcf4f08edd inherit pub_methods_classnet_1_1socket_1_1stream_1_1_socket_protocol"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b9d3e21eef2569cc027b7b972b7e021 inherit pub_methods_classnet_1_1socket_1_1stream_1_1_socket_protocol"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html#a8b9d3e21eef2569cc027b7b972b7e021">switchSocketProtocol</a> (<a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html">SocketProtocol</a> *socketProtocol)</td></tr>
+<tr class="separator:a8b9d3e21eef2569cc027b7b972b7e021 inherit pub_methods_classnet_1_1socket_1_1stream_1_1_socket_protocol"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classhttp_1_1websocket_1_1_w_s_receiver"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classhttp_1_1websocket_1_1_w_s_receiver')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classhttp_1_1websocket_1_1_w_s_receiver.html">http::websocket::WSReceiver</a></td></tr>
+<tr class="memitem:a42ba0580cd663e4cb2f898155058ea89 inherit pub_methods_classhttp_1_1websocket_1_1_w_s_receiver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1websocket_1_1_w_s_receiver.html#a42ba0580cd663e4cb2f898155058ea89">receive</a> (char *junk, std::size_t junkLen)</td></tr>
+<tr class="separator:a42ba0580cd663e4cb2f898155058ea89 inherit pub_methods_classhttp_1_1websocket_1_1_w_s_receiver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a25d63fcfc3999ebe9cd66a919659351b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1websocket_1_1_w_s_server_context.html#a25d63fcfc3999ebe9cd66a919659351b">receiveData</a> (const char *junk, std::size_t junklen) override</td></tr>
-<tr class="separator:a25d63fcfc3999ebe9cd66a919659351b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5c8d36dd24f74109944b4102b6c7e68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1websocket_1_1_w_s_server_context.html#aa5c8d36dd24f74109944b4102b6c7e68">receiveFromPeer</a> (const char *junk, std::size_t junkLen) override</td></tr>
+<tr class="separator:aa5c8d36dd24f74109944b4102b6c7e68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2a5be4a80eb49452654965767b56358"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1websocket_1_1_w_s_server_context.html#ac2a5be4a80eb49452654965767b56358">onReadError</a> (int errnum) override</td></tr>
 <tr class="separator:ac2a5be4a80eb49452654965767b56358"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56d75f547444509966f40b664e8a11d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1websocket_1_1_w_s_server_context.html#a56d75f547444509966f40b664e8a11d4">onWriteError</a> (int errnum) override</td></tr>
 <tr class="separator:a56d75f547444509966f40b664e8a11d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34a9c63036f5e4095bfc98c851d23419"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1websocket_1_1_w_s_server_context.html#a34a9c63036f5e4095bfc98c851d23419">onMessageStart</a> (int <a class="el" href="classhttp_1_1websocket_1_1_w_s_receiver.html#af6352da0ce1ec59bc685de553ddd3d70">opCode</a>) override</td></tr>
 <tr class="separator:a34a9c63036f5e4095bfc98c851d23419"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa996cdef6e815fb202c8563c89b696f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1websocket_1_1_w_s_server_context.html#aa996cdef6e815fb202c8563c89b696f2">onMessageData</a> (char *junk, uint64_t junkLen) override</td></tr>
-<tr class="separator:aa996cdef6e815fb202c8563c89b696f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a876016059c15161e0fc72695fc6d82da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1websocket_1_1_w_s_server_context.html#a876016059c15161e0fc72695fc6d82da">onFrameData</a> (const char *junk, uint64_t junkLen) override</td></tr>
+<tr class="separator:a876016059c15161e0fc72695fc6d82da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6b98657a369611978da97a43fac36c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1websocket_1_1_w_s_server_context.html#ab6b98657a369611978da97a43fac36c8">onMessageEnd</a> () override</td></tr>
 <tr class="separator:ab6b98657a369611978da97a43fac36c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac87957ee526abe31a55a6c5885d13910"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1websocket_1_1_w_s_server_context.html#ac87957ee526abe31a55a6c5885d13910">onError</a> (uint16_t errnum) override</td></tr>
 <tr class="separator:ac87957ee526abe31a55a6c5885d13910"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59aef08f80d447a154c456ba471a7e1f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1websocket_1_1_w_s_server_context.html#a59aef08f80d447a154c456ba471a7e1f">onFrameReady</a> (char *frame, uint64_t frameLength) override</td></tr>
 <tr class="separator:a59aef08f80d447a154c456ba471a7e1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36fd90bda1f6190fe7a4c6afc4d04851"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1websocket_1_1_w_s_server_context.html#a36fd90bda1f6190fe7a4c6afc4d04851">close</a> (uint16_t statusCode=0, const char *reason=nullptr, std::size_t reasonLength=0)</td></tr>
-<tr class="separator:a36fd90bda1f6190fe7a4c6afc4d04851"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e6994ceb720a31cf4823f0cf418bb03"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1websocket_1_1_w_s_server_context.html#a0e6994ceb720a31cf4823f0cf418bb03">ping</a> (const char *reason=nullptr, std::size_t reasonLength=0)</td></tr>
-<tr class="separator:a0e6994ceb720a31cf4823f0cf418bb03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3fcdd059f5e529b8ef571f9d19ad6db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1websocket_1_1_w_s_server_context.html#ac3fcdd059f5e529b8ef571f9d19ad6db">pong</a> (const char *reason=nullptr, std::size_t reasonLength=0)</td></tr>
-<tr class="separator:ac3fcdd059f5e529b8ef571f9d19ad6db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca7fd73f325d05c4d9f4d0ffb51897b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1websocket_1_1_w_s_server_context.html#aca7fd73f325d05c4d9f4d0ffb51897b9">sendPong</a> (const char *reason=nullptr, std::size_t reasonLength=0)</td></tr>
+<tr class="separator:aca7fd73f325d05c4d9f4d0ffb51897b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc11663cd00dec48e62ebd4ff0cefedc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1websocket_1_1_w_s_server_context.html#afc11663cd00dec48e62ebd4ff0cefedc">close</a> (uint16_t statusCode=1000, const char *reason=nullptr, std::size_t reasonLength=0)</td></tr>
+<tr class="separator:afc11663cd00dec48e62ebd4ff0cefedc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -139,26 +167,15 @@ Private Attributes</h2></td></tr>
 <tr class="separator:ab25306208833ed573b62dcb0a0291c8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa985e1992ee57a5bdd1fcd731625473a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1websocket_1_1_w_s_server_context.html#aa985e1992ee57a5bdd1fcd731625473a">pongReceived</a> = false</td></tr>
 <tr class="separator:aa985e1992ee57a5bdd1fcd731625473a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15d57a66d711c933ca83910fb0c39821"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(<a class="el" href="classhttp_1_1websocket_1_1_w_s_server_context.html">WSServerContext</a> *wSServerContext, int <a class="el" href="classhttp_1_1websocket_1_1_w_s_receiver.html#af6352da0ce1ec59bc685de553ddd3d70">opCode</a>)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1websocket_1_1_w_s_server_context.html#a15d57a66d711c933ca83910fb0c39821">_onMessageStart</a> = nullptr</td></tr>
+<tr class="separator:a15d57a66d711c933ca83910fb0c39821"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38900bde00e407e8eefbafe665ba4866"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(<a class="el" href="classhttp_1_1websocket_1_1_w_s_server_context.html">WSServerContext</a> *wSServerContext, const char *junk, std::size_t junkLen)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1websocket_1_1_w_s_server_context.html#a38900bde00e407e8eefbafe665ba4866">_onFrameData</a> = nullptr</td></tr>
+<tr class="separator:a38900bde00e407e8eefbafe665ba4866"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a545f5ed313b8ab4c10e0486159de6317"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(<a class="el" href="classhttp_1_1websocket_1_1_w_s_server_context.html">WSServerContext</a> *wSServerContext)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1websocket_1_1_w_s_server_context.html#a545f5ed313b8ab4c10e0486159de6317">_onMessageEnd</a> = nullptr</td></tr>
+<tr class="separator:a545f5ed313b8ab4c10e0486159de6317"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_methods_classnet_1_1socket_1_1stream_1_1_socket_protocol"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classnet_1_1socket_1_1stream_1_1_socket_protocol')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html">net::socket::stream::SocketProtocol</a></td></tr>
-<tr class="memitem:a3d809b4033d9ddbfda43b7903e27a19f inherit pub_methods_classnet_1_1socket_1_1stream_1_1_socket_protocol"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html#a3d809b4033d9ddbfda43b7903e27a19f">~SocketProtocol</a> ()=default</td></tr>
-<tr class="separator:a3d809b4033d9ddbfda43b7903e27a19f inherit pub_methods_classnet_1_1socket_1_1stream_1_1_socket_protocol"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b9d3e21eef2569cc027b7b972b7e021 inherit pub_methods_classnet_1_1socket_1_1stream_1_1_socket_protocol"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html#a8b9d3e21eef2569cc027b7b972b7e021">switchSocketProtocol</a> (<a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html">SocketProtocol</a> *socketProtocol)</td></tr>
-<tr class="separator:a8b9d3e21eef2569cc027b7b972b7e021 inherit pub_methods_classnet_1_1socket_1_1stream_1_1_socket_protocol"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classhttp_1_1websocket_1_1_w_s_receiver"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classhttp_1_1websocket_1_1_w_s_receiver')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classhttp_1_1websocket_1_1_w_s_receiver.html">http::websocket::WSReceiver</a></td></tr>
-<tr class="memitem:a42ba0580cd663e4cb2f898155058ea89 inherit pub_methods_classhttp_1_1websocket_1_1_w_s_receiver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1websocket_1_1_w_s_receiver.html#a42ba0580cd663e4cb2f898155058ea89">receive</a> (char *junk, std::size_t junkLen)</td></tr>
-<tr class="separator:a42ba0580cd663e4cb2f898155058ea89 inherit pub_methods_classhttp_1_1websocket_1_1_w_s_receiver"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classhttp_1_1websocket_1_1_w_s_transmitter"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classhttp_1_1websocket_1_1_w_s_transmitter')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classhttp_1_1websocket_1_1_w_s_transmitter.html">http::websocket::WSTransmitter</a></td></tr>
-<tr class="memitem:a5b574aabaa9c6e3a68d079daa589677c inherit pub_methods_classhttp_1_1websocket_1_1_w_s_transmitter"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1websocket_1_1_w_s_transmitter.html#a5b574aabaa9c6e3a68d079daa589677c">messageStart</a> (uint8_t opCode, const char *<a class="el" href="classhttp_1_1websocket_1_1_w_s_transmitter.html#a5b038fcd05c9e21ec8d806120ce53059">message</a>, std::size_t messageLength, uint32_t messageKey=0)</td></tr>
-<tr class="separator:a5b574aabaa9c6e3a68d079daa589677c inherit pub_methods_classhttp_1_1websocket_1_1_w_s_transmitter"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b038fcd05c9e21ec8d806120ce53059 inherit pub_methods_classhttp_1_1websocket_1_1_w_s_transmitter"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1websocket_1_1_w_s_transmitter.html#a5b038fcd05c9e21ec8d806120ce53059">message</a> (const char *message, std::size_t messageLength, uint32_t messageKey=0)</td></tr>
-<tr class="separator:a5b038fcd05c9e21ec8d806120ce53059 inherit pub_methods_classhttp_1_1websocket_1_1_w_s_transmitter"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa74b8be3d7fb45bfad63cedfabb567ce inherit pub_methods_classhttp_1_1websocket_1_1_w_s_transmitter"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1websocket_1_1_w_s_transmitter.html#aa74b8be3d7fb45bfad63cedfabb567ce">messageEnd</a> (const char *<a class="el" href="classhttp_1_1websocket_1_1_w_s_transmitter.html#a5b038fcd05c9e21ec8d806120ce53059">message</a>, std::size_t messageLength, uint32_t messageKey=0)</td></tr>
-<tr class="separator:aa74b8be3d7fb45bfad63cedfabb567ce inherit pub_methods_classhttp_1_1websocket_1_1_w_s_transmitter"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51ce95b8e9648f7e4fff9278f2980f4c inherit pub_methods_classhttp_1_1websocket_1_1_w_s_transmitter"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1websocket_1_1_w_s_transmitter.html#a51ce95b8e9648f7e4fff9278f2980f4c">message</a> (uint8_t opCode, const char *message, std::size_t messageLength, uint32_t messageKey=0)</td></tr>
-<tr class="separator:a51ce95b8e9648f7e4fff9278f2980f4c inherit pub_methods_classhttp_1_1websocket_1_1_w_s_transmitter"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_types_classhttp_1_1websocket_1_1_w_s_receiver"><td colspan="2" onclick="javascript:toggleInherit('pro_types_classhttp_1_1websocket_1_1_w_s_receiver')"><img src="closed.png" alt="-"/>&#160;Protected Types inherited from <a class="el" href="classhttp_1_1websocket_1_1_w_s_receiver.html">http::websocket::WSReceiver</a></td></tr>
 <tr class="memitem:acdd0ef2a57aa98a8394912a7587dfb68 inherit pro_types_classhttp_1_1websocket_1_1_w_s_receiver"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1websocket_1_1_w_s_receiver.html#acdd0ef2a57aa98a8394912a7587dfb68">ParserState</a> { <br />
 &#160;&#160;<a class="el" href="classhttp_1_1websocket_1_1_w_s_receiver.html#acdd0ef2a57aa98a8394912a7587dfb68a19aad9f2fe3ce0023298ab83f7e75775">BEGIN</a>
@@ -229,10 +246,54 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_w_s_server_context_8h_source.html#l00034">34</a> of file <a class="el" href="_w_s_server_context_8h_source.html">WSServerContext.h</a>.</p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a36fd90bda1f6190fe7a4c6afc4d04851"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a36fd90bda1f6190fe7a4c6afc4d04851">&#9670;&nbsp;</a></span>close()</h2>
+<p class="definition">Definition at line <a class="el" href="_w_s_server_context_8h_source.html#l00036">36</a> of file <a class="el" href="_w_s_server_context_8h_source.html">WSServerContext.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a6be43ca3bd95fbbb0408a0a89892a63c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6be43ca3bd95fbbb0408a0a89892a63c">&#9670;&nbsp;</a></span>WSServerContext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">http::websocket::WSServerContext::WSServerContext </td>
+          <td>(</td>
+          <td class="paramtype">const std::function&lt; void(<a class="el" href="classhttp_1_1websocket_1_1_w_s_server_context.html">WSServerContext</a> *wSServerContext, int <a class="el" href="classhttp_1_1websocket_1_1_w_s_receiver.html#af6352da0ce1ec59bc685de553ddd3d70">opCode</a>)&gt; &amp;&#160;</td>
+          <td class="paramname"><em>_onMessageStart</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::function&lt; void(<a class="el" href="classhttp_1_1websocket_1_1_w_s_server_context.html">WSServerContext</a> *wSServerContext, const char *junk, std::size_t junkLen)&gt; &amp;&#160;</td>
+          <td class="paramname"><em>_onFrameData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::function&lt; void(<a class="el" href="classhttp_1_1websocket_1_1_w_s_server_context.html">WSServerContext</a> *wSServerContext)&gt; &amp;&#160;</td>
+          <td class="paramname"><em>_onMessageEnd</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_w_s_server_context_8cpp_source.html#l00034">34</a> of file <a class="el" href="_w_s_server_context_8cpp_source.html">WSServerContext.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        : <a class="code" href="classhttp_1_1websocket_1_1_w_s_server_context.html#a15d57a66d711c933ca83910fb0c39821">_onMessageStart</a>(<a class="code" href="classhttp_1_1websocket_1_1_w_s_server_context.html#a15d57a66d711c933ca83910fb0c39821">_onMessageStart</a>)</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        , <a class="code" href="classhttp_1_1websocket_1_1_w_s_server_context.html#a38900bde00e407e8eefbafe665ba4866">_onFrameData</a>(<a class="code" href="classhttp_1_1websocket_1_1_w_s_server_context.html#a38900bde00e407e8eefbafe665ba4866">_onFrameData</a>)</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        , <a class="code" href="classhttp_1_1websocket_1_1_w_s_server_context.html#a545f5ed313b8ab4c10e0486159de6317">_onMessageEnd</a>(<a class="code" href="classhttp_1_1websocket_1_1_w_s_server_context.html#a545f5ed313b8ab4c10e0486159de6317">_onMessageEnd</a>) {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    }</div>
+<div class="ttc" id="aclasshttp_1_1websocket_1_1_w_s_server_context_html_a15d57a66d711c933ca83910fb0c39821"><div class="ttname"><a href="classhttp_1_1websocket_1_1_w_s_server_context.html#a15d57a66d711c933ca83910fb0c39821">http::websocket::WSServerContext::_onMessageStart</a></div><div class="ttdeci">std::function&lt; void(WSServerContext *wSServerContext, int opCode)&gt; _onMessageStart</div><div class="ttdef"><b>Definition:</b> <a href="_w_s_server_context_8h_source.html#l00076">WSServerContext.h:76</a></div></div>
+<div class="ttc" id="aclasshttp_1_1websocket_1_1_w_s_server_context_html_a38900bde00e407e8eefbafe665ba4866"><div class="ttname"><a href="classhttp_1_1websocket_1_1_w_s_server_context.html#a38900bde00e407e8eefbafe665ba4866">http::websocket::WSServerContext::_onFrameData</a></div><div class="ttdeci">std::function&lt; void(WSServerContext *wSServerContext, const char *junk, std::size_t junkLen)&gt; _onFrameData</div><div class="ttdef"><b>Definition:</b> <a href="_w_s_server_context_8h_source.html#l00077">WSServerContext.h:77</a></div></div>
+<div class="ttc" id="aclasshttp_1_1websocket_1_1_w_s_server_context_html_a545f5ed313b8ab4c10e0486159de6317"><div class="ttname"><a href="classhttp_1_1websocket_1_1_w_s_server_context.html#a545f5ed313b8ab4c10e0486159de6317">http::websocket::WSServerContext::_onMessageEnd</a></div><div class="ttdeci">std::function&lt; void(WSServerContext *wSServerContext)&gt; _onMessageEnd</div><div class="ttdef"><b>Definition:</b> <a href="_w_s_server_context_8h_source.html#l00078">WSServerContext.h:78</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="afc11663cd00dec48e62ebd4ff0cefedc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc11663cd00dec48e62ebd4ff0cefedc">&#9670;&nbsp;</a></span>close()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -244,7 +305,7 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">void http::websocket::WSServerContext::close </td>
           <td>(</td>
           <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>statusCode</em> = <code>0</code>, </td>
+          <td class="paramname"><em>statusCode</em> = <code>1000</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -271,44 +332,237 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_w_s_server_context_8cpp_source.html#l00095">95</a> of file <a class="el" href="_w_s_server_context_8cpp_source.html">WSServerContext.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                                                                                               {</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordtype">char</span>* closePayload = <span class="keyword">const_cast&lt;</span><span class="keywordtype">char</span>*<span class="keyword">&gt;</span>(reason);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        std::size_t closePayloadLength = reasonLength;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keywordflow">if</span> (statusCode != 0) {</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            closePayload = <span class="keyword">new</span> <span class="keywordtype">char</span>[reasonLength + 2];</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            *<span class="keyword">reinterpret_cast&lt;</span>uint16_t*<span class="keyword">&gt;</span>(closePayload) = htobe16(statusCode);</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            closePayloadLength += 2;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <span class="keywordflow">if</span> (reasonLength &gt; 0) {</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                memcpy(closePayload + 2, reason, reasonLength);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            }</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        }</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <a class="code" href="classhttp_1_1websocket_1_1_w_s_transmitter.html#a5b038fcd05c9e21ec8d806120ce53059">message</a>(8, closePayload, closePayloadLength);</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keywordflow">if</span> (statusCode != 0) {</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            <span class="keyword">delete</span>[] closePayload;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        }</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <a class="code" href="classhttp_1_1websocket_1_1_w_s_server_context.html#ae3937607b85c41bab1c8c2b960437993">closeSent</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    }</div>
-<div class="ttc" id="aclasshttp_1_1websocket_1_1_w_s_server_context_html_ae3937607b85c41bab1c8c2b960437993"><div class="ttname"><a href="classhttp_1_1websocket_1_1_w_s_server_context.html#ae3937607b85c41bab1c8c2b960437993">http::websocket::WSServerContext::closeSent</a></div><div class="ttdeci">bool closeSent</div><div class="ttdef"><b>Definition:</b> <a href="_w_s_server_context_8h_source.html#l00055">WSServerContext.h:55</a></div></div>
-<div class="ttc" id="aclasshttp_1_1websocket_1_1_w_s_transmitter_html_a5b038fcd05c9e21ec8d806120ce53059"><div class="ttname"><a href="classhttp_1_1websocket_1_1_w_s_transmitter.html#a5b038fcd05c9e21ec8d806120ce53059">http::websocket::WSTransmitter::message</a></div><div class="ttdeci">void message(const char *message, std::size_t messageLength, uint32_t messageKey=0)</div><div class="ttdef"><b>Definition:</b> <a href="_w_s_transmitter_8cpp_source.html#l00037">WSTransmitter.cpp:37</a></div></div>
+<p class="definition">Definition at line <a class="el" href="_w_s_server_context_8cpp_source.html#l00148">148</a> of file <a class="el" href="_w_s_server_context_8cpp_source.html">WSServerContext.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                                                                                               {</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <span class="keywordtype">char</span>* closePayload = <span class="keyword">const_cast&lt;</span><span class="keywordtype">char</span>*<span class="keyword">&gt;</span>(reason);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        std::size_t closePayloadLength = reasonLength;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        <span class="keywordflow">if</span> (statusCode != 0) {</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            closePayload = <span class="keyword">new</span> <span class="keywordtype">char</span>[reasonLength + 2];</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            *<span class="keyword">reinterpret_cast&lt;</span>uint16_t*<span class="keyword">&gt;</span>(closePayload) = htobe16(statusCode);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            closePayloadLength += 2;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;            <span class="keywordflow">if</span> (reasonLength &gt; 0) {</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                memcpy(closePayload + 2, reason, reasonLength);</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            }</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        }</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <a class="code" href="classhttp_1_1websocket_1_1_w_s_server_context.html#a806c619e68c565252cbdf41dc59114f9">message</a>(8, closePayload, closePayloadLength);</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        <span class="keywordflow">if</span> (statusCode != 0) {</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            <span class="keyword">delete</span>[] closePayload;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        }</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        <a class="code" href="classhttp_1_1websocket_1_1_w_s_server_context.html#ae3937607b85c41bab1c8c2b960437993">closeSent</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    }</div>
+<div class="ttc" id="aclasshttp_1_1websocket_1_1_w_s_server_context_html_a806c619e68c565252cbdf41dc59114f9"><div class="ttname"><a href="classhttp_1_1websocket_1_1_w_s_server_context.html#a806c619e68c565252cbdf41dc59114f9">http::websocket::WSServerContext::message</a></div><div class="ttdeci">void message(uint8_t opCode, const char *message, std::size_t messageLength, uint32_t messageKey=0) override</div><div class="ttdef"><b>Definition:</b> <a href="_w_s_server_context_8cpp_source.html#l00061">WSServerContext.cpp:61</a></div></div>
+<div class="ttc" id="aclasshttp_1_1websocket_1_1_w_s_server_context_html_ae3937607b85c41bab1c8c2b960437993"><div class="ttname"><a href="classhttp_1_1websocket_1_1_w_s_server_context.html#ae3937607b85c41bab1c8c2b960437993">http::websocket::WSServerContext::closeSent</a></div><div class="ttdeci">bool closeSent</div><div class="ttdef"><b>Definition:</b> <a href="_w_s_server_context_8h_source.html#l00071">WSServerContext.h:71</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_w_s_server_context_8h_source.html#l00055">closeSent</a>, and <a class="el" href="_w_s_transmitter_8cpp_source.html#l00037">http::websocket::WSTransmitter::message()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="_w_s_server_context_8cpp_source.html#l00086">onError()</a>, and <a class="el" href="_w_s_server_context_8cpp_source.html#l00061">onMessageEnd()</a>.</p>
+<p class="reference">References <a class="el" href="_w_s_server_context_8h_source.html#l00071">closeSent</a>, and <a class="el" href="_w_s_server_context_8cpp_source.html#l00061">message()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1websocket_1_1_w_s_server_context_a36fd90bda1f6190fe7a4c6afc4d04851_cgraph.svg" width="1228" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1websocket_1_1_w_s_server_context_afc11663cd00dec48e62ebd4ff0cefedc_cgraph.svg" width="1200" height="71"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a806c619e68c565252cbdf41dc59114f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a806c619e68c565252cbdf41dc59114f9">&#9670;&nbsp;</a></span>message()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void http::websocket::WSServerContext::message </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>opCode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>messageLength</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>messageKey</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="classhttp_1_1websocket_1_1_w_s_transmitter.html#a51ce95b8e9648f7e4fff9278f2980f4c">http::websocket::WSTransmitter</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_w_s_server_context_8cpp_source.html#l00061">61</a> of file <a class="el" href="_w_s_server_context_8cpp_source.html">WSServerContext.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                                                                                                                   {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="classhttp_1_1websocket_1_1_w_s_server_context.html#ae3937607b85c41bab1c8c2b960437993">closeSent</a>) {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <a class="code" href="classhttp_1_1websocket_1_1_w_s_transmitter.html#a51ce95b8e9648f7e4fff9278f2980f4c">WSTransmitter::message</a>(<a class="code" href="classhttp_1_1websocket_1_1_w_s_receiver.html#af6352da0ce1ec59bc685de553ddd3d70">opCode</a>, <a class="code" href="classhttp_1_1websocket_1_1_w_s_server_context.html#a806c619e68c565252cbdf41dc59114f9">message</a>, messageLength, messageKey);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    }</div>
+<div class="ttc" id="aclasshttp_1_1websocket_1_1_w_s_receiver_html_af6352da0ce1ec59bc685de553ddd3d70"><div class="ttname"><a href="classhttp_1_1websocket_1_1_w_s_receiver.html#af6352da0ce1ec59bc685de553ddd3d70">http::websocket::WSReceiver::opCode</a></div><div class="ttdeci">uint8_t opCode</div><div class="ttdef"><b>Definition:</b> <a href="_w_s_receiver_8h_source.html#l00065">WSReceiver.h:65</a></div></div>
+<div class="ttc" id="aclasshttp_1_1websocket_1_1_w_s_transmitter_html_a51ce95b8e9648f7e4fff9278f2980f4c"><div class="ttname"><a href="classhttp_1_1websocket_1_1_w_s_transmitter.html#a51ce95b8e9648f7e4fff9278f2980f4c">http::websocket::WSTransmitter::message</a></div><div class="ttdeci">virtual void message(uint8_t opCode, const char *message, std::size_t messageLength, uint32_t messageKey=0)</div><div class="ttdef"><b>Definition:</b> <a href="_w_s_transmitter_8cpp_source.html#l00048">WSTransmitter.cpp:48</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="_w_s_server_context_8h_source.html#l00071">closeSent</a>, <a class="el" href="_w_s_transmitter_8cpp_source.html#l00048">http::websocket::WSTransmitter::message()</a>, and <a class="el" href="_w_s_receiver_8h_source.html#l00065">http::websocket::WSReceiver::opCode</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="_w_s_server_context_8cpp_source.html#l00148">close()</a>, <a class="el" href="_w_s_server_context_8cpp_source.html#l00055">messageEnd()</a>, <a class="el" href="_w_s_server_context_8cpp_source.html#l00043">messageStart()</a>, <a class="el" href="_w_s_server_context_8cpp_source.html#l00049">sendFrame()</a>, <a class="el" href="_w_s_server_context_8cpp_source.html#l00170">sendPing()</a>, and <a class="el" href="_w_s_server_context_8cpp_source.html#l00174">sendPong()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1websocket_1_1_w_s_server_context_a806c619e68c565252cbdf41dc59114f9_cgraph.svg" width="970" height="71"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1websocket_1_1_w_s_server_context_a36fd90bda1f6190fe7a4c6afc4d04851_icgraph.svg" width="424" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1websocket_1_1_w_s_server_context_a806c619e68c565252cbdf41dc59114f9_icgraph.svg" width="655" height="379"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="ae34c2dce90c1464aa67247c892a8e46f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae34c2dce90c1464aa67247c892a8e46f">&#9670;&nbsp;</a></span>messageEnd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void http::websocket::WSServerContext::messageEnd </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>messageLength</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>messageKey</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="classhttp_1_1websocket_1_1_w_s_transmitter.html#aa74b8be3d7fb45bfad63cedfabb567ce">http::websocket::WSTransmitter</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_w_s_server_context_8cpp_source.html#l00055">55</a> of file <a class="el" href="_w_s_server_context_8cpp_source.html">WSServerContext.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                                                                                                      {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="classhttp_1_1websocket_1_1_w_s_server_context.html#ae3937607b85c41bab1c8c2b960437993">closeSent</a>) {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <a class="code" href="classhttp_1_1websocket_1_1_w_s_transmitter.html#aa74b8be3d7fb45bfad63cedfabb567ce">WSTransmitter::messageEnd</a>(<a class="code" href="classhttp_1_1websocket_1_1_w_s_server_context.html#a806c619e68c565252cbdf41dc59114f9">message</a>, messageLength, messageKey);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
+<div class="ttc" id="aclasshttp_1_1websocket_1_1_w_s_transmitter_html_aa74b8be3d7fb45bfad63cedfabb567ce"><div class="ttname"><a href="classhttp_1_1websocket_1_1_w_s_transmitter.html#aa74b8be3d7fb45bfad63cedfabb567ce">http::websocket::WSTransmitter::messageEnd</a></div><div class="ttdeci">virtual void messageEnd(const char *message, std::size_t messageLength, uint32_t messageKey=0)</div><div class="ttdef"><b>Definition:</b> <a href="_w_s_transmitter_8cpp_source.html#l00044">WSTransmitter.cpp:44</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="_w_s_server_context_8h_source.html#l00071">closeSent</a>, <a class="el" href="_w_s_server_context_8cpp_source.html#l00061">message()</a>, and <a class="el" href="_w_s_transmitter_8cpp_source.html#l00044">http::websocket::WSTransmitter::messageEnd()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1websocket_1_1_w_s_server_context_ae34c2dce90c1464aa67247c892a8e46f_cgraph.svg" width="1228" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="aefd9f663b1ae2ea2c96aecba6074f326"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefd9f663b1ae2ea2c96aecba6074f326">&#9670;&nbsp;</a></span>messageStart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void http::websocket::WSServerContext::messageStart </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>opCode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>messageLength</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>messageKey</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="classhttp_1_1websocket_1_1_w_s_transmitter.html#a5b574aabaa9c6e3a68d079daa589677c">http::websocket::WSTransmitter</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_w_s_server_context_8cpp_source.html#l00043">43</a> of file <a class="el" href="_w_s_server_context_8cpp_source.html">WSServerContext.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                                                                                                                        {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="classhttp_1_1websocket_1_1_w_s_server_context.html#ae3937607b85c41bab1c8c2b960437993">closeSent</a>) {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <a class="code" href="classhttp_1_1websocket_1_1_w_s_transmitter.html#a5b574aabaa9c6e3a68d079daa589677c">WSTransmitter::messageStart</a>(<a class="code" href="classhttp_1_1websocket_1_1_w_s_receiver.html#af6352da0ce1ec59bc685de553ddd3d70">opCode</a>, <a class="code" href="classhttp_1_1websocket_1_1_w_s_server_context.html#a806c619e68c565252cbdf41dc59114f9">message</a>, messageLength, messageKey);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div>
+<div class="ttc" id="aclasshttp_1_1websocket_1_1_w_s_transmitter_html_a5b574aabaa9c6e3a68d079daa589677c"><div class="ttname"><a href="classhttp_1_1websocket_1_1_w_s_transmitter.html#a5b574aabaa9c6e3a68d079daa589677c">http::websocket::WSTransmitter::messageStart</a></div><div class="ttdeci">virtual void messageStart(uint8_t opCode, const char *message, std::size_t messageLength, uint32_t messageKey=0)</div><div class="ttdef"><b>Definition:</b> <a href="_w_s_transmitter_8cpp_source.html#l00036">WSTransmitter.cpp:36</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="_w_s_server_context_8h_source.html#l00071">closeSent</a>, <a class="el" href="_w_s_server_context_8cpp_source.html#l00061">message()</a>, <a class="el" href="_w_s_transmitter_8cpp_source.html#l00036">http::websocket::WSTransmitter::messageStart()</a>, and <a class="el" href="_w_s_receiver_8h_source.html#l00065">http::websocket::WSReceiver::opCode</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1websocket_1_1_w_s_server_context_aefd9f663b1ae2ea2c96aecba6074f326_cgraph.svg" width="1228" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -340,20 +594,78 @@ Here is the caller graph for this function:</div>
 
 <p>Implements <a class="el" href="classhttp_1_1websocket_1_1_w_s_receiver.html#afa7d1f67de7bbdcf85c68030a3b194fa">http::websocket::WSReceiver</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_w_s_server_context_8cpp_source.html#l00086">86</a> of file <a class="el" href="_w_s_server_context_8cpp_source.html">WSServerContext.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                                                 {</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        std::cout &lt;&lt; std::endl &lt;&lt; <span class="stringliteral">&quot;Message Error&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <a class="code" href="classhttp_1_1websocket_1_1_w_s_server_context.html#a36fd90bda1f6190fe7a4c6afc4d04851">close</a>(errnum);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div>
-<div class="ttc" id="aclasshttp_1_1websocket_1_1_w_s_server_context_html_a36fd90bda1f6190fe7a4c6afc4d04851"><div class="ttname"><a href="classhttp_1_1websocket_1_1_w_s_server_context.html#a36fd90bda1f6190fe7a4c6afc4d04851">http::websocket::WSServerContext::close</a></div><div class="ttdeci">void close(uint16_t statusCode=0, const char *reason=nullptr, std::size_t reasonLength=0)</div><div class="ttdef"><b>Definition:</b> <a href="_w_s_server_context_8cpp_source.html#l00095">WSServerContext.cpp:95</a></div></div>
+<p class="definition">Definition at line <a class="el" href="_w_s_server_context_8cpp_source.html#l00139">139</a> of file <a class="el" href="_w_s_server_context_8cpp_source.html">WSServerContext.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;                                                 {</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        VLOG(0) &lt;&lt; std::endl &lt;&lt; <span class="stringliteral">&quot;Message Error&quot;</span>;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html#ab617c6019d922f2475c50afcf4f08edd">close</a>(errnum);</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    }</div>
+<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_protocol_html_ab617c6019d922f2475c50afcf4f08edd"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html#ab617c6019d922f2475c50afcf4f08edd">net::socket::stream::SocketProtocol::close</a></div><div class="ttdeci">void close()</div><div class="ttdef"><b>Definition:</b> <a href="_socket_protocol_8cpp_source.html#l00037">SocketProtocol.cpp:37</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_w_s_server_context_8cpp_source.html#l00095">close()</a>.</p>
+<p class="reference">References <a class="el" href="_socket_protocol_8cpp_source.html#l00037">net::socket::stream::SocketProtocol::close()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1websocket_1_1_w_s_server_context_ac87957ee526abe31a55a6c5885d13910_cgraph.svg" width="1459" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1websocket_1_1_w_s_server_context_ac87957ee526abe31a55a6c5885d13910_cgraph.svg" width="615" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
+
+</div>
+</div>
+<a id="a876016059c15161e0fc72695fc6d82da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a876016059c15161e0fc72695fc6d82da">&#9670;&nbsp;</a></span>onFrameData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void http::websocket::WSServerContext::onFrameData </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>junk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>junkLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classhttp_1_1websocket_1_1_w_s_receiver.html#abad48437c1b8a014aa663b786b71e717">http::websocket::WSReceiver</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_w_s_server_context_8cpp_source.html#l00103">103</a> of file <a class="el" href="_w_s_server_context_8cpp_source.html">WSServerContext.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                                                                        {</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="classhttp_1_1websocket_1_1_w_s_server_context.html#a99f4a8383df56e1c4f824db65a07c7d5">closeReceived</a> &amp;&amp; !<a class="code" href="classhttp_1_1websocket_1_1_w_s_server_context.html#ab25306208833ed573b62dcb0a0291c8e">pingReceived</a> &amp;&amp; !<a class="code" href="classhttp_1_1websocket_1_1_w_s_server_context.html#aa985e1992ee57a5bdd1fcd731625473a">pongReceived</a>) {</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            std::size_t junkOffset = 0;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            <span class="keywordflow">do</span> {</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                std::size_t sendJunkLen = (junkLen - junkOffset &lt;= SIZE_MAX) ? static_cast&lt;std::size_t&gt;(junkLen - junkOffset) : SIZE_MAX;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                <a class="code" href="classhttp_1_1websocket_1_1_w_s_server_context.html#a38900bde00e407e8eefbafe665ba4866">_onFrameData</a>(<span class="keyword">this</span>, junk + junkOffset, sendJunkLen);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                junkOffset += sendJunkLen;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            } <span class="keywordflow">while</span> (junkLen - junkOffset &gt; 0);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            <span class="comment">// collect data for close and pong</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        }</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    }</div>
+<div class="ttc" id="aclasshttp_1_1websocket_1_1_w_s_server_context_html_a99f4a8383df56e1c4f824db65a07c7d5"><div class="ttname"><a href="classhttp_1_1websocket_1_1_w_s_server_context.html#a99f4a8383df56e1c4f824db65a07c7d5">http::websocket::WSServerContext::closeReceived</a></div><div class="ttdeci">bool closeReceived</div><div class="ttdef"><b>Definition:</b> <a href="_w_s_server_context_8h_source.html#l00070">WSServerContext.h:70</a></div></div>
+<div class="ttc" id="aclasshttp_1_1websocket_1_1_w_s_server_context_html_aa985e1992ee57a5bdd1fcd731625473a"><div class="ttname"><a href="classhttp_1_1websocket_1_1_w_s_server_context.html#aa985e1992ee57a5bdd1fcd731625473a">http::websocket::WSServerContext::pongReceived</a></div><div class="ttdeci">bool pongReceived</div><div class="ttdef"><b>Definition:</b> <a href="_w_s_server_context_8h_source.html#l00074">WSServerContext.h:74</a></div></div>
+<div class="ttc" id="aclasshttp_1_1websocket_1_1_w_s_server_context_html_ab25306208833ed573b62dcb0a0291c8e"><div class="ttname"><a href="classhttp_1_1websocket_1_1_w_s_server_context.html#ab25306208833ed573b62dcb0a0291c8e">http::websocket::WSServerContext::pingReceived</a></div><div class="ttdeci">bool pingReceived</div><div class="ttdef"><b>Definition:</b> <a href="_w_s_server_context_8h_source.html#l00073">WSServerContext.h:73</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="_w_s_server_context_8h_source.html#l00077">_onFrameData</a>, <a class="el" href="_w_s_server_context_8h_source.html#l00070">closeReceived</a>, <a class="el" href="_w_s_server_context_8h_source.html#l00073">pingReceived</a>, and <a class="el" href="_w_s_server_context_8h_source.html#l00074">pongReceived</a>.</p>
 
 </div>
 </div>
@@ -393,76 +705,19 @@ Here is the call graph for this function:</div>
 
 <p>Implements <a class="el" href="classhttp_1_1websocket_1_1_w_s_transmitter.html#a6c3b7a315d962d53cd232244a0f2da90">http::websocket::WSTransmitter</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_w_s_server_context_8cpp_source.html#l00091">91</a> of file <a class="el" href="_w_s_server_context_8cpp_source.html">WSServerContext.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                                                                        {</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html#aefc6cfe0cc28926967df0407c3b03729">socketConnection</a>-&gt;<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#a27dceffb6e668af5ab183a1edbe8b3c6">enqueue</a>(frame, <span class="keyword">static_cast&lt;</span>std::size_t<span class="keyword">&gt;</span>(frameLength));</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    }</div>
-<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_connection_base_html_a27dceffb6e668af5ab183a1edbe8b3c6"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#a27dceffb6e668af5ab183a1edbe8b3c6">net::socket::stream::SocketConnectionBase::enqueue</a></div><div class="ttdeci">virtual void enqueue(const char *junk, std::size_t junkLen)=0</div></div>
-<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_protocol_html_aefc6cfe0cc28926967df0407c3b03729"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html#aefc6cfe0cc28926967df0407c3b03729">net::socket::stream::SocketProtocol::socketConnection</a></div><div class="ttdeci">SocketConnectionBase * socketConnection</div><div class="ttdef"><b>Definition:</b> <a href="_socket_protocol_8h_source.html#l00047">SocketProtocol.h:47</a></div></div>
+<p class="definition">Definition at line <a class="el" href="_w_s_server_context_8cpp_source.html#l00144">144</a> of file <a class="el" href="_w_s_server_context_8cpp_source.html">WSServerContext.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;                                                                        {</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html#afca04597ee15a83a823302882e47ef51">sendToPeer</a>(frame, <span class="keyword">static_cast&lt;</span>std::size_t<span class="keyword">&gt;</span>(frameLength));</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    }</div>
+<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_protocol_html_afca04597ee15a83a823302882e47ef51"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html#afca04597ee15a83a823302882e47ef51">net::socket::stream::SocketProtocol::sendToPeer</a></div><div class="ttdeci">void sendToPeer(const char *junk, std::size_t junkLen)</div><div class="ttdef"><b>Definition:</b> <a href="_socket_protocol_8cpp_source.html#l00029">SocketProtocol.cpp:29</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#a27dceffb6e668af5ab183a1edbe8b3c6">net::socket::stream::SocketConnectionBase::enqueue()</a>, and <a class="el" href="_socket_protocol_8h_source.html#l00047">net::socket::stream::SocketProtocol::socketConnection</a>.</p>
+<p class="reference">References <a class="el" href="_socket_protocol_8cpp_source.html#l00029">net::socket::stream::SocketProtocol::sendToPeer()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1websocket_1_1_w_s_server_context_a59aef08f80d447a154c456ba471a7e1f_cgraph.svg" width="408" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1websocket_1_1_w_s_server_context_a59aef08f80d447a154c456ba471a7e1f_cgraph.svg" width="652" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
-
-</div>
-</div>
-<a id="aa996cdef6e815fb202c8563c89b696f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa996cdef6e815fb202c8563c89b696f2">&#9670;&nbsp;</a></span>onMessageData()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void http::websocket::WSServerContext::onMessageData </td>
-          <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>junk</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint64_t&#160;</td>
-          <td class="paramname"><em>junkLen</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implements <a class="el" href="classhttp_1_1websocket_1_1_w_s_receiver.html#a52baab83711e8dda50c76264f2cc5568">http::websocket::WSReceiver</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="_w_s_server_context_8cpp_source.html#l00050">50</a> of file <a class="el" href="_w_s_server_context_8cpp_source.html">WSServerContext.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                                                                    {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="classhttp_1_1websocket_1_1_w_s_server_context.html#a99f4a8383df56e1c4f824db65a07c7d5">closeReceived</a> &amp;&amp; !<a class="code" href="classhttp_1_1websocket_1_1_w_s_server_context.html#ab25306208833ed573b62dcb0a0291c8e">pingReceived</a> &amp;&amp; !<a class="code" href="classhttp_1_1websocket_1_1_w_s_server_context.html#aa985e1992ee57a5bdd1fcd731625473a">pongReceived</a>) {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            std::cout &lt;&lt; <span class="stringliteral">&quot;Data: &quot;</span> &lt;&lt; std::string(junk, <span class="keyword">static_cast&lt;</span>std::size_t<span class="keyword">&gt;</span>(junkLen));</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="classhttp_1_1websocket_1_1_w_s_receiver.html#a147da020aabe6a35770820c3cac42551">fin</a>) {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                std::cout &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            }</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="comment">// collect data for close and pong</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        }</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
-<div class="ttc" id="aclasshttp_1_1websocket_1_1_w_s_receiver_html_a147da020aabe6a35770820c3cac42551"><div class="ttname"><a href="classhttp_1_1websocket_1_1_w_s_receiver.html#a147da020aabe6a35770820c3cac42551">http::websocket::WSReceiver::fin</a></div><div class="ttdeci">bool fin</div><div class="ttdef"><b>Definition:</b> <a href="_w_s_receiver_8h_source.html#l00062">WSReceiver.h:62</a></div></div>
-<div class="ttc" id="aclasshttp_1_1websocket_1_1_w_s_server_context_html_a99f4a8383df56e1c4f824db65a07c7d5"><div class="ttname"><a href="classhttp_1_1websocket_1_1_w_s_server_context.html#a99f4a8383df56e1c4f824db65a07c7d5">http::websocket::WSServerContext::closeReceived</a></div><div class="ttdeci">bool closeReceived</div><div class="ttdef"><b>Definition:</b> <a href="_w_s_server_context_8h_source.html#l00054">WSServerContext.h:54</a></div></div>
-<div class="ttc" id="aclasshttp_1_1websocket_1_1_w_s_server_context_html_aa985e1992ee57a5bdd1fcd731625473a"><div class="ttname"><a href="classhttp_1_1websocket_1_1_w_s_server_context.html#aa985e1992ee57a5bdd1fcd731625473a">http::websocket::WSServerContext::pongReceived</a></div><div class="ttdeci">bool pongReceived</div><div class="ttdef"><b>Definition:</b> <a href="_w_s_server_context_8h_source.html#l00058">WSServerContext.h:58</a></div></div>
-<div class="ttc" id="aclasshttp_1_1websocket_1_1_w_s_server_context_html_ab25306208833ed573b62dcb0a0291c8e"><div class="ttname"><a href="classhttp_1_1websocket_1_1_w_s_server_context.html#ab25306208833ed573b62dcb0a0291c8e">http::websocket::WSServerContext::pingReceived</a></div><div class="ttdeci">bool pingReceived</div><div class="ttdef"><b>Definition:</b> <a href="_w_s_server_context_8h_source.html#l00057">WSServerContext.h:57</a></div></div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="_w_s_server_context_8h_source.html#l00054">closeReceived</a>, <a class="el" href="_w_s_receiver_8h_source.html#l00062">http::websocket::WSReceiver::fin</a>, <a class="el" href="_w_s_server_context_8h_source.html#l00057">pingReceived</a>, and <a class="el" href="_w_s_server_context_8h_source.html#l00058">pongReceived</a>.</p>
 
 </div>
 </div>
@@ -491,39 +746,37 @@ Here is the call graph for this function:</div>
 
 <p>Implements <a class="el" href="classhttp_1_1websocket_1_1_w_s_receiver.html#a1327291dee817e648dd92454846d9640">http::websocket::WSReceiver</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_w_s_server_context_8cpp_source.html#l00061">61</a> of file <a class="el" href="_w_s_server_context_8cpp_source.html">WSServerContext.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                                       {</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classhttp_1_1websocket_1_1_w_s_server_context.html#a99f4a8383df56e1c4f824db65a07c7d5">closeReceived</a>) {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <a class="code" href="classhttp_1_1websocket_1_1_w_s_server_context.html#a99f4a8383df56e1c4f824db65a07c7d5">closeReceived</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="classhttp_1_1websocket_1_1_w_s_server_context.html#ae3937607b85c41bab1c8c2b960437993">closeSent</a>) {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                <a class="code" href="classhttp_1_1websocket_1_1_w_s_server_context.html#ae3937607b85c41bab1c8c2b960437993">closeSent</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                std::cout &lt;&lt; <span class="stringliteral">&quot;Closed&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                <a class="code" href="classhttp_1_1websocket_1_1_w_s_server_context.html#a36fd90bda1f6190fe7a4c6afc4d04851">close</a>();</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                std::cout &lt;&lt; <span class="stringliteral">&quot;Close requested&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            }</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html#aefc6cfe0cc28926967df0407c3b03729">socketConnection</a>-&gt;<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#ab08d539e59c0a7c284d97414ac065c03">close</a>();</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="classhttp_1_1websocket_1_1_w_s_server_context.html#ab25306208833ed573b62dcb0a0291c8e">pingReceived</a>) {</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <a class="code" href="classhttp_1_1websocket_1_1_w_s_server_context.html#ab25306208833ed573b62dcb0a0291c8e">pingReceived</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <a class="code" href="classhttp_1_1websocket_1_1_w_s_server_context.html#ac3fcdd059f5e529b8ef571f9d19ad6db">pong</a>();</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="classhttp_1_1websocket_1_1_w_s_server_context.html#aa985e1992ee57a5bdd1fcd731625473a">pongReceived</a>) {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            <a class="code" href="classhttp_1_1websocket_1_1_w_s_server_context.html#aa985e1992ee57a5bdd1fcd731625473a">pongReceived</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <span class="comment">/* Propagate connection alive to application */</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <span class="comment">/* Propagate Message back to application */</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <a class="code" href="classhttp_1_1websocket_1_1_w_s_transmitter.html#a5b038fcd05c9e21ec8d806120ce53059">message</a>(1, <span class="stringliteral">&quot;Hallo zurück&quot;</span>, strlen(<span class="stringliteral">&quot;Hallo zurück&quot;</span>));</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            std::cout &lt;&lt; <span class="stringliteral">&quot;Message End&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <span class="comment">//            close(1000);</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        }</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div>
-<div class="ttc" id="aclasshttp_1_1websocket_1_1_w_s_server_context_html_ac3fcdd059f5e529b8ef571f9d19ad6db"><div class="ttname"><a href="classhttp_1_1websocket_1_1_w_s_server_context.html#ac3fcdd059f5e529b8ef571f9d19ad6db">http::websocket::WSServerContext::pong</a></div><div class="ttdeci">void pong(const char *reason=nullptr, std::size_t reasonLength=0)</div><div class="ttdef"><b>Definition:</b> <a href="_w_s_server_context_8cpp_source.html#l00121">WSServerContext.cpp:121</a></div></div>
-<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_connection_base_html_ab08d539e59c0a7c284d97414ac065c03"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#ab08d539e59c0a7c284d97414ac065c03">net::socket::stream::SocketConnectionBase::close</a></div><div class="ttdeci">virtual void close(bool instantly=false)=0</div></div>
+<p class="definition">Definition at line <a class="el" href="_w_s_server_context_8cpp_source.html#l00117">117</a> of file <a class="el" href="_w_s_server_context_8cpp_source.html">WSServerContext.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                                       {</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classhttp_1_1websocket_1_1_w_s_server_context.html#a99f4a8383df56e1c4f824db65a07c7d5">closeReceived</a>) {</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            <a class="code" href="classhttp_1_1websocket_1_1_w_s_server_context.html#a99f4a8383df56e1c4f824db65a07c7d5">closeReceived</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="classhttp_1_1websocket_1_1_w_s_server_context.html#ae3937607b85c41bab1c8c2b960437993">closeSent</a>) { <span class="comment">// active close</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                <a class="code" href="classhttp_1_1websocket_1_1_w_s_server_context.html#ae3937607b85c41bab1c8c2b960437993">closeSent</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                VLOG(0) &lt;&lt; <span class="stringliteral">&quot;Request close&quot;</span>;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            } <span class="keywordflow">else</span> { <span class="comment">// passive close</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                VLOG(0) &lt;&lt; <span class="stringliteral">&quot;Closed&quot;</span>;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html#ab617c6019d922f2475c50afcf4f08edd">close</a>();</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            }</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html#aefc6cfe0cc28926967df0407c3b03729">socketConnection</a>-&gt;<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#a7e4fe9bc99dfb5dac89cabbc85a9e2cb">getSocketProtocol</a>()-&gt;<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html#ab617c6019d922f2475c50afcf4f08edd">close</a>();</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="classhttp_1_1websocket_1_1_w_s_server_context.html#ab25306208833ed573b62dcb0a0291c8e">pingReceived</a>) {</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            <a class="code" href="classhttp_1_1websocket_1_1_w_s_server_context.html#ab25306208833ed573b62dcb0a0291c8e">pingReceived</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            <a class="code" href="classhttp_1_1websocket_1_1_w_s_server_context.html#aca7fd73f325d05c4d9f4d0ffb51897b9">sendPong</a>();</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="classhttp_1_1websocket_1_1_w_s_server_context.html#aa985e1992ee57a5bdd1fcd731625473a">pongReceived</a>) {</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            <a class="code" href="classhttp_1_1websocket_1_1_w_s_server_context.html#aa985e1992ee57a5bdd1fcd731625473a">pongReceived</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            <span class="comment">/* Propagate connection alive to application? */</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            <a class="code" href="classhttp_1_1websocket_1_1_w_s_server_context.html#a545f5ed313b8ab4c10e0486159de6317">_onMessageEnd</a>(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        }</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    }</div>
+<div class="ttc" id="aclasshttp_1_1websocket_1_1_w_s_server_context_html_aca7fd73f325d05c4d9f4d0ffb51897b9"><div class="ttname"><a href="classhttp_1_1websocket_1_1_w_s_server_context.html#aca7fd73f325d05c4d9f4d0ffb51897b9">http::websocket::WSServerContext::sendPong</a></div><div class="ttdeci">void sendPong(const char *reason=nullptr, std::size_t reasonLength=0)</div><div class="ttdef"><b>Definition:</b> <a href="_w_s_server_context_8cpp_source.html#l00174">WSServerContext.cpp:174</a></div></div>
+<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_connection_base_html_a7e4fe9bc99dfb5dac89cabbc85a9e2cb"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#a7e4fe9bc99dfb5dac89cabbc85a9e2cb">net::socket::stream::SocketConnectionBase::getSocketProtocol</a></div><div class="ttdeci">SocketProtocol * getSocketProtocol()</div><div class="ttdef"><b>Definition:</b> <a href="_socket_connection_base_8cpp_source.html#l00039">SocketConnectionBase.cpp:39</a></div></div>
+<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_protocol_html_aefc6cfe0cc28926967df0407c3b03729"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html#aefc6cfe0cc28926967df0407c3b03729">net::socket::stream::SocketProtocol::socketConnection</a></div><div class="ttdeci">SocketConnectionBase * socketConnection</div><div class="ttdef"><b>Definition:</b> <a href="_socket_protocol_8h_source.html#l00053">SocketProtocol.h:53</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#ab08d539e59c0a7c284d97414ac065c03">net::socket::stream::SocketConnectionBase::close()</a>, <a class="el" href="_w_s_server_context_8cpp_source.html#l00095">close()</a>, <a class="el" href="_w_s_server_context_8h_source.html#l00054">closeReceived</a>, <a class="el" href="_w_s_server_context_8h_source.html#l00055">closeSent</a>, <a class="el" href="_w_s_transmitter_8cpp_source.html#l00037">http::websocket::WSTransmitter::message()</a>, <a class="el" href="_w_s_server_context_8h_source.html#l00057">pingReceived</a>, <a class="el" href="_w_s_server_context_8cpp_source.html#l00121">pong()</a>, <a class="el" href="_w_s_server_context_8h_source.html#l00058">pongReceived</a>, and <a class="el" href="_socket_protocol_8h_source.html#l00047">net::socket::stream::SocketProtocol::socketConnection</a>.</p>
+<p class="reference">References <a class="el" href="_w_s_server_context_8h_source.html#l00078">_onMessageEnd</a>, <a class="el" href="_socket_protocol_8cpp_source.html#l00037">net::socket::stream::SocketProtocol::close()</a>, <a class="el" href="_w_s_server_context_8h_source.html#l00070">closeReceived</a>, <a class="el" href="_w_s_server_context_8h_source.html#l00071">closeSent</a>, <a class="el" href="_socket_connection_base_8cpp_source.html#l00039">net::socket::stream::SocketConnectionBase::getSocketProtocol()</a>, <a class="el" href="_w_s_server_context_8h_source.html#l00073">pingReceived</a>, <a class="el" href="_w_s_server_context_8h_source.html#l00074">pongReceived</a>, <a class="el" href="_w_s_server_context_8cpp_source.html#l00174">sendPong()</a>, and <a class="el" href="_socket_protocol_8h_source.html#l00053">net::socket::stream::SocketProtocol::socketConnection</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1websocket_1_1_w_s_server_context_ab6b98657a369611978da97a43fac36c8_cgraph.svg" width="1459" height="251"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1websocket_1_1_w_s_server_context_ab6b98657a369611978da97a43fac36c8_cgraph.svg" width="1431" height="227"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -555,17 +808,32 @@ Here is the call graph for this function:</div>
 
 <p>Implements <a class="el" href="classhttp_1_1websocket_1_1_w_s_receiver.html#af52c3efd10e7a4d46c420a78cf3a4cee">http::websocket::WSReceiver</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_w_s_server_context_8cpp_source.html#l00042">42</a> of file <a class="el" href="_w_s_server_context_8cpp_source.html">WSServerContext.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                                                   {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;Message Start - OpCode: &quot;</span> &lt;&lt; <a class="code" href="classhttp_1_1websocket_1_1_w_s_receiver.html#af6352da0ce1ec59bc685de553ddd3d70">opCode</a> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <a class="code" href="classhttp_1_1websocket_1_1_w_s_server_context.html#a99f4a8383df56e1c4f824db65a07c7d5">closeReceived</a> = (<a class="code" href="classhttp_1_1websocket_1_1_w_s_receiver.html#af6352da0ce1ec59bc685de553ddd3d70">opCode</a> == 8);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <a class="code" href="classhttp_1_1websocket_1_1_w_s_server_context.html#ab25306208833ed573b62dcb0a0291c8e">pingReceived</a> = (<a class="code" href="classhttp_1_1websocket_1_1_w_s_receiver.html#af6352da0ce1ec59bc685de553ddd3d70">opCode</a> == 9);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <a class="code" href="classhttp_1_1websocket_1_1_w_s_server_context.html#aa985e1992ee57a5bdd1fcd731625473a">pongReceived</a> = (<a class="code" href="classhttp_1_1websocket_1_1_w_s_receiver.html#af6352da0ce1ec59bc685de553ddd3d70">opCode</a> == 10);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    }</div>
-<div class="ttc" id="aclasshttp_1_1websocket_1_1_w_s_receiver_html_af6352da0ce1ec59bc685de553ddd3d70"><div class="ttname"><a href="classhttp_1_1websocket_1_1_w_s_receiver.html#af6352da0ce1ec59bc685de553ddd3d70">http::websocket::WSReceiver::opCode</a></div><div class="ttdeci">uint8_t opCode</div><div class="ttdef"><b>Definition:</b> <a href="_w_s_receiver_8h_source.html#l00065">WSReceiver.h:65</a></div></div>
+<p class="definition">Definition at line <a class="el" href="_w_s_server_context_8cpp_source.html#l00079">79</a> of file <a class="el" href="_w_s_server_context_8cpp_source.html">WSServerContext.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                                                   {</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <a class="code" href="classhttp_1_1websocket_1_1_w_s_server_context.html#a99f4a8383df56e1c4f824db65a07c7d5">closeReceived</a> = (<a class="code" href="classhttp_1_1websocket_1_1_w_s_receiver.html#af6352da0ce1ec59bc685de553ddd3d70">opCode</a> == 0x08);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <a class="code" href="classhttp_1_1websocket_1_1_w_s_server_context.html#ab25306208833ed573b62dcb0a0291c8e">pingReceived</a> = (<a class="code" href="classhttp_1_1websocket_1_1_w_s_receiver.html#af6352da0ce1ec59bc685de553ddd3d70">opCode</a> == 0x09);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <a class="code" href="classhttp_1_1websocket_1_1_w_s_server_context.html#aa985e1992ee57a5bdd1fcd731625473a">pongReceived</a> = (<a class="code" href="classhttp_1_1websocket_1_1_w_s_receiver.html#af6352da0ce1ec59bc685de553ddd3d70">opCode</a> == 0x0A);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keywordflow">switch</span> (<a class="code" href="classhttp_1_1websocket_1_1_w_s_receiver.html#af6352da0ce1ec59bc685de553ddd3d70">opCode</a>) {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <span class="keywordflow">case</span> 0x08:</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                <a class="code" href="classhttp_1_1websocket_1_1_w_s_server_context.html#a99f4a8383df56e1c4f824db65a07c7d5">closeReceived</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                VLOG(0) &lt;&lt; <span class="stringliteral">&quot;Close requested&quot;</span>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <span class="keywordflow">case</span> 0x09:</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                <a class="code" href="classhttp_1_1websocket_1_1_w_s_server_context.html#ab25306208833ed573b62dcb0a0291c8e">pingReceived</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                VLOG(0) &lt;&lt; <span class="stringliteral">&quot;Ping received&quot;</span>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            <span class="keywordflow">case</span> 0x0A:</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                <a class="code" href="classhttp_1_1websocket_1_1_w_s_server_context.html#aa985e1992ee57a5bdd1fcd731625473a">pongReceived</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                VLOG(0) &lt;&lt; <span class="stringliteral">&quot;Pong received&quot;</span>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                <a class="code" href="classhttp_1_1websocket_1_1_w_s_server_context.html#a15d57a66d711c933ca83910fb0c39821">_onMessageStart</a>(<span class="keyword">this</span>, <a class="code" href="classhttp_1_1websocket_1_1_w_s_receiver.html#af6352da0ce1ec59bc685de553ddd3d70">opCode</a>);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        }</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_w_s_server_context_8h_source.html#l00054">closeReceived</a>, <a class="el" href="_w_s_receiver_8h_source.html#l00065">http::websocket::WSReceiver::opCode</a>, <a class="el" href="_w_s_server_context_8h_source.html#l00057">pingReceived</a>, and <a class="el" href="_w_s_server_context_8h_source.html#l00058">pongReceived</a>.</p>
+<p class="reference">References <a class="el" href="_w_s_server_context_8h_source.html#l00076">_onMessageStart</a>, <a class="el" href="_w_s_server_context_8h_source.html#l00070">closeReceived</a>, <a class="el" href="_w_s_receiver_8h_source.html#l00065">http::websocket::WSReceiver::opCode</a>, <a class="el" href="_w_s_server_context_8h_source.html#l00073">pingReceived</a>, and <a class="el" href="_w_s_server_context_8h_source.html#l00074">pongReceived</a>.</p>
 
 </div>
 </div>
@@ -595,9 +863,10 @@ Here is the call graph for this function:</div>
 
 <p>Implements <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html#a56bd62db385793147ea1243c4da6a31f">net::socket::stream::SocketProtocol</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_w_s_server_context_8cpp_source.html#l00036">36</a> of file <a class="el" href="_w_s_server_context_8cpp_source.html">WSServerContext.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                                                                 {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="_w_s_server_context_8cpp_source.html#l00071">71</a> of file <a class="el" href="_w_s_server_context_8cpp_source.html">WSServerContext.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                                                {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        VLOG(0) &lt;&lt; <span class="stringliteral">&quot;OnReadError: &quot;</span> &lt;&lt; errnum;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -627,14 +896,15 @@ Here is the call graph for this function:</div>
 
 <p>Implements <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html#a5f6323592f380e8fac44de8b1921a2fb">net::socket::stream::SocketProtocol</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_w_s_server_context_8cpp_source.html#l00039">39</a> of file <a class="el" href="_w_s_server_context_8cpp_source.html">WSServerContext.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                                                                  {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="_w_s_server_context_8cpp_source.html#l00075">75</a> of file <a class="el" href="_w_s_server_context_8cpp_source.html">WSServerContext.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                                                 {</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        VLOG(0) &lt;&lt; <span class="stringliteral">&quot;OnWriteError: &quot;</span> &lt;&lt; errnum;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a0e6994ceb720a31cf4823f0cf418bb03"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0e6994ceb720a31cf4823f0cf418bb03">&#9670;&nbsp;</a></span>ping()</h2>
+<a id="aa5c8d36dd24f74109944b4102b6c7e68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5c8d36dd24f74109944b4102b6c7e68">&#9670;&nbsp;</a></span>receiveFromPeer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -643,113 +913,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void http::websocket::WSServerContext::ping </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>reason</em> = <code>nullptr</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>reasonLength</em> = <code>0</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_w_s_server_context_8cpp_source.html#l00117">117</a> of file <a class="el" href="_w_s_server_context_8cpp_source.html">WSServerContext.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                                                                         {</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <a class="code" href="classhttp_1_1websocket_1_1_w_s_transmitter.html#a5b038fcd05c9e21ec8d806120ce53059">message</a>(9, reason, reasonLength);</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    }</div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="_w_s_transmitter_8cpp_source.html#l00037">http::websocket::WSTransmitter::message()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1websocket_1_1_w_s_server_context_a0e6994ceb720a31cf4823f0cf418bb03_cgraph.svg" width="1228" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-
-</div>
-</div>
-<a id="ac3fcdd059f5e529b8ef571f9d19ad6db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3fcdd059f5e529b8ef571f9d19ad6db">&#9670;&nbsp;</a></span>pong()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void http::websocket::WSServerContext::pong </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>reason</em> = <code>nullptr</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>reasonLength</em> = <code>0</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_w_s_server_context_8cpp_source.html#l00121">121</a> of file <a class="el" href="_w_s_server_context_8cpp_source.html">WSServerContext.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                                                                         {</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <a class="code" href="classhttp_1_1websocket_1_1_w_s_transmitter.html#a5b038fcd05c9e21ec8d806120ce53059">message</a>(10, reason, reasonLength);</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    }</div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="_w_s_transmitter_8cpp_source.html#l00037">http::websocket::WSTransmitter::message()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="_w_s_server_context_8cpp_source.html#l00061">onMessageEnd()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1websocket_1_1_w_s_server_context_ac3fcdd059f5e529b8ef571f9d19ad6db_cgraph.svg" width="1228" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1websocket_1_1_w_s_server_context_ac3fcdd059f5e529b8ef571f9d19ad6db_icgraph.svg" width="424" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-
-</div>
-</div>
-<a id="a25d63fcfc3999ebe9cd66a919659351b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a25d63fcfc3999ebe9cd66a919659351b">&#9670;&nbsp;</a></span>receiveData()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void http::websocket::WSServerContext::receiveData </td>
+          <td class="memname">void http::websocket::WSServerContext::receiveFromPeer </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>junk</em>, </td>
@@ -758,7 +922,7 @@ Here is the caller graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>junklen</em>&#160;</td>
+          <td class="paramname"><em>junkLen</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -773,25 +937,261 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html#a7e9f933fceb3b753309a38229b597fc4">net::socket::stream::SocketProtocol</a>.</p>
+<p>Implements <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html#a8910bd724ff5ae45250f48b6008e17e8">net::socket::stream::SocketProtocol</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_w_s_server_context_8cpp_source.html#l00032">32</a> of file <a class="el" href="_w_s_server_context_8cpp_source.html">WSServerContext.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                                                                         {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="code" href="classhttp_1_1websocket_1_1_w_s_receiver.html#a42ba0580cd663e4cb2f898155058ea89">WSReceiver::receive</a>(<span class="keyword">const_cast&lt;</span><span class="keywordtype">char</span>*<span class="keyword">&gt;</span>(junk), junkLen);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    }</div>
-<div class="ttc" id="aclasshttp_1_1websocket_1_1_w_s_receiver_html_a42ba0580cd663e4cb2f898155058ea89"><div class="ttname"><a href="classhttp_1_1websocket_1_1_w_s_receiver.html#a42ba0580cd663e4cb2f898155058ea89">http::websocket::WSReceiver::receive</a></div><div class="ttdeci">void receive(char *junk, std::size_t junkLen)</div><div class="ttdef"><b>Definition:</b> <a href="_w_s_receiver_8cpp_source.html#l00031">WSReceiver.cpp:31</a></div></div>
+<p class="definition">Definition at line <a class="el" href="_w_s_server_context_8cpp_source.html#l00067">67</a> of file <a class="el" href="_w_s_server_context_8cpp_source.html">WSServerContext.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                                                                             {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <a class="code" href="classhttp_1_1websocket_1_1_w_s_receiver.html#a42ba0580cd663e4cb2f898155058ea89">WSReceiver::receive</a>(<span class="keyword">const_cast&lt;</span><span class="keywordtype">char</span>*<span class="keyword">&gt;</span>(junk), junkLen);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
+<div class="ttc" id="aclasshttp_1_1websocket_1_1_w_s_receiver_html_a42ba0580cd663e4cb2f898155058ea89"><div class="ttname"><a href="classhttp_1_1websocket_1_1_w_s_receiver.html#a42ba0580cd663e4cb2f898155058ea89">http::websocket::WSReceiver::receive</a></div><div class="ttdeci">void receive(char *junk, std::size_t junkLen)</div><div class="ttdef"><b>Definition:</b> <a href="_w_s_receiver_8cpp_source.html#l00034">WSReceiver.cpp:34</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_w_s_receiver_8cpp_source.html#l00031">http::websocket::WSReceiver::receive()</a>.</p>
+<p class="reference">References <a class="el" href="_w_s_receiver_8cpp_source.html#l00034">http::websocket::WSReceiver::receive()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1websocket_1_1_w_s_server_context_a25d63fcfc3999ebe9cd66a919659351b_cgraph.svg" width="930" height="496"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1websocket_1_1_w_s_server_context_aa5c8d36dd24f74109944b4102b6c7e68_cgraph.svg" width="930" height="496"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a114a3af5bbd81ccc2f5a6cef9ef86c5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a114a3af5bbd81ccc2f5a6cef9ef86c5e">&#9670;&nbsp;</a></span>sendFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void http::websocket::WSServerContext::sendFrame </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>messageLength</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>messageKey</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="classhttp_1_1websocket_1_1_w_s_transmitter.html#a814eb5f65fb51d52800ecbd9f6d389b0">http::websocket::WSTransmitter</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_w_s_server_context_8cpp_source.html#l00049">49</a> of file <a class="el" href="_w_s_server_context_8cpp_source.html">WSServerContext.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                                                                                                     {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="classhttp_1_1websocket_1_1_w_s_server_context.html#ae3937607b85c41bab1c8c2b960437993">closeSent</a>) {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <a class="code" href="classhttp_1_1websocket_1_1_w_s_transmitter.html#a814eb5f65fb51d52800ecbd9f6d389b0">WSTransmitter::sendFrame</a>(<a class="code" href="classhttp_1_1websocket_1_1_w_s_server_context.html#a806c619e68c565252cbdf41dc59114f9">message</a>, messageLength, messageKey);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
+<div class="ttc" id="aclasshttp_1_1websocket_1_1_w_s_transmitter_html_a814eb5f65fb51d52800ecbd9f6d389b0"><div class="ttname"><a href="classhttp_1_1websocket_1_1_w_s_transmitter.html#a814eb5f65fb51d52800ecbd9f6d389b0">http::websocket::WSTransmitter::sendFrame</a></div><div class="ttdeci">virtual void sendFrame(const char *message, std::size_t messageLength, uint32_t messageKey=0)</div><div class="ttdef"><b>Definition:</b> <a href="_w_s_transmitter_8cpp_source.html#l00040">WSTransmitter.cpp:40</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="_w_s_server_context_8h_source.html#l00071">closeSent</a>, <a class="el" href="_w_s_server_context_8cpp_source.html#l00061">message()</a>, and <a class="el" href="_w_s_transmitter_8cpp_source.html#l00040">http::websocket::WSTransmitter::sendFrame()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1websocket_1_1_w_s_server_context_a114a3af5bbd81ccc2f5a6cef9ef86c5e_cgraph.svg" width="1200" height="132"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="ab3cd58dfaa10c89ea52208f986a0103f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3cd58dfaa10c89ea52208f986a0103f">&#9670;&nbsp;</a></span>sendPing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void http::websocket::WSServerContext::sendPing </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>reason</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>reasonLength</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_w_s_server_context_8cpp_source.html#l00170">170</a> of file <a class="el" href="_w_s_server_context_8cpp_source.html">WSServerContext.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                                                                             {</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        <a class="code" href="classhttp_1_1websocket_1_1_w_s_server_context.html#a806c619e68c565252cbdf41dc59114f9">message</a>(9, reason, reasonLength);</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    }</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="_w_s_server_context_8cpp_source.html#l00061">message()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1websocket_1_1_w_s_server_context_ab3cd58dfaa10c89ea52208f986a0103f_cgraph.svg" width="1200" height="71"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="aca7fd73f325d05c4d9f4d0ffb51897b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca7fd73f325d05c4d9f4d0ffb51897b9">&#9670;&nbsp;</a></span>sendPong()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void http::websocket::WSServerContext::sendPong </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>reason</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>reasonLength</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_w_s_server_context_8cpp_source.html#l00174">174</a> of file <a class="el" href="_w_s_server_context_8cpp_source.html">WSServerContext.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                                                                             {</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        <a class="code" href="classhttp_1_1websocket_1_1_w_s_server_context.html#a806c619e68c565252cbdf41dc59114f9">message</a>(10, reason, reasonLength);</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    }</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="_w_s_server_context_8cpp_source.html#l00061">message()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="_w_s_server_context_8cpp_source.html#l00117">onMessageEnd()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1websocket_1_1_w_s_server_context_aca7fd73f325d05c4d9f4d0ffb51897b9_cgraph.svg" width="1200" height="71"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1websocket_1_1_w_s_server_context_aca7fd73f325d05c4d9f4d0ffb51897b9_icgraph.svg" width="424" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a38900bde00e407e8eefbafe665ba4866"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38900bde00e407e8eefbafe665ba4866">&#9670;&nbsp;</a></span>_onFrameData</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt;void(<a class="el" href="classhttp_1_1websocket_1_1_w_s_server_context.html">WSServerContext</a>* wSServerContext, const char* junk, std::size_t junkLen)&gt; http::websocket::WSServerContext::_onFrameData = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_w_s_server_context_8h_source.html#l00077">77</a> of file <a class="el" href="_w_s_server_context_8h_source.html">WSServerContext.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="_w_s_server_context_8cpp_source.html#l00103">onFrameData()</a>.</p>
+
+</div>
+</div>
+<a id="a545f5ed313b8ab4c10e0486159de6317"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a545f5ed313b8ab4c10e0486159de6317">&#9670;&nbsp;</a></span>_onMessageEnd</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt;void(<a class="el" href="classhttp_1_1websocket_1_1_w_s_server_context.html">WSServerContext</a>* wSServerContext)&gt; http::websocket::WSServerContext::_onMessageEnd = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_w_s_server_context_8h_source.html#l00078">78</a> of file <a class="el" href="_w_s_server_context_8h_source.html">WSServerContext.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="_w_s_server_context_8cpp_source.html#l00117">onMessageEnd()</a>.</p>
+
+</div>
+</div>
+<a id="a15d57a66d711c933ca83910fb0c39821"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15d57a66d711c933ca83910fb0c39821">&#9670;&nbsp;</a></span>_onMessageStart</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt;void(<a class="el" href="classhttp_1_1websocket_1_1_w_s_server_context.html">WSServerContext</a>* wSServerContext, int <a class="el" href="classhttp_1_1websocket_1_1_w_s_receiver.html#af6352da0ce1ec59bc685de553ddd3d70">opCode</a>)&gt; http::websocket::WSServerContext::_onMessageStart = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_w_s_server_context_8h_source.html#l00076">76</a> of file <a class="el" href="_w_s_server_context_8h_source.html">WSServerContext.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="_w_s_server_context_8cpp_source.html#l00079">onMessageStart()</a>.</p>
+
+</div>
+</div>
 <a id="a99f4a8383df56e1c4f824db65a07c7d5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a99f4a8383df56e1c4f824db65a07c7d5">&#9670;&nbsp;</a></span>closeReceived</h2>
 
@@ -812,9 +1212,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_w_s_server_context_8h_source.html#l00054">54</a> of file <a class="el" href="_w_s_server_context_8h_source.html">WSServerContext.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_w_s_server_context_8h_source.html#l00070">70</a> of file <a class="el" href="_w_s_server_context_8h_source.html">WSServerContext.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_w_s_server_context_8cpp_source.html#l00050">onMessageData()</a>, <a class="el" href="_w_s_server_context_8cpp_source.html#l00061">onMessageEnd()</a>, and <a class="el" href="_w_s_server_context_8cpp_source.html#l00042">onMessageStart()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_w_s_server_context_8cpp_source.html#l00103">onFrameData()</a>, <a class="el" href="_w_s_server_context_8cpp_source.html#l00117">onMessageEnd()</a>, and <a class="el" href="_w_s_server_context_8cpp_source.html#l00079">onMessageStart()</a>.</p>
 
 </div>
 </div>
@@ -838,9 +1238,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_w_s_server_context_8h_source.html#l00055">55</a> of file <a class="el" href="_w_s_server_context_8h_source.html">WSServerContext.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_w_s_server_context_8h_source.html#l00071">71</a> of file <a class="el" href="_w_s_server_context_8h_source.html">WSServerContext.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_w_s_server_context_8cpp_source.html#l00095">close()</a>, and <a class="el" href="_w_s_server_context_8cpp_source.html#l00061">onMessageEnd()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_w_s_server_context_8cpp_source.html#l00148">close()</a>, <a class="el" href="_w_s_server_context_8cpp_source.html#l00061">message()</a>, <a class="el" href="_w_s_server_context_8cpp_source.html#l00055">messageEnd()</a>, <a class="el" href="_w_s_server_context_8cpp_source.html#l00043">messageStart()</a>, <a class="el" href="_w_s_server_context_8cpp_source.html#l00117">onMessageEnd()</a>, and <a class="el" href="_w_s_server_context_8cpp_source.html#l00049">sendFrame()</a>.</p>
 
 </div>
 </div>
@@ -864,9 +1264,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_w_s_server_context_8h_source.html#l00057">57</a> of file <a class="el" href="_w_s_server_context_8h_source.html">WSServerContext.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_w_s_server_context_8h_source.html#l00073">73</a> of file <a class="el" href="_w_s_server_context_8h_source.html">WSServerContext.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_w_s_server_context_8cpp_source.html#l00050">onMessageData()</a>, <a class="el" href="_w_s_server_context_8cpp_source.html#l00061">onMessageEnd()</a>, and <a class="el" href="_w_s_server_context_8cpp_source.html#l00042">onMessageStart()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_w_s_server_context_8cpp_source.html#l00103">onFrameData()</a>, <a class="el" href="_w_s_server_context_8cpp_source.html#l00117">onMessageEnd()</a>, and <a class="el" href="_w_s_server_context_8cpp_source.html#l00079">onMessageStart()</a>.</p>
 
 </div>
 </div>
@@ -890,9 +1290,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_w_s_server_context_8h_source.html#l00058">58</a> of file <a class="el" href="_w_s_server_context_8h_source.html">WSServerContext.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_w_s_server_context_8h_source.html#l00074">74</a> of file <a class="el" href="_w_s_server_context_8h_source.html">WSServerContext.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_w_s_server_context_8cpp_source.html#l00050">onMessageData()</a>, <a class="el" href="_w_s_server_context_8cpp_source.html#l00061">onMessageEnd()</a>, and <a class="el" href="_w_s_server_context_8cpp_source.html#l00042">onMessageStart()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_w_s_server_context_8cpp_source.html#l00103">onFrameData()</a>, <a class="el" href="_w_s_server_context_8cpp_source.html#l00117">onMessageEnd()</a>, and <a class="el" href="_w_s_server_context_8cpp_source.html#l00079">onMessageStart()</a>.</p>
 
 </div>
 </div>

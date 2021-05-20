@@ -1,5 +1,12 @@
 var NAVTREEINDEX6 =
 {
+"functions_func_d.html":[9,3,1,3],
+"functions_func_e.html":[9,3,1,4],
+"functions_func_f.html":[9,3,1,5],
+"functions_func_g.html":[9,3,1,6],
+"functions_func_h.html":[9,3,1,7],
+"functions_func_i.html":[9,3,1,8],
+"functions_func_j.html":[9,3,1,9],
 "functions_func_l.html":[9,3,1,10],
 "functions_func_m.html":[9,3,1,11],
 "functions_func_o.html":[9,3,1,12],
@@ -205,8 +212,8 @@ var NAVTREEINDEX6 =
 "namespaceexpress_1_1middleware.html#afb2ea8022b0dc36c49b780c741aa3952":[8,0,0,1,3],
 "namespaceexpress_1_1tls.html":[8,0,0,2],
 "namespacehttp.html":[8,0,1],
-"namespacehttp.html#a43cc5f17acaefbf5780305e24734ac46":[8,0,1,6],
-"namespacehttp.html#a511acb0fbf71f096e49f753620d9ba16":[8,0,1,5],
+"namespacehttp.html#a43cc5f17acaefbf5780305e24734ac46":[8,0,1,7],
+"namespacehttp.html#a511acb0fbf71f096e49f753620d9ba16":[8,0,1,6],
 "namespacehttp_1_1client.html":[8,0,1,0],
 "namespacehttp_1_1client_1_1legacy.html":[8,0,1,0,0],
 "namespacehttp_1_1client_1_1legacy.html#a0071c8e9fcd79a8ba3387547d64669f4":[8,0,1,0,0,3],
@@ -242,12 +249,5 @@ var NAVTREEINDEX6 =
 "namespacenet_1_1socket_1_1bluetooth.html":[8,0,3,0,0],
 "namespacenet_1_1socket_1_1bluetooth_1_1address.html":[8,0,3,0,0,0],
 "namespacenet_1_1socket_1_1bluetooth_1_1l2cap.html":[8,0,3,0,0,1],
-"namespacenet_1_1socket_1_1bluetooth_1_1rfcomm.html":[8,0,3,0,0,2],
-"namespacenet_1_1socket_1_1bluetooth_1_1rfcomm_1_1legacy.html":[8,0,3,0,0,2,0],
-"namespacenet_1_1socket_1_1bluetooth_1_1rfcomm_1_1tls.html":[8,0,3,0,0,2,1],
-"namespacenet_1_1socket_1_1ip.html":[8,0,3,0,1],
-"namespacenet_1_1socket_1_1ip_1_1address.html":[8,0,3,0,1,0],
-"namespacenet_1_1socket_1_1ip_1_1address_1_1ipv4.html":[8,0,3,0,1,0,0],
-"namespacenet_1_1socket_1_1ip_1_1address_1_1ipv6.html":[8,0,3,0,1,0,1],
-"namespacenet_1_1socket_1_1ip_1_1tcp.html":[8,0,3,0,1,1]
+"namespacenet_1_1socket_1_1bluetooth_1_1rfcomm.html":[8,0,3,0,0,2]
 };

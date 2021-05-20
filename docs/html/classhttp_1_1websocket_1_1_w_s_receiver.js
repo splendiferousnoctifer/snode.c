@@ -13,7 +13,7 @@ var classhttp_1_1websocket_1_1_w_s_receiver =
     [ "begin", "classhttp_1_1websocket_1_1_w_s_receiver.html#adca62c6813586e84587c9e79f1902825", null ],
     [ "dumpFrame", "classhttp_1_1websocket_1_1_w_s_receiver.html#a74e2cfa7a0ef5379af584480e1bd03da", null ],
     [ "onError", "classhttp_1_1websocket_1_1_w_s_receiver.html#afa7d1f67de7bbdcf85c68030a3b194fa", null ],
-    [ "onMessageData", "classhttp_1_1websocket_1_1_w_s_receiver.html#a52baab83711e8dda50c76264f2cc5568", null ],
+    [ "onFrameData", "classhttp_1_1websocket_1_1_w_s_receiver.html#abad48437c1b8a014aa663b786b71e717", null ],
     [ "onMessageEnd", "classhttp_1_1websocket_1_1_w_s_receiver.html#a1327291dee817e648dd92454846d9640", null ],
     [ "onMessageStart", "classhttp_1_1websocket_1_1_w_s_receiver.html#af52c3efd10e7a4d46c420a78cf3a4cee", null ],
     [ "readELength", "classhttp_1_1websocket_1_1_w_s_receiver.html#aca315760090acebe0b7b3d71faf90903", null ],

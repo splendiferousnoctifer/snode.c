@@ -8,7 +8,7 @@ var classhttp_1_1client_1_1_client_context =
     [ "getRequest", "classhttp_1_1client_1_1_client_context.html#a52691f7a402e07e7777278cc5996cd21", null ],
     [ "onReadError", "classhttp_1_1client_1_1_client_context.html#a7fa68a4defc77e60984f90270144279d", null ],
     [ "onWriteError", "classhttp_1_1client_1_1_client_context.html#afc7b4c4e5cb965b35b507f1d04f35b9a", null ],
-    [ "receiveData", "classhttp_1_1client_1_1_client_context.html#ae4eb43ea930a9598883d1446ea6ed955", null ],
+    [ "receiveFromPeer", "classhttp_1_1client_1_1_client_context.html#a0424f9ee320339abeb7fdae50b416681", null ],
     [ "requestCompleted", "classhttp_1_1client_1_1_client_context.html#a50090d453826e5497a015fd61026fb03", null ],
     [ "sendRequestData", "classhttp_1_1client_1_1_client_context.html#a63d951a7dc09749c568860365dd0725f", null ],
     [ "terminateConnection", "classhttp_1_1client_1_1_client_context.html#a6777b3431e7d19287916124832489ffc", null ],

@@ -1,5 +1,12 @@
 var NAVTREEINDEX7 =
 {
+"namespacenet_1_1socket_1_1bluetooth_1_1rfcomm_1_1legacy.html":[8,0,3,0,0,2,0],
+"namespacenet_1_1socket_1_1bluetooth_1_1rfcomm_1_1tls.html":[8,0,3,0,0,2,1],
+"namespacenet_1_1socket_1_1ip.html":[8,0,3,0,1],
+"namespacenet_1_1socket_1_1ip_1_1address.html":[8,0,3,0,1,0],
+"namespacenet_1_1socket_1_1ip_1_1address_1_1ipv4.html":[8,0,3,0,1,0,0],
+"namespacenet_1_1socket_1_1ip_1_1address_1_1ipv6.html":[8,0,3,0,1,0,1],
+"namespacenet_1_1socket_1_1ip_1_1tcp.html":[8,0,3,0,1,1],
 "namespacenet_1_1socket_1_1ip_1_1tcp_1_1ipv4.html":[8,0,3,0,1,1,0],
 "namespacenet_1_1socket_1_1ip_1_1tcp_1_1ipv4_1_1legacy.html":[8,0,3,0,1,1,0,0],
 "namespacenet_1_1socket_1_1ip_1_1tcp_1_1ipv4_1_1tls.html":[8,0,3,0,1,1,0,1],
@@ -49,8 +56,8 @@ var NAVTREEINDEX7 =
 "ssl__utils_8h_source.html":[10,0,3,1,2,1,8],
 "stream_2_socket_client_8h.html":[10,0,3,1,2,2],
 "stream_2_socket_client_8h_source.html":[10,0,3,1,2,2],
-"stream_2_socket_server_8h.html":[10,0,3,1,2,11],
-"stream_2_socket_server_8h_source.html":[10,0,3,1,2,11],
+"stream_2_socket_server_8h.html":[10,0,3,1,2,12],
+"stream_2_socket_server_8h_source.html":[10,0,3,1,2,12],
 "stream_2legacy_2_socket_client_8h.html":[10,0,3,1,2,0,0],
 "stream_2legacy_2_socket_client_8h_source.html":[10,0,3,1,2,0,0],
 "stream_2legacy_2_socket_server_8h.html":[10,0,3,1,2,0,5],

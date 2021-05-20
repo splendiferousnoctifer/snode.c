@@ -18,7 +18,7 @@ var dir_de5b03c9e251d763a573c2ccd217de59 =
     ] ],
     [ "StatusCodes.cpp", "_status_codes_8cpp.html", null ],
     [ "StatusCodes.h", "_status_codes_8h.html", [
-      [ "StatusCode", "class_status_code.html", "class_status_code" ]
+      [ "StatusCode", "classhttp_1_1_status_code.html", "classhttp_1_1_status_code" ]
     ] ],
     [ "WSReceiver.cpp", "_w_s_receiver_8cpp.html", null ],
     [ "WSReceiver.h", "_w_s_receiver_8h.html", [

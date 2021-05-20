@@ -97,7 +97,7 @@ $(document).ready(function(){initNavTree('classhttp_1_1server_1_1_h_t_t_p_server
 <div class="dynheader">
 Inheritance diagram for http::server::HTTPServerContext&lt; RequestT, ResponseT &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1server_1_1_h_t_t_p_server_context__inherit__graph.svg" width="234" height="706"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1server_1_1_h_t_t_p_server_context__inherit__graph.svg" width="234" height="750"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div class="dynheader">
@@ -130,8 +130,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a228d012fe19932bc9b86670639f54dc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a75e99a6f2b91167d2ac68c37759e74"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1server_1_1_h_t_t_p_server_context.html#a5a75e99a6f2b91167d2ac68c37759e74">~HTTPServerContext</a> () override=default</td></tr>
 <tr class="separator:a5a75e99a6f2b91167d2ac68c37759e74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af19aad8b7d8f401368e5aeda75196644"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1server_1_1_h_t_t_p_server_context.html#af19aad8b7d8f401368e5aeda75196644">receiveData</a> (const char *junk, std::size_t junkLen) override</td></tr>
-<tr class="separator:af19aad8b7d8f401368e5aeda75196644"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1200dc7bc7ce21793b408625e3e4fd7b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1server_1_1_h_t_t_p_server_context.html#a1200dc7bc7ce21793b408625e3e4fd7b">receiveFromPeer</a> (const char *junk, std::size_t junkLen) override</td></tr>
+<tr class="separator:a1200dc7bc7ce21793b408625e3e4fd7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7afcbfe4b07c9827b2a6b57642c6996"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1server_1_1_h_t_t_p_server_context.html#af7afcbfe4b07c9827b2a6b57642c6996">onReadError</a> (int errnum) override</td></tr>
 <tr class="separator:af7afcbfe4b07c9827b2a6b57642c6996"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7abd3ca32953639ea58f373c74cabb4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1server_1_1_h_t_t_p_server_context.html#ac7abd3ca32953639ea58f373c74cabb4">sendResponseData</a> (const char *junk, std::size_t junkLen) override</td></tr>
@@ -145,6 +145,12 @@ Public Member Functions</h2></td></tr>
 <tr class="inherit_header pub_methods_classnet_1_1socket_1_1stream_1_1_socket_protocol"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classnet_1_1socket_1_1stream_1_1_socket_protocol')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html">net::socket::stream::SocketProtocol</a></td></tr>
 <tr class="memitem:a3d809b4033d9ddbfda43b7903e27a19f inherit pub_methods_classnet_1_1socket_1_1stream_1_1_socket_protocol"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html#a3d809b4033d9ddbfda43b7903e27a19f">~SocketProtocol</a> ()=default</td></tr>
 <tr class="separator:a3d809b4033d9ddbfda43b7903e27a19f inherit pub_methods_classnet_1_1socket_1_1stream_1_1_socket_protocol"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afca04597ee15a83a823302882e47ef51 inherit pub_methods_classnet_1_1socket_1_1stream_1_1_socket_protocol"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html#afca04597ee15a83a823302882e47ef51">sendToPeer</a> (const char *junk, std::size_t junkLen)</td></tr>
+<tr class="separator:afca04597ee15a83a823302882e47ef51 inherit pub_methods_classnet_1_1socket_1_1stream_1_1_socket_protocol"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a971b908521e145f30a99c546e789a38b inherit pub_methods_classnet_1_1socket_1_1stream_1_1_socket_protocol"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html#a971b908521e145f30a99c546e789a38b">sendToPeer</a> (const std::string &amp;data)</td></tr>
+<tr class="separator:a971b908521e145f30a99c546e789a38b inherit pub_methods_classnet_1_1socket_1_1stream_1_1_socket_protocol"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab617c6019d922f2475c50afcf4f08edd inherit pub_methods_classnet_1_1socket_1_1stream_1_1_socket_protocol"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html#ab617c6019d922f2475c50afcf4f08edd">close</a> ()</td></tr>
+<tr class="separator:ab617c6019d922f2475c50afcf4f08edd inherit pub_methods_classnet_1_1socket_1_1stream_1_1_socket_protocol"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b9d3e21eef2569cc027b7b972b7e021 inherit pub_methods_classnet_1_1socket_1_1stream_1_1_socket_protocol"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html#a8b9d3e21eef2569cc027b7b972b7e021">switchSocketProtocol</a> (<a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html">SocketProtocol</a> *socketProtocol)</td></tr>
 <tr class="separator:a8b9d3e21eef2569cc027b7b972b7e021 inherit pub_methods_classnet_1_1socket_1_1stream_1_1_socket_protocol"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -454,8 +460,8 @@ template&lt;typename Request , typename Response &gt; </div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="af19aad8b7d8f401368e5aeda75196644"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af19aad8b7d8f401368e5aeda75196644">&#9670;&nbsp;</a></span>receiveData()</h2>
+<a id="a1200dc7bc7ce21793b408625e3e4fd7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1200dc7bc7ce21793b408625e3e4fd7b">&#9670;&nbsp;</a></span>receiveFromPeer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -466,7 +472,7 @@ template&lt;typename Request , typename Response &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classhttp_1_1server_1_1_h_t_t_p_server_context.html">http::server::HTTPServerContext</a>&lt; <a class="el" href="classhttp_1_1server_1_1_h_t_t_p_server_context.html#a505e53c733d707c69acda5a76e30cb8e">Request</a>, <a class="el" href="classhttp_1_1server_1_1_h_t_t_p_server_context.html#a77819a10b5f86c000b6fccf7801bb290">Response</a> &gt;::receiveData </td>
+          <td class="memname">void <a class="el" href="classhttp_1_1server_1_1_h_t_t_p_server_context.html">http::server::HTTPServerContext</a>&lt; <a class="el" href="classhttp_1_1server_1_1_h_t_t_p_server_context.html#a505e53c733d707c69acda5a76e30cb8e">Request</a>, <a class="el" href="classhttp_1_1server_1_1_h_t_t_p_server_context.html#a77819a10b5f86c000b6fccf7801bb290">Response</a> &gt;::receiveFromPeer </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>junk</em>, </td>
@@ -490,10 +496,10 @@ template&lt;typename Request , typename Response &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html#a7e9f933fceb3b753309a38229b597fc4">net::socket::stream::SocketProtocol</a>.</p>
+<p>Implements <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html#a8910bd724ff5ae45250f48b6008e17e8">net::socket::stream::SocketProtocol</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_h_t_t_p_server_context_8hpp_source.html#l00112">112</a> of file <a class="el" href="_h_t_t_p_server_context_8hpp_source.html">HTTPServerContext.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                                                                                              {</div>
+<div class="fragment"><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                                                                                                  {</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <a class="code" href="classhttp_1_1server_1_1_h_t_t_p_server_context.html#a0348856f061b25f4beba099c1428a5dd">parser</a>.<a class="code" href="classhttp_1_1_parser.html#a6760de05b1ab39fcebbb769418cd9660">parse</a>(junk, junkLen);</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    }</div>
 <div class="ttc" id="aclasshttp_1_1_parser_html_a6760de05b1ab39fcebbb769418cd9660"><div class="ttname"><a href="classhttp_1_1_parser.html#a6760de05b1ab39fcebbb769418cd9660">http::Parser::parse</a></div><div class="ttdeci">void parse(const char *junk, std::size_t junkLen)</div><div class="ttdef"><b>Definition:</b> <a href="_parser_8cpp_source.html#l00046">Parser.cpp:46</a></div></div>
@@ -694,10 +700,9 @@ template&lt;typename Request , typename Response &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="_h_t_t_p_server_context_8hpp_source.html#l00125">125</a> of file <a class="el" href="_h_t_t_p_server_context_8hpp_source.html">HTTPServerContext.hpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                                                                                                   {</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html#aefc6cfe0cc28926967df0407c3b03729">socketConnection</a>-&gt;<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#a27dceffb6e668af5ab183a1edbe8b3c6">enqueue</a>(junk, junkLen);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html#afca04597ee15a83a823302882e47ef51">sendToPeer</a>(junk, junkLen);</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    }</div>
-<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_connection_base_html_a27dceffb6e668af5ab183a1edbe8b3c6"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#a27dceffb6e668af5ab183a1edbe8b3c6">net::socket::stream::SocketConnectionBase::enqueue</a></div><div class="ttdeci">virtual void enqueue(const char *junk, std::size_t junkLen)=0</div></div>
-<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_protocol_html_aefc6cfe0cc28926967df0407c3b03729"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html#aefc6cfe0cc28926967df0407c3b03729">net::socket::stream::SocketProtocol::socketConnection</a></div><div class="ttdeci">SocketConnectionBase * socketConnection</div><div class="ttdef"><b>Definition:</b> <a href="_socket_protocol_8h_source.html#l00047">SocketProtocol.h:47</a></div></div>
+<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_protocol_html_afca04597ee15a83a823302882e47ef51"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html#afca04597ee15a83a823302882e47ef51">net::socket::stream::SocketProtocol::sendToPeer</a></div><div class="ttdeci">void sendToPeer(const char *junk, std::size_t junkLen)</div><div class="ttdef"><b>Definition:</b> <a href="_socket_protocol_8cpp_source.html#l00029">SocketProtocol.cpp:29</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -728,7 +733,7 @@ template&lt;typename Request , typename Response &gt; </div>
 <p class="definition">Definition at line <a class="el" href="_h_t_t_p_server_context_8hpp_source.html#l00210">210</a> of file <a class="el" href="_h_t_t_p_server_context_8hpp_source.html">HTTPServerContext.hpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;                                                                   {</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="classhttp_1_1server_1_1_h_t_t_p_server_context.html#a6ef3e111aa032804b9834d2168c9199d">connectionTerminated</a>) {</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;            <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html#aefc6cfe0cc28926967df0407c3b03729">socketConnection</a>-&gt;<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#ab08d539e59c0a7c284d97414ac065c03">close</a>();</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;            <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html#aefc6cfe0cc28926967df0407c3b03729">socketConnection</a>-&gt;<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#a7e4fe9bc99dfb5dac89cabbc85a9e2cb">getSocketProtocol</a>()-&gt;<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html#ab617c6019d922f2475c50afcf4f08edd">close</a>();</div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;            <a class="code" href="classhttp_1_1server_1_1_h_t_t_p_server_context.html#a36a600a5374bd7ad9bc1a0d5e5a52bf6">requestContexts</a>.clear();</div>
 <div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;            <a class="code" href="classhttp_1_1server_1_1_h_t_t_p_server_context.html#a6ef3e111aa032804b9834d2168c9199d">connectionTerminated</a> = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        }</div>
@@ -736,8 +741,18 @@ template&lt;typename Request , typename Response &gt; </div>
 <div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        <a class="code" href="classhttp_1_1server_1_1_h_t_t_p_server_context.html#a3811f1df123213a731af314c547817e9">reset</a>();</div>
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    }</div>
 <div class="ttc" id="aclasshttp_1_1server_1_1_h_t_t_p_server_context_html_a6ef3e111aa032804b9834d2168c9199d"><div class="ttname"><a href="classhttp_1_1server_1_1_h_t_t_p_server_context.html#a6ef3e111aa032804b9834d2168c9199d">http::server::HTTPServerContext::connectionTerminated</a></div><div class="ttdeci">bool connectionTerminated</div><div class="ttdef"><b>Definition:</b> <a href="_h_t_t_p_server_context_8h_source.html#l00092">HTTPServerContext.h:92</a></div></div>
-<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_connection_base_html_ab08d539e59c0a7c284d97414ac065c03"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#ab08d539e59c0a7c284d97414ac065c03">net::socket::stream::SocketConnectionBase::close</a></div><div class="ttdeci">virtual void close(bool instantly=false)=0</div></div>
+<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_connection_base_html_a7e4fe9bc99dfb5dac89cabbc85a9e2cb"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#a7e4fe9bc99dfb5dac89cabbc85a9e2cb">net::socket::stream::SocketConnectionBase::getSocketProtocol</a></div><div class="ttdeci">SocketProtocol * getSocketProtocol()</div><div class="ttdef"><b>Definition:</b> <a href="_socket_connection_base_8cpp_source.html#l00039">SocketConnectionBase.cpp:39</a></div></div>
+<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_protocol_html_ab617c6019d922f2475c50afcf4f08edd"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html#ab617c6019d922f2475c50afcf4f08edd">net::socket::stream::SocketProtocol::close</a></div><div class="ttdeci">void close()</div><div class="ttdef"><b>Definition:</b> <a href="_socket_protocol_8cpp_source.html#l00037">SocketProtocol.cpp:37</a></div></div>
+<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_protocol_html_aefc6cfe0cc28926967df0407c3b03729"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html#aefc6cfe0cc28926967df0407c3b03729">net::socket::stream::SocketProtocol::socketConnection</a></div><div class="ttdeci">SocketConnectionBase * socketConnection</div><div class="ttdef"><b>Definition:</b> <a href="_socket_protocol_8h_source.html#l00053">SocketProtocol.h:53</a></div></div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="_socket_protocol_8cpp_source.html#l00037">net::socket::stream::SocketProtocol::close()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhttp_1_1server_1_1_h_t_t_p_server_context_a6d63d23ce96badc1390023c0e500df5b_cgraph.svg" width="628" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
