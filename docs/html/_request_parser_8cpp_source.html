@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>snode.c: http/server/RequestParser.cpp Source File</title>
+<title>snode.c: http/server/http/RequestParser.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -87,7 +87,7 @@ $(document).ready(function(){initNavTree('_request_parser_8cpp_source.html','');
 <div class="contents">
 <a href="_request_parser_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * snode.c - a slim toolkit for network communication</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright (C) 2020 Volker Christian &lt;me@vchrist.at&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright (C) 2020, 2021 Volker Christian &lt;me@vchrist.at&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * This program is free software: you can redistribute it and/or modify</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * it under the terms of the GNU Lesser General Public License as published</span></div>
@@ -103,7 +103,7 @@ $(document).ready(function(){initNavTree('_request_parser_8cpp_source.html','');
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * along with this program. If not, see &lt;http://www.gnu.org/licenses/&gt;.</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_request_parser_8h.html">http/server/RequestParser.h</a>&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_request_parser_8h.html">http/server/http/RequestParser.h</a>&quot;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="http__utils_8h.html">http/http_utils.h</a>&quot;</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
@@ -287,7 +287,7 @@ $(document).ready(function(){initNavTree('_request_parser_8cpp_source.html','');
 <div class="ttc" id="aclasshttp_1_1server_1_1_request_parser_html_aebc0032d18b492a679e3c414b8049adb"><div class="ttname"><a href="classhttp_1_1server_1_1_request_parser.html#aebc0032d18b492a679e3c414b8049adb">http::server::RequestParser::parsingFinished</a></div><div class="ttdeci">void parsingFinished()</div><div class="ttdef"><b>Definition:</b> <a href="_request_parser_8cpp_source.html#l00155">RequestParser.cpp:155</a></div></div>
 <div class="ttc" id="aclasshttp_1_1server_1_1_request_parser_html_aeff3c9f141b13e6e41965334fbe908da"><div class="ttname"><a href="classhttp_1_1server_1_1_request_parser.html#aeff3c9f141b13e6e41965334fbe908da">http::server::RequestParser::cookies</a></div><div class="ttdeci">std::map&lt; std::string, std::string &gt; cookies</div><div class="ttdef"><b>Definition:</b> <a href="_request_parser_8h_source.html#l00075">RequestParser.h:75</a></div></div>
 <div class="ttc" id="ahttp__utils_8h_html"><div class="ttname"><a href="http__utils_8h.html">http_utils.h</a></div></div>
-<div class="ttc" id="anamespacehttp_1_1server_html"><div class="ttname"><a href="namespacehttp_1_1server.html">http::server</a></div><div class="ttdef"><b>Definition:</b> <a href="legacy_2_server_8h_source.html#l00030">Server.h:30</a></div></div>
+<div class="ttc" id="anamespacehttp_1_1server_html"><div class="ttname"><a href="namespacehttp_1_1server.html">http::server</a></div><div class="ttdef"><b>Definition:</b> <a href="_h_t_t_p_server_context_8h_source.html#l00037">HTTPServerContext.h:37</a></div></div>
 <div class="ttc" id="anamespacehttputils_html_a9e46abe5c20380871f3884c9176a424d"><div class="ttname"><a href="namespacehttputils.html#a9e46abe5c20380871f3884c9176a424d">httputils::str_split</a></div><div class="ttdeci">std::pair&lt; std::string, std::string &gt; str_split(const std::string &amp;base, char c_middle)</div><div class="ttdef"><b>Definition:</b> <a href="http__utils_8cpp_source.html#l00090">http_utils.cpp:90</a></div></div>
 <div class="ttc" id="anamespacehttputils_html_aaa1e55d83548ea4ebf224d695f73c874"><div class="ttname"><a href="namespacehttputils.html#aaa1e55d83548ea4ebf224d695f73c874">httputils::str_trimm</a></div><div class="ttdeci">std::string &amp; str_trimm(std::string &amp;text)</div><div class="ttdef"><b>Definition:</b> <a href="http__utils_8cpp_source.html#l00083">http_utils.cpp:83</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -295,7 +295,7 @@ $(document).ready(function(){initNavTree('_request_parser_8cpp_source.html','');
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de5b03c9e251d763a573c2ccd217de59.html">http</a></li><li class="navelem"><a class="el" href="dir_74bfeacd8d402542764eb32e15040ba6.html">server</a></li><li class="navelem"><a class="el" href="_request_parser_8cpp.html">RequestParser.cpp</a></li>
+    <li class="navelem"><a class="el" href="dir_de5b03c9e251d763a573c2ccd217de59.html">http</a></li><li class="navelem"><a class="el" href="dir_74bfeacd8d402542764eb32e15040ba6.html">server</a></li><li class="navelem"><a class="el" href="dir_45546b605cea512feafe097045cf752e.html">http</a></li><li class="navelem"><a class="el" href="_request_parser_8cpp.html">RequestParser.cpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

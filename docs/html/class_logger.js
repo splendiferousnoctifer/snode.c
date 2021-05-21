@@ -14,6 +14,6 @@ var class_logger =
     [ "quiet", "class_logger.html#a34e2ffbd9c13aaeff1365ea1eaea7745", null ],
     [ "setCustomFormatSpec", "class_logger.html#a969163c7aff5b8409d8dfb8175dd2b85", null ],
     [ "setLogLevel", "class_logger.html#a76737728e58470cc99536839d6fbd631", null ],
-    [ "setVerboseLevel", "class_logger.html#af9c8cc9075c67ba5e14b3f7711dfe13c", null ],
+    [ "setVerboseLevel", "class_logger.html#a84a9a13e55e01a3e5c9d2606086e47f7", null ],
     [ "conf", "class_logger.html#aab3f8f567382428dd7e467c5d6835832", null ]
 ];

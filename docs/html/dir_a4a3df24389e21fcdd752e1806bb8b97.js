@@ -10,6 +10,9 @@ var dir_a4a3df24389e21fcdd752e1806bb8b97 =
       [ "ClientContext", "classhttp_1_1client_1_1_client_context.html", "classhttp_1_1client_1_1_client_context" ]
     ] ],
     [ "ClientContext.hpp", "_client_context_8hpp.html", null ],
+    [ "ClientContextFactory.h", "_client_context_factory_8h.html", [
+      [ "ClientContextFactory", "classhttp_1_1client_1_1_client_context_factory.html", "classhttp_1_1client_1_1_client_context_factory" ]
+    ] ],
     [ "Request.cpp", "http_2client_2_request_8cpp.html", null ],
     [ "Request.h", "http_2client_2_request_8h.html", [
       [ "Request", "classhttp_1_1client_1_1_request.html", "classhttp_1_1client_1_1_request" ]

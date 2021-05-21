@@ -4,7 +4,7 @@ var classnet_1_1socket_1_1stream_1_1_socket_connection =
     [ "SocketReader", "classnet_1_1socket_1_1stream_1_1_socket_connection.html#aed399d23f23a8b7e04dd38d9b5a2dd95", null ],
     [ "SocketWriter", "classnet_1_1socket_1_1stream_1_1_socket_connection.html#afdc000b132afa51d35b98657a00beb43", null ],
     [ "SocketConnection", "classnet_1_1socket_1_1stream_1_1_socket_connection.html#ac93df56c8e5bb1a12ed8c81f8e92e7b4", null ],
-    [ "SocketConnection", "classnet_1_1socket_1_1stream_1_1_socket_connection.html#ab592f068af1a58a3d8f46e477c3e5494", null ],
+    [ "SocketConnection", "classnet_1_1socket_1_1stream_1_1_socket_connection.html#a29ff713624d18a1d6feba40f65070746", null ],
     [ "~SocketConnection", "classnet_1_1socket_1_1stream_1_1_socket_connection.html#a6ea7635e898dbdf5bf6dad9df7938726", null ],
     [ "close", "classnet_1_1socket_1_1stream_1_1_socket_connection.html#ad80107c21f19c407619fc28425db1d40", null ],
     [ "enqueue", "classnet_1_1socket_1_1stream_1_1_socket_connection.html#a321fd72fbdb5a439d2d59a0b534c4954", null ],

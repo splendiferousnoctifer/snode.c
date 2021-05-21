@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['none_1459',['none',['../classnet_1_1_descriptor.html#a1ecc493b50b4c5ed5cfa3a8746e51f35a334c4a4c42fdb79d7ebc3e73b517e6f8',1,'net::Descriptor']]]
+  ['length_1605',['LENGTH',['../classhttp_1_1_w_s_receiver.html#aa7c7a4f2d48796f4bea70e32e19a4264aaddeac40406177897b3fccba88558f1c',1,'http::WSReceiver']]]
 ];

@@ -103,7 +103,7 @@ $(document).ready(function(){initNavTree('functions_c.html',''); initResizable()
 : <a class="el" href="classhttp_1_1client_1_1_client.html#a3727840dedfb3c0791132126e574c842">http::client::Client&lt; SocketClientT, RequestT, ResponseT &gt;</a>
 </li>
 <li>ClientContext()
-: <a class="el" href="classhttp_1_1client_1_1_client_context.html#ad5fcc50bbe2d00ce73f99fcec4d13545">http::client::ClientContext&lt; RequestT, ResponseT &gt;</a>
+: <a class="el" href="classhttp_1_1client_1_1_client_context.html#a1547b08b7fa236697d8619840155a7ad">http::client::ClientContext&lt; RequestT, ResponseT &gt;</a>
 , <a class="el" href="classhttp_1_1client_1_1_request.html#afedf4d3df7efe896ca80fef22e608acb">http::client::Request</a>
 </li>
 <li>clientContext
@@ -112,9 +112,20 @@ $(document).ready(function(){initNavTree('functions_c.html',''); initResizable()
 <li>ClientContext
 : <a class="el" href="classhttp_1_1client_1_1_response.html#afedf4d3df7efe896ca80fef22e608acb">http::client::Response</a>
 </li>
+<li>ClientContextFactory()
+: <a class="el" href="classhttp_1_1client_1_1_client_context_factory.html#ae76c8d87a9dfbe07715f6ba85fbec8ce">http::client::ClientContextFactory&lt; RequestT, ResponseT &gt;</a>
+</li>
 <li>close()
-: <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#ad80107c21f19c407619fc28425db1d40">net::socket::stream::SocketConnection&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt;</a>
+: <a class="el" href="classhttp_1_1websocket_1_1_w_s_server_context.html#afc11663cd00dec48e62ebd4ff0cefedc">http::websocket::WSServerContext</a>
+, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#ad80107c21f19c407619fc28425db1d40">net::socket::stream::SocketConnection&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt;</a>
 , <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#ab08d539e59c0a7c284d97414ac065c03">net::socket::stream::SocketConnectionBase</a>
+, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html#ab617c6019d922f2475c50afcf4f08edd">net::socket::stream::SocketProtocol</a>
+</li>
+<li>closeReceived
+: <a class="el" href="classhttp_1_1websocket_1_1_w_s_server_context.html#a99f4a8383df56e1c4f824db65a07c7d5">http::websocket::WSServerContext</a>
+</li>
+<li>closeSent
+: <a class="el" href="classhttp_1_1websocket_1_1_w_s_server_context.html#ae3937607b85c41bab1c8c2b960437993">http::websocket::WSServerContext</a>
 </li>
 <li>clr()
 : <a class="el" href="classnet_1_1_fd_set.html#ad16f1e07bc68aa16c271a858d7510b95">net::FdSet</a>
@@ -123,10 +134,10 @@ $(document).ready(function(){initNavTree('functions_c.html',''); initResizable()
 : <a class="el" href="class_logger.html#aab3f8f567382428dd7e467c5d6835832">Logger</a>
 </li>
 <li>connect()
-: <a class="el" href="classexpress_1_1_router.html#a17127faee92bf6f0f72a0c69befdbb71">express::Router</a>
+: <a class="el" href="classexpress_1_1_router.html#a7729dbe235ce673d50b758895d9f92cc">express::Router</a>
 , <a class="el" href="class_file_reader.html#ae4a55ccb7e3e43d18b6cd7eca9de34cf">FileReader</a>
 , <a class="el" href="classhttp_1_1client_1_1_client.html#a30b79fe8fc9126983a82d417328862bd">http::client::Client&lt; SocketClientT, RequestT, ResponseT &gt;</a>
-, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_client.html#a0ee00549889fd11c45d3021f289c58dd">net::socket::stream::SocketClient&lt; SocketConnectorT &gt;</a>
+, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_client.html#abd4c95e00d1ec065fb86240fba7338ca">net::socket::stream::SocketClient&lt; SocketConnectorT &gt;</a>
 , <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connector.html#a5516c61a39874898d273d7dfd63c97b5">net::socket::stream::SocketConnector&lt; SocketConnectionT &gt;</a>
 , <a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connector.html#af2d0a57c6c375da33966155082c5ecaa">net::socket::stream::tls::SocketConnector&lt; SocketT &gt;</a>
 , <a class="el" href="classnet_1_1stream_1_1_sink.html#a55ac8063cceb5acb1f8aac3a4cb71d8f">net::stream::Sink</a>
@@ -145,20 +156,20 @@ $(document).ready(function(){initNavTree('functions_c.html',''); initResizable()
 , <a class="el" href="classhttp_1_1server_1_1_response.html#aec694f67845835c62b63760875a429c8">http::server::Response</a>
 </li>
 <li>connectionTerminated
-: <a class="el" href="classhttp_1_1server_1_1_server_context.html#a06c3dd86f0da730d1661ea64aed462f9">http::server::ServerContext&lt; RequestT, ResponseT &gt;</a>
+: <a class="el" href="classhttp_1_1server_1_1_h_t_t_p_server_context.html#a6ef3e111aa032804b9834d2168c9199d">http::server::HTTPServerContext&lt; RequestT, ResponseT &gt;</a>
 </li>
 <li>contains()
-: <a class="el" href="classnet_1_1_descriptor_event_dispatcher_1_1_descriptor_event_receiver_list.html#ab0128e4373c28e76fe9db7b286e50e38">net::DescriptorEventDispatcher::DescriptorEventReceiverList</a>
-, <a class="el" href="class_status_code.html#afa4b60d670754ca67188ea76031efd7c">StatusCode</a>
+: <a class="el" href="classhttp_1_1_status_code.html#a9174887bd3fd1797d2cc09e2bccb641a">http::StatusCode</a>
+, <a class="el" href="classnet_1_1_descriptor_event_dispatcher_1_1_descriptor_event_receiver_list.html#ab0128e4373c28e76fe9db7b286e50e38">net::DescriptorEventDispatcher::DescriptorEventReceiverList</a>
 </li>
 <li>content
 : <a class="el" href="classhttp_1_1_parser.html#a1898296511bbab14c3635445de370ca6">http::Parser</a>
 </li>
 <li>contentLength
 : <a class="el" href="classhttp_1_1client_1_1_request.html#a23d1f14f290e131ff48443343f6a9bea">http::client::Request</a>
-, <a class="el" href="classhttp_1_1client_1_1_response.html#ae412ee39ba6aa757cbfd030bca4f0ef7">http::client::Response</a>
+, <a class="el" href="classhttp_1_1client_1_1_response.html#a6853cf44805d757fac8a633793e7d1e2">http::client::Response</a>
 , <a class="el" href="classhttp_1_1_parser.html#a4e1bc3f15d31ca4bd6e63bf509d92714">http::Parser</a>
-, <a class="el" href="classhttp_1_1server_1_1_request.html#a074129f1b69a0d2a383a6bc5a7b0787a">http::server::Request</a>
+, <a class="el" href="classhttp_1_1server_1_1_request.html#a628b8fbec7eb220663ba7f04bd63aa49">http::server::Request</a>
 , <a class="el" href="classhttp_1_1server_1_1_response.html#a22bd28c55b230f87d3b804af9bbe12f0">http::server::Response</a>
 </li>
 <li>contentRead
@@ -174,13 +185,16 @@ $(document).ready(function(){initNavTree('functions_c.html',''); initResizable()
 <li>continousTimer()
 : <a class="el" href="classnet_1_1timer_1_1_timer.html#a47e3d9b3c00b155ebc1f5ee3446f54e8">net::timer::Timer</a>
 </li>
+<li>continuation
+: <a class="el" href="classhttp_1_1_w_s_receiver.html#aa1ecaf202e57f58c285f4ab0d816d68d">http::WSReceiver</a>
+</li>
 <li>cookie()
 : <a class="el" href="classhttp_1_1client_1_1_request.html#a24fa1d03f234442b1d7b17d6a8071d4c">http::client::Request</a>
 , <a class="el" href="classhttp_1_1server_1_1_request.html#aca55c246a8634a1d26ad3cd794aa045c">http::server::Request</a>
 , <a class="el" href="classhttp_1_1server_1_1_response.html#a8579450e1d1732bbbec2d350b86ebef9">http::server::Response</a>
 </li>
 <li>CookieOptions()
-: <a class="el" href="classhttp_1_1_cookie_options.html#ab43e01e241c1cc8fd9511b529f618d8f">http::CookieOptions</a>
+: <a class="el" href="classhttp_1_1_cookie_options.html#a2fcddb24b71a6ce7a2a762a3c72af1fc">http::CookieOptions</a>
 </li>
 <li>cookies
 : <a class="el" href="classhttp_1_1client_1_1_request.html#aa75a2a5afc2d7f7dda867b8b43790ac1">http::client::Request</a>
@@ -191,11 +205,14 @@ $(document).ready(function(){initNavTree('functions_c.html',''); initResizable()
 , <a class="el" href="classhttp_1_1server_1_1_response.html#a023bb46bc7f9c3d7955e04ffc1e1e322">http::server::Response</a>
 </li>
 <li>create()
-: <a class="el" href="classnet_1_1socket_1_1bluetooth_1_1l2cap_1_1_socket.html#a71ce36842e2829f0ab2089005813c177">net::socket::bluetooth::l2cap::Socket</a>
+: <a class="el" href="classhttp_1_1client_1_1_client_context_factory.html#a8aa298019621614af8a1ac57d0c59205">http::client::ClientContextFactory&lt; RequestT, ResponseT &gt;</a>
+, <a class="el" href="classhttp_1_1server_1_1_h_t_t_p_server_context_factory.html#a2dabd8f658ba1fffacfe30ba47ac2e79">http::server::HTTPServerContextFactory&lt; RequestT, ResponseT &gt;</a>
+, <a class="el" href="classnet_1_1socket_1_1bluetooth_1_1l2cap_1_1_socket.html#a71ce36842e2829f0ab2089005813c177">net::socket::bluetooth::l2cap::Socket</a>
 , <a class="el" href="classnet_1_1socket_1_1bluetooth_1_1rfcomm_1_1_socket.html#ae2e307db48bd6be3b2d7764becd14ce2">net::socket::bluetooth::rfcomm::Socket</a>
 , <a class="el" href="classnet_1_1socket_1_1ip_1_1tcp_1_1ipv4_1_1_socket.html#a42aaf2c25534927c173d85511da16c03">net::socket::ip::tcp::ipv4::Socket</a>
 , <a class="el" href="classnet_1_1socket_1_1ip_1_1tcp_1_1ipv6_1_1_socket.html#a3750d860b77ded680440e502124b3eeb">net::socket::ip::tcp::ipv6::Socket</a>
 , <a class="el" href="classnet_1_1socket_1_1_socket.html#a4e4cd3dbedb5348efdb2fddf09526657">net::socket::Socket&lt; SocketAddressT &gt;</a>
+, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_protocol_factory.html#a0c231280beb6d3b01453822d6d513435">net::socket::stream::SocketProtocolFactory</a>
 </li>
 <li>ctx
 : <a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connector.html#ad7515655b28bef79c5034bbd92f9d6b7">net::socket::stream::tls::SocketConnector&lt; SocketT &gt;</a>

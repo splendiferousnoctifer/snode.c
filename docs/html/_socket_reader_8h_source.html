@@ -87,7 +87,7 @@ $(document).ready(function(){initNavTree('_socket_reader_8h_source.html',''); in
 <div class="contents">
 <a href="_socket_reader_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * snode.c - a slim toolkit for network communication</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright (C) 2020 Volker Christian &lt;me@vchrist.at&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright (C) 2020, 2021 Volker Christian &lt;me@vchrist.at&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * This program is free software: you can redistribute it and/or modify</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * it under the terms of the GNU Lesser General Public License as published</span></div>
@@ -160,7 +160,7 @@ $(document).ready(function(){initNavTree('_socket_reader_8h_source.html',''); in
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            ssize_t ret = <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#a796e5ff1a91d6343f778bf68ab039a7b">read</a>(junk, <a class="code" href="_socket_reader_8h.html#ad64da5cbb2a93af7c8ac5419d7d0c5cd">MAX_READ_JUNKSIZE</a>);</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <span class="keywordflow">if</span> (ret &gt; 0) {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#aae71788aa58b1f9d83d5d954831c885e">onRead</a>(junk, ret);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#aae71788aa58b1f9d83d5d954831c885e">onRead</a>(junk, <span class="keyword">static_cast&lt;</span>std::size_t<span class="keyword">&gt;</span>(ret));</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (errno != EAGAIN &amp;&amp; errno != EWOULDBLOCK &amp;&amp; errno != EINTR) {</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                <a class="code" href="classnet_1_1_descriptor_event_receiver.html#a71d48a9e0030918589d901b834e07327">ReadEventReceiver::disable</a>();</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#a079668a7eb0894e5884e71f690809bc0">markShutdown</a>) {</div>

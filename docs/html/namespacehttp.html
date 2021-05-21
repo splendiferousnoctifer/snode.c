@@ -96,12 +96,20 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacehttp_1_1server"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehttp_1_1server.html">server</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacehttp_1_1websocket"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehttp_1_1websocket.html">websocket</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_cookie_options.html">CookieOptions</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_parser.html">Parser</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_status_code.html">StatusCode</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_w_s_receiver.html">WSReceiver</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_w_s_transmitter.html">WSTransmitter</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -138,10 +146,10 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_parser_8cpp_source.html#l00168">168</a> of file <a class="el" href="_parser_8cpp_source.html">Parser.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                                                                                                                  {</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>enum Parser::HTTPCompliance<span class="keyword">&gt;</span>(<span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">short</span><span class="keyword">&gt;</span>(c1) &amp; <span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">short</span><span class="keyword">&gt;</span>(c2));</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="_parser_8cpp_source.html#l00167">167</a> of file <a class="el" href="_parser_8cpp_source.html">Parser.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;                                                                                                                  {</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>enum Parser::HTTPCompliance<span class="keyword">&gt;</span>(<span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">short</span><span class="keyword">&gt;</span>(c1) &amp; <span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">short</span><span class="keyword">&gt;</span>(c2));</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -171,10 +179,10 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_parser_8cpp_source.html#l00168">168</a> of file <a class="el" href="_parser_8cpp_source.html">Parser.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                                                                                                                  {</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>enum Parser::HTTPCompliance<span class="keyword">&gt;</span>(<span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">short</span><span class="keyword">&gt;</span>(c1) | <span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">short</span><span class="keyword">&gt;</span>(c2));</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="_parser_8cpp_source.html#l00167">167</a> of file <a class="el" href="_parser_8cpp_source.html">Parser.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;                                                                                                                  {</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>enum Parser::HTTPCompliance<span class="keyword">&gt;</span>(<span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">short</span><span class="keyword">&gt;</span>(c1) | <span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">short</span><span class="keyword">&gt;</span>(c2));</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
