@@ -198,19 +198,21 @@ Private Attributes</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="_timer_8cpp_source.html#l00033">33</a> of file <a class="el" href="_timer_8cpp_source.html">Timer.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        : <a class="code" href="classnet_1_1timer_1_1_timer.html#ae5321e41c1449780244ab6945015a82f">arg</a>(<a class="code" href="classnet_1_1timer_1_1_timer.html#ae5321e41c1449780244ab6945015a82f">arg</a>)</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        , <a class="code" href="classnet_1_1timer_1_1_timer.html#a472441b7f968a1db76f3fd7bc83692ff">delay</a>(<a class="code" href="classnet_1_1timer_1_1_timer.html#ad2fd8f83561240caf7f2ee59e3d1348f">timeout</a>) {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        gettimeofday(&amp;absoluteTimeout, <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <a class="code" href="namespacenet_1_1system.html#aa6f351129e5d8c8522b104b4c6d9d62e">gettimeofday</a>(&amp;absoluteTimeout, <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="classnet_1_1timer_1_1_timer.html#a82bef3d9c333f0b302c1f7d69dc0d28e">update</a>();</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div>
 <div class="ttc" id="aclassnet_1_1timer_1_1_timer_html_a472441b7f968a1db76f3fd7bc83692ff"><div class="ttname"><a href="classnet_1_1timer_1_1_timer.html#a472441b7f968a1db76f3fd7bc83692ff">net::timer::Timer::delay</a></div><div class="ttdeci">struct timeval delay</div><div class="ttdef"><b>Definition:</b> <a href="_timer_8h_source.html#l00068">Timer.h:72</a></div></div>
 <div class="ttc" id="aclassnet_1_1timer_1_1_timer_html_a82bef3d9c333f0b302c1f7d69dc0d28e"><div class="ttname"><a href="classnet_1_1timer_1_1_timer.html#a82bef3d9c333f0b302c1f7d69dc0d28e">net::timer::Timer::update</a></div><div class="ttdeci">void update()</div><div class="ttdef"><b>Definition:</b> <a href="_timer_8cpp_source.html#l00072">Timer.cpp:72</a></div></div>
 <div class="ttc" id="aclassnet_1_1timer_1_1_timer_html_ad2fd8f83561240caf7f2ee59e3d1348f"><div class="ttname"><a href="classnet_1_1timer_1_1_timer.html#ad2fd8f83561240caf7f2ee59e3d1348f">net::timer::Timer::timeout</a></div><div class="ttdeci">struct timeval &amp; timeout() override</div><div class="ttdef"><b>Definition:</b> <a href="_timer_8cpp_source.html#l00080">Timer.cpp:80</a></div></div>
 <div class="ttc" id="aclassnet_1_1timer_1_1_timer_html_ae5321e41c1449780244ab6945015a82f"><div class="ttname"><a href="classnet_1_1timer_1_1_timer.html#ae5321e41c1449780244ab6945015a82f">net::timer::Timer::arg</a></div><div class="ttdeci">const void * arg</div><div class="ttdef"><b>Definition:</b> <a href="_timer_8h_source.html#l00061">Timer.h:61</a></div></div>
+<div class="ttc" id="anamespacenet_1_1system_html_aa6f351129e5d8c8522b104b4c6d9d62e"><div class="ttname"><a href="namespacenet_1_1system.html#aa6f351129e5d8c8522b104b4c6d9d62e">net::system::gettimeofday</a></div><div class="ttdeci">int gettimeofday(struct timeval *tv, struct timezone *tz)</div><div class="ttdef"><b>Definition:</b> <a href="time_8cpp_source.html#l00016">time.cpp:16</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_timer_8cpp_source.html#l00072">update()</a>.</p>
+<p class="reference">References <a class="el" href="time_8cpp_source.html#l00016">net::system::gettimeofday()</a>, and <a class="el" href="_timer_8cpp_source.html#l00072">update()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1timer_1_1_timer_ab63bd86695b2a111bf7c87348806601a_cgraph.svg" width="312" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1timer_1_1_timer_ab63bd86695b2a111bf7c87348806601a_cgraph.svg" width="360" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>

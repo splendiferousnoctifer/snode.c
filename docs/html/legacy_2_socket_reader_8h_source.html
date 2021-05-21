@@ -107,40 +107,44 @@ $(document).ready(function(){initNavTree('legacy_2_socket_reader_8h_source.html'
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#define NET_SOCKET_STREAM_LEGACY_SOCKETREADER_H</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_socket_reader_8h.html">net/socket/stream/SocketReader.h</a>&quot;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#ifndef DOXYGEN_SHOULD_SKIP_THIS</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;cstddef&gt;</span> <span class="comment">// for std::size_t</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;sys/socket.h&gt;</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;sys/types.h&gt;</span> <span class="comment">// for ssize_t</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* DOXYGEN_SHOULD_SKIP_THIS */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="system_2_socket_8h.html">net/system/socket.h</a>&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#ifndef DOXYGEN_SHOULD_SKIP_THIS</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;cerrno&gt;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;cstddef&gt;</span> <span class="comment">// for std::size_t</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;sys/socket.h&gt;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;sys/types.h&gt;</span> <span class="comment">// for ssize_t</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacenet_1_1socket_1_1stream_1_1legacy.html">net::socket::stream::legacy</a> {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* DOXYGEN_SHOULD_SKIP_THIS */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> SocketT&gt;</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_reader.html">   35</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_reader.html">SocketReader</a> : <span class="keyword">public</span> <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_reader.html">stream::SocketReader</a>&lt;SocketT&gt; {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keyword">using</span> <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_reader.html">stream::SocketReader&lt;SocketT&gt;::SocketReader</a>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_reader.html#adcb15b397075b393c085cffcc348398b">   39</a></span>&#160;        ssize_t <a class="code" href="classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_reader.html#adcb15b397075b393c085cffcc348398b">read</a>(<span class="keywordtype">char</span>* junk, std::size_t junkLen)<span class="keyword"> override </span>{</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            return ::recv(this-&gt;getFd(), junk, junkLen, 0);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        }</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_reader.html#a4bca7c7203c1133ffb95d97a66cc5411">   43</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_reader.html#a4bca7c7203c1133ffb95d97a66cc5411">getError</a>()<span class="keyword"> override </span>{</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <span class="keywordflow">return</span> errno;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        }</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    };</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;} <span class="comment">// namespace net::socket::stream::legacy</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacenet_1_1socket_1_1stream_1_1legacy.html">net::socket::stream::legacy</a> {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> SocketT&gt;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_reader.html">   37</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_reader.html">SocketReader</a> : <span class="keyword">public</span> <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_reader.html">stream::SocketReader</a>&lt;SocketT&gt; {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keyword">using</span> <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_reader.html">stream::SocketReader&lt;SocketT&gt;::SocketReader</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_reader.html#adcb15b397075b393c085cffcc348398b">   41</a></span>&#160;        ssize_t <a class="code" href="classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_reader.html#adcb15b397075b393c085cffcc348398b">read</a>(<span class="keywordtype">char</span>* junk, std::size_t junkLen)<span class="keyword"> override </span>{</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="namespacenet_1_1system.html#acc53bcf54729712f1f7778f06276c63e">system::recv</a>(this-&gt;getFd(), junk, junkLen, 0);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_reader.html#a4bca7c7203c1133ffb95d97a66cc5411">   45</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_reader.html#a4bca7c7203c1133ffb95d97a66cc5411">getError</a>()<span class="keyword"> override </span>{</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <span class="keywordflow">return</span> errno;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    };</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// NET_SOCKET_STREAM_LEGACY_SOCKETREADER_H</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;} <span class="comment">// namespace net::socket::stream::legacy</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// NET_SOCKET_STREAM_LEGACY_SOCKETREADER_H</span></div>
 <div class="ttc" id="a_socket_reader_8h_html"><div class="ttname"><a href="_socket_reader_8h.html">SocketReader.h</a></div></div>
-<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_reader_html"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_reader.html">net::socket::stream::SocketReader</a></div><div class="ttdef"><b>Definition:</b> <a href="_socket_reader_8h_source.html#l00039">SocketReader.h:41</a></div></div>
-<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1legacy_1_1_socket_reader_html"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_reader.html">net::socket::stream::legacy::SocketReader</a></div><div class="ttdef"><b>Definition:</b> <a href="legacy_2_socket_reader_8h_source.html#l00035">SocketReader.h:35</a></div></div>
-<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1legacy_1_1_socket_reader_html_a4bca7c7203c1133ffb95d97a66cc5411"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_reader.html#a4bca7c7203c1133ffb95d97a66cc5411">net::socket::stream::legacy::SocketReader::getError</a></div><div class="ttdeci">int getError() override</div><div class="ttdef"><b>Definition:</b> <a href="legacy_2_socket_reader_8h_source.html#l00043">SocketReader.h:43</a></div></div>
-<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1legacy_1_1_socket_reader_html_adcb15b397075b393c085cffcc348398b"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_reader.html#adcb15b397075b393c085cffcc348398b">net::socket::stream::legacy::SocketReader::read</a></div><div class="ttdeci">ssize_t read(char *junk, std::size_t junkLen) override</div><div class="ttdef"><b>Definition:</b> <a href="legacy_2_socket_reader_8h_source.html#l00039">SocketReader.h:39</a></div></div>
+<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_reader_html"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_reader.html">net::socket::stream::SocketReader</a></div><div class="ttdef"><b>Definition:</b> <a href="_socket_reader_8h_source.html#l00038">SocketReader.h:40</a></div></div>
+<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1legacy_1_1_socket_reader_html"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_reader.html">net::socket::stream::legacy::SocketReader</a></div><div class="ttdef"><b>Definition:</b> <a href="legacy_2_socket_reader_8h_source.html#l00037">SocketReader.h:37</a></div></div>
+<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1legacy_1_1_socket_reader_html_a4bca7c7203c1133ffb95d97a66cc5411"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_reader.html#a4bca7c7203c1133ffb95d97a66cc5411">net::socket::stream::legacy::SocketReader::getError</a></div><div class="ttdeci">int getError() override</div><div class="ttdef"><b>Definition:</b> <a href="legacy_2_socket_reader_8h_source.html#l00045">SocketReader.h:45</a></div></div>
+<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1legacy_1_1_socket_reader_html_adcb15b397075b393c085cffcc348398b"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_reader.html#adcb15b397075b393c085cffcc348398b">net::socket::stream::legacy::SocketReader::read</a></div><div class="ttdeci">ssize_t read(char *junk, std::size_t junkLen) override</div><div class="ttdef"><b>Definition:</b> <a href="legacy_2_socket_reader_8h_source.html#l00041">SocketReader.h:41</a></div></div>
 <div class="ttc" id="anamespacenet_1_1socket_1_1stream_1_1legacy_html"><div class="ttname"><a href="namespacenet_1_1socket_1_1stream_1_1legacy.html">net::socket::stream::legacy</a></div><div class="ttdef"><b>Definition:</b> <a href="stream_2legacy_2_socket_client_8h_source.html#l00029">SocketClient.h:29</a></div></div>
+<div class="ttc" id="anamespacenet_1_1system_html_acc53bcf54729712f1f7778f06276c63e"><div class="ttname"><a href="namespacenet_1_1system.html#acc53bcf54729712f1f7778f06276c63e">net::system::recv</a></div><div class="ttdeci">ssize_t recv(int sockfd, void *buf, size_t len, int flags)</div><div class="ttdef"><b>Definition:</b> <a href="system_2_socket_8cpp_source.html#l00045">socket.cpp:45</a></div></div>
+<div class="ttc" id="asystem_2_socket_8h_html"><div class="ttname"><a href="system_2_socket_8h.html">socket.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

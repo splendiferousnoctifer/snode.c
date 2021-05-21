@@ -218,10 +218,10 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_pipe_sink_8cpp_source.html#l00034">34</a> of file <a class="el" href="_pipe_sink_8cpp_source.html">PipeSink.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        : <a class="code" href="classnet_1_1_descriptor.html#ab2b5288d8809617fbf2a028fa721dfa4">Descriptor</a>(<a class="code" href="classnet_1_1_descriptor.html#ae74a867d53babc909e138b86595fdfd8">fd</a>) {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <a class="code" href="classnet_1_1_descriptor_event_receiver.html#a60717df80503a37fd4d3e7ce8dc3777d">ReadEventReceiver::enable</a>(<a class="code" href="classnet_1_1_descriptor.html#ae74a867d53babc909e138b86595fdfd8">fd</a>);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="_pipe_sink_8cpp_source.html#l00035">35</a> of file <a class="el" href="_pipe_sink_8cpp_source.html">PipeSink.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        : <a class="code" href="classnet_1_1_descriptor.html#ab2b5288d8809617fbf2a028fa721dfa4">Descriptor</a>(<a class="code" href="classnet_1_1_descriptor.html#ae74a867d53babc909e138b86595fdfd8">fd</a>) {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="classnet_1_1_descriptor_event_receiver.html#a60717df80503a37fd4d3e7ce8dc3777d">ReadEventReceiver::enable</a>(<a class="code" href="classnet_1_1_descriptor.html#ae74a867d53babc909e138b86595fdfd8">fd</a>);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div>
 <div class="ttc" id="aclassnet_1_1_descriptor_event_receiver_html_a60717df80503a37fd4d3e7ce8dc3777d"><div class="ttname"><a href="classnet_1_1_descriptor_event_receiver.html#a60717df80503a37fd4d3e7ce8dc3777d">net::DescriptorEventReceiver::enable</a></div><div class="ttdeci">void enable(int fd)</div><div class="ttdef"><b>Definition:</b> <a href="_descriptor_event_receiver_8cpp_source.html#l00035">DescriptorEventReceiver.cpp:35</a></div></div>
 <div class="ttc" id="aclassnet_1_1_descriptor_html_ab2b5288d8809617fbf2a028fa721dfa4"><div class="ttname"><a href="classnet_1_1_descriptor.html#ab2b5288d8809617fbf2a028fa721dfa4">net::Descriptor::Descriptor</a></div><div class="ttdeci">Descriptor(int fd=-1, enum Descriptor::FLAGS flags=FLAGS::none)</div><div class="ttdef"><b>Definition:</b> <a href="_descriptor_8cpp_source.html#l00029">Descriptor.cpp:29</a></div></div>
 <div class="ttc" id="aclassnet_1_1_descriptor_html_ae74a867d53babc909e138b86595fdfd8"><div class="ttname"><a href="classnet_1_1_descriptor.html#ae74a867d53babc909e138b86595fdfd8">net::Descriptor::fd</a></div><div class="ttdeci">int fd</div><div class="ttdef"><b>Definition:</b> <a href="_descriptor_8h_source.html#l00052">Descriptor.h:52</a></div></div>
@@ -230,7 +230,8 @@ Additional Inherited Members</h2></td></tr>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1stream_1_1_pipe_sink_a2bee8822639bd0477068ba90ff6b9428_cgraph.svg" width="908" height="199"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1stream_1_1_pipe_sink_a2bee8822639bd0477068ba90ff6b9428_cgraph.svg" width="1080" height="199"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
@@ -313,47 +314,47 @@ Here is the call graph for this function:</div>
 
 <p>Implements <a class="el" href="classnet_1_1_read_event_receiver.html#acd4cdc73c7534719700aa6997a507a8a">net::ReadEventReceiver</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_pipe_sink_8cpp_source.html#l00039">39</a> of file <a class="el" href="_pipe_sink_8cpp_source.html">PipeSink.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                             {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        errno = 0;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="comment">// NOLINTNEXTLINE(cppcoreguidelines-avoid-c-arrays, hicpp-avoid-c-arrays, modernize-avoid-c-arrays)</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">char</span> junk[<a class="code" href="_pipe_sink_8cpp.html#ad64da5cbb2a93af7c8ac5419d7d0c5cd">MAX_READ_JUNKSIZE</a>];</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        ssize_t ret = ::read(<a class="code" href="classnet_1_1_descriptor.html#a70ccc1e4f6af5cda015bd319f9a90096">getFd</a>(), junk, <a class="code" href="_pipe_sink_8cpp.html#ad64da5cbb2a93af7c8ac5419d7d0c5cd">MAX_READ_JUNKSIZE</a>);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordflow">if</span> (ret &gt; 0) {</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="classnet_1_1stream_1_1_pipe_sink.html#a7abb82c62b358ca69dfc0d2a6be7024f">onData</a>) {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                <a class="code" href="classnet_1_1stream_1_1_pipe_sink.html#a7abb82c62b358ca69dfc0d2a6be7024f">onData</a>(junk, ret);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            }</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <a class="code" href="classnet_1_1_descriptor_event_receiver.html#a71d48a9e0030918589d901b834e07327">ReadEventReceiver::disable</a>();</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <a class="code" href="classnet_1_1_descriptor_event_receiver.html#a582c1dc64913a0b118befb4c272cb460">ReadEventReceiver::suspend</a>();</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            <span class="keywordflow">if</span> (ret == 0) {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="classnet_1_1stream_1_1_pipe_sink.html#a847a98bee6cfa9806224257302d34b0f">onEof</a>) {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                    <a class="code" href="classnet_1_1stream_1_1_pipe_sink.html#a847a98bee6cfa9806224257302d34b0f">onEof</a>();</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                }</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="classnet_1_1stream_1_1_pipe_sink.html#a5c803173409ce51d3872181781c0fa36">onError</a>) {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                    <a class="code" href="classnet_1_1stream_1_1_pipe_sink.html#a5c803173409ce51d3872181781c0fa36">onError</a>(errno);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                }</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            }</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        }</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    }</div>
-<div class="ttc" id="a_pipe_sink_8cpp_html_ad64da5cbb2a93af7c8ac5419d7d0c5cd"><div class="ttname"><a href="_pipe_sink_8cpp.html#ad64da5cbb2a93af7c8ac5419d7d0c5cd">MAX_READ_JUNKSIZE</a></div><div class="ttdeci">#define MAX_READ_JUNKSIZE</div><div class="ttdef"><b>Definition:</b> <a href="_pipe_sink_8cpp_source.html#l00029">PipeSink.cpp:29</a></div></div>
+<p class="definition">Definition at line <a class="el" href="_pipe_sink_8cpp_source.html#l00040">40</a> of file <a class="el" href="_pipe_sink_8cpp_source.html">PipeSink.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                             {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="comment">// NOLINTNEXTLINE(cppcoreguidelines-avoid-c-arrays, hicpp-avoid-c-arrays, modernize-avoid-c-arrays)</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">char</span> junk[<a class="code" href="_pipe_sink_8cpp.html#ad64da5cbb2a93af7c8ac5419d7d0c5cd">MAX_READ_JUNKSIZE</a>];</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        ssize_t ret = <a class="code" href="namespacenet_1_1system.html#a548befc9826098f4756445e39c22a1f9">system::read</a>(<a class="code" href="classnet_1_1_descriptor.html#a70ccc1e4f6af5cda015bd319f9a90096">getFd</a>(), junk, <a class="code" href="_pipe_sink_8cpp.html#ad64da5cbb2a93af7c8ac5419d7d0c5cd">MAX_READ_JUNKSIZE</a>);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordflow">if</span> (ret &gt; 0) {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="classnet_1_1stream_1_1_pipe_sink.html#a7abb82c62b358ca69dfc0d2a6be7024f">onData</a>) {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                <a class="code" href="classnet_1_1stream_1_1_pipe_sink.html#a7abb82c62b358ca69dfc0d2a6be7024f">onData</a>(junk, <span class="keyword">static_cast&lt;</span>std::size_t<span class="keyword">&gt;</span>(ret));</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <a class="code" href="classnet_1_1_descriptor_event_receiver.html#a71d48a9e0030918589d901b834e07327">ReadEventReceiver::disable</a>();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <a class="code" href="classnet_1_1_descriptor_event_receiver.html#a582c1dc64913a0b118befb4c272cb460">ReadEventReceiver::suspend</a>();</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <span class="keywordflow">if</span> (ret == 0) {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="classnet_1_1stream_1_1_pipe_sink.html#a847a98bee6cfa9806224257302d34b0f">onEof</a>) {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                    <a class="code" href="classnet_1_1stream_1_1_pipe_sink.html#a847a98bee6cfa9806224257302d34b0f">onEof</a>();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="classnet_1_1stream_1_1_pipe_sink.html#a5c803173409ce51d3872181781c0fa36">onError</a>) {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                    <a class="code" href="classnet_1_1stream_1_1_pipe_sink.html#a5c803173409ce51d3872181781c0fa36">onError</a>(errno);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
+<div class="ttc" id="a_pipe_sink_8cpp_html_ad64da5cbb2a93af7c8ac5419d7d0c5cd"><div class="ttname"><a href="_pipe_sink_8cpp.html#ad64da5cbb2a93af7c8ac5419d7d0c5cd">MAX_READ_JUNKSIZE</a></div><div class="ttdeci">#define MAX_READ_JUNKSIZE</div><div class="ttdef"><b>Definition:</b> <a href="_pipe_sink_8cpp_source.html#l00030">PipeSink.cpp:30</a></div></div>
 <div class="ttc" id="aclassnet_1_1_descriptor_event_receiver_html_a582c1dc64913a0b118befb4c272cb460"><div class="ttname"><a href="classnet_1_1_descriptor_event_receiver.html#a582c1dc64913a0b118befb4c272cb460">net::DescriptorEventReceiver::suspend</a></div><div class="ttdeci">void suspend()</div><div class="ttdef"><b>Definition:</b> <a href="_descriptor_event_receiver_8cpp_source.html#l00044">DescriptorEventReceiver.cpp:44</a></div></div>
 <div class="ttc" id="aclassnet_1_1_descriptor_event_receiver_html_a71d48a9e0030918589d901b834e07327"><div class="ttname"><a href="classnet_1_1_descriptor_event_receiver.html#a71d48a9e0030918589d901b834e07327">net::DescriptorEventReceiver::disable</a></div><div class="ttdeci">void disable()</div><div class="ttdef"><b>Definition:</b> <a href="_descriptor_event_receiver_8cpp_source.html#l00040">DescriptorEventReceiver.cpp:40</a></div></div>
 <div class="ttc" id="aclassnet_1_1_descriptor_html_a70ccc1e4f6af5cda015bd319f9a90096"><div class="ttname"><a href="classnet_1_1_descriptor.html#a70ccc1e4f6af5cda015bd319f9a90096">net::Descriptor::getFd</a></div><div class="ttdeci">int getFd() const</div><div class="ttdef"><b>Definition:</b> <a href="_descriptor_8cpp_source.html#l00045">Descriptor.cpp:45</a></div></div>
 <div class="ttc" id="aclassnet_1_1stream_1_1_pipe_sink_html_a5c803173409ce51d3872181781c0fa36"><div class="ttname"><a href="classnet_1_1stream_1_1_pipe_sink.html#a5c803173409ce51d3872181781c0fa36">net::stream::PipeSink::onError</a></div><div class="ttdeci">std::function&lt; void(int errnum)&gt; onError</div><div class="ttdef"><b>Definition:</b> <a href="_pipe_sink_8h_source.html#l00053">PipeSink.h:53</a></div></div>
 <div class="ttc" id="aclassnet_1_1stream_1_1_pipe_sink_html_a7abb82c62b358ca69dfc0d2a6be7024f"><div class="ttname"><a href="classnet_1_1stream_1_1_pipe_sink.html#a7abb82c62b358ca69dfc0d2a6be7024f">net::stream::PipeSink::onData</a></div><div class="ttdeci">std::function&lt; void(const char *junk, std::size_t junkLen)&gt; onData</div><div class="ttdef"><b>Definition:</b> <a href="_pipe_sink_8h_source.html#l00051">PipeSink.h:51</a></div></div>
 <div class="ttc" id="aclassnet_1_1stream_1_1_pipe_sink_html_a847a98bee6cfa9806224257302d34b0f"><div class="ttname"><a href="classnet_1_1stream_1_1_pipe_sink.html#a847a98bee6cfa9806224257302d34b0f">net::stream::PipeSink::onEof</a></div><div class="ttdeci">std::function&lt; void()&gt; onEof</div><div class="ttdef"><b>Definition:</b> <a href="_pipe_sink_8h_source.html#l00052">PipeSink.h:52</a></div></div>
+<div class="ttc" id="anamespacenet_1_1system_html_a548befc9826098f4756445e39c22a1f9"><div class="ttname"><a href="namespacenet_1_1system.html#a548befc9826098f4756445e39c22a1f9">net::system::read</a></div><div class="ttdeci">ssize_t read(int fd, void *buf, size_t count)</div><div class="ttdef"><b>Definition:</b> <a href="unistd_8cpp_source.html#l00016">unistd.cpp:16</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_descriptor_event_receiver_8cpp_source.html#l00040">net::DescriptorEventReceiver::disable()</a>, <a class="el" href="_descriptor_8cpp_source.html#l00045">net::Descriptor::getFd()</a>, <a class="el" href="_pipe_sink_8cpp_source.html#l00029">MAX_READ_JUNKSIZE</a>, <a class="el" href="_pipe_sink_8h_source.html#l00051">onData</a>, <a class="el" href="_pipe_sink_8h_source.html#l00052">onEof</a>, <a class="el" href="_pipe_sink_8h_source.html#l00053">onError</a>, and <a class="el" href="_descriptor_event_receiver_8cpp_source.html#l00044">net::DescriptorEventReceiver::suspend()</a>.</p>
+<p class="reference">References <a class="el" href="_descriptor_event_receiver_8cpp_source.html#l00040">net::DescriptorEventReceiver::disable()</a>, <a class="el" href="_descriptor_8cpp_source.html#l00045">net::Descriptor::getFd()</a>, <a class="el" href="_pipe_sink_8cpp_source.html#l00030">MAX_READ_JUNKSIZE</a>, <a class="el" href="_pipe_sink_8h_source.html#l00051">onData</a>, <a class="el" href="_pipe_sink_8h_source.html#l00052">onEof</a>, <a class="el" href="_pipe_sink_8h_source.html#l00053">onError</a>, <a class="el" href="unistd_8cpp_source.html#l00016">net::system::read()</a>, and <a class="el" href="_descriptor_event_receiver_8cpp_source.html#l00044">net::DescriptorEventReceiver::suspend()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1stream_1_1_pipe_sink_ac5d03738aa3630076fcf27b18b232b71_cgraph.svg" width="898" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1stream_1_1_pipe_sink_ac5d03738aa3630076fcf27b18b232b71_cgraph.svg" width="898" height="326"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
@@ -374,10 +375,10 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_pipe_sink_8cpp_source.html#l00067">67</a> of file <a class="el" href="_pipe_sink_8cpp_source.html">PipeSink.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                                                                                                 {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        this-&gt;<a class="code" href="classnet_1_1stream_1_1_pipe_sink.html#a7abb82c62b358ca69dfc0d2a6be7024f">onData</a> = <a class="code" href="classnet_1_1stream_1_1_pipe_sink.html#a7abb82c62b358ca69dfc0d2a6be7024f">onData</a>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="_pipe_sink_8cpp_source.html#l00066">66</a> of file <a class="el" href="_pipe_sink_8cpp_source.html">PipeSink.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                                                                                                 {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        this-&gt;<a class="code" href="classnet_1_1stream_1_1_pipe_sink.html#a7abb82c62b358ca69dfc0d2a6be7024f">onData</a> = <a class="code" href="classnet_1_1stream_1_1_pipe_sink.html#a7abb82c62b358ca69dfc0d2a6be7024f">onData</a>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="_pipe_sink_8h_source.html#l00051">onData</a>.</p>
 
@@ -399,10 +400,10 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_pipe_sink_8cpp_source.html#l00071">71</a> of file <a class="el" href="_pipe_sink_8cpp_source.html">PipeSink.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                                                            {</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        this-&gt;<a class="code" href="classnet_1_1stream_1_1_pipe_sink.html#a847a98bee6cfa9806224257302d34b0f">onEof</a> = <a class="code" href="classnet_1_1stream_1_1_pipe_sink.html#a847a98bee6cfa9806224257302d34b0f">onEof</a>;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="_pipe_sink_8cpp_source.html#l00070">70</a> of file <a class="el" href="_pipe_sink_8cpp_source.html">PipeSink.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                                                            {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        this-&gt;<a class="code" href="classnet_1_1stream_1_1_pipe_sink.html#a847a98bee6cfa9806224257302d34b0f">onEof</a> = <a class="code" href="classnet_1_1stream_1_1_pipe_sink.html#a847a98bee6cfa9806224257302d34b0f">onEof</a>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    }</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="_pipe_sink_8h_source.html#l00052">onEof</a>.</p>
 
@@ -424,10 +425,10 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_pipe_sink_8cpp_source.html#l00075">75</a> of file <a class="el" href="_pipe_sink_8cpp_source.html">PipeSink.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                                                                          {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        this-&gt;<a class="code" href="classnet_1_1stream_1_1_pipe_sink.html#a5c803173409ce51d3872181781c0fa36">onError</a> = <a class="code" href="classnet_1_1stream_1_1_pipe_sink.html#a5c803173409ce51d3872181781c0fa36">onError</a>;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="_pipe_sink_8cpp_source.html#l00074">74</a> of file <a class="el" href="_pipe_sink_8cpp_source.html">PipeSink.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                                                                          {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        this-&gt;<a class="code" href="classnet_1_1stream_1_1_pipe_sink.html#a5c803173409ce51d3872181781c0fa36">onError</a> = <a class="code" href="classnet_1_1stream_1_1_pipe_sink.html#a5c803173409ce51d3872181781c0fa36">onError</a>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="_pipe_sink_8h_source.html#l00053">onError</a>.</p>
 
@@ -458,10 +459,10 @@ Here is the call graph for this function:</div>
 
 <p>Implements <a class="el" href="classnet_1_1_descriptor_event_receiver.html#af073668b41dc51649789d581ec1a2678">net::DescriptorEventReceiver</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_pipe_sink_8cpp_source.html#l00079">79</a> of file <a class="el" href="_pipe_sink_8cpp_source.html">PipeSink.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                              {</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keyword">delete</span> <span class="keyword">this</span>;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="_pipe_sink_8cpp_source.html#l00078">78</a> of file <a class="el" href="_pipe_sink_8cpp_source.html">PipeSink.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                              {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keyword">delete</span> <span class="keyword">this</span>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -488,7 +489,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="_pipe_sink_8h_source.html#l00051">51</a> of file <a class="el" href="_pipe_sink_8h_source.html">PipeSink.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_pipe_sink_8cpp_source.html#l00039">readEvent()</a>, and <a class="el" href="_pipe_sink_8cpp_source.html#l00067">setOnData()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_pipe_sink_8cpp_source.html#l00040">readEvent()</a>, and <a class="el" href="_pipe_sink_8cpp_source.html#l00066">setOnData()</a>.</p>
 
 </div>
 </div>
@@ -514,7 +515,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="_pipe_sink_8h_source.html#l00052">52</a> of file <a class="el" href="_pipe_sink_8h_source.html">PipeSink.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_pipe_sink_8cpp_source.html#l00039">readEvent()</a>, and <a class="el" href="_pipe_sink_8cpp_source.html#l00071">setOnEof()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_pipe_sink_8cpp_source.html#l00040">readEvent()</a>, and <a class="el" href="_pipe_sink_8cpp_source.html#l00070">setOnEof()</a>.</p>
 
 </div>
 </div>
@@ -540,7 +541,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="_pipe_sink_8h_source.html#l00053">53</a> of file <a class="el" href="_pipe_sink_8h_source.html">PipeSink.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_pipe_sink_8cpp_source.html#l00039">readEvent()</a>, and <a class="el" href="_pipe_sink_8cpp_source.html#l00075">setOnError()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_pipe_sink_8cpp_source.html#l00040">readEvent()</a>, and <a class="el" href="_pipe_sink_8cpp_source.html#l00074">setOnError()</a>.</p>
 
 </div>
 </div>

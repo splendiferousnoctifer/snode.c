@@ -143,7 +143,7 @@ Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_pipe_8cpp_source.html#l00034">34</a> of file <a class="el" href="_pipe_8cpp_source.html">Pipe.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                                                          {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordtype">int</span> ret = pipe2(<a class="code" href="classnet_1_1stream_1_1_pipe.html#a5c781e2a4c777a7f026b4b3598ec3c1e">pipeFd</a>, O_NONBLOCK);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordtype">int</span> ret = <a class="code" href="namespacenet_1_1system.html#aa7a36ce65ce1a210bbf480b6a658b8e4">pipe2</a>(<a class="code" href="classnet_1_1stream_1_1_pipe.html#a5c781e2a4c777a7f026b4b3598ec3c1e">pipeFd</a>, O_NONBLOCK);</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordflow">if</span> (ret == 0) {</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            onSuccess(*(<span class="keyword">new</span> PipeSource(<a class="code" href="classnet_1_1stream_1_1_pipe.html#a5c781e2a4c777a7f026b4b3598ec3c1e">pipeFd</a>[1])), *(<span class="keyword">new</span> PipeSink(<a class="code" href="classnet_1_1stream_1_1_pipe.html#a5c781e2a4c777a7f026b4b3598ec3c1e">pipeFd</a>[0])));</div>
@@ -152,8 +152,15 @@ Protected Attributes</h2></td></tr>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        }</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
 <div class="ttc" id="aclassnet_1_1stream_1_1_pipe_html_a5c781e2a4c777a7f026b4b3598ec3c1e"><div class="ttname"><a href="classnet_1_1stream_1_1_pipe.html#a5c781e2a4c777a7f026b4b3598ec3c1e">net::stream::Pipe::pipeFd</a></div><div class="ttdeci">int pipeFd[2]</div><div class="ttdef"><b>Definition:</b> <a href="_pipe_8h_source.html#l00041">Pipe.h:41</a></div></div>
+<div class="ttc" id="anamespacenet_1_1system_html_aa7a36ce65ce1a210bbf480b6a658b8e4"><div class="ttname"><a href="namespacenet_1_1system.html#aa7a36ce65ce1a210bbf480b6a658b8e4">net::system::pipe2</a></div><div class="ttdeci">int pipe2(int pipefd[2], int flags)</div><div class="ttdef"><b>Definition:</b> <a href="unistd_8cpp_source.html#l00031">unistd.cpp:31</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_pipe_8h_source.html#l00041">pipeFd</a>.</p>
+<p class="reference">References <a class="el" href="unistd_8cpp_source.html#l00031">net::system::pipe2()</a>, and <a class="el" href="_pipe_8h_source.html#l00041">pipeFd</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1stream_1_1_pipe_aac7d605b8464f94f2be3bc754e157e27_cgraph.svg" width="346" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>

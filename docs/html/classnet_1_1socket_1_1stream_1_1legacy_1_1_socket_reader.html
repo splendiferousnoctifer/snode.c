@@ -163,7 +163,7 @@ Additional Inherited Members</h2></td></tr>
 class net::socket::stream::legacy::SocketReader&lt; SocketT &gt;</h3>
 
 
-<p class="definition">Definition at line <a class="el" href="legacy_2_socket_reader_8h_source.html#l00035">35</a> of file <a class="el" href="legacy_2_socket_reader_8h_source.html">SocketReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="legacy_2_socket_reader_8h_source.html#l00037">37</a> of file <a class="el" href="legacy_2_socket_reader_8h_source.html">SocketReader.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a4bca7c7203c1133ffb95d97a66cc5411"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4bca7c7203c1133ffb95d97a66cc5411">&#9670;&nbsp;</a></span>getError()</h2>
@@ -192,10 +192,10 @@ template&lt;typename SocketT &gt; </div>
 
 <p>Implements <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#a0592f7cab272b388303ecdcf0c88c732">net::socket::stream::SocketReader&lt; SocketT &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="legacy_2_socket_reader_8h_source.html#l00043">43</a> of file <a class="el" href="legacy_2_socket_reader_8h_source.html">SocketReader.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                                {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <span class="keywordflow">return</span> errno;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        }</div>
+<p class="definition">Definition at line <a class="el" href="legacy_2_socket_reader_8h_source.html#l00045">45</a> of file <a class="el" href="legacy_2_socket_reader_8h_source.html">SocketReader.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                                {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <span class="keywordflow">return</span> errno;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -237,11 +237,20 @@ template&lt;typename SocketT &gt; </div>
 
 <p>Implements <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#a796e5ff1a91d6343f778bf68ab039a7b">net::socket::stream::SocketReader&lt; SocketT &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="legacy_2_socket_reader_8h_source.html#l00039">39</a> of file <a class="el" href="legacy_2_socket_reader_8h_source.html">SocketReader.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                                                             {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            return ::recv(this-&gt;getFd(), junk, junkLen, 0);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        }</div>
+<p class="definition">Definition at line <a class="el" href="legacy_2_socket_reader_8h_source.html#l00041">41</a> of file <a class="el" href="legacy_2_socket_reader_8h_source.html">SocketReader.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                                                             {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="namespacenet_1_1system.html#acc53bcf54729712f1f7778f06276c63e">system::recv</a>(this-&gt;getFd(), junk, junkLen, 0);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        }</div>
+<div class="ttc" id="anamespacenet_1_1system_html_acc53bcf54729712f1f7778f06276c63e"><div class="ttname"><a href="namespacenet_1_1system.html#acc53bcf54729712f1f7778f06276c63e">net::system::recv</a></div><div class="ttdeci">ssize_t recv(int sockfd, void *buf, size_t len, int flags)</div><div class="ttdef"><b>Definition:</b> <a href="system_2_socket_8cpp_source.html#l00045">socket.cpp:45</a></div></div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="system_2_socket_8cpp_source.html#l00045">net::system::recv()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_reader_adcb15b397075b393c085cffcc348398b_cgraph.svg" width="375" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>

@@ -106,13 +106,13 @@ $(document).ready(function(){initNavTree('_timer_event_dispatcher_8cpp_source.ht
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_timer_event_dispatcher_8h.html">net/TimerEventDispatcher.h</a>&quot;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_timer_event_receiver_8h.html">net/TimerEventReceiver.h</a>&quot;</span> <span class="comment">// for TimerEventReceiver</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#ifndef DOXYGEN_SHOULD_SKIP_THIS</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span> <span class="comment">// for copy</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;climits&gt;</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;iterator&gt;</span>   <span class="comment">// for back_insert_iterator, back_inserter</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;sys/time.h&gt;</span> <span class="comment">// IWYU pragma: export</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="time_8h.html">net/system/time.h</a>&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#ifndef DOXYGEN_SHOULD_SKIP_THIS</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span> <span class="comment">// for copy</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;climits&gt;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;iterator&gt;</span> <span class="comment">// for back_insert_iterator, back_inserter</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* DOXYGEN_SHOULD_SKIP_THIS */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
@@ -147,7 +147,7 @@ $(document).ready(function(){initNavTree('_timer_event_dispatcher_8cpp_source.ht
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <span class="keyword">struct </span>timeval currentTime {</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                0, 0</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            };</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            gettimeofday(&amp;currentTime, <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <a class="code" href="namespacenet_1_1system.html#aa6f351129e5d8c8522b104b4c6d9d62e">system::gettimeofday</a>(&amp;currentTime, <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <span class="keywordflow">if</span> (tv &lt; currentTime) {</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                tv.tv_sec = 0;</div>
@@ -164,7 +164,7 @@ $(document).ready(function(){initNavTree('_timer_event_dispatcher_8cpp_source.ht
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keyword">struct </span>timeval currentTime {</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            0, 0</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        };</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        gettimeofday(&amp;currentTime, <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <a class="code" href="namespacenet_1_1system.html#aa6f351129e5d8c8522b104b4c6d9d62e">system::gettimeofday</a>(&amp;currentTime, <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordflow">for</span> (<a class="code" href="classnet_1_1_timer_event_receiver.html">TimerEventReceiver</a>* timer : <a class="code" href="classnet_1_1_timer_event_dispatcher.html#a1f7146af29121b8732a3d5e536065c79">timerList</a>) {</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            <span class="keywordflow">if</span> (timer-&gt;timeout() &lt;= currentTime) {</div>
@@ -211,7 +211,9 @@ $(document).ready(function(){initNavTree('_timer_event_dispatcher_8cpp_source.ht
 <div class="ttc" id="aclassnet_1_1_timer_event_dispatcher_html_ac567efc31026ba2cc249d882be0390ae"><div class="ttname"><a href="classnet_1_1_timer_event_dispatcher.html#ac567efc31026ba2cc249d882be0390ae">net::TimerEventDispatcher::empty</a></div><div class="ttdeci">bool empty()</div><div class="ttdef"><b>Definition:</b> <a href="_timer_event_dispatcher_8cpp_source.html#l00099">TimerEventDispatcher.cpp:99</a></div></div>
 <div class="ttc" id="aclassnet_1_1_timer_event_dispatcher_html_aeb3ab46e344b2a94c6348b58c747d9c8"><div class="ttname"><a href="classnet_1_1_timer_event_dispatcher.html#aeb3ab46e344b2a94c6348b58c747d9c8">net::TimerEventDispatcher::dispatch</a></div><div class="ttdeci">void dispatch()</div><div class="ttdef"><b>Definition:</b> <a href="_timer_event_dispatcher_8cpp_source.html#l00076">TimerEventDispatcher.cpp:76</a></div></div>
 <div class="ttc" id="aclassnet_1_1_timer_event_receiver_html"><div class="ttname"><a href="classnet_1_1_timer_event_receiver.html">net::TimerEventReceiver</a></div><div class="ttdef"><b>Definition:</b> <a href="_timer_event_receiver_8h_source.html#l00030">TimerEventReceiver.h:30</a></div></div>
+<div class="ttc" id="anamespacenet_1_1system_html_aa6f351129e5d8c8522b104b4c6d9d62e"><div class="ttname"><a href="namespacenet_1_1system.html#aa6f351129e5d8c8522b104b4c6d9d62e">net::system::gettimeofday</a></div><div class="ttdeci">int gettimeofday(struct timeval *tv, struct timezone *tz)</div><div class="ttdef"><b>Definition:</b> <a href="time_8cpp_source.html#l00016">time.cpp:16</a></div></div>
 <div class="ttc" id="anamespacenet_html"><div class="ttname"><a href="namespacenet.html">net</a></div><div class="ttdef"><b>Definition:</b> <a href="_accept_event_receiver_8cpp_source.html#l00029">AcceptEventReceiver.cpp:29</a></div></div>
+<div class="ttc" id="atime_8h_html"><div class="ttname"><a href="time_8h.html">time.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

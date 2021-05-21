@@ -1,7 +1,38 @@
 var namespacenet =
 [
     [ "socket", "namespacenet_1_1socket.html", "namespacenet_1_1socket" ],
+    [ "ssl", "namespacenet_1_1ssl.html", [
+      [ "SSL_read", "namespacenet_1_1ssl.html#a9276e8aec87ceaef3c80f57f55cd4106", null ],
+      [ "SSL_write", "namespacenet_1_1ssl.html#a58a0af5c945f3f59a910bd44f2695bc8", null ]
+    ] ],
     [ "stream", "namespacenet_1_1stream.html", "namespacenet_1_1stream" ],
+    [ "system", "namespacenet_1_1system.html", [
+      [ "accept4", "namespacenet_1_1system.html#abe940f857103c8b045b81c258bfa774e", null ],
+      [ "bind", "namespacenet_1_1system.html#ad4c7338a4b60fee8700cf34fa9fed5ab", null ],
+      [ "close", "namespacenet_1_1system.html#a5b804e9ab85ee96fb6af201078653816", null ],
+      [ "connect", "namespacenet_1_1system.html#ae579d34c58f571bba93e3dd2a00cfeb0", null ],
+      [ "freeaddrinfo", "namespacenet_1_1system.html#a23a7628914457db800a7ac9af54a9a09", null ],
+      [ "getaddrinfo", "namespacenet_1_1system.html#acfcf4c47faf4c22605d4d22401483e2d", null ],
+      [ "getnameinfo", "namespacenet_1_1system.html#ad016d75c2fb1d4934774b71d7bbc5469", null ],
+      [ "getpeername", "namespacenet_1_1system.html#ab2a2aadd5835d5e4ff844d3dafdba6aa", null ],
+      [ "getsockname", "namespacenet_1_1system.html#ade9e44303465e5bffee34de7ed6edef3", null ],
+      [ "getsockopt", "namespacenet_1_1system.html#ac0e5395908fbf75be832f6b9c0786849", null ],
+      [ "gettimeofday", "namespacenet_1_1system.html#aa6f351129e5d8c8522b104b4c6d9d62e", null ],
+      [ "gmtime", "namespacenet_1_1system.html#a4c3fad621656ff9b26b177278b3db55c", null ],
+      [ "listen", "namespacenet_1_1system.html#aab3b0579285d63e2dcf5c23eb55e4e04", null ],
+      [ "open", "namespacenet_1_1system.html#a6d7e0ac4eb21446e2992eba757368f84", null ],
+      [ "pipe2", "namespacenet_1_1system.html#aa7a36ce65ce1a210bbf480b6a658b8e4", null ],
+      [ "read", "namespacenet_1_1system.html#a548befc9826098f4756445e39c22a1f9", null ],
+      [ "recv", "namespacenet_1_1system.html#acc53bcf54729712f1f7778f06276c63e", null ],
+      [ "select", "namespacenet_1_1system.html#a3e123bea43cc674bd5bfb9ac0ed6da3f", null ],
+      [ "send", "namespacenet_1_1system.html#a408106e64a07f382385360ea9f3cff8c", null ],
+      [ "setsockopt", "namespacenet_1_1system.html#aca1d93ce7fa0324e4a51453fc527dc1c", null ],
+      [ "shutdown", "namespacenet_1_1system.html#a6e3cc3da3091019dca76100c57375feb", null ],
+      [ "signal", "namespacenet_1_1system.html#aa1c9edb6a5797ebd4003f6f789de6b9a", null ],
+      [ "socket", "namespacenet_1_1system.html#a5f6ccab99c16f428c4cd1bf2811c5de8", null ],
+      [ "time", "namespacenet_1_1system.html#a14577a3d4ff982622034e2060c35e19b", null ],
+      [ "write", "namespacenet_1_1system.html#a74a047e91ce6ff1d627132c214964638", null ]
+    ] ],
     [ "timer", "namespacenet_1_1timer.html", "namespacenet_1_1timer" ],
     [ "AcceptEventReceiver", "classnet_1_1_accept_event_receiver.html", "classnet_1_1_accept_event_receiver" ],
     [ "ConnectEventReceiver", "classnet_1_1_connect_event_receiver.html", "classnet_1_1_connect_event_receiver" ],

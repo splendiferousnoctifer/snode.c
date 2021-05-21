@@ -30,12 +30,12 @@ var annotated_dup =
     [ "http", "namespacehttp.html", [
       [ "client", "namespacehttp_1_1client.html", [
         [ "legacy", "namespacehttp_1_1client_1_1legacy.html", [
-          [ "Client", "classhttp_1_1client_1_1legacy_1_1_client.html", "classhttp_1_1client_1_1legacy_1_1_client" ],
-          [ "Client6", "classhttp_1_1client_1_1legacy_1_1_client6.html", "classhttp_1_1client_1_1legacy_1_1_client6" ]
+          [ "Client", "classhttp_1_1client_1_1legacy_1_1_client.html", null ],
+          [ "Client6", "classhttp_1_1client_1_1legacy_1_1_client6.html", null ]
         ] ],
         [ "tls", "namespacehttp_1_1client_1_1tls.html", [
-          [ "Client", "classhttp_1_1client_1_1tls_1_1_client.html", "classhttp_1_1client_1_1tls_1_1_client" ],
-          [ "Client6", "classhttp_1_1client_1_1tls_1_1_client6.html", "classhttp_1_1client_1_1tls_1_1_client6" ]
+          [ "Client", "classhttp_1_1client_1_1tls_1_1_client.html", null ],
+          [ "Client6", "classhttp_1_1client_1_1tls_1_1_client6.html", null ]
         ] ],
         [ "Client", "classhttp_1_1client_1_1_client.html", "classhttp_1_1client_1_1_client" ],
         [ "ClientContextBase", "classhttp_1_1client_1_1_client_context_base.html", "classhttp_1_1client_1_1_client_context_base" ],

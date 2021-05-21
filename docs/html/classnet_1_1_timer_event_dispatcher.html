@@ -227,7 +227,8 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_timer_event_dispatcher_ab057c0a06962fe33146a1f8df9ac98b3_cgraph.svg" width="416" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_timer_event_dispatcher_ab057c0a06962fe33146a1f8df9ac98b3_cgraph.svg" width="639" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -257,7 +258,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keyword">struct </span>timeval currentTime {</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            0, 0</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        };</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        gettimeofday(&amp;currentTime, <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <a class="code" href="namespacenet_1_1system.html#aa6f351129e5d8c8522b104b4c6d9d62e">system::gettimeofday</a>(&amp;currentTime, <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordflow">for</span> (TimerEventReceiver* timer : <a class="code" href="classnet_1_1_timer_event_dispatcher.html#a1f7146af29121b8732a3d5e536065c79">timerList</a>) {</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            <span class="keywordflow">if</span> (timer-&gt;timeout() &lt;= currentTime) {</div>
@@ -268,10 +269,17 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        }</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div>
 <div class="ttc" id="aclassnet_1_1_timer_event_dispatcher_html_a917b451532196df793e952abc70a5cc8"><div class="ttname"><a href="classnet_1_1_timer_event_dispatcher.html#a917b451532196df793e952abc70a5cc8">net::TimerEventDispatcher::timerListDirty</a></div><div class="ttdeci">bool timerListDirty</div><div class="ttdef"><b>Definition:</b> <a href="_timer_event_dispatcher_8h_source.html#l00061">TimerEventDispatcher.h:61</a></div></div>
+<div class="ttc" id="anamespacenet_1_1system_html_aa6f351129e5d8c8522b104b4c6d9d62e"><div class="ttname"><a href="namespacenet_1_1system.html#aa6f351129e5d8c8522b104b4c6d9d62e">net::system::gettimeofday</a></div><div class="ttdeci">int gettimeofday(struct timeval *tv, struct timezone *tz)</div><div class="ttdef"><b>Definition:</b> <a href="time_8cpp_source.html#l00016">time.cpp:16</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_timer_event_dispatcher_8h_source.html#l00050">timerList</a>, and <a class="el" href="_timer_event_dispatcher_8h_source.html#l00061">timerListDirty</a>.</p>
+<p class="reference">References <a class="el" href="time_8cpp_source.html#l00016">net::system::gettimeofday()</a>, <a class="el" href="_timer_event_dispatcher_8h_source.html#l00050">timerList</a>, and <a class="el" href="_timer_event_dispatcher_8h_source.html#l00061">timerListDirty</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_event_loop_8cpp_source.html#l00060">net::EventLoop::tick()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_timer_event_dispatcher_aeb3ab46e344b2a94c6348b58c747d9c8_cgraph.svg" width="412" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -356,7 +364,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <span class="keyword">struct </span>timeval currentTime {</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                0, 0</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            };</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            gettimeofday(&amp;currentTime, <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <a class="code" href="namespacenet_1_1system.html#aa6f351129e5d8c8522b104b4c6d9d62e">system::gettimeofday</a>(&amp;currentTime, <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <span class="keywordflow">if</span> (tv &lt; currentTime) {</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                tv.tv_sec = 0;</div>
@@ -369,7 +377,15 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">return</span> tv;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="time_8cpp_source.html#l00016">net::system::gettimeofday()</a>.</p>
+
 <p class="reference">Referenced by <a class="el" href="_timer_event_dispatcher_8cpp_source.html#l00103">cancelAll()</a>, and <a class="el" href="_event_loop_8cpp_source.html#l00060">net::EventLoop::tick()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_timer_event_dispatcher_abe13976ac74b218783f77a80f051baeb_cgraph.svg" width="412" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">

@@ -289,15 +289,17 @@ Friends</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="_descriptor_8cpp_source.html#l00034">34</a> of file <a class="el" href="_descriptor_8cpp_source.html">Descriptor.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                            {</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="classnet_1_1_descriptor.html#aeeddb2a18267a5ee82cde77817095787">dontClose</a>()) {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            ::close(<a class="code" href="classnet_1_1_descriptor.html#ae74a867d53babc909e138b86595fdfd8">fd</a>);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <a class="code" href="namespacenet_1_1system.html#a5b804e9ab85ee96fb6af201078653816">system::close</a>(<a class="code" href="classnet_1_1_descriptor.html#ae74a867d53babc909e138b86595fdfd8">fd</a>);</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        }</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div>
+<div class="ttc" id="anamespacenet_1_1system_html_a5b804e9ab85ee96fb6af201078653816"><div class="ttname"><a href="namespacenet_1_1system.html#a5b804e9ab85ee96fb6af201078653816">net::system::close</a></div><div class="ttdeci">int close(int fd)</div><div class="ttdef"><b>Definition:</b> <a href="unistd_8cpp_source.html#l00026">unistd.cpp:26</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_descriptor_8cpp_source.html#l00053">dontClose()</a>, and <a class="el" href="_descriptor_8h_source.html#l00052">fd</a>.</p>
+<p class="reference">References <a class="el" href="unistd_8cpp_source.html#l00026">net::system::close()</a>, <a class="el" href="_descriptor_8cpp_source.html#l00053">dontClose()</a>, and <a class="el" href="_descriptor_8h_source.html#l00052">fd</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_descriptor_a215ad755d3334446966a626e7183aa60_cgraph.svg" width="418" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_descriptor_a215ad755d3334446966a626e7183aa60_cgraph.svg" width="418" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
@@ -337,7 +339,7 @@ Here is the call graph for this function:</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="_descriptor_8h_source.html#l00052">fd</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_file_reader_8cpp_source.html#l00031">FileReader::FileReader()</a>, and <a class="el" href="_socket_8h_source.html#l00055">net::socket::Socket&lt; SocketAddressT &gt;::open()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_file_reader_8cpp_source.html#l00032">FileReader::FileReader()</a>, and <a class="el" href="socket_2_socket_8h_source.html#l00054">net::socket::Socket&lt; SocketAddressT &gt;::open()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -369,7 +371,7 @@ Here is the caller graph for this function:</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classnet_1_1_descriptor.html#a1ecc493b50b4c5ed5cfa3a8746e51f35a64633a68dbee6089ac954c31fdcfcf6c">dontClose</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_descriptor_8cpp_source.html#l00049">dontClose()</a>, <a class="el" href="_descriptor_8cpp_source.html#l00034">~Descriptor()</a>, and <a class="el" href="_socket_8h_source.html#l00046">net::socket::Socket&lt; SocketAddressT &gt;::~Socket()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_descriptor_8cpp_source.html#l00049">dontClose()</a>, <a class="el" href="_descriptor_8cpp_source.html#l00034">~Descriptor()</a>, and <a class="el" href="socket_2_socket_8h_source.html#l00045">net::socket::Socket&lt; SocketAddressT &gt;::~Socket()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -430,7 +432,7 @@ Here is the call graph for this function:</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="_descriptor_8h_source.html#l00052">fd</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_socket_listener_8h_source.html#l00115">net::socket::stream::SocketListener&lt; SocketConnectionT &gt;::acceptEvent()</a>, <a class="el" href="_socket_8h_source.html#l00068">net::socket::Socket&lt; SocketAddressT &gt;::bind()</a>, <a class="el" href="_socket_connector_8h_source.html#l00069">net::socket::stream::SocketConnector&lt; SocketConnectionT &gt;::connect()</a>, <a class="el" href="_socket_connector_8h_source.html#l00101">net::socket::stream::SocketConnector&lt; SocketConnectionT &gt;::connectEvent()</a>, <a class="el" href="_socket_listener_8h_source.html#l00144">net::socket::stream::SocketListener&lt; SocketConnectionT &gt;::end()</a>, <a class="el" href="_socket_writer_8h_source.html#l00057">net::socket::stream::SocketWriter&lt; SocketT &gt;::enqueue()</a>, <a class="el" href="_socket_listener_8h_source.html#l00069">net::socket::stream::SocketListener&lt; SocketConnectionT &gt;::listen()</a>, <a class="el" href="_file_reader_8cpp_source.html#l00051">FileReader::readEvent()</a>, <a class="el" href="_pipe_sink_8cpp_source.html#l00039">net::stream::PipeSink::readEvent()</a>, <a class="el" href="_socket_listener_8h_source.html#l00105">net::socket::stream::SocketListener&lt; SocketConnectionT &gt;::reuseAddress()</a>, <a class="el" href="_socket_8h_source.html#l00083">net::socket::Socket&lt; SocketAddressT &gt;::shutdown()</a>, <a class="el" href="tls_2_socket_connection_8h_source.html#l00057">net::socket::stream::tls::SocketConnection&lt; SocketT &gt;::startSSL()</a>, and <a class="el" href="_pipe_source_8cpp_source.html#l00062">net::stream::PipeSource::writeEvent()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_socket_listener_8h_source.html#l00112">net::socket::stream::SocketListener&lt; SocketConnectionT &gt;::acceptEvent()</a>, <a class="el" href="socket_2_socket_8h_source.html#l00065">net::socket::Socket&lt; SocketAddressT &gt;::bind()</a>, <a class="el" href="_socket_connector_8h_source.html#l00070">net::socket::stream::SocketConnector&lt; SocketConnectionT &gt;::connect()</a>, <a class="el" href="_socket_connector_8h_source.html#l00100">net::socket::stream::SocketConnector&lt; SocketConnectionT &gt;::connectEvent()</a>, <a class="el" href="_socket_listener_8h_source.html#l00139">net::socket::stream::SocketListener&lt; SocketConnectionT &gt;::end()</a>, <a class="el" href="_socket_writer_8h_source.html#l00055">net::socket::stream::SocketWriter&lt; SocketT &gt;::enqueue()</a>, <a class="el" href="_socket_listener_8h_source.html#l00068">net::socket::stream::SocketListener&lt; SocketConnectionT &gt;::listen()</a>, <a class="el" href="_file_reader_8cpp_source.html#l00052">FileReader::readEvent()</a>, <a class="el" href="_pipe_sink_8cpp_source.html#l00040">net::stream::PipeSink::readEvent()</a>, <a class="el" href="_socket_listener_8h_source.html#l00102">net::socket::stream::SocketListener&lt; SocketConnectionT &gt;::reuseAddress()</a>, <a class="el" href="socket_2_socket_8h_source.html#l00078">net::socket::Socket&lt; SocketAddressT &gt;::shutdown()</a>, <a class="el" href="tls_2_socket_connection_8h_source.html#l00057">net::socket::stream::tls::SocketConnection&lt; SocketT &gt;::startSSL()</a>, and <a class="el" href="_pipe_source_8cpp_source.html#l00063">net::stream::PipeSource::writeEvent()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -572,7 +574,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="_descriptor_8h_source.html#l00052">52</a> of file <a class="el" href="_descriptor_8h_source.html">Descriptor.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_descriptor_8cpp_source.html#l00040">attach()</a>, <a class="el" href="_file_reader_8cpp_source.html#l00037">FileReader::connect()</a>, <a class="el" href="_descriptor_8cpp_source.html#l00029">Descriptor()</a>, <a class="el" href="_file_reader_8cpp_source.html#l00031">FileReader::FileReader()</a>, <a class="el" href="_descriptor_8cpp_source.html#l00045">getFd()</a>, <a class="el" href="_socket_8h_source.html#l00055">net::socket::Socket&lt; SocketAddressT &gt;::open()</a>, <a class="el" href="_pipe_sink_8cpp_source.html#l00034">net::stream::PipeSink::PipeSink()</a>, <a class="el" href="_pipe_source_8cpp_source.html#l00035">net::stream::PipeSource::PipeSource()</a>, and <a class="el" href="_descriptor_8cpp_source.html#l00034">~Descriptor()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_descriptor_8cpp_source.html#l00040">attach()</a>, <a class="el" href="_file_reader_8cpp_source.html#l00038">FileReader::connect()</a>, <a class="el" href="_descriptor_8cpp_source.html#l00029">Descriptor()</a>, <a class="el" href="_file_reader_8cpp_source.html#l00032">FileReader::FileReader()</a>, <a class="el" href="_descriptor_8cpp_source.html#l00045">getFd()</a>, <a class="el" href="socket_2_socket_8h_source.html#l00054">net::socket::Socket&lt; SocketAddressT &gt;::open()</a>, <a class="el" href="_pipe_sink_8cpp_source.html#l00035">net::stream::PipeSink::PipeSink()</a>, <a class="el" href="_pipe_source_8cpp_source.html#l00036">net::stream::PipeSource::PipeSource()</a>, and <a class="el" href="_descriptor_8cpp_source.html#l00034">~Descriptor()</a>.</p>
 
 </div>
 </div>
