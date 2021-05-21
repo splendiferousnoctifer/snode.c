@@ -63,13 +63,13 @@ var annotated_dup =
         [ "Server", "classhttp_1_1server_1_1_server.html", "classhttp_1_1server_1_1_server" ]
       ] ],
       [ "websocket", "namespacehttp_1_1websocket.html", [
-        [ "WSServerContext", "classhttp_1_1websocket_1_1_w_s_server_context.html", "classhttp_1_1websocket_1_1_w_s_server_context" ],
-        [ "WSReceiver", "classhttp_1_1websocket_1_1_w_s_receiver.html", "classhttp_1_1websocket_1_1_w_s_receiver" ],
-        [ "WSTransmitter", "classhttp_1_1websocket_1_1_w_s_transmitter.html", "classhttp_1_1websocket_1_1_w_s_transmitter" ]
+        [ "WSServerContext", "classhttp_1_1websocket_1_1_w_s_server_context.html", "classhttp_1_1websocket_1_1_w_s_server_context" ]
       ] ],
       [ "CookieOptions", "classhttp_1_1_cookie_options.html", "classhttp_1_1_cookie_options" ],
       [ "Parser", "classhttp_1_1_parser.html", "classhttp_1_1_parser" ],
-      [ "StatusCode", "classhttp_1_1_status_code.html", "classhttp_1_1_status_code" ]
+      [ "StatusCode", "classhttp_1_1_status_code.html", "classhttp_1_1_status_code" ],
+      [ "WSReceiver", "classhttp_1_1_w_s_receiver.html", "classhttp_1_1_w_s_receiver" ],
+      [ "WSTransmitter", "classhttp_1_1_w_s_transmitter.html", "classhttp_1_1_w_s_transmitter" ]
     ] ],
     [ "net", "namespacenet.html", [
       [ "socket", "namespacenet_1_1socket.html", [

@@ -14,7 +14,7 @@ var searchData=
   ['filereader_176',['FileReader',['../class_file_reader.html',1,'FileReader'],['../class_file_reader.html#a6683050f7c72c4f8317bd6e1d61e032b',1,'FileReader::FileReader()']]],
   ['filereader_2ecpp_177',['FileReader.cpp',['../_file_reader_8cpp.html',1,'']]],
   ['filereader_2eh_178',['FileReader.h',['../_file_reader_8h.html',1,'']]],
-  ['fin_179',['fin',['../classhttp_1_1websocket_1_1_w_s_receiver.html#a147da020aabe6a35770820c3cac42551',1,'http::websocket::WSReceiver']]],
+  ['fin_179',['fin',['../classhttp_1_1_w_s_receiver.html#a9c7602472f53bce4b4e6cb9938bb3849',1,'http::WSReceiver']]],
   ['firstline_180',['FIRSTLINE',['../classhttp_1_1_parser.html#ab58d2b97db1c5bad0e2abfdba95514d2a75c6b2428da2036422b35ca9b1f1f8c4',1,'http::Parser']]],
   ['flags_181',['FLAGS',['../classnet_1_1_descriptor.html#a1ecc493b50b4c5ed5cfa3a8746e51f35',1,'net::Descriptor']]],
   ['for_182',['for',['../instrumentation_8cpp.html#ab6396326a77bd159130d17cf8528075c',1,'instrumentation.cpp']]],

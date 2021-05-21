@@ -52,8 +52,8 @@ var hierarchy =
       [ "net::DescriptorEventDispatcher::DescriptorEventReceiverList", "classnet_1_1_descriptor_event_dispatcher_1_1_descriptor_event_receiver_list.html", null ]
     ] ],
     [ "Logger", "class_logger.html", null ],
-    [ "http::websocket::WSReceiver::MaskingKey", "unionhttp_1_1websocket_1_1_w_s_receiver_1_1_masking_key.html", null ],
-    [ "http::websocket::WSTransmitter::MaskingKey", "unionhttp_1_1websocket_1_1_w_s_transmitter_1_1_masking_key.html", null ],
+    [ "http::WSReceiver::MaskingKey", "unionhttp_1_1_w_s_receiver_1_1_masking_key.html", null ],
+    [ "http::WSTransmitter::MaskingKey", "unionhttp_1_1_w_s_transmitter_1_1_masking_key.html", null ],
     [ "MimeTypes", "class_mime_types.html", null ],
     [ "express::MountPoint", "structexpress_1_1_mount_point.html", null ],
     [ "utils::MultibleAttributeInjector", "classutils_1_1_multible_attribute_injector.html", [
@@ -273,10 +273,10 @@ var hierarchy =
       ] ]
     ] ],
     [ "net::TimerEventDispatcher::timernode_lt", "classnet_1_1_timer_event_dispatcher_1_1timernode__lt.html", null ],
-    [ "http::websocket::WSReceiver", "classhttp_1_1websocket_1_1_w_s_receiver.html", [
+    [ "http::WSReceiver", "classhttp_1_1_w_s_receiver.html", [
       [ "http::websocket::WSServerContext", "classhttp_1_1websocket_1_1_w_s_server_context.html", null ]
     ] ],
-    [ "http::websocket::WSTransmitter", "classhttp_1_1websocket_1_1_w_s_transmitter.html", [
+    [ "http::WSTransmitter", "classhttp_1_1_w_s_transmitter.html", [
       [ "http::websocket::WSServerContext", "classhttp_1_1websocket_1_1_w_s_server_context.html", null ]
     ] ]
 ];

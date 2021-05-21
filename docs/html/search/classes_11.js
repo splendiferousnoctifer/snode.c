@@ -8,7 +8,7 @@ var searchData=
   ['webappt_3c_20http_3a_3aserver_3a_3atls_3a_3aserver6_3c_20express_3a_3arequest_2c_20express_3a_3aresponse_20_3e_20_3e_901',['WebAppT&lt; http::server::tls::Server6&lt; express::Request, express::Response &gt; &gt;',['../classexpress_1_1_web_app_t.html',1,'express']]],
   ['webappt_3c_20http_3a_3aserver_3a_3atls_3a_3aserver_3c_20express_3a_3arequest_2c_20express_3a_3aresponse_20_3e_20_3e_902',['WebAppT&lt; http::server::tls::Server&lt; express::Request, express::Response &gt; &gt;',['../classexpress_1_1_web_app_t.html',1,'express']]],
   ['writeeventreceiver_903',['WriteEventReceiver',['../classnet_1_1_write_event_receiver.html',1,'net']]],
-  ['wsreceiver_904',['WSReceiver',['../classhttp_1_1websocket_1_1_w_s_receiver.html',1,'http::websocket']]],
+  ['wsreceiver_904',['WSReceiver',['../classhttp_1_1_w_s_receiver.html',1,'http']]],
   ['wsservercontext_905',['WSServerContext',['../classhttp_1_1websocket_1_1_w_s_server_context.html',1,'http::websocket']]],
-  ['wstransmitter_906',['WSTransmitter',['../classhttp_1_1websocket_1_1_w_s_transmitter.html',1,'http::websocket']]]
+  ['wstransmitter_906',['WSTransmitter',['../classhttp_1_1_w_s_transmitter.html',1,'http']]]
 ];

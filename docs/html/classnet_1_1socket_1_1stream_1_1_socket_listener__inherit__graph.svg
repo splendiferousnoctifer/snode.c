@@ -17,12 +17,12 @@
 <text text-anchor="start" x="87" y="-685.5" font-family="Helvetica,sans-Serif" font-size="10.00">net::socket::stream</text>
 <text text-anchor="middle" x="175" y="-674.5" font-family="Helvetica,sans-Serif" font-size="10.00">::SocketListener&lt; SocketConnectionT &gt;</text>
 <polyline fill="none" stroke="black" points="79,-667.5 271,-667.5 "/>
-<text text-anchor="start" x="87" y="-655.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; socketProtocolFactory</text>
-<text text-anchor="start" x="87" y="-644.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onConnect</text>
-<text text-anchor="start" x="87" y="-633.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onDestruct</text>
-<text text-anchor="start" x="87" y="-622.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onConnected</text>
-<text text-anchor="start" x="87" y="-611.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onDisconnect</text>
-<text text-anchor="start" x="87" y="-600.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; options</text>
+<text text-anchor="start" x="87" y="-655.5" font-family="Helvetica,sans-Serif" font-size="10.00"># options</text>
+<text text-anchor="start" x="87" y="-644.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; socketProtocolFactory</text>
+<text text-anchor="start" x="87" y="-633.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onConnect</text>
+<text text-anchor="start" x="87" y="-622.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onDestruct</text>
+<text text-anchor="start" x="87" y="-611.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onConnected</text>
+<text text-anchor="start" x="87" y="-600.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onDisconnect</text>
 <polyline fill="none" stroke="black" points="79,-593.5 271,-593.5 "/>
 <text text-anchor="start" x="87" y="-581.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ SocketListener()</text>
 <text text-anchor="start" x="87" y="-570.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ SocketListener()</text>
@@ -48,12 +48,12 @@
 <text text-anchor="start" x="40.5" y="-371.5" font-family="Helvetica,sans-Serif" font-size="10.00">::legacy::SocketConnection</text>
 <text text-anchor="middle" x="101" y="-360.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; SocketT &gt; &gt;</text>
 <polyline fill="none" stroke="black" points="32.5,-353.5 169.5,-353.5 "/>
-<text text-anchor="start" x="40.5" y="-341.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; socketProtocolFactory</text>
-<text text-anchor="start" x="40.5" y="-330.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onConnect</text>
-<text text-anchor="start" x="40.5" y="-319.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onDestruct</text>
-<text text-anchor="start" x="40.5" y="-308.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onConnected</text>
-<text text-anchor="start" x="40.5" y="-297.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onDisconnect</text>
-<text text-anchor="start" x="40.5" y="-286.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; options</text>
+<text text-anchor="start" x="40.5" y="-341.5" font-family="Helvetica,sans-Serif" font-size="10.00"># options</text>
+<text text-anchor="start" x="40.5" y="-330.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; socketProtocolFactory</text>
+<text text-anchor="start" x="40.5" y="-319.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onConnect</text>
+<text text-anchor="start" x="40.5" y="-308.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onDestruct</text>
+<text text-anchor="start" x="40.5" y="-297.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onConnected</text>
+<text text-anchor="start" x="40.5" y="-286.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onDisconnect</text>
 <polyline fill="none" stroke="black" points="32.5,-279.5 169.5,-279.5 "/>
 <text text-anchor="start" x="40.5" y="-267.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ SocketListener()</text>
 <text text-anchor="start" x="40.5" y="-256.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ SocketListener()</text>
@@ -87,12 +87,12 @@
 <text text-anchor="start" x="195.5" y="-371.5" font-family="Helvetica,sans-Serif" font-size="10.00">::tls::SocketConnection</text>
 <text text-anchor="middle" x="251" y="-360.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; SocketT &gt; &gt;</text>
 <polyline fill="none" stroke="black" points="187.5,-353.5 314.5,-353.5 "/>
-<text text-anchor="start" x="195.5" y="-341.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; socketProtocolFactory</text>
-<text text-anchor="start" x="195.5" y="-330.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onConnect</text>
-<text text-anchor="start" x="195.5" y="-319.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onDestruct</text>
-<text text-anchor="start" x="195.5" y="-308.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onConnected</text>
-<text text-anchor="start" x="195.5" y="-297.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onDisconnect</text>
-<text text-anchor="start" x="195.5" y="-286.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; options</text>
+<text text-anchor="start" x="195.5" y="-341.5" font-family="Helvetica,sans-Serif" font-size="10.00"># options</text>
+<text text-anchor="start" x="195.5" y="-330.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; socketProtocolFactory</text>
+<text text-anchor="start" x="195.5" y="-319.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onConnect</text>
+<text text-anchor="start" x="195.5" y="-308.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onDestruct</text>
+<text text-anchor="start" x="195.5" y="-297.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onConnected</text>
+<text text-anchor="start" x="195.5" y="-286.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onDisconnect</text>
 <polyline fill="none" stroke="black" points="187.5,-279.5 314.5,-279.5 "/>
 <text text-anchor="start" x="195.5" y="-267.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ SocketListener()</text>
 <text text-anchor="start" x="195.5" y="-256.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ SocketListener()</text>

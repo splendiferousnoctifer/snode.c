@@ -22,12 +22,12 @@ var dir_de5b03c9e251d763a573c2ccd217de59 =
     ] ],
     [ "WSReceiver.cpp", "_w_s_receiver_8cpp.html", null ],
     [ "WSReceiver.h", "_w_s_receiver_8h.html", [
-      [ "WSReceiver", "classhttp_1_1websocket_1_1_w_s_receiver.html", "classhttp_1_1websocket_1_1_w_s_receiver" ],
-      [ "MaskingKey", "unionhttp_1_1websocket_1_1_w_s_receiver_1_1_masking_key.html", "unionhttp_1_1websocket_1_1_w_s_receiver_1_1_masking_key" ]
+      [ "WSReceiver", "classhttp_1_1_w_s_receiver.html", "classhttp_1_1_w_s_receiver" ],
+      [ "MaskingKey", "unionhttp_1_1_w_s_receiver_1_1_masking_key.html", "unionhttp_1_1_w_s_receiver_1_1_masking_key" ]
     ] ],
     [ "WSTransmitter.cpp", "_w_s_transmitter_8cpp.html", "_w_s_transmitter_8cpp" ],
     [ "WSTransmitter.h", "_w_s_transmitter_8h.html", [
-      [ "WSTransmitter", "classhttp_1_1websocket_1_1_w_s_transmitter.html", "classhttp_1_1websocket_1_1_w_s_transmitter" ],
-      [ "MaskingKey", "unionhttp_1_1websocket_1_1_w_s_transmitter_1_1_masking_key.html", "unionhttp_1_1websocket_1_1_w_s_transmitter_1_1_masking_key" ]
+      [ "WSTransmitter", "classhttp_1_1_w_s_transmitter.html", "classhttp_1_1_w_s_transmitter" ],
+      [ "MaskingKey", "unionhttp_1_1_w_s_transmitter_1_1_masking_key.html", "unionhttp_1_1_w_s_transmitter_1_1_masking_key" ]
     ] ]
 ];
