@@ -85,8 +85,8 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 
 <h3><a id="index_s"></a>- s -</h3><ul>
 <li>send()
-: <a class="el" href="classnet_1_1stream_1_1_pipe_source.html#a7ee7bd9951740fd33fa2333deb87cff0">net::stream::PipeSource</a>
-, <a class="el" href="classnet_1_1stream_1_1_source.html#a5bfdccf8217b2f8dfe46ca66e0fcaf11">net::stream::Source</a>
+: <a class="el" href="classnet_1_1pipe_1_1_pipe_source.html#a498603e47dcbea6a278ddf71c1286ff3">net::pipe::PipeSource</a>
+, <a class="el" href="classnet_1_1pipe_1_1_source.html#a1ca8291b5014e74e2687c435ed85454d">net::pipe::Source</a>
 </li>
 <li>sendFile()
 : <a class="el" href="classexpress_1_1_response.html#aa7a3b9c880c1af5b11e832f84eeda58c">express::Response</a>
@@ -101,11 +101,11 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 : <a class="el" href="classnet_1_1socket_1_1ip_1_1address_1_1ipv4_1_1_inet_address.html#a02a3bfd9a4a9a58f28160688ec714d66">net::socket::ip::address::ipv4::InetAddress</a>
 , <a class="el" href="classnet_1_1socket_1_1ip_1_1address_1_1ipv6_1_1_inet_address.html#a10f3e74e9c3ec17adcbc3aadd22e17c8">net::socket::ip::address::ipv6::InetAddress</a>
 </li>
-<li>Server
-: <a class="el" href="classexpress_1_1_web_app_t.html#aaee690e0bb45eca830326a5bc6091362">express::WebAppT&lt; ServerT &gt;</a>
-</li>
 <li>server
 : <a class="el" href="classexpress_1_1_web_app_t.html#a43f343623b01c698256e2c0eb4e3226f">express::WebAppT&lt; ServerT &gt;</a>
+</li>
+<li>Server
+: <a class="el" href="classexpress_1_1_web_app_t.html#aaee690e0bb45eca830326a5bc6091362">express::WebAppT&lt; ServerT &gt;</a>
 </li>
 <li>serverNameCallback()
 : <a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_listener.html#ab0f26296910b90eccd91cd455cbfe163">net::socket::stream::tls::SocketListener&lt; SocketT &gt;</a>
@@ -127,14 +127,14 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 : <a class="el" href="class_logger.html#a76737728e58470cc99536839d6fbd631">Logger</a>
 </li>
 <li>setOnData()
-: <a class="el" href="classnet_1_1stream_1_1_pipe_sink.html#a826ee23027ee75dba18ad081fe59df93">net::stream::PipeSink</a>
+: <a class="el" href="classnet_1_1pipe_1_1_pipe_sink.html#acc2d9a1555c2740aa460bdd0a298ac26">net::pipe::PipeSink</a>
 </li>
 <li>setOnEof()
-: <a class="el" href="classnet_1_1stream_1_1_pipe_sink.html#ab81e3b6504be37cd2da9312dd9b80356">net::stream::PipeSink</a>
+: <a class="el" href="classnet_1_1pipe_1_1_pipe_sink.html#abc4a754eab94b1f1200d5b14e6ddea7a">net::pipe::PipeSink</a>
 </li>
 <li>setOnError()
-: <a class="el" href="classnet_1_1stream_1_1_pipe_sink.html#a016f3e5e94b4c2b27844b98573920962">net::stream::PipeSink</a>
-, <a class="el" href="classnet_1_1stream_1_1_pipe_source.html#a92cb3a8cf0d57c29f60620bc3f78890b">net::stream::PipeSource</a>
+: <a class="el" href="classnet_1_1pipe_1_1_pipe_sink.html#ab585fa823a594da64c5f350ed6dfc7cb">net::pipe::PipeSink</a>
+, <a class="el" href="classnet_1_1pipe_1_1_pipe_source.html#af55bf80c3704ad70336d48c80a9d5af5">net::pipe::PipeSource</a>
 </li>
 <li>setSocketConnection()
 : <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html#a8af5447e04126e4dc1f8763f344a2f6f">net::socket::stream::SocketProtocol</a>
@@ -165,10 +165,10 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 : <a class="el" href="classnet_1_1timer_1_1_timer.html#a31ab90fa1d4e9b25b9b67d9637c636ac">net::timer::Timer</a>
 </li>
 <li>Sink()
-: <a class="el" href="classnet_1_1stream_1_1_sink.html#a57885328b1177461700073283813472b">net::stream::Sink</a>
+: <a class="el" href="classnet_1_1pipe_1_1_sink.html#ac31cde346423102e20a9b01895c2a3a5">net::pipe::Sink</a>
 </li>
 <li>sink
-: <a class="el" href="classnet_1_1stream_1_1_source.html#a0e5b38f9b58a604e6d23a61c8d1929fb">net::stream::Source</a>
+: <a class="el" href="classnet_1_1pipe_1_1_source.html#a989e34c9a612655a6d9e18b6d23afd17">net::pipe::Source</a>
 </li>
 <li>SNodeC
 : <a class="el" href="classnet_1_1_event_loop.html#ab84101a4341e7fdedf48702c35067cd4">net::EventLoop</a>
@@ -249,18 +249,20 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 , <a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#aefe9edd9b3bb19b0f76ad9deef97ea70">net::socket::stream::tls::SocketConnection&lt; SocketT &gt;</a>
 , <a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_listener.html#ad1d1eb7183eef5998ab8d47d86939560">net::socket::stream::tls::SocketListener&lt; SocketT &gt;</a>
 </li>
+<li>SocketProtocol
+: <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_client.html#a3b83363830038d27f3556931ab6a84d3">net::socket::stream::SocketClient&lt; SocketProtocolT, SocketConnectorT &gt;</a>
+</li>
 <li>socketProtocol
 : <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_client.html#a5b9637f98e8b12f2c30abe58233e19f7">net::socket::stream::SocketClient&lt; SocketProtocolT, SocketConnectorT &gt;</a>
 </li>
 <li>SocketProtocol
-: <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_client.html#a3b83363830038d27f3556931ab6a84d3">net::socket::stream::SocketClient&lt; SocketProtocolT, SocketConnectorT &gt;</a>
+: <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#ab8f0d5c78820db54e507bb0b9cb8b383">net::socket::stream::SocketConnectionBase</a>
 </li>
 <li>socketProtocol
 : <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#a72c3e6d1cd79de1d0167972815fa3ed1">net::socket::stream::SocketConnectionBase</a>
 </li>
 <li>SocketProtocol
-: <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#ab8f0d5c78820db54e507bb0b9cb8b383">net::socket::stream::SocketConnectionBase</a>
-, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_server.html#a180e23070214c3036ed498c394c20424">net::socket::stream::SocketServer&lt; SocketProtocolT, SocketListenerT &gt;</a>
+: <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_server.html#a180e23070214c3036ed498c394c20424">net::socket::stream::SocketServer&lt; SocketProtocolT, SocketListenerT &gt;</a>
 </li>
 <li>socketProtocol
 : <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_server.html#a6be1a50517735c20dd7b15a3b244d83d">net::socket::stream::SocketServer&lt; SocketProtocolT, SocketListenerT &gt;</a>
@@ -282,10 +284,10 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 , <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#a7e241f91ccc2e05f921bc52d75df9acb">net::socket::stream::SocketWriter&lt; SocketT &gt;</a>
 </li>
 <li>source
-: <a class="el" href="classnet_1_1stream_1_1_sink.html#a4125cb3a6098fa118b161c67f375cba0">net::stream::Sink</a>
+: <a class="el" href="classnet_1_1pipe_1_1_sink.html#ad315ff6dbf1e902702eb1be132688791">net::pipe::Sink</a>
 </li>
 <li>Source()
-: <a class="el" href="classnet_1_1stream_1_1_source.html#a16a4c77410464fcd8a31229d4beee2e2">net::stream::Source</a>
+: <a class="el" href="classnet_1_1pipe_1_1_source.html#aea0e88eddf80b355f14c5dcff9c0bb62">net::pipe::Source</a>
 </li>
 <li>ssl
 : <a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a734d21572bb69afea8a8c3d8b9af6d69">net::socket::stream::tls::SocketConnection&lt; SocketT &gt;</a>

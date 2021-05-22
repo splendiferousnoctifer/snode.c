@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['vhost_675',['VHost',['../classexpress_1_1middleware_1_1_v_host.html',1,'express::middleware']]]
+  ['vhost_671',['VHost',['../classexpress_1_1middleware_1_1_v_host.html',1,'express::middleware']]]
 ];

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>snode.c: net/stream/Pipe.cpp Source File</title>
+<title>snode.c: net/pipe/Pipe.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -103,10 +103,10 @@ $(document).ready(function(){initNavTree('_pipe_8cpp_source.html',''); initResiz
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * along with this program. If not, see &lt;http://www.gnu.org/licenses/&gt;.</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_pipe_8h.html">net/stream/Pipe.h</a>&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_pipe_8h.html">net/pipe/Pipe.h</a>&quot;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_pipe_sink_8h.html">net/stream/PipeSink.h</a>&quot;</span>   <span class="comment">// for PipeSink</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_pipe_source_8h.html">net/stream/PipeSource.h</a>&quot;</span> <span class="comment">// for PipeSource</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_pipe_sink_8h.html">net/pipe/PipeSink.h</a>&quot;</span>   <span class="comment">// for PipeSink</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_pipe_source_8h.html">net/pipe/PipeSource.h</a>&quot;</span> <span class="comment">// for PipeSource</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#ifndef DOXYGEN_SHOULD_SKIP_THIS</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
@@ -116,28 +116,28 @@ $(document).ready(function(){initNavTree('_pipe_8cpp_source.html',''); initResiz
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* DOXYGEN_SHOULD_SKIP_THIS */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacenet_1_1stream.html">net::stream</a> {</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="namespacenet_1_1pipe.html">   32</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacenet_1_1pipe.html">net::pipe</a> {</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classnet_1_1stream_1_1_pipe.html#aac7d605b8464f94f2be3bc754e157e27">   34</a></span>&#160;    <a class="code" href="classnet_1_1stream_1_1_pipe.html#aac7d605b8464f94f2be3bc754e157e27">Pipe::Pipe</a>(<span class="keyword">const</span> std::function&lt;<span class="keywordtype">void</span>(<a class="code" href="classnet_1_1stream_1_1_pipe_source.html">PipeSource</a>&amp; pipeSource, <a class="code" href="classnet_1_1stream_1_1_pipe_sink.html">PipeSink</a>&amp; pipsSink)&gt;&amp; onSuccess,</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classnet_1_1pipe_1_1_pipe.html#a442a810f04fb88f43ed832d87dab5b17">   34</a></span>&#160;    <a class="code" href="classnet_1_1pipe_1_1_pipe.html#a442a810f04fb88f43ed832d87dab5b17">Pipe::Pipe</a>(<span class="keyword">const</span> std::function&lt;<span class="keywordtype">void</span>(<a class="code" href="classnet_1_1pipe_1_1_pipe_source.html">PipeSource</a>&amp; pipeSource, <a class="code" href="classnet_1_1pipe_1_1_pipe_sink.html">PipeSink</a>&amp; pipsSink)&gt;&amp; onSuccess,</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;               <span class="keyword">const</span> std::function&lt;<span class="keywordtype">void</span>(<span class="keywordtype">int</span> err)&gt;&amp; onError) {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordtype">int</span> ret = <a class="code" href="namespacenet_1_1system.html#aa7a36ce65ce1a210bbf480b6a658b8e4">pipe2</a>(<a class="code" href="classnet_1_1stream_1_1_pipe.html#a5c781e2a4c777a7f026b4b3598ec3c1e">pipeFd</a>, O_NONBLOCK);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordtype">int</span> ret = <a class="code" href="namespacenet_1_1system.html#aa7a36ce65ce1a210bbf480b6a658b8e4">pipe2</a>(<a class="code" href="classnet_1_1pipe_1_1_pipe.html#a129ea9d88be0f53f1b2359c8adebc77f">pipeFd</a>, O_NONBLOCK);</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordflow">if</span> (ret == 0) {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            onSuccess(*(<span class="keyword">new</span> <a class="code" href="classnet_1_1stream_1_1_pipe_source.html">PipeSource</a>(<a class="code" href="classnet_1_1stream_1_1_pipe.html#a5c781e2a4c777a7f026b4b3598ec3c1e">pipeFd</a>[1])), *(<span class="keyword">new</span> <a class="code" href="classnet_1_1stream_1_1_pipe_sink.html">PipeSink</a>(<a class="code" href="classnet_1_1stream_1_1_pipe.html#a5c781e2a4c777a7f026b4b3598ec3c1e">pipeFd</a>[0])));</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            onSuccess(*(<span class="keyword">new</span> <a class="code" href="classnet_1_1pipe_1_1_pipe_source.html">PipeSource</a>(<a class="code" href="classnet_1_1pipe_1_1_pipe.html#a129ea9d88be0f53f1b2359c8adebc77f">pipeFd</a>[1])), *(<span class="keyword">new</span> <a class="code" href="classnet_1_1pipe_1_1_pipe_sink.html">PipeSink</a>(<a class="code" href="classnet_1_1pipe_1_1_pipe.html#a129ea9d88be0f53f1b2359c8adebc77f">pipeFd</a>[0])));</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            onError(errno);</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        }</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;} <span class="comment">// namespace net::stream</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;} <span class="comment">// namespace net::pipe</span></div>
 <div class="ttc" id="a_pipe_8h_html"><div class="ttname"><a href="_pipe_8h.html">Pipe.h</a></div></div>
 <div class="ttc" id="a_pipe_sink_8h_html"><div class="ttname"><a href="_pipe_sink_8h.html">PipeSink.h</a></div></div>
 <div class="ttc" id="a_pipe_source_8h_html"><div class="ttname"><a href="_pipe_source_8h.html">PipeSource.h</a></div></div>
-<div class="ttc" id="aclassnet_1_1stream_1_1_pipe_html_a5c781e2a4c777a7f026b4b3598ec3c1e"><div class="ttname"><a href="classnet_1_1stream_1_1_pipe.html#a5c781e2a4c777a7f026b4b3598ec3c1e">net::stream::Pipe::pipeFd</a></div><div class="ttdeci">int pipeFd[2]</div><div class="ttdef"><b>Definition:</b> <a href="_pipe_8h_source.html#l00041">Pipe.h:41</a></div></div>
-<div class="ttc" id="aclassnet_1_1stream_1_1_pipe_html_aac7d605b8464f94f2be3bc754e157e27"><div class="ttname"><a href="classnet_1_1stream_1_1_pipe.html#aac7d605b8464f94f2be3bc754e157e27">net::stream::Pipe::Pipe</a></div><div class="ttdeci">Pipe(const std::function&lt; void(PipeSource &amp;pipeSource, PipeSink &amp;pipsSink)&gt; &amp;onSuccess, const std::function&lt; void(int err)&gt; &amp;onError)</div><div class="ttdef"><b>Definition:</b> <a href="_pipe_8cpp_source.html#l00034">Pipe.cpp:34</a></div></div>
-<div class="ttc" id="aclassnet_1_1stream_1_1_pipe_sink_html"><div class="ttname"><a href="classnet_1_1stream_1_1_pipe_sink.html">net::stream::PipeSink</a></div><div class="ttdef"><b>Definition:</b> <a href="_pipe_sink_8h_source.html#l00034">PipeSink.h:36</a></div></div>
-<div class="ttc" id="aclassnet_1_1stream_1_1_pipe_source_html"><div class="ttname"><a href="classnet_1_1stream_1_1_pipe_source.html">net::stream::PipeSource</a></div><div class="ttdef"><b>Definition:</b> <a href="_pipe_source_8h_source.html#l00036">PipeSource.h:38</a></div></div>
-<div class="ttc" id="anamespacenet_1_1stream_html"><div class="ttname"><a href="namespacenet_1_1stream.html">net::stream</a></div><div class="ttdef"><b>Definition:</b> <a href="_file_reader_8h_source.html#l00033">FileReader.h:33</a></div></div>
+<div class="ttc" id="aclassnet_1_1pipe_1_1_pipe_html_a129ea9d88be0f53f1b2359c8adebc77f"><div class="ttname"><a href="classnet_1_1pipe_1_1_pipe.html#a129ea9d88be0f53f1b2359c8adebc77f">net::pipe::Pipe::pipeFd</a></div><div class="ttdeci">int pipeFd[2]</div><div class="ttdef"><b>Definition:</b> <a href="_pipe_8h_source.html#l00041">Pipe.h:41</a></div></div>
+<div class="ttc" id="aclassnet_1_1pipe_1_1_pipe_html_a442a810f04fb88f43ed832d87dab5b17"><div class="ttname"><a href="classnet_1_1pipe_1_1_pipe.html#a442a810f04fb88f43ed832d87dab5b17">net::pipe::Pipe::Pipe</a></div><div class="ttdeci">Pipe(const std::function&lt; void(PipeSource &amp;pipeSource, PipeSink &amp;pipsSink)&gt; &amp;onSuccess, const std::function&lt; void(int err)&gt; &amp;onError)</div><div class="ttdef"><b>Definition:</b> <a href="_pipe_8cpp_source.html#l00034">Pipe.cpp:34</a></div></div>
+<div class="ttc" id="aclassnet_1_1pipe_1_1_pipe_sink_html"><div class="ttname"><a href="classnet_1_1pipe_1_1_pipe_sink.html">net::pipe::PipeSink</a></div><div class="ttdef"><b>Definition:</b> <a href="_pipe_sink_8h_source.html#l00034">PipeSink.h:36</a></div></div>
+<div class="ttc" id="aclassnet_1_1pipe_1_1_pipe_source_html"><div class="ttname"><a href="classnet_1_1pipe_1_1_pipe_source.html">net::pipe::PipeSource</a></div><div class="ttdef"><b>Definition:</b> <a href="_pipe_source_8h_source.html#l00036">PipeSource.h:38</a></div></div>
+<div class="ttc" id="anamespacenet_1_1pipe_html"><div class="ttname"><a href="namespacenet_1_1pipe.html">net::pipe</a></div><div class="ttdef"><b>Definition:</b> <a href="_pipe_8cpp_source.html#l00032">Pipe.cpp:32</a></div></div>
 <div class="ttc" id="anamespacenet_1_1system_html_aa7a36ce65ce1a210bbf480b6a658b8e4"><div class="ttname"><a href="namespacenet_1_1system.html#aa7a36ce65ce1a210bbf480b6a658b8e4">net::system::pipe2</a></div><div class="ttdeci">int pipe2(int pipefd[2], int flags)</div><div class="ttdef"><b>Definition:</b> <a href="unistd_8cpp_source.html#l00031">unistd.cpp:31</a></div></div>
 <div class="ttc" id="aunistd_8h_html"><div class="ttname"><a href="unistd_8h.html">unistd.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -145,7 +145,7 @@ $(document).ready(function(){initNavTree('_pipe_8cpp_source.html',''); initResiz
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_427baa8a9a5be237f298d4545d0d1ce2.html">net</a></li><li class="navelem"><a class="el" href="dir_c539ef0a795604dd07c0fa5c7f0d7274.html">stream</a></li><li class="navelem"><a class="el" href="_pipe_8cpp.html">Pipe.cpp</a></li>
+    <li class="navelem"><a class="el" href="dir_427baa8a9a5be237f298d4545d0d1ce2.html">net</a></li><li class="navelem"><a class="el" href="dir_2f8c852d54e1ac08fb6f2013f6ec9573.html">pipe</a></li><li class="navelem"><a class="el" href="_pipe_8cpp.html">Pipe.cpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

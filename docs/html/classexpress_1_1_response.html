@@ -93,14 +93,12 @@ $(document).ready(function(){initNavTree('classexpress_1_1_response.html',''); i
 <div class="dynheader">
 Inheritance diagram for express::Response:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classexpress_1_1_response__inherit__graph.svg" width="146" height="331"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classexpress_1_1_response__inherit__graph.svg" width="146" height="331"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <div class="dynheader">
 Collaboration diagram for express::Response:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classexpress_1_1_response__coll__graph.svg" width="146" height="331"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classexpress_1_1_response__coll__graph.svg" width="146" height="331"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -365,7 +363,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                                {<span class="stringliteral">&quot;Last-Modified&quot;</span>, httputils::file_mod_http_date(absolutFileName)}});</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                headers.insert_or_assign(<span class="stringliteral">&quot;Content-Length&quot;</span>, std::to_string(std::filesystem::file_size(absolutFileName)));</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                <a class="code" href="class_file_reader.html#ae4a55ccb7e3e43d18b6cd7eca9de34cf">FileReader::connect</a>(absolutFileName, *<span class="keyword">this</span>, [<span class="keyword">this</span>, onError](<span class="keywordtype">int</span> err) -&gt; <span class="keywordtype">void</span> {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                <a class="code" href="class_file_reader.html#aaf86cac20181301f63ad3bed68856953">FileReader::connect</a>(absolutFileName, *<span class="keyword">this</span>, [<span class="keyword">this</span>, onError](<span class="keywordtype">int</span> err) -&gt; <span class="keywordtype">void</span> {</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                    serverContext-&gt;terminateConnection();</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                    onError(err);</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                });</div>
@@ -382,7 +380,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            end();</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        }</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
-<div class="ttc" id="aclass_file_reader_html_ae4a55ccb7e3e43d18b6cd7eca9de34cf"><div class="ttname"><a href="class_file_reader.html#ae4a55ccb7e3e43d18b6cd7eca9de34cf">FileReader::connect</a></div><div class="ttdeci">static FileReader * connect(const std::string &amp;path, net::stream::Sink &amp;writeStream, const std::function&lt; void(int err)&gt; &amp;onError)</div><div class="ttdef"><b>Definition:</b> <a href="_file_reader_8cpp_source.html#l00038">FileReader.cpp:38</a></div></div>
+<div class="ttc" id="aclass_file_reader_html_aaf86cac20181301f63ad3bed68856953"><div class="ttname"><a href="class_file_reader.html#aaf86cac20181301f63ad3bed68856953">FileReader::connect</a></div><div class="ttdeci">static FileReader * connect(const std::string &amp;path, net::pipe::Sink &amp;writeStream, const std::function&lt; void(int err)&gt; &amp;onError)</div><div class="ttdef"><b>Definition:</b> <a href="_file_reader_8cpp_source.html#l00038">FileReader.cpp:38</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="_file_reader_8cpp_source.html#l00038">FileReader::connect()</a>.</p>
 

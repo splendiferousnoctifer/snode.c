@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>snode.c: net/stream/Sink.cpp Source File</title>
+<title>snode.c: net/pipe/Sink.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -103,53 +103,53 @@ $(document).ready(function(){initNavTree('_sink_8cpp_source.html',''); initResiz
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * along with this program. If not, see &lt;http://www.gnu.org/licenses/&gt;.</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_sink_8h.html">net/stream/Sink.h</a>&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_sink_8h.html">net/pipe/Sink.h</a>&quot;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_source_8h.html">net/stream/Source.h</a>&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_source_8h.html">net/pipe/Source.h</a>&quot;</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#ifndef DOXYGEN_SHOULD_SKIP_THIS</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* DOXYGEN_SHOULD_SKIP_THIS */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacenet_1_1stream.html">net::stream</a> {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacenet_1_1pipe.html">net::pipe</a> {</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classnet_1_1stream_1_1_sink.html#a57885328b1177461700073283813472b">   29</a></span>&#160;    <a class="code" href="classnet_1_1stream_1_1_sink.html#a57885328b1177461700073283813472b">Sink::Sink</a>()</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classnet_1_1pipe_1_1_sink.html#ac31cde346423102e20a9b01895c2a3a5">   29</a></span>&#160;    <a class="code" href="classnet_1_1pipe_1_1_sink.html#ac31cde346423102e20a9b01895c2a3a5">Sink::Sink</a>()</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        : source(nullptr) {</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    }</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classnet_1_1stream_1_1_sink.html#aa0f05dae79fe182e2d7463eb598516e3">   33</a></span>&#160;    <a class="code" href="classnet_1_1stream_1_1_sink.html#aa0f05dae79fe182e2d7463eb598516e3">Sink::~Sink</a>() {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classnet_1_1stream_1_1_sink.html#a4125cb3a6098fa118b161c67f375cba0">source</a> != <span class="keyword">nullptr</span>) {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <a class="code" href="classnet_1_1stream_1_1_sink.html#a4125cb3a6098fa118b161c67f375cba0">source</a>-&gt;<a class="code" href="classnet_1_1stream_1_1_source.html#a79afee2e080b30ffc91d87e77c291f1c">disconnect</a>(*<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classnet_1_1pipe_1_1_sink.html#a2ddd11c5f9f4da3ff3c9eb852d4fe401">   33</a></span>&#160;    <a class="code" href="classnet_1_1pipe_1_1_sink.html#a2ddd11c5f9f4da3ff3c9eb852d4fe401">Sink::~Sink</a>() {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classnet_1_1pipe_1_1_sink.html#ad315ff6dbf1e902702eb1be132688791">source</a> != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <a class="code" href="classnet_1_1pipe_1_1_sink.html#ad315ff6dbf1e902702eb1be132688791">source</a>-&gt;<a class="code" href="classnet_1_1pipe_1_1_source.html#a67f328a452fb16a8ec9227c2beb342ea">disconnect</a>(*<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        }</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classnet_1_1stream_1_1_sink.html#a55ac8063cceb5acb1f8aac3a4cb71d8f">   39</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classnet_1_1stream_1_1_sink.html#a55ac8063cceb5acb1f8aac3a4cb71d8f">Sink::connect</a>(<a class="code" href="classnet_1_1stream_1_1_source.html">Source</a>&amp; source) {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        this-&gt;source = &amp;<a class="code" href="classnet_1_1stream_1_1_sink.html#a4125cb3a6098fa118b161c67f375cba0">source</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classnet_1_1pipe_1_1_sink.html#ad46761771676818ce14be20716c07241">   39</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classnet_1_1pipe_1_1_sink.html#ad46761771676818ce14be20716c07241">Sink::connect</a>(<a class="code" href="classnet_1_1pipe_1_1_source.html">Source</a>&amp; source) {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        this-&gt;source = &amp;<a class="code" href="classnet_1_1pipe_1_1_sink.html#ad315ff6dbf1e902702eb1be132688791">source</a>;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    }</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classnet_1_1stream_1_1_sink.html#a701d6087c76a67c87e77e4eaf53285bb">   43</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classnet_1_1stream_1_1_sink.html#a701d6087c76a67c87e77e4eaf53285bb">Sink::disconnect</a>(<a class="code" href="classnet_1_1stream_1_1_source.html">Source</a>&amp; source) {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordflow">if</span> (&amp;<a class="code" href="classnet_1_1stream_1_1_sink.html#a4125cb3a6098fa118b161c67f375cba0">source</a> == this-&gt;source) {</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classnet_1_1pipe_1_1_sink.html#a27956da9ea10160e1d9da21d829d0665">   43</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classnet_1_1pipe_1_1_sink.html#a27956da9ea10160e1d9da21d829d0665">Sink::disconnect</a>(<a class="code" href="classnet_1_1pipe_1_1_source.html">Source</a>&amp; source) {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordflow">if</span> (&amp;<a class="code" href="classnet_1_1pipe_1_1_sink.html#ad315ff6dbf1e902702eb1be132688791">source</a> == this-&gt;source) {</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            this-&gt;source = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        }</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;} <span class="comment">// namespace net::stream</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;} <span class="comment">// namespace net::pipe</span></div>
 <div class="ttc" id="a_sink_8h_html"><div class="ttname"><a href="_sink_8h.html">Sink.h</a></div></div>
 <div class="ttc" id="a_source_8h_html"><div class="ttname"><a href="_source_8h.html">Source.h</a></div></div>
-<div class="ttc" id="aclassnet_1_1stream_1_1_sink_html_a4125cb3a6098fa118b161c67f375cba0"><div class="ttname"><a href="classnet_1_1stream_1_1_sink.html#a4125cb3a6098fa118b161c67f375cba0">net::stream::Sink::source</a></div><div class="ttdeci">Source * source</div><div class="ttdef"><b>Definition:</b> <a href="_sink_8h_source.html#l00045">Sink.h:45</a></div></div>
-<div class="ttc" id="aclassnet_1_1stream_1_1_sink_html_a55ac8063cceb5acb1f8aac3a4cb71d8f"><div class="ttname"><a href="classnet_1_1stream_1_1_sink.html#a55ac8063cceb5acb1f8aac3a4cb71d8f">net::stream::Sink::connect</a></div><div class="ttdeci">void connect(Source &amp;source)</div><div class="ttdef"><b>Definition:</b> <a href="_sink_8cpp_source.html#l00039">Sink.cpp:39</a></div></div>
-<div class="ttc" id="aclassnet_1_1stream_1_1_sink_html_a57885328b1177461700073283813472b"><div class="ttname"><a href="classnet_1_1stream_1_1_sink.html#a57885328b1177461700073283813472b">net::stream::Sink::Sink</a></div><div class="ttdeci">Sink()</div><div class="ttdef"><b>Definition:</b> <a href="_sink_8cpp_source.html#l00029">Sink.cpp:29</a></div></div>
-<div class="ttc" id="aclassnet_1_1stream_1_1_sink_html_a701d6087c76a67c87e77e4eaf53285bb"><div class="ttname"><a href="classnet_1_1stream_1_1_sink.html#a701d6087c76a67c87e77e4eaf53285bb">net::stream::Sink::disconnect</a></div><div class="ttdeci">void disconnect(Source &amp;source)</div><div class="ttdef"><b>Definition:</b> <a href="_sink_8cpp_source.html#l00043">Sink.cpp:43</a></div></div>
-<div class="ttc" id="aclassnet_1_1stream_1_1_sink_html_aa0f05dae79fe182e2d7463eb598516e3"><div class="ttname"><a href="classnet_1_1stream_1_1_sink.html#aa0f05dae79fe182e2d7463eb598516e3">net::stream::Sink::~Sink</a></div><div class="ttdeci">virtual ~Sink()</div><div class="ttdef"><b>Definition:</b> <a href="_sink_8cpp_source.html#l00033">Sink.cpp:33</a></div></div>
-<div class="ttc" id="aclassnet_1_1stream_1_1_source_html"><div class="ttname"><a href="classnet_1_1stream_1_1_source.html">net::stream::Source</a></div><div class="ttdef"><b>Definition:</b> <a href="_source_8h_source.html#l00032">Source.h:32</a></div></div>
-<div class="ttc" id="aclassnet_1_1stream_1_1_source_html_a79afee2e080b30ffc91d87e77c291f1c"><div class="ttname"><a href="classnet_1_1stream_1_1_source.html#a79afee2e080b30ffc91d87e77c291f1c">net::stream::Source::disconnect</a></div><div class="ttdeci">void disconnect(Sink &amp;sink)</div><div class="ttdef"><b>Definition:</b> <a href="_source_8cpp_source.html#l00046">Source.cpp:46</a></div></div>
-<div class="ttc" id="anamespacenet_1_1stream_html"><div class="ttname"><a href="namespacenet_1_1stream.html">net::stream</a></div><div class="ttdef"><b>Definition:</b> <a href="_file_reader_8h_source.html#l00033">FileReader.h:33</a></div></div>
+<div class="ttc" id="aclassnet_1_1pipe_1_1_sink_html_a27956da9ea10160e1d9da21d829d0665"><div class="ttname"><a href="classnet_1_1pipe_1_1_sink.html#a27956da9ea10160e1d9da21d829d0665">net::pipe::Sink::disconnect</a></div><div class="ttdeci">void disconnect(Source &amp;source)</div><div class="ttdef"><b>Definition:</b> <a href="_sink_8cpp_source.html#l00043">Sink.cpp:43</a></div></div>
+<div class="ttc" id="aclassnet_1_1pipe_1_1_sink_html_a2ddd11c5f9f4da3ff3c9eb852d4fe401"><div class="ttname"><a href="classnet_1_1pipe_1_1_sink.html#a2ddd11c5f9f4da3ff3c9eb852d4fe401">net::pipe::Sink::~Sink</a></div><div class="ttdeci">virtual ~Sink()</div><div class="ttdef"><b>Definition:</b> <a href="_sink_8cpp_source.html#l00033">Sink.cpp:33</a></div></div>
+<div class="ttc" id="aclassnet_1_1pipe_1_1_sink_html_ac31cde346423102e20a9b01895c2a3a5"><div class="ttname"><a href="classnet_1_1pipe_1_1_sink.html#ac31cde346423102e20a9b01895c2a3a5">net::pipe::Sink::Sink</a></div><div class="ttdeci">Sink()</div><div class="ttdef"><b>Definition:</b> <a href="_sink_8cpp_source.html#l00029">Sink.cpp:29</a></div></div>
+<div class="ttc" id="aclassnet_1_1pipe_1_1_sink_html_ad315ff6dbf1e902702eb1be132688791"><div class="ttname"><a href="classnet_1_1pipe_1_1_sink.html#ad315ff6dbf1e902702eb1be132688791">net::pipe::Sink::source</a></div><div class="ttdeci">Source * source</div><div class="ttdef"><b>Definition:</b> <a href="_sink_8h_source.html#l00045">Sink.h:45</a></div></div>
+<div class="ttc" id="aclassnet_1_1pipe_1_1_sink_html_ad46761771676818ce14be20716c07241"><div class="ttname"><a href="classnet_1_1pipe_1_1_sink.html#ad46761771676818ce14be20716c07241">net::pipe::Sink::connect</a></div><div class="ttdeci">void connect(Source &amp;source)</div><div class="ttdef"><b>Definition:</b> <a href="_sink_8cpp_source.html#l00039">Sink.cpp:39</a></div></div>
+<div class="ttc" id="aclassnet_1_1pipe_1_1_source_html"><div class="ttname"><a href="classnet_1_1pipe_1_1_source.html">net::pipe::Source</a></div><div class="ttdef"><b>Definition:</b> <a href="_source_8h_source.html#l00032">Source.h:32</a></div></div>
+<div class="ttc" id="aclassnet_1_1pipe_1_1_source_html_a67f328a452fb16a8ec9227c2beb342ea"><div class="ttname"><a href="classnet_1_1pipe_1_1_source.html#a67f328a452fb16a8ec9227c2beb342ea">net::pipe::Source::disconnect</a></div><div class="ttdeci">void disconnect(Sink &amp;sink)</div><div class="ttdef"><b>Definition:</b> <a href="_source_8cpp_source.html#l00046">Source.cpp:46</a></div></div>
+<div class="ttc" id="anamespacenet_1_1pipe_html"><div class="ttname"><a href="namespacenet_1_1pipe.html">net::pipe</a></div><div class="ttdef"><b>Definition:</b> <a href="_pipe_8cpp_source.html#l00032">Pipe.cpp:32</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_427baa8a9a5be237f298d4545d0d1ce2.html">net</a></li><li class="navelem"><a class="el" href="dir_c539ef0a795604dd07c0fa5c7f0d7274.html">stream</a></li><li class="navelem"><a class="el" href="_sink_8cpp.html">Sink.cpp</a></li>
+    <li class="navelem"><a class="el" href="dir_427baa8a9a5be237f298d4545d0d1ce2.html">net</a></li><li class="navelem"><a class="el" href="dir_2f8c852d54e1ac08fb6f2013f6ec9573.html">pipe</a></li><li class="navelem"><a class="el" href="_sink_8cpp.html">Sink.cpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

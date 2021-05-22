@@ -18,9 +18,9 @@ var hierarchy =
       [ "File", "class_file.html", [
         [ "FileReader", "class_file_reader.html", null ]
       ] ],
-      [ "net::socket::Socket< SocketAddressT >", "classnet_1_1socket_1_1_socket.html", null ],
-      [ "net::stream::PipeSink", "classnet_1_1stream_1_1_pipe_sink.html", null ],
-      [ "net::stream::PipeSource", "classnet_1_1stream_1_1_pipe_source.html", null ]
+      [ "net::pipe::PipeSink", "classnet_1_1pipe_1_1_pipe_sink.html", null ],
+      [ "net::pipe::PipeSource", "classnet_1_1pipe_1_1_pipe_source.html", null ],
+      [ "net::socket::Socket< SocketAddressT >", "classnet_1_1socket_1_1_socket.html", null ]
     ] ],
     [ "net::DescriptorEventDispatcher", "classnet_1_1_descriptor_event_dispatcher.html", null ],
     [ "express::Dispatcher", "classexpress_1_1_dispatcher.html", [
@@ -63,6 +63,7 @@ var hierarchy =
         [ "net::ExceptionalConditionEventReceiver", "classnet_1_1_exceptional_condition_event_receiver.html", null ],
         [ "net::ReadEventReceiver", "classnet_1_1_read_event_receiver.html", [
           [ "FileReader", "class_file_reader.html", null ],
+          [ "net::pipe::PipeSink", "classnet_1_1pipe_1_1_pipe_sink.html", null ],
           [ "net::socket::stream::SocketReader< SocketT >", "classnet_1_1socket_1_1stream_1_1_socket_reader.html", [
             [ "net::socket::stream::legacy::SocketReader< SocketT >", "classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_reader.html", [
               [ "net::socket::stream::SocketConnection< legacy::SocketReader< SocketT >, legacy::SocketWriter< SocketT >, SocketT::SocketAddress >", "classnet_1_1socket_1_1stream_1_1_socket_connection.html", [
@@ -75,10 +76,10 @@ var hierarchy =
               ] ]
             ] ]
           ] ],
-          [ "net::socket::stream::tls::TLSHandshake", "classnet_1_1socket_1_1stream_1_1tls_1_1_t_l_s_handshake.html", null ],
-          [ "net::stream::PipeSink", "classnet_1_1stream_1_1_pipe_sink.html", null ]
+          [ "net::socket::stream::tls::TLSHandshake", "classnet_1_1socket_1_1stream_1_1tls_1_1_t_l_s_handshake.html", null ]
         ] ],
         [ "net::WriteEventReceiver", "classnet_1_1_write_event_receiver.html", [
+          [ "net::pipe::PipeSource", "classnet_1_1pipe_1_1_pipe_source.html", null ],
           [ "net::socket::stream::SocketWriter< SocketT >", "classnet_1_1socket_1_1stream_1_1_socket_writer.html", [
             [ "net::socket::stream::legacy::SocketWriter< SocketT >", "classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_writer.html", [
               [ "net::socket::stream::SocketConnection< legacy::SocketReader< SocketT >, legacy::SocketWriter< SocketT >, SocketT::SocketAddress >", "classnet_1_1socket_1_1stream_1_1_socket_connection.html", null ]
@@ -87,12 +88,11 @@ var hierarchy =
               [ "net::socket::stream::SocketConnection< tls::SocketReader< SocketT >, tls::SocketWriter< SocketT >, SocketT::SocketAddress >", "classnet_1_1socket_1_1stream_1_1_socket_connection.html", null ]
             ] ]
           ] ],
-          [ "net::socket::stream::tls::TLSHandshake", "classnet_1_1socket_1_1stream_1_1tls_1_1_t_l_s_handshake.html", null ],
-          [ "net::stream::PipeSource", "classnet_1_1stream_1_1_pipe_source.html", null ]
+          [ "net::socket::stream::tls::TLSHandshake", "classnet_1_1socket_1_1stream_1_1tls_1_1_t_l_s_handshake.html", null ]
         ] ]
       ] ]
     ] ],
-    [ "net::stream::Pipe", "classnet_1_1stream_1_1_pipe.html", null ],
+    [ "net::pipe::Pipe", "classnet_1_1pipe_1_1_pipe.html", null ],
     [ "web::http::server::Request", null, [
       [ "express::Request", "classexpress_1_1_request.html", null ]
     ] ],
@@ -121,7 +121,7 @@ var hierarchy =
       [ "express::middleware::VHost", "classexpress_1_1middleware_1_1_v_host.html", null ]
     ] ],
     [ "utils::SingleAttributeInjector", "classutils_1_1_single_attribute_injector.html", null ],
-    [ "net::stream::Sink", "classnet_1_1stream_1_1_sink.html", null ],
+    [ "net::pipe::Sink", "classnet_1_1pipe_1_1_sink.html", null ],
     [ "net::SNodeC", "classnet_1_1_s_node_c.html", null ],
     [ "SocketConnectionT::Socket", null, [
       [ "net::socket::stream::SocketConnector< stream::legacy::SocketConnection< SocketT > >", "classnet_1_1socket_1_1stream_1_1_socket_connector.html", null ],
@@ -209,7 +209,7 @@ var hierarchy =
     [ "SocketWriterT", null, [
       [ "net::socket::stream::SocketConnection< SocketReaderT, SocketWriterT, SocketAddressT >", "classnet_1_1socket_1_1stream_1_1_socket_connection.html", null ]
     ] ],
-    [ "net::stream::Source", "classnet_1_1stream_1_1_source.html", [
+    [ "net::pipe::Source", "classnet_1_1pipe_1_1_source.html", [
       [ "FileReader", "class_file_reader.html", null ]
     ] ],
     [ "express::State", "classexpress_1_1_state.html", null ],

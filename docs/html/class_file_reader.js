@@ -1,7 +1,7 @@
 var class_file_reader =
 [
-    [ "FileReader", "class_file_reader.html#a6683050f7c72c4f8317bd6e1d61e032b", null ],
-    [ "connect", "class_file_reader.html#ae4a55ccb7e3e43d18b6cd7eca9de34cf", null ],
+    [ "FileReader", "class_file_reader.html#afbe7a27c0f1b821074b5ab2b00c8a30d", null ],
+    [ "connect", "class_file_reader.html#aaf86cac20181301f63ad3bed68856953", null ],
     [ "readEvent", "class_file_reader.html#a1ce08aad9d9f0b025576ee1e51009c9c", null ],
     [ "unobserved", "class_file_reader.html#ae7160f3031c239ca6ee355cd47bd3857", null ]
 ];
