@@ -13,6 +13,6 @@ var classexpress_1_1middleware_1_1_static_middleware =
     [ "StaticMiddleware", "classexpress_1_1middleware_1_1_static_middleware.html#a920364dc3456ca37fc1c6c5d458323ed", null ],
     [ "forceClose", "classexpress_1_1middleware_1_1_static_middleware.html#ace402c8dfebf4b12ffa99a42aa01a755", null ],
     [ "root", "classexpress_1_1middleware_1_1_static_middleware.html#a4c1b12467fbff98a6aeecb56774a779e", null ],
-    [ "stdCookies", "classexpress_1_1middleware_1_1_static_middleware.html#a7141e3444c55910c26b97e7c4da3abfc", null ],
+    [ "stdCookies", "classexpress_1_1middleware_1_1_static_middleware.html#a0a6f1426d1d24d50b1af2710a8241bc4", null ],
     [ "stdHeaders", "classexpress_1_1middleware_1_1_static_middleware.html#a8ce62963e4bb98b3999d8748c9b97b51", null ]
 ];

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['begin_1659',['BEGIN',['../classhttp_1_1_parser.html#ab58d2b97db1c5bad0e2abfdba95514d2a19aad9f2fe3ce0023298ab83f7e75775',1,'http::Parser::BEGIN()'],['../classhttp_1_1_w_s_receiver.html#aa7c7a4f2d48796f4bea70e32e19a4264a19aad9f2fe3ce0023298ab83f7e75775',1,'http::WSReceiver::BEGIN()']]],
-  ['body_1660',['BODY',['../classhttp_1_1_parser.html#ab58d2b97db1c5bad0e2abfdba95514d2a786329b34bbe53ab40a54a19cd597f2d',1,'http::Parser']]]
+  ['debug_1208',['DEBUG',['../class_logger.html#ad766a24576ea8b27ad9d5649cef46d8fabdc8d840ac4b73e1bd3212184af8f85e',1,'Logger']]],
+  ['dontclose_1209',['dontClose',['../classnet_1_1_descriptor.html#a1ecc493b50b4c5ed5cfa3a8746e51f35a64633a68dbee6089ac954c31fdcfcf6c',1,'net::Descriptor']]]
 ];

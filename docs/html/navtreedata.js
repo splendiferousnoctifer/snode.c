@@ -60,7 +60,7 @@ var NAVTREE =
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", "functions_func" ],
-        [ "Variables", "functions_vars.html", "functions_vars" ],
+        [ "Variables", "functions_vars.html", null ],
         [ "Typedefs", "functions_type.html", null ],
         [ "Enumerations", "functions_enum.html", null ],
         [ "Enumerator", "functions_eval.html", null ],
@@ -73,8 +73,6 @@ var NAVTREE =
         [ "All", "globals.html", null ],
         [ "Functions", "globals_func.html", null ],
         [ "Variables", "globals_vars.html", null ],
-        [ "Enumerations", "globals_enum.html", null ],
-        [ "Enumerator", "globals_eval.html", null ],
         [ "Macros", "globals_defs.html", null ]
       ] ]
     ] ]
@@ -84,13 +82,11 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_accept_event_receiver_8cpp.html",
-"_w_s_server_context_8h.html",
-"classhttp_1_1_cookie_options.html#ac3caf56ad87ac130772922b0bb25fbc5",
-"classhttp_1_1server_1_1_request.html#ac32ea6ac4f837e7a77a9f9fa70126aa6",
-"classnet_1_1_timer_event_dispatcher_1_1timernode__lt.html",
-"classnet_1_1socket_1_1stream_1_1_socket_writer.html#ad652e12ba94b09600ad4de035978bff3",
-"functions_func_s.html",
-"namespacenet_1_1ssl.html#a58a0af5c945f3f59a910bd44f2695bc8"
+"class_logger.html#ad766a24576ea8b27ad9d5649cef46d8fafb1bf96f41b282521d9438106ea11bca",
+"classnet_1_1_descriptor_event_receiver.html#a68dd9ebbf58a10324f12fe31a64da2d0",
+"classnet_1_1socket_1_1stream_1_1_socket_connector.html#aba282a7885d755b5eb61bec16ae7ce04",
+"classutils_1_1_multible_attribute_injector.html#af7525cbc1b6412927417bb627c7b4af9",
+"namespacenet_1_1system.html#ad4c7338a4b60fee8700cf34fa9fed5ab"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

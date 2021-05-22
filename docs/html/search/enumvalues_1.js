@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['close_1661',['Close',['../_connection_state_8h.html#acdd867d72142510ce53521a63a062f9bab0d2fc8a61cc30fce240ad6df88447d4',1,'ConnectionState.h']]]
+  ['error_1210',['ERROR',['../class_logger.html#ad766a24576ea8b27ad9d5649cef46d8fa3ce1bbeb15a3d8e29e4c5e75492a781b',1,'Logger']]]
 ];

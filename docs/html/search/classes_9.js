@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['l2capaddress_846',['L2CapAddress',['../classnet_1_1socket_1_1bluetooth_1_1address_1_1_l2_cap_address.html',1,'net::socket::bluetooth::address']]],
-  ['logger_847',['Logger',['../class_logger.html',1,'']]]
+  ['middlewaredispatcher_610',['MiddlewareDispatcher',['../classexpress_1_1_middleware_dispatcher.html',1,'express']]],
+  ['mountpoint_611',['MountPoint',['../structexpress_1_1_mount_point.html',1,'express']]],
+  ['multibleattributeinjector_612',['MultibleAttributeInjector',['../classutils_1_1_multible_attribute_injector.html',1,'utils']]]
 ];

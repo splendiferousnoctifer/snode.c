@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['connectionstate_1653',['ConnectionState',['../_connection_state_8h.html#acdd867d72142510ce53521a63a062f9b',1,'ConnectionState.h']]]
+  ['flags_1205',['FLAGS',['../classnet_1_1_descriptor.html#a1ecc493b50b4c5ed5cfa3a8746e51f35',1,'net::Descriptor']]]
 ];

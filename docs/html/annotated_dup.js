@@ -27,50 +27,6 @@ var annotated_dup =
       [ "WebApp", "classexpress_1_1_web_app.html", "classexpress_1_1_web_app" ],
       [ "WebAppT", "classexpress_1_1_web_app_t.html", "classexpress_1_1_web_app_t" ]
     ] ],
-    [ "http", "namespacehttp.html", [
-      [ "client", "namespacehttp_1_1client.html", [
-        [ "legacy", "namespacehttp_1_1client_1_1legacy.html", [
-          [ "Client", "classhttp_1_1client_1_1legacy_1_1_client.html", null ],
-          [ "Client6", "classhttp_1_1client_1_1legacy_1_1_client6.html", null ]
-        ] ],
-        [ "tls", "namespacehttp_1_1client_1_1tls.html", [
-          [ "Client", "classhttp_1_1client_1_1tls_1_1_client.html", null ],
-          [ "Client6", "classhttp_1_1client_1_1tls_1_1_client6.html", null ]
-        ] ],
-        [ "Client", "classhttp_1_1client_1_1_client.html", "classhttp_1_1client_1_1_client" ],
-        [ "ClientContextBase", "classhttp_1_1client_1_1_client_context_base.html", "classhttp_1_1client_1_1_client_context_base" ],
-        [ "ClientContext", "classhttp_1_1client_1_1_client_context.html", "classhttp_1_1client_1_1_client_context" ],
-        [ "ClientContextFactory", "classhttp_1_1client_1_1_client_context_factory.html", "classhttp_1_1client_1_1_client_context_factory" ],
-        [ "Request", "classhttp_1_1client_1_1_request.html", "classhttp_1_1client_1_1_request" ],
-        [ "Response", "classhttp_1_1client_1_1_response.html", "classhttp_1_1client_1_1_response" ],
-        [ "ResponseParser", "classhttp_1_1client_1_1_response_parser.html", "classhttp_1_1client_1_1_response_parser" ]
-      ] ],
-      [ "server", "namespacehttp_1_1server.html", [
-        [ "legacy", "namespacehttp_1_1server_1_1legacy.html", [
-          [ "Server", "classhttp_1_1server_1_1legacy_1_1_server.html", null ],
-          [ "Server6", "classhttp_1_1server_1_1legacy_1_1_server6.html", null ]
-        ] ],
-        [ "tls", "namespacehttp_1_1server_1_1tls.html", [
-          [ "Server", "classhttp_1_1server_1_1tls_1_1_server.html", null ],
-          [ "Server6", "classhttp_1_1server_1_1tls_1_1_server6.html", null ]
-        ] ],
-        [ "HTTPServerContextBase", "classhttp_1_1server_1_1_h_t_t_p_server_context_base.html", "classhttp_1_1server_1_1_h_t_t_p_server_context_base" ],
-        [ "HTTPServerContext", "classhttp_1_1server_1_1_h_t_t_p_server_context.html", "classhttp_1_1server_1_1_h_t_t_p_server_context" ],
-        [ "HTTPServerContextFactory", "classhttp_1_1server_1_1_h_t_t_p_server_context_factory.html", "classhttp_1_1server_1_1_h_t_t_p_server_context_factory" ],
-        [ "Request", "classhttp_1_1server_1_1_request.html", "classhttp_1_1server_1_1_request" ],
-        [ "RequestParser", "classhttp_1_1server_1_1_request_parser.html", "classhttp_1_1server_1_1_request_parser" ],
-        [ "Response", "classhttp_1_1server_1_1_response.html", "classhttp_1_1server_1_1_response" ],
-        [ "Server", "classhttp_1_1server_1_1_server.html", "classhttp_1_1server_1_1_server" ]
-      ] ],
-      [ "websocket", "namespacehttp_1_1websocket.html", [
-        [ "WSServerContext", "classhttp_1_1websocket_1_1_w_s_server_context.html", "classhttp_1_1websocket_1_1_w_s_server_context" ]
-      ] ],
-      [ "CookieOptions", "classhttp_1_1_cookie_options.html", "classhttp_1_1_cookie_options" ],
-      [ "Parser", "classhttp_1_1_parser.html", "classhttp_1_1_parser" ],
-      [ "StatusCode", "classhttp_1_1_status_code.html", "classhttp_1_1_status_code" ],
-      [ "WSReceiver", "classhttp_1_1_w_s_receiver.html", "classhttp_1_1_w_s_receiver" ],
-      [ "WSTransmitter", "classhttp_1_1_w_s_transmitter.html", "classhttp_1_1_w_s_transmitter" ]
-    ] ],
     [ "net", "namespacenet.html", [
       [ "socket", "namespacenet_1_1socket.html", [
         [ "bluetooth", "namespacenet_1_1socket_1_1bluetooth.html", [
@@ -199,6 +155,5 @@ var annotated_dup =
     ] ],
     [ "File", "class_file.html", null ],
     [ "FileReader", "class_file_reader.html", "class_file_reader" ],
-    [ "Logger", "class_logger.html", "class_logger" ],
-    [ "MimeTypes", "class_mime_types.html", "class_mime_types" ]
+    [ "Logger", "class_logger.html", "class_logger" ]
 ];

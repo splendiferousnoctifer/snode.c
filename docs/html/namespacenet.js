@@ -20,6 +20,7 @@ var namespacenet =
       [ "gettimeofday", "namespacenet_1_1system.html#aa6f351129e5d8c8522b104b4c6d9d62e", null ],
       [ "gmtime", "namespacenet_1_1system.html#a4c3fad621656ff9b26b177278b3db55c", null ],
       [ "listen", "namespacenet_1_1system.html#aab3b0579285d63e2dcf5c23eb55e4e04", null ],
+      [ "mktime", "namespacenet_1_1system.html#a3a1f87c6f6ae3ae6bc85556c055d2ef3", null ],
       [ "open", "namespacenet_1_1system.html#a6d7e0ac4eb21446e2992eba757368f84", null ],
       [ "pipe2", "namespacenet_1_1system.html#aa7a36ce65ce1a210bbf480b6a658b8e4", null ],
       [ "read", "namespacenet_1_1system.html#a548befc9826098f4756445e39c22a1f9", null ],

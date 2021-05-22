@@ -363,7 +363,7 @@ template&lt;typename SocketAddressT &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="socket_2_socket_8h_source.html#l00065">65</a> of file <a class="el" href="socket_2_socket_8h_source.html">Socket.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                                                                                                  {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <span class="keywordtype">int</span> ret = <a class="code" href="namespacenet_1_1system.html#ad4c7338a4b60fee8700cf34fa9fed5ab">system::bind</a>(<a class="code" href="classnet_1_1_descriptor.html#a70ccc1e4f6af5cda015bd319f9a90096">getFd</a>(), &amp;<a class="code" href="classnet_1_1socket_1_1_socket.html#a8093ad086bca61e225342420f9858242">bindAddress</a>.getSockAddr(), <span class="keyword">sizeof</span>(<span class="keyword">typename</span> <a class="code" href="classnet_1_1socket_1_1_socket_address.html#a35e84e2561e779a9dd8c392e3005a53e">SocketAddress::SockAddr</a>));</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <span class="keywordtype">int</span> ret = <a class="code" href="namespacenet_1_1system.html#ad4c7338a4b60fee8700cf34fa9fed5ab">net::system::bind</a>(<a class="code" href="classnet_1_1_descriptor.html#a70ccc1e4f6af5cda015bd319f9a90096">getFd</a>(), &amp;<a class="code" href="classnet_1_1socket_1_1_socket.html#a8093ad086bca61e225342420f9858242">bindAddress</a>.getSockAddr(), <span class="keyword">sizeof</span>(<span class="keyword">typename</span> <a class="code" href="classnet_1_1socket_1_1_socket_address.html#a35e84e2561e779a9dd8c392e3005a53e">SocketAddress::SockAddr</a>));</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <span class="keywordflow">if</span> (ret &lt; 0) {</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                onError(errno);</div>
@@ -383,8 +383,7 @@ template&lt;typename SocketAddressT &gt; </div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1_socket_a1ce7ef4ad82e2035af1c9f9d752112b8_cgraph.svg" width="344" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1_socket_a1ce7ef4ad82e2035af1c9f9d752112b8_cgraph.svg" width="344" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -588,7 +587,7 @@ template&lt;typename SocketAddressT &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="socket_2_socket_8h_source.html#l00078">78</a> of file <a class="el" href="socket_2_socket_8h_source.html">Socket.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                                    {</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <a class="code" href="namespacenet_1_1system.html#a6e3cc3da3091019dca76100c57375feb">system::shutdown</a>(<a class="code" href="classnet_1_1_descriptor.html#a70ccc1e4f6af5cda015bd319f9a90096">getFd</a>(), how);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <a class="code" href="namespacenet_1_1system.html#a6e3cc3da3091019dca76100c57375feb">net::system::shutdown</a>(<a class="code" href="classnet_1_1_descriptor.html#a70ccc1e4f6af5cda015bd319f9a90096">getFd</a>(), how);</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        }</div>
 <div class="ttc" id="anamespacenet_1_1system_html_a6e3cc3da3091019dca76100c57375feb"><div class="ttname"><a href="namespacenet_1_1system.html#a6e3cc3da3091019dca76100c57375feb">net::system::shutdown</a></div><div class="ttdeci">int shutdown(int sockfd, int how)</div><div class="ttdef"><b>Definition:</b> <a href="system_2_socket_8cpp_source.html#l00065">socket.cpp:65</a></div></div>
 </div><!-- fragment -->
@@ -596,8 +595,7 @@ template&lt;typename SocketAddressT &gt; </div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1_socket_a971efd19b5f618ad9aea3f94d130bc10_cgraph.svg" width="350" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1_socket_a971efd19b5f618ad9aea3f94d130bc10_cgraph.svg" width="350" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['inetaddress_843',['InetAddress',['../classnet_1_1socket_1_1ip_1_1address_1_1ipv4_1_1_inet_address.html',1,'net::socket::ip::address::ipv4::InetAddress'],['../classnet_1_1socket_1_1ip_1_1address_1_1ipv6_1_1_inet_address.html',1,'net::socket::ip::address::ipv6::InetAddress']]],
-  ['intervaltimer_844',['IntervalTimer',['../classnet_1_1timer_1_1_interval_timer.html',1,'net::timer']]]
+  ['jsonmiddleware_607',['JsonMiddleware',['../classexpress_1_1middleware_1_1_json_middleware.html',1,'express::middleware']]]
 ];
