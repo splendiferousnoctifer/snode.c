@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>snode.c: http/client/tls/Client.h Source File</title>
+<title>snode.c: web/http/client/tls/Client.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -103,23 +103,23 @@ $(document).ready(function(){initNavTree('tls_2_client_8h_source.html',''); init
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * along with this program. If not, see &lt;http://www.gnu.org/licenses/&gt;.</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#ifndef HTTP_CLIENT_TLS_CLIENT_H</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#define HTTP_CLIENT_TLS_CLIENT_H</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#ifndef WEB_HTTP_CLIENT_TLS_CLIENT_H</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#define WEB_HTTP_CLIENT_TLS_CLIENT_H</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_client_8h.html">http/client/Client.h</a>&quot;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ip_2tcp_2ipv4_2tls_2_socket_client_8h.html">net/socket/ip/tcp/ipv4/tls/SocketClient.h</a>&quot;</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ip_2tcp_2ipv6_2tls_2_socket_client_8h.html">net/socket/ip/tcp/ipv6/tls/SocketClient.h</a>&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ip_2tcp_2ipv4_2tls_2_socket_client_8h.html">net/socket/ip/tcp/ipv4/tls/SocketClient.h</a>&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ip_2tcp_2ipv6_2tls_2_socket_client_8h.html">net/socket/ip/tcp/ipv6/tls/SocketClient.h</a>&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_client_8h.html">web/http/client/Client.h</a>&quot;</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#ifndef DOXYGEN_SHOULD_SKIP_THIS</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* DOXYGEN_SHOULD_SKIP_THIS */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="namespacehttp_1_1client_1_1tls.html">   30</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacehttp_1_1client_1_1tls.html">http::client::tls</a> {</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="namespaceweb_1_1http_1_1client_1_1tls.html">   30</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceweb_1_1http_1_1client_1_1tls.html">web::http::client::tls</a> {</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Request = http::client::Request, <span class="keyword">typename</span> Response = http::client::Response&gt;</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classhttp_1_1client_1_1tls_1_1_client.html">   33</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classhttp_1_1client_1_1tls_1_1_client.html">Client</a> : <span class="keyword">public</span> <a class="code" href="classhttp_1_1client_1_1_client.html">http::client::Client</a>&lt;net::socket::ip::tcp::ipv4::tls::SocketClient, Request, Response&gt; {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Request = web::http::client::Request, <span class="keyword">typename</span> Response = web::http::client::Response&gt;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classweb_1_1http_1_1client_1_1tls_1_1_client.html">   33</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classweb_1_1http_1_1client_1_1tls_1_1_client.html">Client</a> : <span class="keyword">public</span> <a class="code" href="classweb_1_1http_1_1client_1_1_client.html">web::http::client::Client</a>&lt;net::socket::ip::tcp::ipv4::tls::SocketClient, Request, Response&gt; {</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keyword">using</span> <a class="code" href="classhttp_1_1client_1_1_client.html">http::client::Client&lt;net::socket::ip::tcp::ipv4::tls::SocketClient, Request, Response&gt;::Client</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keyword">using</span> <a class="code" href="classweb_1_1http_1_1client_1_1_client.html">web::http::client::Client&lt;net::socket::ip::tcp::ipv4::tls::SocketClient, Request, Response&gt;::Client</a>;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    };</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">/*</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">        Client(const std::function&lt;void(net::socket::ip::tcp::ipv4::tls::SocketClient::SocketConnection*)&gt;&amp; onConnect,</span></div>
@@ -129,12 +129,12 @@ $(document).ready(function(){initNavTree('tls_2_client_8h_source.html',''); init
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">               const std::function&lt;void(int, const std::string&amp;)&gt;&amp; onResponseError,</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">               const std::function&lt;void(net::socket::ip::tcp::ipv4::tls::SocketClient::SocketConnection*)&gt;&amp; onDisconnect,</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">               const std::map&lt;std::string, std::any&gt;&amp; options = {{}})</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">            -&gt;Client&lt;http::client::Request, http::client::Response&gt;;</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">            -&gt;Client&lt;web::client::Request, web::client::Response&gt;;</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">    */</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Request = http::client::Request, <span class="keyword">typename</span> Response = http::client::Response&gt;</div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classhttp_1_1client_1_1tls_1_1_client6.html">   48</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classhttp_1_1client_1_1tls_1_1_client6.html">Client6</a> : <span class="keyword">public</span> <a class="code" href="classhttp_1_1client_1_1_client.html">http::client::Client</a>&lt;net::socket::ip::tcp::ipv6::tls::SocketClient, Request, Response&gt; {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Request = web::http::client::Request, <span class="keyword">typename</span> Response = web::http::client::Response&gt;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classweb_1_1http_1_1client_1_1tls_1_1_client6.html">   48</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classweb_1_1http_1_1client_1_1tls_1_1_client6.html">Client6</a> : <span class="keyword">public</span> <a class="code" href="classweb_1_1http_1_1client_1_1_client.html">web::http::client::Client</a>&lt;net::socket::ip::tcp::ipv6::tls::SocketClient, Request, Response&gt; {</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keyword">using</span> <a class="code" href="classhttp_1_1client_1_1_client.html">http::client::Client&lt;net::socket::ip::tcp::ipv6::tls::SocketClient, Request, Response&gt;::Client</a>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keyword">using</span> <a class="code" href="classweb_1_1http_1_1client_1_1_client.html">web::http::client::Client&lt;net::socket::ip::tcp::ipv6::tls::SocketClient, Request, Response&gt;::Client</a>;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    };</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">/*</span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">        Client6(const std::function&lt;void(net::socket::ip::tcp::ipv6::tls::SocketClient::SocketConnection*)&gt;&amp; onConnect,</span></div>
@@ -144,24 +144,24 @@ $(document).ready(function(){initNavTree('tls_2_client_8h_source.html',''); init
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">                const std::function&lt;void(int, const std::string&amp;)&gt;&amp; onResponseError,</span></div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">                const std::function&lt;void(net::socket::ip::tcp::ipv6::tls::SocketClient::SocketConnection*)&gt;&amp; onDisconnect,</span></div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">                const std::map&lt;std::string, std::any&gt;&amp; options = {{}})</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">            -&gt;Client6&lt;http::client::Request, http::client::Response&gt;;</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">            -&gt;Client6&lt;web::client::Request, web::client::Response&gt;;</span></div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">    */</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;} <span class="comment">// namespace http::client::tls</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;} <span class="comment">// namespace web::http::client::tls</span></div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// HTTP_CLIENT_TLS_CLIENT_H</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// WEB_HTTP_CLIENT_TLS_CLIENT_H</span></div>
 <div class="ttc" id="a_client_8h_html"><div class="ttname"><a href="_client_8h.html">Client.h</a></div></div>
-<div class="ttc" id="aclasshttp_1_1client_1_1_client_html"><div class="ttname"><a href="classhttp_1_1client_1_1_client.html">http::client::Client</a></div><div class="ttdef"><b>Definition:</b> <a href="_client_8h_source.html#l00039">Client.h:39</a></div></div>
-<div class="ttc" id="aclasshttp_1_1client_1_1tls_1_1_client6_html"><div class="ttname"><a href="classhttp_1_1client_1_1tls_1_1_client6.html">http::client::tls::Client6</a></div><div class="ttdef"><b>Definition:</b> <a href="tls_2_client_8h_source.html#l00048">Client.h:48</a></div></div>
-<div class="ttc" id="aclasshttp_1_1client_1_1tls_1_1_client_html"><div class="ttname"><a href="classhttp_1_1client_1_1tls_1_1_client.html">http::client::tls::Client</a></div><div class="ttdef"><b>Definition:</b> <a href="tls_2_client_8h_source.html#l00033">Client.h:33</a></div></div>
+<div class="ttc" id="aclassweb_1_1http_1_1client_1_1_client_html"><div class="ttname"><a href="classweb_1_1http_1_1client_1_1_client.html">web::http::client::Client</a></div><div class="ttdef"><b>Definition:</b> <a href="_client_8h_source.html#l00039">Client.h:39</a></div></div>
+<div class="ttc" id="aclassweb_1_1http_1_1client_1_1tls_1_1_client6_html"><div class="ttname"><a href="classweb_1_1http_1_1client_1_1tls_1_1_client6.html">web::http::client::tls::Client6</a></div><div class="ttdef"><b>Definition:</b> <a href="tls_2_client_8h_source.html#l00048">Client.h:48</a></div></div>
+<div class="ttc" id="aclassweb_1_1http_1_1client_1_1tls_1_1_client_html"><div class="ttname"><a href="classweb_1_1http_1_1client_1_1tls_1_1_client.html">web::http::client::tls::Client</a></div><div class="ttdef"><b>Definition:</b> <a href="tls_2_client_8h_source.html#l00033">Client.h:33</a></div></div>
 <div class="ttc" id="aip_2tcp_2ipv4_2tls_2_socket_client_8h_html"><div class="ttname"><a href="ip_2tcp_2ipv4_2tls_2_socket_client_8h.html">SocketClient.h</a></div></div>
 <div class="ttc" id="aip_2tcp_2ipv6_2tls_2_socket_client_8h_html"><div class="ttname"><a href="ip_2tcp_2ipv6_2tls_2_socket_client_8h.html">SocketClient.h</a></div></div>
-<div class="ttc" id="anamespacehttp_1_1client_1_1tls_html"><div class="ttname"><a href="namespacehttp_1_1client_1_1tls.html">http::client::tls</a></div><div class="ttdef"><b>Definition:</b> <a href="tls_2_client_8h_source.html#l00030">Client.h:30</a></div></div>
+<div class="ttc" id="anamespaceweb_1_1http_1_1client_1_1tls_html"><div class="ttname"><a href="namespaceweb_1_1http_1_1client_1_1tls.html">web::http::client::tls</a></div><div class="ttdef"><b>Definition:</b> <a href="tls_2_client_8h_source.html#l00030">Client.h:30</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de5b03c9e251d763a573c2ccd217de59.html">http</a></li><li class="navelem"><a class="el" href="dir_a4a3df24389e21fcdd752e1806bb8b97.html">client</a></li><li class="navelem"><a class="el" href="dir_c060258a472456ed8cae3ba16c91c8a8.html">tls</a></li><li class="navelem"><a class="el" href="tls_2_client_8h.html">Client.h</a></li>
+    <li class="navelem"><a class="el" href="dir_562abdcd8625d4bf7bad2fe6fe01354c.html">web</a></li><li class="navelem"><a class="el" href="dir_890691660869da6a17298077dcca53fb.html">http</a></li><li class="navelem"><a class="el" href="dir_4ef14d1fb44f92669709c64c27e0d9bf.html">client</a></li><li class="navelem"><a class="el" href="dir_163af4f14f6c719d1dd3c92141f16e0e.html">tls</a></li><li class="navelem"><a class="el" href="tls_2_client_8h.html">Client.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

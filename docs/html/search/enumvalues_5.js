@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['rd_1210',['RD',['../classnet_1_1socket_1_1_socket.html#a7769480db1cc5cadb0e208577b85ade6a23993763bbd68e9ddabbb8b904dad1ec',1,'net::socket::Socket']]],
-  ['rdwr_1211',['RDWR',['../classnet_1_1socket_1_1_socket.html#a7769480db1cc5cadb0e208577b85ade6a514a0be30649047f44ae4af7d0c7b6f7',1,'net::socket::Socket']]]
+  ['header_1679',['HEADER',['../classweb_1_1http_1_1_parser.html#a94ab44c0d65451be6ba3e6e389a8b7d5a7ad4905b4543ab4a1637dd23c50e36ce',1,'web::http::Parser']]]
 ];

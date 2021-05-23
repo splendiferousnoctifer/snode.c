@@ -153,6 +153,55 @@ var annotated_dup =
       [ "SingleAttributeInjector", "classutils_1_1_single_attribute_injector.html", "classutils_1_1_single_attribute_injector" ],
       [ "MultibleAttributeInjector", "classutils_1_1_multible_attribute_injector.html", "classutils_1_1_multible_attribute_injector" ]
     ] ],
+    [ "web", "namespaceweb.html", [
+      [ "http", "namespaceweb_1_1http.html", [
+        [ "client", "namespaceweb_1_1http_1_1client.html", [
+          [ "legacy", "namespaceweb_1_1http_1_1client_1_1legacy.html", [
+            [ "Client", "classweb_1_1http_1_1client_1_1legacy_1_1_client.html", null ],
+            [ "Client6", "classweb_1_1http_1_1client_1_1legacy_1_1_client6.html", null ]
+          ] ],
+          [ "tls", "namespaceweb_1_1http_1_1client_1_1tls.html", [
+            [ "Client", "classweb_1_1http_1_1client_1_1tls_1_1_client.html", null ],
+            [ "Client6", "classweb_1_1http_1_1client_1_1tls_1_1_client6.html", null ]
+          ] ],
+          [ "Client", "classweb_1_1http_1_1client_1_1_client.html", "classweb_1_1http_1_1client_1_1_client" ],
+          [ "ClientContextBase", "classweb_1_1http_1_1client_1_1_client_context_base.html", "classweb_1_1http_1_1client_1_1_client_context_base" ],
+          [ "ClientContext", "classweb_1_1http_1_1client_1_1_client_context.html", "classweb_1_1http_1_1client_1_1_client_context" ],
+          [ "ClientContextFactory", "classweb_1_1http_1_1client_1_1_client_context_factory.html", "classweb_1_1http_1_1client_1_1_client_context_factory" ],
+          [ "Request", "classweb_1_1http_1_1client_1_1_request.html", "classweb_1_1http_1_1client_1_1_request" ],
+          [ "Response", "classweb_1_1http_1_1client_1_1_response.html", "classweb_1_1http_1_1client_1_1_response" ],
+          [ "ResponseParser", "classweb_1_1http_1_1client_1_1_response_parser.html", "classweb_1_1http_1_1client_1_1_response_parser" ]
+        ] ],
+        [ "server", "namespaceweb_1_1http_1_1server.html", [
+          [ "legacy", "namespaceweb_1_1http_1_1server_1_1legacy.html", [
+            [ "Server", "classweb_1_1http_1_1server_1_1legacy_1_1_server.html", null ],
+            [ "Server6", "classweb_1_1http_1_1server_1_1legacy_1_1_server6.html", null ]
+          ] ],
+          [ "tls", "namespaceweb_1_1http_1_1server_1_1tls.html", [
+            [ "Server", "classweb_1_1http_1_1server_1_1tls_1_1_server.html", null ],
+            [ "Server6", "classweb_1_1http_1_1server_1_1tls_1_1_server6.html", null ]
+          ] ],
+          [ "HTTPServerContextBase", "classweb_1_1http_1_1server_1_1_h_t_t_p_server_context_base.html", "classweb_1_1http_1_1server_1_1_h_t_t_p_server_context_base" ],
+          [ "HTTPServerContext", "classweb_1_1http_1_1server_1_1_h_t_t_p_server_context.html", "classweb_1_1http_1_1server_1_1_h_t_t_p_server_context" ],
+          [ "HTTPServerContextFactory", "classweb_1_1http_1_1server_1_1_h_t_t_p_server_context_factory.html", "classweb_1_1http_1_1server_1_1_h_t_t_p_server_context_factory" ],
+          [ "Request", "classweb_1_1http_1_1server_1_1_request.html", "classweb_1_1http_1_1server_1_1_request" ],
+          [ "RequestParser", "classweb_1_1http_1_1server_1_1_request_parser.html", "classweb_1_1http_1_1server_1_1_request_parser" ],
+          [ "Response", "classweb_1_1http_1_1server_1_1_response.html", "classweb_1_1http_1_1server_1_1_response" ],
+          [ "Server", "classweb_1_1http_1_1server_1_1_server.html", "classweb_1_1http_1_1server_1_1_server" ]
+        ] ],
+        [ "CookieOptions", "classweb_1_1http_1_1_cookie_options.html", "classweb_1_1http_1_1_cookie_options" ],
+        [ "MimeTypes", "classweb_1_1http_1_1_mime_types.html", "classweb_1_1http_1_1_mime_types" ],
+        [ "Parser", "classweb_1_1http_1_1_parser.html", "classweb_1_1http_1_1_parser" ],
+        [ "StatusCode", "classweb_1_1http_1_1_status_code.html", "classweb_1_1http_1_1_status_code" ]
+      ] ],
+      [ "ws", "namespaceweb_1_1ws.html", [
+        [ "server", "namespaceweb_1_1ws_1_1server.html", [
+          [ "WSServerContext", "classweb_1_1ws_1_1server_1_1_w_s_server_context.html", "classweb_1_1ws_1_1server_1_1_w_s_server_context" ]
+        ] ],
+        [ "WSReceiver", "classweb_1_1ws_1_1_w_s_receiver.html", "classweb_1_1ws_1_1_w_s_receiver" ],
+        [ "WSTransmitter", "classweb_1_1ws_1_1_w_s_transmitter.html", "classweb_1_1ws_1_1_w_s_transmitter" ]
+      ] ]
+    ] ],
     [ "File", "class_file.html", null ],
     [ "FileReader", "class_file_reader.html", "class_file_reader" ],
     [ "Logger", "class_logger.html", "class_logger" ]

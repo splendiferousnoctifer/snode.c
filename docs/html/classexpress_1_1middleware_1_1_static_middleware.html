@@ -86,6 +86,7 @@ $(document).ready(function(){initNavTree('classexpress_1_1middleware_1_1_static_
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classexpress_1_1middleware_1_1_static_middleware-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -107,10 +108,6 @@ Collaboration diagram for express::middleware::StaticMiddleware:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a573c60de5962113fc441e2494b87f79f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexpress_1_1middleware_1_1_static_middleware.html#a573c60de5962113fc441e2494b87f79f">StaticMiddleware</a> (const <a class="el" href="classexpress_1_1middleware_1_1_static_middleware.html">StaticMiddleware</a> &amp;)=delete</td></tr>
-<tr class="separator:a573c60de5962113fc441e2494b87f79f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affa81877ef800c2c23ce51dc8f5a854b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classexpress_1_1middleware_1_1_static_middleware.html">StaticMiddleware</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexpress_1_1middleware_1_1_static_middleware.html#affa81877ef800c2c23ce51dc8f5a854b">operator=</a> (const <a class="el" href="classexpress_1_1middleware_1_1_static_middleware.html">StaticMiddleware</a> &amp;)=delete</td></tr>
-<tr class="separator:affa81877ef800c2c23ce51dc8f5a854b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3636504ce2fc1d9adc36cffe0743dbe8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classexpress_1_1middleware_1_1_static_middleware.html">StaticMiddleware</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexpress_1_1middleware_1_1_static_middleware.html#a3636504ce2fc1d9adc36cffe0743dbe8">clearStdHeaders</a> ()</td></tr>
 <tr class="separator:a3636504ce2fc1d9adc36cffe0743dbe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d0bb2e3697f72a1937818e7cd3869ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classexpress_1_1middleware_1_1_static_middleware.html">StaticMiddleware</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexpress_1_1middleware_1_1_static_middleware.html#a8d0bb2e3697f72a1937818e7cd3869ea">setStdHeaders</a> (const std::map&lt; std::string, std::string &gt; &amp;<a class="el" href="classexpress_1_1middleware_1_1_static_middleware.html#a8ce62963e4bb98b3999d8748c9b97b51">stdHeaders</a>)</td></tr>
@@ -279,13 +276,20 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a4c1b12467fbff98a6aeecb56774a779e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ce62963e4bb98b3999d8748c9b97b51"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexpress_1_1middleware_1_1_static_middleware.html#a8ce62963e4bb98b3999d8748c9b97b51">stdHeaders</a></td></tr>
 <tr class="separator:a8ce62963e4bb98b3999d8748c9b97b51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a6f1426d1d24d50b1af2710a8241bc4"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, web::http::CookieOptions &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexpress_1_1middleware_1_1_static_middleware.html#a0a6f1426d1d24d50b1af2710a8241bc4">stdCookies</a> = {}</td></tr>
+<tr class="memitem:a0a6f1426d1d24d50b1af2710a8241bc4"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, <a class="el" href="classweb_1_1http_1_1_cookie_options.html">web::http::CookieOptions</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexpress_1_1middleware_1_1_static_middleware.html#a0a6f1426d1d24d50b1af2710a8241bc4">stdCookies</a> = {}</td></tr>
 <tr class="separator:a0a6f1426d1d24d50b1af2710a8241bc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace402c8dfebf4b12ffa99a42aa01a755"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexpress_1_1middleware_1_1_static_middleware.html#ace402c8dfebf4b12ffa99a42aa01a755">forceClose</a> = false</td></tr>
 <tr class="separator:ace402c8dfebf4b12ffa99a42aa01a755"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classexpress_1_1_router"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classexpress_1_1_router')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classexpress_1_1_router.html">express::Router</a></td></tr>
 <tr class="memitem:aa3c8a0794fc3e3882654f4a81bed6cb2 inherit pro_attribs_classexpress_1_1_router"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classexpress_1_1_router_dispatcher.html">RouterDispatcher</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexpress_1_1_router.html#aa3c8a0794fc3e3882654f4a81bed6cb2">routerDispatcher</a></td></tr>
 <tr class="separator:aa3c8a0794fc3e3882654f4a81bed6cb2 inherit pro_attribs_classexpress_1_1_router"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a573c60de5962113fc441e2494b87f79f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexpress_1_1middleware_1_1_static_middleware.html#a573c60de5962113fc441e2494b87f79f">StaticMiddleware</a> (const <a class="el" href="classexpress_1_1middleware_1_1_static_middleware.html">StaticMiddleware</a> &amp;)=delete</td></tr>
+<tr class="separator:a573c60de5962113fc441e2494b87f79f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affa81877ef800c2c23ce51dc8f5a854b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classexpress_1_1middleware_1_1_static_middleware.html">StaticMiddleware</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexpress_1_1middleware_1_1_static_middleware.html#affa81877ef800c2c23ce51dc8f5a854b">operator=</a> (const <a class="el" href="classexpress_1_1middleware_1_1_static_middleware.html">StaticMiddleware</a> &amp;)=delete</td></tr>
+<tr class="separator:affa81877ef800c2c23ce51dc8f5a854b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -296,8 +300,34 @@ Friends</h2></td></tr>
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="_static_middleware_8h_source.html#l00031">31</a> of file <a class="el" href="_static_middleware_8h_source.html">StaticMiddleware.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a573c60de5962113fc441e2494b87f79f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a573c60de5962113fc441e2494b87f79f">&#9670;&nbsp;</a></span>StaticMiddleware() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">express::middleware::StaticMiddleware::StaticMiddleware </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classexpress_1_1middleware_1_1_static_middleware.html">StaticMiddleware</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="af712793a6f6d600b813fc4a6d3fbe41d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af712793a6f6d600b813fc4a6d3fbe41d">&#9670;&nbsp;</a></span>StaticMiddleware() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af712793a6f6d600b813fc4a6d3fbe41d">&#9670;&nbsp;</a></span>StaticMiddleware() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -378,32 +408,6 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a573c60de5962113fc441e2494b87f79f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a573c60de5962113fc441e2494b87f79f">&#9670;&nbsp;</a></span>StaticMiddleware() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">express::middleware::StaticMiddleware::StaticMiddleware </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classexpress_1_1middleware_1_1_static_middleware.html">StaticMiddleware</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="af8e55a4a308bc4bf7421b869cc5810a5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af8e55a4a308bc4bf7421b869cc5810a5">&#9670;&nbsp;</a></span>alwaysClose()</h2>
@@ -463,10 +467,11 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="_static_middleware_8cpp_source.html#l00097">97</a> of file <a class="el" href="_static_middleware_8cpp_source.html">StaticMiddleware.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                                                                                                           {</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        this-&gt;<a class="code" href="classexpress_1_1middleware_1_1_static_middleware.html#a0a6f1426d1d24d50b1af2710a8241bc4">stdCookies</a>.insert({name, web::http::CookieOptions(value, <a class="code" href="classexpress_1_1_router.html#a6a02a5c7aa05ff68497edd322a8fd092">options</a>)});</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        this-&gt;<a class="code" href="classexpress_1_1middleware_1_1_static_middleware.html#a0a6f1426d1d24d50b1af2710a8241bc4">stdCookies</a>.insert({name, <a class="code" href="classweb_1_1http_1_1_cookie_options.html">web::http::CookieOptions</a>(value, <a class="code" href="classexpress_1_1_router.html#a6a02a5c7aa05ff68497edd322a8fd092">options</a>)});</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    }</div>
+<div class="ttc" id="aclassweb_1_1http_1_1_cookie_options_html"><div class="ttname"><a href="classweb_1_1http_1_1_cookie_options.html">web::http::CookieOptions</a></div><div class="ttdef"><b>Definition:</b> <a href="_cookie_options_8h_source.html#l00031">CookieOptions.h:31</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -581,12 +586,12 @@ Here is the call graph for this function:</div>
 <p class="definition">Definition at line <a class="el" href="_static_middleware_8cpp_source.html#l00114">114</a> of file <a class="el" href="_static_middleware_8cpp_source.html">StaticMiddleware.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                                                                            {</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="namespaceexpress_1_1middleware.html#ab66a27bd7e10c9d1973df712d6bb5374">staticMiddlewares</a>.contains(<a class="code" href="classexpress_1_1middleware_1_1_static_middleware.html#a4c1b12467fbff98a6aeecb56774a779e">root</a>)) {</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            <a class="code" href="namespaceexpress_1_1middleware.html#ab66a27bd7e10c9d1973df712d6bb5374">staticMiddlewares</a>[<a class="code" href="classexpress_1_1middleware_1_1_static_middleware.html#a4c1b12467fbff98a6aeecb56774a779e">root</a>] = std::shared_ptr&lt;StaticMiddleware&gt;(<span class="keyword">new</span> <a class="code" href="classexpress_1_1middleware_1_1_static_middleware.html#af712793a6f6d600b813fc4a6d3fbe41d">StaticMiddleware</a>(<a class="code" href="classexpress_1_1middleware_1_1_static_middleware.html#a4c1b12467fbff98a6aeecb56774a779e">root</a>));</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            <a class="code" href="namespaceexpress_1_1middleware.html#ab66a27bd7e10c9d1973df712d6bb5374">staticMiddlewares</a>[<a class="code" href="classexpress_1_1middleware_1_1_static_middleware.html#a4c1b12467fbff98a6aeecb56774a779e">root</a>] = std::shared_ptr&lt;StaticMiddleware&gt;(<span class="keyword">new</span> <a class="code" href="classexpress_1_1middleware_1_1_static_middleware.html#a573c60de5962113fc441e2494b87f79f">StaticMiddleware</a>(<a class="code" href="classexpress_1_1middleware_1_1_static_middleware.html#a4c1b12467fbff98a6aeecb56774a779e">root</a>));</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        }</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="keywordflow">return</span> *<a class="code" href="namespaceexpress_1_1middleware.html#ab66a27bd7e10c9d1973df712d6bb5374">staticMiddlewares</a>[<a class="code" href="classexpress_1_1middleware_1_1_static_middleware.html#a4c1b12467fbff98a6aeecb56774a779e">root</a>];</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    }</div>
-<div class="ttc" id="aclassexpress_1_1middleware_1_1_static_middleware_html_af712793a6f6d600b813fc4a6d3fbe41d"><div class="ttname"><a href="classexpress_1_1middleware_1_1_static_middleware.html#af712793a6f6d600b813fc4a6d3fbe41d">express::middleware::StaticMiddleware::StaticMiddleware</a></div><div class="ttdeci">StaticMiddleware(const std::string &amp;root)</div><div class="ttdef"><b>Definition:</b> <a href="_static_middleware_8cpp_source.html#l00033">StaticMiddleware.cpp:33</a></div></div>
+<div class="ttc" id="aclassexpress_1_1middleware_1_1_static_middleware_html_a573c60de5962113fc441e2494b87f79f"><div class="ttname"><a href="classexpress_1_1middleware_1_1_static_middleware.html#a573c60de5962113fc441e2494b87f79f">express::middleware::StaticMiddleware::StaticMiddleware</a></div><div class="ttdeci">StaticMiddleware(const StaticMiddleware &amp;)=delete</div></div>
 <div class="ttc" id="anamespaceexpress_1_1middleware_html_ab66a27bd7e10c9d1973df712d6bb5374"><div class="ttname"><a href="namespaceexpress_1_1middleware.html#ab66a27bd7e10c9d1973df712d6bb5374">express::middleware::staticMiddlewares</a></div><div class="ttdeci">static std::map&lt; const std::string, std::shared_ptr&lt; class StaticMiddleware &gt; &gt; staticMiddlewares</div><div class="ttdef"><b>Definition:</b> <a href="_static_middleware_8cpp_source.html#l00112">StaticMiddleware.cpp:112</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="_static_middleware_8cpp_source.html#l00123">express::middleware::StaticMiddleware()</a>, and <a class="el" href="_static_middleware_8cpp_source.html#l00112">express::middleware::staticMiddlewares</a>.</p>
@@ -617,7 +622,7 @@ Here is the call graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -743,7 +748,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::map&lt;std::string, web::http::CookieOptions&gt; express::middleware::StaticMiddleware::stdCookies = {}</td>
+          <td class="memname">std::map&lt;std::string, <a class="el" href="classweb_1_1http_1_1_cookie_options.html">web::http::CookieOptions</a>&gt; express::middleware::StaticMiddleware::stdCookies = {}</td>
         </tr>
       </table>
   </td>

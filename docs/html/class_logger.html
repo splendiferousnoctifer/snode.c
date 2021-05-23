@@ -83,9 +83,9 @@ $(document).ready(function(){initNavTree('class_logger.html',''); initResizable(
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
-<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="class_logger-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Logger Class Reference</div>  </div>
@@ -112,13 +112,6 @@ Public Types</h2></td></tr>
  }</td></tr>
 <tr class="separator:ad766a24576ea8b27ad9d5649cef46d8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:aefffc02e0c6c0ab09ec1f77fe35f6439"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_logger.html#aefffc02e0c6c0ab09ec1f77fe35f6439">Logger</a> ()=delete</td></tr>
-<tr class="separator:aefffc02e0c6c0ab09ec1f77fe35f6439"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0eb4e365ecab1497d9275d4373e433b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_logger.html#ad0eb4e365ecab1497d9275d4373e433b">~Logger</a> ()=delete</td></tr>
-<tr class="separator:ad0eb4e365ecab1497d9275d4373e433b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a9a1cee6606317c7baa7d06fe86916f72"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_logger.html#a9a1cee6606317c7baa7d06fe86916f72">init</a> (int argc, char *argv[])</td></tr>
@@ -138,6 +131,13 @@ Static Public Member Functions</h2></td></tr>
 Static Protected Attributes</h2></td></tr>
 <tr class="memitem:aab3f8f567382428dd7e467c5d6835832"><td class="memItemLeft" align="right" valign="top">static el::Configurations&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_logger.html#aab3f8f567382428dd7e467c5d6835832">conf</a></td></tr>
 <tr class="separator:aab3f8f567382428dd7e467c5d6835832"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:aefffc02e0c6c0ab09ec1f77fe35f6439"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_logger.html#aefffc02e0c6c0ab09ec1f77fe35f6439">Logger</a> ()=delete</td></tr>
+<tr class="separator:aefffc02e0c6c0ab09ec1f77fe35f6439"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0eb4e365ecab1497d9275d4373e433b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_logger.html#ad0eb4e365ecab1497d9275d4373e433b">~Logger</a> ()=delete</td></tr>
+<tr class="separator:ad0eb4e365ecab1497d9275d4373e433b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -162,13 +162,13 @@ Static Protected Attributes</h2></td></tr>
 <tr><td class="fieldname"><a id="ad766a24576ea8b27ad9d5649cef46d8faedbd8d8bf2c8855ff226770a5c6adf0c"></a>FATAL&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_logger_8h_source.html#l00031">31</a> of file <a class="el" href="_logger_8h_source.html">Logger.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{ <a class="code" href="class_logger.html#ad766a24576ea8b27ad9d5649cef46d8fa61a9b6fc1e9babc448984b8a34ca2ed2">INFO</a>, <a class="code" href="class_logger.html#ad766a24576ea8b27ad9d5649cef46d8fabdc8d840ac4b73e1bd3212184af8f85e">DEBUG</a>, <a class="code" href="class_logger.html#ad766a24576ea8b27ad9d5649cef46d8fafb1bf96f41b282521d9438106ea11bca">WARNING</a>, <a class="code" href="class_logger.html#ad766a24576ea8b27ad9d5649cef46d8fa3ce1bbeb15a3d8e29e4c5e75492a781b">ERROR</a>, <a class="code" href="class_logger.html#ad766a24576ea8b27ad9d5649cef46d8faedbd8d8bf2c8855ff226770a5c6adf0c">FATAL</a> };</div>
-<div class="ttc" id="aclass_logger_html_ad766a24576ea8b27ad9d5649cef46d8fa3ce1bbeb15a3d8e29e4c5e75492a781b"><div class="ttname"><a href="class_logger.html#ad766a24576ea8b27ad9d5649cef46d8fa3ce1bbeb15a3d8e29e4c5e75492a781b">Logger::ERROR</a></div><div class="ttdeci">@ ERROR</div><div class="ttdef"><b>Definition:</b> <a href="_logger_8h_source.html#l00031">Logger.h:31</a></div></div>
-<div class="ttc" id="aclass_logger_html_ad766a24576ea8b27ad9d5649cef46d8fa61a9b6fc1e9babc448984b8a34ca2ed2"><div class="ttname"><a href="class_logger.html#ad766a24576ea8b27ad9d5649cef46d8fa61a9b6fc1e9babc448984b8a34ca2ed2">Logger::INFO</a></div><div class="ttdeci">@ INFO</div><div class="ttdef"><b>Definition:</b> <a href="_logger_8h_source.html#l00031">Logger.h:31</a></div></div>
-<div class="ttc" id="aclass_logger_html_ad766a24576ea8b27ad9d5649cef46d8fabdc8d840ac4b73e1bd3212184af8f85e"><div class="ttname"><a href="class_logger.html#ad766a24576ea8b27ad9d5649cef46d8fabdc8d840ac4b73e1bd3212184af8f85e">Logger::DEBUG</a></div><div class="ttdeci">@ DEBUG</div><div class="ttdef"><b>Definition:</b> <a href="_logger_8h_source.html#l00031">Logger.h:31</a></div></div>
-<div class="ttc" id="aclass_logger_html_ad766a24576ea8b27ad9d5649cef46d8faedbd8d8bf2c8855ff226770a5c6adf0c"><div class="ttname"><a href="class_logger.html#ad766a24576ea8b27ad9d5649cef46d8faedbd8d8bf2c8855ff226770a5c6adf0c">Logger::FATAL</a></div><div class="ttdeci">@ FATAL</div><div class="ttdef"><b>Definition:</b> <a href="_logger_8h_source.html#l00031">Logger.h:31</a></div></div>
-<div class="ttc" id="aclass_logger_html_ad766a24576ea8b27ad9d5649cef46d8fafb1bf96f41b282521d9438106ea11bca"><div class="ttname"><a href="class_logger.html#ad766a24576ea8b27ad9d5649cef46d8fafb1bf96f41b282521d9438106ea11bca">Logger::WARNING</a></div><div class="ttdeci">@ WARNING</div><div class="ttdef"><b>Definition:</b> <a href="_logger_8h_source.html#l00031">Logger.h:31</a></div></div>
+<p class="definition">Definition at line <a class="el" href="_logger_8h_source.html#l00034">34</a> of file <a class="el" href="_logger_8h_source.html">Logger.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{ <a class="code" href="class_logger.html#ad766a24576ea8b27ad9d5649cef46d8fa61a9b6fc1e9babc448984b8a34ca2ed2">INFO</a>, <a class="code" href="class_logger.html#ad766a24576ea8b27ad9d5649cef46d8fabdc8d840ac4b73e1bd3212184af8f85e">DEBUG</a>, <a class="code" href="class_logger.html#ad766a24576ea8b27ad9d5649cef46d8fafb1bf96f41b282521d9438106ea11bca">WARNING</a>, <a class="code" href="class_logger.html#ad766a24576ea8b27ad9d5649cef46d8fa3ce1bbeb15a3d8e29e4c5e75492a781b">ERROR</a>, <a class="code" href="class_logger.html#ad766a24576ea8b27ad9d5649cef46d8faedbd8d8bf2c8855ff226770a5c6adf0c">FATAL</a> };</div>
+<div class="ttc" id="aclass_logger_html_ad766a24576ea8b27ad9d5649cef46d8fa3ce1bbeb15a3d8e29e4c5e75492a781b"><div class="ttname"><a href="class_logger.html#ad766a24576ea8b27ad9d5649cef46d8fa3ce1bbeb15a3d8e29e4c5e75492a781b">Logger::ERROR</a></div><div class="ttdeci">@ ERROR</div><div class="ttdef"><b>Definition:</b> <a href="_logger_8h_source.html#l00034">Logger.h:34</a></div></div>
+<div class="ttc" id="aclass_logger_html_ad766a24576ea8b27ad9d5649cef46d8fa61a9b6fc1e9babc448984b8a34ca2ed2"><div class="ttname"><a href="class_logger.html#ad766a24576ea8b27ad9d5649cef46d8fa61a9b6fc1e9babc448984b8a34ca2ed2">Logger::INFO</a></div><div class="ttdeci">@ INFO</div><div class="ttdef"><b>Definition:</b> <a href="_logger_8h_source.html#l00034">Logger.h:34</a></div></div>
+<div class="ttc" id="aclass_logger_html_ad766a24576ea8b27ad9d5649cef46d8fabdc8d840ac4b73e1bd3212184af8f85e"><div class="ttname"><a href="class_logger.html#ad766a24576ea8b27ad9d5649cef46d8fabdc8d840ac4b73e1bd3212184af8f85e">Logger::DEBUG</a></div><div class="ttdeci">@ DEBUG</div><div class="ttdef"><b>Definition:</b> <a href="_logger_8h_source.html#l00034">Logger.h:34</a></div></div>
+<div class="ttc" id="aclass_logger_html_ad766a24576ea8b27ad9d5649cef46d8faedbd8d8bf2c8855ff226770a5c6adf0c"><div class="ttname"><a href="class_logger.html#ad766a24576ea8b27ad9d5649cef46d8faedbd8d8bf2c8855ff226770a5c6adf0c">Logger::FATAL</a></div><div class="ttdeci">@ FATAL</div><div class="ttdef"><b>Definition:</b> <a href="_logger_8h_source.html#l00034">Logger.h:34</a></div></div>
+<div class="ttc" id="aclass_logger_html_ad766a24576ea8b27ad9d5649cef46d8fafb1bf96f41b282521d9438106ea11bca"><div class="ttname"><a href="class_logger.html#ad766a24576ea8b27ad9d5649cef46d8fafb1bf96f41b282521d9438106ea11bca">Logger::WARNING</a></div><div class="ttdeci">@ WARNING</div><div class="ttdef"><b>Definition:</b> <a href="_logger_8h_source.html#l00034">Logger.h:34</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -191,7 +191,7 @@ Static Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -216,7 +216,7 @@ Static Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

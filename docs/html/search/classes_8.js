@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['l2capaddress_604',['L2CapAddress',['../classnet_1_1socket_1_1bluetooth_1_1address_1_1_l2_cap_address.html',1,'net::socket::bluetooth::address']]],
-  ['logger_605',['Logger',['../class_logger.html',1,'']]]
+  ['jsonmiddleware_851',['JsonMiddleware',['../classexpress_1_1middleware_1_1_json_middleware.html',1,'express::middleware']]]
 ];

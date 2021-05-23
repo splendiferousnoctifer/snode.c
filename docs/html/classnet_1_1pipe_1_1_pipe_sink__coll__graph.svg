@@ -21,13 +21,13 @@
 <text text-anchor="start" x="11.5" y="-103.5" font-family="Helvetica,sans-Serif" font-size="10.00"># onError</text>
 <polyline fill="none" stroke="black" points="3.5,-96.5 102.5,-96.5 "/>
 <text text-anchor="start" x="11.5" y="-84.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ PipeSink()</text>
-<text text-anchor="start" x="11.5" y="-73.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ PipeSink()</text>
-<text text-anchor="start" x="11.5" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator=()</text>
-<text text-anchor="start" x="11.5" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setOnData()</text>
-<text text-anchor="start" x="11.5" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setOnEof()</text>
-<text text-anchor="start" x="11.5" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setOnError()</text>
-<text text-anchor="start" x="11.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00"># readEvent()</text>
-<text text-anchor="start" x="11.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00"># unobserved()</text>
+<text text-anchor="start" x="11.5" y="-73.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setOnData()</text>
+<text text-anchor="start" x="11.5" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setOnEof()</text>
+<text text-anchor="start" x="11.5" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setOnError()</text>
+<text text-anchor="start" x="11.5" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00"># readEvent()</text>
+<text text-anchor="start" x="11.5" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00"># unobserved()</text>
+<text text-anchor="start" x="11.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; PipeSink()</text>
+<text text-anchor="start" x="11.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; operator=()</text>
 </a>
 </g>
 </g>
@@ -41,14 +41,14 @@
 <text text-anchor="start" x="8" y="-308.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ none</text>
 <text text-anchor="start" x="8" y="-297.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; fd</text>
 <polyline fill="none" stroke="black" points="0,-290.5 82,-290.5 "/>
-<text text-anchor="start" x="8" y="-278.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Descriptor()</text>
-<text text-anchor="start" x="8" y="-267.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator=()</text>
-<text text-anchor="start" x="8" y="-256.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ attach()</text>
-<text text-anchor="start" x="8" y="-245.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getFd()</text>
-<text text-anchor="start" x="8" y="-234.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ dontClose()</text>
-<text text-anchor="start" x="8" y="-223.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ dontClose()</text>
-<text text-anchor="start" x="8" y="-212.5" font-family="Helvetica,sans-Serif" font-size="10.00"># Descriptor()</text>
-<text text-anchor="start" x="8" y="-201.5" font-family="Helvetica,sans-Serif" font-size="10.00"># ~Descriptor()</text>
+<text text-anchor="start" x="8" y="-278.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ attach()</text>
+<text text-anchor="start" x="8" y="-267.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getFd()</text>
+<text text-anchor="start" x="8" y="-256.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ dontClose()</text>
+<text text-anchor="start" x="8" y="-245.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ dontClose()</text>
+<text text-anchor="start" x="8" y="-234.5" font-family="Helvetica,sans-Serif" font-size="10.00"># Descriptor()</text>
+<text text-anchor="start" x="8" y="-223.5" font-family="Helvetica,sans-Serif" font-size="10.00"># ~Descriptor()</text>
+<text text-anchor="start" x="8" y="-212.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; Descriptor()</text>
+<text text-anchor="start" x="8" y="-201.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; operator=()</text>
 </a>
 </g>
 </g>
@@ -92,17 +92,17 @@
 <text text-anchor="start" x="97" y="-634.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; maxInactivity</text>
 <text text-anchor="start" x="97" y="-623.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; initialTimeout</text>
 <polyline fill="none" stroke="black" points="89,-616.5 235,-616.5 "/>
-<text text-anchor="start" x="97" y="-604.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ DescriptorEventReceiver()</text>
-<text text-anchor="start" x="97" y="-593.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator=()</text>
-<text text-anchor="start" x="97" y="-582.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ enable()</text>
-<text text-anchor="start" x="97" y="-571.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ disable()</text>
-<text text-anchor="start" x="97" y="-560.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ suspend()</text>
-<text text-anchor="start" x="97" y="-549.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ resume()</text>
-<text text-anchor="start" x="97" y="-538.5" font-family="Helvetica,sans-Serif" font-size="10.00"># DescriptorEventReceiver()</text>
-<text text-anchor="start" x="97" y="-527.5" font-family="Helvetica,sans-Serif" font-size="10.00"># ~DescriptorEventReceiver()</text>
-<text text-anchor="start" x="97" y="-516.5" font-family="Helvetica,sans-Serif" font-size="10.00"># setTimeout()</text>
-<text text-anchor="start" x="97" y="-505.5" font-family="Helvetica,sans-Serif" font-size="10.00"># isEnabled()</text>
-<text text-anchor="start" x="97" y="-494.5" font-family="Helvetica,sans-Serif" font-size="10.00"># isSuspended()</text>
+<text text-anchor="start" x="97" y="-604.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ enable()</text>
+<text text-anchor="start" x="97" y="-593.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ disable()</text>
+<text text-anchor="start" x="97" y="-582.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ suspend()</text>
+<text text-anchor="start" x="97" y="-571.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ resume()</text>
+<text text-anchor="start" x="97" y="-560.5" font-family="Helvetica,sans-Serif" font-size="10.00"># DescriptorEventReceiver()</text>
+<text text-anchor="start" x="97" y="-549.5" font-family="Helvetica,sans-Serif" font-size="10.00"># ~DescriptorEventReceiver()</text>
+<text text-anchor="start" x="97" y="-538.5" font-family="Helvetica,sans-Serif" font-size="10.00"># setTimeout()</text>
+<text text-anchor="start" x="97" y="-527.5" font-family="Helvetica,sans-Serif" font-size="10.00"># isEnabled()</text>
+<text text-anchor="start" x="97" y="-516.5" font-family="Helvetica,sans-Serif" font-size="10.00"># isSuspended()</text>
+<text text-anchor="start" x="97" y="-505.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; DescriptorEventReceiver()</text>
+<text text-anchor="start" x="97" y="-494.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; operator=()</text>
 <text text-anchor="start" x="97" y="-483.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; dispatchEvent()</text>
 <text text-anchor="start" x="97" y="-472.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; timeoutEvent()</text>
 <text text-anchor="start" x="97" y="-461.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; enabled()</text>
@@ -155,13 +155,13 @@
 <text text-anchor="start" x="234" y="-926.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; eventCounter</text>
 <polyline fill="none" stroke="black" points="226,-919.5 380,-919.5 "/>
 <text text-anchor="start" x="234" y="-907.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ DescriptorEventDispatcher()</text>
-<text text-anchor="start" x="234" y="-896.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ DescriptorEventDispatcher()</text>
-<text text-anchor="start" x="234" y="-885.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator=()</text>
-<text text-anchor="start" x="234" y="-874.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ enable()</text>
-<text text-anchor="start" x="234" y="-863.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ disable()</text>
-<text text-anchor="start" x="234" y="-852.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ suspend()</text>
-<text text-anchor="start" x="234" y="-841.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ resume()</text>
-<text text-anchor="start" x="234" y="-830.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getEventCounter()</text>
+<text text-anchor="start" x="234" y="-896.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ enable()</text>
+<text text-anchor="start" x="234" y="-885.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ disable()</text>
+<text text-anchor="start" x="234" y="-874.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ suspend()</text>
+<text text-anchor="start" x="234" y="-863.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ resume()</text>
+<text text-anchor="start" x="234" y="-852.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getEventCounter()</text>
+<text text-anchor="start" x="234" y="-841.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; DescriptorEventDispatcher()</text>
+<text text-anchor="start" x="234" y="-830.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; operator=()</text>
 <text text-anchor="start" x="234" y="-819.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; getMaxFd()</text>
 <text text-anchor="start" x="234" y="-808.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; getFdSet()</text>
 <text text-anchor="start" x="234" y="-797.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; dispatchActiveEvents()</text>

@@ -1,7 +1,7 @@
 var classexpress_1_1middleware_1_1_static_middleware =
 [
-    [ "StaticMiddleware", "classexpress_1_1middleware_1_1_static_middleware.html#af712793a6f6d600b813fc4a6d3fbe41d", null ],
     [ "StaticMiddleware", "classexpress_1_1middleware_1_1_static_middleware.html#a573c60de5962113fc441e2494b87f79f", null ],
+    [ "StaticMiddleware", "classexpress_1_1middleware_1_1_static_middleware.html#af712793a6f6d600b813fc4a6d3fbe41d", null ],
     [ "alwaysClose", "classexpress_1_1middleware_1_1_static_middleware.html#af8e55a4a308bc4bf7421b869cc5810a5", null ],
     [ "appendStdCookie", "classexpress_1_1middleware_1_1_static_middleware.html#ac012f401b14e8e43d377722b2bc7ab96", null ],
     [ "appendStdHeaders", "classexpress_1_1middleware_1_1_static_middleware.html#acfe2eed37125bf7321cc39c1e867a0c2", null ],

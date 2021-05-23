@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['writebuffer_1188',['writeBuffer',['../classnet_1_1pipe_1_1_pipe_source.html#a97e60d7dc50b400375203f57f2a1d347',1,'net::pipe::PipeSource::writeBuffer()'],['../classnet_1_1socket_1_1stream_1_1_socket_writer.html#a33c28980a21e4e1289611714634ab3d8',1,'net::socket::stream::SocketWriter::writeBuffer()']]],
-  ['writeeventdispatcher_1189',['writeEventDispatcher',['../classnet_1_1_event_loop.html#a9bf01a881686014ac51407d67fc4715c',1,'net::EventLoop']]]
+  ['unobservedeventreceiver_1643',['unobservedEventReceiver',['../classnet_1_1_descriptor_event_dispatcher.html#a6b56c2405cc0033ced91e1b47fc26649',1,'net::DescriptorEventDispatcher']]],
+  ['url_1644',['url',['../classweb_1_1http_1_1client_1_1_request.html#a161d376501626ced9a29a15b514288d4',1,'web::http::client::Request::url()'],['../classweb_1_1http_1_1server_1_1_request.html#a2c2ef2815be183f1130e9a4fd43f9851',1,'web::http::server::Request::url()'],['../classweb_1_1http_1_1server_1_1_request_parser.html#af883c4f33109165ce30c7e58b6c33762',1,'web::http::server::RequestParser::url()']]]
 ];

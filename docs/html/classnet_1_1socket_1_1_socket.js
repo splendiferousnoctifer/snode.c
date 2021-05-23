@@ -6,8 +6,8 @@ var classnet_1_1socket_1_1_socket =
       [ "RD", "classnet_1_1socket_1_1_socket.html#a7769480db1cc5cadb0e208577b85ade6a23993763bbd68e9ddabbb8b904dad1ec", null ],
       [ "RDWR", "classnet_1_1socket_1_1_socket.html#a7769480db1cc5cadb0e208577b85ade6a514a0be30649047f44ae4af7d0c7b6f7", null ]
     ] ],
-    [ "Socket", "classnet_1_1socket_1_1_socket.html#a2e3e6fec1d4a4638a8dca568c6121c00", null ],
     [ "Socket", "classnet_1_1socket_1_1_socket.html#a71a2ba0a70e0da24ae43dc52437874b5", null ],
+    [ "Socket", "classnet_1_1socket_1_1_socket.html#a2e3e6fec1d4a4638a8dca568c6121c00", null ],
     [ "~Socket", "classnet_1_1socket_1_1_socket.html#a1943874bf03dc9c9eb5b88e08bb5edd9", null ],
     [ "bind", "classnet_1_1socket_1_1_socket.html#a1ce7ef4ad82e2035af1c9f9d752112b8", null ],
     [ "create", "classnet_1_1socket_1_1_socket.html#a4e4cd3dbedb5348efdb2fddf09526657", null ],

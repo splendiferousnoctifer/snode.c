@@ -46,14 +46,14 @@
 <text text-anchor="start" x="240" y="-319.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; remoteAddress</text>
 <text text-anchor="start" x="240" y="-308.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onDisconnect</text>
 <polyline fill="none" stroke="black" points="232,-301.5 382,-301.5 "/>
-<text text-anchor="start" x="240" y="-289.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ SocketConnection()</text>
-<text text-anchor="start" x="240" y="-278.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getRemoteAddress()</text>
-<text text-anchor="start" x="240" y="-267.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getLocalAddress()</text>
-<text text-anchor="start" x="240" y="-256.5" font-family="Helvetica,sans-Serif" font-size="10.00"># SocketConnection()</text>
-<text text-anchor="start" x="240" y="-245.5" font-family="Helvetica,sans-Serif" font-size="10.00"># ~SocketConnection()</text>
+<text text-anchor="start" x="240" y="-289.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getRemoteAddress()</text>
+<text text-anchor="start" x="240" y="-278.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getLocalAddress()</text>
+<text text-anchor="start" x="240" y="-267.5" font-family="Helvetica,sans-Serif" font-size="10.00"># SocketConnection()</text>
+<text text-anchor="start" x="240" y="-256.5" font-family="Helvetica,sans-Serif" font-size="10.00"># ~SocketConnection()</text>
+<text text-anchor="start" x="240" y="-245.5" font-family="Helvetica,sans-Serif" font-size="10.00"># enqueue()</text>
 <text text-anchor="start" x="240" y="-234.5" font-family="Helvetica,sans-Serif" font-size="10.00"># enqueue()</text>
-<text text-anchor="start" x="240" y="-223.5" font-family="Helvetica,sans-Serif" font-size="10.00"># enqueue()</text>
-<text text-anchor="start" x="240" y="-212.5" font-family="Helvetica,sans-Serif" font-size="10.00"># close()</text>
+<text text-anchor="start" x="240" y="-223.5" font-family="Helvetica,sans-Serif" font-size="10.00"># close()</text>
+<text text-anchor="start" x="240" y="-212.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; SocketConnection()</text>
 <text text-anchor="start" x="240" y="-201.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; unobserved()</text>
 </a>
 </g>
@@ -77,13 +77,13 @@
 <polyline fill="none" stroke="black" points="0,-820.5 140,-820.5 "/>
 <text text-anchor="start" x="8" y="-808.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getSocketProtocol()</text>
 <text text-anchor="start" x="8" y="-797.5" font-family="Helvetica,sans-Serif" font-size="10.00"># SocketConnectionBase()</text>
-<text text-anchor="start" x="8" y="-786.5" font-family="Helvetica,sans-Serif" font-size="10.00"># SocketConnectionBase()</text>
-<text text-anchor="start" x="8" y="-775.5" font-family="Helvetica,sans-Serif" font-size="10.00"># operator=()</text>
-<text text-anchor="start" x="8" y="-764.5" font-family="Helvetica,sans-Serif" font-size="10.00"># ~SocketConnectionBase()</text>
-<text text-anchor="start" x="8" y="-753.5" font-family="Helvetica,sans-Serif" font-size="10.00"># enqueue()</text>
-<text text-anchor="start" x="8" y="-742.5" font-family="Helvetica,sans-Serif" font-size="10.00"># enqueue()</text>
-<text text-anchor="start" x="8" y="-731.5" font-family="Helvetica,sans-Serif" font-size="10.00"># close()</text>
-<text text-anchor="start" x="8" y="-720.5" font-family="Helvetica,sans-Serif" font-size="10.00"># switchSocketProtocol()</text>
+<text text-anchor="start" x="8" y="-786.5" font-family="Helvetica,sans-Serif" font-size="10.00"># ~SocketConnectionBase()</text>
+<text text-anchor="start" x="8" y="-775.5" font-family="Helvetica,sans-Serif" font-size="10.00"># enqueue()</text>
+<text text-anchor="start" x="8" y="-764.5" font-family="Helvetica,sans-Serif" font-size="10.00"># enqueue()</text>
+<text text-anchor="start" x="8" y="-753.5" font-family="Helvetica,sans-Serif" font-size="10.00"># close()</text>
+<text text-anchor="start" x="8" y="-742.5" font-family="Helvetica,sans-Serif" font-size="10.00"># switchSocketProtocol()</text>
+<text text-anchor="start" x="8" y="-731.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; SocketConnectionBase()</text>
+<text text-anchor="start" x="8" y="-720.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; operator=()</text>
 </a>
 </g>
 </g>
@@ -107,14 +107,14 @@
 <text text-anchor="start" x="136.5" y="-600.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; remoteAddress</text>
 <text text-anchor="start" x="136.5" y="-589.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onDisconnect</text>
 <polyline fill="none" stroke="black" points="128.5,-582.5 277.5,-582.5 "/>
-<text text-anchor="start" x="136.5" y="-570.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ SocketConnection()</text>
-<text text-anchor="start" x="136.5" y="-559.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getRemoteAddress()</text>
-<text text-anchor="start" x="136.5" y="-548.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getLocalAddress()</text>
-<text text-anchor="start" x="136.5" y="-537.5" font-family="Helvetica,sans-Serif" font-size="10.00"># SocketConnection()</text>
-<text text-anchor="start" x="136.5" y="-526.5" font-family="Helvetica,sans-Serif" font-size="10.00"># ~SocketConnection()</text>
+<text text-anchor="start" x="136.5" y="-570.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getRemoteAddress()</text>
+<text text-anchor="start" x="136.5" y="-559.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getLocalAddress()</text>
+<text text-anchor="start" x="136.5" y="-548.5" font-family="Helvetica,sans-Serif" font-size="10.00"># SocketConnection()</text>
+<text text-anchor="start" x="136.5" y="-537.5" font-family="Helvetica,sans-Serif" font-size="10.00"># ~SocketConnection()</text>
+<text text-anchor="start" x="136.5" y="-526.5" font-family="Helvetica,sans-Serif" font-size="10.00"># enqueue()</text>
 <text text-anchor="start" x="136.5" y="-515.5" font-family="Helvetica,sans-Serif" font-size="10.00"># enqueue()</text>
-<text text-anchor="start" x="136.5" y="-504.5" font-family="Helvetica,sans-Serif" font-size="10.00"># enqueue()</text>
-<text text-anchor="start" x="136.5" y="-493.5" font-family="Helvetica,sans-Serif" font-size="10.00"># close()</text>
+<text text-anchor="start" x="136.5" y="-504.5" font-family="Helvetica,sans-Serif" font-size="10.00"># close()</text>
+<text text-anchor="start" x="136.5" y="-493.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; SocketConnection()</text>
 <text text-anchor="start" x="136.5" y="-482.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; unobserved()</text>
 </a>
 </g>
@@ -163,9 +163,9 @@
 <text text-anchor="start" x="367" y="-811" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; markShutdown</text>
 <polyline fill="none" stroke="black" points="359,-804 499,-804 "/>
 <text text-anchor="start" x="367" y="-792" font-family="Helvetica,sans-Serif" font-size="10.00"># SocketReader()</text>
-<text text-anchor="start" x="367" y="-781" font-family="Helvetica,sans-Serif" font-size="10.00"># SocketReader()</text>
-<text text-anchor="start" x="367" y="-770" font-family="Helvetica,sans-Serif" font-size="10.00"># ~SocketReader()</text>
-<text text-anchor="start" x="367" y="-759" font-family="Helvetica,sans-Serif" font-size="10.00"># shutdown()</text>
+<text text-anchor="start" x="367" y="-781" font-family="Helvetica,sans-Serif" font-size="10.00"># ~SocketReader()</text>
+<text text-anchor="start" x="367" y="-770" font-family="Helvetica,sans-Serif" font-size="10.00"># shutdown()</text>
+<text text-anchor="start" x="367" y="-759" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; SocketReader()</text>
 <text text-anchor="start" x="367" y="-748" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; read()</text>
 <text text-anchor="start" x="367" y="-737" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; readEvent()</text>
 <text text-anchor="start" x="367" y="-726" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; getError()</text>
@@ -213,17 +213,17 @@
 <text text-anchor="start" x="437" y="-1292.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; maxInactivity</text>
 <text text-anchor="start" x="437" y="-1281.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; initialTimeout</text>
 <polyline fill="none" stroke="black" points="429,-1274.5 575,-1274.5 "/>
-<text text-anchor="start" x="437" y="-1262.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ DescriptorEventReceiver()</text>
-<text text-anchor="start" x="437" y="-1251.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator=()</text>
-<text text-anchor="start" x="437" y="-1240.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ enable()</text>
-<text text-anchor="start" x="437" y="-1229.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ disable()</text>
-<text text-anchor="start" x="437" y="-1218.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ suspend()</text>
-<text text-anchor="start" x="437" y="-1207.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ resume()</text>
-<text text-anchor="start" x="437" y="-1196.5" font-family="Helvetica,sans-Serif" font-size="10.00"># DescriptorEventReceiver()</text>
-<text text-anchor="start" x="437" y="-1185.5" font-family="Helvetica,sans-Serif" font-size="10.00"># ~DescriptorEventReceiver()</text>
-<text text-anchor="start" x="437" y="-1174.5" font-family="Helvetica,sans-Serif" font-size="10.00"># setTimeout()</text>
-<text text-anchor="start" x="437" y="-1163.5" font-family="Helvetica,sans-Serif" font-size="10.00"># isEnabled()</text>
-<text text-anchor="start" x="437" y="-1152.5" font-family="Helvetica,sans-Serif" font-size="10.00"># isSuspended()</text>
+<text text-anchor="start" x="437" y="-1262.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ enable()</text>
+<text text-anchor="start" x="437" y="-1251.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ disable()</text>
+<text text-anchor="start" x="437" y="-1240.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ suspend()</text>
+<text text-anchor="start" x="437" y="-1229.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ resume()</text>
+<text text-anchor="start" x="437" y="-1218.5" font-family="Helvetica,sans-Serif" font-size="10.00"># DescriptorEventReceiver()</text>
+<text text-anchor="start" x="437" y="-1207.5" font-family="Helvetica,sans-Serif" font-size="10.00"># ~DescriptorEventReceiver()</text>
+<text text-anchor="start" x="437" y="-1196.5" font-family="Helvetica,sans-Serif" font-size="10.00"># setTimeout()</text>
+<text text-anchor="start" x="437" y="-1185.5" font-family="Helvetica,sans-Serif" font-size="10.00"># isEnabled()</text>
+<text text-anchor="start" x="437" y="-1174.5" font-family="Helvetica,sans-Serif" font-size="10.00"># isSuspended()</text>
+<text text-anchor="start" x="437" y="-1163.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; DescriptorEventReceiver()</text>
+<text text-anchor="start" x="437" y="-1152.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; operator=()</text>
 <text text-anchor="start" x="437" y="-1141.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; dispatchEvent()</text>
 <text text-anchor="start" x="437" y="-1130.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; timeoutEvent()</text>
 <text text-anchor="start" x="437" y="-1119.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; enabled()</text>
@@ -316,10 +316,10 @@
 <text text-anchor="start" x="525" y="-816.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; markShutdown</text>
 <polyline fill="none" stroke="black" points="517,-809.5 651,-809.5 "/>
 <text text-anchor="start" x="525" y="-797.5" font-family="Helvetica,sans-Serif" font-size="10.00"># SocketWriter()</text>
-<text text-anchor="start" x="525" y="-786.5" font-family="Helvetica,sans-Serif" font-size="10.00"># SocketWriter()</text>
-<text text-anchor="start" x="525" y="-775.5" font-family="Helvetica,sans-Serif" font-size="10.00"># ~SocketWriter()</text>
-<text text-anchor="start" x="525" y="-764.5" font-family="Helvetica,sans-Serif" font-size="10.00"># enqueue()</text>
-<text text-anchor="start" x="525" y="-753.5" font-family="Helvetica,sans-Serif" font-size="10.00"># shutdown()</text>
+<text text-anchor="start" x="525" y="-786.5" font-family="Helvetica,sans-Serif" font-size="10.00"># ~SocketWriter()</text>
+<text text-anchor="start" x="525" y="-775.5" font-family="Helvetica,sans-Serif" font-size="10.00"># enqueue()</text>
+<text text-anchor="start" x="525" y="-764.5" font-family="Helvetica,sans-Serif" font-size="10.00"># shutdown()</text>
+<text text-anchor="start" x="525" y="-753.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; SocketWriter()</text>
 <text text-anchor="start" x="525" y="-742.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; write()</text>
 <text text-anchor="start" x="525" y="-731.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; writeEvent()</text>
 <text text-anchor="start" x="525" y="-720.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; getError()</text>

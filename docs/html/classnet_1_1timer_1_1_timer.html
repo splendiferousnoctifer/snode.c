@@ -87,6 +87,7 @@ $(document).ready(function(){initNavTree('classnet_1_1timer_1_1_timer.html','');
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classnet_1_1timer_1_1_timer-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -113,10 +114,6 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1f43762415fc087f105e514acf31572a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1timer_1_1_timer.html#a1f43762415fc087f105e514acf31572a">Timer</a> (const <a class="el" href="classnet_1_1timer_1_1_timer.html">Timer</a> &amp;)=delete</td></tr>
-<tr class="separator:a1f43762415fc087f105e514acf31572a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12ca45629bac9f5bd66eab5220853e1a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnet_1_1timer_1_1_timer.html">Timer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1timer_1_1_timer.html#a12ca45629bac9f5bd66eab5220853e1a">operator=</a> (const <a class="el" href="classnet_1_1timer_1_1_timer.html">Timer</a> &amp;timer)=delete</td></tr>
-<tr class="separator:a12ca45629bac9f5bd66eab5220853e1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6fe55d757972df01126c19baed3f838"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1timer_1_1_timer.html#ae6fe55d757972df01126c19baed3f838">cancel</a> ()</td></tr>
 <tr class="separator:ae6fe55d757972df01126c19baed3f838"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -152,6 +149,13 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:ae5321e41c1449780244ab6945015a82f"><td class="memItemLeft" align="right" valign="top">const void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1timer_1_1_timer.html#ae5321e41c1449780244ab6945015a82f">arg</a></td></tr>
 <tr class="separator:ae5321e41c1449780244ab6945015a82f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a1f43762415fc087f105e514acf31572a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1timer_1_1_timer.html#a1f43762415fc087f105e514acf31572a">Timer</a> (const <a class="el" href="classnet_1_1timer_1_1_timer.html">Timer</a> &amp;)=delete</td></tr>
+<tr class="separator:a1f43762415fc087f105e514acf31572a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12ca45629bac9f5bd66eab5220853e1a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnet_1_1timer_1_1_timer.html">Timer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1timer_1_1_timer.html#a12ca45629bac9f5bd66eab5220853e1a">operator=</a> (const <a class="el" href="classnet_1_1timer_1_1_timer.html">Timer</a> &amp;timer)=delete</td></tr>
+<tr class="separator:a12ca45629bac9f5bd66eab5220853e1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a472441b7f968a1db76f3fd7bc83692ff"><td class="memItemLeft" align="right" valign="top">struct timeval&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1timer_1_1_timer.html#a472441b7f968a1db76f3fd7bc83692ff">delay</a></td></tr>
@@ -161,8 +165,34 @@ Private Attributes</h2></td></tr>
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="_timer_8h_source.html#l00038">38</a> of file <a class="el" href="_timer_8h_source.html">Timer.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a1f43762415fc087f105e514acf31572a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f43762415fc087f105e514acf31572a">&#9670;&nbsp;</a></span>Timer() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">net::timer::Timer::Timer </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classnet_1_1timer_1_1_timer.html">Timer</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ab63bd86695b2a111bf7c87348806601a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab63bd86695b2a111bf7c87348806601a">&#9670;&nbsp;</a></span>Timer() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab63bd86695b2a111bf7c87348806601a">&#9670;&nbsp;</a></span>Timer() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -241,32 +271,6 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a1f43762415fc087f105e514acf31572a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f43762415fc087f105e514acf31572a">&#9670;&nbsp;</a></span>Timer() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">net::timer::Timer::Timer </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classnet_1_1timer_1_1_timer.html">Timer</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="ae6fe55d757972df01126c19baed3f838"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae6fe55d757972df01126c19baed3f838">&#9670;&nbsp;</a></span>cancel()</h2>
@@ -287,13 +291,13 @@ Here is the call graph for this function:</div>
 <div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                       {</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <a class="code" href="classnet_1_1_event_loop.html#a6d8bfd6fa03bb6bf423035ab190657ef">EventLoop::instance</a>().<a class="code" href="classnet_1_1_event_loop.html#aeb3848618bd0e968aa6713d8c72bbd0f">getTimerEventDispatcher</a>().<a class="code" href="classnet_1_1_timer_event_dispatcher.html#a985a74e6a3c6f6d3ddec66e4e20d3a86">remove</a>(<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div>
-<div class="ttc" id="aclassnet_1_1_event_loop_html_a6d8bfd6fa03bb6bf423035ab190657ef"><div class="ttname"><a href="classnet_1_1_event_loop.html#a6d8bfd6fa03bb6bf423035ab190657ef">net::EventLoop::instance</a></div><div class="ttdeci">static EventLoop &amp; instance()</div><div class="ttdef"><b>Definition:</b> <a href="_event_loop_8h_source.html#l00045">EventLoop.h:45</a></div></div>
-<div class="ttc" id="aclassnet_1_1_event_loop_html_aeb3848618bd0e968aa6713d8c72bbd0f"><div class="ttname"><a href="classnet_1_1_event_loop.html#aeb3848618bd0e968aa6713d8c72bbd0f">net::EventLoop::getTimerEventDispatcher</a></div><div class="ttdeci">TimerEventDispatcher &amp; getTimerEventDispatcher()</div><div class="ttdef"><b>Definition:</b> <a href="_event_loop_8h_source.html#l00061">EventLoop.h:61</a></div></div>
+<div class="ttc" id="aclassnet_1_1_event_loop_html_a6d8bfd6fa03bb6bf423035ab190657ef"><div class="ttname"><a href="classnet_1_1_event_loop.html#a6d8bfd6fa03bb6bf423035ab190657ef">net::EventLoop::instance</a></div><div class="ttdeci">static EventLoop &amp; instance()</div><div class="ttdef"><b>Definition:</b> <a href="_event_loop_8h_source.html#l00044">EventLoop.h:44</a></div></div>
+<div class="ttc" id="aclassnet_1_1_event_loop_html_aeb3848618bd0e968aa6713d8c72bbd0f"><div class="ttname"><a href="classnet_1_1_event_loop.html#aeb3848618bd0e968aa6713d8c72bbd0f">net::EventLoop::getTimerEventDispatcher</a></div><div class="ttdeci">TimerEventDispatcher &amp; getTimerEventDispatcher()</div><div class="ttdef"><b>Definition:</b> <a href="_event_loop_8h_source.html#l00060">EventLoop.h:60</a></div></div>
 <div class="ttc" id="aclassnet_1_1_timer_event_dispatcher_html_a985a74e6a3c6f6d3ddec66e4e20d3a86"><div class="ttname"><a href="classnet_1_1_timer_event_dispatcher.html#a985a74e6a3c6f6d3ddec66e4e20d3a86">net::TimerEventDispatcher::remove</a></div><div class="ttdeci">void remove(TimerEventReceiver *timer)</div><div class="ttdef"><b>Definition:</b> <a href="_timer_event_dispatcher_8cpp_source.html#l00091">TimerEventDispatcher.cpp:91</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_event_loop_8h_source.html#l00061">net::EventLoop::getTimerEventDispatcher()</a>, <a class="el" href="_event_loop_8h_source.html#l00045">net::EventLoop::instance()</a>, and <a class="el" href="_timer_event_dispatcher_8cpp_source.html#l00091">net::TimerEventDispatcher::remove()</a>.</p>
+<p class="reference">References <a class="el" href="_event_loop_8h_source.html#l00060">net::EventLoop::getTimerEventDispatcher()</a>, <a class="el" href="_event_loop_8h_source.html#l00044">net::EventLoop::instance()</a>, and <a class="el" href="_timer_event_dispatcher_8cpp_source.html#l00091">net::TimerEventDispatcher::remove()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_interval_timer_8h_source.html#l00048">net::timer::IntervalTimer::dispatch()</a>, and <a class="el" href="_singleshot_timer_8h_source.html#l00039">net::timer::SingleshotTimer::dispatch()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_interval_timer_8h_source.html#l00048">net::timer::IntervalTimer::dispatch()</a>, and <a class="el" href="_singleshot_timer_8h_source.html#l00041">net::timer::SingleshotTimer::dispatch()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -357,7 +361,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    }</div>
 <div class="ttc" id="aclassnet_1_1_timer_event_dispatcher_html_a257334aff57be8a9075584a20c64c793"><div class="ttname"><a href="classnet_1_1_timer_event_dispatcher.html#a257334aff57be8a9075584a20c64c793">net::TimerEventDispatcher::add</a></div><div class="ttdeci">void add(TimerEventReceiver *timer)</div><div class="ttdef"><b>Definition:</b> <a href="_timer_event_dispatcher_8cpp_source.html#l00095">TimerEventDispatcher.cpp:95</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_timer_event_dispatcher_8cpp_source.html#l00095">net::TimerEventDispatcher::add()</a>, <a class="el" href="_timer_8h_source.html#l00061">arg</a>, <a class="el" href="_event_loop_8h_source.html#l00061">net::EventLoop::getTimerEventDispatcher()</a>, <a class="el" href="_event_loop_8h_source.html#l00045">net::EventLoop::instance()</a>, and <a class="el" href="_timer_8cpp_source.html#l00080">timeout()</a>.</p>
+<p class="reference">References <a class="el" href="_timer_event_dispatcher_8cpp_source.html#l00095">net::TimerEventDispatcher::add()</a>, <a class="el" href="_timer_8h_source.html#l00061">arg</a>, <a class="el" href="_event_loop_8h_source.html#l00060">net::EventLoop::getTimerEventDispatcher()</a>, <a class="el" href="_event_loop_8h_source.html#l00044">net::EventLoop::instance()</a>, and <a class="el" href="_timer_8cpp_source.html#l00080">timeout()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -415,7 +419,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">return</span> *ct;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_timer_event_dispatcher_8cpp_source.html#l00095">net::TimerEventDispatcher::add()</a>, <a class="el" href="_timer_8h_source.html#l00061">arg</a>, <a class="el" href="_event_loop_8h_source.html#l00061">net::EventLoop::getTimerEventDispatcher()</a>, <a class="el" href="_event_loop_8h_source.html#l00045">net::EventLoop::instance()</a>, and <a class="el" href="_timer_8cpp_source.html#l00080">timeout()</a>.</p>
+<p class="reference">References <a class="el" href="_timer_event_dispatcher_8cpp_source.html#l00095">net::TimerEventDispatcher::add()</a>, <a class="el" href="_timer_8h_source.html#l00061">arg</a>, <a class="el" href="_event_loop_8h_source.html#l00060">net::EventLoop::getTimerEventDispatcher()</a>, <a class="el" href="_event_loop_8h_source.html#l00044">net::EventLoop::instance()</a>, and <a class="el" href="_timer_8cpp_source.html#l00080">timeout()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -507,7 +511,7 @@ Here is the call graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -563,7 +567,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordflow">return</span> *st;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_timer_event_dispatcher_8cpp_source.html#l00095">net::TimerEventDispatcher::add()</a>, <a class="el" href="_timer_8h_source.html#l00061">arg</a>, <a class="el" href="_event_loop_8h_source.html#l00061">net::EventLoop::getTimerEventDispatcher()</a>, <a class="el" href="_event_loop_8h_source.html#l00045">net::EventLoop::instance()</a>, and <a class="el" href="_timer_8cpp_source.html#l00080">timeout()</a>.</p>
+<p class="reference">References <a class="el" href="_timer_event_dispatcher_8cpp_source.html#l00095">net::TimerEventDispatcher::add()</a>, <a class="el" href="_timer_8h_source.html#l00061">arg</a>, <a class="el" href="_event_loop_8h_source.html#l00060">net::EventLoop::getTimerEventDispatcher()</a>, <a class="el" href="_event_loop_8h_source.html#l00044">net::EventLoop::instance()</a>, and <a class="el" href="_timer_8cpp_source.html#l00080">timeout()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -673,7 +677,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="_timer_8h_source.html#l00061">61</a> of file <a class="el" href="_timer_8h_source.html">Timer.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_timer_8cpp_source.html#l00049">continousTimer()</a>, <a class="el" href="_interval_timer_8h_source.html#l00048">net::timer::IntervalTimer::dispatch()</a>, <a class="el" href="_singleshot_timer_8h_source.html#l00039">net::timer::SingleshotTimer::dispatch()</a>, and <a class="el" href="_timer_8cpp_source.html#l00041">singleshotTimer()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_timer_8cpp_source.html#l00049">continousTimer()</a>, <a class="el" href="_interval_timer_8h_source.html#l00048">net::timer::IntervalTimer::dispatch()</a>, <a class="el" href="_singleshot_timer_8h_source.html#l00041">net::timer::SingleshotTimer::dispatch()</a>, and <a class="el" href="_timer_8cpp_source.html#l00041">singleshotTimer()</a>.</p>
 
 </div>
 </div>

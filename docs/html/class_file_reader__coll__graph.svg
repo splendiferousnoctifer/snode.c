@@ -59,17 +59,17 @@
 <text text-anchor="start" x="12.5" y="-589.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; maxInactivity</text>
 <text text-anchor="start" x="12.5" y="-578.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; initialTimeout</text>
 <polyline fill="none" stroke="black" points="4.5,-571.5 150.5,-571.5 "/>
-<text text-anchor="start" x="12.5" y="-559.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ DescriptorEventReceiver()</text>
-<text text-anchor="start" x="12.5" y="-548.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator=()</text>
-<text text-anchor="start" x="12.5" y="-537.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ enable()</text>
-<text text-anchor="start" x="12.5" y="-526.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ disable()</text>
-<text text-anchor="start" x="12.5" y="-515.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ suspend()</text>
-<text text-anchor="start" x="12.5" y="-504.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ resume()</text>
-<text text-anchor="start" x="12.5" y="-493.5" font-family="Helvetica,sans-Serif" font-size="10.00"># DescriptorEventReceiver()</text>
-<text text-anchor="start" x="12.5" y="-482.5" font-family="Helvetica,sans-Serif" font-size="10.00"># ~DescriptorEventReceiver()</text>
-<text text-anchor="start" x="12.5" y="-471.5" font-family="Helvetica,sans-Serif" font-size="10.00"># setTimeout()</text>
-<text text-anchor="start" x="12.5" y="-460.5" font-family="Helvetica,sans-Serif" font-size="10.00"># isEnabled()</text>
-<text text-anchor="start" x="12.5" y="-449.5" font-family="Helvetica,sans-Serif" font-size="10.00"># isSuspended()</text>
+<text text-anchor="start" x="12.5" y="-559.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ enable()</text>
+<text text-anchor="start" x="12.5" y="-548.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ disable()</text>
+<text text-anchor="start" x="12.5" y="-537.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ suspend()</text>
+<text text-anchor="start" x="12.5" y="-526.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ resume()</text>
+<text text-anchor="start" x="12.5" y="-515.5" font-family="Helvetica,sans-Serif" font-size="10.00"># DescriptorEventReceiver()</text>
+<text text-anchor="start" x="12.5" y="-504.5" font-family="Helvetica,sans-Serif" font-size="10.00"># ~DescriptorEventReceiver()</text>
+<text text-anchor="start" x="12.5" y="-493.5" font-family="Helvetica,sans-Serif" font-size="10.00"># setTimeout()</text>
+<text text-anchor="start" x="12.5" y="-482.5" font-family="Helvetica,sans-Serif" font-size="10.00"># isEnabled()</text>
+<text text-anchor="start" x="12.5" y="-471.5" font-family="Helvetica,sans-Serif" font-size="10.00"># isSuspended()</text>
+<text text-anchor="start" x="12.5" y="-460.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; DescriptorEventReceiver()</text>
+<text text-anchor="start" x="12.5" y="-449.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; operator=()</text>
 <text text-anchor="start" x="12.5" y="-438.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; dispatchEvent()</text>
 <text text-anchor="start" x="12.5" y="-427.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; timeoutEvent()</text>
 <text text-anchor="start" x="12.5" y="-416.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; enabled()</text>
@@ -122,13 +122,13 @@
 <text text-anchor="start" x="149.5" y="-881.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; eventCounter</text>
 <polyline fill="none" stroke="black" points="141.5,-874.5 295.5,-874.5 "/>
 <text text-anchor="start" x="149.5" y="-862.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ DescriptorEventDispatcher()</text>
-<text text-anchor="start" x="149.5" y="-851.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ DescriptorEventDispatcher()</text>
-<text text-anchor="start" x="149.5" y="-840.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator=()</text>
-<text text-anchor="start" x="149.5" y="-829.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ enable()</text>
-<text text-anchor="start" x="149.5" y="-818.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ disable()</text>
-<text text-anchor="start" x="149.5" y="-807.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ suspend()</text>
-<text text-anchor="start" x="149.5" y="-796.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ resume()</text>
-<text text-anchor="start" x="149.5" y="-785.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getEventCounter()</text>
+<text text-anchor="start" x="149.5" y="-851.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ enable()</text>
+<text text-anchor="start" x="149.5" y="-840.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ disable()</text>
+<text text-anchor="start" x="149.5" y="-829.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ suspend()</text>
+<text text-anchor="start" x="149.5" y="-818.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ resume()</text>
+<text text-anchor="start" x="149.5" y="-807.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getEventCounter()</text>
+<text text-anchor="start" x="149.5" y="-796.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; DescriptorEventDispatcher()</text>
+<text text-anchor="start" x="149.5" y="-785.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; operator=()</text>
 <text text-anchor="start" x="149.5" y="-774.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; getMaxFd()</text>
 <text text-anchor="start" x="149.5" y="-763.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; getFdSet()</text>
 <text text-anchor="start" x="149.5" y="-752.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; dispatchActiveEvents()</text>
@@ -300,14 +300,14 @@
 <text text-anchor="start" x="176.5" y="-534.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ none</text>
 <text text-anchor="start" x="176.5" y="-523.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; fd</text>
 <polyline fill="none" stroke="black" points="168.5,-516.5 250.5,-516.5 "/>
-<text text-anchor="start" x="176.5" y="-504.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Descriptor()</text>
-<text text-anchor="start" x="176.5" y="-493.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator=()</text>
-<text text-anchor="start" x="176.5" y="-482.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ attach()</text>
-<text text-anchor="start" x="176.5" y="-471.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getFd()</text>
-<text text-anchor="start" x="176.5" y="-460.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ dontClose()</text>
-<text text-anchor="start" x="176.5" y="-449.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ dontClose()</text>
-<text text-anchor="start" x="176.5" y="-438.5" font-family="Helvetica,sans-Serif" font-size="10.00"># Descriptor()</text>
-<text text-anchor="start" x="176.5" y="-427.5" font-family="Helvetica,sans-Serif" font-size="10.00"># ~Descriptor()</text>
+<text text-anchor="start" x="176.5" y="-504.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ attach()</text>
+<text text-anchor="start" x="176.5" y="-493.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getFd()</text>
+<text text-anchor="start" x="176.5" y="-482.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ dontClose()</text>
+<text text-anchor="start" x="176.5" y="-471.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ dontClose()</text>
+<text text-anchor="start" x="176.5" y="-460.5" font-family="Helvetica,sans-Serif" font-size="10.00"># Descriptor()</text>
+<text text-anchor="start" x="176.5" y="-449.5" font-family="Helvetica,sans-Serif" font-size="10.00"># ~Descriptor()</text>
+<text text-anchor="start" x="176.5" y="-438.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; Descriptor()</text>
+<text text-anchor="start" x="176.5" y="-427.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; operator=()</text>
 </a>
 </g>
 </g>

@@ -40,14 +40,14 @@
 <text text-anchor="start" x="37" y="-241.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; remoteAddress</text>
 <text text-anchor="start" x="37" y="-230.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onDisconnect</text>
 <polyline fill="none" stroke="black" points="29,-223.5 223,-223.5 "/>
-<text text-anchor="start" x="37" y="-211.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ SocketConnection()</text>
-<text text-anchor="start" x="37" y="-200.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getRemoteAddress()</text>
-<text text-anchor="start" x="37" y="-189.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getLocalAddress()</text>
-<text text-anchor="start" x="37" y="-178.5" font-family="Helvetica,sans-Serif" font-size="10.00"># SocketConnection()</text>
-<text text-anchor="start" x="37" y="-167.5" font-family="Helvetica,sans-Serif" font-size="10.00"># ~SocketConnection()</text>
+<text text-anchor="start" x="37" y="-211.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getRemoteAddress()</text>
+<text text-anchor="start" x="37" y="-200.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getLocalAddress()</text>
+<text text-anchor="start" x="37" y="-189.5" font-family="Helvetica,sans-Serif" font-size="10.00"># SocketConnection()</text>
+<text text-anchor="start" x="37" y="-178.5" font-family="Helvetica,sans-Serif" font-size="10.00"># ~SocketConnection()</text>
+<text text-anchor="start" x="37" y="-167.5" font-family="Helvetica,sans-Serif" font-size="10.00"># enqueue()</text>
 <text text-anchor="start" x="37" y="-156.5" font-family="Helvetica,sans-Serif" font-size="10.00"># enqueue()</text>
-<text text-anchor="start" x="37" y="-145.5" font-family="Helvetica,sans-Serif" font-size="10.00"># enqueue()</text>
-<text text-anchor="start" x="37" y="-134.5" font-family="Helvetica,sans-Serif" font-size="10.00"># close()</text>
+<text text-anchor="start" x="37" y="-145.5" font-family="Helvetica,sans-Serif" font-size="10.00"># close()</text>
+<text text-anchor="start" x="37" y="-134.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; SocketConnection()</text>
 <text text-anchor="start" x="37" y="-123.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; unobserved()</text>
 </a>
 </g>
@@ -71,10 +71,10 @@
 <text text-anchor="start" x="67" y="-594.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; markShutdown</text>
 <polyline fill="none" stroke="black" points="59,-587.5 193,-587.5 "/>
 <text text-anchor="start" x="67" y="-575.5" font-family="Helvetica,sans-Serif" font-size="10.00"># SocketWriter()</text>
-<text text-anchor="start" x="67" y="-564.5" font-family="Helvetica,sans-Serif" font-size="10.00"># SocketWriter()</text>
-<text text-anchor="start" x="67" y="-553.5" font-family="Helvetica,sans-Serif" font-size="10.00"># ~SocketWriter()</text>
-<text text-anchor="start" x="67" y="-542.5" font-family="Helvetica,sans-Serif" font-size="10.00"># enqueue()</text>
-<text text-anchor="start" x="67" y="-531.5" font-family="Helvetica,sans-Serif" font-size="10.00"># shutdown()</text>
+<text text-anchor="start" x="67" y="-564.5" font-family="Helvetica,sans-Serif" font-size="10.00"># ~SocketWriter()</text>
+<text text-anchor="start" x="67" y="-553.5" font-family="Helvetica,sans-Serif" font-size="10.00"># enqueue()</text>
+<text text-anchor="start" x="67" y="-542.5" font-family="Helvetica,sans-Serif" font-size="10.00"># shutdown()</text>
+<text text-anchor="start" x="67" y="-531.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; SocketWriter()</text>
 <text text-anchor="start" x="67" y="-520.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; write()</text>
 <text text-anchor="start" x="67" y="-509.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; writeEvent()</text>
 <text text-anchor="start" x="67" y="-498.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; getError()</text>
@@ -122,17 +122,17 @@
 <text text-anchor="start" x="8" y="-1068.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; maxInactivity</text>
 <text text-anchor="start" x="8" y="-1057.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; initialTimeout</text>
 <polyline fill="none" stroke="black" points="0,-1050.5 146,-1050.5 "/>
-<text text-anchor="start" x="8" y="-1038.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ DescriptorEventReceiver()</text>
-<text text-anchor="start" x="8" y="-1027.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator=()</text>
-<text text-anchor="start" x="8" y="-1016.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ enable()</text>
-<text text-anchor="start" x="8" y="-1005.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ disable()</text>
-<text text-anchor="start" x="8" y="-994.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ suspend()</text>
-<text text-anchor="start" x="8" y="-983.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ resume()</text>
-<text text-anchor="start" x="8" y="-972.5" font-family="Helvetica,sans-Serif" font-size="10.00"># DescriptorEventReceiver()</text>
-<text text-anchor="start" x="8" y="-961.5" font-family="Helvetica,sans-Serif" font-size="10.00"># ~DescriptorEventReceiver()</text>
-<text text-anchor="start" x="8" y="-950.5" font-family="Helvetica,sans-Serif" font-size="10.00"># setTimeout()</text>
-<text text-anchor="start" x="8" y="-939.5" font-family="Helvetica,sans-Serif" font-size="10.00"># isEnabled()</text>
-<text text-anchor="start" x="8" y="-928.5" font-family="Helvetica,sans-Serif" font-size="10.00"># isSuspended()</text>
+<text text-anchor="start" x="8" y="-1038.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ enable()</text>
+<text text-anchor="start" x="8" y="-1027.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ disable()</text>
+<text text-anchor="start" x="8" y="-1016.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ suspend()</text>
+<text text-anchor="start" x="8" y="-1005.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ resume()</text>
+<text text-anchor="start" x="8" y="-994.5" font-family="Helvetica,sans-Serif" font-size="10.00"># DescriptorEventReceiver()</text>
+<text text-anchor="start" x="8" y="-983.5" font-family="Helvetica,sans-Serif" font-size="10.00"># ~DescriptorEventReceiver()</text>
+<text text-anchor="start" x="8" y="-972.5" font-family="Helvetica,sans-Serif" font-size="10.00"># setTimeout()</text>
+<text text-anchor="start" x="8" y="-961.5" font-family="Helvetica,sans-Serif" font-size="10.00"># isEnabled()</text>
+<text text-anchor="start" x="8" y="-950.5" font-family="Helvetica,sans-Serif" font-size="10.00"># isSuspended()</text>
+<text text-anchor="start" x="8" y="-939.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; DescriptorEventReceiver()</text>
+<text text-anchor="start" x="8" y="-928.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; operator=()</text>
 <text text-anchor="start" x="8" y="-917.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; dispatchEvent()</text>
 <text text-anchor="start" x="8" y="-906.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; timeoutEvent()</text>
 <text text-anchor="start" x="8" y="-895.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; enabled()</text>

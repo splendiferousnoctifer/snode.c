@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>snode.c: http/ConnectionState.h Source File</title>
+<title>snode.c: web/http/ConnectionState.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -103,26 +103,31 @@ $(document).ready(function(){initNavTree('_connection_state_8h_source.html','');
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * along with this program. If not, see &lt;http://www.gnu.org/licenses/&gt;.</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#ifndef HTTP_CONNECTIONSTATE_H</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#define HTTP_CONNECTIONSTATE_H</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#ifndef WEB_HTTP_CONNECTIONSTATE_H</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#define WEB_HTTP_CONNECTIONSTATE_H</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#ifndef DOXYGEN_SHOULD_SKIP_THIS</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* DOXYGEN_SHOULD_SKIP_THIS */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="_connection_state_8h.html#acdd867d72142510ce53521a63a062f9bab0d2fc8a61cc30fce240ad6df88447d4">   26</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="_connection_state_8h.html#acdd867d72142510ce53521a63a062f9b">ConnectionState</a> { <a class="code" href="_connection_state_8h.html#acdd867d72142510ce53521a63a062f9ba79935518a3889663d8688b6b01fff051">Default</a>, <a class="code" href="_connection_state_8h.html#acdd867d72142510ce53521a63a062f9babb4da6bbdfe13f46af77da7e8a939727">Keep</a>, <a class="code" href="_connection_state_8h.html#acdd867d72142510ce53521a63a062f9bab0d2fc8a61cc30fce240ad6df88447d4">Close</a> };</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceweb_1_1http.html">web::http</a> {</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// HTTP_CONNECTIONSTATE_H</span></div>
-<div class="ttc" id="a_connection_state_8h_html_acdd867d72142510ce53521a63a062f9b"><div class="ttname"><a href="_connection_state_8h.html#acdd867d72142510ce53521a63a062f9b">ConnectionState</a></div><div class="ttdeci">ConnectionState</div><div class="ttdef"><b>Definition:</b> <a href="_connection_state_8h_source.html#l00026">ConnectionState.h:26</a></div></div>
-<div class="ttc" id="a_connection_state_8h_html_acdd867d72142510ce53521a63a062f9ba79935518a3889663d8688b6b01fff051"><div class="ttname"><a href="_connection_state_8h.html#acdd867d72142510ce53521a63a062f9ba79935518a3889663d8688b6b01fff051">Default</a></div><div class="ttdeci">@ Default</div><div class="ttdef"><b>Definition:</b> <a href="_connection_state_8h_source.html#l00026">ConnectionState.h:26</a></div></div>
-<div class="ttc" id="a_connection_state_8h_html_acdd867d72142510ce53521a63a062f9bab0d2fc8a61cc30fce240ad6df88447d4"><div class="ttname"><a href="_connection_state_8h.html#acdd867d72142510ce53521a63a062f9bab0d2fc8a61cc30fce240ad6df88447d4">Close</a></div><div class="ttdeci">@ Close</div><div class="ttdef"><b>Definition:</b> <a href="_connection_state_8h_source.html#l00026">ConnectionState.h:26</a></div></div>
-<div class="ttc" id="a_connection_state_8h_html_acdd867d72142510ce53521a63a062f9babb4da6bbdfe13f46af77da7e8a939727"><div class="ttname"><a href="_connection_state_8h.html#acdd867d72142510ce53521a63a062f9babb4da6bbdfe13f46af77da7e8a939727">Keep</a></div><div class="ttdeci">@ Keep</div><div class="ttdef"><b>Definition:</b> <a href="_connection_state_8h_source.html#l00026">ConnectionState.h:26</a></div></div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="namespaceweb_1_1http.html#ac27fdcf348c7472940ecd0e34342dca1a31333582a62633255ac3791bd7f5af0b">   28</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="namespaceweb_1_1http.html#ac27fdcf348c7472940ecd0e34342dca1">ConnectionState</a> { <a class="code" href="namespaceweb_1_1http.html#ac27fdcf348c7472940ecd0e34342dca1a2e49d6b06cbe1718b81c65c7eee76807">Default</a>, <a class="code" href="namespaceweb_1_1http.html#ac27fdcf348c7472940ecd0e34342dca1a19331c4aeb7eb71943963ec94adb057e">Keep</a>, <a class="code" href="namespaceweb_1_1http.html#ac27fdcf348c7472940ecd0e34342dca1a31333582a62633255ac3791bd7f5af0b">Close</a> };</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;} <span class="comment">// namespace web::http</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// WEB_HTTP_CONNECTIONSTATE_H</span></div>
+<div class="ttc" id="anamespaceweb_1_1http_html"><div class="ttname"><a href="namespaceweb_1_1http.html">web::http</a></div><div class="ttdef"><b>Definition:</b> <a href="_client_8h_source.html#l00036">Client.h:36</a></div></div>
+<div class="ttc" id="anamespaceweb_1_1http_html_ac27fdcf348c7472940ecd0e34342dca1"><div class="ttname"><a href="namespaceweb_1_1http.html#ac27fdcf348c7472940ecd0e34342dca1">web::http::ConnectionState</a></div><div class="ttdeci">ConnectionState</div><div class="ttdef"><b>Definition:</b> <a href="_connection_state_8h_source.html#l00028">ConnectionState.h:28</a></div></div>
+<div class="ttc" id="anamespaceweb_1_1http_html_ac27fdcf348c7472940ecd0e34342dca1a19331c4aeb7eb71943963ec94adb057e"><div class="ttname"><a href="namespaceweb_1_1http.html#ac27fdcf348c7472940ecd0e34342dca1a19331c4aeb7eb71943963ec94adb057e">web::http::Keep</a></div><div class="ttdeci">@ Keep</div><div class="ttdef"><b>Definition:</b> <a href="_connection_state_8h_source.html#l00028">ConnectionState.h:28</a></div></div>
+<div class="ttc" id="anamespaceweb_1_1http_html_ac27fdcf348c7472940ecd0e34342dca1a2e49d6b06cbe1718b81c65c7eee76807"><div class="ttname"><a href="namespaceweb_1_1http.html#ac27fdcf348c7472940ecd0e34342dca1a2e49d6b06cbe1718b81c65c7eee76807">web::http::Default</a></div><div class="ttdeci">@ Default</div><div class="ttdef"><b>Definition:</b> <a href="_connection_state_8h_source.html#l00028">ConnectionState.h:28</a></div></div>
+<div class="ttc" id="anamespaceweb_1_1http_html_ac27fdcf348c7472940ecd0e34342dca1a31333582a62633255ac3791bd7f5af0b"><div class="ttname"><a href="namespaceweb_1_1http.html#ac27fdcf348c7472940ecd0e34342dca1a31333582a62633255ac3791bd7f5af0b">web::http::Close</a></div><div class="ttdeci">@ Close</div><div class="ttdef"><b>Definition:</b> <a href="_connection_state_8h_source.html#l00028">ConnectionState.h:28</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de5b03c9e251d763a573c2ccd217de59.html">http</a></li><li class="navelem"><a class="el" href="_connection_state_8h.html">ConnectionState.h</a></li>
+    <li class="navelem"><a class="el" href="dir_562abdcd8625d4bf7bad2fe6fe01354c.html">web</a></li><li class="navelem"><a class="el" href="dir_890691660869da6a17298077dcca53fb.html">http</a></li><li class="navelem"><a class="el" href="_connection_state_8h.html">ConnectionState.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

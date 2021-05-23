@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['error_1206',['ERROR',['../class_logger.html#ad766a24576ea8b27ad9d5649cef46d8fa3ce1bbeb15a3d8e29e4c5e75492a781b',1,'Logger']]]
+  ['close_1671',['Close',['../namespaceweb_1_1http.html#ac27fdcf348c7472940ecd0e34342dca1a31333582a62633255ac3791bd7f5af0b',1,'web::http']]]
 ];

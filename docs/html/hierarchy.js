@@ -2,6 +2,20 @@ var hierarchy =
 [
     [ "net::timer::Timer::absoluteTimeout", "structnet_1_1timer_1_1_timer_1_1absolute_timeout.html", null ],
     [ "utils::AttributeProxy< Attribute >", "classutils_1_1_attribute_proxy.html", null ],
+    [ "web::http::client::Client< SocketClientT, RequestT, ResponseT >", "classweb_1_1http_1_1client_1_1_client.html", null ],
+    [ "web::http::client::Client< net::socket::ip::tcp::ipv4::legacy::SocketClient, web::http::client::Request, web::http::client::Response >", "classweb_1_1http_1_1client_1_1_client.html", [
+      [ "web::http::client::legacy::Client< Request, Response >", "classweb_1_1http_1_1client_1_1legacy_1_1_client.html", null ]
+    ] ],
+    [ "web::http::client::Client< net::socket::ip::tcp::ipv4::tls::SocketClient, web::http::client::Request, web::http::client::Response >", "classweb_1_1http_1_1client_1_1_client.html", [
+      [ "web::http::client::tls::Client< Request, Response >", "classweb_1_1http_1_1client_1_1tls_1_1_client.html", null ]
+    ] ],
+    [ "web::http::client::Client< net::socket::ip::tcp::ipv6::legacy::SocketClient, web::http::client::Request, web::http::client::Response >", "classweb_1_1http_1_1client_1_1_client.html", [
+      [ "web::http::client::legacy::Client6< Request, Response >", "classweb_1_1http_1_1client_1_1legacy_1_1_client6.html", null ]
+    ] ],
+    [ "web::http::client::Client< net::socket::ip::tcp::ipv6::tls::SocketClient, web::http::client::Request, web::http::client::Response >", "classweb_1_1http_1_1client_1_1_client.html", [
+      [ "web::http::client::tls::Client6< Request, Response >", "classweb_1_1http_1_1client_1_1tls_1_1_client6.html", null ]
+    ] ],
+    [ "web::http::CookieOptions", "classweb_1_1http_1_1_cookie_options.html", null ],
     [ "net::Descriptor", "classnet_1_1_descriptor.html", [
       [ "net::socket::Socket< address::L2CapAddress >", "classnet_1_1socket_1_1_socket.html", [
         [ "net::socket::bluetooth::l2cap::Socket", "classnet_1_1socket_1_1bluetooth_1_1l2cap_1_1_socket.html", null ]
@@ -38,8 +52,15 @@ var hierarchy =
       [ "net::DescriptorEventDispatcher::DescriptorEventReceiverList", "classnet_1_1_descriptor_event_dispatcher_1_1_descriptor_event_receiver_list.html", null ]
     ] ],
     [ "Logger", "class_logger.html", null ],
+    [ "web::ws::WSReceiver::MaskingKey", "unionweb_1_1ws_1_1_w_s_receiver_1_1_masking_key.html", null ],
+    [ "web::ws::WSTransmitter::MaskingKey", "unionweb_1_1ws_1_1_w_s_transmitter_1_1_masking_key.html", null ],
+    [ "web::http::MimeTypes", "classweb_1_1http_1_1_mime_types.html", null ],
     [ "express::MountPoint", "structexpress_1_1_mount_point.html", null ],
-    [ "utils::MultibleAttributeInjector", "classutils_1_1_multible_attribute_injector.html", null ],
+    [ "utils::MultibleAttributeInjector", "classutils_1_1_multible_attribute_injector.html", [
+      [ "web::http::server::Request", "classweb_1_1http_1_1server_1_1_request.html", [
+        [ "express::Request", "classexpress_1_1_request.html", null ]
+      ] ]
+    ] ],
     [ "net::ObservationCounter", "classnet_1_1_observation_counter.html", [
       [ "net::DescriptorEventReceiver", "classnet_1_1_descriptor_event_receiver.html", [
         [ "net::AcceptEventReceiver", "classnet_1_1_accept_event_receiver.html", [
@@ -92,13 +113,13 @@ var hierarchy =
         ] ]
       ] ]
     ] ],
+    [ "web::http::Parser", "classweb_1_1http_1_1_parser.html", [
+      [ "web::http::client::ResponseParser", "classweb_1_1http_1_1client_1_1_response_parser.html", null ],
+      [ "web::http::server::RequestParser", "classweb_1_1http_1_1server_1_1_request_parser.html", null ]
+    ] ],
     [ "net::pipe::Pipe", "classnet_1_1pipe_1_1_pipe.html", null ],
-    [ "web::http::server::Request", null, [
-      [ "express::Request", "classexpress_1_1_request.html", null ]
-    ] ],
-    [ "web::http::server::Response", null, [
-      [ "express::Response", "classexpress_1_1_response.html", null ]
-    ] ],
+    [ "web::http::server::HTTPServerContext< RequestT, ResponseT >::RequestContext", "structweb_1_1http_1_1server_1_1_h_t_t_p_server_context_1_1_request_context.html", null ],
+    [ "web::http::client::Response", "classweb_1_1http_1_1client_1_1_response.html", null ],
     [ "express::Route", "classexpress_1_1_route.html", null ],
     [ "express::Router", "classexpress_1_1_router.html", [
       [ "express::WebApp", "classexpress_1_1_web_app.html", [
@@ -120,8 +141,26 @@ var hierarchy =
       [ "express::middleware::StaticMiddleware", "classexpress_1_1middleware_1_1_static_middleware.html", null ],
       [ "express::middleware::VHost", "classexpress_1_1middleware_1_1_v_host.html", null ]
     ] ],
+    [ "web::http::server::Server< SocketServerT, RequestT, ResponseT >", "classweb_1_1http_1_1server_1_1_server.html", null ],
+    [ "web::http::server::Server< net::socket::ip::tcp ::ipv6::legacy::SocketServer, web::http::server::Request, web::http::server::Response >", "classweb_1_1http_1_1server_1_1_server.html", [
+      [ "web::http::server::legacy::Server6< Request, Response >", "classweb_1_1http_1_1server_1_1legacy_1_1_server6.html", null ]
+    ] ],
+    [ "web::http::server::Server< net::socket::ip::tcp::ipv4::legacy::SocketServer, web::http::server::Request, web::http::server::Response >", "classweb_1_1http_1_1server_1_1_server.html", [
+      [ "web::http::server::legacy::Server< Request, Response >", "classweb_1_1http_1_1server_1_1legacy_1_1_server.html", null ]
+    ] ],
+    [ "web::http::server::Server< net::socket::ip::tcp::ipv4::tls::SocketServer, web::http::server::Request, web::http::server::Response >", "classweb_1_1http_1_1server_1_1_server.html", [
+      [ "web::http::server::tls::Server< Request, Response >", "classweb_1_1http_1_1server_1_1tls_1_1_server.html", null ]
+    ] ],
+    [ "web::http::server::Server< net::socket::ip::tcp::ipv6::tls::SocketServer, web::http::server::Request, web::http::server::Response >", "classweb_1_1http_1_1server_1_1_server.html", [
+      [ "web::http::server::tls::Server6< Request, Response >", "classweb_1_1http_1_1server_1_1tls_1_1_server6.html", null ]
+    ] ],
     [ "utils::SingleAttributeInjector", "classutils_1_1_single_attribute_injector.html", null ],
-    [ "net::pipe::Sink", "classnet_1_1pipe_1_1_sink.html", null ],
+    [ "net::pipe::Sink", "classnet_1_1pipe_1_1_sink.html", [
+      [ "web::http::client::Request", "classweb_1_1http_1_1client_1_1_request.html", null ],
+      [ "web::http::server::Response", "classweb_1_1http_1_1server_1_1_response.html", [
+        [ "express::Response", "classexpress_1_1_response.html", null ]
+      ] ]
+    ] ],
     [ "net::SNodeC", "classnet_1_1_s_node_c.html", null ],
     [ "SocketConnectionT::Socket", null, [
       [ "net::socket::stream::SocketConnector< stream::legacy::SocketConnection< SocketT > >", "classnet_1_1socket_1_1stream_1_1_socket_connector.html", null ],
@@ -173,8 +212,19 @@ var hierarchy =
       [ "net::socket::stream::SocketConnection< legacy::SocketReader< SocketT >, legacy::SocketWriter< SocketT >, SocketT::SocketAddress >", "classnet_1_1socket_1_1stream_1_1_socket_connection.html", null ],
       [ "net::socket::stream::SocketConnection< SocketReaderT, SocketWriterT, SocketAddressT >", "classnet_1_1socket_1_1stream_1_1_socket_connection.html", null ]
     ] ],
-    [ "net::socket::stream::SocketProtocol", "classnet_1_1socket_1_1stream_1_1_socket_protocol.html", null ],
-    [ "net::socket::stream::SocketProtocolFactory", "classnet_1_1socket_1_1stream_1_1_socket_protocol_factory.html", null ],
+    [ "net::socket::stream::SocketProtocol", "classnet_1_1socket_1_1stream_1_1_socket_protocol.html", [
+      [ "web::http::client::ClientContextBase", "classweb_1_1http_1_1client_1_1_client_context_base.html", [
+        [ "web::http::client::ClientContext< RequestT, ResponseT >", "classweb_1_1http_1_1client_1_1_client_context.html", null ]
+      ] ],
+      [ "web::http::server::HTTPServerContextBase", "classweb_1_1http_1_1server_1_1_h_t_t_p_server_context_base.html", [
+        [ "web::http::server::HTTPServerContext< RequestT, ResponseT >", "classweb_1_1http_1_1server_1_1_h_t_t_p_server_context.html", null ]
+      ] ],
+      [ "web::ws::server::WSServerContext", "classweb_1_1ws_1_1server_1_1_w_s_server_context.html", null ]
+    ] ],
+    [ "net::socket::stream::SocketProtocolFactory", "classnet_1_1socket_1_1stream_1_1_socket_protocol_factory.html", [
+      [ "web::http::client::ClientContextFactory< RequestT, ResponseT >", "classweb_1_1http_1_1client_1_1_client_context_factory.html", null ],
+      [ "web::http::server::HTTPServerContextFactory< RequestT, ResponseT >", "classweb_1_1http_1_1server_1_1_h_t_t_p_server_context_factory.html", null ]
+    ] ],
     [ "SocketReaderT", null, [
       [ "net::socket::stream::SocketConnection< SocketReaderT, SocketWriterT, SocketAddressT >", "classnet_1_1socket_1_1stream_1_1_socket_connection.html", null ]
     ] ],
@@ -213,6 +263,7 @@ var hierarchy =
       [ "FileReader", "class_file_reader.html", null ]
     ] ],
     [ "express::State", "classexpress_1_1_state.html", null ],
+    [ "web::http::StatusCode", "classweb_1_1http_1_1_status_code.html", null ],
     [ "net::DescriptorEventReceiver::TIMEOUT", "classnet_1_1_descriptor_event_receiver_1_1_t_i_m_e_o_u_t.html", null ],
     [ "net::TimerEventDispatcher", "classnet_1_1_timer_event_dispatcher.html", null ],
     [ "net::TimerEventReceiver", "classnet_1_1_timer_event_receiver.html", [
@@ -221,5 +272,11 @@ var hierarchy =
         [ "net::timer::SingleshotTimer", "classnet_1_1timer_1_1_singleshot_timer.html", null ]
       ] ]
     ] ],
-    [ "net::TimerEventDispatcher::timernode_lt", "classnet_1_1_timer_event_dispatcher_1_1timernode__lt.html", null ]
+    [ "net::TimerEventDispatcher::timernode_lt", "classnet_1_1_timer_event_dispatcher_1_1timernode__lt.html", null ],
+    [ "web::ws::WSReceiver", "classweb_1_1ws_1_1_w_s_receiver.html", [
+      [ "web::ws::server::WSServerContext", "classweb_1_1ws_1_1server_1_1_w_s_server_context.html", null ]
+    ] ],
+    [ "web::ws::WSTransmitter", "classweb_1_1ws_1_1_w_s_transmitter.html", [
+      [ "web::ws::server::WSServerContext", "classweb_1_1ws_1_1server_1_1_w_s_server_context.html", null ]
+    ] ]
 ];

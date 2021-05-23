@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['warning_1212',['WARNING',['../class_logger.html#ad766a24576ea8b27ad9d5649cef46d8fafb1bf96f41b282521d9438106ea11bca',1,'Logger']]],
-  ['wr_1213',['WR',['../classnet_1_1socket_1_1_socket.html#a7769480db1cc5cadb0e208577b85ade6ac6e201bd81bb99cb1f341ced3064ce91',1,'net::socket::Socket']]]
+  ['info_1680',['INFO',['../class_logger.html#ad766a24576ea8b27ad9d5649cef46d8fa61a9b6fc1e9babc448984b8a34ca2ed2',1,'Logger']]]
 ];

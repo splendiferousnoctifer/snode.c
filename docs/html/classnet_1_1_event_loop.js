@@ -1,7 +1,7 @@
 var classnet_1_1_event_loop =
 [
-    [ "EventLoop", "classnet_1_1_event_loop.html#a735557b225e6c13550fb24cc1ca83dcd", null ],
     [ "EventLoop", "classnet_1_1_event_loop.html#a955f73a36eb30b62c8393fd77b9d99c7", null ],
+    [ "EventLoop", "classnet_1_1_event_loop.html#a735557b225e6c13550fb24cc1ca83dcd", null ],
     [ "~EventLoop", "classnet_1_1_event_loop.html#a0ae03b9cd134046adb03e1f273519349", null ],
     [ "getEventCounter", "classnet_1_1_event_loop.html#a95ec74ddb27a690eac66cda5999c0e97", null ],
     [ "getExceptionalConditionEventDispatcher", "classnet_1_1_event_loop.html#a50f747edb374636453de18c6d644b9a6", null ],

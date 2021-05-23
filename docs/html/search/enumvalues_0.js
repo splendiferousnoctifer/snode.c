@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['debug_1204',['DEBUG',['../class_logger.html#ad766a24576ea8b27ad9d5649cef46d8fabdc8d840ac4b73e1bd3212184af8f85e',1,'Logger']]],
-  ['dontclose_1205',['dontClose',['../classnet_1_1_descriptor.html#a1ecc493b50b4c5ed5cfa3a8746e51f35a64633a68dbee6089ac954c31fdcfcf6c',1,'net::Descriptor']]]
+  ['begin_1669',['BEGIN',['../classweb_1_1http_1_1_parser.html#a94ab44c0d65451be6ba3e6e389a8b7d5a19aad9f2fe3ce0023298ab83f7e75775',1,'web::http::Parser::BEGIN()'],['../classweb_1_1ws_1_1_w_s_receiver.html#a357c5e86bb63e291de30e12a5fb14276a19aad9f2fe3ce0023298ab83f7e75775',1,'web::ws::WSReceiver::BEGIN()']]],
+  ['body_1670',['BODY',['../classweb_1_1http_1_1_parser.html#a94ab44c0d65451be6ba3e6e389a8b7d5a786329b34bbe53ab40a54a19cd597f2d',1,'web::http::Parser']]]
 ];

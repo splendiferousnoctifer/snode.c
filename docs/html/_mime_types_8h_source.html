@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>snode.c: http/MimeTypes.h Source File</title>
+<title>snode.c: web/http/MimeTypes.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -103,8 +103,8 @@ $(document).ready(function(){initNavTree('_mime_types_8h_source.html',''); initR
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * along with this program. If not, see &lt;http://www.gnu.org/licenses/&gt;.</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#ifndef HTTP_MIMETYPES_H</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#define HTTP_MIMETYPES_H</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#ifndef WEB_HTTP_MIMETYPES_H</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#define WEB_HTTP_MIMETYPES_H</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#ifndef DOXYGEN_SHOULD_SKIP_THIS</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
@@ -114,41 +114,46 @@ $(document).ready(function(){initNavTree('_mime_types_8h_source.html',''); initR
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* DOXYGEN_SHOULD_SKIP_THIS */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_mime_types.html">   30</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_mime_types.html">MimeTypes</a> {</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_mime_types.html#a453f4281266bb3e9e73ef2661313850e">   32</a></span>&#160;    <a class="code" href="class_mime_types.html#a453f4281266bb3e9e73ef2661313850e">MimeTypes</a>(<span class="keyword">const</span> <a class="code" href="class_mime_types.html">MimeTypes</a>&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_mime_types.html#ac2f38c9bf42951b89801105d53d2f79f">   33</a></span>&#160;    <a class="code" href="class_mime_types.html">MimeTypes</a> <a class="code" href="class_mime_types.html#ac2f38c9bf42951b89801105d53d2f79f">operator=</a>(<span class="keyword">const</span> <a class="code" href="class_mime_types.html">MimeTypes</a>&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="class_mime_types.html#a21520cd7ef6ea473aa0d784c0a5a5820">~MimeTypes</a>();</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">static</span> std::string <a class="code" href="class_mime_types.html#ad1da91efb5342e3334df442fa7f98ecf">contentType</a>(<span class="keyword">const</span> std::string&amp; file);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceweb_1_1http.html">web::http</a> {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classweb_1_1http_1_1_mime_types.html">   32</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classweb_1_1http_1_1_mime_types.html">MimeTypes</a> {</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classweb_1_1http_1_1_mime_types.html#a72f3eeb74bcec78269d98f425b0abde7">   33</a></span>&#160;        <a class="code" href="classweb_1_1http_1_1_mime_types.html#a72f3eeb74bcec78269d98f425b0abde7">MimeTypes</a>(<span class="keyword">const</span> <a class="code" href="classweb_1_1http_1_1_mime_types.html">MimeTypes</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classweb_1_1http_1_1_mime_types.html#a300659ad74ceffe1f21b888b036c7aa9">   34</a></span>&#160;        <a class="code" href="classweb_1_1http_1_1_mime_types.html">MimeTypes</a> <a class="code" href="classweb_1_1http_1_1_mime_types.html#a300659ad74ceffe1f21b888b036c7aa9">operator=</a>(<span class="keyword">const</span> <a class="code" href="classweb_1_1http_1_1_mime_types.html">MimeTypes</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="classweb_1_1http_1_1_mime_types.html#a4690bb18f9bf9dc832d0d29e26a50db0">~MimeTypes</a>();</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="class_mime_types.html#ab2e7cc97aa39e4ab0e614f2b83f975b8">MimeTypes</a>();</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_mime_types.html#ac713a51eb121e626104d76aa0b06e8cf">   42</a></span>&#160;    <span class="keyword">static</span> magic_t <a class="code" href="class_mime_types.html#ac713a51eb121e626104d76aa0b06e8cf">magic</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keyword">static</span> std::string <a class="code" href="classweb_1_1http_1_1_mime_types.html#a08aa7365e19c29f97369a3bedfcc3721">contentType</a>(<span class="keyword">const</span> std::string&amp; file);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="code" href="classweb_1_1http_1_1_mime_types.html#aae1c324e1a07b3ba4f5abfaff640fda1">MimeTypes</a>();</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_mime_types.html#ac27626caea635ad90144cd46ba3c7209">   44</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="class_mime_types.html">MimeTypes</a> <a class="code" href="class_mime_types.html#ac27626caea635ad90144cd46ba3c7209">mimeTypes</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classweb_1_1http_1_1_mime_types.html#af310b094c7d0ac8c34553b85c62fa5fc">   44</a></span>&#160;        <span class="keyword">static</span> magic_t <a class="code" href="classweb_1_1http_1_1_mime_types.html#af310b094c7d0ac8c34553b85c62fa5fc">magic</a>;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_mime_types.html#a8c0a142ec1ead6906818f80470f74c5f">   46</a></span>&#160;    <span class="keyword">static</span> std::map&lt;std::string, std::string&gt; <a class="code" href="class_mime_types.html#a8c0a142ec1ead6906818f80470f74c5f">mimeType</a>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;};</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// HTTP_MIMETYPES_H</span></div>
-<div class="ttc" id="aclass_mime_types_html"><div class="ttname"><a href="class_mime_types.html">MimeTypes</a></div><div class="ttdef"><b>Definition:</b> <a href="_mime_types_8h_source.html#l00030">MimeTypes.h:30</a></div></div>
-<div class="ttc" id="aclass_mime_types_html_a21520cd7ef6ea473aa0d784c0a5a5820"><div class="ttname"><a href="class_mime_types.html#a21520cd7ef6ea473aa0d784c0a5a5820">MimeTypes::~MimeTypes</a></div><div class="ttdeci">~MimeTypes()</div><div class="ttdef"><b>Definition:</b> <a href="_mime_types_8cpp_source.html#l00229">MimeTypes.cpp:229</a></div></div>
-<div class="ttc" id="aclass_mime_types_html_a453f4281266bb3e9e73ef2661313850e"><div class="ttname"><a href="class_mime_types.html#a453f4281266bb3e9e73ef2661313850e">MimeTypes::MimeTypes</a></div><div class="ttdeci">MimeTypes(const MimeTypes &amp;)=delete</div></div>
-<div class="ttc" id="aclass_mime_types_html_a8c0a142ec1ead6906818f80470f74c5f"><div class="ttname"><a href="class_mime_types.html#a8c0a142ec1ead6906818f80470f74c5f">MimeTypes::mimeType</a></div><div class="ttdeci">static std::map&lt; std::string, std::string &gt; mimeType</div><div class="ttdef"><b>Definition:</b> <a href="_mime_types_8h_source.html#l00046">MimeTypes.h:46</a></div></div>
-<div class="ttc" id="aclass_mime_types_html_ab2e7cc97aa39e4ab0e614f2b83f975b8"><div class="ttname"><a href="class_mime_types.html#ab2e7cc97aa39e4ab0e614f2b83f975b8">MimeTypes::MimeTypes</a></div><div class="ttdeci">MimeTypes()</div><div class="ttdef"><b>Definition:</b> <a href="_mime_types_8cpp_source.html#l00219">MimeTypes.cpp:219</a></div></div>
-<div class="ttc" id="aclass_mime_types_html_ac27626caea635ad90144cd46ba3c7209"><div class="ttname"><a href="class_mime_types.html#ac27626caea635ad90144cd46ba3c7209">MimeTypes::mimeTypes</a></div><div class="ttdeci">static MimeTypes mimeTypes</div><div class="ttdef"><b>Definition:</b> <a href="_mime_types_8h_source.html#l00044">MimeTypes.h:44</a></div></div>
-<div class="ttc" id="aclass_mime_types_html_ac2f38c9bf42951b89801105d53d2f79f"><div class="ttname"><a href="class_mime_types.html#ac2f38c9bf42951b89801105d53d2f79f">MimeTypes::operator=</a></div><div class="ttdeci">MimeTypes operator=(const MimeTypes &amp;)=delete</div></div>
-<div class="ttc" id="aclass_mime_types_html_ac713a51eb121e626104d76aa0b06e8cf"><div class="ttname"><a href="class_mime_types.html#ac713a51eb121e626104d76aa0b06e8cf">MimeTypes::magic</a></div><div class="ttdeci">static magic_t magic</div><div class="ttdef"><b>Definition:</b> <a href="_mime_types_8h_source.html#l00042">MimeTypes.h:42</a></div></div>
-<div class="ttc" id="aclass_mime_types_html_ad1da91efb5342e3334df442fa7f98ecf"><div class="ttname"><a href="class_mime_types.html#ad1da91efb5342e3334df442fa7f98ecf">MimeTypes::contentType</a></div><div class="ttdeci">static std::string contentType(const std::string &amp;file)</div><div class="ttdef"><b>Definition:</b> <a href="_mime_types_8cpp_source.html#l00233">MimeTypes.cpp:233</a></div></div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classweb_1_1http_1_1_mime_types.html#af42601f332363291f1ccd354fb1c3c3c">   46</a></span>&#160;        <span class="keyword">static</span> <a class="code" href="classweb_1_1http_1_1_mime_types.html">MimeTypes</a> <a class="code" href="classweb_1_1http_1_1_mime_types.html#af42601f332363291f1ccd354fb1c3c3c">mimeTypes</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classweb_1_1http_1_1_mime_types.html#a8b63cc1eaa5b7bd338d8354a336609d0">   48</a></span>&#160;        <span class="keyword">static</span> std::map&lt;std::string, std::string&gt; <a class="code" href="classweb_1_1http_1_1_mime_types.html#a8b63cc1eaa5b7bd338d8354a336609d0">mimeType</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    };</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;} <span class="comment">// namespace web::http</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// WEB_HTTP_MIMETYPES_H</span></div>
+<div class="ttc" id="aclassweb_1_1http_1_1_mime_types_html"><div class="ttname"><a href="classweb_1_1http_1_1_mime_types.html">web::http::MimeTypes</a></div><div class="ttdef"><b>Definition:</b> <a href="_mime_types_8h_source.html#l00032">MimeTypes.h:32</a></div></div>
+<div class="ttc" id="aclassweb_1_1http_1_1_mime_types_html_a08aa7365e19c29f97369a3bedfcc3721"><div class="ttname"><a href="classweb_1_1http_1_1_mime_types.html#a08aa7365e19c29f97369a3bedfcc3721">web::http::MimeTypes::contentType</a></div><div class="ttdeci">static std::string contentType(const std::string &amp;file)</div><div class="ttdef"><b>Definition:</b> <a href="_mime_types_8cpp_source.html#l00235">MimeTypes.cpp:235</a></div></div>
+<div class="ttc" id="aclassweb_1_1http_1_1_mime_types_html_a300659ad74ceffe1f21b888b036c7aa9"><div class="ttname"><a href="classweb_1_1http_1_1_mime_types.html#a300659ad74ceffe1f21b888b036c7aa9">web::http::MimeTypes::operator=</a></div><div class="ttdeci">MimeTypes operator=(const MimeTypes &amp;)=delete</div></div>
+<div class="ttc" id="aclassweb_1_1http_1_1_mime_types_html_a4690bb18f9bf9dc832d0d29e26a50db0"><div class="ttname"><a href="classweb_1_1http_1_1_mime_types.html#a4690bb18f9bf9dc832d0d29e26a50db0">web::http::MimeTypes::~MimeTypes</a></div><div class="ttdeci">~MimeTypes()</div><div class="ttdef"><b>Definition:</b> <a href="_mime_types_8cpp_source.html#l00231">MimeTypes.cpp:231</a></div></div>
+<div class="ttc" id="aclassweb_1_1http_1_1_mime_types_html_a72f3eeb74bcec78269d98f425b0abde7"><div class="ttname"><a href="classweb_1_1http_1_1_mime_types.html#a72f3eeb74bcec78269d98f425b0abde7">web::http::MimeTypes::MimeTypes</a></div><div class="ttdeci">MimeTypes(const MimeTypes &amp;)=delete</div></div>
+<div class="ttc" id="aclassweb_1_1http_1_1_mime_types_html_a8b63cc1eaa5b7bd338d8354a336609d0"><div class="ttname"><a href="classweb_1_1http_1_1_mime_types.html#a8b63cc1eaa5b7bd338d8354a336609d0">web::http::MimeTypes::mimeType</a></div><div class="ttdeci">static std::map&lt; std::string, std::string &gt; mimeType</div><div class="ttdef"><b>Definition:</b> <a href="_mime_types_8h_source.html#l00048">MimeTypes.h:48</a></div></div>
+<div class="ttc" id="aclassweb_1_1http_1_1_mime_types_html_aae1c324e1a07b3ba4f5abfaff640fda1"><div class="ttname"><a href="classweb_1_1http_1_1_mime_types.html#aae1c324e1a07b3ba4f5abfaff640fda1">web::http::MimeTypes::MimeTypes</a></div><div class="ttdeci">MimeTypes()</div><div class="ttdef"><b>Definition:</b> <a href="_mime_types_8cpp_source.html#l00221">MimeTypes.cpp:221</a></div></div>
+<div class="ttc" id="aclassweb_1_1http_1_1_mime_types_html_af310b094c7d0ac8c34553b85c62fa5fc"><div class="ttname"><a href="classweb_1_1http_1_1_mime_types.html#af310b094c7d0ac8c34553b85c62fa5fc">web::http::MimeTypes::magic</a></div><div class="ttdeci">static magic_t magic</div><div class="ttdef"><b>Definition:</b> <a href="_mime_types_8h_source.html#l00044">MimeTypes.h:44</a></div></div>
+<div class="ttc" id="aclassweb_1_1http_1_1_mime_types_html_af42601f332363291f1ccd354fb1c3c3c"><div class="ttname"><a href="classweb_1_1http_1_1_mime_types.html#af42601f332363291f1ccd354fb1c3c3c">web::http::MimeTypes::mimeTypes</a></div><div class="ttdeci">static MimeTypes mimeTypes</div><div class="ttdef"><b>Definition:</b> <a href="_mime_types_8h_source.html#l00046">MimeTypes.h:46</a></div></div>
+<div class="ttc" id="anamespaceweb_1_1http_html"><div class="ttname"><a href="namespaceweb_1_1http.html">web::http</a></div><div class="ttdef"><b>Definition:</b> <a href="_client_8h_source.html#l00036">Client.h:36</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de5b03c9e251d763a573c2ccd217de59.html">http</a></li><li class="navelem"><a class="el" href="_mime_types_8h.html">MimeTypes.h</a></li>
+    <li class="navelem"><a class="el" href="dir_562abdcd8625d4bf7bad2fe6fe01354c.html">web</a></li><li class="navelem"><a class="el" href="dir_890691660869da6a17298077dcca53fb.html">http</a></li><li class="navelem"><a class="el" href="_mime_types_8h.html">MimeTypes.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

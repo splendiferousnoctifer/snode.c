@@ -1,8 +1,8 @@
 var classnet_1_1_descriptor_event_dispatcher =
 [
     [ "DescriptorEventReceiverList", "classnet_1_1_descriptor_event_dispatcher_1_1_descriptor_event_receiver_list.html", "classnet_1_1_descriptor_event_dispatcher_1_1_descriptor_event_receiver_list" ],
-    [ "DescriptorEventDispatcher", "classnet_1_1_descriptor_event_dispatcher.html#a9967190d5c5f29b97165865cc201309a", null ],
     [ "DescriptorEventDispatcher", "classnet_1_1_descriptor_event_dispatcher.html#a1ab14f12bc883fc4d14f34ee449cc0c2", null ],
+    [ "DescriptorEventDispatcher", "classnet_1_1_descriptor_event_dispatcher.html#a9967190d5c5f29b97165865cc201309a", null ],
     [ "disable", "classnet_1_1_descriptor_event_dispatcher.html#a0f682135c09bd279cd315a0bdf885473", null ],
     [ "disableObservedEvents", "classnet_1_1_descriptor_event_dispatcher.html#ac866144836a3587b9d0d888f429de326", null ],
     [ "dispatchActiveEvents", "classnet_1_1_descriptor_event_dispatcher.html#a3d4d0d9cabed29740fec8679d9d34722", null ],

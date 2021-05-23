@@ -6,7 +6,6 @@ var namespacenet =
       [ "SSL_read", "namespacenet_1_1ssl.html#a9276e8aec87ceaef3c80f57f55cd4106", null ],
       [ "SSL_write", "namespacenet_1_1ssl.html#a58a0af5c945f3f59a910bd44f2695bc8", null ]
     ] ],
-    [ "stream", "namespacenet_1_1stream.html", null ],
     [ "system", "namespacenet_1_1system.html", [
       [ "accept4", "namespacenet_1_1system.html#abe940f857103c8b045b81c258bfa774e", null ],
       [ "bind", "namespacenet_1_1system.html#ad4c7338a4b60fee8700cf34fa9fed5ab", null ],
