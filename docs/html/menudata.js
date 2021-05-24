@@ -153,7 +153,8 @@ var menudata={children:[
 {text:"w",url:"functions_vars_w.html#index_w"}]},
 {text:"Typedefs",url:"functions_type.html",children:[
 {text:"r",url:"functions_type.html#index_r"},
-{text:"s",url:"functions_type.html#index_s"}]},
+{text:"s",url:"functions_type.html#index_s"},
+{text:"w",url:"functions_type.html#index_w"}]},
 {text:"Enumerations",url:"functions_enum.html"},
 {text:"Enumerator",url:"functions_eval.html"},
 {text:"Related Functions",url:"functions_rela.html"}]}]},

@@ -196,7 +196,9 @@ var annotated_dup =
       ] ],
       [ "ws", "namespaceweb_1_1ws.html", [
         [ "server", "namespaceweb_1_1ws_1_1server.html", [
-          [ "WSServerContext", "classweb_1_1ws_1_1server_1_1_w_s_server_context.html", "classweb_1_1ws_1_1server_1_1_w_s_server_context" ]
+          [ "WSServerContext", "classweb_1_1ws_1_1server_1_1_w_s_server_context.html", "classweb_1_1ws_1_1server_1_1_w_s_server_context" ],
+          [ "WSServerContextBase", "classweb_1_1ws_1_1server_1_1_w_s_server_context_base.html", "classweb_1_1ws_1_1server_1_1_w_s_server_context_base" ],
+          [ "WSServerProtocol", "classweb_1_1ws_1_1server_1_1_w_s_server_protocol.html", "classweb_1_1ws_1_1server_1_1_w_s_server_protocol" ]
         ] ],
         [ "WSReceiver", "classweb_1_1ws_1_1_w_s_receiver.html", "classweb_1_1ws_1_1_w_s_receiver" ],
         [ "WSTransmitter", "classweb_1_1ws_1_1_w_s_transmitter.html", "classweb_1_1ws_1_1_w_s_transmitter" ]

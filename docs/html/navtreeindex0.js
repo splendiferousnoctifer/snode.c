@@ -248,6 +248,6 @@ var NAVTREEINDEX0 =
 "_w_s_receiver_8cpp_source.html":[10,0,4,1,1],
 "_w_s_receiver_8h.html":[10,0,4,1,2],
 "_w_s_receiver_8h_source.html":[10,0,4,1,2],
-"_w_s_server_context_8cpp.html":[10,0,4,1,0,0],
-"_w_s_server_context_8cpp_source.html":[10,0,4,1,0,0]
+"_w_s_server_context_8h.html":[10,0,4,1,0,0],
+"_w_s_server_context_8h_source.html":[10,0,4,1,0,0]
 };

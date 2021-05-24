@@ -1,5 +1,14 @@
 var NAVTREEINDEX2 =
 {
+"classnet_1_1_connect_event_receiver.html#a0694f73a2b253a7ad7d45a51297aae10":[9,0,1,4,1],
+"classnet_1_1_connect_event_receiver.html#a225e561000775279037c8a848ebdeb1b":[9,0,1,4,2],
+"classnet_1_1_connect_event_receiver.html#aeeac0ba275d533c59b81f66749fdad2d":[9,0,1,4,0],
+"classnet_1_1_descriptor.html":[9,0,1,5],
+"classnet_1_1_descriptor.html#a0dfe1354c24136c4d50c21c8138f53dd":[9,0,1,5,4],
+"classnet_1_1_descriptor.html#a1ce28627f2d7b7d54846cb73dcd0aa38":[9,0,1,5,9],
+"classnet_1_1_descriptor.html#a1e6621ae7b52ff6fb8162c8e7c739b5f":[9,0,1,5,1],
+"classnet_1_1_descriptor.html#a1ecc493b50b4c5ed5cfa3a8746e51f35":[9,0,1,5,0],
+"classnet_1_1_descriptor.html#a1ecc493b50b4c5ed5cfa3a8746e51f35a334c4a4c42fdb79d7ebc3e73b517e6f8":[9,0,1,5,0,0],
 "classnet_1_1_descriptor.html#a1ecc493b50b4c5ed5cfa3a8746e51f35a64633a68dbee6089ac954c31fdcfcf6c":[9,0,1,5,0,1],
 "classnet_1_1_descriptor.html#a215ad755d3334446966a626e7183aa60":[9,0,1,5,3],
 "classnet_1_1_descriptor.html#a6213b4b006520cda34fe4b30bf0b0daf":[9,0,1,5,8],
@@ -240,14 +249,5 @@ var NAVTREEINDEX2 =
 "classnet_1_1socket_1_1bluetooth_1_1address_1_1_rf_comm_address.html#ad3ee0b3b2db91750573bfa9b27b01a55":[9,0,1,1,0,0,1,0],
 "classnet_1_1socket_1_1bluetooth_1_1l2cap_1_1_socket.html":[9,0,1,1,0,1,0],
 "classnet_1_1socket_1_1bluetooth_1_1l2cap_1_1_socket.html#a71ce36842e2829f0ab2089005813c177":[9,0,1,1,0,1,0,0],
-"classnet_1_1socket_1_1bluetooth_1_1l2cap_1_1_socket_client.html":[9,0,1,1,0,1,1],
-"classnet_1_1socket_1_1bluetooth_1_1l2cap_1_1_socket_server.html":[9,0,1,1,0,1,2],
-"classnet_1_1socket_1_1bluetooth_1_1rfcomm_1_1_socket.html":[9,0,1,1,0,2,2],
-"classnet_1_1socket_1_1bluetooth_1_1rfcomm_1_1_socket.html#ae2e307db48bd6be3b2d7764becd14ce2":[9,0,1,1,0,2,2,0],
-"classnet_1_1socket_1_1bluetooth_1_1rfcomm_1_1legacy_1_1_socket_client.html":[9,0,1,1,0,2,0,0],
-"classnet_1_1socket_1_1bluetooth_1_1rfcomm_1_1legacy_1_1_socket_server.html":[9,0,1,1,0,2,0,1],
-"classnet_1_1socket_1_1bluetooth_1_1rfcomm_1_1tls_1_1_socket_client.html":[9,0,1,1,0,2,1,0],
-"classnet_1_1socket_1_1bluetooth_1_1rfcomm_1_1tls_1_1_socket_server.html":[9,0,1,1,0,2,1,1],
-"classnet_1_1socket_1_1ip_1_1address_1_1ipv4_1_1_inet_address.html":[9,0,1,1,1,0,0,1],
-"classnet_1_1socket_1_1ip_1_1address_1_1ipv4_1_1_inet_address.html#a00d6102564347a3eac881812f30da92d":[9,0,1,1,1,0,0,1,8]
+"classnet_1_1socket_1_1bluetooth_1_1l2cap_1_1_socket_client.html":[9,0,1,1,0,1,1]
 };

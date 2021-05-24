@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ssl_5fverify_5fflags_1736',['SSL_VERIFY_FLAGS',['../ssl__utils_8cpp.html#a0c3fa47eefc13655f03571ce3cf71b69',1,'ssl_utils.cpp']]]
+  ['path_5fregex_1775',['PATH_REGEX',['../_router_8cpp.html#aeb2f79c23644bb1964618b028dce3896',1,'Router.cpp']]]
 ];

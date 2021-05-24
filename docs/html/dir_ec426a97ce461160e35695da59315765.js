@@ -8,7 +8,6 @@ var dir_ec426a97ce461160e35695da59315765 =
     ] ],
     [ "WSTransmitter.cpp", "_w_s_transmitter_8cpp.html", "_w_s_transmitter_8cpp" ],
     [ "WSTransmitter.h", "_w_s_transmitter_8h.html", [
-      [ "WSTransmitter", "classweb_1_1ws_1_1_w_s_transmitter.html", "classweb_1_1ws_1_1_w_s_transmitter" ],
-      [ "MaskingKey", "unionweb_1_1ws_1_1_w_s_transmitter_1_1_masking_key.html", "unionweb_1_1ws_1_1_w_s_transmitter_1_1_masking_key" ]
+      [ "WSTransmitter", "classweb_1_1ws_1_1_w_s_transmitter.html", "classweb_1_1ws_1_1_w_s_transmitter" ]
     ] ]
 ];
