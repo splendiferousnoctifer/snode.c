@@ -14,7 +14,6 @@ var classnet_1_1socket_1_1stream_1_1_socket_connection =
     [ "getRemoteAddress", "classnet_1_1socket_1_1stream_1_1_socket_connection.html#a5ae0ae94f3b4f7d2d6a4600458f5697e", null ],
     [ "getRemoteAddressAsString", "classnet_1_1socket_1_1stream_1_1_socket_connection.html#a52cb01c75c22c9ea89e78a39d5075dd7", null ],
     [ "setTimeout", "classnet_1_1socket_1_1stream_1_1_socket_connection.html#ab7f90b4a1b6ae3518c986f4d662136a1", null ],
-    [ "switchSocketProtocol", "classnet_1_1socket_1_1stream_1_1_socket_connection.html#a4dc5fc7b86b6854ba3f2ffb9b37314ef", null ],
     [ "unobserved", "classnet_1_1socket_1_1stream_1_1_socket_connection.html#a48a54fe1e3e0e8bbe52adfd79a7e602f", null ],
     [ "localAddress", "classnet_1_1socket_1_1stream_1_1_socket_connection.html#a4b738214cfdcfd8343c1324e09fcf2d6", null ],
     [ "onDisconnect", "classnet_1_1socket_1_1stream_1_1_socket_connection.html#ad4f6fb8a5b61f60d46041797cf20468e", null ],

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['path_5fregex_1775',['PATH_REGEX',['../_router_8cpp.html#aeb2f79c23644bb1964618b028dce3896',1,'Router.cpp']]]
+  ['name_1865',['NAME',['../_echo_8cpp.html#a47f2e62c0dbebc787052c165afcada0e',1,'Echo.cpp']]]
 ];
