@@ -115,17 +115,23 @@ $(document).ready(function(){initNavTree('functions_c.html',''); initResizable()
 <li>ClientContextFactory()
 : <a class="el" href="classweb_1_1http_1_1client_1_1_client_context_factory.html#ac53d1c089aef0aa56e6e004e8bf3b19a">web::http::client::ClientContextFactory&lt; RequestT, ResponseT &gt;</a>
 </li>
+<li>clients
+: <a class="el" href="classweb_1_1ws_1_1_w_s_sub_protocol.html#a0f306c164b094e1bc03861be7836a6b6">web::ws::WSSubProtocol</a>
+</li>
+<li>clientSubprotocols
+: <a class="el" href="classweb_1_1ws_1_1subprotocol_1_1_w_s_sub_protocol_selector.html#a9adc01696cf74f63e8f4007baec4edc6">web::ws::subprotocol::WSSubProtocolSelector</a>
+</li>
 <li>close()
 : <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#ad80107c21f19c407619fc28425db1d40">net::socket::stream::SocketConnection&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt;</a>
 , <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#ab08d539e59c0a7c284d97414ac065c03">net::socket::stream::SocketConnectionBase</a>
 , <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_protocol.html#ab617c6019d922f2475c50afcf4f08edd">net::socket::stream::SocketProtocol</a>
-, <a class="el" href="classweb_1_1ws_1_1server_1_1_w_s_server_context.html#a601800d87d304b138a1d045abff167f3">web::ws::server::WSServerContext</a>
+, <a class="el" href="classweb_1_1ws_1_1_w_s_context.html#a1225076a581b68c2973d18b7f500f8bd">web::ws::WSContext</a>
 </li>
 <li>closeReceived
-: <a class="el" href="classweb_1_1ws_1_1server_1_1_w_s_server_context.html#a33fa40538a55f255ac7b329ca8f2e9be">web::ws::server::WSServerContext</a>
+: <a class="el" href="classweb_1_1ws_1_1_w_s_context.html#a1d3be39b52e33d441845ad03999eee59">web::ws::WSContext</a>
 </li>
 <li>closeSent
-: <a class="el" href="classweb_1_1ws_1_1server_1_1_w_s_server_context.html#a2a69279cb549f8fc03377b40b0ec9de3">web::ws::server::WSServerContext</a>
+: <a class="el" href="classweb_1_1ws_1_1_w_s_context.html#a916cfe1a36655c1deb6fd8e2a184ce58">web::ws::WSContext</a>
 </li>
 <li>clr()
 : <a class="el" href="classnet_1_1_fd_set.html#ad16f1e07bc68aa16c271a858d7510b95">net::FdSet</a>
@@ -182,9 +188,6 @@ $(document).ready(function(){initNavTree('functions_c.html',''); initResizable()
 <li>contentType()
 : <a class="el" href="classweb_1_1http_1_1_mime_types.html#a08aa7365e19c29f97369a3bedfcc3721">web::http::MimeTypes</a>
 </li>
-<li>continousTimer()
-: <a class="el" href="classnet_1_1timer_1_1_timer.html#a47e3d9b3c00b155ebc1f5ee3446f54e8">net::timer::Timer</a>
-</li>
 <li>continuation
 : <a class="el" href="classweb_1_1ws_1_1_w_s_receiver.html#a1a090d234e4de7ec0ba2ab31ae213122">web::ws::WSReceiver</a>
 </li>
@@ -194,7 +197,7 @@ $(document).ready(function(){initNavTree('functions_c.html',''); initResizable()
 , <a class="el" href="classweb_1_1http_1_1server_1_1_response.html#aa9a6f2cbf1a4f186db94f9a2d5d6da08">web::http::server::Response</a>
 </li>
 <li>CookieOptions()
-: <a class="el" href="classweb_1_1http_1_1_cookie_options.html#ae76b5be47e2900de9007af9cdc563a7d">web::http::CookieOptions</a>
+: <a class="el" href="classweb_1_1http_1_1_cookie_options.html#a8befb95c4c168dbc702a41f9497aa252">web::http::CookieOptions</a>
 </li>
 <li>cookies
 : <a class="el" href="classweb_1_1http_1_1client_1_1_request.html#ad1cb8454b7ba3e5579769a7e2042a968">web::http::client::Request</a>
@@ -213,6 +216,8 @@ $(document).ready(function(){initNavTree('functions_c.html',''); initResizable()
 , <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_protocol_factory.html#a0c231280beb6d3b01453822d6d513435">net::socket::stream::SocketProtocolFactory</a>
 , <a class="el" href="classweb_1_1http_1_1client_1_1_client_context_factory.html#a4bac34f369abb146ce4d76f8ff66d460">web::http::client::ClientContextFactory&lt; RequestT, ResponseT &gt;</a>
 , <a class="el" href="classweb_1_1http_1_1server_1_1_h_t_t_p_server_context_factory.html#a37f9e7ffbd8b7cb712d7a95ce703d8f7">web::http::server::HTTPServerContextFactory&lt; RequestT, ResponseT &gt;</a>
+, <a class="el" href="classweb_1_1ws_1_1server_1_1_w_s_context.html#a3f0b2b1ee7fe260b73d802b3f4189f4a">web::ws::server::WSContext</a>
+, <a class="el" href="structweb_1_1ws_1_1subprotocol_1_1_w_s_sub_protocol_plugin_interface.html#a97d2a647a6bcfb6ae466c16355b5435f">web::ws::subprotocol::WSSubProtocolPluginInterface</a>
 </li>
 <li>ctx
 : <a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connector.html#ad7515655b28bef79c5034bbd92f9d6b7">net::socket::stream::tls::SocketConnector&lt; SocketT &gt;</a>

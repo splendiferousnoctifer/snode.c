@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['tlshandshake_5ftimeout_1737',['TLSHANDSHAKE_TIMEOUT',['../_t_l_s_handshake_8cpp.html#afcaf84902bf13f4d3c4ed4ddbc7896ba',1,'TLSHandshake.cpp']]]
+  ['path_5fregex_1866',['PATH_REGEX',['../_router_8cpp.html#aeb2f79c23644bb1964618b028dce3896',1,'Router.cpp']]]
 ];

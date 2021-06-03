@@ -53,7 +53,6 @@ var hierarchy =
     ] ],
     [ "Logger", "class_logger.html", null ],
     [ "web::ws::WSReceiver::MaskingKey", "unionweb_1_1ws_1_1_w_s_receiver_1_1_masking_key.html", null ],
-    [ "web::ws::WSTransmitter::MaskingKey", "unionweb_1_1ws_1_1_w_s_transmitter_1_1_masking_key.html", null ],
     [ "web::http::MimeTypes", "classweb_1_1http_1_1_mime_types.html", null ],
     [ "express::MountPoint", "structexpress_1_1_mount_point.html", null ],
     [ "utils::MultibleAttributeInjector", "classutils_1_1_multible_attribute_injector.html", [
@@ -219,7 +218,10 @@ var hierarchy =
       [ "web::http::server::HTTPServerContextBase", "classweb_1_1http_1_1server_1_1_h_t_t_p_server_context_base.html", [
         [ "web::http::server::HTTPServerContext< RequestT, ResponseT >", "classweb_1_1http_1_1server_1_1_h_t_t_p_server_context.html", null ]
       ] ],
-      [ "web::ws::server::WSServerContext", "classweb_1_1ws_1_1server_1_1_w_s_server_context.html", null ]
+      [ "web::ws::WSContext", "classweb_1_1ws_1_1_w_s_context.html", [
+        [ "web::ws::client::WSContext", "classweb_1_1ws_1_1client_1_1_w_s_context.html", null ],
+        [ "web::ws::server::WSContext", "classweb_1_1ws_1_1server_1_1_w_s_context.html", null ]
+      ] ]
     ] ],
     [ "net::socket::stream::SocketProtocolFactory", "classnet_1_1socket_1_1stream_1_1_socket_protocol_factory.html", [
       [ "web::http::client::ClientContextFactory< RequestT, ResponseT >", "classweb_1_1http_1_1client_1_1_client_context_factory.html", null ],
@@ -274,9 +276,14 @@ var hierarchy =
     ] ],
     [ "net::TimerEventDispatcher::timernode_lt", "classnet_1_1_timer_event_dispatcher_1_1timernode__lt.html", null ],
     [ "web::ws::WSReceiver", "classweb_1_1ws_1_1_w_s_receiver.html", [
-      [ "web::ws::server::WSServerContext", "classweb_1_1ws_1_1server_1_1_w_s_server_context.html", null ]
+      [ "web::ws::WSContext", "classweb_1_1ws_1_1_w_s_context.html", null ]
     ] ],
+    [ "web::ws::WSSubProtocol", "classweb_1_1ws_1_1_w_s_sub_protocol.html", [
+      [ "web::ws::subprotocol::echo::server::Echo", "classweb_1_1ws_1_1subprotocol_1_1echo_1_1server_1_1_echo.html", null ]
+    ] ],
+    [ "web::ws::subprotocol::WSSubProtocolPluginInterface", "structweb_1_1ws_1_1subprotocol_1_1_w_s_sub_protocol_plugin_interface.html", null ],
+    [ "web::ws::subprotocol::WSSubProtocolSelector", "classweb_1_1ws_1_1subprotocol_1_1_w_s_sub_protocol_selector.html", null ],
     [ "web::ws::WSTransmitter", "classweb_1_1ws_1_1_w_s_transmitter.html", [
-      [ "web::ws::server::WSServerContext", "classweb_1_1ws_1_1server_1_1_w_s_server_context.html", null ]
+      [ "web::ws::WSContext", "classweb_1_1ws_1_1_w_s_context.html", null ]
     ] ]
 ];

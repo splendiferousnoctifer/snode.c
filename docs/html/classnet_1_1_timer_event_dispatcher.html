@@ -185,7 +185,7 @@ Private Attributes</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="_timer_event_dispatcher_8h_source.html#l00051">addedList</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_timer_8cpp_source.html#l00049">net::timer::Timer::continousTimer()</a>, and <a class="el" href="_timer_8cpp_source.html#l00041">net::timer::Timer::singleshotTimer()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_timer_8cpp_source.html#l00049">net::timer::Timer::intervalTimer()</a>, and <a class="el" href="_timer_8cpp_source.html#l00041">net::timer::Timer::singleshotTimer()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -268,9 +268,9 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        }</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div>
 <div class="ttc" id="aclassnet_1_1_timer_event_dispatcher_html_a917b451532196df793e952abc70a5cc8"><div class="ttname"><a href="classnet_1_1_timer_event_dispatcher.html#a917b451532196df793e952abc70a5cc8">net::TimerEventDispatcher::timerListDirty</a></div><div class="ttdeci">bool timerListDirty</div><div class="ttdef"><b>Definition:</b> <a href="_timer_event_dispatcher_8h_source.html#l00061">TimerEventDispatcher.h:61</a></div></div>
-<div class="ttc" id="anamespacenet_1_1system_html_aa6f351129e5d8c8522b104b4c6d9d62e"><div class="ttname"><a href="namespacenet_1_1system.html#aa6f351129e5d8c8522b104b4c6d9d62e">net::system::gettimeofday</a></div><div class="ttdeci">int gettimeofday(struct timeval *tv, struct timezone *tz)</div><div class="ttdef"><b>Definition:</b> <a href="time_8cpp_source.html#l00016">time.cpp:16</a></div></div>
+<div class="ttc" id="anamespacenet_1_1system_html_aa6f351129e5d8c8522b104b4c6d9d62e"><div class="ttname"><a href="namespacenet_1_1system.html#aa6f351129e5d8c8522b104b4c6d9d62e">net::system::gettimeofday</a></div><div class="ttdeci">int gettimeofday(struct timeval *tv, struct timezone *tz)</div><div class="ttdef"><b>Definition:</b> <a href="time_8cpp_source.html#l00034">time.cpp:34</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="time_8cpp_source.html#l00016">net::system::gettimeofday()</a>, <a class="el" href="_timer_event_dispatcher_8h_source.html#l00050">timerList</a>, and <a class="el" href="_timer_event_dispatcher_8h_source.html#l00061">timerListDirty</a>.</p>
+<p class="reference">References <a class="el" href="time_8cpp_source.html#l00034">net::system::gettimeofday()</a>, <a class="el" href="_timer_event_dispatcher_8h_source.html#l00050">timerList</a>, and <a class="el" href="_timer_event_dispatcher_8h_source.html#l00061">timerListDirty</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_event_loop_8cpp_source.html#l00060">net::EventLoop::tick()</a>.</p>
 <div class="dynheader">
@@ -375,7 +375,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">return</span> tv;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="time_8cpp_source.html#l00016">net::system::gettimeofday()</a>.</p>
+<p class="reference">References <a class="el" href="time_8cpp_source.html#l00034">net::system::gettimeofday()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_timer_event_dispatcher_8cpp_source.html#l00103">cancelAll()</a>, and <a class="el" href="_event_loop_8cpp_source.html#l00060">net::EventLoop::tick()</a>.</p>
 <div class="dynheader">

@@ -195,10 +195,24 @@ var annotated_dup =
         [ "StatusCode", "classweb_1_1http_1_1_status_code.html", "classweb_1_1http_1_1_status_code" ]
       ] ],
       [ "ws", "namespaceweb_1_1ws.html", [
-        [ "server", "namespaceweb_1_1ws_1_1server.html", [
-          [ "WSServerContext", "classweb_1_1ws_1_1server_1_1_w_s_server_context.html", "classweb_1_1ws_1_1server_1_1_w_s_server_context" ]
+        [ "client", "namespaceweb_1_1ws_1_1client.html", [
+          [ "WSContext", "classweb_1_1ws_1_1client_1_1_w_s_context.html", null ]
         ] ],
+        [ "server", "namespaceweb_1_1ws_1_1server.html", [
+          [ "WSContext", "classweb_1_1ws_1_1server_1_1_w_s_context.html", "classweb_1_1ws_1_1server_1_1_w_s_context" ]
+        ] ],
+        [ "subprotocol", "namespaceweb_1_1ws_1_1subprotocol.html", [
+          [ "echo", "namespaceweb_1_1ws_1_1subprotocol_1_1echo.html", [
+            [ "server", "namespaceweb_1_1ws_1_1subprotocol_1_1echo_1_1server.html", [
+              [ "Echo", "classweb_1_1ws_1_1subprotocol_1_1echo_1_1server_1_1_echo.html", "classweb_1_1ws_1_1subprotocol_1_1echo_1_1server_1_1_echo" ]
+            ] ]
+          ] ],
+          [ "WSSubProtocolPluginInterface", "structweb_1_1ws_1_1subprotocol_1_1_w_s_sub_protocol_plugin_interface.html", "structweb_1_1ws_1_1subprotocol_1_1_w_s_sub_protocol_plugin_interface" ],
+          [ "WSSubProtocolSelector", "classweb_1_1ws_1_1subprotocol_1_1_w_s_sub_protocol_selector.html", "classweb_1_1ws_1_1subprotocol_1_1_w_s_sub_protocol_selector" ]
+        ] ],
+        [ "WSContext", "classweb_1_1ws_1_1_w_s_context.html", "classweb_1_1ws_1_1_w_s_context" ],
         [ "WSReceiver", "classweb_1_1ws_1_1_w_s_receiver.html", "classweb_1_1ws_1_1_w_s_receiver" ],
+        [ "WSSubProtocol", "classweb_1_1ws_1_1_w_s_sub_protocol.html", "classweb_1_1ws_1_1_w_s_sub_protocol" ],
         [ "WSTransmitter", "classweb_1_1ws_1_1_w_s_transmitter.html", "classweb_1_1ws_1_1_w_s_transmitter" ]
       ] ]
     ] ],

@@ -95,14 +95,12 @@ $(document).ready(function(){initNavTree('classweb_1_1http_1_1server_1_1_request
 <div class="dynheader">
 Inheritance diagram for web::http::server::RequestParser:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1http_1_1server_1_1_request_parser__inherit__graph.svg" width="151" height="830"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1http_1_1server_1_1_request_parser__inherit__graph.svg" width="151" height="830"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <div class="dynheader">
 Collaboration diagram for web::http::server::RequestParser:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1http_1_1server_1_1_request_parser__coll__graph.svg" width="151" height="830"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1http_1_1server_1_1_request_parser__coll__graph.svg" width="151" height="830"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -444,13 +442,13 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                        std::string cookie;</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                        std::tie(cookie, cookieLine) = <a class="code" href="namespacehttputils.html#a9e46abe5c20380871f3884c9176a424d">httputils::str_split</a>(cookieLine, <span class="charliteral">&#39;;&#39;</span>);</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                        std::string name;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                        std::string <a class="code" href="namespaceweb_1_1ws_1_1subprotocol_1_1echo_1_1server.html#af4a384a2fa866309df7f32586621f0b6">name</a>;</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                        std::string value;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                        std::tie(name, value) = <a class="code" href="namespacehttputils.html#a9e46abe5c20380871f3884c9176a424d">httputils::str_split</a>(cookie, <span class="charliteral">&#39;=&#39;</span>);</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                        <a class="code" href="namespacehttputils.html#aaa1e55d83548ea4ebf224d695f73c874">httputils::str_trimm</a>(name);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                        std::tie(<a class="code" href="namespaceweb_1_1ws_1_1subprotocol_1_1echo_1_1server.html#af4a384a2fa866309df7f32586621f0b6">name</a>, value) = <a class="code" href="namespacehttputils.html#a9e46abe5c20380871f3884c9176a424d">httputils::str_split</a>(cookie, <span class="charliteral">&#39;=&#39;</span>);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                        <a class="code" href="namespacehttputils.html#aaa1e55d83548ea4ebf224d695f73c874">httputils::str_trimm</a>(<a class="code" href="namespaceweb_1_1ws_1_1subprotocol_1_1echo_1_1server.html#af4a384a2fa866309df7f32586621f0b6">name</a>);</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                        <a class="code" href="namespacehttputils.html#aaa1e55d83548ea4ebf224d695f73c874">httputils::str_trimm</a>(value);</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                        <a class="code" href="classweb_1_1http_1_1server_1_1_request_parser.html#a188a6d2be1ed63b47f0e9bdcfa0d1ae4">cookies</a>.insert({name, value});</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                        <a class="code" href="classweb_1_1http_1_1server_1_1_request_parser.html#a188a6d2be1ed63b47f0e9bdcfa0d1ae4">cookies</a>.insert({<a class="code" href="namespaceweb_1_1ws_1_1subprotocol_1_1echo_1_1server.html#af4a384a2fa866309df7f32586621f0b6">name</a>, value});</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                    }</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                }</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            }</div>
@@ -476,6 +474,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="ttc" id="aclassweb_1_1http_1_1server_1_1_request_parser_html_a188a6d2be1ed63b47f0e9bdcfa0d1ae4"><div class="ttname"><a href="classweb_1_1http_1_1server_1_1_request_parser.html#a188a6d2be1ed63b47f0e9bdcfa0d1ae4">web::http::server::RequestParser::cookies</a></div><div class="ttdeci">std::map&lt; std::string, std::string &gt; cookies</div><div class="ttdef"><b>Definition:</b> <a href="_request_parser_8h_source.html#l00075">RequestParser.h:75</a></div></div>
 <div class="ttc" id="anamespacehttputils_html_a9e46abe5c20380871f3884c9176a424d"><div class="ttname"><a href="namespacehttputils.html#a9e46abe5c20380871f3884c9176a424d">httputils::str_split</a></div><div class="ttdeci">std::pair&lt; std::string, std::string &gt; str_split(const std::string &amp;base, char c_middle)</div><div class="ttdef"><b>Definition:</b> <a href="http__utils_8cpp_source.html#l00090">http_utils.cpp:90</a></div></div>
 <div class="ttc" id="anamespacehttputils_html_aaa1e55d83548ea4ebf224d695f73c874"><div class="ttname"><a href="namespacehttputils.html#aaa1e55d83548ea4ebf224d695f73c874">httputils::str_trimm</a></div><div class="ttdeci">std::string &amp; str_trimm(std::string &amp;text)</div><div class="ttdef"><b>Definition:</b> <a href="http__utils_8cpp_source.html#l00083">http_utils.cpp:83</a></div></div>
+<div class="ttc" id="anamespaceweb_1_1ws_1_1subprotocol_1_1echo_1_1server_html_af4a384a2fa866309df7f32586621f0b6"><div class="ttname"><a href="namespaceweb_1_1ws_1_1subprotocol_1_1echo_1_1server.html#af4a384a2fa866309df7f32586621f0b6">web::ws::subprotocol::echo::server::name</a></div><div class="ttdeci">const char * name()</div><div class="ttdef"><b>Definition:</b> <a href="_echo_8cpp_source.html#l00037">Echo.cpp:37</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -607,8 +606,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1http_1_1server_1_1_request_parser_a7ef02b06141f81ea50fa32ad132ea181_cgraph.svg" width="571" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1http_1_1server_1_1_request_parser_a7ef02b06141f81ea50fa32ad132ea181_cgraph.svg" width="571" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -689,14 +687,12 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1http_1_1server_1_1_request_parser_a1fe62dd11e5108f57c2b88f8ddde6efb_cgraph.svg" width="336" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1http_1_1server_1_1_request_parser_a1fe62dd11e5108f57c2b88f8ddde6efb_cgraph.svg" width="336" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1http_1_1server_1_1_request_parser_a1fe62dd11e5108f57c2b88f8ddde6efb_icgraph.svg" width="392" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1http_1_1server_1_1_request_parser_a1fe62dd11e5108f57c2b88f8ddde6efb_icgraph.svg" width="392" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>

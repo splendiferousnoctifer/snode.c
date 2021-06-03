@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['writebuffer_1647',['writeBuffer',['../classnet_1_1pipe_1_1_pipe_source.html#a97e60d7dc50b400375203f57f2a1d347',1,'net::pipe::PipeSource::writeBuffer()'],['../classnet_1_1socket_1_1stream_1_1_socket_writer.html#a33c28980a21e4e1289611714634ab3d8',1,'net::socket::stream::SocketWriter::writeBuffer()']]],
-  ['writeeventdispatcher_1648',['writeEventDispatcher',['../classnet_1_1_event_loop.html#a9bf01a881686014ac51407d67fc4715c',1,'net::EventLoop']]]
+  ['value_1766',['value',['../classweb_1_1http_1_1_cookie_options.html#a5c6e46cad7bd2f8ba8b7eb3151c4a2d9',1,'web::http::CookieOptions']]],
+  ['vhostmiddlewares_1767',['vhostMiddlewares',['../namespaceexpress_1_1middleware.html#a114c92b8f3d516bcd4e7973815adeb4a',1,'express::middleware']]]
 ];

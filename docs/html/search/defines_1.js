@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['declare_5frequestmethod_1723',['DECLARE_REQUESTMETHOD',['../_router_8h.html#a4cc6e59e2a3c0470e2e7d4b3666ec847',1,'Router.h']]],
-  ['define_5frequestmethod_1724',['DEFINE_REQUESTMETHOD',['../_router_8cpp.html#a0851c713e37070c233e69db1e88cd270',1,'Router.cpp']]]
+  ['close_5fsocket_5ftimeout_1851',['CLOSE_SOCKET_TIMEOUT',['../client_2_w_s_context_8cpp.html#ab1bd08f7b8fad5d9f714271a72da9331',1,'CLOSE_SOCKET_TIMEOUT():&#160;WSContext.cpp'],['../server_2_w_s_context_8cpp.html#ab1bd08f7b8fad5d9f714271a72da9331',1,'CLOSE_SOCKET_TIMEOUT():&#160;WSContext.cpp'],['../_w_s_context_8cpp.html#ab1bd08f7b8fad5d9f714271a72da9331',1,'CLOSE_SOCKET_TIMEOUT():&#160;WSContext.cpp']]]
 ];

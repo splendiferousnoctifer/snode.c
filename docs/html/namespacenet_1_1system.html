@@ -182,12 +182,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="system_2_socket_8cpp_source.html#l00026">26</a> of file <a class="el" href="system_2_socket_8cpp_source.html">socket.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                                                                                  {</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        errno = 0;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <a class="code" href="namespacenet_1_1system.html#abe940f857103c8b045b81c258bfa774e">return ::accept4</a>(sockfd, addr, addrlen, flags);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    }</div>
-<div class="ttc" id="anamespacenet_1_1system_html_abe940f857103c8b045b81c258bfa774e"><div class="ttname"><a href="namespacenet_1_1system.html#abe940f857103c8b045b81c258bfa774e">net::system::accept4</a></div><div class="ttdeci">int accept4(int sockfd, struct sockaddr *addr, socklen_t *addrlen, int flags)</div><div class="ttdef"><b>Definition:</b> <a href="system_2_socket_8cpp_source.html#l00026">socket.cpp:26</a></div></div>
+<p class="definition">Definition at line <a class="el" href="system_2_socket_8cpp_source.html#l00044">44</a> of file <a class="el" href="system_2_socket_8cpp_source.html">socket.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                                                                                  {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        errno = 0;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <a class="code" href="namespacenet_1_1system.html#abe940f857103c8b045b81c258bfa774e">return ::accept4</a>(sockfd, addr, addrlen, flags);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div>
+<div class="ttc" id="anamespacenet_1_1system_html_abe940f857103c8b045b81c258bfa774e"><div class="ttname"><a href="namespacenet_1_1system.html#abe940f857103c8b045b81c258bfa774e">net::system::accept4</a></div><div class="ttdeci">int accept4(int sockfd, struct sockaddr *addr, socklen_t *addrlen, int flags)</div><div class="ttdef"><b>Definition:</b> <a href="system_2_socket_8cpp_source.html#l00044">socket.cpp:44</a></div></div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="_socket_listener_8h_source.html#l00111">net::socket::stream::SocketListener&lt; SocketConnectionT &gt;::acceptEvent()</a>.</p>
 <div class="dynheader">
@@ -230,12 +230,12 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="system_2_socket_8cpp_source.html#l00016">16</a> of file <a class="el" href="system_2_socket_8cpp_source.html">socket.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                                                                         {</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        errno = 0;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <a class="code" href="namespacenet_1_1system.html#ad4c7338a4b60fee8700cf34fa9fed5ab">return ::bind</a>(sockfd, addr, addrlen);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    }</div>
-<div class="ttc" id="anamespacenet_1_1system_html_ad4c7338a4b60fee8700cf34fa9fed5ab"><div class="ttname"><a href="namespacenet_1_1system.html#ad4c7338a4b60fee8700cf34fa9fed5ab">net::system::bind</a></div><div class="ttdeci">int bind(int sockfd, const struct sockaddr *addr, socklen_t addrlen)</div><div class="ttdef"><b>Definition:</b> <a href="system_2_socket_8cpp_source.html#l00016">socket.cpp:16</a></div></div>
+<p class="definition">Definition at line <a class="el" href="system_2_socket_8cpp_source.html#l00034">34</a> of file <a class="el" href="system_2_socket_8cpp_source.html">socket.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                                                                         {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        errno = 0;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <a class="code" href="namespacenet_1_1system.html#ad4c7338a4b60fee8700cf34fa9fed5ab">return ::bind</a>(sockfd, addr, addrlen);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div>
+<div class="ttc" id="anamespacenet_1_1system_html_ad4c7338a4b60fee8700cf34fa9fed5ab"><div class="ttname"><a href="namespacenet_1_1system.html#ad4c7338a4b60fee8700cf34fa9fed5ab">net::system::bind</a></div><div class="ttdeci">int bind(int sockfd, const struct sockaddr *addr, socklen_t addrlen)</div><div class="ttdef"><b>Definition:</b> <a href="system_2_socket_8cpp_source.html#l00034">socket.cpp:34</a></div></div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="socket_2_socket_8h_source.html#l00065">net::socket::Socket&lt; SocketAddressT &gt;::bind()</a>.</p>
 <div class="dynheader">
@@ -262,12 +262,12 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="unistd_8cpp_source.html#l00026">26</a> of file <a class="el" href="unistd_8cpp_source.html">unistd.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                      {</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        errno = 0;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <a class="code" href="namespacenet_1_1system.html#a5b804e9ab85ee96fb6af201078653816">return ::close</a>(fd);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    }</div>
-<div class="ttc" id="anamespacenet_1_1system_html_a5b804e9ab85ee96fb6af201078653816"><div class="ttname"><a href="namespacenet_1_1system.html#a5b804e9ab85ee96fb6af201078653816">net::system::close</a></div><div class="ttdeci">int close(int fd)</div><div class="ttdef"><b>Definition:</b> <a href="unistd_8cpp_source.html#l00026">unistd.cpp:26</a></div></div>
+<p class="definition">Definition at line <a class="el" href="unistd_8cpp_source.html#l00044">44</a> of file <a class="el" href="unistd_8cpp_source.html">unistd.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                      {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        errno = 0;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <a class="code" href="namespacenet_1_1system.html#a5b804e9ab85ee96fb6af201078653816">return ::close</a>(fd);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div>
+<div class="ttc" id="anamespacenet_1_1system_html_a5b804e9ab85ee96fb6af201078653816"><div class="ttname"><a href="namespacenet_1_1system.html#a5b804e9ab85ee96fb6af201078653816">net::system::close</a></div><div class="ttdeci">int close(int fd)</div><div class="ttdef"><b>Definition:</b> <a href="unistd_8cpp_source.html#l00044">unistd.cpp:44</a></div></div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="_socket_listener_8h_source.html#l00111">net::socket::stream::SocketListener&lt; SocketConnectionT &gt;::acceptEvent()</a>, and <a class="el" href="_descriptor_8cpp_source.html#l00034">net::Descriptor::~Descriptor()</a>.</p>
 <div class="dynheader">
@@ -310,12 +310,12 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="system_2_socket_8cpp_source.html#l00030">30</a> of file <a class="el" href="system_2_socket_8cpp_source.html">socket.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                                                                            {</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        errno = 0;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <a class="code" href="namespacenet_1_1system.html#ae579d34c58f571bba93e3dd2a00cfeb0">return ::connect</a>(sockfd, addr, addrlen);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }</div>
-<div class="ttc" id="anamespacenet_1_1system_html_ae579d34c58f571bba93e3dd2a00cfeb0"><div class="ttname"><a href="namespacenet_1_1system.html#ae579d34c58f571bba93e3dd2a00cfeb0">net::system::connect</a></div><div class="ttdeci">int connect(int sockfd, const struct sockaddr *addr, socklen_t addrlen)</div><div class="ttdef"><b>Definition:</b> <a href="system_2_socket_8cpp_source.html#l00030">socket.cpp:30</a></div></div>
+<p class="definition">Definition at line <a class="el" href="system_2_socket_8cpp_source.html#l00048">48</a> of file <a class="el" href="system_2_socket_8cpp_source.html">socket.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                                                                            {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        errno = 0;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <a class="code" href="namespacenet_1_1system.html#ae579d34c58f571bba93e3dd2a00cfeb0">return ::connect</a>(sockfd, addr, addrlen);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }</div>
+<div class="ttc" id="anamespacenet_1_1system_html_ae579d34c58f571bba93e3dd2a00cfeb0"><div class="ttname"><a href="namespacenet_1_1system.html#ae579d34c58f571bba93e3dd2a00cfeb0">net::system::connect</a></div><div class="ttdeci">int connect(int sockfd, const struct sockaddr *addr, socklen_t addrlen)</div><div class="ttdef"><b>Definition:</b> <a href="system_2_socket_8cpp_source.html#l00048">socket.cpp:48</a></div></div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="_socket_connector_8h_source.html#l00069">net::socket::stream::SocketConnector&lt; SocketConnectionT &gt;::connect()</a>, and <a class="el" href="_file_reader_8cpp_source.html#l00032">FileReader::FileReader()</a>.</p>
 <div class="dynheader">
@@ -342,12 +342,12 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="netdb_8cpp_source.html#l00016">16</a> of file <a class="el" href="netdb_8cpp_source.html">netdb.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                                            {</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        errno = 0;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <a class="code" href="namespacenet_1_1system.html#a23a7628914457db800a7ac9af54a9a09">return ::freeaddrinfo</a>(res);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    }</div>
-<div class="ttc" id="anamespacenet_1_1system_html_a23a7628914457db800a7ac9af54a9a09"><div class="ttname"><a href="namespacenet_1_1system.html#a23a7628914457db800a7ac9af54a9a09">net::system::freeaddrinfo</a></div><div class="ttdeci">void freeaddrinfo(struct addrinfo *res)</div><div class="ttdef"><b>Definition:</b> <a href="netdb_8cpp_source.html#l00016">netdb.cpp:16</a></div></div>
+<p class="definition">Definition at line <a class="el" href="netdb_8cpp_source.html#l00034">34</a> of file <a class="el" href="netdb_8cpp_source.html">netdb.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                                            {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        errno = 0;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <a class="code" href="namespacenet_1_1system.html#a23a7628914457db800a7ac9af54a9a09">return ::freeaddrinfo</a>(res);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div>
+<div class="ttc" id="anamespacenet_1_1system_html_a23a7628914457db800a7ac9af54a9a09"><div class="ttname"><a href="namespacenet_1_1system.html#a23a7628914457db800a7ac9af54a9a09">net::system::freeaddrinfo</a></div><div class="ttdeci">void freeaddrinfo(struct addrinfo *res)</div><div class="ttdef"><b>Definition:</b> <a href="netdb_8cpp_source.html#l00034">netdb.cpp:34</a></div></div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="ipv4_2_inet_address_8cpp_source.html#l00043">net::socket::ip::address::ipv4::InetAddress::InetAddress()</a>, and <a class="el" href="ipv6_2_inet_address_8cpp_source.html#l00043">net::socket::ip::address::ipv6::InetAddress::InetAddress()</a>.</p>
 <div class="dynheader">
@@ -396,12 +396,12 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="netdb_8cpp_source.html#l00011">11</a> of file <a class="el" href="netdb_8cpp_source.html">netdb.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;                                                                                                                {</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        errno = 0;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <a class="code" href="namespacenet_1_1system.html#acfcf4c47faf4c22605d4d22401483e2d">return ::getaddrinfo</a>(node, service, hints, res);</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    }</div>
-<div class="ttc" id="anamespacenet_1_1system_html_acfcf4c47faf4c22605d4d22401483e2d"><div class="ttname"><a href="namespacenet_1_1system.html#acfcf4c47faf4c22605d4d22401483e2d">net::system::getaddrinfo</a></div><div class="ttdeci">int getaddrinfo(const char *node, const char *service, const struct addrinfo *hints, struct addrinfo **res)</div><div class="ttdef"><b>Definition:</b> <a href="netdb_8cpp_source.html#l00011">netdb.cpp:11</a></div></div>
+<p class="definition">Definition at line <a class="el" href="netdb_8cpp_source.html#l00029">29</a> of file <a class="el" href="netdb_8cpp_source.html">netdb.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                                                                                                                {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        errno = 0;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <a class="code" href="namespacenet_1_1system.html#acfcf4c47faf4c22605d4d22401483e2d">return ::getaddrinfo</a>(node, service, hints, res);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div>
+<div class="ttc" id="anamespacenet_1_1system_html_acfcf4c47faf4c22605d4d22401483e2d"><div class="ttname"><a href="namespacenet_1_1system.html#acfcf4c47faf4c22605d4d22401483e2d">net::system::getaddrinfo</a></div><div class="ttdeci">int getaddrinfo(const char *node, const char *service, const struct addrinfo *hints, struct addrinfo **res)</div><div class="ttdef"><b>Definition:</b> <a href="netdb_8cpp_source.html#l00029">netdb.cpp:29</a></div></div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="ipv4_2_inet_address_8cpp_source.html#l00043">net::socket::ip::address::ipv4::InetAddress::InetAddress()</a>, and <a class="el" href="ipv6_2_inet_address_8cpp_source.html#l00043">net::socket::ip::address::ipv6::InetAddress::InetAddress()</a>.</p>
 <div class="dynheader">
@@ -468,12 +468,12 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="netdb_8cpp_source.html#l00022">22</a> of file <a class="el" href="netdb_8cpp_source.html">netdb.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                                                                                                                                         {</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        errno = 0;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <a class="code" href="namespacenet_1_1system.html#ad016d75c2fb1d4934774b71d7bbc5469">return ::getnameinfo</a>(addr, addrlen, host, hostlen, serv, servlen, flags);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    }</div>
-<div class="ttc" id="anamespacenet_1_1system_html_ad016d75c2fb1d4934774b71d7bbc5469"><div class="ttname"><a href="namespacenet_1_1system.html#ad016d75c2fb1d4934774b71d7bbc5469">net::system::getnameinfo</a></div><div class="ttdeci">int getnameinfo(const struct sockaddr *addr, socklen_t addrlen, char *host, socklen_t hostlen, char *serv, socklen_t servlen, int flags)</div><div class="ttdef"><b>Definition:</b> <a href="netdb_8cpp_source.html#l00022">netdb.cpp:22</a></div></div>
+<p class="definition">Definition at line <a class="el" href="netdb_8cpp_source.html#l00040">40</a> of file <a class="el" href="netdb_8cpp_source.html">netdb.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                                                                                                                                         {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        errno = 0;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="code" href="namespacenet_1_1system.html#ad016d75c2fb1d4934774b71d7bbc5469">return ::getnameinfo</a>(addr, addrlen, host, hostlen, serv, servlen, flags);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
+<div class="ttc" id="anamespacenet_1_1system_html_ad016d75c2fb1d4934774b71d7bbc5469"><div class="ttname"><a href="namespacenet_1_1system.html#ad016d75c2fb1d4934774b71d7bbc5469">net::system::getnameinfo</a></div><div class="ttdeci">int getnameinfo(const struct sockaddr *addr, socklen_t addrlen, char *host, socklen_t hostlen, char *serv, socklen_t servlen, int flags)</div><div class="ttdef"><b>Definition:</b> <a href="netdb_8cpp_source.html#l00040">netdb.cpp:40</a></div></div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="ipv4_2_inet_address_8cpp_source.html#l00092">net::socket::ip::address::ipv4::InetAddress::host()</a>, <a class="el" href="ipv6_2_inet_address_8cpp_source.html#l00092">net::socket::ip::address::ipv6::InetAddress::host()</a>, <a class="el" href="ipv4_2_inet_address_8cpp_source.html#l00099">net::socket::ip::address::ipv4::InetAddress::ip()</a>, <a class="el" href="ipv6_2_inet_address_8cpp_source.html#l00099">net::socket::ip::address::ipv6::InetAddress::ip()</a>, <a class="el" href="ipv4_2_inet_address_8cpp_source.html#l00106">net::socket::ip::address::ipv4::InetAddress::serv()</a>, and <a class="el" href="ipv6_2_inet_address_8cpp_source.html#l00106">net::socket::ip::address::ipv6::InetAddress::serv()</a>.</p>
 <div class="dynheader">
@@ -516,12 +516,12 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="system_2_socket_8cpp_source.html#l00040">40</a> of file <a class="el" href="system_2_socket_8cpp_source.html">socket.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                                                                           {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        errno = 0;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="code" href="namespacenet_1_1system.html#ab2a2aadd5835d5e4ff844d3dafdba6aa">return ::getpeername</a>(sockfd, addr, addrlen);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
-<div class="ttc" id="anamespacenet_1_1system_html_ab2a2aadd5835d5e4ff844d3dafdba6aa"><div class="ttname"><a href="namespacenet_1_1system.html#ab2a2aadd5835d5e4ff844d3dafdba6aa">net::system::getpeername</a></div><div class="ttdeci">int getpeername(int sockfd, struct sockaddr *addr, socklen_t *addrlen)</div><div class="ttdef"><b>Definition:</b> <a href="system_2_socket_8cpp_source.html#l00040">socket.cpp:40</a></div></div>
+<p class="definition">Definition at line <a class="el" href="system_2_socket_8cpp_source.html#l00058">58</a> of file <a class="el" href="system_2_socket_8cpp_source.html">socket.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                                                                           {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        errno = 0;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <a class="code" href="namespacenet_1_1system.html#ab2a2aadd5835d5e4ff844d3dafdba6aa">return ::getpeername</a>(sockfd, addr, addrlen);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
+<div class="ttc" id="anamespacenet_1_1system_html_ab2a2aadd5835d5e4ff844d3dafdba6aa"><div class="ttname"><a href="namespacenet_1_1system.html#ab2a2aadd5835d5e4ff844d3dafdba6aa">net::system::getpeername</a></div><div class="ttdeci">int getpeername(int sockfd, struct sockaddr *addr, socklen_t *addrlen)</div><div class="ttdef"><b>Definition:</b> <a href="system_2_socket_8cpp_source.html#l00058">socket.cpp:58</a></div></div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="_socket_connector_8h_source.html#l00100">net::socket::stream::SocketConnector&lt; SocketConnectionT &gt;::connectEvent()</a>.</p>
 <div class="dynheader">
@@ -564,12 +564,12 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="system_2_socket_8cpp_source.html#l00035">35</a> of file <a class="el" href="system_2_socket_8cpp_source.html">socket.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                                                                           {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        errno = 0;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="namespacenet_1_1system.html#ade9e44303465e5bffee34de7ed6edef3">return ::getsockname</a>(sockfd, addr, addrlen);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div>
-<div class="ttc" id="anamespacenet_1_1system_html_ade9e44303465e5bffee34de7ed6edef3"><div class="ttname"><a href="namespacenet_1_1system.html#ade9e44303465e5bffee34de7ed6edef3">net::system::getsockname</a></div><div class="ttdeci">int getsockname(int sockfd, struct sockaddr *addr, socklen_t *addrlen)</div><div class="ttdef"><b>Definition:</b> <a href="system_2_socket_8cpp_source.html#l00035">socket.cpp:35</a></div></div>
+<p class="definition">Definition at line <a class="el" href="system_2_socket_8cpp_source.html#l00053">53</a> of file <a class="el" href="system_2_socket_8cpp_source.html">socket.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                                                                           {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        errno = 0;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <a class="code" href="namespacenet_1_1system.html#ade9e44303465e5bffee34de7ed6edef3">return ::getsockname</a>(sockfd, addr, addrlen);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
+<div class="ttc" id="anamespacenet_1_1system_html_ade9e44303465e5bffee34de7ed6edef3"><div class="ttname"><a href="namespacenet_1_1system.html#ade9e44303465e5bffee34de7ed6edef3">net::system::getsockname</a></div><div class="ttdeci">int getsockname(int sockfd, struct sockaddr *addr, socklen_t *addrlen)</div><div class="ttdef"><b>Definition:</b> <a href="system_2_socket_8cpp_source.html#l00053">socket.cpp:53</a></div></div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="_socket_listener_8h_source.html#l00111">net::socket::stream::SocketListener&lt; SocketConnectionT &gt;::acceptEvent()</a>, and <a class="el" href="_socket_connector_8h_source.html#l00100">net::socket::stream::SocketConnector&lt; SocketConnectionT &gt;::connectEvent()</a>.</p>
 <div class="dynheader">
@@ -624,12 +624,12 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="system_2_socket_8cpp_source.html#l00055">55</a> of file <a class="el" href="system_2_socket_8cpp_source.html">socket.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                                                                                        {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        errno = 0;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <a class="code" href="namespacenet_1_1system.html#ac0e5395908fbf75be832f6b9c0786849">return ::getsockopt</a>(sockfd, level, optname, optval, optlen);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    }</div>
-<div class="ttc" id="anamespacenet_1_1system_html_ac0e5395908fbf75be832f6b9c0786849"><div class="ttname"><a href="namespacenet_1_1system.html#ac0e5395908fbf75be832f6b9c0786849">net::system::getsockopt</a></div><div class="ttdeci">int getsockopt(int sockfd, int level, int optname, void *optval, socklen_t *optlen)</div><div class="ttdef"><b>Definition:</b> <a href="system_2_socket_8cpp_source.html#l00055">socket.cpp:55</a></div></div>
+<p class="definition">Definition at line <a class="el" href="system_2_socket_8cpp_source.html#l00073">73</a> of file <a class="el" href="system_2_socket_8cpp_source.html">socket.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                                                                                        {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        errno = 0;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <a class="code" href="namespacenet_1_1system.html#ac0e5395908fbf75be832f6b9c0786849">return ::getsockopt</a>(sockfd, level, optname, optval, optlen);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div>
+<div class="ttc" id="anamespacenet_1_1system_html_ac0e5395908fbf75be832f6b9c0786849"><div class="ttname"><a href="namespacenet_1_1system.html#ac0e5395908fbf75be832f6b9c0786849">net::system::getsockopt</a></div><div class="ttdeci">int getsockopt(int sockfd, int level, int optname, void *optval, socklen_t *optlen)</div><div class="ttdef"><b>Definition:</b> <a href="system_2_socket_8cpp_source.html#l00073">socket.cpp:73</a></div></div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="_socket_connector_8h_source.html#l00100">net::socket::stream::SocketConnector&lt; SocketConnectionT &gt;::connectEvent()</a>.</p>
 <div class="dynheader">
@@ -666,12 +666,12 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="time_8cpp_source.html#l00016">16</a> of file <a class="el" href="time_8cpp_source.html">time.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                                                              {</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        errno = 0;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <a class="code" href="namespacenet_1_1system.html#aa6f351129e5d8c8522b104b4c6d9d62e">return ::gettimeofday</a>(tv, tz);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    }</div>
-<div class="ttc" id="anamespacenet_1_1system_html_aa6f351129e5d8c8522b104b4c6d9d62e"><div class="ttname"><a href="namespacenet_1_1system.html#aa6f351129e5d8c8522b104b4c6d9d62e">net::system::gettimeofday</a></div><div class="ttdeci">int gettimeofday(struct timeval *tv, struct timezone *tz)</div><div class="ttdef"><b>Definition:</b> <a href="time_8cpp_source.html#l00016">time.cpp:16</a></div></div>
+<p class="definition">Definition at line <a class="el" href="time_8cpp_source.html#l00034">34</a> of file <a class="el" href="time_8cpp_source.html">time.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                                                              {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        errno = 0;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <a class="code" href="namespacenet_1_1system.html#aa6f351129e5d8c8522b104b4c6d9d62e">return ::gettimeofday</a>(tv, tz);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div>
+<div class="ttc" id="anamespacenet_1_1system_html_aa6f351129e5d8c8522b104b4c6d9d62e"><div class="ttname"><a href="namespacenet_1_1system.html#aa6f351129e5d8c8522b104b4c6d9d62e">net::system::gettimeofday</a></div><div class="ttdeci">int gettimeofday(struct timeval *tv, struct timezone *tz)</div><div class="ttdef"><b>Definition:</b> <a href="time_8cpp_source.html#l00034">time.cpp:34</a></div></div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="_timer_event_dispatcher_8cpp_source.html#l00076">net::TimerEventDispatcher::dispatch()</a>, <a class="el" href="_timer_event_dispatcher_8cpp_source.html#l00034">net::TimerEventDispatcher::getNextTimeout()</a>, and <a class="el" href="_timer_8cpp_source.html#l00033">net::timer::Timer::Timer()</a>.</p>
 <div class="dynheader">
@@ -698,19 +698,18 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="time_8cpp_source.html#l00021">21</a> of file <a class="el" href="time_8cpp_source.html">time.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                                           {</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        errno = 0;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <a class="code" href="namespacenet_1_1system.html#a4c3fad621656ff9b26b177278b3db55c">return ::gmtime</a>(timep);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    }</div>
-<div class="ttc" id="anamespacenet_1_1system_html_a4c3fad621656ff9b26b177278b3db55c"><div class="ttname"><a href="namespacenet_1_1system.html#a4c3fad621656ff9b26b177278b3db55c">net::system::gmtime</a></div><div class="ttdeci">struct tm * gmtime(const time_t *timep)</div><div class="ttdef"><b>Definition:</b> <a href="time_8cpp_source.html#l00021">time.cpp:21</a></div></div>
+<p class="definition">Definition at line <a class="el" href="time_8cpp_source.html#l00039">39</a> of file <a class="el" href="time_8cpp_source.html">time.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                                           {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        errno = 0;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <a class="code" href="namespacenet_1_1system.html#a4c3fad621656ff9b26b177278b3db55c">return ::gmtime</a>(timep);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }</div>
+<div class="ttc" id="anamespacenet_1_1system_html_a4c3fad621656ff9b26b177278b3db55c"><div class="ttname"><a href="namespacenet_1_1system.html#a4c3fad621656ff9b26b177278b3db55c">net::system::gmtime</a></div><div class="ttdeci">struct tm * gmtime(const time_t *timep)</div><div class="ttdef"><b>Definition:</b> <a href="time_8cpp_source.html#l00039">time.cpp:39</a></div></div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="web_2http_2server_2_response_8cpp_source.html#l00121">web::http::server::Response::clearCookie()</a>, <a class="el" href="http__utils_8cpp_source.html#l00156">httputils::file_mod_http_date()</a>, and <a class="el" href="http__utils_8cpp_source.html#l00147">httputils::from_http_date()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="web_2http_2server_2_response_8cpp_source.html#l00138">web::http::server::Response::clearCookie()</a>, <a class="el" href="http__utils_8cpp_source.html#l00156">httputils::file_mod_http_date()</a>, and <a class="el" href="http__utils_8cpp_source.html#l00147">httputils::from_http_date()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacenet_1_1system_a4c3fad621656ff9b26b177278b3db55c_icgraph.svg" width="746" height="170"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacenet_1_1system_a4c3fad621656ff9b26b177278b3db55c_icgraph.svg" width="746" height="170"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -741,12 +740,12 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="system_2_socket_8cpp_source.html#l00021">21</a> of file <a class="el" href="system_2_socket_8cpp_source.html">socket.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                                        {</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        errno = 0;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <a class="code" href="namespacenet_1_1system.html#aab3b0579285d63e2dcf5c23eb55e4e04">return ::listen</a>(sockfd, backlog);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    }</div>
-<div class="ttc" id="anamespacenet_1_1system_html_aab3b0579285d63e2dcf5c23eb55e4e04"><div class="ttname"><a href="namespacenet_1_1system.html#aab3b0579285d63e2dcf5c23eb55e4e04">net::system::listen</a></div><div class="ttdeci">int listen(int sockfd, int backlog)</div><div class="ttdef"><b>Definition:</b> <a href="system_2_socket_8cpp_source.html#l00021">socket.cpp:21</a></div></div>
+<p class="definition">Definition at line <a class="el" href="system_2_socket_8cpp_source.html#l00039">39</a> of file <a class="el" href="system_2_socket_8cpp_source.html">socket.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                                        {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        errno = 0;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <a class="code" href="namespacenet_1_1system.html#aab3b0579285d63e2dcf5c23eb55e4e04">return ::listen</a>(sockfd, backlog);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }</div>
+<div class="ttc" id="anamespacenet_1_1system_html_aab3b0579285d63e2dcf5c23eb55e4e04"><div class="ttname"><a href="namespacenet_1_1system.html#aab3b0579285d63e2dcf5c23eb55e4e04">net::system::listen</a></div><div class="ttdeci">int listen(int sockfd, int backlog)</div><div class="ttdef"><b>Definition:</b> <a href="system_2_socket_8cpp_source.html#l00039">socket.cpp:39</a></div></div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="_socket_listener_8h_source.html#l00067">net::socket::stream::SocketListener&lt; SocketConnectionT &gt;::listen()</a>.</p>
 <div class="dynheader">
@@ -773,19 +772,18 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="time_8cpp_source.html#l00026">26</a> of file <a class="el" href="time_8cpp_source.html">time.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                                 {</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        errno = 0;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <a class="code" href="namespacenet_1_1system.html#a3a1f87c6f6ae3ae6bc85556c055d2ef3">return ::mktime</a>(tm);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    }</div>
-<div class="ttc" id="anamespacenet_1_1system_html_a3a1f87c6f6ae3ae6bc85556c055d2ef3"><div class="ttname"><a href="namespacenet_1_1system.html#a3a1f87c6f6ae3ae6bc85556c055d2ef3">net::system::mktime</a></div><div class="ttdeci">time_t mktime(struct tm *tm)</div><div class="ttdef"><b>Definition:</b> <a href="time_8cpp_source.html#l00026">time.cpp:26</a></div></div>
+<p class="definition">Definition at line <a class="el" href="time_8cpp_source.html#l00044">44</a> of file <a class="el" href="time_8cpp_source.html">time.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                                 {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        errno = 0;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <a class="code" href="namespacenet_1_1system.html#a3a1f87c6f6ae3ae6bc85556c055d2ef3">return ::mktime</a>(tm);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div>
+<div class="ttc" id="anamespacenet_1_1system_html_a3a1f87c6f6ae3ae6bc85556c055d2ef3"><div class="ttname"><a href="namespacenet_1_1system.html#a3a1f87c6f6ae3ae6bc85556c055d2ef3">net::system::mktime</a></div><div class="ttdeci">time_t mktime(struct tm *tm)</div><div class="ttdef"><b>Definition:</b> <a href="time_8cpp_source.html#l00044">time.cpp:44</a></div></div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="http__utils_8cpp_source.html#l00147">httputils::from_http_date()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacenet_1_1system_a3a1f87c6f6ae3ae6bc85556c055d2ef3_icgraph.svg" width="364" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacenet_1_1system_a3a1f87c6f6ae3ae6bc85556c055d2ef3_icgraph.svg" width="364" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -816,12 +814,12 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="unistd_8cpp_source.html#l00011">11</a> of file <a class="el" href="unistd_8cpp_source.html">unistd.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;                                              {</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        errno = 0;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <a class="code" href="namespacenet_1_1system.html#a6d7e0ac4eb21446e2992eba757368f84">return ::open</a>(pathname, flags);</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    }</div>
-<div class="ttc" id="anamespacenet_1_1system_html_a6d7e0ac4eb21446e2992eba757368f84"><div class="ttname"><a href="namespacenet_1_1system.html#a6d7e0ac4eb21446e2992eba757368f84">net::system::open</a></div><div class="ttdeci">int open(const char *pathname, int flags)</div><div class="ttdef"><b>Definition:</b> <a href="unistd_8cpp_source.html#l00011">unistd.cpp:11</a></div></div>
+<p class="definition">Definition at line <a class="el" href="unistd_8cpp_source.html#l00029">29</a> of file <a class="el" href="unistd_8cpp_source.html">unistd.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                                              {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        errno = 0;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <a class="code" href="namespacenet_1_1system.html#a6d7e0ac4eb21446e2992eba757368f84">return ::open</a>(pathname, flags);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div>
+<div class="ttc" id="anamespacenet_1_1system_html_a6d7e0ac4eb21446e2992eba757368f84"><div class="ttname"><a href="namespacenet_1_1system.html#a6d7e0ac4eb21446e2992eba757368f84">net::system::open</a></div><div class="ttdeci">int open(const char *pathname, int flags)</div><div class="ttdef"><b>Definition:</b> <a href="unistd_8cpp_source.html#l00029">unistd.cpp:29</a></div></div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="_file_reader_8cpp_source.html#l00038">FileReader::connect()</a>.</p>
 <div class="dynheader">
@@ -858,12 +856,12 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="unistd_8cpp_source.html#l00031">31</a> of file <a class="el" href="unistd_8cpp_source.html">unistd.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                                        {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        errno = 0;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="code" href="namespacenet_1_1system.html#aa7a36ce65ce1a210bbf480b6a658b8e4">return ::pipe2</a>(pipefd, flags);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    }</div>
-<div class="ttc" id="anamespacenet_1_1system_html_aa7a36ce65ce1a210bbf480b6a658b8e4"><div class="ttname"><a href="namespacenet_1_1system.html#aa7a36ce65ce1a210bbf480b6a658b8e4">net::system::pipe2</a></div><div class="ttdeci">int pipe2(int pipefd[2], int flags)</div><div class="ttdef"><b>Definition:</b> <a href="unistd_8cpp_source.html#l00031">unistd.cpp:31</a></div></div>
+<p class="definition">Definition at line <a class="el" href="unistd_8cpp_source.html#l00049">49</a> of file <a class="el" href="unistd_8cpp_source.html">unistd.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                                        {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        errno = 0;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <a class="code" href="namespacenet_1_1system.html#aa7a36ce65ce1a210bbf480b6a658b8e4">return ::pipe2</a>(pipefd, flags);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
+<div class="ttc" id="anamespacenet_1_1system_html_aa7a36ce65ce1a210bbf480b6a658b8e4"><div class="ttname"><a href="namespacenet_1_1system.html#aa7a36ce65ce1a210bbf480b6a658b8e4">net::system::pipe2</a></div><div class="ttdeci">int pipe2(int pipefd[2], int flags)</div><div class="ttdef"><b>Definition:</b> <a href="unistd_8cpp_source.html#l00049">unistd.cpp:49</a></div></div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="_pipe_8cpp_source.html#l00034">net::pipe::Pipe::Pipe()</a>.</p>
 <div class="dynheader">
@@ -906,12 +904,12 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="unistd_8cpp_source.html#l00016">16</a> of file <a class="el" href="unistd_8cpp_source.html">unistd.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                                                  {</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        errno = 0;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <a class="code" href="namespacenet_1_1system.html#a548befc9826098f4756445e39c22a1f9">return ::read</a>(fd, buf, count);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    }</div>
-<div class="ttc" id="anamespacenet_1_1system_html_a548befc9826098f4756445e39c22a1f9"><div class="ttname"><a href="namespacenet_1_1system.html#a548befc9826098f4756445e39c22a1f9">net::system::read</a></div><div class="ttdeci">ssize_t read(int fd, void *buf, size_t count)</div><div class="ttdef"><b>Definition:</b> <a href="unistd_8cpp_source.html#l00016">unistd.cpp:16</a></div></div>
+<p class="definition">Definition at line <a class="el" href="unistd_8cpp_source.html#l00034">34</a> of file <a class="el" href="unistd_8cpp_source.html">unistd.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                                                  {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        errno = 0;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <a class="code" href="namespacenet_1_1system.html#a548befc9826098f4756445e39c22a1f9">return ::read</a>(fd, buf, count);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div>
+<div class="ttc" id="anamespacenet_1_1system_html_a548befc9826098f4756445e39c22a1f9"><div class="ttname"><a href="namespacenet_1_1system.html#a548befc9826098f4756445e39c22a1f9">net::system::read</a></div><div class="ttdeci">ssize_t read(int fd, void *buf, size_t count)</div><div class="ttdef"><b>Definition:</b> <a href="unistd_8cpp_source.html#l00034">unistd.cpp:34</a></div></div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="_file_reader_8cpp_source.html#l00052">FileReader::readEvent()</a>, and <a class="el" href="_pipe_sink_8cpp_source.html#l00040">net::pipe::PipeSink::readEvent()</a>.</p>
 <div class="dynheader">
@@ -960,12 +958,12 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="system_2_socket_8cpp_source.html#l00045">45</a> of file <a class="el" href="system_2_socket_8cpp_source.html">socket.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                                                               {</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        errno = 0;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <a class="code" href="namespacenet_1_1system.html#acc53bcf54729712f1f7778f06276c63e">return ::recv</a>(sockfd, buf, len, flags);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    }</div>
-<div class="ttc" id="anamespacenet_1_1system_html_acc53bcf54729712f1f7778f06276c63e"><div class="ttname"><a href="namespacenet_1_1system.html#acc53bcf54729712f1f7778f06276c63e">net::system::recv</a></div><div class="ttdeci">ssize_t recv(int sockfd, void *buf, size_t len, int flags)</div><div class="ttdef"><b>Definition:</b> <a href="system_2_socket_8cpp_source.html#l00045">socket.cpp:45</a></div></div>
+<p class="definition">Definition at line <a class="el" href="system_2_socket_8cpp_source.html#l00063">63</a> of file <a class="el" href="system_2_socket_8cpp_source.html">socket.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                                                               {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        errno = 0;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <a class="code" href="namespacenet_1_1system.html#acc53bcf54729712f1f7778f06276c63e">return ::recv</a>(sockfd, buf, len, flags);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    }</div>
+<div class="ttc" id="anamespacenet_1_1system_html_acc53bcf54729712f1f7778f06276c63e"><div class="ttname"><a href="namespacenet_1_1system.html#acc53bcf54729712f1f7778f06276c63e">net::system::recv</a></div><div class="ttdeci">ssize_t recv(int sockfd, void *buf, size_t len, int flags)</div><div class="ttdef"><b>Definition:</b> <a href="system_2_socket_8cpp_source.html#l00063">socket.cpp:63</a></div></div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="legacy_2_socket_reader_8h_source.html#l00041">net::socket::stream::legacy::SocketReader&lt; SocketT &gt;::read()</a>.</p>
 <div class="dynheader">
@@ -1020,12 +1018,12 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="select_8cpp_source.html#l00011">11</a> of file <a class="el" href="select_8cpp_source.html">select.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;                                                                                                        {</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        errno = 0;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <a class="code" href="namespacenet_1_1system.html#a3e123bea43cc674bd5bfb9ac0ed6da3f">return ::select</a>(nfds, readfds, writefds, exceptfds, timeout);</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    }</div>
-<div class="ttc" id="anamespacenet_1_1system_html_a3e123bea43cc674bd5bfb9ac0ed6da3f"><div class="ttname"><a href="namespacenet_1_1system.html#a3e123bea43cc674bd5bfb9ac0ed6da3f">net::system::select</a></div><div class="ttdeci">int select(int nfds, fd_set *readfds, fd_set *writefds, fd_set *exceptfds, struct timeval *timeout)</div><div class="ttdef"><b>Definition:</b> <a href="select_8cpp_source.html#l00011">select.cpp:11</a></div></div>
+<p class="definition">Definition at line <a class="el" href="select_8cpp_source.html#l00029">29</a> of file <a class="el" href="select_8cpp_source.html">select.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                                                                                                        {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        errno = 0;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <a class="code" href="namespacenet_1_1system.html#a3e123bea43cc674bd5bfb9ac0ed6da3f">return ::select</a>(nfds, readfds, writefds, exceptfds, timeout);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div>
+<div class="ttc" id="anamespacenet_1_1system_html_a3e123bea43cc674bd5bfb9ac0ed6da3f"><div class="ttname"><a href="namespacenet_1_1system.html#a3e123bea43cc674bd5bfb9ac0ed6da3f">net::system::select</a></div><div class="ttdeci">int select(int nfds, fd_set *readfds, fd_set *writefds, fd_set *exceptfds, struct timeval *timeout)</div><div class="ttdef"><b>Definition:</b> <a href="select_8cpp_source.html#l00029">select.cpp:29</a></div></div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="_event_loop_8cpp_source.html#l00060">net::EventLoop::tick()</a>.</p>
 <div class="dynheader">
@@ -1074,12 +1072,12 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="system_2_socket_8cpp_source.html#l00050">50</a> of file <a class="el" href="system_2_socket_8cpp_source.html">socket.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                                                                     {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        errno = 0;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <a class="code" href="namespacenet_1_1system.html#a408106e64a07f382385360ea9f3cff8c">return ::send</a>(sockfd, buf, len, flags);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
-<div class="ttc" id="anamespacenet_1_1system_html_a408106e64a07f382385360ea9f3cff8c"><div class="ttname"><a href="namespacenet_1_1system.html#a408106e64a07f382385360ea9f3cff8c">net::system::send</a></div><div class="ttdeci">ssize_t send(int sockfd, const void *buf, size_t len, int flags)</div><div class="ttdef"><b>Definition:</b> <a href="system_2_socket_8cpp_source.html#l00050">socket.cpp:50</a></div></div>
+<p class="definition">Definition at line <a class="el" href="system_2_socket_8cpp_source.html#l00068">68</a> of file <a class="el" href="system_2_socket_8cpp_source.html">socket.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                                                                     {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        errno = 0;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <a class="code" href="namespacenet_1_1system.html#a408106e64a07f382385360ea9f3cff8c">return ::send</a>(sockfd, buf, len, flags);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div>
+<div class="ttc" id="anamespacenet_1_1system_html_a408106e64a07f382385360ea9f3cff8c"><div class="ttname"><a href="namespacenet_1_1system.html#a408106e64a07f382385360ea9f3cff8c">net::system::send</a></div><div class="ttdeci">ssize_t send(int sockfd, const void *buf, size_t len, int flags)</div><div class="ttdef"><b>Definition:</b> <a href="system_2_socket_8cpp_source.html#l00068">socket.cpp:68</a></div></div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="legacy_2_socket_writer_8h_source.html#l00040">net::socket::stream::legacy::SocketWriter&lt; SocketT &gt;::write()</a>.</p>
 <div class="dynheader">
@@ -1134,12 +1132,12 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="system_2_socket_8cpp_source.html#l00060">60</a> of file <a class="el" href="system_2_socket_8cpp_source.html">socket.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                                                                                             {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        errno = 0;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <a class="code" href="namespacenet_1_1system.html#aca1d93ce7fa0324e4a51453fc527dc1c">return ::setsockopt</a>(sockfd, level, optname, optval, optlen);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
-<div class="ttc" id="anamespacenet_1_1system_html_aca1d93ce7fa0324e4a51453fc527dc1c"><div class="ttname"><a href="namespacenet_1_1system.html#aca1d93ce7fa0324e4a51453fc527dc1c">net::system::setsockopt</a></div><div class="ttdeci">int setsockopt(int sockfd, int level, int optname, const void *optval, socklen_t optlen)</div><div class="ttdef"><b>Definition:</b> <a href="system_2_socket_8cpp_source.html#l00060">socket.cpp:60</a></div></div>
+<p class="definition">Definition at line <a class="el" href="system_2_socket_8cpp_source.html#l00078">78</a> of file <a class="el" href="system_2_socket_8cpp_source.html">socket.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                                                                                             {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        errno = 0;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <a class="code" href="namespacenet_1_1system.html#aca1d93ce7fa0324e4a51453fc527dc1c">return ::setsockopt</a>(sockfd, level, optname, optval, optlen);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
+<div class="ttc" id="anamespacenet_1_1system_html_aca1d93ce7fa0324e4a51453fc527dc1c"><div class="ttname"><a href="namespacenet_1_1system.html#aca1d93ce7fa0324e4a51453fc527dc1c">net::system::setsockopt</a></div><div class="ttdeci">int setsockopt(int sockfd, int level, int optname, const void *optval, socklen_t optlen)</div><div class="ttdef"><b>Definition:</b> <a href="system_2_socket_8cpp_source.html#l00078">socket.cpp:78</a></div></div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="_socket_listener_8h_source.html#l00101">net::socket::stream::SocketListener&lt; SocketConnectionT &gt;::reuseAddress()</a>.</p>
 <div class="dynheader">
@@ -1176,12 +1174,12 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="system_2_socket_8cpp_source.html#l00065">65</a> of file <a class="el" href="system_2_socket_8cpp_source.html">socket.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                                      {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        errno = 0;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <a class="code" href="namespacenet_1_1system.html#a6e3cc3da3091019dca76100c57375feb">return ::shutdown</a>(sockfd, how);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
-<div class="ttc" id="anamespacenet_1_1system_html_a6e3cc3da3091019dca76100c57375feb"><div class="ttname"><a href="namespacenet_1_1system.html#a6e3cc3da3091019dca76100c57375feb">net::system::shutdown</a></div><div class="ttdeci">int shutdown(int sockfd, int how)</div><div class="ttdef"><b>Definition:</b> <a href="system_2_socket_8cpp_source.html#l00065">socket.cpp:65</a></div></div>
+<p class="definition">Definition at line <a class="el" href="system_2_socket_8cpp_source.html#l00083">83</a> of file <a class="el" href="system_2_socket_8cpp_source.html">socket.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                                      {</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        errno = 0;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <a class="code" href="namespacenet_1_1system.html#a6e3cc3da3091019dca76100c57375feb">return ::shutdown</a>(sockfd, how);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    }</div>
+<div class="ttc" id="anamespacenet_1_1system_html_a6e3cc3da3091019dca76100c57375feb"><div class="ttname"><a href="namespacenet_1_1system.html#a6e3cc3da3091019dca76100c57375feb">net::system::shutdown</a></div><div class="ttdeci">int shutdown(int sockfd, int how)</div><div class="ttdef"><b>Definition:</b> <a href="system_2_socket_8cpp_source.html#l00083">socket.cpp:83</a></div></div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="_socket_listener_8h_source.html#l00111">net::socket::stream::SocketListener&lt; SocketConnectionT &gt;::acceptEvent()</a>, and <a class="el" href="socket_2_socket_8h_source.html#l00078">net::socket::Socket&lt; SocketAddressT &gt;::shutdown()</a>.</p>
 <div class="dynheader">
@@ -1218,12 +1216,12 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="signal_8cpp_source.html#l00011">11</a> of file <a class="el" href="signal_8cpp_source.html">signal.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;                                                          {</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        errno = 0;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <a class="code" href="namespacenet_1_1system.html#aa1c9edb6a5797ebd4003f6f789de6b9a">return ::signal</a>(signum, handler);</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    }</div>
-<div class="ttc" id="anamespacenet_1_1system_html_aa1c9edb6a5797ebd4003f6f789de6b9a"><div class="ttname"><a href="namespacenet_1_1system.html#aa1c9edb6a5797ebd4003f6f789de6b9a">net::system::signal</a></div><div class="ttdeci">sighandler_t signal(int signum, sighandler_t handler)</div><div class="ttdef"><b>Definition:</b> <a href="signal_8cpp_source.html#l00011">signal.cpp:11</a></div></div>
+<p class="definition">Definition at line <a class="el" href="signal_8cpp_source.html#l00029">29</a> of file <a class="el" href="signal_8cpp_source.html">signal.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                                                          {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        errno = 0;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <a class="code" href="namespacenet_1_1system.html#aa1c9edb6a5797ebd4003f6f789de6b9a">return ::signal</a>(signum, handler);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div>
+<div class="ttc" id="anamespacenet_1_1system_html_aa1c9edb6a5797ebd4003f6f789de6b9a"><div class="ttname"><a href="namespacenet_1_1system.html#aa1c9edb6a5797ebd4003f6f789de6b9a">net::system::signal</a></div><div class="ttdeci">sighandler_t signal(int signum, sighandler_t handler)</div><div class="ttdef"><b>Definition:</b> <a href="signal_8cpp_source.html#l00029">signal.cpp:29</a></div></div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="_event_loop_8cpp_source.html#l00121">net::EventLoop::init()</a>.</p>
 <div class="dynheader">
@@ -1266,12 +1264,12 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="system_2_socket_8cpp_source.html#l00011">11</a> of file <a class="el" href="system_2_socket_8cpp_source.html">socket.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;                                                   {</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        errno = 0;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <a class="code" href="namespacenet_1_1system.html#a5f6ccab99c16f428c4cd1bf2811c5de8">return ::socket</a>(domain, type, protocol);</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    }</div>
-<div class="ttc" id="anamespacenet_1_1system_html_a5f6ccab99c16f428c4cd1bf2811c5de8"><div class="ttname"><a href="namespacenet_1_1system.html#a5f6ccab99c16f428c4cd1bf2811c5de8">net::system::socket</a></div><div class="ttdeci">int socket(int domain, int type, int protocol)</div><div class="ttdef"><b>Definition:</b> <a href="system_2_socket_8cpp_source.html#l00011">socket.cpp:11</a></div></div>
+<p class="definition">Definition at line <a class="el" href="system_2_socket_8cpp_source.html#l00029">29</a> of file <a class="el" href="system_2_socket_8cpp_source.html">socket.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                                                   {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        errno = 0;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <a class="code" href="namespacenet_1_1system.html#a5f6ccab99c16f428c4cd1bf2811c5de8">return ::socket</a>(domain, type, protocol);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div>
+<div class="ttc" id="anamespacenet_1_1system_html_a5f6ccab99c16f428c4cd1bf2811c5de8"><div class="ttname"><a href="namespacenet_1_1system.html#a5f6ccab99c16f428c4cd1bf2811c5de8">net::system::socket</a></div><div class="ttdeci">int socket(int domain, int type, int protocol)</div><div class="ttdef"><b>Definition:</b> <a href="system_2_socket_8cpp_source.html#l00029">socket.cpp:29</a></div></div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="socket_2bluetooth_2rfcomm_2_socket_8cpp_source.html#l00031">net::socket::bluetooth::rfcomm::Socket::create()</a>, <a class="el" href="socket_2ip_2tcp_2ipv4_2_socket_8cpp_source.html#l00029">net::socket::ip::tcp::ipv4::Socket::create()</a>, <a class="el" href="socket_2ip_2tcp_2ipv6_2_socket_8cpp_source.html#l00029">net::socket::ip::tcp::ipv6::Socket::create()</a>, and <a class="el" href="socket_2bluetooth_2l2cap_2_socket_8cpp_source.html#l00031">net::socket::bluetooth::l2cap::Socket::create()</a>.</p>
 <div class="dynheader">
@@ -1298,19 +1296,18 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="time_8cpp_source.html#l00011">11</a> of file <a class="el" href="time_8cpp_source.html">time.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;                              {</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        errno = 0;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <a class="code" href="namespacenet_1_1system.html#a14577a3d4ff982622034e2060c35e19b">return ::time</a>(tloc);</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    }</div>
-<div class="ttc" id="anamespacenet_1_1system_html_a14577a3d4ff982622034e2060c35e19b"><div class="ttname"><a href="namespacenet_1_1system.html#a14577a3d4ff982622034e2060c35e19b">net::system::time</a></div><div class="ttdeci">time_t time(time_t *tloc)</div><div class="ttdef"><b>Definition:</b> <a href="time_8cpp_source.html#l00011">time.cpp:11</a></div></div>
+<p class="definition">Definition at line <a class="el" href="time_8cpp_source.html#l00029">29</a> of file <a class="el" href="time_8cpp_source.html">time.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                              {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        errno = 0;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <a class="code" href="namespacenet_1_1system.html#a14577a3d4ff982622034e2060c35e19b">return ::time</a>(tloc);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div>
+<div class="ttc" id="anamespacenet_1_1system_html_a14577a3d4ff982622034e2060c35e19b"><div class="ttname"><a href="namespacenet_1_1system.html#a14577a3d4ff982622034e2060c35e19b">net::system::time</a></div><div class="ttdeci">time_t time(time_t *tloc)</div><div class="ttdef"><b>Definition:</b> <a href="time_8cpp_source.html#l00029">time.cpp:29</a></div></div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="web_2http_2server_2_response_8cpp_source.html#l00121">web::http::server::Response::clearCookie()</a>, <a class="el" href="_descriptor_event_receiver_8cpp_source.html#l00052">net::DescriptorEventReceiver::enabled()</a>, <a class="el" href="http__utils_8cpp_source.html#l00147">httputils::from_http_date()</a>, <a class="el" href="_descriptor_event_receiver_8cpp_source.html#l00072">net::DescriptorEventReceiver::resumed()</a>, and <a class="el" href="_event_loop_8cpp_source.html#l00060">net::EventLoop::tick()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="web_2http_2server_2_response_8cpp_source.html#l00138">web::http::server::Response::clearCookie()</a>, <a class="el" href="_descriptor_event_receiver_8cpp_source.html#l00052">net::DescriptorEventReceiver::enabled()</a>, <a class="el" href="http__utils_8cpp_source.html#l00147">httputils::from_http_date()</a>, <a class="el" href="_descriptor_event_receiver_8cpp_source.html#l00072">net::DescriptorEventReceiver::resumed()</a>, and <a class="el" href="_event_loop_8cpp_source.html#l00060">net::EventLoop::tick()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacenet_1_1system_a14577a3d4ff982622034e2060c35e19b_icgraph.svg" width="1716" height="744"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacenet_1_1system_a14577a3d4ff982622034e2060c35e19b_icgraph.svg" width="1716" height="744"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -1347,12 +1344,12 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="unistd_8cpp_source.html#l00021">21</a> of file <a class="el" href="unistd_8cpp_source.html">unistd.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                                                         {</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        errno = 0;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <a class="code" href="namespacenet_1_1system.html#a74a047e91ce6ff1d627132c214964638">return ::write</a>(fd, buf, count);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    }</div>
-<div class="ttc" id="anamespacenet_1_1system_html_a74a047e91ce6ff1d627132c214964638"><div class="ttname"><a href="namespacenet_1_1system.html#a74a047e91ce6ff1d627132c214964638">net::system::write</a></div><div class="ttdeci">ssize_t write(int fd, const void *buf, size_t count)</div><div class="ttdef"><b>Definition:</b> <a href="unistd_8cpp_source.html#l00021">unistd.cpp:21</a></div></div>
+<p class="definition">Definition at line <a class="el" href="unistd_8cpp_source.html#l00039">39</a> of file <a class="el" href="unistd_8cpp_source.html">unistd.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                                                         {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        errno = 0;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <a class="code" href="namespacenet_1_1system.html#a74a047e91ce6ff1d627132c214964638">return ::write</a>(fd, buf, count);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }</div>
+<div class="ttc" id="anamespacenet_1_1system_html_a74a047e91ce6ff1d627132c214964638"><div class="ttname"><a href="namespacenet_1_1system.html#a74a047e91ce6ff1d627132c214964638">net::system::write</a></div><div class="ttdeci">ssize_t write(int fd, const void *buf, size_t count)</div><div class="ttdef"><b>Definition:</b> <a href="unistd_8cpp_source.html#l00039">unistd.cpp:39</a></div></div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="_pipe_source_8cpp_source.html#l00063">net::pipe::PipeSource::writeEvent()</a>.</p>
 <div class="dynheader">

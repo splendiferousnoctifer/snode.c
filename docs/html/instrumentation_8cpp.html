@@ -165,9 +165,9 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="instrumentation_8cpp_source.html#l00015">15</a> of file <a class="el" href="instrumentation_8cpp_source.html">instrumentation.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;                                                 {</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <a class="code" href="instrumentation_8cpp.html#ae5daf08da8a19e95f4a384774e840fe9">printf</a>(<span class="stringliteral">&quot; &quot;</span>);</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;                                                     {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;            <a class="code" href="instrumentation_8cpp.html#ae5daf08da8a19e95f4a384774e840fe9">printf</a>(<span class="stringliteral">&quot; &quot;</span>);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        }</div>
 <div class="ttc" id="ainstrumentation_8cpp_html_ae5daf08da8a19e95f4a384774e840fe9"><div class="ttname"><a href="instrumentation_8cpp.html#ae5daf08da8a19e95f4a384774e840fe9">printf</a></div><div class="ttdeci">printf(&quot;[%s] %s\n&quot;, is_enter ? &quot;+&quot; :&quot;-&quot;, info.dli_sname)</div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="instrumentation_8cpp.html#ae5daf08da8a19e95f4a384774e840fe9">printf()</a>.</p>
@@ -203,9 +203,9 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="instrumentation_8cpp_source.html#l00012">12</a> of file <a class="el" href="instrumentation_8cpp_source.html">instrumentation.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;                 {</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <a class="code" href="instrumentation_8cpp.html#ae5daf08da8a19e95f4a384774e840fe9">printf</a>(<span class="stringliteral">&quot;couldn&#39;t decode: %p\n&quot;</span>, __builtin_return_address(0));</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;                     {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;            <a class="code" href="instrumentation_8cpp.html#ae5daf08da8a19e95f4a384774e840fe9">printf</a>(<span class="stringliteral">&quot;couldn&#39;t decode: %p\n&quot;</span>, __builtin_return_address(0));</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        }</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="instrumentation_8cpp.html#ae5daf08da8a19e95f4a384774e840fe9">printf()</a>.</p>
 <div class="dynheader">
@@ -270,7 +270,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">{</div>
-<div class="line">    _print_pretty(this_fn, <span class="keyword">true</span>, <a class="code" href="instrumentation_8cpp.html#a4fb633eda9995a378fcd11b5452d5519">spaces</a>++)</div>
+<div class="line">        _print_pretty(this_fn, <span class="keyword">true</span>, <a class="code" href="instrumentation_8cpp.html#a4fb633eda9995a378fcd11b5452d5519">spaces</a>++)</div>
 <div class="ttc" id="ainstrumentation_8cpp_html_a4fb633eda9995a378fcd11b5452d5519"><div class="ttname"><a href="instrumentation_8cpp.html#a4fb633eda9995a378fcd11b5452d5519">spaces</a></div><div class="ttdeci">static int spaces</div><div class="ttdef"><b>Definition:</b> <a href="instrumentation_8cpp_source.html#l00006">instrumentation.cpp:6</a></div></div>
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="instrumentation_8cpp_source.html#l00021">21</a> of file <a class="el" href="instrumentation_8cpp_source.html">instrumentation.cpp</a>.</p>
@@ -289,7 +289,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">{</div>
-<div class="line">    Dl_info info</div>
+<div class="line">        Dl_info info</div>
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="instrumentation_8cpp_source.html#l00008">8</a> of file <a class="el" href="instrumentation_8cpp_source.html">instrumentation.cpp</a>.</p>
 

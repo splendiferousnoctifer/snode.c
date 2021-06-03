@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['shutdown_1668',['shutdown',['../classnet_1_1socket_1_1_socket.html#a7769480db1cc5cadb0e208577b85ade6',1,'net::socket::Socket']]]
+  ['role_1791',['Role',['../classweb_1_1ws_1_1_w_s_sub_protocol.html#ab5e31692ba05642f50df63cc28e28b85',1,'web::ws::WSSubProtocol']]]
 ];

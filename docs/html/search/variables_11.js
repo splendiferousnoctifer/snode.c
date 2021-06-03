@@ -1,21 +1,4 @@
 var searchData=
 [
-  ['rc_1594',['rc',['../instrumentation_8cpp.html#a30467b1dec89ba4714905eed4c11b38a',1,'instrumentation.cpp']]],
-  ['readeventdispatcher_1595',['readEventDispatcher',['../classnet_1_1_event_loop.html#a995f1fe1d605b306e907337a63cdfc8e',1,'net::EventLoop']]],
-  ['ready_1596',['ready',['../structweb_1_1http_1_1server_1_1_h_t_t_p_server_context_1_1_request_context.html#a5cce0195ab05aa07d4d636e9e720d03a',1,'web::http::server::HTTPServerContext::RequestContext']]],
-  ['reason_1597',['reason',['../structweb_1_1http_1_1server_1_1_h_t_t_p_server_context_1_1_request_context.html#aa0c0ac17317e8f47652b828b2dab2f0b',1,'web::http::server::HTTPServerContext::RequestContext::reason()'],['../classweb_1_1http_1_1client_1_1_response.html#a49da40bc82e2f577f7876f89b6d0ffed',1,'web::http::client::Response::reason()'],['../classweb_1_1http_1_1client_1_1_response_parser.html#ab231d61e1f3eac11c39611ebe5c05ca9',1,'web::http::client::ResponseParser::reason()']]],
-  ['registered_1598',['registered',['../classnet_1_1_fd_set.html#ab0029b2101fd1d09c47e4bbf6936b607',1,'net::FdSet']]],
-  ['relativemountpath_1599',['relativeMountPath',['../structexpress_1_1_mount_point.html#aed029c8a9eaefcf7878ce5c9d882dd1a',1,'express::MountPoint']]],
-  ['remoteaddress_1600',['remoteAddress',['../classnet_1_1socket_1_1stream_1_1_socket_connection.html#a134ddd5a7c9a31a21db872e71f73ca52',1,'net::socket::stream::SocketConnection']]],
-  ['removedlist_1601',['removedList',['../classnet_1_1_timer_event_dispatcher.html#a768ff5b01ff70b34aa17d1f3622ea20b',1,'net::TimerEventDispatcher']]],
-  ['request_1602',['request',['../classweb_1_1http_1_1client_1_1_client_context.html#a71bf28b3429aaf30f953ef4ac211d0dd',1,'web::http::client::ClientContext::request()'],['../structweb_1_1http_1_1server_1_1_h_t_t_p_server_context_1_1_request_context.html#a0e54d7d394f944e8c09be208d2d7dcfe',1,'web::http::server::HTTPServerContext::RequestContext::request()']]],
-  ['requestcontexts_1603',['requestContexts',['../classweb_1_1http_1_1server_1_1_h_t_t_p_server_context.html#a9657ddda7f2b6aebdb6705671f990c37',1,'web::http::server::HTTPServerContext']]],
-  ['requestinprogress_1604',['requestInProgress',['../classweb_1_1http_1_1server_1_1_h_t_t_p_server_context.html#aa220a3c3961e4478c9665d3a3db67cf1',1,'web::http::server::HTTPServerContext']]],
-  ['response_1605',['response',['../classweb_1_1http_1_1client_1_1_client_context.html#a4608c10784090ab3c3d24876440f76db',1,'web::http::client::ClientContext::response()'],['../structweb_1_1http_1_1server_1_1_h_t_t_p_server_context_1_1_request_context.html#a6e9f21d7a4c34f4ecd41f7169d2a2767',1,'web::http::server::HTTPServerContext::RequestContext::response()']]],
-  ['responsestatus_1606',['responseStatus',['../classweb_1_1http_1_1server_1_1_response.html#adff0a4f1e7e67fa647d7e726e74f0966',1,'web::http::server::Response']]],
-  ['root_1607',['root',['../classexpress_1_1middleware_1_1_static_middleware.html#a4c1b12467fbff98a6aeecb56774a779e',1,'express::middleware::StaticMiddleware']]],
-  ['routerdispatcher_1608',['routerDispatcher',['../classexpress_1_1_router.html#aa3c8a0794fc3e3882654f4a81bed6cb2',1,'express::Router']]],
-  ['routerdispatcher_1609',['RouterDispatcher',['../classexpress_1_1_route.html#ae1e66c70443957e1a6f317ff5a9c4574',1,'express::Route']]],
-  ['routes_1610',['routes',['../classexpress_1_1_router_dispatcher.html#ab877547440f2a2d7953f8cae552a4fc1',1,'express::RouterDispatcher']]],
-  ['running_1611',['running',['../classnet_1_1_event_loop.html#a80f4c144cd8f1b83607565c8545ad49a',1,'net::EventLoop']]]
+  ['queries_1711',['queries',['../classweb_1_1http_1_1client_1_1_request.html#a0a8b211ec6467d100fdbf4bf24287a9c',1,'web::http::client::Request::queries()'],['../classweb_1_1http_1_1server_1_1_request.html#a893d2475f4116b85d0d4a2b9bd0b7b04',1,'web::http::server::Request::queries()'],['../classweb_1_1http_1_1server_1_1_request_parser.html#a5aaee5501d9172435be82c226b96ad90',1,'web::http::server::RequestParser::queries()']]]
 ];
