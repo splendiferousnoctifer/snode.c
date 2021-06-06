@@ -1,4 +1,4 @@
 var namespaceweb_1_1ws_1_1client =
 [
-    [ "WSContext", "classweb_1_1ws_1_1client_1_1_w_s_context.html", null ]
+    [ "SocketContext", "classweb_1_1ws_1_1client_1_1_socket_context.html", null ]
 ];

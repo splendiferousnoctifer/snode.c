@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['descriptoreventdispatcher_1829',['DescriptorEventDispatcher',['../classnet_1_1_descriptor_event_receiver.html#ad17bca9cfb4e895e38e4fe6cee41f44f',1,'net::DescriptorEventReceiver']]]
+  ['eventloop_1841',['EventLoop',['../classnet_1_1_descriptor_event_dispatcher.html#aca25e36665670fcb6909dd8ab04b1d05',1,'net::DescriptorEventDispatcher']]]
 ];

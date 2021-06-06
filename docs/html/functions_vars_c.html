@@ -85,19 +85,20 @@ $(document).ready(function(){initNavTree('functions_vars_c.html',''); initResiza
 
 <h3><a id="index_c"></a>- c -</h3><ul>
 <li>clientContext
-: <a class="el" href="classweb_1_1http_1_1client_1_1_request.html#a03e500f5b19eb62850267d08f1ce9f35">web::http::client::Request</a>
+: <a class="el" href="classweb_1_1http_1_1client_1_1_request.html#a504ee89efddfe7fd61a3faa860105856">web::http::client::Request</a>
 </li>
 <li>clients
-: <a class="el" href="classweb_1_1ws_1_1_w_s_sub_protocol.html#a0f306c164b094e1bc03861be7836a6b6">web::ws::WSSubProtocol</a>
+: <a class="el" href="classweb_1_1ws_1_1server_1_1_sub_protocol.html#a8e79ee32c64836b74d9efbf63b8b8a77">web::ws::server::SubProtocol</a>
+, <a class="el" href="classweb_1_1ws_1_1server_1_1_sub_protocol_interface.html#afcd44521492ed20887b72f7584fc1df1">web::ws::server::SubProtocolInterface</a>
 </li>
 <li>clientSubprotocols
-: <a class="el" href="classweb_1_1ws_1_1subprotocol_1_1_w_s_sub_protocol_selector.html#a9adc01696cf74f63e8f4007baec4edc6">web::ws::subprotocol::WSSubProtocolSelector</a>
+: <a class="el" href="classweb_1_1ws_1_1_sub_protocol_selector.html#a66edadcca30ddec85aa160c1e1f31807">web::ws::SubProtocolSelector</a>
 </li>
 <li>closeReceived
-: <a class="el" href="classweb_1_1ws_1_1_w_s_context.html#a1d3be39b52e33d441845ad03999eee59">web::ws::WSContext</a>
+: <a class="el" href="classweb_1_1ws_1_1_socket_context.html#a972d979ae4c986f0de69f5b47e6dc6e0">web::ws::SocketContext</a>
 </li>
 <li>closeSent
-: <a class="el" href="classweb_1_1ws_1_1_w_s_context.html#a916cfe1a36655c1deb6fd8e2a184ce58">web::ws::WSContext</a>
+: <a class="el" href="classweb_1_1ws_1_1_socket_context.html#ac78b1203f99749e94f71f765e7e23d4c">web::ws::SocketContext</a>
 </li>
 <li>conf
 : <a class="el" href="class_logger.html#aab3f8f567382428dd7e467c5d6835832">Logger</a>
@@ -108,10 +109,13 @@ $(document).ready(function(){initNavTree('functions_vars_c.html',''); initResiza
 , <a class="el" href="classweb_1_1http_1_1server_1_1_response.html#aeaa3022ce05a081af3a6745750c337c1">web::http::server::Response</a>
 </li>
 <li>connectionTerminated
-: <a class="el" href="classweb_1_1http_1_1server_1_1_h_t_t_p_server_context.html#a703c758f9e16c38fb41fa103e304d7ec">web::http::server::HTTPServerContext&lt; RequestT, ResponseT &gt;</a>
+: <a class="el" href="classweb_1_1http_1_1server_1_1_socket_context.html#ad0b44fa12f96c2aa354438dd6465a42e">web::http::server::SocketContext&lt; RequestT, ResponseT &gt;</a>
 </li>
 <li>content
 : <a class="el" href="classweb_1_1http_1_1_parser.html#a63c894dd0755083f813bbdce92814f04">web::http::Parser</a>
+</li>
+<li>contentJunk
+: <a class="el" href="classweb_1_1http_1_1_parser.html#accf4baece7a60bfbc7fbc89f458a0fc2">web::http::Parser</a>
 </li>
 <li>contentLength
 : <a class="el" href="classweb_1_1http_1_1client_1_1_request.html#ab2c6a6617013404ecd17707da8e873d3">web::http::client::Request</a>
@@ -127,8 +131,11 @@ $(document).ready(function(){initNavTree('functions_vars_c.html',''); initResiza
 : <a class="el" href="classweb_1_1http_1_1client_1_1_request.html#a8d3850dad9256a873ac14e72addb289d">web::http::client::Request</a>
 , <a class="el" href="classweb_1_1http_1_1server_1_1_response.html#a27d7c297ceff0e46f6b64d5c6cf6f1d1">web::http::server::Response</a>
 </li>
+<li>context
+: <a class="el" href="classweb_1_1ws_1_1_sub_protocol.html#a77a2bbaa90739945c11d4eb0a92ab103">web::ws::SubProtocol</a>
+</li>
 <li>continuation
-: <a class="el" href="classweb_1_1ws_1_1_w_s_receiver.html#a1a090d234e4de7ec0ba2ab31ae213122">web::ws::WSReceiver</a>
+: <a class="el" href="classweb_1_1ws_1_1_receiver.html#aa66f5a97e0ea95d95b0cae8fb0c76715">web::ws::Receiver</a>
 </li>
 <li>cookies
 : <a class="el" href="classweb_1_1http_1_1client_1_1_request.html#ad1cb8454b7ba3e5579769a7e2042a968">web::http::client::Request</a>
@@ -137,9 +144,6 @@ $(document).ready(function(){initNavTree('functions_vars_c.html',''); initResiza
 , <a class="el" href="classweb_1_1http_1_1server_1_1_request.html#af4d4c1ca578735e7d1671d91489754ef">web::http::server::Request</a>
 , <a class="el" href="classweb_1_1http_1_1server_1_1_request_parser.html#a188a6d2be1ed63b47f0e9bdcfa0d1ae4">web::http::server::RequestParser</a>
 , <a class="el" href="classweb_1_1http_1_1server_1_1_response.html#a1f336cd082c73b66697b28fd25441e86">web::http::server::Response</a>
-</li>
-<li>create
-: <a class="el" href="structweb_1_1ws_1_1subprotocol_1_1_w_s_sub_protocol_plugin_interface.html#a97d2a647a6bcfb6ae466c16355b5435f">web::ws::subprotocol::WSSubProtocolPluginInterface</a>
 </li>
 <li>ctx
 : <a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connector.html#ad7515655b28bef79c5034bbd92f9d6b7">net::socket::stream::tls::SocketConnector&lt; SocketT &gt;</a>

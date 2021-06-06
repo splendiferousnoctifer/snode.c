@@ -2,7 +2,7 @@ var classweb_1_1http_1_1client_1_1_response =
 [
     [ "Response", "classweb_1_1http_1_1client_1_1_response.html#a299bee31ccf9f4c1fcbc86a718014988", null ],
     [ "reset", "classweb_1_1http_1_1client_1_1_response.html#aa7d940a15a31118732f8b32b09c683a4", null ],
-    [ "ClientContext", "classweb_1_1http_1_1client_1_1_response.html#afedf4d3df7efe896ca80fef22e608acb", null ],
+    [ "SocketContext", "classweb_1_1http_1_1client_1_1_response.html#aa3d4727b864f12bef775c2184047d68a", null ],
     [ "body", "classweb_1_1http_1_1client_1_1_response.html#aa21a633716638f1e7fd89d423ee872ef", null ],
     [ "contentLength", "classweb_1_1http_1_1client_1_1_response.html#a2be1b3cd917eebc19df7d37973832fea", null ],
     [ "cookies", "classweb_1_1http_1_1client_1_1_response.html#aae11e082f0e6c6228d74a1fc8ce9b835", null ],

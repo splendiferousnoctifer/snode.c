@@ -1,8 +1,10 @@
 var classweb_1_1http_1_1server_1_1_request_parser =
 [
-    [ "RequestParser", "classweb_1_1http_1_1server_1_1_request_parser.html#aeb370511e8cb191a3f9024c7b7151a9e", null ],
+    [ "RequestParser", "classweb_1_1http_1_1server_1_1_request_parser.html#a5fe5c54c482b7b35aff8d3a6484478d7", null ],
+    [ "RequestParser", "classweb_1_1http_1_1server_1_1_request_parser.html#ad058d028a653f11f3e73454e9bfaaebe", null ],
     [ "begin", "classweb_1_1http_1_1server_1_1_request_parser.html#a3950d5e8dddb5d163e6339abbed26b6e", null ],
-    [ "methodSupported", "classweb_1_1http_1_1server_1_1_request_parser.html#a6bce2d82a0b532d16bc26c5899a1d0e2", null ],
+    [ "methodSupported", "classweb_1_1http_1_1server_1_1_request_parser.html#ab470f101e514af211a5380f40b49eb86", null ],
+    [ "operator=", "classweb_1_1http_1_1server_1_1_request_parser.html#ab6d58ddc6653381f45096c474b1ddb03", null ],
     [ "parseContent", "classweb_1_1http_1_1server_1_1_request_parser.html#a2d5763f09b81d7d61e3ff89ae6ac1b94", null ],
     [ "parseHeader", "classweb_1_1http_1_1server_1_1_request_parser.html#af16b33084862fb9357a7911036e0065d", null ],
     [ "parseStartLine", "classweb_1_1http_1_1server_1_1_request_parser.html#af731e52d0a852f74be461c087b804178", null ],

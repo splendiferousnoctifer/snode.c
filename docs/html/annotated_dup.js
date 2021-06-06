@@ -118,9 +118,9 @@ var annotated_dup =
           [ "SocketConnection", "classnet_1_1socket_1_1stream_1_1_socket_connection.html", "classnet_1_1socket_1_1stream_1_1_socket_connection" ],
           [ "SocketConnectionBase", "classnet_1_1socket_1_1stream_1_1_socket_connection_base.html", "classnet_1_1socket_1_1stream_1_1_socket_connection_base" ],
           [ "SocketConnector", "classnet_1_1socket_1_1stream_1_1_socket_connector.html", "classnet_1_1socket_1_1stream_1_1_socket_connector" ],
+          [ "SocketContext", "classnet_1_1socket_1_1stream_1_1_socket_context.html", "classnet_1_1socket_1_1stream_1_1_socket_context" ],
+          [ "SocketContextFactory", "classnet_1_1socket_1_1stream_1_1_socket_context_factory.html", "classnet_1_1socket_1_1stream_1_1_socket_context_factory" ],
           [ "SocketListener", "classnet_1_1socket_1_1stream_1_1_socket_listener.html", "classnet_1_1socket_1_1stream_1_1_socket_listener" ],
-          [ "SocketProtocol", "classnet_1_1socket_1_1stream_1_1_socket_protocol.html", "classnet_1_1socket_1_1stream_1_1_socket_protocol" ],
-          [ "SocketProtocolFactory", "classnet_1_1socket_1_1stream_1_1_socket_protocol_factory.html", "classnet_1_1socket_1_1stream_1_1_socket_protocol_factory" ],
           [ "SocketReader", "classnet_1_1socket_1_1stream_1_1_socket_reader.html", "classnet_1_1socket_1_1stream_1_1_socket_reader" ],
           [ "SocketServer", "classnet_1_1socket_1_1stream_1_1_socket_server.html", "classnet_1_1socket_1_1stream_1_1_socket_server" ],
           [ "SocketWriter", "classnet_1_1socket_1_1stream_1_1_socket_writer.html", "classnet_1_1socket_1_1stream_1_1_socket_writer" ]
@@ -165,12 +165,12 @@ var annotated_dup =
             [ "Client6", "classweb_1_1http_1_1client_1_1tls_1_1_client6.html", null ]
           ] ],
           [ "Client", "classweb_1_1http_1_1client_1_1_client.html", "classweb_1_1http_1_1client_1_1_client" ],
-          [ "ClientContextBase", "classweb_1_1http_1_1client_1_1_client_context_base.html", "classweb_1_1http_1_1client_1_1_client_context_base" ],
-          [ "ClientContext", "classweb_1_1http_1_1client_1_1_client_context.html", "classweb_1_1http_1_1client_1_1_client_context" ],
-          [ "ClientContextFactory", "classweb_1_1http_1_1client_1_1_client_context_factory.html", "classweb_1_1http_1_1client_1_1_client_context_factory" ],
           [ "Request", "classweb_1_1http_1_1client_1_1_request.html", "classweb_1_1http_1_1client_1_1_request" ],
           [ "Response", "classweb_1_1http_1_1client_1_1_response.html", "classweb_1_1http_1_1client_1_1_response" ],
-          [ "ResponseParser", "classweb_1_1http_1_1client_1_1_response_parser.html", "classweb_1_1http_1_1client_1_1_response_parser" ]
+          [ "ResponseParser", "classweb_1_1http_1_1client_1_1_response_parser.html", "classweb_1_1http_1_1client_1_1_response_parser" ],
+          [ "SocketContextBase", "classweb_1_1http_1_1client_1_1_socket_context_base.html", "classweb_1_1http_1_1client_1_1_socket_context_base" ],
+          [ "SocketContext", "classweb_1_1http_1_1client_1_1_socket_context.html", "classweb_1_1http_1_1client_1_1_socket_context" ],
+          [ "SocketContextFactory", "classweb_1_1http_1_1client_1_1_socket_context_factory.html", "classweb_1_1http_1_1client_1_1_socket_context_factory" ]
         ] ],
         [ "server", "namespaceweb_1_1http_1_1server.html", [
           [ "legacy", "namespaceweb_1_1http_1_1server_1_1legacy.html", [
@@ -181,13 +181,13 @@ var annotated_dup =
             [ "Server", "classweb_1_1http_1_1server_1_1tls_1_1_server.html", null ],
             [ "Server6", "classweb_1_1http_1_1server_1_1tls_1_1_server6.html", null ]
           ] ],
-          [ "HTTPServerContextBase", "classweb_1_1http_1_1server_1_1_h_t_t_p_server_context_base.html", "classweb_1_1http_1_1server_1_1_h_t_t_p_server_context_base" ],
-          [ "HTTPServerContext", "classweb_1_1http_1_1server_1_1_h_t_t_p_server_context.html", "classweb_1_1http_1_1server_1_1_h_t_t_p_server_context" ],
-          [ "HTTPServerContextFactory", "classweb_1_1http_1_1server_1_1_h_t_t_p_server_context_factory.html", "classweb_1_1http_1_1server_1_1_h_t_t_p_server_context_factory" ],
           [ "Request", "classweb_1_1http_1_1server_1_1_request.html", "classweb_1_1http_1_1server_1_1_request" ],
           [ "RequestParser", "classweb_1_1http_1_1server_1_1_request_parser.html", "classweb_1_1http_1_1server_1_1_request_parser" ],
           [ "Response", "classweb_1_1http_1_1server_1_1_response.html", "classweb_1_1http_1_1server_1_1_response" ],
-          [ "Server", "classweb_1_1http_1_1server_1_1_server.html", "classweb_1_1http_1_1server_1_1_server" ]
+          [ "Server", "classweb_1_1http_1_1server_1_1_server.html", "classweb_1_1http_1_1server_1_1_server" ],
+          [ "SocketContextBase", "classweb_1_1http_1_1server_1_1_socket_context_base.html", "classweb_1_1http_1_1server_1_1_socket_context_base" ],
+          [ "SocketContext", "classweb_1_1http_1_1server_1_1_socket_context.html", "classweb_1_1http_1_1server_1_1_socket_context" ],
+          [ "SocketContextFactory", "classweb_1_1http_1_1server_1_1_socket_context_factory.html", "classweb_1_1http_1_1server_1_1_socket_context_factory" ]
         ] ],
         [ "CookieOptions", "classweb_1_1http_1_1_cookie_options.html", "classweb_1_1http_1_1_cookie_options" ],
         [ "MimeTypes", "classweb_1_1http_1_1_mime_types.html", "classweb_1_1http_1_1_mime_types" ],
@@ -196,24 +196,30 @@ var annotated_dup =
       ] ],
       [ "ws", "namespaceweb_1_1ws.html", [
         [ "client", "namespaceweb_1_1ws_1_1client.html", [
-          [ "WSContext", "classweb_1_1ws_1_1client_1_1_w_s_context.html", null ]
+          [ "SocketContext", "classweb_1_1ws_1_1client_1_1_socket_context.html", null ]
         ] ],
         [ "server", "namespaceweb_1_1ws_1_1server.html", [
-          [ "WSContext", "classweb_1_1ws_1_1server_1_1_w_s_context.html", "classweb_1_1ws_1_1server_1_1_w_s_context" ]
+          [ "SocketContext", "classweb_1_1ws_1_1server_1_1_socket_context.html", "classweb_1_1ws_1_1server_1_1_socket_context" ],
+          [ "SocketContextFactory", "classweb_1_1ws_1_1server_1_1_socket_context_factory.html", "classweb_1_1ws_1_1server_1_1_socket_context_factory" ],
+          [ "SubProtocol", "classweb_1_1ws_1_1server_1_1_sub_protocol.html", "classweb_1_1ws_1_1server_1_1_sub_protocol" ],
+          [ "SubProtocolInterface", "classweb_1_1ws_1_1server_1_1_sub_protocol_interface.html", "classweb_1_1ws_1_1server_1_1_sub_protocol_interface" ],
+          [ "SubProtocolSelector", "classweb_1_1ws_1_1server_1_1_sub_protocol_selector.html", "classweb_1_1ws_1_1server_1_1_sub_protocol_selector" ]
         ] ],
         [ "subprotocol", "namespaceweb_1_1ws_1_1subprotocol.html", [
           [ "echo", "namespaceweb_1_1ws_1_1subprotocol_1_1echo.html", [
             [ "server", "namespaceweb_1_1ws_1_1subprotocol_1_1echo_1_1server.html", [
+              [ "EchoInterface", "classweb_1_1ws_1_1subprotocol_1_1echo_1_1server_1_1_echo_interface.html", "classweb_1_1ws_1_1subprotocol_1_1echo_1_1server_1_1_echo_interface" ],
               [ "Echo", "classweb_1_1ws_1_1subprotocol_1_1echo_1_1server_1_1_echo.html", "classweb_1_1ws_1_1subprotocol_1_1echo_1_1server_1_1_echo" ]
             ] ]
-          ] ],
-          [ "WSSubProtocolPluginInterface", "structweb_1_1ws_1_1subprotocol_1_1_w_s_sub_protocol_plugin_interface.html", "structweb_1_1ws_1_1subprotocol_1_1_w_s_sub_protocol_plugin_interface" ],
-          [ "WSSubProtocolSelector", "classweb_1_1ws_1_1subprotocol_1_1_w_s_sub_protocol_selector.html", "classweb_1_1ws_1_1subprotocol_1_1_w_s_sub_protocol_selector" ]
+          ] ]
         ] ],
-        [ "WSContext", "classweb_1_1ws_1_1_w_s_context.html", "classweb_1_1ws_1_1_w_s_context" ],
-        [ "WSReceiver", "classweb_1_1ws_1_1_w_s_receiver.html", "classweb_1_1ws_1_1_w_s_receiver" ],
-        [ "WSSubProtocol", "classweb_1_1ws_1_1_w_s_sub_protocol.html", "classweb_1_1ws_1_1_w_s_sub_protocol" ],
-        [ "WSTransmitter", "classweb_1_1ws_1_1_w_s_transmitter.html", "classweb_1_1ws_1_1_w_s_transmitter" ]
+        [ "Receiver", "classweb_1_1ws_1_1_receiver.html", "classweb_1_1ws_1_1_receiver" ],
+        [ "SocketContext", "classweb_1_1ws_1_1_socket_context.html", "classweb_1_1ws_1_1_socket_context" ],
+        [ "SubProtocol", "classweb_1_1ws_1_1_sub_protocol.html", "classweb_1_1ws_1_1_sub_protocol" ],
+        [ "SubProtocolInterface", "classweb_1_1ws_1_1_sub_protocol_interface.html", "classweb_1_1ws_1_1_sub_protocol_interface" ],
+        [ "SubProtocolPlugin", "structweb_1_1ws_1_1_sub_protocol_plugin.html", "structweb_1_1ws_1_1_sub_protocol_plugin" ],
+        [ "SubProtocolSelector", "classweb_1_1ws_1_1_sub_protocol_selector.html", "classweb_1_1ws_1_1_sub_protocol_selector" ],
+        [ "Transmitter", "classweb_1_1ws_1_1_transmitter.html", "classweb_1_1ws_1_1_transmitter" ]
       ] ]
     ] ],
     [ "File", "class_file.html", null ],

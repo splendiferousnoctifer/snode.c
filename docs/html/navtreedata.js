@@ -84,14 +84,14 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_accept_event_receiver_8cpp.html",
-"_v_host_8cpp.html#a114c92b8f3d516bcd4e7973815adeb4a",
-"classexpress_1_1middleware_1_1_static_middleware.html#af712793a6f6d600b813fc4a6d3fbe41d",
-"classnet_1_1socket_1_1bluetooth_1_1address_1_1_l2_cap_address.html#a992ec8b450e4af0efdf2911dbc0bb9eb",
-"classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#ab2d1ac395884dd5197ddef41699b06c9",
-"classweb_1_1http_1_1client_1_1_response_parser.html#a348fc1fd29b1faf17a3b6a170bea7f1f",
-"classweb_1_1ws_1_1_w_s_transmitter.html#a28cf430d3c741a42acb57d67a475ac08",
-"ip_2tcp_2ipv6_2legacy_2_socket_client_8h_source.html",
-"stream_2legacy_2_socket_server_8h_source.html"
+"_v_host_8cpp_source.html",
+"classnet_1_1_descriptor.html#a6dc096af1a75c82c1ff16ca8b4122a3b",
+"classnet_1_1socket_1_1ip_1_1address_1_1ipv4_1_1_inet_address.html#a36910355a11c5a63e0dc42809cdc9862",
+"classnet_1_1socket_1_1stream_1_1tls_1_1_socket_reader.html#a772a3826a50633705c006e12fe4edf7b",
+"classweb_1_1http_1_1server_1_1_request.html#a2d60f919578490bf24726cc77644ac0f",
+"classweb_1_1ws_1_1_sub_protocol_selector.html#a50212c4e7d797f1b1a9ea5f2cebbf7c6",
+"http__utils_8cpp.html#a9e46abe5c20380871f3884c9176a424d",
+"select_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

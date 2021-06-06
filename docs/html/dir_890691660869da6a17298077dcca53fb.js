@@ -13,9 +13,7 @@ var dir_890691660869da6a17298077dcca53fb =
       [ "MimeTypes", "classweb_1_1http_1_1_mime_types.html", "classweb_1_1http_1_1_mime_types" ]
     ] ],
     [ "Parser.cpp", "_parser_8cpp.html", "_parser_8cpp" ],
-    [ "Parser.h", "_parser_8h.html", [
-      [ "Parser", "classweb_1_1http_1_1_parser.html", "classweb_1_1http_1_1_parser" ]
-    ] ],
+    [ "Parser.h", "_parser_8h.html", "_parser_8h" ],
     [ "StatusCodes.cpp", "_status_codes_8cpp.html", null ],
     [ "StatusCodes.h", "_status_codes_8h.html", [
       [ "StatusCode", "classweb_1_1http_1_1_status_code.html", "classweb_1_1http_1_1_status_code" ]

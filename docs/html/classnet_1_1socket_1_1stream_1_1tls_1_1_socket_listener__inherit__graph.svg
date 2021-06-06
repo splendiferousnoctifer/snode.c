@@ -38,23 +38,23 @@
 <text text-anchor="middle" x="113.5" y="-360.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; SocketT &gt; &gt;</text>
 <polyline fill="none" stroke="black" points="50,-353.5 177,-353.5 "/>
 <text text-anchor="start" x="58" y="-341.5" font-family="Helvetica,sans-Serif" font-size="10.00"># options</text>
-<text text-anchor="start" x="58" y="-330.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; socketProtocolFactory</text>
-<text text-anchor="start" x="58" y="-319.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onConnect</text>
-<text text-anchor="start" x="58" y="-308.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onDestruct</text>
-<text text-anchor="start" x="58" y="-297.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onConnected</text>
-<text text-anchor="start" x="58" y="-286.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onDisconnect</text>
+<text text-anchor="start" x="58" y="-330.5" font-family="Helvetica,sans-Serif" font-size="10.00"># onConnect</text>
+<text text-anchor="start" x="58" y="-319.5" font-family="Helvetica,sans-Serif" font-size="10.00"># onDestruct</text>
+<text text-anchor="start" x="58" y="-308.5" font-family="Helvetica,sans-Serif" font-size="10.00"># onConnected</text>
+<text text-anchor="start" x="58" y="-297.5" font-family="Helvetica,sans-Serif" font-size="10.00"># onDisconnect</text>
+<text text-anchor="start" x="58" y="-286.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; socketProtocolFactory</text>
 <polyline fill="none" stroke="black" points="50,-279.5 177,-279.5 "/>
 <text text-anchor="start" x="58" y="-267.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ SocketListener()</text>
 <text text-anchor="start" x="58" y="-256.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~SocketListener()</text>
 <text text-anchor="start" x="58" y="-245.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ listen()</text>
-<text text-anchor="start" x="58" y="-234.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; SocketListener()</text>
+<text text-anchor="start" x="58" y="-234.5" font-family="Helvetica,sans-Serif" font-size="10.00"># destruct()</text>
 <text text-anchor="start" x="58" y="-223.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; SocketListener()</text>
-<text text-anchor="start" x="58" y="-212.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; operator=()</text>
-<text text-anchor="start" x="58" y="-201.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; reuseAddress()</text>
-<text text-anchor="start" x="58" y="-190.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; acceptEvent()</text>
-<text text-anchor="start" x="58" y="-179.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; end()</text>
-<text text-anchor="start" x="58" y="-168.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; unobserved()</text>
-<text text-anchor="start" x="58" y="-157.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; destruct()</text>
+<text text-anchor="start" x="58" y="-212.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; SocketListener()</text>
+<text text-anchor="start" x="58" y="-201.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; operator=()</text>
+<text text-anchor="start" x="58" y="-190.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; reuseAddress()</text>
+<text text-anchor="start" x="58" y="-179.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; acceptEvent()</text>
+<text text-anchor="start" x="58" y="-168.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; end()</text>
+<text text-anchor="start" x="58" y="-157.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; unobserved()</text>
 </a>
 </g>
 </g>
@@ -94,23 +94,23 @@
 <text text-anchor="middle" x="149.5" y="-674.5" font-family="Helvetica,sans-Serif" font-size="10.00">::SocketListener&lt; SocketConnectionT &gt;</text>
 <polyline fill="none" stroke="black" points="53.5,-667.5 245.5,-667.5 "/>
 <text text-anchor="start" x="61.5" y="-655.5" font-family="Helvetica,sans-Serif" font-size="10.00"># options</text>
-<text text-anchor="start" x="61.5" y="-644.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; socketProtocolFactory</text>
-<text text-anchor="start" x="61.5" y="-633.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onConnect</text>
-<text text-anchor="start" x="61.5" y="-622.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onDestruct</text>
-<text text-anchor="start" x="61.5" y="-611.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onConnected</text>
-<text text-anchor="start" x="61.5" y="-600.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; onDisconnect</text>
+<text text-anchor="start" x="61.5" y="-644.5" font-family="Helvetica,sans-Serif" font-size="10.00"># onConnect</text>
+<text text-anchor="start" x="61.5" y="-633.5" font-family="Helvetica,sans-Serif" font-size="10.00"># onDestruct</text>
+<text text-anchor="start" x="61.5" y="-622.5" font-family="Helvetica,sans-Serif" font-size="10.00"># onConnected</text>
+<text text-anchor="start" x="61.5" y="-611.5" font-family="Helvetica,sans-Serif" font-size="10.00"># onDisconnect</text>
+<text text-anchor="start" x="61.5" y="-600.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; socketProtocolFactory</text>
 <polyline fill="none" stroke="black" points="53.5,-593.5 245.5,-593.5 "/>
 <text text-anchor="start" x="61.5" y="-581.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ SocketListener()</text>
 <text text-anchor="start" x="61.5" y="-570.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~SocketListener()</text>
 <text text-anchor="start" x="61.5" y="-559.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ listen()</text>
-<text text-anchor="start" x="61.5" y="-548.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; SocketListener()</text>
+<text text-anchor="start" x="61.5" y="-548.5" font-family="Helvetica,sans-Serif" font-size="10.00"># destruct()</text>
 <text text-anchor="start" x="61.5" y="-537.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; SocketListener()</text>
-<text text-anchor="start" x="61.5" y="-526.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; operator=()</text>
-<text text-anchor="start" x="61.5" y="-515.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; reuseAddress()</text>
-<text text-anchor="start" x="61.5" y="-504.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; acceptEvent()</text>
-<text text-anchor="start" x="61.5" y="-493.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; end()</text>
-<text text-anchor="start" x="61.5" y="-482.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; unobserved()</text>
-<text text-anchor="start" x="61.5" y="-471.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; destruct()</text>
+<text text-anchor="start" x="61.5" y="-526.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; SocketListener()</text>
+<text text-anchor="start" x="61.5" y="-515.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; operator=()</text>
+<text text-anchor="start" x="61.5" y="-504.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; reuseAddress()</text>
+<text text-anchor="start" x="61.5" y="-493.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; acceptEvent()</text>
+<text text-anchor="start" x="61.5" y="-482.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; end()</text>
+<text text-anchor="start" x="61.5" y="-471.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; unobserved()</text>
 </a>
 </g>
 </g>

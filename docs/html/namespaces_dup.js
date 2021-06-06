@@ -3,6 +3,7 @@ var namespaces_dup =
     [ "express", "namespaceexpress.html", "namespaceexpress" ],
     [ "httputils", "namespacehttputils.html", [
       [ "ci_comp", "namespacehttputils.html#a87e2c03071ddffa8a616ea13d641aafc", null ],
+      [ "ci_contains", "namespacehttputils.html#af566d4f31d97a3a84b373a94e6cf9594", null ],
       [ "file_mod_http_date", "namespacehttputils.html#a4a2597267a4c6fae315ab7b85273ea61", null ],
       [ "from_hex", "namespacehttputils.html#a2162ee901d7b1ac5f0fdb0dcbbd2d350", null ],
       [ "from_http_date", "namespacehttputils.html#ae9dad27f616223d074b58f3e0232caa7", null ],
@@ -16,6 +17,7 @@ var namespaces_dup =
       [ "url_encode", "namespacehttputils.html#a386473920285bded181a38ffac8fe833", null ]
     ] ],
     [ "net", "namespacenet.html", "namespacenet" ],
+    [ "net ", "namespacenet_01.html", "namespacenet_01" ],
     [ "utils", "namespaceutils.html", "namespaceutils" ],
     [ "web", "namespaceweb.html", "namespaceweb" ]
 ];

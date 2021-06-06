@@ -109,8 +109,8 @@ Public Types</h2></td></tr>
 <tr class="separator:ab589e910e2b80eb0ee206789150f79a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb39ce4d6586c3ba85a3b3f691f7b028"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1server_1_1_server.html#aeb39ce4d6586c3ba85a3b3f691f7b028">Response</a> = ResponseT</td></tr>
 <tr class="separator:aeb39ce4d6586c3ba85a3b3f691f7b028"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4fe13bc58f455881ea2309c3b06efad1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1server_1_1_server.html#a4fe13bc58f455881ea2309c3b06efad1">SocketServer</a> = SocketServerT&lt; <a class="el" href="classweb_1_1http_1_1server_1_1_h_t_t_p_server_context_factory.html">web::http::server::HTTPServerContextFactory</a>&lt; <a class="el" href="classweb_1_1http_1_1server_1_1_server.html#ab589e910e2b80eb0ee206789150f79a7">Request</a>, <a class="el" href="classweb_1_1http_1_1server_1_1_server.html#aeb39ce4d6586c3ba85a3b3f691f7b028">Response</a> &gt; &gt;</td></tr>
-<tr class="separator:a4fe13bc58f455881ea2309c3b06efad1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae531a071b9ea6a0dfd5d613f99aa6ac8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1server_1_1_server.html#ae531a071b9ea6a0dfd5d613f99aa6ac8">SocketServer</a> = SocketServerT&lt; <a class="el" href="classweb_1_1http_1_1server_1_1_socket_context_factory.html">web::http::server::SocketContextFactory</a>&lt; <a class="el" href="classweb_1_1http_1_1server_1_1_server.html#ab589e910e2b80eb0ee206789150f79a7">Request</a>, <a class="el" href="classweb_1_1http_1_1server_1_1_server.html#aeb39ce4d6586c3ba85a3b3f691f7b028">Response</a> &gt; &gt;</td></tr>
+<tr class="separator:ae531a071b9ea6a0dfd5d613f99aa6ac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9bcbc4777ab48bebb7ab4c83e61e457"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1server_1_1_server.html#af9bcbc4777ab48bebb7ab4c83e61e457">SocketConnection</a> = typename SocketServer::SocketConnection</td></tr>
 <tr class="separator:af9bcbc4777ab48bebb7ab4c83e61e457"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07504eb1aea31fed264786c1b93afbcc"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1server_1_1_server.html#a07504eb1aea31fed264786c1b93afbcc">SocketAddress</a> = typename SocketConnection::SocketAddress</td></tr>
@@ -133,13 +133,13 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:acfe01a87be68bb3c6801393e45dd60da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classweb_1_1http_1_1server_1_1_server.html#a4fe13bc58f455881ea2309c3b06efad1">SocketServer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1server_1_1_server.html#acfe01a87be68bb3c6801393e45dd60da">socketServer</a></td></tr>
+<tr class="memitem:acfe01a87be68bb3c6801393e45dd60da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classweb_1_1http_1_1server_1_1_server.html#ae531a071b9ea6a0dfd5d613f99aa6ac8">SocketServer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1server_1_1_server.html#acfe01a87be68bb3c6801393e45dd60da">socketServer</a></td></tr>
 <tr class="separator:acfe01a87be68bb3c6801393e45dd60da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fe91db92e541cf6496b9517ca8fcc88"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(<a class="el" href="classweb_1_1http_1_1server_1_1_server.html#ab589e910e2b80eb0ee206789150f79a7">Request</a> &amp;req, <a class="el" href="classweb_1_1http_1_1server_1_1_server.html#aeb39ce4d6586c3ba85a3b3f691f7b028">Response</a> &amp;res)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1server_1_1_server.html#a6fe91db92e541cf6496b9517ca8fcc88">onRequestReady</a></td></tr>
 <tr class="separator:a6fe91db92e541cf6496b9517ca8fcc88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;template&lt; typename SocketProtocolT &gt; typename SocketServerT, typename RequestT, typename ResponseT&gt;<br />
+<div class="textblock"><h3>template&lt;template&lt; typename SocketContextFactoryT &gt; typename SocketServerT, typename RequestT, typename ResponseT&gt;<br />
 class web::http::server::Server&lt; SocketServerT, RequestT, ResponseT &gt;</h3>
 
 
@@ -151,7 +151,7 @@ class web::http::server::Server&lt; SocketServerT, RequestT, ResponseT &gt;</h3>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;template&lt; typename SocketProtocolT &gt; typename SocketServerT, typename RequestT , typename ResponseT &gt; </div>
+template&lt;template&lt; typename SocketContextFactoryT &gt; typename SocketServerT, typename RequestT , typename ResponseT &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">using <a class="el" href="classweb_1_1http_1_1server_1_1_server.html">web::http::server::Server</a>&lt; SocketServerT, RequestT, ResponseT &gt;::<a class="el" href="classweb_1_1http_1_1server_1_1_server.html#ab589e910e2b80eb0ee206789150f79a7">Request</a> =  RequestT</td>
@@ -169,7 +169,7 @@ template&lt;template&lt; typename SocketProtocolT &gt; typename SocketServerT, t
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;template&lt; typename SocketProtocolT &gt; typename SocketServerT, typename RequestT , typename ResponseT &gt; </div>
+template&lt;template&lt; typename SocketContextFactoryT &gt; typename SocketServerT, typename RequestT , typename ResponseT &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">using <a class="el" href="classweb_1_1http_1_1server_1_1_server.html">web::http::server::Server</a>&lt; SocketServerT, RequestT, ResponseT &gt;::<a class="el" href="classweb_1_1http_1_1server_1_1_server.html#aeb39ce4d6586c3ba85a3b3f691f7b028">Response</a> =  ResponseT</td>
@@ -187,7 +187,7 @@ template&lt;template&lt; typename SocketProtocolT &gt; typename SocketServerT, t
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;template&lt; typename SocketProtocolT &gt; typename SocketServerT, typename RequestT , typename ResponseT &gt; </div>
+template&lt;template&lt; typename SocketContextFactoryT &gt; typename SocketServerT, typename RequestT , typename ResponseT &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">using <a class="el" href="classweb_1_1http_1_1server_1_1_server.html">web::http::server::Server</a>&lt; SocketServerT, RequestT, ResponseT &gt;::<a class="el" href="classweb_1_1http_1_1server_1_1_server.html#a07504eb1aea31fed264786c1b93afbcc">SocketAddress</a> =  typename SocketConnection::SocketAddress</td>
@@ -205,7 +205,7 @@ template&lt;template&lt; typename SocketProtocolT &gt; typename SocketServerT, t
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;template&lt; typename SocketProtocolT &gt; typename SocketServerT, typename RequestT , typename ResponseT &gt; </div>
+template&lt;template&lt; typename SocketContextFactoryT &gt; typename SocketServerT, typename RequestT , typename ResponseT &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">using <a class="el" href="classweb_1_1http_1_1server_1_1_server.html">web::http::server::Server</a>&lt; SocketServerT, RequestT, ResponseT &gt;::<a class="el" href="classweb_1_1http_1_1server_1_1_server.html#af9bcbc4777ab48bebb7ab4c83e61e457">SocketConnection</a> =  typename SocketServer::SocketConnection</td>
@@ -217,16 +217,16 @@ template&lt;template&lt; typename SocketProtocolT &gt; typename SocketServerT, t
 
 </div>
 </div>
-<a id="a4fe13bc58f455881ea2309c3b06efad1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4fe13bc58f455881ea2309c3b06efad1">&#9670;&nbsp;</a></span>SocketServer</h2>
+<a id="ae531a071b9ea6a0dfd5d613f99aa6ac8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae531a071b9ea6a0dfd5d613f99aa6ac8">&#9670;&nbsp;</a></span>SocketServer</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;template&lt; typename SocketProtocolT &gt; typename SocketServerT, typename RequestT , typename ResponseT &gt; </div>
+template&lt;template&lt; typename SocketContextFactoryT &gt; typename SocketServerT, typename RequestT , typename ResponseT &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classweb_1_1http_1_1server_1_1_server.html">web::http::server::Server</a>&lt; SocketServerT, RequestT, ResponseT &gt;::<a class="el" href="classweb_1_1http_1_1server_1_1_server.html#a4fe13bc58f455881ea2309c3b06efad1">SocketServer</a> =  SocketServerT&lt;<a class="el" href="classweb_1_1http_1_1server_1_1_h_t_t_p_server_context_factory.html">web::http::server::HTTPServerContextFactory</a>&lt;<a class="el" href="classweb_1_1http_1_1server_1_1_server.html#ab589e910e2b80eb0ee206789150f79a7">Request</a>, <a class="el" href="classweb_1_1http_1_1server_1_1_server.html#aeb39ce4d6586c3ba85a3b3f691f7b028">Response</a>&gt; &gt;</td>
+          <td class="memname">using <a class="el" href="classweb_1_1http_1_1server_1_1_server.html">web::http::server::Server</a>&lt; SocketServerT, RequestT, ResponseT &gt;::<a class="el" href="classweb_1_1http_1_1server_1_1_server.html#ae531a071b9ea6a0dfd5d613f99aa6ac8">SocketServer</a> =  SocketServerT&lt;<a class="el" href="classweb_1_1http_1_1server_1_1_socket_context_factory.html">web::http::server::SocketContextFactory</a>&lt;<a class="el" href="classweb_1_1http_1_1server_1_1_server.html#ab589e910e2b80eb0ee206789150f79a7">Request</a>, <a class="el" href="classweb_1_1http_1_1server_1_1_server.html#aeb39ce4d6586c3ba85a3b3f691f7b028">Response</a>&gt; &gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -242,7 +242,7 @@ template&lt;template&lt; typename SocketProtocolT &gt; typename SocketServerT, t
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;template&lt; typename SocketProtocolT &gt; typename SocketServerT, typename RequestT , typename ResponseT &gt; </div>
+template&lt;template&lt; typename SocketContextFactoryT &gt; typename SocketServerT, typename RequestT , typename ResponseT &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -304,7 +304,7 @@ template&lt;template&lt; typename SocketProtocolT &gt; typename SocketServerT, t
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                      <a class="code" href="classweb_1_1http_1_1server_1_1_server.html#a1de687a752ac7a8a144f9cdd1d58d687">onDisconnect</a>(socketConnection);</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                  },</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                  options) {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <a class="code" href="classweb_1_1http_1_1server_1_1_server.html#acfe01a87be68bb3c6801393e45dd60da">socketServer</a>.getSocketProtocol()-&gt;setOnRequestReady(<a class="code" href="classweb_1_1http_1_1server_1_1_server.html#a6fe91db92e541cf6496b9517ca8fcc88">onRequestReady</a>); <span class="comment">//.setOnRequestReady(onRequestReady);</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <a class="code" href="classweb_1_1http_1_1server_1_1_server.html#acfe01a87be68bb3c6801393e45dd60da">socketServer</a>.getSocketContextFactory()-&gt;setOnRequestReady(<a class="code" href="classweb_1_1http_1_1server_1_1_server.html#a6fe91db92e541cf6496b9517ca8fcc88">onRequestReady</a>); <span class="comment">//.setOnRequestReady(onRequestReady);</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        }</div>
 <div class="ttc" id="aclassweb_1_1http_1_1server_1_1_server_html_a07504eb1aea31fed264786c1b93afbcc"><div class="ttname"><a href="classweb_1_1http_1_1server_1_1_server.html#a07504eb1aea31fed264786c1b93afbcc">web::http::server::Server::SocketAddress</a></div><div class="ttdeci">typename SocketConnection::SocketAddress SocketAddress</div><div class="ttdef"><b>Definition:</b> <a href="_server_8h_source.html#l00028">Server.h:28</a></div></div>
 <div class="ttc" id="aclassweb_1_1http_1_1server_1_1_server_html_a1de687a752ac7a8a144f9cdd1d58d687"><div class="ttname"><a href="classweb_1_1http_1_1server_1_1_server.html#a1de687a752ac7a8a144f9cdd1d58d687">web::http::server::Server::onDisconnect</a></div><div class="ttdeci">void onDisconnect(const std::function&lt; void(SocketConnection *)&gt; &amp;onDisconnect)</div><div class="ttdef"><b>Definition:</b> <a href="_server_8h_source.html#l00066">Server.h:66</a></div></div>
@@ -323,7 +323,7 @@ template&lt;template&lt; typename SocketProtocolT &gt; typename SocketServerT, t
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;template&lt; typename SocketProtocolT &gt; typename SocketServerT, typename RequestT , typename ResponseT &gt; </div>
+template&lt;template&lt; typename SocketContextFactoryT &gt; typename SocketServerT, typename RequestT , typename ResponseT &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -374,7 +374,7 @@ template&lt;template&lt; typename SocketProtocolT &gt; typename SocketServerT, t
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;template&lt; typename SocketProtocolT &gt; typename SocketServerT, typename RequestT , typename ResponseT &gt; </div>
+template&lt;template&lt; typename SocketContextFactoryT &gt; typename SocketServerT, typename RequestT , typename ResponseT &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -419,7 +419,7 @@ template&lt;template&lt; typename SocketProtocolT &gt; typename SocketServerT, t
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;template&lt; typename SocketProtocolT &gt; typename SocketServerT, typename RequestT , typename ResponseT &gt; </div>
+template&lt;template&lt; typename SocketContextFactoryT &gt; typename SocketServerT, typename RequestT , typename ResponseT &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -454,7 +454,7 @@ template&lt;template&lt; typename SocketProtocolT &gt; typename SocketServerT, t
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;template&lt; typename SocketProtocolT &gt; typename SocketServerT, typename RequestT , typename ResponseT &gt; </div>
+template&lt;template&lt; typename SocketContextFactoryT &gt; typename SocketServerT, typename RequestT , typename ResponseT &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -489,7 +489,7 @@ template&lt;template&lt; typename SocketProtocolT &gt; typename SocketServerT, t
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;template&lt; typename SocketProtocolT &gt; typename SocketServerT, typename RequestT , typename ResponseT &gt; </div>
+template&lt;template&lt; typename SocketContextFactoryT &gt; typename SocketServerT, typename RequestT , typename ResponseT &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -525,7 +525,7 @@ template&lt;template&lt; typename SocketProtocolT &gt; typename SocketServerT, t
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;template&lt; typename SocketProtocolT &gt; typename SocketServerT, typename RequestT , typename ResponseT &gt; </div>
+template&lt;template&lt; typename SocketContextFactoryT &gt; typename SocketServerT, typename RequestT , typename ResponseT &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -551,13 +551,13 @@ template&lt;template&lt; typename SocketProtocolT &gt; typename SocketServerT, t
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;template&lt; typename SocketProtocolT &gt; typename SocketServerT, typename RequestT , typename ResponseT &gt; </div>
+template&lt;template&lt; typename SocketContextFactoryT &gt; typename SocketServerT, typename RequestT , typename ResponseT &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classweb_1_1http_1_1server_1_1_server.html#a4fe13bc58f455881ea2309c3b06efad1">SocketServer</a> <a class="el" href="classweb_1_1http_1_1server_1_1_server.html">web::http::server::Server</a>&lt; SocketServerT, RequestT, ResponseT &gt;::socketServer</td>
+          <td class="memname"><a class="el" href="classweb_1_1http_1_1server_1_1_server.html#ae531a071b9ea6a0dfd5d613f99aa6ac8">SocketServer</a> <a class="el" href="classweb_1_1http_1_1server_1_1_server.html">web::http::server::Server</a>&lt; SocketServerT, RequestT, ResponseT &gt;::socketServer</td>
         </tr>
       </table>
   </td>

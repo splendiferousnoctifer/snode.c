@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['generator_1634',['generator',['../classweb_1_1ws_1_1_w_s_transmitter.html#acb269d9d651aedf237a20d4ba842ce75',1,'web::ws::WSTransmitter']]]
+  ['generator_1645',['generator',['../classweb_1_1ws_1_1_transmitter.html#aeca04a9310c4a20c393e2c369ed1f9ce',1,'web::ws::Transmitter']]]
 ];

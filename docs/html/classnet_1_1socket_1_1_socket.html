@@ -86,7 +86,6 @@ $(document).ready(function(){initNavTree('classnet_1_1socket_1_1_socket.html',''
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="classnet_1_1socket_1_1_socket-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">net::socket::Socket&lt; SocketAddressT &gt; Class Template Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -97,12 +96,14 @@ $(document).ready(function(){initNavTree('classnet_1_1socket_1_1_socket.html',''
 <div class="dynheader">
 Inheritance diagram for net::socket::Socket&lt; SocketAddressT &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1_socket__inherit__graph.svg" width="908" height="878"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1_socket__inherit__graph.svg" width="908" height="878"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <div class="dynheader">
 Collaboration diagram for net::socket::Socket&lt; SocketAddressT &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1_socket__coll__graph.svg" width="154" height="463"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1_socket__coll__graph.svg" width="154" height="463"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -124,6 +125,10 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a2e3e6fec1d4a4638a8dca568c6121c00"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1_socket.html#a2e3e6fec1d4a4638a8dca568c6121c00">Socket</a> ()=default</td></tr>
 <tr class="separator:a2e3e6fec1d4a4638a8dca568c6121c00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71a2ba0a70e0da24ae43dc52437874b5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1_socket.html#a71a2ba0a70e0da24ae43dc52437874b5">Socket</a> (const <a class="el" href="classnet_1_1socket_1_1_socket.html">Socket</a> &amp;)=delete</td></tr>
+<tr class="separator:a71a2ba0a70e0da24ae43dc52437874b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14d33b7cbf05fe8befa98d5d72bd79a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnet_1_1socket_1_1_socket.html">Socket</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1_socket.html#a14d33b7cbf05fe8befa98d5d72bd79a1">operator=</a> (const <a class="el" href="classnet_1_1socket_1_1_socket.html">Socket</a> &amp;)=delete</td></tr>
+<tr class="separator:a14d33b7cbf05fe8befa98d5d72bd79a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac90834a58b6cc4329e89061a10bdffa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1_socket.html#aac90834a58b6cc4329e89061a10bdffa">open</a> (const std::function&lt; void(int errnum)&gt; &amp;onError, int flags=0)</td></tr>
 <tr class="separator:aac90834a58b6cc4329e89061a10bdffa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ce7ef4ad82e2035af1c9f9d752112b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1_socket.html#a1ce7ef4ad82e2035af1c9f9d752112b8">bind</a> (const <a class="el" href="classnet_1_1socket_1_1_socket.html#a3b2caea9c0c485cc6377efb6625afd8c">SocketAddress</a> &amp;<a class="el" href="classnet_1_1socket_1_1_socket.html#a8093ad086bca61e225342420f9858242">bindAddress</a>, const std::function&lt; void(int errnum)&gt; &amp;onError)</td></tr>
@@ -159,13 +164,6 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a8093ad086bca61e225342420f9858242"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnet_1_1socket_1_1_socket.html#a3b2caea9c0c485cc6377efb6625afd8c">SocketAddress</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1_socket.html#a8093ad086bca61e225342420f9858242">bindAddress</a> {}</td></tr>
 <tr class="separator:a8093ad086bca61e225342420f9858242"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a71a2ba0a70e0da24ae43dc52437874b5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1_socket.html#a71a2ba0a70e0da24ae43dc52437874b5">Socket</a> (const <a class="el" href="classnet_1_1socket_1_1_socket.html">Socket</a> &amp;)=delete</td></tr>
-<tr class="separator:a71a2ba0a70e0da24ae43dc52437874b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14d33b7cbf05fe8befa98d5d72bd79a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnet_1_1socket_1_1_socket.html">Socket</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1_socket.html#a14d33b7cbf05fe8befa98d5d72bd79a1">operator=</a> (const <a class="el" href="classnet_1_1socket_1_1_socket.html">Socket</a> &amp;)=delete</td></tr>
-<tr class="separator:a14d33b7cbf05fe8befa98d5d72bd79a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_attribs_classnet_1_1_descriptor"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classnet_1_1_descriptor')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classnet_1_1_descriptor.html">net::Descriptor</a></td></tr>
@@ -193,7 +191,7 @@ template&lt;typename SocketAddressT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="socket_2_socket_8h_source.html#l00040">40</a> of file <a class="el" href="socket_2_socket_8h_source.html">Socket.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="socket_2_socket_8h_source.html#l00037">37</a> of file <a class="el" href="socket_2_socket_8h_source.html">Socket.h</a>.</p>
 
 </div>
 </div>
@@ -226,36 +224,8 @@ template&lt;typename SocketAddressT &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a71a2ba0a70e0da24ae43dc52437874b5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a71a2ba0a70e0da24ae43dc52437874b5">&#9670;&nbsp;</a></span>Socket() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename SocketAddressT &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classnet_1_1socket_1_1_socket.html">net::socket::Socket</a>&lt; SocketAddressT &gt;::<a class="el" href="classnet_1_1socket_1_1_socket.html">Socket</a> </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classnet_1_1socket_1_1_socket.html">Socket</a>&lt; SocketAddressT &gt; &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a2e3e6fec1d4a4638a8dca568c6121c00"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2e3e6fec1d4a4638a8dca568c6121c00">&#9670;&nbsp;</a></span>Socket() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e3e6fec1d4a4638a8dca568c6121c00">&#9670;&nbsp;</a></span>Socket() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -275,6 +245,34 @@ template&lt;typename SocketAddressT &gt; </div>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a71a2ba0a70e0da24ae43dc52437874b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71a2ba0a70e0da24ae43dc52437874b5">&#9670;&nbsp;</a></span>Socket() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename SocketAddressT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classnet_1_1socket_1_1_socket.html">net::socket::Socket</a>&lt; SocketAddressT &gt;::<a class="el" href="classnet_1_1socket_1_1_socket.html">Socket</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classnet_1_1socket_1_1_socket.html">Socket</a>&lt; SocketAddressT &gt; &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -373,7 +371,7 @@ template&lt;typename SocketAddressT &gt; </div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            }</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        }</div>
 <div class="ttc" id="aclassnet_1_1_descriptor_html_a70ccc1e4f6af5cda015bd319f9a90096"><div class="ttname"><a href="classnet_1_1_descriptor.html#a70ccc1e4f6af5cda015bd319f9a90096">net::Descriptor::getFd</a></div><div class="ttdeci">int getFd() const</div><div class="ttdef"><b>Definition:</b> <a href="_descriptor_8cpp_source.html#l00045">Descriptor.cpp:45</a></div></div>
-<div class="ttc" id="aclassnet_1_1socket_1_1_socket_address_html_a35e84e2561e779a9dd8c392e3005a53e"><div class="ttname"><a href="classnet_1_1socket_1_1_socket_address.html#a35e84e2561e779a9dd8c392e3005a53e">net::socket::SocketAddress::SockAddr</a></div><div class="ttdeci">SockAddrT SockAddr</div><div class="ttdef"><b>Definition:</b> <a href="_socket_address_8h_source.html#l00035">SocketAddress.h:35</a></div></div>
+<div class="ttc" id="aclassnet_1_1socket_1_1_socket_address_html_a35e84e2561e779a9dd8c392e3005a53e"><div class="ttname"><a href="classnet_1_1socket_1_1_socket_address.html#a35e84e2561e779a9dd8c392e3005a53e">net::socket::SocketAddress::SockAddr</a></div><div class="ttdeci">SockAddrT SockAddr</div><div class="ttdef"><b>Definition:</b> <a href="_socket_address_8h_source.html#l00036">SocketAddress.h:36</a></div></div>
 <div class="ttc" id="aclassnet_1_1socket_1_1_socket_html_a8093ad086bca61e225342420f9858242"><div class="ttname"><a href="classnet_1_1socket_1_1_socket.html#a8093ad086bca61e225342420f9858242">net::socket::Socket::bindAddress</a></div><div class="ttdeci">SocketAddress bindAddress</div><div class="ttdef"><b>Definition:</b> <a href="socket_2_socket_8h_source.html#l00087">Socket.h:87</a></div></div>
 <div class="ttc" id="anamespacenet_1_1system_html_ad4c7338a4b60fee8700cf34fa9fed5ab"><div class="ttname"><a href="namespacenet_1_1system.html#ad4c7338a4b60fee8700cf34fa9fed5ab">net::system::bind</a></div><div class="ttdeci">int bind(int sockfd, const struct sockaddr *addr, socklen_t addrlen)</div><div class="ttdef"><b>Definition:</b> <a href="system_2_socket_8cpp_source.html#l00034">socket.cpp:34</a></div></div>
 </div><!-- fragment -->
@@ -552,7 +550,7 @@ template&lt;typename SocketAddressT &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

@@ -6,9 +6,9 @@ var namespacenet_1_1socket_1_1stream =
     [ "SocketConnection", "classnet_1_1socket_1_1stream_1_1_socket_connection.html", "classnet_1_1socket_1_1stream_1_1_socket_connection" ],
     [ "SocketConnectionBase", "classnet_1_1socket_1_1stream_1_1_socket_connection_base.html", "classnet_1_1socket_1_1stream_1_1_socket_connection_base" ],
     [ "SocketConnector", "classnet_1_1socket_1_1stream_1_1_socket_connector.html", "classnet_1_1socket_1_1stream_1_1_socket_connector" ],
+    [ "SocketContext", "classnet_1_1socket_1_1stream_1_1_socket_context.html", "classnet_1_1socket_1_1stream_1_1_socket_context" ],
+    [ "SocketContextFactory", "classnet_1_1socket_1_1stream_1_1_socket_context_factory.html", "classnet_1_1socket_1_1stream_1_1_socket_context_factory" ],
     [ "SocketListener", "classnet_1_1socket_1_1stream_1_1_socket_listener.html", "classnet_1_1socket_1_1stream_1_1_socket_listener" ],
-    [ "SocketProtocol", "classnet_1_1socket_1_1stream_1_1_socket_protocol.html", "classnet_1_1socket_1_1stream_1_1_socket_protocol" ],
-    [ "SocketProtocolFactory", "classnet_1_1socket_1_1stream_1_1_socket_protocol_factory.html", "classnet_1_1socket_1_1stream_1_1_socket_protocol_factory" ],
     [ "SocketReader", "classnet_1_1socket_1_1stream_1_1_socket_reader.html", "classnet_1_1socket_1_1stream_1_1_socket_reader" ],
     [ "SocketServer", "classnet_1_1socket_1_1stream_1_1_socket_server.html", "classnet_1_1socket_1_1stream_1_1_socket_server" ],
     [ "SocketWriter", "classnet_1_1socket_1_1stream_1_1_socket_writer.html", "classnet_1_1socket_1_1stream_1_1_socket_writer" ]

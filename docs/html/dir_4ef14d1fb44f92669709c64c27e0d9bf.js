@@ -5,14 +5,6 @@ var dir_4ef14d1fb44f92669709c64c27e0d9bf =
     [ "Client.h", "_client_8h.html", [
       [ "Client", "classweb_1_1http_1_1client_1_1_client.html", "classweb_1_1http_1_1client_1_1_client" ]
     ] ],
-    [ "ClientContext.h", "_client_context_8h.html", [
-      [ "ClientContextBase", "classweb_1_1http_1_1client_1_1_client_context_base.html", "classweb_1_1http_1_1client_1_1_client_context_base" ],
-      [ "ClientContext", "classweb_1_1http_1_1client_1_1_client_context.html", "classweb_1_1http_1_1client_1_1_client_context" ]
-    ] ],
-    [ "ClientContext.hpp", "_client_context_8hpp.html", null ],
-    [ "ClientContextFactory.h", "_client_context_factory_8h.html", [
-      [ "ClientContextFactory", "classweb_1_1http_1_1client_1_1_client_context_factory.html", "classweb_1_1http_1_1client_1_1_client_context_factory" ]
-    ] ],
     [ "Request.cpp", "web_2http_2client_2_request_8cpp.html", null ],
     [ "Request.h", "web_2http_2client_2_request_8h.html", [
       [ "Request", "classweb_1_1http_1_1client_1_1_request.html", "classweb_1_1http_1_1client_1_1_request" ]
@@ -24,5 +16,13 @@ var dir_4ef14d1fb44f92669709c64c27e0d9bf =
     [ "ResponseParser.cpp", "_response_parser_8cpp.html", null ],
     [ "ResponseParser.h", "_response_parser_8h.html", [
       [ "ResponseParser", "classweb_1_1http_1_1client_1_1_response_parser.html", "classweb_1_1http_1_1client_1_1_response_parser" ]
+    ] ],
+    [ "SocketContext.h", "web_2http_2client_2_socket_context_8h.html", [
+      [ "SocketContextBase", "classweb_1_1http_1_1client_1_1_socket_context_base.html", "classweb_1_1http_1_1client_1_1_socket_context_base" ],
+      [ "SocketContext", "classweb_1_1http_1_1client_1_1_socket_context.html", "classweb_1_1http_1_1client_1_1_socket_context" ]
+    ] ],
+    [ "SocketContext.hpp", "client_2_socket_context_8hpp.html", null ],
+    [ "SocketContextFactory.h", "web_2http_2client_2_socket_context_factory_8h.html", [
+      [ "SocketContextFactory", "classweb_1_1http_1_1client_1_1_socket_context_factory.html", "classweb_1_1http_1_1client_1_1_socket_context_factory" ]
     ] ]
 ];
