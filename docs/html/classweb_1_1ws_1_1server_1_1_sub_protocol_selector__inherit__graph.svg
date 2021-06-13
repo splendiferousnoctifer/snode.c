@@ -13,13 +13,14 @@
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title=" ">
-<polygon fill="#bfbfbf" stroke="black" points="1.5,-0.5 1.5,-79.5 147.5,-79.5 147.5,-0.5 1.5,-0.5"/>
-<text text-anchor="start" x="9.5" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00">web::ws::server::SubProtocol</text>
-<text text-anchor="middle" x="74.5" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">Selector</text>
-<polyline fill="none" stroke="black" points="1.5,-49.5 147.5,-49.5 "/>
-<text text-anchor="start" x="9.5" y="-37.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; subProtocolSelector</text>
-<polyline fill="none" stroke="black" points="1.5,-30.5 147.5,-30.5 "/>
-<text text-anchor="start" x="9.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ select()</text>
+<polygon fill="#bfbfbf" stroke="black" points="1.5,-0.5 1.5,-90.5 147.5,-90.5 147.5,-0.5 1.5,-0.5"/>
+<text text-anchor="start" x="9.5" y="-78.5" font-family="Helvetica,sans-Serif" font-size="10.00">web::ws::server::SubProtocol</text>
+<text text-anchor="middle" x="74.5" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00">Selector</text>
+<polyline fill="none" stroke="black" points="1.5,-60.5 147.5,-60.5 "/>
+<text text-anchor="start" x="9.5" y="-48.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; subProtocolSelector</text>
+<polyline fill="none" stroke="black" points="1.5,-41.5 147.5,-41.5 "/>
+<text text-anchor="start" x="9.5" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ select()</text>
+<text text-anchor="start" x="9.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ destroy()</text>
 <text text-anchor="start" x="9.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ instance()</text>
 </a>
 </g>
@@ -28,7 +29,7 @@
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:href="classweb_1_1ws_1_1_sub_protocol_selector.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="0,-116.5 0,-283.5 149,-283.5 149,-116.5 0,-116.5"/>
+<polygon fill="white" stroke="black" points="0,-127.5 0,-283.5 149,-283.5 149,-127.5 0,-127.5"/>
 <text text-anchor="middle" x="74.5" y="-271.5" font-family="Helvetica,sans-Serif" font-size="10.00">web::ws::SubProtocolSelector</text>
 <polyline fill="none" stroke="black" points="0,-264.5 149,-264.5 "/>
 <text text-anchor="start" x="8" y="-252.5" font-family="Helvetica,sans-Serif" font-size="10.00"># serverSubprotocols</text>
@@ -43,15 +44,14 @@
 <text text-anchor="start" x="8" y="-156.5" font-family="Helvetica,sans-Serif" font-size="10.00"># ~SubProtocolSelector()</text>
 <text text-anchor="start" x="8" y="-145.5" font-family="Helvetica,sans-Serif" font-size="10.00"># SubProtocolSelector()</text>
 <text text-anchor="start" x="8" y="-134.5" font-family="Helvetica,sans-Serif" font-size="10.00"># operator=()</text>
-<text text-anchor="start" x="8" y="-123.5" font-family="Helvetica,sans-Serif" font-size="10.00"># select()</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node1 -->
 <g id="edge1" class="edge">
 <title>Node2&#45;&gt;Node1</title>
-<path fill="none" stroke="midnightblue" d="M74.5,-106.12C74.5,-96.81 74.5,-87.76 74.5,-79.52"/>
-<polygon fill="none" stroke="midnightblue" points="71,-106.3 74.5,-116.3 78,-106.3 71,-106.3"/>
+<path fill="none" stroke="midnightblue" d="M74.5,-117.08C74.5,-108.02 74.5,-99.11 74.5,-90.83"/>
+<polygon fill="none" stroke="midnightblue" points="71,-117.35 74.5,-127.35 78,-117.35 71,-117.35"/>
 </g>
 </g>
 </svg>

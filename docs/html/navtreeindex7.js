@@ -1,5 +1,6 @@
 var NAVTREEINDEX7 =
 {
+"functions_vars_l.html":[9,3,2,11],
 "functions_vars_m.html":[9,3,2,12],
 "functions_vars_n.html":[9,3,2,13],
 "functions_vars_o.html":[9,3,2,14],
@@ -248,6 +249,5 @@ var NAVTREEINDEX7 =
 "namespaceweb_1_1http_1_1client_1_1tls.html#ab50355bf0c1ade5802f55645a8616dcc":[8,0,5,0,0,1,3],
 "namespaceweb_1_1http_1_1server.html":[8,0,5,0,1],
 "namespaceweb_1_1http_1_1server_1_1legacy.html":[8,0,5,0,1,0],
-"namespaceweb_1_1http_1_1server_1_1tls.html":[8,0,5,0,1,1],
-"namespaceweb_1_1ws.html":[8,0,5,1]
+"namespaceweb_1_1http_1_1server_1_1tls.html":[8,0,5,0,1,1]
 };

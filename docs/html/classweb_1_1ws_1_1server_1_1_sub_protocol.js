@@ -29,5 +29,6 @@ var classweb_1_1ws_1_1server_1_1_sub_protocol =
     [ "sendBroadcastStart", "classweb_1_1ws_1_1server_1_1_sub_protocol.html#a05adc91608b5e00f6c13fed80c4c18e6", null ],
     [ "setClients", "classweb_1_1ws_1_1server_1_1_sub_protocol.html#acc51de9d3ea646bedccdecddb9ddcf40", null ],
     [ "web::ws::server::SocketContext", "classweb_1_1ws_1_1server_1_1_sub_protocol.html#ae85842f1a1f4926cd96fbccdf1c71f53", null ],
+    [ "web::ws::server::SubProtocolSelector", "classweb_1_1ws_1_1server_1_1_sub_protocol.html#a0ee748568e58378fa4fd572cdd41ea8b", null ],
     [ "clients", "classweb_1_1ws_1_1server_1_1_sub_protocol.html#a079d8f093d10009534946509039e7011", null ]
 ];

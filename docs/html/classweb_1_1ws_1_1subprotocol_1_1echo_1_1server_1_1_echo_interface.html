@@ -103,8 +103,8 @@ Collaboration diagram for web::ws::subprotocol::echo::server::EchoInterface:</di
 Private Member Functions</h2></td></tr>
 <tr class="memitem:ad3a30383ea53a4319cd02462825b4d5b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classweb_1_1ws_1_1_sub_protocol.html">web::ws::SubProtocol</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1ws_1_1subprotocol_1_1echo_1_1server_1_1_echo_interface.html#ad3a30383ea53a4319cd02462825b4d5b">create</a> ([[maybe_unused]] <a class="el" href="classweb_1_1http_1_1server_1_1_request.html">web::http::server::Request</a> &amp;req, [[maybe_unused]] <a class="el" href="classweb_1_1http_1_1server_1_1_response.html">web::http::server::Response</a> &amp;res) override</td></tr>
 <tr class="separator:ad3a30383ea53a4319cd02462825b4d5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15d62b74eec2f793be77aaf43f56b1e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classweb_1_1ws_1_1_sub_protocol.html#aad6ed7873faaf3511851bdc20853e392">web::ws::SubProtocol::Role</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1ws_1_1subprotocol_1_1echo_1_1server_1_1_echo_interface.html#a15d62b74eec2f793be77aaf43f56b1e2">role</a> () override</td></tr>
-<tr class="separator:a15d62b74eec2f793be77aaf43f56b1e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72498483029ce22b77ed197d3b4f3f35"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1ws_1_1subprotocol_1_1echo_1_1server_1_1_echo_interface.html#a72498483029ce22b77ed197d3b4f3f35">role</a> () override</td></tr>
+<tr class="separator:a72498483029ce22b77ed197d3b4f3f35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3213225454a1e51788dfc19519934aa"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1ws_1_1subprotocol_1_1echo_1_1server_1_1_echo_interface.html#af3213225454a1e51788dfc19519934aa">name</a> () override</td></tr>
 <tr class="separator:af3213225454a1e51788dfc19519934aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7966de7d1764ba1cefe05131ef3cac1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1ws_1_1subprotocol_1_1echo_1_1server_1_1_echo_interface.html#af7966de7d1764ba1cefe05131ef3cac1">destroy</a> (<a class="el" href="classweb_1_1ws_1_1_sub_protocol.html">web::ws::SubProtocol</a> *echo) override</td></tr>
@@ -234,8 +234,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a15d62b74eec2f793be77aaf43f56b1e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a15d62b74eec2f793be77aaf43f56b1e2">&#9670;&nbsp;</a></span>role()</h2>
+<a id="a72498483029ce22b77ed197d3b4f3f35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72498483029ce22b77ed197d3b4f3f35">&#9670;&nbsp;</a></span>role()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -244,7 +244,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classweb_1_1ws_1_1_sub_protocol.html#aad6ed7873faaf3511851bdc20853e392">web::ws::SubProtocol::Role</a> web::ws::subprotocol::echo::server::EchoInterface::role </td>
+          <td class="memname">std::string web::ws::subprotocol::echo::server::EchoInterface::role </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -257,16 +257,13 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classweb_1_1ws_1_1_sub_protocol_interface.html#a277e774be55e5eda9d2c9fa48e0cf176">web::ws::SubProtocolInterface</a>.</p>
+<p>Implements <a class="el" href="classweb_1_1ws_1_1_sub_protocol_interface.html#ab01e0b8ca81d4791979e303206952bb0">web::ws::SubProtocolInterface</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_echo_8cpp_source.html#l00042">42</a> of file <a class="el" href="_echo_8cpp_source.html">Echo.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                                             {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classweb_1_1ws_1_1_sub_protocol.html#aad6ed7873faaf3511851bdc20853e392a3d27c95bfdbea691b250894d96852844">web::ws::SubProtocol::Role::SERVER</a>;</div>
+<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                                  {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <span class="keywordflow">return</span> <span class="stringliteral">&quot;server&quot;</span>;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        }</div>
-<div class="ttc" id="aclassweb_1_1ws_1_1_sub_protocol_html_aad6ed7873faaf3511851bdc20853e392a3d27c95bfdbea691b250894d96852844"><div class="ttname"><a href="classweb_1_1ws_1_1_sub_protocol.html#aad6ed7873faaf3511851bdc20853e392a3d27c95bfdbea691b250894d96852844">web::ws::SubProtocol::Role::SERVER</a></div><div class="ttdeci">@ SERVER</div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="classweb_1_1ws_1_1_sub_protocol.html#aad6ed7873faaf3511851bdc20853e392a3d27c95bfdbea691b250894d96852844">web::ws::SubProtocol::SERVER</a>.</p>
-
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>

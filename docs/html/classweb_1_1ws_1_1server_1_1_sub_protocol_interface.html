@@ -111,8 +111,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a177da97ab4fe4d0ce71b8028ff028ebf inherit pub_methods_classweb_1_1ws_1_1_sub_protocol_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1da5c8ec11a1e9468d88b8ff38b8846b inherit pub_methods_classweb_1_1ws_1_1_sub_protocol_interface"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1ws_1_1_sub_protocol_interface.html#a1da5c8ec11a1e9468d88b8ff38b8846b">name</a> ()=0</td></tr>
 <tr class="separator:a1da5c8ec11a1e9468d88b8ff38b8846b inherit pub_methods_classweb_1_1ws_1_1_sub_protocol_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a277e774be55e5eda9d2c9fa48e0cf176 inherit pub_methods_classweb_1_1ws_1_1_sub_protocol_interface"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classweb_1_1ws_1_1_sub_protocol.html#aad6ed7873faaf3511851bdc20853e392">web::ws::SubProtocol::Role</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1ws_1_1_sub_protocol_interface.html#a277e774be55e5eda9d2c9fa48e0cf176">role</a> ()=0</td></tr>
-<tr class="separator:a277e774be55e5eda9d2c9fa48e0cf176 inherit pub_methods_classweb_1_1ws_1_1_sub_protocol_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab01e0b8ca81d4791979e303206952bb0 inherit pub_methods_classweb_1_1ws_1_1_sub_protocol_interface"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1ws_1_1_sub_protocol_interface.html#ab01e0b8ca81d4791979e303206952bb0">role</a> ()=0</td></tr>
+<tr class="separator:ab01e0b8ca81d4791979e303206952bb0 inherit pub_methods_classweb_1_1ws_1_1_sub_protocol_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c61d8b12a94c5654a87bc637e3e2ffa inherit pub_methods_classweb_1_1ws_1_1_sub_protocol_interface"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classweb_1_1ws_1_1_sub_protocol.html">web::ws::SubProtocol</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1ws_1_1_sub_protocol_interface.html#a3c61d8b12a94c5654a87bc637e3e2ffa">create</a> (<a class="el" href="classweb_1_1http_1_1server_1_1_request.html">web::http::server::Request</a> &amp;, <a class="el" href="classweb_1_1http_1_1server_1_1_response.html">web::http::server::Response</a> &amp;)=0</td></tr>
 <tr class="separator:a3c61d8b12a94c5654a87bc637e3e2ffa inherit pub_methods_classweb_1_1ws_1_1_sub_protocol_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae59f571709c83324b11c78d48e7d276 inherit pub_methods_classweb_1_1ws_1_1_sub_protocol_interface"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1ws_1_1_sub_protocol_interface.html#aae59f571709c83324b11c78d48e7d276">destroy</a> (<a class="el" href="classweb_1_1ws_1_1_sub_protocol.html">web::ws::SubProtocol</a> *)=0</td></tr>
@@ -125,7 +125,7 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="server_2_sub_protocol_interface_8h_source.html#l00042">42</a> of file <a class="el" href="server_2_sub_protocol_interface_8h_source.html">SubProtocolInterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2_sub_protocol_interface_8h_source.html#l00045">45</a> of file <a class="el" href="server_2_sub_protocol_interface_8h_source.html">SubProtocolInterface.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="adef12986e912ffdecf96b984cba9370c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adef12986e912ffdecf96b984cba9370c">&#9670;&nbsp;</a></span>getClients()</h2>
@@ -150,20 +150,19 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="server_2_sub_protocol_interface_8h_source.html#l00044">44</a> of file <a class="el" href="server_2_sub_protocol_interface_8h_source.html">SubProtocolInterface.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                                                                         {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="classweb_1_1ws_1_1server_1_1_sub_protocol_interface.html#a152a20accb4825a5bd180972bffccae5">clients</a>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            }</div>
-<div class="ttc" id="aclassweb_1_1ws_1_1server_1_1_sub_protocol_interface_html_a152a20accb4825a5bd180972bffccae5"><div class="ttname"><a href="classweb_1_1ws_1_1server_1_1_sub_protocol_interface.html#a152a20accb4825a5bd180972bffccae5">web::ws::server::SubProtocolInterface::clients</a></div><div class="ttdeci">std::shared_ptr&lt; std::list&lt; web::ws::server::SubProtocol * &gt; &gt; clients</div><div class="ttdef"><b>Definition:</b> <a href="server_2_sub_protocol_interface_8h_source.html#l00049">SubProtocolInterface.h:49</a></div></div>
+<p class="definition">Definition at line <a class="el" href="server_2_sub_protocol_interface_8h_source.html#l00047">47</a> of file <a class="el" href="server_2_sub_protocol_interface_8h_source.html">SubProtocolInterface.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                                                                         {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="classweb_1_1ws_1_1server_1_1_sub_protocol_interface.html#a152a20accb4825a5bd180972bffccae5">clients</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            }</div>
+<div class="ttc" id="aclassweb_1_1ws_1_1server_1_1_sub_protocol_interface_html_a152a20accb4825a5bd180972bffccae5"><div class="ttname"><a href="classweb_1_1ws_1_1server_1_1_sub_protocol_interface.html#a152a20accb4825a5bd180972bffccae5">web::ws::server::SubProtocolInterface::clients</a></div><div class="ttdeci">std::shared_ptr&lt; std::list&lt; web::ws::server::SubProtocol * &gt; &gt; clients</div><div class="ttdef"><b>Definition:</b> <a href="server_2_sub_protocol_interface_8h_source.html#l00052">SubProtocolInterface.h:52</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="server_2_sub_protocol_interface_8h_source.html#l00049">clients</a>.</p>
+<p class="reference">References <a class="el" href="server_2_sub_protocol_interface_8h_source.html#l00052">clients</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="web_2ws_2server_2_socket_context_8cpp_source.html#l00050">web::ws::server::SocketContext::create()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="server_2_sub_protocol_selector_8cpp_source.html#l00045">web::ws::server::SubProtocolSelector::select()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1ws_1_1server_1_1_sub_protocol_interface_adef12986e912ffdecf96b984cba9370c_icgraph.svg" width="723" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1ws_1_1server_1_1_sub_protocol_interface_adef12986e912ffdecf96b984cba9370c_icgraph.svg" width="448" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -191,9 +190,9 @@ Here is the caller graph for this function:</div>
 <b>Initial value:</b><div class="fragment"><div class="line">=</div>
 <div class="line">                std::make_shared&lt;std::list&lt;web::ws::server::SubProtocol*&gt;&gt;()</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="server_2_sub_protocol_interface_8h_source.html#l00049">49</a> of file <a class="el" href="server_2_sub_protocol_interface_8h_source.html">SubProtocolInterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2_sub_protocol_interface_8h_source.html#l00052">52</a> of file <a class="el" href="server_2_sub_protocol_interface_8h_source.html">SubProtocolInterface.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="server_2_sub_protocol_interface_8h_source.html#l00044">getClients()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="server_2_sub_protocol_interface_8h_source.html#l00047">getClients()</a>.</p>
 
 </div>
 </div>

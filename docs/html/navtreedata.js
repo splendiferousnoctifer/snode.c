@@ -90,9 +90,9 @@ var NAVTREEINDEX =
 "classnet_1_1socket_1_1stream_1_1tls_1_1_socket_listener.html#ab0f26296910b90eccd91cd455cbfe163",
 "classweb_1_1http_1_1client_1_1tls_1_1_client.html",
 "classweb_1_1ws_1_1_sub_protocol.html#a851af489c84118851d5aa0d8e5303050",
-"functions_vars_m.html",
-"namespaceweb_1_1ws.html#a4d027a4d29972e1aad93f195b38ea2c3",
-"ws__utils_8h.html"
+"functions_vars_l.html",
+"namespaceweb_1_1ws.html",
+"ws__utils_8cpp_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
