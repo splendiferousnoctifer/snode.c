@@ -339,7 +339,7 @@ template&lt;typename SocketT &gt; </div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                ret = 0;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            }</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <span class="keywordflow">return</span> ret;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>std::size_t<span class="keyword">&gt;</span>(ret);</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        }</div>
 <div class="ttc" id="aclassnet_1_1_descriptor_event_receiver_html_a71d48a9e0030918589d901b834e07327"><div class="ttname"><a href="classnet_1_1_descriptor_event_receiver.html#a71d48a9e0030918589d901b834e07327">net::DescriptorEventReceiver::disable</a></div><div class="ttdeci">void disable()</div><div class="ttdef"><b>Definition:</b> <a href="_descriptor_event_receiver_8cpp_source.html#l00040">DescriptorEventReceiver.cpp:40</a></div></div>
 <div class="ttc" id="aclassnet_1_1socket_1_1_socket_html_a7769480db1cc5cadb0e208577b85ade6"><div class="ttname"><a href="classnet_1_1socket_1_1_socket.html#a7769480db1cc5cadb0e208577b85ade6">net::socket::Socket::shutdown</a></div><div class="ttdeci">shutdown</div><div class="ttdef"><b>Definition:</b> <a href="socket_2_socket_8h_source.html#l00070">Socket.h:70</a></div></div>

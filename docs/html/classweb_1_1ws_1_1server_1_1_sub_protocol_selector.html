@@ -105,8 +105,8 @@ Collaboration diagram for web::ws::server::SubProtocolSelector:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab5f5dbf94fa43a67a3666c24770d9511"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classweb_1_1ws_1_1_sub_protocol.html">web::ws::SubProtocol</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1ws_1_1server_1_1_sub_protocol_selector.html#ab5f5dbf94fa43a67a3666c24770d9511">select</a> (const std::string &amp;subProtocolName, <a class="el" href="classweb_1_1http_1_1server_1_1_request.html">web::http::server::Request</a> &amp;req, <a class="el" href="classweb_1_1http_1_1server_1_1_response.html">web::http::server::Response</a> &amp;res)</td></tr>
-<tr class="separator:ab5f5dbf94fa43a67a3666c24770d9511"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb00716742f04fb39ed5854fe87c39e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classweb_1_1ws_1_1_sub_protocol.html">web::ws::SubProtocol</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1ws_1_1server_1_1_sub_protocol_selector.html#acb00716742f04fb39ed5854fe87c39e8">select</a> (const std::string &amp;subProtocolName)</td></tr>
+<tr class="separator:acb00716742f04fb39ed5854fe87c39e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7cd91cece7a28b7ec77fbc7849433584"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1ws_1_1server_1_1_sub_protocol_selector.html#a7cd91cece7a28b7ec77fbc7849433584">destroy</a> (<a class="el" href="classweb_1_1ws_1_1_sub_protocol.html">web::ws::SubProtocol</a> *subProtocol)</td></tr>
 <tr class="separator:a7cd91cece7a28b7ec77fbc7849433584"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classweb_1_1ws_1_1_sub_protocol_selector"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classweb_1_1ws_1_1_sub_protocol_selector')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classweb_1_1ws_1_1_sub_protocol_selector.html">web::ws::SubProtocolSelector</a></td></tr>
@@ -168,17 +168,17 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="server_2_sub_protocol_selector_8cpp_source.html#l00064">64</a> of file <a class="el" href="server_2_sub_protocol_selector_8cpp_source.html">SubProtocolSelector.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                                                                   {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classweb_1_1ws_1_1_sub_protocol_selector.html#a50212c4e7d797f1b1a9ea5f2cebbf7c6">serverSubprotocols</a>.contains(subProtocol-&gt;<a class="code" href="classweb_1_1ws_1_1_sub_protocol.html#ad744a27f982cd4965b393a2391ac6d31">getName</a>())) {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <a class="code" href="classweb_1_1ws_1_1_sub_protocol_interface.html">web::ws::SubProtocolInterface</a>* subProtocolInterface =</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                <span class="keyword">static_cast&lt;</span>SubProtocolInterface*<span class="keyword">&gt;</span>(<a class="code" href="classweb_1_1ws_1_1_sub_protocol_selector.html#a50212c4e7d797f1b1a9ea5f2cebbf7c6">serverSubprotocols</a>.find(subProtocol-&gt;<a class="code" href="classweb_1_1ws_1_1_sub_protocol.html#ad744a27f982cd4965b393a2391ac6d31">getName</a>())-&gt;second.subprotocolPluginInterface);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            subProtocolInterface-&gt;<a class="code" href="classweb_1_1ws_1_1_sub_protocol_interface.html#aae59f571709c83324b11c78d48e7d276">destroy</a>(subProtocol);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        }</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="server_2_sub_protocol_selector_8cpp_source.html#l00063">63</a> of file <a class="el" href="server_2_sub_protocol_selector_8cpp_source.html">SubProtocolSelector.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                                                                   {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classweb_1_1ws_1_1_sub_protocol_selector.html#a50212c4e7d797f1b1a9ea5f2cebbf7c6">serverSubprotocols</a>.contains(subProtocol-&gt;<a class="code" href="classweb_1_1ws_1_1_sub_protocol.html#ad744a27f982cd4965b393a2391ac6d31">getName</a>())) {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <a class="code" href="classweb_1_1ws_1_1_sub_protocol_interface.html">web::ws::SubProtocolInterface</a>* subProtocolInterface =</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                <span class="keyword">static_cast&lt;</span>SubProtocolInterface*<span class="keyword">&gt;</span>(<a class="code" href="classweb_1_1ws_1_1_sub_protocol_selector.html#a50212c4e7d797f1b1a9ea5f2cebbf7c6">serverSubprotocols</a>.find(subProtocol-&gt;<a class="code" href="classweb_1_1ws_1_1_sub_protocol.html#ad744a27f982cd4965b393a2391ac6d31">getName</a>())-&gt;second.subprotocolPluginInterface);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            subProtocolInterface-&gt;<a class="code" href="classweb_1_1ws_1_1_sub_protocol_interface.html#aae59f571709c83324b11c78d48e7d276">destroy</a>(subProtocol);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div>
 <div class="ttc" id="aclassweb_1_1ws_1_1_sub_protocol_html_ad744a27f982cd4965b393a2391ac6d31"><div class="ttname"><a href="classweb_1_1ws_1_1_sub_protocol.html#ad744a27f982cd4965b393a2391ac6d31">web::ws::SubProtocol::getName</a></div><div class="ttdeci">const std::string &amp; getName()</div><div class="ttdef"><b>Definition:</b> <a href="_sub_protocol_8cpp_source.html#l00089">SubProtocol.cpp:89</a></div></div>
-<div class="ttc" id="aclassweb_1_1ws_1_1_sub_protocol_interface_html"><div class="ttname"><a href="classweb_1_1ws_1_1_sub_protocol_interface.html">web::ws::SubProtocolInterface</a></div><div class="ttdef"><b>Definition:</b> <a href="_sub_protocol_interface_8h_source.html#l00041">SubProtocolInterface.h:41</a></div></div>
+<div class="ttc" id="aclassweb_1_1ws_1_1_sub_protocol_interface_html"><div class="ttname"><a href="classweb_1_1ws_1_1_sub_protocol_interface.html">web::ws::SubProtocolInterface</a></div><div class="ttdef"><b>Definition:</b> <a href="_sub_protocol_interface_8h_source.html#l00034">SubProtocolInterface.h:34</a></div></div>
 <div class="ttc" id="aclassweb_1_1ws_1_1_sub_protocol_interface_html_aae59f571709c83324b11c78d48e7d276"><div class="ttname"><a href="classweb_1_1ws_1_1_sub_protocol_interface.html#aae59f571709c83324b11c78d48e7d276">web::ws::SubProtocolInterface::destroy</a></div><div class="ttdeci">virtual void destroy(web::ws::SubProtocol *)=0</div></div>
 <div class="ttc" id="aclassweb_1_1ws_1_1_sub_protocol_selector_html_a50212c4e7d797f1b1a9ea5f2cebbf7c6"><div class="ttname"><a href="classweb_1_1ws_1_1_sub_protocol_selector.html#a50212c4e7d797f1b1a9ea5f2cebbf7c6">web::ws::SubProtocolSelector::serverSubprotocols</a></div><div class="ttdeci">std::map&lt; std::string, SubProtocolPlugin &gt; serverSubprotocols</div><div class="ttdef"><b>Definition:</b> <a href="_sub_protocol_selector_8h_source.html#l00061">SubProtocolSelector.h:61</a></div></div>
 </div><!-- fragment -->
@@ -235,8 +235,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="ab5f5dbf94fa43a67a3666c24770d9511"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab5f5dbf94fa43a67a3666c24770d9511">&#9670;&nbsp;</a></span>select()</h2>
+<a id="acb00716742f04fb39ed5854fe87c39e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb00716742f04fb39ed5854fe87c39e8">&#9670;&nbsp;</a></span>select()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -245,55 +245,40 @@ Here is the caller graph for this function:</div>
           <td class="memname"><a class="el" href="classweb_1_1ws_1_1_sub_protocol.html">web::ws::SubProtocol</a> * web::ws::server::SubProtocolSelector::select </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>subProtocolName</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>subProtocolName</em></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classweb_1_1http_1_1server_1_1_request.html">web::http::server::Request</a> &amp;&#160;</td>
-          <td class="paramname"><em>req</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classweb_1_1http_1_1server_1_1_response.html">web::http::server::Response</a> &amp;&#160;</td>
-          <td class="paramname"><em>res</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="server_2_sub_protocol_selector_8cpp_source.html#l00045">45</a> of file <a class="el" href="server_2_sub_protocol_selector_8cpp_source.html">SubProtocolSelector.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                                                                                                                       {</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <a class="code" href="classweb_1_1ws_1_1server_1_1_sub_protocol.html">web::ws::server::SubProtocol</a>* subProtocol = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classweb_1_1ws_1_1_sub_protocol_selector.html#a50212c4e7d797f1b1a9ea5f2cebbf7c6">serverSubprotocols</a>.contains(subProtocolName)) {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            SubProtocolInterface* subProtocolInterface =</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                <span class="keyword">static_cast&lt;</span>SubProtocolInterface*<span class="keyword">&gt;</span>(<a class="code" href="classweb_1_1ws_1_1_sub_protocol_selector.html#a50212c4e7d797f1b1a9ea5f2cebbf7c6">serverSubprotocols</a>.find(subProtocolName)-&gt;second.subprotocolPluginInterface);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <span class="keywordflow">if</span> (subProtocolInterface != <span class="keyword">nullptr</span>) {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                subProtocol = <span class="keyword">static_cast&lt;</span><a class="code" href="classweb_1_1ws_1_1server_1_1_sub_protocol.html">web::ws::server::SubProtocol</a>*<span class="keyword">&gt;</span>(subProtocolInterface-&gt;create(req, res));</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                <span class="keywordflow">if</span> (subProtocol != <span class="keyword">nullptr</span>) {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                    subProtocol-&gt;<a class="code" href="classweb_1_1ws_1_1server_1_1_sub_protocol.html#acc51de9d3ea646bedccdecddb9ddcf40">setClients</a>(subProtocolInterface-&gt;getClients());</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                }</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            }</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        }</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">return</span> subProtocol;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="server_2_sub_protocol_selector_8cpp_source.html#l00044">44</a> of file <a class="el" href="server_2_sub_protocol_selector_8cpp_source.html">SubProtocolSelector.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                                                                                  {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <a class="code" href="classweb_1_1ws_1_1server_1_1_sub_protocol.html">web::ws::server::SubProtocol</a>* subProtocol = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classweb_1_1ws_1_1_sub_protocol_selector.html#a50212c4e7d797f1b1a9ea5f2cebbf7c6">serverSubprotocols</a>.contains(subProtocolName)) {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            SubProtocolInterface* subProtocolInterface =</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                <span class="keyword">static_cast&lt;</span>SubProtocolInterface*<span class="keyword">&gt;</span>(<a class="code" href="classweb_1_1ws_1_1_sub_protocol_selector.html#a50212c4e7d797f1b1a9ea5f2cebbf7c6">serverSubprotocols</a>.find(subProtocolName)-&gt;second.subprotocolPluginInterface);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <span class="keywordflow">if</span> (subProtocolInterface != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                subProtocol = <span class="keyword">static_cast&lt;</span><a class="code" href="classweb_1_1ws_1_1server_1_1_sub_protocol.html">web::ws::server::SubProtocol</a>*<span class="keyword">&gt;</span>(subProtocolInterface-&gt;create());</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                <span class="keywordflow">if</span> (subProtocol != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                    subProtocol-&gt;<a class="code" href="classweb_1_1ws_1_1server_1_1_sub_protocol.html#acc51de9d3ea646bedccdecddb9ddcf40">setClients</a>(subProtocolInterface-&gt;getClients());</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">return</span> subProtocol;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
 <div class="ttc" id="aclassweb_1_1ws_1_1server_1_1_sub_protocol_html"><div class="ttname"><a href="classweb_1_1ws_1_1server_1_1_sub_protocol.html">web::ws::server::SubProtocol</a></div><div class="ttdef"><b>Definition:</b> <a href="server_2_sub_protocol_8h_source.html#l00042">SubProtocol.h:42</a></div></div>
 <div class="ttc" id="aclassweb_1_1ws_1_1server_1_1_sub_protocol_html_acc51de9d3ea646bedccdecddb9ddcf40"><div class="ttname"><a href="classweb_1_1ws_1_1server_1_1_sub_protocol.html#acc51de9d3ea646bedccdecddb9ddcf40">web::ws::server::SubProtocol::setClients</a></div><div class="ttdeci">void setClients(std::shared_ptr&lt; std::list&lt; web::ws::server::SubProtocol * &gt;&gt; clients)</div><div class="ttdef"><b>Definition:</b> <a href="server_2_sub_protocol_8cpp_source.html#l00091">SubProtocol.cpp:91</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="classweb_1_1ws_1_1_sub_protocol_interface.html#a3c61d8b12a94c5654a87bc637e3e2ffa">web::ws::SubProtocolInterface::create()</a>, <a class="el" href="server_2_sub_protocol_interface_8h_source.html#l00047">web::ws::server::SubProtocolInterface::getClients()</a>, <a class="el" href="_sub_protocol_selector_8h_source.html#l00061">web::ws::SubProtocolSelector::serverSubprotocols</a>, and <a class="el" href="server_2_sub_protocol_8cpp_source.html#l00091">web::ws::server::SubProtocol::setClients()</a>.</p>
+<p class="reference">References <a class="el" href="classweb_1_1ws_1_1_sub_protocol_interface.html#a163d2d554286a87a9dd886b97fbf1865">web::ws::SubProtocolInterface::create()</a>, <a class="el" href="server_2_sub_protocol_interface_8h_source.html#l00047">web::ws::server::SubProtocolInterface::getClients()</a>, <a class="el" href="_sub_protocol_selector_8h_source.html#l00061">web::ws::SubProtocolSelector::serverSubprotocols</a>, and <a class="el" href="server_2_sub_protocol_8cpp_source.html#l00091">web::ws::server::SubProtocol::setClients()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1ws_1_1server_1_1_sub_protocol_selector_ab5f5dbf94fa43a67a3666c24770d9511_cgraph.svg" width="455" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1ws_1_1server_1_1_sub_protocol_selector_acb00716742f04fb39ed5854fe87c39e8_cgraph.svg" width="455" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>

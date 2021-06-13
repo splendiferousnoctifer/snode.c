@@ -109,14 +109,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1da5c8ec11a1e9468d88b8ff38b8846b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab01e0b8ca81d4791979e303206952bb0"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1ws_1_1_sub_protocol_interface.html#ab01e0b8ca81d4791979e303206952bb0">role</a> ()=0</td></tr>
 <tr class="separator:ab01e0b8ca81d4791979e303206952bb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c61d8b12a94c5654a87bc637e3e2ffa"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classweb_1_1ws_1_1_sub_protocol.html">web::ws::SubProtocol</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1ws_1_1_sub_protocol_interface.html#a3c61d8b12a94c5654a87bc637e3e2ffa">create</a> (<a class="el" href="classweb_1_1http_1_1server_1_1_request.html">web::http::server::Request</a> &amp;, <a class="el" href="classweb_1_1http_1_1server_1_1_response.html">web::http::server::Response</a> &amp;)=0</td></tr>
-<tr class="separator:a3c61d8b12a94c5654a87bc637e3e2ffa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a163d2d554286a87a9dd886b97fbf1865"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classweb_1_1ws_1_1_sub_protocol.html">web::ws::SubProtocol</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1ws_1_1_sub_protocol_interface.html#a163d2d554286a87a9dd886b97fbf1865">create</a> ()=0</td></tr>
+<tr class="separator:a163d2d554286a87a9dd886b97fbf1865"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae59f571709c83324b11c78d48e7d276"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1ws_1_1_sub_protocol_interface.html#aae59f571709c83324b11c78d48e7d276">destroy</a> (<a class="el" href="classweb_1_1ws_1_1_sub_protocol.html">web::ws::SubProtocol</a> *)=0</td></tr>
 <tr class="separator:aae59f571709c83324b11c78d48e7d276"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_sub_protocol_interface_8h_source.html#l00041">41</a> of file <a class="el" href="_sub_protocol_interface_8h_source.html">SubProtocolInterface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_sub_protocol_interface_8h_source.html#l00034">34</a> of file <a class="el" href="_sub_protocol_interface_8h_source.html">SubProtocolInterface.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a177da97ab4fe4d0ce71b8028ff028ebf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a177da97ab4fe4d0ce71b8028ff028ebf">&#9670;&nbsp;</a></span>~SubProtocolInterface()</h2>
@@ -144,8 +144,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a3c61d8b12a94c5654a87bc637e3e2ffa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3c61d8b12a94c5654a87bc637e3e2ffa">&#9670;&nbsp;</a></span>create()</h2>
+<a id="a163d2d554286a87a9dd886b97fbf1865"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a163d2d554286a87a9dd886b97fbf1865">&#9670;&nbsp;</a></span>create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -156,19 +156,8 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual <a class="el" href="classweb_1_1ws_1_1_sub_protocol.html">web::ws::SubProtocol</a>* web::ws::SubProtocolInterface::create </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classweb_1_1http_1_1server_1_1_request.html">web::http::server::Request</a> &amp;&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classweb_1_1http_1_1server_1_1_response.html">web::http::server::Response</a> &amp;&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -178,11 +167,14 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="server_2_sub_protocol_selector_8cpp_source.html#l00045">web::ws::server::SubProtocolSelector::select()</a>.</p>
+<p>Implemented in <a class="el" href="classweb_1_1ws_1_1subprotocol_1_1echo_1_1server_1_1_echo_interface.html#afff32c0b87803ca947960353d7ec2444">web::ws::subprotocol::echo::server::EchoInterface</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="server_2_sub_protocol_selector_8cpp_source.html#l00044">web::ws::server::SubProtocolSelector::select()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1ws_1_1_sub_protocol_interface_a3c61d8b12a94c5654a87bc637e3e2ffa_icgraph.svg" width="455" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1ws_1_1_sub_protocol_interface_a163d2d554286a87a9dd886b97fbf1865_icgraph.svg" width="455" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
@@ -213,7 +205,7 @@ Here is the caller graph for this function:</div>
 
 <p>Implemented in <a class="el" href="classweb_1_1ws_1_1subprotocol_1_1echo_1_1server_1_1_echo_interface.html#af7966de7d1764ba1cefe05131ef3cac1">web::ws::subprotocol::echo::server::EchoInterface</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="server_2_sub_protocol_selector_8cpp_source.html#l00064">web::ws::server::SubProtocolSelector::destroy()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="server_2_sub_protocol_selector_8cpp_source.html#l00063">web::ws::server::SubProtocolSelector::destroy()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">

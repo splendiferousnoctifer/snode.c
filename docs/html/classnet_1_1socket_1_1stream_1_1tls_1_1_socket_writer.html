@@ -261,24 +261,22 @@ template&lt;typename SocketT &gt; </div>
 
 <p>Implements <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#ac3836491ea90f8043d69bbf99a96b8e3">net::socket::stream::SocketWriter&lt; SocketT &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="tls_2_socket_writer_8h_source.html#l00089">89</a> of file <a class="el" href="tls_2_socket_writer_8h_source.html">SocketWriter.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                                {</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <span class="keywordtype">int</span> ret = errno;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            <span class="keywordflow">switch</span> (<a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_writer.html#ac0ff106012797be5a73151bfc742b533">sslErr</a>) {</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                <span class="keywordflow">case</span> SSL_ERROR_NONE:</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                    [[fallthrough]];</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                <span class="keywordflow">case</span> SSL_ERROR_ZERO_RETURN:</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                    ret = 0;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                <span class="keywordflow">case</span> SSL_ERROR_SYSCALL:</div>
+<p class="definition">Definition at line <a class="el" href="tls_2_socket_writer_8h_source.html#l00091">91</a> of file <a class="el" href="tls_2_socket_writer_8h_source.html">SocketWriter.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                                {</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            <span class="keywordtype">int</span> ret = errno;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="keywordflow">switch</span> (<a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_writer.html#ac0ff106012797be5a73151bfc742b533">sslErr</a>) {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                <span class="keywordflow">case</span> SSL_ERROR_NONE:</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                    [[fallthrough]];</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                <span class="keywordflow">case</span> SSL_ERROR_ZERO_RETURN:</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                    ret = 0;</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                    ret = -<a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_writer.html#ac0ff106012797be5a73151bfc742b533">sslErr</a>;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            };</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_writer.html#ac0ff106012797be5a73151bfc742b533">sslErr</a> = 0;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                <span class="keywordflow">case</span> SSL_ERROR_SYSCALL:</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                    ret = -<a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_writer.html#ac0ff106012797be5a73151bfc742b533">sslErr</a>;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            };</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            <span class="keywordflow">return</span> ret;</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        }</div>
@@ -370,48 +368,50 @@ template&lt;typename SocketT &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="tls_2_socket_writer_8h_source.html#l00045">45</a> of file <a class="el" href="tls_2_socket_writer_8h_source.html">SocketWriter.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                                                                    {</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <span class="keywordtype">int</span> ret = <a class="code" href="namespacenet_1_1ssl.html#a58a0af5c945f3f59a910bd44f2695bc8">SSL_write</a>(<a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_writer.html#a5fadfa37915bfd92be5f826f3c7f9534">ssl</a>, junk, <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(junkLen));</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_writer.html#ac0ff106012797be5a73151bfc742b533">sslErr</a> = 0;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="keywordflow">if</span> (ret &lt;= 0) {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_writer.html#ac0ff106012797be5a73151bfc742b533">sslErr</a> = SSL_get_error(<a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_writer.html#a5fadfa37915bfd92be5f826f3c7f9534">ssl</a>, ret);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                <span class="keywordflow">switch</span> (<a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_writer.html#ac0ff106012797be5a73151bfc742b533">sslErr</a>) {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                    <span class="keywordflow">case</span> SSL_ERROR_WANT_READ:</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                        LOG(INFO) &lt;&lt; <span class="stringliteral">&quot;SSL/TLS start renegotiation on write&quot;</span>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                        <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_writer.html#a3ff369eed05bf07f3153d0d3df4f384e">doSSLHandshake</a>(</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                            [](<span class="keywordtype">void</span>) -&gt; <span class="keywordtype">void</span> {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                                LOG(INFO) &lt;&lt; <span class="stringliteral">&quot;SSL/TLS renegotiation on write success&quot;</span>;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                            },</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                            [](void) -&gt; <span class="keywordtype">void</span> {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                                LOG(WARNING) &lt;&lt; <span class="stringliteral">&quot;SSL/TLS renegotiation on write timed out&quot;</span>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                            },</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                            [<span class="keyword">this</span>](<span class="keywordtype">int</span> <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_writer.html#ac0ff106012797be5a73151bfc742b533">sslErr</a>) -&gt; <span class="keywordtype">void</span> {</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                                <a class="code" href="namespacenet_1_1socket_1_1stream_1_1tls.html#afde8379e5ec869b4670b8c7ed7392b2e">ssl_log</a>(<span class="stringliteral">&quot;SSL/TLS renegotiation&quot;</span>, <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_writer.html#ac0ff106012797be5a73151bfc742b533">sslErr</a>);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                                <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_writer.html#a3bbc4e20aa15a92f29caffb7bdb6928c">setSSLError</a>(<a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_writer.html#ac0ff106012797be5a73151bfc742b533">sslErr</a>);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                            });</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                        errno = EAGAIN;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                    <span class="keywordflow">case</span> SSL_ERROR_WANT_WRITE:</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                        ret = 0;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                        errno = EAGAIN;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                    <span class="keywordflow">case</span> SSL_ERROR_ZERO_RETURN:</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                        ret = 0;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                        errno = 0;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                    <span class="keywordflow">case</span> SSL_ERROR_SYSCALL:</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                        <span class="keywordflow">if</span> (errno != 0) {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                            <a class="code" href="namespacenet_1_1socket_1_1stream_1_1tls.html#afde8379e5ec869b4670b8c7ed7392b2e">ssl_log</a>(<span class="stringliteral">&quot;SSL/TLS write failed&quot;</span>, <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_writer.html#ac0ff106012797be5a73151bfc742b533">sslErr</a>);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                        }</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                    <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                        <a class="code" href="namespacenet_1_1socket_1_1stream_1_1tls.html#afde8379e5ec869b4670b8c7ed7392b2e">ssl_log</a>(<span class="stringliteral">&quot;SSL/TLS write failed&quot;</span>, <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_writer.html#ac0ff106012797be5a73151bfc742b533">sslErr</a>);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                }</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            }</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keywordflow">return</span> ret;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="keywordtype">int</span> ret = <a class="code" href="namespacenet_1_1ssl.html#a58a0af5c945f3f59a910bd44f2695bc8">SSL_write</a>(<a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_writer.html#a5fadfa37915bfd92be5f826f3c7f9534">ssl</a>, junk, <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(junkLen));</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <span class="keywordflow">if</span> (ret &lt;= 0) {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_writer.html#ac0ff106012797be5a73151bfc742b533">sslErr</a> = SSL_get_error(<a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_writer.html#a5fadfa37915bfd92be5f826f3c7f9534">ssl</a>, ret);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                <span class="keywordflow">switch</span> (<a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_writer.html#ac0ff106012797be5a73151bfc742b533">sslErr</a>) {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                    <span class="keywordflow">case</span> SSL_ERROR_WANT_READ:</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                        LOG(INFO) &lt;&lt; <span class="stringliteral">&quot;SSL/TLS start renegotiation on write&quot;</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                        <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_writer.html#a3ff369eed05bf07f3153d0d3df4f384e">doSSLHandshake</a>(</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                            [](<span class="keywordtype">void</span>) -&gt; <span class="keywordtype">void</span> {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                                LOG(INFO) &lt;&lt; <span class="stringliteral">&quot;SSL/TLS renegotiation on write success&quot;</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                            },</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                            [](void) -&gt; <span class="keywordtype">void</span> {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                                LOG(WARNING) &lt;&lt; <span class="stringliteral">&quot;SSL/TLS renegotiation on write timed out&quot;</span>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                            },</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                            [<span class="keyword">this</span>](<span class="keywordtype">int</span> <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_writer.html#ac0ff106012797be5a73151bfc742b533">sslErr</a>) -&gt; <span class="keywordtype">void</span> {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                                <a class="code" href="namespacenet_1_1socket_1_1stream_1_1tls.html#afde8379e5ec869b4670b8c7ed7392b2e">ssl_log</a>(<span class="stringliteral">&quot;SSL/TLS renegotiation&quot;</span>, <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_writer.html#ac0ff106012797be5a73151bfc742b533">sslErr</a>);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                                <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_writer.html#a3bbc4e20aa15a92f29caffb7bdb6928c">setSSLError</a>(<a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_writer.html#ac0ff106012797be5a73151bfc742b533">sslErr</a>);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                            });</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                        errno = EAGAIN;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                    <span class="keywordflow">case</span> SSL_ERROR_WANT_WRITE:</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                        ret = 0;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                        errno = EAGAIN;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                    <span class="keywordflow">case</span> SSL_ERROR_ZERO_RETURN:</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                        ret = 0;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                        errno = 0;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                    <span class="keywordflow">case</span> SSL_ERROR_SYSCALL:</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                        <span class="keywordflow">if</span> (errno != 0) {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                            <a class="code" href="namespacenet_1_1socket_1_1stream_1_1tls.html#afde8379e5ec869b4670b8c7ed7392b2e">ssl_log</a>(<span class="stringliteral">&quot;SSL/TLS write failed&quot;</span>, <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_writer.html#ac0ff106012797be5a73151bfc742b533">sslErr</a>);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                        }</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                    <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                        <a class="code" href="namespacenet_1_1socket_1_1stream_1_1tls.html#afde8379e5ec869b4670b8c7ed7392b2e">ssl_log</a>(<span class="stringliteral">&quot;SSL/TLS write failed&quot;</span>, <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_writer.html#ac0ff106012797be5a73151bfc742b533">sslErr</a>);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            }</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            <span class="keywordflow">return</span> ret;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        }</div>
 <div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1tls_1_1_socket_writer_html_a3bbc4e20aa15a92f29caffb7bdb6928c"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_writer.html#a3bbc4e20aa15a92f29caffb7bdb6928c">net::socket::stream::tls::SocketWriter::setSSLError</a></div><div class="ttdeci">void setSSLError(int sslErr)</div><div class="ttdef"><b>Definition:</b> <a href="tls_2_socket_writer_8h_source.html#l00115">SocketWriter.h:115</a></div></div>
 <div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1tls_1_1_socket_writer_html_a3ff369eed05bf07f3153d0d3df4f384e"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_writer.html#a3ff369eed05bf07f3153d0d3df4f384e">net::socket::stream::tls::SocketWriter::doSSLHandshake</a></div><div class="ttdeci">virtual void doSSLHandshake(const std::function&lt; void()&gt; &amp;onSuccess, const std::function&lt; void()&gt; &amp;onTimeout, const std::function&lt; void(int)&gt; &amp;onError)=0</div></div>
 <div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1tls_1_1_socket_writer_html_a5fadfa37915bfd92be5f826f3c7f9534"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_writer.html#a5fadfa37915bfd92be5f826f3c7f9534">net::socket::stream::tls::SocketWriter::ssl</a></div><div class="ttdeci">SSL * ssl</div><div class="ttdef"><b>Definition:</b> <a href="tls_2_socket_writer_8h_source.html#l00119">SocketWriter.h:119</a></div></div>
@@ -480,7 +480,7 @@ template&lt;typename SocketT &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="tls_2_socket_writer_8h_source.html#l00121">121</a> of file <a class="el" href="tls_2_socket_writer_8h_source.html">SocketWriter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="tls_2_socket_writer_8h_source.html#l00089">net::socket::stream::tls::SocketWriter&lt; SocketT &gt;::getError()</a>, <a class="el" href="tls_2_socket_writer_8h_source.html#l00115">net::socket::stream::tls::SocketWriter&lt; SocketT &gt;::setSSLError()</a>, and <a class="el" href="tls_2_socket_writer_8h_source.html#l00045">net::socket::stream::tls::SocketWriter&lt; SocketT &gt;::write()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="tls_2_socket_writer_8h_source.html#l00091">net::socket::stream::tls::SocketWriter&lt; SocketT &gt;::getError()</a>, <a class="el" href="tls_2_socket_writer_8h_source.html#l00115">net::socket::stream::tls::SocketWriter&lt; SocketT &gt;::setSSLError()</a>, and <a class="el" href="tls_2_socket_writer_8h_source.html#l00045">net::socket::stream::tls::SocketWriter&lt; SocketT &gt;::write()</a>.</p>
 
 </div>
 </div>
