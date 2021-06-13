@@ -116,8 +116,8 @@ Static Public Member Functions</h2></td></tr>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:ab9ca336adfe5dc11fbd121cb9165b472"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexpress_1_1_web_app.html#ab9ca336adfe5dc11fbd121cb9165b472">WebApp</a> (const <a class="el" href="classexpress_1_1_router.html">Router</a> &amp;router)</td></tr>
 <tr class="separator:ab9ca336adfe5dc11fbd121cb9165b472"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9494e30987afbd27208301986958e606"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexpress_1_1_web_app.html#a9494e30987afbd27208301986958e606">listen</a> (uint16_t port, const std::function&lt; void(int err)&gt; &amp;onError=nullptr)=0</td></tr>
-<tr class="separator:a9494e30987afbd27208301986958e606"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cf6ee371305d4e9ec1cba051f896f8e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexpress_1_1_web_app.html#a4cf6ee371305d4e9ec1cba051f896f8e">listen</a> (uint16_t port, const std::function&lt; void(int)&gt; &amp;onError=nullptr)=0</td></tr>
+<tr class="separator:a4cf6ee371305d4e9ec1cba051f896f8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6ef82d2c1cc6c94284334059427e8e7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexpress_1_1_web_app.html#ad6ef82d2c1cc6c94284334059427e8e7">listen</a> (const std::string &amp;host, uint16_t port, const std::function&lt; void(int err)&gt; &amp;onError=nullptr)=0</td></tr>
 <tr class="separator:ad6ef82d2c1cc6c94284334059427e8e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -402,8 +402,8 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a9494e30987afbd27208301986958e606"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9494e30987afbd27208301986958e606">&#9670;&nbsp;</a></span>listen() <span class="overload">[2/2]</span></h2>
+<a id="a4cf6ee371305d4e9ec1cba051f896f8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cf6ee371305d4e9ec1cba051f896f8e">&#9670;&nbsp;</a></span>listen() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -420,7 +420,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::function&lt; void(int err)&gt; &amp;&#160;</td>
+          <td class="paramtype">const std::function&lt; void(int)&gt; &amp;&#160;</td>
           <td class="paramname"><em>onError</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
@@ -435,8 +435,6 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="classexpress_1_1_web_app_t.html#a282a201813c01eefcb85b3a3c5b74b85">express::WebAppT&lt; ServerT &gt;</a>, <a class="el" href="classexpress_1_1_web_app_t.html#a282a201813c01eefcb85b3a3c5b74b85">express::WebAppT&lt; web::http::server::tls::Server&lt; express::Request, express::Response &gt; &gt;</a>, <a class="el" href="classexpress_1_1_web_app_t.html#a282a201813c01eefcb85b3a3c5b74b85">express::WebAppT&lt; web::http::server::tls::Server6&lt; express::Request, express::Response &gt; &gt;</a>, <a class="el" href="classexpress_1_1_web_app_t.html#a282a201813c01eefcb85b3a3c5b74b85">express::WebAppT&lt; web::http::server::legacy::Server6&lt; express::Request, express::Response &gt; &gt;</a>, and <a class="el" href="classexpress_1_1_web_app_t.html#a282a201813c01eefcb85b3a3c5b74b85">express::WebAppT&lt; web::http::server::legacy::Server&lt; express::Request, express::Response &gt; &gt;</a>.</p>
 
 </div>
 </div>

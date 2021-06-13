@@ -105,12 +105,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a23c5c71bd510b5b4a2486368482a8176"><td class="memTemplParams" colspan="2">template&lt;InjectableAttribute Attribute&gt; </td></tr>
 <tr class="memitem:a23c5c71bd510b5b4a2486368482a8176"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classutils_1_1_single_attribute_injector.html#a23c5c71bd510b5b4a2486368482a8176">setAttribute</a> (const Attribute &amp;&amp;<a class="el" href="classutils_1_1_single_attribute_injector.html#a6483f3e54ffbb659dd10882261e99901">attribute</a>, bool overwrite=false) const</td></tr>
 <tr class="separator:a23c5c71bd510b5b4a2486368482a8176"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7cf4bed6cc9db6da894beb008cfee34a"><td class="memTemplParams" colspan="2">template&lt;InjectableAttribute Attribute&gt; </td></tr>
-<tr class="memitem:a7cf4bed6cc9db6da894beb008cfee34a"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classutils_1_1_single_attribute_injector.html#a7cf4bed6cc9db6da894beb008cfee34a">getAttribute</a> (const std::function&lt; void(Attribute &amp;<a class="el" href="classutils_1_1_single_attribute_injector.html#a6483f3e54ffbb659dd10882261e99901">attribute</a>)&gt; &amp;onFound) const</td></tr>
-<tr class="separator:a7cf4bed6cc9db6da894beb008cfee34a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12cd7f34bb8a47d352a2a5d6d48dfc7a"><td class="memTemplParams" colspan="2">template&lt;InjectableAttribute Attribute&gt; </td></tr>
-<tr class="memitem:a12cd7f34bb8a47d352a2a5d6d48dfc7a"><td class="memTemplItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classutils_1_1_single_attribute_injector.html#a12cd7f34bb8a47d352a2a5d6d48dfc7a">getAttribute</a> (const std::function&lt; void(Attribute &amp;<a class="el" href="classutils_1_1_single_attribute_injector.html#a6483f3e54ffbb659dd10882261e99901">attribute</a>)&gt; &amp;onFound, const std::function&lt; void(const std::string &amp;)&gt; &amp;onNotFound) const</td></tr>
-<tr class="separator:a12cd7f34bb8a47d352a2a5d6d48dfc7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afef29140e63ebacedf15db03d25584da"><td class="memTemplParams" colspan="2">template&lt;InjectableAttribute Attribute&gt; </td></tr>
+<tr class="memitem:afef29140e63ebacedf15db03d25584da"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classutils_1_1_single_attribute_injector.html#afef29140e63ebacedf15db03d25584da">getAttribute</a> (const std::function&lt; void(Attribute &amp;)&gt; &amp;onFound) const</td></tr>
+<tr class="separator:afef29140e63ebacedf15db03d25584da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a024f3d67e663b81c08c832f62ac85e08"><td class="memTemplParams" colspan="2">template&lt;InjectableAttribute Attribute&gt; </td></tr>
+<tr class="memitem:a024f3d67e663b81c08c832f62ac85e08"><td class="memTemplItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classutils_1_1_single_attribute_injector.html#a024f3d67e663b81c08c832f62ac85e08">getAttribute</a> (const std::function&lt; void(Attribute &amp;)&gt; &amp;onFound, const std::function&lt; void(const std::string &amp;)&gt; &amp;onNotFound) const</td></tr>
+<tr class="separator:a024f3d67e663b81c08c832f62ac85e08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -123,8 +123,8 @@ Private Attributes</h2></td></tr>
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="_attribute_injector_8h_source.html#l00077">77</a> of file <a class="el" href="_attribute_injector_8h_source.html">AttributeInjector.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a7cf4bed6cc9db6da894beb008cfee34a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7cf4bed6cc9db6da894beb008cfee34a">&#9670;&nbsp;</a></span>getAttribute() <span class="overload">[1/2]</span></h2>
+<a id="afef29140e63ebacedf15db03d25584da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afef29140e63ebacedf15db03d25584da">&#9670;&nbsp;</a></span>getAttribute() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -137,7 +137,7 @@ template&lt;InjectableAttribute Attribute&gt; </div>
         <tr>
           <td class="memname">constexpr bool utils::SingleAttributeInjector::getAttribute </td>
           <td>(</td>
-          <td class="paramtype">const std::function&lt; void(Attribute &amp;<a class="el" href="classutils_1_1_single_attribute_injector.html#a6483f3e54ffbb659dd10882261e99901">attribute</a>)&gt; &amp;&#160;</td>
+          <td class="paramtype">const std::function&lt; void(Attribute &amp;)&gt; &amp;&#160;</td>
           <td class="paramname"><em>onFound</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -150,7 +150,7 @@ template&lt;InjectableAttribute Attribute&gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_attribute_injector_8h_source.html#l00106">106</a> of file <a class="el" href="_attribute_injector_8h_source.html">AttributeInjector.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                                                                                                  {</div>
+<div class="fragment"><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                                                                                        {</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            <span class="keywordtype">bool</span> found = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="classutils_1_1_single_attribute_injector.html#a6483f3e54ffbb659dd10882261e99901">attribute</a> != <span class="keyword">nullptr</span> &amp;&amp; <a class="code" href="classutils_1_1_single_attribute_injector.html#a2d778aa5ac9752992a1a14ea025fd6bc">attributeType</a> == <span class="keyword">typeid</span>(Attribute).name()) {</div>
@@ -166,8 +166,8 @@ template&lt;InjectableAttribute Attribute&gt; </div>
 
 </div>
 </div>
-<a id="a12cd7f34bb8a47d352a2a5d6d48dfc7a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a12cd7f34bb8a47d352a2a5d6d48dfc7a">&#9670;&nbsp;</a></span>getAttribute() <span class="overload">[2/2]</span></h2>
+<a id="a024f3d67e663b81c08c832f62ac85e08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a024f3d67e663b81c08c832f62ac85e08">&#9670;&nbsp;</a></span>getAttribute() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -180,7 +180,7 @@ template&lt;InjectableAttribute Attribute&gt; </div>
         <tr>
           <td class="memname">constexpr void utils::SingleAttributeInjector::getAttribute </td>
           <td>(</td>
-          <td class="paramtype">const std::function&lt; void(Attribute &amp;<a class="el" href="classutils_1_1_single_attribute_injector.html#a6483f3e54ffbb659dd10882261e99901">attribute</a>)&gt; &amp;&#160;</td>
+          <td class="paramtype">const std::function&lt; void(Attribute &amp;)&gt; &amp;&#160;</td>
           <td class="paramname"><em>onFound</em>, </td>
         </tr>
         <tr>

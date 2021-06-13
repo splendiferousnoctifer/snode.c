@@ -6,6 +6,6 @@ var classweb_1_1http_1_1client_1_1_client =
     [ "SocketClient", "classweb_1_1http_1_1client_1_1_client.html#ae6a4139afe1402bdea7d6a68c3922b80", null ],
     [ "SocketConnection", "classweb_1_1http_1_1client_1_1_client.html#a995656033f859b6af561700ea25bf378", null ],
     [ "Client", "classweb_1_1http_1_1client_1_1_client.html#a44b558bfa72cc8a32407a0b50a4075f4", null ],
-    [ "connect", "classweb_1_1http_1_1client_1_1_client.html#ad42d6bc36c123f3abdf9c8e224331c85", null ],
+    [ "connect", "classweb_1_1http_1_1client_1_1_client.html#a023135c94ecf2ff2ae2efbe9eeb519d0", null ],
     [ "socketClient", "classweb_1_1http_1_1client_1_1_client.html#ab8ebd39b4547946515d40fc2e2c84f26", null ]
 ];

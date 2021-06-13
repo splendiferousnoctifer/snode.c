@@ -98,13 +98,13 @@ $(document).ready(function(){initNavTree('classweb_1_1ws_1_1server_1_1_sub_proto
 <div class="dynheader">
 Inheritance diagram for web::ws::server::SubProtocol:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1ws_1_1server_1_1_sub_protocol__inherit__graph.svg" width="215" height="1248"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1ws_1_1server_1_1_sub_protocol__inherit__graph.svg" width="206" height="1087"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div class="dynheader">
 Collaboration diagram for web::ws::server::SubProtocol:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1ws_1_1server_1_1_sub_protocol__coll__graph.svg" width="892" height="1020"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1ws_1_1server_1_1_sub_protocol__coll__graph.svg" width="800" height="1336"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
@@ -169,6 +169,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8388a2ce7e4508a01cc529d8e4e3fc59 inherit pub_methods_classweb_1_1ws_1_1_sub_protocol"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad744a27f982cd4965b393a2391ac6d31 inherit pub_methods_classweb_1_1ws_1_1_sub_protocol"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1ws_1_1_sub_protocol.html#ad744a27f982cd4965b393a2391ac6d31">getName</a> ()</td></tr>
 <tr class="separator:ad744a27f982cd4965b393a2391ac6d31 inherit pub_methods_classweb_1_1ws_1_1_sub_protocol"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7c997d83e2b80e39b71f732b400ae11 inherit pub_methods_classweb_1_1ws_1_1_sub_protocol"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1ws_1_1_sub_protocol.html#ae7c997d83e2b80e39b71f732b400ae11">setWSContext</a> (<a class="el" href="classweb_1_1ws_1_1_socket_context.html">SocketContext</a> *ServerContext)</td></tr>
+<tr class="separator:ae7c997d83e2b80e39b71f732b400ae11 inherit pub_methods_classweb_1_1ws_1_1_sub_protocol"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -210,13 +212,13 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:abaec1b533818cff74fbe4252eda81257"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05adc91608b5e00f6c13fed80c4c18e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1ws_1_1server_1_1_sub_protocol.html#a05adc91608b5e00f6c13fed80c4c18e6">sendBroadcastStart</a> (uint8_t opCode, const char *message, std::size_t messageLength)</td></tr>
 <tr class="separator:a05adc91608b5e00f6c13fed80c4c18e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b95c9174e196fe88a94fcff41828b12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1ws_1_1server_1_1_sub_protocol.html#a3b95c9174e196fe88a94fcff41828b12">setClients</a> (std::list&lt; <a class="el" href="classweb_1_1ws_1_1server_1_1_sub_protocol.html">SubProtocol</a> * &gt; *<a class="el" href="classweb_1_1ws_1_1server_1_1_sub_protocol.html#a8e79ee32c64836b74d9efbf63b8b8a77">clients</a>)</td></tr>
-<tr class="separator:a3b95c9174e196fe88a94fcff41828b12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc51de9d3ea646bedccdecddb9ddcf40"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1ws_1_1server_1_1_sub_protocol.html#acc51de9d3ea646bedccdecddb9ddcf40">setClients</a> (std::shared_ptr&lt; std::list&lt; <a class="el" href="classweb_1_1ws_1_1server_1_1_sub_protocol.html">web::ws::server::SubProtocol</a> * &gt;&gt; <a class="el" href="classweb_1_1ws_1_1server_1_1_sub_protocol.html#a079d8f093d10009534946509039e7011">clients</a>)</td></tr>
+<tr class="separator:acc51de9d3ea646bedccdecddb9ddcf40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a8e79ee32c64836b74d9efbf63b8b8a77"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="classweb_1_1ws_1_1server_1_1_sub_protocol.html">SubProtocol</a> * &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1ws_1_1server_1_1_sub_protocol.html#a8e79ee32c64836b74d9efbf63b8b8a77">clients</a></td></tr>
-<tr class="separator:a8e79ee32c64836b74d9efbf63b8b8a77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a079d8f093d10009534946509039e7011"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; std::list&lt; <a class="el" href="classweb_1_1ws_1_1server_1_1_sub_protocol.html">web::ws::server::SubProtocol</a> * &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1ws_1_1server_1_1_sub_protocol.html#a079d8f093d10009534946509039e7011">clients</a></td></tr>
+<tr class="separator:a079d8f093d10009534946509039e7011"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -233,7 +235,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="server_2_sub_protocol_8h_source.html#l00040">40</a> of file <a class="el" href="server_2_sub_protocol_8h_source.html">SubProtocol.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2_sub_protocol_8h_source.html#l00041">41</a> of file <a class="el" href="server_2_sub_protocol_8h_source.html">SubProtocol.h</a>.</p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="ae3e34f7a445d8b685294ff7b793afbd6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae3e34f7a445d8b685294ff7b793afbd6">&#9670;&nbsp;</a></span>Role</h2>
@@ -259,8 +261,8 @@ Additional Inherited Members</h2></td></tr>
 <tr><td class="fieldname"><a id="ae3e34f7a445d8b685294ff7b793afbd6aef10c650df47bffd6399e5e78da2a9b1"></a>CLIENT&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="server_2_sub_protocol_8h_source.html#l00042">42</a> of file <a class="el" href="server_2_sub_protocol_8h_source.html">SubProtocol.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{ SERVER, CLIENT };</div>
+<p class="definition">Definition at line <a class="el" href="server_2_sub_protocol_8h_source.html#l00043">43</a> of file <a class="el" href="server_2_sub_protocol_8h_source.html">SubProtocol.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{ SERVER, CLIENT };</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -293,7 +295,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        : <a class="code" href="classweb_1_1ws_1_1_sub_protocol.html">web::ws::SubProtocol</a>(<a class="code" href="classweb_1_1ws_1_1_sub_protocol.html#a8a7e0ba73d6f5e4a3b013656a950a09b">name</a>) {</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    }</div>
 <div class="ttc" id="aclassweb_1_1ws_1_1_sub_protocol_html"><div class="ttname"><a href="classweb_1_1ws_1_1_sub_protocol.html">web::ws::SubProtocol</a></div><div class="ttdef"><b>Definition:</b> <a href="_sub_protocol_8h_source.html#l00036">SubProtocol.h:36</a></div></div>
-<div class="ttc" id="aclassweb_1_1ws_1_1_sub_protocol_html_a8a7e0ba73d6f5e4a3b013656a950a09b"><div class="ttname"><a href="classweb_1_1ws_1_1_sub_protocol.html#a8a7e0ba73d6f5e4a3b013656a950a09b">web::ws::SubProtocol::name</a></div><div class="ttdeci">const std::string name</div><div class="ttdef"><b>Definition:</b> <a href="_sub_protocol_8h_source.html#l00088">SubProtocol.h:88</a></div></div>
+<div class="ttc" id="aclassweb_1_1ws_1_1_sub_protocol_html_a8a7e0ba73d6f5e4a3b013656a950a09b"><div class="ttname"><a href="classweb_1_1ws_1_1_sub_protocol.html#a8a7e0ba73d6f5e4a3b013656a950a09b">web::ws::SubProtocol::name</a></div><div class="ttdeci">const std::string name</div><div class="ttdef"><b>Definition:</b> <a href="_sub_protocol_8h_source.html#l00087">SubProtocol.h:87</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -375,11 +377,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="server_2_sub_protocol_8cpp_source.html#l00033">33</a> of file <a class="el" href="server_2_sub_protocol_8cpp_source.html">SubProtocol.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                              {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <a class="code" href="classweb_1_1ws_1_1server_1_1_sub_protocol.html#a8e79ee32c64836b74d9efbf63b8b8a77">clients</a>-&gt;remove(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <a class="code" href="classweb_1_1ws_1_1server_1_1_sub_protocol.html#a079d8f093d10009534946509039e7011">clients</a>-&gt;remove(<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    }</div>
-<div class="ttc" id="aclassweb_1_1ws_1_1server_1_1_sub_protocol_html_a8e79ee32c64836b74d9efbf63b8b8a77"><div class="ttname"><a href="classweb_1_1ws_1_1server_1_1_sub_protocol.html#a8e79ee32c64836b74d9efbf63b8b8a77">web::ws::server::SubProtocol::clients</a></div><div class="ttdeci">std::list&lt; SubProtocol * &gt; * clients</div><div class="ttdef"><b>Definition:</b> <a href="server_2_sub_protocol_8h_source.html#l00087">SubProtocol.h:87</a></div></div>
+<div class="ttc" id="aclassweb_1_1ws_1_1server_1_1_sub_protocol_html_a079d8f093d10009534946509039e7011"><div class="ttname"><a href="classweb_1_1ws_1_1server_1_1_sub_protocol.html#a079d8f093d10009534946509039e7011">web::ws::server::SubProtocol::clients</a></div><div class="ttdeci">std::shared_ptr&lt; std::list&lt; web::ws::server::SubProtocol * &gt; &gt; clients</div><div class="ttdef"><b>Definition:</b> <a href="server_2_sub_protocol_8h_source.html#l00098">SubProtocol.h:98</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="server_2_sub_protocol_8h_source.html#l00087">clients</a>.</p>
+<p class="reference">References <a class="el" href="server_2_sub_protocol_8h_source.html#l00098">clients</a>.</p>
 
 </div>
 </div>
@@ -402,14 +404,14 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="server_2_sub_protocol_8cpp_source.html#l00072">72</a> of file <a class="el" href="server_2_sub_protocol_8cpp_source.html">SubProtocol.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                                                                                        {</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">for</span> (<a class="code" href="classweb_1_1ws_1_1server_1_1_sub_protocol.html#a9db9e474f16ccf193cfcb50427fc03c2">SubProtocol</a>* client : *<a class="code" href="classweb_1_1ws_1_1server_1_1_sub_protocol.html#a8e79ee32c64836b74d9efbf63b8b8a77">clients</a>) {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">for</span> (<a class="code" href="classweb_1_1ws_1_1server_1_1_sub_protocol.html#a9db9e474f16ccf193cfcb50427fc03c2">SubProtocol</a>* client : *<a class="code" href="classweb_1_1ws_1_1server_1_1_sub_protocol.html#a079d8f093d10009534946509039e7011">clients</a>) {</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <a class="code" href="classweb_1_1ws_1_1server_1_1_sub_protocol.html#aa355f9978105585bcb0782b024aa533d">forEachClient</a>(client);</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        }</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div>
 <div class="ttc" id="aclassweb_1_1ws_1_1server_1_1_sub_protocol_html_a9db9e474f16ccf193cfcb50427fc03c2"><div class="ttname"><a href="classweb_1_1ws_1_1server_1_1_sub_protocol.html#a9db9e474f16ccf193cfcb50427fc03c2">web::ws::server::SubProtocol::SubProtocol</a></div><div class="ttdeci">SubProtocol()=delete</div></div>
 <div class="ttc" id="aclassweb_1_1ws_1_1server_1_1_sub_protocol_html_aa355f9978105585bcb0782b024aa533d"><div class="ttname"><a href="classweb_1_1ws_1_1server_1_1_sub_protocol.html#aa355f9978105585bcb0782b024aa533d">web::ws::server::SubProtocol::forEachClient</a></div><div class="ttdeci">void forEachClient(const std::function&lt; void(SubProtocol *)&gt; &amp;forEachClient)</div><div class="ttdef"><b>Definition:</b> <a href="server_2_sub_protocol_8cpp_source.html#l00072">SubProtocol.cpp:72</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="server_2_sub_protocol_8h_source.html#l00087">clients</a>.</p>
+<p class="reference">References <a class="el" href="server_2_sub_protocol_8h_source.html#l00098">clients</a>.</p>
 
 </div>
 </div>
@@ -691,8 +693,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1ws_1_1server_1_1_sub_protocol_a152ad11f34f9a9a5a14ff50f1f27e877_icgraph.svg" width="448" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1ws_1_1server_1_1_sub_protocol_a152ad11f34f9a9a5a14ff50f1f27e877_icgraph.svg" width="448" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -722,8 +723,7 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1ws_1_1server_1_1_sub_protocol_abdce99cb172fdee0492726ccdde47cfd_cgraph.svg" width="448" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1ws_1_1server_1_1_sub_protocol_abdce99cb172fdee0492726ccdde47cfd_cgraph.svg" width="448" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -770,12 +770,12 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="server_2_sub_protocol_8cpp_source.html#l00079">79</a> of file <a class="el" href="server_2_sub_protocol_8cpp_source.html">SubProtocol.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                                                                                                {</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordflow">for</span> (<a class="code" href="classweb_1_1ws_1_1server_1_1_sub_protocol.html#a9db9e474f16ccf193cfcb50427fc03c2">SubProtocol</a>* client : *<a class="code" href="classweb_1_1ws_1_1server_1_1_sub_protocol.html#a8e79ee32c64836b74d9efbf63b8b8a77">clients</a>) {</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordflow">for</span> (<a class="code" href="classweb_1_1ws_1_1server_1_1_sub_protocol.html#a9db9e474f16ccf193cfcb50427fc03c2">SubProtocol</a>* client : *<a class="code" href="classweb_1_1ws_1_1server_1_1_sub_protocol.html#a079d8f093d10009534946509039e7011">clients</a>) {</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            client-&gt;context-&gt;sendMessage(opCode, message, messageLength);</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        }</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="server_2_sub_protocol_8h_source.html#l00087">clients</a>.</p>
+<p class="reference">References <a class="el" href="server_2_sub_protocol_8h_source.html#l00098">clients</a>.</p>
 
 </div>
 </div>
@@ -807,19 +807,18 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="server_2_sub_protocol_8cpp_source.html#l00062">62</a> of file <a class="el" href="server_2_sub_protocol_8cpp_source.html">SubProtocol.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                                                                                   {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">for</span> (<a class="code" href="classweb_1_1ws_1_1server_1_1_sub_protocol.html#a9db9e474f16ccf193cfcb50427fc03c2">SubProtocol</a>* client : *<a class="code" href="classweb_1_1ws_1_1server_1_1_sub_protocol.html#a8e79ee32c64836b74d9efbf63b8b8a77">clients</a>) {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">for</span> (<a class="code" href="classweb_1_1ws_1_1server_1_1_sub_protocol.html#a9db9e474f16ccf193cfcb50427fc03c2">SubProtocol</a>* client : *<a class="code" href="classweb_1_1ws_1_1server_1_1_sub_protocol.html#a079d8f093d10009534946509039e7011">clients</a>) {</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            client-&gt;sendMessageEnd(message, messageLength);</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        }</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="server_2_sub_protocol_8h_source.html#l00087">clients</a>.</p>
+<p class="reference">References <a class="el" href="server_2_sub_protocol_8h_source.html#l00098">clients</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="server_2_sub_protocol_8cpp_source.html#l00068">sendBroadcastEnd()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1ws_1_1server_1_1_sub_protocol_ad3da1d2b0459c99ac38b8bb9360b33bc_icgraph.svg" width="448" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1ws_1_1server_1_1_sub_protocol_ad3da1d2b0459c99ac38b8bb9360b33bc_icgraph.svg" width="448" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -850,8 +849,7 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1ws_1_1server_1_1_sub_protocol_a99fab49970e79a06e2a02b353b3b5587_cgraph.svg" width="448" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1ws_1_1server_1_1_sub_protocol_a99fab49970e79a06e2a02b353b3b5587_cgraph.svg" width="448" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -884,19 +882,18 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="server_2_sub_protocol_8cpp_source.html#l00052">52</a> of file <a class="el" href="server_2_sub_protocol_8cpp_source.html">SubProtocol.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                                                                                     {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">for</span> (<a class="code" href="classweb_1_1ws_1_1server_1_1_sub_protocol.html#a9db9e474f16ccf193cfcb50427fc03c2">SubProtocol</a>* client : *<a class="code" href="classweb_1_1ws_1_1server_1_1_sub_protocol.html#a8e79ee32c64836b74d9efbf63b8b8a77">clients</a>) {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">for</span> (<a class="code" href="classweb_1_1ws_1_1server_1_1_sub_protocol.html#a9db9e474f16ccf193cfcb50427fc03c2">SubProtocol</a>* client : *<a class="code" href="classweb_1_1ws_1_1server_1_1_sub_protocol.html#a079d8f093d10009534946509039e7011">clients</a>) {</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            client-&gt;sendMessageFrame(message, messageLength);</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        }</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="server_2_sub_protocol_8h_source.html#l00087">clients</a>.</p>
+<p class="reference">References <a class="el" href="server_2_sub_protocol_8h_source.html#l00098">clients</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="server_2_sub_protocol_8cpp_source.html#l00058">sendBroadcastFrame()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1ws_1_1server_1_1_sub_protocol_a6725d2b7293c1d572d444c716709e0a7_icgraph.svg" width="448" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1ws_1_1server_1_1_sub_protocol_a6725d2b7293c1d572d444c716709e0a7_icgraph.svg" width="448" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -927,8 +924,7 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1ws_1_1server_1_1_sub_protocol_a66ef1f8817a8f4a61f06ab91b4d292e5_cgraph.svg" width="448" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1ws_1_1server_1_1_sub_protocol_a66ef1f8817a8f4a61f06ab91b4d292e5_cgraph.svg" width="448" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -969,8 +965,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1ws_1_1server_1_1_sub_protocol_a15d3024ed0dbae5587aa05c9d827a596_icgraph.svg" width="448" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1ws_1_1server_1_1_sub_protocol_a15d3024ed0dbae5587aa05c9d827a596_icgraph.svg" width="448" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -1000,8 +995,7 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1ws_1_1server_1_1_sub_protocol_a4d62a33b688ae69e374597619a5f14b0_cgraph.svg" width="448" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1ws_1_1server_1_1_sub_protocol_a4d62a33b688ae69e374597619a5f14b0_cgraph.svg" width="448" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -1048,17 +1042,17 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="server_2_sub_protocol_8cpp_source.html#l00085">85</a> of file <a class="el" href="server_2_sub_protocol_8cpp_source.html">SubProtocol.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                                                                                                     {</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keywordflow">for</span> (<a class="code" href="classweb_1_1ws_1_1server_1_1_sub_protocol.html#a9db9e474f16ccf193cfcb50427fc03c2">SubProtocol</a>* client : *<a class="code" href="classweb_1_1ws_1_1server_1_1_sub_protocol.html#a8e79ee32c64836b74d9efbf63b8b8a77">clients</a>) {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keywordflow">for</span> (<a class="code" href="classweb_1_1ws_1_1server_1_1_sub_protocol.html#a9db9e474f16ccf193cfcb50427fc03c2">SubProtocol</a>* client : *<a class="code" href="classweb_1_1ws_1_1server_1_1_sub_protocol.html#a079d8f093d10009534946509039e7011">clients</a>) {</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            client-&gt;context-&gt;sendMessageStart(opCode, message, messageLength);</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        }</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="server_2_sub_protocol_8h_source.html#l00087">clients</a>.</p>
+<p class="reference">References <a class="el" href="server_2_sub_protocol_8h_source.html#l00098">clients</a>.</p>
 
 </div>
 </div>
-<a id="a3b95c9174e196fe88a94fcff41828b12"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b95c9174e196fe88a94fcff41828b12">&#9670;&nbsp;</a></span>setClients()</h2>
+<a id="acc51de9d3ea646bedccdecddb9ddcf40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc51de9d3ea646bedccdecddb9ddcf40">&#9670;&nbsp;</a></span>setClients()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1069,7 +1063,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void web::ws::server::SubProtocol::setClients </td>
           <td>(</td>
-          <td class="paramtype">std::list&lt; <a class="el" href="classweb_1_1ws_1_1server_1_1_sub_protocol.html">SubProtocol</a> * &gt; *&#160;</td>
+          <td class="paramtype">std::shared_ptr&lt; std::list&lt; <a class="el" href="classweb_1_1ws_1_1server_1_1_sub_protocol.html">web::ws::server::SubProtocol</a> * &gt;&gt;&#160;</td>
           <td class="paramname"><em>clients</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1082,12 +1076,12 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="server_2_sub_protocol_8cpp_source.html#l00091">91</a> of file <a class="el" href="server_2_sub_protocol_8cpp_source.html">SubProtocol.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                                                               {</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        this-&gt;<a class="code" href="classweb_1_1ws_1_1server_1_1_sub_protocol.html#a8e79ee32c64836b74d9efbf63b8b8a77">clients</a> = <a class="code" href="classweb_1_1ws_1_1server_1_1_sub_protocol.html#a8e79ee32c64836b74d9efbf63b8b8a77">clients</a>;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <a class="code" href="classweb_1_1ws_1_1server_1_1_sub_protocol.html#a8e79ee32c64836b74d9efbf63b8b8a77">clients</a>-&gt;push_back(<span class="keyword">this</span>);</div>
+<div class="fragment"><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                                                                                        {</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        this-&gt;<a class="code" href="classweb_1_1ws_1_1server_1_1_sub_protocol.html#a079d8f093d10009534946509039e7011">clients</a> = <a class="code" href="classweb_1_1ws_1_1server_1_1_sub_protocol.html#a079d8f093d10009534946509039e7011">clients</a>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <a class="code" href="classweb_1_1ws_1_1server_1_1_sub_protocol.html#a079d8f093d10009534946509039e7011">clients</a>-&gt;push_back(<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="server_2_sub_protocol_8h_source.html#l00087">clients</a>.</p>
+<p class="reference">References <a class="el" href="server_2_sub_protocol_8h_source.html#l00098">clients</a>.</p>
 
 </div>
 </div>
@@ -1112,13 +1106,13 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="server_2_sub_protocol_8h_source.html#l00089">89</a> of file <a class="el" href="server_2_sub_protocol_8h_source.html">SubProtocol.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2_sub_protocol_8h_source.html#l00100">100</a> of file <a class="el" href="server_2_sub_protocol_8h_source.html">SubProtocol.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a8e79ee32c64836b74d9efbf63b8b8a77"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e79ee32c64836b74d9efbf63b8b8a77">&#9670;&nbsp;</a></span>clients</h2>
+<a id="a079d8f093d10009534946509039e7011"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a079d8f093d10009534946509039e7011">&#9670;&nbsp;</a></span>clients</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1127,7 +1121,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::list&lt;<a class="el" href="classweb_1_1ws_1_1server_1_1_sub_protocol.html">SubProtocol</a>*&gt;* web::ws::server::SubProtocol::clients</td>
+          <td class="memname">std::shared_ptr&lt;std::list&lt;<a class="el" href="classweb_1_1ws_1_1server_1_1_sub_protocol.html">web::ws::server::SubProtocol</a>*&gt; &gt; web::ws::server::SubProtocol::clients</td>
         </tr>
       </table>
   </td>
@@ -1137,7 +1131,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="server_2_sub_protocol_8h_source.html#l00087">87</a> of file <a class="el" href="server_2_sub_protocol_8h_source.html">SubProtocol.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2_sub_protocol_8h_source.html#l00098">98</a> of file <a class="el" href="server_2_sub_protocol_8h_source.html">SubProtocol.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="server_2_sub_protocol_8cpp_source.html#l00072">forEachClient()</a>, <a class="el" href="server_2_sub_protocol_8cpp_source.html#l00079">sendBroadcast()</a>, <a class="el" href="server_2_sub_protocol_8cpp_source.html#l00062">sendBroadcastEnd()</a>, <a class="el" href="server_2_sub_protocol_8cpp_source.html#l00052">sendBroadcastFrame()</a>, <a class="el" href="server_2_sub_protocol_8cpp_source.html#l00085">sendBroadcastStart()</a>, <a class="el" href="server_2_sub_protocol_8cpp_source.html#l00091">setClients()</a>, and <a class="el" href="server_2_sub_protocol_8cpp_source.html#l00033">~SubProtocol()</a>.</p>
 

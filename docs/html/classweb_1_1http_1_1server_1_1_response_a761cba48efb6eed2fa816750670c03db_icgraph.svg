@@ -54,7 +54,7 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="classexpress_1_1_response.html#aa7a3b9c880c1af5b11e832f84eeda58c" target="_top" xlink:title=" ">
+<g id="a_node5"><a xlink:href="classexpress_1_1_response.html#a800990432b45a68143bcb5a63fe2bb56" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="219.5,-49.5 219.5,-79.5 326.5,-79.5 326.5,-49.5 219.5,-49.5"/>
 <text text-anchor="start" x="227.5" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00">express::Response::</text>
 <text text-anchor="middle" x="273" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">sendFile</text>
@@ -67,29 +67,29 @@
 <path fill="none" stroke="midnightblue" d="M377.85,-79.98C361.19,-77.5 343.08,-74.8 326.71,-72.36"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="377.59,-83.48 388,-81.49 378.62,-76.56 377.59,-83.48"/>
 </g>
-<!-- Node7 -->
-<g id="node7" class="node">
-<title>Node7</title>
-<g id="a_node7"><a xlink:href="classweb_1_1http_1_1server_1_1_response.html#afa792224c8bdb8edcb75514297931ece" target="_top" xlink:title=" ">
+<!-- Node6 -->
+<g id="node6" class="node">
+<title>Node6</title>
+<g id="a_node6"><a xlink:href="classweb_1_1http_1_1server_1_1_response.html#afa792224c8bdb8edcb75514297931ece" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="222.5,-0.5 222.5,-30.5 323.5,-30.5 323.5,-0.5 222.5,-0.5"/>
 <text text-anchor="start" x="230.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">web::http::server::</text>
 <text text-anchor="middle" x="273" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">Response::upgrade</text>
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node7 -->
-<g id="edge6" class="edge">
-<title>Node1&#45;&gt;Node7</title>
+<!-- Node1&#45;&gt;Node6 -->
+<g id="edge5" class="edge">
+<title>Node1&#45;&gt;Node6</title>
 <path fill="none" stroke="midnightblue" d="M403.17,-67.94C388.06,-58.75 369.52,-48.26 352,-40.5 343.03,-36.52 333.23,-32.87 323.7,-29.67"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="401.75,-71.18 412.09,-73.46 405.43,-65.22 401.75,-71.18"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="classweb_1_1ws_1_1server_1_1_socket_context_factory.html#ac52c2a313937406f085e338fcb718b91" target="_top" xlink:title=" ">
+<g id="a_node3"><a xlink:href="classweb_1_1ws_1_1server_1_1_socket_context_upgrade_factory.html#a910f2f6b81240492d8c31a619e1791ac" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="0,-147.5 0,-177.5 158,-177.5 158,-147.5 0,-147.5"/>
 <text text-anchor="start" x="8" y="-165.5" font-family="Helvetica,sans-Serif" font-size="10.00">web::ws::server::SocketContext</text>
-<text text-anchor="middle" x="79" y="-154.5" font-family="Helvetica,sans-Serif" font-size="10.00">Factory::create</text>
+<text text-anchor="middle" x="79" y="-154.5" font-family="Helvetica,sans-Serif" font-size="10.00">UpgradeFactory::create</text>
 </a>
 </g>
 </g>
@@ -98,22 +98,6 @@
 <title>Node2&#45;&gt;Node3</title>
 <path fill="none" stroke="midnightblue" d="M183.85,-162.5C175.23,-162.5 166.53,-162.5 158.02,-162.5"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="183.91,-166 193.91,-162.5 183.91,-159 183.91,-166"/>
-</g>
-<!-- Node6 -->
-<g id="node6" class="node">
-<title>Node6</title>
-<g id="a_node6"><a xlink:href="classexpress_1_1_response.html#a9fe9c08eaaf312665cefdd87b0a47f54" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="25.5,-49.5 25.5,-79.5 132.5,-79.5 132.5,-49.5 25.5,-49.5"/>
-<text text-anchor="start" x="33.5" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00">express::Response::</text>
-<text text-anchor="middle" x="79" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">download</text>
-</a>
-</g>
-</g>
-<!-- Node5&#45;&gt;Node6 -->
-<g id="edge5" class="edge">
-<title>Node5&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M209.25,-64.5C184.46,-64.5 156.3,-64.5 132.6,-64.5"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="209.28,-68 219.28,-64.5 209.28,-61 209.28,-68"/>
 </g>
 </g>
 </svg>

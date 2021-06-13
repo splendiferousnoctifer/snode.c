@@ -17,7 +17,5 @@ var classnet_1_1socket_1_1stream_1_1_socket_context =
     [ "setTimeout", "classnet_1_1socket_1_1stream_1_1_socket_context.html#afca303a1d0f6368e7a4d2f2ddea54939", null ],
     [ "switchSocketProtocol", "classnet_1_1socket_1_1stream_1_1_socket_context.html#a64aca4b5aade19916a8dfaa5ca496fe3", null ],
     [ "SocketConnection", "classnet_1_1socket_1_1stream_1_1_socket_context.html#a437ea087be0e8003048f54ae8e0d9f41", null ],
-    [ "SocketConnectionBase", "classnet_1_1socket_1_1stream_1_1_socket_context.html#ab9e9825275b10dfd161e51afe412d128", null ],
-    [ "markedForDelete", "classnet_1_1socket_1_1stream_1_1_socket_context.html#af745607cb222c2dafdf13b2465bcff03", null ],
     [ "socketConnection", "classnet_1_1socket_1_1stream_1_1_socket_context.html#ac928a1fb39d0703d71c20b8f762ba4c2", null ]
 ];

@@ -4,8 +4,10 @@ var dir_051de01afa89d761b3bc00f2fd498da7 =
     [ "SocketContext.h", "web_2ws_2server_2_socket_context_8h.html", [
       [ "SocketContext", "classweb_1_1ws_1_1server_1_1_socket_context.html", "classweb_1_1ws_1_1server_1_1_socket_context" ]
     ] ],
-    [ "SocketContextFactory.h", "web_2ws_2server_2_socket_context_factory_8h.html", [
-      [ "SocketContextFactory", "classweb_1_1ws_1_1server_1_1_socket_context_factory.html", "classweb_1_1ws_1_1server_1_1_socket_context_factory" ]
+    [ "SocketContextUpgradeFactory.cpp", "_socket_context_upgrade_factory_8cpp.html", "_socket_context_upgrade_factory_8cpp" ],
+    [ "SocketContextUpgradeFactory.h", "ws_2server_2_socket_context_upgrade_factory_8h.html", [
+      [ "SocketContextUpgradeFactory", "classweb_1_1ws_1_1server_1_1_socket_context_upgrade_factory.html", "classweb_1_1ws_1_1server_1_1_socket_context_upgrade_factory" ],
+      [ "SocketContextUpgradeInterface", "classweb_1_1ws_1_1server_1_1_socket_context_upgrade_interface.html", "classweb_1_1ws_1_1server_1_1_socket_context_upgrade_interface" ]
     ] ],
     [ "SubProtocol.cpp", "server_2_sub_protocol_8cpp.html", null ],
     [ "SubProtocol.h", "server_2_sub_protocol_8h.html", [

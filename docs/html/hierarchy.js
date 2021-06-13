@@ -229,7 +229,14 @@ var hierarchy =
     [ "net::socket::stream::SocketContextFactory", "classnet_1_1socket_1_1stream_1_1_socket_context_factory.html", [
       [ "web::http::client::SocketContextFactory< RequestT, ResponseT >", "classweb_1_1http_1_1client_1_1_socket_context_factory.html", null ],
       [ "web::http::server::SocketContextFactory< RequestT, ResponseT >", "classweb_1_1http_1_1server_1_1_socket_context_factory.html", null ],
-      [ "web::ws::server::SocketContextFactory< RequestT, ResponseT >", "classweb_1_1ws_1_1server_1_1_socket_context_factory.html", null ]
+      [ "web::http::server::SocketContextUpgradeFactory", "classweb_1_1http_1_1server_1_1_socket_context_upgrade_factory.html", [
+        [ "web::ws::server::SocketContextUpgradeFactory", "classweb_1_1ws_1_1server_1_1_socket_context_upgrade_factory.html", null ]
+      ] ]
+    ] ],
+    [ "web::http::server::SocketContextPlugin", "structweb_1_1http_1_1server_1_1_socket_context_plugin.html", null ],
+    [ "web::http::server::SocketContextUpgradeFactorySelector", "classweb_1_1http_1_1server_1_1_socket_context_upgrade_factory_selector.html", null ],
+    [ "web::http::server::SocketContextUpgradeInterface", "classweb_1_1http_1_1server_1_1_socket_context_upgrade_interface.html", [
+      [ "web::ws::server::SocketContextUpgradeInterface", "classweb_1_1ws_1_1server_1_1_socket_context_upgrade_interface.html", null ]
     ] ],
     [ "SocketReaderT", null, [
       [ "net::socket::stream::SocketConnection< SocketReaderT, SocketWriterT, SocketAddressT >", "classnet_1_1socket_1_1stream_1_1_socket_connection.html", null ]

@@ -30,7 +30,6 @@ var classweb_1_1ws_1_1_sub_protocol =
     [ "sendMessageStart", "classweb_1_1ws_1_1_sub_protocol.html#ab92c35ad129cbfdb3d9760e05766611b", null ],
     [ "sendPing", "classweb_1_1ws_1_1_sub_protocol.html#a6485cabc9b105085af24d600412506ff", null ],
     [ "setWSContext", "classweb_1_1ws_1_1_sub_protocol.html#ae7c997d83e2b80e39b71f732b400ae11", null ],
-    [ "web::ws::SocketContext", "classweb_1_1ws_1_1_sub_protocol.html#a76048028f4cd5612cfd9e914e5541ede", null ],
     [ "context", "classweb_1_1ws_1_1_sub_protocol.html#a77a2bbaa90739945c11d4eb0a92ab103", null ],
     [ "name", "classweb_1_1ws_1_1_sub_protocol.html#a8a7e0ba73d6f5e4a3b013656a950a09b", null ]
 ];

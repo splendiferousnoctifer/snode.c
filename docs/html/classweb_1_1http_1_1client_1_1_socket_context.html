@@ -84,7 +84,7 @@ $(document).ready(function(){initNavTree('classweb_1_1http_1_1client_1_1_socket_
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classweb_1_1http_1_1client_1_1_socket_context-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -96,13 +96,13 @@ $(document).ready(function(){initNavTree('classweb_1_1http_1_1client_1_1_socket_
 <div class="dynheader">
 Inheritance diagram for web::http::client::SocketContext&lt; RequestT, ResponseT &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1http_1_1client_1_1_socket_context__inherit__graph.svg" width="215" height="852"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1http_1_1client_1_1_socket_context__inherit__graph.svg" width="215" height="808"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div class="dynheader">
 Collaboration diagram for web::http::client::SocketContext&lt; RequestT, ResponseT &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1http_1_1client_1_1_socket_context__coll__graph.svg" width="440" height="1612"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1http_1_1client_1_1_socket_context__coll__graph.svg" width="271" height="1914"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
@@ -117,24 +117,10 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4f6ebfabb3a353f843cb56940d6f5628"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1client_1_1_socket_context.html#a4f6ebfabb3a353f843cb56940d6f5628">SocketContext</a> (<a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html">net::socket::stream::SocketConnectionBase</a> *<a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context.html#ac928a1fb39d0703d71c20b8f762ba4c2">socketConnection</a>, const std::function&lt; void(<a class="el" href="classweb_1_1http_1_1client_1_1_socket_context.html#a531a141cd38ba3a2884311f19204a737">Response</a> &amp;)&gt; &amp;onResponse, const std::function&lt; void(int status, const std::string &amp;reason)&gt; &amp;onError)</td></tr>
-<tr class="separator:a4f6ebfabb3a353f843cb56940d6f5628"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a629c59c976d7b6bd4e7eac1cbcff60ea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1client_1_1_socket_context.html#a629c59c976d7b6bd4e7eac1cbcff60ea">SocketContext</a> (<a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html">net::socket::stream::SocketConnectionBase</a> *<a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context.html#ac928a1fb39d0703d71c20b8f762ba4c2">socketConnection</a>, const std::function&lt; void(<a class="el" href="classweb_1_1http_1_1client_1_1_socket_context.html#a531a141cd38ba3a2884311f19204a737">Response</a> &amp;)&gt; &amp;onResponse, const std::function&lt; void(int, const std::string &amp;)&gt; &amp;onError)</td></tr>
+<tr class="separator:a629c59c976d7b6bd4e7eac1cbcff60ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a075e493b64885b96bb9c38866e818499"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1client_1_1_socket_context.html#a075e493b64885b96bb9c38866e818499">~SocketContext</a> () override=default</td></tr>
 <tr class="separator:a075e493b64885b96bb9c38866e818499"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a387a81ac9ad2bde23b85982a6b4a187f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1client_1_1_socket_context.html#a387a81ac9ad2bde23b85982a6b4a187f">onReceiveFromPeer</a> () override</td></tr>
-<tr class="separator:a387a81ac9ad2bde23b85982a6b4a187f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9bec14b2fb6f80c90fb88e9a2b5429c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1client_1_1_socket_context.html#a9bec14b2fb6f80c90fb88e9a2b5429c4">sendRequestData</a> (const char *junk, std::size_t junkLen) override</td></tr>
-<tr class="separator:a9bec14b2fb6f80c90fb88e9a2b5429c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b16521cd5fd0a5f4d3bf73ce3a5e4f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1client_1_1_socket_context.html#a1b16521cd5fd0a5f4d3bf73ce3a5e4f8">onWriteError</a> (int errnum) override</td></tr>
-<tr class="separator:a1b16521cd5fd0a5f4d3bf73ce3a5e4f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf2fc5251cb36c3470f695e1f369dd68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1client_1_1_socket_context.html#adf2fc5251cb36c3470f695e1f369dd68">onReadError</a> (int errnum) override</td></tr>
-<tr class="separator:adf2fc5251cb36c3470f695e1f369dd68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af95eb3a53c3164ee8efd1a1e3bcd06ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classweb_1_1http_1_1client_1_1_socket_context.html#a9795cbcc6f07a720a817329d95d0563a">Request</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1client_1_1_socket_context.html#af95eb3a53c3164ee8efd1a1e3bcd06ee">getRequest</a> () override</td></tr>
-<tr class="separator:af95eb3a53c3164ee8efd1a1e3bcd06ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa749403cea6e138f3d403f4489fdb107"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1client_1_1_socket_context.html#aa749403cea6e138f3d403f4489fdb107">terminateConnection</a> () override</td></tr>
-<tr class="separator:aa749403cea6e138f3d403f4489fdb107"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f88f0ef84424232268e692f5e20d2e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1client_1_1_socket_context.html#a4f88f0ef84424232268e692f5e20d2e8">requestCompleted</a> () override</td></tr>
-<tr class="separator:a4f88f0ef84424232268e692f5e20d2e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classweb_1_1http_1_1client_1_1_socket_context_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classweb_1_1http_1_1client_1_1_socket_context_base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classweb_1_1http_1_1client_1_1_socket_context_base.html">web::http::client::SocketContextBase</a></td></tr>
 <tr class="memitem:a52baf6e6a61e28c1707961aeba3cd75d inherit pub_methods_classweb_1_1http_1_1client_1_1_socket_context_base"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1client_1_1_socket_context_base.html#a52baf6e6a61e28c1707961aeba3cd75d">SocketContextBase</a> (<a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html">net::socket::stream::SocketConnectionBase</a> *<a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context.html#ac928a1fb39d0703d71c20b8f762ba4c2">socketConnection</a>)</td></tr>
 <tr class="separator:a52baf6e6a61e28c1707961aeba3cd75d inherit pub_methods_classweb_1_1http_1_1client_1_1_socket_context_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,16 +143,32 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a64aca4b5aade19916a8dfaa5ca496fe3 inherit pub_methods_classnet_1_1socket_1_1stream_1_1_socket_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afca303a1d0f6368e7a4d2f2ddea54939 inherit pub_methods_classnet_1_1socket_1_1stream_1_1_socket_context"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context.html#afca303a1d0f6368e7a4d2f2ddea54939">setTimeout</a> (int timeout)</td></tr>
 <tr class="separator:afca303a1d0f6368e7a4d2f2ddea54939 inherit pub_methods_classnet_1_1socket_1_1stream_1_1_socket_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa4d24d287145902558be3895c03459c inherit pub_methods_classnet_1_1socket_1_1stream_1_1_socket_context"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context.html#aaa4d24d287145902558be3895c03459c">onProtocolConnected</a> ()</td></tr>
+<tr class="separator:aaa4d24d287145902558be3895c03459c inherit pub_methods_classnet_1_1socket_1_1stream_1_1_socket_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e350c46bfb6d153f0908f5de82bb89e inherit pub_methods_classnet_1_1socket_1_1stream_1_1_socket_context"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context.html#a2e350c46bfb6d153f0908f5de82bb89e">onProtocolDisconnected</a> ()</td></tr>
+<tr class="separator:a2e350c46bfb6d153f0908f5de82bb89e inherit pub_methods_classnet_1_1socket_1_1stream_1_1_socket_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a387a81ac9ad2bde23b85982a6b4a187f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1client_1_1_socket_context.html#a387a81ac9ad2bde23b85982a6b4a187f">onReceiveFromPeer</a> () override</td></tr>
+<tr class="separator:a387a81ac9ad2bde23b85982a6b4a187f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b16521cd5fd0a5f4d3bf73ce3a5e4f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1client_1_1_socket_context.html#a1b16521cd5fd0a5f4d3bf73ce3a5e4f8">onWriteError</a> (int errnum) override</td></tr>
+<tr class="separator:a1b16521cd5fd0a5f4d3bf73ce3a5e4f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf2fc5251cb36c3470f695e1f369dd68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1client_1_1_socket_context.html#adf2fc5251cb36c3470f695e1f369dd68">onReadError</a> (int errnum) override</td></tr>
+<tr class="separator:adf2fc5251cb36c3470f695e1f369dd68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af95eb3a53c3164ee8efd1a1e3bcd06ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classweb_1_1http_1_1client_1_1_socket_context.html#a9795cbcc6f07a720a817329d95d0563a">Request</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1client_1_1_socket_context.html#af95eb3a53c3164ee8efd1a1e3bcd06ee">getRequest</a> () override</td></tr>
+<tr class="separator:af95eb3a53c3164ee8efd1a1e3bcd06ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa749403cea6e138f3d403f4489fdb107"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1client_1_1_socket_context.html#aa749403cea6e138f3d403f4489fdb107">terminateConnection</a> () override</td></tr>
+<tr class="separator:aa749403cea6e138f3d403f4489fdb107"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f88f0ef84424232268e692f5e20d2e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1client_1_1_socket_context.html#a4f88f0ef84424232268e692f5e20d2e8">requestCompleted</a> () override</td></tr>
+<tr class="separator:a4f88f0ef84424232268e692f5e20d2e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
 <tr class="memitem:aa82e1f3f3d41b612ed0e897ae0e66e63"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classweb_1_1http_1_1client_1_1_socket_context.html#a9795cbcc6f07a720a817329d95d0563a">Request</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1client_1_1_socket_context.html#aa82e1f3f3d41b612ed0e897ae0e66e63">request</a></td></tr>
 <tr class="separator:aa82e1f3f3d41b612ed0e897ae0e66e63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11e5dd34b30654b0bd8299d78dcb2e3b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classweb_1_1http_1_1client_1_1_socket_context.html#a531a141cd38ba3a2884311f19204a737">Response</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1client_1_1_socket_context.html#a11e5dd34b30654b0bd8299d78dcb2e3b">response</a></td></tr>
 <tr class="separator:a11e5dd34b30654b0bd8299d78dcb2e3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
 <tr class="memitem:a83a8ba6b41692d7dea065f86ddac26d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classweb_1_1http_1_1client_1_1_response_parser.html">ResponseParser</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1client_1_1_socket_context.html#a83a8ba6b41692d7dea065f86ddac26d0">parser</a></td></tr>
 <tr class="separator:a83a8ba6b41692d7dea065f86ddac26d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -181,7 +183,7 @@ Additional Inherited Members</h2></td></tr>
 class web::http::client::SocketContext&lt; RequestT, ResponseT &gt;</h3>
 
 
-<p class="definition">Definition at line <a class="el" href="web_2http_2client_2_socket_context_8h_source.html#l00059">59</a> of file <a class="el" href="web_2http_2client_2_socket_context_8h_source.html">SocketContext.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="web_2http_2client_2_socket_context_8h_source.html#l00057">57</a> of file <a class="el" href="web_2http_2client_2_socket_context_8h_source.html">SocketContext.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a9795cbcc6f07a720a817329d95d0563a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9795cbcc6f07a720a817329d95d0563a">&#9670;&nbsp;</a></span>Request</h2>
@@ -197,7 +199,7 @@ template&lt;typename RequestT , typename ResponseT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="web_2http_2client_2_socket_context_8h_source.html#l00062">62</a> of file <a class="el" href="web_2http_2client_2_socket_context_8h_source.html">SocketContext.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="web_2http_2client_2_socket_context_8h_source.html#l00060">60</a> of file <a class="el" href="web_2http_2client_2_socket_context_8h_source.html">SocketContext.h</a>.</p>
 
 </div>
 </div>
@@ -215,7 +217,7 @@ template&lt;typename RequestT , typename ResponseT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="web_2http_2client_2_socket_context_8h_source.html#l00063">63</a> of file <a class="el" href="web_2http_2client_2_socket_context_8h_source.html">SocketContext.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="web_2http_2client_2_socket_context_8h_source.html#l00061">61</a> of file <a class="el" href="web_2http_2client_2_socket_context_8h_source.html">SocketContext.h</a>.</p>
 
 </div>
 </div>
@@ -233,13 +235,13 @@ template&lt;typename RequestT , typename ResponseT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="web_2http_2client_2_socket_context_8h_source.html#l00061">61</a> of file <a class="el" href="web_2http_2client_2_socket_context_8h_source.html">SocketContext.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="web_2http_2client_2_socket_context_8h_source.html#l00059">59</a> of file <a class="el" href="web_2http_2client_2_socket_context_8h_source.html">SocketContext.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a4f6ebfabb3a353f843cb56940d6f5628"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f6ebfabb3a353f843cb56940d6f5628">&#9670;&nbsp;</a></span>SocketContext()</h2>
+<a id="a629c59c976d7b6bd4e7eac1cbcff60ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a629c59c976d7b6bd4e7eac1cbcff60ea">&#9670;&nbsp;</a></span>SocketContext()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -261,7 +263,7 @@ template&lt;typename Request , typename Response &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::function&lt; void(int status, const std::string &amp;reason)&gt; &amp;&#160;</td>
+          <td class="paramtype">const std::function&lt; void(int, const std::string &amp;)&gt; &amp;&#160;</td>
           <td class="paramname"><em>onError</em>&#160;</td>
         </tr>
         <tr>
@@ -304,13 +306,13 @@ template&lt;typename Request , typename Response &gt; </div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                  onError(status, reason);</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;              }) {</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div>
-<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_context_html_ac928a1fb39d0703d71c20b8f762ba4c2"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_context.html#ac928a1fb39d0703d71c20b8f762ba4c2">net::socket::stream::SocketContext::socketConnection</a></div><div class="ttdeci">SocketConnectionBase * socketConnection</div><div class="ttdef"><b>Definition:</b> <a href="net_2socket_2stream_2_socket_context_8h_source.html#l00056">SocketContext.h:56</a></div></div>
+<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_context_html_ac928a1fb39d0703d71c20b8f762ba4c2"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_context.html#ac928a1fb39d0703d71c20b8f762ba4c2">net::socket::stream::SocketContext::socketConnection</a></div><div class="ttdeci">SocketConnectionBase * socketConnection</div><div class="ttdef"><b>Definition:</b> <a href="net_2socket_2stream_2_socket_context_8h_source.html#l00065">SocketContext.h:65</a></div></div>
 <div class="ttc" id="aclassweb_1_1http_1_1client_1_1_response_parser_html"><div class="ttname"><a href="classweb_1_1http_1_1client_1_1_response_parser.html">web::http::client::ResponseParser</a></div><div class="ttdef"><b>Definition:</b> <a href="_response_parser_8h_source.html#l00040">ResponseParser.h:40</a></div></div>
 <div class="ttc" id="aclassweb_1_1http_1_1client_1_1_response_parser_html_a9fb333ebc53ea413c1725f48e49be69f"><div class="ttname"><a href="classweb_1_1http_1_1client_1_1_response_parser.html#a9fb333ebc53ea413c1725f48e49be69f">web::http::client::ResponseParser::reset</a></div><div class="ttdeci">void reset() override</div><div class="ttdef"><b>Definition:</b> <a href="_response_parser_8cpp_source.html#l00052">ResponseParser.cpp:52</a></div></div>
 <div class="ttc" id="aclassweb_1_1http_1_1client_1_1_socket_context_base_html_a52baf6e6a61e28c1707961aeba3cd75d"><div class="ttname"><a href="classweb_1_1http_1_1client_1_1_socket_context_base.html#a52baf6e6a61e28c1707961aeba3cd75d">web::http::client::SocketContextBase::SocketContextBase</a></div><div class="ttdeci">SocketContextBase(net::socket::stream::SocketConnectionBase *socketConnection)</div><div class="ttdef"><b>Definition:</b> <a href="web_2http_2client_2_socket_context_8h_source.html#l00044">SocketContext.h:44</a></div></div>
-<div class="ttc" id="aclassweb_1_1http_1_1client_1_1_socket_context_html_a11e5dd34b30654b0bd8299d78dcb2e3b"><div class="ttname"><a href="classweb_1_1http_1_1client_1_1_socket_context.html#a11e5dd34b30654b0bd8299d78dcb2e3b">web::http::client::SocketContext::response</a></div><div class="ttdeci">Response response</div><div class="ttdef"><b>Definition:</b> <a href="web_2http_2client_2_socket_context_8h_source.html#l00085">SocketContext.h:85</a></div></div>
-<div class="ttc" id="aclassweb_1_1http_1_1client_1_1_socket_context_html_a83a8ba6b41692d7dea065f86ddac26d0"><div class="ttname"><a href="classweb_1_1http_1_1client_1_1_socket_context.html#a83a8ba6b41692d7dea065f86ddac26d0">web::http::client::SocketContext::parser</a></div><div class="ttdeci">ResponseParser parser</div><div class="ttdef"><b>Definition:</b> <a href="web_2http_2client_2_socket_context_8h_source.html#l00088">SocketContext.h:88</a></div></div>
-<div class="ttc" id="aclassweb_1_1http_1_1client_1_1_socket_context_html_aa82e1f3f3d41b612ed0e897ae0e66e63"><div class="ttname"><a href="classweb_1_1http_1_1client_1_1_socket_context.html#aa82e1f3f3d41b612ed0e897ae0e66e63">web::http::client::SocketContext::request</a></div><div class="ttdeci">Request request</div><div class="ttdef"><b>Definition:</b> <a href="web_2http_2client_2_socket_context_8h_source.html#l00084">SocketContext.h:84</a></div></div>
+<div class="ttc" id="aclassweb_1_1http_1_1client_1_1_socket_context_html_a11e5dd34b30654b0bd8299d78dcb2e3b"><div class="ttname"><a href="classweb_1_1http_1_1client_1_1_socket_context.html#a11e5dd34b30654b0bd8299d78dcb2e3b">web::http::client::SocketContext::response</a></div><div class="ttdeci">Response response</div><div class="ttdef"><b>Definition:</b> <a href="web_2http_2client_2_socket_context_8h_source.html#l00082">SocketContext.h:82</a></div></div>
+<div class="ttc" id="aclassweb_1_1http_1_1client_1_1_socket_context_html_a83a8ba6b41692d7dea065f86ddac26d0"><div class="ttname"><a href="classweb_1_1http_1_1client_1_1_socket_context.html#a83a8ba6b41692d7dea065f86ddac26d0">web::http::client::SocketContext::parser</a></div><div class="ttdeci">ResponseParser parser</div><div class="ttdef"><b>Definition:</b> <a href="web_2http_2client_2_socket_context_8h_source.html#l00084">SocketContext.h:84</a></div></div>
+<div class="ttc" id="aclassweb_1_1http_1_1client_1_1_socket_context_html_aa82e1f3f3d41b612ed0e897ae0e66e63"><div class="ttname"><a href="classweb_1_1http_1_1client_1_1_socket_context.html#aa82e1f3f3d41b612ed0e897ae0e66e63">web::http::client::SocketContext::request</a></div><div class="ttdeci">Request request</div><div class="ttdef"><b>Definition:</b> <a href="web_2http_2client_2_socket_context_8h_source.html#l00081">SocketContext.h:81</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -361,17 +363,17 @@ template&lt;typename Request , typename Response &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="classweb_1_1http_1_1client_1_1_socket_context_base.html#a30ccd377344dd9e3802c8dd2edb8e08c">web::http::client::SocketContextBase</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="client_2_socket_context_8hpp_source.html#l00101">101</a> of file <a class="el" href="client_2_socket_context_8hpp_source.html">SocketContext.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                                                          {</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classweb_1_1http_1_1client_1_1_socket_context.html#aa82e1f3f3d41b612ed0e897ae0e66e63">request</a>;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="client_2_socket_context_8hpp_source.html#l00096">96</a> of file <a class="el" href="client_2_socket_context_8hpp_source.html">SocketContext.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                                                          {</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classweb_1_1http_1_1client_1_1_socket_context.html#aa82e1f3f3d41b612ed0e897ae0e66e63">request</a>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -396,19 +398,19 @@ template&lt;typename Request , typename Response &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context.html#a536061b95fa81ba30e3665a25bfe928b">net::socket::stream::SocketContext</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="client_2_socket_context_8hpp_source.html#l00094">94</a> of file <a class="el" href="client_2_socket_context_8hpp_source.html">SocketContext.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                                                                 {</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keywordflow">if</span> (errnum != 0 &amp;&amp; errnum != ECONNRESET) {</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            PLOG(ERROR) &lt;&lt; <span class="stringliteral">&quot;Connection read: &quot;</span> &lt;&lt; errnum;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        }</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="client_2_socket_context_8hpp_source.html#l00089">89</a> of file <a class="el" href="client_2_socket_context_8hpp_source.html">SocketContext.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                                                                 {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordflow">if</span> (errnum != 0 &amp;&amp; errnum != ECONNRESET) {</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            PLOG(ERROR) &lt;&lt; <span class="stringliteral">&quot;Connection read: &quot;</span> &lt;&lt; errnum;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -429,7 +431,7 @@ template&lt;typename Request , typename Response &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -465,19 +467,19 @@ template&lt;typename Request , typename Response &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context.html#a59b9b813a1589ec933878ad0838a5945">net::socket::stream::SocketContext</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="client_2_socket_context_8hpp_source.html#l00087">87</a> of file <a class="el" href="client_2_socket_context_8hpp_source.html">SocketContext.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                                                                  {</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordflow">if</span> (errnum != 0 &amp;&amp; errnum != ECONNRESET) {</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            PLOG(ERROR) &lt;&lt; <span class="stringliteral">&quot;Connection write: &quot;</span> &lt;&lt; errnum;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        }</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="client_2_socket_context_8hpp_source.html#l00082">82</a> of file <a class="el" href="client_2_socket_context_8hpp_source.html">SocketContext.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                                                                  {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordflow">if</span> (errnum != 0 &amp;&amp; errnum != ECONNRESET) {</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            PLOG(ERROR) &lt;&lt; <span class="stringliteral">&quot;Connection write: &quot;</span> &lt;&lt; errnum;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -498,7 +500,7 @@ template&lt;typename Request , typename Response &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -508,52 +510,6 @@ template&lt;typename Request , typename Response &gt; </div>
 <p class="definition">Definition at line <a class="el" href="client_2_socket_context_8hpp_source.html#l00073">73</a> of file <a class="el" href="client_2_socket_context_8hpp_source.html">SocketContext.hpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                                                            {</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a9bec14b2fb6f80c90fb88e9a2b5429c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9bec14b2fb6f80c90fb88e9a2b5429c4">&#9670;&nbsp;</a></span>sendRequestData()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Request , typename Response &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classweb_1_1http_1_1client_1_1_socket_context.html">web::http::client::SocketContext</a>&lt; <a class="el" href="classweb_1_1http_1_1client_1_1_socket_context.html#a9795cbcc6f07a720a817329d95d0563a">Request</a>, <a class="el" href="classweb_1_1http_1_1client_1_1_socket_context.html#a531a141cd38ba3a2884311f19204a737">Response</a> &gt;::sendRequestData </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>junk</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>junkLen</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implements <a class="el" href="classweb_1_1http_1_1client_1_1_socket_context_base.html#a818292dd6d3f2e3df066bcaa9ef47517">web::http::client::SocketContextBase</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="client_2_socket_context_8hpp_source.html#l00082">82</a> of file <a class="el" href="client_2_socket_context_8hpp_source.html">SocketContext.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                                                                                              {</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_context.html#aa62f437fffcdea88263e87b6997ff85c">sendToPeer</a>(junk, junkLen);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div>
-<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_context_html_aa62f437fffcdea88263e87b6997ff85c"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_context.html#aa62f437fffcdea88263e87b6997ff85c">net::socket::stream::SocketContext::sendToPeer</a></div><div class="ttdeci">void sendToPeer(const char *junk, std::size_t junkLen)</div><div class="ttdef"><b>Definition:</b> <a href="net_2socket_2stream_2_socket_context_8cpp_source.html#l00034">SocketContext.cpp:34</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -574,25 +530,24 @@ template&lt;typename Request , typename Response &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="classweb_1_1http_1_1client_1_1_socket_context_base.html#a1ae01046301a4e579a654f12ab31a13c">web::http::client::SocketContextBase</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="client_2_socket_context_8hpp_source.html#l00106">106</a> of file <a class="el" href="client_2_socket_context_8hpp_source.html">SocketContext.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                                                               {</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_context.html#a2a7bb4fab1a6291070e7f038057ca319">close</a>();</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="client_2_socket_context_8hpp_source.html#l00101">101</a> of file <a class="el" href="client_2_socket_context_8hpp_source.html">SocketContext.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                                                               {</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_context.html#a2a7bb4fab1a6291070e7f038057ca319">close</a>();</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    }</div>
 <div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_context_html_a2a7bb4fab1a6291070e7f038057ca319"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_context.html#a2a7bb4fab1a6291070e7f038057ca319">net::socket::stream::SocketContext::close</a></div><div class="ttdeci">void close()</div><div class="ttdef"><b>Definition:</b> <a href="net_2socket_2stream_2_socket_context_8cpp_source.html#l00054">SocketContext.cpp:54</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="unistd_8cpp_source.html#l00044">net::system::close()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1http_1_1client_1_1_socket_context_aa749403cea6e138f3d403f4489fdb107_cgraph.svg" width="427" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1http_1_1client_1_1_socket_context_aa749403cea6e138f3d403f4489fdb107_cgraph.svg" width="427" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -620,7 +575,7 @@ template&lt;typename RequestT , typename ResponseT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="web_2http_2client_2_socket_context_8h_source.html#l00088">88</a> of file <a class="el" href="web_2http_2client_2_socket_context_8h_source.html">SocketContext.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="web_2http_2client_2_socket_context_8h_source.html#l00084">84</a> of file <a class="el" href="web_2http_2client_2_socket_context_8h_source.html">SocketContext.h</a>.</p>
 
 </div>
 </div>
@@ -641,12 +596,12 @@ template&lt;typename RequestT , typename ResponseT &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="web_2http_2client_2_socket_context_8h_source.html#l00084">84</a> of file <a class="el" href="web_2http_2client_2_socket_context_8h_source.html">SocketContext.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="web_2http_2client_2_socket_context_8h_source.html#l00081">81</a> of file <a class="el" href="web_2http_2client_2_socket_context_8h_source.html">SocketContext.h</a>.</p>
 
 </div>
 </div>
@@ -667,12 +622,12 @@ template&lt;typename RequestT , typename ResponseT &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="web_2http_2client_2_socket_context_8h_source.html#l00085">85</a> of file <a class="el" href="web_2http_2client_2_socket_context_8h_source.html">SocketContext.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="web_2http_2client_2_socket_context_8h_source.html#l00082">82</a> of file <a class="el" href="web_2http_2client_2_socket_context_8h_source.html">SocketContext.h</a>.</p>
 
 </div>
 </div>

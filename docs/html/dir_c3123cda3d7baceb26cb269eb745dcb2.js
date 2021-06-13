@@ -25,5 +25,16 @@ var dir_c3123cda3d7baceb26cb269eb745dcb2 =
     [ "SocketContext.hpp", "server_2_socket_context_8hpp.html", null ],
     [ "SocketContextFactory.h", "web_2http_2server_2_socket_context_factory_8h.html", [
       [ "SocketContextFactory", "classweb_1_1http_1_1server_1_1_socket_context_factory.html", "classweb_1_1http_1_1server_1_1_socket_context_factory" ]
+    ] ],
+    [ "SocketContextUpgradeFactory.h", "http_2server_2_socket_context_upgrade_factory_8h.html", [
+      [ "SocketContextUpgradeFactory", "classweb_1_1http_1_1server_1_1_socket_context_upgrade_factory.html", "classweb_1_1http_1_1server_1_1_socket_context_upgrade_factory" ]
+    ] ],
+    [ "SocketContextUpgradeFactorySelector.cpp", "_socket_context_upgrade_factory_selector_8cpp.html", null ],
+    [ "SocketContextUpgradeFactorySelector.h", "_socket_context_upgrade_factory_selector_8h.html", [
+      [ "SocketContextPlugin", "structweb_1_1http_1_1server_1_1_socket_context_plugin.html", "structweb_1_1http_1_1server_1_1_socket_context_plugin" ],
+      [ "SocketContextUpgradeFactorySelector", "classweb_1_1http_1_1server_1_1_socket_context_upgrade_factory_selector.html", "classweb_1_1http_1_1server_1_1_socket_context_upgrade_factory_selector" ]
+    ] ],
+    [ "SocketContextUpgradeInterface.h", "_socket_context_upgrade_interface_8h.html", [
+      [ "SocketContextUpgradeInterface", "classweb_1_1http_1_1server_1_1_socket_context_upgrade_interface.html", "classweb_1_1http_1_1server_1_1_socket_context_upgrade_interface" ]
     ] ]
 ];

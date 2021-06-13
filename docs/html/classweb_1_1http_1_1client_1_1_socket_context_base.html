@@ -93,13 +93,13 @@ $(document).ready(function(){initNavTree('classweb_1_1http_1_1client_1_1_socket_
 <div class="dynheader">
 Inheritance diagram for web::http::client::SocketContextBase:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1http_1_1client_1_1_socket_context_base__inherit__graph.svg" width="215" height="852"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1http_1_1client_1_1_socket_context_base__inherit__graph.svg" width="215" height="808"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div class="dynheader">
 Collaboration diagram for web::http::client::SocketContextBase:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1http_1_1client_1_1_socket_context_base__coll__graph.svg" width="406" height="654"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1http_1_1client_1_1_socket_context_base__coll__graph.svg" width="227" height="854"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
@@ -109,8 +109,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a52baf6e6a61e28c1707961aeba3cd75d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40ff96ec72d39c1f61268c1e01c0a43c"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1client_1_1_socket_context_base.html#a40ff96ec72d39c1f61268c1e01c0a43c">~SocketContextBase</a> ()=default</td></tr>
 <tr class="separator:a40ff96ec72d39c1f61268c1e01c0a43c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a818292dd6d3f2e3df066bcaa9ef47517"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1client_1_1_socket_context_base.html#a818292dd6d3f2e3df066bcaa9ef47517">sendRequestData</a> (const char *buf, std::size_t len)=0</td></tr>
-<tr class="separator:a818292dd6d3f2e3df066bcaa9ef47517"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30ccd377344dd9e3802c8dd2edb8e08c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classweb_1_1http_1_1client_1_1_request.html">Request</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1client_1_1_socket_context_base.html#a30ccd377344dd9e3802c8dd2edb8e08c">getRequest</a> ()=0</td></tr>
 <tr class="separator:a30ccd377344dd9e3802c8dd2edb8e08c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ae01046301a4e579a654f12ab31a13c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1client_1_1_socket_context_base.html#a1ae01046301a4e579a654f12ab31a13c">terminateConnection</a> ()=0</td></tr>
@@ -134,6 +132,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a64aca4b5aade19916a8dfaa5ca496fe3 inherit pub_methods_classnet_1_1socket_1_1stream_1_1_socket_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afca303a1d0f6368e7a4d2f2ddea54939 inherit pub_methods_classnet_1_1socket_1_1stream_1_1_socket_context"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context.html#afca303a1d0f6368e7a4d2f2ddea54939">setTimeout</a> (int timeout)</td></tr>
 <tr class="separator:afca303a1d0f6368e7a4d2f2ddea54939 inherit pub_methods_classnet_1_1socket_1_1stream_1_1_socket_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97cc211a5f55034470d0bb6f736b43c3 inherit pub_methods_classnet_1_1socket_1_1stream_1_1_socket_context"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context.html#a97cc211a5f55034470d0bb6f736b43c3">onReceiveFromPeer</a> ()=0</td></tr>
+<tr class="separator:a97cc211a5f55034470d0bb6f736b43c3 inherit pub_methods_classnet_1_1socket_1_1stream_1_1_socket_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59b9b813a1589ec933878ad0838a5945 inherit pub_methods_classnet_1_1socket_1_1stream_1_1_socket_context"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context.html#a59b9b813a1589ec933878ad0838a5945">onWriteError</a> (int errnum)=0</td></tr>
+<tr class="separator:a59b9b813a1589ec933878ad0838a5945 inherit pub_methods_classnet_1_1socket_1_1stream_1_1_socket_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a536061b95fa81ba30e3665a25bfe928b inherit pub_methods_classnet_1_1socket_1_1stream_1_1_socket_context"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context.html#a536061b95fa81ba30e3665a25bfe928b">onReadError</a> (int errnum)=0</td></tr>
+<tr class="separator:a536061b95fa81ba30e3665a25bfe928b inherit pub_methods_classnet_1_1socket_1_1stream_1_1_socket_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa4d24d287145902558be3895c03459c inherit pub_methods_classnet_1_1socket_1_1stream_1_1_socket_context"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context.html#aaa4d24d287145902558be3895c03459c">onProtocolConnected</a> ()</td></tr>
+<tr class="separator:aaa4d24d287145902558be3895c03459c inherit pub_methods_classnet_1_1socket_1_1stream_1_1_socket_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e350c46bfb6d153f0908f5de82bb89e inherit pub_methods_classnet_1_1socket_1_1stream_1_1_socket_context"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context.html#a2e350c46bfb6d153f0908f5de82bb89e">onProtocolDisconnected</a> ()</td></tr>
+<tr class="separator:a2e350c46bfb6d153f0908f5de82bb89e inherit pub_methods_classnet_1_1socket_1_1stream_1_1_socket_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -175,7 +183,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            : <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_context.html">net::socket::stream::SocketContext</a>(<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_context.html#ac928a1fb39d0703d71c20b8f762ba4c2">socketConnection</a>) {</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        }</div>
 <div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_context_html"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_context.html">net::socket::stream::SocketContext</a></div><div class="ttdef"><b>Definition:</b> <a href="net_2socket_2stream_2_socket_context_8h_source.html#l00037">SocketContext.h:37</a></div></div>
-<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_context_html_ac928a1fb39d0703d71c20b8f762ba4c2"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_context.html#ac928a1fb39d0703d71c20b8f762ba4c2">net::socket::stream::SocketContext::socketConnection</a></div><div class="ttdeci">SocketConnectionBase * socketConnection</div><div class="ttdef"><b>Definition:</b> <a href="net_2socket_2stream_2_socket_context_8h_source.html#l00056">SocketContext.h:56</a></div></div>
+<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_context_html_ac928a1fb39d0703d71c20b8f762ba4c2"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_context.html#ac928a1fb39d0703d71c20b8f762ba4c2">net::socket::stream::SocketContext::socketConnection</a></div><div class="ttdeci">SocketConnectionBase * socketConnection</div><div class="ttdef"><b>Definition:</b> <a href="net_2socket_2stream_2_socket_context_8h_source.html#l00065">SocketContext.h:65</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -261,54 +269,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1http_1_1client_1_1_socket_context_base_a88af522b6ce9a11f6f2064f4622f3557_icgraph.svg" width="746" height="248"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-
-</div>
-</div>
-<a id="a818292dd6d3f2e3df066bcaa9ef47517"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a818292dd6d3f2e3df066bcaa9ef47517">&#9670;&nbsp;</a></span>sendRequestData()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void web::http::client::SocketContextBase::sendRequestData </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>buf</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>len</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="classweb_1_1http_1_1client_1_1_socket_context.html#a9bec14b2fb6f80c90fb88e9a2b5429c4">web::http::client::SocketContext&lt; RequestT, ResponseT &gt;</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="web_2http_2client_2_request_8cpp_source.html#l00117">web::http::client::Request::enqueue()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1http_1_1client_1_1_socket_context_base_a818292dd6d3f2e3df066bcaa9ef47517_icgraph.svg" width="807" height="248"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1http_1_1client_1_1_socket_context_base_a88af522b6ce9a11f6f2064f4622f3557_icgraph.svg" width="746" height="248"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -342,8 +303,7 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1http_1_1client_1_1_socket_context_base_a1ae01046301a4e579a654f12ab31a13c_icgraph.svg" width="756" height="248"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1http_1_1client_1_1_socket_context_base_a1ae01046301a4e579a654f12ab31a13c_icgraph.svg" width="756" height="248"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>

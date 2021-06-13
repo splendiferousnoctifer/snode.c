@@ -97,13 +97,13 @@ $(document).ready(function(){initNavTree('classnet_1_1socket_1_1stream_1_1_socke
 <div class="dynheader">
 Inheritance diagram for net::socket::stream::SocketContext:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_context__inherit__graph.svg" width="860" height="1248"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_context__inherit__graph.svg" width="860" height="1204"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div class="dynheader">
 Collaboration diagram for net::socket::stream::SocketContext:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_context__coll__graph.svg" width="262" height="654"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_context__coll__graph.svg" width="227" height="654"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
@@ -125,6 +125,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a64aca4b5aade19916a8dfaa5ca496fe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afca303a1d0f6368e7a4d2f2ddea54939"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context.html#afca303a1d0f6368e7a4d2f2ddea54939">setTimeout</a> (int timeout)</td></tr>
 <tr class="separator:afca303a1d0f6368e7a4d2f2ddea54939"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97cc211a5f55034470d0bb6f736b43c3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context.html#a97cc211a5f55034470d0bb6f736b43c3">onReceiveFromPeer</a> ()=0</td></tr>
+<tr class="separator:a97cc211a5f55034470d0bb6f736b43c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59b9b813a1589ec933878ad0838a5945"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context.html#a59b9b813a1589ec933878ad0838a5945">onWriteError</a> (int errnum)=0</td></tr>
+<tr class="separator:a59b9b813a1589ec933878ad0838a5945"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a536061b95fa81ba30e3665a25bfe928b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context.html#a536061b95fa81ba30e3665a25bfe928b">onReadError</a> (int errnum)=0</td></tr>
+<tr class="separator:a536061b95fa81ba30e3665a25bfe928b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa4d24d287145902558be3895c03459c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context.html#aaa4d24d287145902558be3895c03459c">onProtocolConnected</a> ()</td></tr>
+<tr class="separator:aaa4d24d287145902558be3895c03459c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e350c46bfb6d153f0908f5de82bb89e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context.html#a2e350c46bfb6d153f0908f5de82bb89e">onProtocolDisconnected</a> ()</td></tr>
+<tr class="separator:a2e350c46bfb6d153f0908f5de82bb89e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -135,30 +145,16 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a97cc211a5f55034470d0bb6f736b43c3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context.html#a97cc211a5f55034470d0bb6f736b43c3">onReceiveFromPeer</a> ()=0</td></tr>
-<tr class="separator:a97cc211a5f55034470d0bb6f736b43c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59b9b813a1589ec933878ad0838a5945"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context.html#a59b9b813a1589ec933878ad0838a5945">onWriteError</a> (int errnum)=0</td></tr>
-<tr class="separator:a59b9b813a1589ec933878ad0838a5945"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a536061b95fa81ba30e3665a25bfe928b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context.html#a536061b95fa81ba30e3665a25bfe928b">onReadError</a> (int errnum)=0</td></tr>
-<tr class="separator:a536061b95fa81ba30e3665a25bfe928b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0d497f59257b08802af0685f83b7db0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context.html#ac0d497f59257b08802af0685f83b7db0">receiveFromPeer</a> ()</td></tr>
 <tr class="separator:ac0d497f59257b08802af0685f83b7db0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa4d24d287145902558be3895c03459c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context.html#aaa4d24d287145902558be3895c03459c">onProtocolConnected</a> ()</td></tr>
-<tr class="separator:aaa4d24d287145902558be3895c03459c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e350c46bfb6d153f0908f5de82bb89e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context.html#a2e350c46bfb6d153f0908f5de82bb89e">onProtocolDisconnected</a> ()</td></tr>
-<tr class="separator:a2e350c46bfb6d153f0908f5de82bb89e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:ac928a1fb39d0703d71c20b8f762ba4c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html">SocketConnectionBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context.html#ac928a1fb39d0703d71c20b8f762ba4c2">socketConnection</a></td></tr>
 <tr class="separator:ac928a1fb39d0703d71c20b8f762ba4c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af745607cb222c2dafdf13b2465bcff03"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context.html#af745607cb222c2dafdf13b2465bcff03">markedForDelete</a> = false</td></tr>
-<tr class="separator:af745607cb222c2dafdf13b2465bcff03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:ab9e9825275b10dfd161e51afe412d128"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context.html#ab9e9825275b10dfd161e51afe412d128">SocketConnectionBase</a></td></tr>
-<tr class="separator:ab9e9825275b10dfd161e51afe412d128"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a437ea087be0e8003048f54ae8e0d9f41"><td class="memTemplParams" colspan="2">template&lt;typename SocketReaderT , typename SocketWriterT , typename SocketAddressT &gt; </td></tr>
 <tr class="memitem:a437ea087be0e8003048f54ae8e0d9f41"><td class="memTemplItemLeft" align="right" valign="top">class&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context.html#a437ea087be0e8003048f54ae8e0d9f41">SocketConnection</a></td></tr>
 <tr class="separator:a437ea087be0e8003048f54ae8e0d9f41"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -194,7 +190,7 @@ Friends</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="net_2socket_2stream_2_socket_context_8cpp_source.html#l00030">30</a> of file <a class="el" href="net_2socket_2stream_2_socket_context_8cpp_source.html">SocketContext.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        : <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_context.html#ac928a1fb39d0703d71c20b8f762ba4c2">socketConnection</a>(<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_context.html#ac928a1fb39d0703d71c20b8f762ba4c2">socketConnection</a>) {</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div>
-<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_context_html_ac928a1fb39d0703d71c20b8f762ba4c2"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_context.html#ac928a1fb39d0703d71c20b8f762ba4c2">net::socket::stream::SocketContext::socketConnection</a></div><div class="ttdeci">SocketConnectionBase * socketConnection</div><div class="ttdef"><b>Definition:</b> <a href="net_2socket_2stream_2_socket_context_8h_source.html#l00056">SocketContext.h:56</a></div></div>
+<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_context_html_ac928a1fb39d0703d71c20b8f762ba4c2"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_context.html#ac928a1fb39d0703d71c20b8f762ba4c2">net::socket::stream::SocketContext::socketConnection</a></div><div class="ttdeci">SocketConnectionBase * socketConnection</div><div class="ttdef"><b>Definition:</b> <a href="net_2socket_2stream_2_socket_context_8h_source.html#l00065">SocketContext.h:65</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -221,7 +217,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="classweb_1_1ws_1_1_socket_context.html#a290872b03b08a6a2d22de69fad1361f0">web::ws::SocketContext</a>, <a class="el" href="classweb_1_1http_1_1server_1_1_socket_context.html#aca262f835e55e609fb974fdf4d6bb46e">web::http::server::SocketContext&lt; RequestT, ResponseT &gt;</a>, <a class="el" href="classweb_1_1http_1_1client_1_1_socket_context.html#a075e493b64885b96bb9c38866e818499">web::http::client::SocketContext&lt; RequestT, ResponseT &gt;</a>, and <a class="el" href="classweb_1_1ws_1_1server_1_1_socket_context.html#a8b55e20e0d5bb6a8f185c5b6f3183b15">web::ws::server::SocketContext</a>.</p>
+<p>Reimplemented in <a class="el" href="classweb_1_1ws_1_1_socket_context.html#a290872b03b08a6a2d22de69fad1361f0">web::ws::SocketContext</a>, <a class="el" href="classweb_1_1http_1_1client_1_1_socket_context.html#a075e493b64885b96bb9c38866e818499">web::http::client::SocketContext&lt; RequestT, ResponseT &gt;</a>, and <a class="el" href="classweb_1_1ws_1_1server_1_1_socket_context.html#a8b55e20e0d5bb6a8f185c5b6f3183b15">web::ws::server::SocketContext</a>.</p>
 
 </div>
 </div>
@@ -247,20 +243,18 @@ Friends</h2></td></tr>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
 <div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_connection_base_html_a0cfc0683d6ecdf7eaf644a1067c0ec63"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#a0cfc0683d6ecdf7eaf644a1067c0ec63">net::socket::stream::SocketConnectionBase::close</a></div><div class="ttdeci">virtual void close()=0</div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#a0cfc0683d6ecdf7eaf644a1067c0ec63">net::socket::stream::SocketConnectionBase::close()</a>, and <a class="el" href="net_2socket_2stream_2_socket_context_8h_source.html#l00056">socketConnection</a>.</p>
+<p class="reference">References <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#a0cfc0683d6ecdf7eaf644a1067c0ec63">net::socket::stream::SocketConnectionBase::close()</a>, and <a class="el" href="net_2socket_2stream_2_socket_context_8h_source.html#l00065">socketConnection</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="web_2ws_2_socket_context_8cpp_source.html#l00147">web::ws::SocketContext::close()</a>, <a class="el" href="web_2ws_2_socket_context_8cpp_source.html#l00092">web::ws::SocketContext::onMessageEnd()</a>, and <a class="el" href="web_2ws_2_socket_context_8cpp_source.html#l00120">web::ws::SocketContext::onMessageError()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="web_2ws_2_socket_context_8cpp_source.html#l00145">web::ws::SocketContext::close()</a>, <a class="el" href="web_2ws_2_socket_context_8cpp_source.html#l00092">web::ws::SocketContext::onMessageEnd()</a>, and <a class="el" href="web_2ws_2_socket_context_8cpp_source.html#l00120">web::ws::SocketContext::onMessageError()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_context_a2a7bb4fab1a6291070e7f038057ca319_cgraph.svg" width="382" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_context_a2a7bb4fab1a6291070e7f038057ca319_cgraph.svg" width="382" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_context_a2a7bb4fab1a6291070e7f038057ca319_icgraph.svg" width="580" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_context_a2a7bb4fab1a6291070e7f038057ca319_icgraph.svg" width="580" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -286,20 +280,18 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    }</div>
 <div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_connection_base_html_adfad4e09c4150fd1ed7a802853ce2ca0"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#adfad4e09c4150fd1ed7a802853ce2ca0">net::socket::stream::SocketConnectionBase::getLocalAddressAsString</a></div><div class="ttdeci">virtual std::string getLocalAddressAsString() const =0</div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#adfad4e09c4150fd1ed7a802853ce2ca0">net::socket::stream::SocketConnectionBase::getLocalAddressAsString()</a>, and <a class="el" href="net_2socket_2stream_2_socket_context_8h_source.html#l00056">socketConnection</a>.</p>
+<p class="reference">References <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#adfad4e09c4150fd1ed7a802853ce2ca0">net::socket::stream::SocketConnectionBase::getLocalAddressAsString()</a>, and <a class="el" href="net_2socket_2stream_2_socket_context_8h_source.html#l00065">socketConnection</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="web_2ws_2_socket_context_8cpp_source.html#l00227">web::ws::SocketContext::getLocalAddressAsString()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="web_2ws_2_socket_context_8cpp_source.html#l00229">web::ws::SocketContext::getLocalAddressAsString()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_context_a29dacb932abf1362fe8db45bead6e8db_cgraph.svg" width="459" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_context_a29dacb932abf1362fe8db45bead6e8db_cgraph.svg" width="459" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_context_a29dacb932abf1362fe8db45bead6e8db_icgraph.svg" width="684" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_context_a29dacb932abf1362fe8db45bead6e8db_icgraph.svg" width="684" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -325,20 +317,18 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
 <div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_connection_base_html_adccd1884806b086993e9893118c5f0f5"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#adccd1884806b086993e9893118c5f0f5">net::socket::stream::SocketConnectionBase::getRemoteAddressAsString</a></div><div class="ttdeci">virtual std::string getRemoteAddressAsString() const =0</div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#adccd1884806b086993e9893118c5f0f5">net::socket::stream::SocketConnectionBase::getRemoteAddressAsString()</a>, and <a class="el" href="net_2socket_2stream_2_socket_context_8h_source.html#l00056">socketConnection</a>.</p>
+<p class="reference">References <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#adccd1884806b086993e9893118c5f0f5">net::socket::stream::SocketConnectionBase::getRemoteAddressAsString()</a>, and <a class="el" href="net_2socket_2stream_2_socket_context_8h_source.html#l00065">socketConnection</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="web_2ws_2_socket_context_8cpp_source.html#l00231">web::ws::SocketContext::getRemoteAddressAsString()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="web_2ws_2_socket_context_8cpp_source.html#l00233">web::ws::SocketContext::getRemoteAddressAsString()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_context_a4fa47451b4cc95a47d3f80e46513e3ff_cgraph.svg" width="440" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_context_a4fa47451b4cc95a47d3f80e46513e3ff_cgraph.svg" width="440" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_context_a4fa47451b4cc95a47d3f80e46513e3ff_icgraph.svg" width="680" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_context_a4fa47451b4cc95a47d3f80e46513e3ff_icgraph.svg" width="680" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -361,23 +351,23 @@ Here is the caller graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Reimplemented in <a class="el" href="classweb_1_1ws_1_1_socket_context.html#ac4e6e9daa0cb689eb5b2c563e5b24794">web::ws::SocketContext</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="net_2socket_2stream_2_socket_context_8cpp_source.html#l00076">76</a> of file <a class="el" href="net_2socket_2stream_2_socket_context_8cpp_source.html">SocketContext.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                                            {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        VLOG(0) &lt;&lt; <span class="stringliteral">&quot;Protocol connected&quot;</span>;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="net_2socket_2stream_2_socket_context_8cpp_source.html#l00074">74</a> of file <a class="el" href="net_2socket_2stream_2_socket_context_8cpp_source.html">SocketContext.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                                            {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        VLOG(0) &lt;&lt; <span class="stringliteral">&quot;Protocol connected&quot;</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="_socket_connection_base_8cpp_source.html#l00038">net::socket::stream::SocketConnectionBase::switchSocketProtocol()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_socket_connection_8h_source.html#l00125">net::socket::stream::SocketConnection&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt;::switchSocketProtocol()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_context_aaa4d24d287145902558be3895c03459c_icgraph.svg" width="847" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_context_aaa4d24d287145902558be3895c03459c_icgraph.svg" width="395" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -401,23 +391,23 @@ Here is the caller graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Reimplemented in <a class="el" href="classweb_1_1ws_1_1_socket_context.html#a098d08e847d1f5a14863ceaa313ffddf">web::ws::SocketContext</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="net_2socket_2stream_2_socket_context_8cpp_source.html#l00080">80</a> of file <a class="el" href="net_2socket_2stream_2_socket_context_8cpp_source.html">SocketContext.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                                               {</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        VLOG(0) &lt;&lt; <span class="stringliteral">&quot;Protocol disconnecteded&quot;</span>;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="net_2socket_2stream_2_socket_context_8cpp_source.html#l00078">78</a> of file <a class="el" href="net_2socket_2stream_2_socket_context_8cpp_source.html">SocketContext.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                                               {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        VLOG(0) &lt;&lt; <span class="stringliteral">&quot;Protocol disconnecteded&quot;</span>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="_socket_connection_base_8cpp_source.html#l00038">net::socket::stream::SocketConnectionBase::switchSocketProtocol()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_socket_connection_8h_source.html#l00125">net::socket::stream::SocketConnection&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt;::switchSocketProtocol()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_context_a2e350c46bfb6d153f0908f5de82bb89e_icgraph.svg" width="847" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_context_a2e350c46bfb6d153f0908f5de82bb89e_icgraph.svg" width="395" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -442,7 +432,7 @@ Here is the caller graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -469,19 +459,18 @@ Here is the caller graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Implemented in <a class="el" href="classweb_1_1ws_1_1_socket_context.html#a7ee5165dc8e2f7d0b8630286782160bc">web::ws::SocketContext</a>, <a class="el" href="classweb_1_1http_1_1server_1_1_socket_context.html#aa2478019ab1e7fa54fb195e5dc0ed6a5">web::http::server::SocketContext&lt; RequestT, ResponseT &gt;</a>, and <a class="el" href="classweb_1_1http_1_1client_1_1_socket_context.html#a387a81ac9ad2bde23b85982a6b4a187f">web::http::client::SocketContext&lt; RequestT, ResponseT &gt;</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="net_2socket_2stream_2_socket_context_8cpp_source.html#l00064">receiveFromPeer()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="net_2socket_2stream_2_socket_context_8cpp_source.html#l00062">receiveFromPeer()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_context_a97cc211a5f55034470d0bb6f736b43c3_icgraph.svg" width="470" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_context_a97cc211a5f55034470d0bb6f736b43c3_icgraph.svg" width="470" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -505,7 +494,7 @@ Here is the caller graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -546,20 +535,18 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    }</div>
 <div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_connection_base_html_a697497e5438bfaa3dba65e81d979fad2"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#a697497e5438bfaa3dba65e81d979fad2">net::socket::stream::SocketConnectionBase::doRead</a></div><div class="ttdeci">virtual std::size_t doRead(char *junk, std::size_t junkLen)=0</div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#a697497e5438bfaa3dba65e81d979fad2">net::socket::stream::SocketConnectionBase::doRead()</a>, and <a class="el" href="net_2socket_2stream_2_socket_context_8h_source.html#l00056">socketConnection</a>.</p>
+<p class="reference">References <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#a697497e5438bfaa3dba65e81d979fad2">net::socket::stream::SocketConnectionBase::doRead()</a>, and <a class="el" href="net_2socket_2stream_2_socket_context_8h_source.html#l00065">socketConnection</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="web_2ws_2_socket_context_8cpp_source.html#l00127">web::ws::SocketContext::readFrameData()</a>, <a class="el" href="_parser_8cpp_source.html#l00103">web::http::Parser::readHeaderLine()</a>, and <a class="el" href="_parser_8cpp_source.html#l00079">web::http::Parser::readStartLine()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="web_2ws_2_socket_context_8cpp_source.html#l00125">web::ws::SocketContext::readFrameData()</a>, <a class="el" href="_parser_8cpp_source.html#l00103">web::http::Parser::readHeaderLine()</a>, and <a class="el" href="_parser_8cpp_source.html#l00079">web::http::Parser::readStartLine()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_context_aea967aeeefbb479ead5b72c072e7f512_cgraph.svg" width="432" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_context_aea967aeeefbb479ead5b72c072e7f512_cgraph.svg" width="432" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_context_aea967aeeefbb479ead5b72c072e7f512_icgraph.svg" width="611" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_context_aea967aeeefbb479ead5b72c072e7f512_icgraph.svg" width="611" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -587,22 +574,22 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="net_2socket_2stream_2_socket_context_8cpp_source.html#l00064">64</a> of file <a class="el" href="net_2socket_2stream_2_socket_context_8cpp_source.html">SocketContext.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                                        {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_context.html#a97cc211a5f55034470d0bb6f736b43c3">onReceiveFromPeer</a>();</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_context.html#af745607cb222c2dafdf13b2465bcff03">markedForDelete</a>) {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <span class="keyword">delete</span> <span class="keyword">this</span>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        }</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="net_2socket_2stream_2_socket_context_8cpp_source.html#l00062">62</a> of file <a class="el" href="net_2socket_2stream_2_socket_context_8cpp_source.html">SocketContext.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                                        {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_context.html#a97cc211a5f55034470d0bb6f736b43c3">onReceiveFromPeer</a>();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordflow">if</span> (<span class="keyword">this</span> != <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_context.html#ac928a1fb39d0703d71c20b8f762ba4c2">socketConnection</a>-&gt;<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#a619a692269bab49961ca8d5ec196181a">getSocketContext</a>()) {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <span class="keyword">delete</span> <span class="keyword">this</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
+<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_connection_base_html_a619a692269bab49961ca8d5ec196181a"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#a619a692269bab49961ca8d5ec196181a">net::socket::stream::SocketConnectionBase::getSocketContext</a></div><div class="ttdeci">virtual SocketContext * getSocketContext()=0</div></div>
 <div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_context_html_a97cc211a5f55034470d0bb6f736b43c3"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_context.html#a97cc211a5f55034470d0bb6f736b43c3">net::socket::stream::SocketContext::onReceiveFromPeer</a></div><div class="ttdeci">virtual void onReceiveFromPeer()=0</div></div>
-<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_context_html_af745607cb222c2dafdf13b2465bcff03"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_context.html#af745607cb222c2dafdf13b2465bcff03">net::socket::stream::SocketContext::markedForDelete</a></div><div class="ttdeci">bool markedForDelete</div><div class="ttdef"><b>Definition:</b> <a href="net_2socket_2stream_2_socket_context_8h_source.html#l00067">SocketContext.h:67</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="net_2socket_2stream_2_socket_context_8h_source.html#l00067">markedForDelete</a>, and <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context.html#a97cc211a5f55034470d0bb6f736b43c3">onReceiveFromPeer()</a>.</p>
+<p class="reference">References <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#a619a692269bab49961ca8d5ec196181a">net::socket::stream::SocketConnectionBase::getSocketContext()</a>, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context.html#a97cc211a5f55034470d0bb6f736b43c3">onReceiveFromPeer()</a>, and <a class="el" href="net_2socket_2stream_2_socket_context_8h_source.html#l00065">socketConnection</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_context_ac0d497f59257b08802af0685f83b7db0_cgraph.svg" width="470" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_context_ac0d497f59257b08802af0685f83b7db0_cgraph.svg" width="470" height="147"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -640,19 +627,18 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
 <div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_connection_base_html_a27dceffb6e668af5ab183a1edbe8b3c6"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#a27dceffb6e668af5ab183a1edbe8b3c6">net::socket::stream::SocketConnectionBase::enqueue</a></div><div class="ttdeci">virtual void enqueue(const char *junk, std::size_t junkLen)=0</div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#a27dceffb6e668af5ab183a1edbe8b3c6">net::socket::stream::SocketConnectionBase::enqueue()</a>, and <a class="el" href="net_2socket_2stream_2_socket_context_8h_source.html#l00056">socketConnection</a>.</p>
+<p class="reference">References <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#a27dceffb6e668af5ab183a1edbe8b3c6">net::socket::stream::SocketConnectionBase::enqueue()</a>, and <a class="el" href="net_2socket_2stream_2_socket_context_8h_source.html#l00065">socketConnection</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="web_2ws_2_socket_context_8cpp_source.html#l00175">web::ws::SocketContext::sendFrameData()</a>, and <a class="el" href="net_2socket_2stream_2_socket_context_8cpp_source.html#l00038">sendToPeer()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="web_2http_2client_2_request_8cpp_source.html#l00117">web::http::client::Request::enqueue()</a>, <a class="el" href="web_2ws_2_socket_context_8cpp_source.html#l00173">web::ws::SocketContext::sendFrameData()</a>, and <a class="el" href="net_2socket_2stream_2_socket_context_8cpp_source.html#l00038">sendToPeer()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_context_aa62f437fffcdea88263e87b6997ff85c_cgraph.svg" width="420" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_context_aa62f437fffcdea88263e87b6997ff85c_cgraph.svg" width="420" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_context_aa62f437fffcdea88263e87b6997ff85c_icgraph.svg" width="448" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_context_aa62f437fffcdea88263e87b6997ff85c_icgraph.svg" width="816" height="314"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -684,8 +670,7 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_context_abc90fa490b5c752df07026e36157bfb7_cgraph.svg" width="663" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_context_abc90fa490b5c752df07026e36157bfb7_cgraph.svg" width="663" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -706,26 +691,24 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="net_2socket_2stream_2_socket_context_8cpp_source.html#l00072">72</a> of file <a class="el" href="net_2socket_2stream_2_socket_context_8cpp_source.html">SocketContext.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                                              {</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_context.html#ac928a1fb39d0703d71c20b8f762ba4c2">socketConnection</a>-&gt;<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#a7a995ea1d7cbe8a0da469bde23ced1e7">setTimeout</a>(timeout);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="net_2socket_2stream_2_socket_context_8cpp_source.html#l00070">70</a> of file <a class="el" href="net_2socket_2stream_2_socket_context_8cpp_source.html">SocketContext.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                                              {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_context.html#ac928a1fb39d0703d71c20b8f762ba4c2">socketConnection</a>-&gt;<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#a7a995ea1d7cbe8a0da469bde23ced1e7">setTimeout</a>(timeout);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    }</div>
 <div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_connection_base_html_a7a995ea1d7cbe8a0da469bde23ced1e7"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#a7a995ea1d7cbe8a0da469bde23ced1e7">net::socket::stream::SocketConnectionBase::setTimeout</a></div><div class="ttdeci">virtual void setTimeout(int timeout)=0</div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#a7a995ea1d7cbe8a0da469bde23ced1e7">net::socket::stream::SocketConnectionBase::setTimeout()</a>, and <a class="el" href="net_2socket_2stream_2_socket_context_8h_source.html#l00056">socketConnection</a>.</p>
+<p class="reference">References <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#a7a995ea1d7cbe8a0da469bde23ced1e7">net::socket::stream::SocketConnectionBase::setTimeout()</a>, and <a class="el" href="net_2socket_2stream_2_socket_context_8h_source.html#l00065">socketConnection</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="web_2ws_2_socket_context_8cpp_source.html#l00147">web::ws::SocketContext::close()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="web_2ws_2_socket_context_8cpp_source.html#l00145">web::ws::SocketContext::close()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_context_afca303a1d0f6368e7a4d2f2ddea54939_cgraph.svg" width="416" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_context_afca303a1d0f6368e7a4d2f2ddea54939_cgraph.svg" width="416" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_context_afca303a1d0f6368e7a4d2f2ddea54939_icgraph.svg" width="615" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_context_afca303a1d0f6368e7a4d2f2ddea54939_icgraph.svg" width="615" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -748,26 +731,23 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="net_2socket_2stream_2_socket_context_8cpp_source.html#l00058">58</a> of file <a class="el" href="net_2socket_2stream_2_socket_context_8cpp_source.html">SocketContext.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                                                                                              {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_context.html#ac928a1fb39d0703d71c20b8f762ba4c2">socketConnection</a>-&gt;<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#a6ecb766957faf578636d15604323730f">switchSocketProtocol</a>(socketProtocolFactory);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_context.html#af745607cb222c2dafdf13b2465bcff03">markedForDelete</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
-<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_connection_base_html_a6ecb766957faf578636d15604323730f"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#a6ecb766957faf578636d15604323730f">net::socket::stream::SocketConnectionBase::switchSocketProtocol</a></div><div class="ttdeci">void switchSocketProtocol(const SocketContextFactory &amp;socketContextFactory)</div><div class="ttdef"><b>Definition:</b> <a href="_socket_connection_base_8cpp_source.html#l00038">SocketConnectionBase.cpp:38</a></div></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_context.html#ac928a1fb39d0703d71c20b8f762ba4c2">socketConnection</a>-&gt;<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#a97df6242a787688990dff5ce61ee8e49">switchSocketProtocol</a>(socketProtocolFactory);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
+<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_connection_base_html_a97df6242a787688990dff5ce61ee8e49"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#a97df6242a787688990dff5ce61ee8e49">net::socket::stream::SocketConnectionBase::switchSocketProtocol</a></div><div class="ttdeci">virtual void switchSocketProtocol(const SocketContextFactory &amp;socketContextFactory)=0</div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="net_2socket_2stream_2_socket_context_8h_source.html#l00067">markedForDelete</a>, <a class="el" href="net_2socket_2stream_2_socket_context_8h_source.html#l00056">socketConnection</a>, and <a class="el" href="_socket_connection_base_8cpp_source.html#l00038">net::socket::stream::SocketConnectionBase::switchSocketProtocol()</a>.</p>
+<p class="reference">References <a class="el" href="net_2socket_2stream_2_socket_context_8h_source.html#l00065">socketConnection</a>, and <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#a97df6242a787688990dff5ce61ee8e49">net::socket::stream::SocketConnectionBase::switchSocketProtocol()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="web_2http_2server_2_response_8cpp_source.html#l00149">web::http::server::Response::upgrade()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_context_a64aca4b5aade19916a8dfaa5ca496fe3_cgraph.svg" width="664" height="227"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_context_a64aca4b5aade19916a8dfaa5ca496fe3_cgraph.svg" width="430" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_context_a64aca4b5aade19916a8dfaa5ca496fe3_icgraph.svg" width="398" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_context_a64aca4b5aade19916a8dfaa5ca496fe3_icgraph.svg" width="398" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -795,61 +775,11 @@ template&lt;typename SocketReaderT , typename SocketWriterT , typename SocketAdd
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="net_2socket_2stream_2_socket_context_8h_source.html#l00072">72</a> of file <a class="el" href="net_2socket_2stream_2_socket_context_8h_source.html">SocketContext.h</a>.</p>
-
-</div>
-</div>
-<a id="ab9e9825275b10dfd161e51afe412d128"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab9e9825275b10dfd161e51afe412d128">&#9670;&nbsp;</a></span>SocketConnectionBase</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">friend class <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html">SocketConnectionBase</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="net_2socket_2stream_2_socket_context_8h_source.html#l00069">69</a> of file <a class="el" href="net_2socket_2stream_2_socket_context_8h_source.html">SocketContext.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="net_2socket_2stream_2_socket_context_8h_source.html#l00068">68</a> of file <a class="el" href="net_2socket_2stream_2_socket_context_8h_source.html">SocketContext.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="af745607cb222c2dafdf13b2465bcff03"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af745607cb222c2dafdf13b2465bcff03">&#9670;&nbsp;</a></span>markedForDelete</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool net::socket::stream::SocketContext::markedForDelete = false</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="net_2socket_2stream_2_socket_context_8h_source.html#l00067">67</a> of file <a class="el" href="net_2socket_2stream_2_socket_context_8h_source.html">SocketContext.h</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="net_2socket_2stream_2_socket_context_8cpp_source.html#l00064">receiveFromPeer()</a>, and <a class="el" href="net_2socket_2stream_2_socket_context_8cpp_source.html#l00058">switchSocketProtocol()</a>.</p>
-
-</div>
-</div>
 <a id="ac928a1fb39d0703d71c20b8f762ba4c2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac928a1fb39d0703d71c20b8f762ba4c2">&#9670;&nbsp;</a></span>socketConnection</h2>
 
@@ -870,9 +800,9 @@ template&lt;typename SocketReaderT , typename SocketWriterT , typename SocketAdd
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="net_2socket_2stream_2_socket_context_8h_source.html#l00056">56</a> of file <a class="el" href="net_2socket_2stream_2_socket_context_8h_source.html">SocketContext.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="net_2socket_2stream_2_socket_context_8h_source.html#l00065">65</a> of file <a class="el" href="net_2socket_2stream_2_socket_context_8h_source.html">SocketContext.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="net_2socket_2stream_2_socket_context_8cpp_source.html#l00054">close()</a>, <a class="el" href="web_2ws_2server_2_socket_context_8cpp_source.html#l00050">web::ws::server::SocketContext::create()</a>, <a class="el" href="net_2socket_2stream_2_socket_context_8cpp_source.html#l00046">getLocalAddressAsString()</a>, <a class="el" href="net_2socket_2stream_2_socket_context_8cpp_source.html#l00050">getRemoteAddressAsString()</a>, <a class="el" href="net_2socket_2stream_2_socket_context_8cpp_source.html#l00042">readFromPeer()</a>, <a class="el" href="net_2socket_2stream_2_socket_context_8cpp_source.html#l00034">sendToPeer()</a>, <a class="el" href="net_2socket_2stream_2_socket_context_8cpp_source.html#l00072">setTimeout()</a>, and <a class="el" href="net_2socket_2stream_2_socket_context_8cpp_source.html#l00058">switchSocketProtocol()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="net_2socket_2stream_2_socket_context_8cpp_source.html#l00054">close()</a>, <a class="el" href="web_2ws_2server_2_socket_context_8cpp_source.html#l00050">web::ws::server::SocketContext::create()</a>, <a class="el" href="net_2socket_2stream_2_socket_context_8cpp_source.html#l00046">getLocalAddressAsString()</a>, <a class="el" href="net_2socket_2stream_2_socket_context_8cpp_source.html#l00050">getRemoteAddressAsString()</a>, <a class="el" href="net_2socket_2stream_2_socket_context_8cpp_source.html#l00042">readFromPeer()</a>, <a class="el" href="net_2socket_2stream_2_socket_context_8cpp_source.html#l00062">receiveFromPeer()</a>, <a class="el" href="net_2socket_2stream_2_socket_context_8cpp_source.html#l00034">sendToPeer()</a>, <a class="el" href="net_2socket_2stream_2_socket_context_8cpp_source.html#l00070">setTimeout()</a>, and <a class="el" href="net_2socket_2stream_2_socket_context_8cpp_source.html#l00058">switchSocketProtocol()</a>.</p>
 
 </div>
 </div>

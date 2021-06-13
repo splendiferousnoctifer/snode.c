@@ -27,7 +27,7 @@ var classweb_1_1ws_1_1server_1_1_sub_protocol =
     [ "sendBroadcastStart", "classweb_1_1ws_1_1server_1_1_sub_protocol.html#a15d3024ed0dbae5587aa05c9d827a596", null ],
     [ "sendBroadcastStart", "classweb_1_1ws_1_1server_1_1_sub_protocol.html#a4d62a33b688ae69e374597619a5f14b0", null ],
     [ "sendBroadcastStart", "classweb_1_1ws_1_1server_1_1_sub_protocol.html#a05adc91608b5e00f6c13fed80c4c18e6", null ],
-    [ "setClients", "classweb_1_1ws_1_1server_1_1_sub_protocol.html#a3b95c9174e196fe88a94fcff41828b12", null ],
+    [ "setClients", "classweb_1_1ws_1_1server_1_1_sub_protocol.html#acc51de9d3ea646bedccdecddb9ddcf40", null ],
     [ "web::ws::server::SocketContext", "classweb_1_1ws_1_1server_1_1_sub_protocol.html#ae85842f1a1f4926cd96fbccdf1c71f53", null ],
-    [ "clients", "classweb_1_1ws_1_1server_1_1_sub_protocol.html#a8e79ee32c64836b74d9efbf63b8b8a77", null ]
+    [ "clients", "classweb_1_1ws_1_1server_1_1_sub_protocol.html#a079d8f093d10009534946509039e7011", null ]
 ];
