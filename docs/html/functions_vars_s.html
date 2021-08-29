@@ -84,6 +84,10 @@ $(document).ready(function(){initNavTree('functions_vars_s.html',''); initResiza
 &#160;
 
 <h3><a id="index_s"></a>- s -</h3><ul>
+<li>searchPaths
+: <a class="el" href="classweb_1_1http_1_1server_1_1_socket_context_upgrade_factory_selector.html#acd898e437b715fa88b5b514659dfb512">web::http::server::SocketContextUpgradeFactorySelector</a>
+, <a class="el" href="classweb_1_1websocket_1_1_sub_protocol_factory_selector.html#a2e7e981ef0393f283fc491399b51af17">web::websocket::SubProtocolFactorySelector</a>
+</li>
 <li>sendHeaderInProgress
 : <a class="el" href="classweb_1_1http_1_1client_1_1_request.html#a2da45af4b50ce8e5cecba1d892110324">web::http::client::Request</a>
 , <a class="el" href="classweb_1_1http_1_1server_1_1_response.html#a6910a90430da0172d9c6ce12ea2d85cb">web::http::server::Response</a>
@@ -92,16 +96,13 @@ $(document).ready(function(){initNavTree('functions_vars_s.html',''); initResiza
 : <a class="el" href="classexpress_1_1_web_app_t.html#a43f343623b01c698256e2c0eb4e3226f">express::WebAppT&lt; ServerT &gt;</a>
 </li>
 <li>serverContext
-: <a class="el" href="classweb_1_1http_1_1server_1_1_response.html#a98aec8c2a5f928cbbd81ac2955405e45">web::http::server::Response</a>
+: <a class="el" href="classweb_1_1http_1_1server_1_1_response.html#a8630de052b04e7ed3f89c3eb7edacfbf">web::http::server::Response</a>
 </li>
 <li>serverNameIndication
 : <a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a4e8f3b81c7fa572a36ba16c5cc70807c">net::socket::stream::tls::SocketConnection&lt; SocketT &gt;</a>
 </li>
 <li>serverSocketContextPlugins
-: <a class="el" href="classweb_1_1http_1_1server_1_1_socket_context_upgrade_factory_selector.html#a2e606e1484105ba73da9f4f0c473b9f0">web::http::server::SocketContextUpgradeFactorySelector</a>
-</li>
-<li>serverSubprotocols
-: <a class="el" href="classweb_1_1ws_1_1_sub_protocol_selector.html#a50212c4e7d797f1b1a9ea5f2cebbf7c6">web::ws::SubProtocolSelector</a>
+: <a class="el" href="classweb_1_1http_1_1client_1_1_socket_context_upgrade_factory_selector.html#a8ec844a57ef379075b9a3d458dbe865d">web::http::client::SocketContextUpgradeFactorySelector</a>
 </li>
 <li>sink
 : <a class="el" href="classnet_1_1pipe_1_1_source.html#a989e34c9a612655a6d9e18b6d23afd17">net::pipe::Source</a>
@@ -114,30 +115,31 @@ $(document).ready(function(){initNavTree('functions_vars_s.html',''); initResiza
 </li>
 <li>socketConnection
 : <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connector.html#a2f7badf236b8700f8edd47e9db5e5012">net::socket::stream::SocketConnector&lt; SocketConnectionT &gt;</a>
-, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context.html#ac928a1fb39d0703d71c20b8f762ba4c2">net::socket::stream::SocketContext</a>
-</li>
-<li>socketContext
-: <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a199324376c25f0c3cc4c4ebd7b836188">net::socket::stream::SocketConnection&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt;</a>
+, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context.html#a226160f5eff07fba0567b3b12351954a">net::socket::stream::SocketContext</a>
 </li>
 <li>SocketContext
-: <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#a468a901534555a2a9ac06f01445b3c9f">net::socket::stream::SocketConnectionBase</a>
+: <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#afe340317b8de90fc2a953bccee2dd217">net::socket::stream::SocketConnection</a>
 </li>
 <li>socketContext
-: <a class="el" href="classweb_1_1http_1_1_parser.html#ad23d9efc338ac58ed9231879c94c7c0b">web::http::Parser</a>
+: <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#ae69d4578db4a9e0c759637f9b3d019df">net::socket::stream::SocketConnectionT&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt;</a>
+, <a class="el" href="classweb_1_1http_1_1_parser.html#ad23d9efc338ac58ed9231879c94c7c0b">web::http::Parser</a>
 </li>
 <li>socketContextFactory
 : <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_client.html#a94423d8f60d10ae02d29a5da617be897">net::socket::stream::SocketClient&lt; SocketContextFactoryT, SocketConnectorT &gt;</a>
+, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connector.html#a5b0aecea102668088bdf6a424dbd3693">net::socket::stream::SocketConnector&lt; SocketConnectionT &gt;</a>
+, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_listener.html#ac90e8c4aef25ab3b763274dd9719d4ec">net::socket::stream::SocketListener&lt; SocketConnectionT &gt;</a>
 , <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_server.html#ab23a282abd2fbe8950169870be9d850c">net::socket::stream::SocketServer&lt; SocketContextFactoryT, SocketListenerT &gt;</a>
 </li>
 <li>socketContextUpgradeFactory
-: <a class="el" href="structweb_1_1http_1_1server_1_1_socket_context_plugin.html#a2a90f895746fd314ab255db3e3e23b0f">web::http::server::SocketContextPlugin</a>
+: <a class="el" href="structweb_1_1http_1_1client_1_1_socket_context_plugin.html#a7a7df390b588ad08cd4eaa27626581eb">web::http::client::SocketContextPlugin</a>
+, <a class="el" href="structweb_1_1http_1_1server_1_1_socket_context_plugin.html#a52720e7d769a2667f41eedc63241d459">web::http::server::SocketContextPlugin</a>
 </li>
 <li>socketContextUpgradeFactorySelector
-: <a class="el" href="classweb_1_1http_1_1server_1_1_socket_context_upgrade_factory_selector.html#a8b3ed9d00b290a4df332eccfe331f5c0">web::http::server::SocketContextUpgradeFactorySelector</a>
+: <a class="el" href="classweb_1_1http_1_1client_1_1_socket_context_upgrade_factory_selector.html#a7cc0055f6d434ceeb338647616f069a9">web::http::client::SocketContextUpgradeFactorySelector</a>
+, <a class="el" href="classweb_1_1http_1_1server_1_1_socket_context_upgrade_factory_selector.html#a8b3ed9d00b290a4df332eccfe331f5c0">web::http::server::SocketContextUpgradeFactorySelector</a>
 </li>
-<li>socketProtocolFactory
-: <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connector.html#aca9325f6f4d9c6b76ebf23c53eab0038">net::socket::stream::SocketConnector&lt; SocketConnectionT &gt;</a>
-, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_listener.html#af2291da905fa638707b6e1a0fdbb220b">net::socket::stream::SocketListener&lt; SocketConnectionT &gt;</a>
+<li>socketContextUpgradePlugins
+: <a class="el" href="classweb_1_1http_1_1server_1_1_socket_context_upgrade_factory_selector.html#a35633e52e0e65ec747b00c6d61f67ecc">web::http::server::SocketContextUpgradeFactorySelector</a>
 </li>
 <li>socketServer
 : <a class="el" href="classweb_1_1http_1_1server_1_1_server.html#acfe01a87be68bb3c6801393e45dd60da">web::http::server::Server&lt; SocketServerT, RequestT, ResponseT &gt;</a>
@@ -160,7 +162,7 @@ $(document).ready(function(){initNavTree('functions_vars_s.html',''); initResiza
 : <a class="el" href="classexpress_1_1_router_dispatcher.html#a716ee15028f3d2c214434eeadbbe456a">express::RouterDispatcher</a>
 </li>
 <li>status
-: <a class="el" href="structweb_1_1http_1_1server_1_1_socket_context_1_1_request_context.html#a1c548133a59147f33c0f40e9f4408b55">web::http::server::SocketContext&lt; RequestT, ResponseT &gt;::RequestContext</a>
+: <a class="el" href="structweb_1_1http_1_1server_1_1_socket_context_t_1_1_request_context.html#a69dce12c3f1c6c2eb89c0aab4596d4cf">web::http::server::SocketContextT&lt; RequestT, ResponseT &gt;::RequestContext</a>
 </li>
 <li>statusCode
 : <a class="el" href="classweb_1_1http_1_1client_1_1_response.html#adb612c37796784cb428d083a72268a83">web::http::client::Response</a>
@@ -180,13 +182,17 @@ $(document).ready(function(){initNavTree('functions_vars_s.html',''); initResiza
 : <a class="el" href="classnet_1_1_event_loop.html#a4863138ce127827123afe7d3f23b9eb5">net::EventLoop</a>
 </li>
 <li>subProtocol
-: <a class="el" href="classweb_1_1ws_1_1_socket_context.html#ae95cf7efd70add1bd2494429d1f08e5b">web::ws::SocketContext</a>
+: <a class="el" href="classweb_1_1websocket_1_1_socket_context.html#af2d6502a6c8e8b086c65e5b7a79b6dcc">web::websocket::SocketContext</a>
 </li>
-<li>subprotocolPluginInterface
-: <a class="el" href="structweb_1_1ws_1_1_sub_protocol_plugin.html#a52a1126e83e4df0dec1cdf0c2feb4190">web::ws::SubProtocolPlugin</a>
+<li>subProtocolFactory
+: <a class="el" href="structweb_1_1websocket_1_1_sub_protocol_plugin.html#a0641fc0c7d8c2c9de1b145ba611371d6">web::websocket::SubProtocolPlugin</a>
+</li>
+<li>subProtocolPlugins
+: <a class="el" href="classweb_1_1websocket_1_1_sub_protocol_factory_selector.html#aaa4aee135a89f0e6aeefbda66969f0f5">web::websocket::SubProtocolFactorySelector</a>
 </li>
 <li>subProtocolSelector
-: <a class="el" href="classweb_1_1ws_1_1server_1_1_sub_protocol_selector.html#a903b8399b5654032cc70a86d628f8cdf">web::ws::server::SubProtocolSelector</a>
+: <a class="el" href="classweb_1_1websocket_1_1client_1_1_sub_protocol_factory_selector.html#ab9f96158396773c4ca21789af9ed3613">web::websocket::client::SubProtocolFactorySelector</a>
+, <a class="el" href="classweb_1_1websocket_1_1server_1_1_sub_protocol_factory_selector.html#a3276ff0e5760328f363e9a34fa61d3b7">web::websocket::server::SubProtocolFactorySelector</a>
 </li>
 <li>supportedMethods
 : <a class="el" href="classweb_1_1http_1_1server_1_1_request_parser.html#aa832ea93246b42a2de1aa37bc010aa28">web::http::server::RequestParser</a>

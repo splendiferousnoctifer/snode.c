@@ -94,18 +94,20 @@ $(document).ready(function(){initNavTree('classnet_1_1socket_1_1stream_1_1_socke
 <div class="dynheader">
 Inheritance diagram for net::socket::stream::SocketContextFactory:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_context_factory__inherit__graph.svg" width="634" height="574"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_context_factory__inherit__graph.svg" width="906" height="588"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <div class="dynheader">
 Collaboration diagram for net::socket::stream::SocketContextFactory:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_context_factory__coll__graph.svg" width="191" height="132"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_context_factory__coll__graph.svg" width="191" height="132"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3bdfde00433ee8ad98911dde050583c8"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context.html">SocketContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context_factory.html#a3bdfde00433ee8ad98911dde050583c8">create</a> (<a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html">SocketConnectionBase</a> *socketConnection) const =0</td></tr>
-<tr class="separator:a3bdfde00433ee8ad98911dde050583c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77656b81190c73236630d0e4117ef6a4"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context.html">SocketContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context_factory.html#a77656b81190c73236630d0e4117ef6a4">create</a> (<a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html">SocketConnection</a> *socketConnection) const =0</td></tr>
+<tr class="separator:a77656b81190c73236630d0e4117ef6a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -166,13 +168,13 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="classweb_1_1http_1_1server_1_1_socket_context_factory.html#a5a789f85a6bcf257528d6848ea644ff9">web::http::server::SocketContextFactory&lt; RequestT, ResponseT &gt;</a>.</p>
+<p>Reimplemented in <a class="el" href="classweb_1_1http_1_1server_1_1_socket_context_factory.html#a5a789f85a6bcf257528d6848ea644ff9">web::http::server::SocketContextFactory&lt; RequestT, ResponseT &gt;</a>, and <a class="el" href="classweb_1_1http_1_1client_1_1_socket_context_factory.html#a7b78ae245f5e3fbd18ecf42eda6c2369">web::http::client::SocketContextFactory&lt; RequestT, ResponseT &gt;</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a3bdfde00433ee8ad98911dde050583c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3bdfde00433ee8ad98911dde050583c8">&#9670;&nbsp;</a></span>create()</h2>
+<a id="a77656b81190c73236630d0e4117ef6a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77656b81190c73236630d0e4117ef6a4">&#9670;&nbsp;</a></span>create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -183,7 +185,7 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context.html">SocketContext</a>* net::socket::stream::SocketContextFactory::create </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html">SocketConnectionBase</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html">SocketConnection</a> *&#160;</td>
           <td class="paramname"><em>socketConnection</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -195,13 +197,14 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classweb_1_1ws_1_1server_1_1_socket_context_upgrade_factory.html#a910f2f6b81240492d8c31a619e1791ac">web::ws::server::SocketContextUpgradeFactory</a>, <a class="el" href="classweb_1_1http_1_1server_1_1_socket_context_factory.html#a37e6fe9937c159664c49775ec9aeec52">web::http::server::SocketContextFactory&lt; RequestT, ResponseT &gt;</a>, and <a class="el" href="classweb_1_1http_1_1client_1_1_socket_context_factory.html#a5038cdc9df15bafb877d8375253fe3ca">web::http::client::SocketContextFactory&lt; RequestT, ResponseT &gt;</a>.</p>
+<p>Implemented in <a class="el" href="classweb_1_1websocket_1_1server_1_1_socket_context_upgrade_factory.html#aa1b867500eb6b9273ce9ea4be9ddd124">web::websocket::server::SocketContextUpgradeFactory</a>, <a class="el" href="classweb_1_1websocket_1_1client_1_1_socket_context_upgrade_factory.html#ae47dab9c52fb1ef6165c2e1cb1a4315f">web::websocket::client::SocketContextUpgradeFactory</a>, <a class="el" href="classweb_1_1http_1_1server_1_1_socket_context_factory.html#ada4abad8bf4237e81379d6616c29d869">web::http::server::SocketContextFactory&lt; RequestT, ResponseT &gt;</a>, and <a class="el" href="classweb_1_1http_1_1client_1_1_socket_context_factory.html#afd5a11933f618839bd41a3c60dec7e7a">web::http::client::SocketContextFactory&lt; RequestT, ResponseT &gt;</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_socket_connection_8h_source.html#l00125">net::socket::stream::SocketConnection&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt;::switchSocketProtocol()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_socket_connection_t_8h_source.html#l00125">net::socket::stream::SocketConnectionT&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt;::switchSocketContext()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_context_factory_a3bdfde00433ee8ad98911dde050583c8_icgraph.svg" width="370" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_context_factory_a77656b81190c73236630d0e4117ef6a4_icgraph.svg" width="375" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>

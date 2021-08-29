@@ -18,11 +18,22 @@ var dir_4ef14d1fb44f92669709c64c27e0d9bf =
       [ "ResponseParser", "classweb_1_1http_1_1client_1_1_response_parser.html", "classweb_1_1http_1_1client_1_1_response_parser" ]
     ] ],
     [ "SocketContext.h", "web_2http_2client_2_socket_context_8h.html", [
-      [ "SocketContextBase", "classweb_1_1http_1_1client_1_1_socket_context_base.html", "classweb_1_1http_1_1client_1_1_socket_context_base" ],
-      [ "SocketContext", "classweb_1_1http_1_1client_1_1_socket_context.html", "classweb_1_1http_1_1client_1_1_socket_context" ]
+      [ "SocketContext", "classweb_1_1http_1_1client_1_1_socket_context.html", "classweb_1_1http_1_1client_1_1_socket_context" ],
+      [ "SocketContextT", "classweb_1_1http_1_1client_1_1_socket_context_t.html", "classweb_1_1http_1_1client_1_1_socket_context_t" ]
     ] ],
     [ "SocketContext.hpp", "client_2_socket_context_8hpp.html", null ],
     [ "SocketContextFactory.h", "web_2http_2client_2_socket_context_factory_8h.html", [
       [ "SocketContextFactory", "classweb_1_1http_1_1client_1_1_socket_context_factory.html", "classweb_1_1http_1_1client_1_1_socket_context_factory" ]
+    ] ],
+    [ "SocketContextUpgradeFactory.h", "http_2client_2_socket_context_upgrade_factory_8h.html", [
+      [ "SocketContextUpgradeFactory", "classweb_1_1http_1_1client_1_1_socket_context_upgrade_factory.html", "classweb_1_1http_1_1client_1_1_socket_context_upgrade_factory" ]
+    ] ],
+    [ "SocketContextUpgradeFactorySelector.cpp", "client_2_socket_context_upgrade_factory_selector_8cpp.html", null ],
+    [ "SocketContextUpgradeFactorySelector.h", "client_2_socket_context_upgrade_factory_selector_8h.html", [
+      [ "SocketContextPlugin", "structweb_1_1http_1_1client_1_1_socket_context_plugin.html", "structweb_1_1http_1_1client_1_1_socket_context_plugin" ],
+      [ "SocketContextUpgradeFactorySelector", "classweb_1_1http_1_1client_1_1_socket_context_upgrade_factory_selector.html", "classweb_1_1http_1_1client_1_1_socket_context_upgrade_factory_selector" ]
+    ] ],
+    [ "SocketContextUpgradeInterface.h", "_socket_context_upgrade_interface_8h.html", [
+      [ "SocketContextUpgradeInterface", "classweb_1_1http_1_1client_1_1_socket_context_upgrade_interface.html", "classweb_1_1http_1_1client_1_1_socket_context_upgrade_interface" ]
     ] ]
 ];

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>snode.c: net::socket::stream::SocketConnection&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt; Class Template Reference</title>
+<title>snode.c: net::socket::stream::SocketConnection Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -82,179 +82,87 @@ $(document).ready(function(){initNavTree('classnet_1_1socket_1_1stream_1_1_socke
 
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classnet_1_1socket_1_1stream_1_1_socket_connection-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">net::socket::stream::SocketConnection&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt; Class Template Reference</div>  </div>
+<div class="title">net::socket::stream::SocketConnection Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="_socket_connection_8h_source.html">SocketConnection.h</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for net::socket::stream::SocketConnection&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt;:</div>
+Inheritance diagram for net::socket::stream::SocketConnection:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_connection__inherit__graph.svg" width="648" height="1494"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_connection__inherit__graph.svg" width="646" height="1494"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <div class="dynheader">
-Collaboration diagram for net::socket::stream::SocketConnection&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt;:</div>
+Collaboration diagram for net::socket::stream::SocketConnection:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_connection__coll__graph.svg" width="600" height="1102"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_connection__coll__graph.svg" width="215" height="279"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:aed399d23f23a8b7e04dd38d9b5a2dd95"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#aed399d23f23a8b7e04dd38d9b5a2dd95">SocketReader</a> = SocketReaderT</td></tr>
-<tr class="separator:aed399d23f23a8b7e04dd38d9b5a2dd95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afdc000b132afa51d35b98657a00beb43"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#afdc000b132afa51d35b98657a00beb43">SocketWriter</a> = SocketWriterT</td></tr>
-<tr class="separator:afdc000b132afa51d35b98657a00beb43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d2cb9c2abcfbccba0613536d76b6353"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a7d2cb9c2abcfbccba0613536d76b6353">SocketAddress</a> = SocketAddressT</td></tr>
-<tr class="separator:a7d2cb9c2abcfbccba0613536d76b6353"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab7f90b4a1b6ae3518c986f4d662136a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#ab7f90b4a1b6ae3518c986f4d662136a1">setTimeout</a> (int timeout) override</td></tr>
-<tr class="separator:ab7f90b4a1b6ae3518c986f4d662136a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ae0ae94f3b4f7d2d6a4600458f5697e"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a7d2cb9c2abcfbccba0613536d76b6353">SocketAddress</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a5ae0ae94f3b4f7d2d6a4600458f5697e">getRemoteAddress</a> () const</td></tr>
-<tr class="separator:a5ae0ae94f3b4f7d2d6a4600458f5697e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41452e8427040717cfcb6aa940088c47"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a7d2cb9c2abcfbccba0613536d76b6353">SocketAddress</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a41452e8427040717cfcb6aa940088c47">getLocalAddress</a> () const</td></tr>
-<tr class="separator:a41452e8427040717cfcb6aa940088c47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad82c3999ccc64b0b714f31468cc59982"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#ad82c3999ccc64b0b714f31468cc59982">getLocalAddressAsString</a> () const override</td></tr>
-<tr class="separator:ad82c3999ccc64b0b714f31468cc59982"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52cb01c75c22c9ea89e78a39d5075dd7"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a52cb01c75c22c9ea89e78a39d5075dd7">getRemoteAddressAsString</a> () const override</td></tr>
-<tr class="separator:a52cb01c75c22c9ea89e78a39d5075dd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a321fd72fbdb5a439d2d59a0b534c4954"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a321fd72fbdb5a439d2d59a0b534c4954">enqueue</a> (const char *junk, std::size_t junkLen) override</td></tr>
-<tr class="separator:a321fd72fbdb5a439d2d59a0b534c4954"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85fd378da0de453a913d513845910faf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a85fd378da0de453a913d513845910faf">enqueue</a> (const std::string &amp;data) override</td></tr>
-<tr class="separator:a85fd378da0de453a913d513845910faf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa927da32c450357960e0dc5caa7e0f66"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#aa927da32c450357960e0dc5caa7e0f66">doRead</a> (char *junk, std::size_t junkLen) override</td></tr>
-<tr class="separator:aa927da32c450357960e0dc5caa7e0f66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b9d97b2d66d9b302ae3209ee860953a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a4b9d97b2d66d9b302ae3209ee860953a">close</a> () final</td></tr>
-<tr class="separator:a4b9d97b2d66d9b302ae3209ee860953a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af45ac387a1b0a819cc5b30da0abe975a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context.html">SocketContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#af45ac387a1b0a819cc5b30da0abe975a">getSocketContext</a> ()</td></tr>
-<tr class="separator:af45ac387a1b0a819cc5b30da0abe975a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0251336c15a693ffd5cca06fea138eb0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a0251336c15a693ffd5cca06fea138eb0">switchSocketProtocol</a> (const <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context_factory.html">SocketContextFactory</a> &amp;socketContextFactory) override</td></tr>
-<tr class="separator:a0251336c15a693ffd5cca06fea138eb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a012bf34c009b18852e8d9afea9023be6"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context.html">SocketContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a012bf34c009b18852e8d9afea9023be6">getSocketContext</a> ()=0</td></tr>
+<tr class="separator:a012bf34c009b18852e8d9afea9023be6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a566ce34f84a70eee5aa5462e1da871b2"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a566ce34f84a70eee5aa5462e1da871b2">getLocalAddressAsString</a> () const =0</td></tr>
+<tr class="separator:a566ce34f84a70eee5aa5462e1da871b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8df46c8bb8a3f943253c2625244043bc"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a8df46c8bb8a3f943253c2625244043bc">getRemoteAddressAsString</a> () const =0</td></tr>
+<tr class="separator:a8df46c8bb8a3f943253c2625244043bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b368347b53c2853a0358c98810c15bd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a4b368347b53c2853a0358c98810c15bd">sendToPeer</a> (const char *junk, std::size_t junkLen)=0</td></tr>
+<tr class="separator:a4b368347b53c2853a0358c98810c15bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03b8020664749c7dbfc9578363609422"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a03b8020664749c7dbfc9578363609422">sendToPeer</a> (const std::string &amp;data)=0</td></tr>
+<tr class="separator:a03b8020664749c7dbfc9578363609422"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af26fe1dddd3a9066f01638133c31cb6a"><td class="memItemLeft" align="right" valign="top">virtual std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#af26fe1dddd3a9066f01638133c31cb6a">readFromPeer</a> (char *junk, std::size_t junkLen)=0</td></tr>
+<tr class="separator:af26fe1dddd3a9066f01638133c31cb6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad405013ffe234fae23b0b2a6dfc9869c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#ad405013ffe234fae23b0b2a6dfc9869c">close</a> ()=0</td></tr>
+<tr class="separator:ad405013ffe234fae23b0b2a6dfc9869c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a349bf62b99e408f09019434e7b8aa3c9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a349bf62b99e408f09019434e7b8aa3c9">setTimeout</a> (int timeout)=0</td></tr>
+<tr class="separator:a349bf62b99e408f09019434e7b8aa3c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:af6d7ad4ac504b73e8a0498627b9dec91"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#af6d7ad4ac504b73e8a0498627b9dec91">SocketConnection</a> (int fd, const std::shared_ptr&lt; const <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context_factory.html">SocketContextFactory</a> &gt; &amp;socketContextFactory, const <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a7d2cb9c2abcfbccba0613536d76b6353">SocketAddress</a> &amp;<a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a4b738214cfdcfd8343c1324e09fcf2d6">localAddress</a>, const <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a7d2cb9c2abcfbccba0613536d76b6353">SocketAddress</a> &amp;<a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a134ddd5a7c9a31a21db872e71f73ca52">remoteAddress</a>, const std::function&lt; void(const <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a7d2cb9c2abcfbccba0613536d76b6353">SocketAddress</a> &amp;, const <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a7d2cb9c2abcfbccba0613536d76b6353">SocketAddress</a> &amp;)&gt; &amp;onConnect, const std::function&lt; void()&gt; &amp;<a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#ad4f6fb8a5b61f60d46041797cf20468e">onDisconnect</a>)</td></tr>
-<tr class="separator:af6d7ad4ac504b73e8a0498627b9dec91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d052fc8fe8211f7c8dd8fc269319e64"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a6d052fc8fe8211f7c8dd8fc269319e64">~SocketConnection</a> ()</td></tr>
-<tr class="separator:a6d052fc8fe8211f7c8dd8fc269319e64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_classnet_1_1socket_1_1stream_1_1_socket_connection_base"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classnet_1_1socket_1_1stream_1_1_socket_connection_base')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html">net::socket::stream::SocketConnectionBase</a></td></tr>
-<tr class="memitem:af4cf2e7cba730d5eafd50597446e622a inherit pro_methods_classnet_1_1socket_1_1stream_1_1_socket_connection_base"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#af4cf2e7cba730d5eafd50597446e622a">SocketConnectionBase</a> ()=default</td></tr>
-<tr class="separator:af4cf2e7cba730d5eafd50597446e622a inherit pro_methods_classnet_1_1socket_1_1stream_1_1_socket_connection_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae01517502ff3f072d150cd6673caaa8d inherit pro_methods_classnet_1_1socket_1_1stream_1_1_socket_connection_base"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#ae01517502ff3f072d150cd6673caaa8d">~SocketConnectionBase</a> ()=default</td></tr>
-<tr class="separator:ae01517502ff3f072d150cd6673caaa8d inherit pro_methods_classnet_1_1socket_1_1stream_1_1_socket_connection_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab96c51c9c3a2602bb9123a727e66e0eb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#ab96c51c9c3a2602bb9123a727e66e0eb">SocketConnection</a> ()=default</td></tr>
+<tr class="separator:ab96c51c9c3a2602bb9123a727e66e0eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cf8f19454d77e855dbf6d43ebd0bf65"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a7cf8f19454d77e855dbf6d43ebd0bf65">~SocketConnection</a> ()=default</td></tr>
+<tr class="separator:a7cf8f19454d77e855dbf6d43ebd0bf65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a821fde37c62f53fe7cb97ac7d2b1fa4b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a821fde37c62f53fe7cb97ac7d2b1fa4b">switchSocketContext</a> (const <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context_factory.html">SocketContextFactory</a> &amp;socketContextFactory)=0</td></tr>
+<tr class="separator:a821fde37c62f53fe7cb97ac7d2b1fa4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:afe340317b8de90fc2a953bccee2dd217"><td class="memItemLeft" align="right" valign="top">friend&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#afe340317b8de90fc2a953bccee2dd217">SocketContext</a></td></tr>
+<tr class="separator:afe340317b8de90fc2a953bccee2dd217"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:ac93df56c8e5bb1a12ed8c81f8e92e7b4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#ac93df56c8e5bb1a12ed8c81f8e92e7b4">SocketConnection</a> ()=delete</td></tr>
-<tr class="separator:ac93df56c8e5bb1a12ed8c81f8e92e7b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefbadffcc81e6623e049005a13603d86"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#aefbadffcc81e6623e049005a13603d86">readEvent</a> () override</td></tr>
-<tr class="separator:aefbadffcc81e6623e049005a13603d86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4aed880865a1ad09aa75ba30acf02c43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a4aed880865a1ad09aa75ba30acf02c43">writeEvent</a> () override</td></tr>
-<tr class="separator:a4aed880865a1ad09aa75ba30acf02c43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48a54fe1e3e0e8bbe52adfd79a7e602f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a48a54fe1e3e0e8bbe52adfd79a7e602f">unobserved</a> () override</td></tr>
-<tr class="separator:a48a54fe1e3e0e8bbe52adfd79a7e602f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a4b738214cfdcfd8343c1324e09fcf2d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a7d2cb9c2abcfbccba0613536d76b6353">SocketAddress</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a4b738214cfdcfd8343c1324e09fcf2d6">localAddress</a> {}</td></tr>
-<tr class="separator:a4b738214cfdcfd8343c1324e09fcf2d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a134ddd5a7c9a31a21db872e71f73ca52"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a7d2cb9c2abcfbccba0613536d76b6353">SocketAddress</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a134ddd5a7c9a31a21db872e71f73ca52">remoteAddress</a> {}</td></tr>
-<tr class="separator:a134ddd5a7c9a31a21db872e71f73ca52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4f6fb8a5b61f60d46041797cf20468e"><td class="memItemLeft" align="right" valign="top">std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#ad4f6fb8a5b61f60d46041797cf20468e">onDisconnect</a></td></tr>
-<tr class="separator:ad4f6fb8a5b61f60d46041797cf20468e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a199324376c25f0c3cc4c4ebd7b836188"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context.html">SocketContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a199324376c25f0c3cc4c4ebd7b836188">socketContext</a> = nullptr</td></tr>
-<tr class="separator:a199324376c25f0c3cc4c4ebd7b836188"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pro_attribs_classnet_1_1socket_1_1stream_1_1_socket_connection_base"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classnet_1_1socket_1_1stream_1_1_socket_connection_base')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html">net::socket::stream::SocketConnectionBase</a></td></tr>
-<tr class="memitem:a468a901534555a2a9ac06f01445b3c9f inherit pro_attribs_classnet_1_1socket_1_1stream_1_1_socket_connection_base"><td class="memItemLeft" align="right" valign="top">friend&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#a468a901534555a2a9ac06f01445b3c9f">SocketContext</a></td></tr>
-<tr class="separator:a468a901534555a2a9ac06f01445b3c9f inherit pro_attribs_classnet_1_1socket_1_1stream_1_1_socket_connection_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a836fde4a0eed76e6a140688ee13c9ca0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a836fde4a0eed76e6a140688ee13c9ca0">SocketConnection</a> (const <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html">SocketConnection</a> &amp;)=delete</td></tr>
+<tr class="separator:a836fde4a0eed76e6a140688ee13c9ca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca8d8d8bd84972e852169d5d52c5d89b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html">SocketConnection</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#aca8d8d8bd84972e852169d5d52c5d89b">operator=</a> (const <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html">SocketConnection</a> &amp;)=delete</td></tr>
+<tr class="separator:aca8d8d8bd84972e852169d5d52c5d89b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename SocketReaderT, typename SocketWriterT, typename SocketAddressT&gt;<br />
-class net::socket::stream::SocketConnection&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt;</h3>
-
-
-<p class="definition">Definition at line <a class="el" href="_socket_connection_8h_source.html#l00038">38</a> of file <a class="el" href="_socket_connection_8h_source.html">SocketConnection.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a7d2cb9c2abcfbccba0613536d76b6353"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7d2cb9c2abcfbccba0613536d76b6353">&#9670;&nbsp;</a></span>SocketAddress</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="_socket_connection_8h_source.html#l00036">36</a> of file <a class="el" href="_socket_connection_8h_source.html">SocketConnection.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a836fde4a0eed76e6a140688ee13c9ca0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a836fde4a0eed76e6a140688ee13c9ca0">&#9670;&nbsp;</a></span>SocketConnection() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename SocketReaderT , typename SocketWriterT , typename SocketAddressT &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html">net::socket::stream::SocketConnection</a>&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt;::<a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a7d2cb9c2abcfbccba0613536d76b6353">SocketAddress</a> =  SocketAddressT</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_socket_connection_8h_source.html#l00047">47</a> of file <a class="el" href="_socket_connection_8h_source.html">SocketConnection.h</a>.</p>
-
-</div>
-</div>
-<a id="aed399d23f23a8b7e04dd38d9b5a2dd95"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed399d23f23a8b7e04dd38d9b5a2dd95">&#9670;&nbsp;</a></span>SocketReader</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename SocketReaderT , typename SocketWriterT , typename SocketAddressT &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html">net::socket::stream::SocketConnection</a>&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt;::<a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#aed399d23f23a8b7e04dd38d9b5a2dd95">SocketReader</a> =  SocketReaderT</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_socket_connection_8h_source.html#l00045">45</a> of file <a class="el" href="_socket_connection_8h_source.html">SocketConnection.h</a>.</p>
-
-</div>
-</div>
-<a id="afdc000b132afa51d35b98657a00beb43"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afdc000b132afa51d35b98657a00beb43">&#9670;&nbsp;</a></span>SocketWriter</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename SocketReaderT , typename SocketWriterT , typename SocketAddressT &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html">net::socket::stream::SocketConnection</a>&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt;::<a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#afdc000b132afa51d35b98657a00beb43">SocketWriter</a> =  SocketWriterT</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_socket_connection_8h_source.html#l00046">46</a> of file <a class="el" href="_socket_connection_8h_source.html">SocketConnection.h</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ac93df56c8e5bb1a12ed8c81f8e92e7b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac93df56c8e5bb1a12ed8c81f8e92e7b4">&#9670;&nbsp;</a></span>SocketConnection() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename SocketReaderT , typename SocketWriterT , typename SocketAddressT &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html">net::socket::stream::SocketConnection</a>&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt;::<a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html">SocketConnection</a> </td>
+          <td class="memname">net::socket::stream::SocketConnection::SocketConnection </td>
           <td>(</td>
+          <td class="paramtype">const <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html">SocketConnection</a> &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -268,112 +176,17 @@ template&lt;typename SocketReaderT , typename SocketWriterT , typename SocketAdd
 
 </div>
 </div>
-<a id="af6d7ad4ac504b73e8a0498627b9dec91"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af6d7ad4ac504b73e8a0498627b9dec91">&#9670;&nbsp;</a></span>SocketConnection() <span class="overload">[2/2]</span></h2>
+<a id="ab96c51c9c3a2602bb9123a727e66e0eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab96c51c9c3a2602bb9123a727e66e0eb">&#9670;&nbsp;</a></span>SocketConnection() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename SocketReaderT , typename SocketWriterT , typename SocketAddressT &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html">net::socket::stream::SocketConnection</a>&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt;::<a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html">SocketConnection</a> </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>fd</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::shared_ptr&lt; const <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context_factory.html">SocketContextFactory</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>socketContextFactory</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a7d2cb9c2abcfbccba0613536d76b6353">SocketAddress</a> &amp;&#160;</td>
-          <td class="paramname"><em>localAddress</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a7d2cb9c2abcfbccba0613536d76b6353">SocketAddress</a> &amp;&#160;</td>
-          <td class="paramname"><em>remoteAddress</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::function&lt; void(const <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a7d2cb9c2abcfbccba0613536d76b6353">SocketAddress</a> &amp;, const <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a7d2cb9c2abcfbccba0613536d76b6353">SocketAddress</a> &amp;)&gt; &amp;&#160;</td>
-          <td class="paramname"><em>onConnect</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::function&lt; void()&gt; &amp;&#160;</td>
-          <td class="paramname"><em>onDisconnect</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_socket_connection_8h_source.html#l00050">50</a> of file <a class="el" href="_socket_connection_8h_source.html">SocketConnection.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            : <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#aed399d23f23a8b7e04dd38d9b5a2dd95">SocketReader</a>([&amp;<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a199324376c25f0c3cc4c4ebd7b836188">socketContext</a> = this-&gt;<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a199324376c25f0c3cc4c4ebd7b836188">socketContext</a>, <span class="keyword">this</span>](<span class="keywordtype">int</span> errnum) -&gt; <span class="keywordtype">void</span> {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a199324376c25f0c3cc4c4ebd7b836188">socketContext</a>-&gt;<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_context.html#a536061b95fa81ba30e3665a25bfe928b">onReadError</a>(errnum);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                <a class="code" href="classnet_1_1_descriptor_event_receiver.html#a71d48a9e0030918589d901b834e07327">SocketWriter::disable</a>();</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            })</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            , <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#afdc000b132afa51d35b98657a00beb43">SocketWriter</a>([&amp;<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a199324376c25f0c3cc4c4ebd7b836188">socketContext</a> = this-&gt;<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a199324376c25f0c3cc4c4ebd7b836188">socketContext</a>, <span class="keyword">this</span>](<span class="keywordtype">int</span> errnum) -&gt; <span class="keywordtype">void</span> {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a199324376c25f0c3cc4c4ebd7b836188">socketContext</a>-&gt;<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_context.html#a59b9b813a1589ec933878ad0838a5945">onWriteError</a>(errnum);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                <a class="code" href="classnet_1_1_descriptor_event_receiver.html#a71d48a9e0030918589d901b834e07327">SocketReader::disable</a>();</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            })</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            , <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a4b738214cfdcfd8343c1324e09fcf2d6">localAddress</a>(<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a4b738214cfdcfd8343c1324e09fcf2d6">localAddress</a>)</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            , <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a134ddd5a7c9a31a21db872e71f73ca52">remoteAddress</a>(<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a134ddd5a7c9a31a21db872e71f73ca52">remoteAddress</a>)</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            , <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#ad4f6fb8a5b61f60d46041797cf20468e">onDisconnect</a>(<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#ad4f6fb8a5b61f60d46041797cf20468e">onDisconnect</a>) {</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            SocketConnection::attach(fd);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <a class="code" href="classnet_1_1_descriptor_event_receiver.html#a60717df80503a37fd4d3e7ce8dc3777d">SocketReader::enable</a>(fd);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <a class="code" href="classnet_1_1_descriptor_event_receiver.html#a60717df80503a37fd4d3e7ce8dc3777d">SocketWriter::enable</a>(fd);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            onConnect(<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a4b738214cfdcfd8343c1324e09fcf2d6">localAddress</a>, <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a134ddd5a7c9a31a21db872e71f73ca52">remoteAddress</a>);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a199324376c25f0c3cc4c4ebd7b836188">socketContext</a> = socketContextFactory-&gt;create(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a199324376c25f0c3cc4c4ebd7b836188">socketContext</a>-&gt;<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_context.html#aaa4d24d287145902558be3895c03459c">onProtocolConnected</a>();</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        }</div>
-<div class="ttc" id="aclassnet_1_1_descriptor_event_receiver_html_a60717df80503a37fd4d3e7ce8dc3777d"><div class="ttname"><a href="classnet_1_1_descriptor_event_receiver.html#a60717df80503a37fd4d3e7ce8dc3777d">net::DescriptorEventReceiver::enable</a></div><div class="ttdeci">void enable(int fd)</div><div class="ttdef"><b>Definition:</b> <a href="_descriptor_event_receiver_8cpp_source.html#l00035">DescriptorEventReceiver.cpp:35</a></div></div>
-<div class="ttc" id="aclassnet_1_1_descriptor_event_receiver_html_a71d48a9e0030918589d901b834e07327"><div class="ttname"><a href="classnet_1_1_descriptor_event_receiver.html#a71d48a9e0030918589d901b834e07327">net::DescriptorEventReceiver::disable</a></div><div class="ttdeci">void disable()</div><div class="ttdef"><b>Definition:</b> <a href="_descriptor_event_receiver_8cpp_source.html#l00040">DescriptorEventReceiver.cpp:40</a></div></div>
-<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_connection_html_a134ddd5a7c9a31a21db872e71f73ca52"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a134ddd5a7c9a31a21db872e71f73ca52">net::socket::stream::SocketConnection::remoteAddress</a></div><div class="ttdeci">SocketAddress remoteAddress</div><div class="ttdef"><b>Definition:</b> <a href="_socket_connection_8h_source.html#l00149">SocketConnection.h:149</a></div></div>
-<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_connection_html_a199324376c25f0c3cc4c4ebd7b836188"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a199324376c25f0c3cc4c4ebd7b836188">net::socket::stream::SocketConnection::socketContext</a></div><div class="ttdeci">SocketContext * socketContext</div><div class="ttdef"><b>Definition:</b> <a href="_socket_connection_8h_source.html#l00153">SocketConnection.h:153</a></div></div>
-<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_connection_html_a4b738214cfdcfd8343c1324e09fcf2d6"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a4b738214cfdcfd8343c1324e09fcf2d6">net::socket::stream::SocketConnection::localAddress</a></div><div class="ttdeci">SocketAddress localAddress</div><div class="ttdef"><b>Definition:</b> <a href="_socket_connection_8h_source.html#l00148">SocketConnection.h:148</a></div></div>
-<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_connection_html_ad4f6fb8a5b61f60d46041797cf20468e"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#ad4f6fb8a5b61f60d46041797cf20468e">net::socket::stream::SocketConnection::onDisconnect</a></div><div class="ttdeci">std::function&lt; void()&gt; onDisconnect</div><div class="ttdef"><b>Definition:</b> <a href="_socket_connection_8h_source.html#l00151">SocketConnection.h:151</a></div></div>
-<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_connection_html_aed399d23f23a8b7e04dd38d9b5a2dd95"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#aed399d23f23a8b7e04dd38d9b5a2dd95">net::socket::stream::SocketConnection::SocketReader</a></div><div class="ttdeci">SocketReaderT SocketReader</div><div class="ttdef"><b>Definition:</b> <a href="_socket_connection_8h_source.html#l00045">SocketConnection.h:45</a></div></div>
-<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_connection_html_afdc000b132afa51d35b98657a00beb43"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#afdc000b132afa51d35b98657a00beb43">net::socket::stream::SocketConnection::SocketWriter</a></div><div class="ttdeci">SocketWriterT SocketWriter</div><div class="ttdef"><b>Definition:</b> <a href="_socket_connection_8h_source.html#l00046">SocketConnection.h:46</a></div></div>
-<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_context_html_a536061b95fa81ba30e3665a25bfe928b"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_context.html#a536061b95fa81ba30e3665a25bfe928b">net::socket::stream::SocketContext::onReadError</a></div><div class="ttdeci">virtual void onReadError(int errnum)=0</div></div>
-<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_context_html_a59b9b813a1589ec933878ad0838a5945"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_context.html#a59b9b813a1589ec933878ad0838a5945">net::socket::stream::SocketContext::onWriteError</a></div><div class="ttdeci">virtual void onWriteError(int errnum)=0</div></div>
-<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_context_html_aaa4d24d287145902558be3895c03459c"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_context.html#aaa4d24d287145902558be3895c03459c">net::socket::stream::SocketContext::onProtocolConnected</a></div><div class="ttdeci">virtual void onProtocolConnected()</div><div class="ttdef"><b>Definition:</b> <a href="net_2socket_2stream_2_socket_context_8cpp_source.html#l00074">SocketContext.cpp:74</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a6d052fc8fe8211f7c8dd8fc269319e64"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6d052fc8fe8211f7c8dd8fc269319e64">&#9670;&nbsp;</a></span>~SocketConnection()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename SocketReaderT , typename SocketWriterT , typename SocketAddressT &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html">net::socket::stream::SocketConnection</a>&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt;::~<a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html">SocketConnection</a> </td>
+          <td class="memname">net::socket::stream::SocketConnection::SocketConnection </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -381,35 +194,50 @@ template&lt;typename SocketReaderT , typename SocketWriterT , typename SocketAdd
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_socket_connection_8h_source.html#l00075">75</a> of file <a class="el" href="_socket_connection_8h_source.html">SocketConnection.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                                    {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a199324376c25f0c3cc4c4ebd7b836188">socketContext</a>-&gt;<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_context.html#a2e350c46bfb6d153f0908f5de82bb89e">onProtocolDisconnected</a>();</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#ad4f6fb8a5b61f60d46041797cf20468e">onDisconnect</a>();</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <span class="keyword">delete</span> <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a199324376c25f0c3cc4c4ebd7b836188">socketContext</a>;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        }</div>
-<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_context_html_a2e350c46bfb6d153f0908f5de82bb89e"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_context.html#a2e350c46bfb6d153f0908f5de82bb89e">net::socket::stream::SocketContext::onProtocolDisconnected</a></div><div class="ttdeci">virtual void onProtocolDisconnected()</div><div class="ttdef"><b>Definition:</b> <a href="net_2socket_2stream_2_socket_context_8cpp_source.html#l00078">SocketContext.cpp:78</a></div></div>
-</div><!-- fragment -->
+</div>
+</div>
+<a id="a7cf8f19454d77e855dbf6d43ebd0bf65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cf8f19454d77e855dbf6d43ebd0bf65">&#9670;&nbsp;</a></span>~SocketConnection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual net::socket::stream::SocketConnection::~SocketConnection </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a4b9d97b2d66d9b302ae3209ee860953a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b9d97b2d66d9b302ae3209ee860953a">&#9670;&nbsp;</a></span>close()</h2>
+<a id="ad405013ffe234fae23b0b2a6dfc9869c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad405013ffe234fae23b0b2a6dfc9869c">&#9670;&nbsp;</a></span>close()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename SocketReaderT , typename SocketWriterT , typename SocketAddressT &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html">net::socket::stream::SocketConnection</a>&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt;::close </td>
+          <td class="memname">virtual void net::socket::stream::SocketConnection::close </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -417,43 +245,165 @@ template&lt;typename SocketReaderT , typename SocketWriterT , typename SocketAdd
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">final</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#a0cfc0683d6ecdf7eaf644a1067c0ec63">net::socket::stream::SocketConnectionBase</a>.</p>
+<p>Implemented in <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#ab78a602b648979ca80aaf89bdaf265f7">net::socket::stream::SocketConnectionT&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt;</a>, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#ab78a602b648979ca80aaf89bdaf265f7">net::socket::stream::SocketConnectionT&lt; tls::SocketReader&lt; SocketT &gt;, tls::SocketWriter&lt; SocketT &gt;, SocketT::SocketAddress &gt;</a>, and <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#ab78a602b648979ca80aaf89bdaf265f7">net::socket::stream::SocketConnectionT&lt; legacy::SocketReader&lt; SocketT &gt;, legacy::SocketWriter&lt; SocketT &gt;, SocketT::SocketAddress &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_socket_connection_8h_source.html#l00115">115</a> of file <a class="el" href="_socket_connection_8h_source.html">SocketConnection.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                           {</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            <span class="comment">//            SocketReader::disable();</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            <span class="comment">//            SocketReader::shutdown();</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#a5f00bdf49b2913b580bcde09606a4089">SocketWriter::shutdown</a>();</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        }</div>
-<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_writer_html_a5f00bdf49b2913b580bcde09606a4089"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#a5f00bdf49b2913b580bcde09606a4089">net::socket::stream::SocketWriter::shutdown</a></div><div class="ttdeci">void shutdown()</div><div class="ttdef"><b>Definition:</b> <a href="_socket_writer_8h_source.html#l00064">SocketWriter.h:64</a></div></div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="_socket_writer_8h_source.html#l00064">net::socket::stream::SocketWriter&lt; SocketT &gt;::shutdown()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="net_2socket_2stream_2_socket_context_8cpp_source.html#l00054">net::socket::stream::SocketContext::close()</a>.</p>
 <div class="dynheader">
-Here is the call graph for this function:</div>
+Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_connection_a4b9d97b2d66d9b302ae3209ee860953a_cgraph.svg" width="647" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_connection_ad405013ffe234fae23b0b2a6dfc9869c_icgraph.svg" width="651" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
 </div>
-<a id="aa927da32c450357960e0dc5caa7e0f66"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa927da32c450357960e0dc5caa7e0f66">&#9670;&nbsp;</a></span>doRead()</h2>
+<a id="a566ce34f84a70eee5aa5462e1da871b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a566ce34f84a70eee5aa5462e1da871b2">&#9670;&nbsp;</a></span>getLocalAddressAsString()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename SocketReaderT , typename SocketWriterT , typename SocketAddressT &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::size_t <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html">net::socket::stream::SocketConnection</a>&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt;::doRead </td>
+          <td class="memname">virtual std::string net::socket::stream::SocketConnection::getLocalAddressAsString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#a06870763805eba24aecb60ca97dcb9a1">net::socket::stream::SocketConnectionT&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt;</a>, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#a06870763805eba24aecb60ca97dcb9a1">net::socket::stream::SocketConnectionT&lt; tls::SocketReader&lt; SocketT &gt;, tls::SocketWriter&lt; SocketT &gt;, SocketT::SocketAddress &gt;</a>, and <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#a06870763805eba24aecb60ca97dcb9a1">net::socket::stream::SocketConnectionT&lt; legacy::SocketReader&lt; SocketT &gt;, legacy::SocketWriter&lt; SocketT &gt;, SocketT::SocketAddress &gt;</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="net_2socket_2stream_2_socket_context_8cpp_source.html#l00046">net::socket::stream::SocketContext::getLocalAddressAsString()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_connection_a566ce34f84a70eee5aa5462e1da871b2_icgraph.svg" width="955" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a8df46c8bb8a3f943253c2625244043bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8df46c8bb8a3f943253c2625244043bc">&#9670;&nbsp;</a></span>getRemoteAddressAsString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string net::socket::stream::SocketConnection::getRemoteAddressAsString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#a7f61e9dea84f7a89f1eb6e6d2e5cb412">net::socket::stream::SocketConnectionT&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt;</a>, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#a7f61e9dea84f7a89f1eb6e6d2e5cb412">net::socket::stream::SocketConnectionT&lt; tls::SocketReader&lt; SocketT &gt;, tls::SocketWriter&lt; SocketT &gt;, SocketT::SocketAddress &gt;</a>, and <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#a7f61e9dea84f7a89f1eb6e6d2e5cb412">net::socket::stream::SocketConnectionT&lt; legacy::SocketReader&lt; SocketT &gt;, legacy::SocketWriter&lt; SocketT &gt;, SocketT::SocketAddress &gt;</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="net_2socket_2stream_2_socket_context_8cpp_source.html#l00050">net::socket::stream::SocketContext::getRemoteAddressAsString()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_connection_a8df46c8bb8a3f943253c2625244043bc_icgraph.svg" width="936" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a012bf34c009b18852e8d9afea9023be6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a012bf34c009b18852e8d9afea9023be6">&#9670;&nbsp;</a></span>getSocketContext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context.html">SocketContext</a>* net::socket::stream::SocketConnection::getSocketContext </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#a3813ad73b0b924348c8c7a8ace5e5bc4">net::socket::stream::SocketConnectionT&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt;</a>, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#a3813ad73b0b924348c8c7a8ace5e5bc4">net::socket::stream::SocketConnectionT&lt; tls::SocketReader&lt; SocketT &gt;, tls::SocketWriter&lt; SocketT &gt;, SocketT::SocketAddress &gt;</a>, and <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#a3813ad73b0b924348c8c7a8ace5e5bc4">net::socket::stream::SocketConnectionT&lt; legacy::SocketReader&lt; SocketT &gt;, legacy::SocketWriter&lt; SocketT &gt;, SocketT::SocketAddress &gt;</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="net_2socket_2stream_2_socket_context_8cpp_source.html#l00062">net::socket::stream::SocketContext::receiveFromPeer()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_connection_a012bf34c009b18852e8d9afea9023be6_icgraph.svg" width="428" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="aca8d8d8bd84972e852169d5d52c5d89b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca8d8d8bd84972e852169d5d52c5d89b">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html">SocketConnection</a>&amp; net::socket::stream::SocketConnection::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html">SocketConnection</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af26fe1dddd3a9066f01638133c31cb6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af26fe1dddd3a9066f01638133c31cb6a">&#9670;&nbsp;</a></span>readFromPeer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::size_t net::socket::stream::SocketConnection::readFromPeer </td>
           <td>(</td>
           <td class="paramtype">char *&#160;</td>
           <td class="paramname"><em>junk</em>, </td>
@@ -472,41 +422,34 @@ template&lt;typename SocketReaderT , typename SocketWriterT , typename SocketAdd
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#a697497e5438bfaa3dba65e81d979fad2">net::socket::stream::SocketConnectionBase</a>.</p>
+<p>Implemented in <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#acd3efe17b951623e650131e311063ca7">net::socket::stream::SocketConnectionT&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt;</a>, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#acd3efe17b951623e650131e311063ca7">net::socket::stream::SocketConnectionT&lt; tls::SocketReader&lt; SocketT &gt;, tls::SocketWriter&lt; SocketT &gt;, SocketT::SocketAddress &gt;</a>, and <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#acd3efe17b951623e650131e311063ca7">net::socket::stream::SocketConnectionT&lt; legacy::SocketReader&lt; SocketT &gt;, legacy::SocketWriter&lt; SocketT &gt;, SocketT::SocketAddress &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_socket_connection_8h_source.html#l00111">111</a> of file <a class="el" href="_socket_connection_8h_source.html">SocketConnection.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                                                                 {</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#aead031e203e25bb880c7c82df45d80e0">SocketReader::doRead</a>(junk, junkLen);</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        }</div>
-<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_reader_html_aead031e203e25bb880c7c82df45d80e0"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#aead031e203e25bb880c7c82df45d80e0">net::socket::stream::SocketReader::doRead</a></div><div class="ttdeci">std::size_t doRead(char *junk, std::size_t junkLen)</div><div class="ttdef"><b>Definition:</b> <a href="_socket_reader_8h_source.html#l00063">SocketReader.h:63</a></div></div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="_socket_reader_8h_source.html#l00063">net::socket::stream::SocketReader&lt; SocketT &gt;::doRead()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="net_2socket_2stream_2_socket_context_8cpp_source.html#l00042">net::socket::stream::SocketContext::readFromPeer()</a>.</p>
 <div class="dynheader">
-Here is the call graph for this function:</div>
+Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_connection_aa927da32c450357960e0dc5caa7e0f66_cgraph.svg" width="1110" height="216"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_connection_af26fe1dddd3a9066f01638133c31cb6a_icgraph.svg" width="850" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
 </div>
-<a id="a321fd72fbdb5a439d2d59a0b534c4954"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a321fd72fbdb5a439d2d59a0b534c4954">&#9670;&nbsp;</a></span>enqueue() <span class="overload">[1/2]</span></h2>
+<a id="a4b368347b53c2853a0358c98810c15bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b368347b53c2853a0358c98810c15bd">&#9670;&nbsp;</a></span>sendToPeer() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename SocketReaderT , typename SocketWriterT , typename SocketAddressT &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html">net::socket::stream::SocketConnection</a>&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt;::enqueue </td>
+          <td class="memname">virtual void net::socket::stream::SocketConnection::sendToPeer </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>junk</em>, </td>
@@ -525,41 +468,34 @@ template&lt;typename SocketReaderT , typename SocketWriterT , typename SocketAdd
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#a27dceffb6e668af5ab183a1edbe8b3c6">net::socket::stream::SocketConnectionBase</a>.</p>
+<p>Implemented in <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#a4d8851616fa4a6ff819d86b8a112e355">net::socket::stream::SocketConnectionT&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt;</a>, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#a4d8851616fa4a6ff819d86b8a112e355">net::socket::stream::SocketConnectionT&lt; tls::SocketReader&lt; SocketT &gt;, tls::SocketWriter&lt; SocketT &gt;, SocketT::SocketAddress &gt;</a>, and <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#a4d8851616fa4a6ff819d86b8a112e355">net::socket::stream::SocketConnectionT&lt; legacy::SocketReader&lt; SocketT &gt;, legacy::SocketWriter&lt; SocketT &gt;, SocketT::SocketAddress &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_socket_connection_8h_source.html#l00103">103</a> of file <a class="el" href="_socket_connection_8h_source.html">SocketConnection.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                                                                   {</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#ae16df4c60aae8709a438fb539a5547db">SocketWriter::enqueue</a>(junk, junkLen);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        }</div>
-<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_writer_html_ae16df4c60aae8709a438fb539a5547db"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#ae16df4c60aae8709a438fb539a5547db">net::socket::stream::SocketWriter::enqueue</a></div><div class="ttdeci">void enqueue(const char *junk, std::size_t junkLen)</div><div class="ttdef"><b>Definition:</b> <a href="_socket_writer_8h_source.html#l00056">SocketWriter.h:56</a></div></div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="_socket_writer_8h_source.html#l00056">net::socket::stream::SocketWriter&lt; SocketT &gt;::enqueue()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="net_2socket_2stream_2_socket_context_8cpp_source.html#l00034">net::socket::stream::SocketContext::sendToPeer()</a>.</p>
 <div class="dynheader">
-Here is the call graph for this function:</div>
+Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_connection_a321fd72fbdb5a439d2d59a0b534c4954_cgraph.svg" width="1278" height="170"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_connection_a4b368347b53c2853a0358c98810c15bd_icgraph.svg" width="1524" height="543"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
 </div>
-<a id="a85fd378da0de453a913d513845910faf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a85fd378da0de453a913d513845910faf">&#9670;&nbsp;</a></span>enqueue() <span class="overload">[2/2]</span></h2>
+<a id="a03b8020664749c7dbfc9578363609422"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03b8020664749c7dbfc9578363609422">&#9670;&nbsp;</a></span>sendToPeer() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename SocketReaderT , typename SocketWriterT , typename SocketAddressT &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html">net::socket::stream::SocketConnection</a>&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt;::enqueue </td>
+          <td class="memname">virtual void net::socket::stream::SocketConnection::sendToPeer </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>data</em></td><td>)</td>
@@ -568,233 +504,26 @@ template&lt;typename SocketReaderT , typename SocketWriterT , typename SocketAdd
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#ab22586b31cba5854edc299a965fa6193">net::socket::stream::SocketConnectionBase</a>.</p>
+<p>Implemented in <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#a1240978d9d4fb3954a0fa43eda83055a">net::socket::stream::SocketConnectionT&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt;</a>, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#a1240978d9d4fb3954a0fa43eda83055a">net::socket::stream::SocketConnectionT&lt; tls::SocketReader&lt; SocketT &gt;, tls::SocketWriter&lt; SocketT &gt;, SocketT::SocketAddress &gt;</a>, and <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#a1240978d9d4fb3954a0fa43eda83055a">net::socket::stream::SocketConnectionT&lt; legacy::SocketReader&lt; SocketT &gt;, legacy::SocketWriter&lt; SocketT &gt;, SocketT::SocketAddress &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_socket_connection_8h_source.html#l00107">107</a> of file <a class="el" href="_socket_connection_8h_source.html">SocketConnection.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                                                     {</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a321fd72fbdb5a439d2d59a0b534c4954">enqueue</a>(data.data(), data.size());</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        }</div>
-<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_connection_html_a321fd72fbdb5a439d2d59a0b534c4954"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a321fd72fbdb5a439d2d59a0b534c4954">net::socket::stream::SocketConnection::enqueue</a></div><div class="ttdeci">void enqueue(const char *junk, std::size_t junkLen) override</div><div class="ttdef"><b>Definition:</b> <a href="_socket_connection_8h_source.html#l00103">SocketConnection.h:103</a></div></div>
-</div><!-- fragment -->
 </div>
 </div>
-<a id="a41452e8427040717cfcb6aa940088c47"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a41452e8427040717cfcb6aa940088c47">&#9670;&nbsp;</a></span>getLocalAddress()</h2>
+<a id="a349bf62b99e408f09019434e7b8aa3c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a349bf62b99e408f09019434e7b8aa3c9">&#9670;&nbsp;</a></span>setTimeout()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename SocketReaderT , typename SocketWriterT , typename SocketAddressT &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a7d2cb9c2abcfbccba0613536d76b6353">SocketAddress</a>&amp; <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html">net::socket::stream::SocketConnection</a>&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt;::getLocalAddress </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_socket_connection_8h_source.html#l00091">91</a> of file <a class="el" href="_socket_connection_8h_source.html">SocketConnection.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                                                     {</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a4b738214cfdcfd8343c1324e09fcf2d6">localAddress</a>;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="ad82c3999ccc64b0b714f31468cc59982"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad82c3999ccc64b0b714f31468cc59982">&#9670;&nbsp;</a></span>getLocalAddressAsString()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename SocketReaderT , typename SocketWriterT , typename SocketAddressT &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html">net::socket::stream::SocketConnection</a>&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt;::getLocalAddressAsString </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implements <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#adfad4e09c4150fd1ed7a802853ce2ca0">net::socket::stream::SocketConnectionBase</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="_socket_connection_8h_source.html#l00095">95</a> of file <a class="el" href="_socket_connection_8h_source.html">SocketConnection.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                                                           {</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a4b738214cfdcfd8343c1324e09fcf2d6">localAddress</a>.toString();</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a5ae0ae94f3b4f7d2d6a4600458f5697e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5ae0ae94f3b4f7d2d6a4600458f5697e">&#9670;&nbsp;</a></span>getRemoteAddress()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename SocketReaderT , typename SocketWriterT , typename SocketAddressT &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a7d2cb9c2abcfbccba0613536d76b6353">SocketAddress</a>&amp; <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html">net::socket::stream::SocketConnection</a>&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt;::getRemoteAddress </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_socket_connection_8h_source.html#l00087">87</a> of file <a class="el" href="_socket_connection_8h_source.html">SocketConnection.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                                                      {</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a134ddd5a7c9a31a21db872e71f73ca52">remoteAddress</a>;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a52cb01c75c22c9ea89e78a39d5075dd7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a52cb01c75c22c9ea89e78a39d5075dd7">&#9670;&nbsp;</a></span>getRemoteAddressAsString()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename SocketReaderT , typename SocketWriterT , typename SocketAddressT &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html">net::socket::stream::SocketConnection</a>&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt;::getRemoteAddressAsString </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implements <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#adccd1884806b086993e9893118c5f0f5">net::socket::stream::SocketConnectionBase</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="_socket_connection_8h_source.html#l00099">99</a> of file <a class="el" href="_socket_connection_8h_source.html">SocketConnection.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                                                            {</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a134ddd5a7c9a31a21db872e71f73ca52">remoteAddress</a>.toString();</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="af45ac387a1b0a819cc5b30da0abe975a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af45ac387a1b0a819cc5b30da0abe975a">&#9670;&nbsp;</a></span>getSocketContext()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename SocketReaderT , typename SocketWriterT , typename SocketAddressT &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context.html">SocketContext</a>* <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html">net::socket::stream::SocketConnection</a>&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt;::getSocketContext </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implements <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#a619a692269bab49961ca8d5ec196181a">net::socket::stream::SocketConnectionBase</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="_socket_connection_8h_source.html#l00121">121</a> of file <a class="el" href="_socket_connection_8h_source.html">SocketConnection.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                                          {</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a199324376c25f0c3cc4c4ebd7b836188">socketContext</a>;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="aefbadffcc81e6623e049005a13603d86"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aefbadffcc81e6623e049005a13603d86">&#9670;&nbsp;</a></span>readEvent()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename SocketReaderT , typename SocketWriterT , typename SocketAddressT &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html">net::socket::stream::SocketConnection</a>&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt;::readEvent </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_socket_connection_8h_source.html#l00136">136</a> of file <a class="el" href="_socket_connection_8h_source.html">SocketConnection.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                                  {</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;            <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a199324376c25f0c3cc4c4ebd7b836188">socketContext</a>-&gt;<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_context.html#ac0d497f59257b08802af0685f83b7db0">receiveFromPeer</a>();</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        }</div>
-<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_context_html_ac0d497f59257b08802af0685f83b7db0"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_context.html#ac0d497f59257b08802af0685f83b7db0">net::socket::stream::SocketContext::receiveFromPeer</a></div><div class="ttdeci">void receiveFromPeer()</div><div class="ttdef"><b>Definition:</b> <a href="net_2socket_2stream_2_socket_context_8cpp_source.html#l00062">SocketContext.cpp:62</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="ab7f90b4a1b6ae3518c986f4d662136a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab7f90b4a1b6ae3518c986f4d662136a1">&#9670;&nbsp;</a></span>setTimeout()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename SocketReaderT , typename SocketWriterT , typename SocketAddressT &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html">net::socket::stream::SocketConnection</a>&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt;::setTimeout </td>
+          <td class="memname">virtual void net::socket::stream::SocketConnection::setTimeout </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>timeout</em></td><td>)</td>
@@ -803,42 +532,34 @@ template&lt;typename SocketReaderT , typename SocketWriterT , typename SocketAdd
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#a7a995ea1d7cbe8a0da469bde23ced1e7">net::socket::stream::SocketConnectionBase</a>.</p>
+<p>Implemented in <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#ab942478081e85a5c6aac14737328f0cb">net::socket::stream::SocketConnectionT&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt;</a>, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#ab942478081e85a5c6aac14737328f0cb">net::socket::stream::SocketConnectionT&lt; tls::SocketReader&lt; SocketT &gt;, tls::SocketWriter&lt; SocketT &gt;, SocketT::SocketAddress &gt;</a>, and <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#ab942478081e85a5c6aac14737328f0cb">net::socket::stream::SocketConnectionT&lt; legacy::SocketReader&lt; SocketT &gt;, legacy::SocketWriter&lt; SocketT &gt;, SocketT::SocketAddress &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_socket_connection_8h_source.html#l00082">82</a> of file <a class="el" href="_socket_connection_8h_source.html">SocketConnection.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                                              {</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            <a class="code" href="classnet_1_1_descriptor_event_receiver.html#a37e2da7a9720c6b120cc2a41e117539d">SocketReader::setTimeout</a>(timeout);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            <a class="code" href="classnet_1_1_descriptor_event_receiver.html#a37e2da7a9720c6b120cc2a41e117539d">SocketWriter::setTimeout</a>(timeout);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        }</div>
-<div class="ttc" id="aclassnet_1_1_descriptor_event_receiver_html_a37e2da7a9720c6b120cc2a41e117539d"><div class="ttname"><a href="classnet_1_1_descriptor_event_receiver.html#a37e2da7a9720c6b120cc2a41e117539d">net::DescriptorEventReceiver::setTimeout</a></div><div class="ttdeci">void setTimeout(long timeout)</div><div class="ttdef"><b>Definition:</b> <a href="_descriptor_event_receiver_8cpp_source.html#l00081">DescriptorEventReceiver.cpp:81</a></div></div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="_descriptor_event_receiver_8cpp_source.html#l00081">net::DescriptorEventReceiver::setTimeout()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="net_2socket_2stream_2_socket_context_8cpp_source.html#l00070">net::socket::stream::SocketContext::setTimeout()</a>.</p>
 <div class="dynheader">
-Here is the call graph for this function:</div>
+Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_connection_ab7f90b4a1b6ae3518c986f4d662136a1_cgraph.svg" width="399" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_connection_a349bf62b99e408f09019434e7b8aa3c9_icgraph.svg" width="915" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
 </div>
-<a id="a0251336c15a693ffd5cca06fea138eb0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0251336c15a693ffd5cca06fea138eb0">&#9670;&nbsp;</a></span>switchSocketProtocol()</h2>
+<a id="a821fde37c62f53fe7cb97ac7d2b1fa4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a821fde37c62f53fe7cb97ac7d2b1fa4b">&#9670;&nbsp;</a></span>switchSocketContext()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename SocketReaderT , typename SocketWriterT , typename SocketAddressT &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html">net::socket::stream::SocketConnection</a>&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt;::switchSocketProtocol </td>
+          <td class="memname">virtual void net::socket::stream::SocketConnection::switchSocketContext </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context_factory.html">SocketContextFactory</a> &amp;&#160;</td>
           <td class="paramname"><em>socketContextFactory</em></td><td>)</td>
@@ -847,208 +568,45 @@ template&lt;typename SocketReaderT , typename SocketWriterT , typename SocketAdd
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#a97df6242a787688990dff5ce61ee8e49">net::socket::stream::SocketConnectionBase</a>.</p>
+<p>Implemented in <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#abc2635d3a19a81a8d2acec82c5f109b7">net::socket::stream::SocketConnectionT&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt;</a>, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#abc2635d3a19a81a8d2acec82c5f109b7">net::socket::stream::SocketConnectionT&lt; tls::SocketReader&lt; SocketT &gt;, tls::SocketWriter&lt; SocketT &gt;, SocketT::SocketAddress &gt;</a>, and <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#abc2635d3a19a81a8d2acec82c5f109b7">net::socket::stream::SocketConnectionT&lt; legacy::SocketReader&lt; SocketT &gt;, legacy::SocketWriter&lt; SocketT &gt;, SocketT::SocketAddress &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_socket_connection_8h_source.html#l00125">125</a> of file <a class="el" href="_socket_connection_8h_source.html">SocketConnection.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                                                                                             {</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#a468a901534555a2a9ac06f01445b3c9f">SocketContext</a>* newSocketContext = socketContextFactory.create(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            <span class="keywordflow">if</span> (newSocketContext != <span class="keyword">nullptr</span>) {</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a199324376c25f0c3cc4c4ebd7b836188">socketContext</a>-&gt;<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_context.html#a2e350c46bfb6d153f0908f5de82bb89e">onProtocolDisconnected</a>();</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a199324376c25f0c3cc4c4ebd7b836188">socketContext</a> = newSocketContext;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a199324376c25f0c3cc4c4ebd7b836188">socketContext</a>-&gt;<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_context.html#aaa4d24d287145902558be3895c03459c">onProtocolConnected</a>();</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            }</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        }</div>
-<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_connection_base_html_a468a901534555a2a9ac06f01445b3c9f"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_connection_base.html#a468a901534555a2a9ac06f01445b3c9f">net::socket::stream::SocketConnectionBase::SocketContext</a></div><div class="ttdeci">friend SocketContext</div><div class="ttdef"><b>Definition:</b> <a href="_socket_connection_base_8h_source.html#l00063">SocketConnectionBase.h:63</a></div></div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context_factory.html#a3bdfde00433ee8ad98911dde050583c8">net::socket::stream::SocketContextFactory::create()</a>, <a class="el" href="net_2socket_2stream_2_socket_context_8cpp_source.html#l00074">net::socket::stream::SocketContext::onProtocolConnected()</a>, and <a class="el" href="net_2socket_2stream_2_socket_context_8cpp_source.html#l00078">net::socket::stream::SocketContext::onProtocolDisconnected()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="net_2socket_2stream_2_socket_context_8cpp_source.html#l00058">net::socket::stream::SocketContext::switchSocketContext()</a>.</p>
 <div class="dynheader">
-Here is the call graph for this function:</div>
+Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_connection_a0251336c15a693ffd5cca06fea138eb0_cgraph.svg" width="395" height="227"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_connection_a821fde37c62f53fe7cb97ac7d2b1fa4b_icgraph.svg" width="592" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
-
-</div>
-</div>
-<a id="a48a54fe1e3e0e8bbe52adfd79a7e602f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a48a54fe1e3e0e8bbe52adfd79a7e602f">&#9670;&nbsp;</a></span>unobserved()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename SocketReaderT , typename SocketWriterT , typename SocketAddressT &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html">net::socket::stream::SocketConnection</a>&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt;::unobserved </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_socket_connection_8h_source.html#l00144">144</a> of file <a class="el" href="_socket_connection_8h_source.html">SocketConnection.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;                                   {</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            <span class="keyword">delete</span> <span class="keyword">this</span>;</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a4aed880865a1ad09aa75ba30acf02c43"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4aed880865a1ad09aa75ba30acf02c43">&#9670;&nbsp;</a></span>writeEvent()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename SocketReaderT , typename SocketWriterT , typename SocketAddressT &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html">net::socket::stream::SocketConnection</a>&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt;::writeEvent </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_socket_connection_8h_source.html#l00140">140</a> of file <a class="el" href="_socket_connection_8h_source.html">SocketConnection.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;                                   {</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;            <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#aece5268a0d73555a5d4e2467ed5b8684">SocketWriter::doWrite</a>();</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        }</div>
-<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_writer_html_aece5268a0d73555a5d4e2467ed5b8684"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#aece5268a0d73555a5d4e2467ed5b8684">net::socket::stream::SocketWriter::doWrite</a></div><div class="ttdeci">void doWrite()</div><div class="ttdef"><b>Definition:</b> <a href="_socket_writer_8h_source.html#l00076">SocketWriter.h:76</a></div></div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="_socket_writer_8h_source.html#l00076">net::socket::stream::SocketWriter&lt; SocketT &gt;::doWrite()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_connection_a4aed880865a1ad09aa75ba30acf02c43_cgraph.svg" width="1100" height="307"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a4b738214cfdcfd8343c1324e09fcf2d6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b738214cfdcfd8343c1324e09fcf2d6">&#9670;&nbsp;</a></span>localAddress</h2>
+<a id="afe340317b8de90fc2a953bccee2dd217"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe340317b8de90fc2a953bccee2dd217">&#9670;&nbsp;</a></span>SocketContext</h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename SocketReaderT , typename SocketWriterT , typename SocketAddressT &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a7d2cb9c2abcfbccba0613536d76b6353">SocketAddress</a> <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html">net::socket::stream::SocketConnection</a>&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt;::localAddress {}</td>
+          <td class="memname">friend net::socket::stream::SocketConnection::SocketContext</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_socket_connection_8h_source.html#l00148">148</a> of file <a class="el" href="_socket_connection_8h_source.html">SocketConnection.h</a>.</p>
-
-</div>
-</div>
-<a id="ad4f6fb8a5b61f60d46041797cf20468e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad4f6fb8a5b61f60d46041797cf20468e">&#9670;&nbsp;</a></span>onDisconnect</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename SocketReaderT , typename SocketWriterT , typename SocketAddressT &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::function&lt;void()&gt; <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html">net::socket::stream::SocketConnection</a>&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt;::onDisconnect</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_socket_connection_8h_source.html#l00151">151</a> of file <a class="el" href="_socket_connection_8h_source.html">SocketConnection.h</a>.</p>
-
-</div>
-</div>
-<a id="a134ddd5a7c9a31a21db872e71f73ca52"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a134ddd5a7c9a31a21db872e71f73ca52">&#9670;&nbsp;</a></span>remoteAddress</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename SocketReaderT , typename SocketWriterT , typename SocketAddressT &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a7d2cb9c2abcfbccba0613536d76b6353">SocketAddress</a> <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html">net::socket::stream::SocketConnection</a>&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt;::remoteAddress {}</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_socket_connection_8h_source.html#l00149">149</a> of file <a class="el" href="_socket_connection_8h_source.html">SocketConnection.h</a>.</p>
-
-</div>
-</div>
-<a id="a199324376c25f0c3cc4c4ebd7b836188"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a199324376c25f0c3cc4c4ebd7b836188">&#9670;&nbsp;</a></span>socketContext</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename SocketReaderT , typename SocketWriterT , typename SocketAddressT &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context.html">SocketContext</a>* <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html">net::socket::stream::SocketConnection</a>&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt;::socketContext = nullptr</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_socket_connection_8h_source.html#l00153">153</a> of file <a class="el" href="_socket_connection_8h_source.html">SocketConnection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_socket_connection_8h_source.html#l00063">63</a> of file <a class="el" href="_socket_connection_8h_source.html">SocketConnection.h</a>.</p>
 
 </div>
 </div>

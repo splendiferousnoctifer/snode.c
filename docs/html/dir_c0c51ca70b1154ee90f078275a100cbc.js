@@ -5,12 +5,12 @@ var dir_c0c51ca70b1154ee90f078275a100cbc =
     [ "SocketClient.h", "stream_2_socket_client_8h.html", [
       [ "SocketClient", "classnet_1_1socket_1_1stream_1_1_socket_client.html", "classnet_1_1socket_1_1stream_1_1_socket_client" ]
     ] ],
+    [ "SocketConnection.cpp", "_socket_connection_8cpp.html", null ],
     [ "SocketConnection.h", "_socket_connection_8h.html", [
       [ "SocketConnection", "classnet_1_1socket_1_1stream_1_1_socket_connection.html", "classnet_1_1socket_1_1stream_1_1_socket_connection" ]
     ] ],
-    [ "SocketConnectionBase.cpp", "_socket_connection_base_8cpp.html", null ],
-    [ "SocketConnectionBase.h", "_socket_connection_base_8h.html", [
-      [ "SocketConnectionBase", "classnet_1_1socket_1_1stream_1_1_socket_connection_base.html", "classnet_1_1socket_1_1stream_1_1_socket_connection_base" ]
+    [ "SocketConnectionT.h", "_socket_connection_t_8h.html", [
+      [ "SocketConnectionT", "classnet_1_1socket_1_1stream_1_1_socket_connection_t.html", "classnet_1_1socket_1_1stream_1_1_socket_connection_t" ]
     ] ],
     [ "SocketConnector.h", "_socket_connector_8h.html", [
       [ "SocketConnector", "classnet_1_1socket_1_1stream_1_1_socket_connector.html", "classnet_1_1socket_1_1stream_1_1_socket_connector" ]

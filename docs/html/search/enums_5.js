@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['role_1842',['Role',['../classweb_1_1ws_1_1server_1_1_sub_protocol.html#ae3e34f7a445d8b685294ff7b793afbd6',1,'web::ws::server::SubProtocol::Role()'],['../classweb_1_1ws_1_1_sub_protocol.html#aad6ed7873faaf3511851bdc20853e392',1,'web::ws::SubProtocol::Role()']]]
+  ['parserstate_1858',['ParserState',['../classweb_1_1http_1_1_parser.html#a94ab44c0d65451be6ba3e6e389a8b7d5',1,'web::http::Parser::ParserState()'],['../classweb_1_1websocket_1_1_receiver.html#a3cf4e2588c5333541e445cd7aef1eb9b',1,'web::websocket::Receiver::ParserState()']]]
 ];

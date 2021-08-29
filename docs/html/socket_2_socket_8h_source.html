@@ -107,11 +107,11 @@ $(document).ready(function(){initNavTree('socket_2_socket_8h_source.html',''); i
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#define NET_SOCKET_SOCKET_H</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_descriptor_8h.html">net/Descriptor.h</a>&quot;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_socket_address_8h.html">net/socket/SocketAddress.h</a>&quot;</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="system_2_socket_8h.html">net/system/socket.h</a>&quot;</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#ifndef DOXYGEN_SHOULD_SKIP_THIS</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="system_2_socket_8h.html">net/system/socket.h</a>&quot;</span> <span class="comment">// IWYU pragma: export</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#ifndef DOXYGEN_SHOULD_SKIP_THIS</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;cerrno&gt;</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;functional&gt;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* DOXYGEN_SHOULD_SKIP_THIS */</span><span class="preprocessor"></span></div>
@@ -172,7 +172,6 @@ $(document).ready(function(){initNavTree('socket_2_socket_8h_source.html',''); i
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// NET_SOCKET_SOCKET_H</span></div>
 <div class="ttc" id="a_descriptor_8h_html"><div class="ttname"><a href="_descriptor_8h.html">Descriptor.h</a></div></div>
-<div class="ttc" id="a_socket_address_8h_html"><div class="ttname"><a href="_socket_address_8h.html">SocketAddress.h</a></div></div>
 <div class="ttc" id="aclassnet_1_1_descriptor_html"><div class="ttname"><a href="classnet_1_1_descriptor.html">net::Descriptor</a></div><div class="ttdef"><b>Definition:</b> <a href="_descriptor_8h_source.html#l00028">Descriptor.h:28</a></div></div>
 <div class="ttc" id="aclassnet_1_1_descriptor_html_a0dfe1354c24136c4d50c21c8138f53dd"><div class="ttname"><a href="classnet_1_1_descriptor.html#a0dfe1354c24136c4d50c21c8138f53dd">net::Descriptor::attach</a></div><div class="ttdeci">void attach(int fd, enum Descriptor::FLAGS flags=FLAGS::none)</div><div class="ttdef"><b>Definition:</b> <a href="_descriptor_8cpp_source.html#l00040">Descriptor.cpp:40</a></div></div>
 <div class="ttc" id="aclassnet_1_1_descriptor_html_a70ccc1e4f6af5cda015bd319f9a90096"><div class="ttname"><a href="classnet_1_1_descriptor.html#a70ccc1e4f6af5cda015bd319f9a90096">net::Descriptor::getFd</a></div><div class="ttdeci">int getFd() const</div><div class="ttdef"><b>Definition:</b> <a href="_descriptor_8cpp_source.html#l00045">Descriptor.cpp:45</a></div></div>

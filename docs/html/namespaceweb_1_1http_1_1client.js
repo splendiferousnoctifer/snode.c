@@ -6,7 +6,11 @@ var namespaceweb_1_1http_1_1client =
     [ "Request", "classweb_1_1http_1_1client_1_1_request.html", "classweb_1_1http_1_1client_1_1_request" ],
     [ "Response", "classweb_1_1http_1_1client_1_1_response.html", "classweb_1_1http_1_1client_1_1_response" ],
     [ "ResponseParser", "classweb_1_1http_1_1client_1_1_response_parser.html", "classweb_1_1http_1_1client_1_1_response_parser" ],
-    [ "SocketContextBase", "classweb_1_1http_1_1client_1_1_socket_context_base.html", "classweb_1_1http_1_1client_1_1_socket_context_base" ],
     [ "SocketContext", "classweb_1_1http_1_1client_1_1_socket_context.html", "classweb_1_1http_1_1client_1_1_socket_context" ],
-    [ "SocketContextFactory", "classweb_1_1http_1_1client_1_1_socket_context_factory.html", "classweb_1_1http_1_1client_1_1_socket_context_factory" ]
+    [ "SocketContextT", "classweb_1_1http_1_1client_1_1_socket_context_t.html", "classweb_1_1http_1_1client_1_1_socket_context_t" ],
+    [ "SocketContextFactory", "classweb_1_1http_1_1client_1_1_socket_context_factory.html", "classweb_1_1http_1_1client_1_1_socket_context_factory" ],
+    [ "SocketContextUpgradeFactory", "classweb_1_1http_1_1client_1_1_socket_context_upgrade_factory.html", "classweb_1_1http_1_1client_1_1_socket_context_upgrade_factory" ],
+    [ "SocketContextPlugin", "structweb_1_1http_1_1client_1_1_socket_context_plugin.html", "structweb_1_1http_1_1client_1_1_socket_context_plugin" ],
+    [ "SocketContextUpgradeFactorySelector", "classweb_1_1http_1_1client_1_1_socket_context_upgrade_factory_selector.html", "classweb_1_1http_1_1client_1_1_socket_context_upgrade_factory_selector" ],
+    [ "SocketContextUpgradeInterface", "classweb_1_1http_1_1client_1_1_socket_context_upgrade_interface.html", "classweb_1_1http_1_1client_1_1_socket_context_upgrade_interface" ]
 ];

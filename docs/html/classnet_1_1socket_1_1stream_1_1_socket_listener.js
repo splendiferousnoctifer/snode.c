@@ -5,7 +5,7 @@ var classnet_1_1socket_1_1stream_1_1_socket_listener =
     [ "SocketConnection", "classnet_1_1socket_1_1stream_1_1_socket_listener.html#a5baa0ff61844dbfd635ff3863893d8aa", null ],
     [ "SocketListener", "classnet_1_1socket_1_1stream_1_1_socket_listener.html#a912ab159c8caafc122cf9f00fce1560d", null ],
     [ "SocketListener", "classnet_1_1socket_1_1stream_1_1_socket_listener.html#a1f519df84b02e46f932481f4c2674500", null ],
-    [ "SocketListener", "classnet_1_1socket_1_1stream_1_1_socket_listener.html#a26f77863344470c6c2965d7c1d78bb89", null ],
+    [ "SocketListener", "classnet_1_1socket_1_1stream_1_1_socket_listener.html#a9cae462fe43e8fc17bf97612c36a0a24", null ],
     [ "~SocketListener", "classnet_1_1socket_1_1stream_1_1_socket_listener.html#a4e7b0daaf93e830babe89de3227446e8", null ],
     [ "acceptEvent", "classnet_1_1socket_1_1stream_1_1_socket_listener.html#a3b30d5f8724c141508ce914c25a9ae7f", null ],
     [ "destruct", "classnet_1_1socket_1_1stream_1_1_socket_listener.html#aa49e2120be428c40170df2777137e653", null ],
@@ -19,5 +19,5 @@ var classnet_1_1socket_1_1stream_1_1_socket_listener =
     [ "onDestruct", "classnet_1_1socket_1_1stream_1_1_socket_listener.html#abac2b6514b12805612258b1ee929fcf9", null ],
     [ "onDisconnect", "classnet_1_1socket_1_1stream_1_1_socket_listener.html#ad59590cdab761f1addcc8a78654b412a", null ],
     [ "options", "classnet_1_1socket_1_1stream_1_1_socket_listener.html#a9ce884ac01ecd6e84a33927293b50572", null ],
-    [ "socketProtocolFactory", "classnet_1_1socket_1_1stream_1_1_socket_listener.html#af2291da905fa638707b6e1a0fdbb220b", null ]
+    [ "socketContextFactory", "classnet_1_1socket_1_1stream_1_1_socket_listener.html#ac90e8c4aef25ab3b763274dd9719d4ec", null ]
 ];

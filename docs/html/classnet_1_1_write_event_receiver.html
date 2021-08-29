@@ -94,20 +94,20 @@ $(document).ready(function(){initNavTree('classnet_1_1_write_event_receiver.html
 <div class="dynheader">
 Inheritance diagram for net::WriteEventReceiver:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_write_event_receiver__inherit__graph.svg" width="535" height="1955"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_write_event_receiver__inherit__graph.svg" width="552" height="1955"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <div class="dynheader">
 Collaboration diagram for net::WriteEventReceiver:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_write_event_receiver__coll__graph.svg" width="444" height="1355"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_write_event_receiver__coll__graph.svg" width="444" height="1355"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a52cad4b280f3ff3655c91e99f34a6845"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_write_event_receiver.html#a52cad4b280f3ff3655c91e99f34a6845">WriteEventReceiver</a> (long timeout=60)</td></tr>
 <tr class="separator:a52cad4b280f3ff3655c91e99f34a6845"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3728ffeb9d054daaa82a2363d07c9143"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_write_event_receiver.html#a3728ffeb9d054daaa82a2363d07c9143">writeEvent</a> ()=0</td></tr>
-<tr class="separator:a3728ffeb9d054daaa82a2363d07c9143"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classnet_1_1_descriptor_event_receiver"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classnet_1_1_descriptor_event_receiver')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classnet_1_1_descriptor_event_receiver.html">net::DescriptorEventReceiver</a></td></tr>
 <tr class="memitem:a68dd9ebbf58a10324f12fe31a64da2d0 inherit pro_methods_classnet_1_1_descriptor_event_receiver"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_descriptor_event_receiver.html#a68dd9ebbf58a10324f12fe31a64da2d0">DescriptorEventReceiver</a> (<a class="el" href="classnet_1_1_descriptor_event_dispatcher.html">DescriptorEventDispatcher</a> &amp;<a class="el" href="classnet_1_1_descriptor_event_receiver.html#a3c8cf548a2bedfb1caf0a2373db481c4">descriptorEventDispatcher</a>, long timeout=<a class="el" href="classnet_1_1_descriptor_event_receiver_1_1_t_i_m_e_o_u_t.html#a20a7e0e580d24c830a4aa0b7dff75629">TIMEOUT::DISABLE</a>)</td></tr>
 <tr class="separator:a68dd9ebbf58a10324f12fe31a64da2d0 inherit pro_methods_classnet_1_1_descriptor_event_receiver"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -122,6 +122,8 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
+<tr class="memitem:a3728ffeb9d054daaa82a2363d07c9143"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_write_event_receiver.html#a3728ffeb9d054daaa82a2363d07c9143">writeEvent</a> ()=0</td></tr>
+<tr class="separator:a3728ffeb9d054daaa82a2363d07c9143"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4c91e162531d71256bceede585e665c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_write_event_receiver.html#aa4c91e162531d71256bceede585e665c">dispatchEvent</a> () override</td></tr>
 <tr class="separator:aa4c91e162531d71256bceede585e665c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -177,7 +179,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        : <a class="code" href="classnet_1_1_descriptor_event_receiver.html#a563d7b87e7b510f6aa6c367ae7de0b75">DescriptorEventReceiver</a>(<a class="code" href="classnet_1_1_event_loop.html#a6d8bfd6fa03bb6bf423035ab190657ef">EventLoop::instance</a>().getWriteEventDispatcher(), timeout) {</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    }</div>
 <div class="ttc" id="aclassnet_1_1_descriptor_event_receiver_html_a563d7b87e7b510f6aa6c367ae7de0b75"><div class="ttname"><a href="classnet_1_1_descriptor_event_receiver.html#a563d7b87e7b510f6aa6c367ae7de0b75">net::DescriptorEventReceiver::DescriptorEventReceiver</a></div><div class="ttdeci">DescriptorEventReceiver(const DescriptorEventReceiver &amp;)=delete</div></div>
-<div class="ttc" id="aclassnet_1_1_event_loop_html_a6d8bfd6fa03bb6bf423035ab190657ef"><div class="ttname"><a href="classnet_1_1_event_loop.html#a6d8bfd6fa03bb6bf423035ab190657ef">net::EventLoop::instance</a></div><div class="ttdeci">static EventLoop &amp; instance()</div><div class="ttdef"><b>Definition:</b> <a href="_event_loop_8h_source.html#l00044">EventLoop.h:44</a></div></div>
+<div class="ttc" id="aclassnet_1_1_event_loop_html_a6d8bfd6fa03bb6bf423035ab190657ef"><div class="ttname"><a href="classnet_1_1_event_loop.html#a6d8bfd6fa03bb6bf423035ab190657ef">net::EventLoop::instance</a></div><div class="ttdeci">static EventLoop &amp; instance()</div><div class="ttdef"><b>Definition:</b> <a href="_event_loop_8h_source.html#l00043">EventLoop.h:43</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -217,7 +219,8 @@ Additional Inherited Members</h2></td></tr>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_write_event_receiver_aa4c91e162531d71256bceede585e665c_cgraph.svg" width="387" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_write_event_receiver_aa4c91e162531d71256bceede585e665c_cgraph.svg" width="387" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
@@ -240,18 +243,19 @@ Here is the call graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_t_l_s_handshake.html#a4f9fdbda5c8978a21a402013f153cbca">net::socket::stream::tls::TLSHandshake</a>, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a4aed880865a1ad09aa75ba30acf02c43">net::socket::stream::SocketConnection&lt; tls::SocketReader&lt; SocketT &gt;, tls::SocketWriter&lt; SocketT &gt;, SocketT::SocketAddress &gt;</a>, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a4aed880865a1ad09aa75ba30acf02c43">net::socket::stream::SocketConnection&lt; legacy::SocketReader&lt; SocketT &gt;, legacy::SocketWriter&lt; SocketT &gt;, SocketT::SocketAddress &gt;</a>, and <a class="el" href="classnet_1_1pipe_1_1_pipe_source.html#a5430a39ef5a266f0a42910d4713fe1cf">net::pipe::PipeSource</a>.</p>
+<p>Implemented in <a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_t_l_s_handshake.html#a4f9fdbda5c8978a21a402013f153cbca">net::socket::stream::tls::TLSHandshake</a>, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#ac638b8b10045ce1d05865e3ab2347025">net::socket::stream::SocketConnectionT&lt; tls::SocketReader&lt; SocketT &gt;, tls::SocketWriter&lt; SocketT &gt;, SocketT::SocketAddress &gt;</a>, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#ac638b8b10045ce1d05865e3ab2347025">net::socket::stream::SocketConnectionT&lt; legacy::SocketReader&lt; SocketT &gt;, legacy::SocketWriter&lt; SocketT &gt;, SocketT::SocketAddress &gt;</a>, and <a class="el" href="classnet_1_1pipe_1_1_pipe_source.html#a5430a39ef5a266f0a42910d4713fe1cf">net::pipe::PipeSource</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_write_event_receiver_8cpp_source.html#l00033">dispatchEvent()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_write_event_receiver_a3728ffeb9d054daaa82a2363d07c9143_icgraph.svg" width="387" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_write_event_receiver_a3728ffeb9d054daaa82a2363d07c9143_icgraph.svg" width="387" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>

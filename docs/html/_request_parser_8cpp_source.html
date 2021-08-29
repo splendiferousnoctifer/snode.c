@@ -200,7 +200,7 @@ $(document).ready(function(){initNavTree('_request_parser_8cpp_source.html','');
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; [field, value] : <a class="code" href="classweb_1_1http_1_1_parser.html#a2d5ddf8558155e6a8c4233b36b9d6d73">Parser::headers</a>) {</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            <span class="keywordflow">if</span> (field != <span class="stringliteral">&quot;cookie&quot;</span>) {</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                <span class="keywordflow">if</span> (field == <span class="stringliteral">&quot;content-length&quot;</span>) {</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                    <a class="code" href="classweb_1_1http_1_1_parser.html#a6f4bc9c330019ecb706fb343bec00f22">Parser::contentLength</a> = std::stoi(value);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                    <a class="code" href="classweb_1_1http_1_1_parser.html#a6f4bc9c330019ecb706fb343bec00f22">Parser::contentLength</a> = std::stoul(value);</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                }</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                std::string cookiesLine = value;</div>

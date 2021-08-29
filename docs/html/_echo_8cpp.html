@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>snode.c: web/ws/subprotocol/echo/server/Echo.cpp File Reference</title>
+<title>snode.c: web/websocket/subprotocol/server/echo/Echo.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -82,54 +82,43 @@ $(document).ready(function(){initNavTree('_echo_8cpp.html',''); initResizable();
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
 <div class="title">Echo.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="_echo_8h_source.html">web/ws/subprotocol/echo/server/Echo.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="_echo_8h_source.html">Echo.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_logger_8h_source.html">log/Logger.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_interval_timer_8h_source.html">net/timer/IntervalTimer.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Echo.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="_echo_8cpp__incl.svg" width="740" height="455"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="_echo_8cpp__incl.svg" width="451" height="366"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
 <p><a href="_echo_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1ws_1_1subprotocol_1_1echo_1_1server_1_1_echo_interface.html">web::ws::subprotocol::echo::server::EchoInterface</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceweb"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceweb.html">web</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespaceweb_1_1ws"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceweb_1_1ws.html">web::ws</a></td></tr>
+<tr class="memitem:namespaceweb_1_1websocket"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceweb_1_1websocket.html">web::websocket</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespaceweb_1_1ws_1_1subprotocol"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceweb_1_1ws_1_1subprotocol.html">web::ws::subprotocol</a></td></tr>
+<tr class="memitem:namespaceweb_1_1websocket_1_1subprotocol"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceweb_1_1websocket_1_1subprotocol.html">web::websocket::subprotocol</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespaceweb_1_1ws_1_1subprotocol_1_1echo"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceweb_1_1ws_1_1subprotocol_1_1echo.html">web::ws::subprotocol::echo</a></td></tr>
+<tr class="memitem:namespaceweb_1_1websocket_1_1subprotocol_1_1echo"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceweb_1_1websocket_1_1subprotocol_1_1echo.html">web::websocket::subprotocol::echo</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespaceweb_1_1ws_1_1subprotocol_1_1echo_1_1server"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceweb_1_1ws_1_1subprotocol_1_1echo_1_1server.html">web::ws::subprotocol::echo::server</a></td></tr>
+<tr class="memitem:namespaceweb_1_1websocket_1_1subprotocol_1_1echo_1_1server"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceweb_1_1websocket_1_1subprotocol_1_1echo_1_1server.html">web::websocket::subprotocol::echo::server</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a9dce5e7b51948376ae9857cea35529ce"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_echo_8cpp.html#a9dce5e7b51948376ae9857cea35529ce">MAX_FLYING_PINGS</a>&#160;&#160;&#160;3</td></tr>
 <tr class="separator:a9dce5e7b51948376ae9857cea35529ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47f2e62c0dbebc787052c165afcada0e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_echo_8cpp.html#a47f2e62c0dbebc787052c165afcada0e">NAME</a>&#160;&#160;&#160;&quot;echo&quot;</td></tr>
-<tr class="separator:a47f2e62c0dbebc787052c165afcada0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a5ec307d3cca4fe876ad3ec6716a16479"><td class="memItemLeft" align="right" valign="top">class <a class="el" href="classweb_1_1ws_1_1server_1_1_sub_protocol_interface.html">web::ws::server::SubProtocolInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceweb_1_1ws_1_1subprotocol_1_1echo_1_1server.html#a5ec307d3cca4fe876ad3ec6716a16479">web::ws::subprotocol::echo::server::plugin</a> ()</td></tr>
-<tr class="separator:a5ec307d3cca4fe876ad3ec6716a16479"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26e3d8255a9d4ce574b58999b00a88e7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_echo_8cpp.html#a26e3d8255a9d4ce574b58999b00a88e7">PING_DELAY</a>&#160;&#160;&#160;5</td></tr>
+<tr class="separator:a26e3d8255a9d4ce574b58999b00a88e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a9dce5e7b51948376ae9857cea35529ce"></a>
@@ -144,23 +133,23 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_echo_8cpp_source.html#l00027">27</a> of file <a class="el" href="_echo_8cpp_source.html">Echo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_echo_8cpp_source.html#l00030">30</a> of file <a class="el" href="_echo_8cpp_source.html">Echo.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a47f2e62c0dbebc787052c165afcada0e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a47f2e62c0dbebc787052c165afcada0e">&#9670;&nbsp;</a></span>NAME</h2>
+<a id="a26e3d8255a9d4ce574b58999b00a88e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26e3d8255a9d4ce574b58999b00a88e7">&#9670;&nbsp;</a></span>PING_DELAY</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define NAME&#160;&#160;&#160;&quot;echo&quot;</td>
+          <td class="memname">#define PING_DELAY&#160;&#160;&#160;5</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_echo_8cpp_source.html#l00029">29</a> of file <a class="el" href="_echo_8cpp_source.html">Echo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_echo_8cpp_source.html#l00031">31</a> of file <a class="el" href="_echo_8cpp_source.html">Echo.cpp</a>.</p>
 
 </div>
 </div>
@@ -169,7 +158,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_562abdcd8625d4bf7bad2fe6fe01354c.html">web</a></li><li class="navelem"><a class="el" href="dir_ec426a97ce461160e35695da59315765.html">ws</a></li><li class="navelem"><a class="el" href="dir_eb77dce6180c9cb65090b17515b1f986.html">subprotocol</a></li><li class="navelem"><a class="el" href="dir_e756f6a4db0684a0f5bc830e61eae61c.html">echo</a></li><li class="navelem"><a class="el" href="dir_8fc00aad1aa44a41072769952404fc5a.html">server</a></li><li class="navelem"><a class="el" href="_echo_8cpp.html">Echo.cpp</a></li>
+    <li class="navelem"><a class="el" href="dir_562abdcd8625d4bf7bad2fe6fe01354c.html">web</a></li><li class="navelem"><a class="el" href="dir_001861d41473c343e7c3cc7f26309d08.html">websocket</a></li><li class="navelem"><a class="el" href="dir_21aa5f91579caf9e2055ab8c3ba24a6a.html">subprotocol</a></li><li class="navelem"><a class="el" href="dir_d2af12e96c62758dd175708e73fa4aa1.html">server</a></li><li class="navelem"><a class="el" href="dir_8bd68f7c9e17103e1ad4a9ae98f09478.html">echo</a></li><li class="navelem"><a class="el" href="_echo_8cpp.html">Echo.cpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

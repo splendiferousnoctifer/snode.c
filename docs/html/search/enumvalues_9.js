@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['maskingkey_1859',['MASKINGKEY',['../classweb_1_1ws_1_1_receiver.html#ace2b4e8f4b4e9d0a328ba18e83f73ae1a4c949d60bdaeb83920bd12dab2c2bb3e',1,'web::ws::Receiver']]]
+  ['maskingkey_1878',['MASKINGKEY',['../classweb_1_1websocket_1_1_receiver.html#a3cf4e2588c5333541e445cd7aef1eb9ba4c949d60bdaeb83920bd12dab2c2bb3e',1,'web::websocket::Receiver']]]
 ];

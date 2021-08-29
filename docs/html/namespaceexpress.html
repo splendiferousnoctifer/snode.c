@@ -186,26 +186,28 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_router_8cpp_source.html#l00124">124</a> of file <a class="el" href="_router_8cpp_source.html">Router.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                                                                                   {</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="keywordtype">bool</span> hasRegex = <a class="code" href="namespaceexpress.html#a4f1a16c9a7b214fa7c8e2b690431ee17">hasResult</a>(cpath);</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <span class="keywordflow">return</span> (!hasRegex &amp;&amp; cpath == reqpath) || (hasRegex &amp;&amp; <a class="code" href="namespaceexpress.html#a92954d0fa22ea3ca3198d3c4fe963dde">matchFunction</a>(cpath, reqpath));</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    }</div>
-<div class="ttc" id="anamespaceexpress_html_a4f1a16c9a7b214fa7c8e2b690431ee17"><div class="ttname"><a href="namespaceexpress.html#a4f1a16c9a7b214fa7c8e2b690431ee17">express::hasResult</a></div><div class="ttdeci">static bool hasResult(const std::string &amp;cpath)</div><div class="ttdef"><b>Definition:</b> <a href="_router_8cpp_source.html#l00069">Router.cpp:69</a></div></div>
-<div class="ttc" id="anamespaceexpress_html_a92954d0fa22ea3ca3198d3c4fe963dde"><div class="ttname"><a href="namespaceexpress.html#a92954d0fa22ea3ca3198d3c4fe963dde">express::matchFunction</a></div><div class="ttdeci">static bool matchFunction(const std::string &amp;cpath, const std::string &amp;reqpath)</div><div class="ttdef"><b>Definition:</b> <a href="_router_8cpp_source.html#l00075">Router.cpp:75</a></div></div>
+<p class="definition">Definition at line <a class="el" href="_router_8cpp_source.html#l00129">129</a> of file <a class="el" href="_router_8cpp_source.html">Router.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                                                                                   {</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="keywordtype">bool</span> hasRegex = <a class="code" href="namespaceexpress.html#a4f1a16c9a7b214fa7c8e2b690431ee17">hasResult</a>(cpath);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <span class="keywordflow">return</span> (!hasRegex &amp;&amp; cpath == reqpath) || (hasRegex &amp;&amp; <a class="code" href="namespaceexpress.html#a92954d0fa22ea3ca3198d3c4fe963dde">matchFunction</a>(cpath, reqpath));</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    }</div>
+<div class="ttc" id="anamespaceexpress_html_a4f1a16c9a7b214fa7c8e2b690431ee17"><div class="ttname"><a href="namespaceexpress.html#a4f1a16c9a7b214fa7c8e2b690431ee17">express::hasResult</a></div><div class="ttdeci">static bool hasResult(const std::string &amp;cpath)</div><div class="ttdef"><b>Definition:</b> <a href="_router_8cpp_source.html#l00073">Router.cpp:73</a></div></div>
+<div class="ttc" id="anamespaceexpress_html_a92954d0fa22ea3ca3198d3c4fe963dde"><div class="ttname"><a href="namespaceexpress.html#a92954d0fa22ea3ca3198d3c4fe963dde">express::matchFunction</a></div><div class="ttdeci">static bool matchFunction(const std::string &amp;cpath, const std::string &amp;reqpath)</div><div class="ttdef"><b>Definition:</b> <a href="_router_8cpp_source.html#l00079">Router.cpp:79</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_router_8cpp_source.html#l00069">hasResult()</a>, and <a class="el" href="_router_8cpp_source.html#l00075">matchFunction()</a>.</p>
+<p class="reference">References <a class="el" href="_router_8cpp_source.html#l00073">hasResult()</a>, and <a class="el" href="_router_8cpp_source.html#l00079">matchFunction()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_router_8cpp_source.html#l00249">express::MiddlewareDispatcher::dispatch()</a>, and <a class="el" href="_router_8cpp_source.html#l00270">express::ApplicationDispatcher::dispatch()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_router_8cpp_source.html#l00254">express::MiddlewareDispatcher::dispatch()</a>, and <a class="el" href="_router_8cpp_source.html#l00275">express::ApplicationDispatcher::dispatch()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespaceexpress_ae91cec6d3397bfa7a125cf5ff0d190ff_cgraph.svg" width="603" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespaceexpress_ae91cec6d3397bfa7a125cf5ff0d190ff_cgraph.svg" width="603" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespaceexpress_ae91cec6d3397bfa7a125cf5ff0d190ff_icgraph.svg" width="447" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespaceexpress_ae91cec6d3397bfa7a125cf5ff0d190ff_icgraph.svg" width="447" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
@@ -244,23 +246,24 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_router_8cpp_source.html#l00050">50</a> of file <a class="el" href="_router_8cpp_source.html">Router.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                                                                              {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        std::vector&lt;std::string&gt; result;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        std::istringstream iss(s);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">for</span> (std::string token; std::getline(iss, token, delim);) {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            result.push_back(std::move(token));</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        }</div>
+<p class="definition">Definition at line <a class="el" href="_router_8cpp_source.html#l00054">54</a> of file <a class="el" href="_router_8cpp_source.html">Router.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                                                                              {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        std::vector&lt;std::string&gt; result;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        std::istringstream iss(s);</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">return</span> result;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">for</span> (std::string token; std::getline(iss, token, delim);) {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            result.push_back(std::move(token));</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="_router_8cpp_source.html#l00075">matchFunction()</a>, and <a class="el" href="_router_8cpp_source.html#l00098">setParams()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_router_8cpp_source.html#l00079">matchFunction()</a>, and <a class="el" href="_router_8cpp_source.html#l00102">setParams()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespaceexpress_adf22db775a32911eba390528d06fca90_icgraph.svg" width="827" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespaceexpress_adf22db775a32911eba390528d06fca90_icgraph.svg" width="827" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
@@ -289,21 +292,22 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_router_8cpp_source.html#l00069">69</a> of file <a class="el" href="_router_8cpp_source.html">Router.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                                                  {</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        std::smatch smatch;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordflow">return</span> std::regex_search(cpath, smatch, <a class="code" href="namespaceexpress.html#a46fd94f67e7eb9bbf3cdfdd3b263d940">pathregex</a>);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div>
-<div class="ttc" id="anamespaceexpress_html_a46fd94f67e7eb9bbf3cdfdd3b263d940"><div class="ttname"><a href="namespaceexpress.html#a46fd94f67e7eb9bbf3cdfdd3b263d940">express::pathregex</a></div><div class="ttdeci">static std::regex pathregex</div><div class="ttdef"><b>Definition:</b> <a href="_router_8cpp_source.html#l00038">Router.cpp:38</a></div></div>
+<p class="definition">Definition at line <a class="el" href="_router_8cpp_source.html#l00073">73</a> of file <a class="el" href="_router_8cpp_source.html">Router.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                                                  {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        std::smatch smatch;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">return</span> std::regex_search(cpath, smatch, <a class="code" href="namespaceexpress.html#a46fd94f67e7eb9bbf3cdfdd3b263d940">pathregex</a>);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    }</div>
+<div class="ttc" id="anamespaceexpress_html_a46fd94f67e7eb9bbf3cdfdd3b263d940"><div class="ttname"><a href="namespaceexpress.html#a46fd94f67e7eb9bbf3cdfdd3b263d940">express::pathregex</a></div><div class="ttdeci">static std::regex pathregex</div><div class="ttdef"><b>Definition:</b> <a href="_router_8cpp_source.html#l00040">Router.cpp:40</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_router_8cpp_source.html#l00038">pathregex</a>.</p>
+<p class="reference">References <a class="el" href="_router_8cpp_source.html#l00040">pathregex</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_router_8cpp_source.html#l00124">checkForUrlMatch()</a>, <a class="el" href="_router_8cpp_source.html#l00249">express::MiddlewareDispatcher::dispatch()</a>, and <a class="el" href="_router_8cpp_source.html#l00270">express::ApplicationDispatcher::dispatch()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_router_8cpp_source.html#l00129">checkForUrlMatch()</a>, <a class="el" href="_router_8cpp_source.html#l00254">express::MiddlewareDispatcher::dispatch()</a>, and <a class="el" href="_router_8cpp_source.html#l00275">express::ApplicationDispatcher::dispatch()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespaceexpress_a4f1a16c9a7b214fa7c8e2b690431ee17_icgraph.svg" width="630" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespaceexpress_a4f1a16c9a7b214fa7c8e2b690431ee17_icgraph.svg" width="630" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
@@ -342,45 +346,47 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_router_8cpp_source.html#l00075">75</a> of file <a class="el" href="_router_8cpp_source.html">Router.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                                                                                {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        std::vector&lt;std::string&gt; explodedString = <a class="code" href="namespaceexpress.html#adf22db775a32911eba390528d06fca90">explode</a>(cpath, <span class="charliteral">&#39;/&#39;</span>);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordflow">for</span> (std::vector&lt;std::string&gt;::size_type i = 0; i &lt; explodedString.size(); i++) {</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <span class="keywordflow">if</span> (explodedString[i].front() == <span class="charliteral">&#39;:&#39;</span>) {</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                std::smatch smatch = <a class="code" href="namespaceexpress.html#aa2975f01c114a7a5f352e66c90b17966">matchResult</a>(explodedString[i]);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                std::string regex = <span class="stringliteral">&quot;(.*)&quot;</span>;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                <span class="keywordflow">if</span> (smatch.size() &gt; 1) {</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                    <span class="keywordflow">if</span> (smatch[1] != <span class="stringliteral">&quot;&quot;</span>) {</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                        regex = smatch[1];</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                    }</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                }</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                explodedString[i] = regex;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            }</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        }</div>
+<p class="definition">Definition at line <a class="el" href="_router_8cpp_source.html#l00079">79</a> of file <a class="el" href="_router_8cpp_source.html">Router.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                                                                                {</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        std::vector&lt;std::string&gt; explodedString = <a class="code" href="namespaceexpress.html#adf22db775a32911eba390528d06fca90">explode</a>(cpath, <span class="charliteral">&#39;/&#39;</span>);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordflow">for</span> (std::vector&lt;std::string&gt;::size_type i = 0; i &lt; explodedString.size(); i++) {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            <span class="keywordflow">if</span> (explodedString[i].front() == <span class="charliteral">&#39;:&#39;</span>) {</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                std::smatch smatch = <a class="code" href="namespaceexpress.html#aa2975f01c114a7a5f352e66c90b17966">matchResult</a>(explodedString[i]);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                std::string regex = <span class="stringliteral">&quot;(.*)&quot;</span>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                <span class="keywordflow">if</span> (smatch.size() &gt; 1) {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                    <span class="keywordflow">if</span> (smatch[1] != <span class="stringliteral">&quot;&quot;</span>) {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                        regex = smatch[1];</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                    }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                }</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        std::string regexPath = <a class="code" href="namespaceexpress.html#aa4ccc7c8a315c18d4ef767bf43640264">path_concat</a>(explodedString);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keywordflow">return</span> std::regex_match(reqpath, std::regex(regexPath));</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    }</div>
-<div class="ttc" id="anamespaceexpress_html_aa2975f01c114a7a5f352e66c90b17966"><div class="ttname"><a href="namespaceexpress.html#aa2975f01c114a7a5f352e66c90b17966">express::matchResult</a></div><div class="ttdeci">static const std::smatch matchResult(const std::string &amp;cpath)</div><div class="ttdef"><b>Definition:</b> <a href="_router_8cpp_source.html#l00061">Router.cpp:61</a></div></div>
-<div class="ttc" id="anamespaceexpress_html_aa4ccc7c8a315c18d4ef767bf43640264"><div class="ttname"><a href="namespaceexpress.html#aa4ccc7c8a315c18d4ef767bf43640264">express::path_concat</a></div><div class="ttdeci">static std::string path_concat(const std::string &amp;first, const std::string &amp;second)</div><div class="ttdef"><b>Definition:</b> <a href="_router_8cpp_source.html#l00129">Router.cpp:129</a></div></div>
-<div class="ttc" id="anamespaceexpress_html_adf22db775a32911eba390528d06fca90"><div class="ttname"><a href="namespaceexpress.html#adf22db775a32911eba390528d06fca90">express::explode</a></div><div class="ttdeci">static const std::vector&lt; std::string &gt; explode(const std::string &amp;s, char delim)</div><div class="ttdef"><b>Definition:</b> <a href="_router_8cpp_source.html#l00050">Router.cpp:50</a></div></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                explodedString[i] = regex;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            }</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        }</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        std::string regexPath = <a class="code" href="namespaceexpress.html#aa4ccc7c8a315c18d4ef767bf43640264">path_concat</a>(explodedString);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keywordflow">return</span> std::regex_match(reqpath, std::regex(regexPath));</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    }</div>
+<div class="ttc" id="anamespaceexpress_html_aa2975f01c114a7a5f352e66c90b17966"><div class="ttname"><a href="namespaceexpress.html#aa2975f01c114a7a5f352e66c90b17966">express::matchResult</a></div><div class="ttdeci">static const std::smatch matchResult(const std::string &amp;cpath)</div><div class="ttdef"><b>Definition:</b> <a href="_router_8cpp_source.html#l00065">Router.cpp:65</a></div></div>
+<div class="ttc" id="anamespaceexpress_html_aa4ccc7c8a315c18d4ef767bf43640264"><div class="ttname"><a href="namespaceexpress.html#aa4ccc7c8a315c18d4ef767bf43640264">express::path_concat</a></div><div class="ttdeci">static std::string path_concat(const std::string &amp;first, const std::string &amp;second)</div><div class="ttdef"><b>Definition:</b> <a href="_router_8cpp_source.html#l00134">Router.cpp:134</a></div></div>
+<div class="ttc" id="anamespaceexpress_html_adf22db775a32911eba390528d06fca90"><div class="ttname"><a href="namespaceexpress.html#adf22db775a32911eba390528d06fca90">express::explode</a></div><div class="ttdeci">static const std::vector&lt; std::string &gt; explode(const std::string &amp;s, char delim)</div><div class="ttdef"><b>Definition:</b> <a href="_router_8cpp_source.html#l00054">Router.cpp:54</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_router_8cpp_source.html#l00050">explode()</a>, <a class="el" href="_router_8cpp_source.html#l00061">matchResult()</a>, and <a class="el" href="_router_8cpp_source.html#l00040">path_concat()</a>.</p>
+<p class="reference">References <a class="el" href="_router_8cpp_source.html#l00054">explode()</a>, <a class="el" href="_router_8cpp_source.html#l00065">matchResult()</a>, and <a class="el" href="_router_8cpp_source.html#l00042">path_concat()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_router_8cpp_source.html#l00124">checkForUrlMatch()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_router_8cpp_source.html#l00129">checkForUrlMatch()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespaceexpress_a92954d0fa22ea3ca3198d3c4fe963dde_cgraph.svg" width="372" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespaceexpress_a92954d0fa22ea3ca3198d3c4fe963dde_cgraph.svg" width="372" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespaceexpress_a92954d0fa22ea3ca3198d3c4fe963dde_icgraph.svg" width="658" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespaceexpress_a92954d0fa22ea3ca3198d3c4fe963dde_icgraph.svg" width="658" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
@@ -409,22 +415,23 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_router_8cpp_source.html#l00061">61</a> of file <a class="el" href="_router_8cpp_source.html">Router.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                                                               {</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        std::smatch smatch;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        std::regex_search(cpath, smatch, <a class="code" href="namespaceexpress.html#a46fd94f67e7eb9bbf3cdfdd3b263d940">pathregex</a>);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">return</span> smatch;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="_router_8cpp_source.html#l00065">65</a> of file <a class="el" href="_router_8cpp_source.html">Router.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                                                               {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        std::smatch smatch;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        std::regex_search(cpath, smatch, <a class="code" href="namespaceexpress.html#a46fd94f67e7eb9bbf3cdfdd3b263d940">pathregex</a>);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keywordflow">return</span> smatch;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_router_8cpp_source.html#l00038">pathregex</a>.</p>
+<p class="reference">References <a class="el" href="_router_8cpp_source.html#l00040">pathregex</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_router_8cpp_source.html#l00075">matchFunction()</a>, and <a class="el" href="_router_8cpp_source.html#l00098">setParams()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_router_8cpp_source.html#l00079">matchFunction()</a>, and <a class="el" href="_router_8cpp_source.html#l00102">setParams()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespaceexpress_aa2975f01c114a7a5f352e66c90b17966_icgraph.svg" width="856" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespaceexpress_aa2975f01c114a7a5f352e66c90b17966_icgraph.svg" width="856" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
@@ -463,24 +470,24 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_router_8cpp_source.html#l00129">129</a> of file <a class="el" href="_router_8cpp_source.html">Router.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                                                                                         {</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        std::string result;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="keywordflow">if</span> (first.back() == <span class="charliteral">&#39;/&#39;</span> &amp;&amp; second.front() == <span class="charliteral">&#39;/&#39;</span>) {</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            result = first + second.substr(1);</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (first.back() != <span class="charliteral">&#39;/&#39;</span> &amp;&amp; second.front() != <span class="charliteral">&#39;/&#39;</span>) {</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            result = first + <span class="charliteral">&#39;/&#39;</span> + second;</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;            result = first + second;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        }</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        <span class="keywordflow">if</span> (result.length() &gt; 1 &amp;&amp; result.back() == <span class="charliteral">&#39;/&#39;</span>) {</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;            result.pop_back();</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        }</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160; </div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        <span class="keywordflow">return</span> result;</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="_router_8cpp_source.html#l00134">134</a> of file <a class="el" href="_router_8cpp_source.html">Router.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                                                                                         {</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        std::string result;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <span class="keywordflow">if</span> (first.back() == <span class="charliteral">&#39;/&#39;</span> &amp;&amp; second.front() == <span class="charliteral">&#39;/&#39;</span>) {</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;            result = first + second.substr(1);</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (first.back() != <span class="charliteral">&#39;/&#39;</span> &amp;&amp; second.front() != <span class="charliteral">&#39;/&#39;</span>) {</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;            result = first + <span class="charliteral">&#39;/&#39;</span> + second;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;            result = first + second;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        }</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        <span class="keywordflow">if</span> (result.length() &gt; 1 &amp;&amp; result.back() == <span class="charliteral">&#39;/&#39;</span>) {</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            result.pop_back();</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        }</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -508,22 +515,25 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_router_8cpp_source.html#l00040">40</a> of file <a class="el" href="_router_8cpp_source.html">Router.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                                                                              {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        std::string s;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordflow">for</span> (std::vector&lt;std::string&gt;::size_type i = 0; i &lt; stringvec.size(); i++) {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <span class="keywordflow">if</span> (!stringvec[i].empty() &amp;&amp; stringvec[i].front() != <span class="charliteral">&#39; &#39;</span>) {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                s += <span class="stringliteral">&quot;\\/&quot;</span> + stringvec[i];</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            }</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        }</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordflow">return</span> s;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="_router_8cpp_source.html#l00042">42</a> of file <a class="el" href="_router_8cpp_source.html">Router.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                                                                              {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        std::string s;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">for</span> (std::vector&lt;std::string&gt;::size_type i = 0; i &lt; stringvec.size(); i++) {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <span class="keywordflow">if</span> (!stringvec[i].empty() &amp;&amp; stringvec[i].front() != <span class="charliteral">&#39; &#39;</span>) {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                s += <span class="stringliteral">&quot;\\/&quot;</span> + stringvec[i];</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">return</span> s;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="_router_8cpp_source.html#l00249">express::MiddlewareDispatcher::dispatch()</a>, <a class="el" href="_router_8cpp_source.html#l00270">express::ApplicationDispatcher::dispatch()</a>, <a class="el" href="_router_8cpp_source.html#l00214">express::RouterDispatcher::dispatch()</a>, and <a class="el" href="_router_8cpp_source.html#l00075">matchFunction()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_router_8cpp_source.html#l00254">express::MiddlewareDispatcher::dispatch()</a>, <a class="el" href="_router_8cpp_source.html#l00275">express::ApplicationDispatcher::dispatch()</a>, <a class="el" href="_router_8cpp_source.html#l00219">express::RouterDispatcher::dispatch()</a>, and <a class="el" href="_router_8cpp_source.html#l00079">matchFunction()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespaceexpress_a8939ba82ab85b3acc2b653682ae5d386_icgraph.svg" width="868" height="174"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespaceexpress_a8939ba82ab85b3acc2b653682ae5d386_icgraph.svg" width="868" height="174"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
@@ -562,45 +572,48 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_router_8cpp_source.html#l00098">98</a> of file <a class="el" href="_router_8cpp_source.html">Router.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                                                                {</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        std::vector&lt;std::string&gt; explodedString = <a class="code" href="namespaceexpress.html#adf22db775a32911eba390528d06fca90">explode</a>(cpath, <span class="charliteral">&#39;/&#39;</span>);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        std::vector&lt;std::string&gt; explodedReqString = <a class="code" href="namespaceexpress.html#adf22db775a32911eba390528d06fca90">explode</a>(req.url, <span class="charliteral">&#39;/&#39;</span>);</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordflow">for</span> (std::vector&lt;std::string&gt;::size_type i = 0; i &lt; explodedString.size() &amp;&amp; i &lt; explodedReqString.size(); i++) {</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <span class="keywordflow">if</span> (explodedString[i].front() == <span class="charliteral">&#39;:&#39;</span>) {</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                std::smatch smatch = <a class="code" href="namespaceexpress.html#aa2975f01c114a7a5f352e66c90b17966">matchResult</a>(explodedString[i]);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                std::string regex = <span class="stringliteral">&quot;(.*)&quot;</span>;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                <span class="keywordflow">if</span> (smatch.size() &gt; 1) {</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                    <span class="keywordflow">if</span> (smatch[1] != <span class="stringliteral">&quot;&quot;</span>) {</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                        regex = smatch[1];</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                    }</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                }</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                <span class="keywordflow">if</span> (std::regex_match(explodedReqString[i], std::regex(regex))) {</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                    std::string attributeName = smatch[0];</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                    attributeName.erase(0, 1);</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                    attributeName.erase((attributeName.length() - smatch[1].length()), smatch[1].length());</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                    req.params[attributeName] = explodedReqString[i];</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                }</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            }</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        }</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="_router_8cpp_source.html#l00102">102</a> of file <a class="el" href="_router_8cpp_source.html">Router.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                                                                {</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        std::vector&lt;std::string&gt; explodedString = <a class="code" href="namespaceexpress.html#adf22db775a32911eba390528d06fca90">explode</a>(cpath, <span class="charliteral">&#39;/&#39;</span>);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        std::vector&lt;std::string&gt; explodedReqString = <a class="code" href="namespaceexpress.html#adf22db775a32911eba390528d06fca90">explode</a>(req.url, <span class="charliteral">&#39;/&#39;</span>);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="keywordflow">for</span> (std::vector&lt;std::string&gt;::size_type i = 0; i &lt; explodedString.size() &amp;&amp; i &lt; explodedReqString.size(); i++) {</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            <span class="keywordflow">if</span> (explodedString[i].front() == <span class="charliteral">&#39;:&#39;</span>) {</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                std::smatch smatch = <a class="code" href="namespaceexpress.html#aa2975f01c114a7a5f352e66c90b17966">matchResult</a>(explodedString[i]);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                std::string regex = <span class="stringliteral">&quot;(.*)&quot;</span>;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                <span class="keywordflow">if</span> (smatch.size() &gt; 1) {</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                    <span class="keywordflow">if</span> (smatch[1] != <span class="stringliteral">&quot;&quot;</span>) {</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                        regex = smatch[1];</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                    }</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                }</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                <span class="keywordflow">if</span> (std::regex_match(explodedReqString[i], std::regex(regex))) {</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                    std::string attributeName = smatch[0];</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                    attributeName.erase(0, 1);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                    attributeName.erase((attributeName.length() - <span class="keyword">static_cast&lt;</span>std::size_t<span class="keyword">&gt;</span>(smatch[1].length())),</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                                        <span class="keyword">static_cast&lt;</span>std::size_t<span class="keyword">&gt;</span>(smatch[1].length()));</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                    req.params[attributeName] = explodedReqString[i];</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                }</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;            }</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        }</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_router_8cpp_source.html#l00050">explode()</a>, <a class="el" href="_router_8cpp_source.html#l00061">matchResult()</a>, <a class="el" href="express_2_request_8h_source.html#l00039">express::Request::params</a>, and <a class="el" href="web_2http_2server_2_request_8h_source.html#l00047">web::http::server::Request::url</a>.</p>
+<p class="reference">References <a class="el" href="_router_8cpp_source.html#l00054">explode()</a>, <a class="el" href="_router_8cpp_source.html#l00065">matchResult()</a>, <a class="el" href="express_2_request_8h_source.html#l00039">express::Request::params</a>, and <a class="el" href="web_2http_2server_2_request_8h_source.html#l00049">web::http::server::Request::url</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_router_8cpp_source.html#l00249">express::MiddlewareDispatcher::dispatch()</a>, and <a class="el" href="_router_8cpp_source.html#l00270">express::ApplicationDispatcher::dispatch()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_router_8cpp_source.html#l00254">express::MiddlewareDispatcher::dispatch()</a>, and <a class="el" href="_router_8cpp_source.html#l00275">express::ApplicationDispatcher::dispatch()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespaceexpress_a42db573d15d12fb0f7caf164fbaac1b9_cgraph.svg" width="348" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespaceexpress_a42db573d15d12fb0f7caf164fbaac1b9_cgraph.svg" width="348" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespaceexpress_a42db573d15d12fb0f7caf164fbaac1b9_icgraph.svg" width="403" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespaceexpress_a42db573d15d12fb0f7caf164fbaac1b9_icgraph.svg" width="403" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
@@ -626,9 +639,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_router_8cpp_source.html#l00038">38</a> of file <a class="el" href="_router_8cpp_source.html">Router.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_router_8cpp_source.html#l00040">40</a> of file <a class="el" href="_router_8cpp_source.html">Router.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_router_8cpp_source.html#l00069">hasResult()</a>, and <a class="el" href="_router_8cpp_source.html#l00061">matchResult()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_router_8cpp_source.html#l00073">hasResult()</a>, and <a class="el" href="_router_8cpp_source.html#l00065">matchResult()</a>.</p>
 
 </div>
 </div>

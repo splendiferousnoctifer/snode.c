@@ -1,0 +1,35 @@
+var classweb_1_1websocket_1_1_sub_protocol =
+[
+    [ "Role", "classweb_1_1websocket_1_1_sub_protocol.html#a4f627851f29882cb69ca97e69a094484", [
+      [ "SERVER", "classweb_1_1websocket_1_1_sub_protocol.html#a4f627851f29882cb69ca97e69a094484a3d27c95bfdbea691b250894d96852844", null ],
+      [ "CLIENT", "classweb_1_1websocket_1_1_sub_protocol.html#a4f627851f29882cb69ca97e69a094484aef10c650df47bffd6399e5e78da2a9b1", null ]
+    ] ],
+    [ "SubProtocol", "classweb_1_1websocket_1_1_sub_protocol.html#a3a2d0819cb71033552d8904eb12996c3", null ],
+    [ "SubProtocol", "classweb_1_1websocket_1_1_sub_protocol.html#a8f0e6bf43b46705adb55384e1d8d224f", null ],
+    [ "SubProtocol", "classweb_1_1websocket_1_1_sub_protocol.html#a8a8efea30c39f61cfd0240c83553b0ee", null ],
+    [ "~SubProtocol", "classweb_1_1websocket_1_1_sub_protocol.html#aba6721f3797a53bcdcbf5ff40e7e38c3", null ],
+    [ "getLocalAddressAsString", "classweb_1_1websocket_1_1_sub_protocol.html#ad8e92fb8a98c5e4dcc1fe603be44cc07", null ],
+    [ "getName", "classweb_1_1websocket_1_1_sub_protocol.html#a4aa11bc8d6045b1cbd31cc5a94964edf", null ],
+    [ "getRemoteAddressAsString", "classweb_1_1websocket_1_1_sub_protocol.html#a88e14b6b830427f0a164002e54efc52e", null ],
+    [ "onConnected", "classweb_1_1websocket_1_1_sub_protocol.html#a3664a8c40a03f0e7c9df1cf75bca52b1", null ],
+    [ "onDisconnected", "classweb_1_1websocket_1_1_sub_protocol.html#a3f2e0af047cc906a09f58acde4c73b3c", null ],
+    [ "onMessageData", "classweb_1_1websocket_1_1_sub_protocol.html#a907b4c14b3419d772793781658a61699", null ],
+    [ "onMessageEnd", "classweb_1_1websocket_1_1_sub_protocol.html#a0dd6c5bbd7cc5cc31c7b7bbe9a6e2e86", null ],
+    [ "onMessageError", "classweb_1_1websocket_1_1_sub_protocol.html#a9672f967d14f9e1c32aa145be271a692", null ],
+    [ "onMessageStart", "classweb_1_1websocket_1_1_sub_protocol.html#a2c782e8df863cc1a758fb341c5c8858b", null ],
+    [ "onPongReceived", "classweb_1_1websocket_1_1_sub_protocol.html#a935abce2cb4dd3d119d5574efae2043d", null ],
+    [ "operator=", "classweb_1_1websocket_1_1_sub_protocol.html#ac7b8addc381adc82f140c29b81aff844", null ],
+    [ "sendClose", "classweb_1_1websocket_1_1_sub_protocol.html#a29b064865efed70872ad584850865586", null ],
+    [ "sendMessage", "classweb_1_1websocket_1_1_sub_protocol.html#af86c8fae5bf91e8a9fba99cbfbb61c38", null ],
+    [ "sendMessage", "classweb_1_1websocket_1_1_sub_protocol.html#a4487eb38417e46bc770e144bb67b66b7", null ],
+    [ "sendMessageEnd", "classweb_1_1websocket_1_1_sub_protocol.html#a86f89d29349469c5799b061276dde63f", null ],
+    [ "sendMessageEnd", "classweb_1_1websocket_1_1_sub_protocol.html#a0da2118cc0ea4d1c6ce09bd873e12529", null ],
+    [ "sendMessageFrame", "classweb_1_1websocket_1_1_sub_protocol.html#a2b4a4722d33cebbc09073330f4db5369", null ],
+    [ "sendMessageFrame", "classweb_1_1websocket_1_1_sub_protocol.html#a82fdebc0ae0736eba5d49e1a62381f1b", null ],
+    [ "sendMessageStart", "classweb_1_1websocket_1_1_sub_protocol.html#a9dc12bc0b6a05bf08573056349a87a9e", null ],
+    [ "sendMessageStart", "classweb_1_1websocket_1_1_sub_protocol.html#a1cb5785944073a7d05a5fa09716d3004", null ],
+    [ "sendPing", "classweb_1_1websocket_1_1_sub_protocol.html#ab4d1f191dbd3e548164fa8421f13856d", null ],
+    [ "setSocketContext", "classweb_1_1websocket_1_1_sub_protocol.html#ac9bf93fb0052ae0b960f168528c4f3e8", null ],
+    [ "context", "classweb_1_1websocket_1_1_sub_protocol.html#a4590d72f579bd9984e83b4c6cc8d2e3e", null ],
+    [ "name", "classweb_1_1websocket_1_1_sub_protocol.html#a8df08dc7b16249f6d2d7a85db45b4904", null ]
+];

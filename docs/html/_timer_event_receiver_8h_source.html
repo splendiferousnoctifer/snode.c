@@ -106,7 +106,7 @@ $(document).ready(function(){initNavTree('_timer_event_receiver_8h_source.html',
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#ifndef TIMEREVENTRECEIVER_H</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#define TIMEREVENTRECEIVER_H</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_timeval_8h.html">utils/Timeval.h</a>&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_timeval_8h.html">utils/Timeval.h</a>&quot;</span> <span class="comment">// IWYU pragma: export</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#ifndef DOXYGEN_SHOULD_SKIP_THIS</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
@@ -115,7 +115,7 @@ $(document).ready(function(){initNavTree('_timer_event_receiver_8h_source.html',
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacenet.html">net</a> {</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
 <div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classnet_1_1_timer_event_receiver.html">   30</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classnet_1_1_timer_event_receiver.html">TimerEventReceiver</a> {</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classnet_1_1_timer_event_receiver.html#a6e7d4e707bd54ca6f1cdc2d897fc0e5e">   32</a></span>&#160;        <span class="keyword">virtual</span> <span class="keyword">struct </span>timeval&amp; <a class="code" href="classnet_1_1_timer_event_receiver.html#a6e7d4e707bd54ca6f1cdc2d897fc0e5e">timeout</a>() = 0;</div>
 <div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classnet_1_1_timer_event_receiver.html#a79dd60cd2190400725fc32790ce629c8">   33</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classnet_1_1_timer_event_receiver.html#a79dd60cd2190400725fc32790ce629c8">dispatch</a>() = 0;</div>
 <div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classnet_1_1_timer_event_receiver.html#a88250596671b00a3f56d992f55676650">   34</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classnet_1_1_timer_event_receiver.html#a88250596671b00a3f56d992f55676650">destroy</a>() = 0;</div>
@@ -129,7 +129,7 @@ $(document).ready(function(){initNavTree('_timer_event_receiver_8h_source.html',
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TIMEREVENTRECEIVER_H</span></div>
 <div class="ttc" id="a_timeval_8h_html"><div class="ttname"><a href="_timeval_8h.html">Timeval.h</a></div></div>
-<div class="ttc" id="aclassnet_1_1_timer_event_dispatcher_html"><div class="ttname"><a href="classnet_1_1_timer_event_dispatcher.html">net::TimerEventDispatcher</a></div><div class="ttdef"><b>Definition:</b> <a href="_timer_event_dispatcher_8h_source.html#l00034">TimerEventDispatcher.h:34</a></div></div>
+<div class="ttc" id="aclassnet_1_1_timer_event_dispatcher_html"><div class="ttname"><a href="classnet_1_1_timer_event_dispatcher.html">net::TimerEventDispatcher</a></div><div class="ttdef"><b>Definition:</b> <a href="_timer_event_dispatcher_8h_source.html#l00032">TimerEventDispatcher.h:32</a></div></div>
 <div class="ttc" id="aclassnet_1_1_timer_event_receiver_html"><div class="ttname"><a href="classnet_1_1_timer_event_receiver.html">net::TimerEventReceiver</a></div><div class="ttdef"><b>Definition:</b> <a href="_timer_event_receiver_8h_source.html#l00030">TimerEventReceiver.h:30</a></div></div>
 <div class="ttc" id="aclassnet_1_1_timer_event_receiver_html_a6e7d4e707bd54ca6f1cdc2d897fc0e5e"><div class="ttname"><a href="classnet_1_1_timer_event_receiver.html#a6e7d4e707bd54ca6f1cdc2d897fc0e5e">net::TimerEventReceiver::timeout</a></div><div class="ttdeci">virtual struct timeval &amp; timeout()=0</div></div>
 <div class="ttc" id="aclassnet_1_1_timer_event_receiver_html_a79dd60cd2190400725fc32790ce629c8"><div class="ttname"><a href="classnet_1_1_timer_event_receiver.html#a79dd60cd2190400725fc32790ce629c8">net::TimerEventReceiver::dispatch</a></div><div class="ttdeci">virtual bool dispatch()=0</div></div>

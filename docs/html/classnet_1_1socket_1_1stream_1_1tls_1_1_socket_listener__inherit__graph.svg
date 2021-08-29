@@ -42,7 +42,7 @@
 <text text-anchor="start" x="58" y="-319.5" font-family="Helvetica,sans-Serif" font-size="10.00"># onDestruct</text>
 <text text-anchor="start" x="58" y="-308.5" font-family="Helvetica,sans-Serif" font-size="10.00"># onConnected</text>
 <text text-anchor="start" x="58" y="-297.5" font-family="Helvetica,sans-Serif" font-size="10.00"># onDisconnect</text>
-<text text-anchor="start" x="58" y="-286.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; socketProtocolFactory</text>
+<text text-anchor="start" x="58" y="-286.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; socketContextFactory</text>
 <polyline fill="none" stroke="black" points="50,-279.5 177,-279.5 "/>
 <text text-anchor="start" x="58" y="-267.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ SocketListener()</text>
 <text text-anchor="start" x="58" y="-256.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~SocketListener()</text>
@@ -67,23 +67,22 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="classnet_1_1_accept_event_receiver.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="180,-735.5 180,-814.5 311,-814.5 311,-735.5 180,-735.5"/>
-<text text-anchor="middle" x="245.5" y="-802.5" font-family="Helvetica,sans-Serif" font-size="10.00">net::AcceptEventReceiver</text>
-<polyline fill="none" stroke="black" points="180,-795.5 311,-795.5 "/>
-<text text-anchor="middle" x="245.5" y="-783.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="black" points="180,-776.5 311,-776.5 "/>
-<text text-anchor="start" x="188" y="-764.5" font-family="Helvetica,sans-Serif" font-size="10.00"># AcceptEventReceiver()</text>
-<text text-anchor="start" x="188" y="-753.5" font-family="Helvetica,sans-Serif" font-size="10.00"># acceptEvent()</text>
-<text text-anchor="start" x="188" y="-742.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; dispatchEvent()</text>
+<g id="a_node3"><a xlink:title=" ">
+<polygon fill="white" stroke="#bfbfbf" points="0,-741 0,-809 107,-809 107,-741 0,-741"/>
+<text text-anchor="start" x="8" y="-797" font-family="Helvetica,sans-Serif" font-size="10.00">SocketConnectionT::</text>
+<text text-anchor="middle" x="53.5" y="-786" font-family="Helvetica,sans-Serif" font-size="10.00">Socket</text>
+<polyline fill="none" stroke="#bfbfbf" points="0,-779 107,-779 "/>
+<text text-anchor="middle" x="53.5" y="-767" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="#bfbfbf" points="0,-760 107,-760 "/>
+<text text-anchor="middle" x="53.5" y="-748" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node2 -->
 <g id="edge2" class="edge">
 <title>Node3&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M259.83,-725.55C277.77,-655.85 301.37,-524.6 259.5,-424 242.62,-383.43 208.25,-348.38 177.1,-322.9"/>
-<polygon fill="none" stroke="midnightblue" points="256.41,-724.81 257.24,-735.38 263.18,-726.6 256.41,-724.81"/>
+<path fill="none" stroke="midnightblue" d="M46.66,-730.7C38.39,-670.39 27.56,-557.92 44.5,-464 47.97,-444.77 53.31,-424.93 59.53,-405.71"/>
+<polygon fill="none" stroke="midnightblue" points="43.2,-731.22 48.06,-740.63 50.13,-730.24 43.2,-731.22"/>
 </g>
 <!-- Node7 -->
 <g id="node7" class="node">
@@ -98,7 +97,7 @@
 <text text-anchor="start" x="61.5" y="-633.5" font-family="Helvetica,sans-Serif" font-size="10.00"># onDestruct</text>
 <text text-anchor="start" x="61.5" y="-622.5" font-family="Helvetica,sans-Serif" font-size="10.00"># onConnected</text>
 <text text-anchor="start" x="61.5" y="-611.5" font-family="Helvetica,sans-Serif" font-size="10.00"># onDisconnect</text>
-<text text-anchor="start" x="61.5" y="-600.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; socketProtocolFactory</text>
+<text text-anchor="start" x="61.5" y="-600.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; socketContextFactory</text>
 <polyline fill="none" stroke="black" points="53.5,-593.5 245.5,-593.5 "/>
 <text text-anchor="start" x="61.5" y="-581.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ SocketListener()</text>
 <text text-anchor="start" x="61.5" y="-570.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~SocketListener()</text>
@@ -117,13 +116,40 @@
 <!-- Node3&#45;&gt;Node7 -->
 <g id="edge7" class="edge">
 <title>Node3&#45;&gt;Node7</title>
-<path fill="none" stroke="midnightblue" d="M221.6,-726.2C217.17,-717.33 212.36,-707.73 207.42,-697.83"/>
-<polygon fill="none" stroke="midnightblue" points="218.47,-727.77 226.07,-735.15 224.73,-724.64 218.47,-727.77"/>
+<path fill="none" stroke="midnightblue" d="M74.57,-731.86C79.75,-721.5 85.54,-709.91 91.56,-697.89"/>
+<polygon fill="none" stroke="midnightblue" points="71.34,-730.48 70,-740.99 77.61,-733.62 71.34,-730.48"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="classnet_1_1_descriptor_event_receiver.html" target="_top" xlink:title=" ">
+<g id="a_node4"><a xlink:href="classnet_1_1_accept_event_receiver.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="black" points="180,-735.5 180,-814.5 311,-814.5 311,-735.5 180,-735.5"/>
+<text text-anchor="middle" x="245.5" y="-802.5" font-family="Helvetica,sans-Serif" font-size="10.00">net::AcceptEventReceiver</text>
+<polyline fill="none" stroke="black" points="180,-795.5 311,-795.5 "/>
+<text text-anchor="middle" x="245.5" y="-783.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="black" points="180,-776.5 311,-776.5 "/>
+<text text-anchor="start" x="188" y="-764.5" font-family="Helvetica,sans-Serif" font-size="10.00"># AcceptEventReceiver()</text>
+<text text-anchor="start" x="188" y="-753.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; acceptEvent()</text>
+<text text-anchor="start" x="188" y="-742.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; dispatchEvent()</text>
+</a>
+</g>
+</g>
+<!-- Node4&#45;&gt;Node2 -->
+<g id="edge3" class="edge">
+<title>Node4&#45;&gt;Node2</title>
+<path fill="none" stroke="midnightblue" d="M259.83,-725.55C277.77,-655.85 301.37,-524.6 259.5,-424 242.62,-383.43 208.25,-348.38 177.1,-322.9"/>
+<polygon fill="none" stroke="midnightblue" points="256.41,-724.81 257.24,-735.38 263.18,-726.6 256.41,-724.81"/>
+</g>
+<!-- Node4&#45;&gt;Node7 -->
+<g id="edge8" class="edge">
+<title>Node4&#45;&gt;Node7</title>
+<path fill="none" stroke="midnightblue" d="M221.6,-726.2C217.17,-717.33 212.36,-707.73 207.42,-697.83"/>
+<polygon fill="none" stroke="midnightblue" points="218.47,-727.77 226.07,-735.15 224.73,-724.64 218.47,-727.77"/>
+</g>
+<!-- Node5 -->
+<g id="node5" class="node">
+<title>Node5</title>
+<g id="a_node5"><a xlink:href="classnet_1_1_descriptor_event_receiver.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="172.5,-852.5 172.5,-1184.5 318.5,-1184.5 318.5,-852.5 172.5,-852.5"/>
 <text text-anchor="middle" x="245.5" y="-1172.5" font-family="Helvetica,sans-Serif" font-size="10.00">net::DescriptorEventReceiver</text>
 <polyline fill="none" stroke="black" points="172.5,-1165.5 318.5,-1165.5 "/>
@@ -158,16 +184,16 @@
 </a>
 </g>
 </g>
-<!-- Node4&#45;&gt;Node3 -->
-<g id="edge3" class="edge">
-<title>Node4&#45;&gt;Node3</title>
+<!-- Node5&#45;&gt;Node4 -->
+<g id="edge4" class="edge">
+<title>Node5&#45;&gt;Node4</title>
 <path fill="none" stroke="midnightblue" d="M245.5,-842.27C245.5,-832.32 245.5,-823 245.5,-814.67"/>
 <polygon fill="none" stroke="midnightblue" points="242,-842.41 245.5,-852.41 249,-842.41 242,-842.41"/>
 </g>
-<!-- Node5 -->
-<g id="node5" class="node">
-<title>Node5</title>
-<g id="a_node5"><a xlink:href="classnet_1_1_observation_counter.html" target="_top" xlink:title=" ">
+<!-- Node6 -->
+<g id="node6" class="node">
+<title>Node6</title>
+<g id="a_node6"><a xlink:href="classnet_1_1_observation_counter.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="184,-1222.5 184,-1290.5 307,-1290.5 307,-1222.5 184,-1222.5"/>
 <text text-anchor="middle" x="245.5" y="-1278.5" font-family="Helvetica,sans-Serif" font-size="10.00">net::ObservationCounter</text>
 <polyline fill="none" stroke="black" points="184,-1271.5 307,-1271.5 "/>
@@ -178,37 +204,11 @@
 </a>
 </g>
 </g>
-<!-- Node5&#45;&gt;Node4 -->
-<g id="edge4" class="edge">
-<title>Node5&#45;&gt;Node4</title>
+<!-- Node6&#45;&gt;Node5 -->
+<g id="edge5" class="edge">
+<title>Node6&#45;&gt;Node5</title>
 <path fill="none" stroke="midnightblue" d="M245.5,-1212.2C245.5,-1203.73 245.5,-1194.39 245.5,-1184.53"/>
 <polygon fill="none" stroke="midnightblue" points="242,-1212.44 245.5,-1222.44 249,-1212.44 242,-1212.44"/>
-</g>
-<!-- Node6 -->
-<g id="node6" class="node">
-<title>Node6</title>
-<g id="a_node6"><a xlink:title=" ">
-<polygon fill="white" stroke="#bfbfbf" points="0,-741 0,-809 107,-809 107,-741 0,-741"/>
-<text text-anchor="start" x="8" y="-797" font-family="Helvetica,sans-Serif" font-size="10.00">SocketConnectionT::</text>
-<text text-anchor="middle" x="53.5" y="-786" font-family="Helvetica,sans-Serif" font-size="10.00">Socket</text>
-<polyline fill="none" stroke="#bfbfbf" points="0,-779 107,-779 "/>
-<text text-anchor="middle" x="53.5" y="-767" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="#bfbfbf" points="0,-760 107,-760 "/>
-<text text-anchor="middle" x="53.5" y="-748" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-</a>
-</g>
-</g>
-<!-- Node6&#45;&gt;Node2 -->
-<g id="edge5" class="edge">
-<title>Node6&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M46.66,-730.7C38.39,-670.39 27.56,-557.92 44.5,-464 47.97,-444.77 53.31,-424.93 59.53,-405.71"/>
-<polygon fill="none" stroke="midnightblue" points="43.2,-731.22 48.06,-740.63 50.13,-730.24 43.2,-731.22"/>
-</g>
-<!-- Node6&#45;&gt;Node7 -->
-<g id="edge8" class="edge">
-<title>Node6&#45;&gt;Node7</title>
-<path fill="none" stroke="midnightblue" d="M74.57,-731.86C79.75,-721.5 85.54,-709.91 91.56,-697.89"/>
-<polygon fill="none" stroke="midnightblue" points="71.34,-730.48 70,-740.99 77.61,-733.62 71.34,-730.48"/>
 </g>
 <!-- Node7&#45;&gt;Node2 -->
 <g id="edge6" class="edge">

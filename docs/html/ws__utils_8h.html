@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>snode.c: web/ws/ws_utils.h File Reference</title>
+<title>snode.c: web/websocket/ws_utils.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -91,7 +91,8 @@ $(document).ready(function(){initNavTree('ws__utils_8h.html',''); initResizable(
 <div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ws__utils_8h__dep__incl.svg" width="403" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="ws__utils_8h__dep__incl.svg" width="379" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div>
 <p><a href="ws__utils_8h_source.html">Go to the source code of this file.</a></p>
@@ -100,24 +101,30 @@ This graph shows which files directly or indirectly include this file:</div>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceweb"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceweb.html">web</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespaceweb_1_1ws"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceweb_1_1ws.html">web::ws</a></td></tr>
+<tr class="memitem:namespaceweb_1_1websocket"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceweb_1_1websocket.html">web::websocket</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a96a18d6020b30b232dd86c07d39aca3f"><td class="memItemLeft" align="right" valign="top">unsigned char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceweb_1_1ws.html#a96a18d6020b30b232dd86c07d39aca3f">web::ws::decode64</a> (const char *input, int length)</td></tr>
-<tr class="separator:a96a18d6020b30b232dd86c07d39aca3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d027a4d29972e1aad93f195b38ea2c3"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceweb_1_1ws.html#a4d027a4d29972e1aad93f195b38ea2c3">web::ws::base64</a> (const unsigned char *input, int length)</td></tr>
-<tr class="separator:a4d027a4d29972e1aad93f195b38ea2c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a629c87826c97b6aaa0d2cef7154f3df7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceweb_1_1ws.html#a629c87826c97b6aaa0d2cef7154f3df7">web::ws::serverWebSocketKey</a> (const std::string &amp;clientWebSocketKey, const std::function&lt; void(char *)&gt; &amp;returnKey)</td></tr>
-<tr class="separator:a629c87826c97b6aaa0d2cef7154f3df7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7be84069af40262a23ea939851ff4e83"><td class="memItemLeft" align="right" valign="top">unsigned char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceweb_1_1websocket.html#a7be84069af40262a23ea939851ff4e83">web::websocket::decode64</a> (const char *input, int length)</td></tr>
+<tr class="separator:a7be84069af40262a23ea939851ff4e83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1cde56e7579fb94b436909ee61facb9"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceweb_1_1websocket.html#ac1cde56e7579fb94b436909ee61facb9">web::websocket::base64</a> (const unsigned char *input, int length)</td></tr>
+<tr class="separator:ac1cde56e7579fb94b436909ee61facb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee61de01b4c0cbc14195b7f2d0073644"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceweb_1_1websocket.html#aee61de01b4c0cbc14195b7f2d0073644">web::websocket::serverWebSocketKey</a> (const std::string &amp;clientWebSocketKey, const std::function&lt; void(char *)&gt; &amp;returnKey)</td></tr>
+<tr class="separator:aee61de01b4c0cbc14195b7f2d0073644"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81ec1caff90e4f83d0f5ce2317a54fa8"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceweb_1_1websocket.html#a81ec1caff90e4f83d0f5ce2317a54fa8">web::websocket::serverWebSocketKey</a> (const std::string &amp;clientWebSocketKey)</td></tr>
+<tr class="separator:a81ec1caff90e4f83d0f5ce2317a54fa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79cf90ab4f6ada5bcc2f8f42f976a940"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceweb_1_1websocket.html#a79cf90ab4f6ada5bcc2f8f42f976a940">web::websocket::base64_encode</a> (const unsigned char *bytes_to_encode, int length)</td></tr>
+<tr class="separator:a79cf90ab4f6ada5bcc2f8f42f976a940"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60f9be0f0a20d9534a2113eb56172802"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceweb_1_1websocket.html#a60f9be0f0a20d9534a2113eb56172802">web::websocket::base64_decode</a> (const std::string &amp;encoded_string)</td></tr>
+<tr class="separator:a60f9be0f0a20d9534a2113eb56172802"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_562abdcd8625d4bf7bad2fe6fe01354c.html">web</a></li><li class="navelem"><a class="el" href="dir_ec426a97ce461160e35695da59315765.html">ws</a></li><li class="navelem"><a class="el" href="ws__utils_8h.html">ws_utils.h</a></li>
+    <li class="navelem"><a class="el" href="dir_562abdcd8625d4bf7bad2fe6fe01354c.html">web</a></li><li class="navelem"><a class="el" href="dir_001861d41473c343e7c3cc7f26309d08.html">websocket</a></li><li class="navelem"><a class="el" href="ws__utils_8h.html">ws_utils.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

@@ -6,11 +6,10 @@ var namespaceweb_1_1http_1_1server =
     [ "RequestParser", "classweb_1_1http_1_1server_1_1_request_parser.html", "classweb_1_1http_1_1server_1_1_request_parser" ],
     [ "Response", "classweb_1_1http_1_1server_1_1_response.html", "classweb_1_1http_1_1server_1_1_response" ],
     [ "Server", "classweb_1_1http_1_1server_1_1_server.html", "classweb_1_1http_1_1server_1_1_server" ],
-    [ "SocketContextBase", "classweb_1_1http_1_1server_1_1_socket_context_base.html", "classweb_1_1http_1_1server_1_1_socket_context_base" ],
     [ "SocketContext", "classweb_1_1http_1_1server_1_1_socket_context.html", "classweb_1_1http_1_1server_1_1_socket_context" ],
+    [ "SocketContextT", "classweb_1_1http_1_1server_1_1_socket_context_t.html", "classweb_1_1http_1_1server_1_1_socket_context_t" ],
     [ "SocketContextFactory", "classweb_1_1http_1_1server_1_1_socket_context_factory.html", "classweb_1_1http_1_1server_1_1_socket_context_factory" ],
     [ "SocketContextUpgradeFactory", "classweb_1_1http_1_1server_1_1_socket_context_upgrade_factory.html", "classweb_1_1http_1_1server_1_1_socket_context_upgrade_factory" ],
     [ "SocketContextPlugin", "structweb_1_1http_1_1server_1_1_socket_context_plugin.html", "structweb_1_1http_1_1server_1_1_socket_context_plugin" ],
-    [ "SocketContextUpgradeFactorySelector", "classweb_1_1http_1_1server_1_1_socket_context_upgrade_factory_selector.html", "classweb_1_1http_1_1server_1_1_socket_context_upgrade_factory_selector" ],
-    [ "SocketContextUpgradeInterface", "classweb_1_1http_1_1server_1_1_socket_context_upgrade_interface.html", "classweb_1_1http_1_1server_1_1_socket_context_upgrade_interface" ]
+    [ "SocketContextUpgradeFactorySelector", "classweb_1_1http_1_1server_1_1_socket_context_upgrade_factory_selector.html", "classweb_1_1http_1_1server_1_1_socket_context_upgrade_factory_selector" ]
 ];

@@ -4,7 +4,7 @@ var namespacenet_1_1socket_1_1stream =
     [ "tls", "namespacenet_1_1socket_1_1stream_1_1tls.html", "namespacenet_1_1socket_1_1stream_1_1tls" ],
     [ "SocketClient", "classnet_1_1socket_1_1stream_1_1_socket_client.html", "classnet_1_1socket_1_1stream_1_1_socket_client" ],
     [ "SocketConnection", "classnet_1_1socket_1_1stream_1_1_socket_connection.html", "classnet_1_1socket_1_1stream_1_1_socket_connection" ],
-    [ "SocketConnectionBase", "classnet_1_1socket_1_1stream_1_1_socket_connection_base.html", "classnet_1_1socket_1_1stream_1_1_socket_connection_base" ],
+    [ "SocketConnectionT", "classnet_1_1socket_1_1stream_1_1_socket_connection_t.html", "classnet_1_1socket_1_1stream_1_1_socket_connection_t" ],
     [ "SocketConnector", "classnet_1_1socket_1_1stream_1_1_socket_connector.html", "classnet_1_1socket_1_1stream_1_1_socket_connector" ],
     [ "SocketContext", "classnet_1_1socket_1_1stream_1_1_socket_context.html", "classnet_1_1socket_1_1stream_1_1_socket_context" ],
     [ "SocketContextFactory", "classnet_1_1socket_1_1stream_1_1_socket_context_factory.html", "classnet_1_1socket_1_1stream_1_1_socket_context_factory" ],

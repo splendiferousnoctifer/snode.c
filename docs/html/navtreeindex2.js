@@ -1,5 +1,11 @@
 var NAVTREEINDEX2 =
 {
+"classnet_1_1_accept_event_receiver.html#a5e3de635f05e94085cd88f896c27c3b9":[9,0,1,3,1],
+"classnet_1_1_accept_event_receiver.html#a9247b356dbd09a2e1ee4f4d29642c9e2":[9,0,1,3,0],
+"classnet_1_1_connect_event_receiver.html":[9,0,1,4],
+"classnet_1_1_connect_event_receiver.html#a0694f73a2b253a7ad7d45a51297aae10":[9,0,1,4,1],
+"classnet_1_1_connect_event_receiver.html#a225e561000775279037c8a848ebdeb1b":[9,0,1,4,2],
+"classnet_1_1_connect_event_receiver.html#aeeac0ba275d533c59b81f66749fdad2d":[9,0,1,4,0],
 "classnet_1_1_descriptor.html":[9,0,1,5],
 "classnet_1_1_descriptor.html#a0dfe1354c24136c4d50c21c8138f53dd":[9,0,1,5,4],
 "classnet_1_1_descriptor.html#a1ce28627f2d7b7d54846cb73dcd0aa38":[9,0,1,5,9],
@@ -243,11 +249,5 @@ var NAVTREEINDEX2 =
 "classnet_1_1socket_1_1bluetooth_1_1address_1_1_rf_comm_address.html#a6341a0378255b90b6348dbd18b0da8d4":[9,0,1,1,0,0,1,2],
 "classnet_1_1socket_1_1bluetooth_1_1address_1_1_rf_comm_address.html#ace1f6b89fc99010e4b19bf00c117dd3c":[9,0,1,1,0,0,1,5],
 "classnet_1_1socket_1_1bluetooth_1_1address_1_1_rf_comm_address.html#ad3ee0b3b2db91750573bfa9b27b01a55":[9,0,1,1,0,0,1,0],
-"classnet_1_1socket_1_1bluetooth_1_1l2cap_1_1_socket.html":[9,0,1,1,0,1,0],
-"classnet_1_1socket_1_1bluetooth_1_1l2cap_1_1_socket.html#a71ce36842e2829f0ab2089005813c177":[9,0,1,1,0,1,0,0],
-"classnet_1_1socket_1_1bluetooth_1_1l2cap_1_1_socket_client.html":[9,0,1,1,0,1,1],
-"classnet_1_1socket_1_1bluetooth_1_1l2cap_1_1_socket_server.html":[9,0,1,1,0,1,2],
-"classnet_1_1socket_1_1bluetooth_1_1rfcomm_1_1_socket.html":[9,0,1,1,0,2,2],
-"classnet_1_1socket_1_1bluetooth_1_1rfcomm_1_1_socket.html#ae2e307db48bd6be3b2d7764becd14ce2":[9,0,1,1,0,2,2,0],
-"classnet_1_1socket_1_1bluetooth_1_1rfcomm_1_1legacy_1_1_socket_client.html":[9,0,1,1,0,2,0,0]
+"classnet_1_1socket_1_1bluetooth_1_1l2cap_1_1_socket.html":[9,0,1,1,0,1,0]
 };
