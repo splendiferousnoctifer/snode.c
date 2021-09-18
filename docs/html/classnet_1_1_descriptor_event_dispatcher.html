@@ -128,8 +128,8 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:a4e8b2524c6e0630bdfa5285c467410e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8656ed71487795fc862d2fd0ea190d16"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_descriptor_event_dispatcher.html#a8656ed71487795fc862d2fd0ea190d16">getMaxFd</a> () const</td></tr>
 <tr class="separator:a8656ed71487795fc862d2fd0ea190d16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe25ead0e4bc36a6ff44be5838eb573d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnet_1_1_fd_set.html">FdSet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_descriptor_event_dispatcher.html#afe25ead0e4bc36a6ff44be5838eb573d">getFdSet</a> ()</td></tr>
-<tr class="separator:afe25ead0e4bc36a6ff44be5838eb573d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57bd7a9d42b9a1b22488750ad267ec7e"><td class="memItemLeft" align="right" valign="top">fd_set &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_descriptor_event_dispatcher.html#a57bd7a9d42b9a1b22488750ad267ec7e">getFdSet</a> ()</td></tr>
+<tr class="separator:a57bd7a9d42b9a1b22488750ad267ec7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d4d0d9cabed29740fec8679d9d34722"><td class="memItemLeft" align="right" valign="top">struct timeval&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_descriptor_event_dispatcher.html#a3d4d0d9cabed29740fec8679d9d34722">dispatchActiveEvents</a> (struct timeval currentTime)</td></tr>
 <tr class="separator:a3d4d0d9cabed29740fec8679d9d34722"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a389e8216c85c6418b229102f7948a729"><td class="memItemLeft" align="right" valign="top">struct timeval&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_descriptor_event_dispatcher.html#a389e8216c85c6418b229102f7948a729">observeEnabledEvents</a> ()</td></tr>
@@ -375,9 +375,14 @@ Here is the caller graph for this function:</div>
 <div class="ttc" id="aclassnet_1_1_descriptor_event_dispatcher_html_abc18999a8e1c8c56947ccd67eaf2b08e"><div class="ttname"><a href="classnet_1_1_descriptor_event_dispatcher.html#abc18999a8e1c8c56947ccd67eaf2b08e">net::DescriptorEventDispatcher::eventCounter</a></div><div class="ttdeci">unsigned long eventCounter</div><div class="ttdef"><b>Definition:</b> <a href="_descriptor_event_dispatcher_8h_source.html#l00077">DescriptorEventDispatcher.h:77</a></div></div>
 <div class="ttc" id="aclassnet_1_1_fd_set_html_a69db6f08582ae98956e1476b996657e1"><div class="ttname"><a href="classnet_1_1_fd_set.html#a69db6f08582ae98956e1476b996657e1">net::FdSet::isSet</a></div><div class="ttdeci">int isSet(int fd) const</div><div class="ttdef"><b>Definition:</b> <a href="_fd_set_8cpp_source.html#l00042">FdSet.cpp:42</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_descriptor_event_dispatcher_8h_source.html#l00075">fdSet</a>.</p>
+<p class="reference">References <a class="el" href="_descriptor_event_dispatcher_8h_source.html#l00075">fdSet</a>, and <a class="el" href="_fd_set_8cpp_source.html#l00051">net::FdSet::get()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_event_loop_8cpp_source.html#l00058">net::EventLoop::tick()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_descriptor_event_dispatcher_a3d4d0d9cabed29740fec8679d9d34722_cgraph.svg" width="374" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -478,8 +483,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="afe25ead0e4bc36a6ff44be5838eb573d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afe25ead0e4bc36a6ff44be5838eb573d">&#9670;&nbsp;</a></span>getFdSet()</h2>
+<a id="a57bd7a9d42b9a1b22488750ad267ec7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57bd7a9d42b9a1b22488750ad267ec7e">&#9670;&nbsp;</a></span>getFdSet()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -488,7 +493,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classnet_1_1_fd_set.html">FdSet</a> &amp; net::DescriptorEventDispatcher::getFdSet </td>
+          <td class="memname">fd_set &amp; net::DescriptorEventDispatcher::getFdSet </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -502,15 +507,16 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_descriptor_event_dispatcher_8cpp_source.html#l00118">118</a> of file <a class="el" href="_descriptor_event_dispatcher_8cpp_source.html">DescriptorEventDispatcher.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                                               {</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classnet_1_1_descriptor_event_dispatcher.html#a2756e4ae1ec5734ce38ea0b905b557ec">fdSet</a>;</div>
+<div class="fragment"><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                                                {</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classnet_1_1_descriptor_event_dispatcher.html#a2756e4ae1ec5734ce38ea0b905b557ec">fdSet</a>.<a class="code" href="classnet_1_1_fd_set.html#a6522cb79575ddf3dc7fde777d767594f">get</a>();</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    }</div>
+<div class="ttc" id="aclassnet_1_1_fd_set_html_a6522cb79575ddf3dc7fde777d767594f"><div class="ttname"><a href="classnet_1_1_fd_set.html#a6522cb79575ddf3dc7fde777d767594f">net::FdSet::get</a></div><div class="ttdeci">fd_set &amp; get()</div><div class="ttdef"><b>Definition:</b> <a href="_fd_set_8cpp_source.html#l00051">FdSet.cpp:51</a></div></div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="_event_loop_8cpp_source.html#l00058">net::EventLoop::tick()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_descriptor_event_dispatcher_afe25ead0e4bc36a6ff44be5838eb573d_icgraph.svg" width="982" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1_descriptor_event_dispatcher_a57bd7a9d42b9a1b22488750ad267ec7e_icgraph.svg" width="982" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>

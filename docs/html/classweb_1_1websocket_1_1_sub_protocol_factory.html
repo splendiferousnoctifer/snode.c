@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>snode.c: web::websocket::SubProtocolFactory Class Reference</title>
+<title>snode.c: web::websocket::SubProtocolFactory&lt; SubProtocolT &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -84,95 +84,83 @@ $(document).ready(function(){initNavTree('classweb_1_1websocket_1_1_sub_protocol
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="classweb_1_1websocket_1_1_sub_protocol_factory-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">web::websocket::SubProtocolFactory Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">web::websocket::SubProtocolFactory&lt; SubProtocolT &gt; Class Template Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="_sub_protocol_factory_8h_source.html">SubProtocolFactory.h</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for web::websocket::SubProtocolFactory:</div>
+Inheritance diagram for web::websocket::SubProtocolFactory&lt; SubProtocolT &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1websocket_1_1_sub_protocol_factory__inherit__graph.svg" width="368" height="515"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1websocket_1_1_sub_protocol_factory__inherit__graph.svg" width="387" height="760"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <div class="dynheader">
-Collaboration diagram for web::websocket::SubProtocolFactory:</div>
+Collaboration diagram for web::websocket::SubProtocolFactory&lt; SubProtocolT &gt;:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1websocket_1_1_sub_protocol_factory__coll__graph.svg" width="207" height="176"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a97703970cb8f05d019efe813ddb4cc5e"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1websocket_1_1_sub_protocol_factory.html#a97703970cb8f05d019efe813ddb4cc5e">Role</a> { <a class="el" href="classweb_1_1websocket_1_1_sub_protocol_factory.html#a97703970cb8f05d019efe813ddb4cc5eaef10c650df47bffd6399e5e78da2a9b1">CLIENT</a>
-, <a class="el" href="classweb_1_1websocket_1_1_sub_protocol_factory.html#a97703970cb8f05d019efe813ddb4cc5ea3d27c95bfdbea691b250894d96852844">SERVER</a>
- }</td></tr>
-<tr class="separator:a97703970cb8f05d019efe813ddb4cc5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9459aaee7cc09cd4b87b56a5865069b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1websocket_1_1_sub_protocol_factory.html#ac9459aaee7cc09cd4b87b56a5865069b">SubProtocol</a> = SubProtocolT</td></tr>
+<tr class="separator:ac9459aaee7cc09cd4b87b56a5865069b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a43130c4eb9a0ef6597168d8b34654105"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1websocket_1_1_sub_protocol_factory.html#a43130c4eb9a0ef6597168d8b34654105">name</a> ()=0</td></tr>
-<tr class="separator:a43130c4eb9a0ef6597168d8b34654105"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1735a476e94f377f3b417ab4ce411986"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classweb_1_1websocket_1_1_sub_protocol_factory.html#a97703970cb8f05d019efe813ddb4cc5e">Role</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1websocket_1_1_sub_protocol_factory.html#a1735a476e94f377f3b417ab4ce411986">role</a> ()=0</td></tr>
-<tr class="separator:a1735a476e94f377f3b417ab4ce411986"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d0cb15608cbfb01b2e362a4c1220584"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1websocket_1_1_sub_protocol_factory.html#a1d0cb15608cbfb01b2e362a4c1220584">destroy</a> ()=0</td></tr>
-<tr class="separator:a1d0cb15608cbfb01b2e362a4c1220584"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5cc98ca503de63a76a85b4f9d19f5328"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classweb_1_1websocket_1_1_sub_protocol.html">SubProtocol</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1websocket_1_1_sub_protocol_factory.html#a5cc98ca503de63a76a85b4f9d19f5328">create</a> ()=0</td></tr>
-<tr class="separator:a5cc98ca503de63a76a85b4f9d19f5328"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96b377a2c84d5d4d0077ee6b7dd9730a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1websocket_1_1_sub_protocol_factory.html#a96b377a2c84d5d4d0077ee6b7dd9730a">destroy</a> (<a class="el" href="classweb_1_1websocket_1_1_sub_protocol.html">SubProtocol</a> *)=0</td></tr>
-<tr class="separator:a96b377a2c84d5d4d0077ee6b7dd9730a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a34e74aab362236de21391ac1f7ad5df6"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1websocket_1_1_sub_protocol_factory.html#a34e74aab362236de21391ac1f7ad5df6">~SubProtocolFactory</a> ()=default</td></tr>
-<tr class="separator:a34e74aab362236de21391ac1f7ad5df6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afda2716696b01c1bd5babd0241eb7f59"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1websocket_1_1_sub_protocol_factory.html#afda2716696b01c1bd5babd0241eb7f59">SubProtocolFactory</a> ()=default</td></tr>
+<tr class="separator:afda2716696b01c1bd5babd0241eb7f59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a257e4fb4f4543b774079412a821caad1"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1websocket_1_1_sub_protocol_factory.html#a257e4fb4f4543b774079412a821caad1">~SubProtocolFactory</a> ()=default</td></tr>
+<tr class="separator:a257e4fb4f4543b774079412a821caad1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58b12146b0a20e411b4634b7e32798bd"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1websocket_1_1_sub_protocol_factory.html#a58b12146b0a20e411b4634b7e32798bd">name</a> ()=0</td></tr>
+<tr class="separator:a58b12146b0a20e411b4634b7e32798bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a625a2b6e5cddc73c327727256f2901d2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1websocket_1_1_sub_protocol_factory.html#a625a2b6e5cddc73c327727256f2901d2">destroy</a> ()=0</td></tr>
+<tr class="separator:a625a2b6e5cddc73c327727256f2901d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25eee3fc89fca13bbcbf838a999cb90c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classweb_1_1websocket_1_1_sub_protocol_factory.html#ac9459aaee7cc09cd4b87b56a5865069b">SubProtocol</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1websocket_1_1_sub_protocol_factory.html#a25eee3fc89fca13bbcbf838a999cb90c">create</a> ()=0</td></tr>
+<tr class="separator:a25eee3fc89fca13bbcbf838a999cb90c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66e2b40ac780735e87aff4b56c785f4c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1websocket_1_1_sub_protocol_factory.html#a66e2b40ac780735e87aff4b56c785f4c">destroy</a> (<a class="el" href="classweb_1_1websocket_1_1_sub_protocol_factory.html#ac9459aaee7cc09cd4b87b56a5865069b">SubProtocol</a> *subProtocol)=0</td></tr>
+<tr class="separator:a66e2b40ac780735e87aff4b56c785f4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_sub_protocol_factory_8h_source.html#l00034">34</a> of file <a class="el" href="_sub_protocol_factory_8h_source.html">SubProtocolFactory.h</a>.</p>
-</div><h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="a97703970cb8f05d019efe813ddb4cc5e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a97703970cb8f05d019efe813ddb4cc5e">&#9670;&nbsp;</a></span>Role</h2>
+<div class="textblock"><h3>template&lt;typename SubProtocolT&gt;<br />
+class web::websocket::SubProtocolFactory&lt; SubProtocolT &gt;</h3>
+
+
+<p class="definition">Definition at line <a class="el" href="_sub_protocol_factory_8h_source.html#l00031">31</a> of file <a class="el" href="_sub_protocol_factory_8h_source.html">SubProtocolFactory.h</a>.</p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="ac9459aaee7cc09cd4b87b56a5865069b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9459aaee7cc09cd4b87b56a5865069b">&#9670;&nbsp;</a></span>SubProtocol</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
+<div class="memtemplate">
+template&lt;typename SubProtocolT &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="classweb_1_1websocket_1_1_sub_protocol_factory.html#a97703970cb8f05d019efe813ddb4cc5e">web::websocket::SubProtocolFactory::Role</a></td>
+          <td class="memname">using <a class="el" href="classweb_1_1websocket_1_1_sub_protocol_factory.html">web::websocket::SubProtocolFactory</a>&lt; SubProtocolT &gt;::<a class="el" href="classweb_1_1websocket_1_1_sub_protocol_factory.html#ac9459aaee7cc09cd4b87b56a5865069b">SubProtocol</a> =  SubProtocolT</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a97703970cb8f05d019efe813ddb4cc5eaef10c650df47bffd6399e5e78da2a9b1"></a>CLIENT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a97703970cb8f05d019efe813ddb4cc5ea3d27c95bfdbea691b250894d96852844"></a>SERVER&#160;</td><td class="fielddoc"></td></tr>
-</table>
 
-<p class="definition">Definition at line <a class="el" href="_sub_protocol_factory_8h_source.html#l00036">36</a> of file <a class="el" href="_sub_protocol_factory_8h_source.html">SubProtocolFactory.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{ CLIENT, SERVER };</div>
-</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="_sub_protocol_factory_8h_source.html#l00033">33</a> of file <a class="el" href="_sub_protocol_factory_8h_source.html">SubProtocolFactory.h</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a34e74aab362236de21391ac1f7ad5df6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a34e74aab362236de21391ac1f7ad5df6">&#9670;&nbsp;</a></span>~SubProtocolFactory()</h2>
+<a id="afda2716696b01c1bd5babd0241eb7f59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afda2716696b01c1bd5babd0241eb7f59">&#9670;&nbsp;</a></span>SubProtocolFactory()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename SubProtocolT &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual web::websocket::SubProtocolFactory::~SubProtocolFactory </td>
+          <td class="memname"><a class="el" href="classweb_1_1websocket_1_1_sub_protocol_factory.html">web::websocket::SubProtocolFactory</a>&lt; SubProtocolT &gt;::<a class="el" href="classweb_1_1websocket_1_1_sub_protocol_factory.html">SubProtocolFactory</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -180,7 +168,34 @@ Protected Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a257e4fb4f4543b774079412a821caad1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a257e4fb4f4543b774079412a821caad1">&#9670;&nbsp;</a></span>~SubProtocolFactory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename SubProtocolT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classweb_1_1websocket_1_1_sub_protocol_factory.html">web::websocket::SubProtocolFactory</a>&lt; SubProtocolT &gt;::~<a class="el" href="classweb_1_1websocket_1_1_sub_protocol_factory.html">SubProtocolFactory</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -188,17 +203,19 @@ Protected Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a5cc98ca503de63a76a85b4f9d19f5328"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5cc98ca503de63a76a85b4f9d19f5328">&#9670;&nbsp;</a></span>create()</h2>
+<a id="a25eee3fc89fca13bbcbf838a999cb90c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25eee3fc89fca13bbcbf838a999cb90c">&#9670;&nbsp;</a></span>create()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename SubProtocolT &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classweb_1_1websocket_1_1_sub_protocol.html">SubProtocol</a>* web::websocket::SubProtocolFactory::create </td>
+          <td class="memname">virtual <a class="el" href="classweb_1_1websocket_1_1_sub_protocol_factory.html#ac9459aaee7cc09cd4b87b56a5865069b">SubProtocol</a>* <a class="el" href="classweb_1_1websocket_1_1_sub_protocol_factory.html">web::websocket::SubProtocolFactory</a>&lt; SubProtocolT &gt;::create </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -211,28 +228,30 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classweb_1_1websocket_1_1subprotocol_1_1echo_1_1server_1_1_echo_factory.html#a0f31a8063c32ebede048aa317cf39ecf">web::websocket::subprotocol::echo::server::EchoFactory</a>.</p>
+<p>Implemented in <a class="el" href="classweb_1_1websocket_1_1subprotocol_1_1echo_1_1server_1_1_echo_factory.html#abd2b9b5b4697ff9e885f86a5335dda4d">web::websocket::subprotocol::echo::server::EchoFactory</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="web_2websocket_2server_2_socket_context_8cpp_source.html#l00051">web::websocket::server::SocketContext::create()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="websocket_2server_2_socket_context_upgrade_factory_8cpp_source.html#l00051">web::websocket::server::SocketContextUpgradeFactory::create()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1websocket_1_1_sub_protocol_factory_a5cc98ca503de63a76a85b4f9d19f5328_icgraph.svg" width="675" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1websocket_1_1_sub_protocol_factory_a25eee3fc89fca13bbcbf838a999cb90c_icgraph.svg" width="466" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
 </div>
-<a id="a1d0cb15608cbfb01b2e362a4c1220584"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d0cb15608cbfb01b2e362a4c1220584">&#9670;&nbsp;</a></span>destroy() <span class="overload">[1/2]</span></h2>
+<a id="a625a2b6e5cddc73c327727256f2901d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a625a2b6e5cddc73c327727256f2901d2">&#9670;&nbsp;</a></span>destroy() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename SubProtocolT &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void web::websocket::SubProtocolFactory::destroy </td>
+          <td class="memname">virtual void <a class="el" href="classweb_1_1websocket_1_1_sub_protocol_factory.html">web::websocket::SubProtocolFactory</a>&lt; SubProtocolT &gt;::destroy </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -247,29 +266,31 @@ Here is the caller graph for this function:</div>
 
 <p>Implemented in <a class="el" href="classweb_1_1websocket_1_1subprotocol_1_1echo_1_1server_1_1_echo_factory.html#a2b0816590f8b529fa4b87859ee73c228">web::websocket::subprotocol::echo::server::EchoFactory</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_sub_protocol_factory_selector_8cpp_source.html#l00099">web::websocket::SubProtocolFactorySelector::add()</a>, <a class="el" href="web_2websocket_2server_2_socket_context_8cpp_source.html#l00051">web::websocket::server::SocketContext::create()</a>, and <a class="el" href="_sub_protocol_factory_selector_8cpp_source.html#l00038">web::websocket::SubProtocolFactorySelector::destroy()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="websocket_2server_2_socket_context_upgrade_factory_8cpp_source.html#l00051">web::websocket::server::SocketContextUpgradeFactory::create()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1websocket_1_1_sub_protocol_factory_a1d0cb15608cbfb01b2e362a4c1220584_icgraph.svg" width="954" height="188"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1websocket_1_1_sub_protocol_factory_a625a2b6e5cddc73c327727256f2901d2_icgraph.svg" width="466" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
 </div>
-<a id="a96b377a2c84d5d4d0077ee6b7dd9730a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a96b377a2c84d5d4d0077ee6b7dd9730a">&#9670;&nbsp;</a></span>destroy() <span class="overload">[2/2]</span></h2>
+<a id="a66e2b40ac780735e87aff4b56c785f4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66e2b40ac780735e87aff4b56c785f4c">&#9670;&nbsp;</a></span>destroy() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename SubProtocolT &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void web::websocket::SubProtocolFactory::destroy </td>
+          <td class="memname">virtual void <a class="el" href="classweb_1_1websocket_1_1_sub_protocol_factory.html">web::websocket::SubProtocolFactory</a>&lt; SubProtocolT &gt;::destroy </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classweb_1_1websocket_1_1_sub_protocol.html">SubProtocol</a> *&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classweb_1_1websocket_1_1_sub_protocol_factory.html#ac9459aaee7cc09cd4b87b56a5865069b">SubProtocol</a> *&#160;</td>
+          <td class="paramname"><em>subProtocol</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -280,21 +301,21 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classweb_1_1websocket_1_1subprotocol_1_1echo_1_1server_1_1_echo_factory.html#a16cc1ba850f6af2a718f1fde6c3ce4b8">web::websocket::subprotocol::echo::server::EchoFactory</a>.</p>
-
 </div>
 </div>
-<a id="a43130c4eb9a0ef6597168d8b34654105"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a43130c4eb9a0ef6597168d8b34654105">&#9670;&nbsp;</a></span>name()</h2>
+<a id="a58b12146b0a20e411b4634b7e32798bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58b12146b0a20e411b4634b7e32798bd">&#9670;&nbsp;</a></span>name()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename SubProtocolT &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual std::string web::websocket::SubProtocolFactory::name </td>
+          <td class="memname">virtual std::string <a class="el" href="classweb_1_1websocket_1_1_sub_protocol_factory.html">web::websocket::SubProtocolFactory</a>&lt; SubProtocolT &gt;::name </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -308,47 +329,6 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Implemented in <a class="el" href="classweb_1_1websocket_1_1subprotocol_1_1echo_1_1server_1_1_echo_factory.html#a7de61c11ce2cdd49a641571f1cc1d15e">web::websocket::subprotocol::echo::server::EchoFactory</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="_sub_protocol_factory_selector_8cpp_source.html#l00099">web::websocket::SubProtocolFactorySelector::add()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1websocket_1_1_sub_protocol_factory_a43130c4eb9a0ef6597168d8b34654105_icgraph.svg" width="939" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
-</div>
-</div>
-<a id="a1735a476e94f377f3b417ab4ce411986"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1735a476e94f377f3b417ab4ce411986">&#9670;&nbsp;</a></span>role()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="classweb_1_1websocket_1_1_sub_protocol_factory.html#a97703970cb8f05d019efe813ddb4cc5e">Role</a> web::websocket::SubProtocolFactory::role </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="classweb_1_1websocket_1_1subprotocol_1_1echo_1_1server_1_1_echo_factory.html#a0acf0dd8711f7942ba01fe70e4f89352">web::websocket::subprotocol::echo::server::EchoFactory</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="_sub_protocol_factory_selector_8cpp_source.html#l00099">web::websocket::SubProtocolFactorySelector::add()</a>, and <a class="el" href="web_2websocket_2server_2_socket_context_8cpp_source.html#l00051">web::websocket::server::SocketContext::create()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1websocket_1_1_sub_protocol_factory_a1735a476e94f377f3b417ab4ce411986_icgraph.svg" width="954" height="134"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
 </div>
 </div>

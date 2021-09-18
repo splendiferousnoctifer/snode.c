@@ -116,7 +116,7 @@ $(document).ready(function(){initNavTree('functions_r.html',''); initResizable()
 </li>
 <li>readFrameData()
 : <a class="el" href="classweb_1_1websocket_1_1_receiver.html#a2a345682728fd482b29586a176a33699">web::websocket::Receiver</a>
-, <a class="el" href="classweb_1_1websocket_1_1_socket_context.html#ac79132b42bdf207f63c01369286c566c">web::websocket::SocketContext</a>
+, <a class="el" href="classweb_1_1websocket_1_1_socket_context.html#af0d32a6d44b50d65fedb9e2fbbf7d758">web::websocket::SocketContext&lt; SubProtocolT &gt;</a>
 </li>
 <li>readFromPeer()
 : <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#af26fe1dddd3a9066f01638133c31cb6a">net::socket::stream::SocketConnection</a>
@@ -244,11 +244,15 @@ $(document).ready(function(){initNavTree('functions_r.html',''); initResizable()
 , <a class="el" href="classweb_1_1http_1_1client_1_1_client.html#a76861920b49ccdbd04c1e248a7f28498">web::http::client::Client&lt; SocketClientT, RequestT, ResponseT &gt;</a>
 , <a class="el" href="classweb_1_1http_1_1client_1_1_response.html#a299bee31ccf9f4c1fcbc86a718014988">web::http::client::Response</a>
 , <a class="el" href="classweb_1_1http_1_1client_1_1_socket_context_factory.html#ab4b2348d28e8bd691c41a68ff16213b6">web::http::client::SocketContextFactory&lt; RequestT, ResponseT &gt;</a>
-, <a class="el" href="classweb_1_1http_1_1client_1_1_socket_context_t.html#a68237f2a71179cbd284365fcc16af624">web::http::client::SocketContextT&lt; RequestT, ResponseT &gt;</a>
 </li>
 <li>response
 : <a class="el" href="classweb_1_1http_1_1client_1_1_socket_context_t.html#a7074eb14e7044979802f1f42de280409">web::http::client::SocketContextT&lt; RequestT, ResponseT &gt;</a>
-, <a class="el" href="classweb_1_1http_1_1client_1_1_socket_context_upgrade_factory.html#abef3e619e07f2b91d485c9292fd1fb4f">web::http::client::SocketContextUpgradeFactory</a>
+</li>
+<li>Response
+: <a class="el" href="classweb_1_1http_1_1client_1_1_socket_context_t.html#a68237f2a71179cbd284365fcc16af624">web::http::client::SocketContextT&lt; RequestT, ResponseT &gt;</a>
+</li>
+<li>response
+: <a class="el" href="classweb_1_1http_1_1client_1_1_socket_context_upgrade_factory.html#abef3e619e07f2b91d485c9292fd1fb4f">web::http::client::SocketContextUpgradeFactory</a>
 </li>
 <li>Response()
 : <a class="el" href="classweb_1_1http_1_1server_1_1_response.html#a9a8f79e813e61d6380c59fa4caa85a34">web::http::server::Response</a>
@@ -291,35 +295,18 @@ $(document).ready(function(){initNavTree('functions_r.html',''); initResizable()
 </li>
 <li>role()
 : <a class="el" href="classweb_1_1http_1_1client_1_1_socket_context_upgrade_factory.html#a35986e31ad270dd6bd0acf303c5a566e">web::http::client::SocketContextUpgradeFactory</a>
-, <a class="el" href="classweb_1_1http_1_1server_1_1_socket_context_upgrade_factory.html#a10ac841722b72ac2504bbf9c31de10c0">web::http::server::SocketContextUpgradeFactory</a>
 </li>
 <li>Role
 : <a class="el" href="classweb_1_1http_1_1server_1_1_socket_context_upgrade_factory.html#ac518737a8663c697ff4a91bcf2770170">web::http::server::SocketContextUpgradeFactory</a>
 </li>
 <li>role()
-: <a class="el" href="classweb_1_1websocket_1_1client_1_1_socket_context_upgrade_factory.html#a2eada68ff73767a061e5b36f2efe59a4">web::websocket::client::SocketContextUpgradeFactory</a>
+: <a class="el" href="classweb_1_1http_1_1server_1_1_socket_context_upgrade_factory.html#a10ac841722b72ac2504bbf9c31de10c0">web::http::server::SocketContextUpgradeFactory</a>
+, <a class="el" href="classweb_1_1websocket_1_1client_1_1_socket_context_upgrade_factory.html#a2eada68ff73767a061e5b36f2efe59a4">web::websocket::client::SocketContextUpgradeFactory</a>
+, <a class="el" href="classweb_1_1websocket_1_1server_1_1_socket_context_upgrade_factory.html#a7e890f683ba14c109e8f3f5e7633650d">web::websocket::server::SocketContextUpgradeFactory</a>
 </li>
 <li>Role
-: <a class="el" href="classweb_1_1websocket_1_1client_1_1_sub_protocol.html#a43a229e97290ae8c72f32c075e7ce8f8">web::websocket::client::SubProtocol</a>
-</li>
-<li>role()
-: <a class="el" href="classweb_1_1websocket_1_1server_1_1_socket_context_upgrade_factory.html#a7e890f683ba14c109e8f3f5e7633650d">web::websocket::server::SocketContextUpgradeFactory</a>
-, <a class="el" href="classweb_1_1websocket_1_1subprotocol_1_1echo_1_1server_1_1_echo_factory.html#a0acf0dd8711f7942ba01fe70e4f89352">web::websocket::subprotocol::echo::server::EchoFactory</a>
-</li>
-<li>Role
-: <a class="el" href="classweb_1_1websocket_1_1_sub_protocol.html#a4f627851f29882cb69ca97e69a094484">web::websocket::SubProtocol</a>
-</li>
-<li>role()
-: <a class="el" href="classweb_1_1websocket_1_1_sub_protocol_factory.html#a1735a476e94f377f3b417ab4ce411986">web::websocket::SubProtocolFactory</a>
-</li>
-<li>Role
-: <a class="el" href="classweb_1_1websocket_1_1_sub_protocol_factory.html#a97703970cb8f05d019efe813ddb4cc5e">web::websocket::SubProtocolFactory</a>
-</li>
-<li>role
-: <a class="el" href="classweb_1_1websocket_1_1_sub_protocol_factory_selector.html#a5a16eb1b559a08289fd4ee3ef7a47732">web::websocket::SubProtocolFactorySelector</a>
-</li>
-<li>Role
-: <a class="el" href="classweb_1_1websocket_1_1_transmitter.html#a26192bcf21e8047f66a05c7aca9799b9">web::websocket::Transmitter</a>
+: <a class="el" href="classweb_1_1websocket_1_1_socket_context.html#ae55a300fed5e25311153cb909258f5b4">web::websocket::SocketContext&lt; SubProtocolT &gt;</a>
+, <a class="el" href="classweb_1_1websocket_1_1_sub_protocol.html#a4f627851f29882cb69ca97e69a094484">web::websocket::SubProtocol&lt; SocketContextT &gt;</a>
 </li>
 <li>root
 : <a class="el" href="classexpress_1_1middleware_1_1_static_middleware.html#a4c1b12467fbff98a6aeecb56774a779e">express::middleware::StaticMiddleware</a>

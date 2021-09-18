@@ -86,7 +86,7 @@ $(document).ready(function(){initNavTree('functions_vars_s.html',''); initResiza
 <h3><a id="index_s"></a>- s -</h3><ul>
 <li>searchPaths
 : <a class="el" href="classweb_1_1http_1_1server_1_1_socket_context_upgrade_factory_selector.html#acd898e437b715fa88b5b514659dfb512">web::http::server::SocketContextUpgradeFactorySelector</a>
-, <a class="el" href="classweb_1_1websocket_1_1_sub_protocol_factory_selector.html#a2e7e981ef0393f283fc491399b51af17">web::websocket::SubProtocolFactorySelector</a>
+, <a class="el" href="classweb_1_1websocket_1_1_sub_protocol_factory_selector.html#a5a881a7aa8d9f594cc70f41680c40731">web::websocket::SubProtocolFactorySelector&lt; SubProtocolFactoryT &gt;</a>
 </li>
 <li>sendHeaderInProgress
 : <a class="el" href="classweb_1_1http_1_1client_1_1_request.html#a2da45af4b50ce8e5cecba1d892110324">web::http::client::Request</a>
@@ -94,9 +94,6 @@ $(document).ready(function(){initNavTree('functions_vars_s.html',''); initResiza
 </li>
 <li>server
 : <a class="el" href="classexpress_1_1_web_app_t.html#a43f343623b01c698256e2c0eb4e3226f">express::WebAppT&lt; ServerT &gt;</a>
-</li>
-<li>serverContext
-: <a class="el" href="classweb_1_1http_1_1server_1_1_response.html#a8630de052b04e7ed3f89c3eb7edacfbf">web::http::server::Response</a>
 </li>
 <li>serverNameIndication
 : <a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a4e8f3b81c7fa572a36ba16c5cc70807c">net::socket::stream::tls::SocketConnection&lt; SocketT &gt;</a>
@@ -123,6 +120,7 @@ $(document).ready(function(){initNavTree('functions_vars_s.html',''); initResiza
 <li>socketContext
 : <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#ae69d4578db4a9e0c759637f9b3d019df">net::socket::stream::SocketConnectionT&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt;</a>
 , <a class="el" href="classweb_1_1http_1_1_parser.html#ad23d9efc338ac58ed9231879c94c7c0b">web::http::Parser</a>
+, <a class="el" href="classweb_1_1http_1_1server_1_1_response.html#a31c1100bbbca1612c0f9f17d4d55d858">web::http::server::Response</a>
 </li>
 <li>socketContextFactory
 : <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_client.html#a94423d8f60d10ae02d29a5da617be897">net::socket::stream::SocketClient&lt; SocketContextFactoryT, SocketConnectorT &gt;</a>
@@ -182,17 +180,19 @@ $(document).ready(function(){initNavTree('functions_vars_s.html',''); initResiza
 : <a class="el" href="classnet_1_1_event_loop.html#a4863138ce127827123afe7d3f23b9eb5">net::EventLoop</a>
 </li>
 <li>subProtocol
-: <a class="el" href="classweb_1_1websocket_1_1_socket_context.html#af2d6502a6c8e8b086c65e5b7a79b6dcc">web::websocket::SocketContext</a>
+: <a class="el" href="classweb_1_1websocket_1_1_socket_context.html#af5e94c126709f5877953c2b168ea8150">web::websocket::SocketContext&lt; SubProtocolT &gt;</a>
 </li>
 <li>subProtocolFactory
-: <a class="el" href="structweb_1_1websocket_1_1_sub_protocol_plugin.html#a0641fc0c7d8c2c9de1b145ba611371d6">web::websocket::SubProtocolPlugin</a>
+: <a class="el" href="structweb_1_1websocket_1_1_sub_protocol_plugin.html#a5ff682f1b85b8d7ede56ded8b4f7651c">web::websocket::SubProtocolPlugin&lt; SubProtocolFactory &gt;</a>
+</li>
+<li>subProtocolFactorySelector
+: <a class="el" href="classweb_1_1websocket_1_1server_1_1_sub_protocol_factory_selector.html#ab4df1f0c4e83aa204266c533936f11a5">web::websocket::server::SubProtocolFactorySelector</a>
 </li>
 <li>subProtocolPlugins
-: <a class="el" href="classweb_1_1websocket_1_1_sub_protocol_factory_selector.html#aaa4aee135a89f0e6aeefbda66969f0f5">web::websocket::SubProtocolFactorySelector</a>
+: <a class="el" href="classweb_1_1websocket_1_1_sub_protocol_factory_selector.html#a2d6ae6da72a50ffb7944cfc91c230719">web::websocket::SubProtocolFactorySelector&lt; SubProtocolFactoryT &gt;</a>
 </li>
 <li>subProtocolSelector
 : <a class="el" href="classweb_1_1websocket_1_1client_1_1_sub_protocol_factory_selector.html#ab9f96158396773c4ca21789af9ed3613">web::websocket::client::SubProtocolFactorySelector</a>
-, <a class="el" href="classweb_1_1websocket_1_1server_1_1_sub_protocol_factory_selector.html#a3276ff0e5760328f363e9a34fa61d3b7">web::websocket::server::SubProtocolFactorySelector</a>
 </li>
 <li>supportedMethods
 : <a class="el" href="classweb_1_1http_1_1server_1_1_request_parser.html#aa832ea93246b42a2de1aa37bc010aa28">web::http::server::RequestParser</a>

@@ -2,6 +2,7 @@ var hierarchy =
 [
     [ "net::timer::Timer::absoluteTimeout", "structnet_1_1timer_1_1_timer_1_1absolute_timeout.html", null ],
     [ "utils::AttributeProxy< Attribute >", "classutils_1_1_attribute_proxy.html", null ],
+    [ "web::websocket::server::ChannelManager", "classweb_1_1websocket_1_1server_1_1_channel_manager.html", null ],
     [ "web::http::client::Client< SocketClientT, RequestT, ResponseT >", "classweb_1_1http_1_1client_1_1_client.html", null ],
     [ "web::http::client::Client< net::socket::ip::tcp::ipv4::legacy::SocketClient, web::http::client::Request, web::http::client::Response >", "classweb_1_1http_1_1client_1_1_client.html", [
       [ "web::http::client::legacy::Client< Request, Response >", "classweb_1_1http_1_1client_1_1legacy_1_1_client.html", null ]
@@ -118,9 +119,11 @@ var hierarchy =
     ] ],
     [ "net::pipe::Pipe", "classnet_1_1pipe_1_1_pipe.html", null ],
     [ "web::websocket::Receiver", "classweb_1_1websocket_1_1_receiver.html", [
-      [ "web::websocket::SocketContext", "classweb_1_1websocket_1_1_socket_context.html", [
-        [ "web::websocket::client::SocketContext", "classweb_1_1websocket_1_1client_1_1_socket_context.html", null ],
+      [ "web::websocket::SocketContext< web::websocket::server::SubProtocol >", "classweb_1_1websocket_1_1_socket_context.html", [
         [ "web::websocket::server::SocketContext", "classweb_1_1websocket_1_1server_1_1_socket_context.html", null ]
+      ] ],
+      [ "web::websocket::SocketContext< SubProtocolT >", "classweb_1_1websocket_1_1_socket_context.html", [
+        [ "web::websocket::client::SocketContext", "classweb_1_1websocket_1_1client_1_1_socket_context.html", null ]
       ] ]
     ] ],
     [ "web::http::server::SocketContextT< RequestT, ResponseT >::RequestContext", "structweb_1_1http_1_1server_1_1_socket_context_t_1_1_request_context.html", null ],
@@ -218,13 +221,14 @@ var hierarchy =
       [ "net::socket::stream::SocketConnectionT< SocketReaderT, SocketWriterT, SocketAddressT >", "classnet_1_1socket_1_1stream_1_1_socket_connection_t.html", null ]
     ] ],
     [ "net::socket::stream::SocketContext", "classnet_1_1socket_1_1stream_1_1_socket_context.html", [
+      [ "web::websocket::SocketContext< web::websocket::server::SubProtocol >", "classweb_1_1websocket_1_1_socket_context.html", null ],
       [ "web::http::client::SocketContext", "classweb_1_1http_1_1client_1_1_socket_context.html", [
         [ "web::http::client::SocketContextT< RequestT, ResponseT >", "classweb_1_1http_1_1client_1_1_socket_context_t.html", null ]
       ] ],
       [ "web::http::server::SocketContext", "classweb_1_1http_1_1server_1_1_socket_context.html", [
         [ "web::http::server::SocketContextT< RequestT, ResponseT >", "classweb_1_1http_1_1server_1_1_socket_context_t.html", null ]
       ] ],
-      [ "web::websocket::SocketContext", "classweb_1_1websocket_1_1_socket_context.html", null ]
+      [ "web::websocket::SocketContext< SubProtocolT >", "classweb_1_1websocket_1_1_socket_context.html", null ]
     ] ],
     [ "net::socket::stream::SocketContextFactory", "classnet_1_1socket_1_1stream_1_1_socket_context_factory.html", [
       [ "web::http::client::SocketContextFactory< RequestT, ResponseT >", "classweb_1_1http_1_1client_1_1_socket_context_factory.html", null ],
@@ -280,23 +284,29 @@ var hierarchy =
     ] ],
     [ "express::State", "classexpress_1_1_state.html", null ],
     [ "web::http::StatusCode", "classweb_1_1http_1_1_status_code.html", null ],
-    [ "web::websocket::SubProtocol", "classweb_1_1websocket_1_1_sub_protocol.html", [
-      [ "web::websocket::client::SubProtocol", "classweb_1_1websocket_1_1client_1_1_sub_protocol.html", null ],
+    [ "web::websocket::SubProtocol< SocketContextT >", "classweb_1_1websocket_1_1_sub_protocol.html", [
+      [ "web::websocket::client::SubProtocol", "classweb_1_1websocket_1_1client_1_1_sub_protocol.html", null ]
+    ] ],
+    [ "web::websocket::SubProtocol< web::websocket::server::SocketContext >", "classweb_1_1websocket_1_1_sub_protocol.html", [
       [ "web::websocket::server::SubProtocol", "classweb_1_1websocket_1_1server_1_1_sub_protocol.html", [
         [ "web::websocket::subprotocol::echo::server::Echo", "classweb_1_1websocket_1_1subprotocol_1_1echo_1_1server_1_1_echo.html", null ]
       ] ]
     ] ],
-    [ "web::websocket::SubProtocolFactory", "classweb_1_1websocket_1_1_sub_protocol_factory.html", [
-      [ "web::websocket::client::SubProtocolInterface", "classweb_1_1websocket_1_1client_1_1_sub_protocol_interface.html", null ],
+    [ "web::websocket::SubProtocolFactory< SubProtocolT >", "classweb_1_1websocket_1_1_sub_protocol_factory.html", [
+      [ "web::websocket::client::SubProtocolInterface", "classweb_1_1websocket_1_1client_1_1_sub_protocol_interface.html", null ]
+    ] ],
+    [ "web::websocket::SubProtocolFactory< web::websocket::server::SubProtocol >", "classweb_1_1websocket_1_1_sub_protocol_factory.html", [
       [ "web::websocket::server::SubProtocolFactory", "classweb_1_1websocket_1_1server_1_1_sub_protocol_factory.html", [
         [ "web::websocket::subprotocol::echo::server::EchoFactory", "classweb_1_1websocket_1_1subprotocol_1_1echo_1_1server_1_1_echo_factory.html", null ]
       ] ]
     ] ],
-    [ "web::websocket::SubProtocolFactorySelector", "classweb_1_1websocket_1_1_sub_protocol_factory_selector.html", [
-      [ "web::websocket::client::SubProtocolFactorySelector", "classweb_1_1websocket_1_1client_1_1_sub_protocol_factory_selector.html", null ],
+    [ "web::websocket::SubProtocolFactorySelector< SubProtocolFactoryT >", "classweb_1_1websocket_1_1_sub_protocol_factory_selector.html", [
+      [ "web::websocket::client::SubProtocolFactorySelector", "classweb_1_1websocket_1_1client_1_1_sub_protocol_factory_selector.html", null ]
+    ] ],
+    [ "web::websocket::SubProtocolFactorySelector< web::websocket::server::SubProtocolFactory >", "classweb_1_1websocket_1_1_sub_protocol_factory_selector.html", [
       [ "web::websocket::server::SubProtocolFactorySelector", "classweb_1_1websocket_1_1server_1_1_sub_protocol_factory_selector.html", null ]
     ] ],
-    [ "web::websocket::SubProtocolPlugin", "structweb_1_1websocket_1_1_sub_protocol_plugin.html", null ],
+    [ "web::websocket::SubProtocolPlugin< SubProtocolFactory >", "structweb_1_1websocket_1_1_sub_protocol_plugin.html", null ],
     [ "net::DescriptorEventReceiver::TIMEOUT", "classnet_1_1_descriptor_event_receiver_1_1_t_i_m_e_o_u_t.html", null ],
     [ "net::TimerEventDispatcher", "classnet_1_1_timer_event_dispatcher.html", null ],
     [ "net::TimerEventReceiver", "classnet_1_1_timer_event_receiver.html", [
@@ -307,6 +317,7 @@ var hierarchy =
     ] ],
     [ "net::TimerEventDispatcher::timernode_lt", "classnet_1_1_timer_event_dispatcher_1_1timernode__lt.html", null ],
     [ "web::websocket::Transmitter", "classweb_1_1websocket_1_1_transmitter.html", [
-      [ "web::websocket::SocketContext", "classweb_1_1websocket_1_1_socket_context.html", null ]
+      [ "web::websocket::SocketContext< web::websocket::server::SubProtocol >", "classweb_1_1websocket_1_1_socket_context.html", null ],
+      [ "web::websocket::SocketContext< SubProtocolT >", "classweb_1_1websocket_1_1_socket_context.html", null ]
     ] ]
 ];

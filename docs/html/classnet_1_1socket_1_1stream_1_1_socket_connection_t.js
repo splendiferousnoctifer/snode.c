@@ -17,7 +17,7 @@ var classnet_1_1socket_1_1stream_1_1_socket_connection_t =
     [ "sendToPeer", "classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#a4d8851616fa4a6ff819d86b8a112e355", null ],
     [ "sendToPeer", "classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#a1240978d9d4fb3954a0fa43eda83055a", null ],
     [ "setTimeout", "classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#ab942478081e85a5c6aac14737328f0cb", null ],
-    [ "switchSocketContext", "classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#abc2635d3a19a81a8d2acec82c5f109b7", null ],
+    [ "switchSocketContext", "classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#a5803f5267f658736b4a9772278f0727f", null ],
     [ "unobserved", "classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#a95d2df2caa26e5c581da84b34d0013b4", null ],
     [ "writeEvent", "classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#ac638b8b10045ce1d05865e3ab2347025", null ],
     [ "localAddress", "classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#ab96c2e0f94f029535cea4e2e03801cd1", null ],

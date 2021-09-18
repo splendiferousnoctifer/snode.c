@@ -1,9 +1,5 @@
 var classweb_1_1websocket_1_1client_1_1_sub_protocol =
 [
-    [ "Role", "classweb_1_1websocket_1_1client_1_1_sub_protocol.html#a43a229e97290ae8c72f32c075e7ce8f8", [
-      [ "SERVER", "classweb_1_1websocket_1_1client_1_1_sub_protocol.html#a43a229e97290ae8c72f32c075e7ce8f8a3d27c95bfdbea691b250894d96852844", null ],
-      [ "CLIENT", "classweb_1_1websocket_1_1client_1_1_sub_protocol.html#a43a229e97290ae8c72f32c075e7ce8f8aef10c650df47bffd6399e5e78da2a9b1", null ]
-    ] ],
     [ "SubProtocol", "classweb_1_1websocket_1_1client_1_1_sub_protocol.html#a0270e1182c16099b7785dc24e0bc4d96", null ],
     [ "SubProtocol", "classweb_1_1websocket_1_1client_1_1_sub_protocol.html#a3987316b1d9ef1c8a32deae6089e4141", null ],
     [ "SubProtocol", "classweb_1_1websocket_1_1client_1_1_sub_protocol.html#a79efeab11949c2079c5b95fef35f3283", null ],

@@ -28,5 +28,5 @@ var classweb_1_1http_1_1server_1_1_response =
     [ "headersSent", "classweb_1_1http_1_1server_1_1_response.html#a3812dfe54b772402f9fc944e8350b69a", null ],
     [ "responseStatus", "classweb_1_1http_1_1server_1_1_response.html#adff0a4f1e7e67fa647d7e726e74f0966", null ],
     [ "sendHeaderInProgress", "classweb_1_1http_1_1server_1_1_response.html#a6910a90430da0172d9c6ce12ea2d85cb", null ],
-    [ "serverContext", "classweb_1_1http_1_1server_1_1_response.html#a8630de052b04e7ed3f89c3eb7edacfbf", null ]
+    [ "socketContext", "classweb_1_1http_1_1server_1_1_response.html#a31c1100bbbca1612c0f9f17d4d55d858", null ]
 ];

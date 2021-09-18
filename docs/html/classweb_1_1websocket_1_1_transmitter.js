@@ -1,12 +1,8 @@
 var classweb_1_1websocket_1_1_transmitter =
 [
-    [ "Role", "classweb_1_1websocket_1_1_transmitter.html#a26192bcf21e8047f66a05c7aca9799b9", [
-      [ "SERVER", "classweb_1_1websocket_1_1_transmitter.html#a26192bcf21e8047f66a05c7aca9799b9a3d27c95bfdbea691b250894d96852844", null ],
-      [ "CLIENT", "classweb_1_1websocket_1_1_transmitter.html#a26192bcf21e8047f66a05c7aca9799b9aef10c650df47bffd6399e5e78da2a9b1", null ]
-    ] ],
     [ "Transmitter", "classweb_1_1websocket_1_1_transmitter.html#afdb3f4f58ab8165ad60ddd567543902a", null ],
     [ "Transmitter", "classweb_1_1websocket_1_1_transmitter.html#ad7f46f0118686ea85058eb3e4f143364", null ],
-    [ "Transmitter", "classweb_1_1websocket_1_1_transmitter.html#a8df2b7f06365bf11b76dce7e59ffd4a7", null ],
+    [ "Transmitter", "classweb_1_1websocket_1_1_transmitter.html#a4820c0f2d4fbae086d20ce088478d982", null ],
     [ "dumpFrame", "classweb_1_1websocket_1_1_transmitter.html#af9c93a3596f8875ee4e5230dd00b0141", null ],
     [ "operator=", "classweb_1_1websocket_1_1_transmitter.html#ab7d02db81643f44bb67c9b2c4dc0d92a", null ],
     [ "send", "classweb_1_1websocket_1_1_transmitter.html#ac36955b609bb42c6fcc3d340705c314a", null ],

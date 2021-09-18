@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['descriptoreventdispatcher_1900',['DescriptorEventDispatcher',['../classnet_1_1_descriptor_event_receiver.html#ad17bca9cfb4e895e38e4fe6cee41f44f',1,'net::DescriptorEventReceiver']]]
+  ['channelmanager_1928',['ChannelManager',['../classweb_1_1websocket_1_1server_1_1_sub_protocol.html#a6bc48c7100b040dcb878721c94bccb9b',1,'web::websocket::server::SubProtocol']]]
 ];

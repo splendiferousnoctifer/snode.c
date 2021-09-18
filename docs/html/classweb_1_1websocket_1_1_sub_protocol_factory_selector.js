@@ -1,16 +1,15 @@
 var classweb_1_1websocket_1_1_sub_protocol_factory_selector =
 [
-    [ "SubProtocolFactorySelector", "classweb_1_1websocket_1_1_sub_protocol_factory_selector.html#aff79220c28775c2445d51b8caed2e447", null ],
-    [ "~SubProtocolFactorySelector", "classweb_1_1websocket_1_1_sub_protocol_factory_selector.html#a1bc8872b73b3d034fd06d6ed5423e0c5", null ],
-    [ "SubProtocolFactorySelector", "classweb_1_1websocket_1_1_sub_protocol_factory_selector.html#aab432a4d61061dc004fcdb552bcf7330", null ],
-    [ "add", "classweb_1_1websocket_1_1_sub_protocol_factory_selector.html#a83b8a642b9e08733ccfc14a6f935b682", null ],
-    [ "addSubProtocolSearchPath", "classweb_1_1websocket_1_1_sub_protocol_factory_selector.html#ac255468b1c2234fd2e82150e3468107c", null ],
-    [ "destroy", "classweb_1_1websocket_1_1_sub_protocol_factory_selector.html#a528e3e59100c07d76250db4e039c2d6d", null ],
-    [ "load", "classweb_1_1websocket_1_1_sub_protocol_factory_selector.html#a119c16601b2ad955780075e1131e4dbf", null ],
-    [ "operator=", "classweb_1_1websocket_1_1_sub_protocol_factory_selector.html#a7832663c38f9fc18e91d7b0d0beecca3", null ],
-    [ "select", "classweb_1_1websocket_1_1_sub_protocol_factory_selector.html#ae77268907d63c41d9e92b8c2434a6ff9", null ],
-    [ "unload", "classweb_1_1websocket_1_1_sub_protocol_factory_selector.html#a650aff6d6c0fe2ba2000c3adc0887500", null ],
-    [ "role", "classweb_1_1websocket_1_1_sub_protocol_factory_selector.html#a5a16eb1b559a08289fd4ee3ef7a47732", null ],
-    [ "searchPaths", "classweb_1_1websocket_1_1_sub_protocol_factory_selector.html#a2e7e981ef0393f283fc491399b51af17", null ],
-    [ "subProtocolPlugins", "classweb_1_1websocket_1_1_sub_protocol_factory_selector.html#aaa4aee135a89f0e6aeefbda66969f0f5", null ]
+    [ "SubProtocolFactory", "classweb_1_1websocket_1_1_sub_protocol_factory_selector.html#a62cfe7d0fc445bb1762117f81034e47a", null ],
+    [ "SubProtocolFactorySelector", "classweb_1_1websocket_1_1_sub_protocol_factory_selector.html#a7404822188c6dcf3965a3fd22fb6c0db", null ],
+    [ "~SubProtocolFactorySelector", "classweb_1_1websocket_1_1_sub_protocol_factory_selector.html#aa18889f5bf18f13d7d4e155e91b74b0a", null ],
+    [ "SubProtocolFactorySelector", "classweb_1_1websocket_1_1_sub_protocol_factory_selector.html#a49971e0843d2d2a162c7026ec96ef9e7", null ],
+    [ "add", "classweb_1_1websocket_1_1_sub_protocol_factory_selector.html#acede132589364760936fe84cc98cb7a3", null ],
+    [ "addSubProtocolSearchPath", "classweb_1_1websocket_1_1_sub_protocol_factory_selector.html#a24187089d3b7a24a906db284c499987d", null ],
+    [ "load", "classweb_1_1websocket_1_1_sub_protocol_factory_selector.html#a0e05009b0e0239ee152a4c7a68c5fca8", null ],
+    [ "operator=", "classweb_1_1websocket_1_1_sub_protocol_factory_selector.html#a9814020819e199a8f009d4f68f8b7ff3", null ],
+    [ "select", "classweb_1_1websocket_1_1_sub_protocol_factory_selector.html#a128338657a57f6a94a910e95daf91e27", null ],
+    [ "unload", "classweb_1_1websocket_1_1_sub_protocol_factory_selector.html#a455a104093aa4ba7090c850951eead5c", null ],
+    [ "searchPaths", "classweb_1_1websocket_1_1_sub_protocol_factory_selector.html#a5a881a7aa8d9f594cc70f41680c40731", null ],
+    [ "subProtocolPlugins", "classweb_1_1websocket_1_1_sub_protocol_factory_selector.html#a2d6ae6da72a50ffb7944cfc91c230719", null ]
 ];

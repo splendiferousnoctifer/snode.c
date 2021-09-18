@@ -136,8 +136,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab78a602b648979ca80aaf89bdaf265f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3813ad73b0b924348c8c7a8ace5e5bc4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context.html">SocketContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#a3813ad73b0b924348c8c7a8ace5e5bc4">getSocketContext</a> () override</td></tr>
 <tr class="separator:a3813ad73b0b924348c8c7a8ace5e5bc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc2635d3a19a81a8d2acec82c5f109b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#abc2635d3a19a81a8d2acec82c5f109b7">switchSocketContext</a> (const <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context_factory.html">SocketContextFactory</a> &amp;socketContextFactory) override</td></tr>
-<tr class="separator:abc2635d3a19a81a8d2acec82c5f109b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5803f5267f658736b4a9772278f0727f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#a5803f5267f658736b4a9772278f0727f">switchSocketContext</a> (const <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context_factory.html">SocketContextFactory</a> *socketContextFactory) override</td></tr>
+<tr class="separator:a5803f5267f658736b4a9772278f0727f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -826,8 +826,8 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="abc2635d3a19a81a8d2acec82c5f109b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abc2635d3a19a81a8d2acec82c5f109b7">&#9670;&nbsp;</a></span>switchSocketContext()</h2>
+<a id="a5803f5267f658736b4a9772278f0727f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5803f5267f658736b4a9772278f0727f">&#9670;&nbsp;</a></span>switchSocketContext()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -840,7 +840,7 @@ template&lt;typename SocketReaderT , typename SocketWriterT , typename SocketAdd
         <tr>
           <td class="memname">void <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html">net::socket::stream::SocketConnectionT</a>&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt;::switchSocketContext </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context_factory.html">SocketContextFactory</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context_factory.html">SocketContextFactory</a> *&#160;</td>
           <td class="paramname"><em>socketContextFactory</em></td><td>)</td>
           <td></td>
         </tr>
@@ -852,11 +852,11 @@ template&lt;typename SocketReaderT , typename SocketWriterT , typename SocketAdd
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a821fde37c62f53fe7cb97ac7d2b1fa4b">net::socket::stream::SocketConnection</a>.</p>
+<p>Implements <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#af232a2233951874566e62fed9a8bd2fa">net::socket::stream::SocketConnection</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_socket_connection_t_8h_source.html#l00125">125</a> of file <a class="el" href="_socket_connection_t_8h_source.html">SocketConnectionT.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                                                                                            {</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#afe340317b8de90fc2a953bccee2dd217">SocketContext</a>* newSocketContext = socketContextFactory.create(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#afe340317b8de90fc2a953bccee2dd217">SocketContext</a>* newSocketContext = socketContextFactory-&gt;create(<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            <span class="keywordflow">if</span> (newSocketContext != <span class="keyword">nullptr</span>) {</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#ae69d4578db4a9e0c759637f9b3d019df">socketContext</a>-&gt;<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_context.html#ad339df8a90ad418e867292edbbcd1ff3">onDisconnected</a>();</div>
@@ -872,7 +872,7 @@ template&lt;typename SocketReaderT , typename SocketWriterT , typename SocketAdd
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_connection_t_abc2635d3a19a81a8d2acec82c5f109b7_cgraph.svg" width="432" height="199"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_connection_t_a5803f5267f658736b4a9772278f0727f_cgraph.svg" width="432" height="199"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
