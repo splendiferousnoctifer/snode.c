@@ -19,7 +19,7 @@ var searchData=
   ['application_22',['APPLICATION',['../_router_8h.html#a8b7131df91fe7a961e2cdadcedb55232',1,'Router.h']]],
   ['applicationdispatcher_23',['ApplicationDispatcher',['../classexpress_1_1_router_dispatcher.html#a591796081407ac28747598c15ccaa2e8',1,'express::RouterDispatcher::ApplicationDispatcher()'],['../classexpress_1_1_application_dispatcher.html#a802b79437ab81786ec5bc0bccb0b9166',1,'express::ApplicationDispatcher::ApplicationDispatcher()'],['../classexpress_1_1_application_dispatcher.html',1,'express::ApplicationDispatcher']]],
   ['arg_24',['arg',['../classnet_1_1timer_1_1_timer.html#ae5321e41c1449780244ab6945015a82f',1,'net::timer::Timer']]],
-  ['attach_25',['attach',['../classnet_1_1_descriptor.html#a0dfe1354c24136c4d50c21c8138f53dd',1,'net::Descriptor']]],
+  ['attach_25',['attach',['../classnet_1_1_descriptor.html#a0dfe1354c24136c4d50c21c8138f53dd',1,'net::Descriptor::attach()'],['../classweb_1_1websocket_1_1server_1_1_socket_context_upgrade_factory.html#a0e87c72833963a7536f80aa6366bf122',1,'web::websocket::server::SocketContextUpgradeFactory::attach()']]],
   ['attribute_26',['attribute',['../classutils_1_1_attribute_proxy.html#a1a94d84d5ce6efd76e333a7b5bdf01e4',1,'utils::AttributeProxy::attribute()'],['../classutils_1_1_single_attribute_injector.html#a6483f3e54ffbb659dd10882261e99901',1,'utils::SingleAttributeInjector::attribute()']]],
   ['attributeinjector_2eh_27',['AttributeInjector.h',['../_attribute_injector_8h.html',1,'']]],
   ['attributeproxy_28',['AttributeProxy',['../classutils_1_1_attribute_proxy.html#a03bdaaf55479ce514cd092d1ad969292',1,'utils::AttributeProxy::AttributeProxy()'],['../classutils_1_1_attribute_proxy.html',1,'utils::AttributeProxy&lt; Attribute &gt;']]],

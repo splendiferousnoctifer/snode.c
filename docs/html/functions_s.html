@@ -321,10 +321,12 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 </li>
 <li>SocketClient()
 : <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_client.html#af763c1a2aebe6cea19cc996c8e13b6bc">net::socket::stream::SocketClient&lt; SocketContextFactoryT, SocketConnectorT &gt;</a>
-, <a class="el" href="classweb_1_1http_1_1client_1_1_client.html#ae6a4139afe1402bdea7d6a68c3922b80">web::http::client::Client&lt; SocketClientT, RequestT, ResponseT &gt;</a>
 </li>
 <li>socketClient
 : <a class="el" href="classweb_1_1http_1_1client_1_1_client.html#ab8ebd39b4547946515d40fc2e2c84f26">web::http::client::Client&lt; SocketClientT, RequestT, ResponseT &gt;</a>
+</li>
+<li>SocketClient
+: <a class="el" href="classweb_1_1http_1_1client_1_1_client.html#ae6a4139afe1402bdea7d6a68c3922b80">web::http::client::Client&lt; SocketClientT, RequestT, ResponseT &gt;</a>
 </li>
 <li>SocketConnection
 : <a class="el" href="classexpress_1_1_web_app_t.html#a4cd9d21f6db40a34af80fd2066462504">express::WebAppT&lt; ServerT &gt;</a>
@@ -359,7 +361,7 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 </li>
 <li>SocketConnector
 : <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_client.html#a79ad005c9734a2160b5a74ca40c1161c">net::socket::stream::SocketClient&lt; SocketContextFactoryT, SocketConnectorT &gt;</a>
-, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connector.html#aa6fba4dfe45c58d7710fdf524acfc618">net::socket::stream::SocketConnector&lt; SocketConnectionT &gt;</a>
+, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connector.html#a4889dc79984ee88795bea52e7dc4b775">net::socket::stream::SocketConnector&lt; SocketConnectionT &gt;</a>
 , <a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a93358fd8285cbad5c49755553f9c5c49">net::socket::stream::tls::SocketConnection&lt; SocketT &gt;</a>
 , <a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connector.html#a9478880405049a391afd5bea280b2e2f">net::socket::stream::tls::SocketConnector&lt; SocketT &gt;</a>
 </li>
@@ -384,14 +386,12 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 , <a class="el" href="classweb_1_1websocket_1_1_socket_context.html#a166bd8a7f6caf91618a5140df3345112">web::websocket::SocketContext&lt; SubProtocolT &gt;</a>
 , <a class="el" href="classweb_1_1websocket_1_1_sub_protocol.html#a43dac8896c9656478a13c89b366acff3">web::websocket::SubProtocol&lt; SocketContextT &gt;</a>
 </li>
-<li>socketContextFactory
-: <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_client.html#a94423d8f60d10ae02d29a5da617be897">net::socket::stream::SocketClient&lt; SocketContextFactoryT, SocketConnectorT &gt;</a>
-</li>
 <li>SocketContextFactory
 : <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_client.html#a6a02ed757af4710c1e26f1dd6dea3161">net::socket::stream::SocketClient&lt; SocketContextFactoryT, SocketConnectorT &gt;</a>
 </li>
 <li>socketContextFactory
-: <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connector.html#a5b0aecea102668088bdf6a424dbd3693">net::socket::stream::SocketConnector&lt; SocketConnectionT &gt;</a>
+: <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_client.html#a94423d8f60d10ae02d29a5da617be897">net::socket::stream::SocketClient&lt; SocketContextFactoryT, SocketConnectorT &gt;</a>
+, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connector.html#a5b0aecea102668088bdf6a424dbd3693">net::socket::stream::SocketConnector&lt; SocketConnectionT &gt;</a>
 </li>
 <li>SocketContextFactory()
 : <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context_factory.html#a0463e6ecd4c83f1af1cafd69d2207d0d">net::socket::stream::SocketContextFactory</a>
@@ -443,14 +443,14 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 : <a class="el" href="classweb_1_1http_1_1server_1_1_socket_context_upgrade_factory_selector.html#a35633e52e0e65ec747b00c6d61f67ecc">web::http::server::SocketContextUpgradeFactorySelector</a>
 </li>
 <li>SocketListener()
-: <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_listener.html#a912ab159c8caafc122cf9f00fce1560d">net::socket::stream::SocketListener&lt; SocketConnectionT &gt;</a>
+: <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_listener.html#a9cae462fe43e8fc17bf97612c36a0a24">net::socket::stream::SocketListener&lt; SocketConnectionT &gt;</a>
 , <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_server.html#ae33589abd98742c1de96f46812e0982f">net::socket::stream::SocketServer&lt; SocketContextFactoryT, SocketListenerT &gt;</a>
 , <a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#aefe9edd9b3bb19b0f76ad9deef97ea70">net::socket::stream::tls::SocketConnection&lt; SocketT &gt;</a>
 , <a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_listener.html#ae2baeb7a5ed604be4a45d91ad1b68f95">net::socket::stream::tls::SocketListener&lt; SocketT &gt;</a>
 </li>
 <li>SocketReader
 : <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#ac6be2fd7f271aaf30bea212989cfeaff">net::socket::stream::SocketConnectionT&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt;</a>
-, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#afb11af35283831bcc44ad36e97478109">net::socket::stream::SocketReader&lt; SocketT &gt;</a>
+, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#a4c55325fbd2d5f9691029dde67de6606">net::socket::stream::SocketReader&lt; SocketT &gt;</a>
 </li>
 <li>SocketServer
 : <a class="el" href="classexpress_1_1_web_app_t.html#af6d27cea97ba0493c2f66cb99404a5a4">express::WebAppT&lt; ServerT &gt;</a>
@@ -498,7 +498,7 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 : <a class="el" href="classexpress_1_1_router_dispatcher.html#a716ee15028f3d2c214434eeadbbe456a">express::RouterDispatcher</a>
 </li>
 <li>StaticMiddleware()
-: <a class="el" href="classexpress_1_1middleware_1_1_static_middleware.html#af712793a6f6d600b813fc4a6d3fbe41d">express::middleware::StaticMiddleware</a>
+: <a class="el" href="classexpress_1_1middleware_1_1_static_middleware.html#a573c60de5962113fc441e2494b87f79f">express::middleware::StaticMiddleware</a>
 </li>
 <li>status()
 : <a class="el" href="classweb_1_1http_1_1server_1_1_response.html#ab0e29ec119bf92d286d94d12ff2071ba">web::http::server::Response</a>
@@ -533,16 +533,16 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 : <a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a3f6885984be884225ca9fc53ea652ac2">net::socket::stream::tls::SocketConnection&lt; SocketT &gt;</a>
 </li>
 <li>SubProtocol()
-: <a class="el" href="classweb_1_1websocket_1_1client_1_1_sub_protocol.html#a3987316b1d9ef1c8a32deae6089e4141">web::websocket::client::SubProtocol</a>
+: <a class="el" href="classweb_1_1websocket_1_1client_1_1_sub_protocol.html#a0270e1182c16099b7785dc24e0bc4d96">web::websocket::client::SubProtocol</a>
 , <a class="el" href="classweb_1_1websocket_1_1server_1_1_channel_manager.html#a6d40824b1843bb8074ce94c8214020f8">web::websocket::server::ChannelManager</a>
 , <a class="el" href="classweb_1_1websocket_1_1server_1_1_sub_protocol.html#a09ff711fdd0066999bf8fb2aeb552ff8">web::websocket::server::SubProtocol</a>
-, <a class="el" href="classweb_1_1websocket_1_1_socket_context.html#a0360ea046d1c5fd1c2786a9a988f6089">web::websocket::SocketContext&lt; SubProtocolT &gt;</a>
 </li>
 <li>subProtocol
 : <a class="el" href="classweb_1_1websocket_1_1_socket_context.html#af5e94c126709f5877953c2b168ea8150">web::websocket::SocketContext&lt; SubProtocolT &gt;</a>
 </li>
-<li>SubProtocol()
-: <a class="el" href="classweb_1_1websocket_1_1_sub_protocol.html#ac22a9458be774666366012cedfbf0bc2">web::websocket::SubProtocol&lt; SocketContextT &gt;</a>
+<li>SubProtocol
+: <a class="el" href="classweb_1_1websocket_1_1_socket_context.html#a0360ea046d1c5fd1c2786a9a988f6089">web::websocket::SocketContext&lt; SubProtocolT &gt;</a>
+, <a class="el" href="classweb_1_1websocket_1_1_sub_protocol.html#ac22a9458be774666366012cedfbf0bc2">web::websocket::SubProtocol&lt; SocketContextT &gt;</a>
 , <a class="el" href="classweb_1_1websocket_1_1_sub_protocol_factory.html#ac9459aaee7cc09cd4b87b56a5865069b">web::websocket::SubProtocolFactory&lt; SubProtocolT &gt;</a>
 </li>
 <li>SubProtocolFactory()
@@ -555,13 +555,13 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 </li>
 <li>SubProtocolFactorySelector()
 : <a class="el" href="classweb_1_1websocket_1_1client_1_1_sub_protocol_factory_selector.html#a275ddb4931fccb95ee4c216b6b43cfb9">web::websocket::client::SubProtocolFactorySelector</a>
-, <a class="el" href="classweb_1_1websocket_1_1server_1_1_sub_protocol_factory_selector.html#a5e3d0b9208c92fa02550323bd1c9c462">web::websocket::server::SubProtocolFactorySelector</a>
 </li>
 <li>subProtocolFactorySelector
 : <a class="el" href="classweb_1_1websocket_1_1server_1_1_sub_protocol_factory_selector.html#ab4df1f0c4e83aa204266c533936f11a5">web::websocket::server::SubProtocolFactorySelector</a>
 </li>
 <li>SubProtocolFactorySelector()
-: <a class="el" href="classweb_1_1websocket_1_1_sub_protocol_factory_selector.html#a7404822188c6dcf3965a3fd22fb6c0db">web::websocket::SubProtocolFactorySelector&lt; SubProtocolFactoryT &gt;</a>
+: <a class="el" href="classweb_1_1websocket_1_1server_1_1_sub_protocol_factory_selector.html#a5e3d0b9208c92fa02550323bd1c9c462">web::websocket::server::SubProtocolFactorySelector</a>
+, <a class="el" href="classweb_1_1websocket_1_1_sub_protocol_factory_selector.html#a7404822188c6dcf3965a3fd22fb6c0db">web::websocket::SubProtocolFactorySelector&lt; SubProtocolFactoryT &gt;</a>
 </li>
 <li>subProtocolPlugins
 : <a class="el" href="classweb_1_1websocket_1_1_sub_protocol_factory_selector.html#a2d6ae6da72a50ffb7944cfc91c230719">web::websocket::SubProtocolFactorySelector&lt; SubProtocolFactoryT &gt;</a>
@@ -570,7 +570,7 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 : <a class="el" href="classweb_1_1websocket_1_1client_1_1_sub_protocol_factory_selector.html#ab9f96158396773c4ca21789af9ed3613">web::websocket::client::SubProtocolFactorySelector</a>
 </li>
 <li>subscribe()
-: <a class="el" href="classweb_1_1websocket_1_1server_1_1_channel_manager.html#a9bad0b85fee808e7b48f9371c155fd22">web::websocket::server::ChannelManager</a>
+: <a class="el" href="classweb_1_1websocket_1_1server_1_1_channel_manager.html#a262acd1c08145ba8e45dc11c94e77af2">web::websocket::server::ChannelManager</a>
 , <a class="el" href="classweb_1_1websocket_1_1server_1_1_sub_protocol.html#a1eef345693371a2774b740716201d27a">web::websocket::server::SubProtocol</a>
 </li>
 <li>supportedMethods
