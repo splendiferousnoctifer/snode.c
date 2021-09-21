@@ -26,7 +26,7 @@ var classweb_1_1websocket_1_1_socket_context =
     [ "onReceiveFromPeer", "classweb_1_1websocket_1_1_socket_context.html#a9ba2bd1a892ad21104b00aa5672ef49c", null ],
     [ "onWriteError", "classweb_1_1websocket_1_1_socket_context.html#a4c1a95c7251297af5ff7b3440185ea50", null ],
     [ "operator=", "classweb_1_1websocket_1_1_socket_context.html#a75b8c5847df2c9e599b9972f2363223e", null ],
-    [ "readFrameData", "classweb_1_1websocket_1_1_socket_context.html#af0d32a6d44b50d65fedb9e2fbbf7d758", null ],
+    [ "readFrameData", "classweb_1_1websocket_1_1_socket_context.html#ad56912a5efb67e75c84df6f51616b2c4", null ],
     [ "sendClose", "classweb_1_1websocket_1_1_socket_context.html#ad7c0e82e5ac2f1f2172c5c228ae0753c", null ],
     [ "sendClose", "classweb_1_1websocket_1_1_socket_context.html#ac3cca075300c4abe73c871b4e402ed6f", null ],
     [ "sendFrameData", "classweb_1_1websocket_1_1_socket_context.html#a0c6fd514fc458d76216b9caecd5fea41", null ],

@@ -117,8 +117,8 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a9d7242d28757dd994763e2a9052e16aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa1c473218f5caf4affc4060f475f2d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#afa1c473218f5caf4affc4060f475f2d9">shutdown</a> ()</td></tr>
 <tr class="separator:afa1c473218f5caf4affc4060f475f2d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39879dbffa5ce8231c5035784b78af27"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#a39879dbffa5ce8231c5035784b78af27">readFromPeer</a> (char *junk, std::size_t junkLen)</td></tr>
-<tr class="separator:a39879dbffa5ce8231c5035784b78af27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca1ec8d986417fe650281fc86641d8a0"><td class="memItemLeft" align="right" valign="top">ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#aca1ec8d986417fe650281fc86641d8a0">readFromPeer</a> (char *junk, std::size_t junkLen)</td></tr>
+<tr class="separator:aca1ec8d986417fe650281fc86641d8a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classnet_1_1_read_event_receiver"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classnet_1_1_read_event_receiver')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classnet_1_1_read_event_receiver.html">net::ReadEventReceiver</a></td></tr>
 <tr class="memitem:ac3430850652909b88fa07718eebd31cb inherit pro_methods_classnet_1_1_read_event_receiver"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_read_event_receiver.html#ac3430850652909b88fa07718eebd31cb">ReadEventReceiver</a> (long timeout=60)</td></tr>
 <tr class="separator:ac3430850652909b88fa07718eebd31cb inherit pro_methods_classnet_1_1_read_event_receiver"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -252,7 +252,7 @@ template&lt;typename SocketT &gt; </div>
 <p class="definition">Definition at line <a class="el" href="_socket_reader_8h_source.html#l00044">44</a> of file <a class="el" href="_socket_reader_8h_source.html">SocketReader.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            : <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#ad87599aca3f7eed671d0ae72a9c68ab3">onError</a>(<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#ad87599aca3f7eed671d0ae72a9c68ab3">onError</a>) {</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        }</div>
-<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_reader_html_ad87599aca3f7eed671d0ae72a9c68ab3"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#ad87599aca3f7eed671d0ae72a9c68ab3">net::socket::stream::SocketReader::onError</a></div><div class="ttdeci">std::function&lt; void(int)&gt; onError</div><div class="ttdef"><b>Definition:</b> <a href="_socket_reader_8h_source.html#l00084">SocketReader.h:84</a></div></div>
+<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_reader_html_ad87599aca3f7eed671d0ae72a9c68ab3"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#ad87599aca3f7eed671d0ae72a9c68ab3">net::socket::stream::SocketReader::onError</a></div><div class="ttdeci">std::function&lt; void(int)&gt; onError</div><div class="ttdef"><b>Definition:</b> <a href="_socket_reader_8h_source.html#l00086">SocketReader.h:86</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -315,7 +315,8 @@ template&lt;typename SocketT &gt; </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_reader_a0592f7cab272b388303ecdcf0c88c732_icgraph.svg" width="622" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_reader_a0592f7cab272b388303ecdcf0c88c732_icgraph.svg" width="622" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
@@ -362,13 +363,14 @@ template&lt;typename SocketT &gt; </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_reader_a796e5ff1a91d6343f778bf68ab039a7b_icgraph.svg" width="602" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_reader_a796e5ff1a91d6343f778bf68ab039a7b_icgraph.svg" width="602" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
 </div>
-<a id="a39879dbffa5ce8231c5035784b78af27"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a39879dbffa5ce8231c5035784b78af27">&#9670;&nbsp;</a></span>readFromPeer()</h2>
+<a id="aca1ec8d986417fe650281fc86641d8a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca1ec8d986417fe650281fc86641d8a0">&#9670;&nbsp;</a></span>readFromPeer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -379,7 +381,7 @@ template&lt;typename SocketT &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::size_t <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_reader.html">net::socket::stream::SocketReader</a>&lt; SocketT &gt;::readFromPeer </td>
+          <td class="memname">ssize_t <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_reader.html">net::socket::stream::SocketReader</a>&lt; SocketT &gt;::readFromPeer </td>
           <td>(</td>
           <td class="paramtype">char *&#160;</td>
           <td class="paramname"><em>junk</em>, </td>
@@ -404,7 +406,7 @@ template&lt;typename SocketT &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_socket_reader_8h_source.html#l00062">62</a> of file <a class="el" href="_socket_reader_8h_source.html">SocketReader.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                                                              {</div>
+<div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                                                            {</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#a079668a7eb0894e5884e71f690809bc0">markShutdown</a>) {</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                <a class="code" href="classnet_1_1socket_1_1_socket.html#a7769480db1cc5cadb0e208577b85ade6">Socket::shutdown</a>(Socket::shutdown::RD);</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#a079668a7eb0894e5884e71f690809bc0">markShutdown</a> = <span class="keyword">false</span>;</div>
@@ -416,30 +418,34 @@ template&lt;typename SocketT &gt; </div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                <span class="keywordflow">if</span> (errno != EAGAIN &amp;&amp; errno != EWOULDBLOCK &amp;&amp; errno != EINTR) {</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                    <a class="code" href="classnet_1_1_descriptor_event_receiver.html#a71d48a9e0030918589d901b834e07327">ReadEventReceiver::disable</a>();</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                    <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#ad87599aca3f7eed671d0ae72a9c68ab3">onError</a>(<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#a0592f7cab272b388303ecdcf0c88c732">getError</a>());</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                }</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                ret = 0;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            }</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>std::size_t<span class="keyword">&gt;</span>(ret);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                    ret = -1;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                    ret = 0;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <span class="keywordflow">return</span> ret;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        }</div>
 <div class="ttc" id="aclassnet_1_1_descriptor_event_receiver_html_a71d48a9e0030918589d901b834e07327"><div class="ttname"><a href="classnet_1_1_descriptor_event_receiver.html#a71d48a9e0030918589d901b834e07327">net::DescriptorEventReceiver::disable</a></div><div class="ttdeci">void disable()</div><div class="ttdef"><b>Definition:</b> <a href="_descriptor_event_receiver_8cpp_source.html#l00040">DescriptorEventReceiver.cpp:40</a></div></div>
 <div class="ttc" id="aclassnet_1_1socket_1_1_socket_html_a7769480db1cc5cadb0e208577b85ade6"><div class="ttname"><a href="classnet_1_1socket_1_1_socket.html#a7769480db1cc5cadb0e208577b85ade6">net::socket::Socket::shutdown</a></div><div class="ttdeci">shutdown</div><div class="ttdef"><b>Definition:</b> <a href="socket_2_socket_8h_source.html#l00070">Socket.h:70</a></div></div>
 <div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_reader_html_a0592f7cab272b388303ecdcf0c88c732"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#a0592f7cab272b388303ecdcf0c88c732">net::socket::stream::SocketReader::getError</a></div><div class="ttdeci">virtual int getError()=0</div></div>
-<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_reader_html_a079668a7eb0894e5884e71f690809bc0"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#a079668a7eb0894e5884e71f690809bc0">net::socket::stream::SocketReader::markShutdown</a></div><div class="ttdeci">bool markShutdown</div><div class="ttdef"><b>Definition:</b> <a href="_socket_reader_8h_source.html#l00086">SocketReader.h:86</a></div></div>
+<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_reader_html_a079668a7eb0894e5884e71f690809bc0"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#a079668a7eb0894e5884e71f690809bc0">net::socket::stream::SocketReader::markShutdown</a></div><div class="ttdeci">bool markShutdown</div><div class="ttdef"><b>Definition:</b> <a href="_socket_reader_8h_source.html#l00088">SocketReader.h:88</a></div></div>
 <div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_reader_html_a796e5ff1a91d6343f778bf68ab039a7b"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#a796e5ff1a91d6343f778bf68ab039a7b">net::socket::stream::SocketReader::read</a></div><div class="ttdeci">virtual ssize_t read(char *junk, std::size_t junkLen)=0</div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_descriptor_event_receiver_8cpp_source.html#l00040">net::DescriptorEventReceiver::disable()</a>, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#a0592f7cab272b388303ecdcf0c88c732">net::socket::stream::SocketReader&lt; SocketT &gt;::getError()</a>, <a class="el" href="_socket_reader_8h_source.html#l00086">net::socket::stream::SocketReader&lt; SocketT &gt;::markShutdown</a>, <a class="el" href="_socket_reader_8h_source.html#l00084">net::socket::stream::SocketReader&lt; SocketT &gt;::onError</a>, and <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#a796e5ff1a91d6343f778bf68ab039a7b">net::socket::stream::SocketReader&lt; SocketT &gt;::read()</a>.</p>
+<p class="reference">References <a class="el" href="_descriptor_event_receiver_8cpp_source.html#l00040">net::DescriptorEventReceiver::disable()</a>, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#a0592f7cab272b388303ecdcf0c88c732">net::socket::stream::SocketReader&lt; SocketT &gt;::getError()</a>, <a class="el" href="_socket_reader_8h_source.html#l00088">net::socket::stream::SocketReader&lt; SocketT &gt;::markShutdown</a>, <a class="el" href="_socket_reader_8h_source.html#l00086">net::socket::stream::SocketReader&lt; SocketT &gt;::onError</a>, and <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#a796e5ff1a91d6343f778bf68ab039a7b">net::socket::stream::SocketReader&lt; SocketT &gt;::read()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_socket_connection_t_8h_source.html#l00111">net::socket::stream::SocketConnectionT&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt;::readFromPeer()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_reader_a39879dbffa5ce8231c5035784b78af27_cgraph.svg" width="952" height="216"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_reader_aca1ec8d986417fe650281fc86641d8a0_cgraph.svg" width="952" height="216"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_reader_a39879dbffa5ce8231c5035784b78af27_icgraph.svg" width="407" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_reader_aca1ec8d986417fe650281fc86641d8a0_icgraph.svg" width="407" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
@@ -479,7 +485,7 @@ template&lt;typename SocketT &gt; </div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        }</div>
 <div class="ttc" id="aclassnet_1_1_descriptor_event_receiver_html_a3ad5bcaaad4982927ce5ded44177f926"><div class="ttname"><a href="classnet_1_1_descriptor_event_receiver.html#a3ad5bcaaad4982927ce5ded44177f926">net::DescriptorEventReceiver::isSuspended</a></div><div class="ttdeci">bool isSuspended() const</div><div class="ttdef"><b>Definition:</b> <a href="_descriptor_event_receiver_8cpp_source.html#l00077">DescriptorEventReceiver.cpp:77</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_descriptor_event_receiver_8cpp_source.html#l00077">net::DescriptorEventReceiver::isSuspended()</a>, and <a class="el" href="_socket_reader_8h_source.html#l00086">net::socket::stream::SocketReader&lt; SocketT &gt;::markShutdown</a>.</p>
+<p class="reference">References <a class="el" href="_descriptor_event_receiver_8cpp_source.html#l00077">net::DescriptorEventReceiver::isSuspended()</a>, and <a class="el" href="_socket_reader_8h_source.html#l00088">net::socket::stream::SocketReader&lt; SocketT &gt;::markShutdown</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -511,7 +517,7 @@ template&lt;typename SocketT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_socket_reader_8h_source.html#l00086">86</a> of file <a class="el" href="_socket_reader_8h_source.html">SocketReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_socket_reader_8h_source.html#l00088">88</a> of file <a class="el" href="_socket_reader_8h_source.html">SocketReader.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_socket_reader_8h_source.html#l00062">net::socket::stream::SocketReader&lt; SocketT &gt;::readFromPeer()</a>, and <a class="el" href="_socket_reader_8h_source.html#l00050">net::socket::stream::SocketReader&lt; SocketT &gt;::shutdown()</a>.</p>
 
@@ -539,7 +545,7 @@ template&lt;typename SocketT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_socket_reader_8h_source.html#l00084">84</a> of file <a class="el" href="_socket_reader_8h_source.html">SocketReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_socket_reader_8h_source.html#l00086">86</a> of file <a class="el" href="_socket_reader_8h_source.html">SocketReader.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_socket_reader_8h_source.html#l00062">net::socket::stream::SocketReader&lt; SocketT &gt;::readFromPeer()</a>.</p>
 
