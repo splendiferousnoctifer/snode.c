@@ -127,8 +127,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:ada4abad8bf4237e81379d6616c29d869"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context.html">net::socket::stream::SocketContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1server_1_1_socket_context_factory.html#ada4abad8bf4237e81379d6616c29d869">create</a> (<a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html">net::socket::stream::SocketConnection</a> *socketConnection) const override</td></tr>
-<tr class="separator:ada4abad8bf4237e81379d6616c29d869"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04bf1c1a8f7c2522bef947ef678ffe40"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context.html">net::socket::stream::SocketContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1server_1_1_socket_context_factory.html#a04bf1c1a8f7c2522bef947ef678ffe40">create</a> (<a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html">net::socket::stream::SocketConnection</a> *socketConnection) override</td></tr>
+<tr class="separator:a04bf1c1a8f7c2522bef947ef678ffe40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -300,8 +300,8 @@ template&lt;typename RequestT , typename ResponseT &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ada4abad8bf4237e81379d6616c29d869"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada4abad8bf4237e81379d6616c29d869">&#9670;&nbsp;</a></span>create()</h2>
+<a id="a04bf1c1a8f7c2522bef947ef678ffe40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04bf1c1a8f7c2522bef947ef678ffe40">&#9670;&nbsp;</a></span>create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -316,7 +316,7 @@ template&lt;typename RequestT , typename ResponseT &gt; </div>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html">net::socket::stream::SocketConnection</a> *&#160;</td>
           <td class="paramname"><em>socketConnection</em></td><td>)</td>
-          <td> const</td>
+          <td></td>
         </tr>
       </table>
   </td>
@@ -326,10 +326,10 @@ template&lt;typename RequestT , typename ResponseT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context_factory.html#a77656b81190c73236630d0e4117ef6a4">net::socket::stream::SocketContextFactory</a>.</p>
+<p>Implements <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context_factory.html#a9645b45969494e3b05878e60f992f231">net::socket::stream::SocketContextFactory</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="web_2http_2server_2_socket_context_factory_8h_source.html#l00057">57</a> of file <a class="el" href="web_2http_2server_2_socket_context_factory_8h_source.html">SocketContextFactory.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                                                                                                               {</div>
+<div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                                                                                                         {</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> SocketContextT&lt;Request, Response&gt;(socketConnection, <a class="code" href="classweb_1_1http_1_1server_1_1_socket_context_factory.html#a78b34efbb10a0498f3f68b7ef0c249a6">onRequestReady</a>);</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        }</div>
 <div class="ttc" id="aclassweb_1_1http_1_1server_1_1_socket_context_factory_html_a78b34efbb10a0498f3f68b7ef0c249a6"><div class="ttname"><a href="classweb_1_1http_1_1server_1_1_socket_context_factory.html#a78b34efbb10a0498f3f68b7ef0c249a6">web::http::server::SocketContextFactory::onRequestReady</a></div><div class="ttdeci">std::function&lt; void(Request &amp;, Response &amp;)&gt; onRequestReady</div><div class="ttdef"><b>Definition:</b> <a href="web_2http_2server_2_socket_context_factory_8h_source.html#l00067">SocketContextFactory.h:67</a></div></div>

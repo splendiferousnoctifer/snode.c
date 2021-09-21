@@ -116,8 +116,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4b368347b53c2853a0358c98810c15bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03b8020664749c7dbfc9578363609422"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a03b8020664749c7dbfc9578363609422">sendToPeer</a> (const std::string &amp;data)=0</td></tr>
 <tr class="separator:a03b8020664749c7dbfc9578363609422"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af26fe1dddd3a9066f01638133c31cb6a"><td class="memItemLeft" align="right" valign="top">virtual std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#af26fe1dddd3a9066f01638133c31cb6a">readFromPeer</a> (char *junk, std::size_t junkLen)=0</td></tr>
-<tr class="separator:af26fe1dddd3a9066f01638133c31cb6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb7e364f592f5fed8272d74ebf4a634d"><td class="memItemLeft" align="right" valign="top">virtual ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#adb7e364f592f5fed8272d74ebf4a634d">readFromPeer</a> (char *junk, std::size_t junkLen)=0</td></tr>
+<tr class="separator:adb7e364f592f5fed8272d74ebf4a634d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad405013ffe234fae23b0b2a6dfc9869c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#ad405013ffe234fae23b0b2a6dfc9869c">close</a> ()=0</td></tr>
 <tr class="separator:ad405013ffe234fae23b0b2a6dfc9869c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a349bf62b99e408f09019434e7b8aa3c9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a349bf62b99e408f09019434e7b8aa3c9">setTimeout</a> (int timeout)=0</td></tr>
@@ -129,8 +129,8 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:ab96c51c9c3a2602bb9123a727e66e0eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7cf8f19454d77e855dbf6d43ebd0bf65"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a7cf8f19454d77e855dbf6d43ebd0bf65">~SocketConnection</a> ()=default</td></tr>
 <tr class="separator:a7cf8f19454d77e855dbf6d43ebd0bf65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af232a2233951874566e62fed9a8bd2fa"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#af232a2233951874566e62fed9a8bd2fa">switchSocketContext</a> (const <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context_factory.html">SocketContextFactory</a> *socketContextFactory)=0</td></tr>
-<tr class="separator:af232a2233951874566e62fed9a8bd2fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad53abfd3b3ac63a924887678505da727"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#ad53abfd3b3ac63a924887678505da727">switchSocketContext</a> (<a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context_factory.html">SocketContextFactory</a> *socketContextFactory)=0</td></tr>
+<tr class="separator:ad53abfd3b3ac63a924887678505da727"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -146,7 +146,7 @@ Private Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_socket_connection_8h_source.html#l00036">36</a> of file <a class="el" href="_socket_connection_8h_source.html">SocketConnection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_socket_connection_8h_source.html#l00037">37</a> of file <a class="el" href="_socket_connection_8h_source.html">SocketConnection.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a836fde4a0eed76e6a140688ee13c9ca0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a836fde4a0eed76e6a140688ee13c9ca0">&#9670;&nbsp;</a></span>SocketConnection() <span class="overload">[1/2]</span></h2>
@@ -387,8 +387,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="af26fe1dddd3a9066f01638133c31cb6a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af26fe1dddd3a9066f01638133c31cb6a">&#9670;&nbsp;</a></span>readFromPeer()</h2>
+<a id="adb7e364f592f5fed8272d74ebf4a634d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb7e364f592f5fed8272d74ebf4a634d">&#9670;&nbsp;</a></span>readFromPeer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -397,7 +397,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual std::size_t net::socket::stream::SocketConnection::readFromPeer </td>
+          <td class="memname">virtual ssize_t net::socket::stream::SocketConnection::readFromPeer </td>
           <td>(</td>
           <td class="paramtype">char *&#160;</td>
           <td class="paramname"><em>junk</em>, </td>
@@ -421,13 +421,14 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#acd3efe17b951623e650131e311063ca7">net::socket::stream::SocketConnectionT&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt;</a>, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#acd3efe17b951623e650131e311063ca7">net::socket::stream::SocketConnectionT&lt; tls::SocketReader&lt; SocketT &gt;, tls::SocketWriter&lt; SocketT &gt;, SocketT::SocketAddress &gt;</a>, and <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#acd3efe17b951623e650131e311063ca7">net::socket::stream::SocketConnectionT&lt; legacy::SocketReader&lt; SocketT &gt;, legacy::SocketWriter&lt; SocketT &gt;, SocketT::SocketAddress &gt;</a>.</p>
+<p>Implemented in <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#a2f13dbc3a7d5d09b8d2e2659b208ea8d">net::socket::stream::SocketConnectionT&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt;</a>, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#a2f13dbc3a7d5d09b8d2e2659b208ea8d">net::socket::stream::SocketConnectionT&lt; tls::SocketReader&lt; SocketT &gt;, tls::SocketWriter&lt; SocketT &gt;, SocketT::SocketAddress &gt;</a>, and <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#a2f13dbc3a7d5d09b8d2e2659b208ea8d">net::socket::stream::SocketConnectionT&lt; legacy::SocketReader&lt; SocketT &gt;, legacy::SocketWriter&lt; SocketT &gt;, SocketT::SocketAddress &gt;</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="net_2socket_2stream_2_socket_context_8cpp_source.html#l00042">net::socket::stream::SocketContext::readFromPeer()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_connection_af26fe1dddd3a9066f01638133c31cb6a_icgraph.svg" width="850" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_connection_adb7e364f592f5fed8272d74ebf4a634d_icgraph.svg" width="850" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
@@ -472,7 +473,8 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_connection_a4b368347b53c2853a0358c98810c15bd_icgraph.svg" width="1506" height="542"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_connection_a4b368347b53c2853a0358c98810c15bd_icgraph.svg" width="1506" height="542"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
@@ -540,8 +542,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="af232a2233951874566e62fed9a8bd2fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af232a2233951874566e62fed9a8bd2fa">&#9670;&nbsp;</a></span>switchSocketContext()</h2>
+<a id="ad53abfd3b3ac63a924887678505da727"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad53abfd3b3ac63a924887678505da727">&#9670;&nbsp;</a></span>switchSocketContext()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -552,7 +554,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">virtual void net::socket::stream::SocketConnection::switchSocketContext </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context_factory.html">SocketContextFactory</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context_factory.html">SocketContextFactory</a> *&#160;</td>
           <td class="paramname"><em>socketContextFactory</em></td><td>)</td>
           <td></td>
         </tr>
@@ -564,13 +566,14 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#a5803f5267f658736b4a9772278f0727f">net::socket::stream::SocketConnectionT&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt;</a>, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#a5803f5267f658736b4a9772278f0727f">net::socket::stream::SocketConnectionT&lt; tls::SocketReader&lt; SocketT &gt;, tls::SocketWriter&lt; SocketT &gt;, SocketT::SocketAddress &gt;</a>, and <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#a5803f5267f658736b4a9772278f0727f">net::socket::stream::SocketConnectionT&lt; legacy::SocketReader&lt; SocketT &gt;, legacy::SocketWriter&lt; SocketT &gt;, SocketT::SocketAddress &gt;</a>.</p>
+<p>Implemented in <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#a083eeed9dae9efc2ae0df253a6382a19">net::socket::stream::SocketConnectionT&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt;</a>, <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#a083eeed9dae9efc2ae0df253a6382a19">net::socket::stream::SocketConnectionT&lt; tls::SocketReader&lt; SocketT &gt;, tls::SocketWriter&lt; SocketT &gt;, SocketT::SocketAddress &gt;</a>, and <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#a083eeed9dae9efc2ae0df253a6382a19">net::socket::stream::SocketConnectionT&lt; legacy::SocketReader&lt; SocketT &gt;, legacy::SocketWriter&lt; SocketT &gt;, SocketT::SocketAddress &gt;</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="net_2socket_2stream_2_socket_context_8cpp_source.html#l00058">net::socket::stream::SocketContext::switchSocketContext()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_connection_af232a2233951874566e62fed9a8bd2fa_icgraph.svg" width="592" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_connection_ad53abfd3b3ac63a924887678505da727_icgraph.svg" width="592" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
@@ -596,7 +599,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_socket_connection_8h_source.html#l00063">63</a> of file <a class="el" href="_socket_connection_8h_source.html">SocketConnection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_socket_connection_8h_source.html#l00064">64</a> of file <a class="el" href="_socket_connection_8h_source.html">SocketConnection.h</a>.</p>
 
 </div>
 </div>

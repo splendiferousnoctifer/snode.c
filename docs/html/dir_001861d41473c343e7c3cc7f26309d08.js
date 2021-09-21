@@ -19,7 +19,5 @@ var dir_001861d41473c343e7c3cc7f26309d08 =
     [ "Transmitter.cpp", "_transmitter_8cpp.html", "_transmitter_8cpp" ],
     [ "Transmitter.h", "_transmitter_8h.html", [
       [ "Transmitter", "classweb_1_1websocket_1_1_transmitter.html", "classweb_1_1websocket_1_1_transmitter" ]
-    ] ],
-    [ "ws_utils.cpp", "ws__utils_8cpp.html", "ws__utils_8cpp" ],
-    [ "ws_utils.h", "ws__utils_8h.html", "ws__utils_8h" ]
+    ] ]
 ];

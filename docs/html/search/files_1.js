@@ -1,10 +1,5 @@
 var searchData=
 [
-  ['channelmanager_2ecpp_1110',['ChannelManager.cpp',['../_channel_manager_8cpp.html',1,'']]],
-  ['channelmanager_2eh_1111',['ChannelManager.h',['../_channel_manager_8h.html',1,'']]],
-  ['client_2eh_1112',['Client.h',['../_client_8h.html',1,'(Global Namespace)'],['../legacy_2_client_8h.html',1,'(Global Namespace)'],['../tls_2_client_8h.html',1,'(Global Namespace)']]],
-  ['connecteventreceiver_2ecpp_1113',['ConnectEventReceiver.cpp',['../_connect_event_receiver_8cpp.html',1,'']]],
-  ['connecteventreceiver_2eh_1114',['ConnectEventReceiver.h',['../_connect_event_receiver_8h.html',1,'']]],
-  ['connectionstate_2eh_1115',['ConnectionState.h',['../_connection_state_8h.html',1,'']]],
-  ['cookieoptions_2eh_1116',['CookieOptions.h',['../_cookie_options_8h.html',1,'']]]
+  ['base64_2ecpp_1113',['base64.cpp',['../base64_8cpp.html',1,'']]],
+  ['base64_2eh_1114',['base64.h',['../base64_8h.html',1,'']]]
 ];
