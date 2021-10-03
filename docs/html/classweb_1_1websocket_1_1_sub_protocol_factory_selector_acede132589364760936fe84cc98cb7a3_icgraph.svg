@@ -22,68 +22,68 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="classweb_1_1websocket_1_1_sub_protocol_factory_selector.html#a0e05009b0e0239ee152a4c7a68c5fca8" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="382.5,-61 382.5,-91 529.5,-91 529.5,-61 382.5,-61"/>
-<text text-anchor="start" x="390.5" y="-79" font-family="Helvetica,sans-Serif" font-size="10.00">web::websocket::SubProtocol</text>
-<text text-anchor="middle" x="456" y="-68" font-family="Helvetica,sans-Serif" font-size="10.00">FactorySelector::load</text>
+<g id="a_node2"><a xlink:href="classweb_1_1websocket_1_1server_1_1_socket_context_upgrade_factory.html#a0e87c72833963a7536f80aa6366bf122" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="black" points="377,-55.5 377,-96.5 535,-96.5 535,-55.5 377,-55.5"/>
+<text text-anchor="start" x="385" y="-84.5" font-family="Helvetica,sans-Serif" font-size="10.00">web::websocket::server</text>
+<text text-anchor="start" x="385" y="-73.5" font-family="Helvetica,sans-Serif" font-size="10.00">::SocketContextUpgradeFactory</text>
+<text text-anchor="middle" x="456" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">::attach</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M560.96,-60.39C550.56,-61.95 539.98,-63.54 529.75,-65.08"/>
+<path fill="none" stroke="midnightblue" d="M560.93,-60.4C552.41,-61.68 543.77,-62.97 535.3,-64.24"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="561.49,-63.85 570.86,-58.91 560.45,-56.93 561.49,-63.85"/>
-</g>
-<!-- Node5 -->
-<g id="node5" class="node">
-<title>Node5</title>
-<g id="a_node5"><a xlink:href="classweb_1_1websocket_1_1server_1_1_socket_context_upgrade_factory.html#a9990a363d6cbfc9dbc9a3e1edde11223" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="377,-0.5 377,-41.5 535,-41.5 535,-0.5 377,-0.5"/>
-<text text-anchor="start" x="385" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">web::websocket::server</text>
-<text text-anchor="start" x="385" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">::SocketContextUpgradeFactory</text>
-<text text-anchor="middle" x="456" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">::SocketContextUpgradeFactory</text>
-</a>
-</g>
-</g>
-<!-- Node1&#45;&gt;Node5 -->
-<g id="edge4" class="edge">
-<title>Node1&#45;&gt;Node5</title>
-<path fill="none" stroke="midnightblue" d="M560.93,-36.05C552.41,-34.81 543.77,-33.56 535.3,-32.34"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="560.46,-39.51 570.86,-37.48 561.46,-32.59 560.46,-39.51"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="classweb_1_1websocket_1_1_sub_protocol_factory_selector.html#a128338657a57f6a94a910e95daf91e27" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="194,-61 194,-91 341,-91 341,-61 194,-61"/>
-<text text-anchor="start" x="202" y="-79" font-family="Helvetica,sans-Serif" font-size="10.00">web::websocket::SubProtocol</text>
-<text text-anchor="middle" x="267.5" y="-68" font-family="Helvetica,sans-Serif" font-size="10.00">FactorySelector::select</text>
+<g id="a_node3"><a xlink:href="classweb_1_1websocket_1_1_sub_protocol_factory_selector.html#a0e05009b0e0239ee152a4c7a68c5fca8" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="black" points="382.5,-6 382.5,-36 529.5,-36 529.5,-6 382.5,-6"/>
+<text text-anchor="start" x="390.5" y="-24" font-family="Helvetica,sans-Serif" font-size="10.00">web::websocket::SubProtocol</text>
+<text text-anchor="middle" x="456" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00">FactorySelector::load</text>
 </a>
 </g>
 </g>
-<!-- Node2&#45;&gt;Node3 -->
+<!-- Node1&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
-<title>Node2&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M372.14,-76C361.84,-76 351.38,-76 341.25,-76"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="372.36,-79.5 382.36,-76 372.36,-72.5 372.36,-79.5"/>
+<title>Node1&#45;&gt;Node3</title>
+<path fill="none" stroke="midnightblue" d="M560.96,-36.05C550.56,-34.55 539.98,-33.01 529.75,-31.53"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="560.46,-39.51 570.86,-37.48 561.46,-32.59 560.46,-39.51"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="classweb_1_1websocket_1_1server_1_1_socket_context_upgrade_factory.html#a2a71da6def86a7480f757aebc34b513a" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="0,-55.5 0,-96.5 158,-96.5 158,-55.5 0,-55.5"/>
-<text text-anchor="start" x="8" y="-84.5" font-family="Helvetica,sans-Serif" font-size="10.00">web::websocket::server</text>
-<text text-anchor="start" x="8" y="-73.5" font-family="Helvetica,sans-Serif" font-size="10.00">::SocketContextUpgradeFactory</text>
-<text text-anchor="middle" x="79" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">::create</text>
+<g id="a_node4"><a xlink:href="classweb_1_1websocket_1_1_sub_protocol_factory_selector.html#a128338657a57f6a94a910e95daf91e27" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="black" points="194,-6 194,-36 341,-36 341,-6 194,-6"/>
+<text text-anchor="start" x="202" y="-24" font-family="Helvetica,sans-Serif" font-size="10.00">web::websocket::SubProtocol</text>
+<text text-anchor="middle" x="267.5" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00">FactorySelector::select</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node4 -->
 <g id="edge3" class="edge">
 <title>Node3&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M183.65,-76C175.23,-76 166.68,-76 158.3,-76"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="183.86,-79.5 193.86,-76 183.86,-72.5 183.86,-79.5"/>
+<path fill="none" stroke="midnightblue" d="M372.14,-21C361.84,-21 351.38,-21 341.25,-21"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="372.36,-24.5 382.36,-21 372.36,-17.5 372.36,-24.5"/>
+</g>
+<!-- Node5 -->
+<g id="node5" class="node">
+<title>Node5</title>
+<g id="a_node5"><a xlink:href="classweb_1_1websocket_1_1server_1_1_socket_context_upgrade_factory.html#a2a71da6def86a7480f757aebc34b513a" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="black" points="0,-0.5 0,-41.5 158,-41.5 158,-0.5 0,-0.5"/>
+<text text-anchor="start" x="8" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">web::websocket::server</text>
+<text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">::SocketContextUpgradeFactory</text>
+<text text-anchor="middle" x="79" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">::create</text>
+</a>
+</g>
+</g>
+<!-- Node4&#45;&gt;Node5 -->
+<g id="edge4" class="edge">
+<title>Node4&#45;&gt;Node5</title>
+<path fill="none" stroke="midnightblue" d="M183.65,-21C175.23,-21 166.68,-21 158.3,-21"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="183.86,-24.5 193.86,-21 183.86,-17.5 183.86,-24.5"/>
 </g>
 </g>
 </svg>

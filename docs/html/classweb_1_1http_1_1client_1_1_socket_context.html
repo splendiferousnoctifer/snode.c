@@ -93,12 +93,14 @@ $(document).ready(function(){initNavTree('classweb_1_1http_1_1client_1_1_socket_
 <div class="dynheader">
 Inheritance diagram for web::http::client::SocketContext:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1http_1_1client_1_1_socket_context__inherit__graph.svg" width="215" height="808"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1http_1_1client_1_1_socket_context__inherit__graph.svg" width="215" height="838"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <div class="dynheader">
 Collaboration diagram for web::http::client::SocketContext:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1http_1_1client_1_1_socket_context__coll__graph.svg" width="227" height="854"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1http_1_1client_1_1_socket_context__coll__graph.svg" width="227" height="868"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -109,6 +111,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:abef4c369b974d28724ff1b0b4cf4869a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abee6c9c933df21bf9b902f41119c7c46"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classweb_1_1http_1_1client_1_1_request.html">Request</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1client_1_1_socket_context.html#abee6c9c933df21bf9b902f41119c7c46">getRequest</a> ()=0</td></tr>
 <tr class="separator:abee6c9c933df21bf9b902f41119c7c46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4201346420ee90c5566b5b8e22ad8d1"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classweb_1_1http_1_1client_1_1_response.html">Response</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1client_1_1_socket_context.html#ad4201346420ee90c5566b5b8e22ad8d1">getResponse</a> ()=0</td></tr>
+<tr class="separator:ad4201346420ee90c5566b5b8e22ad8d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc31b34f7b2133887b474979c7342a58"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1client_1_1_socket_context.html#acc31b34f7b2133887b474979c7342a58">sendToPeerCompleted</a> ()=0</td></tr>
 <tr class="separator:acc31b34f7b2133887b474979c7342a58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a308169ed30533fa02772f5ae083b6425"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1client_1_1_socket_context.html#a308169ed30533fa02772f5ae083b6425">terminateConnection</a> ()=0</td></tr>
@@ -149,7 +153,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="web_2http_2client_2_socket_context_8h_source.html#l00043">43</a> of file <a class="el" href="web_2http_2client_2_socket_context_8h_source.html">SocketContext.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="web_2http_2client_2_socket_context_8h_source.html#l00044">44</a> of file <a class="el" href="web_2http_2client_2_socket_context_8h_source.html">SocketContext.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac2f1f5004d784bba6f47c1af7fdf0e62"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac2f1f5004d784bba6f47c1af7fdf0e62">&#9670;&nbsp;</a></span>SocketContext()</h2>
@@ -175,9 +179,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="web_2http_2client_2_socket_context_8h_source.html#l00045">45</a> of file <a class="el" href="web_2http_2client_2_socket_context_8h_source.html">SocketContext.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            : <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_context.html">net::socket::stream::SocketContext</a>(<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_context.html#a226160f5eff07fba0567b3b12351954a">socketConnection</a>) {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        }</div>
+<p class="definition">Definition at line <a class="el" href="web_2http_2client_2_socket_context_8h_source.html#l00046">46</a> of file <a class="el" href="web_2http_2client_2_socket_context_8h_source.html">SocketContext.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            : <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_context.html">net::socket::stream::SocketContext</a>(<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_context.html#a226160f5eff07fba0567b3b12351954a">socketConnection</a>) {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        }</div>
 <div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_context_html"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_context.html">net::socket::stream::SocketContext</a></div><div class="ttdef"><b>Definition:</b> <a href="net_2socket_2stream_2_socket_context_8h_source.html#l00038">SocketContext.h:38</a></div></div>
 <div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_context_html_a226160f5eff07fba0567b3b12351954a"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_context.html#a226160f5eff07fba0567b3b12351954a">net::socket::stream::SocketContext::socketConnection</a></div><div class="ttdeci">SocketConnection * socketConnection</div><div class="ttdef"><b>Definition:</b> <a href="net_2socket_2stream_2_socket_context_8h_source.html#l00066">SocketContext.h:66</a></div></div>
 </div><!-- fragment -->
@@ -238,6 +242,33 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="ad4201346420ee90c5566b5b8e22ad8d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4201346420ee90c5566b5b8e22ad8d1">&#9670;&nbsp;</a></span>getResponse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classweb_1_1http_1_1client_1_1_response.html">Response</a>&amp; web::http::client::SocketContext::getResponse </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classweb_1_1http_1_1client_1_1_socket_context_t.html#a5db213c3f7d860ff40f4e735c1acd42e">web::http::client::SocketContextT&lt; RequestT, ResponseT &gt;</a>.</p>
+
+</div>
+</div>
 <a id="acc31b34f7b2133887b474979c7342a58"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acc31b34f7b2133887b474979c7342a58">&#9670;&nbsp;</a></span>sendToPeerCompleted()</h2>
 
@@ -267,8 +298,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1http_1_1client_1_1_socket_context_acc31b34f7b2133887b474979c7342a58_icgraph.svg" width="978" height="248"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1http_1_1client_1_1_socket_context_acc31b34f7b2133887b474979c7342a58_icgraph.svg" width="978" height="248"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -302,8 +332,7 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1http_1_1client_1_1_socket_context_a308169ed30533fa02772f5ae083b6425_icgraph.svg" width="966" height="248"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1http_1_1client_1_1_socket_context_a308169ed30533fa02772f5ae083b6425_icgraph.svg" width="966" height="248"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>

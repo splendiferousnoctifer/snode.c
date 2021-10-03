@@ -1,5 +1,17 @@
 var NAVTREEINDEX4 =
 {
+"classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_connector.html":[9,0,1,1,2,0,2],
+"classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_listener.html":[9,0,1,1,2,0,3],
+"classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_reader.html":[9,0,1,1,2,0,4],
+"classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_reader.html#a4bca7c7203c1133ffb95d97a66cc5411":[9,0,1,1,2,0,4,0],
+"classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_reader.html#adcb15b397075b393c085cffcc348398b":[9,0,1,1,2,0,4,1],
+"classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_server.html":[9,0,1,1,2,0,5],
+"classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_writer.html":[9,0,1,1,2,0,6],
+"classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_writer.html#ad7ec79cf11263ea5e8335b519c5f5033":[9,0,1,1,2,0,6,0],
+"classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_writer.html#af430857954918293811d74b088340fdf":[9,0,1,1,2,0,6,1],
+"classnet_1_1socket_1_1stream_1_1tls_1_1_socket_client.html":[9,0,1,1,2,1,0],
+"classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html":[9,0,1,1,2,1,1],
+"classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a1e7ed48172d5f13f11191d705907958f":[9,0,1,1,2,1,1,1],
 "classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a3f6885984be884225ca9fc53ea652ac2":[9,0,1,1,2,1,1,7],
 "classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a445ab1c51b805504c4850a7dac3b511b":[9,0,1,1,2,1,1,0],
 "classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a44c0fad781b21d13c6fec9e5d4b77a54":[9,0,1,1,2,1,1,4],
@@ -237,17 +249,5 @@ var NAVTREEINDEX4 =
 "classweb_1_1http_1_1client_1_1_response_parser.html#a36ae9720a7088b738e0a552fccb579d9":[9,0,3,0,0,5,0],
 "classweb_1_1http_1_1client_1_1_response_parser.html#a44e5facbb99fd2da1bc9131d4e092846":[9,0,3,0,0,5,4],
 "classweb_1_1http_1_1client_1_1_response_parser.html#a638c0d8e4f3c7361f6af1da02dc7bf78":[9,0,3,0,0,5,13],
-"classweb_1_1http_1_1client_1_1_response_parser.html#a6ce8d7ed6afbc2a120756c3f9b6384e0":[9,0,3,0,0,5,9],
-"classweb_1_1http_1_1client_1_1_response_parser.html#a79d1f2299128dde823fe8d4e7f9a1d1c":[9,0,3,0,0,5,8],
-"classweb_1_1http_1_1client_1_1_response_parser.html#a7a6b9e40c0db3d0b42176db41e56c449":[9,0,3,0,0,5,14],
-"classweb_1_1http_1_1client_1_1_response_parser.html#a92964a16cfde5aa1659d1d580662283e":[9,0,3,0,0,5,6],
-"classweb_1_1http_1_1client_1_1_response_parser.html#a9376b13eb90307b278fb7da2b70ce1bc":[9,0,3,0,0,5,5],
-"classweb_1_1http_1_1client_1_1_response_parser.html#a964a061fc67248dcf590f81c67db8e6a":[9,0,3,0,0,5,2],
-"classweb_1_1http_1_1client_1_1_response_parser.html#a9fb333ebc53ea413c1725f48e49be69f":[9,0,3,0,0,5,7],
-"classweb_1_1http_1_1client_1_1_response_parser.html#ab1f63594f019adb0e2710dc38ea504a5":[9,0,3,0,0,5,1],
-"classweb_1_1http_1_1client_1_1_response_parser.html#ab231d61e1f3eac11c39611ebe5c05ca9":[9,0,3,0,0,5,16],
-"classweb_1_1http_1_1client_1_1_response_parser.html#abdb92a3dd90e677016cf896f8ac3579c":[9,0,3,0,0,5,15],
-"classweb_1_1http_1_1client_1_1_response_parser.html#af3c3fe27fffd5451bcec5d23144d41f1":[9,0,3,0,0,5,11],
-"classweb_1_1http_1_1client_1_1_socket_context.html":[9,0,3,0,0,6],
-"classweb_1_1http_1_1client_1_1_socket_context.html#a308169ed30533fa02772f5ae083b6425":[9,0,3,0,0,6,4]
+"classweb_1_1http_1_1client_1_1_response_parser.html#a6ce8d7ed6afbc2a120756c3f9b6384e0":[9,0,3,0,0,5,9]
 };

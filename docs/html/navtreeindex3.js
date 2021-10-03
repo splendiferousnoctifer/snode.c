@@ -1,5 +1,17 @@
 var NAVTREEINDEX3 =
 {
+"classnet_1_1socket_1_1_socket.html#aa1a67cea263ed7d3c9da8cb0bd683455":[9,0,1,1,3,6],
+"classnet_1_1socket_1_1_socket_address.html":[9,0,1,1,4],
+"classnet_1_1socket_1_1_socket_address.html#a073a8cd3c371f694ac409bcb7b52a951":[9,0,1,1,4,8],
+"classnet_1_1socket_1_1_socket_address.html#a34b7b89dbbdb3bc0bd110d23a1fe259c":[9,0,1,1,4,2],
+"classnet_1_1socket_1_1_socket_address.html#a35e84e2561e779a9dd8c392e3005a53e":[9,0,1,1,4,0],
+"classnet_1_1socket_1_1_socket_address.html#a3944a2a996badd0b4d51bc6e55d5a16e":[9,0,1,1,4,1],
+"classnet_1_1socket_1_1_socket_address.html#a8321ec74c18d63037234af9ac8cf18c5":[9,0,1,1,4,6],
+"classnet_1_1socket_1_1_socket_address.html#aba228b0c2404f5104a1a542b6ce3829c":[9,0,1,1,4,4],
+"classnet_1_1socket_1_1_socket_address.html#ad9cb8140c8b13489086e56a307b25423":[9,0,1,1,4,3],
+"classnet_1_1socket_1_1_socket_address.html#add263c25a393dccfd9a275bf54dd5339":[9,0,1,1,4,5],
+"classnet_1_1socket_1_1_socket_address.html#afc720a7d055580eee46f39d7ac282514":[9,0,1,1,4,7],
+"classnet_1_1socket_1_1_socket_address.html#afc7af4ac6825de6a7862c541caca20d6":[9,0,1,1,4,9],
 "classnet_1_1socket_1_1bluetooth_1_1address_1_1_l2_cap_address.html":[9,0,1,1,0,0,0],
 "classnet_1_1socket_1_1bluetooth_1_1address_1_1_l2_cap_address.html#a50b49e61951baa5c43de2321c7e1dfa8":[9,0,1,1,0,0,0,6],
 "classnet_1_1socket_1_1bluetooth_1_1address_1_1_l2_cap_address.html#a8ec3972a5b213d6b9961bc1be6534b94":[9,0,1,1,0,0,0,2],
@@ -237,17 +249,5 @@ var NAVTREEINDEX3 =
 "classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_connection.html#a0699656a95507785a4aa959c7fc5dd69":[9,0,1,1,2,0,1,2],
 "classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_connection.html#a2c90b58d18f7f1bf137900e49e2c059c":[9,0,1,1,2,0,1,0],
 "classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_connection.html#a55fa51771dd6e8a2bfa7cce1d3f1200c":[9,0,1,1,2,0,1,1],
-"classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_connection.html#a761848d158daa336ed851e07f93acf9e":[9,0,1,1,2,0,1,3],
-"classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_connector.html":[9,0,1,1,2,0,2],
-"classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_listener.html":[9,0,1,1,2,0,3],
-"classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_reader.html":[9,0,1,1,2,0,4],
-"classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_reader.html#a4bca7c7203c1133ffb95d97a66cc5411":[9,0,1,1,2,0,4,0],
-"classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_reader.html#adcb15b397075b393c085cffcc348398b":[9,0,1,1,2,0,4,1],
-"classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_server.html":[9,0,1,1,2,0,5],
-"classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_writer.html":[9,0,1,1,2,0,6],
-"classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_writer.html#ad7ec79cf11263ea5e8335b519c5f5033":[9,0,1,1,2,0,6,0],
-"classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_writer.html#af430857954918293811d74b088340fdf":[9,0,1,1,2,0,6,1],
-"classnet_1_1socket_1_1stream_1_1tls_1_1_socket_client.html":[9,0,1,1,2,1,0],
-"classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html":[9,0,1,1,2,1,1],
-"classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a1e7ed48172d5f13f11191d705907958f":[9,0,1,1,2,1,1,1]
+"classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_connection.html#a761848d158daa336ed851e07f93acf9e":[9,0,1,1,2,0,1,3]
 };

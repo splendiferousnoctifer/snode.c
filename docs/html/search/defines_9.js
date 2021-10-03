@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['tlshandshake_5ftimeout_1976',['TLSHANDSHAKE_TIMEOUT',['../_t_l_s_handshake_8cpp.html#afcaf84902bf13f4d3c4ed4ddbc7896ba',1,'TLSHandshake.cpp']]]
+  ['wsmaxframepayloadlength_2024',['WSMAXFRAMEPAYLOADLENGTH',['../_transmitter_8cpp.html#acd2ce7799f0d25910828566fb9a5bf2a',1,'Transmitter.cpp']]]
 ];

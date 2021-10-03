@@ -123,9 +123,9 @@ $(document).ready(function(){initNavTree('_socket_connection_t_8h_source.html','
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> SocketReaderT, <span class="keyword">typename</span> SocketWriterT, <span class="keyword">typename</span> SocketAddressT&gt;</div>
 <div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html">   38</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html">SocketConnectionT</a></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        : <span class="keyword">public</span> <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html">SocketConnection</a></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        , <span class="keyword">public</span> SocketReaderT</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        , <span class="keyword">public</span> SocketWriterT {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        : <span class="keyword">private</span> <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html">SocketConnection</a></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        , <span class="keyword">protected</span> SocketReaderT</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        , <span class="keyword">protected</span> SocketWriterT {</div>
 <div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#a513a2633ad5b02187ca247a31ab9dde8">   42</a></span>&#160;        <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#a513a2633ad5b02187ca247a31ab9dde8">SocketConnectionT</a>() = <span class="keyword">delete</span>;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">public</span>:</div>

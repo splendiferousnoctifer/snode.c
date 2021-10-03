@@ -1,13 +1,10 @@
 var namespaces_dup =
 [
     [ "base64", "namespacebase64.html", [
-      [ "base64", "namespacebase64.html#aa7607cc1f3cfe191d7ad2cb54f784e05", null ],
       [ "base64_decode", "namespacebase64.html#a23eca466c738d7ee3e74f2279fc18541", null ],
-      [ "base64_encode", "namespacebase64.html#ad0f5514d86397722d6e752f71ad7e26a", null ],
-      [ "decode64", "namespacebase64.html#ae93cf1e5ec2004fc0ee4bf2153f274b8", null ],
+      [ "base64_encode", "namespacebase64.html#af19189e96ecbd4de55806b9b705f7374", null ],
       [ "is_base64", "namespacebase64.html#a58328d4dcbc51d53a60f168c45b59a79", null ],
-      [ "serverWebSocketKey", "namespacebase64.html#a43968536c5e19d8c265e17d08fd91c3e", null ],
-      [ "serverWebSocketKey", "namespacebase64.html#a2720aa9286589b9d4e10263fe1964c75", null ]
+      [ "serverWebSocketKey", "namespacebase64.html#a43968536c5e19d8c265e17d08fd91c3e", null ]
     ] ],
     [ "express", "namespaceexpress.html", "namespaceexpress" ],
     [ "httputils", "namespacehttputils.html", [
@@ -28,7 +25,8 @@ var namespaces_dup =
     [ "net", "namespacenet.html", "namespacenet" ],
     [ "net ", "namespacenet_01.html", "namespacenet_01" ],
     [ "stacktrace", "namespacestacktrace.html", [
-      [ "stacktrace", "namespacestacktrace.html#a7f83069724b44207f9e8d8aa1057c4fd", null ]
+      [ "stacktrace", "namespacestacktrace.html#aada91b78c1080169b2e68542d9a0e924", null ],
+      [ "stacktrace", "namespacestacktrace.html#af3070b90234b85bcb6e7200288bee440", null ]
     ] ],
     [ "utils", "namespaceutils.html", "namespaceutils" ],
     [ "web", "namespaceweb.html", "namespaceweb" ]

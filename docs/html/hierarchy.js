@@ -162,6 +162,7 @@ var hierarchy =
     [ "web::http::server::Server< net::socket::ip::tcp::ipv6::tls::SocketServer, web::http::server::Request, web::http::server::Response >", "classweb_1_1http_1_1server_1_1_server.html", [
       [ "web::http::server::tls::Server6< Request, Response >", "classweb_1_1http_1_1server_1_1tls_1_1_server6.html", null ]
     ] ],
+    [ "SHA1", "class_s_h_a1.html", null ],
     [ "utils::SingleAttributeInjector", "classutils_1_1_single_attribute_injector.html", null ],
     [ "net::pipe::Sink", "classnet_1_1pipe_1_1_sink.html", [
       [ "web::http::client::Request", "classweb_1_1http_1_1client_1_1_request.html", null ],

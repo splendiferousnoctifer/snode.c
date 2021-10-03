@@ -96,14 +96,12 @@ $(document).ready(function(){initNavTree('classweb_1_1websocket_1_1_sub_protocol
 <div class="dynheader">
 Inheritance diagram for web::websocket::SubProtocolFactorySelector&lt; SubProtocolFactoryT &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1websocket_1_1_sub_protocol_factory_selector__inherit__graph.svg" width="462" height="692"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1websocket_1_1_sub_protocol_factory_selector__inherit__graph.svg" width="462" height="692"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <div class="dynheader">
 Collaboration diagram for web::websocket::SubProtocolFactorySelector&lt; SubProtocolFactoryT &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1websocket_1_1_sub_protocol_factory_selector__coll__graph.svg" width="272" height="220"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1websocket_1_1_sub_protocol_factory_selector__coll__graph.svg" width="272" height="220"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -318,7 +316,7 @@ template&lt;typename SubProtocolFactoryT &gt; </div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="_sub_protocol_factory_selector_8h_source.html#l00037">web::websocket::SubProtocolPlugin&lt; SubProtocolFactory &gt;::subProtocolFactory</a>, and <a class="el" href="_sub_protocol_factory_selector_8h_source.html#l00129">web::websocket::SubProtocolFactorySelector&lt; SubProtocolFactoryT &gt;::subProtocolPlugins</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_sub_protocol_factory_selector_8h_source.html#l00097">web::websocket::SubProtocolFactorySelector&lt; SubProtocolFactoryT &gt;::load()</a>, and <a class="el" href="websocket_2server_2_socket_context_upgrade_factory_8cpp_source.html#l00033">web::websocket::server::SocketContextUpgradeFactory::SocketContextUpgradeFactory()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="websocket_2server_2_socket_context_upgrade_factory_8cpp_source.html#l00033">web::websocket::server::SocketContextUpgradeFactory::attach()</a>, and <a class="el" href="_sub_protocol_factory_selector_8h_source.html#l00097">web::websocket::SubProtocolFactorySelector&lt; SubProtocolFactoryT &gt;::load()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -432,8 +430,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1websocket_1_1_sub_protocol_factory_selector_a0e05009b0e0239ee152a4c7a68c5fca8_icgraph.svg" width="710" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1websocket_1_1_sub_protocol_factory_selector_a0e05009b0e0239ee152a4c7a68c5fca8_icgraph.svg" width="710" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -500,7 +497,7 @@ template&lt;typename SubProtocolFactoryT &gt; </div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                subProtocolFactory = <a class="code" href="classweb_1_1websocket_1_1_sub_protocol_factory_selector.html#a2d6ae6da72a50ffb7944cfc91c230719">subProtocolPlugins</a>[subProtocolName].subProtocolFactory;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                <span class="keywordflow">for</span> (<span class="keyword">const</span> std::string&amp; searchPath : <a class="code" href="classweb_1_1websocket_1_1_sub_protocol_factory_selector.html#a5a881a7aa8d9f594cc70f41680c40731">searchPaths</a>) {</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                    subProtocolFactory = <a class="code" href="classweb_1_1websocket_1_1_sub_protocol_factory_selector.html#a0e05009b0e0239ee152a4c7a68c5fca8">load</a>(searchPath + <span class="stringliteral">&quot;/lib&quot;</span> + subProtocolName + <span class="stringliteral">&quot;.so&quot;</span>);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                    subProtocolFactory = <a class="code" href="classweb_1_1websocket_1_1_sub_protocol_factory_selector.html#a0e05009b0e0239ee152a4c7a68c5fca8">load</a>(searchPath + <span class="stringliteral">&quot;/libsnodec-websocket-&quot;</span> + subProtocolName + <span class="stringliteral">&quot;.so&quot;</span>);</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                    <span class="keywordflow">if</span> (subProtocolFactory != <span class="keyword">nullptr</span>) {</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                        <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                    }</div>
@@ -513,7 +510,7 @@ template&lt;typename SubProtocolFactoryT &gt; </div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="_sub_protocol_factory_selector_8h_source.html#l00097">web::websocket::SubProtocolFactorySelector&lt; SubProtocolFactoryT &gt;::load()</a>, <a class="el" href="_sub_protocol_factory_selector_8h_source.html#l00130">web::websocket::SubProtocolFactorySelector&lt; SubProtocolFactoryT &gt;::searchPaths</a>, and <a class="el" href="_sub_protocol_factory_selector_8h_source.html#l00129">web::websocket::SubProtocolFactorySelector&lt; SubProtocolFactoryT &gt;::subProtocolPlugins</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="websocket_2server_2_socket_context_upgrade_factory_8cpp_source.html#l00051">web::websocket::server::SocketContextUpgradeFactory::create()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="websocket_2server_2_socket_context_upgrade_factory_8cpp_source.html#l00053">web::websocket::server::SocketContextUpgradeFactory::create()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -522,8 +519,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1websocket_1_1_sub_protocol_factory_selector_a128338657a57f6a94a910e95daf91e27_icgraph.svg" width="466" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1websocket_1_1_sub_protocol_factory_selector_a128338657a57f6a94a910e95daf91e27_icgraph.svg" width="466" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>

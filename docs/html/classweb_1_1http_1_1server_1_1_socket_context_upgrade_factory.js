@@ -6,7 +6,7 @@ var classweb_1_1http_1_1server_1_1_socket_context_upgrade_factory =
     ] ],
     [ "SocketContextUpgradeFactory", "classweb_1_1http_1_1server_1_1_socket_context_upgrade_factory.html#a248aa68ddee172424d402e09e9131fb9", null ],
     [ "~SocketContextUpgradeFactory", "classweb_1_1http_1_1server_1_1_socket_context_upgrade_factory.html#aa96c62c89cfe748d0f2fbd26b7e884dc", null ],
-    [ "destroy", "classweb_1_1http_1_1server_1_1_socket_context_upgrade_factory.html#a7b2bdcbf64acb20fc345c03cdcd575ef", null ],
+    [ "destroy", "classweb_1_1http_1_1server_1_1_socket_context_upgrade_factory.html#a909682b2a96030f5896c28e13e3abee6", null ],
     [ "name", "classweb_1_1http_1_1server_1_1_socket_context_upgrade_factory.html#aaa76d2882a60e975acd75d0ea2b9bb6d", null ],
     [ "prepare", "classweb_1_1http_1_1server_1_1_socket_context_upgrade_factory.html#afde9a0bb20024cf658df11ccadad16fb", null ],
     [ "role", "classweb_1_1http_1_1server_1_1_socket_context_upgrade_factory.html#a10ac841722b72ac2504bbf9c31de10c0", null ],

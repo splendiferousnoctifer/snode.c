@@ -236,5 +236,6 @@ var annotated_dup =
     ] ],
     [ "File", "class_file.html", null ],
     [ "FileReader", "class_file_reader.html", "class_file_reader" ],
-    [ "Logger", "class_logger.html", "class_logger" ]
+    [ "Logger", "class_logger.html", "class_logger" ],
+    [ "SHA1", "class_s_h_a1.html", "class_s_h_a1" ]
 ];

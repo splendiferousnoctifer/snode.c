@@ -90,12 +90,51 @@ $(document).ready(function(){initNavTree('namespacestacktrace.html',''); initRes
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a7f83069724b44207f9e8d8aa1057c4fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestacktrace.html#a7f83069724b44207f9e8d8aa1057c4fd">stacktrace</a> (std::size_t trace_cnt_max)</td></tr>
-<tr class="separator:a7f83069724b44207f9e8d8aa1057c4fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aada91b78c1080169b2e68542d9a0e924"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestacktrace.html#aada91b78c1080169b2e68542d9a0e924">stacktrace</a> ([[maybe_unused]] std::size_t trace_cnt_max)</td></tr>
+<tr class="separator:aada91b78c1080169b2e68542d9a0e924"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3070b90234b85bcb6e7200288bee440"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestacktrace.html#af3070b90234b85bcb6e7200288bee440">stacktrace</a> (std::size_t trace_cnt_max=32)</td></tr>
+<tr class="separator:af3070b90234b85bcb6e7200288bee440"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a7f83069724b44207f9e8d8aa1057c4fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f83069724b44207f9e8d8aa1057c4fd">&#9670;&nbsp;</a></span>stacktrace()</h2>
+<a id="aada91b78c1080169b2e68542d9a0e924"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aada91b78c1080169b2e68542d9a0e924">&#9670;&nbsp;</a></span>stacktrace() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stacktrace::stacktrace </td>
+          <td>(</td>
+          <td class="paramtype">[[maybe_unused] ] std::size_t&#160;</td>
+          <td class="paramname"><em>trace_cnt_max</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="stacktrace_8cpp_source.html#l00038">38</a> of file <a class="el" href="stacktrace_8cpp_source.html">stacktrace.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                                                              {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#ifdef BACKTRACE_SUPPORTED</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordtype">void</span>* buffer[2];</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        backtrace(buffer, 2);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        backward::StackTrace st;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="comment">//        st.load_here(trace_cnt_max);</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        st.load_from(<span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">char</span>*<span class="keyword">&gt;</span>(buffer[1]) - 1, trace_cnt_max);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        backward::Printer p;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        p.snippet = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        p.object = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        p.color_mode = backward::ColorMode::automatic;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        p.address = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        p.print(st, stderr);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af3070b90234b85bcb6e7200288bee440"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3070b90234b85bcb6e7200288bee440">&#9670;&nbsp;</a></span>stacktrace() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -104,25 +143,12 @@ Functions</h2></td></tr>
           <td class="memname">void stacktrace::stacktrace </td>
           <td>(</td>
           <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>trace_cnt_max</em></td><td>)</td>
+          <td class="paramname"><em>trace_cnt_max</em> = <code>32</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stacktrace_8cpp_source.html#l00034">34</a> of file <a class="el" href="stacktrace_8cpp_source.html">stacktrace.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                                             {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        backward::StackTrace st;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        st.load_here(trace_cnt_max);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        backward::Printer p;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        p.snippet = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        p.object = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        p.color_mode = backward::ColorMode::always;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        p.address = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        p.print(st, stderr);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    }</div>
-</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

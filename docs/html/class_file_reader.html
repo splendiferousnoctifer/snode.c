@@ -96,12 +96,14 @@ $(document).ready(function(){initNavTree('class_file_reader.html',''); initResiz
 <div class="dynheader">
 Inheritance diagram for FileReader:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_file_reader__inherit__graph.svg" width="438" height="978"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_file_reader__inherit__graph.svg" width="462" height="1007"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <div class="dynheader">
 Collaboration diagram for FileReader:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_file_reader__coll__graph.svg" width="494" height="1642"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_file_reader__coll__graph.svg" width="508" height="1656"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -176,6 +178,8 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
+<tr class="memitem:a329049e6b3a96f3f97517fca4327adf4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_reader.html#a329049e6b3a96f3f97517fca4327adf4">sinkDisconnected</a> () override</td></tr>
+<tr class="separator:a329049e6b3a96f3f97517fca4327adf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7160f3031c239ca6ee355cd47bd3857"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_reader.html#ae7160f3031c239ca6ee355cd47bd3857">unobserved</a> () override</td></tr>
 <tr class="separator:ae7160f3031c239ca6ee355cd47bd3857"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -236,24 +240,24 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_file_reader_8cpp_source.html#l00032">32</a> of file <a class="el" href="_file_reader_8cpp_source.html">FileReader.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                                                {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="classnet_1_1_descriptor.html#a0dfe1354c24136c4d50c21c8138f53dd">attach</a>(<a class="code" href="classnet_1_1_descriptor.html#ae74a867d53babc909e138b86595fdfd8">fd</a>);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    ReadEventReceiver::enable(<a class="code" href="classnet_1_1_descriptor.html#ae74a867d53babc909e138b86595fdfd8">fd</a>);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="namespacenet_1_1system.html#ae579d34c58f571bba93e3dd2a00cfeb0">Source::connect</a>(<a class="code" href="classnet_1_1pipe_1_1_source.html#a989e34c9a612655a6d9e18b6d23afd17">sink</a>);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
-<div class="ttc" id="aclassnet_1_1_descriptor_html_a0dfe1354c24136c4d50c21c8138f53dd"><div class="ttname"><a href="classnet_1_1_descriptor.html#a0dfe1354c24136c4d50c21c8138f53dd">net::Descriptor::attach</a></div><div class="ttdeci">void attach(int fd, enum Descriptor::FLAGS flags=FLAGS::none)</div><div class="ttdef"><b>Definition:</b> <a href="_descriptor_8cpp_source.html#l00040">Descriptor.cpp:40</a></div></div>
+<p class="definition">Definition at line <a class="el" href="_file_reader_8cpp_source.html#l00031">31</a> of file <a class="el" href="_file_reader_8cpp_source.html">FileReader.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    : <a class="code" href="classnet_1_1_descriptor.html#a1e6621ae7b52ff6fb8162c8e7c739b5f">Descriptor</a>(<a class="code" href="classnet_1_1_descriptor.html#ae74a867d53babc909e138b86595fdfd8">fd</a>) {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    ReadEventReceiver::enable(<a class="code" href="classnet_1_1_descriptor.html#ae74a867d53babc909e138b86595fdfd8">fd</a>);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="namespacenet_1_1system.html#ae579d34c58f571bba93e3dd2a00cfeb0">Source::connect</a>(<a class="code" href="classnet_1_1pipe_1_1_source.html#a989e34c9a612655a6d9e18b6d23afd17">sink</a>);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
+<div class="ttc" id="aclassnet_1_1_descriptor_html_a1e6621ae7b52ff6fb8162c8e7c739b5f"><div class="ttname"><a href="classnet_1_1_descriptor.html#a1e6621ae7b52ff6fb8162c8e7c739b5f">net::Descriptor::Descriptor</a></div><div class="ttdeci">Descriptor(const Descriptor &amp;d)=delete</div></div>
 <div class="ttc" id="aclassnet_1_1_descriptor_html_ae74a867d53babc909e138b86595fdfd8"><div class="ttname"><a href="classnet_1_1_descriptor.html#ae74a867d53babc909e138b86595fdfd8">net::Descriptor::fd</a></div><div class="ttdeci">int fd</div><div class="ttdef"><b>Definition:</b> <a href="_descriptor_8h_source.html#l00051">Descriptor.h:51</a></div></div>
-<div class="ttc" id="aclassnet_1_1pipe_1_1_source_html_a989e34c9a612655a6d9e18b6d23afd17"><div class="ttname"><a href="classnet_1_1pipe_1_1_source.html#a989e34c9a612655a6d9e18b6d23afd17">net::pipe::Source::sink</a></div><div class="ttdeci">Sink * sink</div><div class="ttdef"><b>Definition:</b> <a href="_source_8h_source.html#l00045">Source.h:45</a></div></div>
+<div class="ttc" id="aclassnet_1_1pipe_1_1_source_html_a989e34c9a612655a6d9e18b6d23afd17"><div class="ttname"><a href="classnet_1_1pipe_1_1_source.html#a989e34c9a612655a6d9e18b6d23afd17">net::pipe::Source::sink</a></div><div class="ttdeci">Sink * sink</div><div class="ttdef"><b>Definition:</b> <a href="_source_8h_source.html#l00047">Source.h:47</a></div></div>
 <div class="ttc" id="anamespacenet_1_1system_html_ae579d34c58f571bba93e3dd2a00cfeb0"><div class="ttname"><a href="namespacenet_1_1system.html#ae579d34c58f571bba93e3dd2a00cfeb0">net::system::connect</a></div><div class="ttdeci">int connect(int sockfd, const struct sockaddr *addr, socklen_t addrlen)</div><div class="ttdef"><b>Definition:</b> <a href="system_2_socket_8cpp_source.html#l00048">socket.cpp:48</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_descriptor_8cpp_source.html#l00040">net::Descriptor::attach()</a>, <a class="el" href="system_2_socket_8cpp_source.html#l00048">net::system::connect()</a>, <a class="el" href="_descriptor_8h_source.html#l00051">net::Descriptor::fd</a>, and <a class="el" href="_source_8h_source.html#l00045">net::pipe::Source::sink</a>.</p>
+<p class="reference">References <a class="el" href="system_2_socket_8cpp_source.html#l00048">net::system::connect()</a>, <a class="el" href="_descriptor_8h_source.html#l00051">net::Descriptor::fd</a>, and <a class="el" href="_source_8h_source.html#l00047">net::pipe::Source::sink</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_file_reader_8cpp_source.html#l00038">connect()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_file_reader_8cpp_source.html#l00037">connect()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_file_reader_afbe7a27c0f1b821074b5ab2b00c8a30d_cgraph.svg" width="367" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_file_reader_afbe7a27c0f1b821074b5ab2b00c8a30d_cgraph.svg" width="360" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -304,31 +308,32 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_file_reader_8cpp_source.html#l00038">38</a> of file <a class="el" href="_file_reader_8cpp_source.html">FileReader.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                                                                                                                          {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="class_file_reader.html">FileReader</a>* fileReader = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classnet_1_1_descriptor.html#ae74a867d53babc909e138b86595fdfd8">fd</a> = <a class="code" href="namespacenet_1_1system.html#a6d7e0ac4eb21446e2992eba757368f84">net::system::open</a>(path.c_str(), O_RDONLY);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classnet_1_1_descriptor.html#ae74a867d53babc909e138b86595fdfd8">fd</a> &gt;= 0) {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        fileReader = <span class="keyword">new</span> <a class="code" href="class_file_reader.html#afbe7a27c0f1b821074b5ab2b00c8a30d">FileReader</a>(<a class="code" href="classnet_1_1_descriptor.html#ae74a867d53babc909e138b86595fdfd8">fd</a>, writeStream);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        onError(errno);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">return</span> fileReader;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="_file_reader_8cpp_source.html#l00037">37</a> of file <a class="el" href="_file_reader_8cpp_source.html">FileReader.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                                                                                                                          {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="class_file_reader.html">FileReader</a>* fileReader = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classnet_1_1_descriptor.html#ae74a867d53babc909e138b86595fdfd8">fd</a> = <a class="code" href="namespacenet_1_1system.html#a6d7e0ac4eb21446e2992eba757368f84">net::system::open</a>(path.c_str(), O_RDONLY);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classnet_1_1_descriptor.html#ae74a867d53babc909e138b86595fdfd8">fd</a> &gt;= 0) {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        fileReader = <span class="keyword">new</span> <a class="code" href="class_file_reader.html#afbe7a27c0f1b821074b5ab2b00c8a30d">FileReader</a>(<a class="code" href="classnet_1_1_descriptor.html#ae74a867d53babc909e138b86595fdfd8">fd</a>, writeStream);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        onError(errno);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">return</span> fileReader;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
 <div class="ttc" id="aclass_file_reader_html"><div class="ttname"><a href="class_file_reader.html">FileReader</a></div><div class="ttdef"><b>Definition:</b> <a href="_file_reader_8h_source.html#l00037">FileReader.h:40</a></div></div>
-<div class="ttc" id="aclass_file_reader_html_afbe7a27c0f1b821074b5ab2b00c8a30d"><div class="ttname"><a href="class_file_reader.html#afbe7a27c0f1b821074b5ab2b00c8a30d">FileReader::FileReader</a></div><div class="ttdeci">FileReader(int fd, net::pipe::Sink &amp;writeStream)</div><div class="ttdef"><b>Definition:</b> <a href="_file_reader_8cpp_source.html#l00032">FileReader.cpp:32</a></div></div>
+<div class="ttc" id="aclass_file_reader_html_afbe7a27c0f1b821074b5ab2b00c8a30d"><div class="ttname"><a href="class_file_reader.html#afbe7a27c0f1b821074b5ab2b00c8a30d">FileReader::FileReader</a></div><div class="ttdeci">FileReader(int fd, net::pipe::Sink &amp;writeStream)</div><div class="ttdef"><b>Definition:</b> <a href="_file_reader_8cpp_source.html#l00031">FileReader.cpp:31</a></div></div>
 <div class="ttc" id="anamespacenet_1_1system_html_a6d7e0ac4eb21446e2992eba757368f84"><div class="ttname"><a href="namespacenet_1_1system.html#a6d7e0ac4eb21446e2992eba757368f84">net::system::open</a></div><div class="ttdeci">int open(const char *pathname, int flags)</div><div class="ttdef"><b>Definition:</b> <a href="unistd_8cpp_source.html#l00029">unistd.cpp:29</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_descriptor_8h_source.html#l00051">net::Descriptor::fd</a>, <a class="el" href="_file_reader_8cpp_source.html#l00032">FileReader()</a>, and <a class="el" href="unistd_8cpp_source.html#l00029">net::system::open()</a>.</p>
+<p class="reference">References <a class="el" href="_descriptor_8h_source.html#l00051">net::Descriptor::fd</a>, <a class="el" href="_file_reader_8cpp_source.html#l00031">FileReader()</a>, and <a class="el" href="unistd_8cpp_source.html#l00029">net::system::open()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="express_2_response_8cpp_source.html#l00042">express::Response::sendFile()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_file_reader_aaf86cac20181301f63ad3bed68856953_cgraph.svg" width="554" height="114"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_file_reader_aaf86cac20181301f63ad3bed68856953_cgraph.svg" width="547" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -363,38 +368,72 @@ Here is the caller graph for this function:</div>
 
 <p>Implements <a class="el" href="classnet_1_1_read_event_receiver.html#acd4cdc73c7534719700aa6997a507a8a">net::ReadEventReceiver</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_file_reader_8cpp_source.html#l00052">52</a> of file <a class="el" href="_file_reader_8cpp_source.html">FileReader.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                           {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">// NOLINTNEXTLINE(cppcoreguidelines-avoid-c-arrays, hicpp-avoid-c-arrays, modernize-avoid-c-arrays)</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">char</span> junk[<a class="code" href="_file_reader_8cpp.html#a536343537987c482dd72874c30604924">MFREADSIZE</a>];</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    ssize_t ret = <a class="code" href="namespacenet_1_1system.html#a548befc9826098f4756445e39c22a1f9">net::system::read</a>(<a class="code" href="classnet_1_1_descriptor.html#a70ccc1e4f6af5cda015bd319f9a90096">getFd</a>(), junk, <a class="code" href="_file_reader_8cpp.html#a536343537987c482dd72874c30604924">MFREADSIZE</a>);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">if</span> (ret &gt; 0) {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        this-&gt;<a class="code" href="classnet_1_1pipe_1_1_source.html#a1ca8291b5014e74e2687c435ed85454d">send</a>(junk, <span class="keyword">static_cast&lt;</span>std::size_t<span class="keyword">&gt;</span>(ret));</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        ReadEventReceiver::disable();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordflow">if</span> (ret == 0) {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            this-&gt;<a class="code" href="classnet_1_1pipe_1_1_source.html#a3ea0dd2e2980dd2dc4aecd073ee3bf1b">eof</a>();</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            this-&gt;<a class="code" href="classnet_1_1pipe_1_1_source.html#a89ecb53bbe37679b244e4e33ec225e5f">error</a>(errno);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        }</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="_file_reader_8cpp_source.html#l00051">51</a> of file <a class="el" href="_file_reader_8cpp_source.html">FileReader.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                           {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">// NOLINTNEXTLINE(cppcoreguidelines-avoid-c-arrays, hicpp-avoid-c-arrays, modernize-avoid-c-arrays)</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">char</span> junk[<a class="code" href="_file_reader_8cpp.html#a536343537987c482dd72874c30604924">MFREADSIZE</a>];</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    ssize_t ret = <a class="code" href="namespacenet_1_1system.html#a4cc36b181c059e9e19c9247237452d47">net::system::read</a>(<a class="code" href="classnet_1_1_descriptor.html#a70ccc1e4f6af5cda015bd319f9a90096">getFd</a>(), junk, <a class="code" href="_file_reader_8cpp.html#a536343537987c482dd72874c30604924">MFREADSIZE</a>);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">if</span> (ret &gt; 0) {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        this-&gt;<a class="code" href="classnet_1_1pipe_1_1_source.html#a1ca8291b5014e74e2687c435ed85454d">send</a>(junk, <span class="keyword">static_cast&lt;</span>std::size_t<span class="keyword">&gt;</span>(ret));</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        ReadEventReceiver::disable();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">if</span> (ret == 0) {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            this-&gt;<a class="code" href="classnet_1_1pipe_1_1_source.html#a3ea0dd2e2980dd2dc4aecd073ee3bf1b">eof</a>();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            this-&gt;<a class="code" href="classnet_1_1pipe_1_1_source.html#a89ecb53bbe37679b244e4e33ec225e5f">error</a>(errno);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
 <div class="ttc" id="a_file_reader_8cpp_html_a536343537987c482dd72874c30604924"><div class="ttname"><a href="_file_reader_8cpp.html#a536343537987c482dd72874c30604924">MFREADSIZE</a></div><div class="ttdeci">#define MFREADSIZE</div><div class="ttdef"><b>Definition:</b> <a href="_file_reader_8cpp_source.html#l00019">FileReader.cpp:19</a></div></div>
 <div class="ttc" id="aclassnet_1_1_descriptor_html_a70ccc1e4f6af5cda015bd319f9a90096"><div class="ttname"><a href="classnet_1_1_descriptor.html#a70ccc1e4f6af5cda015bd319f9a90096">net::Descriptor::getFd</a></div><div class="ttdeci">int getFd() const</div><div class="ttdef"><b>Definition:</b> <a href="_descriptor_8cpp_source.html#l00045">Descriptor.cpp:45</a></div></div>
-<div class="ttc" id="aclassnet_1_1pipe_1_1_source_html_a1ca8291b5014e74e2687c435ed85454d"><div class="ttname"><a href="classnet_1_1pipe_1_1_source.html#a1ca8291b5014e74e2687c435ed85454d">net::pipe::Source::send</a></div><div class="ttdeci">void send(const char *junk, std::size_t junkLen)</div><div class="ttdef"><b>Definition:</b> <a href="_source_8cpp_source.html#l00052">Source.cpp:52</a></div></div>
-<div class="ttc" id="aclassnet_1_1pipe_1_1_source_html_a3ea0dd2e2980dd2dc4aecd073ee3bf1b"><div class="ttname"><a href="classnet_1_1pipe_1_1_source.html#a3ea0dd2e2980dd2dc4aecd073ee3bf1b">net::pipe::Source::eof</a></div><div class="ttdeci">void eof()</div><div class="ttdef"><b>Definition:</b> <a href="_source_8cpp_source.html#l00064">Source.cpp:64</a></div></div>
-<div class="ttc" id="aclassnet_1_1pipe_1_1_source_html_a89ecb53bbe37679b244e4e33ec225e5f"><div class="ttname"><a href="classnet_1_1pipe_1_1_source.html#a89ecb53bbe37679b244e4e33ec225e5f">net::pipe::Source::error</a></div><div class="ttdeci">void error(int errnum)</div><div class="ttdef"><b>Definition:</b> <a href="_source_8cpp_source.html#l00058">Source.cpp:58</a></div></div>
-<div class="ttc" id="anamespacenet_1_1system_html_a548befc9826098f4756445e39c22a1f9"><div class="ttname"><a href="namespacenet_1_1system.html#a548befc9826098f4756445e39c22a1f9">net::system::read</a></div><div class="ttdeci">ssize_t read(int fd, void *buf, size_t count)</div><div class="ttdef"><b>Definition:</b> <a href="unistd_8cpp_source.html#l00034">unistd.cpp:34</a></div></div>
+<div class="ttc" id="aclassnet_1_1pipe_1_1_source_html_a1ca8291b5014e74e2687c435ed85454d"><div class="ttname"><a href="classnet_1_1pipe_1_1_source.html#a1ca8291b5014e74e2687c435ed85454d">net::pipe::Source::send</a></div><div class="ttdeci">void send(const char *junk, std::size_t junkLen)</div><div class="ttdef"><b>Definition:</b> <a href="_source_8cpp_source.html#l00053">Source.cpp:53</a></div></div>
+<div class="ttc" id="aclassnet_1_1pipe_1_1_source_html_a3ea0dd2e2980dd2dc4aecd073ee3bf1b"><div class="ttname"><a href="classnet_1_1pipe_1_1_source.html#a3ea0dd2e2980dd2dc4aecd073ee3bf1b">net::pipe::Source::eof</a></div><div class="ttdeci">void eof()</div><div class="ttdef"><b>Definition:</b> <a href="_source_8cpp_source.html#l00065">Source.cpp:65</a></div></div>
+<div class="ttc" id="aclassnet_1_1pipe_1_1_source_html_a89ecb53bbe37679b244e4e33ec225e5f"><div class="ttname"><a href="classnet_1_1pipe_1_1_source.html#a89ecb53bbe37679b244e4e33ec225e5f">net::pipe::Source::error</a></div><div class="ttdeci">void error(int errnum)</div><div class="ttdef"><b>Definition:</b> <a href="_source_8cpp_source.html#l00059">Source.cpp:59</a></div></div>
+<div class="ttc" id="anamespacenet_1_1system_html_a4cc36b181c059e9e19c9247237452d47"><div class="ttname"><a href="namespacenet_1_1system.html#a4cc36b181c059e9e19c9247237452d47">net::system::read</a></div><div class="ttdeci">ssize_t read(int fd, void *buf, std::size_t count)</div><div class="ttdef"><b>Definition:</b> <a href="unistd_8cpp_source.html#l00034">unistd.cpp:34</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_source_8cpp_source.html#l00064">net::pipe::Source::eof()</a>, <a class="el" href="_source_8cpp_source.html#l00058">net::pipe::Source::error()</a>, <a class="el" href="_descriptor_8cpp_source.html#l00045">net::Descriptor::getFd()</a>, <a class="el" href="_file_reader_8cpp_source.html#l00019">MFREADSIZE</a>, <a class="el" href="unistd_8cpp_source.html#l00034">net::system::read()</a>, and <a class="el" href="_source_8cpp_source.html#l00052">net::pipe::Source::send()</a>.</p>
+<p class="reference">References <a class="el" href="_source_8cpp_source.html#l00065">net::pipe::Source::eof()</a>, <a class="el" href="_source_8cpp_source.html#l00059">net::pipe::Source::error()</a>, <a class="el" href="_descriptor_8cpp_source.html#l00045">net::Descriptor::getFd()</a>, <a class="el" href="_file_reader_8cpp_source.html#l00019">MFREADSIZE</a>, <a class="el" href="unistd_8cpp_source.html#l00034">net::system::read()</a>, and <a class="el" href="_source_8cpp_source.html#l00053">net::pipe::Source::send()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_file_reader_a1ce08aad9d9f0b025576ee1e51009c9c_cgraph.svg" width="572" height="256"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_file_reader_a1ce08aad9d9f0b025576ee1e51009c9c_cgraph.svg" width="572" height="256"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
+</div>
+</div>
+<a id="a329049e6b3a96f3f97517fca4327adf4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a329049e6b3a96f3f97517fca4327adf4">&#9670;&nbsp;</a></span>sinkDisconnected()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FileReader::sinkDisconnected </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classnet_1_1pipe_1_1_source.html#ad3179926217ceea1213c684154edf9b8">net::pipe::Source</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_file_reader_8cpp_source.html#l00069">69</a> of file <a class="el" href="_file_reader_8cpp_source.html">FileReader.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                                  {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    ReadEventReceiver::suspend();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    ReadEventReceiver::disable();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae7160f3031c239ca6ee355cd47bd3857"></a>
@@ -422,10 +461,10 @@ Here is the call graph for this function:</div>
 
 <p>Implements <a class="el" href="classnet_1_1_descriptor_event_receiver.html#af073668b41dc51649789d581ec1a2678">net::DescriptorEventReceiver</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_file_reader_8cpp_source.html#l00070">70</a> of file <a class="el" href="_file_reader_8cpp_source.html">FileReader.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                            {</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">delete</span> <span class="keyword">this</span>;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="_file_reader_8cpp_source.html#l00074">74</a> of file <a class="el" href="_file_reader_8cpp_source.html">FileReader.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                            {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">delete</span> <span class="keyword">this</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
