@@ -1,0 +1,27 @@
+var namespaceexpress =
+[
+    [ "legacy", "namespaceexpress_1_1legacy.html", "namespaceexpress_1_1legacy" ],
+    [ "middleware", "namespaceexpress_1_1middleware.html", "namespaceexpress_1_1middleware" ],
+    [ "tls", "namespaceexpress_1_1tls.html", "namespaceexpress_1_1tls" ],
+    [ "Request", "classexpress_1_1_request.html", "classexpress_1_1_request" ],
+    [ "Response", "classexpress_1_1_response.html", "classexpress_1_1_response" ],
+    [ "MountPoint", "structexpress_1_1_mount_point.html", "structexpress_1_1_mount_point" ],
+    [ "Route", "classexpress_1_1_route.html", "classexpress_1_1_route" ],
+    [ "MiddlewareDispatcher", "classexpress_1_1_middleware_dispatcher.html", "classexpress_1_1_middleware_dispatcher" ],
+    [ "ApplicationDispatcher", "classexpress_1_1_application_dispatcher.html", "classexpress_1_1_application_dispatcher" ],
+    [ "State", "classexpress_1_1_state.html", "classexpress_1_1_state" ],
+    [ "Dispatcher", "classexpress_1_1_dispatcher.html", "classexpress_1_1_dispatcher" ],
+    [ "RouterDispatcher", "classexpress_1_1_router_dispatcher.html", "classexpress_1_1_router_dispatcher" ],
+    [ "Router", "classexpress_1_1_router.html", "classexpress_1_1_router" ],
+    [ "WebApp", "classexpress_1_1_web_app.html", "classexpress_1_1_web_app" ],
+    [ "WebAppT", "classexpress_1_1_web_app_t.html", "classexpress_1_1_web_app_t" ],
+    [ "checkForUrlMatch", "namespaceexpress.html#ae91cec6d3397bfa7a125cf5ff0d190ff", null ],
+    [ "explode", "namespaceexpress.html#adf22db775a32911eba390528d06fca90", null ],
+    [ "hasResult", "namespaceexpress.html#a4f1a16c9a7b214fa7c8e2b690431ee17", null ],
+    [ "matchFunction", "namespaceexpress.html#a92954d0fa22ea3ca3198d3c4fe963dde", null ],
+    [ "matchResult", "namespaceexpress.html#aa2975f01c114a7a5f352e66c90b17966", null ],
+    [ "path_concat", "namespaceexpress.html#aa4ccc7c8a315c18d4ef767bf43640264", null ],
+    [ "path_concat", "namespaceexpress.html#a8939ba82ab85b3acc2b653682ae5d386", null ],
+    [ "setParams", "namespaceexpress.html#a42db573d15d12fb0f7caf164fbaac1b9", null ],
+    [ "pathregex", "namespaceexpress.html#a46fd94f67e7eb9bbf3cdfdd3b263d940", null ]
+];
