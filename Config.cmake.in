@@ -43,7 +43,9 @@ macro(LOAD_COMPONENT_WITH_DEPENDENCIES _comp)
 endmacro()
 
 set(_supported_components
-    net
+    core
+    io
+    stream
     stream-legacy
     stream-tls
     net-ip
@@ -51,9 +53,9 @@ set(_supported_components
     http
     httpserver
     httpclient
-    express
     websocketserver
     websocketclient
+    express
 )
 
 set(snodec_FOUND True)
