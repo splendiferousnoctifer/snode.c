@@ -24,7 +24,7 @@
 
 #endif /* DOXYGEN_SHOULD_SKIP_THIS */
 
-namespace net::system {
+namespace io::system {
 
     int socket(int domain, int type, int protocol) {
         errno = 0;

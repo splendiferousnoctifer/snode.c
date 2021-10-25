@@ -31,7 +31,7 @@
 
 #endif /* DOXYGEN_SHOULD_SKIP_THIS */
 
-namespace net::socket::stream::legacy {
+namespace io::socket::stream::legacy {
 
     template <typename SocketT>
     class SocketReader : public stream::SocketReader<SocketT> {
@@ -39,7 +39,7 @@ namespace net::socket::stream::legacy {
 
     private:
         ssize_t read(char* junk, std::size_t junkLen) override {
-            return net::system::recv(this->getFd(), junk, junkLen, 0);
+            return io::system::recv(this->getFd(), junk, junkLen, 0);
         }
 
         int getError() override {
@@ -47,7 +47,7 @@ namespace net::socket::stream::legacy {
         }
 
         bool continueReadImmediately() override {
-            int pending = net::socket::stream::SocketReader<SocketT>::continueReadImmediately();
+            int pending = io::socket::stream::SocketReader<SocketT>::continueReadImmediately();
             return pending;
         }
     };

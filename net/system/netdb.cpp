@@ -24,7 +24,7 @@
 
 #endif /* DOXYGEN_SHOULD_SKIP_THIS */
 
-namespace net::system {
+namespace io::system {
 
     int getaddrinfo(const char* node, const char* service, const struct addrinfo* hints, struct addrinfo** res) {
         errno = 0;

@@ -26,7 +26,7 @@
 
 #endif /* DOXYGEN_SHOULD_SKIP_THIS */
 
-namespace net::socket::bluetooth::rfcomm {
+namespace io::socket::bluetooth::rfcomm {
 
     class Socket : public socket::Socket<address::RfCommAddress> {
     protected:

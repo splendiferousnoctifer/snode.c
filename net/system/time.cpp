@@ -24,7 +24,7 @@
 
 #endif /* DOXYGEN_SHOULD_SKIP_THIS */
 
-namespace net::system {
+namespace io::system {
 
     time_t time(time_t* tloc) {
         errno = 0;

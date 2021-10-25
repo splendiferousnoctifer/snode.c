@@ -25,7 +25,7 @@
 
 #endif /* DOXYGEN_SHOULD_SKIP_THIS */
 
-namespace net::socket::stream {
+namespace io::socket::stream {
 
     SocketContext::SocketContext(SocketConnection* socketConnection)
         : socketConnection(socketConnection) {

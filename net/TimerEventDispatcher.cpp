@@ -26,7 +26,7 @@
 
 #endif /* DOXYGEN_SHOULD_SKIP_THIS */
 
-namespace net {
+namespace io {
 
     struct timeval TimerEventDispatcher::getNextTimeout() {
         struct timeval tv {
@@ -56,7 +56,7 @@ namespace net {
             struct timeval currentTime {
                 0, 0
             };
-            net::system::gettimeofday(&currentTime, nullptr);
+            io::system::gettimeofday(&currentTime, nullptr);
 
             if (tv < currentTime) {
                 tv.tv_sec = 0;
@@ -73,7 +73,7 @@ namespace net {
         struct timeval currentTime {
             0, 0
         };
-        net::system::gettimeofday(&currentTime, nullptr);
+        io::system::gettimeofday(&currentTime, nullptr);
 
         for (TimerEventReceiver* timer : timerList) {
             if (timer->timeout() <= currentTime) {
@@ -107,4 +107,4 @@ namespace net {
         getNextTimeout();
     }
 
-} // namespace net
+} // namespace io

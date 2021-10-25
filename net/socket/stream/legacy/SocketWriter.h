@@ -30,7 +30,7 @@
 
 #endif /* DOXYGEN_SHOULD_SKIP_THIS */
 
-namespace net::socket::stream::legacy {
+namespace io::socket::stream::legacy {
 
     template <typename SocketT>
     class SocketWriter : public stream::SocketWriter<SocketT> {
@@ -38,7 +38,7 @@ namespace net::socket::stream::legacy {
 
     private:
         ssize_t write(const char* junk, std::size_t junkLen) override {
-            return net::system::send(this->getFd(), junk, junkLen, MSG_NOSIGNAL);
+            return io::system::send(this->getFd(), junk, junkLen, MSG_NOSIGNAL);
         }
 
         int getError() override {

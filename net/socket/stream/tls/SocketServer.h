@@ -26,7 +26,7 @@
 
 #endif /* DOXYGEN_SHOULD_SKIP_THIS */
 
-namespace net::socket::stream::tls {
+namespace io::socket::stream::tls {
 
     template <typename SocketContextFactoryT, typename SocketT>
     class SocketServer : public stream::SocketServer<SocketContextFactoryT, tls::SocketListener<SocketT>> {

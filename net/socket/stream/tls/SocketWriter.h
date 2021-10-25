@@ -33,7 +33,7 @@
 
 #endif /* DOXYGEN_SHOULD_SKIP_THIS */
 
-namespace net::socket::stream::tls {
+namespace io::socket::stream::tls {
 
     template <typename SocketT>
     class SocketWriter : public stream::SocketWriter<SocketT> {

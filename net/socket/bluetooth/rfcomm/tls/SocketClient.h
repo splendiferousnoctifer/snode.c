@@ -26,7 +26,7 @@
 
 #endif // DOXYGEN_SHOULD_SKIP_THIS
 
-namespace net::socket::bluetooth::rfcomm::tls {
+namespace io::socket::bluetooth::rfcomm::tls {
 
     template <typename SocketContextFactoryT>
     class SocketClient : public stream::tls::SocketClient<SocketContextFactoryT, rfcomm::Socket> {

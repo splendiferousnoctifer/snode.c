@@ -19,7 +19,7 @@
 #ifndef WEB_HTTP_PARSER_H
 #define WEB_HTTP_PARSER_H
 
-namespace net::socket::stream {
+namespace io::socket::stream {
 
     class SocketContext;
 
@@ -57,7 +57,7 @@ namespace web::http {
         } hTTPCompliance;
 
     public:
-        explicit Parser(net::socket::stream::SocketContext* socketContext,
+        explicit Parser(io::socket::stream::SocketContext* socketContext,
                         const enum HTTPCompliance& compliance = HTTPCompliance::RFC2616 | HTTPCompliance::RFC7230);
 
         virtual ~Parser() = default;
@@ -84,7 +84,7 @@ namespace web::http {
         std::map<std::string, std::string> headers;
 
     private:
-        net::socket::stream::SocketContext* socketContext = nullptr;
+        io::socket::stream::SocketContext* socketContext = nullptr;
 
         ssize_t readStartLine();
         ssize_t readHeaderLine();

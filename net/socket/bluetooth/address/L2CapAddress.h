@@ -31,7 +31,7 @@
 
 #endif /* DOXYGEN_SHOULD_SKIP_THIS */
 
-namespace net::socket::bluetooth::address {
+namespace io::socket::bluetooth::address {
 
     class L2CapAddress : public SocketAddress<struct sockaddr_l2> {
     public:

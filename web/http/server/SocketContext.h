@@ -22,7 +22,7 @@
 #include "web/http/SocketContext.h"
 #include "web/http/server/RequestParser.h"
 
-namespace net::socket::stream {
+namespace io::socket::stream {
     class SocketConnection;
 } // namespace net::socket::stream
 
@@ -63,7 +63,7 @@ namespace web::http::server {
             std::string reason;
         };
 
-        SocketContext(net::socket::stream::SocketConnection* socketConnection,
+        SocketContext(io::socket::stream::SocketConnection* socketConnection,
                       const std::function<void(Request&, Response&)>& onRequestReady);
 
     private:

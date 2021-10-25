@@ -27,7 +27,7 @@
 
 #define MAX_WRITE_INACTIVITY 60
 
-namespace net {
+namespace io {
 
     class WriteEventReceiver : public EventReceiver {
     protected:

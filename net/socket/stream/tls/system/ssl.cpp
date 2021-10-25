@@ -24,7 +24,7 @@
 
 #endif /* DOXYGEN_SHOULD_SKIP_THIS */
 
-namespace net::ssl {
+namespace io::ssl {
 
     int SSL_read(SSL* ssl, void* buf, int num) {
         errno = 0;

@@ -26,7 +26,7 @@
 
 #endif /* DOXYGEN_SHOULD_SKIP_THIS */
 
-namespace net::socket::ip::tcp::ipv4 {
+namespace io::socket::ip::tcp::ipv4 {
 
     class Socket : public socket::Socket<address::ipv4::InetAddress> {
     protected:

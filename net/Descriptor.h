@@ -23,7 +23,7 @@
 
 #endif /* DOXYGEN_SHOULD_SKIP_THIS */
 
-namespace net {
+namespace io {
 
     class Descriptor {
         Descriptor(const Descriptor& d) = delete;

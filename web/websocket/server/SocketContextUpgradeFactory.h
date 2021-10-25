@@ -22,7 +22,7 @@
 #include "web/http/server/SocketContextUpgradeFactory.h"
 #include "web/websocket/server/SubProtocol.h"
 
-namespace net::socket::stream {
+namespace io::socket::stream {
     class SocketConnection;
 } // namespace net::socket::stream
 
@@ -50,7 +50,7 @@ namespace web::websocket::server {
     private:
         std::string name() override;
 
-        SocketContext* create(net::socket::stream::SocketConnection* socketConnection) override;
+        SocketContext* create(io::socket::stream::SocketConnection* socketConnection) override;
 
         std::size_t refCount = 0;
     };

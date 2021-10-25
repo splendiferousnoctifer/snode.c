@@ -30,7 +30,7 @@
 #include "net/socket/stream/tls/SocketClient.h"     // for SocketClient
 #include "web/http/client/ResponseParser.h"         // for ResponseParser
 
-namespace net::socket::stream {
+namespace io::socket::stream {
     class SocketConnection;
 } // namespace net::socket::stream
 
@@ -55,9 +55,9 @@ namespace web::http {
 }
 #endif /* DOXYGEN_SHOULD_SKIP_THIS */
 
-using namespace net::socket::ip;
-using namespace net::socket::ip::address::ipv4;
-using namespace net::socket::stream;
+using namespace io::socket::ip;
+using namespace io::socket::ip::address::ipv4;
+using namespace io::socket::stream;
 
 static web::http::client::ResponseParser* getResponseParser(SocketContext* socketContext) {
     web::http::client::ResponseParser* responseParser = new web::http::client::ResponseParser(
@@ -101,7 +101,7 @@ static web::http::client::ResponseParser* getResponseParser(SocketContext* socke
 
 class SimpleSocketProtocol : public SocketContext {
 public:
-    explicit SimpleSocketProtocol(net::socket::stream::SocketConnection* socketConnection)
+    explicit SimpleSocketProtocol(io::socket::stream::SocketConnection* socketConnection)
         : SocketContext(socketConnection) {
         responseParser = getResponseParser(this);
     }
@@ -126,9 +126,9 @@ private:
     web::http::client::ResponseParser* responseParser;
 };
 
-class SimpleSocketProtocolFactory : public net::socket::stream::SocketContextFactory {
+class SimpleSocketProtocolFactory : public io::socket::stream::SocketContextFactory {
 private:
-    SocketContext* create(net::socket::stream::SocketConnection* socketConnection) override {
+    SocketContext* create(io::socket::stream::SocketConnection* socketConnection) override {
         return new SimpleSocketProtocol(socketConnection);
     }
 };
@@ -254,7 +254,7 @@ legacy::SocketClient<SimpleSocketProtocolFactory, tcp::ipv4::Socket> getLegacyCl
 }
 
 int main(int argc, char* argv[]) {
-    net::SNodeC::init(argc, argv);
+    io::SNodeC::init(argc, argv);
 
     {
         InetAddress remoteAddress("localhost", 8080);
@@ -282,5 +282,5 @@ int main(int argc, char* argv[]) {
         });
     }
 
-    return net::SNodeC::start();
+    return io::SNodeC::start();
 }

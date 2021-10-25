@@ -9,10 +9,10 @@
 #include <string>     // for allocator, string
 
 int main(int argc, char* argv[]) {
-    net::SNodeC::init(argc, argv);
+    io::SNodeC::init(argc, argv);
 
-    net::pipe::Pipe pipe(
-        []([[maybe_unused]] net::pipe::PipeSource& pipeSource, [[maybe_unused]] net::pipe::PipeSink& pipeSink) -> void {
+    io::pipe::Pipe pipe(
+        []([[maybe_unused]] io::pipe::PipeSource& pipeSource, [[maybe_unused]] io::pipe::PipeSink& pipeSink) -> void {
             pipeSink.setOnData([&pipeSource](const char* junk, std::size_t junkLen) -> void {
                 std::string string(junk, junkLen);
                 VLOG(0) << "Pipe Data: " << string;
@@ -39,5 +39,5 @@ int main(int argc, char* argv[]) {
             PLOG(ERROR) << "Pipe not created";
         });
 
-    return net::SNodeC::start();
+    return io::SNodeC::start();
 }

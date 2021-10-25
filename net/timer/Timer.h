@@ -21,7 +21,7 @@
 
 #include "net/TimerEventReceiver.h"
 
-namespace net::timer {
+namespace io::timer {
     class IntervalTimer;
     class SingleshotTimer;
 } // namespace net::timer
@@ -32,7 +32,7 @@ namespace net::timer {
 
 #endif /* DOXYGEN_SHOULD_SKIP_THIS */
 
-namespace net::timer {
+namespace io::timer {
 
     class Timer : public TimerEventReceiver {
         Timer(const Timer&) = delete;

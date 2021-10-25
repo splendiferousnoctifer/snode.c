@@ -22,7 +22,7 @@
 #include "web/http/SocketContextFactory.h"
 #include "web/http/client/SocketContext.h"
 
-namespace net::socket::stream {
+namespace io::socket::stream {
     class SocketConnection;
 } // namespace net::socket::stream
 
@@ -46,7 +46,7 @@ namespace web::http::client {
         SocketContextFactory& operator=(const SocketContextFactory&) = delete;
 
     private:
-        net::socket::stream::SocketContext* create(net::socket::stream::SocketConnection* socketConnection) override {
+        io::socket::stream::SocketContext* create(io::socket::stream::SocketConnection* socketConnection) override {
             return new SocketContext<Request, Response>(socketConnection, onResponseReady, onResponseError);
         }
 

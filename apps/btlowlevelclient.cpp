@@ -26,7 +26,7 @@
 #include "net/socket/stream/SocketContext.h"                 // for SocketP...
 #include "net/socket/stream/SocketContextFactory.h"          // for SocketP...
 
-namespace net::socket::stream {
+namespace io::socket::stream {
     class SocketConnection;
 }
 
@@ -37,12 +37,12 @@ namespace net::socket::stream {
 
 #endif /* DOXYGEN_SHOULD_SKIP_THIS */
 
-using namespace net::socket::bluetooth::rfcomm::legacy;
+using namespace io::socket::bluetooth::rfcomm::legacy;
 
-class SimpleSocketProtocol : public net::socket::stream::SocketContext {
+class SimpleSocketProtocol : public io::socket::stream::SocketContext {
 public:
-    explicit SimpleSocketProtocol(net::socket::stream::SocketConnection* socketConnection)
-        : net::socket::stream::SocketContext(socketConnection) {
+    explicit SimpleSocketProtocol(io::socket::stream::SocketConnection* socketConnection)
+        : io::socket::stream::SocketContext(socketConnection) {
     }
 
     void onReceiveFromPeer() override {
@@ -66,9 +66,9 @@ public:
     }
 };
 
-class SimpleSocketProtocolFactory : public net::socket::stream::SocketContextFactory {
+class SimpleSocketProtocolFactory : public io::socket::stream::SocketContextFactory {
 private:
-    net::socket::stream::SocketContext* create(net::socket::stream::SocketConnection* socketConnection) override {
+    io::socket::stream::SocketContext* create(io::socket::stream::SocketConnection* socketConnection) override {
         return new SimpleSocketProtocol(socketConnection);
     }
 };
@@ -97,7 +97,7 @@ SocketClient<SimpleSocketProtocolFactory> getClient() {
 }
 
 int main(int argc, char* argv[]) {
-    net::SNodeC::init(argc, argv);
+    io::SNodeC::init(argc, argv);
 
     SocketClient<SimpleSocketProtocolFactory>::SocketAddress remoteAddress("A4:B1:C1:2C:82:37", 1); // titan
     SocketClient<SimpleSocketProtocolFactory>::SocketAddress bindAddress("44:01:BB:A3:63:32");      // mpow
@@ -112,5 +112,5 @@ int main(int argc, char* argv[]) {
         }
     });
 
-    return net::SNodeC::start();
+    return io::SNodeC::start();
 }

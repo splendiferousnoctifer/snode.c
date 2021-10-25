@@ -23,7 +23,7 @@
 
 #endif /* DOXYGEN_SHOULD_SKIP_THIS */
 
-namespace net {
+namespace io {
 
     enum class TickStatus { SUCCESS, NO_OBSERVER, SELECT_ERROR };
 

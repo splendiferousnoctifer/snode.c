@@ -30,7 +30,7 @@
 #endif /* DOXYGEN_SHOULD_SKIP_THIS */
 
 using namespace express;
-using namespace net::timer;
+using namespace io::timer;
 
 int timerApp() {
     [[maybe_unused]] const Timer& tick = Timer::intervalTimer(

@@ -26,7 +26,7 @@
 
 #endif /* DOXYGEN_SHOULD_SKIP_THIS */
 
-namespace net {
+namespace io {
 
     std::map<void*, std::string> DynamicLoader::dlOpenedLibraries;
     std::set<void*> DynamicLoader::registeredForDlClose;
@@ -34,7 +34,7 @@ namespace net {
     void* DynamicLoader::dlOpen(const std::string& libFile, int flags) {
         VLOG(0) << "dlOpen: " << libFile;
 
-        void* handle = net::system::dlopen(libFile.c_str(), flags);
+        void* handle = io::system::dlopen(libFile.c_str(), flags);
 
         if (handle != nullptr) {
             dlOpenedLibraries[handle] = libFile;
@@ -75,7 +75,7 @@ namespace net {
         return ret;
     }
     char* DynamicLoader::dlError() {
-        return net::system::dlerror();
+        return io::system::dlerror();
     }
 
     int DynamicLoader::execDlClose(void* handle) {
@@ -85,7 +85,7 @@ namespace net {
             if (dlOpenedLibraries.contains(handle)) {
                 VLOG(0) << "execDLClose: " << dlOpenedLibraries[handle];
 
-                ret = net::system::dlclose(handle);
+                ret = io::system::dlclose(handle);
 
                 dlOpenedLibraries.erase(handle);
             }
@@ -99,7 +99,7 @@ namespace net {
             int ret = execDlClose(handle);
 
             if (ret != 0) {
-                VLOG(0) << "Error execDeleyedDlClose: " << net::DynamicLoader::dlError();
+                VLOG(0) << "Error execDeleyedDlClose: " << io::DynamicLoader::dlError();
             }
         }
 
@@ -117,7 +117,7 @@ namespace net {
             int ret = execDlClose(tmpIt->first);
 
             if (ret != 0) {
-                VLOG(0) << "Error execDlCloseAll: " << net::DynamicLoader::dlError();
+                VLOG(0) << "Error execDlCloseAll: " << io::DynamicLoader::dlError();
             }
         }
     }

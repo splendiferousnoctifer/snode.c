@@ -24,7 +24,7 @@
 
 #endif /* DOXYGEN_SHOULD_SKIP_THIS */
 
-namespace net {
+namespace io {
 
     ReadEventReceiver::ReadEventReceiver(long timeout)
         : EventReceiver(EventLoop::instance().getReadEventDispatcher(), timeout) {
@@ -50,4 +50,4 @@ namespace net {
         return continueReadImmediately();
     }
 
-} // namespace net
+} // namespace io

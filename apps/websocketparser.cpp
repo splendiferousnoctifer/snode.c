@@ -10,7 +10,7 @@
 #include <stdio.h> // for perror
 #include <string>  // for string, allocator, operator==
 using namespace express;
-using namespace net;
+using namespace io;
 
 int main(int argc, char* argv[]) {
     SNodeC::init(argc, argv);

@@ -27,7 +27,7 @@
 
 #define MAX_CONNECT_INACTIVITY 10
 
-namespace net {
+namespace io {
 
     class ConnectEventReceiver : public EventReceiver {
     protected:
@@ -45,6 +45,6 @@ namespace net {
         virtual bool continueConnectImmediately();
     };
 
-} // namespace net
+} // namespace io
 
 #endif // NET_CONNECTEVENTRECEIVER_H

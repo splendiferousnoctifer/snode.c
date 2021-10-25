@@ -26,7 +26,7 @@
 
 #endif /* DOXYGEN_SHOULD_SKIP_THIS */
 
-namespace net::socket::bluetooth::l2cap {
+namespace io::socket::bluetooth::l2cap {
 
     template <typename SocketContextFactoryT>
     class SocketClient : public stream::legacy::SocketClient<SocketContextFactoryT, l2cap::Socket> {

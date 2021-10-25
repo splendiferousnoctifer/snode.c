@@ -21,9 +21,9 @@
 
 #include "net/socket/stream/SocketContext.h"
 
-namespace net::socket::stream {
+namespace io::socket::stream {
     class SocketConnection;
-} // namespace net::socket::stream
+} // namespace io::socket::stream
 
 #ifndef DOXYGEN_SHOULD_SKIP_THIS
 
@@ -31,11 +31,11 @@ namespace net::socket::stream {
 
 namespace web::http {
 
-    class SocketContext : public net::socket::stream::SocketContext {
+    class SocketContext : public io::socket::stream::SocketContext {
     public:
-        using SocketConnection = net::socket::stream::SocketConnection;
+        using SocketConnection = io::socket::stream::SocketConnection;
 
-        explicit SocketContext(net::socket::stream::SocketConnection* socketConnection);
+        explicit SocketContext(io::socket::stream::SocketConnection* socketConnection);
 
         ~SocketContext() override = default;
 

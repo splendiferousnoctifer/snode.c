@@ -29,7 +29,7 @@
 
 #define MAX_ACCEPT_INACTIVITY LONG_MAX
 
-namespace net {
+namespace io {
 
     class AcceptEventReceiver : public EventReceiver {
     protected:
@@ -47,6 +47,6 @@ namespace net {
         virtual bool continueAcceptImmediately();
     };
 
-} // namespace net
+} // namespace io
 
 #endif // NET_ACCEPTEVENTRECEIVER_H

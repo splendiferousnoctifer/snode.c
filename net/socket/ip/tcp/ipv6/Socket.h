@@ -26,7 +26,7 @@
 
 #endif /* DOXYGEN_SHOULD_SKIP_THIS */
 
-namespace net::socket::ip::tcp::ipv6 {
+namespace io::socket::ip::tcp::ipv6 {
 
     class Socket : public socket::Socket<address::ipv6::InetAddress> {
     protected:

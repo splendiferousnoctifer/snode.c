@@ -30,15 +30,15 @@
 namespace web::http::client::tls {
 
     template <typename Request = web::http::client::Request, typename Response = web::http::client::Response>
-    class Client : public web::http::client::Client<net::socket::ip::tcp::ipv4::tls::SocketClient, Request, Response> {
+    class Client : public web::http::client::Client<io::socket::ip::tcp::ipv4::tls::SocketClient, Request, Response> {
     public:
-        using web::http::client::Client<net::socket::ip::tcp::ipv4::tls::SocketClient, Request, Response>::Client;
+        using web::http::client::Client<io::socket::ip::tcp::ipv4::tls::SocketClient, Request, Response>::Client;
     };
 
     template <typename Request = web::http::client::Request, typename Response = web::http::client::Response>
-    class Client6 : public web::http::client::Client<net::socket::ip::tcp::ipv6::tls::SocketClient, Request, Response> {
+    class Client6 : public web::http::client::Client<io::socket::ip::tcp::ipv6::tls::SocketClient, Request, Response> {
     public:
-        using web::http::client::Client<net::socket::ip::tcp::ipv6::tls::SocketClient, Request, Response>::Client;
+        using web::http::client::Client<io::socket::ip::tcp::ipv6::tls::SocketClient, Request, Response>::Client;
     };
 
 } // namespace web::http::client::tls

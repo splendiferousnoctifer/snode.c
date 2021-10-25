@@ -47,7 +47,7 @@
 using namespace web::http::client;
 
 int main(int argc, char* argv[]) {
-    net::SNodeC::init(argc, argv);
+    io::SNodeC::init(argc, argv);
 
     {
         tls::Client6<> tlsClient(
@@ -161,5 +161,5 @@ int main(int argc, char* argv[]) {
         }); // Connection:keep-alive\r\n\r\n"
     }
 
-    return net::SNodeC::start();
+    return io::SNodeC::start();
 }

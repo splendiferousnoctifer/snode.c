@@ -34,7 +34,7 @@
 #define MAX_READ_JUNKSIZE 16384
 #endif
 
-namespace net::socket::stream {
+namespace io::socket::stream {
 
     template <typename SocketT>
     class SocketReader

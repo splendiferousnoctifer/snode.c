@@ -20,8 +20,8 @@
 
 namespace web::http {
 
-    SocketContext::SocketContext(net::socket::stream::SocketConnection* socketConnection)
-        : net::socket::stream::SocketContext(socketConnection) {
+    SocketContext::SocketContext(io::socket::stream::SocketConnection* socketConnection)
+        : io::socket::stream::SocketContext(socketConnection) {
     }
 
 } // namespace web::http

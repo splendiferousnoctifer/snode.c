@@ -19,7 +19,7 @@
 #ifndef NET_SOCKET_STREAM_SOCKETCONNECTIONBASE_H
 #define NET_SOCKET_STREAM_SOCKETCONNECTIONBASE_H
 
-namespace net::socket::stream {
+namespace io::socket::stream {
     class SocketContext;
     class SocketContextFactory;
 } // namespace net::socket::stream
@@ -33,7 +33,7 @@ namespace net::socket::stream {
 
 #endif /* DOXYGEN_SHOULD_SKIP_THIS */
 
-namespace net::socket::stream {
+namespace io::socket::stream {
 
     class SocketConnection {
         SocketConnection() = delete;

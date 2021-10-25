@@ -24,7 +24,7 @@
 
 #endif // DOXYGEN_SHOULD_SKIP_THIS
 
-namespace net::socket::bluetooth::address {
+namespace io::socket::bluetooth::address {
 
     L2CapAddress::L2CapAddress() {
         sockAddr.l2_family = AF_BLUETOOTH;

@@ -19,7 +19,7 @@
 #ifndef NET_SOCKET_STREAM_SOCKETCONTEXT_H
 #define NET_SOCKET_STREAM_SOCKETCONTEXT_H
 
-namespace net::socket::stream {
+namespace io::socket::stream {
     class SocketContextFactory;
     class SocketConnection;
 } // namespace net::socket::stream
@@ -32,7 +32,7 @@ namespace net::socket::stream {
 
 #endif /* DOXYGEN_SHOULD_SKIP_THIS */
 
-namespace net::socket::stream {
+namespace io::socket::stream {
 
     class SocketContext {
     protected:

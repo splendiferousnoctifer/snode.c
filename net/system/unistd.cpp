@@ -24,7 +24,7 @@
 
 #endif /* DOXYGEN_SHOULD_SKIP_THIS */
 
-namespace net::system {
+namespace io::system {
 
     int open(const char* pathname, int flags) {
         errno = 0;

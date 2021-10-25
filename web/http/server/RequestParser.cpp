@@ -32,7 +32,7 @@
 namespace web::http::server {
 
     RequestParser::RequestParser(
-        net::socket::stream::SocketContext* socketContext,
+        io::socket::stream::SocketContext* socketContext,
         const std::function<void(void)>& onStart,
         const std::function<void(
             const std::string&, const std::string&, const std::string&, int, int, const std::map<std::string, std::string>&)>& onRequest,

@@ -26,7 +26,7 @@
 
 #endif /* DOXYGEN_SHOULD_SKIP_THIS */
 
-namespace net::socket::stream {
+namespace io::socket::stream {
 
     SocketConnection::SocketConnection(const std::shared_ptr<SocketContextFactory>& socketContextFactory)
         : socketContext(socketContextFactory->create(this)) {

@@ -24,7 +24,7 @@
 
 #endif /* DOXYGEN_SHOULD_SKIP_THIS */
 
-namespace net {
+namespace io {
 
     EventReceiver::EventReceiver(EventDispatcher& descriptorEventDispatcher, long timeout)
         : descriptorEventDispatcher(descriptorEventDispatcher)

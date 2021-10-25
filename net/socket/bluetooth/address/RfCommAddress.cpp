@@ -24,7 +24,7 @@
 
 #endif // DOXYGEN_SHOULD_SKIP_THIS
 
-namespace net::socket::bluetooth::address {
+namespace io::socket::bluetooth::address {
 
     RfCommAddress::RfCommAddress() {
         sockAddr.rc_family = AF_BLUETOOTH;

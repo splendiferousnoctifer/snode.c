@@ -24,7 +24,7 @@
 
 #endif /* DOXYGEN_SHOULD_SKIP_THIS */
 
-namespace net::pipe {
+namespace io::pipe {
 
     Source::Source()
         : sink(nullptr) {

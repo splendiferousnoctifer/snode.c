@@ -24,10 +24,10 @@
 
 #endif /* DOXYGEN_SHOULD_SKIP_THIS */
 
-namespace net::socket::bluetooth::rfcomm {
+namespace io::socket::bluetooth::rfcomm {
 
     int Socket::create(int flags) {
-        return net::system::socket(PF_BLUETOOTH, SOCK_STREAM | flags, BTPROTO_RFCOMM);
+        return io::system::socket(PF_BLUETOOTH, SOCK_STREAM | flags, BTPROTO_RFCOMM);
     }
 
 } // namespace net::socket::bluetooth::rfcomm

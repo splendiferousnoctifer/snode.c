@@ -28,7 +28,7 @@
 
 #endif /* DOXYGEN_SHOULD_SKIP_THIS */
 
-namespace net::socket {
+namespace io::socket {
 
     template <typename SockAddrT>
     class SocketAddress {

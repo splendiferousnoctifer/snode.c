@@ -33,7 +33,7 @@
 
 #endif /* DOXYGEN_SHOULD_SKIP_THIS */
 
-namespace net::system {
+namespace io::system {
 
     // #include <sys/types.h>, #include <sys/stat.h>, #include <fcntl.h>
     int open(const char* pathname, int flags);

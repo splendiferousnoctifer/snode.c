@@ -21,13 +21,13 @@
 
 #include "net/socket/stream/SocketContextFactory.h"
 
-namespace net::socket::stream {
+namespace io::socket::stream {
     class SocketConnection;
 } // namespace net::socket::stream
 
 namespace web::http {
     template <template <typename RequestT, typename ResponseT> class SocketContextT, typename RequestT, typename ResponseT>
-    class SocketContextFactory : public net::socket::stream::SocketContextFactory {
+    class SocketContextFactory : public io::socket::stream::SocketContextFactory {
     public:
         using SocketContext = SocketContextT<RequestT, ResponseT>;
         using Request = RequestT;
@@ -40,7 +40,7 @@ namespace web::http {
         SocketContextFactory(const SocketContextFactory&) = delete;
         SocketContextFactory& operator=(const SocketContextFactory&) = delete;
 
-        net::socket::stream::SocketContext* create(net::socket::stream::SocketConnection* socketConnection) override = 0;
+        io::socket::stream::SocketContext* create(io::socket::stream::SocketConnection* socketConnection) override = 0;
     };
 } // namespace web::http
 

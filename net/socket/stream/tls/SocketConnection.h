@@ -31,7 +31,7 @@
 
 #endif /* DOXYGEN_SHOULD_SKIP_THIS */
 
-namespace net::socket::stream::tls {
+namespace io::socket::stream::tls {
 
     template <typename SocketT>
     class SocketConnection
@@ -159,6 +159,6 @@ namespace net::socket::stream::tls {
         friend class SocketConnector;
     };
 
-} // namespace net::socket::stream::tls
+} // namespace io::socket::stream::tls
 
 #endif // NET_SOCKET_STREAM_TLS_SOCKETCONNECTION_H

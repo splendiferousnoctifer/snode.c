@@ -29,7 +29,7 @@
 
 #endif /* DOXYGEN_SHOULD_SKIP_THIS */
 
-namespace net::socket::stream::tls {
+namespace io::socket::stream::tls {
 
     class TLSHandshake
         : public ReadEventReceiver

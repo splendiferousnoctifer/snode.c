@@ -20,7 +20,7 @@
 
 #include "web/websocket/client/SocketContextUpgradeFactory.h"
 
-namespace net::socket::stream {
+namespace io::socket::stream {
     class SocketConnection;
 } // namespace net::socket::stream
 
@@ -30,7 +30,7 @@ namespace net::socket::stream {
 
 namespace web::websocket::client {
 
-    SocketContext::SocketContext(net::socket::stream::SocketConnection* socketConnection, SubProtocol* subProtocol)
+    SocketContext::SocketContext(io::socket::stream::SocketConnection* socketConnection, SubProtocol* subProtocol)
         : web::websocket::SocketContext<SubProtocol>(socketConnection, subProtocol, Role::CLIENT) {
     }
 

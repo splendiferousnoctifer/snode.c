@@ -30,15 +30,15 @@
 namespace web::http::server::tls {
 
     template <typename Request = web::http::server::Request, typename Response = web::http::server::Response>
-    class Server : public web::http::server::Server<net::socket::ip::tcp::ipv4::tls::SocketServer, Request, Response> {
+    class Server : public web::http::server::Server<io::socket::ip::tcp::ipv4::tls::SocketServer, Request, Response> {
     public:
-        using web::http::server::Server<net::socket::ip::tcp::ipv4::tls::SocketServer, Request, Response>::Server;
+        using web::http::server::Server<io::socket::ip::tcp::ipv4::tls::SocketServer, Request, Response>::Server;
     };
 
     template <typename Request = web::http::server::Request, typename Response = web::http::server::Response>
-    class Server6 : public web::http::server::Server<net::socket::ip::tcp::ipv6::tls::SocketServer, Request, Response> {
+    class Server6 : public web::http::server::Server<io::socket::ip::tcp::ipv6::tls::SocketServer, Request, Response> {
     public:
-        using web::http::server::Server<net::socket::ip::tcp::ipv6::tls::SocketServer, Request, Response>::Server;
+        using web::http::server::Server<io::socket::ip::tcp::ipv6::tls::SocketServer, Request, Response>::Server;
     };
 
 } // namespace web::http::server::tls

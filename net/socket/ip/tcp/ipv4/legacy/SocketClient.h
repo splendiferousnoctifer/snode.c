@@ -26,7 +26,7 @@
 
 #endif // DOXYGEN_SHOULD_SKIP_THIS
 
-namespace net::socket::ip::tcp::ipv4::legacy {
+namespace io::socket::ip::tcp::ipv4::legacy {
 
     template <typename SocketContextFactoryT>
     class SocketClient : public stream::legacy::SocketClient<SocketContextFactoryT, ipv4::Socket> {

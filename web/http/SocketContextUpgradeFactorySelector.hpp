@@ -70,11 +70,11 @@ namespace web::http {
 
         for (const std::string& searchPath : searchPaths) {
             void* handle =
-                net::DynamicLoader::dlOpen((searchPath + "/libsnodec-" + upgradeContextName + ".so").c_str(), RTLD_LAZY | RTLD_GLOBAL);
+                io::DynamicLoader::dlOpen((searchPath + "/libsnodec-" + upgradeContextName + ".so").c_str(), RTLD_LAZY | RTLD_GLOBAL);
 
             if (handle != nullptr) {
                 SocketContextUpgradeFactory* (*getSocketContextUpgradeFactory)() =
-                    net::DynamicLoader::dlSym<SocketContextUpgradeFactory* (*) ()>(
+                    io::DynamicLoader::dlSym<SocketContextUpgradeFactory* (*) ()>(
                         handle, upgradeContextName + (role == Role::Server ? "Server" : "Client") + "ContextUpgradeFactory");
 
                 if (getSocketContextUpgradeFactory != nullptr) {
@@ -87,19 +87,19 @@ namespace web::http {
                             VLOG(0) << "UpgradeSocketContext already existing. Not using: " << socketContextUpgradeFactory->name();
                             socketContextUpgradeFactory->destroy();
                             socketContextUpgradeFactory = nullptr;
-                            net::DynamicLoader::dlCloseDelayed(handle);
+                            io::DynamicLoader::dlCloseDelayed(handle);
                         }
                         break;
                     } else {
-                        net::DynamicLoader::dlCloseDelayed(handle);
+                        io::DynamicLoader::dlCloseDelayed(handle);
                         VLOG(0) << "SocketContextUpgradeFactory not created: " << upgradeContextName;
                     }
                 } else {
-                    net::DynamicLoader::dlCloseDelayed(handle);
+                    io::DynamicLoader::dlCloseDelayed(handle);
                     VLOG(0) << "Not a Plugin \"" << upgradeContextName;
                 }
             } else {
-                VLOG(0) << "Error dlopen: " << net::DynamicLoader::dlError();
+                VLOG(0) << "Error dlopen: " << io::DynamicLoader::dlError();
             }
         }
 
@@ -146,7 +146,7 @@ namespace web::http {
             socketContextUpgradeFactory->destroy();
 
             if (socketContextPlugin.handle != nullptr) {
-                net::DynamicLoader::dlCloseDelayed(socketContextPlugin.handle);
+                io::DynamicLoader::dlCloseDelayed(socketContextPlugin.handle);
             }
 
             socketContextUpgradePlugins.erase(upgradeContextNames);

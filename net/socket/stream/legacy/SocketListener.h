@@ -26,7 +26,7 @@
 
 #endif /* DOXYGEN_SHOULD_SKIP_THIS */
 
-namespace net::socket::stream::legacy {
+namespace io::socket::stream::legacy {
 
     template <typename SocketT>
     class SocketListener : public stream::SocketListener<stream::legacy::SocketConnection<SocketT>> {

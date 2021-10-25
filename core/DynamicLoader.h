@@ -44,7 +44,7 @@ namespace core {
 
         template <typename Symbol>
         static Symbol dlSym(void* handle, const std::string& symbol) {
-            return reinterpret_cast<Symbol>(net::system::dlsym(handle, symbol.c_str()));
+            return reinterpret_cast<Symbol>(io::system::dlsym(handle, symbol.c_str()));
         }
 
         static char* dlError();

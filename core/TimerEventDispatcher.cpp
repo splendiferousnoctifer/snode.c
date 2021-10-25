@@ -56,7 +56,7 @@ namespace core {
             struct timeval currentTime {
                 0, 0
             };
-            net::system::gettimeofday(&currentTime, nullptr);
+            io::system::gettimeofday(&currentTime, nullptr);
 
             if (tv < currentTime) {
                 tv.tv_sec = 0;
@@ -73,7 +73,7 @@ namespace core {
         struct timeval currentTime {
             0, 0
         };
-        net::system::gettimeofday(&currentTime, nullptr);
+        io::system::gettimeofday(&currentTime, nullptr);
 
         for (TimerEventReceiver* timer : timerList) {
             if (timer->timeout() <= currentTime) {

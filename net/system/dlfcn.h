@@ -29,7 +29,7 @@
 
 #endif /* DOXYGEN_SHOULD_SKIP_THIS */
 
-namespace net::system {
+namespace io::system {
 
     void* dlopen(const char* filename, int flags);
     int dlclose(void* handle);

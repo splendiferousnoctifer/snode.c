@@ -27,7 +27,7 @@
 #include "net/socket/stream/SocketContextFactory.h"    // for SocketProtoco...
 #include "net/socket/stream/SocketServer.h"            // for SocketServer<...
 
-namespace net::socket::stream {
+namespace io::socket::stream {
     class SocketConnection;
 } // namespace net::socket::stream
 
@@ -38,12 +38,12 @@ namespace net::socket::stream {
 
 #endif /* DOXYGEN_SHOULD_SKIP_THIS */
 
-using namespace net::socket::bluetooth::l2cap;
+using namespace io::socket::bluetooth::l2cap;
 
-class SimpleSocketProtocol : public net::socket::stream::SocketContext {
+class SimpleSocketProtocol : public io::socket::stream::SocketContext {
 public:
-    explicit SimpleSocketProtocol(net::socket::stream::SocketConnection* socketConnection)
-        : net::socket::stream::SocketContext(socketConnection) {
+    explicit SimpleSocketProtocol(io::socket::stream::SocketConnection* socketConnection)
+        : io::socket::stream::SocketContext(socketConnection) {
     }
 
     void onReceiveFromPeer() override {
@@ -67,17 +67,17 @@ public:
     }
 };
 
-class SimpleSocketProtocolFactory : public net::socket::stream::SocketContextFactory {
+class SimpleSocketProtocolFactory : public io::socket::stream::SocketContextFactory {
 public:
     ~SimpleSocketProtocolFactory() = default;
 
-    net::socket::stream::SocketContext* create(net::socket::stream::SocketConnection* socketConnection) override {
+    io::socket::stream::SocketContext* create(io::socket::stream::SocketConnection* socketConnection) override {
         return new SimpleSocketProtocol(socketConnection);
     }
 };
 
 int main(int argc, char* argv[]) {
-    net::SNodeC::init(argc, argv);
+    io::SNodeC::init(argc, argv);
 
     SocketServer<SimpleSocketProtocolFactory> btServer(
         [](const SocketServer<SimpleSocketProtocolFactory>::SocketAddress& localAddress,
@@ -107,5 +107,5 @@ int main(int argc, char* argv[]) {
             }
         });
 
-    return net::SNodeC::start();
+    return io::SNodeC::start();
 }

@@ -33,7 +33,7 @@
 
 #endif /* DOXYGEN_SHOULD_SKIP_THIS */
 
-namespace net::socket::stream::tls {
+namespace io::socket::stream::tls {
 
     template <typename SocketT>
     class SocketReader : public stream::SocketReader<SocketT> {
@@ -106,7 +106,7 @@ namespace net::socket::stream::tls {
         }
 
         bool continueReadImmediately() override {
-            int pending = SSL_pending(ssl) || net::socket::stream::SocketReader<SocketT>::continueReadImmediately();
+            int pending = SSL_pending(ssl) || io::socket::stream::SocketReader<SocketT>::continueReadImmediately();
             return pending;
         }
 

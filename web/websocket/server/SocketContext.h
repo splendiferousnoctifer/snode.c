@@ -21,7 +21,7 @@
 
 #include "web/websocket/SocketContext.h"
 
-namespace net::socket::stream {
+namespace io::socket::stream {
     class SocketConnection;
 } // namespace net::socket::stream
 
@@ -38,7 +38,7 @@ namespace web::websocket::server {
 
     class SocketContext : public web::websocket::SocketContext<web::websocket::server::SubProtocol> {
     public:
-        SocketContext(net::socket::stream::SocketConnection* socketConnection, web::websocket::server::SubProtocol* subProtocol);
+        SocketContext(io::socket::stream::SocketConnection* socketConnection, web::websocket::server::SubProtocol* subProtocol);
 
         void setSocketContextUpgradeFactory(SocketContextUpgradeFactory* socketContextUpgradeFactory);
 

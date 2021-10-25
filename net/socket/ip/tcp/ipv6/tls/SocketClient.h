@@ -26,7 +26,7 @@
 
 #endif // DOXYGEN_SHOULD_SKIP_THIS
 
-namespace net::socket::ip::tcp::ipv6::tls {
+namespace io::socket::ip::tcp::ipv6::tls {
 
     template <typename SocketContextFactoryT>
     class SocketClient : public stream::tls::SocketClient<SocketContextFactoryT, ipv6::Socket> {

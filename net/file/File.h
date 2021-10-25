@@ -25,6 +25,6 @@
 
 #endif /* DOXYGEN_SHOULD_SKIP_THIS */
 
-class File : virtual public net::Descriptor {};
+class File : virtual public io::Descriptor {};
 
 #endif // FILE_H

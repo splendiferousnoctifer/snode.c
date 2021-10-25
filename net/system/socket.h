@@ -31,7 +31,7 @@
 
 #endif /* DOXYGEN_SHOULD_SKIP_THIS */
 
-namespace net::system {
+namespace io::system {
 
     // #include <sys/socket.h>
     int getsockname(int sockfd, struct sockaddr* addr, socklen_t* addrlen);

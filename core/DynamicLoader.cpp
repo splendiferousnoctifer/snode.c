@@ -34,7 +34,7 @@ namespace core {
     void* DynamicLoader::dlOpen(const std::string& libFile, int flags) {
         VLOG(0) << "dlOpen: " << libFile;
 
-        void* handle = net::system::dlopen(libFile.c_str(), flags);
+        void* handle = io::system::dlopen(libFile.c_str(), flags);
 
         if (handle != nullptr) {
             dlOpenedLibraries[handle] = libFile;
@@ -75,7 +75,7 @@ namespace core {
         return ret;
     }
     char* DynamicLoader::dlError() {
-        return net::system::dlerror();
+        return io::system::dlerror();
     }
 
     int DynamicLoader::execDlClose(void* handle) {
@@ -85,7 +85,7 @@ namespace core {
             if (dlOpenedLibraries.contains(handle)) {
                 VLOG(0) << "execDLClose: " << dlOpenedLibraries[handle];
 
-                ret = net::system::dlclose(handle);
+                ret = io::system::dlclose(handle);
 
                 dlOpenedLibraries.erase(handle);
             }

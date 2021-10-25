@@ -26,13 +26,13 @@
 
 #endif /* DOXYGEN_SHOULD_SKIP_THIS */
 
-namespace net::socket::stream::tls {
+namespace io::socket::stream::tls {
 
     template <typename SocketContextFactoryT, typename SocketT>
     class SocketClient : public stream::SocketClient<SocketContextFactoryT, tls::SocketConnector<SocketT>> {
         using stream::SocketClient<SocketContextFactoryT, tls::SocketConnector<SocketT>>::SocketClient;
     };
 
-} // namespace net::socket::stream::tls
+} // namespace io::socket::stream::tls
 
 #endif // NET_SOCKET_STREAM_TLS_SOCKETCLIENT_H

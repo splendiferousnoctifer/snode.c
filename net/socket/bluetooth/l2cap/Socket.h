@@ -26,9 +26,9 @@
 #include "net/socket/Socket.h"
 #include "net/socket/bluetooth/address/L2CapAddress.h"
 
-namespace net::socket::bluetooth::l2cap {
+namespace io::socket::bluetooth::l2cap {
 
-    class Socket : public net::socket::Socket<address::L2CapAddress> {
+    class Socket : public io::socket::Socket<address::L2CapAddress> {
     public:
         int create(int flags = 0) override;
     };

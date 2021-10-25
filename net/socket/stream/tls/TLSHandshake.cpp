@@ -28,7 +28,7 @@
 
 #define TLSHANDSHAKE_TIMEOUT 10
 
-namespace net::socket::stream::tls {
+namespace io::socket::stream::tls {
 
     void TLSHandshake::doHandshake(SSL* ssl,
                                    const std::function<void(void)>& onSuccess,

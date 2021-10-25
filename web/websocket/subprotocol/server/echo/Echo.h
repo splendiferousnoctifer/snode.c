@@ -21,7 +21,7 @@
 
 #include "web/websocket/server/SubProtocol.h"
 
-namespace net::timer {
+namespace io::timer {
     class Timer;
 } // namespace net::timer
 
@@ -59,7 +59,7 @@ namespace web::websocket::subprotocol::echo::server {
 
         int flyingPings = 0;
 
-        net::timer::Timer& pingTimer;
+        io::timer::Timer& pingTimer;
     };
 
 } // namespace web::websocket::subprotocol::echo::server

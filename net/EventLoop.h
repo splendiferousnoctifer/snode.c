@@ -29,7 +29,7 @@
 
 #endif /* DOXYGEN_SHOULD_SKIP_THIS */
 
-namespace net {
+namespace io {
 
     class EventLoop {
         EventLoop(const EventLoop& eventLoop) = delete;
@@ -89,6 +89,6 @@ namespace net {
         friend class SNodeC;
     };
 
-} // namespace net
+} // namespace io
 
 #endif // NET_EVENTLOOP_H

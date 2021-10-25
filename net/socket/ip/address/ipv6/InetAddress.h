@@ -30,7 +30,7 @@
 
 #endif /* DOXYGEN_SHOULD_SKIP_THIS */
 
-namespace net::socket::ip::address::ipv6 {
+namespace io::socket::ip::address::ipv6 {
 
     class bad_hostname : public std::exception {
     public:

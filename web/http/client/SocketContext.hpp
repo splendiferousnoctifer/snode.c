@@ -19,7 +19,7 @@
 #include "log/Logger.h"
 #include "web/http/client/SocketContext.h"
 
-namespace net::socket::stream {
+namespace io::socket::stream {
     class SocketConnection;
 } // namespace net::socket::stream
 
@@ -32,7 +32,7 @@ namespace net::socket::stream {
 namespace web::http::client {
 
     template <typename Request, typename Response>
-    SocketContext<Request, Response>::SocketContext(net::socket::stream::SocketConnection* socketConnection,
+    SocketContext<Request, Response>::SocketContext(io::socket::stream::SocketConnection* socketConnection,
                                                     const std::function<void(Request&, Response&)>& onResponse,
                                                     const std::function<void(int, const std::string&)>& onError)
         : web::http::SocketContext(socketConnection)

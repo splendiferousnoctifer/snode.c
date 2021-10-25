@@ -22,7 +22,7 @@
 #include "net/ConnectEventReceiver.h"
 #include "net/system/socket.h"
 
-namespace net::socket::stream {
+namespace io::socket::stream {
     class SocketContextFactory;
 }
 
@@ -39,7 +39,7 @@ namespace net::socket::stream {
 
 #endif /* DOXYGEN_SHOULD_SKIP_THIS */
 
-namespace net::socket::stream {
+namespace io::socket::stream {
 
     template <typename SocketConnectionT>
     class SocketConnector
@@ -83,7 +83,7 @@ namespace net::socket::stream {
                                 onError(errnum);
                                 destruct();
                             } else {
-                                int ret = net::system::connect(getFd(), &remoteAddress.getSockAddr(), remoteAddress.getSockAddrLen());
+                                int ret = io::system::connect(getFd(), &remoteAddress.getSockAddr(), remoteAddress.getSockAddrLen());
 
                                 if (ret == 0 || errno == EINPROGRESS) {
                                     ConnectEventReceiver::enable(getFd());
@@ -103,7 +103,7 @@ namespace net::socket::stream {
             int cErrno = -1;
             socklen_t cErrnoLen = sizeof(cErrno);
 
-            int err = net::system::getsockopt(Socket::getFd(), SOL_SOCKET, SO_ERROR, &cErrno, &cErrnoLen);
+            int err = io::system::getsockopt(Socket::getFd(), SOL_SOCKET, SO_ERROR, &cErrno, &cErrnoLen);
 
             if (err == 0) {
                 errno = cErrno;
@@ -115,8 +115,8 @@ namespace net::socket::stream {
                         typename SocketAddress::SockAddr remoteAddress{};
                         socklen_t remoteAddressLength = sizeof(remoteAddress);
 
-                        if (net::system::getsockname(getFd(), reinterpret_cast<sockaddr*>(&localAddress), &localAddressLength) == 0 &&
-                            net::system::getpeername(getFd(), reinterpret_cast<sockaddr*>(&remoteAddress), &remoteAddressLength) == 0) {
+                        if (io::system::getsockname(getFd(), reinterpret_cast<sockaddr*>(&localAddress), &localAddressLength) == 0 &&
+                            io::system::getpeername(getFd(), reinterpret_cast<sockaddr*>(&remoteAddress), &remoteAddressLength) == 0) {
                             socketConnection = new SocketConnection(getFd(),
                                                                     socketContextFactory,
                                                                     SocketAddress(localAddress),

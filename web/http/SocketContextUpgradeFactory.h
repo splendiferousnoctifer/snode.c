@@ -30,7 +30,7 @@
 namespace web::http {
 
     template <typename RequestT, typename ResponseT>
-    class SocketContextUpgradeFactory : public net::socket::stream::SocketContextFactory {
+    class SocketContextUpgradeFactory : public io::socket::stream::SocketContextFactory {
     public:
         using Request = RequestT;
         using Response = ResponseT;

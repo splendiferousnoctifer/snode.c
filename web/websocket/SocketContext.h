@@ -24,7 +24,7 @@
 #include "web/websocket/Receiver.h"
 #include "web/websocket/Transmitter.h"
 
-namespace net::socket::stream {
+namespace io::socket::stream {
     class SocketConnection;
 } // namespace net::socket::stream
 
@@ -41,7 +41,7 @@ namespace web::websocket {
 
     template <typename SubProtocolT>
     class SocketContext
-        : public net::socket::stream::SocketContext
+        : public io::socket::stream::SocketContext
         , protected web::websocket::Receiver
         , protected web::websocket::Transmitter {
     public:
@@ -50,8 +50,8 @@ namespace web::websocket {
         enum class Role { SERVER, CLIENT };
 
     protected:
-        SocketContext(net::socket::stream::SocketConnection* socketConnection, SubProtocol* subProtocol, Role role)
-            : net::socket::stream::SocketContext(socketConnection)
+        SocketContext(io::socket::stream::SocketConnection* socketConnection, SubProtocol* subProtocol, Role role)
+            : io::socket::stream::SocketContext(socketConnection)
             , Transmitter(role == Role::CLIENT)
             , subProtocol(subProtocol) {
         }
@@ -112,11 +112,11 @@ namespace web::websocket {
         }
 
         std::string getLocalAddressAsString() const {
-            return net::socket::stream::SocketContext::getLocalAddressAsString();
+            return io::socket::stream::SocketContext::getLocalAddressAsString();
         }
 
         std::string getRemoteAddressAsString() const {
-            return net::socket::stream::SocketContext::getRemoteAddressAsString();
+            return io::socket::stream::SocketContext::getRemoteAddressAsString();
         }
 
         SubProtocol* getSubProtocol() const {

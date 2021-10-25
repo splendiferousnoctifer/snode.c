@@ -22,10 +22,10 @@
 
 #endif /* DOXYGEN_SHOULD_SKIP_THIS */
 
-namespace net::socket::ip::tcp::ipv4 {
+namespace io::socket::ip::tcp::ipv4 {
 
     int Socket::create(int flags) {
-        return net::system::socket(PF_INET, SOCK_STREAM | flags, 0);
+        return io::system::socket(PF_INET, SOCK_STREAM | flags, 0);
     }
 
 } // namespace net::socket::ip::tcp::ipv4

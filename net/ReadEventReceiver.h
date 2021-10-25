@@ -27,7 +27,7 @@
 
 #define MAX_READ_INACTIVITY 60
 
-namespace net {
+namespace io {
 
     class ReadEventReceiver : public EventReceiver {
     protected:

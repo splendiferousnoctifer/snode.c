@@ -25,7 +25,7 @@
 
 #endif /* DOXYGEN_SHOULD_SKIP_THIS */
 
-namespace net::timer {
+namespace io::timer {
 
     class SingleshotTimer : public Timer {
         SingleshotTimer& operator=(const SingleshotTimer& timer) = delete;

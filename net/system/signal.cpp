@@ -24,7 +24,7 @@
 
 #endif /* DOXYGEN_SHOULD_SKIP_THIS */
 
-namespace net::system {
+namespace io::system {
 
     sighandler_t signal(int signum, sighandler_t handler) {
         errno = 0;

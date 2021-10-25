@@ -27,7 +27,7 @@
 
 #endif /* DOXYGEN_SHOULD_SKIP_THIS */
 
-namespace net::timer {
+namespace io::timer {
 
     Timer::Timer(const struct timeval& timeout, const void* arg)
         : arg(arg)
