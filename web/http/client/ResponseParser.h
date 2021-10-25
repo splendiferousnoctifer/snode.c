@@ -24,7 +24,7 @@
 
 namespace io::socket::stream {
     class SocketContext;
-} // namespace net::socket::stream
+} // namespace io::socket::stream
 
 #ifndef DOXYGEN_SHOULD_SKIP_THIS
 

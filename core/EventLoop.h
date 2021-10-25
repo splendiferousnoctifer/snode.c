@@ -89,6 +89,6 @@ namespace core {
         friend class SNodeC;
     };
 
-} // namespace net
+} // namespace core
 
 #endif // NET_EVENTLOOP_H

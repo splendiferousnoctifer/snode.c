@@ -18,14 +18,14 @@
 
 #ifndef DOXYGEN_SHOULD_SKIP_THIS
 
-#include "config.h"                                       // for CLIENTCERTF
-#include "log/Logger.h"                                   // for Writer
-#include "net/SNodeC.h"                                   // for SNodeC
-#include "net/socket/bluetooth/address/RfCommAddress.h"   // for RfCommAddress
-#include "net/socket/bluetooth/rfcomm/tls/SocketClient.h" // for SocketClient
-#include "net/socket/stream/SocketClient.h"               // for SocketClie...
-#include "net/socket/stream/SocketContext.h"              // for SocketProt...
-#include "net/socket/stream/SocketContextFactory.h"       // for SocketProt...
+#include "config.h"                                      // for CLIENTCERTF
+#include "core/SNodeC.h"                                 // for SNodeC
+#include "io/socket/bluetooth/address/RfCommAddress.h"   // for RfCommAddress
+#include "io/socket/bluetooth/rfcomm/tls/SocketClient.h" // for SocketClient
+#include "io/socket/stream/SocketClient.h"               // for SocketClie...
+#include "io/socket/stream/SocketContext.h"              // for SocketProt...
+#include "io/socket/stream/SocketContextFactory.h"       // for SocketProt...
+#include "log/Logger.h"                                  // for Writer
 
 namespace io::socket::stream {
     class SocketConnection;
@@ -152,7 +152,7 @@ SocketClient<SimpleSocketProtocolFactory> getClient() {
 }
 
 int main(int argc, char* argv[]) {
-    io::SNodeC::init(argc, argv);
+    core::SNodeC::init(argc, argv);
 
     SocketClient<SimpleSocketProtocolFactory>::SocketAddress remoteAddress("A4:B1:C1:2C:82:37", 1); // titan
     SocketClient<SimpleSocketProtocolFactory>::SocketAddress bindAddress("44:01:BB:A3:63:32");      // mpow
@@ -167,5 +167,5 @@ int main(int argc, char* argv[]) {
         }
     });
 
-    return io::SNodeC::start();
+    return core::SNodeC::start();
 }

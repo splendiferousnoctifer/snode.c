@@ -18,7 +18,7 @@
 
 #include "core/TimerEventDispatcher.h"
 
-#include "net/system/time.h"
+#include "core/system/time.h"
 
 #ifndef DOXYGEN_SHOULD_SKIP_THIS
 
@@ -56,7 +56,7 @@ namespace core {
             struct timeval currentTime {
                 0, 0
             };
-            io::system::gettimeofday(&currentTime, nullptr);
+            core::system::gettimeofday(&currentTime, nullptr);
 
             if (tv < currentTime) {
                 tv.tv_sec = 0;
@@ -73,7 +73,7 @@ namespace core {
         struct timeval currentTime {
             0, 0
         };
-        io::system::gettimeofday(&currentTime, nullptr);
+        core::system::gettimeofday(&currentTime, nullptr);
 
         for (TimerEventReceiver* timer : timerList) {
             if (timer->timeout() <= currentTime) {

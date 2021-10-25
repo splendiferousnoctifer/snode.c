@@ -19,8 +19,8 @@
 #ifndef WEB_HTTP_SERVER_LEGACY_SERVER_H
 #define WEB_HTTP_SERVER_LEGACY_SERVER_H
 
-#include "net/socket/ip/tcp/ipv4/legacy/SocketServer.h"
-#include "net/socket/ip/tcp/ipv6/legacy/SocketServer.h"
+#include "io/socket/ip/tcp/ipv4/legacy/SocketServer.h"
+#include "io/socket/ip/tcp/ipv6/legacy/SocketServer.h"
 #include "web/http/server/Server.h"
 
 #ifndef DOXYGEN_SHOULD_SKIP_THIS

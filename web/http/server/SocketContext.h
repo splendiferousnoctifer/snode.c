@@ -24,7 +24,7 @@
 
 namespace io::socket::stream {
     class SocketConnection;
-} // namespace net::socket::stream
+} // namespace io::socket::stream
 
 namespace web::http::server {
     class Request;

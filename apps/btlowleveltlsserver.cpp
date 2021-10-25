@@ -18,18 +18,18 @@
 
 #ifndef DOXYGEN_SHOULD_SKIP_THIS
 
-#include "config.h"                                       // for CLIENTCAFILE
-#include "log/Logger.h"                                   // for Writer
-#include "net/SNodeC.h"                                   // for SNodeC
-#include "net/socket/bluetooth/address/RfCommAddress.h"   // for RfCommAddress
-#include "net/socket/bluetooth/rfcomm/tls/SocketServer.h" // for SocketServer
-#include "net/socket/stream/SocketContext.h"              // for SocketProt...
-#include "net/socket/stream/SocketContextFactory.h"       // for SocketProt...
-#include "net/socket/stream/SocketServer.h"               // for SocketServ...
+#include "config.h"                                      // for CLIENTCAFILE
+#include "core/SNodeC.h"                                 // for SNodeC
+#include "io/socket/bluetooth/address/RfCommAddress.h"   // for RfCommAddress
+#include "io/socket/bluetooth/rfcomm/tls/SocketServer.h" // for SocketServer
+#include "io/socket/stream/SocketContext.h"              // for SocketProt...
+#include "io/socket/stream/SocketContextFactory.h"       // for SocketProt...
+#include "io/socket/stream/SocketServer.h"               // for SocketServ...
+#include "log/Logger.h"                                  // for Writer
 
 namespace io::socket::stream {
     class SocketConnection;
-} // namespace net::socket::stream
+} // namespace io::socket::stream
 
 #include <cstddef>            // for NULL, size_t
 #include <functional>         // for function
@@ -83,7 +83,7 @@ private:
 };
 
 int main(int argc, char* argv[]) {
-    io::SNodeC::init(argc, argv);
+    core::SNodeC::init(argc, argv);
 
     SocketServer<SimpleSocketProtocolFactory> btServer(
         [](const SocketServer<SimpleSocketProtocolFactory>::SocketAddress& localAddress,
@@ -157,5 +157,5 @@ int main(int argc, char* argv[]) {
         }
     });
 
-    return io::SNodeC::start();
+    return core::SNodeC::start();
 }

@@ -18,7 +18,7 @@
 
 #include "web/http/http_utils.h"
 
-#include "net/system/time.h"
+#include "core/system/time.h"
 
 #ifndef DOXYGEN_SHOULD_SKIP_THIS
 
@@ -132,11 +132,11 @@ namespace httputils {
         char buf[100];
 
         if (tm == nullptr) {
-            time_t now = io::system::time(nullptr);
-            tm = io::system::gmtime(&now);
+            time_t now = core::system::time(nullptr);
+            tm = core::system::gmtime(&now);
         } else {
-            time_t time = io::system::mktime(tm);
-            tm = io::system::gmtime(&time);
+            time_t time = core::system::mktime(tm);
+            tm = core::system::gmtime(&time);
         }
 
         strftime(buf, sizeof buf, "%a, %d %b %Y %H:%M:%S %Z", tm);

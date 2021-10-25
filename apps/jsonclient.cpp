@@ -20,12 +20,12 @@
 
 #ifndef DOXYGEN_SHOULD_SKIP_THIS
 
-#include "log/Logger.h"                             // for Writer, Storage
-#include "net/SNodeC.h"                             // for SNodeC
-#include "net/socket/ip/address/ipv4/InetAddress.h" // for InetAddress
-#include "web/http/client/Request.h"                // for Request
-#include "web/http/client/Response.h"               // for Response
-#include "web/http/client/legacy/Client.h"          // for Client, Client<>...
+#include "core/SNodeC.h"                           // for SNodeC
+#include "io/socket/ip/address/ipv4/InetAddress.h" // for InetAddress
+#include "log/Logger.h"                            // for Writer, Storage
+#include "web/http/client/Request.h"               // for Request
+#include "web/http/client/Response.h"              // for Response
+#include "web/http/client/legacy/Client.h"         // for Client, Client<>...
 
 #include <cstring>     // for memcpy
 #include <functional>  // for function
@@ -37,7 +37,7 @@
 #endif /* DOXYGEN_SHOULD_SKIP_THIS */
 
 int main(int argc, char* argv[]) {
-    io::SNodeC::init(argc, argv);
+    core::SNodeC::init(argc, argv);
 
     web::http::client::legacy::Client<> jsonClient(
         [](const web::http::client::legacy::Client<>::SocketAddress& localAddress,
@@ -114,5 +114,5 @@ int main(int argc, char* argv[]) {
             }
         });
     */
-    return io::SNodeC::start();
+    return core::SNodeC::start();
 }

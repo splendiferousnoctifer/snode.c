@@ -1,15 +1,15 @@
+#include "core/SNodeC.h"
+#include "io/pipe/Pipe.h"
+#include "io/pipe/PipeSink.h"
+#include "io/pipe/PipeSource.h"
 #include "log/Logger.h"
-#include "net/SNodeC.h"
-#include "net/pipe/Pipe.h"
-#include "net/pipe/PipeSink.h"
-#include "net/pipe/PipeSource.h"
 
 #include <cstddef>    // for size_t
 #include <functional> // for function
 #include <string>     // for allocator, string
 
 int main(int argc, char* argv[]) {
-    io::SNodeC::init(argc, argv);
+    core::SNodeC::init(argc, argv);
 
     io::pipe::Pipe pipe(
         []([[maybe_unused]] io::pipe::PipeSource& pipeSource, [[maybe_unused]] io::pipe::PipeSink& pipeSink) -> void {
@@ -39,5 +39,5 @@ int main(int argc, char* argv[]) {
             PLOG(ERROR) << "Pipe not created";
         });
 
-    return io::SNodeC::start();
+    return core::SNodeC::start();
 }

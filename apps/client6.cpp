@@ -18,14 +18,14 @@
 
 #ifndef DOXYGEN_SHOULD_SKIP_THIS
 
-#include "config.h"                                 // for SERVERCAFILE
-#include "log/Logger.h"                             // for Writer, Storage
-#include "net/SNodeC.h"                             // for SNodeC
-#include "net/socket/ip/address/ipv6/InetAddress.h" // for InetAddress
-#include "web/http/client/Request.h"                // for Request, client
-#include "web/http/client/Response.h"               // for Response
-#include "web/http/client/legacy/Client.h"          // for Client6, Client6...
-#include "web/http/client/tls/Client.h"             // for Client6, Client6...
+#include "config.h"                                // for SERVERCAFILE
+#include "core/SNodeC.h"                           // for SNodeC
+#include "io/socket/ip/address/ipv6/InetAddress.h" // for InetAddress
+#include "log/Logger.h"                            // for Writer, Storage
+#include "web/http/client/Request.h"               // for Request, client
+#include "web/http/client/Response.h"              // for Response
+#include "web/http/client/legacy/Client.h"         // for Client6, Client6...
+#include "web/http/client/tls/Client.h"            // for Client6, Client6...
 
 #include <any>                // for any
 #include <cstring>            // for memcpy
@@ -48,7 +48,7 @@
 using namespace web::http::client;
 
 int main(int argc, char* argv[]) {
-    io::SNodeC::init(argc, argv);
+    core::SNodeC::init(argc, argv);
 
     {
         legacy::Client6<> legacyClient(
@@ -229,7 +229,7 @@ int main(int argc, char* argv[]) {
         }); // Connection:keep-alive\r\n\r\n"
     }
 
-    return io::SNodeC::start();
+    return core::SNodeC::start();
 }
 
 struct A {

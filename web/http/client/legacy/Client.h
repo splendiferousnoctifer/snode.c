@@ -19,8 +19,8 @@
 #ifndef WEB_HTTP_CLIENT_LEGACY_CLIENT_H
 #define WEB_HTTP_CLIENT_LEGACY_CLIENT_H
 
-#include "net/socket/ip/tcp/ipv4/legacy/SocketClient.h"
-#include "net/socket/ip/tcp/ipv6/legacy/SocketClient.h"
+#include "io/socket/ip/tcp/ipv4/legacy/SocketClient.h"
+#include "io/socket/ip/tcp/ipv6/legacy/SocketClient.h"
 #include "web/http/client/Client.h" // IWYU pragma: export
 
 #ifndef DOXYGEN_SHOULD_SKIP_THIS

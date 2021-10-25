@@ -17,10 +17,10 @@
  */
 
 #include "config.h" // just for this example app
+#include "core/SNodeC.h"
+#include "io/socket/ip/address/ipv6/InetAddress.h" // for InetAddress
 #include "log/Logger.h"
-#include "net/SNodeC.h"
-#include "net/socket/ip/address/ipv6/InetAddress.h" // for InetAddress
-#include "web/http/client/Request.h"                // for Request
+#include "web/http/client/Request.h" // for Request
 #include "web/http/client/Response.h"
 #include "web/http/client/tls/Client.h"
 
@@ -47,7 +47,7 @@
 using namespace web::http::client;
 
 int main(int argc, char* argv[]) {
-    io::SNodeC::init(argc, argv);
+    core::SNodeC::init(argc, argv);
 
     {
         tls::Client6<> tlsClient(
@@ -161,5 +161,5 @@ int main(int argc, char* argv[]) {
         }); // Connection:keep-alive\r\n\r\n"
     }
 
-    return io::SNodeC::start();
+    return core::SNodeC::start();
 }

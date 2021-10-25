@@ -18,21 +18,21 @@
 
 #ifndef DOXYGEN_SHOULD_SKIP_THIS
 
-#include "config.h"                                 // for CLIENTCERTF
-#include "log/Logger.h"                             // for Writer, Storage
-#include "net/SNodeC.h"                             // for SNodeC
-#include "net/socket/ip/address/ipv4/InetAddress.h" // for InetAddress, ip
-#include "net/socket/ip/tcp/ipv4/Socket.h"          // for Socket
-#include "net/socket/stream/SocketClient.h"         // for SocketClient<>:...
-#include "net/socket/stream/SocketContext.h"        // for SocketProtocol
-#include "net/socket/stream/SocketContextFactory.h" // for SocketProtocolF...
-#include "net/socket/stream/legacy/SocketClient.h"  // for SocketClient
-#include "net/socket/stream/tls/SocketClient.h"     // for SocketClient
-#include "web/http/client/ResponseParser.h"         // for ResponseParser
+#include "config.h"                                // for CLIENTCERTF
+#include "core/SNodeC.h"                           // for SNodeC
+#include "io/socket/ip/address/ipv4/InetAddress.h" // for InetAddress, ip
+#include "io/socket/ip/tcp/ipv4/Socket.h"          // for Socket
+#include "io/socket/stream/SocketClient.h"         // for SocketClient<>:...
+#include "io/socket/stream/SocketContext.h"        // for SocketProtocol
+#include "io/socket/stream/SocketContextFactory.h" // for SocketProtocolF...
+#include "io/socket/stream/legacy/SocketClient.h"  // for SocketClient
+#include "io/socket/stream/tls/SocketClient.h"     // for SocketClient
+#include "log/Logger.h"                            // for Writer, Storage
+#include "web/http/client/ResponseParser.h"        // for ResponseParser
 
 namespace io::socket::stream {
     class SocketConnection;
-} // namespace net::socket::stream
+} // namespace io::socket::stream
 
 #include <cstring>
 #include <functional>         // for function
@@ -254,7 +254,7 @@ legacy::SocketClient<SimpleSocketProtocolFactory, tcp::ipv4::Socket> getLegacyCl
 }
 
 int main(int argc, char* argv[]) {
-    io::SNodeC::init(argc, argv);
+    core::SNodeC::init(argc, argv);
 
     {
         InetAddress remoteAddress("localhost", 8080);
@@ -282,5 +282,5 @@ int main(int argc, char* argv[]) {
         });
     }
 
-    return io::SNodeC::start();
+    return core::SNodeC::start();
 }

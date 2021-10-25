@@ -1,9 +1,9 @@
 #include "config.h"
+#include "core/SNodeC.h"
 #include "express/legacy/WebApp.h"
 #include "express/tls/WebApp.h"
+#include "io/pipe/Sink.h" // for net
 #include "log/Logger.h"
-#include "net/SNodeC.h"
-#include "net/pipe/Sink.h"       // for net
 #include "web/http/http_utils.h" // for ci_contains
 
 #include <iostream>
@@ -13,7 +13,7 @@ using namespace express;
 using namespace io;
 
 int main(int argc, char* argv[]) {
-    SNodeC::init(argc, argv);
+    core::SNodeC::init(argc, argv);
 
     legacy::WebApp legacyApp;
 
@@ -116,7 +116,7 @@ int main(int argc, char* argv[]) {
         });
     }
 
-    return SNodeC::start();
+    return core::SNodeC::start();
 }
 
 /*

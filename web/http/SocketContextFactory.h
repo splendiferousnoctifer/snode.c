@@ -19,11 +19,11 @@
 #ifndef WEB_HTTP_SOCKETCONTEXTFACTORY_H
 #define WEB_HTTP_SOCKETCONTEXTFACTORY_H
 
-#include "net/socket/stream/SocketContextFactory.h"
+#include "io/socket/stream/SocketContextFactory.h"
 
 namespace io::socket::stream {
     class SocketConnection;
-} // namespace net::socket::stream
+} // namespace io::socket::stream
 
 namespace web::http {
     template <template <typename RequestT, typename ResponseT> class SocketContextT, typename RequestT, typename ResponseT>

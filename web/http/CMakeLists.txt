@@ -40,7 +40,7 @@ target_include_directories(
 )
 
 target_link_libraries(
-    http PUBLIC snodec::net-ip snodec::net-tls ${LIBMAGIC_LIBRARIES} dl
+    http PUBLIC snodec::net-ip snodec::stream-tls ${LIBMAGIC_LIBRARIES} dl
 )
 
 set_target_properties(http PROPERTIES SOVERSION 1 OUTPUT_NAME snodec-http)

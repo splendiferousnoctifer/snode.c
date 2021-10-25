@@ -9,6 +9,13 @@ add_library(
     EventReceiver.cpp
     SNodeC.cpp
     TimerEventDispatcher.cpp
+    system/dlfcn.cpp
+    system/netdb.cpp
+    system/select.cpp
+    system/signal.cpp
+    system/socket.cpp
+    system/time.cpp
+    system/unistd.cpp
 )
 add_library(snodec::core ALIAS core)
 
@@ -33,7 +40,7 @@ install(
 
 install(
     DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/
-    DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/snode.c/net
+    DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/snode.c/core
     FILES_MATCHING
     PATTERN "*.h"
     PATTERN "*.hpp"

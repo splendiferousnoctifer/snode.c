@@ -19,10 +19,10 @@
 #include "core/EventLoop.h" // for EventLoop
 
 #include "core/DynamicLoader.h"
+#include "core/system/select.h"
+#include "core/system/signal.h"
+#include "core/system/time.h"
 #include "log/Logger.h" // for Logger
-#include "net/system/select.h"
-#include "net/system/signal.h"
-#include "net/system/time.h"
 
 #ifndef DOXYGEN_SHOULD_SKIP_THIS
 
@@ -99,18 +99,18 @@ namespace core {
             nextInactivityTimeout = std::max(nextInactivityTimeout, {0, 0});
             nextInactivityTimeout = std::min(nextInactivityTimeout, timeOut);
 
-            int counter = io::system::select(maxFd + 1,
-                                             &readEventDispatcher.getFdSet(),
-                                             &writeEventDispatcher.getFdSet(),
-                                             &exceptionalConditionEventDispatcher.getFdSet(),
-                                             &nextInactivityTimeout);
+            int counter = core::system::select(maxFd + 1,
+                                               &readEventDispatcher.getFdSet(),
+                                               &writeEventDispatcher.getFdSet(),
+                                               &exceptionalConditionEventDispatcher.getFdSet(),
+                                               &nextInactivityTimeout);
 
             if (counter >= 0) {
                 nextInactivityTimeout = {LONG_MAX, 0};
 
                 timerEventDispatcher.dispatch();
 
-                struct timeval currentTime = {io::system::time(nullptr), 0};
+                struct timeval currentTime = {core::system::time(nullptr), 0};
 
                 nextTimeout = readEventDispatcher.dispatchActiveEvents(currentTime);
                 nextInactivityTimeout = std::min(nextTimeout, nextInactivityTimeout);
@@ -178,12 +178,12 @@ namespace core {
             exit(1);
         }
 
-        sighandler_t oldSigPipeHandler = io::system::signal(SIGPIPE, SIG_IGN);
-        sighandler_t oldSigQuitHandler = io::system::signal(SIGQUIT, EventLoop::stoponsig);
-        sighandler_t oldSigHubHandler = io::system::signal(SIGHUP, EventLoop::stoponsig);
-        sighandler_t oldSigIntHandler = io::system::signal(SIGINT, EventLoop::stoponsig);
-        sighandler_t oldSigTermHandler = io::system::signal(SIGTERM, EventLoop::stoponsig);
-        sighandler_t oldSigAbrtHandler = io::system::signal(SIGABRT, EventLoop::stoponsig);
+        sighandler_t oldSigPipeHandler = core::system::signal(SIGPIPE, SIG_IGN);
+        sighandler_t oldSigQuitHandler = core::system::signal(SIGQUIT, EventLoop::stoponsig);
+        sighandler_t oldSigHubHandler = core::system::signal(SIGHUP, EventLoop::stoponsig);
+        sighandler_t oldSigIntHandler = core::system::signal(SIGINT, EventLoop::stoponsig);
+        sighandler_t oldSigTermHandler = core::system::signal(SIGTERM, EventLoop::stoponsig);
+        sighandler_t oldSigAbrtHandler = core::system::signal(SIGABRT, EventLoop::stoponsig);
 
         if (!running) {
             running = true;
@@ -201,12 +201,12 @@ namespace core {
             running = false;
         }
 
-        io::system::signal(SIGPIPE, oldSigPipeHandler);
-        io::system::signal(SIGQUIT, oldSigQuitHandler);
-        io::system::signal(SIGHUP, oldSigHubHandler);
-        io::system::signal(SIGINT, oldSigIntHandler);
-        io::system::signal(SIGTERM, oldSigTermHandler);
-        io::system::signal(SIGABRT, oldSigAbrtHandler);
+        core::system::signal(SIGPIPE, oldSigPipeHandler);
+        core::system::signal(SIGQUIT, oldSigQuitHandler);
+        core::system::signal(SIGHUP, oldSigHubHandler);
+        core::system::signal(SIGINT, oldSigIntHandler);
+        core::system::signal(SIGTERM, oldSigTermHandler);
+        core::system::signal(SIGABRT, oldSigAbrtHandler);
 
         int returnReason = 0;
 
@@ -225,11 +225,11 @@ namespace core {
 
         TickStatus tickStatus;
 
-        sighandler_t oldSigPipeHandler = io::system::signal(SIGPIPE, SIG_IGN);
+        sighandler_t oldSigPipeHandler = core::system::signal(SIGPIPE, SIG_IGN);
 
         tickStatus = eventLoop._tick(timeOut);
 
-        io::system::signal(SIGPIPE, oldSigPipeHandler);
+        core::system::signal(SIGPIPE, oldSigPipeHandler);
 
         return tickStatus;
     }

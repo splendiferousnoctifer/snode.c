@@ -18,8 +18,8 @@
 
 #include "web/http/server/Response.h"
 
+#include "core/system/time.h"
 #include "log/Logger.h"
-#include "net/system/time.h"
 #include "web/http/SocketContext.h"
 #include "web/http/StatusCodes.h"
 #include "web/http/http_utils.h"
@@ -140,7 +140,7 @@ namespace web::http::server {
 
         opts.erase("Max-Age");
         time_t time = 0;
-        opts["Expires"] = httputils::to_http_date(io::system::gmtime(&time));
+        opts["Expires"] = httputils::to_http_date(core::system::gmtime(&time));
 
         return cookie(name, "", opts);
     }

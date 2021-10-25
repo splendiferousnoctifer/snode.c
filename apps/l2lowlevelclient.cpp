@@ -18,18 +18,18 @@
 
 #ifndef DOXYGEN_SHOULD_SKIP_THIS
 
+#include "core/SNodeC.h"
+#include "io/socket/bluetooth/address/L2CapAddress.h" // for L2CapAddress
+#include "io/socket/bluetooth/l2cap/Socket.h"         // for l2cap
+#include "io/socket/bluetooth/l2cap/SocketClient.h"
+#include "io/socket/stream/SocketClient.h" // for SocketClient<...
+#include "io/socket/stream/SocketContext.h"
+#include "io/socket/stream/SocketContextFactory.h"
 #include "log/Logger.h"
-#include "net/SNodeC.h"
-#include "net/socket/bluetooth/address/L2CapAddress.h" // for L2CapAddress
-#include "net/socket/bluetooth/l2cap/Socket.h"         // for l2cap
-#include "net/socket/bluetooth/l2cap/SocketClient.h"
-#include "net/socket/stream/SocketClient.h" // for SocketClient<...
-#include "net/socket/stream/SocketContext.h"
-#include "net/socket/stream/SocketContextFactory.h"
 
 namespace io::socket::stream {
     class SocketConnection;
-} // namespace net::socket::stream
+} // namespace io::socket::stream
 
 #include <cstddef>
 #include <functional>  // for function
@@ -100,7 +100,7 @@ SocketClient<SimpleSocketProtocolFactory> getClient() {
 }
 
 int main(int argc, char* argv[]) {
-    io::SNodeC::init(argc, argv);
+    core::SNodeC::init(argc, argv);
 
     {
         SocketClient<SimpleSocketProtocolFactory>::SocketAddress remoteAddress("A4:B1:C1:2C:82:37", 0x1023); // titan
@@ -117,5 +117,5 @@ int main(int argc, char* argv[]) {
         });
     }
 
-    return io::SNodeC::start();
+    return core::SNodeC::start();
 }

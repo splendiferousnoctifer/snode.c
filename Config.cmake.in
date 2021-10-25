@@ -10,13 +10,15 @@ set(httpclient_DEPENDENCIES http)
 
 set(http_DEPENDENCIES net-ip)
 
-set(net-ip_DEPENDENCIES net-legacy net-tls)
-set(net-bt DEPENDENCIES net-legacy net-tls)
+set(net-ip_DEPENDENCIES stream-legacy stream-tls)
+set(net-bt_DEPENDENCIES stream-legacy stream-tls)
 
-set(net-legacy_DEPENDENCIES net)
-set(net-tls_DEPENDENCIES net)
+set(stream-legacy_DEPENDENCIES stream)
+set(stream-tls DEPENDENCIES stream)
 
-set(net_DEPENDENCIES utils logger)
+set(stream_DEPENDENCIES io)
+
+set(io_DEPENDENCIES utils logger core)
 
 macro(LOAD_COMPONENT_WITH_DEPENDENCIES _comp)
     message("Loading component: " ${_comp})
@@ -42,8 +44,8 @@ endmacro()
 
 set(_supported_components
     net
-    net-legacy
-    net-tls
+    stream-legacy
+    stream-tls
     net-ip
     net-bt
     http

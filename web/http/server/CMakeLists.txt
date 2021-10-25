@@ -36,7 +36,7 @@ target_include_directories(
 )
 
 target_link_libraries(
-    httpserver PUBLIC snodec::net-ip snodec::net-tls snodec::http
+    httpserver PUBLIC snodec::net-ip snodec::stream-tls snodec::http
                       ${LIBMAGIC_LIBRARIES} dl
 )
 

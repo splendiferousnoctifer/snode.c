@@ -18,8 +18,8 @@
 
 #include "Echo.h"
 
+#include "io/timer/IntervalTimer.h"
 #include "log/Logger.h"
-#include "net/timer/IntervalTimer.h"
 
 #ifndef DOXYGEN_SHOULD_SKIP_THIS
 

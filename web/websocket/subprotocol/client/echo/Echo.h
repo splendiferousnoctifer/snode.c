@@ -23,7 +23,7 @@
 
 namespace io::timer {
     class Timer;
-} // namespace net::timer
+} // namespace io::timer
 
 #ifndef DOXYGEN_SHOULD_SKIP_THIS
 

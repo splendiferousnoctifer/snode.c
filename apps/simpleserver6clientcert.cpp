@@ -21,9 +21,9 @@
 #include "config.h" // just for this example app
 #include "express/middleware/StaticMiddleware.h"
 #include "express/tls/WebApp.h"
+#include "io/socket/ip/address/ipv6/InetAddress.h" // for InetAddress
+#include "io/socket/stream/SocketContext.h"        // for SocketContext
 #include "log/Logger.h"
-#include "net/socket/ip/address/ipv6/InetAddress.h" // for InetAddress
-#include "net/socket/stream/SocketContext.h"        // for SocketContext
 
 #include <cstddef>            // for size_t, NULL
 #include <cstdint>            // for int32_t

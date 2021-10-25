@@ -18,7 +18,7 @@
 
 #include "core/Descriptor.h"
 
-#include "net/system/unistd.h"
+#include "core/system/unistd.h"
 
 #ifndef DOXYGEN_SHOULD_SKIP_THIS
 
@@ -33,7 +33,7 @@ namespace core {
 
     Descriptor::~Descriptor() {
         if (!dontClose()) {
-            io::system::close(fd);
+            core::system::close(fd);
         }
     }
 

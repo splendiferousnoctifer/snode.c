@@ -19,7 +19,7 @@
 #ifndef NET_DYNAMICLOADER_H
 #define NET_DYNAMICLOADER_H
 
-#include "net/system/dlfcn.h"
+#include "core/system/dlfcn.h"
 
 #ifndef DOXYGEN_SHOULD_SKIP_THIS
 
@@ -44,7 +44,7 @@ namespace core {
 
         template <typename Symbol>
         static Symbol dlSym(void* handle, const std::string& symbol) {
-            return reinterpret_cast<Symbol>(io::system::dlsym(handle, symbol.c_str()));
+            return reinterpret_cast<Symbol>(core::system::dlsym(handle, symbol.c_str()));
         }
 
         static char* dlError();
@@ -60,6 +60,6 @@ namespace core {
         friend class EventLoop;
     };
 
-} // namespace net
+} // namespace core
 
 #endif // NET_DYNAMICLOADER_H

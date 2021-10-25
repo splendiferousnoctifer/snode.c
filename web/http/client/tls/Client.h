@@ -19,8 +19,8 @@
 #ifndef WEB_HTTP_CLIENT_TLS_CLIENT_H
 #define WEB_HTTP_CLIENT_TLS_CLIENT_H
 
-#include "net/socket/ip/tcp/ipv4/tls/SocketClient.h"
-#include "net/socket/ip/tcp/ipv6/tls/SocketClient.h"
+#include "io/socket/ip/tcp/ipv4/tls/SocketClient.h"
+#include "io/socket/ip/tcp/ipv6/tls/SocketClient.h"
 #include "web/http/client/Client.h" // IWYU pragma: export
 
 #ifndef DOXYGEN_SHOULD_SKIP_THIS

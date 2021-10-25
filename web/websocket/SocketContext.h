@@ -19,14 +19,14 @@
 #ifndef WEB_WS_SOCKETCONTEXT_H
 #define WEB_WS_SOCKETCONTEXT_H
 
+#include "io/socket/stream/SocketContext.h"
 #include "log/Logger.h"
-#include "net/socket/stream/SocketContext.h"
 #include "web/websocket/Receiver.h"
 #include "web/websocket/Transmitter.h"
 
 namespace io::socket::stream {
     class SocketConnection;
-} // namespace net::socket::stream
+} // namespace io::socket::stream
 
 #ifndef DOXYGEN_SHOULD_SKIP_THIS
 

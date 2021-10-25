@@ -38,6 +38,6 @@ namespace core {
         friend class TimerEventDispatcher;
     };
 
-} // namespace net
+} // namespace core
 
 #endif // TIMEREVENTRECEIVER_H

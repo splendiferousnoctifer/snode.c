@@ -23,8 +23,8 @@
 #include "express/middleware/StaticMiddleware.h"
 #include "express/middleware/VHost.h"
 #include "express/tls/WebApp.h"
+#include "io/socket/ip/address/ipv6/InetAddress.h" // for InetAddress
 #include "log/Logger.h"
-#include "net/socket/ip/address/ipv6/InetAddress.h" // for InetAddress
 
 #include <string> // for string, allocator
 

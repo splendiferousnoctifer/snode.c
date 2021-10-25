@@ -19,8 +19,8 @@
 #ifndef WEB_HTTP_SERVER_TLS_SERVER_H
 #define WEB_HTTP_SERVER_TLS_SERVER_H
 
-#include "net/socket/ip/tcp/ipv4/tls/SocketServer.h"
-#include "net/socket/ip/tcp/ipv6/tls/SocketServer.h"
+#include "io/socket/ip/tcp/ipv4/tls/SocketServer.h"
+#include "io/socket/ip/tcp/ipv6/tls/SocketServer.h"
 #include "web/http/server/Server.h"
 
 #ifndef DOXYGEN_SHOULD_SKIP_THIS

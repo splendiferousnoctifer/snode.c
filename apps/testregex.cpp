@@ -21,8 +21,8 @@
 #include "config.h" // just for this example app
 #include "express/legacy/WebApp.h"
 #include "express/tls/WebApp.h"
+#include "io/socket/ip/address/ipv4/InetAddress.h" // for InetAddress
 #include "log/Logger.h"
-#include "net/socket/ip/address/ipv4/InetAddress.h" // for InetAddress
 
 #include <cstddef>            // for NULL, size_t
 #include <iostream>           // for operator<<, endl

@@ -19,7 +19,7 @@
 #ifndef NET_DESCRIPTOREVENTDISPATCHER_H
 #define NET_DESCRIPTOREVENTDISPATCHER_H
 
-#include "net/system/select.h"
+#include "core/system/select.h"
 
 #ifndef DOXYGEN_SHOULD_SKIP_THIS
 
@@ -95,6 +95,6 @@ namespace core {
         friend class EventLoop;
     }; // namespace net
 
-} // namespace net
+} // namespace core
 
 #endif // NET_DESCRIPTOREVENTDISPATCHER_H

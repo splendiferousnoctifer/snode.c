@@ -18,7 +18,7 @@
 
 #include "express/WebApp.h"
 
-#include "net/SNodeC.h"
+#include "core/SNodeC.h"
 
 #ifndef DOXYGEN_SHOULD_SKIP_THIS
 
@@ -33,16 +33,16 @@ namespace express {
     }
 
     void WebApp::init(int argc, char* argv[]) {
-        io::SNodeC::init(argc, argv);
+        core::SNodeC::init(argc, argv);
         WebApp::initialized = true;
     }
 
     int WebApp::start() {
-        return io::SNodeC::start();
+        return core::SNodeC::start();
     }
 
     void WebApp::stop() {
-        io::SNodeC::stop();
+        core::SNodeC::stop();
     }
 
 } // namespace express
