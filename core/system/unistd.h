@@ -16,8 +16,8 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef NET_SYSTEM_UNISTD_H
-#define NET_SYSTEM_UNISTD_H
+#ifndef CORE_SYSTEM_UNISTD_H
+#define CORE_SYSTEM_UNISTD_H
 
 #ifndef DOXYGEN_SHOULD_SKIP_THIS
 
@@ -44,6 +44,6 @@ namespace core::system {
     int close(int fd);
     int pipe2(int pipefd[2], int flags);
 
-} // namespace net::system
+} // namespace core::system
 
-#endif // NET_SYSTEM_UNISTD_H
+#endif // CORE_SYSTEM_UNISTD_H

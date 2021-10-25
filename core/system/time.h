@@ -16,8 +16,8 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef NET_SYSTEM_TIME_H
-#define NET_SYSTEM_TIME_H
+#ifndef CORE_SYSTEM_TIME_H
+#define CORE_SYSTEM_TIME_H
 
 #ifndef DOXYGEN_SHOULD_SKIP_THIS
 
@@ -40,6 +40,6 @@ namespace core::system {
     // #include <sys/time.h>
     int gettimeofday(struct timeval* tv, struct timezone* tz);
 
-} // namespace net::system
+} // namespace core::system
 
-#endif // NET_SYSTEM_TIME_H
+#endif // CORE_SYSTEM_TIME_H

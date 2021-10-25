@@ -16,8 +16,8 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef NET_SYSTEM_NETDB_H
-#define NET_SYSTEM_NETDB_H
+#ifndef CORE_SYSTEM_NETDB_H
+#define CORE_SYSTEM_NETDB_H
 
 #ifndef DOXYGEN_SHOULD_SKIP_THIS
 
@@ -43,6 +43,6 @@ namespace core::system {
     int
     getnameinfo(const struct sockaddr* addr, socklen_t addrlen, char* host, socklen_t hostlen, char* serv, socklen_t servlen, int flags);
 
-} // namespace net::system
+} // namespace core::system
 
-#endif // NET_SYSTEM_NETDB_H
+#endif // CORE_SYSTEM_NETDB_H

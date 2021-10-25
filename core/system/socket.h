@@ -16,8 +16,8 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef NET_SYSTEM_SOCKET_H
-#define NET_SYSTEM_SOCKET_H
+#ifndef CORE_SYSTEM_SOCKET_H
+#define CORE_SYSTEM_SOCKET_H
 
 #ifndef DOXYGEN_SHOULD_SKIP_THIS
 
@@ -49,6 +49,6 @@ namespace core::system {
     int getsockopt(int sockfd, int level, int optname, void* optval, socklen_t* optlen);
     int setsockopt(int sockfd, int level, int optname, const void* optval, socklen_t optlen);
 
-} // namespace net::system
+} // namespace core::system
 
-#endif // NET_SYSTEM_SOCKET_H
+#endif // CORE_SYSTEM_SOCKET_H

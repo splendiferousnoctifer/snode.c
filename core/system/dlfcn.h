@@ -16,8 +16,8 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef NET_SYSTEM_DLFCN_H
-#define NET_SYSTEM_DLFCN_H
+#ifndef CORE_SYSTEM_DLFCN_H
+#define CORE_SYSTEM_DLFCN_H
 
 #ifndef DOXYGEN_SHOULD_SKIP_THIS
 
@@ -36,6 +36,6 @@ namespace core::system {
     void* dlsym(void* handle, const char* symbol);
     char* dlerror(void);
 
-} // namespace net::system
+} // namespace core::system
 
-#endif // NET_SYSTEM_DLFCN_H
+#endif // CORE_SYSTEM_DLFCN_H

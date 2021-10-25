@@ -16,8 +16,8 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef NET_SYSTEM_SELECT_H
-#define NET_SYSTEM_SELECT_H
+#ifndef CORE_SYSTEM_SELECT_H
+#define CORE_SYSTEM_SELECT_H
 
 #ifndef DOXYGEN_SHOULD_SKIP_THIS
 
@@ -34,6 +34,6 @@ namespace core::system {
     // #include <sys/socket.h>
     int select(int nfds, fd_set* readfds, fd_set* writefds, fd_set* exceptfds, struct timeval* timeout);
 
-} // namespace net::system
+} // namespace core::system
 
-#endif // NET_SYSTEM_SELECT_H
+#endif // CORE_SYSTEM_SELECT_H

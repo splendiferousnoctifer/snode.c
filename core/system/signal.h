@@ -16,8 +16,8 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef NET_SYSTEM_SIGNAL_H
-#define NET_SYSTEM_SIGNAL_H
+#ifndef CORE_SYSTEM_SIGNAL_H
+#define CORE_SYSTEM_SIGNAL_H
 
 #ifndef DOXYGEN_SHOULD_SKIP_THIS
 
@@ -34,6 +34,6 @@ namespace core::system {
     // #include <csignal>
     sighandler_t signal(int signum, sighandler_t handler);
 
-} // namespace net::system
+} // namespace core::system
 
-#endif // NET_SYSTEM_SIGNAL_H
+#endif // CORE_SYSTEM_SIGNAL_H
