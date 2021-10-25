@@ -16,8 +16,8 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef NET_DESCRIPTOREVENTDISPATCHER_H
-#define NET_DESCRIPTOREVENTDISPATCHER_H
+#ifndef CORE_DESCRIPTOREVENTDISPATCHER_H
+#define CORE_DESCRIPTOREVENTDISPATCHER_H
 
 #include "core/system/select.h"
 
@@ -97,4 +97,4 @@ namespace core {
 
 } // namespace core
 
-#endif // NET_DESCRIPTOREVENTDISPATCHER_H
+#endif // CORE_DESCRIPTOREVENTDISPATCHER_H

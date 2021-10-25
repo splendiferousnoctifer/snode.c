@@ -16,8 +16,8 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef NET_SOCKET_STREAM_LEGACY_SOCKETCONNECTOR_H
-#define NET_SOCKET_STREAM_LEGACY_SOCKETCONNECTOR_H
+#ifndef IO_SOCKET_STREAM_LEGACY_SOCKETCONNECTOR_H
+#define IO_SOCKET_STREAM_LEGACY_SOCKETCONNECTOR_H
 
 #include "io/socket/stream/SocketConnector.h"
 #include "io/socket/stream/legacy/SocketConnection.h"
@@ -54,4 +54,4 @@ namespace io::socket::stream::legacy {
 
 } // namespace io::socket::stream::legacy
 
-#endif // NET_SOCKET_STREAM_LEGACY_SOCKETCONNECTOR_H
+#endif // IO_SOCKET_STREAM_LEGACY_SOCKETCONNECTOR_H

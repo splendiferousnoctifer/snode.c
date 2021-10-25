@@ -16,8 +16,8 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef NET_SOCKET_BLUETOOTH_RFCOMM_SOCKET_H
-#define NET_SOCKET_BLUETOOTH_RFCOMM_SOCKET_H
+#ifndef IO_SOCKET_BLUETOOTH_RFCOMM_SOCKET_H
+#define IO_SOCKET_BLUETOOTH_RFCOMM_SOCKET_H
 
 #include "io/socket/Socket.h"
 #include "io/socket/bluetooth/address/RfCommAddress.h"
@@ -35,4 +35,4 @@ namespace io::socket::bluetooth::rfcomm {
 
 } // namespace io::socket::bluetooth::rfcomm
 
-#endif // NET_SOCKET_BLUETOOTH_RFCOMM_SOCKET_H
+#endif // IO_SOCKET_BLUETOOTH_RFCOMM_SOCKET_H

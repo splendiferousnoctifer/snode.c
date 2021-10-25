@@ -16,8 +16,8 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef NET_SOCKET_STREAM_TLS_SOCKETCONNECTOR_H
-#define NET_SOCKET_STREAM_TLS_SOCKETCONNECTOR_H
+#ifndef IO_SOCKET_STREAM_TLS_SOCKETCONNECTOR_H
+#define IO_SOCKET_STREAM_TLS_SOCKETCONNECTOR_H
 
 #include "io/socket/stream/SocketConnector.h"
 #include "io/socket/stream/tls/SocketConnection.h"
@@ -110,4 +110,4 @@ namespace io::socket::stream {
 
 } // namespace io::socket::stream
 
-#endif // NET_SOCKET_STREAM_TLS_SOCKETCONNECTOR_H
+#endif // IO_SOCKET_STREAM_TLS_SOCKETCONNECTOR_H

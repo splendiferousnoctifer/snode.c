@@ -15,8 +15,6 @@ add_library(
     pipe/Pipe.cpp
     pipe/PipeSink.cpp
     pipe/PipeSource.cpp
-    # socket/stream/SocketConnection.cpp
-    # socket/stream/SocketContext.cpp
     timer/Timer.cpp
 )
 add_library(snodec::io ALIAS io)
@@ -50,6 +48,7 @@ install(
     PATTERN "socket/ip" EXCLUDE
     PATTERN "socket/bluetooth" EXCLUDE
     PATTERN "socket/stream" EXCLUDE
+    PATTERN "socket/dgram" EXCLUDE
 )
 
 install(

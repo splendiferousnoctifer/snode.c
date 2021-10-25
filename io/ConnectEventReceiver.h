@@ -16,8 +16,8 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef NET_CONNECTEVENTRECEIVER_H
-#define NET_CONNECTEVENTRECEIVER_H
+#ifndef IO_CONNECTEVENTRECEIVER_H
+#define IO_CONNECTEVENTRECEIVER_H
 
 #include "core/EventReceiver.h"
 
@@ -47,4 +47,4 @@ namespace io {
 
 } // namespace io
 
-#endif // NET_CONNECTEVENTRECEIVER_H
+#endif // IO_CONNECTEVENTRECEIVER_H

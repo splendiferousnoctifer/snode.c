@@ -16,8 +16,8 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef NET_SOCKET_IP_TCP_IPV4_SOCKET_H
-#define NET_SOCKET_IP_TCP_IPV4_SOCKET_H
+#ifndef IO_SOCKET_IP_TCP_IPV4_SOCKET_H
+#define IO_SOCKET_IP_TCP_IPV4_SOCKET_H
 
 #include "io/socket/Socket.h"
 #include "io/socket/ip/address/ipv4/InetAddress.h"
@@ -35,4 +35,4 @@ namespace io::socket::ip::tcp::ipv4 {
 
 } // namespace io::socket::ip::tcp::ipv4
 
-#endif // NET_SOCKET_IP_TCP_IPV4_SOCKET_H
+#endif // IO_SOCKET_IP_TCP_IPV4_SOCKET_H

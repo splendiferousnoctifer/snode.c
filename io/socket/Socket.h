@@ -16,8 +16,8 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef NET_SOCKET_SOCKET_H
-#define NET_SOCKET_SOCKET_H
+#ifndef IO_SOCKET_SOCKET_H
+#define IO_SOCKET_SOCKET_H
 
 #include "core/system/socket.h" // IWYU pragma: export
 #include "io/Descriptor.h"
@@ -83,4 +83,4 @@ namespace io::socket {
 
 } // namespace io::socket
 
-#endif // NET_SOCKET_SOCKET_H
+#endif // IO_SOCKET_SOCKET_H

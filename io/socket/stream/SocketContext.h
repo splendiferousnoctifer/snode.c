@@ -16,8 +16,8 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef NET_SOCKET_STREAM_SOCKETCONTEXT_H
-#define NET_SOCKET_STREAM_SOCKETCONTEXT_H
+#ifndef IO_SOCKET_STREAM_SOCKETCONTEXT_H
+#define IO_SOCKET_STREAM_SOCKETCONTEXT_H
 
 namespace io::socket::stream {
     class SocketContextFactory;
@@ -72,4 +72,4 @@ namespace io::socket::stream {
 
 } // namespace io::socket::stream
 
-#endif // NET_SOCKET_STREAM_SOCKETCONTEXT_H
+#endif // IO_SOCKET_STREAM_SOCKETCONTEXT_H

@@ -16,8 +16,8 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef NET_TIMER_INTERVALTIMER_H
-#define NET_TIMER_INTERVALTIMER_H
+#ifndef IO_TIMER_INTERVALTIMER_H
+#define IO_TIMER_INTERVALTIMER_H
 
 #include "io/timer/Timer.h" // IWYU pragma: export
 
@@ -72,4 +72,4 @@ namespace io::timer {
 
 } // namespace io::timer
 
-#endif // NET_TIMER_INTERVALTIMER_H
+#endif // IO_TIMER_INTERVALTIMER_H

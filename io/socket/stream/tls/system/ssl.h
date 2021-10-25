@@ -16,8 +16,8 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef NET_SYSTEM_SSL_H
-#define NET_SYSTEM_SSL_H
+#ifndef IO_SYSTEM_SSL_H
+#define IO_SYSTEM_SSL_H
 
 #ifndef DOXYGEN_SHOULD_SKIP_THIS
 
@@ -38,4 +38,4 @@ namespace io::ssl {
 
 } // namespace io::ssl
 
-#endif // NET_SYSTEM_SSL_H
+#endif // IO_SYSTEM_SSL_H

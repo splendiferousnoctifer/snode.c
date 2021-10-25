@@ -16,8 +16,8 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef NET_DYNAMICLOADER_H
-#define NET_DYNAMICLOADER_H
+#ifndef CORE_DYNAMICLOADER_H
+#define CORE_DYNAMICLOADER_H
 
 #include "core/system/dlfcn.h"
 
@@ -62,4 +62,4 @@ namespace core {
 
 } // namespace core
 
-#endif // NET_DYNAMICLOADER_H
+#endif // CORE_DYNAMICLOADER_H

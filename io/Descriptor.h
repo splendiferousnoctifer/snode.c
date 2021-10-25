@@ -16,8 +16,8 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef NET_DESCRIPTOR_H
-#define NET_DESCRIPTOR_H
+#ifndef IO_DESCRIPTOR_H
+#define IO_DESCRIPTOR_H
 
 #ifndef DOXYGEN_SHOULD_SKIP_THIS
 
@@ -57,4 +57,4 @@ namespace io {
 
 } // namespace io
 
-#endif // NET_DESCRIPTOR_H
+#endif // IO_DESCRIPTOR_H

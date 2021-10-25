@@ -16,8 +16,8 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef NET_SOCKET_BLUETOOTH_RFCOMM_LEGACY_SOCKETSERVER_H
-#define NET_SOCKET_BLUETOOTH_RFCOMM_LEGACY_SOCKETSERVER_H
+#ifndef IO_SOCKET_BLUETOOTH_RFCOMM_LEGACY_SOCKETSERVER_H
+#define IO_SOCKET_BLUETOOTH_RFCOMM_LEGACY_SOCKETSERVER_H
 
 #include "io/socket/bluetooth/rfcomm/Socket.h"
 #include "io/socket/stream/legacy/SocketServer.h"
@@ -35,4 +35,4 @@ namespace io::socket::bluetooth::rfcomm::legacy {
 
 } // namespace io::socket::bluetooth::rfcomm::legacy
 
-#endif // NET_SOCKET_BLUETOOTH_RFCOMM_LEGACY_SOCKETSERVER_H
+#endif // IO_SOCKET_BLUETOOTH_RFCOMM_LEGACY_SOCKETSERVER_H

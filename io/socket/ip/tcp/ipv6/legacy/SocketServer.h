@@ -16,8 +16,8 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef NET_SOCKET_IP_TCP_IPV6_LEGACY_SOCKETSERVER_H
-#define NET_SOCKET_IP_TCP_IPV6_LEGACY_SOCKETSERVER_H
+#ifndef IO_SOCKET_IP_TCP_IPV6_LEGACY_SOCKETSERVER_H
+#define IO_SOCKET_IP_TCP_IPV6_LEGACY_SOCKETSERVER_H
 
 #include "io/socket/ip/tcp/ipv6/Socket.h"
 #include "io/socket/stream/legacy/SocketServer.h"
@@ -35,4 +35,4 @@ namespace io::socket::ip::tcp::ipv6::legacy {
 
 } // namespace io::socket::ip::tcp::ipv6::legacy
 
-#endif // NET_SOCKET_IP_TCP_IPV6_LEGACY_SOCKETSERVER_H
+#endif // IO_SOCKET_IP_TCP_IPV6_LEGACY_SOCKETSERVER_H

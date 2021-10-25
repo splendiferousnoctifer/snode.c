@@ -16,8 +16,8 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef NET_TIMER_TIMER_H
-#define NET_TIMER_TIMER_H
+#ifndef IO_TIMER_TIMER_H
+#define IO_TIMER_TIMER_H
 
 #include "core/TimerEventReceiver.h"
 
@@ -73,4 +73,4 @@ namespace io::timer {
 
 } // namespace io::timer
 
-#endif // NET_TIMER_TIMER_H
+#endif // IO_TIMER_TIMER_H
