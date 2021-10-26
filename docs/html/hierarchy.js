@@ -37,21 +37,21 @@ var hierarchy =
       [ "net::pipe::PipeSource", "classnet_1_1pipe_1_1_pipe_source.html", null ],
       [ "net::socket::Socket< SocketAddressT >", "classnet_1_1socket_1_1_socket.html", null ]
     ] ],
-    [ "net::DescriptorEventDispatcher", "classnet_1_1_descriptor_event_dispatcher.html", null ],
     [ "express::Dispatcher", "classexpress_1_1_dispatcher.html", [
       [ "express::ApplicationDispatcher", "classexpress_1_1_application_dispatcher.html", null ],
       [ "express::MiddlewareDispatcher", "classexpress_1_1_middleware_dispatcher.html", null ],
       [ "express::RouterDispatcher", "classexpress_1_1_router_dispatcher.html", null ]
     ] ],
     [ "net::DynamicLoader", "classnet_1_1_dynamic_loader.html", null ],
+    [ "net::EventDispatcher", "classnet_1_1_event_dispatcher.html", null ],
     [ "net::EventLoop", "classnet_1_1_event_loop.html", null ],
     [ "std::exception", null, [
       [ "net::socket::ip::address::ipv4::bad_hostname", "classnet_1_1socket_1_1ip_1_1address_1_1ipv4_1_1bad__hostname.html", null ],
       [ "net::socket::ip::address::ipv6::bad_hostname", "classnet_1_1socket_1_1ip_1_1address_1_1ipv6_1_1bad__hostname.html", null ]
     ] ],
-    [ "net::FdSet", "classnet_1_1_fd_set.html", null ],
+    [ "net::EventDispatcher::FdSet", "classnet_1_1_event_dispatcher_1_1_fd_set.html", null ],
     [ "std::list", null, [
-      [ "net::DescriptorEventDispatcher::DescriptorEventReceiverList", "classnet_1_1_descriptor_event_dispatcher_1_1_descriptor_event_receiver_list.html", null ]
+      [ "net::EventDispatcher::DescriptorEventReceiverList", "classnet_1_1_event_dispatcher_1_1_descriptor_event_receiver_list.html", null ]
     ] ],
     [ "Logger", "class_logger.html", null ],
     [ "web::websocket::Receiver::MaskingKey", "unionweb_1_1websocket_1_1_receiver_1_1_masking_key.html", null ],
@@ -63,7 +63,7 @@ var hierarchy =
       ] ]
     ] ],
     [ "net::ObservationCounter", "classnet_1_1_observation_counter.html", [
-      [ "net::DescriptorEventReceiver", "classnet_1_1_descriptor_event_receiver.html", [
+      [ "net::EventReceiver", "classnet_1_1_event_receiver.html", [
         [ "net::AcceptEventReceiver", "classnet_1_1_accept_event_receiver.html", [
           [ "net::socket::stream::SocketListener< stream::legacy::SocketConnection< SocketT > >", "classnet_1_1socket_1_1stream_1_1_socket_listener.html", [
             [ "net::socket::stream::legacy::SocketListener< SocketT >", "classnet_1_1socket_1_1stream_1_1legacy_1_1_socket_listener.html", null ]
@@ -327,7 +327,7 @@ var hierarchy =
       [ "web::websocket::server::SubProtocolFactorySelector", "classweb_1_1websocket_1_1server_1_1_sub_protocol_factory_selector.html", null ]
     ] ],
     [ "web::websocket::SubProtocolPlugin< SubProtocolFactory >", "structweb_1_1websocket_1_1_sub_protocol_plugin.html", null ],
-    [ "net::DescriptorEventReceiver::TIMEOUT", "classnet_1_1_descriptor_event_receiver_1_1_t_i_m_e_o_u_t.html", null ],
+    [ "net::EventReceiver::TIMEOUT", "classnet_1_1_event_receiver_1_1_t_i_m_e_o_u_t.html", null ],
     [ "net::TimerEventDispatcher", "classnet_1_1_timer_event_dispatcher.html", null ],
     [ "net::TimerEventReceiver", "classnet_1_1_timer_event_receiver.html", [
       [ "net::timer::Timer", "classnet_1_1timer_1_1_timer.html", [

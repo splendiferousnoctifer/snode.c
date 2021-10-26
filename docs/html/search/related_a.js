@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['vhost_2090',['VHost',['../classexpress_1_1middleware_1_1_v_host.html#ae3b9ba71ad78803d74ecea5e56a03fe6',1,'express::middleware::VHost']]]
+  ['socketcontext_2088',['SocketContext',['../classweb_1_1websocket_1_1client_1_1_sub_protocol.html#a1534d404f17ad9cff1b752fb376adfea',1,'web::websocket::client::SubProtocol::SocketContext()'],['../classweb_1_1websocket_1_1server_1_1_sub_protocol.html#a1534d404f17ad9cff1b752fb376adfea',1,'web::websocket::server::SubProtocol::SocketContext()']]],
+  ['subprotocolfactoryselector_2089',['SubProtocolFactorySelector',['../classweb_1_1websocket_1_1client_1_1_sub_protocol_factory_selector.html#a25dd48fa99378270e9b90349f69e7f72',1,'web::websocket::client::SubProtocolFactorySelector::SubProtocolFactorySelector()'],['../classweb_1_1websocket_1_1server_1_1_sub_protocol_factory_selector.html#a25dd48fa99378270e9b90349f69e7f72',1,'web::websocket::server::SubProtocolFactorySelector::SubProtocolFactorySelector()']]],
+  ['webappt_2090',['WebAppT',['../classexpress_1_1_request.html#a2d177edff622e707b0cfb6e9ee1d6629',1,'express::Request']]]
 ];

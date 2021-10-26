@@ -120,7 +120,7 @@ Public Attributes</h2></td></tr>
 struct web::http::server::SocketContext&lt; RequestT, ResponseT &gt;::RequestContext</h3>
 
 
-<p class="definition">Definition at line <a class="el" href="web_2http_2server_2_socket_context_8h_source.html#l00045">45</a> of file <a class="el" href="web_2http_2server_2_socket_context_8h_source.html">SocketContext.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="web_2http_2server_2_socket_context_8h_source.html#l00050">50</a> of file <a class="el" href="web_2http_2server_2_socket_context_8h_source.html">SocketContext.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a6f1d388180fd697bef9b3ebb326e6876"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6f1d388180fd697bef9b3ebb326e6876">&#9670;&nbsp;</a></span>RequestContext()</h2>
@@ -148,14 +148,14 @@ template&lt;typename RequestT , typename ResponseT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="web_2http_2server_2_socket_context_8h_source.html#l00046">46</a> of file <a class="el" href="web_2http_2server_2_socket_context_8h_source.html">SocketContext.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                : <a class="code" href="structweb_1_1http_1_1server_1_1_socket_context_1_1_request_context.html#a69b9138624510f3dccfbe4c26d002cca">response</a>(serverContext)</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                , <a class="code" href="structweb_1_1http_1_1server_1_1_socket_context_1_1_request_context.html#ae767ab27928bd2a19e9d8780909d35ec">ready</a>(<span class="keyword">false</span>)</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                , <a class="code" href="structweb_1_1http_1_1server_1_1_socket_context_1_1_request_context.html#a1c548133a59147f33c0f40e9f4408b55">status</a>(0) {</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            }</div>
-<div class="ttc" id="astructweb_1_1http_1_1server_1_1_socket_context_1_1_request_context_html_a1c548133a59147f33c0f40e9f4408b55"><div class="ttname"><a href="structweb_1_1http_1_1server_1_1_socket_context_1_1_request_context.html#a1c548133a59147f33c0f40e9f4408b55">web::http::server::SocketContext::RequestContext::status</a></div><div class="ttdeci">int status</div><div class="ttdef"><b>Definition:</b> <a href="web_2http_2server_2_socket_context_8h_source.html#l00057">SocketContext.h:57</a></div></div>
-<div class="ttc" id="astructweb_1_1http_1_1server_1_1_socket_context_1_1_request_context_html_a69b9138624510f3dccfbe4c26d002cca"><div class="ttname"><a href="structweb_1_1http_1_1server_1_1_socket_context_1_1_request_context.html#a69b9138624510f3dccfbe4c26d002cca">web::http::server::SocketContext::RequestContext::response</a></div><div class="ttdeci">Response response</div><div class="ttdef"><b>Definition:</b> <a href="web_2http_2server_2_socket_context_8h_source.html#l00053">SocketContext.h:53</a></div></div>
-<div class="ttc" id="astructweb_1_1http_1_1server_1_1_socket_context_1_1_request_context_html_ae767ab27928bd2a19e9d8780909d35ec"><div class="ttname"><a href="structweb_1_1http_1_1server_1_1_socket_context_1_1_request_context.html#ae767ab27928bd2a19e9d8780909d35ec">web::http::server::SocketContext::RequestContext::ready</a></div><div class="ttdeci">bool ready</div><div class="ttdef"><b>Definition:</b> <a href="web_2http_2server_2_socket_context_8h_source.html#l00055">SocketContext.h:55</a></div></div>
+<p class="definition">Definition at line <a class="el" href="web_2http_2server_2_socket_context_8h_source.html#l00051">51</a> of file <a class="el" href="web_2http_2server_2_socket_context_8h_source.html">SocketContext.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                : <a class="code" href="structweb_1_1http_1_1server_1_1_socket_context_1_1_request_context.html#a69b9138624510f3dccfbe4c26d002cca">response</a>(serverContext)</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                , <a class="code" href="structweb_1_1http_1_1server_1_1_socket_context_1_1_request_context.html#ae767ab27928bd2a19e9d8780909d35ec">ready</a>(<span class="keyword">false</span>)</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                , <a class="code" href="structweb_1_1http_1_1server_1_1_socket_context_1_1_request_context.html#a1c548133a59147f33c0f40e9f4408b55">status</a>(0) {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            }</div>
+<div class="ttc" id="astructweb_1_1http_1_1server_1_1_socket_context_1_1_request_context_html_a1c548133a59147f33c0f40e9f4408b55"><div class="ttname"><a href="structweb_1_1http_1_1server_1_1_socket_context_1_1_request_context.html#a1c548133a59147f33c0f40e9f4408b55">web::http::server::SocketContext::RequestContext::status</a></div><div class="ttdeci">int status</div><div class="ttdef"><b>Definition:</b> <a href="web_2http_2server_2_socket_context_8h_source.html#l00062">SocketContext.h:62</a></div></div>
+<div class="ttc" id="astructweb_1_1http_1_1server_1_1_socket_context_1_1_request_context_html_a69b9138624510f3dccfbe4c26d002cca"><div class="ttname"><a href="structweb_1_1http_1_1server_1_1_socket_context_1_1_request_context.html#a69b9138624510f3dccfbe4c26d002cca">web::http::server::SocketContext::RequestContext::response</a></div><div class="ttdeci">Response response</div><div class="ttdef"><b>Definition:</b> <a href="web_2http_2server_2_socket_context_8h_source.html#l00058">SocketContext.h:58</a></div></div>
+<div class="ttc" id="astructweb_1_1http_1_1server_1_1_socket_context_1_1_request_context_html_ae767ab27928bd2a19e9d8780909d35ec"><div class="ttname"><a href="structweb_1_1http_1_1server_1_1_socket_context_1_1_request_context.html#ae767ab27928bd2a19e9d8780909d35ec">web::http::server::SocketContext::RequestContext::ready</a></div><div class="ttdeci">bool ready</div><div class="ttdef"><b>Definition:</b> <a href="web_2http_2server_2_socket_context_8h_source.html#l00060">SocketContext.h:60</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -174,7 +174,7 @@ template&lt;typename RequestT , typename ResponseT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="web_2http_2server_2_socket_context_8h_source.html#l00055">55</a> of file <a class="el" href="web_2http_2server_2_socket_context_8h_source.html">SocketContext.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="web_2http_2server_2_socket_context_8h_source.html#l00060">60</a> of file <a class="el" href="web_2http_2server_2_socket_context_8h_source.html">SocketContext.h</a>.</p>
 
 </div>
 </div>
@@ -192,7 +192,7 @@ template&lt;typename RequestT , typename ResponseT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="web_2http_2server_2_socket_context_8h_source.html#l00058">58</a> of file <a class="el" href="web_2http_2server_2_socket_context_8h_source.html">SocketContext.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="web_2http_2server_2_socket_context_8h_source.html#l00063">63</a> of file <a class="el" href="web_2http_2server_2_socket_context_8h_source.html">SocketContext.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="server_2_socket_context_8hpp_source.html#l00145">web::http::server::SocketContext&lt; RequestT, ResponseT &gt;::requestParsed()</a>, and <a class="el" href="server_2_socket_context_8hpp_source.html#l00171">web::http::server::SocketContext&lt; RequestT, ResponseT &gt;::sendToPeerCompleted()</a>.</p>
 
@@ -212,7 +212,7 @@ template&lt;typename RequestT , typename ResponseT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="web_2http_2server_2_socket_context_8h_source.html#l00052">52</a> of file <a class="el" href="web_2http_2server_2_socket_context_8h_source.html">SocketContext.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="web_2http_2server_2_socket_context_8h_source.html#l00057">57</a> of file <a class="el" href="web_2http_2server_2_socket_context_8h_source.html">SocketContext.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="server_2_socket_context_8hpp_source.html#l00145">web::http::server::SocketContext&lt; RequestT, ResponseT &gt;::requestParsed()</a>, <a class="el" href="server_2_socket_context_8hpp_source.html#l00206">web::http::server::SocketContext&lt; RequestT, ResponseT &gt;::reset()</a>, and <a class="el" href="server_2_socket_context_8hpp_source.html#l00171">web::http::server::SocketContext&lt; RequestT, ResponseT &gt;::sendToPeerCompleted()</a>.</p>
 
@@ -232,7 +232,7 @@ template&lt;typename RequestT , typename ResponseT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="web_2http_2server_2_socket_context_8h_source.html#l00053">53</a> of file <a class="el" href="web_2http_2server_2_socket_context_8h_source.html">SocketContext.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="web_2http_2server_2_socket_context_8h_source.html#l00058">58</a> of file <a class="el" href="web_2http_2server_2_socket_context_8h_source.html">SocketContext.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="server_2_socket_context_8hpp_source.html#l00145">web::http::server::SocketContext&lt; RequestT, ResponseT &gt;::requestParsed()</a>, <a class="el" href="server_2_socket_context_8hpp_source.html#l00206">web::http::server::SocketContext&lt; RequestT, ResponseT &gt;::reset()</a>, and <a class="el" href="server_2_socket_context_8hpp_source.html#l00171">web::http::server::SocketContext&lt; RequestT, ResponseT &gt;::sendToPeerCompleted()</a>.</p>
 
@@ -252,7 +252,7 @@ template&lt;typename RequestT , typename ResponseT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="web_2http_2server_2_socket_context_8h_source.html#l00057">57</a> of file <a class="el" href="web_2http_2server_2_socket_context_8h_source.html">SocketContext.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="web_2http_2server_2_socket_context_8h_source.html#l00062">62</a> of file <a class="el" href="web_2http_2server_2_socket_context_8h_source.html">SocketContext.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="server_2_socket_context_8hpp_source.html#l00145">web::http::server::SocketContext&lt; RequestT, ResponseT &gt;::requestParsed()</a>, and <a class="el" href="server_2_socket_context_8hpp_source.html#l00171">web::http::server::SocketContext&lt; RequestT, ResponseT &gt;::sendToPeerCompleted()</a>.</p>
 

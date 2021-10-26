@@ -3,7 +3,6 @@ var class_s_h_a1 =
     [ "SHA1", "class_s_h_a1.html#ad49a5108ffd6996b1133bf41224ff726", null ],
     [ "buffer_to_block", "class_s_h_a1.html#ae2b7954449c67afe467c586ecb5cdef0", null ],
     [ "final", "class_s_h_a1.html#a89ba0f16575431b0942cbbcfb29107db", null ],
-    [ "from_file", "class_s_h_a1.html#a1bec6fb50bcfb5e3f6fb5c8f258a1f41", null ],
     [ "read", "class_s_h_a1.html#a4fe2a658d9b3617694f52284b332bb5f", null ],
     [ "reset", "class_s_h_a1.html#ab71aaf39ed956320054861a2fbfa454f", null ],
     [ "transform", "class_s_h_a1.html#a6e96e00e6bee105a4a1f8e5baf8a3b9c", null ],

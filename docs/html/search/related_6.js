@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['operator_26_2077',['operator&amp;',['../classnet_1_1_descriptor.html#a1ce28627f2d7b7d54846cb73dcd0aa38',1,'net::Descriptor::operator&amp;()'],['../classweb_1_1http_1_1_parser.html#a1585b2d50f55f49611187d326591f03c',1,'web::http::Parser::operator&amp;()']]],
-  ['operator_7c_2078',['operator|',['../classnet_1_1_descriptor.html#a6dc096af1a75c82c1ff16ca8b4122a3b',1,'net::Descriptor::operator|()'],['../classweb_1_1http_1_1_parser.html#a504270bcd1736c62e66e80918151d611',1,'web::http::Parser::operator|()']]]
+  ['route_2076',['Route',['../classexpress_1_1_dispatcher.html#a82eb8d8152124f42f8bad8770270f4fc',1,'express::Dispatcher']]],
+  ['router_2077',['Router',['../classexpress_1_1_router_dispatcher.html#ad1fd3424328f664cd049fe429e0e3dc6',1,'express::RouterDispatcher']]],
+  ['routerdispatcher_2078',['RouterDispatcher',['../classexpress_1_1_state.html#a116f7a327ec0ec41f95f26ae6b391bbf',1,'express::State']]]
 ];

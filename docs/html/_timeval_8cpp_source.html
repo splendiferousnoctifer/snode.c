@@ -107,63 +107,61 @@ $(document).ready(function(){initNavTree('_timeval_8cpp_source.html',''); initRe
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef DOXYGEN_SHOULD_SKIP_THIS</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;sys/time.h&gt;</span> <span class="comment">// IWYU pragma: export</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* DOXYGEN_SHOULD_SKIP_THIS */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* DOXYGEN_SHOULD_SKIP_THIS */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="_timeval_8cpp.html#a203c430ec1ae6819a443523019cd39c4">   27</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="_timeval_8cpp.html#a203c430ec1ae6819a443523019cd39c4">operator&lt;</a>(<span class="keyword">const</span> <span class="keyword">struct</span> timeval&amp; tv1, <span class="keyword">const</span> <span class="keyword">struct</span> timeval&amp; tv2) {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">return</span> (tv1.tv_sec &lt; tv2.tv_sec) || ((tv1.tv_sec == tv2.tv_sec) &amp;&amp; (tv1.tv_usec &lt; tv2.tv_usec));</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="_timeval_8cpp.html#a13526c88e1ea0da031931cce4401c5dd">   31</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="_timeval_8cpp.html#a13526c88e1ea0da031931cce4401c5dd">operator&gt;</a>(<span class="keyword">const</span> <span class="keyword">struct</span> timeval&amp; tv1, <span class="keyword">const</span> <span class="keyword">struct</span> timeval&amp; tv2) {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">return</span> (tv2.tv_sec &lt; tv1.tv_sec) || ((tv2.tv_sec == tv1.tv_sec) &amp;&amp; (tv2.tv_usec &lt; tv1.tv_usec));</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="_timeval_8cpp.html#a358057c58648c3f0b53b35cd9683fa6e">   35</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="_timeval_8cpp.html#a358057c58648c3f0b53b35cd9683fa6e">operator&lt;=</a>(<span class="keyword">const</span> <span class="keyword">struct</span> timeval&amp; tv1, <span class="keyword">const</span> <span class="keyword">struct</span> timeval&amp; tv2) {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">return</span> !(tv1 &gt; tv2);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="_timeval_8cpp.html#a97bb2cc230e42aaf8db1eb8107306576">   39</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="_timeval_8cpp.html#a97bb2cc230e42aaf8db1eb8107306576">operator&gt;=</a>(<span class="keyword">const</span> <span class="keyword">struct</span> timeval&amp; tv1, <span class="keyword">const</span> <span class="keyword">struct</span> timeval&amp; tv2) {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">return</span> !(tv1 &lt; tv2);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="_timeval_8cpp.html#ac12af1c3a96b8b3ddcc0fd233bd8d55f">   43</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="_timeval_8cpp.html#a9a9525119dc35600c541b56890114aa2">operator==</a>(<span class="keyword">const</span> <span class="keyword">struct</span> timeval&amp; tv1, <span class="keyword">const</span> <span class="keyword">struct</span> timeval&amp; tv2) {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">return</span> !(tv1 &lt; tv2) &amp;&amp; !(tv2 &lt; tv1);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">struct </span>timeval operator+(const struct timeval&amp; tv1, <span class="keyword">const</span> <span class="keyword">struct </span>timeval&amp; tv2) {</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">struct </span>timeval help {};</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="_timeval_8cpp.html#a203c430ec1ae6819a443523019cd39c4">   25</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="_timeval_8cpp.html#a203c430ec1ae6819a443523019cd39c4">operator&lt;</a>(<span class="keyword">const</span> <span class="keyword">struct</span> timeval&amp; tv1, <span class="keyword">const</span> <span class="keyword">struct</span> timeval&amp; tv2) {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">return</span> (tv1.tv_sec &lt; tv2.tv_sec) || ((tv1.tv_sec == tv2.tv_sec) &amp;&amp; (tv1.tv_usec &lt; tv2.tv_usec));</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="_timeval_8cpp.html#a13526c88e1ea0da031931cce4401c5dd">   29</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="_timeval_8cpp.html#a13526c88e1ea0da031931cce4401c5dd">operator&gt;</a>(<span class="keyword">const</span> <span class="keyword">struct</span> timeval&amp; tv1, <span class="keyword">const</span> <span class="keyword">struct</span> timeval&amp; tv2) {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">return</span> (tv2.tv_sec &lt; tv1.tv_sec) || ((tv2.tv_sec == tv1.tv_sec) &amp;&amp; (tv2.tv_usec &lt; tv1.tv_usec));</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="_timeval_8cpp.html#a358057c58648c3f0b53b35cd9683fa6e">   33</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="_timeval_8cpp.html#a358057c58648c3f0b53b35cd9683fa6e">operator&lt;=</a>(<span class="keyword">const</span> <span class="keyword">struct</span> timeval&amp; tv1, <span class="keyword">const</span> <span class="keyword">struct</span> timeval&amp; tv2) {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">return</span> !(tv1 &gt; tv2);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="_timeval_8cpp.html#a97bb2cc230e42aaf8db1eb8107306576">   37</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="_timeval_8cpp.html#a97bb2cc230e42aaf8db1eb8107306576">operator&gt;=</a>(<span class="keyword">const</span> <span class="keyword">struct</span> timeval&amp; tv1, <span class="keyword">const</span> <span class="keyword">struct</span> timeval&amp; tv2) {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">return</span> !(tv1 &lt; tv2);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="_timeval_8cpp.html#ac12af1c3a96b8b3ddcc0fd233bd8d55f">   41</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="_timeval_8cpp.html#a9a9525119dc35600c541b56890114aa2">operator==</a>(<span class="keyword">const</span> <span class="keyword">struct</span> timeval&amp; tv1, <span class="keyword">const</span> <span class="keyword">struct</span> timeval&amp; tv2) {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">return</span> !(tv1 &lt; tv2) &amp;&amp; !(tv2 &lt; tv1);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">struct </span>timeval operator+(const struct timeval&amp; tv1, <span class="keyword">const</span> <span class="keyword">struct </span>timeval&amp; tv2) {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">struct </span>timeval help {};</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    help.tv_sec = tv1.tv_sec + tv2.tv_sec;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    help.tv_sec = tv1.tv_sec + tv2.tv_sec;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    help.tv_usec = tv1.tv_usec + tv2.tv_usec;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    help.tv_usec = tv1.tv_usec + tv2.tv_usec;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">if</span> (help.tv_usec &gt; 999999) {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        help.tv_usec -= 1000000;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        help.tv_sec++;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">return</span> help;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">struct </span>timeval operator-(const struct timeval&amp; tv1, <span class="keyword">const</span> <span class="keyword">struct </span>timeval&amp; tv2) {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">struct </span>timeval help {};</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    help.tv_sec = tv1.tv_sec - tv2.tv_sec;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    help.tv_usec = tv1.tv_usec - tv2.tv_usec;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">if</span> (help.tv_usec &lt; 0) {</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        help.tv_usec += 1000000;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        help.tv_sec--;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">return</span> help;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
-<div class="ttc" id="a_timeval_8cpp_html_a13526c88e1ea0da031931cce4401c5dd"><div class="ttname"><a href="_timeval_8cpp.html#a13526c88e1ea0da031931cce4401c5dd">operator&gt;</a></div><div class="ttdeci">bool operator&gt;(const struct timeval &amp;tv1, const struct timeval &amp;tv2)</div><div class="ttdef"><b>Definition:</b> <a href="_timeval_8cpp_source.html#l00031">Timeval.cpp:31</a></div></div>
-<div class="ttc" id="a_timeval_8cpp_html_a203c430ec1ae6819a443523019cd39c4"><div class="ttname"><a href="_timeval_8cpp.html#a203c430ec1ae6819a443523019cd39c4">operator&lt;</a></div><div class="ttdeci">bool operator&lt;(const struct timeval &amp;tv1, const struct timeval &amp;tv2)</div><div class="ttdef"><b>Definition:</b> <a href="_timeval_8cpp_source.html#l00027">Timeval.cpp:27</a></div></div>
-<div class="ttc" id="a_timeval_8cpp_html_a358057c58648c3f0b53b35cd9683fa6e"><div class="ttname"><a href="_timeval_8cpp.html#a358057c58648c3f0b53b35cd9683fa6e">operator&lt;=</a></div><div class="ttdeci">bool operator&lt;=(const struct timeval &amp;tv1, const struct timeval &amp;tv2)</div><div class="ttdef"><b>Definition:</b> <a href="_timeval_8cpp_source.html#l00035">Timeval.cpp:35</a></div></div>
-<div class="ttc" id="a_timeval_8cpp_html_a97bb2cc230e42aaf8db1eb8107306576"><div class="ttname"><a href="_timeval_8cpp.html#a97bb2cc230e42aaf8db1eb8107306576">operator&gt;=</a></div><div class="ttdeci">bool operator&gt;=(const struct timeval &amp;tv1, const struct timeval &amp;tv2)</div><div class="ttdef"><b>Definition:</b> <a href="_timeval_8cpp_source.html#l00039">Timeval.cpp:39</a></div></div>
-<div class="ttc" id="a_timeval_8cpp_html_a9a9525119dc35600c541b56890114aa2"><div class="ttname"><a href="_timeval_8cpp.html#a9a9525119dc35600c541b56890114aa2">operator==</a></div><div class="ttdeci">bool operator==(const struct timeval &amp;tv1, const struct timeval &amp;tv2)</div><div class="ttdef"><b>Definition:</b> <a href="_timeval_8cpp_source.html#l00043">Timeval.cpp:43</a></div></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">if</span> (help.tv_usec &gt; 999999) {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        help.tv_usec -= 1000000;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        help.tv_sec++;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">return</span> help;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">struct </span>timeval operator-(const struct timeval&amp; tv1, <span class="keyword">const</span> <span class="keyword">struct </span>timeval&amp; tv2) {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">struct </span>timeval help {};</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    help.tv_sec = tv1.tv_sec - tv2.tv_sec;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    help.tv_usec = tv1.tv_usec - tv2.tv_usec;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">if</span> (help.tv_usec &lt; 0) {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        help.tv_usec += 1000000;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        help.tv_sec--;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">return</span> help;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
+<div class="ttc" id="a_timeval_8cpp_html_a13526c88e1ea0da031931cce4401c5dd"><div class="ttname"><a href="_timeval_8cpp.html#a13526c88e1ea0da031931cce4401c5dd">operator&gt;</a></div><div class="ttdeci">bool operator&gt;(const struct timeval &amp;tv1, const struct timeval &amp;tv2)</div><div class="ttdef"><b>Definition:</b> <a href="_timeval_8cpp_source.html#l00029">Timeval.cpp:29</a></div></div>
+<div class="ttc" id="a_timeval_8cpp_html_a203c430ec1ae6819a443523019cd39c4"><div class="ttname"><a href="_timeval_8cpp.html#a203c430ec1ae6819a443523019cd39c4">operator&lt;</a></div><div class="ttdeci">bool operator&lt;(const struct timeval &amp;tv1, const struct timeval &amp;tv2)</div><div class="ttdef"><b>Definition:</b> <a href="_timeval_8cpp_source.html#l00025">Timeval.cpp:25</a></div></div>
+<div class="ttc" id="a_timeval_8cpp_html_a358057c58648c3f0b53b35cd9683fa6e"><div class="ttname"><a href="_timeval_8cpp.html#a358057c58648c3f0b53b35cd9683fa6e">operator&lt;=</a></div><div class="ttdeci">bool operator&lt;=(const struct timeval &amp;tv1, const struct timeval &amp;tv2)</div><div class="ttdef"><b>Definition:</b> <a href="_timeval_8cpp_source.html#l00033">Timeval.cpp:33</a></div></div>
+<div class="ttc" id="a_timeval_8cpp_html_a97bb2cc230e42aaf8db1eb8107306576"><div class="ttname"><a href="_timeval_8cpp.html#a97bb2cc230e42aaf8db1eb8107306576">operator&gt;=</a></div><div class="ttdeci">bool operator&gt;=(const struct timeval &amp;tv1, const struct timeval &amp;tv2)</div><div class="ttdef"><b>Definition:</b> <a href="_timeval_8cpp_source.html#l00037">Timeval.cpp:37</a></div></div>
+<div class="ttc" id="a_timeval_8cpp_html_a9a9525119dc35600c541b56890114aa2"><div class="ttname"><a href="_timeval_8cpp.html#a9a9525119dc35600c541b56890114aa2">operator==</a></div><div class="ttdeci">bool operator==(const struct timeval &amp;tv1, const struct timeval &amp;tv2)</div><div class="ttdef"><b>Definition:</b> <a href="_timeval_8cpp_source.html#l00041">Timeval.cpp:41</a></div></div>
 <div class="ttc" id="a_timeval_8h_html"><div class="ttname"><a href="_timeval_8h.html">Timeval.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

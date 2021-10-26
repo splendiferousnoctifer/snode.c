@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['jsonmiddleware_2075',['JsonMiddleware',['../classexpress_1_1middleware_1_1_json_middleware.html#aa21e61839acf47a03ac9aec271a7d5cb',1,'express::middleware::JsonMiddleware']]]
+  ['middlewaredispatcher_2073',['MiddlewareDispatcher',['../classexpress_1_1_router_dispatcher.html#af781a00450f59562b13c28efc99c9271',1,'express::RouterDispatcher']]]
 ];

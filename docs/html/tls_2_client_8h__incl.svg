@@ -55,16 +55,16 @@
 <g id="node30" class="node">
 <title>Node30</title>
 <g id="a_node30"><a xlink:href="_client_8h.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="825.5,-453 825.5,-472 942.5,-472 942.5,-453 825.5,-453"/>
-<text text-anchor="middle" x="884" y="-460" font-family="Helvetica,sans-Serif" font-size="10.00">web/http/client/Client.h</text>
+<polygon fill="white" stroke="black" points="1165.5,-386 1165.5,-405 1282.5,-405 1282.5,-386 1165.5,-386"/>
+<text text-anchor="middle" x="1224" y="-393" font-family="Helvetica,sans-Serif" font-size="10.00">web/http/client/Client.h</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node30 -->
 <g id="edge39" class="edge">
 <title>Node1&#45;&gt;Node30</title>
-<path fill="none" stroke="midnightblue" d="M490.19,-521.54C568.5,-510 725.59,-486.85 815.9,-473.54"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="816.65,-476.96 826.04,-472.04 815.63,-470.04 816.65,-476.96"/>
+<path fill="none" stroke="midnightblue" d="M490.1,-520.54C625.09,-497.72 1013.34,-432.1 1163.6,-406.71"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="1164.3,-410.14 1173.58,-405.02 1163.13,-403.24 1164.3,-410.14"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
@@ -257,9 +257,9 @@
 <!-- Node13 -->
 <g id="node13" class="node">
 <title>Node13</title>
-<g id="a_node13"><a xlink:href="_descriptor_event_receiver_8h.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="604,-0.5 604,-19.5 754,-19.5 754,-0.5 604,-0.5"/>
-<text text-anchor="middle" x="679" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">net/DescriptorEventReceiver.h</text>
+<g id="a_node13"><a xlink:href="_event_receiver_8h.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="black" points="626.5,-0.5 626.5,-19.5 731.5,-19.5 731.5,-0.5 626.5,-0.5"/>
+<text text-anchor="middle" x="679" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">net/EventReceiver.h</text>
 </a>
 </g>
 </g>
@@ -538,136 +538,142 @@
 <!-- Node31 -->
 <g id="node31" class="node">
 <title>Node31</title>
-<g id="a_node31"><a xlink:href="web_2http_2client_2_socket_context_factory_8h.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="1149.5,-380.5 1149.5,-410.5 1298.5,-410.5 1298.5,-380.5 1149.5,-380.5"/>
-<text text-anchor="start" x="1157.5" y="-398.5" font-family="Helvetica,sans-Serif" font-size="10.00">web/http/client/SocketContext</text>
-<text text-anchor="middle" x="1224" y="-387.5" font-family="Helvetica,sans-Serif" font-size="10.00">Factory.h</text>
+<g id="a_node31"><a xlink:href="client_2_socket_context_8hpp.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="black" points="1317.5,-319 1317.5,-338 1484.5,-338 1484.5,-319 1317.5,-319"/>
+<text text-anchor="middle" x="1401" y="-326" font-family="Helvetica,sans-Serif" font-size="10.00">web/http/client/SocketContext.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node30&#45;&gt;Node31 -->
 <g id="edge40" class="edge">
 <title>Node30&#45;&gt;Node31</title>
-<path fill="none" stroke="midnightblue" d="M928.8,-452.94C982.48,-442.67 1073.55,-425.26 1140.37,-412.49"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="1141.29,-415.87 1150.46,-410.56 1139.98,-409 1141.29,-415.87"/>
+<path fill="none" stroke="midnightblue" d="M1247.5,-385.87C1278.4,-374.52 1332.86,-354.52 1367.91,-341.65"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="1369.5,-344.8 1377.68,-338.06 1367.09,-338.23 1369.5,-344.8"/>
+</g>
+<!-- Node37 -->
+<g id="node37" class="node">
+<title>Node37</title>
+<g id="a_node37"><a xlink:href="web_2http_2client_2_socket_context_factory_8h.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="black" points="1149.5,-313.5 1149.5,-343.5 1298.5,-343.5 1298.5,-313.5 1149.5,-313.5"/>
+<text text-anchor="start" x="1157.5" y="-331.5" font-family="Helvetica,sans-Serif" font-size="10.00">web/http/client/SocketContext</text>
+<text text-anchor="middle" x="1224" y="-320.5" font-family="Helvetica,sans-Serif" font-size="10.00">Factory.h</text>
+</a>
+</g>
+</g>
+<!-- Node30&#45;&gt;Node37 -->
+<g id="edge47" class="edge">
+<title>Node30&#45;&gt;Node37</title>
+<path fill="none" stroke="midnightblue" d="M1224,-385.73C1224,-377.54 1224,-364.92 1224,-353.71"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="1227.5,-353.59 1224,-343.59 1220.5,-353.59 1227.5,-353.59"/>
 </g>
 <!-- Node32 -->
 <g id="node32" class="node">
 <title>Node32</title>
-<g id="a_node32"><a xlink:href="web_2http_2_socket_context_factory_8h.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="1143,-252 1143,-271 1305,-271 1305,-252 1143,-252"/>
-<text text-anchor="middle" x="1224" y="-259" font-family="Helvetica,sans-Serif" font-size="10.00">web/http/SocketContextFactory.h</text>
+<g id="a_node32"><a xlink:href="web_2http_2client_2_socket_context_8h.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="black" points="1323.5,-252 1323.5,-271 1480.5,-271 1480.5,-252 1323.5,-252"/>
+<text text-anchor="middle" x="1402" y="-259" font-family="Helvetica,sans-Serif" font-size="10.00">web/http/client/SocketContext.h</text>
 </a>
 </g>
 </g>
 <!-- Node31&#45;&gt;Node32 -->
 <g id="edge41" class="edge">
 <title>Node31&#45;&gt;Node32</title>
-<path fill="none" stroke="midnightblue" d="M1224,-380.37C1224,-356.5 1224,-308.18 1224,-281.41"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="1227.5,-281.1 1224,-271.1 1220.5,-281.1 1227.5,-281.1"/>
+<path fill="none" stroke="midnightblue" d="M1401.13,-318.73C1401.28,-309.18 1401.52,-293.62 1401.71,-281.28"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="1405.21,-281.18 1401.87,-271.13 1398.21,-281.07 1405.21,-281.18"/>
 </g>
 <!-- Node33 -->
 <g id="node33" class="node">
 <title>Node33</title>
-<g id="a_node33"><a xlink:href="client_2_socket_context_8hpp.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="1284.5,-319 1284.5,-338 1451.5,-338 1451.5,-319 1284.5,-319"/>
-<text text-anchor="middle" x="1368" y="-326" font-family="Helvetica,sans-Serif" font-size="10.00">web/http/client/SocketContext.hpp</text>
-</a>
-</g>
-</g>
-<!-- Node31&#45;&gt;Node33 -->
-<g id="edge43" class="edge">
-<title>Node31&#45;&gt;Node33</title>
-<path fill="none" stroke="midnightblue" d="M1255.25,-380.4C1280.4,-369.04 1315.45,-353.22 1339.77,-342.24"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="1341.48,-345.31 1349.15,-338.01 1338.6,-338.93 1341.48,-345.31"/>
-</g>
-<!-- Node32&#45;&gt;Node18 -->
-<g id="edge42" class="edge">
-<title>Node32&#45;&gt;Node18</title>
-<path fill="none" stroke="midnightblue" d="M1225.51,-251.84C1228.96,-232.02 1237.54,-182.77 1242.76,-152.84"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="1246.24,-153.24 1244.51,-142.78 1239.35,-152.03 1246.24,-153.24"/>
-</g>
-<!-- Node34 -->
-<g id="node34" class="node">
-<title>Node34</title>
-<g id="a_node34"><a xlink:href="web_2http_2client_2_socket_context_8h.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="1323.5,-252 1323.5,-271 1480.5,-271 1480.5,-252 1323.5,-252"/>
-<text text-anchor="middle" x="1402" y="-259" font-family="Helvetica,sans-Serif" font-size="10.00">web/http/client/SocketContext.h</text>
-</a>
-</g>
-</g>
-<!-- Node33&#45;&gt;Node34 -->
-<g id="edge44" class="edge">
-<title>Node33&#45;&gt;Node34</title>
-<path fill="none" stroke="midnightblue" d="M1372.59,-318.73C1377.73,-308.89 1386.22,-292.66 1392.76,-280.16"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="1395.95,-281.61 1397.49,-271.13 1389.75,-278.37 1395.95,-281.61"/>
-</g>
-<!-- Node35 -->
-<g id="node35" class="node">
-<title>Node35</title>
-<g id="a_node35"><a xlink:href="web_2http_2_socket_context_8h.html" target="_top" xlink:title=" ">
+<g id="a_node33"><a xlink:href="web_2http_2_socket_context_8h.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="1328.5,-185 1328.5,-204 1459.5,-204 1459.5,-185 1328.5,-185"/>
 <text text-anchor="middle" x="1394" y="-192" font-family="Helvetica,sans-Serif" font-size="10.00">web/http/SocketContext.h</text>
 </a>
 </g>
 </g>
-<!-- Node34&#45;&gt;Node35 -->
-<g id="edge45" class="edge">
-<title>Node34&#45;&gt;Node35</title>
+<!-- Node32&#45;&gt;Node33 -->
+<g id="edge42" class="edge">
+<title>Node32&#45;&gt;Node33</title>
 <path fill="none" stroke="midnightblue" d="M1400.92,-251.73C1399.75,-242.18 1397.83,-226.62 1396.31,-214.28"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="1399.76,-213.62 1395.06,-204.13 1392.81,-214.48 1399.76,-213.62"/>
 </g>
-<!-- Node36 -->
-<g id="node36" class="node">
-<title>Node36</title>
-<g id="a_node36"><a xlink:href="_response_parser_8h.html" target="_top" xlink:title=" ">
+<!-- Node34 -->
+<g id="node34" class="node">
+<title>Node34</title>
+<g id="a_node34"><a xlink:href="_response_parser_8h.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="1478,-179.5 1478,-209.5 1606,-209.5 1606,-179.5 1478,-179.5"/>
 <text text-anchor="start" x="1486" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00">web/http/client/Response</text>
 <text text-anchor="middle" x="1542" y="-186.5" font-family="Helvetica,sans-Serif" font-size="10.00">Parser.h</text>
 </a>
 </g>
 </g>
-<!-- Node34&#45;&gt;Node36 -->
-<g id="edge47" class="edge">
-<title>Node34&#45;&gt;Node36</title>
+<!-- Node32&#45;&gt;Node34 -->
+<g id="edge44" class="edge">
+<title>Node32&#45;&gt;Node34</title>
 <path fill="none" stroke="midnightblue" d="M1420.59,-251.87C1441.42,-242.2 1475.77,-226.25 1502.63,-213.78"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="1504.19,-216.91 1511.79,-209.53 1501.24,-210.56 1504.19,-216.91"/>
 </g>
-<!-- Node35&#45;&gt;Node17 -->
-<g id="edge46" class="edge">
-<title>Node35&#45;&gt;Node17</title>
+<!-- Node33&#45;&gt;Node17 -->
+<g id="edge43" class="edge">
+<title>Node33&#45;&gt;Node17</title>
 <path fill="none" stroke="midnightblue" d="M1394,-184.73C1394,-176.54 1394,-163.92 1394,-152.71"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="1397.5,-152.59 1394,-142.59 1390.5,-152.59 1397.5,-152.59"/>
 </g>
-<!-- Node37 -->
-<g id="node37" class="node">
-<title>Node37</title>
-<g id="a_node37"><a xlink:href="_cookie_options_8h.html" target="_top" xlink:title=" ">
+<!-- Node35 -->
+<g id="node35" class="node">
+<title>Node35</title>
+<g id="a_node35"><a xlink:href="_cookie_options_8h.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="1477,-118 1477,-137 1607,-137 1607,-118 1477,-118"/>
 <text text-anchor="middle" x="1542" y="-125" font-family="Helvetica,sans-Serif" font-size="10.00">web/http/CookieOptions.h</text>
 </a>
 </g>
 </g>
-<!-- Node36&#45;&gt;Node37 -->
-<g id="edge48" class="edge">
-<title>Node36&#45;&gt;Node37</title>
+<!-- Node34&#45;&gt;Node35 -->
+<g id="edge45" class="edge">
+<title>Node34&#45;&gt;Node35</title>
 <path fill="none" stroke="midnightblue" d="M1542,-179.4C1542,-170.06 1542,-157.71 1542,-147.52"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="1545.5,-147.19 1542,-137.19 1538.5,-147.19 1545.5,-147.19"/>
 </g>
-<!-- Node38 -->
-<g id="node38" class="node">
-<title>Node38</title>
-<g id="a_node38"><a xlink:href="_parser_8h.html" target="_top" xlink:title=" ">
+<!-- Node36 -->
+<g id="node36" class="node">
+<title>Node36</title>
+<g id="a_node36"><a xlink:href="_parser_8h.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="1625.5,-118 1625.5,-137 1718.5,-137 1718.5,-118 1625.5,-118"/>
 <text text-anchor="middle" x="1672" y="-125" font-family="Helvetica,sans-Serif" font-size="10.00">web/http/Parser.h</text>
 </a>
 </g>
 </g>
-<!-- Node36&#45;&gt;Node38 -->
-<g id="edge49" class="edge">
-<title>Node36&#45;&gt;Node38</title>
+<!-- Node34&#45;&gt;Node36 -->
+<g id="edge46" class="edge">
+<title>Node34&#45;&gt;Node36</title>
 <path fill="none" stroke="midnightblue" d="M1570.21,-179.4C1592.72,-168.14 1624,-152.5 1645.92,-141.54"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="1647.61,-144.61 1654.99,-137.01 1644.48,-138.35 1647.61,-144.61"/>
+</g>
+<!-- Node37&#45;&gt;Node32 -->
+<g id="edge50" class="edge">
+<title>Node37&#45;&gt;Node32</title>
+<path fill="none" stroke="midnightblue" d="M1262.62,-313.4C1294.41,-301.79 1338.98,-285.51 1369.09,-274.52"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="1370.51,-277.72 1378.7,-271.01 1368.11,-271.15 1370.51,-277.72"/>
+</g>
+<!-- Node38 -->
+<g id="node38" class="node">
+<title>Node38</title>
+<g id="a_node38"><a xlink:href="web_2http_2_socket_context_factory_8h.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="black" points="1143,-252 1143,-271 1305,-271 1305,-252 1143,-252"/>
+<text text-anchor="middle" x="1224" y="-259" font-family="Helvetica,sans-Serif" font-size="10.00">web/http/SocketContextFactory.h</text>
+</a>
+</g>
+</g>
+<!-- Node37&#45;&gt;Node38 -->
+<g id="edge48" class="edge">
+<title>Node37&#45;&gt;Node38</title>
+<path fill="none" stroke="midnightblue" d="M1224,-313.4C1224,-304.06 1224,-291.71 1224,-281.52"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="1227.5,-281.19 1224,-271.19 1220.5,-281.19 1227.5,-281.19"/>
+</g>
+<!-- Node38&#45;&gt;Node18 -->
+<g id="edge49" class="edge">
+<title>Node38&#45;&gt;Node18</title>
+<path fill="none" stroke="midnightblue" d="M1225.51,-251.84C1228.96,-232.02 1237.54,-182.77 1242.76,-152.84"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="1246.24,-153.24 1244.51,-142.78 1239.35,-152.03 1246.24,-153.24"/>
 </g>
 </g>
 </svg>

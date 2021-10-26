@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['zero_978',['zero',['../classnet_1_1_fd_set.html#ae2aef28ff986512ef8e4da1639fa88f7',1,'net::FdSet']]]
+  ['zero_976',['zero',['../classnet_1_1_event_dispatcher_1_1_fd_set.html#a3a052b40a83021edf940e7968f9fad05',1,'net::EventDispatcher::FdSet']]]
 ];

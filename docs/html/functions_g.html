@@ -89,7 +89,7 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 </li>
 <li>get()
 : <a class="el" href="classexpress_1_1_router.html#a24c8585efc32c7f8468187a29f5d07c9">express::Router</a>
-, <a class="el" href="classnet_1_1_fd_set.html#a6522cb79575ddf3dc7fde777d767594f">net::FdSet</a>
+, <a class="el" href="classnet_1_1_event_dispatcher_1_1_fd_set.html#a4013e69d254344612c33d6d46c4908e7">net::EventDispatcher::FdSet</a>
 </li>
 <li>getAttribute()
 : <a class="el" href="classutils_1_1_multible_attribute_injector.html#ab3fa24ac57f92d4d0dcbfc80c9d81061">utils::MultibleAttributeInjector</a>
@@ -107,20 +107,20 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 , <a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_writer.html#ae184b3279b7ed8000e9299c74a4f05bb">net::socket::stream::tls::SocketWriter&lt; SocketT &gt;</a>
 </li>
 <li>getEventCounter()
-: <a class="el" href="classnet_1_1_descriptor_event_dispatcher.html#a36b1ca73b12282526036f339593bafab">net::DescriptorEventDispatcher</a>
+: <a class="el" href="classnet_1_1_event_dispatcher.html#a1b6dba1039837fa4a647dc90ee68e7cc">net::EventDispatcher</a>
 , <a class="el" href="classnet_1_1_event_loop.html#a95ec74ddb27a690eac66cda5999c0e97">net::EventLoop</a>
 </li>
 <li>getExceptionalConditionEventDispatcher()
-: <a class="el" href="classnet_1_1_event_loop.html#a50f747edb374636453de18c6d644b9a6">net::EventLoop</a>
+: <a class="el" href="classnet_1_1_event_loop.html#a4346399143fb5e3d560c901fea7f8faa">net::EventLoop</a>
 </li>
 <li>getFd()
 : <a class="el" href="classnet_1_1_descriptor.html#a70ccc1e4f6af5cda015bd319f9a90096">net::Descriptor</a>
 </li>
 <li>getFdSet()
-: <a class="el" href="classnet_1_1_descriptor_event_dispatcher.html#a57bd7a9d42b9a1b22488750ad267ec7e">net::DescriptorEventDispatcher</a>
+: <a class="el" href="classnet_1_1_event_dispatcher.html#a7ab7d24b6e10354e39847319be4088b7">net::EventDispatcher</a>
 </li>
 <li>getLastTriggered()
-: <a class="el" href="classnet_1_1_descriptor_event_receiver.html#a42b98bfad5f9233f4375a7929f83a748">net::DescriptorEventReceiver</a>
+: <a class="el" href="classnet_1_1_event_receiver.html#a32895956521d43ca1a42215d885d11f7">net::EventReceiver</a>
 </li>
 <li>getLocalAddress()
 : <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#a04497b9da7987c52325ef121985799b2">net::socket::stream::SocketConnectionT&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt;</a>
@@ -133,7 +133,7 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 , <a class="el" href="classweb_1_1websocket_1_1_sub_protocol.html#a4ba9ef453ab422f2a065fa2863a03573">web::websocket::SubProtocol&lt; SocketContextT, SubProtocolFactoryT &gt;</a>
 </li>
 <li>getMaxFd()
-: <a class="el" href="classnet_1_1_descriptor_event_dispatcher.html#a8656ed71487795fc862d2fd0ea190d16">net::DescriptorEventDispatcher</a>
+: <a class="el" href="classnet_1_1_event_dispatcher.html#a6cc0bc80274d3dd35617607d0b4d78d3">net::EventDispatcher</a>
 </li>
 <li>getName()
 : <a class="el" href="classweb_1_1websocket_1_1_sub_protocol.html#a10f6b2d5c9ca2d49d8ebe06066d55d99">web::websocket::SubProtocol&lt; SocketContextT, SubProtocolFactoryT &gt;</a>
@@ -145,7 +145,7 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 : <a class="el" href="classweb_1_1http_1_1_cookie_options.html#ae49871347c50d4974cc82790ff07d810">web::http::CookieOptions</a>
 </li>
 <li>getReadEventDispatcher()
-: <a class="el" href="classnet_1_1_event_loop.html#ace10fc7540ecf33dbd7efeb50f2a6a4d">net::EventLoop</a>
+: <a class="el" href="classnet_1_1_event_loop.html#a02ded57a7a04ba5ea81931a8687190fb">net::EventLoop</a>
 </li>
 <li>getRemoteAddress()
 : <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#ad335d9472438014f18ff8ff4f3f5df30">net::socket::stream::SocketConnectionT&lt; SocketReaderT, SocketWriterT, SocketAddressT &gt;</a>
@@ -200,16 +200,16 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 : <a class="el" href="classnet_1_1_event_loop.html#a81ac233351625c5bd8ed1943d3f9daea">net::EventLoop</a>
 </li>
 <li>getTimeout()
-: <a class="el" href="classnet_1_1_descriptor_event_receiver.html#a5374d326283326bc8b6d04242b935e1c">net::DescriptorEventReceiver</a>
+: <a class="el" href="classnet_1_1_event_receiver.html#ad3cf74893e2592d60fe2914d5990cbe6">net::EventReceiver</a>
 </li>
 <li>getTimerEventDispatcher()
-: <a class="el" href="classnet_1_1_event_loop.html#aeb3848618bd0e968aa6713d8c72bbd0f">net::EventLoop</a>
+: <a class="el" href="classnet_1_1_event_loop.html#a7a63658509c1d2e281a3f69fe607a62f">net::EventLoop</a>
 </li>
 <li>getValue()
 : <a class="el" href="classweb_1_1http_1_1_cookie_options.html#add01e6b823d2eea8da212049f3d6c6e2">web::http::CookieOptions</a>
 </li>
 <li>getWriteEventDispatcher()
-: <a class="el" href="classnet_1_1_event_loop.html#a53697a464b99a65cde0a384bb896d5f3">net::EventLoop</a>
+: <a class="el" href="classnet_1_1_event_loop.html#a7c37e05b409822ed31d3a99b513007b9">net::EventLoop</a>
 </li>
 </ul>
 </div><!-- contents -->

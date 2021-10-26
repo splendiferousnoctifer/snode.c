@@ -1,5 +1,6 @@
 var NAVTREEINDEX9 =
 {
+"namespacenet_1_1socket_1_1stream_1_1tls.html#afde8379e5ec869b4670b8c7ed7392b2e":[8,0,3,1,2,1,11],
 "namespacenet_1_1ssl.html":[8,0,3,2],
 "namespacenet_1_1ssl.html#a58a0af5c945f3f59a910bd44f2695bc8":[8,0,3,2,1],
 "namespacenet_1_1ssl.html#a9276e8aec87ceaef3c80f57f55cd4106":[8,0,3,2,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX9 =
 "system_2_socket_8h.html#a5f6ccab99c16f428c4cd1bf2811c5de8":[10,0,2,3,9,11],
 "system_2_socket_8h.html#a6e3cc3da3091019dca76100c57375feb":[10,0,2,3,9,10],
 "system_2_socket_8h.html#aab3b0579285d63e2dcf5c23eb55e4e04":[10,0,2,3,9,6],
-"system_2_socket_8h.html#ab2a2aadd5835d5e4ff844d3dafdba6aa":[10,0,2,3,9,3],
-"system_2_socket_8h.html#abe940f857103c8b045b81c258bfa774e":[10,0,2,3,9,0]
+"system_2_socket_8h.html#ab2a2aadd5835d5e4ff844d3dafdba6aa":[10,0,2,3,9,3]
 };

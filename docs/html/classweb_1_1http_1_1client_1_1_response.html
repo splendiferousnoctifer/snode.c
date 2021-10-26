@@ -85,6 +85,7 @@ $(document).ready(function(){initNavTree('classweb_1_1http_1_1client_1_1_respons
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classweb_1_1http_1_1client_1_1_response-members.html">List of all members</a>  </div>
@@ -97,7 +98,7 @@ $(document).ready(function(){initNavTree('classweb_1_1http_1_1client_1_1_respons
 <div class="dynheader">
 Collaboration diagram for web::http::client::Response:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1http_1_1client_1_1_response__coll__graph.svg" width="134" height="264"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1http_1_1client_1_1_response__coll__graph.svg" width="428" height="1987"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -108,6 +109,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6326038923aaee1506307bd8f4639e30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe6da347c55f56a4457939e3f4971403"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1client_1_1_response.html#abe6da347c55f56a4457939e3f4971403">bodyLength</a> () const</td></tr>
 <tr class="separator:abe6da347c55f56a4457939e3f4971403"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e325e31cf23d211476c9dd9f0636ac0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1client_1_1_response.html#a9e325e31cf23d211476c9dd9f0636ac0">upgrade</a> (<a class="el" href="classweb_1_1http_1_1client_1_1_request.html">Request</a> &amp;request)</td></tr>
+<tr class="separator:a9e325e31cf23d211476c9dd9f0636ac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -128,10 +131,15 @@ Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a299bee31ccf9f4c1fcbc86a718014988"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1client_1_1_response.html#a299bee31ccf9f4c1fcbc86a718014988">Response</a> ()=default</td></tr>
-<tr class="separator:a299bee31ccf9f4c1fcbc86a718014988"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bdab9aab9ceb0397185da23bcca297d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1client_1_1_response.html#a8bdab9aab9ceb0397185da23bcca297d">Response</a> (<a class="el" href="classweb_1_1http_1_1client_1_1_socket_context.html">SocketContext</a> *clientContext)</td></tr>
+<tr class="separator:a8bdab9aab9ceb0397185da23bcca297d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7d940a15a31118732f8b32b09c683a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1client_1_1_response.html#aa7d940a15a31118732f8b32b09c683a4">reset</a> ()</td></tr>
 <tr class="separator:aa7d940a15a31118732f8b32b09c683a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a25964030844142e3a0f6a340b3678076"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classweb_1_1http_1_1client_1_1_socket_context.html">SocketContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1client_1_1_response.html#a25964030844142e3a0f6a340b3678076">socketContext</a></td></tr>
+<tr class="separator:a25964030844142e3a0f6a340b3678076"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -146,10 +154,10 @@ Friends</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="web_2http_2client_2_response_8h_source.html#l00036">36</a> of file <a class="el" href="web_2http_2client_2_response_8h_source.html">Response.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="web_2http_2client_2_response_8h_source.html#l00041">41</a> of file <a class="el" href="web_2http_2client_2_response_8h_source.html">Response.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a299bee31ccf9f4c1fcbc86a718014988"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a299bee31ccf9f4c1fcbc86a718014988">&#9670;&nbsp;</a></span>Response()</h2>
+<a id="a8bdab9aab9ceb0397185da23bcca297d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bdab9aab9ceb0397185da23bcca297d">&#9670;&nbsp;</a></span>Response()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -160,17 +168,23 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname">web::http::client::Response::Response </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classweb_1_1http_1_1client_1_1_socket_context.html">SocketContext</a> *&#160;</td>
+          <td class="paramname"><em>clientContext</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">default</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="web_2http_2client_2_response_8cpp_source.html#l00036">36</a> of file <a class="el" href="web_2http_2client_2_response_8cpp_source.html">Response.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        : <a class="code" href="classweb_1_1http_1_1client_1_1_response.html#a25964030844142e3a0f6a340b3678076">socketContext</a>(clientContext) {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div>
+<div class="ttc" id="aclassweb_1_1http_1_1client_1_1_response_html_a25964030844142e3a0f6a340b3678076"><div class="ttname"><a href="classweb_1_1http_1_1client_1_1_response.html#a25964030844142e3a0f6a340b3678076">web::http::client::Response::socketContext</a></div><div class="ttdeci">SocketContext * socketContext</div><div class="ttdef"><b>Definition:</b> <a href="web_2http_2client_2_response_8h_source.html#l00045">Response.h:45</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -189,13 +203,13 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="web_2http_2client_2_response_8cpp_source.html#l00065">65</a> of file <a class="el" href="web_2http_2client_2_response_8cpp_source.html">Response.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                                         {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classweb_1_1http_1_1client_1_1_response.html#a2be1b3cd917eebc19df7d37973832fea">contentLength</a>;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
-<div class="ttc" id="aclassweb_1_1http_1_1client_1_1_response_html_a2be1b3cd917eebc19df7d37973832fea"><div class="ttname"><a href="classweb_1_1http_1_1client_1_1_response.html#a2be1b3cd917eebc19df7d37973832fea">web::http::client::Response::contentLength</a></div><div class="ttdeci">std::size_t contentLength</div><div class="ttdef"><b>Definition:</b> <a href="web_2http_2client_2_response_8h_source.html#l00052">Response.h:52</a></div></div>
+<p class="definition">Definition at line <a class="el" href="web_2http_2client_2_response_8cpp_source.html#l00072">72</a> of file <a class="el" href="web_2http_2client_2_response_8cpp_source.html">Response.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                                         {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classweb_1_1http_1_1client_1_1_response.html#a2be1b3cd917eebc19df7d37973832fea">contentLength</a>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
+<div class="ttc" id="aclassweb_1_1http_1_1client_1_1_response_html_a2be1b3cd917eebc19df7d37973832fea"><div class="ttname"><a href="classweb_1_1http_1_1client_1_1_response.html#a2be1b3cd917eebc19df7d37973832fea">web::http::client::Response::contentLength</a></div><div class="ttdeci">std::size_t contentLength</div><div class="ttdef"><b>Definition:</b> <a href="web_2http_2client_2_response_8h_source.html#l00059">Response.h:59</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="web_2http_2client_2_response_8h_source.html#l00052">contentLength</a>.</p>
+<p class="reference">References <a class="el" href="web_2http_2client_2_response_8h_source.html#l00059">contentLength</a>.</p>
 
 </div>
 </div>
@@ -215,24 +229,24 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="web_2http_2client_2_response_8cpp_source.html#l00052">52</a> of file <a class="el" href="web_2http_2client_2_response_8cpp_source.html">Response.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                                                                {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        std::map&lt;std::string, CookieOptions&gt;::const_iterator it;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        std::string tmpKey = key;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <a class="code" href="namespacehttputils.html#a4dd60a8e2472042c70e00dec22ebf927">httputils::to_lower</a>(tmpKey);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">if</span> ((it = <a class="code" href="classweb_1_1http_1_1client_1_1_response.html#aae11e082f0e6c6228d74a1fc8ce9b835">cookies</a>-&gt;find(tmpKey)) != <a class="code" href="classweb_1_1http_1_1client_1_1_response.html#aae11e082f0e6c6228d74a1fc8ce9b835">cookies</a>-&gt;end()) {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <span class="keywordflow">return</span> it-&gt;second.getValue();</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classweb_1_1http_1_1client_1_1_response.html#a17d7f9b54bbcc3a75d52b7b78bd235ac">nullstr</a>;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        }</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
-<div class="ttc" id="aclassweb_1_1http_1_1client_1_1_response_html_a17d7f9b54bbcc3a75d52b7b78bd235ac"><div class="ttname"><a href="classweb_1_1http_1_1client_1_1_response.html#a17d7f9b54bbcc3a75d52b7b78bd235ac">web::http::client::Response::nullstr</a></div><div class="ttdeci">std::string nullstr</div><div class="ttdef"><b>Definition:</b> <a href="web_2http_2client_2_response_8h_source.html#l00064">Response.h:64</a></div></div>
-<div class="ttc" id="aclassweb_1_1http_1_1client_1_1_response_html_aae11e082f0e6c6228d74a1fc8ce9b835"><div class="ttname"><a href="classweb_1_1http_1_1client_1_1_response.html#aae11e082f0e6c6228d74a1fc8ce9b835">web::http::client::Response::cookies</a></div><div class="ttdeci">const std::map&lt; std::string, CookieOptions &gt; * cookies</div><div class="ttdef"><b>Definition:</b> <a href="web_2http_2client_2_response_8h_source.html#l00056">Response.h:56</a></div></div>
+<p class="definition">Definition at line <a class="el" href="web_2http_2client_2_response_8cpp_source.html#l00059">59</a> of file <a class="el" href="web_2http_2client_2_response_8cpp_source.html">Response.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                                                                {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        std::map&lt;std::string, CookieOptions&gt;::const_iterator it;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        std::string tmpKey = key;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <a class="code" href="namespacehttputils.html#a4dd60a8e2472042c70e00dec22ebf927">httputils::to_lower</a>(tmpKey);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordflow">if</span> ((it = <a class="code" href="classweb_1_1http_1_1client_1_1_response.html#aae11e082f0e6c6228d74a1fc8ce9b835">cookies</a>-&gt;find(tmpKey)) != <a class="code" href="classweb_1_1http_1_1client_1_1_response.html#aae11e082f0e6c6228d74a1fc8ce9b835">cookies</a>-&gt;end()) {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <span class="keywordflow">return</span> it-&gt;second.getValue();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classweb_1_1http_1_1client_1_1_response.html#a17d7f9b54bbcc3a75d52b7b78bd235ac">nullstr</a>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div>
+<div class="ttc" id="aclassweb_1_1http_1_1client_1_1_response_html_a17d7f9b54bbcc3a75d52b7b78bd235ac"><div class="ttname"><a href="classweb_1_1http_1_1client_1_1_response.html#a17d7f9b54bbcc3a75d52b7b78bd235ac">web::http::client::Response::nullstr</a></div><div class="ttdeci">std::string nullstr</div><div class="ttdef"><b>Definition:</b> <a href="web_2http_2client_2_response_8h_source.html#l00073">Response.h:73</a></div></div>
+<div class="ttc" id="aclassweb_1_1http_1_1client_1_1_response_html_aae11e082f0e6c6228d74a1fc8ce9b835"><div class="ttname"><a href="classweb_1_1http_1_1client_1_1_response.html#aae11e082f0e6c6228d74a1fc8ce9b835">web::http::client::Response::cookies</a></div><div class="ttdeci">const std::map&lt; std::string, CookieOptions &gt; * cookies</div><div class="ttdef"><b>Definition:</b> <a href="web_2http_2client_2_response_8h_source.html#l00065">Response.h:65</a></div></div>
 <div class="ttc" id="anamespacehttputils_html_a4dd60a8e2472042c70e00dec22ebf927"><div class="ttname"><a href="namespacehttputils.html#a4dd60a8e2472042c70e00dec22ebf927">httputils::to_lower</a></div><div class="ttdeci">std::string::iterator to_lower(std::string &amp;string)</div><div class="ttdef"><b>Definition:</b> <a href="http__utils_8cpp_source.html#l00167">http_utils.cpp:167</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="web_2http_2client_2_response_8h_source.html#l00056">cookies</a>, <a class="el" href="web_2http_2client_2_response_8h_source.html#l00064">nullstr</a>, and <a class="el" href="http__utils_8cpp_source.html#l00167">httputils::to_lower()</a>.</p>
+<p class="reference">References <a class="el" href="web_2http_2client_2_response_8h_source.html#l00065">cookies</a>, <a class="el" href="web_2http_2client_2_response_8h_source.html#l00073">nullstr</a>, and <a class="el" href="http__utils_8cpp_source.html#l00167">httputils::to_lower()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -267,30 +281,30 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="web_2http_2client_2_response_8cpp_source.html#l00033">33</a> of file <a class="el" href="web_2http_2client_2_response_8cpp_source.html">Response.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                                                                       {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        std::string tmpKey = key;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <a class="code" href="namespacehttputils.html#a4dd60a8e2472042c70e00dec22ebf927">httputils::to_lower</a>(tmpKey);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classweb_1_1http_1_1client_1_1_response.html#a99734a50cb70c2c25046c59dd91a5001">headers</a>-&gt;find(tmpKey) != <a class="code" href="classweb_1_1http_1_1client_1_1_response.html#a99734a50cb70c2c25046c59dd91a5001">headers</a>-&gt;end()) {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            std::pair&lt;std::multimap&lt;std::string, std::string&gt;::const_iterator, std::multimap&lt;std::string, std::string&gt;::const_iterator&gt;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                range = <a class="code" href="classweb_1_1http_1_1client_1_1_response.html#a99734a50cb70c2c25046c59dd91a5001">headers</a>-&gt;equal_range(tmpKey);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <span class="keywordflow">if</span> (std::distance(range.first, range.second) &gt;= i) {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                std::advance(range.first, i);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                <span class="keywordflow">return</span> (*(range.first)).second;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="classweb_1_1http_1_1client_1_1_response.html#a17d7f9b54bbcc3a75d52b7b78bd235ac">nullstr</a>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            }</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classweb_1_1http_1_1client_1_1_response.html#a17d7f9b54bbcc3a75d52b7b78bd235ac">nullstr</a>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        }</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
-<div class="ttc" id="aclassweb_1_1http_1_1client_1_1_response_html_a99734a50cb70c2c25046c59dd91a5001"><div class="ttname"><a href="classweb_1_1http_1_1client_1_1_response.html#a99734a50cb70c2c25046c59dd91a5001">web::http::client::Response::headers</a></div><div class="ttdeci">const std::map&lt; std::string, std::string &gt; * headers</div><div class="ttdef"><b>Definition:</b> <a href="web_2http_2client_2_response_8h_source.html#l00055">Response.h:55</a></div></div>
+<p class="definition">Definition at line <a class="el" href="web_2http_2client_2_response_8cpp_source.html#l00040">40</a> of file <a class="el" href="web_2http_2client_2_response_8cpp_source.html">Response.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                                                                       {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        std::string tmpKey = key;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="code" href="namespacehttputils.html#a4dd60a8e2472042c70e00dec22ebf927">httputils::to_lower</a>(tmpKey);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classweb_1_1http_1_1client_1_1_response.html#a99734a50cb70c2c25046c59dd91a5001">headers</a>-&gt;find(tmpKey) != <a class="code" href="classweb_1_1http_1_1client_1_1_response.html#a99734a50cb70c2c25046c59dd91a5001">headers</a>-&gt;end()) {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            std::pair&lt;std::multimap&lt;std::string, std::string&gt;::const_iterator, std::multimap&lt;std::string, std::string&gt;::const_iterator&gt;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                range = <a class="code" href="classweb_1_1http_1_1client_1_1_response.html#a99734a50cb70c2c25046c59dd91a5001">headers</a>-&gt;equal_range(tmpKey);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="keywordflow">if</span> (std::distance(range.first, range.second) &gt;= i) {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                std::advance(range.first, i);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                <span class="keywordflow">return</span> (*(range.first)).second;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="classweb_1_1http_1_1client_1_1_response.html#a17d7f9b54bbcc3a75d52b7b78bd235ac">nullstr</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classweb_1_1http_1_1client_1_1_response.html#a17d7f9b54bbcc3a75d52b7b78bd235ac">nullstr</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
+<div class="ttc" id="aclassweb_1_1http_1_1client_1_1_response_html_a99734a50cb70c2c25046c59dd91a5001"><div class="ttname"><a href="classweb_1_1http_1_1client_1_1_response.html#a99734a50cb70c2c25046c59dd91a5001">web::http::client::Response::headers</a></div><div class="ttdeci">const std::map&lt; std::string, std::string &gt; * headers</div><div class="ttdef"><b>Definition:</b> <a href="web_2http_2client_2_response_8h_source.html#l00064">Response.h:64</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="web_2http_2client_2_response_8h_source.html#l00055">headers</a>, <a class="el" href="web_2http_2client_2_response_8h_source.html#l00064">nullstr</a>, and <a class="el" href="http__utils_8cpp_source.html#l00167">httputils::to_lower()</a>.</p>
+<p class="reference">References <a class="el" href="web_2http_2client_2_response_8h_source.html#l00064">headers</a>, <a class="el" href="web_2http_2client_2_response_8h_source.html#l00073">nullstr</a>, and <a class="el" href="http__utils_8cpp_source.html#l00167">httputils::to_lower()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="client_2_socket_context_upgrade_factory_selector_8cpp_source.html#l00070">web::http::client::SocketContextUpgradeFactorySelector::select()</a>, and <a class="el" href="web_2http_2client_2_request_8cpp_source.html#l00227">web::http::client::Request::upgrade()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="client_2_socket_context_upgrade_factory_selector_8cpp_source.html#l00073">web::http::client::SocketContextUpgradeFactorySelector::select()</a>, and <a class="el" href="web_2http_2client_2_response_8cpp_source.html#l00076">upgrade()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -327,10 +341,62 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="web_2http_2client_2_response_8cpp_source.html#l00069">69</a> of file <a class="el" href="web_2http_2client_2_response_8cpp_source.html">Response.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                         {</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="web_2http_2client_2_response_8cpp_source.html#l00095">95</a> of file <a class="el" href="web_2http_2client_2_response_8cpp_source.html">Response.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                         {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    }</div>
 </div><!-- fragment -->
+</div>
+</div>
+<a id="a9e325e31cf23d211476c9dd9f0636ac0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e325e31cf23d211476c9dd9f0636ac0">&#9670;&nbsp;</a></span>upgrade()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void web::http::client::Response::upgrade </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classweb_1_1http_1_1client_1_1_request.html">Request</a> &amp;&#160;</td>
+          <td class="paramname"><em>request</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="web_2http_2client_2_response_8cpp_source.html#l00076">76</a> of file <a class="el" href="web_2http_2client_2_response_8cpp_source.html">Response.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                                           {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="namespacehttputils.html#af566d4f31d97a3a84b373a94e6cf9594">httputils::ci_contains</a>(this-&gt;<a class="code" href="classweb_1_1http_1_1client_1_1_response.html#a4e460730f5b480c939d37cdc9a3d19d3">header</a>(<span class="stringliteral">&quot;connection&quot;</span>), <span class="stringliteral">&quot;Upgrade&quot;</span>)) {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <a class="code" href="classweb_1_1http_1_1client_1_1_socket_context_upgrade_factory.html">web::http::client::SocketContextUpgradeFactory</a>* socketContextUpgradeFactory =</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                <a class="code" href="classweb_1_1http_1_1client_1_1_socket_context_upgrade_factory_selector.html#aa0241fb31bc6bdb675652878fe8734af">web::http::client::SocketContextUpgradeFactorySelector::instance</a>()-&gt;<a class="code" href="classweb_1_1http_1_1client_1_1_socket_context_upgrade_factory_selector.html#aa101905b046a46c5dbe759caa92272e2">select</a>(request, *<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <span class="keywordflow">if</span> (socketContextUpgradeFactory != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="classweb_1_1http_1_1client_1_1_response.html#a25964030844142e3a0f6a340b3678076">socketContext</a>-&gt;<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_context.html#aee1c0a98c26ab9e3f95e08befdeb74f3">switchSocketContext</a>(socketContextUpgradeFactory) == <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                    <a class="code" href="classweb_1_1http_1_1client_1_1_response.html#a25964030844142e3a0f6a340b3678076">socketContext</a>-&gt;<a class="code" href="classweb_1_1http_1_1client_1_1_socket_context.html#aa749403cea6e138f3d403f4489fdb107">terminateConnection</a>();</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                VLOG(0) &lt;&lt; <span class="stringliteral">&quot;SocketContextUpgradeFactory not existing&quot;</span>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                <a class="code" href="classweb_1_1http_1_1client_1_1_response.html#a25964030844142e3a0f6a340b3678076">socketContext</a>-&gt;<a class="code" href="classweb_1_1http_1_1client_1_1_socket_context.html#aa749403cea6e138f3d403f4489fdb107">terminateConnection</a>();</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            }</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            VLOG(0) &lt;&lt; <span class="stringliteral">&quot;Response did not contain upgrade&quot;</span>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <a class="code" href="classweb_1_1http_1_1client_1_1_response.html#a25964030844142e3a0f6a340b3678076">socketContext</a>-&gt;<a class="code" href="classweb_1_1http_1_1client_1_1_socket_context.html#aa749403cea6e138f3d403f4489fdb107">terminateConnection</a>();</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    }</div>
+<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_context_html_aee1c0a98c26ab9e3f95e08befdeb74f3"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_context.html#aee1c0a98c26ab9e3f95e08befdeb74f3">net::socket::stream::SocketContext::switchSocketContext</a></div><div class="ttdeci">SocketContext * switchSocketContext(SocketContextFactory *socketContextFactory)</div><div class="ttdef"><b>Definition:</b> <a href="net_2socket_2stream_2_socket_context_8cpp_source.html#l00058">SocketContext.cpp:58</a></div></div>
+<div class="ttc" id="aclassweb_1_1http_1_1client_1_1_response_html_a4e460730f5b480c939d37cdc9a3d19d3"><div class="ttname"><a href="classweb_1_1http_1_1client_1_1_response.html#a4e460730f5b480c939d37cdc9a3d19d3">web::http::client::Response::header</a></div><div class="ttdeci">const std::string &amp; header(const std::string &amp;key, int i=0) const</div><div class="ttdef"><b>Definition:</b> <a href="web_2http_2client_2_response_8cpp_source.html#l00040">Response.cpp:40</a></div></div>
+<div class="ttc" id="aclassweb_1_1http_1_1client_1_1_socket_context_html_aa749403cea6e138f3d403f4489fdb107"><div class="ttname"><a href="classweb_1_1http_1_1client_1_1_socket_context.html#aa749403cea6e138f3d403f4489fdb107">web::http::client::SocketContext::terminateConnection</a></div><div class="ttdeci">void terminateConnection() override</div><div class="ttdef"><b>Definition:</b> <a href="client_2_socket_context_8hpp_source.html#l00110">SocketContext.hpp:110</a></div></div>
+<div class="ttc" id="aclassweb_1_1http_1_1client_1_1_socket_context_upgrade_factory_html"><div class="ttname"><a href="classweb_1_1http_1_1client_1_1_socket_context_upgrade_factory.html">web::http::client::SocketContextUpgradeFactory</a></div><div class="ttdef"><b>Definition:</b> <a href="http_2client_2_socket_context_upgrade_factory_8h_source.html#l00037">SocketContextUpgradeFactory.h:37</a></div></div>
+<div class="ttc" id="aclassweb_1_1http_1_1client_1_1_socket_context_upgrade_factory_selector_html_aa0241fb31bc6bdb675652878fe8734af"><div class="ttname"><a href="classweb_1_1http_1_1client_1_1_socket_context_upgrade_factory_selector.html#aa0241fb31bc6bdb675652878fe8734af">web::http::client::SocketContextUpgradeFactorySelector::instance</a></div><div class="ttdeci">static SocketContextUpgradeFactorySelector * instance()</div><div class="ttdef"><b>Definition:</b> <a href="client_2_socket_context_upgrade_factory_selector_8cpp_source.html#l00054">SocketContextUpgradeFactorySelector.cpp:54</a></div></div>
+<div class="ttc" id="aclassweb_1_1http_1_1client_1_1_socket_context_upgrade_factory_selector_html_aa101905b046a46c5dbe759caa92272e2"><div class="ttname"><a href="classweb_1_1http_1_1client_1_1_socket_context_upgrade_factory_selector.html#aa101905b046a46c5dbe759caa92272e2">web::http::client::SocketContextUpgradeFactorySelector::select</a></div><div class="ttdeci">SocketContextUpgradeFactory * select(const std::string &amp;upgradeContextName, Request &amp;req)</div><div class="ttdef"><b>Definition:</b> <a href="client_2_socket_context_upgrade_factory_selector_8cpp_source.html#l00060">SocketContextUpgradeFactorySelector.cpp:60</a></div></div>
+<div class="ttc" id="anamespacehttputils_html_af566d4f31d97a3a84b373a94e6cf9594"><div class="ttname"><a href="namespacehttputils.html#af566d4f31d97a3a84b373a94e6cf9594">httputils::ci_contains</a></div><div class="ttdeci">bool ci_contains(const std::string &amp;str1, const std::string &amp;str2)</div><div class="ttdef"><b>Definition:</b> <a href="http__utils_8cpp_source.html#l00177">http_utils.cpp:177</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="http__utils_8cpp_source.html#l00177">httputils::ci_contains()</a>, <a class="el" href="web_2http_2client_2_response_8cpp_source.html#l00040">header()</a>, <a class="el" href="client_2_socket_context_upgrade_factory_selector_8cpp_source.html#l00054">web::http::client::SocketContextUpgradeFactorySelector::instance()</a>, <a class="el" href="client_2_socket_context_upgrade_factory_selector_8cpp_source.html#l00060">web::http::client::SocketContextUpgradeFactorySelector::select()</a>, <a class="el" href="web_2http_2client_2_response_8h_source.html#l00045">socketContext</a>, <a class="el" href="net_2socket_2stream_2_socket_context_8cpp_source.html#l00058">net::socket::stream::SocketContext::switchSocketContext()</a>, and <a class="el" href="client_2_socket_context_8hpp_source.html#l00110">web::http::client::SocketContext&lt; RequestT, ResponseT &gt;::terminateConnection()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classweb_1_1http_1_1client_1_1_response_a9e325e31cf23d211476c9dd9f0636ac0_cgraph.svg" width="916" height="455"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
 </div>
 </div>
 <h2 class="groupheader">Friends And Related Function Documentation</h2>
@@ -356,7 +422,7 @@ template&lt;typename Request , typename Response &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="web_2http_2client_2_response_8h_source.html#l00061">61</a> of file <a class="el" href="web_2http_2client_2_response_8h_source.html">Response.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="web_2http_2client_2_response_8h_source.html#l00070">70</a> of file <a class="el" href="web_2http_2client_2_response_8h_source.html">Response.h</a>.</p>
 
 </div>
 </div>
@@ -373,7 +439,7 @@ template&lt;typename Request , typename Response &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="web_2http_2client_2_response_8h_source.html#l00051">51</a> of file <a class="el" href="web_2http_2client_2_response_8h_source.html">Response.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="web_2http_2client_2_response_8h_source.html#l00058">58</a> of file <a class="el" href="web_2http_2client_2_response_8h_source.html">Response.h</a>.</p>
 
 </div>
 </div>
@@ -389,9 +455,9 @@ template&lt;typename Request , typename Response &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="web_2http_2client_2_response_8h_source.html#l00052">52</a> of file <a class="el" href="web_2http_2client_2_response_8h_source.html">Response.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="web_2http_2client_2_response_8h_source.html#l00059">59</a> of file <a class="el" href="web_2http_2client_2_response_8h_source.html">Response.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="web_2http_2client_2_response_8cpp_source.html#l00065">bodyLength()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="web_2http_2client_2_response_8cpp_source.html#l00072">bodyLength()</a>.</p>
 
 </div>
 </div>
@@ -407,9 +473,9 @@ template&lt;typename Request , typename Response &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="web_2http_2client_2_response_8h_source.html#l00056">56</a> of file <a class="el" href="web_2http_2client_2_response_8h_source.html">Response.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="web_2http_2client_2_response_8h_source.html#l00065">65</a> of file <a class="el" href="web_2http_2client_2_response_8h_source.html">Response.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="web_2http_2client_2_response_8cpp_source.html#l00052">cookie()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="web_2http_2client_2_response_8cpp_source.html#l00059">cookie()</a>.</p>
 
 </div>
 </div>
@@ -425,9 +491,9 @@ template&lt;typename Request , typename Response &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="web_2http_2client_2_response_8h_source.html#l00055">55</a> of file <a class="el" href="web_2http_2client_2_response_8h_source.html">Response.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="web_2http_2client_2_response_8h_source.html#l00064">64</a> of file <a class="el" href="web_2http_2client_2_response_8h_source.html">Response.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="web_2http_2client_2_response_8cpp_source.html#l00033">header()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="web_2http_2client_2_response_8cpp_source.html#l00040">header()</a>.</p>
 
 </div>
 </div>
@@ -443,7 +509,7 @@ template&lt;typename Request , typename Response &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="web_2http_2client_2_response_8h_source.html#l00048">48</a> of file <a class="el" href="web_2http_2client_2_response_8h_source.html">Response.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="web_2http_2client_2_response_8h_source.html#l00055">55</a> of file <a class="el" href="web_2http_2client_2_response_8h_source.html">Response.h</a>.</p>
 
 </div>
 </div>
@@ -467,9 +533,9 @@ template&lt;typename Request , typename Response &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="web_2http_2client_2_response_8h_source.html#l00064">64</a> of file <a class="el" href="web_2http_2client_2_response_8h_source.html">Response.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="web_2http_2client_2_response_8h_source.html#l00073">73</a> of file <a class="el" href="web_2http_2client_2_response_8h_source.html">Response.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="web_2http_2client_2_response_8cpp_source.html#l00052">cookie()</a>, and <a class="el" href="web_2http_2client_2_response_8cpp_source.html#l00033">header()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="web_2http_2client_2_response_8cpp_source.html#l00059">cookie()</a>, and <a class="el" href="web_2http_2client_2_response_8cpp_source.html#l00040">header()</a>.</p>
 
 </div>
 </div>
@@ -485,7 +551,33 @@ template&lt;typename Request , typename Response &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="web_2http_2client_2_response_8h_source.html#l00050">50</a> of file <a class="el" href="web_2http_2client_2_response_8h_source.html">Response.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="web_2http_2client_2_response_8h_source.html#l00057">57</a> of file <a class="el" href="web_2http_2client_2_response_8h_source.html">Response.h</a>.</p>
+
+</div>
+</div>
+<a id="a25964030844142e3a0f6a340b3678076"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25964030844142e3a0f6a340b3678076">&#9670;&nbsp;</a></span>socketContext</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classweb_1_1http_1_1client_1_1_socket_context.html">SocketContext</a>* web::http::client::Response::socketContext</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="web_2http_2client_2_response_8h_source.html#l00045">45</a> of file <a class="el" href="web_2http_2client_2_response_8h_source.html">Response.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="web_2http_2client_2_response_8cpp_source.html#l00076">upgrade()</a>.</p>
 
 </div>
 </div>
@@ -501,7 +593,7 @@ template&lt;typename Request , typename Response &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="web_2http_2client_2_response_8h_source.html#l00049">49</a> of file <a class="el" href="web_2http_2client_2_response_8h_source.html">Response.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="web_2http_2client_2_response_8h_source.html#l00056">56</a> of file <a class="el" href="web_2http_2client_2_response_8h_source.html">Response.h</a>.</p>
 
 </div>
 </div>

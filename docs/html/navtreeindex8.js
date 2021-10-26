@@ -1,5 +1,6 @@
 var NAVTREEINDEX8 =
 {
+"functions_func_r.html":[9,3,1,17],
 "functions_func_s.html":[9,3,1,18],
 "functions_func_t.html":[9,3,1,19],
 "functions_func_u.html":[9,3,1,20],
@@ -25,8 +26,8 @@ var NAVTREEINDEX8 =
 "functions_type.html":[9,3,3],
 "functions_u.html":[9,3,0,21],
 "functions_v.html":[9,3,0,22],
-"functions_vars.html":[9,3,2,0],
 "functions_vars.html":[9,3,2],
+"functions_vars.html":[9,3,2,0],
 "functions_vars_a.html":[9,3,2,1],
 "functions_vars_b.html":[9,3,2,2],
 "functions_vars_c.html":[9,3,2,3],
@@ -208,13 +209,13 @@ var NAVTREEINDEX8 =
 "namespacemembers_func.html":[8,1,1],
 "namespacemembers_vars.html":[8,1,2],
 "namespacenet.html":[8,0,3],
-"namespacenet.html#a38a09d7fb9c20c2d03ed723da643e85a":[8,0,3,20],
-"namespacenet.html#a38a09d7fb9c20c2d03ed723da643e85aa7560ded3a6c00d4c13387067d99c6fb0":[8,0,3,20,2],
-"namespacenet.html#a38a09d7fb9c20c2d03ed723da643e85aa925ec21267dbd278be63adfb4a34bf98":[8,0,3,20,1],
-"namespacenet.html#a38a09d7fb9c20c2d03ed723da643e85aad0749aaba8b833466dfcbb0428e4f89c":[8,0,3,20,0],
-"namespacenet.html#a6947906a1f8f6b7186b7b2d2161e057d":[8,0,3,23],
-"namespacenet.html#a6ae22835ece0d8a6f84abce4af38128a":[8,0,3,21],
-"namespacenet.html#a6b06e2a2e48ef646621d00f55805c4a8":[8,0,3,22],
+"namespacenet.html#a38a09d7fb9c20c2d03ed723da643e85a":[8,0,3,19],
+"namespacenet.html#a38a09d7fb9c20c2d03ed723da643e85aa7560ded3a6c00d4c13387067d99c6fb0":[8,0,3,19,2],
+"namespacenet.html#a38a09d7fb9c20c2d03ed723da643e85aa925ec21267dbd278be63adfb4a34bf98":[8,0,3,19,1],
+"namespacenet.html#a38a09d7fb9c20c2d03ed723da643e85aad0749aaba8b833466dfcbb0428e4f89c":[8,0,3,19,0],
+"namespacenet.html#a6947906a1f8f6b7186b7b2d2161e057d":[8,0,3,22],
+"namespacenet.html#a6ae22835ece0d8a6f84abce4af38128a":[8,0,3,20],
+"namespacenet.html#a6b06e2a2e48ef646621d00f55805c4a8":[8,0,3,21],
 "namespacenet_01.html":[8,0,4],
 "namespacenet_01_1_1socket_01.html":[8,0,4,0],
 "namespacenet_01_1_1socket_01_1_1stream.html":[8,0,4,0,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX8 =
 "namespacenet_1_1socket_1_1stream_1_1tls.html#aaa51fd4b9a53ed56c953f147478f122b":[8,0,3,1,2,1,9],
 "namespacenet_1_1socket_1_1stream_1_1tls.html#abe8e9dac3aaf549f12393893962b930a":[8,0,3,1,2,1,15],
 "namespacenet_1_1socket_1_1stream_1_1tls.html#ae9b9d9cde7561dcf6b01f23652dfd447":[8,0,3,1,2,1,13],
-"namespacenet_1_1socket_1_1stream_1_1tls.html#afa1faf40bf182cbbe793cfad48c93ce0":[8,0,3,1,2,1,16],
-"namespacenet_1_1socket_1_1stream_1_1tls.html#afde8379e5ec869b4670b8c7ed7392b2e":[8,0,3,1,2,1,11]
+"namespacenet_1_1socket_1_1stream_1_1tls.html#afa1faf40bf182cbbe793cfad48c93ce0":[8,0,3,1,2,1,16]
 };

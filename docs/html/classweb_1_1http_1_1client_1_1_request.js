@@ -19,7 +19,6 @@ var classweb_1_1http_1_1client_1_1_request =
     [ "start", "classweb_1_1http_1_1client_1_1_request.html#a6472d642f595b7434bf8377b343f893f", null ],
     [ "type", "classweb_1_1http_1_1client_1_1_request.html#ae7437846bdfcb4aece26f611b09b6248", null ],
     [ "upgrade", "classweb_1_1http_1_1client_1_1_request.html#ade3f2c0c18eb527560f212631a627a0d", null ],
-    [ "upgrade", "classweb_1_1http_1_1client_1_1_request.html#ab14000fdfc99086e7b823a92ef562539", null ],
     [ "SocketContext", "classweb_1_1http_1_1client_1_1_request.html#aa3d4727b864f12bef775c2184047d68a", null ],
     [ "connectionState", "classweb_1_1http_1_1client_1_1_request.html#a173928ec88fc1b76bd597d282246a882", null ],
     [ "contentLength", "classweb_1_1http_1_1client_1_1_request.html#ab2c6a6617013404ecd17707da8e873d3", null ],

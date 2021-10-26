@@ -1,5 +1,7 @@
 var NAVTREEINDEX7 =
 {
+"classweb_1_1websocket_1_1client_1_1_sub_protocol.html#a76c81df442855ebe27f0af5cd35e766e":[9,0,3,1,0,2,8],
+"classweb_1_1websocket_1_1client_1_1_sub_protocol.html#a79efeab11949c2079c5b95fef35f3283":[9,0,3,1,0,2,2],
 "classweb_1_1websocket_1_1client_1_1_sub_protocol.html#ab6cba05f15b0b05e69de14e64b3c804d":[9,0,3,1,0,2,14],
 "classweb_1_1websocket_1_1client_1_1_sub_protocol.html#acdb966cd069b49016431dbfb83912863":[9,0,3,1,0,2,6],
 "classweb_1_1websocket_1_1client_1_1_sub_protocol.html#ad2f650edbf3fb6eaaeceb289dacf0c84":[9,0,3,1,0,2,9],
@@ -42,12 +44,11 @@ var NAVTREEINDEX7 =
 "classweb_1_1websocket_1_1server_1_1_socket_context.html#aa9cf1585b84258e6b543a3186a30e32b":[9,0,3,1,1,1,1],
 "classweb_1_1websocket_1_1server_1_1_socket_context_upgrade_factory.html":[9,0,3,1,1,2],
 "classweb_1_1websocket_1_1server_1_1_socket_context_upgrade_factory.html#a2a71da6def86a7480f757aebc34b513a":[9,0,3,1,1,2,2],
-"classweb_1_1websocket_1_1server_1_1_socket_context_upgrade_factory.html#a54a2b4936e9aa9f33d337039b081c5d9":[9,0,3,1,1,2,7],
 "classweb_1_1websocket_1_1server_1_1_socket_context_upgrade_factory.html#a76169a334f4f9d7f4f81494203393660":[9,0,3,1,1,2,1],
+"classweb_1_1websocket_1_1server_1_1_socket_context_upgrade_factory.html#a9ae5d9918fed7c86427a2d9e9c4b27df":[9,0,3,1,1,2,3],
 "classweb_1_1websocket_1_1server_1_1_socket_context_upgrade_factory.html#a9cbaf8f3b79017c7f21afa1fbddf6258":[9,0,3,1,1,2,5],
 "classweb_1_1websocket_1_1server_1_1_socket_context_upgrade_factory.html#abeb8c98b614660a16abc408397b96e76":[9,0,3,1,1,2,4],
 "classweb_1_1websocket_1_1server_1_1_socket_context_upgrade_factory.html#ac2a97a11151f74235d9b144139d83eb5":[9,0,3,1,1,2,0],
-"classweb_1_1websocket_1_1server_1_1_socket_context_upgrade_factory.html#af0edf981938da17fba84bc441113bde8":[9,0,3,1,1,2,3],
 "classweb_1_1websocket_1_1server_1_1_socket_context_upgrade_factory.html#afe0b8cd49d9e649c8c056faab5d7ac6a":[9,0,3,1,1,2,6],
 "classweb_1_1websocket_1_1server_1_1_sub_protocol.html":[9,0,3,1,1,3],
 "classweb_1_1websocket_1_1server_1_1_sub_protocol.html#a01377fb59f719771358a48f8640cfc9c":[9,0,3,1,1,3,16],
@@ -221,8 +222,8 @@ var NAVTREEINDEX7 =
 "express_2_response_8h.html":[10,0,0,6],
 "express_2_response_8h_source.html":[10,0,0,6],
 "files.html":[10,0],
-"functions.html":[9,3,0,0],
 "functions.html":[9,3,0],
+"functions.html":[9,3,0,0],
 "functions_a.html":[9,3,0,1],
 "functions_b.html":[9,3,0,2],
 "functions_c.html":[9,3,0,3],
@@ -231,8 +232,8 @@ var NAVTREEINDEX7 =
 "functions_enum.html":[9,3,4],
 "functions_eval.html":[9,3,5],
 "functions_f.html":[9,3,0,6],
-"functions_func.html":[9,3,1,0],
 "functions_func.html":[9,3,1],
+"functions_func.html":[9,3,1,0],
 "functions_func_a.html":[9,3,1,1],
 "functions_func_b.html":[9,3,1,2],
 "functions_func_c.html":[9,3,1,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX7 =
 "functions_func_n.html":[9,3,1,13],
 "functions_func_o.html":[9,3,1,14],
 "functions_func_p.html":[9,3,1,15],
-"functions_func_q.html":[9,3,1,16],
-"functions_func_r.html":[9,3,1,17]
+"functions_func_q.html":[9,3,1,16]
 };

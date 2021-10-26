@@ -331,26 +331,26 @@ template&lt;typename SocketReaderT , typename SocketWriterT , typename SocketAdd
 <div class="fragment"><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            : <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#aafe65cf253e12ab92b093b4e7d778415">SocketConnection</a>(socketContextFactory)</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            , <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#ac6be2fd7f271aaf30bea212989cfeaff">SocketReader</a>([<span class="keyword">this</span>](<span class="keywordtype">int</span> errnum) -&gt; <span class="keywordtype">void</span> {</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a2b5b6a55c560b345bdf9391245f6d7bd">socketContext</a>-&gt;<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_context.html#a536061b95fa81ba30e3665a25bfe928b">onReadError</a>(errnum);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                <a class="code" href="classnet_1_1_descriptor_event_receiver.html#a71d48a9e0030918589d901b834e07327">SocketWriter::disable</a>();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                <a class="code" href="classnet_1_1_event_receiver.html#af99ad4621551f0d032b5eabb76b613a1">SocketWriter::disable</a>();</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            })</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            , <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#ab0b4f606a23285943a55a488a0a39a9d">SocketWriter</a>([<span class="keyword">this</span>](<span class="keywordtype">int</span> errnum) -&gt; <span class="keywordtype">void</span> {</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a2b5b6a55c560b345bdf9391245f6d7bd">socketContext</a>-&gt;<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_context.html#a59b9b813a1589ec933878ad0838a5945">onWriteError</a>(errnum);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                <a class="code" href="classnet_1_1_descriptor_event_receiver.html#a71d48a9e0030918589d901b834e07327">SocketReader::disable</a>();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                <a class="code" href="classnet_1_1_event_receiver.html#af99ad4621551f0d032b5eabb76b613a1">SocketReader::disable</a>();</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            })</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            , <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#ab96c2e0f94f029535cea4e2e03801cd1">localAddress</a>(<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#ab96c2e0f94f029535cea4e2e03801cd1">localAddress</a>)</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            , <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#a8d77ae5e4380b4dd693b2fe6d4e867ea">remoteAddress</a>(<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#a8d77ae5e4380b4dd693b2fe6d4e867ea">remoteAddress</a>)</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            , <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#a3f10d076e7d6e17b097fa76777d2c017">onDisconnect</a>(<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#a3f10d076e7d6e17b097fa76777d2c017">onDisconnect</a>) {</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            SocketConnectionT::Descriptor::attach(fd);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <a class="code" href="classnet_1_1_descriptor_event_receiver.html#a60717df80503a37fd4d3e7ce8dc3777d">SocketReader::enable</a>(fd);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <a class="code" href="classnet_1_1_descriptor_event_receiver.html#a60717df80503a37fd4d3e7ce8dc3777d">SocketWriter::enable</a>(fd);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <a class="code" href="classnet_1_1_descriptor_event_receiver.html#a582c1dc64913a0b118befb4c272cb460">SocketReader::suspend</a>();</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            <a class="code" href="classnet_1_1_descriptor_event_receiver.html#a582c1dc64913a0b118befb4c272cb460">SocketWriter::suspend</a>();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <a class="code" href="classnet_1_1_event_receiver.html#ab10662afda81b52b3a9ad0bf068e97a7">SocketReader::enable</a>(fd);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <a class="code" href="classnet_1_1_event_receiver.html#ab10662afda81b52b3a9ad0bf068e97a7">SocketWriter::enable</a>(fd);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <a class="code" href="classnet_1_1_event_receiver.html#a6c5065f83b6aad6a60f5369ccc5963b1">SocketReader::suspend</a>();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            <a class="code" href="classnet_1_1_event_receiver.html#a6c5065f83b6aad6a60f5369ccc5963b1">SocketWriter::suspend</a>();</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            onConnect(<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#ab96c2e0f94f029535cea4e2e03801cd1">localAddress</a>, <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#a8d77ae5e4380b4dd693b2fe6d4e867ea">remoteAddress</a>);</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a2b5b6a55c560b345bdf9391245f6d7bd">socketContext</a>-&gt;<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_context.html#a290c49df617dd40cac3d8a02d1b2f1ed">onConnected</a>();</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        }</div>
-<div class="ttc" id="aclassnet_1_1_descriptor_event_receiver_html_a582c1dc64913a0b118befb4c272cb460"><div class="ttname"><a href="classnet_1_1_descriptor_event_receiver.html#a582c1dc64913a0b118befb4c272cb460">net::DescriptorEventReceiver::suspend</a></div><div class="ttdeci">void suspend()</div><div class="ttdef"><b>Definition:</b> <a href="_descriptor_event_receiver_8cpp_source.html#l00046">DescriptorEventReceiver.cpp:46</a></div></div>
-<div class="ttc" id="aclassnet_1_1_descriptor_event_receiver_html_a60717df80503a37fd4d3e7ce8dc3777d"><div class="ttname"><a href="classnet_1_1_descriptor_event_receiver.html#a60717df80503a37fd4d3e7ce8dc3777d">net::DescriptorEventReceiver::enable</a></div><div class="ttdeci">void enable(int fd)</div><div class="ttdef"><b>Definition:</b> <a href="_descriptor_event_receiver_8cpp_source.html#l00035">DescriptorEventReceiver.cpp:35</a></div></div>
-<div class="ttc" id="aclassnet_1_1_descriptor_event_receiver_html_a71d48a9e0030918589d901b834e07327"><div class="ttname"><a href="classnet_1_1_descriptor_event_receiver.html#a71d48a9e0030918589d901b834e07327">net::DescriptorEventReceiver::disable</a></div><div class="ttdeci">void disable()</div><div class="ttdef"><b>Definition:</b> <a href="_descriptor_event_receiver_8cpp_source.html#l00041">DescriptorEventReceiver.cpp:41</a></div></div>
+<div class="ttc" id="aclassnet_1_1_event_receiver_html_a6c5065f83b6aad6a60f5369ccc5963b1"><div class="ttname"><a href="classnet_1_1_event_receiver.html#a6c5065f83b6aad6a60f5369ccc5963b1">net::EventReceiver::suspend</a></div><div class="ttdeci">void suspend()</div><div class="ttdef"><b>Definition:</b> <a href="_event_receiver_8cpp_source.html#l00046">EventReceiver.cpp:46</a></div></div>
+<div class="ttc" id="aclassnet_1_1_event_receiver_html_ab10662afda81b52b3a9ad0bf068e97a7"><div class="ttname"><a href="classnet_1_1_event_receiver.html#ab10662afda81b52b3a9ad0bf068e97a7">net::EventReceiver::enable</a></div><div class="ttdeci">void enable(int fd)</div><div class="ttdef"><b>Definition:</b> <a href="_event_receiver_8cpp_source.html#l00035">EventReceiver.cpp:35</a></div></div>
+<div class="ttc" id="aclassnet_1_1_event_receiver_html_af99ad4621551f0d032b5eabb76b613a1"><div class="ttname"><a href="classnet_1_1_event_receiver.html#af99ad4621551f0d032b5eabb76b613a1">net::EventReceiver::disable</a></div><div class="ttdeci">void disable()</div><div class="ttdef"><b>Definition:</b> <a href="_event_receiver_8cpp_source.html#l00041">EventReceiver.cpp:41</a></div></div>
 <div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_connection_html_a2b5b6a55c560b345bdf9391245f6d7bd"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a2b5b6a55c560b345bdf9391245f6d7bd">net::socket::stream::SocketConnection::socketContext</a></div><div class="ttdeci">SocketContext * socketContext</div><div class="ttdef"><b>Definition:</b> <a href="_socket_connection_8h_source.html#l00067">SocketConnection.h:67</a></div></div>
 <div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_connection_html_aafe65cf253e12ab92b093b4e7d778415"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#aafe65cf253e12ab92b093b4e7d778415">net::socket::stream::SocketConnection::SocketConnection</a></div><div class="ttdeci">SocketConnection()=delete</div></div>
 <div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_connection_t_html_a3f10d076e7d6e17b097fa76777d2c017"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#a3f10d076e7d6e17b097fa76777d2c017">net::socket::stream::SocketConnectionT::onDisconnect</a></div><div class="ttdeci">std::function&lt; void()&gt; onDisconnect</div><div class="ttdef"><b>Definition:</b> <a href="_socket_connection_t_8h_source.html#l00137">SocketConnectionT.h:137</a></div></div>
@@ -437,7 +437,7 @@ template&lt;typename SocketReaderT , typename SocketWriterT , typename SocketAdd
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_connection_t_ab78a602b648979ca80aaf89bdaf265f7_cgraph.svg" width="616" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_connection_t_ab78a602b648979ca80aaf89bdaf265f7_cgraph.svg" width="556" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -655,7 +655,7 @@ template&lt;typename SocketReaderT , typename SocketWriterT , typename SocketAdd
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_connection_t_a2f13dbc3a7d5d09b8d2e2659b208ea8d_cgraph.svg" width="1146" height="216"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_connection_t_a2f13dbc3a7d5d09b8d2e2659b208ea8d_cgraph.svg" width="998" height="216"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -708,7 +708,7 @@ template&lt;typename SocketReaderT , typename SocketWriterT , typename SocketAdd
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_connection_t_a4d8851616fa4a6ff819d86b8a112e355_cgraph.svg" width="1298" height="170"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_connection_t_a4d8851616fa4a6ff819d86b8a112e355_cgraph.svg" width="1128" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -779,16 +779,16 @@ template&lt;typename SocketReaderT , typename SocketWriterT , typename SocketAdd
 
 <p class="definition">Definition at line <a class="el" href="_socket_connection_t_8h_source.html#l00084">84</a> of file <a class="el" href="_socket_connection_t_8h_source.html">SocketConnectionT.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                                              {</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <a class="code" href="classnet_1_1_descriptor_event_receiver.html#a37e2da7a9720c6b120cc2a41e117539d">SocketReader::setTimeout</a>(timeout);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <a class="code" href="classnet_1_1_descriptor_event_receiver.html#a37e2da7a9720c6b120cc2a41e117539d">SocketWriter::setTimeout</a>(timeout);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <a class="code" href="classnet_1_1_event_receiver.html#a467b641d618ea9f05fa406785f38cf31">SocketReader::setTimeout</a>(timeout);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <a class="code" href="classnet_1_1_event_receiver.html#a467b641d618ea9f05fa406785f38cf31">SocketWriter::setTimeout</a>(timeout);</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        }</div>
-<div class="ttc" id="aclassnet_1_1_descriptor_event_receiver_html_a37e2da7a9720c6b120cc2a41e117539d"><div class="ttname"><a href="classnet_1_1_descriptor_event_receiver.html#a37e2da7a9720c6b120cc2a41e117539d">net::DescriptorEventReceiver::setTimeout</a></div><div class="ttdeci">void setTimeout(long timeout)</div><div class="ttdef"><b>Definition:</b> <a href="_descriptor_event_receiver_8cpp_source.html#l00081">DescriptorEventReceiver.cpp:81</a></div></div>
+<div class="ttc" id="aclassnet_1_1_event_receiver_html_a467b641d618ea9f05fa406785f38cf31"><div class="ttname"><a href="classnet_1_1_event_receiver.html#a467b641d618ea9f05fa406785f38cf31">net::EventReceiver::setTimeout</a></div><div class="ttdeci">void setTimeout(long timeout)</div><div class="ttdef"><b>Definition:</b> <a href="_event_receiver_8cpp_source.html#l00081">EventReceiver.cpp:81</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_descriptor_event_receiver_8cpp_source.html#l00081">net::DescriptorEventReceiver::setTimeout()</a>.</p>
+<p class="reference">References <a class="el" href="_event_receiver_8cpp_source.html#l00081">net::EventReceiver::setTimeout()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_connection_t_ab942478081e85a5c6aac14737328f0cb_cgraph.svg" width="399" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_connection_t_ab942478081e85a5c6aac14737328f0cb_cgraph.svg" width="339" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -860,7 +860,7 @@ template&lt;typename SocketReaderT , typename SocketWriterT , typename SocketAdd
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_connection_t_ac638b8b10045ce1d05865e3ab2347025_cgraph.svg" width="1100" height="307"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1_socket_connection_t_ac638b8b10045ce1d05865e3ab2347025_cgraph.svg" width="955" height="314"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>

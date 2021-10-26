@@ -88,16 +88,14 @@ $(document).ready(function(){initNavTree('sha1_8cpp.html',''); initResizable(); 
 <div class="title">sha1.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="sha1_8h_source.html">sha1.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="sha1_8h_source.html">utils/sha1.h</a>&quot;</code><br />
 <code>#include &lt;cstdlib&gt;</code><br />
-<code>#include &lt;fstream&gt;</code><br />
 <code>#include &lt;iomanip&gt;</code><br />
-<code>#include &lt;sstream&gt;</code><br />
 <code>#include &lt;sys/types.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for sha1.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="sha1_8cpp__incl.svg" width="683" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="sha1_8cpp__incl.svg" width="512" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <p><a href="sha1_8cpp_source.html">Go to the source code of this file.</a></p>
@@ -143,7 +141,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sha1_8cpp_source.html#l00030">30</a> of file <a class="el" href="sha1_8cpp_source.html">sha1.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sha1_8cpp_source.html#l00028">28</a> of file <a class="el" href="sha1_8cpp_source.html">sha1.cpp</a>.</p>
 
 </div>
 </div>
@@ -198,9 +196,9 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    z += ((w &amp; (x ^ y)) ^ y) + block[i] + 0x5a827999 + <a class="code" href="sha1_8cpp.html#a10a5814e9b5a23d64388c0d4cb9e12f1">SHA1_ROL</a>(v, 5);                                                                     \</div>
 <div class="line">    w = <a class="code" href="sha1_8cpp.html#a10a5814e9b5a23d64388c0d4cb9e12f1">SHA1_ROL</a>(w, 30);</div>
-<div class="ttc" id="asha1_8cpp_html_a10a5814e9b5a23d64388c0d4cb9e12f1"><div class="ttname"><a href="sha1_8cpp.html#a10a5814e9b5a23d64388c0d4cb9e12f1">SHA1_ROL</a></div><div class="ttdeci">#define SHA1_ROL(value, bits)</div><div class="ttdef"><b>Definition:</b> <a href="sha1_8cpp_source.html#l00029">sha1.cpp:29</a></div></div>
+<div class="ttc" id="asha1_8cpp_html_a10a5814e9b5a23d64388c0d4cb9e12f1"><div class="ttname"><a href="sha1_8cpp.html#a10a5814e9b5a23d64388c0d4cb9e12f1">SHA1_ROL</a></div><div class="ttdeci">#define SHA1_ROL(value, bits)</div><div class="ttdef"><b>Definition:</b> <a href="sha1_8cpp_source.html#l00027">sha1.cpp:27</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="sha1_8cpp_source.html#l00033">33</a> of file <a class="el" href="sha1_8cpp_source.html">sha1.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sha1_8cpp_source.html#l00031">31</a> of file <a class="el" href="sha1_8cpp_source.html">sha1.cpp</a>.</p>
 
 </div>
 </div>
@@ -255,9 +253,9 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    z += ((w &amp; (x ^ y)) ^ y) + <a class="code" href="sha1_8cpp.html#ab9277870345862f24f84a86e4f9770a7">SHA1_BLK</a>(i) + 0x5a827999 + <a class="code" href="sha1_8cpp.html#a10a5814e9b5a23d64388c0d4cb9e12f1">SHA1_ROL</a>(v, 5);                                                                  \</div>
 <div class="line">    w = <a class="code" href="sha1_8cpp.html#a10a5814e9b5a23d64388c0d4cb9e12f1">SHA1_ROL</a>(w, 30);</div>
-<div class="ttc" id="asha1_8cpp_html_ab9277870345862f24f84a86e4f9770a7"><div class="ttname"><a href="sha1_8cpp.html#ab9277870345862f24f84a86e4f9770a7">SHA1_BLK</a></div><div class="ttdeci">#define SHA1_BLK(i)</div><div class="ttdef"><b>Definition:</b> <a href="sha1_8cpp_source.html#l00030">sha1.cpp:30</a></div></div>
+<div class="ttc" id="asha1_8cpp_html_ab9277870345862f24f84a86e4f9770a7"><div class="ttname"><a href="sha1_8cpp.html#ab9277870345862f24f84a86e4f9770a7">SHA1_BLK</a></div><div class="ttdeci">#define SHA1_BLK(i)</div><div class="ttdef"><b>Definition:</b> <a href="sha1_8cpp_source.html#l00028">sha1.cpp:28</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="sha1_8cpp_source.html#l00036">36</a> of file <a class="el" href="sha1_8cpp_source.html">sha1.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sha1_8cpp_source.html#l00034">34</a> of file <a class="el" href="sha1_8cpp_source.html">sha1.cpp</a>.</p>
 
 </div>
 </div>
@@ -313,7 +311,7 @@ Functions</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">    z += (w ^ x ^ y) + <a class="code" href="sha1_8cpp.html#ab9277870345862f24f84a86e4f9770a7">SHA1_BLK</a>(i) + 0x6ed9eba1 + <a class="code" href="sha1_8cpp.html#a10a5814e9b5a23d64388c0d4cb9e12f1">SHA1_ROL</a>(v, 5);                                                                          \</div>
 <div class="line">    w = <a class="code" href="sha1_8cpp.html#a10a5814e9b5a23d64388c0d4cb9e12f1">SHA1_ROL</a>(w, 30);</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="sha1_8cpp_source.html#l00039">39</a> of file <a class="el" href="sha1_8cpp_source.html">sha1.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sha1_8cpp_source.html#l00037">37</a> of file <a class="el" href="sha1_8cpp_source.html">sha1.cpp</a>.</p>
 
 </div>
 </div>
@@ -369,7 +367,7 @@ Functions</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">    z += (((w | x) &amp; y) | (w &amp; x)) + <a class="code" href="sha1_8cpp.html#ab9277870345862f24f84a86e4f9770a7">SHA1_BLK</a>(i) + 0x8f1bbcdc + <a class="code" href="sha1_8cpp.html#a10a5814e9b5a23d64388c0d4cb9e12f1">SHA1_ROL</a>(v, 5);                                                            \</div>
 <div class="line">    w = <a class="code" href="sha1_8cpp.html#a10a5814e9b5a23d64388c0d4cb9e12f1">SHA1_ROL</a>(w, 30);</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="sha1_8cpp_source.html#l00042">42</a> of file <a class="el" href="sha1_8cpp_source.html">sha1.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sha1_8cpp_source.html#l00040">40</a> of file <a class="el" href="sha1_8cpp_source.html">sha1.cpp</a>.</p>
 
 </div>
 </div>
@@ -425,7 +423,7 @@ Functions</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">    z += (w ^ x ^ y) + <a class="code" href="sha1_8cpp.html#ab9277870345862f24f84a86e4f9770a7">SHA1_BLK</a>(i) + 0xca62c1d6 + <a class="code" href="sha1_8cpp.html#a10a5814e9b5a23d64388c0d4cb9e12f1">SHA1_ROL</a>(v, 5);                                                                          \</div>
 <div class="line">    w = <a class="code" href="sha1_8cpp.html#a10a5814e9b5a23d64388c0d4cb9e12f1">SHA1_ROL</a>(w, 30);</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="sha1_8cpp_source.html#l00045">45</a> of file <a class="el" href="sha1_8cpp_source.html">sha1.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sha1_8cpp_source.html#l00043">43</a> of file <a class="el" href="sha1_8cpp_source.html">sha1.cpp</a>.</p>
 
 </div>
 </div>
@@ -455,7 +453,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sha1_8cpp_source.html#l00029">29</a> of file <a class="el" href="sha1_8cpp_source.html">sha1.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sha1_8cpp_source.html#l00027">27</a> of file <a class="el" href="sha1_8cpp_source.html">sha1.cpp</a>.</p>
 
 </div>
 </div>
@@ -476,18 +474,18 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sha1_8cpp_source.html#l00270">270</a> of file <a class="el" href="sha1_8cpp_source.html">sha1.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;                                        {</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    <a class="code" href="class_s_h_a1.html">SHA1</a> checksum;</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    checksum.<a class="code" href="class_s_h_a1.html#aec3a46058baf8b4169389c89e3a0a2f4">update</a>(<span class="keywordtype">string</span>);</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="sha1_8cpp.html#a8208ae2cb301a2a4cf551cd0557bb789">transform_to_binary</a>(checksum.<a class="code" href="class_s_h_a1.html#a89ba0f16575431b0942cbbcfb29107db">final</a>());</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="sha1_8cpp_source.html#l00261">261</a> of file <a class="el" href="sha1_8cpp_source.html">sha1.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;                                        {</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <a class="code" href="class_s_h_a1.html">SHA1</a> checksum;</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    checksum.<a class="code" href="class_s_h_a1.html#aec3a46058baf8b4169389c89e3a0a2f4">update</a>(<span class="keywordtype">string</span>);</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="sha1_8cpp.html#a8208ae2cb301a2a4cf551cd0557bb789">transform_to_binary</a>(checksum.<a class="code" href="class_s_h_a1.html#a89ba0f16575431b0942cbbcfb29107db">final</a>());</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;}</div>
 <div class="ttc" id="aclass_s_h_a1_html"><div class="ttname"><a href="class_s_h_a1.html">SHA1</a></div><div class="ttdef"><b>Definition:</b> <a href="sha1_8h_source.html#l00028">sha1.h:28</a></div></div>
-<div class="ttc" id="aclass_s_h_a1_html_a89ba0f16575431b0942cbbcfb29107db"><div class="ttname"><a href="class_s_h_a1.html#a89ba0f16575431b0942cbbcfb29107db">SHA1::final</a></div><div class="ttdeci">std::string final()</div><div class="ttdef"><b>Definition:</b> <a href="sha1_8cpp_source.html#l00075">sha1.cpp:75</a></div></div>
-<div class="ttc" id="aclass_s_h_a1_html_aec3a46058baf8b4169389c89e3a0a2f4"><div class="ttname"><a href="class_s_h_a1.html#aec3a46058baf8b4169389c89e3a0a2f4">SHA1::update</a></div><div class="ttdeci">void update(const std::string &amp;s)</div><div class="ttdef"><b>Definition:</b> <a href="sha1_8cpp_source.html#l00053">sha1.cpp:53</a></div></div>
-<div class="ttc" id="asha1_8cpp_html_a8208ae2cb301a2a4cf551cd0557bb789"><div class="ttname"><a href="sha1_8cpp.html#a8208ae2cb301a2a4cf551cd0557bb789">transform_to_binary</a></div><div class="ttdeci">static std::string transform_to_binary(const std::string &amp;string)</div><div class="ttdef"><b>Definition:</b> <a href="sha1_8cpp_source.html#l00254">sha1.cpp:254</a></div></div>
+<div class="ttc" id="aclass_s_h_a1_html_a89ba0f16575431b0942cbbcfb29107db"><div class="ttname"><a href="class_s_h_a1.html#a89ba0f16575431b0942cbbcfb29107db">SHA1::final</a></div><div class="ttdeci">std::string final()</div><div class="ttdef"><b>Definition:</b> <a href="sha1_8cpp_source.html#l00073">sha1.cpp:73</a></div></div>
+<div class="ttc" id="aclass_s_h_a1_html_aec3a46058baf8b4169389c89e3a0a2f4"><div class="ttname"><a href="class_s_h_a1.html#aec3a46058baf8b4169389c89e3a0a2f4">SHA1::update</a></div><div class="ttdeci">void update(const std::string &amp;s)</div><div class="ttdef"><b>Definition:</b> <a href="sha1_8cpp_source.html#l00051">sha1.cpp:51</a></div></div>
+<div class="ttc" id="asha1_8cpp_html_a8208ae2cb301a2a4cf551cd0557bb789"><div class="ttname"><a href="sha1_8cpp.html#a8208ae2cb301a2a4cf551cd0557bb789">transform_to_binary</a></div><div class="ttdeci">static std::string transform_to_binary(const std::string &amp;string)</div><div class="ttdef"><b>Definition:</b> <a href="sha1_8cpp_source.html#l00245">sha1.cpp:245</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="sha1_8cpp_source.html#l00075">SHA1::final()</a>, <a class="el" href="sha1_8cpp_source.html#l00254">transform_to_binary()</a>, and <a class="el" href="sha1_8cpp_source.html#l00053">SHA1::update()</a>.</p>
+<p class="reference">References <a class="el" href="sha1_8cpp_source.html#l00073">SHA1::final()</a>, <a class="el" href="sha1_8cpp_source.html#l00245">transform_to_binary()</a>, and <a class="el" href="sha1_8cpp_source.html#l00051">SHA1::update()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="base64_8cpp_source.html#l00032">base64::serverWebSocketKey()</a>.</p>
 <div class="dynheader">
@@ -527,24 +525,24 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sha1_8cpp_source.html#l00254">254</a> of file <a class="el" href="sha1_8cpp_source.html">sha1.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;                                                              {</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    std::string buf;</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160; </div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    <span class="keywordtype">char</span> hex_byte[3];</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    hex_byte[2] = 0;</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160; </div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <span class="keywordflow">for</span> (std::size_t i = 0, j = 0; i &lt; <span class="keywordtype">string</span>.size(); i += 2, j += 1) {</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        hex_byte[0] = <span class="keywordtype">string</span>.at(i);</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        hex_byte[1] = <span class="keywordtype">string</span>.at(i + 1);</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        <span class="keywordtype">char</span>* end_ptr;</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        buf += <span class="keyword">static_cast&lt;</span><span class="keywordtype">char</span><span class="keyword">&gt;</span>(strtoul(hex_byte, &amp;end_ptr, 16));</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    }</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160; </div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    <span class="keywordflow">return</span> buf;</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="sha1_8cpp_source.html#l00245">245</a> of file <a class="el" href="sha1_8cpp_source.html">sha1.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                                                              {</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    std::string buf;</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160; </div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <span class="keywordtype">char</span> hex_byte[3];</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    hex_byte[2] = 0;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160; </div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    <span class="keywordflow">for</span> (std::size_t i = 0, j = 0; i &lt; <span class="keywordtype">string</span>.size(); i += 2, j += 1) {</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        hex_byte[0] = <span class="keywordtype">string</span>.at(i);</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        hex_byte[1] = <span class="keywordtype">string</span>.at(i + 1);</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        <span class="keywordtype">char</span>* end_ptr;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        buf += <span class="keyword">static_cast&lt;</span><span class="keywordtype">char</span><span class="keyword">&gt;</span>(strtoul(hex_byte, &amp;end_ptr, 16));</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    }</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160; </div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <span class="keywordflow">return</span> buf;</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;}</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="sha1_8cpp_source.html#l00270">sha1()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sha1_8cpp_source.html#l00261">sha1()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
