@@ -47,9 +47,9 @@ namespace web::websocket {
     public:
         using SubProtocol = SubProtocolT;
 
+    protected:
         enum class Role { SERVER, CLIENT };
 
-    protected:
         SocketContext(io::socket::stream::SocketConnection* socketConnection, SubProtocol* subProtocol, Role role)
             : io::socket::stream::SocketContext(socketConnection)
             , Transmitter(role == Role::CLIENT)
