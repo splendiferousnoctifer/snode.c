@@ -84,8 +84,8 @@ $(document).ready(function(){initNavTree('classnet_1_1socket_1_1stream_1_1tls_1_
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -138,7 +138,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7f61e9dea84f7a89f1eb6e6d2e5cb412 inherit pub_methods_classnet_1_1socket_1_1stream_1_1_socket_connection_t"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d8851616fa4a6ff819d86b8a112e355 inherit pub_methods_classnet_1_1socket_1_1stream_1_1_socket_connection_t"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#a4d8851616fa4a6ff819d86b8a112e355">sendToPeer</a> (const char *junk, std::size_t junkLen) override</td></tr>
 <tr class="separator:a4d8851616fa4a6ff819d86b8a112e355 inherit pub_methods_classnet_1_1socket_1_1stream_1_1_socket_connection_t"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1240978d9d4fb3954a0fa43eda83055a inherit pub_methods_classnet_1_1socket_1_1stream_1_1_socket_connection_t"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#a1240978d9d4fb3954a0fa43eda83055a">sendToPeer</a> (const std::string &amp;data) override</td></tr>
+<tr class="memitem:a1240978d9d4fb3954a0fa43eda83055a inherit pub_methods_classnet_1_1socket_1_1stream_1_1_socket_connection_t"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#a1240978d9d4fb3954a0fa43eda83055a">sendToPeer</a> (const std::string &amp;<a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#a68f99afe4d1f5a04abe9d7824d01b02e">data</a>) override</td></tr>
 <tr class="separator:a1240978d9d4fb3954a0fa43eda83055a inherit pub_methods_classnet_1_1socket_1_1stream_1_1_socket_connection_t"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f13dbc3a7d5d09b8d2e2659b208ea8d inherit pub_methods_classnet_1_1socket_1_1stream_1_1_socket_connection_t"><td class="memItemLeft" align="right" valign="top">ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#a2f13dbc3a7d5d09b8d2e2659b208ea8d">readFromPeer</a> (char *junk, std::size_t junkLen) override</td></tr>
 <tr class="separator:a2f13dbc3a7d5d09b8d2e2659b208ea8d inherit pub_methods_classnet_1_1socket_1_1stream_1_1_socket_connection_t"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -148,8 +148,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a635955ad750044063a648d2ac8c324a5 inherit pub_methods_classnet_1_1socket_1_1stream_1_1_socket_connection"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context.html">SocketContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a635955ad750044063a648d2ac8c324a5">getSocketContext</a> ()</td></tr>
 <tr class="separator:a635955ad750044063a648d2ac8c324a5 inherit pub_methods_classnet_1_1socket_1_1stream_1_1_socket_connection"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
 <tr class="memitem:a7ef6031f0b6f3dc25efa7f844bab63b9"><td class="memItemLeft" align="right" valign="top">SSL *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a7ef6031f0b6f3dc25efa7f844bab63b9">startSSL</a> (SSL_CTX *ctx)</td></tr>
 <tr class="separator:a7ef6031f0b6f3dc25efa7f844bab63b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77dd7166d035208fb759b69ff14fa918"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a77dd7166d035208fb759b69ff14fa918">doSSLHandshake</a> (const std::function&lt; void()&gt; &amp;onSuccess, const std::function&lt; void()&gt; &amp;onTimeout, const std::function&lt; void(int)&gt; &amp;<a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#ad87599aca3f7eed671d0ae72a9c68ab3">onError</a>) override</td></tr>
@@ -158,6 +158,33 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a3f6885984be884225ca9fc53ea652ac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2d1ac395884dd5197ddef41699b06c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#ab2d1ac395884dd5197ddef41699b06c9">setSSLError</a> (int <a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a6ce74bb044ed0067976e8d6a5a797242">sslErr</a>)</td></tr>
 <tr class="separator:ab2d1ac395884dd5197ddef41699b06c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a734d21572bb69afea8a8c3d8b9af6d69"><td class="memItemLeft" align="right" valign="top">SSL *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a734d21572bb69afea8a8c3d8b9af6d69">ssl</a> = nullptr</td></tr>
+<tr class="separator:a734d21572bb69afea8a8c3d8b9af6d69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e8f3b81c7fa572a36ba16c5cc70807c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a4e8f3b81c7fa572a36ba16c5cc70807c">serverNameIndication</a></td></tr>
+<tr class="separator:a4e8f3b81c7fa572a36ba16c5cc70807c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ce74bb044ed0067976e8d6a5a797242"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a6ce74bb044ed0067976e8d6a5a797242">sslErr</a> = SSL_ERROR_NONE</td></tr>
+<tr class="separator:a6ce74bb044ed0067976e8d6a5a797242"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:aefe9edd9b3bb19b0f76ad9deef97ea70"><td class="memTemplParams" colspan="2">template&lt;typename Socket &gt; </td></tr>
+<tr class="memitem:aefe9edd9b3bb19b0f76ad9deef97ea70"><td class="memTemplItemLeft" align="right" valign="top">class&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#aefe9edd9b3bb19b0f76ad9deef97ea70">SocketListener</a></td></tr>
+<tr class="separator:aefe9edd9b3bb19b0f76ad9deef97ea70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93358fd8285cbad5c49755553f9c5c49"><td class="memTemplParams" colspan="2">template&lt;typename Socket &gt; </td></tr>
+<tr class="memitem:a93358fd8285cbad5c49755553f9c5c49"><td class="memTemplItemLeft" align="right" valign="top">class&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a93358fd8285cbad5c49755553f9c5c49">SocketConnector</a></td></tr>
+<tr class="separator:a93358fd8285cbad5c49755553f9c5c49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_types_classnet_1_1socket_1_1stream_1_1_socket_reader"><td colspan="2" onclick="javascript:toggleInherit('pro_types_classnet_1_1socket_1_1stream_1_1_socket_reader')"><img src="closed.png" alt="-"/>&#160;Protected Types inherited from <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_reader.html">net::socket::stream::SocketReader&lt; SocketT &gt;</a></td></tr>
+<tr class="memitem:a5bde1a17c3f7be38cdbbb29fd724d321 inherit pro_types_classnet_1_1socket_1_1stream_1_1_socket_reader"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#a5bde1a17c3f7be38cdbbb29fd724d321">Socket</a> = SocketT</td></tr>
+<tr class="separator:a5bde1a17c3f7be38cdbbb29fd724d321 inherit pro_types_classnet_1_1socket_1_1stream_1_1_socket_reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_types_classnet_1_1socket_1_1stream_1_1_socket_writer"><td colspan="2" onclick="javascript:toggleInherit('pro_types_classnet_1_1socket_1_1stream_1_1_socket_writer')"><img src="closed.png" alt="-"/>&#160;Protected Types inherited from <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_writer.html">net::socket::stream::SocketWriter&lt; SocketT &gt;</a></td></tr>
+<tr class="memitem:a6e2d8d3030e20005e5fe72fa314de206 inherit pro_types_classnet_1_1socket_1_1stream_1_1_socket_writer"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_writer.html#a6e2d8d3030e20005e5fe72fa314de206">Socket</a> = SocketT</td></tr>
+<tr class="separator:a6e2d8d3030e20005e5fe72fa314de206 inherit pro_types_classnet_1_1socket_1_1stream_1_1_socket_writer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classnet_1_1socket_1_1stream_1_1_socket_connection_t"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classnet_1_1socket_1_1stream_1_1_socket_connection_t')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html">net::socket::stream::SocketConnectionT&lt; tls::SocketReader&lt; SocketT &gt;, tls::SocketWriter&lt; SocketT &gt;, SocketT::SocketAddress &gt;</a></td></tr>
 <tr class="memitem:a71b9bec3f84539983e1d834fcb304f3a inherit pro_methods_classnet_1_1socket_1_1stream_1_1_socket_connection_t"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#a71b9bec3f84539983e1d834fcb304f3a">SocketConnectionT</a> (int <a class="el" href="classnet_1_1_event_receiver.html#ad3dde836bf115fe2f456c20573b8dbc3">fd</a>, const std::shared_ptr&lt; <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context_factory.html">SocketContextFactory</a> &gt; &amp;socketContextFactory, const <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#a1fa142fbd161a848c40e82519dab6d59">SocketAddress</a> &amp;<a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#ab96c2e0f94f029535cea4e2e03801cd1">localAddress</a>, const <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#a1fa142fbd161a848c40e82519dab6d59">SocketAddress</a> &amp;<a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#a8d77ae5e4380b4dd693b2fe6d4e867ea">remoteAddress</a>, const std::function&lt; void(const <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#a1fa142fbd161a848c40e82519dab6d59">SocketAddress</a> &amp;, const <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#a1fa142fbd161a848c40e82519dab6d59">SocketAddress</a> &amp;)&gt; &amp;onConnect, const std::function&lt; void()&gt; &amp;<a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#a3f10d076e7d6e17b097fa76777d2c017">onDisconnect</a>)</td></tr>
 <tr class="separator:a71b9bec3f84539983e1d834fcb304f3a inherit pro_methods_classnet_1_1socket_1_1stream_1_1_socket_connection_t"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -224,15 +251,6 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a52cad4b280f3ff3655c91e99f34a6845 inherit pro_methods_classnet_1_1_write_event_receiver"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa56a9144effbaec91595ae1229b4f59f inherit pro_methods_classnet_1_1_write_event_receiver"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1_write_event_receiver.html#aa56a9144effbaec91595ae1229b4f59f">continueWriteImmediately</a> ()</td></tr>
 <tr class="separator:aa56a9144effbaec91595ae1229b4f59f inherit pro_methods_classnet_1_1_write_event_receiver"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a734d21572bb69afea8a8c3d8b9af6d69"><td class="memItemLeft" align="right" valign="top">SSL *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a734d21572bb69afea8a8c3d8b9af6d69">ssl</a> = nullptr</td></tr>
-<tr class="separator:a734d21572bb69afea8a8c3d8b9af6d69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e8f3b81c7fa572a36ba16c5cc70807c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a4e8f3b81c7fa572a36ba16c5cc70807c">serverNameIndication</a></td></tr>
-<tr class="separator:a4e8f3b81c7fa572a36ba16c5cc70807c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ce74bb044ed0067976e8d6a5a797242"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a6ce74bb044ed0067976e8d6a5a797242">sslErr</a> = SSL_ERROR_NONE</td></tr>
-<tr class="separator:a6ce74bb044ed0067976e8d6a5a797242"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classnet_1_1socket_1_1stream_1_1_socket_connection"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classnet_1_1socket_1_1stream_1_1_socket_connection')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html">net::socket::stream::SocketConnection</a></td></tr>
 <tr class="memitem:a2b5b6a55c560b345bdf9391245f6d7bd inherit pro_attribs_classnet_1_1socket_1_1stream_1_1_socket_connection"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context.html">SocketContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_connection.html#a2b5b6a55c560b345bdf9391245f6d7bd">socketContext</a> = nullptr</td></tr>
 <tr class="separator:a2b5b6a55c560b345bdf9391245f6d7bd inherit pro_attribs_classnet_1_1socket_1_1stream_1_1_socket_connection"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -253,15 +271,6 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a5fadfa37915bfd92be5f826f3c7f9534 inherit pro_attribs_classnet_1_1socket_1_1stream_1_1tls_1_1_socket_writer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0ff106012797be5a73151bfc742b533 inherit pro_attribs_classnet_1_1socket_1_1stream_1_1tls_1_1_socket_writer"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_writer.html#ac0ff106012797be5a73151bfc742b533">sslErr</a> = SSL_ERROR_NONE</td></tr>
 <tr class="separator:ac0ff106012797be5a73151bfc742b533 inherit pro_attribs_classnet_1_1socket_1_1stream_1_1tls_1_1_socket_writer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
-Friends</h2></td></tr>
-<tr class="memitem:aefe9edd9b3bb19b0f76ad9deef97ea70"><td class="memTemplParams" colspan="2">template&lt;typename Socket &gt; </td></tr>
-<tr class="memitem:aefe9edd9b3bb19b0f76ad9deef97ea70"><td class="memTemplItemLeft" align="right" valign="top">class&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#aefe9edd9b3bb19b0f76ad9deef97ea70">SocketListener</a></td></tr>
-<tr class="separator:aefe9edd9b3bb19b0f76ad9deef97ea70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93358fd8285cbad5c49755553f9c5c49"><td class="memTemplParams" colspan="2">template&lt;typename Socket &gt; </td></tr>
-<tr class="memitem:a93358fd8285cbad5c49755553f9c5c49"><td class="memTemplItemLeft" align="right" valign="top">class&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a93358fd8285cbad5c49755553f9c5c49">SocketConnector</a></td></tr>
-<tr class="separator:a93358fd8285cbad5c49755553f9c5c49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename SocketT&gt;<br />
@@ -367,12 +376,12 @@ template&lt;typename SocketT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tls_2_socket_connection_8h_source.html#l00044">44</a> of file <a class="el" href="tls_2_socket_connection_8h_source.html">SocketConnection.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            : stream::SocketConnectionT&lt;tls::SocketReader&lt;Socket&gt;, tls::SocketWriter&lt;Socket&gt;, <span class="keyword">typename</span> <a class="code" href="classnet_1_1socket_1_1_socket.html#a3b2caea9c0c485cc6377efb6625afd8c">Socket::SocketAddress</a>&gt;<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#a513a2633ad5b02187ca247a31ab9dde8">::</a></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#a513a2633ad5b02187ca247a31ab9dde8">                  SocketConnectionT</a>(<a class="code" href="classnet_1_1_event_receiver.html#ad3dde836bf115fe2f456c20573b8dbc3">fd</a>, socketContextFactory, <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#ab96c2e0f94f029535cea4e2e03801cd1">localAddress</a>, <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#a8d77ae5e4380b4dd693b2fe6d4e867ea">remoteAddress</a>, onConnect, [<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#a3f10d076e7d6e17b097fa76777d2c017">onDisconnect</a>, <span class="keyword">this</span>]() -&gt; <span class="keywordtype">void</span> {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                      <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#a3f10d076e7d6e17b097fa76777d2c017">onDisconnect</a>(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                  }) {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        }</div>
+<p class="definition">Definition at line <a class="el" href="tls_2_socket_connection_8h_source.html#l00043">43</a> of file <a class="el" href="tls_2_socket_connection_8h_source.html">SocketConnection.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            : stream::SocketConnectionT&lt;tls::SocketReader&lt;Socket&gt;, tls::SocketWriter&lt;Socket&gt;, <span class="keyword">typename</span> <a class="code" href="classnet_1_1socket_1_1_socket.html#a3b2caea9c0c485cc6377efb6625afd8c">Socket::SocketAddress</a>&gt;<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#a513a2633ad5b02187ca247a31ab9dde8">::</a></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#a513a2633ad5b02187ca247a31ab9dde8">                  SocketConnectionT</a>(<a class="code" href="classnet_1_1_event_receiver.html#ad3dde836bf115fe2f456c20573b8dbc3">fd</a>, socketContextFactory, <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#ab96c2e0f94f029535cea4e2e03801cd1">localAddress</a>, <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#a8d77ae5e4380b4dd693b2fe6d4e867ea">remoteAddress</a>, onConnect, [<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#a3f10d076e7d6e17b097fa76777d2c017">onDisconnect</a>, <span class="keyword">this</span>]() -&gt; <span class="keywordtype">void</span> {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                      <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#a3f10d076e7d6e17b097fa76777d2c017">onDisconnect</a>(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                  }) {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        }</div>
 <div class="ttc" id="aclassnet_1_1_event_receiver_html_ad3dde836bf115fe2f456c20573b8dbc3"><div class="ttname"><a href="classnet_1_1_event_receiver.html#ad3dde836bf115fe2f456c20573b8dbc3">net::EventReceiver::fd</a></div><div class="ttdeci">int fd</div><div class="ttdef"><b>Definition:</b> <a href="_event_receiver_8h_source.html#l00094">EventReceiver.h:94</a></div></div>
 <div class="ttc" id="aclassnet_1_1socket_1_1_socket_html_a3b2caea9c0c485cc6377efb6625afd8c"><div class="ttname"><a href="classnet_1_1socket_1_1_socket.html#a3b2caea9c0c485cc6377efb6625afd8c">net::socket::Socket::SocketAddress</a></div><div class="ttdeci">SocketAddressT SocketAddress</div><div class="ttdef"><b>Definition:</b> <a href="socket_2_socket_8h_source.html#l00037">Socket.h:37</a></div></div>
 <div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_connection_t_html_a3f10d076e7d6e17b097fa76777d2c017"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_connection_t.html#a3f10d076e7d6e17b097fa76777d2c017">net::socket::stream::SocketConnectionT&lt; tls::SocketReader&lt; SocketT &gt;, tls::SocketWriter&lt; SocketT &gt;, SocketT::SocketAddress &gt;::onDisconnect</a></div><div class="ttdeci">std::function&lt; void()&gt; onDisconnect</div><div class="ttdef"><b>Definition:</b> <a href="_socket_connection_t_8h_source.html#l00137">SocketConnectionT.h:137</a></div></div>
@@ -420,68 +429,68 @@ template&lt;typename SocketT &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_reader.html#adf016a31e011fb52f72d044449779137">net::socket::stream::tls::SocketReader&lt; SocketT &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="tls_2_socket_connection_8h_source.html#l00075">75</a> of file <a class="el" href="tls_2_socket_connection_8h_source.html">SocketConnection.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                                                                            {</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <span class="keywordtype">int</span> resumeSocketReader = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <span class="keywordtype">int</span> resumeSocketWriter = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <span class="keywordflow">if</span> (!<a class="code" href="classnet_1_1_event_receiver.html#afdfa280e579e56b9acadb54465c65528">SocketConnection::SocketReader::isSuspended</a>()) {</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                <a class="code" href="classnet_1_1_event_receiver.html#a6c5065f83b6aad6a60f5369ccc5963b1">SocketConnection::SocketReader::suspend</a>();</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                resumeSocketReader = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            }</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keywordflow">if</span> (!<a class="code" href="classnet_1_1_event_receiver.html#afdfa280e579e56b9acadb54465c65528">SocketConnection::SocketWriter::isSuspended</a>()) {</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                <a class="code" href="classnet_1_1_event_receiver.html#a6c5065f83b6aad6a60f5369ccc5963b1">SocketConnection::SocketWriter::suspend</a>();</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                resumeSocketWriter = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            }</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_t_l_s_handshake.html#af493658d584e1971b30c1859764ffe85">TLSHandshake::doHandshake</a>(</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a734d21572bb69afea8a8c3d8b9af6d69">ssl</a>,</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                [onSuccess, <span class="keyword">this</span>, resumeSocketReader, resumeSocketWriter](<span class="keywordtype">void</span>) -&gt; <span class="keywordtype">void</span> { <span class="comment">// onSuccess</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                    <span class="keywordflow">if</span> (resumeSocketReader) {</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                        <a class="code" href="classnet_1_1_event_receiver.html#a362118e6c25fc619e735a81a4b7cedcc">SocketConnection::SocketReader::resume</a>();</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                    }</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                    <span class="keywordflow">if</span> (resumeSocketWriter) {</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                        <a class="code" href="classnet_1_1_event_receiver.html#a362118e6c25fc619e735a81a4b7cedcc">SocketConnection::SocketWriter::resume</a>();</div>
+<p class="definition">Definition at line <a class="el" href="tls_2_socket_connection_8h_source.html#l00078">78</a> of file <a class="el" href="tls_2_socket_connection_8h_source.html">SocketConnection.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                                                                            {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <span class="keywordtype">int</span> resumeSocketReader = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <span class="keywordtype">int</span> resumeSocketWriter = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            <span class="keywordflow">if</span> (!<a class="code" href="classnet_1_1_event_receiver.html#afdfa280e579e56b9acadb54465c65528">SocketConnection::SocketReader::isSuspended</a>()) {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                <a class="code" href="classnet_1_1_event_receiver.html#a6c5065f83b6aad6a60f5369ccc5963b1">SocketConnection::SocketReader::suspend</a>();</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                resumeSocketReader = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <span class="keywordflow">if</span> (!<a class="code" href="classnet_1_1_event_receiver.html#afdfa280e579e56b9acadb54465c65528">SocketConnection::SocketWriter::isSuspended</a>()) {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                <a class="code" href="classnet_1_1_event_receiver.html#a6c5065f83b6aad6a60f5369ccc5963b1">SocketConnection::SocketWriter::suspend</a>();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                resumeSocketWriter = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_t_l_s_handshake.html#af493658d584e1971b30c1859764ffe85">TLSHandshake::doHandshake</a>(</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a734d21572bb69afea8a8c3d8b9af6d69">ssl</a>,</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                [onSuccess, <span class="keyword">this</span>, resumeSocketReader, resumeSocketWriter](<span class="keywordtype">void</span>) -&gt; <span class="keywordtype">void</span> { <span class="comment">// onSuccess</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                    <span class="keywordflow">if</span> (resumeSocketReader) {</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                        <a class="code" href="classnet_1_1_event_receiver.html#a362118e6c25fc619e735a81a4b7cedcc">SocketConnection::SocketReader::resume</a>();</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                    }</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                    onSuccess();</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                },</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                [onTimeout, <span class="keyword">this</span>](void) -&gt; <span class="keywordtype">void</span> { <span class="comment">// onTimeout</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                    <span class="keywordflow">if</span> (<a class="code" href="classnet_1_1_event_receiver.html#ac4e3a75a2849d0d8b1fc4ba2b754c8e3">SocketConnection::SocketReader::isEnabled</a>()) {</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                        <a class="code" href="classnet_1_1_event_receiver.html#af99ad4621551f0d032b5eabb76b613a1">SocketConnection::SocketReader::disable</a>();</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                    }</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                    <span class="keywordflow">if</span> (<a class="code" href="classnet_1_1_event_receiver.html#ac4e3a75a2849d0d8b1fc4ba2b754c8e3">SocketConnection::SocketWriter::isEnabled</a>()) {</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                        <a class="code" href="classnet_1_1_event_receiver.html#af99ad4621551f0d032b5eabb76b613a1">SocketConnection::SocketWriter::disable</a>();</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                    <span class="keywordflow">if</span> (resumeSocketWriter) {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                        <a class="code" href="classnet_1_1_event_receiver.html#a362118e6c25fc619e735a81a4b7cedcc">SocketConnection::SocketWriter::resume</a>();</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                    }</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                    onSuccess();</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                },</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                [onTimeout, <span class="keyword">this</span>](void) -&gt; <span class="keywordtype">void</span> { <span class="comment">// onTimeout</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                    <span class="keywordflow">if</span> (<a class="code" href="classnet_1_1_event_receiver.html#ac4e3a75a2849d0d8b1fc4ba2b754c8e3">SocketConnection::SocketReader::isEnabled</a>()) {</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                        <a class="code" href="classnet_1_1_event_receiver.html#af99ad4621551f0d032b5eabb76b613a1">SocketConnection::SocketReader::disable</a>();</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                    }</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                    onTimeout();</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                },</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                [<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#ad87599aca3f7eed671d0ae72a9c68ab3">onError</a>, <span class="keyword">this</span>](<span class="keywordtype">int</span> <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a6ce74bb044ed0067976e8d6a5a797242">sslErr</a>) -&gt; <span class="keywordtype">void</span> { <span class="comment">// onError</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                    <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#ab2d1ac395884dd5197ddef41699b06c9">setSSLError</a>(<a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a6ce74bb044ed0067976e8d6a5a797242">sslErr</a>);</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                    <span class="keywordflow">if</span> (<a class="code" href="classnet_1_1_event_receiver.html#ac4e3a75a2849d0d8b1fc4ba2b754c8e3">SocketConnection::SocketReader::isEnabled</a>()) {</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                        <a class="code" href="classnet_1_1_event_receiver.html#af99ad4621551f0d032b5eabb76b613a1">SocketConnection::SocketReader::disable</a>();</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                    }</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                    <span class="keywordflow">if</span> (<a class="code" href="classnet_1_1_event_receiver.html#ac4e3a75a2849d0d8b1fc4ba2b754c8e3">SocketConnection::SocketWriter::isEnabled</a>()) {</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                        <a class="code" href="classnet_1_1_event_receiver.html#af99ad4621551f0d032b5eabb76b613a1">SocketConnection::SocketWriter::disable</a>();</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                    <span class="keywordflow">if</span> (<a class="code" href="classnet_1_1_event_receiver.html#ac4e3a75a2849d0d8b1fc4ba2b754c8e3">SocketConnection::SocketWriter::isEnabled</a>()) {</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                        <a class="code" href="classnet_1_1_event_receiver.html#af99ad4621551f0d032b5eabb76b613a1">SocketConnection::SocketWriter::disable</a>();</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                    }</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                    onTimeout();</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                },</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                [<a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#ad87599aca3f7eed671d0ae72a9c68ab3">onError</a>, <span class="keyword">this</span>](<span class="keywordtype">int</span> <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a6ce74bb044ed0067976e8d6a5a797242">sslErr</a>) -&gt; <span class="keywordtype">void</span> { <span class="comment">// onError</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                    <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#ab2d1ac395884dd5197ddef41699b06c9">setSSLError</a>(<a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a6ce74bb044ed0067976e8d6a5a797242">sslErr</a>);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                    <span class="keywordflow">if</span> (<a class="code" href="classnet_1_1_event_receiver.html#ac4e3a75a2849d0d8b1fc4ba2b754c8e3">SocketConnection::SocketReader::isEnabled</a>()) {</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                        <a class="code" href="classnet_1_1_event_receiver.html#af99ad4621551f0d032b5eabb76b613a1">SocketConnection::SocketReader::disable</a>();</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                    }</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                    <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#ad87599aca3f7eed671d0ae72a9c68ab3">onError</a>(<a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a6ce74bb044ed0067976e8d6a5a797242">sslErr</a>);</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                });</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        }</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                    <span class="keywordflow">if</span> (<a class="code" href="classnet_1_1_event_receiver.html#ac4e3a75a2849d0d8b1fc4ba2b754c8e3">SocketConnection::SocketWriter::isEnabled</a>()) {</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                        <a class="code" href="classnet_1_1_event_receiver.html#af99ad4621551f0d032b5eabb76b613a1">SocketConnection::SocketWriter::disable</a>();</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                    }</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                    <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#ad87599aca3f7eed671d0ae72a9c68ab3">onError</a>(<a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a6ce74bb044ed0067976e8d6a5a797242">sslErr</a>);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                });</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        }</div>
 <div class="ttc" id="aclassnet_1_1_event_receiver_html_a362118e6c25fc619e735a81a4b7cedcc"><div class="ttname"><a href="classnet_1_1_event_receiver.html#a362118e6c25fc619e735a81a4b7cedcc">net::EventReceiver::resume</a></div><div class="ttdeci">void resume()</div><div class="ttdef"><b>Definition:</b> <a href="_event_receiver_8cpp_source.html#l00050">EventReceiver.cpp:50</a></div></div>
 <div class="ttc" id="aclassnet_1_1_event_receiver_html_a6c5065f83b6aad6a60f5369ccc5963b1"><div class="ttname"><a href="classnet_1_1_event_receiver.html#a6c5065f83b6aad6a60f5369ccc5963b1">net::EventReceiver::suspend</a></div><div class="ttdeci">void suspend()</div><div class="ttdef"><b>Definition:</b> <a href="_event_receiver_8cpp_source.html#l00046">EventReceiver.cpp:46</a></div></div>
 <div class="ttc" id="aclassnet_1_1_event_receiver_html_ac4e3a75a2849d0d8b1fc4ba2b754c8e3"><div class="ttname"><a href="classnet_1_1_event_receiver.html#ac4e3a75a2849d0d8b1fc4ba2b754c8e3">net::EventReceiver::isEnabled</a></div><div class="ttdeci">bool isEnabled() const</div><div class="ttdef"><b>Definition:</b> <a href="_event_receiver_8cpp_source.html#l00064">EventReceiver.cpp:64</a></div></div>
 <div class="ttc" id="aclassnet_1_1_event_receiver_html_af99ad4621551f0d032b5eabb76b613a1"><div class="ttname"><a href="classnet_1_1_event_receiver.html#af99ad4621551f0d032b5eabb76b613a1">net::EventReceiver::disable</a></div><div class="ttdeci">void disable()</div><div class="ttdef"><b>Definition:</b> <a href="_event_receiver_8cpp_source.html#l00041">EventReceiver.cpp:41</a></div></div>
 <div class="ttc" id="aclassnet_1_1_event_receiver_html_afdfa280e579e56b9acadb54465c65528"><div class="ttname"><a href="classnet_1_1_event_receiver.html#afdfa280e579e56b9acadb54465c65528">net::EventReceiver::isSuspended</a></div><div class="ttdeci">bool isSuspended() const</div><div class="ttdef"><b>Definition:</b> <a href="_event_receiver_8cpp_source.html#l00077">EventReceiver.cpp:77</a></div></div>
-<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_reader_html_ad87599aca3f7eed671d0ae72a9c68ab3"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#ad87599aca3f7eed671d0ae72a9c68ab3">net::socket::stream::SocketReader::onError</a></div><div class="ttdeci">std::function&lt; void(int)&gt; onError</div><div class="ttdef"><b>Definition:</b> <a href="_socket_reader_8h_source.html#l00110">SocketReader.h:110</a></div></div>
-<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection_html_a6ce74bb044ed0067976e8d6a5a797242"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a6ce74bb044ed0067976e8d6a5a797242">net::socket::stream::tls::SocketConnection::sslErr</a></div><div class="ttdeci">int sslErr</div><div class="ttdef"><b>Definition:</b> <a href="tls_2_socket_connection_8h_source.html#l00152">SocketConnection.h:152</a></div></div>
-<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection_html_a734d21572bb69afea8a8c3d8b9af6d69"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a734d21572bb69afea8a8c3d8b9af6d69">net::socket::stream::tls::SocketConnection::ssl</a></div><div class="ttdeci">SSL * ssl</div><div class="ttdef"><b>Definition:</b> <a href="tls_2_socket_connection_8h_source.html#l00148">SocketConnection.h:148</a></div></div>
-<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection_html_ab2d1ac395884dd5197ddef41699b06c9"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#ab2d1ac395884dd5197ddef41699b06c9">net::socket::stream::tls::SocketConnection::setSSLError</a></div><div class="ttdeci">void setSSLError(int sslErr)</div><div class="ttdef"><b>Definition:</b> <a href="tls_2_socket_connection_8h_source.html#l00144">SocketConnection.h:144</a></div></div>
+<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_reader_html_ad87599aca3f7eed671d0ae72a9c68ab3"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#ad87599aca3f7eed671d0ae72a9c68ab3">net::socket::stream::SocketReader::onError</a></div><div class="ttdeci">std::function&lt; void(int)&gt; onError</div><div class="ttdef"><b>Definition:</b> <a href="_socket_reader_8h_source.html#l00111">SocketReader.h:111</a></div></div>
+<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection_html_a6ce74bb044ed0067976e8d6a5a797242"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a6ce74bb044ed0067976e8d6a5a797242">net::socket::stream::tls::SocketConnection::sslErr</a></div><div class="ttdeci">int sslErr</div><div class="ttdef"><b>Definition:</b> <a href="tls_2_socket_connection_8h_source.html#l00149">SocketConnection.h:149</a></div></div>
+<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection_html_a734d21572bb69afea8a8c3d8b9af6d69"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a734d21572bb69afea8a8c3d8b9af6d69">net::socket::stream::tls::SocketConnection::ssl</a></div><div class="ttdeci">SSL * ssl</div><div class="ttdef"><b>Definition:</b> <a href="tls_2_socket_connection_8h_source.html#l00145">SocketConnection.h:145</a></div></div>
+<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection_html_ab2d1ac395884dd5197ddef41699b06c9"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#ab2d1ac395884dd5197ddef41699b06c9">net::socket::stream::tls::SocketConnection::setSSLError</a></div><div class="ttdeci">void setSSLError(int sslErr)</div><div class="ttdef"><b>Definition:</b> <a href="tls_2_socket_connection_8h_source.html#l00141">SocketConnection.h:141</a></div></div>
 <div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1tls_1_1_t_l_s_handshake_html_af493658d584e1971b30c1859764ffe85"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1tls_1_1_t_l_s_handshake.html#af493658d584e1971b30c1859764ffe85">net::socket::stream::tls::TLSHandshake::doHandshake</a></div><div class="ttdeci">static void doHandshake(SSL *ssl, const std::function&lt; void(void)&gt; &amp;onSuccess, const std::function&lt; void(void)&gt; &amp;onTimeout, const std::function&lt; void(int)&gt; &amp;onError)</div><div class="ttdef"><b>Definition:</b> <a href="_t_l_s_handshake_8cpp_source.html#l00033">TLSHandshake.cpp:33</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="_event_receiver_8cpp_source.html#l00041">net::EventReceiver::disable()</a>, <a class="el" href="_t_l_s_handshake_8cpp_source.html#l00033">net::socket::stream::tls::TLSHandshake::doHandshake()</a>, <a class="el" href="_event_receiver_8cpp_source.html#l00064">net::EventReceiver::isEnabled()</a>, <a class="el" href="_event_receiver_8cpp_source.html#l00077">net::EventReceiver::isSuspended()</a>, <a class="el" href="_event_receiver_8cpp_source.html#l00050">net::EventReceiver::resume()</a>, and <a class="el" href="_event_receiver_8cpp_source.html#l00046">net::EventReceiver::suspend()</a>.</p>
@@ -525,10 +534,10 @@ template&lt;typename SocketT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tls_2_socket_connection_8h_source.html#l00139">139</a> of file <a class="el" href="tls_2_socket_connection_8h_source.html">SocketConnection.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;                            {</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a734d21572bb69afea8a8c3d8b9af6d69">ssl</a>;</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        }</div>
+<p class="definition">Definition at line <a class="el" href="tls_2_socket_connection_8h_source.html#l00055">55</a> of file <a class="el" href="tls_2_socket_connection_8h_source.html">SocketConnection.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                            {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a734d21572bb69afea8a8c3d8b9af6d69">ssl</a>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -553,15 +562,15 @@ template&lt;typename SocketT &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tls_2_socket_connection_8h_source.html#l00144">144</a> of file <a class="el" href="tls_2_socket_connection_8h_source.html">SocketConnection.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;                                     {</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            this-&gt;<a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a6ce74bb044ed0067976e8d6a5a797242">sslErr</a> = <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a6ce74bb044ed0067976e8d6a5a797242">sslErr</a>;</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        }</div>
+<p class="definition">Definition at line <a class="el" href="tls_2_socket_connection_8h_source.html#l00141">141</a> of file <a class="el" href="tls_2_socket_connection_8h_source.html">SocketConnection.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;                                     {</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;            this-&gt;<a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a6ce74bb044ed0067976e8d6a5a797242">sslErr</a> = <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a6ce74bb044ed0067976e8d6a5a797242">sslErr</a>;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -586,34 +595,34 @@ template&lt;typename SocketT &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tls_2_socket_connection_8h_source.html#l00057">57</a> of file <a class="el" href="tls_2_socket_connection_8h_source.html">SocketConnection.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                                    {</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="keywordflow">if</span> (ctx != <span class="keyword">nullptr</span>) {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a734d21572bb69afea8a8c3d8b9af6d69">ssl</a> = SSL_new(ctx);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a734d21572bb69afea8a8c3d8b9af6d69">ssl</a> != <span class="keyword">nullptr</span>) {</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                    <span class="keywordflow">if</span> (SSL_set_fd(<a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a734d21572bb69afea8a8c3d8b9af6d69">ssl</a>, <a class="code" href="classnet_1_1_descriptor.html#a70ccc1e4f6af5cda015bd319f9a90096">Socket::getFd</a>()) == 1) {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                        <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_reader.html#a772a3826a50633705c006e12fe4edf7b">SocketReader&lt;Socket&gt;::ssl</a> = <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a734d21572bb69afea8a8c3d8b9af6d69">ssl</a>;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                        <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_writer.html#a5fadfa37915bfd92be5f826f3c7f9534">SocketWriter&lt;Socket&gt;::ssl</a> = <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a734d21572bb69afea8a8c3d8b9af6d69">ssl</a>;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                        SSL_free(<a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a734d21572bb69afea8a8c3d8b9af6d69">ssl</a>);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                        <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a734d21572bb69afea8a8c3d8b9af6d69">ssl</a> = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                    }</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                }</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            }</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a734d21572bb69afea8a8c3d8b9af6d69">ssl</a>;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        }</div>
+<p class="definition">Definition at line <a class="el" href="tls_2_socket_connection_8h_source.html#l00060">60</a> of file <a class="el" href="tls_2_socket_connection_8h_source.html">SocketConnection.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                                    {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <span class="keywordflow">if</span> (ctx != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a734d21572bb69afea8a8c3d8b9af6d69">ssl</a> = SSL_new(ctx);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a734d21572bb69afea8a8c3d8b9af6d69">ssl</a> != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                    <span class="keywordflow">if</span> (SSL_set_fd(<a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a734d21572bb69afea8a8c3d8b9af6d69">ssl</a>, <a class="code" href="classnet_1_1_descriptor.html#a70ccc1e4f6af5cda015bd319f9a90096">Socket::getFd</a>()) == 1) {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                        <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_reader.html#a772a3826a50633705c006e12fe4edf7b">SocketConnection::SocketReader::ssl</a> = <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a734d21572bb69afea8a8c3d8b9af6d69">ssl</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                        <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_writer.html#a5fadfa37915bfd92be5f826f3c7f9534">SocketConnection::SocketWriter::ssl</a> = <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a734d21572bb69afea8a8c3d8b9af6d69">ssl</a>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                        SSL_free(<a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a734d21572bb69afea8a8c3d8b9af6d69">ssl</a>);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                        <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a734d21572bb69afea8a8c3d8b9af6d69">ssl</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                    }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a734d21572bb69afea8a8c3d8b9af6d69">ssl</a>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        }</div>
 <div class="ttc" id="aclassnet_1_1_descriptor_html_a70ccc1e4f6af5cda015bd319f9a90096"><div class="ttname"><a href="classnet_1_1_descriptor.html#a70ccc1e4f6af5cda015bd319f9a90096">net::Descriptor::getFd</a></div><div class="ttdeci">int getFd() const</div><div class="ttdef"><b>Definition:</b> <a href="_descriptor_8cpp_source.html#l00045">Descriptor.cpp:45</a></div></div>
-<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1tls_1_1_socket_reader_html_a772a3826a50633705c006e12fe4edf7b"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_reader.html#a772a3826a50633705c006e12fe4edf7b">net::socket::stream::tls::SocketReader::ssl</a></div><div class="ttdeci">SSL * ssl</div><div class="ttdef"><b>Definition:</b> <a href="tls_2_socket_reader_8h_source.html#l00122">SocketReader.h:122</a></div></div>
+<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1tls_1_1_socket_reader_html_a772a3826a50633705c006e12fe4edf7b"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_reader.html#a772a3826a50633705c006e12fe4edf7b">net::socket::stream::tls::SocketReader::ssl</a></div><div class="ttdeci">SSL * ssl</div><div class="ttdef"><b>Definition:</b> <a href="tls_2_socket_reader_8h_source.html#l00121">SocketReader.h:121</a></div></div>
 <div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1tls_1_1_socket_writer_html_a5fadfa37915bfd92be5f826f3c7f9534"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_writer.html#a5fadfa37915bfd92be5f826f3c7f9534">net::socket::stream::tls::SocketWriter::ssl</a></div><div class="ttdeci">SSL * ssl</div><div class="ttdef"><b>Definition:</b> <a href="tls_2_socket_writer_8h_source.html#l00117">SocketWriter.h:117</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_descriptor_8cpp_source.html#l00045">net::Descriptor::getFd()</a>.</p>
+<p class="reference">References <a class="el" href="_descriptor_8cpp_source.html#l00045">net::Descriptor::getFd()</a>, <a class="el" href="tls_2_socket_reader_8h_source.html#l00121">net::socket::stream::tls::SocketReader&lt; SocketT &gt;::ssl</a>, and <a class="el" href="tls_2_socket_writer_8h_source.html#l00117">net::socket::stream::tls::SocketWriter&lt; SocketT &gt;::ssl</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -642,27 +651,29 @@ template&lt;typename SocketT &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tls_2_socket_connection_8h_source.html#l00123">123</a> of file <a class="el" href="tls_2_socket_connection_8h_source.html">SocketConnection.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                       {</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a734d21572bb69afea8a8c3d8b9af6d69">ssl</a> != <span class="keyword">nullptr</span>) {</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a6ce74bb044ed0067976e8d6a5a797242">sslErr</a> == 0) {</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                    SSL_shutdown(<a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a734d21572bb69afea8a8c3d8b9af6d69">ssl</a>);</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                    SSL_set_shutdown(<a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a734d21572bb69afea8a8c3d8b9af6d69">ssl</a>, SSL_SENT_SHUTDOWN | SSL_RECEIVED_SHUTDOWN);</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                }</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                SSL_free(<a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a734d21572bb69afea8a8c3d8b9af6d69">ssl</a>);</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a734d21572bb69afea8a8c3d8b9af6d69">ssl</a> = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_reader.html#a772a3826a50633705c006e12fe4edf7b">SocketReader&lt;Socket&gt;::ssl</a> = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_writer.html#a5fadfa37915bfd92be5f826f3c7f9534">SocketWriter&lt;Socket&gt;::ssl</a> = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            }</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        }</div>
+<p class="definition">Definition at line <a class="el" href="tls_2_socket_connection_8h_source.html#l00126">126</a> of file <a class="el" href="tls_2_socket_connection_8h_source.html">SocketConnection.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                       {</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a734d21572bb69afea8a8c3d8b9af6d69">ssl</a> != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a6ce74bb044ed0067976e8d6a5a797242">sslErr</a> == 0) {</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                    SSL_shutdown(<a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a734d21572bb69afea8a8c3d8b9af6d69">ssl</a>);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                    SSL_set_shutdown(<a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a734d21572bb69afea8a8c3d8b9af6d69">ssl</a>, SSL_SENT_SHUTDOWN | SSL_RECEIVED_SHUTDOWN);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                }</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                SSL_free(<a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a734d21572bb69afea8a8c3d8b9af6d69">ssl</a>);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html#a734d21572bb69afea8a8c3d8b9af6d69">ssl</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_reader.html#a772a3826a50633705c006e12fe4edf7b">SocketConnection::SocketReader::ssl</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;                <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_writer.html#a5fadfa37915bfd92be5f826f3c7f9534">SocketConnection::SocketWriter::ssl</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;            }</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        }</div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="tls_2_socket_reader_8h_source.html#l00121">net::socket::stream::tls::SocketReader&lt; SocketT &gt;::ssl</a>, and <a class="el" href="tls_2_socket_writer_8h_source.html#l00117">net::socket::stream::tls::SocketWriter&lt; SocketT &gt;::ssl</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Friends And Related Function Documentation</h2>
@@ -690,7 +701,7 @@ template&lt;typename Socket &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tls_2_socket_connection_8h_source.html#l00159">159</a> of file <a class="el" href="tls_2_socket_connection_8h_source.html">SocketConnection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tls_2_socket_connection_8h_source.html#l00155">155</a> of file <a class="el" href="tls_2_socket_connection_8h_source.html">SocketConnection.h</a>.</p>
 
 </div>
 </div>
@@ -718,7 +729,7 @@ template&lt;typename Socket &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tls_2_socket_connection_8h_source.html#l00156">156</a> of file <a class="el" href="tls_2_socket_connection_8h_source.html">SocketConnection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tls_2_socket_connection_8h_source.html#l00152">152</a> of file <a class="el" href="tls_2_socket_connection_8h_source.html">SocketConnection.h</a>.</p>
 
 </div>
 </div>
@@ -740,12 +751,12 @@ template&lt;typename SocketT &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tls_2_socket_connection_8h_source.html#l00150">150</a> of file <a class="el" href="tls_2_socket_connection_8h_source.html">SocketConnection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tls_2_socket_connection_8h_source.html#l00147">147</a> of file <a class="el" href="tls_2_socket_connection_8h_source.html">SocketConnection.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="tls_2_socket_listener_8h_source.html#l00107">net::socket::stream::tls::SocketListener&lt; SocketT &gt;::serverNameCallback()</a>.</p>
 
@@ -768,12 +779,12 @@ template&lt;typename SocketT &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tls_2_socket_connection_8h_source.html#l00148">148</a> of file <a class="el" href="tls_2_socket_connection_8h_source.html">SocketConnection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tls_2_socket_connection_8h_source.html#l00145">145</a> of file <a class="el" href="tls_2_socket_connection_8h_source.html">SocketConnection.h</a>.</p>
 
 </div>
 </div>
@@ -794,12 +805,12 @@ template&lt;typename SocketT &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tls_2_socket_connection_8h_source.html#l00152">152</a> of file <a class="el" href="tls_2_socket_connection_8h_source.html">SocketConnection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tls_2_socket_connection_8h_source.html#l00149">149</a> of file <a class="el" href="tls_2_socket_connection_8h_source.html">SocketConnection.h</a>.</p>
 
 </div>
 </div>

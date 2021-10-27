@@ -149,12 +149,12 @@
 <polyline fill="none" stroke="black" points="87.5,-1072.5 218.5,-1072.5 "/>
 <text text-anchor="middle" x="153" y="-1060.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
 <polyline fill="none" stroke="black" points="87.5,-1053.5 218.5,-1053.5 "/>
-<text text-anchor="start" x="95.5" y="-1041.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ SocketContext()</text>
-<text text-anchor="start" x="95.5" y="-1030.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~SocketContext()</text>
-<text text-anchor="start" x="95.5" y="-1019.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ SocketContext()</text>
-<text text-anchor="start" x="95.5" y="-1008.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator=()</text>
-<text text-anchor="start" x="95.5" y="-997.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ sendToPeerCompleted()</text>
-<text text-anchor="start" x="95.5" y="-986.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ terminateConnection()</text>
+<text text-anchor="start" x="95.5" y="-1041.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ sendToPeerCompleted()</text>
+<text text-anchor="start" x="95.5" y="-1030.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ terminateConnection()</text>
+<text text-anchor="start" x="95.5" y="-1019.5" font-family="Helvetica,sans-Serif" font-size="10.00"># SocketContext()</text>
+<text text-anchor="start" x="95.5" y="-1008.5" font-family="Helvetica,sans-Serif" font-size="10.00"># ~SocketContext()</text>
+<text text-anchor="start" x="95.5" y="-997.5" font-family="Helvetica,sans-Serif" font-size="10.00"># SocketContext()</text>
+<text text-anchor="start" x="95.5" y="-986.5" font-family="Helvetica,sans-Serif" font-size="10.00"># operator=()</text>
 </a>
 </g>
 </g>
@@ -258,11 +258,11 @@
 <text text-anchor="start" x="275.5" y="-1238.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ parse()</text>
 <text text-anchor="start" x="275.5" y="-1227.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ stop()</text>
 <text text-anchor="start" x="275.5" y="-1216.5" font-family="Helvetica,sans-Serif" font-size="10.00"># reset()</text>
-<text text-anchor="start" x="275.5" y="-1205.5" font-family="Helvetica,sans-Serif" font-size="10.00"># begin()</text>
-<text text-anchor="start" x="275.5" y="-1194.5" font-family="Helvetica,sans-Serif" font-size="10.00"># parseStartLine()</text>
-<text text-anchor="start" x="275.5" y="-1183.5" font-family="Helvetica,sans-Serif" font-size="10.00"># parseHeader()</text>
-<text text-anchor="start" x="275.5" y="-1172.5" font-family="Helvetica,sans-Serif" font-size="10.00"># parseContent()</text>
-<text text-anchor="start" x="275.5" y="-1161.5" font-family="Helvetica,sans-Serif" font-size="10.00"># parsingError()</text>
+<text text-anchor="start" x="275.5" y="-1205.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; begin()</text>
+<text text-anchor="start" x="275.5" y="-1194.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; parseStartLine()</text>
+<text text-anchor="start" x="275.5" y="-1183.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; parseHeader()</text>
+<text text-anchor="start" x="275.5" y="-1172.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; parseContent()</text>
+<text text-anchor="start" x="275.5" y="-1161.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; parsingError()</text>
 <text text-anchor="start" x="275.5" y="-1150.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; readStartLine()</text>
 <text text-anchor="start" x="275.5" y="-1139.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; readHeaderLine()</text>
 <text text-anchor="start" x="275.5" y="-1128.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; splitHeaderLine()</text>

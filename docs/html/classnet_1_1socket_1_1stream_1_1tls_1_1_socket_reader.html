@@ -95,12 +95,12 @@ $(document).ready(function(){initNavTree('classnet_1_1socket_1_1stream_1_1tls_1_
 <div class="dynheader">
 Inheritance diagram for net::socket::stream::tls::SocketReader&lt; SocketT &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_reader__inherit__graph.svg" width="314" height="1999"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_reader__inherit__graph.svg" width="314" height="2028"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <div class="dynheader">
 Collaboration diagram for net::socket::stream::tls::SocketReader&lt; SocketT &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_reader__coll__graph.svg" width="463" height="1931"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_reader__coll__graph.svg" width="463" height="1960"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
@@ -208,13 +208,12 @@ template&lt;typename SocketT &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="tls_2_socket_reader_8h_source.html#l00108">108</a> of file <a class="el" href="tls_2_socket_reader_8h_source.html">SocketReader.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                                                {</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            <span class="keywordtype">int</span> pending = SSL_pending(<a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_reader.html#a772a3826a50633705c006e12fe4edf7b">ssl</a>) || <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#aaf53865e3a54e3f24827c1acaff40fdb">net::socket::stream::SocketReader&lt;SocketT&gt;::continueReadImmediately</a>();</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            <span class="keywordflow">return</span> pending;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        }</div>
-<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_reader_html_aaf53865e3a54e3f24827c1acaff40fdb"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#aaf53865e3a54e3f24827c1acaff40fdb">net::socket::stream::SocketReader::continueReadImmediately</a></div><div class="ttdeci">bool continueReadImmediately() override</div><div class="ttdef"><b>Definition:</b> <a href="_socket_reader_8h_source.html#l00103">SocketReader.h:103</a></div></div>
-<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1tls_1_1_socket_reader_html_a772a3826a50633705c006e12fe4edf7b"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_reader.html#a772a3826a50633705c006e12fe4edf7b">net::socket::stream::tls::SocketReader::ssl</a></div><div class="ttdeci">SSL * ssl</div><div class="ttdef"><b>Definition:</b> <a href="tls_2_socket_reader_8h_source.html#l00122">SocketReader.h:122</a></div></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            <span class="keywordflow">return</span> SSL_pending(<a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_reader.html#a772a3826a50633705c006e12fe4edf7b">ssl</a>) || <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#aaf53865e3a54e3f24827c1acaff40fdb">net::socket::stream::SocketReader&lt;SocketT&gt;::continueReadImmediately</a>();</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        }</div>
+<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_reader_html_aaf53865e3a54e3f24827c1acaff40fdb"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_reader.html#aaf53865e3a54e3f24827c1acaff40fdb">net::socket::stream::SocketReader::continueReadImmediately</a></div><div class="ttdeci">bool continueReadImmediately() override</div><div class="ttdef"><b>Definition:</b> <a href="_socket_reader_8h_source.html#l00104">SocketReader.h:104</a></div></div>
+<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1tls_1_1_socket_reader_html_a772a3826a50633705c006e12fe4edf7b"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_reader.html#a772a3826a50633705c006e12fe4edf7b">net::socket::stream::tls::SocketReader::ssl</a></div><div class="ttdeci">SSL * ssl</div><div class="ttdef"><b>Definition:</b> <a href="tls_2_socket_reader_8h_source.html#l00121">SocketReader.h:121</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_socket_reader_8h_source.html#l00103">net::socket::stream::SocketReader&lt; SocketT &gt;::continueReadImmediately()</a>, and <a class="el" href="tls_2_socket_reader_8h_source.html#l00122">net::socket::stream::tls::SocketReader&lt; SocketT &gt;::ssl</a>.</p>
+<p class="reference">References <a class="el" href="_socket_reader_8h_source.html#l00104">net::socket::stream::SocketReader&lt; SocketT &gt;::continueReadImmediately()</a>, and <a class="el" href="tls_2_socket_reader_8h_source.html#l00121">net::socket::stream::tls::SocketReader&lt; SocketT &gt;::ssl</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -322,9 +321,9 @@ template&lt;typename SocketT &gt; </div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <span class="keywordflow">return</span> ret;</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        }</div>
-<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1tls_1_1_socket_reader_html_aef9e4ee08d4b72cf4f7d0901ef4022b4"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_reader.html#aef9e4ee08d4b72cf4f7d0901ef4022b4">net::socket::stream::tls::SocketReader::sslErr</a></div><div class="ttdeci">int sslErr</div><div class="ttdef"><b>Definition:</b> <a href="tls_2_socket_reader_8h_source.html#l00124">SocketReader.h:124</a></div></div>
+<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1tls_1_1_socket_reader_html_aef9e4ee08d4b72cf4f7d0901ef4022b4"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_reader.html#aef9e4ee08d4b72cf4f7d0901ef4022b4">net::socket::stream::tls::SocketReader::sslErr</a></div><div class="ttdeci">int sslErr</div><div class="ttdef"><b>Definition:</b> <a href="tls_2_socket_reader_8h_source.html#l00123">SocketReader.h:123</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="tls_2_socket_reader_8h_source.html#l00124">net::socket::stream::tls::SocketReader&lt; SocketT &gt;::sslErr</a>.</p>
+<p class="reference">References <a class="el" href="tls_2_socket_reader_8h_source.html#l00123">net::socket::stream::tls::SocketReader&lt; SocketT &gt;::sslErr</a>.</p>
 
 </div>
 </div>
@@ -413,11 +412,11 @@ template&lt;typename SocketT &gt; </div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keywordflow">return</span> ret;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        }</div>
 <div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1tls_1_1_socket_reader_html_adf016a31e011fb52f72d044449779137"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_reader.html#adf016a31e011fb52f72d044449779137">net::socket::stream::tls::SocketReader::doSSLHandshake</a></div><div class="ttdeci">virtual void doSSLHandshake(const std::function&lt; void()&gt; &amp;onSuccess, const std::function&lt; void()&gt; &amp;onTimeout, const std::function&lt; void(int)&gt; &amp;onError)=0</div></div>
-<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1tls_1_1_socket_reader_html_aefb1cd54b4ea1a0a9d3332b170328bb5"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_reader.html#aefb1cd54b4ea1a0a9d3332b170328bb5">net::socket::stream::tls::SocketReader::setSSLError</a></div><div class="ttdeci">void setSSLError(int sslErr)</div><div class="ttdef"><b>Definition:</b> <a href="tls_2_socket_reader_8h_source.html#l00118">SocketReader.h:118</a></div></div>
+<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1tls_1_1_socket_reader_html_aefb1cd54b4ea1a0a9d3332b170328bb5"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_reader.html#aefb1cd54b4ea1a0a9d3332b170328bb5">net::socket::stream::tls::SocketReader::setSSLError</a></div><div class="ttdeci">void setSSLError(int sslErr)</div><div class="ttdef"><b>Definition:</b> <a href="tls_2_socket_reader_8h_source.html#l00117">SocketReader.h:117</a></div></div>
 <div class="ttc" id="anamespacenet_1_1socket_1_1stream_1_1tls_html_afde8379e5ec869b4670b8c7ed7392b2e"><div class="ttname"><a href="namespacenet_1_1socket_1_1stream_1_1tls.html#afde8379e5ec869b4670b8c7ed7392b2e">net::socket::stream::tls::ssl_log</a></div><div class="ttdeci">void ssl_log(const std::string &amp;message, int sslErr)</div><div class="ttdef"><b>Definition:</b> <a href="ssl__utils_8cpp_source.html#l00152">ssl_utils.cpp:152</a></div></div>
 <div class="ttc" id="anamespacenet_1_1ssl_html_a9276e8aec87ceaef3c80f57f55cd4106"><div class="ttname"><a href="namespacenet_1_1ssl.html#a9276e8aec87ceaef3c80f57f55cd4106">net::ssl::SSL_read</a></div><div class="ttdeci">int SSL_read(SSL *ssl, void *buf, int num)</div><div class="ttdef"><b>Definition:</b> <a href="ssl_8cpp_source.html#l00029">ssl.cpp:29</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_reader.html#adf016a31e011fb52f72d044449779137">net::socket::stream::tls::SocketReader&lt; SocketT &gt;::doSSLHandshake()</a>, <a class="el" href="tls_2_socket_reader_8h_source.html#l00118">net::socket::stream::tls::SocketReader&lt; SocketT &gt;::setSSLError()</a>, <a class="el" href="tls_2_socket_reader_8h_source.html#l00122">net::socket::stream::tls::SocketReader&lt; SocketT &gt;::ssl</a>, <a class="el" href="ssl__utils_8cpp_source.html#l00152">net::socket::stream::tls::ssl_log()</a>, <a class="el" href="ssl_8cpp_source.html#l00029">net::ssl::SSL_read()</a>, and <a class="el" href="tls_2_socket_reader_8h_source.html#l00124">net::socket::stream::tls::SocketReader&lt; SocketT &gt;::sslErr</a>.</p>
+<p class="reference">References <a class="el" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_reader.html#adf016a31e011fb52f72d044449779137">net::socket::stream::tls::SocketReader&lt; SocketT &gt;::doSSLHandshake()</a>, <a class="el" href="tls_2_socket_reader_8h_source.html#l00117">net::socket::stream::tls::SocketReader&lt; SocketT &gt;::setSSLError()</a>, <a class="el" href="tls_2_socket_reader_8h_source.html#l00121">net::socket::stream::tls::SocketReader&lt; SocketT &gt;::ssl</a>, <a class="el" href="ssl__utils_8cpp_source.html#l00152">net::socket::stream::tls::ssl_log()</a>, <a class="el" href="ssl_8cpp_source.html#l00029">net::ssl::SSL_read()</a>, and <a class="el" href="tls_2_socket_reader_8h_source.html#l00123">net::socket::stream::tls::SocketReader&lt; SocketT &gt;::sslErr</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -452,12 +451,12 @@ template&lt;typename SocketT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tls_2_socket_reader_8h_source.html#l00118">118</a> of file <a class="el" href="tls_2_socket_reader_8h_source.html">SocketReader.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                                     {</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            this-&gt;<a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_reader.html#aef9e4ee08d4b72cf4f7d0901ef4022b4">sslErr</a> = <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_reader.html#aef9e4ee08d4b72cf4f7d0901ef4022b4">sslErr</a>;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        }</div>
+<p class="definition">Definition at line <a class="el" href="tls_2_socket_reader_8h_source.html#l00117">117</a> of file <a class="el" href="tls_2_socket_reader_8h_source.html">SocketReader.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                                     {</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            this-&gt;<a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_reader.html#aef9e4ee08d4b72cf4f7d0901ef4022b4">sslErr</a> = <a class="code" href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_reader.html#aef9e4ee08d4b72cf4f7d0901ef4022b4">sslErr</a>;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="tls_2_socket_reader_8h_source.html#l00124">net::socket::stream::tls::SocketReader&lt; SocketT &gt;::sslErr</a>.</p>
+<p class="reference">References <a class="el" href="tls_2_socket_reader_8h_source.html#l00123">net::socket::stream::tls::SocketReader&lt; SocketT &gt;::sslErr</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="tls_2_socket_reader_8h_source.html#l00043">net::socket::stream::tls::SocketReader&lt; SocketT &gt;::read()</a>.</p>
 <div class="dynheader">
@@ -491,9 +490,9 @@ template&lt;typename SocketT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tls_2_socket_reader_8h_source.html#l00122">122</a> of file <a class="el" href="tls_2_socket_reader_8h_source.html">SocketReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tls_2_socket_reader_8h_source.html#l00121">121</a> of file <a class="el" href="tls_2_socket_reader_8h_source.html">SocketReader.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="tls_2_socket_reader_8h_source.html#l00108">net::socket::stream::tls::SocketReader&lt; SocketT &gt;::continueReadImmediately()</a>, and <a class="el" href="tls_2_socket_reader_8h_source.html#l00043">net::socket::stream::tls::SocketReader&lt; SocketT &gt;::read()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="tls_2_socket_reader_8h_source.html#l00108">net::socket::stream::tls::SocketReader&lt; SocketT &gt;::continueReadImmediately()</a>, <a class="el" href="tls_2_socket_reader_8h_source.html#l00043">net::socket::stream::tls::SocketReader&lt; SocketT &gt;::read()</a>, <a class="el" href="tls_2_socket_connection_8h_source.html#l00060">net::socket::stream::tls::SocketConnection&lt; SocketT &gt;::startSSL()</a>, and <a class="el" href="tls_2_socket_connection_8h_source.html#l00126">net::socket::stream::tls::SocketConnection&lt; SocketT &gt;::stopSSL()</a>.</p>
 
 </div>
 </div>
@@ -519,9 +518,9 @@ template&lt;typename SocketT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tls_2_socket_reader_8h_source.html#l00124">124</a> of file <a class="el" href="tls_2_socket_reader_8h_source.html">SocketReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tls_2_socket_reader_8h_source.html#l00123">123</a> of file <a class="el" href="tls_2_socket_reader_8h_source.html">SocketReader.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="tls_2_socket_reader_8h_source.html#l00089">net::socket::stream::tls::SocketReader&lt; SocketT &gt;::getError()</a>, <a class="el" href="tls_2_socket_reader_8h_source.html#l00043">net::socket::stream::tls::SocketReader&lt; SocketT &gt;::read()</a>, and <a class="el" href="tls_2_socket_reader_8h_source.html#l00118">net::socket::stream::tls::SocketReader&lt; SocketT &gt;::setSSLError()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="tls_2_socket_reader_8h_source.html#l00089">net::socket::stream::tls::SocketReader&lt; SocketT &gt;::getError()</a>, <a class="el" href="tls_2_socket_reader_8h_source.html#l00043">net::socket::stream::tls::SocketReader&lt; SocketT &gt;::read()</a>, and <a class="el" href="tls_2_socket_reader_8h_source.html#l00117">net::socket::stream::tls::SocketReader&lt; SocketT &gt;::setSSLError()</a>.</p>
 
 </div>
 </div>

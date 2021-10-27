@@ -84,7 +84,6 @@ $(document).ready(function(){initNavTree('classnet_1_1socket_1_1stream_1_1_socke
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classnet_1_1socket_1_1stream_1_1_socket_client-members.html">List of all members</a>  </div>
@@ -135,11 +134,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a87cc21d6b8be6f02bd38dc725db6bd16"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_client.html#a6a02ed757af4710c1e26f1dd6dea3161">SocketContextFactory</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_client.html#a87cc21d6b8be6f02bd38dc725db6bd16">getSocketContextFactory</a> ()</td></tr>
 <tr class="separator:a87cc21d6b8be6f02bd38dc725db6bd16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a94423d8f60d10ae02d29a5da617be897"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_client.html#a6a02ed757af4710c1e26f1dd6dea3161">SocketContextFactory</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_client.html#a94423d8f60d10ae02d29a5da617be897">socketContextFactory</a></td></tr>
-<tr class="separator:a94423d8f60d10ae02d29a5da617be897"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:af763c1a2aebe6cea19cc996c8e13b6bc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_client.html#af763c1a2aebe6cea19cc996c8e13b6bc">SocketClient</a> ()=delete</td></tr>
@@ -147,6 +141,8 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:a94423d8f60d10ae02d29a5da617be897"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_client.html#a6a02ed757af4710c1e26f1dd6dea3161">SocketContextFactory</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_client.html#a94423d8f60d10ae02d29a5da617be897">socketContextFactory</a></td></tr>
+<tr class="separator:a94423d8f60d10ae02d29a5da617be897"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc1045b89bebf6ea0b6ec78de3719e65"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_client.html#a51c8af5ed1b268040b605d8dd48d233a">SocketAddress</a> &amp;, const <a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_client.html#a51c8af5ed1b268040b605d8dd48d233a">SocketAddress</a> &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_client.html#acc1045b89bebf6ea0b6ec78de3719e65">_onConnect</a></td></tr>
 <tr class="separator:acc1045b89bebf6ea0b6ec78de3719e65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5e39dfb2e014bc4f44233cf58270363"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(<a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_client.html#a4e6a966ee6d969adda2284f66216f341">SocketConnection</a> *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_client.html#af5e39dfb2e014bc4f44233cf58270363">_onConnected</a></td></tr>
@@ -322,11 +318,11 @@ template&lt;typename SocketContextFactoryT , typename SocketConnectorT &gt; </di
 <div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_client_html_a0245f785c6d7655aa0c40163a591a8fb"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_client.html#a0245f785c6d7655aa0c40163a591a8fb">net::socket::stream::SocketClient::onDisconnect</a></div><div class="ttdeci">void onDisconnect(const std::function&lt; void(SocketConnection *)&gt; &amp;onDisconnect)</div><div class="ttdef"><b>Definition:</b> <a href="stream_2_socket_client_8h_source.html#l00076">SocketClient.h:76</a></div></div>
 <div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_client_html_a0a5b3fa1c9dd6a327a4d9d678090e54c"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_client.html#a0a5b3fa1c9dd6a327a4d9d678090e54c">net::socket::stream::SocketClient::onConnected</a></div><div class="ttdeci">void onConnected(const std::function&lt; void(SocketConnection *)&gt; &amp;onConnected)</div><div class="ttdef"><b>Definition:</b> <a href="stream_2_socket_client_8h_source.html#l00072">SocketClient.h:72</a></div></div>
 <div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_client_html_a1a38a509c9d0d7a6422ad4dc7658907c"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_client.html#a1a38a509c9d0d7a6422ad4dc7658907c">net::socket::stream::SocketClient::onConnect</a></div><div class="ttdeci">void onConnect(const std::function&lt; void(const SocketAddress &amp;, const SocketAddress &amp;)&gt; &amp;onConnect)</div><div class="ttdef"><b>Definition:</b> <a href="stream_2_socket_client_8h_source.html#l00068">SocketClient.h:68</a></div></div>
-<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_client_html_a34b1ba7bb095dc1a45d15e425d2cefac"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_client.html#a34b1ba7bb095dc1a45d15e425d2cefac">net::socket::stream::SocketClient::options</a></div><div class="ttdeci">std::map&lt; std::string, std::any &gt; options</div><div class="ttdef"><b>Definition:</b> <a href="stream_2_socket_client_8h_source.html#l00092">SocketClient.h:92</a></div></div>
+<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_client_html_a34b1ba7bb095dc1a45d15e425d2cefac"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_client.html#a34b1ba7bb095dc1a45d15e425d2cefac">net::socket::stream::SocketClient::options</a></div><div class="ttdeci">std::map&lt; std::string, std::any &gt; options</div><div class="ttdef"><b>Definition:</b> <a href="stream_2_socket_client_8h_source.html#l00091">SocketClient.h:91</a></div></div>
 <div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_client_html_a94423d8f60d10ae02d29a5da617be897"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_client.html#a94423d8f60d10ae02d29a5da617be897">net::socket::stream::SocketClient::socketContextFactory</a></div><div class="ttdeci">std::shared_ptr&lt; SocketContextFactory &gt; socketContextFactory</div><div class="ttdef"><b>Definition:</b> <a href="stream_2_socket_client_8h_source.html#l00085">SocketClient.h:85</a></div></div>
-<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_client_html_acc1045b89bebf6ea0b6ec78de3719e65"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_client.html#acc1045b89bebf6ea0b6ec78de3719e65">net::socket::stream::SocketClient::_onConnect</a></div><div class="ttdeci">std::function&lt; void(const SocketAddress &amp;, const SocketAddress &amp;)&gt; _onConnect</div><div class="ttdef"><b>Definition:</b> <a href="stream_2_socket_client_8h_source.html#l00088">SocketClient.h:88</a></div></div>
-<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_client_html_ae5f4f4b0e183f23455fd6e21a1734ec0"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_client.html#ae5f4f4b0e183f23455fd6e21a1734ec0">net::socket::stream::SocketClient::_onDisconnect</a></div><div class="ttdeci">std::function&lt; void(SocketConnection *)&gt; _onDisconnect</div><div class="ttdef"><b>Definition:</b> <a href="stream_2_socket_client_8h_source.html#l00090">SocketClient.h:90</a></div></div>
-<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_client_html_af5e39dfb2e014bc4f44233cf58270363"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_client.html#af5e39dfb2e014bc4f44233cf58270363">net::socket::stream::SocketClient::_onConnected</a></div><div class="ttdeci">std::function&lt; void(SocketConnection *)&gt; _onConnected</div><div class="ttdef"><b>Definition:</b> <a href="stream_2_socket_client_8h_source.html#l00089">SocketClient.h:89</a></div></div>
+<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_client_html_acc1045b89bebf6ea0b6ec78de3719e65"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_client.html#acc1045b89bebf6ea0b6ec78de3719e65">net::socket::stream::SocketClient::_onConnect</a></div><div class="ttdeci">std::function&lt; void(const SocketAddress &amp;, const SocketAddress &amp;)&gt; _onConnect</div><div class="ttdef"><b>Definition:</b> <a href="stream_2_socket_client_8h_source.html#l00087">SocketClient.h:87</a></div></div>
+<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_client_html_ae5f4f4b0e183f23455fd6e21a1734ec0"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_client.html#ae5f4f4b0e183f23455fd6e21a1734ec0">net::socket::stream::SocketClient::_onDisconnect</a></div><div class="ttdeci">std::function&lt; void(SocketConnection *)&gt; _onDisconnect</div><div class="ttdef"><b>Definition:</b> <a href="stream_2_socket_client_8h_source.html#l00089">SocketClient.h:89</a></div></div>
+<div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_client_html_af5e39dfb2e014bc4f44233cf58270363"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_client.html#af5e39dfb2e014bc4f44233cf58270363">net::socket::stream::SocketClient::_onConnected</a></div><div class="ttdeci">std::function&lt; void(SocketConnection *)&gt; _onConnected</div><div class="ttdef"><b>Definition:</b> <a href="stream_2_socket_client_8h_source.html#l00088">SocketClient.h:88</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -408,7 +404,7 @@ template&lt;typename SocketContextFactoryT , typename SocketConnectorT &gt; </di
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        }</div>
 <div class="ttc" id="aclassnet_1_1socket_1_1stream_1_1_socket_client_html_a79ad005c9734a2160b5a74ca40c1161c"><div class="ttname"><a href="classnet_1_1socket_1_1stream_1_1_socket_client.html#a79ad005c9734a2160b5a74ca40c1161c">net::socket::stream::SocketClient::SocketConnector</a></div><div class="ttdeci">SocketConnectorT SocketConnector</div><div class="ttdef"><b>Definition:</b> <a href="stream_2_socket_client_8h_source.html#l00041">SocketClient.h:41</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="stream_2_socket_client_8h_source.html#l00088">net::socket::stream::SocketClient&lt; SocketContextFactoryT, SocketConnectorT &gt;::_onConnect</a>, <a class="el" href="stream_2_socket_client_8h_source.html#l00089">net::socket::stream::SocketClient&lt; SocketContextFactoryT, SocketConnectorT &gt;::_onConnected</a>, <a class="el" href="stream_2_socket_client_8h_source.html#l00090">net::socket::stream::SocketClient&lt; SocketContextFactoryT, SocketConnectorT &gt;::_onDisconnect</a>, <a class="el" href="stream_2_socket_client_8h_source.html#l00092">net::socket::stream::SocketClient&lt; SocketContextFactoryT, SocketConnectorT &gt;::options</a>, and <a class="el" href="stream_2_socket_client_8h_source.html#l00085">net::socket::stream::SocketClient&lt; SocketContextFactoryT, SocketConnectorT &gt;::socketContextFactory</a>.</p>
+<p class="reference">References <a class="el" href="stream_2_socket_client_8h_source.html#l00087">net::socket::stream::SocketClient&lt; SocketContextFactoryT, SocketConnectorT &gt;::_onConnect</a>, <a class="el" href="stream_2_socket_client_8h_source.html#l00088">net::socket::stream::SocketClient&lt; SocketContextFactoryT, SocketConnectorT &gt;::_onConnected</a>, <a class="el" href="stream_2_socket_client_8h_source.html#l00089">net::socket::stream::SocketClient&lt; SocketContextFactoryT, SocketConnectorT &gt;::_onDisconnect</a>, <a class="el" href="stream_2_socket_client_8h_source.html#l00091">net::socket::stream::SocketClient&lt; SocketContextFactoryT, SocketConnectorT &gt;::options</a>, and <a class="el" href="stream_2_socket_client_8h_source.html#l00085">net::socket::stream::SocketClient&lt; SocketContextFactoryT, SocketConnectorT &gt;::socketContextFactory</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="stream_2_socket_client_8h_source.html#l00064">net::socket::stream::SocketClient&lt; SocketContextFactoryT, SocketConnectorT &gt;::connect()</a>.</p>
 <div class="dynheader">
@@ -536,7 +532,7 @@ template&lt;typename SocketContextFactoryT , typename SocketConnectorT &gt; </di
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_client.html#acc1045b89bebf6ea0b6ec78de3719e65">_onConnect</a> = <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_client.html#a1a38a509c9d0d7a6422ad4dc7658907c">onConnect</a>;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="stream_2_socket_client_8h_source.html#l00088">net::socket::stream::SocketClient&lt; SocketContextFactoryT, SocketConnectorT &gt;::_onConnect</a>.</p>
+<p class="reference">References <a class="el" href="stream_2_socket_client_8h_source.html#l00087">net::socket::stream::SocketClient&lt; SocketContextFactoryT, SocketConnectorT &gt;::_onConnect</a>.</p>
 
 </div>
 </div>
@@ -571,7 +567,7 @@ template&lt;typename SocketContextFactoryT , typename SocketConnectorT &gt; </di
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_client.html#af5e39dfb2e014bc4f44233cf58270363">_onConnected</a> = <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_client.html#a0a5b3fa1c9dd6a327a4d9d678090e54c">onConnected</a>;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="stream_2_socket_client_8h_source.html#l00089">net::socket::stream::SocketClient&lt; SocketContextFactoryT, SocketConnectorT &gt;::_onConnected</a>.</p>
+<p class="reference">References <a class="el" href="stream_2_socket_client_8h_source.html#l00088">net::socket::stream::SocketClient&lt; SocketContextFactoryT, SocketConnectorT &gt;::_onConnected</a>.</p>
 
 </div>
 </div>
@@ -606,7 +602,7 @@ template&lt;typename SocketContextFactoryT , typename SocketConnectorT &gt; </di
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_client.html#ae5f4f4b0e183f23455fd6e21a1734ec0">_onDisconnect</a> = <a class="code" href="classnet_1_1socket_1_1stream_1_1_socket_client.html#a0245f785c6d7655aa0c40163a591a8fb">onDisconnect</a>;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="stream_2_socket_client_8h_source.html#l00090">net::socket::stream::SocketClient&lt; SocketContextFactoryT, SocketConnectorT &gt;::_onDisconnect</a>.</p>
+<p class="reference">References <a class="el" href="stream_2_socket_client_8h_source.html#l00089">net::socket::stream::SocketClient&lt; SocketContextFactoryT, SocketConnectorT &gt;::_onDisconnect</a>.</p>
 
 </div>
 </div>
@@ -633,7 +629,7 @@ template&lt;typename SocketContextFactoryT , typename SocketConnectorT &gt; </di
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stream_2_socket_client_8h_source.html#l00088">88</a> of file <a class="el" href="stream_2_socket_client_8h_source.html">SocketClient.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stream_2_socket_client_8h_source.html#l00087">87</a> of file <a class="el" href="stream_2_socket_client_8h_source.html">SocketClient.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="stream_2_socket_client_8h_source.html#l00058">net::socket::stream::SocketClient&lt; SocketContextFactoryT, SocketConnectorT &gt;::connect()</a>, and <a class="el" href="stream_2_socket_client_8h_source.html#l00068">net::socket::stream::SocketClient&lt; SocketContextFactoryT, SocketConnectorT &gt;::onConnect()</a>.</p>
 
@@ -661,7 +657,7 @@ template&lt;typename SocketContextFactoryT , typename SocketConnectorT &gt; </di
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stream_2_socket_client_8h_source.html#l00089">89</a> of file <a class="el" href="stream_2_socket_client_8h_source.html">SocketClient.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stream_2_socket_client_8h_source.html#l00088">88</a> of file <a class="el" href="stream_2_socket_client_8h_source.html">SocketClient.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="stream_2_socket_client_8h_source.html#l00058">net::socket::stream::SocketClient&lt; SocketContextFactoryT, SocketConnectorT &gt;::connect()</a>, and <a class="el" href="stream_2_socket_client_8h_source.html#l00072">net::socket::stream::SocketClient&lt; SocketContextFactoryT, SocketConnectorT &gt;::onConnected()</a>.</p>
 
@@ -689,7 +685,7 @@ template&lt;typename SocketContextFactoryT , typename SocketConnectorT &gt; </di
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stream_2_socket_client_8h_source.html#l00090">90</a> of file <a class="el" href="stream_2_socket_client_8h_source.html">SocketClient.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stream_2_socket_client_8h_source.html#l00089">89</a> of file <a class="el" href="stream_2_socket_client_8h_source.html">SocketClient.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="stream_2_socket_client_8h_source.html#l00058">net::socket::stream::SocketClient&lt; SocketContextFactoryT, SocketConnectorT &gt;::connect()</a>, and <a class="el" href="stream_2_socket_client_8h_source.html#l00076">net::socket::stream::SocketClient&lt; SocketContextFactoryT, SocketConnectorT &gt;::onDisconnect()</a>.</p>
 
@@ -717,7 +713,7 @@ template&lt;typename SocketContextFactoryT , typename SocketConnectorT &gt; </di
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stream_2_socket_client_8h_source.html#l00092">92</a> of file <a class="el" href="stream_2_socket_client_8h_source.html">SocketClient.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stream_2_socket_client_8h_source.html#l00091">91</a> of file <a class="el" href="stream_2_socket_client_8h_source.html">SocketClient.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="stream_2_socket_client_8h_source.html#l00058">net::socket::stream::SocketClient&lt; SocketContextFactoryT, SocketConnectorT &gt;::connect()</a>.</p>
 
@@ -740,7 +736,7 @@ template&lt;typename SocketContextFactoryT , typename SocketConnectorT &gt; </di
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

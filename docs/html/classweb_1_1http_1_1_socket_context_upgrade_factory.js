@@ -11,7 +11,7 @@ var classweb_1_1http_1_1_socket_context_upgrade_factory =
     [ "checkRefCount", "classweb_1_1http_1_1_socket_context_upgrade_factory.html#ac1e20b7a92730701a5cd6cc9a86a1cc8", null ],
     [ "decRefCount", "classweb_1_1http_1_1_socket_context_upgrade_factory.html#a325c115988a36980c6fedcce2904be8d", null ],
     [ "destroy", "classweb_1_1http_1_1_socket_context_upgrade_factory.html#a97bbb898a7e3664cbef3407e03fa9daf", null ],
-    [ "getRole", "classweb_1_1http_1_1_socket_context_upgrade_factory.html#a7f80bea2007ccb43fa0599a3d90e16aa", null ],
+    [ "getRole", "classweb_1_1http_1_1_socket_context_upgrade_factory.html#a7409227b8c2d4708171315c52973f07d", null ],
     [ "incRefCount", "classweb_1_1http_1_1_socket_context_upgrade_factory.html#a7875485748170715a85970d9b3cc306f", null ],
     [ "name", "classweb_1_1http_1_1_socket_context_upgrade_factory.html#afae3ffca7956a1db027b587fe0c218f7", null ],
     [ "prepare", "classweb_1_1http_1_1_socket_context_upgrade_factory.html#a81283c605a48063535f02cfc5db150e9", null ],

@@ -83,8 +83,8 @@ $(document).ready(function(){initNavTree('classweb_1_1http_1_1client_1_1_respons
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classweb_1_1http_1_1client_1_1_response_parser-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">web::http::client::ResponseParser Class Reference</div>  </div>
@@ -107,16 +107,6 @@ Collaboration diagram for web::http::client::ResponseParser:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a36ae9720a7088b738e0a552fccb579d9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1client_1_1_response_parser.html#a36ae9720a7088b738e0a552fccb579d9">ResponseParser</a> (<a class="el" href="classnet_1_1socket_1_1stream_1_1_socket_context.html">net::socket::stream::SocketContext</a> *<a class="el" href="classweb_1_1http_1_1_parser.html#ad23d9efc338ac58ed9231879c94c7c0b">socketContext</a>, const std::function&lt; void(void)&gt; &amp;<a class="el" href="classweb_1_1http_1_1client_1_1_response_parser.html#abdb92a3dd90e677016cf896f8ac3579c">onStart</a>, const std::function&lt; void(const std::string &amp;, const std::string &amp;, const std::string &amp;)&gt; &amp;<a class="el" href="classweb_1_1http_1_1client_1_1_response_parser.html#a7a6b9e40c0db3d0b42176db41e56c449">onResponse</a>, const std::function&lt; void(const std::map&lt; std::string, std::string &gt; &amp;, const std::map&lt; std::string, <a class="el" href="classweb_1_1http_1_1_cookie_options.html">web::http::CookieOptions</a> &gt; &amp;)&gt; &amp;<a class="el" href="classweb_1_1http_1_1client_1_1_response_parser.html#a1bf72cbd344fd56b8c3099f29320e012">onHeader</a>, const std::function&lt; void(char *, std::size_t)&gt; &amp;<a class="el" href="classweb_1_1http_1_1client_1_1_response_parser.html#a039b64863a9aefc869f4d4c3da140a39">onContent</a>, const std::function&lt; void(<a class="el" href="classweb_1_1http_1_1client_1_1_response_parser.html">ResponseParser</a> &amp;)&gt; &amp;<a class="el" href="classweb_1_1http_1_1client_1_1_response_parser.html#a638c0d8e4f3c7361f6af1da02dc7bf78">onParsed</a>, const std::function&lt; void(int, const std::string &amp;)&gt; &amp;<a class="el" href="classweb_1_1http_1_1client_1_1_response_parser.html#af3c3fe27fffd5451bcec5d23144d41f1">onError</a>)</td></tr>
 <tr class="separator:a36ae9720a7088b738e0a552fccb579d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1f63594f019adb0e2710dc38ea504a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1client_1_1_response_parser.html#ab1f63594f019adb0e2710dc38ea504a5">begin</a> () override</td></tr>
-<tr class="separator:ab1f63594f019adb0e2710dc38ea504a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44e5facbb99fd2da1bc9131d4e092846"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="classweb_1_1http_1_1_parser.html#a94ab44c0d65451be6ba3e6e389a8b7d5">Parser::ParserState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1client_1_1_response_parser.html#a44e5facbb99fd2da1bc9131d4e092846">parseStartLine</a> (const std::string &amp;<a class="el" href="classweb_1_1http_1_1_parser.html#af961ee96cda4105c5422fe4cbfa38b0d">line</a>) override</td></tr>
-<tr class="separator:a44e5facbb99fd2da1bc9131d4e092846"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a348fc1fd29b1faf17a3b6a170bea7f1f"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="classweb_1_1http_1_1_parser.html#a94ab44c0d65451be6ba3e6e389a8b7d5">Parser::ParserState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1client_1_1_response_parser.html#a348fc1fd29b1faf17a3b6a170bea7f1f">parseHeader</a> () override</td></tr>
-<tr class="separator:a348fc1fd29b1faf17a3b6a170bea7f1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a964a061fc67248dcf590f81c67db8e6a"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="classweb_1_1http_1_1_parser.html#a94ab44c0d65451be6ba3e6e389a8b7d5">Parser::ParserState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1client_1_1_response_parser.html#a964a061fc67248dcf590f81c67db8e6a">parseContent</a> (char *<a class="el" href="classweb_1_1http_1_1_parser.html#a63c894dd0755083f813bbdce92814f04">content</a>, std::size_t size) override</td></tr>
-<tr class="separator:a964a061fc67248dcf590f81c67db8e6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9376b13eb90307b278fb7da2b70ce1bc"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="classweb_1_1http_1_1_parser.html#a94ab44c0d65451be6ba3e6e389a8b7d5">Parser::ParserState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1client_1_1_response_parser.html#a9376b13eb90307b278fb7da2b70ce1bc">parsingError</a> (int code, const std::string &amp;<a class="el" href="classweb_1_1http_1_1client_1_1_response_parser.html#ab231d61e1f3eac11c39611ebe5c05ca9">reason</a>) override</td></tr>
-<tr class="separator:a9376b13eb90307b278fb7da2b70ce1bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9fb333ebc53ea413c1725f48e49be69f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1client_1_1_response_parser.html#a9fb333ebc53ea413c1725f48e49be69f">reset</a> () override</td></tr>
 <tr class="separator:a9fb333ebc53ea413c1725f48e49be69f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classweb_1_1http_1_1_parser"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classweb_1_1http_1_1_parser')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classweb_1_1http_1_1_parser.html">web::http::Parser</a></td></tr>
@@ -129,13 +119,23 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a45272b4fd644c7ce5bea07f38c838611 inherit pub_methods_classweb_1_1http_1_1_parser"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1_parser.html#a45272b4fd644c7ce5bea07f38c838611">stop</a> ()</td></tr>
 <tr class="separator:a45272b4fd644c7ce5bea07f38c838611 inherit pub_methods_classweb_1_1http_1_1_parser"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:ab1f63594f019adb0e2710dc38ea504a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1client_1_1_response_parser.html#ab1f63594f019adb0e2710dc38ea504a5">begin</a> () override</td></tr>
+<tr class="separator:ab1f63594f019adb0e2710dc38ea504a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44e5facbb99fd2da1bc9131d4e092846"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="classweb_1_1http_1_1_parser.html#a94ab44c0d65451be6ba3e6e389a8b7d5">Parser::ParserState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1client_1_1_response_parser.html#a44e5facbb99fd2da1bc9131d4e092846">parseStartLine</a> (const std::string &amp;<a class="el" href="classweb_1_1http_1_1_parser.html#af961ee96cda4105c5422fe4cbfa38b0d">line</a>) override</td></tr>
+<tr class="separator:a44e5facbb99fd2da1bc9131d4e092846"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a348fc1fd29b1faf17a3b6a170bea7f1f"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="classweb_1_1http_1_1_parser.html#a94ab44c0d65451be6ba3e6e389a8b7d5">Parser::ParserState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1client_1_1_response_parser.html#a348fc1fd29b1faf17a3b6a170bea7f1f">parseHeader</a> () override</td></tr>
+<tr class="separator:a348fc1fd29b1faf17a3b6a170bea7f1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a964a061fc67248dcf590f81c67db8e6a"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="classweb_1_1http_1_1_parser.html#a94ab44c0d65451be6ba3e6e389a8b7d5">Parser::ParserState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1client_1_1_response_parser.html#a964a061fc67248dcf590f81c67db8e6a">parseContent</a> (char *<a class="el" href="classweb_1_1http_1_1_parser.html#a63c894dd0755083f813bbdce92814f04">content</a>, std::size_t size) override</td></tr>
+<tr class="separator:a964a061fc67248dcf590f81c67db8e6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9376b13eb90307b278fb7da2b70ce1bc"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="classweb_1_1http_1_1_parser.html#a94ab44c0d65451be6ba3e6e389a8b7d5">Parser::ParserState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1client_1_1_response_parser.html#a9376b13eb90307b278fb7da2b70ce1bc">parsingError</a> (int code, const std::string &amp;<a class="el" href="classweb_1_1http_1_1client_1_1_response_parser.html#ab231d61e1f3eac11c39611ebe5c05ca9">reason</a>) override</td></tr>
+<tr class="separator:a9376b13eb90307b278fb7da2b70ce1bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92964a16cfde5aa1659d1d580662283e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1client_1_1_response_parser.html#a92964a16cfde5aa1659d1d580662283e">parsingFinished</a> ()</td></tr>
 <tr class="separator:a92964a16cfde5aa1659d1d580662283e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
 <tr class="memitem:a6ce8d7ed6afbc2a120756c3f9b6384e0"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1client_1_1_response_parser.html#a6ce8d7ed6afbc2a120756c3f9b6384e0">httpVersion</a></td></tr>
 <tr class="separator:a6ce8d7ed6afbc2a120756c3f9b6384e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15197f1d6d3dabd47cc4f3c9106f0f1f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1client_1_1_response_parser.html#a15197f1d6d3dabd47cc4f3c9106f0f1f">statusCode</a></td></tr>
@@ -156,17 +156,6 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a638c0d8e4f3c7361f6af1da02dc7bf78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3c3fe27fffd5451bcec5d23144d41f1"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(int, const std::string &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1client_1_1_response_parser.html#af3c3fe27fffd5451bcec5d23144d41f1">onError</a></td></tr>
 <tr class="separator:af3c3fe27fffd5451bcec5d23144d41f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_attribs_classweb_1_1http_1_1_parser"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classweb_1_1http_1_1_parser')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classweb_1_1http_1_1_parser.html">web::http::Parser</a></td></tr>
-<tr class="memitem:a47816f45ef2eef65b2e88e3548c5b969 inherit pro_attribs_classweb_1_1http_1_1_parser"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="classweb_1_1http_1_1_parser.html#afaf85771e39341e129795529ef8c4f8f">web::http::Parser::HTTPCompliance</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1_parser.html#a47816f45ef2eef65b2e88e3548c5b969">hTTPCompliance</a></td></tr>
-<tr class="separator:a47816f45ef2eef65b2e88e3548c5b969 inherit pro_attribs_classweb_1_1http_1_1_parser"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e858c3c2fa4c9416538d738444c2db3 inherit pro_attribs_classweb_1_1http_1_1_parser"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="classweb_1_1http_1_1_parser.html#a94ab44c0d65451be6ba3e6e389a8b7d5">web::http::Parser::ParserState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1_parser.html#a0e858c3c2fa4c9416538d738444c2db3">parserState</a> = <a class="el" href="classweb_1_1http_1_1_parser.html#a94ab44c0d65451be6ba3e6e389a8b7d5a19aad9f2fe3ce0023298ab83f7e75775">ParserState::BEGIN</a></td></tr>
-<tr class="separator:a0e858c3c2fa4c9416538d738444c2db3 inherit pro_attribs_classweb_1_1http_1_1_parser"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63c894dd0755083f813bbdce92814f04 inherit pro_attribs_classweb_1_1http_1_1_parser"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1_parser.html#a63c894dd0755083f813bbdce92814f04">content</a> = nullptr</td></tr>
-<tr class="separator:a63c894dd0755083f813bbdce92814f04 inherit pro_attribs_classweb_1_1http_1_1_parser"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f4bc9c330019ecb706fb343bec00f22 inherit pro_attribs_classweb_1_1http_1_1_parser"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1_parser.html#a6f4bc9c330019ecb706fb343bec00f22">contentLength</a> = 0</td></tr>
-<tr class="separator:a6f4bc9c330019ecb706fb343bec00f22 inherit pro_attribs_classweb_1_1http_1_1_parser"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d5ddf8558155e6a8c4233b36b9d6d73 inherit pro_attribs_classweb_1_1http_1_1_parser"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1_parser.html#a2d5ddf8558155e6a8c4233b36b9d6d73">headers</a></td></tr>
-<tr class="separator:a2d5ddf8558155e6a8c4233b36b9d6d73 inherit pro_attribs_classweb_1_1http_1_1_parser"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -197,6 +186,17 @@ Additional Inherited Members</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a94ab44c0d65451be6ba3e6e389a8b7d5 inherit pro_types_classweb_1_1http_1_1_parser"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classweb_1_1http_1_1_parser"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classweb_1_1http_1_1_parser')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classweb_1_1http_1_1_parser.html">web::http::Parser</a></td></tr>
+<tr class="memitem:a47816f45ef2eef65b2e88e3548c5b969 inherit pro_attribs_classweb_1_1http_1_1_parser"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="classweb_1_1http_1_1_parser.html#afaf85771e39341e129795529ef8c4f8f">web::http::Parser::HTTPCompliance</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1_parser.html#a47816f45ef2eef65b2e88e3548c5b969">hTTPCompliance</a></td></tr>
+<tr class="separator:a47816f45ef2eef65b2e88e3548c5b969 inherit pro_attribs_classweb_1_1http_1_1_parser"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e858c3c2fa4c9416538d738444c2db3 inherit pro_attribs_classweb_1_1http_1_1_parser"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="classweb_1_1http_1_1_parser.html#a94ab44c0d65451be6ba3e6e389a8b7d5">web::http::Parser::ParserState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1_parser.html#a0e858c3c2fa4c9416538d738444c2db3">parserState</a> = <a class="el" href="classweb_1_1http_1_1_parser.html#a94ab44c0d65451be6ba3e6e389a8b7d5a19aad9f2fe3ce0023298ab83f7e75775">ParserState::BEGIN</a></td></tr>
+<tr class="separator:a0e858c3c2fa4c9416538d738444c2db3 inherit pro_attribs_classweb_1_1http_1_1_parser"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63c894dd0755083f813bbdce92814f04 inherit pro_attribs_classweb_1_1http_1_1_parser"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1_parser.html#a63c894dd0755083f813bbdce92814f04">content</a> = nullptr</td></tr>
+<tr class="separator:a63c894dd0755083f813bbdce92814f04 inherit pro_attribs_classweb_1_1http_1_1_parser"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f4bc9c330019ecb706fb343bec00f22 inherit pro_attribs_classweb_1_1http_1_1_parser"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1_parser.html#a6f4bc9c330019ecb706fb343bec00f22">contentLength</a> = 0</td></tr>
+<tr class="separator:a6f4bc9c330019ecb706fb343bec00f22 inherit pro_attribs_classweb_1_1http_1_1_parser"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d5ddf8558155e6a8c4233b36b9d6d73 inherit pro_attribs_classweb_1_1http_1_1_parser"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1_parser.html#a2d5ddf8558155e6a8c4233b36b9d6d73">headers</a></td></tr>
+<tr class="separator:a2d5ddf8558155e6a8c4233b36b9d6d73 inherit pro_attribs_classweb_1_1http_1_1_parser"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_static_attribs_classweb_1_1http_1_1_parser"><td colspan="2" onclick="javascript:toggleInherit('pro_static_attribs_classweb_1_1http_1_1_parser')"><img src="closed.png" alt="-"/>&#160;Static Protected Attributes inherited from <a class="el" href="classweb_1_1http_1_1_parser.html">web::http::Parser</a></td></tr>
 <tr class="memitem:a55b72f49cd7bc28f418a7737bfda63d6 inherit pro_static_attribs_classweb_1_1http_1_1_parser"><td class="memItemLeft" align="right" valign="top">static std::regex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweb_1_1http_1_1_parser.html#a55b72f49cd7bc28f418a7737bfda63d6">httpVersionRegex</a></td></tr>
 <tr class="separator:a55b72f49cd7bc28f418a7737bfda63d6 inherit pro_static_attribs_classweb_1_1http_1_1_parser"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -271,7 +271,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        , <a class="code" href="classweb_1_1http_1_1client_1_1_response_parser.html#af3c3fe27fffd5451bcec5d23144d41f1">onError</a>(<a class="code" href="classweb_1_1http_1_1client_1_1_response_parser.html#af3c3fe27fffd5451bcec5d23144d41f1">onError</a>) {</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
 <div class="ttc" id="aclassweb_1_1http_1_1_parser_html_ab70e5a649587fe5293542af0d922229d"><div class="ttname"><a href="classweb_1_1http_1_1_parser.html#ab70e5a649587fe5293542af0d922229d">web::http::Parser::Parser</a></div><div class="ttdeci">Parser(net::socket::stream::SocketContext *socketContext, const enum HTTPCompliance &amp;compliance=HTTPCompliance::RFC2616|HTTPCompliance::RFC7230)</div><div class="ttdef"><b>Definition:</b> <a href="_parser_8cpp_source.html#l00037">Parser.cpp:37</a></div></div>
-<div class="ttc" id="aclassweb_1_1http_1_1_parser_html_ad23d9efc338ac58ed9231879c94c7c0b"><div class="ttname"><a href="classweb_1_1http_1_1_parser.html#ad23d9efc338ac58ed9231879c94c7c0b">web::http::Parser::socketContext</a></div><div class="ttdeci">net::socket::stream::SocketContext * socketContext</div><div class="ttdef"><b>Definition:</b> <a href="_parser_8h_source.html#l00087">Parser.h:87</a></div></div>
+<div class="ttc" id="aclassweb_1_1http_1_1_parser_html_ad23d9efc338ac58ed9231879c94c7c0b"><div class="ttname"><a href="classweb_1_1http_1_1_parser.html#ad23d9efc338ac58ed9231879c94c7c0b">web::http::Parser::socketContext</a></div><div class="ttdeci">net::socket::stream::SocketContext * socketContext</div><div class="ttdef"><b>Definition:</b> <a href="_parser_8h_source.html#l00089">Parser.h:89</a></div></div>
 <div class="ttc" id="aclassweb_1_1http_1_1client_1_1_response_parser_html_a039b64863a9aefc869f4d4c3da140a39"><div class="ttname"><a href="classweb_1_1http_1_1client_1_1_response_parser.html#a039b64863a9aefc869f4d4c3da140a39">web::http::client::ResponseParser::onContent</a></div><div class="ttdeci">std::function&lt; void(char *, std::size_t)&gt; onContent</div><div class="ttdef"><b>Definition:</b> <a href="_response_parser_8h_source.html#l00072">ResponseParser.h:72</a></div></div>
 <div class="ttc" id="aclassweb_1_1http_1_1client_1_1_response_parser_html_a1bf72cbd344fd56b8c3099f29320e012"><div class="ttname"><a href="classweb_1_1http_1_1client_1_1_response_parser.html#a1bf72cbd344fd56b8c3099f29320e012">web::http::client::ResponseParser::onHeader</a></div><div class="ttdeci">std::function&lt; void(const std::map&lt; std::string, std::string &gt; &amp;, const std::map&lt; std::string, web::http::CookieOptions &gt; &amp;)&gt; onHeader</div><div class="ttdef"><b>Definition:</b> <a href="_response_parser_8h_source.html#l00071">ResponseParser.h:71</a></div></div>
 <div class="ttc" id="aclassweb_1_1http_1_1client_1_1_response_parser_html_a638c0d8e4f3c7361f6af1da02dc7bf78"><div class="ttname"><a href="classweb_1_1http_1_1client_1_1_response_parser.html#a638c0d8e4f3c7361f6af1da02dc7bf78">web::http::client::ResponseParser::onParsed</a></div><div class="ttdeci">std::function&lt; void(ResponseParser &amp;)&gt; onParsed</div><div class="ttdef"><b>Definition:</b> <a href="_response_parser_8h_source.html#l00073">ResponseParser.h:73</a></div></div>
@@ -300,7 +300,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -345,7 +345,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -359,7 +359,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classweb_1_1http_1_1_parser.html#a94ab44c0d65451be6ba3e6e389a8b7d5a19aad9f2fe3ce0023298ab83f7e75775">ParserState::BEGIN</a>;</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    }</div>
-<div class="ttc" id="aclassweb_1_1http_1_1_parser_html_a63c894dd0755083f813bbdce92814f04"><div class="ttname"><a href="classweb_1_1http_1_1_parser.html#a63c894dd0755083f813bbdce92814f04">web::http::Parser::content</a></div><div class="ttdeci">char * content</div><div class="ttdef"><b>Definition:</b> <a href="_parser_8h_source.html#l00082">Parser.h:82</a></div></div>
+<div class="ttc" id="aclassweb_1_1http_1_1_parser_html_a63c894dd0755083f813bbdce92814f04"><div class="ttname"><a href="classweb_1_1http_1_1_parser.html#a63c894dd0755083f813bbdce92814f04">web::http::Parser::content</a></div><div class="ttdeci">char * content</div><div class="ttdef"><b>Definition:</b> <a href="_parser_8h_source.html#l00084">Parser.h:84</a></div></div>
 <div class="ttc" id="aclassweb_1_1http_1_1_parser_html_a94ab44c0d65451be6ba3e6e389a8b7d5a19aad9f2fe3ce0023298ab83f7e75775"><div class="ttname"><a href="classweb_1_1http_1_1_parser.html#a94ab44c0d65451be6ba3e6e389a8b7d5a19aad9f2fe3ce0023298ab83f7e75775">web::http::Parser::ParserState::BEGIN</a></div><div class="ttdeci">@ BEGIN</div></div>
 <div class="ttc" id="aclassweb_1_1http_1_1client_1_1_response_parser_html_a92964a16cfde5aa1659d1d580662283e"><div class="ttname"><a href="classweb_1_1http_1_1client_1_1_response_parser.html#a92964a16cfde5aa1659d1d580662283e">web::http::client::ResponseParser::parsingFinished</a></div><div class="ttdeci">void parsingFinished()</div><div class="ttdef"><b>Definition:</b> <a href="_response_parser_8cpp_source.html#l00164">ResponseParser.cpp:164</a></div></div>
 </div><!-- fragment -->
@@ -383,7 +383,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -449,8 +449,8 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classweb_1_1http_1_1_parser.html#a0e858c3c2fa4c9416538d738444c2db3">parserState</a>;</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    }</div>
 <div class="ttc" id="aclassweb_1_1http_1_1_parser_html_a0e858c3c2fa4c9416538d738444c2db3"><div class="ttname"><a href="classweb_1_1http_1_1_parser.html#a0e858c3c2fa4c9416538d738444c2db3">web::http::Parser::parserState</a></div><div class="ttdeci">enum web::http::Parser::ParserState parserState</div></div>
-<div class="ttc" id="aclassweb_1_1http_1_1_parser_html_a2d5ddf8558155e6a8c4233b36b9d6d73"><div class="ttname"><a href="classweb_1_1http_1_1_parser.html#a2d5ddf8558155e6a8c4233b36b9d6d73">web::http::Parser::headers</a></div><div class="ttdeci">std::map&lt; std::string, std::string &gt; headers</div><div class="ttdef"><b>Definition:</b> <a href="_parser_8h_source.html#l00084">Parser.h:84</a></div></div>
-<div class="ttc" id="aclassweb_1_1http_1_1_parser_html_a6f4bc9c330019ecb706fb343bec00f22"><div class="ttname"><a href="classweb_1_1http_1_1_parser.html#a6f4bc9c330019ecb706fb343bec00f22">web::http::Parser::contentLength</a></div><div class="ttdeci">std::size_t contentLength</div><div class="ttdef"><b>Definition:</b> <a href="_parser_8h_source.html#l00083">Parser.h:83</a></div></div>
+<div class="ttc" id="aclassweb_1_1http_1_1_parser_html_a2d5ddf8558155e6a8c4233b36b9d6d73"><div class="ttname"><a href="classweb_1_1http_1_1_parser.html#a2d5ddf8558155e6a8c4233b36b9d6d73">web::http::Parser::headers</a></div><div class="ttdeci">std::map&lt; std::string, std::string &gt; headers</div><div class="ttdef"><b>Definition:</b> <a href="_parser_8h_source.html#l00086">Parser.h:86</a></div></div>
+<div class="ttc" id="aclassweb_1_1http_1_1_parser_html_a6f4bc9c330019ecb706fb343bec00f22"><div class="ttname"><a href="classweb_1_1http_1_1_parser.html#a6f4bc9c330019ecb706fb343bec00f22">web::http::Parser::contentLength</a></div><div class="ttdeci">std::size_t contentLength</div><div class="ttdef"><b>Definition:</b> <a href="_parser_8h_source.html#l00085">Parser.h:85</a></div></div>
 <div class="ttc" id="aclassweb_1_1http_1_1_parser_html_a94ab44c0d65451be6ba3e6e389a8b7d5"><div class="ttname"><a href="classweb_1_1http_1_1_parser.html#a94ab44c0d65451be6ba3e6e389a8b7d5">web::http::Parser::ParserState</a></div><div class="ttdeci">ParserState</div><div class="ttdef"><b>Definition:</b> <a href="_parser_8h_source.html#l00070">Parser.h:70</a></div></div>
 <div class="ttc" id="aclassweb_1_1http_1_1_parser_html_a94ab44c0d65451be6ba3e6e389a8b7d5a786329b34bbe53ab40a54a19cd597f2d"><div class="ttname"><a href="classweb_1_1http_1_1_parser.html#a94ab44c0d65451be6ba3e6e389a8b7d5a786329b34bbe53ab40a54a19cd597f2d">web::http::Parser::ParserState::BODY</a></div><div class="ttdeci">@ BODY</div></div>
 <div class="ttc" id="aclassweb_1_1http_1_1client_1_1_response_parser_html_a79d1f2299128dde823fe8d4e7f9a1d1c"><div class="ttname"><a href="classweb_1_1http_1_1client_1_1_response_parser.html#a79d1f2299128dde823fe8d4e7f9a1d1c">web::http::client::ResponseParser::cookies</a></div><div class="ttdeci">std::map&lt; std::string, CookieOptions &gt; cookies</div><div class="ttdef"><b>Definition:</b> <a href="_response_parser_8h_source.html#l00067">ResponseParser.h:67</a></div></div>
@@ -478,7 +478,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -516,7 +516,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    }</div>
 <div class="ttc" id="aclassweb_1_1http_1_1_parser_html_a55b72f49cd7bc28f418a7737bfda63d6"><div class="ttname"><a href="classweb_1_1http_1_1_parser.html#a55b72f49cd7bc28f418a7737bfda63d6">web::http::Parser::httpVersionRegex</a></div><div class="ttdeci">static std::regex httpVersionRegex</div><div class="ttdef"><b>Definition:</b> <a href="_parser_8h_source.html#l00071">Parser.h:71</a></div></div>
 <div class="ttc" id="aclassweb_1_1http_1_1_parser_html_a94ab44c0d65451be6ba3e6e389a8b7d5a7ad4905b4543ab4a1637dd23c50e36ce"><div class="ttname"><a href="classweb_1_1http_1_1_parser.html#a94ab44c0d65451be6ba3e6e389a8b7d5a7ad4905b4543ab4a1637dd23c50e36ce">web::http::Parser::ParserState::HEADER</a></div><div class="ttdeci">@ HEADER</div></div>
-<div class="ttc" id="aclassweb_1_1http_1_1_parser_html_af961ee96cda4105c5422fe4cbfa38b0d"><div class="ttname"><a href="classweb_1_1http_1_1_parser.html#af961ee96cda4105c5422fe4cbfa38b0d">web::http::Parser::line</a></div><div class="ttdeci">std::string line</div><div class="ttdef"><b>Definition:</b> <a href="_parser_8h_source.html#l00098">Parser.h:98</a></div></div>
+<div class="ttc" id="aclassweb_1_1http_1_1_parser_html_af961ee96cda4105c5422fe4cbfa38b0d"><div class="ttname"><a href="classweb_1_1http_1_1_parser.html#af961ee96cda4105c5422fe4cbfa38b0d">web::http::Parser::line</a></div><div class="ttdeci">std::string line</div><div class="ttdef"><b>Definition:</b> <a href="_parser_8h_source.html#l00100">Parser.h:100</a></div></div>
 <div class="ttc" id="aclassweb_1_1http_1_1_status_code_html_a7128168d2becba8d8bfd0e47ab2854ff"><div class="ttname"><a href="classweb_1_1http_1_1_status_code.html#a7128168d2becba8d8bfd0e47ab2854ff">web::http::StatusCode::contains</a></div><div class="ttdeci">static bool contains(int status)</div><div class="ttdef"><b>Definition:</b> <a href="_status_codes_8cpp_source.html#l00101">StatusCodes.cpp:101</a></div></div>
 <div class="ttc" id="aclassweb_1_1http_1_1client_1_1_response_parser_html_a15197f1d6d3dabd47cc4f3c9106f0f1f"><div class="ttname"><a href="classweb_1_1http_1_1client_1_1_response_parser.html#a15197f1d6d3dabd47cc4f3c9106f0f1f">web::http::client::ResponseParser::statusCode</a></div><div class="ttdeci">std::string statusCode</div><div class="ttdef"><b>Definition:</b> <a href="_response_parser_8h_source.html#l00065">ResponseParser.h:65</a></div></div>
 <div class="ttc" id="aclassweb_1_1http_1_1client_1_1_response_parser_html_a6ce8d7ed6afbc2a120756c3f9b6384e0"><div class="ttname"><a href="classweb_1_1http_1_1client_1_1_response_parser.html#a6ce8d7ed6afbc2a120756c3f9b6384e0">web::http::client::ResponseParser::httpVersion</a></div><div class="ttdeci">std::string httpVersion</div><div class="ttdef"><b>Definition:</b> <a href="_response_parser_8h_source.html#l00064">ResponseParser.h:64</a></div></div>
@@ -554,7 +554,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -589,7 +589,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -663,7 +663,7 @@ Here is the call graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -689,7 +689,7 @@ Here is the call graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -715,7 +715,7 @@ Here is the call graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -739,7 +739,7 @@ Here is the call graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -763,7 +763,7 @@ Here is the call graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -787,7 +787,7 @@ Here is the call graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -813,7 +813,7 @@ Here is the call graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -837,7 +837,7 @@ Here is the call graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -863,7 +863,7 @@ Here is the call graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -889,7 +889,7 @@ Here is the call graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

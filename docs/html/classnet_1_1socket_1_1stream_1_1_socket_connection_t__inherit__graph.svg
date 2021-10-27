@@ -201,21 +201,21 @@
 <g id="node6" class="node">
 <title>Node6</title>
 <g id="a_node6"><a xlink:href="classnet_1_1socket_1_1stream_1_1tls_1_1_socket_connection.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="48.5,-0.5 48.5,-156.5 168.5,-156.5 168.5,-0.5 48.5,-0.5"/>
-<text text-anchor="start" x="56.5" y="-144.5" font-family="Helvetica,sans-Serif" font-size="10.00">net::socket::stream</text>
-<text text-anchor="start" x="56.5" y="-133.5" font-family="Helvetica,sans-Serif" font-size="10.00">::tls::SocketConnection</text>
+<polygon fill="white" stroke="black" points="49,-0.5 49,-156.5 168,-156.5 168,-0.5 49,-0.5"/>
+<text text-anchor="start" x="57" y="-144.5" font-family="Helvetica,sans-Serif" font-size="10.00">net::socket::stream</text>
+<text text-anchor="start" x="57" y="-133.5" font-family="Helvetica,sans-Serif" font-size="10.00">::tls::SocketConnection</text>
 <text text-anchor="middle" x="108.5" y="-122.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; SocketT &gt;</text>
-<polyline fill="none" stroke="black" points="48.5,-115.5 168.5,-115.5 "/>
-<text text-anchor="start" x="56.5" y="-103.5" font-family="Helvetica,sans-Serif" font-size="10.00"># ssl</text>
-<text text-anchor="start" x="56.5" y="-92.5" font-family="Helvetica,sans-Serif" font-size="10.00"># serverNameIndication</text>
-<text text-anchor="start" x="56.5" y="-81.5" font-family="Helvetica,sans-Serif" font-size="10.00"># sslErr</text>
-<polyline fill="none" stroke="black" points="48.5,-74.5 168.5,-74.5 "/>
-<text text-anchor="start" x="56.5" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ SocketConnection()</text>
-<text text-anchor="start" x="56.5" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getSSL()</text>
-<text text-anchor="start" x="56.5" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00"># startSSL()</text>
-<text text-anchor="start" x="56.5" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00"># doSSLHandshake()</text>
-<text text-anchor="start" x="56.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00"># stopSSL()</text>
-<text text-anchor="start" x="56.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00"># setSSLError()</text>
+<polyline fill="none" stroke="black" points="49,-115.5 168,-115.5 "/>
+<text text-anchor="start" x="57" y="-103.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; ssl</text>
+<text text-anchor="start" x="57" y="-92.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; serverNameIndication</text>
+<text text-anchor="start" x="57" y="-81.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sslErr</text>
+<polyline fill="none" stroke="black" points="49,-74.5 168,-74.5 "/>
+<text text-anchor="start" x="57" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ SocketConnection()</text>
+<text text-anchor="start" x="57" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getSSL()</text>
+<text text-anchor="start" x="57" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; startSSL()</text>
+<text text-anchor="start" x="57" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; doSSLHandshake()</text>
+<text text-anchor="start" x="57" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; stopSSL()</text>
+<text text-anchor="start" x="57" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; setSSLError()</text>
 </a>
 </g>
 </g>

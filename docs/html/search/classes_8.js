@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['l2capaddress_1039',['L2CapAddress',['../classnet_1_1socket_1_1bluetooth_1_1address_1_1_l2_cap_address.html',1,'net::socket::bluetooth::address']]],
-  ['logger_1040',['Logger',['../class_logger.html',1,'']]]
+  ['l2capaddress_1044',['L2CapAddress',['../classnet_1_1socket_1_1bluetooth_1_1address_1_1_l2_cap_address.html',1,'net::socket::bluetooth::address']]],
+  ['logger_1045',['Logger',['../class_logger.html',1,'']]]
 ];

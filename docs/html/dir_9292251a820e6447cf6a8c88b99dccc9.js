@@ -14,8 +14,9 @@ var dir_9292251a820e6447cf6a8c88b99dccc9 =
     [ "SubProtocol.h", "server_2_sub_protocol_8h.html", [
       [ "SubProtocol", "classweb_1_1websocket_1_1server_1_1_sub_protocol.html", "classweb_1_1websocket_1_1server_1_1_sub_protocol" ]
     ] ],
+    [ "SubProtocolFactory.cpp", "server_2_sub_protocol_factory_8cpp.html", null ],
     [ "SubProtocolFactory.h", "server_2_sub_protocol_factory_8h.html", [
-      [ "SubProtocolFactory", "classweb_1_1websocket_1_1server_1_1_sub_protocol_factory.html", null ]
+      [ "SubProtocolFactory", "classweb_1_1websocket_1_1server_1_1_sub_protocol_factory.html", "classweb_1_1websocket_1_1server_1_1_sub_protocol_factory" ]
     ] ],
     [ "SubProtocolFactorySelector.cpp", "server_2_sub_protocol_factory_selector_8cpp.html", null ],
     [ "SubProtocolFactorySelector.h", "server_2_sub_protocol_factory_selector_8h.html", [
