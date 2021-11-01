@@ -1,9 +1,20 @@
 cmake_minimum_required(VERSION 3.0)
 
-configure_file(config.h.in config.h @ONLY)
-configure_file(
-    snodecwebsocketserverOptions.cmake.in snodecwebsocketserverOptions.cmake
-    @ONLY
+get_target_property(
+    HTTP_SOCKETCONTEXTUPGRADE_SERVER_COMPILE_LIBDIR snodec::httpserver
+    HTTP_SOCKETCONTEXTUPGRADE_SERVER_COMPILE_LIBDIR
+)
+
+get_target_property(
+    HTTP_SOCKETCONTEXTUPGRADE_SERVER_INSTALL_LIBDIR snodec::httpserver
+    HTTP_SOCKETCONTEXTUPGRADE_SERVER_INSTALL_LIBDIR
+)
+
+set(WEBSOCKET_SUBPROTOCOL_SERVER_COMPILE_LIBDIR
+    "${CMAKE_BINARY_DIR}/web/websocket/server"
+)
+set(WEBSOCKET_SUBPROTOCOL_SERVER_INSTALL_LIBDIR
+    "${CMAKE_INSTALL_PREFIX}/${WEBSOCKET_SUBPROTOCOL_INSTALL_LIBDIR}/server"
 )
 
 add_library(
@@ -14,13 +25,28 @@ add_library(
 
 add_library(snodec::websocketserver ALIAS websocketserver)
 
+target_compile_definitions(
+    websocketserver
+    PRIVATE
+        WEBSOCKET_SUBPROTOCOL_SERVER_COMPILE_LIBDIR="${WEBSOCKET_SUBPROTOCOL_SERVER_COMPILE_LIBDIR}"
+        WEBSOCKET_SUBPROTOCOL_SERVER_INSTALL_LIBDIR="${WEBSOCKET_SUBPROTOCOL_SERVER_INSTALL_LIBDIR}"
+)
+
 set_target_properties(
     websocketserver
     PROPERTIES
         OUTPUT_NAME "snodec-websocket"
         INSTALL_RPATH
-        "${CMAKE_INSTALL_PREFIX}/lib:${CMAKE_INSTALL_PREFIX}/${WEBSOCKETBASE_INSTALL_PATH}"
+        "${CMAKE_INSTALL_PREFIX}/lib:${CMAKE_INSTALL_PREFIX}/${HTTP_SOCKETCONTEXTUPGRADE_INSTALL_LIBDIR}"
         SOVERSION 1 # PREFIX "sc"
+        WEBSOCKET_SUBPROTOCOL_SERVER_COMPILE_LIBDIR
+        "${WEBSOCKET_SUBPROTOCOL_SERVER_COMPILE_LIBDIR}"
+        WEBSOCKET_SUBPROTOCOL_SERVER_INSTALL_LIBDIR
+        "${WEBSOCKET_SUBPROTOCOL_SERVER_INSTALL_LIBDIR}"
+        WEBSOCKET_SUBPROTOCOL_SERVER_INCLUDE_DIRS
+        "${CMAKE_INSTALL_PREFIX}/include/snode.c"
+        EXPORT_PROPERTIES
+        "WEBSOCKET_SUBPROTOCOL_SERVER_INSTALL_LIBDIR;WEBSOCKET_SUBPROTOCOL_SERVER_INCLUDE_DIRS"
 )
 
 target_include_directories(
@@ -34,17 +60,16 @@ target_link_libraries(
     websocketserver PUBLIC snodec::httpserver snodec::websocketbase
 )
 
-# set_target_properties(websocketserver PROPERTIES )
-
 set_target_properties(
-    websocketserver PROPERTIES LIBRARY_OUTPUT_DIRECTORY
-                               "${SOCKETCONTEXTUPGRADE_LIBDIR}/server"
+    websocketserver
+    PROPERTIES LIBRARY_OUTPUT_DIRECTORY
+               "${HTTP_SOCKETCONTEXTUPGRADE_SERVER_COMPILE_LIBDIR}"
 )
 
 install(
     TARGETS websocketserver
     EXPORT snodecwebsocketserverTargets
-    LIBRARY DESTINATION lib/snode.c/web/http/server
+    LIBRARY DESTINATION ${HTTP_SOCKETCONTEXTUPGRADE_SERVER_INSTALL_LIBDIR}
     INCLUDES
     DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/snode.c
 )
@@ -63,8 +88,4 @@ install(
     FILE snodecwebsocketserverTargets.cmake
     NAMESPACE snodec::
     DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/snodec
-)
-
-install(FILES ${CMAKE_CURRENT_BINARY_DIR}/snodecwebsocketserverOptions.cmake
-        DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/snodec
 )

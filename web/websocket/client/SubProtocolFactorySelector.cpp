@@ -18,7 +18,6 @@
 
 #include "web/websocket/client/SubProtocolFactorySelector.h"
 
-#include "config.h"
 #include "web/websocket/client/SubProtocolFactory.h"
 
 #ifndef DOXYGEN_SHOULD_SKIP_THIS
@@ -28,15 +27,15 @@
 namespace web::websocket::client {
 
     SubProtocolFactorySelector::SubProtocolFactorySelector() {
-#ifndef NDEBUG
-#ifdef SUBPROTOCOL_CLIENT_COMPILE_PATH
+        web::websocket::SubProtocolFactorySelector<SubProtocolFactory>::addSubProtocolSearchPath(
+            WEBSOCKET_SUBPROTOCOL_CLIENT_INSTALL_LIBDIR);
 
-        addSubProtocolSearchPath(SUBPROTOCOL_CLIENT_COMPILE_PATH);
+#if !defined(NDEBUG) && defined(WEBSOCKET_SUBPROTOCOL_CLIENT_COMPILE_LIBDIR)
 
-#endif // SUBPROTOCOL_CLIENT_COMPILE_PATH
-#endif // NDEBUG
+        web::websocket::SubProtocolFactorySelector<SubProtocolFactory>::addSubProtocolSearchPath(
+            WEBSOCKET_SUBPROTOCOL_CLIENT_COMPILE_LIBDIR);
 
-        addSubProtocolSearchPath(SUBPROTOCOL_CLIENT_INSTALL_PATH);
+#endif // !defined(NDEBUG) && defined(WEBSOCKET_SUBPROTOCOL_CLIENT_COMPILE_LIBDIR)
     }
 
     SubProtocolFactorySelector* SubProtocolFactorySelector::instance() {
@@ -47,6 +46,15 @@ namespace web::websocket::client {
 
     void SubProtocolFactorySelector::link(const std::string& subProtocolName, SubProtocolFactory* (*getSubProtocolFactory)()) {
         SubProtocolFactorySelector::instance()->linkSubProtocol(subProtocolName, getSubProtocolFactory);
+    }
+
+    void SubProtocolFactorySelector::addSubProtocolSearchPath(const std::string& searchPath) {
+        SubProtocolFactorySelector::instance()->web::websocket::SubProtocolFactorySelector<SubProtocolFactory>::addSubProtocolSearchPath(
+            searchPath);
+    }
+
+    void SubProtocolFactorySelector::allowDlOpen() {
+        SubProtocolFactorySelector::instance()->web::websocket::SubProtocolFactorySelector<SubProtocolFactory>::allowDlOpen();
     }
 
     SubProtocolFactory* SubProtocolFactorySelector::load(const std::string& subProtocolName) {
