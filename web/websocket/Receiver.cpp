@@ -109,10 +109,10 @@ namespace web::websocket {
             if (payLoadNumBytes > 125) {
                 switch (payLoadNumBytes) {
                     case 126:
-                        elengthNumBytes = 2;
+                        elengthNumBytes = elengthNumBytesLeft = 2;
                         break;
                     case 127:
-                        elengthNumBytes = 8;
+                        elengthNumBytes = elengthNumBytesLeft = 8;
                         break;
                 }
                 parserState = ParserState::ELENGTH;
@@ -135,8 +135,6 @@ namespace web::websocket {
     }
 
     ssize_t Receiver::readELength() {
-        elengthNumBytesLeft = (elengthNumBytesLeft == 0) ? elengthNumBytes : elengthNumBytesLeft;
-
         ssize_t ret = readFrameData(elengthJunk, elengthNumBytesLeft);
 
         for (ssize_t i = 0; i < ret; i++) {
@@ -170,8 +168,6 @@ namespace web::websocket {
     }
 
     ssize_t Receiver::readMaskingKey() {
-        //        maskingKeyNumBytesLeft = (maskingKeyNumBytesLeft == 0) ? maskingKeyNumBytes : maskingKeyNumBytesLeft;
-
         ssize_t ret = readFrameData(maskingKeyJunk, maskingKeyNumBytesLeft);
 
         for (ssize_t i = 0; i < ret; i++) {
