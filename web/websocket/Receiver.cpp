@@ -257,6 +257,7 @@ namespace web::websocket {
         payLoadNumBytesLeft = 0;
 
         maskingKey = 0;
+        maskingKeyAsArray = {.key = 0};
         maskingKeyNumBytes = 4;
         maskingKeyNumBytesLeft = 4;
 
