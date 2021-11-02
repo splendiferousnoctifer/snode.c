@@ -10,12 +10,6 @@ get_target_property(
     HTTP_SOCKETCONTEXTUPGRADE_CLIENT_INSTALL_LIBDIR
 )
 
-add_library(
-    websocketclient SHARED
-    SocketContextUpgrade.cpp SocketContextUpgradeFactory.cpp SubProtocol.cpp
-    SubProtocolFactory.cpp SubProtocolFactorySelector.cpp
-)
-
 set(WEBSOCKET_SUBPROTOCOL_CLIENT_COMPILE_LIBDIR
     "${CMAKE_BINARY_DIR}/web/websocket/client"
 )
@@ -24,6 +18,11 @@ set(WEBSOCKET_SUBPROTOCOL_CLIENT_INSTALL_LIBDIR
     "${CMAKE_INSTALL_PREFIX}/${WEBSOCKET_SUBPROTOCOL_INSTALL_LIBDIR}/client"
 )
 
+add_library(
+    websocketclient SHARED
+    SocketContextUpgrade.cpp SocketContextUpgradeFactory.cpp SubProtocol.cpp
+    SubProtocolFactory.cpp SubProtocolFactorySelector.cpp
+)
 add_library(snodec::websocketclient ALIAS websocketclient)
 
 target_compile_definitions(
@@ -37,8 +36,10 @@ set_target_properties(
     websocketclient
     PROPERTIES
         OUTPUT_NAME "snodec-websocket"
+        LIBRARY_OUTPUT_DIRECTORY
+        "${HTTP_SOCKETCONTEXTUPGRADE_CLIENT_COMPILE_LIBDIR}"
         INSTALL_RPATH
-        "${CMAKE_INSTALL_PREFIX}/lib:${CMAKE_INSTALL_PREFIX}/${HTTP_SOCKETCONTEXTUPGRADE_INSTALL_LIBDIR}"
+        "${CMAKE_INSTALL_PREFIX}/${HTTP_SOCKETCONTEXTUPGRADE_INSTALL_LIBDIR}"
         SOVERSION 1 # PREFIX "sc"
         WEBSOCKET_SUBPROTOCOL_CLIENT_COMPILE_LIBDIR
         "${WEBSOCKET_SUBPROTOCOL_CLIENT_COMPILE_LIBDIR}"
@@ -59,12 +60,6 @@ target_include_directories(
 
 target_link_libraries(
     websocketclient PUBLIC snodec::httpclient snodec::websocketbase
-)
-
-set_target_properties(
-    websocketclient
-    PROPERTIES LIBRARY_OUTPUT_DIRECTORY
-               "${HTTP_SOCKETCONTEXTUPGRADE_CLIENT_COMPILE_LIBDIR}"
 )
 
 install(

@@ -22,7 +22,6 @@ add_library(
     ChannelManager.cpp SocketContextUpgrade.cpp SocketContextUpgradeFactory.cpp
     SubProtocol.cpp SubProtocolFactory.cpp SubProtocolFactorySelector.cpp
 )
-
 add_library(snodec::websocketserver ALIAS websocketserver)
 
 target_compile_definitions(
@@ -36,8 +35,10 @@ set_target_properties(
     websocketserver
     PROPERTIES
         OUTPUT_NAME "snodec-websocket"
+        LIBRARY_OUTPUT_DIRECTORY
+        "${HTTP_SOCKETCONTEXTUPGRADE_SERVER_COMPILE_LIBDIR}"
         INSTALL_RPATH
-        "${CMAKE_INSTALL_PREFIX}/lib:${CMAKE_INSTALL_PREFIX}/${HTTP_SOCKETCONTEXTUPGRADE_INSTALL_LIBDIR}"
+        "${CMAKE_INSTALL_PREFIX}/${HTTP_SOCKETCONTEXTUPGRADE_INSTALL_LIBDIR}"
         SOVERSION 1 # PREFIX "sc"
         WEBSOCKET_SUBPROTOCOL_SERVER_COMPILE_LIBDIR
         "${WEBSOCKET_SUBPROTOCOL_SERVER_COMPILE_LIBDIR}"
@@ -58,12 +59,6 @@ target_include_directories(
 
 target_link_libraries(
     websocketserver PUBLIC snodec::httpserver snodec::websocketbase
-)
-
-set_target_properties(
-    websocketserver
-    PROPERTIES LIBRARY_OUTPUT_DIRECTORY
-               "${HTTP_SOCKETCONTEXTUPGRADE_SERVER_COMPILE_LIBDIR}"
 )
 
 install(
