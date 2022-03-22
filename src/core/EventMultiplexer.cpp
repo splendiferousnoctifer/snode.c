@@ -95,7 +95,7 @@ namespace core {
 
         DynamicLoader::execDlCloseDeleyed();
 
-        if (getObservedEventReceiverCount() > 0 || !timerEventPublisher->empty()) {
+        if (getObservedEventReceiverCount() > 0 || !timerEventPublisher->empty() || !eventQueue.empty()) {
             utils::Timeval nextTimeout = 0;
 
             if (eventQueue.empty()) {
