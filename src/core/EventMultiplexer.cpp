@@ -90,8 +90,8 @@ namespace core {
 
         eventQueue.execute(currentTime);
 
-        unobserveDisabledEvents(currentTime);
         checkTimedOutEvents(currentTime);
+        unobserveDisabledEvents(currentTime);
 
         DynamicLoader::execDlCloseDeleyed();
 
@@ -151,8 +151,8 @@ namespace core {
     }
 
     void EventMultiplexer::unobserveDisabledEvents(const utils::Timeval& currentTime) {
-        for (DescriptorEventPublisher* const eventMultiplexer : descriptorEventPublishers) {
-            eventMultiplexer->unobserveDisabledEvents(currentTime);
+        for (DescriptorEventPublisher* const descriptorEventPublisher : descriptorEventPublishers) {
+            descriptorEventPublisher->unobserveDisabledEvents(currentTime);
         }
         timerEventPublisher->unobsereDisableEvents();
     }
