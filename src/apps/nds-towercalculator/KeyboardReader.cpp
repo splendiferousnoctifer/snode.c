@@ -11,13 +11,33 @@ KeyboardReader::KeyboardReader(const std::function<void(long)>& callBack)
 }
 
 void KeyboardReader::readEvent() {
-    int value;
+    /*
+        long value;
 
-    std::cin >> value;
+        std::cin >> value;
 
-    std::cout << "Value entered: " << value << std::endl;
+        std::cout << "Value entered: " << value << std::endl;
+    */
 
-    callBack(value);
+    char buffer[256];
+
+    ssize_t ret = read(STDIN_FILENO, buffer, 255);
+
+    if (ret > 0) {
+        buffer[ret] = 0;
+        try {
+            long value;
+            value = std::stol(buffer);
+
+            std::cout << "Value = " << value << std::endl;
+
+            callBack(value);
+        } catch (std::invalid_argument& e) {
+            std::cout << e.what() << ": no conversion possible: input = " << buffer << std::endl;
+        }
+    } else {
+        std::cout << "Nothing entered or error: " << errno;
+    }
 }
 
 void KeyboardReader::unobservedEvent() {

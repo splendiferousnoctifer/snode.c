@@ -8,7 +8,7 @@
 
 class KeyboardReader : public core::eventreceiver::ReadEventReceiver {
 public:
-    KeyboardReader(const std::function<void(long)>& callBack);
+    explicit KeyboardReader(const std::function<void(long)>& callBack);
 
 protected:
     void readEvent() override;

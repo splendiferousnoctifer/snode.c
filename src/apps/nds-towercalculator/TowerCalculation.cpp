@@ -4,26 +4,59 @@
 #include <string>
 
 TowerCalculator::TowerCalculator()
-    : core::EventReceiver("TowerCalculation") {
-    currentValue = 25;
+    : core::EventReceiver("TowerCalculation")
+    , currentValue(0)
+    , state(State::WAITING) {
 }
 
 void TowerCalculator::dispatch([[maybe_unused]] const utils::Timeval& currentTime) {
-    //    std::cout << "Dispatch ist called at " << currentTime << std::endl;
-
-    if (multiplicator <= 9) {
-        std::cout << currentValue << " * " << multiplicator << " = ";
-        currentValue = currentValue * multiplicator;
-        std::cout << currentValue << std::endl;
-        multiplicator++;
-
-        publish();
+    switch (state) {
+        case State::MULTIPLY:
+            if (multiplicator <= 9) {
+                std::cout << currentValue << " * " << multiplicator << " = ";
+                currentValue = currentValue * multiplicator;
+                std::cout << currentValue << std::endl;
+                multiplicator++;
+            } else {
+                state = State::DIVIDE;
+            }
+            publish();
+            break;
+        case State::DIVIDE:
+            if (divisor <= 9) {
+                std::cout << currentValue << " / " << divisor << " = ";
+                currentValue = currentValue / divisor;
+                std::cout << currentValue << std::endl;
+                divisor++;
+            } else {
+                state = State::WAITING;
+            }
+            publish();
+            break;
+        case State::WAITING:
+            calculate();
+            break;
     }
 }
 
 void TowerCalculator::calculate(long startValue) {
-    multiplicator = 1;
-    currentValue = startValue;
+    startValues.push_back(startValue);
 
-    publish();
+    calculate();
+}
+
+void TowerCalculator::calculate() {
+    if (!startValues.empty() && state == State::WAITING) {
+        currentValue = startValues.front();
+        startValues.pop_front();
+
+        state = State::MULTIPLY;
+
+        multiplicator = 1;
+        divisor = 2;
+
+        std::cout << std::endl << "start calculation with value = " << currentValue << std::endl;
+
+        publish();
+    }
 }

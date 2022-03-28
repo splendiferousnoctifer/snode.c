@@ -19,5 +19,14 @@ int main(int argc, char* argv[]) {
         towerCalculation.calculate(value);
     });
 
+    towerCalculation.calculate(25);
+    towerCalculation.calculate(50);
+    towerCalculation.calculate(25);
+    towerCalculation.calculate(50);
+    towerCalculation.calculate(25);
+    towerCalculation.calculate(50);
+    towerCalculation.calculate(25);
+    towerCalculation.calculate(50);
+
     return core::SNodeC::start();
 }

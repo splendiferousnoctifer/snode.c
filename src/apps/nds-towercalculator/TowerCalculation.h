@@ -4,6 +4,8 @@
 #include "core/EventReceiver.h"
 #include "utils/Timeval.h"
 
+#include <deque>
+
 class TowerCalculator : public core::EventReceiver {
 public:
     TowerCalculator();
@@ -13,9 +15,18 @@ public:
     void calculate(long startValue);
 
 protected:
+    void calculate();
+
+    enum class State { WAITING, MULTIPLY, DIVIDE };
+
     long currentValue;
 
     int multiplicator = 1;
+    int divisor = 2;
+
+    std::deque<long> startValues;
+
+    State state;
 };
 
 #endif // TOWERCALCULATION_H
