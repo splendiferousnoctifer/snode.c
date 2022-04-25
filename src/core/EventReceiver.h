@@ -19,7 +19,7 @@
 #ifndef CORE_EVENTRECEIVER_H
 #define CORE_EVENTRECEIVER_H
 
-#include "Event.h"
+#include "core/Event.h"
 
 #ifndef DOXYGEN_SHOULD_SKIP_THIS
 
@@ -36,19 +36,17 @@ namespace core {
     class EventReceiver {
     public:
         EventReceiver(const std::string& name);
-        virtual ~EventReceiver() = default;
+        virtual ~EventReceiver();
 
-        void publish() const;
+        void publish();
+        void unPublish();
 
-        virtual void dispatch(const utils::Timeval& currentTime) = 0;
+        virtual void event(const utils::Timeval& currentTime) = 0;
 
         const std::string& getName();
 
-    private:
-        std::string name;
-
     protected:
-        Event event;
+        Event _event;
     };
 
 } // namespace core

@@ -57,11 +57,11 @@ namespace core {
         return *timerEventPublisher;
     }
 
-    void EventMultiplexer::publish(const Event* event) {
+    void EventMultiplexer::publish(Event* event) {
         eventQueue.insert(event);
     }
 
-    void EventMultiplexer::unPublish(const Event* event) {
+    void EventMultiplexer::unPublish(Event* event) {
         eventQueue.remove(event);
     }
 
@@ -152,12 +152,12 @@ namespace core {
         for (DescriptorEventPublisher* const descriptorEventPublisher : descriptorEventPublishers) {
             descriptorEventPublisher->unobserveDisabledEvents(currentTime);
         }
-        timerEventPublisher->unobsereDisableEvents();
+        timerEventPublisher->unobserveDisableEvents();
     }
 
     EventMultiplexer::EventQueue::EventQueue()
-        : executeQueue(new std::set<const Event*>()) // cppcheck-suppress [noCopyConstructor, noOperatorEq]
-        , publishQueue(new std::set<const Event*>()) {
+        : executeQueue(new std::list<Event*>()) // cppcheck-suppress [noCopyConstructor, noOperatorEq]
+        , publishQueue(new std::list<Event*>()) {
     }
 
     EventMultiplexer::EventQueue::~EventQueue() {
@@ -165,18 +165,18 @@ namespace core {
         delete publishQueue;
     }
 
-    void EventMultiplexer::EventQueue::insert(const Event* event) {
-        publishQueue->insert(event); // do not allow two or more same events in one tick
+    void EventMultiplexer::EventQueue::insert(Event* event) {
+        publishQueue->push_back(event); // do not allow two or more same events in one tick
     }
 
-    void EventMultiplexer::EventQueue::remove(const Event* event) {
-        publishQueue->erase(event); // in case of erase remove the event from the published queue
+    void EventMultiplexer::EventQueue::remove(Event* event) {
+        publishQueue->remove(event); // in case of erase remove the event from the published queue
     }
 
     void EventMultiplexer::EventQueue::execute(const utils::Timeval& currentTime) {
         std::swap(executeQueue, publishQueue);
 
-        for (const Event* event : *executeQueue) {
+        for (Event* event : *executeQueue) {
             event->dispatch(currentTime);
         }
 

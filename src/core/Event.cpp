@@ -18,6 +18,8 @@
 
 #include "Event.h"
 
+#include "EventLoop.h"
+#include "EventMultiplexer.h"
 #include "EventReceiver.h"
 
 #ifndef DOXYGEN_SHOULD_SKIP_THIS
@@ -28,12 +30,32 @@
 
 namespace core {
 
-    core::Event::Event(EventReceiver* eventReceiver)
-        : eventReceiver(eventReceiver) {
+    core::Event::Event(EventReceiver* eventReceiver, const std::string& name)
+        : eventReceiver(eventReceiver)
+        , name(name) {
     }
 
-    void Event::dispatch(const utils::Timeval& currentTime) const {
-        eventReceiver->dispatch(currentTime);
+    void Event::publish() {
+        if (!published) {
+            published = true;
+            core::EventLoop::instance().getEventMultiplexer().publish(this);
+        }
+    }
+
+    void Event::unPublish() {
+        if (published) {
+            published = false;
+            core::EventLoop::instance().getEventMultiplexer().unPublish(this);
+        }
+    }
+
+    const std::string& Event::getName() {
+        return name;
+    }
+
+    void Event::dispatch(const utils::Timeval& currentTime) {
+        published = false;
+        eventReceiver->event(currentTime);
     }
 
 } // namespace core

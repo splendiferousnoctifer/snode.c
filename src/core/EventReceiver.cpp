@@ -18,9 +18,6 @@
 
 #include "EventReceiver.h"
 
-#include "EventLoop.h"
-#include "EventMultiplexer.h"
-
 #ifndef DOXYGEN_SHOULD_SKIP_THIS
 
 #endif /* DOXYGEN_SHOULD_SKIP_THIS */
@@ -28,16 +25,23 @@
 namespace core {
 
     EventReceiver::EventReceiver(const std::string& name)
-        : name(name)
-        , event(this) {
+        : _event(this, name) {
     }
 
-    void EventReceiver::publish() const {
-        core::EventLoop::instance().getEventMultiplexer().publish(&event);
+    EventReceiver::~EventReceiver() {
+        _event.unPublish();
+    }
+
+    void EventReceiver::publish() {
+        _event.publish();
+    }
+
+    void EventReceiver::unPublish() {
+        _event.unPublish();
     }
 
     const std::string& EventReceiver::getName() {
-        return name;
+        return _event.getName();
     }
 
 } // namespace core

@@ -19,9 +19,7 @@
 #ifndef CORE_EVENTMULTIPLEXER_H
 #define CORE_EVENTMULTIPLEXER_H
 
-#include "TickStatus.h" // IWYU pragma: export
-
-// IWYU pragma: no_include "core/TickStatus.h"
+#include "core/TickStatus.h" // IWYU pragma: export
 
 namespace core {
     class Event;
@@ -36,7 +34,7 @@ namespace utils {
 #ifndef DOXYGEN_SHOULD_SKIP_THIS
 
 #include <array> // IWYU pragma: export
-#include <set>
+#include <list>
 
 #endif /* DOXYGEN_SHOULD_SKIP_THIS */
 
@@ -59,14 +57,14 @@ namespace core {
             EventQueue();
             ~EventQueue();
 
-            void insert(const Event* event);
-            void remove(const Event* event);
+            void insert(Event* event);
+            void remove(Event* event);
             void execute(const utils::Timeval& currentTime);
             bool empty() const;
 
         private:
-            std::set<const Event*>* executeQueue;
-            std::set<const Event*>* publishQueue;
+            std::list<Event*>* executeQueue;
+            std::list<Event*>* publishQueue;
         };
 
     public:
@@ -76,8 +74,8 @@ namespace core {
         DescriptorEventPublisher& getDescriptorEventPublisher(core::EventMultiplexer::DISP_TYPE dispType);
         TimerEventPublisher& getTimerEventPublisher();
 
-        void publish(const core::Event* event);
-        void unPublish(const Event* event);
+        void publish(core::Event* event);
+        void unPublish(core::Event* event);
 
         TickStatus tick(const utils::Timeval& tickTimeOut);
         void stop();

@@ -54,7 +54,7 @@ install(TARGETS lowlevelclient RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
 add_executable(testregex testregex.cpp)
 target_link_libraries(
     testregex PRIVATE snodec::express snodec::core-legacy snodec::core-tls
-                      snodec::net-in
+                      snodec::net-in snodec::db-mariadb
 )
 install(TARGETS testregex RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
 
@@ -87,4 +87,5 @@ add_subdirectory(l2)
 add_subdirectory(in)
 add_subdirectory(in6)
 add_subdirectory(un)
+add_subdirectory(database)
 add_subdirectory(towercalculator)
